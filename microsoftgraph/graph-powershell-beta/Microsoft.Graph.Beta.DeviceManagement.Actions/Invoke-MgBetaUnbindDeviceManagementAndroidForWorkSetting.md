@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetaunbinddevicemanagementandroidforworksetting
 schema: 2.0.0
@@ -10,13 +10,10 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unbind
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnbindDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnbindDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
-Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -24,14 +21,14 @@ Invoke action unbind
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -44,7 +41,7 @@ Invoke action unbind
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -59,7 +56,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -75,7 +72,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -94,9 +91,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Invoke-MgUnbindDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnbindDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)
+

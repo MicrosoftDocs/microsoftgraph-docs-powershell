@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: 1c10da5b-8acf-4262-8565-e41c0cb753e6
+Module Guid: 2b2d67d4-7ed1-41c5-9923-12667ae4d2af
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -38,6 +38,13 @@ Get the number of the resource
 Read the properties of an identityApiConnector object.
 
 ### [Get-MgBetaIdentityApiConnectorCount](Get-MgBetaIdentityApiConnectorCount.md)
+Get the number of the resource
+
+### [Get-MgBetaIdentityAuthenticationEventFlow](Get-MgBetaIdentityAuthenticationEventFlow.md)
+Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
+Only externalUsersSelfServiceSignupEventsFlow object types are available.
+
+### [Get-MgBetaIdentityAuthenticationEventFlowCount](Get-MgBetaIdentityAuthenticationEventFlowCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaIdentityAuthenticationEventListener](Get-MgBetaIdentityAuthenticationEventListener.md)
@@ -189,7 +196,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocation](Get-MgBetaIdentityConditionalAccessNamedLocation.md)
-Retrieve the properties and relationships of a countryNamedLocation object.
+Retrieve the properties and relationships of an ipNamedLocation object.
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocationCount](Get-MgBetaIdentityConditionalAccessNamedLocationCount.md)
 Get the number of the resource
@@ -210,8 +217,7 @@ Get the number of the resource
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtension](Get-MgBetaIdentityCustomAuthenticationExtension.md)
-Read the properties and relationships of an authenticationEventListener object.
-The **@odata.type** property in the response object indicates the type of the authenticationEventListener object.
+Read the properties and relationships of a customAuthenticationExtension object.
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtensionCount](Get-MgBetaIdentityCustomAuthenticationExtensionCount.md)
 Get the number of the resource
@@ -325,6 +331,12 @@ Read the properties and relationships of an accessReviewPolicy object.
 ### [Get-MgBetaPolicyActivityBasedTimeoutPolicy](Get-MgBetaPolicyActivityBasedTimeoutPolicy.md)
 Get the properties of an activityBasedTimeoutPolicy object.
 
+### [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo](Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyToCount](Get-MgBetaPolicyActivityBasedTimeoutPolicyApplyToCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaPolicyActivityBasedTimeoutPolicyCount](Get-MgBetaPolicyActivityBasedTimeoutPolicyCount.md)
 Get the number of the resource
 
@@ -385,6 +397,12 @@ Read the properties of a b2cAuthenticationMethodsPolicy object.
 
 ### [Get-MgBetaPolicyClaimMappingPolicy](Get-MgBetaPolicyClaimMappingPolicy.md)
 Retrieve the properties and relationships of a claimsMappingPolicy object.
+
+### [Get-MgBetaPolicyClaimMappingPolicyApplyTo](Get-MgBetaPolicyClaimMappingPolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgBetaPolicyClaimMappingPolicyApplyToCount](Get-MgBetaPolicyClaimMappingPolicyApplyToCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaPolicyClaimMappingPolicyCount](Get-MgBetaPolicyClaimMappingPolicyCount.md)
 Get the number of the resource
@@ -449,8 +467,17 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 ### [Get-MgBetaPolicyFeatureRolloutPolicyCount](Get-MgBetaPolicyFeatureRolloutPolicyCount.md)
 Get the number of the resource
 
+### [Get-MgBetaPolicyFederatedTokenValidationPolicy](Get-MgBetaPolicyFederatedTokenValidationPolicy.md)
+Get federatedTokenValidationPolicy from policies
+
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](Get-MgBetaPolicyHomeRealmDiscoveryPolicy.md)
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+
+### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount](Get-MgBetaPolicyHomeRealmDiscoveryPolicyApplyToCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount](Get-MgBetaPolicyHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
@@ -509,11 +536,10 @@ Automatically expanded on GET.
 Get the number of the resource
 
 ### [Get-MgBetaPolicyRoleManagementPolicy](Get-MgBetaPolicyRoleManagementPolicy.md)
-Retrieve the details of a role management policy.
-To read a policy that applies to Azure RBAC, use the Azure REST PIM API for role management policies.
+Represents the role management policies.
 
 ### [Get-MgBetaPolicyRoleManagementPolicyAssignment](Get-MgBetaPolicyRoleManagementPolicyAssignment.md)
-Get the details of a role management policy assignment including the policy and rules associated with the Azure AD role.
+Represents the role management policy assignments.
 
 ### [Get-MgBetaPolicyRoleManagementPolicyAssignmentCount](Get-MgBetaPolicyRoleManagementPolicyAssignmentCount.md)
 Get the number of the resource
@@ -561,11 +587,23 @@ Get the number of the resource
 ### [Get-MgBetaPolicyTokenIssuancePolicy](Get-MgBetaPolicyTokenIssuancePolicy.md)
 Retrieve the properties and relationships of a tokenIssuancePolicy object.
 
+### [Get-MgBetaPolicyTokenIssuancePolicyApplyTo](Get-MgBetaPolicyTokenIssuancePolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgBetaPolicyTokenIssuancePolicyApplyToCount](Get-MgBetaPolicyTokenIssuancePolicyApplyToCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaPolicyTokenIssuancePolicyCount](Get-MgBetaPolicyTokenIssuancePolicyCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaPolicyTokenLifetimePolicy](Get-MgBetaPolicyTokenLifetimePolicy.md)
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
+
+### [Get-MgBetaPolicyTokenLifetimePolicyApplyTo](Get-MgBetaPolicyTokenLifetimePolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgBetaPolicyTokenLifetimePolicyApplyToCount](Get-MgBetaPolicyTokenLifetimePolicyApplyToCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaPolicyTokenLifetimePolicyCount](Get-MgBetaPolicyTokenLifetimePolicyCount.md)
 Get the number of the resource
@@ -829,9 +867,13 @@ Add new entity to dataPolicyOperations
 ### [New-MgBetaIdentityApiConnector](New-MgBetaIdentityApiConnector.md)
 Create a new identityApiConnector object.
 
+### [New-MgBetaIdentityAuthenticationEventFlow](New-MgBetaIdentityAuthenticationEventFlow.md)
+Create a new authenticationEventsFlow object that is of the type specified in the request body.
+You can create only an externalUsersSelfServiceSignupEventsFlow object type.
+
 ### [New-MgBetaIdentityAuthenticationEventListener](New-MgBetaIdentityAuthenticationEventListener.md)
 Create a new authenticationEventListener object.
-Only the onTokenIssuanceStartListener type is supported.
+You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
 ### [New-MgBetaIdentityB2CUserFlow](New-MgBetaIdentityB2CUserFlow.md)
 Create a new b2cIdentityUserFlow object.
@@ -1100,6 +1142,10 @@ Delete entity from dataPolicyOperations
 ### [Remove-MgBetaIdentityApiConnector](Remove-MgBetaIdentityApiConnector.md)
 Deletes an identityApiConnector object.
 
+### [Remove-MgBetaIdentityAuthenticationEventFlow](Remove-MgBetaIdentityAuthenticationEventFlow.md)
+Delete a specific authenticationEventsFlow resource by ID.
+Only externalUsersSelfServiceSignupEventsFlow object types are available.
+
 ### [Remove-MgBetaIdentityAuthenticationEventListener](Remove-MgBetaIdentityAuthenticationEventListener.md)
 Deletes an authenticationEventListener object.
 
@@ -1126,6 +1172,10 @@ Delete an identityUserFlowAttributeAssignment object.
 ### [Remove-MgBetaIdentityB2XUserFlow](Remove-MgBetaIdentityB2XUserFlow.md)
 Delete a b2xIdentityUserFlow object.
 
+### [Remove-MgBetaIdentityB2XUserFlowIdentityProvider](Remove-MgBetaIdentityB2XUserFlowIdentityProvider.md)
+Delete an identity provider from a b2xIdentityUserFlow object.
+For self-service sign up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+
 ### [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef.md)
 Delete ref of navigation property userFlowIdentityProviders for identity
 
@@ -1145,7 +1195,7 @@ Delete navigation property userAttributeAssignments for identity
 Delete navigation property conditionalAccess for identity
 
 ### [Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference.md)
-Delete navigation property authenticationContextClassReferences for identity
+Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
 ### [Remove-MgBetaIdentityConditionalAccessAuthenticationStrength](Remove-MgBetaIdentityConditionalAccessAuthenticationStrength.md)
 Delete navigation property authenticationStrengths for identity
@@ -1160,7 +1210,7 @@ Delete navigation property policies for identity
 Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
 
 ### [Remove-MgBetaIdentityConditionalAccessNamedLocation](Remove-MgBetaIdentityConditionalAccessNamedLocation.md)
-Delete an ipNamedLocation object.
+Delete a namedLocation object.
 
 ### [Remove-MgBetaIdentityConditionalAccessPolicy](Remove-MgBetaIdentityConditionalAccessPolicy.md)
 Delete a conditionalAccessPolicy object.
@@ -1278,6 +1328,9 @@ Delete a featureRolloutPolicy object.
 
 ### [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef.md)
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
+
+### [Remove-MgBetaPolicyFederatedTokenValidationPolicy](Remove-MgBetaPolicyFederatedTokenValidationPolicy.md)
+Delete navigation property federatedTokenValidationPolicy for policies
 
 ### [Remove-MgBetaPolicyHomeRealmDiscoveryPolicy](Remove-MgBetaPolicyHomeRealmDiscoveryPolicy.md)
 Delete a homeRealmDiscoveryPolicy object.
@@ -1477,6 +1530,10 @@ Update entity in dataPolicyOperations
 ### [Update-MgBetaIdentityApiConnector](Update-MgBetaIdentityApiConnector.md)
 Update the properties of an identityApiConnector object.
 
+### [Update-MgBetaIdentityAuthenticationEventFlow](Update-MgBetaIdentityAuthenticationEventFlow.md)
+Update the properties of an authenticationEventsFlow object.
+Only the externalUsersSelfServiceSignupEventsFlow object type is supported.
+
 ### [Update-MgBetaIdentityAuthenticationEventListener](Update-MgBetaIdentityAuthenticationEventListener.md)
 Update the properties of an authenticationEventListener object.
 You must specify the **@odata.type** property and the value of the authenticationEventListener object type to update.
@@ -1537,7 +1594,7 @@ Update the properties of an authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be updated as they are the only type of authenticationCombinationConfiguration that may be created.
 
 ### [Update-MgBetaIdentityConditionalAccessNamedLocation](Update-MgBetaIdentityConditionalAccessNamedLocation.md)
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 ### [Update-MgBetaIdentityConditionalAccessPolicy](Update-MgBetaIdentityConditionalAccessPolicy.md)
 Update the properties of a conditionalAccessPolicy object.
@@ -1653,6 +1710,10 @@ Update the user synchronization policy of a partner-specific configuration.
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.
 
+### [Update-MgBetaPolicyDeviceRegistrationPolicy](Update-MgBetaPolicyDeviceRegistrationPolicy.md)
+Update the properties of a deviceRegistrationPolicy object.
+Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
+
 ### [Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy](Update-MgBetaPolicyDirectoryRoleAccessReviewPolicy.md)
 Update the navigation property directoryRoleAccessReviewPolicy in policies
 
@@ -1661,6 +1722,9 @@ Update the settings of the tenant-wide externalIdentitiesPolicy object that cont
 
 ### [Update-MgBetaPolicyFeatureRolloutPolicy](Update-MgBetaPolicyFeatureRolloutPolicy.md)
 Update the properties of featureRolloutPolicy object.
+
+### [Update-MgBetaPolicyFederatedTokenValidationPolicy](Update-MgBetaPolicyFederatedTokenValidationPolicy.md)
+Update the navigation property federatedTokenValidationPolicy in policies
 
 ### [Update-MgBetaPolicyHomeRealmDiscoveryPolicy](Update-MgBetaPolicyHomeRealmDiscoveryPolicy.md)
 Update the properties of a homeRealmDiscoveryPolicy object.

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/test-mgbetasitecontenttypepublished
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function isPublished
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -30,11 +27,13 @@ Invoke function isPublished
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Test-MgBetaSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
 ```
+
+
 
 ## PARAMETERS
 
@@ -42,7 +41,7 @@ Test-MgBetaSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeI
 The unique identifier of contentType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Is
 Aliases:
 
@@ -58,7 +57,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 Parameter Sets: IsViaIdentity
 Aliases:
 
@@ -73,7 +72,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Is
 Aliases:
 
@@ -90,9 +89,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -155,4 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-v1.0)
+

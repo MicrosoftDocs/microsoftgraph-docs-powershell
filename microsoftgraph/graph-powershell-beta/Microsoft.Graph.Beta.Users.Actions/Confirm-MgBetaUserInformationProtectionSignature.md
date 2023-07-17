@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserinformationprotectionsignature
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action verifySignature
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgUserInformationProtectionSignature](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserInformationProtectionSignature?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### VerifyExpanded (Default)
 ```
 Confirm-MgBetaUserInformationProtectionSignature -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DigestInputFile <String>] [-SignatureInputFile <String>] [-SigningKeyId <String>] [-WhatIf] [-Confirm]
+ [-DigestInputFile <String>] [-SignatureInputFile <String>] [-SigningKeyId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -26,21 +23,21 @@ Confirm-MgBetaUserInformationProtectionSignature -UserId <String> [-AdditionalPr
 ```
 Confirm-MgBetaUserInformationProtectionSignature -UserId <String>
  -BodyParameter <IPaths8Fa3LmUsersUserIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### VerifyViaIdentityExpanded
-```
-Confirm-MgBetaUserInformationProtectionSignature -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-SignatureInputFile <String>]
- [-SigningKeyId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
 ```
 Confirm-MgBetaUserInformationProtectionSignature -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths8Fa3LmUsersUserIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### VerifyViaIdentityExpanded
+```
+Confirm-MgBetaUserInformationProtectionSignature -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-SignatureInputFile <String>]
+ [-SigningKeyId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,14 +45,14 @@ Invoke action verifySignature
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -68,7 +65,7 @@ Invoke action verifySignature
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -84,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8Fa3LmUsersUserIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8Fa3LmUsersUserIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Verify, VerifyViaIdentity
 Aliases:
 
@@ -99,7 +96,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -115,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: VerifyViaIdentityExpanded, VerifyViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: VerifyViaIdentity, VerifyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +127,7 @@ Accept wildcard characters: False
 Input File for Signature (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -145,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -160,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: VerifyExpanded, Verify
+Type: System.String
+Parameter Sets: Verify, VerifyExpanded
 Aliases:
 
 Required: True
@@ -175,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths8Fa3LmUsersUserIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -270,4 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgUserInformationProtectionSignature](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserInformationProtectionSignature?view=graph-powershell-v1.0)
+

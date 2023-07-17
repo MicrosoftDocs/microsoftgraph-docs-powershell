@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/add-mgbetaaccessreviewinstancedecision
 schema: 2.0.0
@@ -19,21 +19,18 @@ You should expect to see denied users, if any, being removed from the resource g
 A configured auto applying review, or selecting Apply doesn't have an effect on a group that originates in an on-premises directory or a dynamic group.
 If you want to change a group that originates on-premises, download the results and apply those changes to the representation of the group in that directory.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Apply (Default)
 ```
-Add-MgBetaAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Add-MgBetaAccessReviewInstanceDecision -AccessReviewId <String> -AccessReviewId1 <String> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
-Add-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Add-MgBetaAccessReviewInstanceDecision -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,14 +47,14 @@ If you want to change a group that originates on-premises, download the results 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -70,7 +67,7 @@ If you want to change a group that originates on-premises, download the results 
 The unique identifier of accessReview
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Apply
 Aliases:
 
@@ -85,7 +82,7 @@ Accept wildcard characters: False
 The unique identifier of accessReview
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Apply
 Aliases:
 
@@ -101,7 +98,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: ApplyViaIdentity
 Aliases:
 
@@ -116,7 +113,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -131,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -275,4 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Add-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
+

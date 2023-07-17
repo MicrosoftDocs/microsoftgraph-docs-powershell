@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementgrouppolicydefinition
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to groupPolicyDefinitions for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementGroupPolicyDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyDefinition?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -25,13 +22,13 @@ New-MgBetaDeviceManagementGroupPolicyDefinition [-AdditionalProperties <Hashtabl
  [-MinUserCspVersion <String>] [-NextVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>]
  [-PolicyType <GroupPolicyType>] [-Presentations <IMicrosoftGraphGroupPolicyPresentation[]>]
  [-PreviousVersionDefinition <IMicrosoftGraphGroupPolicyDefinition>] [-SupportedOn <String>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementGroupPolicyDefinition -BodyParameter <IMicrosoftGraphGroupPolicyDefinition> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementGroupPolicyDefinition -BodyParameter <IMicrosoftGraphGroupPolicyDefinition>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,14 +36,14 @@ Create new navigation property to groupPolicyDefinitions for deviceManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -59,7 +56,7 @@ Create new navigation property to groupPolicyDefinitions for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,7 +72,7 @@ The entity describes all of the information about a single group policy.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -91,7 +88,7 @@ The category entity stores the category of a group policy definition
 To construct, see NOTES section for CATEGORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyCategory
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +103,7 @@ Accept wildcard characters: False
 The localized full category path for the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -121,7 +118,7 @@ Accept wildcard characters: False
 Group Policy Definition Class Type.
 
 ```yaml
-Type: GroupPolicyDefinitionClassType
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicyDefinitionClassType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +136,7 @@ The group policy definition file also contains the languages supported as determ
 To construct, see NOTES section for DEFINITIONFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinitionFile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinitionFile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -154,7 +151,7 @@ Accept wildcard characters: False
 The localized policy name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +167,7 @@ The localized explanation or help text associated with the policy.
 The default value is empty.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -185,7 +182,7 @@ Accept wildcard characters: False
 The category id of the parent category
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -200,7 +197,7 @@ Accept wildcard characters: False
 Signifies whether or not there are related definitions to this definition
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -216,7 +213,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -231,7 +228,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -246,7 +243,7 @@ Accept wildcard characters: False
 Minimum required CSP version for device configuration in this definition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -261,7 +258,7 @@ Accept wildcard characters: False
 Minimum required CSP version for user configuration in this definition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -277,7 +274,7 @@ The entity describes all of the information about a single group policy.
 To construct, see NOTES section for NEXTVERSIONDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -292,7 +289,7 @@ Accept wildcard characters: False
 Type of Group Policy File or Definition.
 
 ```yaml
-Type: GroupPolicyType
+Type: Microsoft.Graph.Beta.PowerShell.Support.GroupPolicyType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -308,7 +305,7 @@ The group policy presentations associated with the definition.
 To construct, see NOTES section for PRESENTATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyPresentation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -324,7 +321,7 @@ The entity describes all of the information about a single group policy.
 To construct, see NOTES section for PREVIOUSVERSIONDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -339,7 +336,7 @@ Accept wildcard characters: False
 Localized string used to specify what operating system or application version is affected by the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -354,7 +351,7 @@ Accept wildcard characters: False
 Setting definition version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -369,7 +366,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -385,7 +382,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -402,9 +399,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
+
 ## NOTES
 
 ALIASES
@@ -695,7 +694,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Setting definition version
 
 ## RELATED LINKS
-[New-MgDeviceManagementGroupPolicyDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyDefinition?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgDeviceManagementGroupPolicyDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyDefinition?view=graph-powershell-v1.0)

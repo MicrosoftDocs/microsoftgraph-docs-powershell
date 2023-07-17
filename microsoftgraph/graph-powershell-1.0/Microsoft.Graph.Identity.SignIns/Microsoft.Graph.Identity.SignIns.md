@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: eb3072d1-c6a4-42e9-b758-0b895f2efb42
+Module Guid: 5c3b2b34-7a61-44d8-b74f-900e80500740
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -90,15 +90,13 @@ The user attribute that you want to add to your user flow.
 the entry point for the Conditional Access (CA) object model.
 
 ### [Get-MgIdentityConditionalAccessAuthenticationContextClassReference](Get-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
-Read-only.
-Nullable.
-Returns a collection of the specified authentication context class references.
+Retrieve the properties and relationships of a authenticationContextClassReference object.
 
 ### [Get-MgIdentityConditionalAccessAuthenticationContextClassReferenceCount](Get-MgIdentityConditionalAccessAuthenticationContextClassReferenceCount.md)
 Get the number of the resource
 
 ### [Get-MgIdentityConditionalAccessNamedLocation](Get-MgIdentityConditionalAccessNamedLocation.md)
-Retrieve the properties and relationships of a countryNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 ### [Get-MgIdentityConditionalAccessNamedLocationCount](Get-MgIdentityConditionalAccessNamedLocationCount.md)
 Get the number of the resource
@@ -190,6 +188,12 @@ Get the number of the resource
 ### [Get-MgPolicyActivityBasedTimeoutPolicy](Get-MgPolicyActivityBasedTimeoutPolicy.md)
 Get the properties of an activityBasedTimeoutPolicy object.
 
+### [Get-MgPolicyActivityBasedTimeoutPolicyApplyTo](Get-MgPolicyActivityBasedTimeoutPolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgPolicyActivityBasedTimeoutPolicyApplyToCount](Get-MgPolicyActivityBasedTimeoutPolicyApplyToCount.md)
+Get the number of the resource
+
 ### [Get-MgPolicyActivityBasedTimeoutPolicyCount](Get-MgPolicyActivityBasedTimeoutPolicyCount.md)
 Get the number of the resource
 
@@ -234,10 +238,16 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgPolicyAuthorizationPolicy](Get-MgPolicyAuthorizationPolicy.md)
-The policy that controls Azure AD authorization settings.
+Retrieve the properties of an authorizationPolicy object.
 
 ### [Get-MgPolicyClaimMappingPolicy](Get-MgPolicyClaimMappingPolicy.md)
 Retrieve the properties and relationships of a claimsMappingPolicy object.
+
+### [Get-MgPolicyClaimMappingPolicyApplyTo](Get-MgPolicyClaimMappingPolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgPolicyClaimMappingPolicyApplyToCount](Get-MgPolicyClaimMappingPolicyApplyToCount.md)
+Get the number of the resource
 
 ### [Get-MgPolicyClaimMappingPolicyCount](Get-MgPolicyClaimMappingPolicyCount.md)
 Get the number of the resource
@@ -257,6 +267,9 @@ Read the properties and relationships of a partner-specific configuration.
 
 ### [Get-MgPolicyCrossTenantAccessPolicyPartnerCount](Get-MgPolicyCrossTenantAccessPolicyPartnerCount.md)
 Get the number of the resource
+
+### [Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+Get the user synchronization policy of a partner-specific configuration.
 
 ### [Get-MgPolicyDefaultAppManagementPolicy](Get-MgPolicyDefaultAppManagementPolicy.md)
 Read the properties of a tenantAppManagementPolicy object.
@@ -287,6 +300,12 @@ Get the number of the resource
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicy](Get-MgPolicyHomeRealmDiscoveryPolicy.md)
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
+
+### [Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo](Get-MgPolicyHomeRealmDiscoveryPolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgPolicyHomeRealmDiscoveryPolicyApplyToCount](Get-MgPolicyHomeRealmDiscoveryPolicyApplyToCount.md)
+Get the number of the resource
 
 ### [Get-MgPolicyHomeRealmDiscoveryPolicyCount](Get-MgPolicyHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
@@ -348,11 +367,23 @@ Get the number of the resource
 ### [Get-MgPolicyTokenIssuancePolicy](Get-MgPolicyTokenIssuancePolicy.md)
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
+### [Get-MgPolicyTokenIssuancePolicyApplyTo](Get-MgPolicyTokenIssuancePolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgPolicyTokenIssuancePolicyApplyToCount](Get-MgPolicyTokenIssuancePolicyApplyToCount.md)
+Get the number of the resource
+
 ### [Get-MgPolicyTokenIssuancePolicyCount](Get-MgPolicyTokenIssuancePolicyCount.md)
 Get the number of the resource
 
 ### [Get-MgPolicyTokenLifetimePolicy](Get-MgPolicyTokenLifetimePolicy.md)
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
+
+### [Get-MgPolicyTokenLifetimePolicyApplyTo](Get-MgPolicyTokenLifetimePolicyApplyTo.md)
+Get appliesTo from policies
+
+### [Get-MgPolicyTokenLifetimePolicyApplyToCount](Get-MgPolicyTokenLifetimePolicyApplyToCount.md)
+Get the number of the resource
 
 ### [Get-MgPolicyTokenLifetimePolicyCount](Get-MgPolicyTokenLifetimePolicyCount.md)
 Get the number of the resource
@@ -405,8 +436,8 @@ Retrieve a user's single FIDO2 Security Key Authentication Method object.
 ### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
-Get the number of the resource
+### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
+Retrieve the properties and relationships of an authenticationMethod object.
 
 ### [Get-MgUserAuthenticationMethodCount](Get-MgUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -672,6 +703,10 @@ Delete an identityApiConnector object.
 ### [Remove-MgIdentityB2XUserFlow](Remove-MgIdentityB2XUserFlow.md)
 Delete a b2xIdentityUserFlow object.
 
+### [Remove-MgIdentityB2XUserFlowIdentityProvider](Remove-MgIdentityB2XUserFlowIdentityProvider.md)
+Delete an identity provider from a b2xIdentityUserFlow object.
+For self-service sign-up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
+
 ### [Remove-MgIdentityB2XUserFlowIdentityProviderByRef](Remove-MgIdentityB2XUserFlowIdentityProviderByRef.md)
 Delete ref of navigation property userFlowIdentityProviders for identity
 
@@ -691,7 +726,7 @@ Delete an identityUserFlowAttributeAssignment object.
 Delete navigation property conditionalAccess for identity
 
 ### [Remove-MgIdentityConditionalAccessAuthenticationContextClassReference](Remove-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
-Delete navigation property authenticationContextClassReferences for identity
+Delete an authenticationContextClassReference object that's not published or used by a conditional access policy.
 
 ### [Remove-MgIdentityConditionalAccessNamedLocation](Remove-MgIdentityConditionalAccessNamedLocation.md)
 Delete an ipNamedLocation object.
@@ -764,6 +799,9 @@ Delete navigation property default for policies
 ### [Remove-MgPolicyCrossTenantAccessPolicyPartner](Remove-MgPolicyCrossTenantAccessPolicyPartner.md)
 Delete a partner-specific configuration in a cross-tenant access policy.
 If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
+
+### [Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+Delete the user synchronization policy for a partner-specific configuration.
 
 ### [Remove-MgPolicyDefaultAppManagementPolicy](Remove-MgPolicyDefaultAppManagementPolicy.md)
 Delete navigation property defaultAppManagementPolicy for policies
@@ -903,10 +941,11 @@ Update the properties of a identityUserFlowAttributeAssignment object.
 Update the navigation property conditionalAccess in identity
 
 ### [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](Update-MgIdentityConditionalAccessAuthenticationContextClassReference.md)
-Update the navigation property authenticationContextClassReferences in identity
+Create an authenticationContextClassReference object, if the ID has not been used.
+If ID has been used, this call updates the authenticationContextClassReference object.
 
 ### [Update-MgIdentityConditionalAccessNamedLocation](Update-MgIdentityConditionalAccessNamedLocation.md)
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 ### [Update-MgIdentityConditionalAccessPolicy](Update-MgIdentityConditionalAccessPolicy.md)
 Update the properties of a conditionalAccessPolicy object.
@@ -985,6 +1024,9 @@ Update the default configuration of a cross-tenant access policy.
 
 ### [Update-MgPolicyCrossTenantAccessPolicyPartner](Update-MgPolicyCrossTenantAccessPolicyPartner.md)
 Update the properties of a partner-specific configuration.
+
+### [Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
+Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgPolicyDefaultAppManagementPolicy](Update-MgPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.

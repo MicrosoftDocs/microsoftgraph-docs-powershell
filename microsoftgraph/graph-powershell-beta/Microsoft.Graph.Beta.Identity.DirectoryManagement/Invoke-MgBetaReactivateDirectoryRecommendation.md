@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/invoke-mgbetareactivatedirectoryrecommendation
 schema: 2.0.0
@@ -8,38 +8,39 @@ schema: 2.0.0
 # Invoke-MgBetaReactivateDirectoryRecommendation
 
 ## SYNOPSIS
-Invoke action reactivate
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReactivateDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgReactivateDirectoryRecommendation?view=graph-powershell-v1.0)
+Reactivate a completed, dismissed, or postponed recommendation object.
+This action updates the **status** of the recommendation to `active`.
+This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
 
 ## SYNTAX
 
 ### Reactivate (Default)
 ```
-Invoke-MgBetaReactivateDirectoryRecommendation -RecommendationId <String> [-WhatIf] [-Confirm]
+Invoke-MgBetaReactivateDirectoryRecommendation -RecommendationId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### ReactivateViaIdentity
 ```
-Invoke-MgBetaReactivateDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReactivateDirectoryRecommendation -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action reactivate
+Reactivate a completed, dismissed, or postponed recommendation object.
+This action updates the **status** of the recommendation to `active`.
+This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +54,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: ReactivateViaIdentity
 Aliases:
 
@@ -68,7 +69,7 @@ Accept wildcard characters: False
 The unique identifier of recommendation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reactivate
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRecommendation
+
 ## NOTES
 
 ALIASES
@@ -132,7 +135,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
   - `[AllowedValueId <String>]`: The unique identifier of allowedValue
   - `[AttributeSetId <String>]`: The unique identifier of attributeSet
+  - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
+  - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
   - `[CommandId <String>]`: The unique identifier of command
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -149,6 +155,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -160,9 +168,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgReactivateDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgReactivateDirectoryRecommendation?view=graph-powershell-v1.0)
+

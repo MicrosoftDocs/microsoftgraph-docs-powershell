@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/get-mgbetareportsecurity
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Provides the ability to launch a realistic simulated phishing attack that organizations can learn from.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurity?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,14 +21,14 @@ Provides the ability to launch a realistic simulated phishing attack that organi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -44,7 +41,7 @@ Provides the ability to launch a realistic simulated phishing attack that organi
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -59,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -78,9 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgReportSecurity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurity?view=graph-powershell-v1.0)
+

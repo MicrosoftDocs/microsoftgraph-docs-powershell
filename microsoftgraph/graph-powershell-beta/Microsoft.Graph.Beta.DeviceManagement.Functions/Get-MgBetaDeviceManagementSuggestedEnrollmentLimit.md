@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementsuggestedenrollmentlimit
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getSuggestedEnrollmentLimit
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementSuggestedEnrollmentLimit](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementSuggestedEnrollmentLimit?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -31,14 +28,14 @@ Invoke function getSuggestedEnrollmentLimit
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -51,7 +48,7 @@ Invoke function getSuggestedEnrollmentLimit
 Usage: enrollmentType='{enrollmentType}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -67,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -84,9 +81,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -121,10 +120,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
   - `[ServicePlanId <String>]`: Usage: servicePlanId='{servicePlanId}'
   - `[SubscriptionId <String>]`: Usage: subscriptionId='{subscriptionId}'
-  - `[SummarizeBy <String>]`: Usage: summarizeBy='{summarizeBy}'
+  - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
   - `[TemplateId <String>]`: Usage: templateId='{templateId}'
   - `[Upn <String>]`: Usage: upn='{upn}'
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Get-MgDeviceManagementSuggestedEnrollmentLimit](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementSuggestedEnrollmentLimit?view=graph-powershell-v1.0)
+

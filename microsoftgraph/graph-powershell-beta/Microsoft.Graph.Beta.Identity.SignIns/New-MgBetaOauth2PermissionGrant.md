@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaoauth2permissiongrant
 schema: 2.0.0
@@ -11,21 +11,18 @@ schema: 2.0.0
 Create a delegated permission grant, represented by an oAuth2PermissionGrant object.
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaOauth2PermissionGrant [-AdditionalProperties <Hashtable>] [-ClientId <String>]
- [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>] [-ResourceId <String>]
- [-Scope <String>] [-StartTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ConsentType <String>] [-ExpiryTime <DateTime>] [-Id <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-Scope <String>] [-StartTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-WhatIf] [-Confirm]
+New-MgBetaOauth2PermissionGrant -BodyParameter <IMicrosoftGraphOAuth2PermissionGrant> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,19 +32,19 @@ A delegated permission grant authorizes a client service principal (representing
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	ClientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5"
-	ConsentType = "AllPrincipals"
-	ResourceId = "943603e4-e787-4fe9-93d1-e30f749aae39"
-	Scope = "DelegatedPermissionGrant.ReadWrite.All"
-	StartTime = [System.DateTime]::Parse("2022-03-17T00:00:00Z")
-	ExpiryTime = [System.DateTime]::Parse("2023-03-17T00:00:00Z")
-}
-New-MgBetaOauth2PermissionGrant -BodyParameter $params
 ```
+
+$params = @{
+	clientId = "ef969797-201d-4f6b-960c-e9ed5f31dab5"
+	consentType = "AllPrincipals"
+	resourceId = "943603e4-e787-4fe9-93d1-e30f749aae39"
+	scope = "DelegatedPermissionGrant.ReadWrite.All"
+}
+
+New-MgBetaOauth2PermissionGrant -BodyParameter $params
 
 ## PARAMETERS
 
@@ -55,7 +52,7 @@ New-MgBetaOauth2PermissionGrant -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +68,7 @@ oAuth2PermissionGrant
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
 Parameter Sets: Create
 Aliases:
 
@@ -88,7 +85,7 @@ Required.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,7 +106,7 @@ Required.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -125,7 +122,7 @@ Currently, the end time value is ignored, but a value is required when creating 
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +138,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +156,7 @@ Required when consentType is Principal.
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +173,7 @@ This identifies the API which the client is authorized to attempt to call on beh
 Supports $filter (eq only).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +191,7 @@ Each claim value should match the value field of one of the delegated permission
 Must not exceed 3850 characters in length.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +207,7 @@ Currently, the start time value is ignored, but a value is required when creatin
 Required.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +222,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -241,7 +238,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -258,9 +255,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant
+
 ## NOTES
 
 ALIASES
@@ -282,4 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
 
 ## RELATED LINKS
-[New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
+

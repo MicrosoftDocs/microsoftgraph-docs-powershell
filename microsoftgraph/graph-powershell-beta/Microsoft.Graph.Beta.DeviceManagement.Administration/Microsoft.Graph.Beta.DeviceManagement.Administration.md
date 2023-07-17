@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
-Module Guid: 0c1dfb5a-0fc7-4f7f-8981-77afcc84f932
+Module Guid: 1e285b75-daea-4082-a463-d9a1280a8f87
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration
 Help Version: 1.0.0.0
 Locale: en-US
@@ -228,6 +228,12 @@ The available group policy uploaded definition files for this account.
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileCount](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinition.md)
+The group policy definitions associated with the file.
+
+### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinitionCount](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileDefinitionCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](Get-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation.md)
 The list of operations on the uploaded ADMX file.
 
@@ -287,6 +293,9 @@ The Role Assignments.
 
 ### [Get-MgBetaDeviceManagementRoleAssignmentCount](Get-MgBetaDeviceManagementRoleAssignmentCount.md)
 Get the number of the resource
+
+### [Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition](Get-MgBetaDeviceManagementRoleAssignmentRoleDefinition.md)
+Role definition this assignment is part of.
 
 ### [Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag](Get-MgBetaDeviceManagementRoleAssignmentRoleScopeTag.md)
 The set of Role Scope Tags defined on the Role Assignment.
@@ -372,6 +381,12 @@ Read the properties and relationships of a cloudPcAuditEvent object.
 ### [Get-MgBetaDeviceManagementVirtualEndpointAuditEventCount](Get-MgBetaDeviceManagementVirtualEndpointAuditEventCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceManagementVirtualEndpointBulkAction](Get-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
+Get bulkActions from deviceManagement
+
+### [Get-MgBetaDeviceManagementVirtualEndpointBulkActionCount](Get-MgBetaDeviceManagementVirtualEndpointBulkActionCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointCloudPc](Get-MgBetaDeviceManagementVirtualEndpointCloudPc.md)
 Read the properties and relationships of a specific cloudPC object.
 
@@ -443,7 +458,10 @@ Get the number of the resource
 Cloud PC related reports.
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportExportJob](Get-MgBetaDeviceManagementVirtualEndpointReportExportJob.md)
-The export jobs created for downloading reports.
+Read the properties and relationships of a cloudPcExportJob object.
+You can download a report by first creating a new cloudPcExportJob resource to initiate downloading.
+Use this GET operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
+When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportExportJobCount](Get-MgBetaDeviceManagementVirtualEndpointReportExportJobCount.md)
 Get the number of the resource
@@ -609,6 +627,9 @@ Create new navigation property to groupAssignments for deviceManagement
 ### [New-MgBetaDeviceManagementUserPfxCertificate](New-MgBetaDeviceManagementUserPfxCertificate.md)
 Create new navigation property to userPfxCertificates for deviceManagement
 
+### [New-MgBetaDeviceManagementVirtualEndpointBulkAction](New-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
+Create new navigation property to bulkActions for deviceManagement
+
 ### [New-MgBetaDeviceManagementVirtualEndpointDeviceImage](New-MgBetaDeviceManagementVirtualEndpointDeviceImage.md)
 Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
@@ -631,7 +652,7 @@ Create new navigation property to assignments for deviceManagement
 ### [New-MgBetaDeviceManagementVirtualEndpointReportExportJob](New-MgBetaDeviceManagementVirtualEndpointReportExportJob.md)
 Create a new cloudPcExportJob resource to initiate downloading the entire or specified portion of a report.
 Use the GET cloudPcExportJob operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
-When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
+When the property result is `completed`, the report has finished downloading to the location specified by the **exportUrl** property.
 
 ### [New-MgBetaDeviceManagementVirtualEndpointServicePlan](New-MgBetaDeviceManagementVirtualEndpointServicePlan.md)
 Create new navigation property to servicePlans for deviceManagement
@@ -792,6 +813,9 @@ Delete navigation property groupAssignments for deviceManagement
 ### [Remove-MgBetaDeviceManagementUserPfxCertificate](Remove-MgBetaDeviceManagementUserPfxCertificate.md)
 Delete navigation property userPfxCertificates for deviceManagement
 
+### [Remove-MgBetaDeviceManagementVirtualEndpointBulkAction](Remove-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
+Delete navigation property bulkActions for deviceManagement
+
 ### [Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](Remove-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping.md)
 Delete navigation property crossCloudGovernmentOrganizationMapping for deviceManagement
 
@@ -814,7 +838,7 @@ Delete navigation property organizationSettings for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy.md)
 Delete a cloudPcProvisioningPolicy object.
-You can't delete a policy that's in use.
+You can’t delete a policy that’s in use.
 
 ### [Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment](Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyAssignment.md)
 Delete navigation property assignments for deviceManagement
@@ -986,6 +1010,9 @@ Update the navigation property groupAssignments in deviceManagement
 
 ### [Update-MgBetaDeviceManagementUserPfxCertificate](Update-MgBetaDeviceManagementUserPfxCertificate.md)
 Update the navigation property userPfxCertificates in deviceManagement
+
+### [Update-MgBetaDeviceManagementVirtualEndpointBulkAction](Update-MgBetaDeviceManagementVirtualEndpointBulkAction.md)
+Update the navigation property bulkActions in deviceManagement
 
 ### [Update-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](Update-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping.md)
 Update the navigation property crossCloudGovernmentOrganizationMapping in deviceManagement

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetausageidentityconditionalaccessauthenticationstrengthpolicy
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function usage
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -27,16 +24,16 @@ Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy
  -AuthenticationStrengthPolicyId <String> [<CommonParameters>]
 ```
 
-### UsageViaIdentity1
-```
-Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- [<CommonParameters>]
-```
-
 ### UsageViaIdentity
 ```
-Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdentity>
- [<CommonParameters>]
+Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy
+ -InputObject <IIdentitySignInsIdentity> [<CommonParameters>]
+```
+
+### UsageViaIdentity1
+```
+Invoke-MgBetaUsageIdentityConditionalAccessAuthenticationStrengthPolicy
+ -InputObject <IIdentitySignInsIdentity> [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +41,14 @@ Invoke function usage
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -64,7 +61,7 @@ Invoke function usage
 The unique identifier of authenticationStrengthPolicy
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Usage, Usage1
 Aliases:
 
@@ -80,8 +77,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UsageViaIdentity1, UsageViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UsageViaIdentity, UsageViaIdentity1
 Aliases:
 
 Required: True
@@ -97,9 +94,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthUsage
+
 ## NOTES
 
 ALIASES
@@ -115,6 +114,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AuthenticationCombinationConfigurationId <String>]`: The unique identifier of authenticationCombinationConfiguration
   - `[AuthenticationContextClassReferenceId <String>]`: The unique identifier of authenticationContextClassReference
   - `[AuthenticationEventListenerId <String>]`: The unique identifier of authenticationEventListener
+  - `[AuthenticationEventsFlowId <String>]`: The unique identifier of authenticationEventsFlow
   - `[AuthenticationMethodConfigurationId <String>]`: The unique identifier of authenticationMethodConfiguration
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[AuthenticationMethodModeDetailId <String>]`: The unique identifier of authenticationMethodModeDetail
@@ -185,4 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUsageIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/move-mgbetadevicemanagementmanageddevicetoou
 schema: 2.0.0
@@ -10,22 +10,19 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action moveDevicesToOU
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgDeviceManagementManagedDeviceToOu](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Move-MgDeviceManagementManagedDeviceToOu?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### MoveExpanded (Default)
 ```
 Move-MgBetaDeviceManagementManagedDeviceToOu [-AdditionalProperties <Hashtable>] [-DeviceIds <String[]>]
- [-OrganizationalUnitPath <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OrganizationalUnitPath <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Move
 ```
 Move-MgBetaDeviceManagementManagedDeviceToOu
  -BodyParameter <IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,14 +30,14 @@ Invoke action moveDevicesToOU
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +50,7 @@ Invoke action moveDevicesToOU
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MoveExpanded
 Aliases:
 
@@ -69,7 +66,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Move
 Aliases:
 
@@ -84,7 +81,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: MoveExpanded
 Aliases:
 
@@ -99,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MoveExpanded
 Aliases:
 
@@ -114,7 +111,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -129,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Tm5YpiDevicemanagementManageddevicesMicrosoftGraphMovedevicestoouPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -180,4 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrganizationalUnitPath <String>]`: 
 
 ## RELATED LINKS
-[Move-MgDeviceManagementManagedDeviceToOu](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Move-MgDeviceManagementManagedDeviceToOu?view=graph-powershell-v1.0)
+

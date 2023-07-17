@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/new-mgbetatenantrelationshipmanagedtenantcredentialuserregistrationsummary
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to credentialUserRegistrationsSummaries for tenantRelationships
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,14 +18,14 @@ New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary [-Add
  [-Id <String>] [-LastRefreshedDateTime <DateTime>] [-MfaAndSsprCapableUserCount <Int32>]
  [-MfaConditionalAccessPolicyState <String>] [-MfaExcludedUserCount <Int32>] [-MfaRegisteredUserCount <Int32>]
  [-SecurityDefaultsEnabled] [-SsprEnabledUserCount <Int32>] [-SsprRegisteredUserCount <Int32>]
- [-TenantDisplayName <String>] [-TenantId <String>] [-TotalUserCount <Int32>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-TenantDisplayName <String>] [-TenantId <String>] [-TenantLicenseType <String>] [-TotalUserCount <Int32>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaTenantRelationshipManagedTenantCredentialUserRegistrationSummary
- -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,14 +34,14 @@ Create new navigation property to credentialUserRegistrationsSummaries for tenan
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -57,7 +54,7 @@ Create new navigation property to credentialUserRegistrationsSummaries for tenan
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -73,7 +70,7 @@ credentialUserRegistrationsSummary
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
 Parameter Sets: Create
 Aliases:
 
@@ -89,7 +86,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +103,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -123,7 +120,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +137,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -157,7 +154,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +171,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +188,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +205,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +222,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +239,7 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +256,22 @@ Required.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TenantLicenseType
+.
+
+```yaml
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -276,7 +288,7 @@ Optional.
 Read-only.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -291,7 +303,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -307,7 +319,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -324,9 +336,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsCredentialUserRegistrationsSummary
+
 ## NOTES
 
 ALIASES
@@ -349,7 +363,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SsprRegisteredUserCount <Int32?>]`: The number of users registered for self service password reset. Optional. Read-only.
   - `[TenantDisplayName <String>]`: The display name for the managed tenant. Required. Read-only.
   - `[TenantId <String>]`: The Azure Active Directory tenant identifier for the managed tenant. Required. Read-only.
+  - `[TenantLicenseType <String>]`: 
   - `[TotalUserCount <Int32?>]`: The total number of users in the given managed tenant. Optional. Read-only.
 
 ## RELATED LINKS
-[New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary](/powershell/module/Microsoft.Graph.ManagedTenants/New-MgTenantRelationshipManagedTenantCredentialUserRegistrationSummary?view=graph-powershell-v1.0)
+

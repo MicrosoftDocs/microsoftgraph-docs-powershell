@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
-Module Guid: a85fbc7b-65b7-43c8-ad5d-32af39feebc7
+Module Guid: 2fbd5cf1-0af9-412f-9541-4bf027ff0c1a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment
 Help Version: 1.0.0.0
 Locale: en-US
@@ -99,9 +99,6 @@ Collection of imported Windows autopilot devices.
 ### [Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount](Get-MgBetaDeviceManagementImportedWindowsAutopilotDeviceIdentityCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDeviceCount.md)
-Get the number of the resource
-
 ### [Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile](Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfile.md)
 Windows auto pilot deployment profiles
 
@@ -167,6 +164,9 @@ Get the number of the resource
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction.md)
 Read the properties and relationships of an unifiedRbacResourceAction object.
+
+### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionAuthenticationContext.md)
+Get authenticationContext from roleManagement
 
 ### [Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionCount.md)
 Get the number of the resource
@@ -234,6 +234,9 @@ Get the number of the resource
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction.md)
 Read the properties and relationships of an unifiedRbacResourceAction object.
+
+### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionAuthenticationContext.md)
+Get authenticationContext from roleManagement
 
 ### [Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionCount.md)
 Get the number of the resource

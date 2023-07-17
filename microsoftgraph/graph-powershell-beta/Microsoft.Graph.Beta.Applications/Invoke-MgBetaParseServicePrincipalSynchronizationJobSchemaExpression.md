@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/invoke-mgbetaparseserviceprincipalsynchronizationjobschemaexpression
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ParseExpanded (Default)
@@ -21,7 +18,7 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -ServicePrincipalId <String>
  -SynchronizationJobId <String> [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Parse
@@ -29,7 +26,14 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -ServicePri
 Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -ServicePrincipalId <String>
  -SynchronizationJobId <String>
  -BodyParameter <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ParseViaIdentity
+```
+Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
+ -BodyParameter <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ParseViaIdentityExpanded
@@ -37,14 +41,7 @@ Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -ServicePri
 Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Expression <String>]
  [-TargetAttributeDefinition <IMicrosoftGraphAttributeDefinition>]
- [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ParseViaIdentity
-```
-Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression -InputObject <IApplicationsIdentity>
- -BodyParameter <IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TestInputObject <IMicrosoftGraphExpressionInputObject>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,14 +50,14 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -73,7 +70,7 @@ For more information about expressions, see Writing Expressions for Attribute Ma
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -89,7 +86,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Parse, ParseViaIdentity
 Aliases:
 
@@ -104,7 +101,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -120,8 +117,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: ParseViaIdentityExpanded, ParseViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: ParseViaIdentity, ParseViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -135,8 +132,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -150,8 +147,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: String
-Parameter Sets: ParseExpanded, Parse
+Type: System.String
+Parameter Sets: Parse, ParseExpanded
 Aliases:
 
 Required: True
@@ -166,7 +163,7 @@ attributeDefinition
 To construct, see NOTES section for TARGETATTRIBUTEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeDefinition
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -182,7 +179,7 @@ expressionInputObject
 To construct, see NOTES section for TESTINPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExpressionInputObject
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExpressionInputObject
 Parameter Sets: ParseExpanded, ParseViaIdentityExpanded
 Aliases:
 
@@ -197,7 +194,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +210,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,10 +227,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsOmq7Q9ServiceprincipalsServiceprincipalIdSynchronizationJobsSynchronizationjobIdSchemaMicrosoftGraphParseexpressionPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParseExpressionResponse
+
 ## NOTES
 
 ALIASES
@@ -255,8 +255,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
     - `[DefaultValue <String>]`: 
     - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
-    - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
-      - `[Key <String>]`: Name of the metadata property.
+    - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
+      - `[Key <String>]`: attributeDefinitionMetadata
       - `[Value <String>]`: Value of the metadata property.
     - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
     - `[Mutability <String>]`: mutability
@@ -270,10 +270,12 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Definition <IMicrosoftGraphObjectDefinition>]`: objectDefinition
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
-      - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: 
-      - `[Name <String>]`: 
-      - `[SupportedApis <String[]>]`: 
+      - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: Defines attributes of the object.
+      - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: Metadata for the given object.
+        - `[Key <String>]`: objectDefinitionMetadata
+        - `[Value <String>]`: Value of the metadata property.
+      - `[Name <String>]`: Name of the object. Must be unique within a directory definition. Not nullable.
+      - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
     - `[Properties <IMicrosoftGraphStringKeyObjectValuePair[]>]`: Property values of the test object.
       - `[Key <String>]`: Key.
 
@@ -316,8 +318,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
   - `[DefaultValue <String>]`: 
   - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
-  - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
-    - `[Key <String>]`: Name of the metadata property.
+  - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
+    - `[Key <String>]`: attributeDefinitionMetadata
     - `[Value <String>]`: Value of the metadata property.
   - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
   - `[Mutability <String>]`: mutability
@@ -332,7 +334,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Definition <IMicrosoftGraphObjectDefinition>]`: objectDefinition
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
+    - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: Defines attributes of the object.
       - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
       - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
         - `[Key <String>]`: Key.
@@ -340,8 +342,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
       - `[DefaultValue <String>]`: 
       - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
-      - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
-        - `[Key <String>]`: Name of the metadata property.
+      - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
+        - `[Key <String>]`: attributeDefinitionMetadata
         - `[Value <String>]`: Value of the metadata property.
       - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
       - `[Mutability <String>]`: mutability
@@ -351,14 +353,13 @@ To create the parameters described below, construct a hash table containing the 
         - `[ReferencedProperty <String>]`: Currently not supported. Name of the property in the referenced object, the value for which is used as the reference.
       - `[Required <Boolean?>]`: true if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.
       - `[Type <String>]`: attributeType
-    - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: 
-    - `[Name <String>]`: 
-    - `[SupportedApis <String[]>]`: 
+    - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: Metadata for the given object.
+      - `[Key <String>]`: objectDefinitionMetadata
+      - `[Value <String>]`: Value of the metadata property.
+    - `[Name <String>]`: Name of the object. Must be unique within a directory definition. Not nullable.
+    - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
   - `[Properties <IMicrosoftGraphStringKeyObjectValuePair[]>]`: Property values of the test object.
     - `[Key <String>]`: Key.
 
 ## RELATED LINKS
-[Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-v1.0)

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.ManagedTenants-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.ManagedTenants
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.managedtenants/update-mgbetatenantrelationshipmanagedtenantmanagementtemplatestepversion
 schema: 2.0.0
@@ -10,27 +10,33 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property managementTemplateStepVersions in tenantRelationships
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTenantRelationshipManagedTenantManagementTemplateStepVersion](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateStepVersion?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
- -ManagementTemplateStepVersionId <String> [-AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]
- [-AdditionalProperties <Hashtable>] [-ContentMarkdown <String>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]
- [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
+ -ManagementTemplateStepVersionId <String>
+ [-AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>] [-AdditionalProperties <Hashtable>]
+ [-ContentMarkdown <String>] [-CreatedByUserId <String>] [-CreatedDateTime <DateTime>]
+ [-Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>] [-Id <String>]
+ [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
  [-TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>] [-Version <Int32>]
- [-VersionInformation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VersionInformation <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
  -ManagementTemplateStepVersionId <String>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
+ -InputObject <IManagedTenantsIdentity>
+ -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,18 +45,11 @@ Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
 Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
  -InputObject <IManagedTenantsIdentity> [-AcceptedFor <IMicrosoftGraphManagedTenantsManagementTemplateStep>]
  [-AdditionalProperties <Hashtable>] [-ContentMarkdown <String>] [-CreatedByUserId <String>]
- [-CreatedDateTime <DateTime>] [-Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>]
- [-Id <String>] [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
+ [-CreatedDateTime <DateTime>]
+ [-Deployments <IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]>] [-Id <String>]
+ [-LastActionByUserId <String>] [-LastActionDateTime <DateTime>] [-Name <String>]
  [-TemplateStep <IMicrosoftGraphManagedTenantsManagementTemplateStep>] [-Version <Int32>]
- [-VersionInformation <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTenantRelationshipManagedTenantManagementTemplateStepVersion
- -InputObject <IManagedTenantsIdentity>
- -BodyParameter <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-VersionInformation <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,14 +57,14 @@ Update the navigation property managementTemplateStepVersions in tenantRelations
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -79,7 +78,7 @@ managementTemplateStep
 To construct, see NOTES section for ACCEPTEDFOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStep
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -94,7 +93,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +109,7 @@ managementTemplateStepVersion
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -125,7 +124,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +139,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +154,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +170,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DEPLOYMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepDeployment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +186,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,8 +202,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IManagedTenantsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -218,7 +217,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +232,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,8 +247,8 @@ Accept wildcard characters: False
 The unique identifier of managementTemplateStepVersion
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -263,7 +262,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -279,7 +278,7 @@ managementTemplateStep
 To construct, see NOTES section for TEMPLATESTEP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedTenantsManagementTemplateStep
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStep
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -294,7 +293,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -309,7 +308,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +323,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -340,7 +339,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -357,10 +356,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IManagedTenantsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsManagementTemplateStepVersion
+
 ## NOTES
 
 ALIASES
@@ -755,7 +757,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Versions <IMicrosoftGraphManagedTenantsManagementTemplateStepVersion[]>]`: 
 
 ## RELATED LINKS
-[Update-MgTenantRelationshipManagedTenantManagementTemplateStepVersion](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateStepVersion?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgTenantRelationshipManagedTenantManagementTemplateStepVersion](/powershell/module/Microsoft.Graph.ManagedTenants/Update-MgTenantRelationshipManagedTenantManagementTemplateStepVersion?view=graph-powershell-v1.0)

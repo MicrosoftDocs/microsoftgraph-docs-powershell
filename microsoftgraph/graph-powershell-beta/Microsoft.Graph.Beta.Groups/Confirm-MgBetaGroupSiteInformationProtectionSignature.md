@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupsiteinformationprotectionsignature
 schema: 2.0.0
@@ -10,37 +10,34 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action verifySignature
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupSiteInformationProtectionSignature](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupSiteInformationProtectionSignature?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### VerifyExpanded (Default)
 ```
 Confirm-MgBetaGroupSiteInformationProtectionSignature -GroupId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-SignatureInputFile <String>]
- [-SigningKeyId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SigningKeyId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Verify
 ```
 Confirm-MgBetaGroupSiteInformationProtectionSignature -GroupId <String> -SiteId <String>
  -BodyParameter <IPaths1Gvcs06GroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### VerifyViaIdentityExpanded
-```
-Confirm-MgBetaGroupSiteInformationProtectionSignature -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-SignatureInputFile <String>]
- [-SigningKeyId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### VerifyViaIdentity
 ```
 Confirm-MgBetaGroupSiteInformationProtectionSignature -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Gvcs06GroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### VerifyViaIdentityExpanded
+```
+Confirm-MgBetaGroupSiteInformationProtectionSignature -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-SignatureInputFile <String>]
+ [-SigningKeyId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,15 +45,19 @@ Invoke action verifySignature
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -64,7 +65,7 @@ Invoke action verifySignature
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -80,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Gvcs06GroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gvcs06GroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Verify, VerifyViaIdentity
 Aliases:
 
@@ -95,7 +96,7 @@ Accept wildcard characters: False
 Input File for Digest (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -110,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: VerifyExpanded, Verify
+Type: System.String
+Parameter Sets: Verify, VerifyExpanded
 Aliases:
 
 Required: True
@@ -126,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: VerifyViaIdentityExpanded, VerifyViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: VerifyViaIdentity, VerifyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -141,7 +142,7 @@ Accept wildcard characters: False
 Input File for Signature (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -156,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: VerifyExpanded, VerifyViaIdentityExpanded
 Aliases:
 
@@ -171,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: VerifyExpanded, Verify
+Type: System.String
+Parameter Sets: Verify, VerifyExpanded
 Aliases:
 
 Required: True
@@ -186,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -202,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -219,10 +220,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gvcs06GroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphVerifysignaturePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -285,4 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Confirm-MgGroupSiteInformationProtectionSignature](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupSiteInformationProtectionSignature?view=graph-powershell-v1.0)
+

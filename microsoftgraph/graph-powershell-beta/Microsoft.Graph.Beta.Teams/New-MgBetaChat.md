@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetachat
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new chat object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -26,12 +23,12 @@ New-MgBetaChat [-AdditionalProperties <Hashtable>] [-ChatType <String>] [-Create
  [-PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]
  [-PinnedMessages <IMicrosoftGraphPinnedChatMessageInfo[]>] [-Tabs <IMicrosoftGraphTeamsTab[]>]
  [-TenantId <String>] [-Topic <String>] [-Viewpoint <IMicrosoftGraphChatViewpoint>] [-WebUrl <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaChat -BodyParameter <IMicrosoftGraphChat> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,210 +36,157 @@ Create a new chat object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	ChatType = "group"
-	Topic = "Group chat title"
-	Members = @(
+	chatType = "oneOnOne"
+	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
 		}
 	)
 }
-New-MgBetaChat -BodyParameter $params
-```
 
-### EXAMPLE 2
+New-MgBetaChat -BodyParameter $params
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	ChatType = "group"
-	Topic = "Group chat title"
-	Members = @(
+	chatType = "group"
+	topic = "Group chat title"
+	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
+				"owner"
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('3626a173-f2bc-4883-bcf7-01514c3bfb82')"
+		}
+	)
+}
+
+New-MgBetaChat -BodyParameter $params
+
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+```
+
+$params = @{
+	chatType = "oneOnOne"
+	members = @(
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+				"owner"
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+				"owner"
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('alex@contoso.com')"
+		}
+	)
+}
+
+New-MgBetaChat -BodyParameter $params
+
+### -------------------------- EXAMPLE 4 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+```
+
+$params = @{
+	chatType = "group"
+	topic = "Group chat title"
+	members = @(
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+				"owner"
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
+				"owner"
+			)
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
+		}
+		@{
+			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+			roles = @(
 				"guest"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
 		}
 	)
 }
-New-MgBetaChat -BodyParameter $params
-```
 
-### EXAMPLE 3
+New-MgBetaChat -BodyParameter $params
+
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-$params = @{
-	ChatType = "group"
-	Topic = "Group chat title"
-	Members = @(
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8c0a1a67-50ce-4114-bb6c-da9c5dbcf6ca')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('82fe7758-5bb3-4f0d-a43f-e555fd399c6f')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"guest"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g')"
-		}
-	)
-}
-New-MgBetaChat -BodyParameter $params
 ```
 
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
-	ChatType = "oneOnOne"
-	Members = @(
+	chatType = "oneOnOne"
+	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 		}
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
+			roles = @(
 				"owner"
 			)
-			"User@odata.bind" = "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
-			TenantId = "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
+			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
+			tenantId = "4dc1fe35-8ac6-4f0d-904a-7ebcd364bea1"
 		}
 	)
 }
-New-MgBetaChat -BodyParameter $params
-```
 
-### EXAMPLE 5
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-$params = @{
-	ChatType = "oneOnOne"
-	Members = @(
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
-		}
-	)
-}
 New-MgBetaChat -BodyParameter $params
-```
-
-### EXAMPLE 6
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-$params = @{
-	ChatType = "oneOnOne"
-	Members = @(
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('alex@contoso.com')"
-		}
-	)
-}
-New-MgBetaChat -BodyParameter $params
-```
-
-### EXAMPLE 7
-```powershell
-Import-Module Microsoft.Graph.Beta.Teams
-$params = @{
-	ChatType = "oneOnOne"
-	Members = @(
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
-		}
-		@{
-			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			Roles = @(
-				"owner"
-			)
-			"User@odata.bind" = "https://graph.microsoft.com/beta/users('82af01c5-f7cc-4a2e-a728-3a5df21afd9d')"
-		}
-	)
-	InstalledApps = @(
-		@{
-			"TeamsApp@odata.bind" = "https://graph.microsoft.com/beta/appCatalogs/teamsApps/05F59CEC-A742-4A50-A62E-202A57E478A4"
-		}
-	)
-}
-New-MgBetaChat -BodyParameter $params
-```
 
 ## PARAMETERS
 
@@ -250,7 +194,7 @@ New-MgBetaChat -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -266,7 +210,7 @@ chat
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChat
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
 Parameter Sets: Create
 Aliases:
 
@@ -281,7 +225,7 @@ Accept wildcard characters: False
 chatType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -297,7 +241,7 @@ Date and time at which the chat was created.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -313,7 +257,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -330,7 +274,7 @@ Nullable.
 To construct, see NOTES section for INSTALLEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAppInstallation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppInstallation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -346,7 +290,7 @@ chatMessageInfo
 To construct, see NOTES section for LASTMESSAGEPREVIEW properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -362,7 +306,7 @@ Date and time at which the chat was renamed or list of members were last changed
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -379,7 +323,7 @@ Nullable.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationMember[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationMember[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -396,7 +340,7 @@ Nullable.
 To construct, see NOTES section for MESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -412,7 +356,7 @@ teamworkOnlineMeetingInfo
 To construct, see NOTES section for ONLINEMEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkOnlineMeetingInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkOnlineMeetingInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -429,7 +373,7 @@ Nullable.
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsAsyncOperation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAsyncOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -445,7 +389,7 @@ A collection of permissions granted to apps for the chat.
 To construct, see NOTES section for PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermissionGrant[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -462,7 +406,7 @@ Nullable.
 To construct, see NOTES section for PINNEDMESSAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPinnedChatMessageInfo[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPinnedChatMessageInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -479,7 +423,7 @@ Nullable.
 To construct, see NOTES section for TABS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamsTab[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsTab[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -495,7 +439,7 @@ The identifier of the tenant in which the chat was created.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -511,7 +455,7 @@ Accept wildcard characters: False
 Only available for group chats.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -527,7 +471,7 @@ chatViewpoint
 To construct, see NOTES section for VIEWPOINT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatViewpoint
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatViewpoint
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -544,7 +488,7 @@ The URL should be treated as an opaque blob, and not parsed.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -559,7 +503,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -575,7 +519,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -592,9 +536,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChat
+
 ## NOTES
 
 ALIASES
@@ -679,7 +625,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Members <IMicrosoftGraphConversationMember[]>]`: A collection of all the members in the chat. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: The display name of the user.
-    - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
+    - `[Roles <String[]>]`: The roles for that user. This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property. An Out-of-tenant external member is assigned the owner role.
     - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
   - `[Messages <IMicrosoftGraphChatMessage[]>]`: A collection of all the messages in the chat. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -887,7 +833,7 @@ To create the parameters described below, construct a hash table containing the 
 `MEMBERS <IMicrosoftGraphConversationMember[]>`: A collection of all the members in the chat. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The display name of the user.
-  - `[Roles <String[]>]`: The roles for that user. This property only contains additional qualifiers when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is a guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property.
+  - `[Roles <String[]>]`: The roles for that user. This property contains additional qualifiers only when relevant - for example, if the member has owner privileges, the roles property contains owner as one of the values. Similarly, if the member is an in-tenant guest, the roles property contains guest as one of the values. A basic member should not have any values specified in the roles property. An Out-of-tenant external member is assigned the owner role.
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 `MESSAGES <IMicrosoftGraphChatMessage[]>`: A collection of all the messages in the chat. Nullable.
@@ -1169,7 +1115,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
-[New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgChat](/powershell/module/Microsoft.Graph.Teams/New-MgChat?view=graph-powershell-v1.0)

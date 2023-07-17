@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalindustrydata
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get industryData from external
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryData](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryData?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,15 +21,19 @@ Get industryData from external
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -40,7 +41,7 @@ Get industryData from external
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -55,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -74,9 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataRoot
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgExternalIndustryData](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryData?view=graph-powershell-v1.0)
+

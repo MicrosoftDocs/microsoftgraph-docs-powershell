@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
-Module Guid: 11302af6-9feb-4d1e-a6c5-4bc2062811fd
+Module Guid: 19ca8aaa-b1dc-44f0-b90c-8f4a932ad43a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -56,9 +56,6 @@ Invoke function getFileVaultKey
 ### [Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementComanagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
-### [Get-MgBetaDeviceManagementComanagedDeviceOemWarranty](Get-MgBetaDeviceManagementComanagedDeviceOemWarranty.md)
-Invoke function getOemWarranty
-
 ### [Get-MgBetaDeviceManagementComanagedDeviceSummary](Get-MgBetaDeviceManagementComanagedDeviceSummary.md)
 Invoke function getComanagedDevicesSummary
 
@@ -106,9 +103,6 @@ Invoke function getFileVaultKey
 
 ### [Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting](Get-MgBetaDeviceManagementManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
-
-### [Get-MgBetaDeviceManagementManagedDeviceOemWarranty](Get-MgBetaDeviceManagementManagedDeviceOemWarranty.md)
-Invoke function getOemWarranty
 
 ### [Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification](Get-MgBetaDeviceManagementMonitoringAlertRecordPortalNotification.md)
 Invoke function getPortalNotifications

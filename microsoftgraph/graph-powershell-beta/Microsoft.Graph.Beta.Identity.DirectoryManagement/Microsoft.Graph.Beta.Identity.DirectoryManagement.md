@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 056a6944-ed23-46db-98f2-8dc3f1d4f98a
+Module Guid: 87d212a0-6ce5-4a57-b167-a31e8bf8bbaa
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,11 +11,22 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.Identity.DirectoryManagement Cmdlets
+### [Add-MgBetaTenantRelationshipManagedTenantAlertUserInputLog](Add-MgBetaTenantRelationshipManagedTenantAlertUserInputLog.md)
+Invoke action addUserInputLog
+
+### [Add-MgBetaTenantRelationshipManagedTenantManagementAction](Add-MgBetaTenantRelationshipManagedTenantManagementAction.md)
+Applies a management action against a specific managed tenant.
+By performing this operation the appropriate configurations will be made and policies created.
+As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role.
+
 ### [Complete-MgBetaDirectoryImpactedResource](Complete-MgBetaDirectoryImpactedResource.md)
-Invoke action complete
+Complete an impactedResource object and update its **status** to `completedByUser`.
 
 ### [Complete-MgBetaDirectoryRecommendation](Complete-MgBetaDirectoryRecommendation.md)
-Invoke action complete
+Complete a recommendation object and update its **status** to `completedByUser`.
+
+### [Complete-MgBetaDirectoryRecommendationImpactedResource](Complete-MgBetaDirectoryRecommendationImpactedResource.md)
+Complete an impactedResource object and update its **status** to `completedByUser`.
 
 ### [Confirm-MgBetaAdministrativeUnitMemberGroup](Confirm-MgBetaAdministrativeUnitMemberGroup.md)
 Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
@@ -27,20 +38,32 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### [Confirm-MgBetaAdministrativeUnitMemberObject](Confirm-MgBetaAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaAdministrativeUnitMemberObject](Confirm-MgBetaAdministrativeUnitMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaContactMemberGroup](Confirm-MgBetaContactMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaContactMemberObject](Confirm-MgBetaContactMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaContactMemberObject](Confirm-MgBetaContactMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaContractMemberGroup](Confirm-MgBetaContractMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaContractMemberObject](Confirm-MgBetaContractMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaContractMemberObject](Confirm-MgBetaContractMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDeviceMemberGroup](Confirm-MgBetaDeviceMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDeviceMemberObject](Confirm-MgBetaDeviceMemberObject.md)
 Invoke action checkMemberObjects
@@ -55,20 +78,32 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryDeletedItemMemberGroup](Confirm-MgBetaDirectoryDeletedItemMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryDeletedItemMemberObject](Confirm-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryDeletedItemMemberObject](Confirm-MgBetaDirectoryDeletedItemMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryRoleMemberGroup](Confirm-MgBetaDirectoryRoleMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryRoleMemberObject](Confirm-MgBetaDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryRoleMemberObject](Confirm-MgBetaDirectoryRoleMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryRoleTemplateMemberGroup](Confirm-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryRoleTemplateMemberObject](Confirm-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
@@ -86,8 +121,12 @@ Invoke action checkMemberObjects
 ### [Confirm-MgBetaDomain](Confirm-MgBetaDomain.md)
 Validates the ownership of the domain.
 
-### [Confirm-MgBetaDomain](Confirm-MgBetaDomain.md)
-Validates the ownership of the domain.
+### [Confirm-MgBetaOrganizationMemberGroup](Confirm-MgBetaOrganizationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaOrganizationMemberObject](Confirm-MgBetaOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -114,24 +153,6 @@ The collection of open extensions defined for this administrative unit.
 Nullable.
 
 ### [Get-MgBetaAdministrativeUnitExtensionCount](Get-MgBetaAdministrativeUnitExtensionCount.md)
-Get the number of the resource
-
-### [Get-MgBetaAdministrativeUnitListMemberCountAsApplication](Get-MgBetaAdministrativeUnitListMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaAdministrativeUnitListMemberCountAsDevice](Get-MgBetaAdministrativeUnitListMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaAdministrativeUnitListMemberCountAsGroup](Get-MgBetaAdministrativeUnitListMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaAdministrativeUnitListMemberCountAsOrgContact](Get-MgBetaAdministrativeUnitListMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaAdministrativeUnitListMemberCountAsServicePrincipal](Get-MgBetaAdministrativeUnitListMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaAdministrativeUnitListMemberCountAsUser](Get-MgBetaAdministrativeUnitListMemberCountAsUser.md)
 Get the number of the resource
 
 ### [Get-MgBetaAdministrativeUnitMember](Get-MgBetaAdministrativeUnitMember.md)
@@ -161,6 +182,24 @@ Users and groups that are members of this administrative unit.
 Supports $expand.
 
 ### [Get-MgBetaAdministrativeUnitMemberCount](Get-MgBetaAdministrativeUnitMemberCount.md)
+Get the number of the resource
+
+### [Get-MgBetaAdministrativeUnitMemberCountAsApplication](Get-MgBetaAdministrativeUnitMemberCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgBetaAdministrativeUnitMemberCountAsDevice](Get-MgBetaAdministrativeUnitMemberCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaAdministrativeUnitMemberCountAsGroup](Get-MgBetaAdministrativeUnitMemberCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaAdministrativeUnitMemberCountAsOrgContact](Get-MgBetaAdministrativeUnitMemberCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaAdministrativeUnitMemberCountAsServicePrincipal](Get-MgBetaAdministrativeUnitMemberCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaAdministrativeUnitMemberCountAsUser](Get-MgBetaAdministrativeUnitMemberCountAsUser.md)
 Get the number of the resource
 
 ### [Get-MgBetaAdministrativeUnitMemberGroup](Get-MgBetaAdministrativeUnitMemberGroup.md)
@@ -208,29 +247,18 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 ### [Get-MgBetaContactDirectReportCount](Get-MgBetaContactDirectReportCount.md)
 Get the number of the resource
 
-### [Get-MgBetaContactListDirectReportCountAsOrgContact](Get-MgBetaContactListDirectReportCountAsOrgContact.md)
+### [Get-MgBetaContactDirectReportCountAsOrgContact](Get-MgBetaContactDirectReportCountAsOrgContact.md)
 Get the number of the resource
 
-### [Get-MgBetaContactListDirectReportCountAsUser](Get-MgBetaContactListDirectReportCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaContactListMemberOfCountAsAdministrativeUnit](Get-MgBetaContactListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaContactListMemberOfCountAsGroup](Get-MgBetaContactListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaContactListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaContactListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaContactListTransitiveMemberOfCountAsGroup](Get-MgBetaContactListTransitiveMemberOfCountAsGroup.md)
+### [Get-MgBetaContactDirectReportCountAsUser](Get-MgBetaContactDirectReportCountAsUser.md)
 Get the number of the resource
 
 ### [Get-MgBetaContactManager](Get-MgBetaContactManager.md)
 Get the contact's manager
 
-### [Get-MgBetaContactManager](Get-MgBetaContactManager.md)
-Get the contact's manager
+### [Get-MgBetaContactMemberGroup](Get-MgBetaContactMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContactMemberObject](Get-MgBetaContactMemberObject.md)
 Invoke action getMemberObjects
@@ -250,6 +278,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 ### [Get-MgBetaContactMemberOfCount](Get-MgBetaContactMemberOfCount.md)
 Get the number of the resource
 
+### [Get-MgBetaContactMemberOfCountAsAdministrativeUnit](Get-MgBetaContactMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaContactMemberOfCountAsGroup](Get-MgBetaContactMemberOfCountAsGroup.md)
+Get the number of the resource
+
 ### [Get-MgBetaContactTransitiveMemberOf](Get-MgBetaContactTransitiveMemberOf.md)
 Get transitiveMemberOf from contacts
 
@@ -260,6 +294,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaContactTransitiveMemberOfCount](Get-MgBetaContactTransitiveMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaContactTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaContactTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaContactTransitiveMemberOfCountAsGroup](Get-MgBetaContactTransitiveMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaContactTransitiveReport](Get-MgBetaContactTransitiveReport.md)
@@ -286,8 +326,9 @@ Get the number of the resource
 ### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
 Invoke function delta
 
-### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
-Invoke function delta
+### [Get-MgBetaContractMemberGroup](Get-MgBetaContractMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContractMemberObject](Get-MgBetaContractMemberObject.md)
 Invoke action getMemberObjects
@@ -327,38 +368,9 @@ Nullable.
 ### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceListMemberOfCountAsAdministrativeUnit](Get-MgBetaDeviceListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListMemberOfCountAsGroup](Get-MgBetaDeviceListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListRegisteredOwnerCountAsEndpoint](Get-MgBetaDeviceListRegisteredOwnerCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListRegisteredOwnerCountAsServicePrincipal](Get-MgBetaDeviceListRegisteredOwnerCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListRegisteredOwnerCountAsUser](Get-MgBetaDeviceListRegisteredOwnerCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListRegisteredUserCountAsEndpoint](Get-MgBetaDeviceListRegisteredUserCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListRegisteredUserCountAsServicePrincipal](Get-MgBetaDeviceListRegisteredUserCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListRegisteredUserCountAsUser](Get-MgBetaDeviceListRegisteredUserCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaDeviceListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListTransitiveMemberOfCountAsGroup](Get-MgBetaDeviceListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceListTransitiveMemberOfCountAsGroup](Get-MgBetaDeviceListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
+### [Get-MgBetaDeviceMemberGroup](Get-MgBetaDeviceMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDeviceMemberObject](Get-MgBetaDeviceMemberObject.md)
 Invoke action getMemberObjects
@@ -376,6 +388,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaDeviceMemberOfCount](Get-MgBetaDeviceMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceMemberOfCountAsAdministrativeUnit](Get-MgBetaDeviceMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceMemberOfCountAsGroup](Get-MgBetaDeviceMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceRegisteredOwner](Get-MgBetaDeviceRegisteredOwner.md)
@@ -404,6 +422,15 @@ Supports $expand.
 ### [Get-MgBetaDeviceRegisteredOwnerCount](Get-MgBetaDeviceRegisteredOwnerCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceRegisteredOwnerCountAsEndpoint](Get-MgBetaDeviceRegisteredOwnerCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceRegisteredOwnerCountAsServicePrincipal](Get-MgBetaDeviceRegisteredOwnerCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceRegisteredOwnerCountAsUser](Get-MgBetaDeviceRegisteredOwnerCountAsUser.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceRegisteredUser](Get-MgBetaDeviceRegisteredUser.md)
 Collection of registered users of the device.
 For cloud joined devices and registered personal devices, registered users are set to the same value as registered owners at the time of registration.
@@ -430,6 +457,15 @@ Supports $expand.
 ### [Get-MgBetaDeviceRegisteredUserCount](Get-MgBetaDeviceRegisteredUserCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceRegisteredUserCountAsEndpoint](Get-MgBetaDeviceRegisteredUserCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceRegisteredUserCountAsServicePrincipal](Get-MgBetaDeviceRegisteredUserCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceRegisteredUserCountAsUser](Get-MgBetaDeviceRegisteredUserCountAsUser.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceTransitiveMemberOf](Get-MgBetaDeviceTransitiveMemberOf.md)
 Groups and administrative units that this device is a member of.
 This operation is transitive.
@@ -442,6 +478,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaDeviceTransitiveMemberOfCount](Get-MgBetaDeviceTransitiveMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaDeviceTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceTransitiveMemberOfCountAsGroup](Get-MgBetaDeviceTransitiveMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceUsageRights](Get-MgBetaDeviceUsageRights.md)
@@ -477,24 +519,6 @@ Nullable.
 ### [Get-MgBetaDirectoryAdministrativeUnitExtensionCount](Get-MgBetaDirectoryAdministrativeUnitExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsApplication](Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsDevice](Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsGroup](Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsOrgContact](Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsServicePrincipal](Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsUser](Get-MgBetaDirectoryAdministrativeUnitListMemberCountAsUser.md)
-Get the number of the resource
-
 ### [Get-MgBetaDirectoryAdministrativeUnitMember](Get-MgBetaDirectoryAdministrativeUnitMember.md)
 Users and groups that are members of this administrative unit.
 Supports $expand.
@@ -524,6 +548,24 @@ Supports $expand.
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberCount](Get-MgBetaDirectoryAdministrativeUnitMemberCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsApplication](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsDevice](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsGroup](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsOrgContact](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsServicePrincipal](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryAdministrativeUnitMemberCountAsUser](Get-MgBetaDirectoryAdministrativeUnitMemberCountAsUser.md)
+Get the number of the resource
+
 ### [Get-MgBetaDirectoryAdministrativeUnitMemberGroup](Get-MgBetaDirectoryAdministrativeUnitMemberGroup.md)
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
@@ -542,9 +584,24 @@ Retrieve a list of recently deleted application and group objects owned by the s
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
 ### [Get-MgBetaDirectoryAttributeSet](Get-MgBetaDirectoryAttributeSet.md)
-Group of related custom security attribute definitions.
+Read the properties and relationships of an attributeSet object.
 
 ### [Get-MgBetaDirectoryAttributeSetCount](Get-MgBetaDirectoryAttributeSetCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryCertificateAuthority](Get-MgBetaDirectoryCertificateAuthority.md)
+Get certificateAuthorities from directory
+
+### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration.md)
+Get certificateBasedApplicationConfigurations from directory
+
+### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationCount](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority.md)
+Get trustedCertificateAuthorities from directory
+
+### [Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthorityCount](Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthorityCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](Get-MgBetaDirectoryCustomSecurityAttributeDefinition.md)
@@ -562,11 +619,20 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryDeletedItem](Get-MgBetaDirectoryDeletedItem.md)
 Get deletedItems from directory
 
+### [Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit](Get-MgBetaDirectoryDeletedItemAsAdministrativeUnit.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
+
 ### [Get-MgBetaDirectoryDeletedItemAsApplication](Get-MgBetaDirectoryDeletedItemAsApplication.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+### [Get-MgBetaDirectoryDeletedItemAsDevice](Get-MgBetaDirectoryDeletedItemAsDevice.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
+
 ### [Get-MgBetaDirectoryDeletedItemAsGroup](Get-MgBetaDirectoryDeletedItemAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgBetaDirectoryDeletedItemAsServicePrincipal](Get-MgBetaDirectoryDeletedItemAsServicePrincipal.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
 ### [Get-MgBetaDirectoryDeletedItemAsUser](Get-MgBetaDirectoryDeletedItemAsUser.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
@@ -575,9 +641,27 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-### [Get-MgBetaDirectoryDeletedItemById](Get-MgBetaDirectoryDeletedItemById.md)
-Return the directory objects specified in a list of IDs.
-Some common uses for this function are to:
+### [Get-MgBetaDirectoryDeletedItemCountAsAdministrativeUnit](Get-MgBetaDirectoryDeletedItemCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryDeletedItemCountAsApplication](Get-MgBetaDirectoryDeletedItemCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryDeletedItemCountAsDevice](Get-MgBetaDirectoryDeletedItemCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryDeletedItemCountAsGroup](Get-MgBetaDirectoryDeletedItemCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryDeletedItemCountAsServicePrincipal](Get-MgBetaDirectoryDeletedItemCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryDeletedItemMemberGroup](Get-MgBetaDirectoryDeletedItemMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryDeletedItemMemberObject](Get-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action getMemberObjects
@@ -632,15 +716,6 @@ Read the properties of an inboundSharedUserProfile.
 ### [Get-MgBetaDirectoryInboundSharedUserProfileCount](Get-MgBetaDirectoryInboundSharedUserProfileCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryListDeletedItemCountAsApplication](Get-MgBetaDirectoryListDeletedItemCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryListDeletedItemCountAsGroup](Get-MgBetaDirectoryListDeletedItemCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryListDeletedItemCountAsUser](Get-MgBetaDirectoryListDeletedItemCountAsUser.md)
-Get the number of the resource
-
 ### [Get-MgBetaDirectoryOnPremiseSynchronization](Get-MgBetaDirectoryOnPremiseSynchronization.md)
 Read the properties and relationships of an onPremisesDirectorySynchronization object.
 
@@ -661,9 +736,15 @@ Read-only.
 Get the number of the resource
 
 ### [Get-MgBetaDirectoryRecommendation](Get-MgBetaDirectoryRecommendation.md)
-List of recommended improvements to improve tenant posture.
+Read the properties and relationships of a recommendation object.
 
 ### [Get-MgBetaDirectoryRecommendationCount](Get-MgBetaDirectoryRecommendationCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryRecommendationImpactedResource](Get-MgBetaDirectoryRecommendationImpactedResource.md)
+The list of directory objects associated with the recommendation.
+
+### [Get-MgBetaDirectoryRecommendationImpactedResourceCount](Get-MgBetaDirectoryRecommendationImpactedResourceCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDirectoryRole](Get-MgBetaDirectoryRole.md)
@@ -681,24 +762,6 @@ Get the number of the resource
 
 ### [Get-MgBetaDirectoryRoleDelta](Get-MgBetaDirectoryRoleDelta.md)
 Invoke function delta
-
-### [Get-MgBetaDirectoryRoleListMemberCountAsApplication](Get-MgBetaDirectoryRoleListMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryRoleListMemberCountAsDevice](Get-MgBetaDirectoryRoleListMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryRoleListMemberCountAsGroup](Get-MgBetaDirectoryRoleListMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryRoleListMemberCountAsOrgContact](Get-MgBetaDirectoryRoleListMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryRoleListMemberCountAsServicePrincipal](Get-MgBetaDirectoryRoleListMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaDirectoryRoleListMemberCountAsUser](Get-MgBetaDirectoryRoleListMemberCountAsUser.md)
-Get the number of the resource
 
 ### [Get-MgBetaDirectoryRoleMember](Get-MgBetaDirectoryRoleMember.md)
 Users that are members of this directory role.
@@ -735,8 +798,27 @@ Supports $expand.
 ### [Get-MgBetaDirectoryRoleMemberCount](Get-MgBetaDirectoryRoleMemberCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryRoleMemberCount](Get-MgBetaDirectoryRoleMemberCount.md)
+### [Get-MgBetaDirectoryRoleMemberCountAsApplication](Get-MgBetaDirectoryRoleMemberCountAsApplication.md)
 Get the number of the resource
+
+### [Get-MgBetaDirectoryRoleMemberCountAsDevice](Get-MgBetaDirectoryRoleMemberCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryRoleMemberCountAsGroup](Get-MgBetaDirectoryRoleMemberCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryRoleMemberCountAsOrgContact](Get-MgBetaDirectoryRoleMemberCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryRoleMemberCountAsServicePrincipal](Get-MgBetaDirectoryRoleMemberCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectoryRoleMemberGroup](Get-MgBetaDirectoryRoleMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleMemberObject](Get-MgBetaDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
@@ -762,8 +844,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
-Invoke function delta
+### [Get-MgBetaDirectoryRoleTemplateMemberGroup](Get-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleTemplateMemberObject](Get-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -808,6 +891,12 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 Get sharedEmailDomains from directory
 
 ### [Get-MgBetaDirectorySharedEmailDomainCount](Get-MgBetaDirectorySharedEmailDomainCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDirectorySubscription](Get-MgBetaDirectorySubscription.md)
+Get subscriptions from directory
+
+### [Get-MgBetaDirectorySubscriptionCount](Get-MgBetaDirectorySubscriptionCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDomain](Get-MgBetaDomain.md)
@@ -949,8 +1038,9 @@ Nullable.
 ### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaOrganizationMemberGroup](Get-MgBetaOrganizationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaOrganizationMemberObject](Get-MgBetaOrganizationMemberObject.md)
 Invoke action getMemberObjects
@@ -1009,10 +1099,13 @@ Get the number of the resource
 Invoke function availableProviderTypes
 
 ### [Invoke-MgBetaDismissDirectoryImpactedResource](Invoke-MgBetaDismissDirectoryImpactedResource.md)
-Invoke action dismiss
+Dismiss an impactedResources object and update its status to `dismissed`.
 
 ### [Invoke-MgBetaDismissDirectoryRecommendation](Invoke-MgBetaDismissDirectoryRecommendation.md)
-Invoke action dismiss
+Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its **status** to `dismissed` .
+
+### [Invoke-MgBetaDismissDirectoryRecommendationImpactedResource](Invoke-MgBetaDismissDirectoryRecommendationImpactedResource.md)
+Dismiss an impactedResources object and update its status to `dismissed`.
 
 ### [Invoke-MgBetaForceDomainDelete](Invoke-MgBetaForceDomainDelete.md)
 Deletes a domain using an asynchronous operation.
@@ -1022,23 +1115,49 @@ To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
 ### [Invoke-MgBetaPostponeDirectoryImpactedResource](Invoke-MgBetaPostponeDirectoryImpactedResource.md)
-Invoke action postpone
+Postpone action on an impactedResource object to a specified future date and time by marking its **status** as `postponed`.
+On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
 
 ### [Invoke-MgBetaPostponeDirectoryRecommendation](Invoke-MgBetaPostponeDirectoryRecommendation.md)
-Invoke action postpone
+Postpone action on a recommendation object to a specified future date and time by marking its **status** as `postponed`.
+On the date and time provided, Azure AD will automatically update the **status** of the **recommendation** object to `active` again.
+
+### [Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource](Invoke-MgBetaPostponeDirectoryRecommendationImpactedResource.md)
+Postpone action on an impactedResource object to a specified future date and time by marking its **status** as `postponed`.
+On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
 
 ### [Invoke-MgBetaPromoteDomain](Invoke-MgBetaPromoteDomain.md)
 Promote a verified subdomain to the root domain.
 A verified domain has its **isVerified** property set to `true`.
 
 ### [Invoke-MgBetaReactivateDirectoryImpactedResource](Invoke-MgBetaReactivateDirectoryImpactedResource.md)
-Invoke action reactivate
+Reactivate an accidentally dismissed, completed, or postponed **impactedResource** object.
+This action updates the **status** of the resource to `active`.
+This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`.
 
 ### [Invoke-MgBetaReactivateDirectoryRecommendation](Invoke-MgBetaReactivateDirectoryRecommendation.md)
-Invoke action reactivate
+Reactivate a completed, dismissed, or postponed recommendation object.
+This action updates the **status** of the recommendation to `active`.
+This method only works when the **status** of the recommendation is `completedByUser`, `dismissed`, or `postponed`.
+
+### [Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource](Invoke-MgBetaReactivateDirectoryRecommendationImpactedResource.md)
+Reactivate an accidentally dismissed, completed, or postponed **impactedResource** object.
+This action updates the **status** of the resource to `active`.
+This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`.
 
 ### [Invoke-MgBetaRetryContactServiceProvisioning](Invoke-MgBetaRetryContactServiceProvisioning.md)
 Invoke action retryServiceProvisioning
+
+### [Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign](Invoke-MgBetaTagTenantRelationshipManagedTenantTagUnassign.md)
+Un-assigns the tenant tag from the specified managed tenants.
+
+### [Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch](Invoke-MgBetaTenantRelationshipManagedTenantGroupSearch.md)
+Invoke action tenantSearch
+
+### [Invoke-MgBetaTenantRelationshipManagedTenantOffboard](Invoke-MgBetaTenantRelationshipManagedTenantOffboard.md)
+Carries out the appropriate procedures to remove a managed tenant from the multi-tenant management platform.
+No relationships, such as commerce and delegate administrative privileges, will be impacted.
+The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
 
 ### [New-MgBetaAdministrativeUnit](New-MgBetaAdministrativeUnit.md)
 Use this API to create a new administrativeUnit.
@@ -1046,10 +1165,11 @@ Use this API to create a new administrativeUnit.
 ### [New-MgBetaAdministrativeUnitExtension](New-MgBetaAdministrativeUnitExtension.md)
 Create new navigation property to extensions for administrativeUnits
 
+### [New-MgBetaAdministrativeUnitMember](New-MgBetaAdministrativeUnitMember.md)
+Create new navigation property to members for administrativeUnits
+
 ### [New-MgBetaAdministrativeUnitMemberByRef](New-MgBetaAdministrativeUnitMemberByRef.md)
-Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
-All group types can be created within an administrative unit.
-**Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
+Create new navigation property ref to members for administrativeUnits
 
 ### [New-MgBetaAdministrativeUnitScopedRoleMember](New-MgBetaAdministrativeUnitScopedRoleMember.md)
 Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
@@ -1085,10 +1205,11 @@ Create new navigation property to administrativeUnits for directory
 ### [New-MgBetaDirectoryAdministrativeUnitExtension](New-MgBetaDirectoryAdministrativeUnitExtension.md)
 Create new navigation property to extensions for directory
 
+### [New-MgBetaDirectoryAdministrativeUnitMember](New-MgBetaDirectoryAdministrativeUnitMember.md)
+Create new navigation property to members for directory
+
 ### [New-MgBetaDirectoryAdministrativeUnitMemberByRef](New-MgBetaDirectoryAdministrativeUnitMemberByRef.md)
-Use this API to add a member (user, group, or device) to an administrative unit or to create a new group within an administrative unit.
-All group types can be created within an administrative unit.
-**Note:** Currently, it's only possible to add one member at a time to an administrative unit.`
+Create new navigation property ref to members for directory
 
 ### [New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](New-MgBetaDirectoryAdministrativeUnitScopedRoleMember.md)
 Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
@@ -1096,6 +1217,12 @@ For a list of roles that can be assigned with administrative unit scope, see Ass
 
 ### [New-MgBetaDirectoryAttributeSet](New-MgBetaDirectoryAttributeSet.md)
 Create a new attributeSet object.
+
+### [New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration.md)
+Create new navigation property to certificateBasedApplicationConfigurations for directory
+
+### [New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority.md)
+Create new navigation property to trustedCertificateAuthorities for directory
 
 ### [New-MgBetaDirectoryCustomSecurityAttributeDefinition](New-MgBetaDirectoryCustomSecurityAttributeDefinition.md)
 Create a new customSecurityAttributeDefinition object.
@@ -1136,6 +1263,9 @@ Create new navigation property to tenants for directory
 ### [New-MgBetaDirectoryRecommendation](New-MgBetaDirectoryRecommendation.md)
 Create new navigation property to recommendations for directory
 
+### [New-MgBetaDirectoryRecommendationImpactedResource](New-MgBetaDirectoryRecommendationImpactedResource.md)
+Create new navigation property to impactedResources for directory
+
 ### [New-MgBetaDirectoryRole](New-MgBetaDirectoryRole.md)
 Activate a directory role.
 To read a directory role or update its members, it must first be activated in the tenant.
@@ -1165,6 +1295,9 @@ Add new entity to directorySettingTemplates
 
 ### [New-MgBetaDirectorySharedEmailDomain](New-MgBetaDirectorySharedEmailDomain.md)
 Create new navigation property to sharedEmailDomains for directory
+
+### [New-MgBetaDirectorySubscription](New-MgBetaDirectorySubscription.md)
+Create new navigation property to subscriptions for directory
 
 ### [New-MgBetaDomain](New-MgBetaDomain.md)
 Adds a domain to the tenant.
@@ -1262,6 +1395,15 @@ Remove an Azure Active Directory (Azure AD) role assignment with administrative 
 ### [Remove-MgBetaDirectoryAttributeSet](Remove-MgBetaDirectoryAttributeSet.md)
 Delete navigation property attributeSets for directory
 
+### [Remove-MgBetaDirectoryCertificateAuthority](Remove-MgBetaDirectoryCertificateAuthority.md)
+Delete navigation property certificateAuthorities for directory
+
+### [Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration.md)
+Delete navigation property certificateBasedApplicationConfigurations for directory
+
+### [Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority.md)
+Delete navigation property trustedCertificateAuthorities for directory
+
 ### [Remove-MgBetaDirectoryCustomSecurityAttributeDefinition](Remove-MgBetaDirectoryCustomSecurityAttributeDefinition.md)
 Delete navigation property customSecurityAttributeDefinitions for directory
 
@@ -1304,6 +1446,9 @@ Create a request to remove the personal data for an outboundSharedUserProfile.
 ### [Remove-MgBetaDirectoryRecommendation](Remove-MgBetaDirectoryRecommendation.md)
 Delete navigation property recommendations for directory
 
+### [Remove-MgBetaDirectoryRecommendationImpactedResource](Remove-MgBetaDirectoryRecommendationImpactedResource.md)
+Delete navigation property impactedResources for directory
+
 ### [Remove-MgBetaDirectoryRole](Remove-MgBetaDirectoryRole.md)
 Delete entity from directoryRoles
 
@@ -1327,6 +1472,9 @@ Delete entity from directorySettingTemplates
 
 ### [Remove-MgBetaDirectorySharedEmailDomain](Remove-MgBetaDirectorySharedEmailDomain.md)
 Delete navigation property sharedEmailDomains for directory
+
+### [Remove-MgBetaDirectorySubscription](Remove-MgBetaDirectorySubscription.md)
+Delete navigation property subscriptions for directory
 
 ### [Remove-MgBetaDomain](Remove-MgBetaDomain.md)
 Deletes a domain from a tenant.
@@ -1383,6 +1531,13 @@ Delete entity from subscribedSkus
 
 ### [Remove-MgBetaUserScopedRoleMemberOf](Remove-MgBetaUserScopedRoleMemberOf.md)
 Delete navigation property scopedRoleMemberOf for users
+
+### [Rename-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](Rename-MgBetaTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus.md)
+Invoke action changeDeploymentStatus
+
+### [Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus](Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus.md)
+Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action.
+By invoking this action the platform will attempt to onboard the managed tenant for management.
 
 ### [Restore-MgBetaDirectoryDeletedItem](Restore-MgBetaDirectoryDeletedItem.md)
 Restore a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
@@ -1457,6 +1612,9 @@ We recommend using a transparent image with no padding around the logo.
 
 ### [Set-MgBetaOrganizationMobileDeviceManagementAuthority](Set-MgBetaOrganizationMobileDeviceManagementAuthority.md)
 Set mobile device management authority
+
+### [Set-MgBetaTenantRelationshipManagedTenantTag](Set-MgBetaTenantRelationshipManagedTenantTag.md)
+Assign the tenant tag to the specified managed tenants.
 
 ### [Test-MgBetaAdministrativeUnitProperty](Test-MgBetaAdministrativeUnitProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -1620,7 +1778,16 @@ Update the navigation property extensions in directory
 Update the navigation property scopedRoleMembers in directory
 
 ### [Update-MgBetaDirectoryAttributeSet](Update-MgBetaDirectoryAttributeSet.md)
-Update the navigation property attributeSets in directory
+Update the properties of an attributeSet object.
+
+### [Update-MgBetaDirectoryCertificateAuthority](Update-MgBetaDirectoryCertificateAuthority.md)
+Update the navigation property certificateAuthorities in directory
+
+### [Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration.md)
+Update the navigation property certificateBasedApplicationConfigurations in directory
+
+### [Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](Update-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority.md)
+Update the navigation property trustedCertificateAuthorities in directory
 
 ### [Update-MgBetaDirectoryCustomSecurityAttributeDefinition](Update-MgBetaDirectoryCustomSecurityAttributeDefinition.md)
 Update the properties of a customSecurityAttributeDefinition object.
@@ -1655,6 +1822,9 @@ Update the navigation property tenants in directory
 ### [Update-MgBetaDirectoryRecommendation](Update-MgBetaDirectoryRecommendation.md)
 Update the navigation property recommendations in directory
 
+### [Update-MgBetaDirectoryRecommendationImpactedResource](Update-MgBetaDirectoryRecommendationImpactedResource.md)
+Update the navigation property impactedResources in directory
+
 ### [Update-MgBetaDirectoryRole](Update-MgBetaDirectoryRole.md)
 Update entity in directoryRoles
 
@@ -1672,6 +1842,9 @@ Update entity in directorySettingTemplates
 
 ### [Update-MgBetaDirectorySharedEmailDomain](Update-MgBetaDirectorySharedEmailDomain.md)
 Update the navigation property sharedEmailDomains in directory
+
+### [Update-MgBetaDirectorySubscription](Update-MgBetaDirectorySubscription.md)
+Update the navigation property subscriptions in directory
 
 ### [Update-MgBetaDomain](Update-MgBetaDomain.md)
 Update the properties of domain object.

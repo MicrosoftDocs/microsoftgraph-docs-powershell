@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagementmobileapp
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property mobileApps in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,20 +17,24 @@ Update the navigation property mobileApps in deviceAppManagement
 Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
  [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>] [-Description <String>] [-Developer <String>]
- [-DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>] [-DisplayName <String>] [-Id <String>]
- [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphMobileAppInstallSummary>] [-IsAssigned]
- [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
+ [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsAssigned] [-IsFeatured]
+ [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
  [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
  [-PublishingState <MobileAppPublishingState>] [-Relationships <IMicrosoftGraphMobileAppRelationship[]>]
  [-RoleScopeTagIds <String[]>] [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>]
- [-UploadState <Int32>] [-UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UploadState <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <IMicrosoftGraphMobileApp>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMobileApp> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -41,21 +42,13 @@ Update-MgBetaDeviceAppManagementMobileApp -MobileAppId <String> -BodyParameter <
 Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphMobileAppAssignment[]>]
  [-Categories <IMicrosoftGraphMobileAppCategory[]>] [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>]
- [-Description <String>] [-Developer <String>] [-DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]
- [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>]
- [-InstallSummary <IMicrosoftGraphMobileAppInstallSummary>] [-IsAssigned] [-IsFeatured]
- [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
- [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
- [-PublishingState <MobileAppPublishingState>] [-Relationships <IMicrosoftGraphMobileAppRelationship[]>]
- [-RoleScopeTagIds <String[]>] [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>]
- [-UploadState <Int32>] [-UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>] [-WhatIf] [-Confirm]
+ [-Description <String>] [-Developer <String>] [-DisplayName <String>] [-Id <String>]
+ [-InformationUrl <String>] [-IsAssigned] [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>]
+ [-LastModifiedDateTime <DateTime>] [-Notes <String>] [-Owner <String>] [-PrivacyInformationUrl <String>]
+ [-Publisher <String>] [-PublishingState <MobileAppPublishingState>]
+ [-Relationships <IMicrosoftGraphMobileAppRelationship[]>] [-RoleScopeTagIds <String[]>]
+ [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>] [-UploadState <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileApp> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -63,15 +56,19 @@ Update the navigation property mobileApps in deviceAppManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -79,7 +76,7 @@ Update the navigation property mobileApps in deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +92,7 @@ The list of group assignments for this mobile app.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +111,7 @@ Then, perform the expansion on individual applications.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileApp
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -130,7 +127,7 @@ The list of categories for this app.
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppCategory[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +142,7 @@ Accept wildcard characters: False
 The date and time the app was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +157,7 @@ Accept wildcard characters: False
 The total number of dependencies the child app has.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +172,7 @@ Accept wildcard characters: False
 The description of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,23 +187,7 @@ Accept wildcard characters: False
 The developer of the app.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -DeviceStatuses
-The list of installation states for this mobile app.
-To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMobileAppInstallStatus[]
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +202,7 @@ Accept wildcard characters: False
 The admin provided or imported title of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +218,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +233,7 @@ Accept wildcard characters: False
 The more information Url.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -268,8 +249,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -279,28 +260,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -InstallSummary
-Contains properties for the installation summary of a mobile app.
-This will be deprecated starting May, 2023 (Intune Release 2305).
-To construct, see NOTES section for INSTALLSUMMARY properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMobileAppInstallSummary
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -IsAssigned
 The value indicating whether the app is assigned to at least one group.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -315,7 +279,7 @@ Accept wildcard characters: False
 The value indicating whether the app is marked as featured by the admin.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -331,7 +295,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LARGEICON properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -346,7 +310,7 @@ Accept wildcard characters: False
 The date and time the app was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -361,8 +325,8 @@ Accept wildcard characters: False
 The unique identifier of mobileApp
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -376,7 +340,7 @@ Accept wildcard characters: False
 Notes for the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -391,7 +355,7 @@ Accept wildcard characters: False
 The owner of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -406,7 +370,7 @@ Accept wildcard characters: False
 The privacy statement Url.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -421,7 +385,7 @@ Accept wildcard characters: False
 The publisher of the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -436,7 +400,7 @@ Accept wildcard characters: False
 Indicates the publishing state of an app.
 
 ```yaml
-Type: MobileAppPublishingState
+Type: Microsoft.Graph.Beta.PowerShell.Support.MobileAppPublishingState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -452,7 +416,7 @@ List of relationships for this mobile app.
 To construct, see NOTES section for RELATIONSHIPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppRelationship[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppRelationship[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -467,7 +431,7 @@ Accept wildcard characters: False
 List of scope tag ids for this mobile app.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -482,7 +446,7 @@ Accept wildcard characters: False
 The total number of apps this app is directly or indirectly superseded by.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -497,7 +461,7 @@ Accept wildcard characters: False
 The total number of apps this app directly or indirectly supersedes.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -512,23 +476,7 @@ Accept wildcard characters: False
 The upload state.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -UserStatuses
-The list of installation states for this mobile app.
-To construct, see NOTES section for USERSTATUSES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphUserAppInstallStatus[]
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -543,7 +491,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -559,7 +507,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -576,15 +524,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp
+
 ## NOTES
 
 ALIASES
 
-Update-MgDeviceAppMgtMobileApp
+Update-BetaDeviceAppMgtMobileApp
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -625,36 +576,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
-  - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The list of installation states for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-    - `[DeviceId <String>]`: Device ID
-    - `[DeviceName <String>]`: Device name
-    - `[DisplayVersion <String>]`: Human readable version of the application
-    - `[ErrorCode <Int32?>]`: The error code for install or uninstall failures.
-    - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-    - `[InstallStateDetail <ResultantAppStateDetail?>]`: Enum indicating additional details regarding why an application has a particular install state.
-    - `[LastSyncDateTime <DateTime?>]`: Last sync date time
-    - `[MobileAppInstallStatusValue <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-    - `[OSDescription <String>]`: OS Description
-    - `[OSVersion <String>]`: OS Version
-    - `[UserName <String>]`: Device User Name
-    - `[UserPrincipalName <String>]`: User Principal Name
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
   - `[InformationUrl <String>]`: The more information Url.
-  - `[InstallSummary <IMicrosoftGraphMobileAppInstallSummary>]`: Contains properties for the installation summary of a mobile app. This will be deprecated starting May, 2023 (Intune Release 2305).
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this app.
-    - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this app.
-    - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this app.
-    - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this app.
-    - `[NotApplicableDeviceCount <Int32?>]`: Number of Devices that are not applicable for this app.
-    - `[NotApplicableUserCount <Int32?>]`: Number of Users whose devices were all not applicable for this app.
-    - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this app installed.
-    - `[NotInstalledUserCount <Int32?>]`: Number of Users that have 1 or more devices that did not install this app.
-    - `[PendingInstallDeviceCount <Int32?>]`: Number of Devices that have been notified to install this app.
-    - `[PendingInstallUserCount <Int32?>]`: Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.
   - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
   - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
   - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
@@ -678,119 +601,24 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
   - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
   - `[UploadState <Int32?>]`: The upload state.
-  - `[UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>]`: The list of installation states for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-    - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The install state of the app on devices.
-    - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
-    - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
-    - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
-    - `[UserName <String>]`: User name.
-    - `[UserPrincipalName <String>]`: User Principal Name.
 
 `CATEGORIES <IMicrosoftGraphMobileAppCategory[]>`: The list of categories for this app.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: The name of the app category.
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
-`DEVICESTATUSES <IMicrosoftGraphMobileAppInstallStatus[]>`: The list of installation states for this mobile app.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphMobileAppAssignment[]>]`: The list of group assignments for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
-      - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-      - `[SourceId <String>]`: The identifier of the source of the assignment.
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-    - `[Categories <IMicrosoftGraphMobileAppCategory[]>]`: The list of categories for this app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[DisplayName <String>]`: The name of the app category.
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-    - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
-    - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
-    - `[Description <String>]`: The description of the app.
-    - `[Developer <String>]`: The developer of the app.
-    - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The list of installation states for this mobile app.
-    - `[DisplayName <String>]`: The admin provided or imported title of the app.
-    - `[InformationUrl <String>]`: The more information Url.
-    - `[InstallSummary <IMicrosoftGraphMobileAppInstallSummary>]`: Contains properties for the installation summary of a mobile app. This will be deprecated starting May, 2023 (Intune Release 2305).
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this app.
-      - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this app.
-      - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this app.
-      - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this app.
-      - `[NotApplicableDeviceCount <Int32?>]`: Number of Devices that are not applicable for this app.
-      - `[NotApplicableUserCount <Int32?>]`: Number of Users whose devices were all not applicable for this app.
-      - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this app installed.
-      - `[NotInstalledUserCount <Int32?>]`: Number of Users that have 1 or more devices that did not install this app.
-      - `[PendingInstallDeviceCount <Int32?>]`: Number of Devices that have been notified to install this app.
-      - `[PendingInstallUserCount <Int32?>]`: Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.
-    - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
-    - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
-    - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Type <String>]`: Indicates the content mime type.
-      - `[Value <Byte[]>]`: The byte array that contains the actual content.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
-    - `[Notes <String>]`: Notes for the app.
-    - `[Owner <String>]`: The owner of the app.
-    - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
-    - `[Publisher <String>]`: The publisher of the app.
-    - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-    - `[Relationships <IMicrosoftGraphMobileAppRelationship[]>]`: List of relationships for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[TargetDisplayName <String>]`: The target mobile app's display name.
-      - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
-      - `[TargetId <String>]`: The target mobile app's app id.
-      - `[TargetPublisher <String>]`: The target mobile app's publisher.
-      - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
-    - `[RoleScopeTagIds <String[]>]`: List of scope tag ids for this mobile app.
-    - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
-    - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
-    - `[UploadState <Int32?>]`: The upload state.
-    - `[UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>]`: The list of installation states for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-      - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The install state of the app on devices.
-      - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
-      - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
-      - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
-      - `[UserName <String>]`: User name.
-      - `[UserPrincipalName <String>]`: User Principal Name.
-  - `[DeviceId <String>]`: Device ID
-  - `[DeviceName <String>]`: Device name
-  - `[DisplayVersion <String>]`: Human readable version of the application
-  - `[ErrorCode <Int32?>]`: The error code for install or uninstall failures.
-  - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-  - `[InstallStateDetail <ResultantAppStateDetail?>]`: Enum indicating additional details regarding why an application has a particular install state.
-  - `[LastSyncDateTime <DateTime?>]`: Last sync date time
-  - `[MobileAppInstallStatusValue <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-  - `[OSDescription <String>]`: OS Description
-  - `[OSVersion <String>]`: OS Version
-  - `[UserName <String>]`: Device User Name
-  - `[UserPrincipalName <String>]`: User Principal Name
-
 `INPUTOBJECT <IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[AndroidManagedAppProtectionId <String>]`: The unique identifier of androidManagedAppProtection
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
   - `[BundleId <String>]`: Usage: bundleId='{bundleId}'
-  - `[Count <Int64?>]`: Usage: count={count}
   - `[DefaultManagedAppProtectionId <String>]`: The unique identifier of defaultManagedAppProtection
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
   - `[DeviceAppManagementTaskId <String>]`: The unique identifier of deviceAppManagementTask
   - `[DeviceCompliancePolicyStateId <String>]`: The unique identifier of deviceCompliancePolicyState
   - `[DeviceConfigurationStateId <String>]`: The unique identifier of deviceConfigurationState
   - `[DeviceEnrollmentConfigurationId <String>]`: The unique identifier of deviceEnrollmentConfiguration
-  - `[DeviceId <String>]`: Usage: deviceId='{deviceId}'
+  - `[DeviceId <String>]`: Property in multi-part unique identifier of deviceHealthScriptPolicyState
   - `[DeviceInstallStateId <String>]`: The unique identifier of deviceInstallState
   - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DeviceManagementConfigurationSettingDefinitionId <String>]`: The unique identifier of deviceManagementConfigurationSettingDefinition
@@ -820,7 +648,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[MobileAppAssignmentId <String>]`: The unique identifier of mobileAppAssignment
   - `[MobileAppCategoryId <String>]`: The unique identifier of mobileAppCategory
   - `[MobileAppId <String>]`: The unique identifier of mobileApp
-  - `[MobileAppInstallStatusId <String>]`: The unique identifier of mobileAppInstallStatus
   - `[MobileAppIntentAndStateId <String>]`: The unique identifier of mobileAppIntentAndState
   - `[MobileAppProvisioningConfigGroupAssignmentId <String>]`: The unique identifier of mobileAppProvisioningConfigGroupAssignment
   - `[MobileAppRelationshipId <String>]`: The unique identifier of mobileAppRelationship
@@ -831,13 +658,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[PolicySetItemId <String>]`: The unique identifier of policySetItem
   - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
-  - `[Status <String>]`: Usage: status='{status}'
   - `[TargetedManagedAppConfigurationId <String>]`: The unique identifier of targetedManagedAppConfiguration
   - `[TargetedManagedAppPolicyAssignmentId <String>]`: The unique identifier of targetedManagedAppPolicyAssignment
-  - `[UserAppInstallStatusId <String>]`: The unique identifier of userAppInstallStatus
   - `[UserId <String>]`: The unique identifier of user
   - `[UserInstallStateSummaryId <String>]`: The unique identifier of userInstallStateSummary
-  - `[UserPrincipalName <String>]`: Usage: userPrincipalName='{userPrincipalName}'
   - `[VppTokenId <String>]`: The unique identifier of vppToken
   - `[WindowsDefenderApplicationControlSupplementalPolicyAssignmentId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyAssignment
   - `[WindowsDefenderApplicationControlSupplementalPolicyDeploymentStatusId <String>]`: The unique identifier of windowsDefenderApplicationControlSupplementalPolicyDeploymentStatus
@@ -848,20 +672,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
   - `[WindowsInformationProtectionWipeActionId <String>]`: The unique identifier of windowsInformationProtectionWipeAction
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
-
-`INSTALLSUMMARY <IMicrosoftGraphMobileAppInstallSummary>`: Contains properties for the installation summary of a mobile app. This will be deprecated starting May, 2023 (Intune Release 2305).
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this app.
-  - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this app.
-  - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this app.
-  - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this app.
-  - `[NotApplicableDeviceCount <Int32?>]`: Number of Devices that are not applicable for this app.
-  - `[NotApplicableUserCount <Int32?>]`: Number of Users whose devices were all not applicable for this app.
-  - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this app installed.
-  - `[NotInstalledUserCount <Int32?>]`: Number of Users that have 1 or more devices that did not install this app.
-  - `[PendingInstallDeviceCount <Int32?>]`: Number of Devices that have been notified to install this app.
-  - `[PendingInstallUserCount <Int32?>]`: Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.
 
 `LARGEICON <IMicrosoftGraphMimeContent>`: Contains properties for a generic mime content.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -876,93 +686,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetPublisher <String>]`: The target mobile app's publisher.
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
-`USERSTATUSES <IMicrosoftGraphUserAppInstallStatus[]>`: The list of installation states for this mobile app.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphMobileAppAssignment[]>]`: The list of group assignments for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Intent <InstallIntent?>]`: Possible values for the install intent chosen by the admin.
-      - `[Settings <IMicrosoftGraphMobileAppAssignmentSettings>]`: Abstract class to contain properties used to assign a mobile app to a group.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Source <DeviceAndAppManagementAssignmentSource?>]`: Represents source of assignment.
-      - `[SourceId <String>]`: The identifier of the source of the assignment.
-      - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
-        - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-    - `[Categories <IMicrosoftGraphMobileAppCategory[]>]`: The list of categories for this app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[DisplayName <String>]`: The name of the app category.
-      - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
-    - `[CreatedDateTime <DateTime?>]`: The date and time the app was created.
-    - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
-    - `[Description <String>]`: The description of the app.
-    - `[Developer <String>]`: The developer of the app.
-    - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The list of installation states for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-      - `[DeviceId <String>]`: Device ID
-      - `[DeviceName <String>]`: Device name
-      - `[DisplayVersion <String>]`: Human readable version of the application
-      - `[ErrorCode <Int32?>]`: The error code for install or uninstall failures.
-      - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-      - `[InstallStateDetail <ResultantAppStateDetail?>]`: Enum indicating additional details regarding why an application has a particular install state.
-      - `[LastSyncDateTime <DateTime?>]`: Last sync date time
-      - `[MobileAppInstallStatusValue <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-      - `[OSDescription <String>]`: OS Description
-      - `[OSVersion <String>]`: OS Version
-      - `[UserName <String>]`: Device User Name
-      - `[UserPrincipalName <String>]`: User Principal Name
-    - `[DisplayName <String>]`: The admin provided or imported title of the app.
-    - `[InformationUrl <String>]`: The more information Url.
-    - `[InstallSummary <IMicrosoftGraphMobileAppInstallSummary>]`: Contains properties for the installation summary of a mobile app. This will be deprecated starting May, 2023 (Intune Release 2305).
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this app.
-      - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this app.
-      - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this app.
-      - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this app.
-      - `[NotApplicableDeviceCount <Int32?>]`: Number of Devices that are not applicable for this app.
-      - `[NotApplicableUserCount <Int32?>]`: Number of Users whose devices were all not applicable for this app.
-      - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this app installed.
-      - `[NotInstalledUserCount <Int32?>]`: Number of Users that have 1 or more devices that did not install this app.
-      - `[PendingInstallDeviceCount <Int32?>]`: Number of Devices that have been notified to install this app.
-      - `[PendingInstallUserCount <Int32?>]`: Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.
-    - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
-    - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
-    - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Type <String>]`: Indicates the content mime type.
-      - `[Value <Byte[]>]`: The byte array that contains the actual content.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time the app was last modified.
-    - `[Notes <String>]`: Notes for the app.
-    - `[Owner <String>]`: The owner of the app.
-    - `[PrivacyInformationUrl <String>]`: The privacy statement Url.
-    - `[Publisher <String>]`: The publisher of the app.
-    - `[PublishingState <MobileAppPublishingState?>]`: Indicates the publishing state of an app.
-    - `[Relationships <IMicrosoftGraphMobileAppRelationship[]>]`: List of relationships for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[TargetDisplayName <String>]`: The target mobile app's display name.
-      - `[TargetDisplayVersion <String>]`: The target mobile app's display version.
-      - `[TargetId <String>]`: The target mobile app's app id.
-      - `[TargetPublisher <String>]`: The target mobile app's publisher.
-      - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
-    - `[RoleScopeTagIds <String[]>]`: List of scope tag ids for this mobile app.
-    - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
-    - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
-    - `[UploadState <Int32?>]`: The upload state.
-    - `[UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>]`: The list of installation states for this mobile app.
-  - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The install state of the app on devices.
-  - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
-  - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
-  - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
-  - `[UserName <String>]`: User name.
-  - `[UserPrincipalName <String>]`: User Principal Name.
-
 ## RELATED LINKS
-[Update-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-v1.0)

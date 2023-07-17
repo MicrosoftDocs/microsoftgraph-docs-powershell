@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/update-mgbetateamchannelmessage
 schema: 2.0.0
@@ -16,9 +16,6 @@ If one of the members is using Skype, the operation fails.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -33,14 +30,20 @@ Update-MgBetaTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -Tea
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
- [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <String>
- -BodyParameter <IMicrosoftGraphChatMessage> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphChatMessage> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -55,14 +58,8 @@ Update-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> [-AdditionalProper
  [-MessageType <String>] [-OnBehalfOf <Hashtable>]
  [-PolicyViolation <IMicrosoftGraphChatMessagePolicyViolation>]
  [-Reactions <IMicrosoftGraphChatMessageReaction[]>] [-Replies <IMicrosoftGraphChatMessage[]>]
- [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-WhatIf] [-Confirm]
+ [-ReplyToId <String>] [-Subject <String>] [-Summary <String>] [-WebUrl <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphChatMessage>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -76,156 +73,168 @@ Only the user in the tenant who sent the message can perform data loss preventio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	PolicyViolation = @{
-		PolicyTip = @{
-			GeneralText = "This item has been blocked by the administrator."
-			ComplianceUrl = "https://contoso.com/dlp-policy-page"
-			MatchedConditionDescriptions = @(
+	policyViolation = @{
+		policyTip = @{
+			generalText = "This item has been blocked by the administrator."
+			complianceUrl = "https://contoso.com/dlp-policy-page"
+			matchedConditionDescriptions = @(
 				"Credit Card Number"
 			)
 		}
-		VerdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
-		DlpAction = "BlockAccess"
+		verdictDetails = "AllowOverrideWithoutJustification,AllowFalsePositiveOverride"
+		dlpAction = "BlockAccess"
 	}
 }
-Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-```
 
-### EXAMPLE 2
+Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	MessageType = "message"
-	Subject = $null
-	Summary = $null
-	Importance = "normal"
-	Locale = "en-us"
-	From = @{
-		Application = $null
-		Device = $null
-		User = @{
-			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
-			DisplayName = "Sumit Gupta"
-			UserIdentityType = "aadUser"
+	messageType = "message"
+	subject = $null
+	summary = $null
+	importance = "normal"
+	locale = "en-us"
+	from = @{
+		application = $null
+		device = $null
+		user = @{
+			id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			displayName = "Lam Cong"
+			userIdentityType = "aadUser"
 		}
-		Conversation = $null
+		conversation = $null
 	}
-	Body = @{
-		ContentType = "text"
-		Content = "Edit text only"
+	body = @{
+		contentType = "text"
+		content = "Edit text only"
 	}
-	Attachments = @(
+	attachments = @(
 	)
-	Mentions = @(
+	mentions = @(
 	)
-	Reactions = @(
+	reactions = @(
+	)
+	messageHistory = @(
 	)
 }
-Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-```
 
-### EXAMPLE 3
+Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	MessageType = "message"
-	DeletedDateTime = $null
-	Subject = $null
-	Summary = $null
-	Importance = "normal"
-	Locale = "en-us"
-	From = @{
-		Application = $null
-		Device = $null
-		Conversation = $null
-		User = @{
-			Id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40"
-			DisplayName = "Sumit Gupta"
-			UserIdentityType = "aadUser"
+	messageType = "message"
+	deletedDateTime = $null
+	subject = $null
+	summary = $null
+	importance = "normal"
+	locale = "en-us"
+	from = @{
+		application = $null
+		device = $null
+		conversation = $null
+		user = @{
+			id = "6b3f3c54-d09c-4fdd-b146-9b514a8a4f40"
+			displayName = "Lam Cong"
+			userIdentityType = "aadUser"
 		}
 	}
-	Body = @{
-		ContentType = "html"
-		Content = "<div><div>
-<div>
-<div>
-<div>
-<div><at id="0">Raghav</at><at id="1">TestGlobalBot</at> YEAH"
+	body = @{
+		contentType = "html"
+		content = "&lt;div&gt;&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;
+&lt;div&gt;&lt;at id="0"&gt;Raghav&lt;/at&gt;&lt;at id="1"&gt;TestGlobalBot&lt;/at&gt; YEAH"
 	}
-	Attachments = @(
+	attachments = @(
 	)
-	Mentions = @(
+	mentions = @(
 		@{
-			Id = 0
-			MentionText = "Raghav"
-			Mentioned = @{
-				Application = $null
-				Device = $null
-				Conversation = $null
-				User = @{
-					Id = "f1b66449-b46d-49b0-9c3c-53c10234c818e"
-					DisplayName = "Raghav Mankad"
-					UserIdentityType = "aadUser"
+			id = 0
+			mentionText = "Raghav"
+			mentioned = @{
+				application = $null
+				device = $null
+				conversation = $null
+				user = @{
+					id = "f1b66449-b46d-49b0-9c3c-53c10234c818e"
+					displayName = "Lam Cong"
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			Id = 1
-			MentionText = "TestGlobalBot"
-			Mentioned = @{
-				Application = @{
-					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					DisplayName = "TestGlobalBot"
-					ApplicationIdentityType = "bot"
+			id = 1
+			mentionText = "TestGlobalBot"
+			mentioned = @{
+				application = @{
+					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					displayName = "TestGlobalBot"
+					applicationIdentityType = "bot"
 				}
-				Device = $null
-				Conversation = $null
-				User = $null
+				device = $null
+				conversation = $null
+				user = $null
 			}
 		}
 	)
-	Reactions = @(
+	reactions = @(
+	)
+	messageHistory = @(
 	)
 }
-Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-```
 
-### EXAMPLE 4
+Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	MessageType = "message"
-	Subject = $null
-	Summary = $null
-	Importance = "normal"
-	Locale = "en-us"
-	From = @{
-		Application = $null
-		Device = $null
-		User = @{
-			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
-			DisplayName = "Sumit Gupta"
-			UserIdentityType = "aadUser"
+	messageType = "message"
+	subject = $null
+	summary = $null
+	importance = "normal"
+	locale = "en-us"
+	from = @{
+		application = $null
+		device = $null
+		user = @{
+			id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			displayName = "Lam Cong"
+			userIdentityType = "aadUser"
 		}
-		Conversation = $null
+		conversation = $null
 	}
-	Body = @{
-		ContentType = "html"
-		Content = "<p><em>text</em></p><attachment id="e8f78756199240b88448ae0fc6db112d"></attachment><attachment id="638464e32834471ea202007da60a5ae6"></attachment>"
+	body = @{
+		contentType = "html"
+		content = "&lt;p&gt;&lt;em&gt;text&lt;/em&gt;&lt;/p&gt;&lt;attachment id="e8f78756199240b88448ae0fc6db112d"&gt;&lt;/attachment&gt;&lt;attachment id="638464e32834471ea202007da60a5ae6"&gt;&lt;/attachment&gt;"
 	}
-	Attachments = @(
+	attachments = @(
 		@{
-			Id = "e8f78756199240b88448ae0fc6db112d"
-			ContentType = "application/vnd.microsoft.card.hero"
-			ContentUrl = $null
-			Content = "{
+			id = "e8f78756199240b88448ae0fc6db112d"
+			contentType = "application/vnd.microsoft.card.hero"
+			contentUrl = $null
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -235,13 +244,13 @@ $params = @{
     {
       "type": "openUrl",
       "image": "https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png",
-      "title": "😃😃 click me 😃😃",
+      "title": "???????? click me ????????",
       "value": "http://microsoft.com"
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= \"",
-      "value": "&i am back& <>= \""
+      "title": "&amp;i am back&amp; &lt;&gt;= \"",
+      "value": "&amp;i am back&amp; &lt;&gt;= \""
     },
     {
       "type": "openUrl",
@@ -249,18 +258,18 @@ $params = @{
       "value": "http://google.com"
     }
   ]
-}"
-			Name = $null
-			ThumbnailUrl = $null
+}'
+			name = $null
+			thumbnailUrl = $null
 		}
 		@{
-			Id = "638464e32834471ea202007da60a5ae6"
-			ContentType = "application/vnd.microsoft.card.hero"
-			ContentUrl = $null
-			Content = "{
+			id = "638464e32834471ea202007da60a5ae6"
+			contentType = "application/vnd.microsoft.card.hero"
+			contentUrl = $null
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -269,59 +278,63 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&message back& <>= \"",
-      "text": "text = &message back& <>= \"",
-      "displayText": "displayText = &message back& <>= \"",
+      "title": "&amp;message back&amp; &lt;&gt;= \"",
+      "text": "text = &amp;message back&amp; &lt;&gt;= \"",
+      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= \"",
       "value": {
         "text": "some text 2"
       }
     }
   ]
-}"
-			Name = $null
-			ThumbnailUrl = $null
+}'
+			name = $null
+			thumbnailUrl = $null
 		}
 	)
-	Mentions = @(
+	mentions = @(
 	)
-	Reactions = @(
+	reactions = @(
+	)
+	messageHistory = @(
 	)
 }
-Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-```
 
-### EXAMPLE 5
+Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
+
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
+```
+
 $params = @{
-	MessageType = "message"
-	Subject = $null
-	Summary = $null
-	Importance = "normal"
-	Locale = "en-us"
-	From = @{
-		Application = $null
-		Device = $null
-		User = @{
-			Id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
-			DisplayName = "Sumit Gupta"
-			UserIdentityType = "aadUser"
+	messageType = "message"
+	subject = $null
+	summary = $null
+	importance = "normal"
+	locale = "en-us"
+	from = @{
+		application = $null
+		device = $null
+		user = @{
+			id = "3b102402-813e-4e17-a6b2-f841aef1fdfc"
+			displayName = "Lam Cong"
+			userIdentityType = "aadUser"
 		}
-		Conversation = $null
+		conversation = $null
 	}
-	Body = @{
-		ContentType = "html"
-		Content = "<p><em>text</em></p><attachment id="e8f78756199240b88448ae0fc6db112d"></attachment><attachment id="638464e32834471ea202007da60a5ae6"></attachment>"
+	body = @{
+		contentType = "html"
+		content = "&lt;p&gt;&lt;em&gt;text&lt;/em&gt;&lt;/p&gt;&lt;attachment id="e8f78756199240b88448ae0fc6db112d"&gt;&lt;/attachment&gt;&lt;attachment id="638464e32834471ea202007da60a5ae6"&gt;&lt;/attachment&gt;"
 	}
-	Attachments = @(
+	attachments = @(
 		@{
-			Id = "e8f78756199240b88448ae0fc6db112d"
-			ContentType = "application/vnd.microsoft.card.hero"
-			ContentUrl = $null
-			Content = "{
+			id = "e8f78756199240b88448ae0fc6db112d"
+			contentType = "application/vnd.microsoft.card.hero"
+			contentUrl = $null
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -331,13 +344,13 @@ $params = @{
     {
       "type": "openUrl",
       "image": "https://urlp.asm.skype.com/v1/url/content?url=https%3a%2f%2fcdn2.iconfinder.com%2fdata%2ficons%2fsocial-icons-33%2f128%2fTrello-128.png",
-      "title": "😃😃 click me 😃😃",
+      "title": "???????? click me ????????",
       "value": "http://microsoft.com"
     },
     {
       "type": "imback",
-      "title": "&i am back& <>= \"",
-      "value": "&i am back& <>= \""
+      "title": "&amp;i am back&amp; &lt;&gt;= \"",
+      "value": "&amp;i am back&amp; &lt;&gt;= \""
     },
     {
       "type": "openUrl",
@@ -345,18 +358,18 @@ $params = @{
       "value": "http://google.com"
     }
   ]
-}"
-			Name = $null
-			ThumbnailUrl = $null
+}'
+			name = $null
+			thumbnailUrl = $null
 		}
 		@{
-			Id = "638464e32834471ea202007da60a5ae6"
-			ContentType = "application/vnd.microsoft.card.hero"
-			ContentUrl = $null
-			Content = "{
+			id = "638464e32834471ea202007da60a5ae6"
+			contentType = "application/vnd.microsoft.card.hero"
+			contentUrl = $null
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
-  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here's a small sample of some recipes to whet your appetite.",
+  "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
   "images": [
     {
       "url": "https://us-api.asm.skype.com/v1/objects/0-eus-d8-ced0c9567ee7b0b233b987bd32f9eacd/views/img_preview"
@@ -365,130 +378,260 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&message back& <>= \"",
-      "text": "text = &message back& <>= \"",
-      "displayText": "displayText = &message back& <>= \"",
+      "title": "&amp;message back&amp; &lt;&gt;= \"",
+      "text": "text = &amp;message back&amp; &lt;&gt;= \"",
+      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= \"",
       "value": {
         "text": "some text 2"
       }
     }
   ]
-}"
-			Name = $null
-			ThumbnailUrl = $null
+}'
+			name = $null
+			thumbnailUrl = $null
 		}
 	)
-	Mentions = @(
+	mentions = @(
 	)
-	Reactions = @(
+	reactions = @(
 		@{
-			ReactionType = "angry"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "angry"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "laugh"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "laugh"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "like"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "like"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "like"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "4c9041b7-449a-40f7-8855-56da239b9fd1"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "like"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "4c9041b7-449a-40f7-8855-56da239b9fd1"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "like"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "like"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "heart"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "heart"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "sad"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "sad"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					displayName = $null
+					userIdentityType = "aadUser"
 				}
 			}
 		}
 		@{
-			ReactionType = "surprised"
-			CreatedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
-			User = @{
-				Application = $null
-				Device = $null
-				User = @{
-					Id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
-					DisplayName = $null
-					UserIdentityType = "aadUser"
+			reactionType = "surprised"
+			createdDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
+			user = @{
+				application = $null
+				device = $null
+				user = @{
+					id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+					displayName = $null
+					userIdentityType = "aadUser"
+				}
+			}
+		}
+	)
+	messageHistory = @(
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:30.489Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "angry"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:32.489Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "laugh"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T02:17:14.67Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "like"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "f1b66449-b46d-49b0-9c3c-53c10a5c818e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T02:34:40.3Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "like"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "4c9041b7-449a-40f7-8855-56da239b9fd1"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:25.489Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "like"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:31.489Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "heart"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:33.489Z")
+			actions = "reactionAdded"
+			reaction = @{
+				reactionType = "sad"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
+				}
+			}
+		}
+		@{
+			modifiedDateTime = [System.DateTime]::Parse("2018-10-21T08:10:34.489Z")
+			actions = "surprised"
+			reaction = @{
+				reactionType = "sad"
+				user = @{
+					application = $null
+					device = $null
+					user = @{
+						id = "03a02232-d8f5-4970-a77e-6e8c76ce7a4e"
+						displayName = $null
+						userIdentityType = "aadUser"
+					}
 				}
 			}
 		}
 	)
 }
+
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-```
 
 ## PARAMETERS
 
@@ -496,7 +639,7 @@ Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessa
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -512,7 +655,7 @@ References to attached objects like files, tabs, meetings etc.
 To construct, see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageAttachment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageAttachment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -528,7 +671,7 @@ itemBody
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -544,7 +687,7 @@ chatMessage
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -559,8 +702,8 @@ Accept wildcard characters: False
 The unique identifier of channel
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -575,7 +718,7 @@ channelIdentity
 To construct, see NOTES section for CHANNELIDENTITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChannelIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChannelIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -590,7 +733,7 @@ Accept wildcard characters: False
 If the message was sent in a chat, represents the identity of the chat.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -605,8 +748,8 @@ Accept wildcard characters: False
 The unique identifier of chatMessage
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -620,7 +763,7 @@ Accept wildcard characters: False
 Timestamp of when the chat message was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -636,7 +779,7 @@ Read only.
 Timestamp at which the chat message was deleted, or null if not deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -652,7 +795,7 @@ Read-only.
 Version number of the chat message.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -667,7 +810,7 @@ Accept wildcard characters: False
 eventMessageDetail
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -682,7 +825,7 @@ Accept wildcard characters: False
 chatMessageFromIdentitySet
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -698,7 +841,7 @@ Content in a message hosted by Microsoft Teams - for example, images or code sni
 To construct, see NOTES section for HOSTEDCONTENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageHostedContent[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageHostedContent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -714,7 +857,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -729,7 +872,7 @@ Accept wildcard characters: False
 chatMessageImportance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -745,8 +888,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -763,7 +906,7 @@ Triggers an 'Edited' flag in the Teams UI.
 If no edits are made the value is null.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -779,7 +922,7 @@ Read only.
 Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -795,7 +938,7 @@ Locale of the chat message set by the client.
 Always set to en-us.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -812,7 +955,7 @@ Supported entities are: user, bot, team, channel, and tag.
 To construct, see NOTES section for MENTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageMention[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageMention[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -828,7 +971,7 @@ List of activity history of a message item, including modification time and acti
 To construct, see NOTES section for MESSAGEHISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageHistoryItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageHistoryItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -843,7 +986,7 @@ Accept wildcard characters: False
 chatMessageType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -858,7 +1001,7 @@ Accept wildcard characters: False
 chatMessageFromIdentitySet
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -874,7 +1017,7 @@ chatMessagePolicyViolation
 To construct, see NOTES section for POLICYVIOLATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessagePolicyViolation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessagePolicyViolation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -890,7 +1033,7 @@ Reactions for this chat message (for example, Like).
 To construct, see NOTES section for REACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessageReaction[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessageReaction[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -907,7 +1050,7 @@ Supports $expand for channel messages.
 To construct, see NOTES section for REPLIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatMessage[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -924,7 +1067,7 @@ ID of the parent chat message or root chat message of the thread.
 (Only applies to chat messages in channels, not chats.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -939,7 +1082,7 @@ Accept wildcard characters: False
 The subject of the chat message, in plaintext.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -955,7 +1098,7 @@ Summary text of the chat message that could be used for push notifications and s
 Only applies to channel chat messages, not chat messages in a chat.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -970,8 +1113,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -986,7 +1129,7 @@ Read-only.
 Link to the message in Microsoft Teams.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1001,7 +1144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1017,7 +1160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1034,10 +1177,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatMessage
+
 ## NOTES
 
 ALIASES
@@ -1169,6 +1315,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
@@ -1351,7 +1498,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessage?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessage?view=graph-powershell-v1.0)

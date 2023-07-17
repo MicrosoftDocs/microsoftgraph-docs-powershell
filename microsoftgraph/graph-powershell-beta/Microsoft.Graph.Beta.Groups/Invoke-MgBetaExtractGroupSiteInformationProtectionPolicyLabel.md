@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupsiteinformationprotectionpolicylabel
 schema: 2.0.0
@@ -11,15 +11,12 @@ schema: 2.0.0
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ExtractExpanded (Default)
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -27,21 +24,21 @@ Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> 
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -GroupId <String> -SiteId <String>
  -BodyParameter <IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ExtractViaIdentityExpanded
-```
-Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
 Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ExtractViaIdentityExpanded
+```
+Invoke-MgBetaExtractGroupSiteInformationProtectionPolicyLabel -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,15 +47,19 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -66,7 +67,7 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -82,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Extract, ExtractViaIdentity
 Aliases:
 
@@ -98,7 +99,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
 Parameter Sets: ExtractExpanded, ExtractViaIdentityExpanded
 Aliases:
 
@@ -113,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: ExtractExpanded, Extract
+Type: System.String
+Parameter Sets: Extract, ExtractExpanded
 Aliases:
 
 Required: True
@@ -129,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: ExtractViaIdentityExpanded, ExtractViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: ExtractViaIdentity, ExtractViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: ExtractExpanded, Extract
+Type: System.String
+Parameter Sets: Extract, ExtractExpanded
 Aliases:
 
 Required: True
@@ -159,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,10 +193,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1MuzbywGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionContentLabel
+
 ## NOTES
 
 ALIASES
@@ -272,4 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+

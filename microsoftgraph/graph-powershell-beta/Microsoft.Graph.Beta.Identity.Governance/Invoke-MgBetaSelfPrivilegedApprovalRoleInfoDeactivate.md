@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaselfprivilegedapprovalroleinfodeactivate
 schema: 2.0.0
@@ -10,21 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action selfDeactivate
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgSelfPrivilegedApprovalRoleInfoDeactivate](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSelfPrivilegedApprovalRoleInfoDeactivate?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Self (Default)
 ```
-Invoke-MgBetaSelfPrivilegedApprovalRoleInfoDeactivate -PrivilegedApprovalId <String> [-WhatIf] [-Confirm]
+Invoke-MgBetaSelfPrivilegedApprovalRoleInfoDeactivate -PrivilegedApprovalId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### SelfViaIdentity
 ```
-Invoke-MgBetaSelfPrivilegedApprovalRoleInfoDeactivate -InputObject <IIdentityGovernanceIdentity> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaSelfPrivilegedApprovalRoleInfoDeactivate -InputObject <IIdentityGovernanceIdentity> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,14 +29,14 @@ Invoke action selfDeactivate
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -53,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: SelfViaIdentity
 Aliases:
 
@@ -68,7 +65,7 @@ Accept wildcard characters: False
 The unique identifier of privilegedApproval
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Self
 Aliases:
 
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignment
+
 ## NOTES
 
 ALIASES
@@ -227,4 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgSelfPrivilegedApprovalRoleInfoDeactivate](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSelfPrivilegedApprovalRoleInfoDeactivate?view=graph-powershell-v1.0)
+

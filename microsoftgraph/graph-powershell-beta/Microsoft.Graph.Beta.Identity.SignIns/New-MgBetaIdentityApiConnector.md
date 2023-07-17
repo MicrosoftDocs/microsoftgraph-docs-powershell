@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityapiconnector
 schema: 2.0.0
@@ -10,20 +10,17 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new identityApiConnector object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityApiConnector [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-TargetUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-WhatIf] [-Confirm]
+New-MgBetaIdentityApiConnector -BodyParameter <IMicrosoftGraphIdentityApiConnector> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,50 +29,39 @@ Create a new identityApiConnector object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
+
 $params = @{
-	DisplayName = "Test API"
-	TargetUrl = "https://someapi.com/api"
-	AuthenticationConfiguration = @{
+	displayName = "Test API"
+	targetUrl = "https://someapi.com/api"
+	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.basicAuthentication"
-		Username = "<USERNAME>"
-		Password = "<PASSWORD>"
+		username = "MyUsername"
+		password = "MyPassword"
 	}
 }
-New-MgBetaIdentityApiConnector -BodyParameter $params
-```
 
-### EXAMPLE 2
+New-MgBetaIdentityApiConnector -BodyParameter $params
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-$params = @{
-	DisplayName = "Test API"
-	TargetUrl = "https://someotherapi.com/api"
-	AuthenticationConfiguration = @{
-		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
-		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-		Password = "<password>"
-	}
-}
-New-MgBetaIdentityApiConnector -BodyParameter $params
 ```
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
-	DisplayName = "Test API"
-	TargetUrl = "https://someotherapi.com/api"
-	AuthenticationConfiguration = @{
+	displayName = "Test API"
+	targetUrl = "https://someotherapi.com/api"
+	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
-		Pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-		Password = "<password>"
+		pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
+		password = "CertificatePassword"
 	}
 }
+
 New-MgBetaIdentityApiConnector -BodyParameter $params
-```
 
 ## PARAMETERS
 
@@ -83,7 +69,7 @@ New-MgBetaIdentityApiConnector -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +84,7 @@ Accept wildcard characters: False
 apiAuthenticationConfigurationBase
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +100,7 @@ identityApiConnector
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentityApiConnector
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
 Parameter Sets: Create
 Aliases:
 
@@ -129,7 +115,7 @@ Accept wildcard characters: False
 The name of the API connector.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -145,7 +131,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -160,7 +146,7 @@ Accept wildcard characters: False
 The URL of the API endpoint to call.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -175,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,9 +194,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentityApiConnector
+
 ## NOTES
 
 ALIASES
@@ -229,4 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetUrl <String>]`: The URL of the API endpoint to call.
 
 ## RELATED LINKS
-[New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-v1.0)
+

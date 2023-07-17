@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetainvalidateuserrefreshtoken
 schema: 2.0.0
@@ -15,19 +15,16 @@ In fact, this operation would force the user to sign in again for all applicatio
 For developers, if the application attempts to redeem a delegated access token for this user by using an invalidated refresh token, the application will get an error.
 If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInvalidateUserRefreshToken](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInvalidateUserRefreshToken?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Invalidate (Default)
 ```
-Invoke-MgBetaInvalidateUserRefreshToken -UserId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaInvalidateUserRefreshToken -UserId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InvalidateViaIdentity
 ```
-Invoke-MgBetaInvalidateUserRefreshToken -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
+Invoke-MgBetaInvalidateUserRefreshToken -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -41,12 +38,14 @@ If this happens, the application will need to acquire a new refresh token by mak
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaInvalidateUserRefreshToken -UserId $userId
 ```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +54,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: InvalidateViaIdentity
 Aliases:
 
@@ -70,7 +69,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Invalidate
 Aliases:
 
@@ -85,7 +84,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -101,7 +100,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -118,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -173,4 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgInvalidateUserRefreshToken](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInvalidateUserRefreshToken?view=graph-powershell-v1.0)
+

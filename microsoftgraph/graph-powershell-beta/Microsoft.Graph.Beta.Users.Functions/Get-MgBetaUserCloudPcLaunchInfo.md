@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions/get-mgbetausercloudpclaunchinfo
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getCloudPcLaunchInfo
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCloudPcLaunchInfo](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcLaunchInfo?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -30,12 +27,14 @@ Invoke function getCloudPcLaunchInfo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Get-MgBetaUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
 ```
+
+
 
 ## PARAMETERS
 
@@ -43,7 +42,7 @@ Get-MgBetaUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
 The unique identifier of cloudPC
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -59,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -74,7 +73,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -91,9 +90,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcLaunchInfo
+
 ## NOTES
 
 ALIASES
@@ -143,4 +144,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserCloudPcLaunchInfo](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcLaunchInfo?view=graph-powershell-v1.0)
+

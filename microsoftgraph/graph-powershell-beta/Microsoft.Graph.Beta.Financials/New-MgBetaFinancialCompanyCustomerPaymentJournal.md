@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/new-mgbetafinancialcompanycustomerpaymentjournal
 schema: 2.0.0
@@ -10,23 +10,26 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to customerPaymentJournals for financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyCustomerPaymentJournal](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyCustomerPaymentJournal?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String> [-Account <IMicrosoftGraphAccount>]
  [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>] [-BalancingAccountNumber <String>]
- [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>] [-DisplayName <String>]
+ [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String>
- -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,14 +37,8 @@ New-MgBetaFinancialCompanyCustomerPaymentJournal -CompanyId <String>
 New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
  [-Account <IMicrosoftGraphAccount>] [-AdditionalProperties <Hashtable>] [-BalancingAccountId <String>]
  [-BalancingAccountNumber <String>] [-Code <String>] [-CustomerPayments <IMicrosoftGraphCustomerPayment[]>]
- [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaFinancialCompanyCustomerPaymentJournal -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphCustomerPaymentJournal> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +46,14 @@ Create new navigation property to customerPaymentJournals for financials
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -70,7 +67,7 @@ account
 To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccount
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +82,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +97,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -131,7 +128,7 @@ customerPaymentJournal
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPaymentJournal
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -146,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of company
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -177,7 +174,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CUSTOMERPAYMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomerPayment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPayment[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +189,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -204,11 +201,10 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-The unique identifier for an entity.
-Read-only.
+.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -224,8 +220,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -239,7 +235,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -254,7 +250,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -270,7 +266,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -287,10 +283,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomerPaymentJournal
+
 ## NOTES
 
 ALIASES
@@ -302,23 +301,22 @@ To create the parameters described below, construct a hash table containing the 
 
 `ACCOUNT <IMicrosoftGraphAccount>`: account
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Blocked <Boolean?>]`: 
   - `[Category <String>]`: 
   - `[DisplayName <String>]`: 
+  - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Number <String>]`: 
   - `[SubCategory <String>]`: 
 
 `BODYPARAMETER <IMicrosoftGraphCustomerPaymentJournal>`: customerPaymentJournal
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Account <IMicrosoftGraphAccount>]`: account
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[SubCategory <String>]`: 
@@ -326,7 +324,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[BalancingAccountNumber <String>]`: 
   - `[Code <String>]`: 
   - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Amount <Decimal?>]`: 
     - `[AppliesToInvoiceId <String>]`: 
     - `[AppliesToInvoiceNumber <String>]`: 
@@ -334,7 +331,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[ContactId <String>]`: 
     - `[Customer <IMicrosoftGraphCustomer>]`: customer
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[City <String>]`: 
@@ -345,49 +341,50 @@ To create the parameters described below, construct a hash table containing the 
       - `[Blocked <String>]`: 
       - `[Currency <IMicrosoftGraphCurrency>]`: currency
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AmountDecimalPlaces <String>]`: 
         - `[AmountRoundingPrecision <Decimal?>]`: 
         - `[Code <String>]`: 
         - `[DisplayName <String>]`: 
+        - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Symbol <String>]`: 
       - `[CurrencyCode <String>]`: 
       - `[CurrencyId <String>]`: 
       - `[DisplayName <String>]`: 
       - `[Email <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
       - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Code <String>]`: 
         - `[DisplayName <String>]`: 
+        - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PaymentMethodId <String>]`: 
       - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
         - `[Code <String>]`: 
         - `[DiscountDateCalculation <String>]`: 
         - `[DiscountPercent <Decimal?>]`: 
         - `[DisplayName <String>]`: 
         - `[DueDateCalculation <String>]`: 
+        - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PaymentTermsId <String>]`: 
       - `[PhoneNumber <String>]`: 
       - `[Picture <IMicrosoftGraphPicture[]>]`: 
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Content <Byte[]>]`: 
         - `[ContentType <String>]`: 
         - `[Height <Int32?>]`: 
+        - `[Id <String>]`: 
         - `[Width <Int32?>]`: 
       - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Code <String>]`: 
         - `[DisplayName <String>]`: 
+        - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
       - `[ShipmentMethodId <String>]`: 
       - `[TaxAreaDisplayName <String>]`: 
@@ -401,15 +398,16 @@ To create the parameters described below, construct a hash table containing the 
     - `[Description <String>]`: 
     - `[DocumentNumber <String>]`: 
     - `[ExternalDocumentNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[JournalDisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[LineNumber <Int32?>]`: 
     - `[PostingDate <DateTime?>]`: 
   - `[DisplayName <String>]`: 
+  - `[Id <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
 `CUSTOMERPAYMENTS <IMicrosoftGraphCustomerPayment[]>`: .
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Amount <Decimal?>]`: 
   - `[AppliesToInvoiceId <String>]`: 
   - `[AppliesToInvoiceNumber <String>]`: 
@@ -417,7 +415,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContactId <String>]`: 
   - `[Customer <IMicrosoftGraphCustomer>]`: customer
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: 
@@ -428,49 +425,50 @@ To create the parameters described below, construct a hash table containing the 
     - `[Blocked <String>]`: 
     - `[Currency <IMicrosoftGraphCurrency>]`: currency
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AmountDecimalPlaces <String>]`: 
       - `[AmountRoundingPrecision <Decimal?>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Symbol <String>]`: 
     - `[CurrencyCode <String>]`: 
     - `[CurrencyId <String>]`: 
     - `[DisplayName <String>]`: 
     - `[Email <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PaymentMethodId <String>]`: 
     - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
       - `[Code <String>]`: 
       - `[DiscountDateCalculation <String>]`: 
       - `[DiscountPercent <Decimal?>]`: 
       - `[DisplayName <String>]`: 
       - `[DueDateCalculation <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PaymentTermsId <String>]`: 
     - `[PhoneNumber <String>]`: 
     - `[Picture <IMicrosoftGraphPicture[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Content <Byte[]>]`: 
       - `[ContentType <String>]`: 
       - `[Height <Int32?>]`: 
+      - `[Id <String>]`: 
       - `[Width <Int32?>]`: 
     - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[ShipmentMethodId <String>]`: 
     - `[TaxAreaDisplayName <String>]`: 
@@ -484,6 +482,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Description <String>]`: 
   - `[DocumentNumber <String>]`: 
   - `[ExternalDocumentNumber <String>]`: 
+  - `[Id <String>]`: 
   - `[JournalDisplayName <String>]`: 
   - `[LastModifiedDateTime <DateTime?>]`: 
   - `[LineNumber <Int32?>]`: 
@@ -528,7 +527,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[New-MgFinancialCompanyCustomerPaymentJournal](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyCustomerPaymentJournal?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgFinancialCompanyCustomerPaymentJournal](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyCustomerPaymentJournal?view=graph-powershell-v1.0)

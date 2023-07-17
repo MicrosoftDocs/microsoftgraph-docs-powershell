@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Notes
-Module Guid: 1eda57af-7eb0-4089-a70b-d85a4bb3829d
+Module Guid: 3e5fd398-42c9-4ecf-8fb3-6823e2a79459
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,14 +11,17 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.Notes Cmdlets
-### [Get-MgBetaGroupOnenoteNotebookCount](Get-MgBetaGroupOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteNotebook](Get-MgBetaGroupOnenoteNotebook.md)
+Retrieve the properties and relationships of a notebook object.
 
 ### [Get-MgBetaGroupOnenoteNotebookCount](Get-MgBetaGroupOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupOnenoteNotebookCount](Get-MgBetaGroupOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteNotebookSection](Get-MgBetaGroupOnenoteNotebookSection.md)
+Retrieve a list of section objects from the specified notebook.
+
+### [Get-MgBetaGroupOnenoteNotebookSectionGroup](Get-MgBetaGroupOnenoteNotebookSectionGroup.md)
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgBetaGroupOnenoteOperation](Get-MgBetaGroupOnenoteOperation.md)
 Get the status of a long-running OneNote operation.
@@ -53,39 +56,37 @@ Get content for the navigation property resources from groups
 ### [Get-MgBetaGroupOnenoteResourceCount](Get-MgBetaGroupOnenoteResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupOnenoteResourceCount](Get-MgBetaGroupOnenoteResourceCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteSection](Get-MgBetaGroupOnenoteSection.md)
+Retrieve the properties and relationships of a section object.
 
 ### [Get-MgBetaGroupOnenoteSectionCount](Get-MgBetaGroupOnenoteSectionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupOnenoteSectionCount](Get-MgBetaGroupOnenoteSectionCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteSectionGroup](Get-MgBetaGroupOnenoteSectionGroup.md)
+Retrieve the properties and relationships of a sectionGroup object.
 
 ### [Get-MgBetaGroupOnenoteSectionGroupCount](Get-MgBetaGroupOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupOnenoteSectionGroupCount](Get-MgBetaGroupOnenoteSectionGroupCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupOnenoteSectionGroupSection](Get-MgBetaGroupOnenoteSectionGroupSection.md)
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgBetaGroupOnenoteSectionPage](Get-MgBetaGroupOnenoteSectionPage.md)
 The collection of pages in the section.
 Read-only.
 Nullable.
 
-### [Get-MgBetaGroupOnenoteSectionPage](Get-MgBetaGroupOnenoteSectionPage.md)
-The collection of pages in the section.
-Read-only.
-Nullable.
+### [Get-MgBetaSiteOnenoteNotebook](Get-MgBetaSiteOnenoteNotebook.md)
+Retrieve the properties and relationships of a notebook object.
 
 ### [Get-MgBetaSiteOnenoteNotebookCount](Get-MgBetaSiteOnenoteNotebookCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteNotebookCount](Get-MgBetaSiteOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteNotebookSection](Get-MgBetaSiteOnenoteNotebookSection.md)
+Retrieve a list of section objects from the specified notebook.
 
-### [Get-MgBetaSiteOnenoteNotebookCount](Get-MgBetaSiteOnenoteNotebookCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteNotebookSectionGroup](Get-MgBetaSiteOnenoteNotebookSectionGroup.md)
+Retrieve a list of section groups from the specified notebook.
 
 ### [Get-MgBetaSiteOnenoteOperation](Get-MgBetaSiteOnenoteOperation.md)
 Get the status of a long-running OneNote operation.
@@ -120,20 +121,20 @@ Get content for the navigation property resources from sites
 ### [Get-MgBetaSiteOnenoteResourceCount](Get-MgBetaSiteOnenoteResourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteResourceCount](Get-MgBetaSiteOnenoteResourceCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteSection](Get-MgBetaSiteOnenoteSection.md)
+Retrieve the properties and relationships of a section object.
 
 ### [Get-MgBetaSiteOnenoteSectionCount](Get-MgBetaSiteOnenoteSectionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteSectionCount](Get-MgBetaSiteOnenoteSectionCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteSectionGroup](Get-MgBetaSiteOnenoteSectionGroup.md)
+Retrieve the properties and relationships of a sectionGroup object.
 
 ### [Get-MgBetaSiteOnenoteSectionGroupCount](Get-MgBetaSiteOnenoteSectionGroupCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteOnenoteSectionGroupCount](Get-MgBetaSiteOnenoteSectionGroupCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteSectionGroupSection](Get-MgBetaSiteOnenoteSectionGroupSection.md)
+Retrieve a list of onenoteSection objects from the specified section group.
 
 ### [Get-MgBetaSiteOnenoteSectionPage](Get-MgBetaSiteOnenoteSectionPage.md)
 The collection of pages in the section.
@@ -205,56 +206,50 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
-### [Get-MgBetaUserOnenoteSectionPage](Get-MgBetaUserOnenoteSectionPage.md)
-The collection of pages in the section.
-Read-only.
-Nullable.
+### [New-MgBetaGroupOnenoteNotebook](New-MgBetaGroupOnenoteNotebook.md)
+Create a new OneNote notebook.
 
-### [Get-MgBetaUserOnenoteSectionPage](Get-MgBetaUserOnenoteSectionPage.md)
-The collection of pages in the section.
-Read-only.
-Nullable.
+### [New-MgBetaGroupOnenoteNotebookSection](New-MgBetaGroupOnenoteNotebookSection.md)
+Create a new section in the specified notebook.
 
-### [Get-MgBetaUserOnenoteSectionPage](Get-MgBetaUserOnenoteSectionPage.md)
-The collection of pages in the section.
-Read-only.
-Nullable.
+### [New-MgBetaGroupOnenoteNotebookSectionGroup](New-MgBetaGroupOnenoteNotebookSectionGroup.md)
+Create a new section group in the specified notebook.
 
 ### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
 Create new navigation property to pages for groups
 
-### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
-Create new navigation property to pages for groups
+### [New-MgBetaGroupOnenoteSection](New-MgBetaGroupOnenoteSection.md)
+Create new navigation property to sections for groups
 
-### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
-Create new navigation property to pages for groups
+### [New-MgBetaGroupOnenoteSectionGroup](New-MgBetaGroupOnenoteSectionGroup.md)
+Create new navigation property to sectionGroups for groups
 
-### [New-MgBetaGroupOnenotePage](New-MgBetaGroupOnenotePage.md)
-Create new navigation property to pages for groups
-
-### [New-MgBetaGroupOnenoteSectionPage](New-MgBetaGroupOnenoteSectionPage.md)
-Create new navigation property to pages for groups
+### [New-MgBetaGroupOnenoteSectionGroupSection](New-MgBetaGroupOnenoteSectionGroupSection.md)
+Create a new section in the specified section group.
 
 ### [New-MgBetaGroupOnenoteSectionPage](New-MgBetaGroupOnenoteSectionPage.md)
 Create new navigation property to pages for groups
 
-### [New-MgBetaGroupOnenoteSectionPage](New-MgBetaGroupOnenoteSectionPage.md)
-Create new navigation property to pages for groups
+### [New-MgBetaSiteOnenoteNotebook](New-MgBetaSiteOnenoteNotebook.md)
+Create a new OneNote notebook.
 
-### [New-MgBetaGroupOnenoteSectionPage](New-MgBetaGroupOnenoteSectionPage.md)
-Create new navigation property to pages for groups
+### [New-MgBetaSiteOnenoteNotebookSection](New-MgBetaSiteOnenoteNotebookSection.md)
+Create a new section in the specified notebook.
 
-### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
-Create new navigation property to pages for sites
-
-### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
-Create new navigation property to pages for sites
+### [New-MgBetaSiteOnenoteNotebookSectionGroup](New-MgBetaSiteOnenoteNotebookSectionGroup.md)
+Create a new section group in the specified notebook.
 
 ### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
 Create new navigation property to pages for sites
 
-### [New-MgBetaSiteOnenotePage](New-MgBetaSiteOnenotePage.md)
-Create new navigation property to pages for sites
+### [New-MgBetaSiteOnenoteSection](New-MgBetaSiteOnenoteSection.md)
+Create new navigation property to sections for sites
+
+### [New-MgBetaSiteOnenoteSectionGroup](New-MgBetaSiteOnenoteSectionGroup.md)
+Create new navigation property to sectionGroups for sites
+
+### [New-MgBetaSiteOnenoteSectionGroupSection](New-MgBetaSiteOnenoteSectionGroupSection.md)
+Create a new section in the specified section group.
 
 ### [New-MgBetaSiteOnenoteSectionPage](New-MgBetaSiteOnenoteSectionPage.md)
 Create new navigation property to pages for sites
@@ -271,8 +266,8 @@ Create a new section group in the specified notebook.
 ### [New-MgBetaUserOnenotePage](New-MgBetaUserOnenotePage.md)
 Create new navigation property to pages for users
 
-### [New-MgBetaUserOnenotePage](New-MgBetaUserOnenotePage.md)
-Create new navigation property to pages for users
+### [New-MgBetaUserOnenoteSection](New-MgBetaUserOnenoteSection.md)
+Create new navigation property to sections for users
 
 ### [New-MgBetaUserOnenoteSectionGroup](New-MgBetaUserOnenoteSectionGroup.md)
 Create new navigation property to sectionGroups for users

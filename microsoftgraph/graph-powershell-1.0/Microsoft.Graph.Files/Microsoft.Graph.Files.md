@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Files
-Module Guid: f5c51b42-c91c-40d3-8d98-a8d16e350ab6
+Module Guid: 2e514bd9-3e2b-47e4-9df6-cd15c180bc5a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgDriveItem](Copy-MgDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -54,6 +54,24 @@ The content stream, if the item represents a file.
 
 ### [Get-MgDriveBundleCount](Get-MgDriveBundleCount.md)
 Get the number of the resource
+
+### [Get-MgDriveContentTypeBase](Get-MgDriveContentTypeBase.md)
+Parent contentType from which this content type is derived.
+
+### [Get-MgDriveContentTypeBaseType](Get-MgDriveContentTypeBaseType.md)
+The collection of content types that are ancestors of this content type.
+
+### [Get-MgDriveContentTypeBaseTypeCount](Get-MgDriveContentTypeBaseTypeCount.md)
+Get the number of the resource
+
+### [Get-MgDriveCreatedByUser](Get-MgDriveCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveCreatedByUserMailboxSetting](Get-MgDriveCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgDriveFollowing](Get-MgDriveFollowing.md)
 The list of items the user is following.
@@ -107,8 +125,35 @@ The content stream, if the item represents a file.
 ### [Get-MgDriveItemCount](Get-MgDriveItemCount.md)
 Get the number of the resource
 
+### [Get-MgDriveItemCreatedByUser](Get-MgDriveItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveItemCreatedByUserMailboxSetting](Get-MgDriveItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveItemDelta](Get-MgDriveItemDelta.md)
 Invoke function delta
+
+### [Get-MgDriveItemItemLastModifiedByUser](Get-MgDriveItemItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgDriveItemItemLastModifiedByUserMailboxSetting](Get-MgDriveItemItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgDriveItemLastModifiedByUser](Get-MgDriveItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgDriveItemLastModifiedByUserMailboxSetting](Get-MgDriveItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgDriveItemListItem](Get-MgDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -121,11 +166,23 @@ Invoke function getActivitiesByInterval
 ### [Get-MgDriveItemListItemAnalytic](Get-MgDriveItemListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgDriveItemListItemCreatedByUser](Get-MgDriveItemListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveItemListItemCreatedByUserMailboxSetting](Get-MgDriveItemListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveItemListItemDocumentSetVersion](Get-MgDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgDriveItemListItemDocumentSetVersionCount](Get-MgDriveItemListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgDriveItemListItemDocumentSetVersionField](Get-MgDriveItemListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgDriveItemListItemDriveItem](Get-MgDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -178,6 +235,15 @@ The content stream for this version of the item.
 ### [Get-MgDriveItemVersionCount](Get-MgDriveItemVersionCount.md)
 Get the number of the resource
 
+### [Get-MgDriveLastModifiedByUser](Get-MgDriveLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgDriveLastModifiedByUserMailboxSetting](Get-MgDriveLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveList](Get-MgDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -194,15 +260,6 @@ The source column for the content type column.
 
 ### [Get-MgDriveListContentType](Get-MgDriveListContentType.md)
 The collection of content types present in this list.
-
-### [Get-MgDriveListContentTypeBase](Get-MgDriveListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgDriveListContentTypeBaseType](Get-MgDriveListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgDriveListContentTypeBaseTypeCount](Get-MgDriveListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgDriveListContentTypeColumn](Get-MgDriveListContentTypeColumn.md)
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
@@ -231,6 +288,15 @@ Invoke function getCompatibleHubContentTypes
 ### [Get-MgDriveListContentTypeCount](Get-MgDriveListContentTypeCount.md)
 Get the number of the resource
 
+### [Get-MgDriveListCreatedByUser](Get-MgDriveListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveListCreatedByUserMailboxSetting](Get-MgDriveListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveListDrive](Get-MgDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -247,11 +313,23 @@ Analytics about the view activities that took place on this item.
 ### [Get-MgDriveListItemCount](Get-MgDriveListItemCount.md)
 Get the number of the resource
 
+### [Get-MgDriveListItemCreatedByUser](Get-MgDriveListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveListItemCreatedByUserMailboxSetting](Get-MgDriveListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveListItemDocumentSetVersion](Get-MgDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgDriveListItemDocumentSetVersionCount](Get-MgDriveListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgDriveListItemDocumentSetVersionField](Get-MgDriveListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgDriveListItemDriveItem](Get-MgDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -323,8 +401,35 @@ Get the number of the resource
 ### [Get-MgDriveRootContent](Get-MgDriveRootContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgDriveRootCreatedByUser](Get-MgDriveRootCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveRootCreatedByUserMailboxSetting](Get-MgDriveRootCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveRootDelta](Get-MgDriveRootDelta.md)
 Invoke function delta
+
+### [Get-MgDriveRootItemLastModifiedByUser](Get-MgDriveRootItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgDriveRootItemLastModifiedByUserMailboxSetting](Get-MgDriveRootItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgDriveRootLastModifiedByUser](Get-MgDriveRootLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgDriveRootLastModifiedByUserMailboxSetting](Get-MgDriveRootLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgDriveRootListItem](Get-MgDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
@@ -337,11 +442,23 @@ Invoke function getActivitiesByInterval
 ### [Get-MgDriveRootListItemAnalytic](Get-MgDriveRootListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgDriveRootListItemCreatedByUser](Get-MgDriveRootListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgDriveRootListItemCreatedByUserMailboxSetting](Get-MgDriveRootListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgDriveRootListItemDocumentSetVersion](Get-MgDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgDriveRootListItemDocumentSetVersionCount](Get-MgDriveRootListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgDriveRootListItemDocumentSetVersionField](Get-MgDriveRootListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgDriveRootListItemDriveItem](Get-MgDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -424,8 +541,26 @@ The content stream, if the item represents a file.
 ### [Get-MgGroupDriveBundleCount](Get-MgGroupDriveBundleCount.md)
 Get the number of the resource
 
+### [Get-MgGroupDriveContentTypeBase](Get-MgGroupDriveContentTypeBase.md)
+Parent contentType from which this content type is derived.
+
+### [Get-MgGroupDriveContentTypeBaseType](Get-MgGroupDriveContentTypeBaseType.md)
+The collection of content types that are ancestors of this content type.
+
+### [Get-MgGroupDriveContentTypeBaseTypeCount](Get-MgGroupDriveContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgGroupDriveCount](Get-MgGroupDriveCount.md)
 Get the number of the resource
+
+### [Get-MgGroupDriveCreatedByUser](Get-MgGroupDriveCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveCreatedByUserMailboxSetting](Get-MgGroupDriveCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgGroupDriveFollowing](Get-MgGroupDriveFollowing.md)
 The list of items the user is following.
@@ -476,6 +611,33 @@ The content stream, if the item represents a file.
 ### [Get-MgGroupDriveItemCount](Get-MgGroupDriveItemCount.md)
 Get the number of the resource
 
+### [Get-MgGroupDriveItemCreatedByUser](Get-MgGroupDriveItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveItemCreatedByUserMailboxSetting](Get-MgGroupDriveItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupDriveItemItemLastModifiedByUser](Get-MgGroupDriveItemItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupDriveItemItemLastModifiedByUserMailboxSetting](Get-MgGroupDriveItemItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupDriveItemLastModifiedByUser](Get-MgGroupDriveItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupDriveItemLastModifiedByUserMailboxSetting](Get-MgGroupDriveItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveItemListItem](Get-MgGroupDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -484,11 +646,23 @@ Nullable.
 ### [Get-MgGroupDriveItemListItemAnalytic](Get-MgGroupDriveItemListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgGroupDriveItemListItemCreatedByUser](Get-MgGroupDriveItemListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveItemListItemCreatedByUserMailboxSetting](Get-MgGroupDriveItemListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveItemListItemDocumentSetVersion](Get-MgGroupDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgGroupDriveItemListItemDocumentSetVersionCount](Get-MgGroupDriveItemListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgGroupDriveItemListItemDocumentSetVersionField](Get-MgGroupDriveItemListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupDriveItemListItemDriveItem](Get-MgGroupDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -541,6 +715,15 @@ The content stream for this version of the item.
 ### [Get-MgGroupDriveItemVersionCount](Get-MgGroupDriveItemVersionCount.md)
 Get the number of the resource
 
+### [Get-MgGroupDriveLastModifiedByUser](Get-MgGroupDriveLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupDriveLastModifiedByUserMailboxSetting](Get-MgGroupDriveLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveList](Get-MgGroupDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -557,15 +740,6 @@ The source column for the content type column.
 
 ### [Get-MgGroupDriveListContentType](Get-MgGroupDriveListContentType.md)
 The collection of content types present in this list.
-
-### [Get-MgGroupDriveListContentTypeBase](Get-MgGroupDriveListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgGroupDriveListContentTypeBaseType](Get-MgGroupDriveListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgGroupDriveListContentTypeBaseTypeCount](Get-MgGroupDriveListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupDriveListContentTypeColumn](Get-MgGroupDriveListContentTypeColumn.md)
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
@@ -591,6 +765,15 @@ The source column for the content type column.
 ### [Get-MgGroupDriveListContentTypeCount](Get-MgGroupDriveListContentTypeCount.md)
 Get the number of the resource
 
+### [Get-MgGroupDriveListCreatedByUser](Get-MgGroupDriveListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveListCreatedByUserMailboxSetting](Get-MgGroupDriveListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveListDrive](Get-MgGroupDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -601,11 +784,23 @@ Returns the metadata for an [item][] in a [list][].
 ### [Get-MgGroupDriveListItemAnalytic](Get-MgGroupDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgGroupDriveListItemCreatedByUser](Get-MgGroupDriveListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveListItemCreatedByUserMailboxSetting](Get-MgGroupDriveListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveListItemDocumentSetVersion](Get-MgGroupDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgGroupDriveListItemDocumentSetVersionCount](Get-MgGroupDriveListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgGroupDriveListItemDocumentSetVersionField](Get-MgGroupDriveListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupDriveListItemDriveItem](Get-MgGroupDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -674,6 +869,33 @@ Get the number of the resource
 ### [Get-MgGroupDriveRootContent](Get-MgGroupDriveRootContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgGroupDriveRootCreatedByUser](Get-MgGroupDriveRootCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveRootCreatedByUserMailboxSetting](Get-MgGroupDriveRootCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupDriveRootItemLastModifiedByUser](Get-MgGroupDriveRootItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupDriveRootItemLastModifiedByUserMailboxSetting](Get-MgGroupDriveRootItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupDriveRootLastModifiedByUser](Get-MgGroupDriveRootLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupDriveRootLastModifiedByUserMailboxSetting](Get-MgGroupDriveRootLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveRootListItem](Get-MgGroupDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -682,11 +904,23 @@ Nullable.
 ### [Get-MgGroupDriveRootListItemAnalytic](Get-MgGroupDriveRootListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgGroupDriveRootListItemCreatedByUser](Get-MgGroupDriveRootListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupDriveRootListItemCreatedByUserMailboxSetting](Get-MgGroupDriveRootListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupDriveRootListItemDocumentSetVersion](Get-MgGroupDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgGroupDriveRootListItemDocumentSetVersionCount](Get-MgGroupDriveRootListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgGroupDriveRootListItemDocumentSetVersionField](Get-MgGroupDriveRootListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupDriveRootListItemDriveItem](Get-MgGroupDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -752,8 +986,26 @@ The content stream, if the item represents a file.
 ### [Get-MgGroupDriveSpecialCount](Get-MgGroupDriveSpecialCount.md)
 Get the number of the resource
 
+### [Get-MgShareContentTypeBase](Get-MgShareContentTypeBase.md)
+Parent contentType from which this content type is derived.
+
+### [Get-MgShareContentTypeBaseType](Get-MgShareContentTypeBaseType.md)
+The collection of content types that are ancestors of this content type.
+
+### [Get-MgShareContentTypeBaseTypeCount](Get-MgShareContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgShareCount](Get-MgShareCount.md)
 Get the number of the resource
+
+### [Get-MgShareCreatedByUser](Get-MgShareCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgShareCreatedByUserMailboxSetting](Get-MgShareCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgShareDriveItem](Get-MgShareDriveItem.md)
 Access a shared DriveItem or a collection of shared items by using a **shareId** or sharing URL.
@@ -772,6 +1024,24 @@ The content stream, if the item represents a file.
 ### [Get-MgShareItemCount](Get-MgShareItemCount.md)
 Get the number of the resource
 
+### [Get-MgShareItemLastModifiedByUser](Get-MgShareItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgShareItemLastModifiedByUserMailboxSetting](Get-MgShareItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgShareLastModifiedByUser](Get-MgShareLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgShareLastModifiedByUserMailboxSetting](Get-MgShareLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgShareList](Get-MgShareList.md)
 Used to access the underlying list
 
@@ -786,15 +1056,6 @@ The source column for the content type column.
 
 ### [Get-MgShareListContentType](Get-MgShareListContentType.md)
 The collection of content types present in this list.
-
-### [Get-MgShareListContentTypeBase](Get-MgShareListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgShareListContentTypeBaseType](Get-MgShareListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgShareListContentTypeBaseTypeCount](Get-MgShareListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgShareListContentTypeColumn](Get-MgShareListContentTypeColumn.md)
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
@@ -823,6 +1084,15 @@ Invoke function getCompatibleHubContentTypes
 ### [Get-MgShareListContentTypeCount](Get-MgShareListContentTypeCount.md)
 Get the number of the resource
 
+### [Get-MgShareListCreatedByUser](Get-MgShareListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgShareListCreatedByUserMailboxSetting](Get-MgShareListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgShareListDrive](Get-MgShareListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -836,11 +1106,23 @@ Invoke function getActivitiesByInterval
 ### [Get-MgShareListItemAnalytic](Get-MgShareListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgShareListItemCreatedByUser](Get-MgShareListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgShareListItemCreatedByUserMailboxSetting](Get-MgShareListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgShareListItemDocumentSetVersion](Get-MgShareListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgShareListItemDocumentSetVersionCount](Get-MgShareListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgShareListItemDocumentSetVersionField](Get-MgShareListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgShareListItemDriveItem](Get-MgShareListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -906,8 +1188,26 @@ The content stream, if the item represents a file.
 ### [Get-MgUserDriveBundleCount](Get-MgUserDriveBundleCount.md)
 Get the number of the resource
 
+### [Get-MgUserDriveContentTypeBase](Get-MgUserDriveContentTypeBase.md)
+Parent contentType from which this content type is derived.
+
+### [Get-MgUserDriveContentTypeBaseType](Get-MgUserDriveContentTypeBaseType.md)
+The collection of content types that are ancestors of this content type.
+
+### [Get-MgUserDriveContentTypeBaseTypeCount](Get-MgUserDriveContentTypeBaseTypeCount.md)
+Get the number of the resource
+
 ### [Get-MgUserDriveCount](Get-MgUserDriveCount.md)
 Get the number of the resource
+
+### [Get-MgUserDriveCreatedByUser](Get-MgUserDriveCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveCreatedByUserMailboxSetting](Get-MgUserDriveCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgUserDriveFollowing](Get-MgUserDriveFollowing.md)
 The list of items the user is following.
@@ -958,6 +1258,33 @@ The content stream, if the item represents a file.
 ### [Get-MgUserDriveItemCount](Get-MgUserDriveItemCount.md)
 Get the number of the resource
 
+### [Get-MgUserDriveItemCreatedByUser](Get-MgUserDriveItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveItemCreatedByUserMailboxSetting](Get-MgUserDriveItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgUserDriveItemItemLastModifiedByUser](Get-MgUserDriveItemItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgUserDriveItemItemLastModifiedByUserMailboxSetting](Get-MgUserDriveItemItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgUserDriveItemLastModifiedByUser](Get-MgUserDriveItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgUserDriveItemLastModifiedByUserMailboxSetting](Get-MgUserDriveItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveItemListItem](Get-MgUserDriveItemListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -966,11 +1293,23 @@ Nullable.
 ### [Get-MgUserDriveItemListItemAnalytic](Get-MgUserDriveItemListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgUserDriveItemListItemCreatedByUser](Get-MgUserDriveItemListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveItemListItemCreatedByUserMailboxSetting](Get-MgUserDriveItemListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveItemListItemDocumentSetVersion](Get-MgUserDriveItemListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgUserDriveItemListItemDocumentSetVersionCount](Get-MgUserDriveItemListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgUserDriveItemListItemDocumentSetVersionField](Get-MgUserDriveItemListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgUserDriveItemListItemDriveItem](Get-MgUserDriveItemListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1023,6 +1362,15 @@ The content stream for this version of the item.
 ### [Get-MgUserDriveItemVersionCount](Get-MgUserDriveItemVersionCount.md)
 Get the number of the resource
 
+### [Get-MgUserDriveLastModifiedByUser](Get-MgUserDriveLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgUserDriveLastModifiedByUserMailboxSetting](Get-MgUserDriveLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveList](Get-MgUserDriveList.md)
 For drives in SharePoint, the underlying document library list.
 Read-only.
@@ -1039,15 +1387,6 @@ The source column for the content type column.
 
 ### [Get-MgUserDriveListContentType](Get-MgUserDriveListContentType.md)
 The collection of content types present in this list.
-
-### [Get-MgUserDriveListContentTypeBase](Get-MgUserDriveListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgUserDriveListContentTypeBaseType](Get-MgUserDriveListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgUserDriveListContentTypeBaseTypeCount](Get-MgUserDriveListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgUserDriveListContentTypeColumn](Get-MgUserDriveListContentTypeColumn.md)
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
@@ -1073,6 +1412,15 @@ The source column for the content type column.
 ### [Get-MgUserDriveListContentTypeCount](Get-MgUserDriveListContentTypeCount.md)
 Get the number of the resource
 
+### [Get-MgUserDriveListCreatedByUser](Get-MgUserDriveListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveListCreatedByUserMailboxSetting](Get-MgUserDriveListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveListDrive](Get-MgUserDriveListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1083,11 +1431,23 @@ Returns the metadata for an [item][] in a [list][].
 ### [Get-MgUserDriveListItemAnalytic](Get-MgUserDriveListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgUserDriveListItemCreatedByUser](Get-MgUserDriveListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveListItemCreatedByUserMailboxSetting](Get-MgUserDriveListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveListItemDocumentSetVersion](Get-MgUserDriveListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgUserDriveListItemDocumentSetVersionCount](Get-MgUserDriveListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgUserDriveListItemDocumentSetVersionField](Get-MgUserDriveListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgUserDriveListItemDriveItem](Get-MgUserDriveListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1156,6 +1516,33 @@ Get the number of the resource
 ### [Get-MgUserDriveRootContent](Get-MgUserDriveRootContent.md)
 The content stream, if the item represents a file.
 
+### [Get-MgUserDriveRootCreatedByUser](Get-MgUserDriveRootCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveRootCreatedByUserMailboxSetting](Get-MgUserDriveRootCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgUserDriveRootItemLastModifiedByUser](Get-MgUserDriveRootItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgUserDriveRootItemLastModifiedByUserMailboxSetting](Get-MgUserDriveRootItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgUserDriveRootLastModifiedByUser](Get-MgUserDriveRootLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgUserDriveRootLastModifiedByUserMailboxSetting](Get-MgUserDriveRootLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveRootListItem](Get-MgUserDriveRootListItem.md)
 For drives in SharePoint, the associated document library list item.
 Read-only.
@@ -1164,11 +1551,23 @@ Nullable.
 ### [Get-MgUserDriveRootListItemAnalytic](Get-MgUserDriveRootListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgUserDriveRootListItemCreatedByUser](Get-MgUserDriveRootListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgUserDriveRootListItemCreatedByUserMailboxSetting](Get-MgUserDriveRootListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgUserDriveRootListItemDocumentSetVersion](Get-MgUserDriveRootListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgUserDriveRootListItemDocumentSetVersionCount](Get-MgUserDriveRootListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgUserDriveRootListItemDocumentSetVersionField](Get-MgUserDriveRootListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgUserDriveRootListItemDriveItem](Get-MgUserDriveRootListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1254,6 +1653,12 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ### [Invoke-MgCheckoutDriveRoot](Invoke-MgCheckoutDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+
+### [Invoke-MgExtractDriveItemSensitivityLabel](Invoke-MgExtractDriveItemSensitivityLabel.md)
+Invoke action extractSensitivityLabels
+
+### [Invoke-MgExtractDriveRootSensitivityLabel](Invoke-MgExtractDriveRootSensitivityLabel.md)
+Invoke action extractSensitivityLabels
 
 ### [Invoke-MgFollowDriveItem](Invoke-MgFollowDriveItem.md)
 Follow a driveItem.
@@ -1405,8 +1810,8 @@ To upload a file using an upload session, there are two steps:
 ### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
-Create new navigation property to versions for drives
+### [New-MgGroupDrive](New-MgGroupDrive.md)
+Create new navigation property to drives for groups
 
 ### [New-MgGroupDriveBundle](New-MgGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -1519,8 +1924,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
-Add new entity to shares
+### [New-MgUserDrive](New-MgUserDrive.md)
+Create new navigation property to drives for users
 
 ### [New-MgUserDriveBundle](New-MgUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -1609,8 +2014,8 @@ Publishes a [contentType][] present in the content type hub site.
 ### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
 
-### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
-Publishes a [contentType][] present in the content type hub site.
+### [Remove-MgDrive](Remove-MgDrive.md)
+Delete entity from drives
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -1621,11 +2026,17 @@ Delete navigation property analytics for drives
 ### [Remove-MgDriveItemAnalyticItemActivityStat](Remove-MgDriveItemAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for drives
 
+### [Remove-MgDriveItemChild](Remove-MgDriveItemChild.md)
+Remove an item from a [bundle][].
+
 ### [Remove-MgDriveItemListItem](Remove-MgDriveItemListItem.md)
 Delete navigation property listItem for drives
 
 ### [Remove-MgDriveItemListItemDocumentSetVersion](Remove-MgDriveItemListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgDriveItemListItemDocumentSetVersionField](Remove-MgDriveItemListItemDocumentSetVersionField.md)
+Delete navigation property fields for drives
 
 ### [Remove-MgDriveItemListItemField](Remove-MgDriveItemListItemField.md)
 Delete navigation property fields for drives
@@ -1670,6 +2081,9 @@ Removes an item from a [list][].
 ### [Remove-MgDriveListItemDocumentSetVersion](Remove-MgDriveListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
+### [Remove-MgDriveListItemDocumentSetVersionField](Remove-MgDriveListItemDocumentSetVersionField.md)
+Delete navigation property fields for drives
+
 ### [Remove-MgDriveListItemField](Remove-MgDriveListItemField.md)
 Delete navigation property fields for drives
 
@@ -1694,11 +2108,17 @@ Delete navigation property analytics for drives
 ### [Remove-MgDriveRootAnalyticItemActivityStat](Remove-MgDriveRootAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for drives
 
+### [Remove-MgDriveRootChild](Remove-MgDriveRootChild.md)
+Remove an item from a [bundle][].
+
 ### [Remove-MgDriveRootListItem](Remove-MgDriveRootListItem.md)
 Delete navigation property listItem for drives
 
 ### [Remove-MgDriveRootListItemDocumentSetVersion](Remove-MgDriveRootListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgDriveRootListItemDocumentSetVersionField](Remove-MgDriveRootListItemDocumentSetVersionField.md)
+Delete navigation property fields for drives
 
 ### [Remove-MgDriveRootListItemField](Remove-MgDriveRootListItemField.md)
 Delete navigation property fields for drives
@@ -1734,11 +2154,17 @@ Delete navigation property analytics for groups
 ### [Remove-MgGroupDriveItemAnalyticItemActivityStat](Remove-MgGroupDriveItemAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for groups
 
+### [Remove-MgGroupDriveItemChild](Remove-MgGroupDriveItemChild.md)
+Remove an item from a [bundle][].
+
 ### [Remove-MgGroupDriveItemListItem](Remove-MgGroupDriveItemListItem.md)
 Delete navigation property listItem for groups
 
 ### [Remove-MgGroupDriveItemListItemDocumentSetVersion](Remove-MgGroupDriveItemListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgGroupDriveItemListItemDocumentSetVersionField](Remove-MgGroupDriveItemListItemDocumentSetVersionField.md)
+Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveItemListItemField](Remove-MgGroupDriveItemListItemField.md)
 Delete navigation property fields for groups
@@ -1783,6 +2209,9 @@ Removes an item from a [list][].
 ### [Remove-MgGroupDriveListItemDocumentSetVersion](Remove-MgGroupDriveListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
+### [Remove-MgGroupDriveListItemDocumentSetVersionField](Remove-MgGroupDriveListItemDocumentSetVersionField.md)
+Delete navigation property fields for groups
+
 ### [Remove-MgGroupDriveListItemField](Remove-MgGroupDriveListItemField.md)
 Delete navigation property fields for groups
 
@@ -1807,11 +2236,17 @@ Delete navigation property analytics for groups
 ### [Remove-MgGroupDriveRootAnalyticItemActivityStat](Remove-MgGroupDriveRootAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for groups
 
+### [Remove-MgGroupDriveRootChild](Remove-MgGroupDriveRootChild.md)
+Remove an item from a [bundle][].
+
 ### [Remove-MgGroupDriveRootListItem](Remove-MgGroupDriveRootListItem.md)
 Delete navigation property listItem for groups
 
 ### [Remove-MgGroupDriveRootListItemDocumentSetVersion](Remove-MgGroupDriveRootListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgGroupDriveRootListItemDocumentSetVersionField](Remove-MgGroupDriveRootListItemDocumentSetVersionField.md)
+Delete navigation property fields for groups
 
 ### [Remove-MgGroupDriveRootListItemField](Remove-MgGroupDriveRootListItemField.md)
 Delete navigation property fields for groups
@@ -1856,6 +2291,9 @@ Delete navigation property listItem for shares
 ### [Remove-MgShareListItemDocumentSetVersion](Remove-MgShareListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
+### [Remove-MgShareListItemDocumentSetVersionField](Remove-MgShareListItemDocumentSetVersionField.md)
+Delete navigation property fields for shares
+
 ### [Remove-MgShareListItemField](Remove-MgShareListItemField.md)
 Delete navigation property fields for shares
 
@@ -1889,11 +2327,17 @@ Delete navigation property analytics for users
 ### [Remove-MgUserDriveItemAnalyticItemActivityStat](Remove-MgUserDriveItemAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for users
 
+### [Remove-MgUserDriveItemChild](Remove-MgUserDriveItemChild.md)
+Remove an item from a [bundle][].
+
 ### [Remove-MgUserDriveItemListItem](Remove-MgUserDriveItemListItem.md)
 Delete navigation property listItem for users
 
 ### [Remove-MgUserDriveItemListItemDocumentSetVersion](Remove-MgUserDriveItemListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgUserDriveItemListItemDocumentSetVersionField](Remove-MgUserDriveItemListItemDocumentSetVersionField.md)
+Delete navigation property fields for users
 
 ### [Remove-MgUserDriveItemListItemField](Remove-MgUserDriveItemListItemField.md)
 Delete navigation property fields for users
@@ -1938,6 +2382,9 @@ Removes an item from a [list][].
 ### [Remove-MgUserDriveListItemDocumentSetVersion](Remove-MgUserDriveListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
+### [Remove-MgUserDriveListItemDocumentSetVersionField](Remove-MgUserDriveListItemDocumentSetVersionField.md)
+Delete navigation property fields for users
+
 ### [Remove-MgUserDriveListItemField](Remove-MgUserDriveListItemField.md)
 Delete navigation property fields for users
 
@@ -1962,11 +2409,17 @@ Delete navigation property analytics for users
 ### [Remove-MgUserDriveRootAnalyticItemActivityStat](Remove-MgUserDriveRootAnalyticItemActivityStat.md)
 Delete navigation property itemActivityStats for users
 
+### [Remove-MgUserDriveRootChild](Remove-MgUserDriveRootChild.md)
+Remove an item from a [bundle][].
+
 ### [Remove-MgUserDriveRootListItem](Remove-MgUserDriveRootListItem.md)
 Delete navigation property listItem for users
 
 ### [Remove-MgUserDriveRootListItemDocumentSetVersion](Remove-MgUserDriveRootListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgUserDriveRootListItemDocumentSetVersionField](Remove-MgUserDriveRootListItemDocumentSetVersionField.md)
+Delete navigation property fields for users
 
 ### [Remove-MgUserDriveRootListItemField](Remove-MgUserDriveRootListItemField.md)
 Delete navigation property fields for users
@@ -2058,6 +2511,9 @@ The content stream, if the item represents a file.
 ### [Set-MgDriveItemListItemDriveItemContent](Set-MgDriveItemListItemDriveItemContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgDriveItemSensitivityLabel](Set-MgDriveItemSensitivityLabel.md)
+Invoke action assignSensitivityLabel
+
 ### [Set-MgDriveItemVersionContent](Set-MgDriveItemVersionContent.md)
 The content stream for this version of the item.
 
@@ -2072,6 +2528,9 @@ The content stream, if the item represents a file.
 
 ### [Set-MgDriveRootListItemDriveItemContent](Set-MgDriveRootListItemDriveItemContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgDriveRootSensitivityLabel](Set-MgDriveRootSensitivityLabel.md)
+Invoke action assignSensitivityLabel
 
 ### [Set-MgDriveRootVersionContent](Set-MgDriveRootVersionContent.md)
 The content stream for this version of the item.
@@ -2181,8 +2640,11 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
+### [Update-MgDrive](Update-MgDrive.md)
+Update entity in drives
+
+### [Update-MgDriveCreatedByUserMailboxSetting](Update-MgDriveCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
 Update the metadata for a driveItem by ID or path.
@@ -2194,14 +2656,29 @@ Update the navigation property analytics in drives
 ### [Update-MgDriveItemAnalyticItemActivityStat](Update-MgDriveItemAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in drives
 
+### [Update-MgDriveItemCreatedByUserMailboxSetting](Update-MgDriveItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgDriveItemLastModifiedByUserMailboxSetting](Update-MgDriveItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgDriveItemListItem](Update-MgDriveItemListItem.md)
 Update the navigation property listItem in drives
+
+### [Update-MgDriveItemListItemCreatedByUserMailboxSetting](Update-MgDriveItemListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveItemListItemDocumentSetVersion](Update-MgDriveItemListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in drives
 
+### [Update-MgDriveItemListItemDocumentSetVersionField](Update-MgDriveItemListItemDocumentSetVersionField.md)
+Update the navigation property fields in drives
+
 ### [Update-MgDriveItemListItemField](Update-MgDriveItemListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgDriveItemListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveItemListItemVersion](Update-MgDriveItemListItemVersion.md)
 Update the navigation property versions in drives
@@ -2222,6 +2699,9 @@ Update the navigation property thumbnails in drives
 ### [Update-MgDriveItemVersion](Update-MgDriveItemVersion.md)
 Update the navigation property versions in drives
 
+### [Update-MgDriveLastModifiedByUserMailboxSetting](Update-MgDriveLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgDriveList](Update-MgDriveList.md)
 Update the navigation property list in drives
 
@@ -2232,25 +2712,40 @@ Update the navigation property columns in drives
 Update the navigation property contentTypes in drives
 
 ### [Update-MgDriveListContentTypeColumn](Update-MgDriveListContentTypeColumn.md)
-Update the navigation property columns in drives
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgDriveListContentTypeColumnLink](Update-MgDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in drives
 
+### [Update-MgDriveListCreatedByUserMailboxSetting](Update-MgDriveListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgDriveListItem](Update-MgDriveListItem.md)
 Update the navigation property items in drives
+
+### [Update-MgDriveListItemCreatedByUserMailboxSetting](Update-MgDriveListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveListItemDocumentSetVersion](Update-MgDriveListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in drives
 
+### [Update-MgDriveListItemDocumentSetVersionField](Update-MgDriveListItemDocumentSetVersionField.md)
+Update the navigation property fields in drives
+
 ### [Update-MgDriveListItemField](Update-MgDriveListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgDriveListItemLastModifiedByUserMailboxSetting](Update-MgDriveListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveListItemVersion](Update-MgDriveListItemVersion.md)
 Update the navigation property versions in drives
 
 ### [Update-MgDriveListItemVersionField](Update-MgDriveListItemVersionField.md)
 Update the navigation property fields in drives
+
+### [Update-MgDriveListLastModifiedByUserMailboxSetting](Update-MgDriveListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveListOperation](Update-MgDriveListOperation.md)
 Update the navigation property operations in drives
@@ -2267,14 +2762,29 @@ Update the navigation property analytics in drives
 ### [Update-MgDriveRootAnalyticItemActivityStat](Update-MgDriveRootAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in drives
 
+### [Update-MgDriveRootCreatedByUserMailboxSetting](Update-MgDriveRootCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgDriveRootLastModifiedByUserMailboxSetting](Update-MgDriveRootLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgDriveRootListItem](Update-MgDriveRootListItem.md)
 Update the navigation property listItem in drives
+
+### [Update-MgDriveRootListItemCreatedByUserMailboxSetting](Update-MgDriveRootListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveRootListItemDocumentSetVersion](Update-MgDriveRootListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in drives
 
+### [Update-MgDriveRootListItemDocumentSetVersionField](Update-MgDriveRootListItemDocumentSetVersionField.md)
+Update the navigation property fields in drives
+
 ### [Update-MgDriveRootListItemField](Update-MgDriveRootListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgDriveRootListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgDriveRootListItemVersion](Update-MgDriveRootListItemVersion.md)
 Update the navigation property versions in drives
@@ -2298,6 +2808,9 @@ Update the navigation property versions in drives
 ### [Update-MgGroupDrive](Update-MgGroupDrive.md)
 Update the navigation property drives in groups
 
+### [Update-MgGroupDriveCreatedByUserMailboxSetting](Update-MgGroupDriveCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupDriveItem](Update-MgGroupDriveItem.md)
 Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
@@ -2308,14 +2821,29 @@ Update the navigation property analytics in groups
 ### [Update-MgGroupDriveItemAnalyticItemActivityStat](Update-MgGroupDriveItemAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in groups
 
+### [Update-MgGroupDriveItemCreatedByUserMailboxSetting](Update-MgGroupDriveItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgGroupDriveItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupDriveItemListItem](Update-MgGroupDriveItemListItem.md)
 Update the navigation property listItem in groups
+
+### [Update-MgGroupDriveItemListItemCreatedByUserMailboxSetting](Update-MgGroupDriveItemListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveItemListItemDocumentSetVersion](Update-MgGroupDriveItemListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
+### [Update-MgGroupDriveItemListItemDocumentSetVersionField](Update-MgGroupDriveItemListItemDocumentSetVersionField.md)
+Update the navigation property fields in groups
+
 ### [Update-MgGroupDriveItemListItemField](Update-MgGroupDriveItemListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveItemListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveItemListItemVersion](Update-MgGroupDriveItemListItemVersion.md)
 Update the navigation property versions in groups
@@ -2336,6 +2864,9 @@ Update the navigation property thumbnails in groups
 ### [Update-MgGroupDriveItemVersion](Update-MgGroupDriveItemVersion.md)
 Update the navigation property versions in groups
 
+### [Update-MgGroupDriveLastModifiedByUserMailboxSetting](Update-MgGroupDriveLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupDriveList](Update-MgGroupDriveList.md)
 Update the navigation property list in groups
 
@@ -2346,25 +2877,40 @@ Update the navigation property columns in groups
 Update the navigation property contentTypes in groups
 
 ### [Update-MgGroupDriveListContentTypeColumn](Update-MgGroupDriveListContentTypeColumn.md)
-Update the navigation property columns in groups
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgGroupDriveListContentTypeColumnLink](Update-MgGroupDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
 
+### [Update-MgGroupDriveListCreatedByUserMailboxSetting](Update-MgGroupDriveListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupDriveListItem](Update-MgGroupDriveListItem.md)
 Update the navigation property items in groups
+
+### [Update-MgGroupDriveListItemCreatedByUserMailboxSetting](Update-MgGroupDriveListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveListItemDocumentSetVersion](Update-MgGroupDriveListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
+### [Update-MgGroupDriveListItemDocumentSetVersionField](Update-MgGroupDriveListItemDocumentSetVersionField.md)
+Update the navigation property fields in groups
+
 ### [Update-MgGroupDriveListItemField](Update-MgGroupDriveListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveListItemVersion](Update-MgGroupDriveListItemVersion.md)
 Update the navigation property versions in groups
 
 ### [Update-MgGroupDriveListItemVersionField](Update-MgGroupDriveListItemVersionField.md)
 Update the navigation property fields in groups
+
+### [Update-MgGroupDriveListLastModifiedByUserMailboxSetting](Update-MgGroupDriveListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveListOperation](Update-MgGroupDriveListOperation.md)
 Update the navigation property operations in groups
@@ -2381,14 +2927,29 @@ Update the navigation property analytics in groups
 ### [Update-MgGroupDriveRootAnalyticItemActivityStat](Update-MgGroupDriveRootAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in groups
 
+### [Update-MgGroupDriveRootCreatedByUserMailboxSetting](Update-MgGroupDriveRootCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgGroupDriveRootLastModifiedByUserMailboxSetting](Update-MgGroupDriveRootLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupDriveRootListItem](Update-MgGroupDriveRootListItem.md)
 Update the navigation property listItem in groups
+
+### [Update-MgGroupDriveRootListItemCreatedByUserMailboxSetting](Update-MgGroupDriveRootListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveRootListItemDocumentSetVersion](Update-MgGroupDriveRootListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
+### [Update-MgGroupDriveRootListItemDocumentSetVersionField](Update-MgGroupDriveRootListItemDocumentSetVersionField.md)
+Update the navigation property fields in groups
+
 ### [Update-MgGroupDriveRootListItemField](Update-MgGroupDriveRootListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgGroupDriveRootListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveRootListItemVersion](Update-MgGroupDriveRootListItemVersion.md)
 Update the navigation property versions in groups
@@ -2409,6 +2970,12 @@ Update the navigation property thumbnails in groups
 ### [Update-MgGroupDriveRootVersion](Update-MgGroupDriveRootVersion.md)
 Update the navigation property versions in groups
 
+### [Update-MgShareCreatedByUserMailboxSetting](Update-MgShareCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgShareLastModifiedByUserMailboxSetting](Update-MgShareLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgShareList](Update-MgShareList.md)
 Update the navigation property list in shares
 
@@ -2419,25 +2986,40 @@ Update the navigation property columns in shares
 Update the navigation property contentTypes in shares
 
 ### [Update-MgShareListContentTypeColumn](Update-MgShareListContentTypeColumn.md)
-Update the navigation property columns in shares
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgShareListContentTypeColumnLink](Update-MgShareListContentTypeColumnLink.md)
 Update the navigation property columnLinks in shares
 
+### [Update-MgShareListCreatedByUserMailboxSetting](Update-MgShareListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgShareListItem](Update-MgShareListItem.md)
 Update the navigation property listItem in shares
+
+### [Update-MgShareListItemCreatedByUserMailboxSetting](Update-MgShareListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgShareListItemDocumentSetVersion](Update-MgShareListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in shares
 
+### [Update-MgShareListItemDocumentSetVersionField](Update-MgShareListItemDocumentSetVersionField.md)
+Update the navigation property fields in shares
+
 ### [Update-MgShareListItemField](Update-MgShareListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgShareListItemLastModifiedByUserMailboxSetting](Update-MgShareListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgShareListItemVersion](Update-MgShareListItemVersion.md)
 Update the navigation property versions in shares
 
 ### [Update-MgShareListItemVersionField](Update-MgShareListItemVersionField.md)
 Update the navigation property fields in shares
+
+### [Update-MgShareListLastModifiedByUserMailboxSetting](Update-MgShareListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgShareListOperation](Update-MgShareListOperation.md)
 Update the navigation property operations in shares
@@ -2454,6 +3036,9 @@ Update entity in shares
 ### [Update-MgUserDrive](Update-MgUserDrive.md)
 Update the navigation property drives in users
 
+### [Update-MgUserDriveCreatedByUserMailboxSetting](Update-MgUserDriveCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgUserDriveItem](Update-MgUserDriveItem.md)
 Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
@@ -2464,14 +3049,29 @@ Update the navigation property analytics in users
 ### [Update-MgUserDriveItemAnalyticItemActivityStat](Update-MgUserDriveItemAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in users
 
+### [Update-MgUserDriveItemCreatedByUserMailboxSetting](Update-MgUserDriveItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgUserDriveItemLastModifiedByUserMailboxSetting](Update-MgUserDriveItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgUserDriveItemListItem](Update-MgUserDriveItemListItem.md)
 Update the navigation property listItem in users
+
+### [Update-MgUserDriveItemListItemCreatedByUserMailboxSetting](Update-MgUserDriveItemListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveItemListItemDocumentSetVersion](Update-MgUserDriveItemListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in users
 
+### [Update-MgUserDriveItemListItemDocumentSetVersionField](Update-MgUserDriveItemListItemDocumentSetVersionField.md)
+Update the navigation property fields in users
+
 ### [Update-MgUserDriveItemListItemField](Update-MgUserDriveItemListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveItemListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveItemListItemVersion](Update-MgUserDriveItemListItemVersion.md)
 Update the navigation property versions in users
@@ -2492,6 +3092,9 @@ Update the navigation property thumbnails in users
 ### [Update-MgUserDriveItemVersion](Update-MgUserDriveItemVersion.md)
 Update the navigation property versions in users
 
+### [Update-MgUserDriveLastModifiedByUserMailboxSetting](Update-MgUserDriveLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgUserDriveList](Update-MgUserDriveList.md)
 Update the navigation property list in users
 
@@ -2502,25 +3105,40 @@ Update the navigation property columns in users
 Update the navigation property contentTypes in users
 
 ### [Update-MgUserDriveListContentTypeColumn](Update-MgUserDriveListContentTypeColumn.md)
-Update the navigation property columns in users
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgUserDriveListContentTypeColumnLink](Update-MgUserDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in users
 
+### [Update-MgUserDriveListCreatedByUserMailboxSetting](Update-MgUserDriveListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgUserDriveListItem](Update-MgUserDriveListItem.md)
 Update the navigation property items in users
+
+### [Update-MgUserDriveListItemCreatedByUserMailboxSetting](Update-MgUserDriveListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveListItemDocumentSetVersion](Update-MgUserDriveListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in users
 
+### [Update-MgUserDriveListItemDocumentSetVersionField](Update-MgUserDriveListItemDocumentSetVersionField.md)
+Update the navigation property fields in users
+
 ### [Update-MgUserDriveListItemField](Update-MgUserDriveListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgUserDriveListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveListItemVersion](Update-MgUserDriveListItemVersion.md)
 Update the navigation property versions in users
 
 ### [Update-MgUserDriveListItemVersionField](Update-MgUserDriveListItemVersionField.md)
 Update the navigation property fields in users
+
+### [Update-MgUserDriveListLastModifiedByUserMailboxSetting](Update-MgUserDriveListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveListOperation](Update-MgUserDriveListOperation.md)
 Update the navigation property operations in users
@@ -2537,14 +3155,29 @@ Update the navigation property analytics in users
 ### [Update-MgUserDriveRootAnalyticItemActivityStat](Update-MgUserDriveRootAnalyticItemActivityStat.md)
 Update the navigation property itemActivityStats in users
 
+### [Update-MgUserDriveRootCreatedByUserMailboxSetting](Update-MgUserDriveRootCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgUserDriveRootLastModifiedByUserMailboxSetting](Update-MgUserDriveRootLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgUserDriveRootListItem](Update-MgUserDriveRootListItem.md)
 Update the navigation property listItem in users
+
+### [Update-MgUserDriveRootListItemCreatedByUserMailboxSetting](Update-MgUserDriveRootListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveRootListItemDocumentSetVersion](Update-MgUserDriveRootListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in users
 
+### [Update-MgUserDriveRootListItemDocumentSetVersionField](Update-MgUserDriveRootListItemDocumentSetVersionField.md)
+Update the navigation property fields in users
+
 ### [Update-MgUserDriveRootListItemField](Update-MgUserDriveRootListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting](Update-MgUserDriveRootListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgUserDriveRootListItemVersion](Update-MgUserDriveRootListItemVersion.md)
 Update the navigation property versions in users

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/get-mgserviceprincipalcount
 schema: 2.0.0
@@ -10,13 +10,10 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaServicePrincipalCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCount?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
-Get-MgServicePrincipalCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <String>
+Get-MgServicePrincipalCount -ConsistencyLevel <String> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
@@ -25,15 +22,19 @@ Get the number of the resource
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -42,7 +43,7 @@ Indicates the requested consistency level.
 Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -57,7 +58,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -72,7 +73,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -91,9 +92,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaBetaServicePrincipalCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalCount?view=graph-powershell-beta)
+

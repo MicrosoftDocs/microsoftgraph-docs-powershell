@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Groups
-Module Guid: 545d7014-e467-4ef6-9b0d-eba7173da290
+Module Guid: 1bde976c-686a-4617-bf15-9422f4a8df36
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaGroupFavorite](Add-MgBetaGroupFavorite.md)
 Add the group to the list of the current user's favorite groups.
@@ -34,7 +34,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaGroupSiteListContentTypeCopy](Add-MgBetaGroupSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -43,7 +43,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaGroupToLifecyclePolicy](Add-MgBetaGroupToLifecyclePolicy.md)
 Invoke action addGroup
@@ -51,14 +51,22 @@ Invoke action addGroup
 ### [Confirm-MgBetaGroupGrantedPermissionForApp](Confirm-MgBetaGroupGrantedPermissionForApp.md)
 Invoke action checkGrantedPermissionsForApp
 
-### [Confirm-MgBetaGroupGrantedPermissionForApp](Confirm-MgBetaGroupGrantedPermissionForApp.md)
-Invoke action checkGrantedPermissionsForApp
+### [Confirm-MgBetaGroupMemberGroup](Confirm-MgBetaGroupMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaGroupMemberObject](Confirm-MgBetaGroupMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaGroupMemberObject](Confirm-MgBetaGroupMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaGroupPermissionGrantMemberGroup](Confirm-MgBetaGroupPermissionGrantMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaGroupPermissionGrantMemberObject](Confirm-MgBetaGroupPermissionGrantMemberObject.md)
 Invoke action checkMemberObjects
@@ -76,17 +84,22 @@ The file can then be added as a default file or template via a POST operation.
 ### [Copy-MgBetaGroupDriveRoot](Copy-MgBetaGroupDriveRoot.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
-### [Copy-MgBetaGroupDriveRoot](Copy-MgBetaGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+### [Copy-MgBetaGroupOnenoteNotebook](Copy-MgBetaGroupOnenoteNotebook.md)
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaGroupDriveRoot](Copy-MgBetaGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+### [Copy-MgBetaGroupOnenotePageToSection](Copy-MgBetaGroupOnenotePageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaGroupDriveRoot](Copy-MgBetaGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+### [Copy-MgBetaGroupOnenoteSectionToNotebook](Copy-MgBetaGroupOnenoteSectionToNotebook.md)
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaGroupDriveRoot](Copy-MgBetaGroupDriveRoot.md)
-Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
+### [Copy-MgBetaGroupOnenoteSectionToSectionGroup](Copy-MgBetaGroupOnenoteSectionToSectionGroup.md)
+Copies a section to a specific section group.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation](Copy-MgBetaGroupSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -95,6 +108,9 @@ The file can then be added as a default file or template via a POST operation.
 ### [Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation](Copy-MgBetaGroupSiteListContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+
+### [Get-MgBetaAllGroupSite](Get-MgBetaAllGroupSite.md)
+Invoke function getAllSites
 
 ### [Get-MgBetaGroup](Get-MgBetaGroup.md)
 Get the properties and relationships of a group object.
@@ -130,18 +146,11 @@ The initial call is a full synchronization, and every subsequent **delta** call 
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
-### [Get-MgBetaGroupCalendarEventDelta](Get-MgBetaGroupCalendarEventDelta.md)
-Get a set of event resources that have been added, deleted, or updated in one or more calendars.
-You can get specific types of these incremental changes in the events in all the calendars of a mailbox or in a specific calendar, or in an event collection of a **calendarView** (range of events defined by start and end dates) of a calendar.
-The calendar can be the default calendar or some other specified calendar of the user's.
-In the case of getting incremental changes on **calendarView**, the calendar can be a group calendar as well.
-Typically, synchronizing events in a calendar or **calendarView** in a local store entails a round of multiple **delta** function calls.
-The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
-This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
-The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
+### [Get-MgBetaGroupCalendarSchedule](Get-MgBetaGroupCalendarSchedule.md)
+Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ### [Get-MgBetaGroupConversation](Get-MgBetaGroupConversation.md)
-Retrieve the properties and relationships of conversation object.
+Get a conversation object.
 
 ### [Get-MgBetaGroupConversationCount](Get-MgBetaGroupConversationCount.md)
 Get the number of the resource
@@ -280,90 +289,6 @@ Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 ### [Get-MgBetaGroupLifecyclePolicyCount](Get-MgBetaGroupLifecyclePolicyCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupListMemberCountAsApplication](Get-MgBetaGroupListMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberCountAsDevice](Get-MgBetaGroupListMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberCountAsGroup](Get-MgBetaGroupListMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberCountAsOrgContact](Get-MgBetaGroupListMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberCountAsServicePrincipal](Get-MgBetaGroupListMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberCountAsUser](Get-MgBetaGroupListMemberCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberOfCountAsAdministrativeUnit](Get-MgBetaGroupListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberOfCountAsGroup](Get-MgBetaGroupListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberWithLicenseErrorCountAsApplication](Get-MgBetaGroupListMemberWithLicenseErrorCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberWithLicenseErrorCountAsDevice](Get-MgBetaGroupListMemberWithLicenseErrorCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberWithLicenseErrorCountAsGroup](Get-MgBetaGroupListMemberWithLicenseErrorCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberWithLicenseErrorCountAsOrgContact](Get-MgBetaGroupListMemberWithLicenseErrorCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberWithLicenseErrorCountAsServicePrincipal](Get-MgBetaGroupListMemberWithLicenseErrorCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListMemberWithLicenseErrorCountAsUser](Get-MgBetaGroupListMemberWithLicenseErrorCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListOwnerCountAsApplication](Get-MgBetaGroupListOwnerCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListOwnerCountAsDevice](Get-MgBetaGroupListOwnerCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListOwnerCountAsGroup](Get-MgBetaGroupListOwnerCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListOwnerCountAsOrgContact](Get-MgBetaGroupListOwnerCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListOwnerCountAsServicePrincipal](Get-MgBetaGroupListOwnerCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListOwnerCountAsUser](Get-MgBetaGroupListOwnerCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberCountAsApplication](Get-MgBetaGroupListTransitiveMemberCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberCountAsDevice](Get-MgBetaGroupListTransitiveMemberCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberCountAsGroup](Get-MgBetaGroupListTransitiveMemberCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberCountAsOrgContact](Get-MgBetaGroupListTransitiveMemberCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberCountAsServicePrincipal](Get-MgBetaGroupListTransitiveMemberCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberCountAsUser](Get-MgBetaGroupListTransitiveMemberCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaGroupListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaGroupListTransitiveMemberOfCountAsGroup](Get-MgBetaGroupListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
-
 ### [Get-MgBetaGroupMember](Get-MgBetaGroupMember.md)
 Direct members of this group, who can be users, devices, other groups, or service principals.
 Supports the List members, Add member, and Remove member operations.
@@ -399,8 +324,27 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ### [Get-MgBetaGroupMemberCount](Get-MgBetaGroupMemberCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupMemberCount](Get-MgBetaGroupMemberCount.md)
+### [Get-MgBetaGroupMemberCountAsApplication](Get-MgBetaGroupMemberCountAsApplication.md)
 Get the number of the resource
+
+### [Get-MgBetaGroupMemberCountAsDevice](Get-MgBetaGroupMemberCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberCountAsGroup](Get-MgBetaGroupMemberCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberCountAsOrgContact](Get-MgBetaGroupMemberCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberCountAsServicePrincipal](Get-MgBetaGroupMemberCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberCountAsUser](Get-MgBetaGroupMemberCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberGroup](Get-MgBetaGroupMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaGroupMemberObject](Get-MgBetaGroupMemberObject.md)
 Invoke action getMemberObjects
@@ -419,6 +363,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaGroupMemberOfCount](Get-MgBetaGroupMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberOfCountAsAdministrativeUnit](Get-MgBetaGroupMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberOfCountAsGroup](Get-MgBetaGroupMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaGroupMemberWithLicenseError](Get-MgBetaGroupMemberWithLicenseError.md)
@@ -446,8 +396,27 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 ### [Get-MgBetaGroupMemberWithLicenseErrorCount](Get-MgBetaGroupMemberWithLicenseErrorCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupMemberWithLicenseErrorCount](Get-MgBetaGroupMemberWithLicenseErrorCount.md)
+### [Get-MgBetaGroupMemberWithLicenseErrorCountAsApplication](Get-MgBetaGroupMemberWithLicenseErrorCountAsApplication.md)
 Get the number of the resource
+
+### [Get-MgBetaGroupMemberWithLicenseErrorCountAsDevice](Get-MgBetaGroupMemberWithLicenseErrorCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberWithLicenseErrorCountAsGroup](Get-MgBetaGroupMemberWithLicenseErrorCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberWithLicenseErrorCountAsOrgContact](Get-MgBetaGroupMemberWithLicenseErrorCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberWithLicenseErrorCountAsServicePrincipal](Get-MgBetaGroupMemberWithLicenseErrorCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupMemberWithLicenseErrorCountAsUser](Get-MgBetaGroupMemberWithLicenseErrorCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupOnenoteNotebookFromWebUrl](Get-MgBetaGroupOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ### [Get-MgBetaGroupOnenoteRecentNotebook](Get-MgBetaGroupOnenoteRecentNotebook.md)
 Invoke function getRecentNotebooks
@@ -487,6 +456,24 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ### [Get-MgBetaGroupOwnerCount](Get-MgBetaGroupOwnerCount.md)
 Get the number of the resource
 
+### [Get-MgBetaGroupOwnerCountAsApplication](Get-MgBetaGroupOwnerCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupOwnerCountAsDevice](Get-MgBetaGroupOwnerCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupOwnerCountAsGroup](Get-MgBetaGroupOwnerCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupOwnerCountAsOrgContact](Get-MgBetaGroupOwnerCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupOwnerCountAsServicePrincipal](Get-MgBetaGroupOwnerCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupOwnerCountAsUser](Get-MgBetaGroupOwnerCountAsUser.md)
+Get the number of the resource
+
 ### [Get-MgBetaGroupPermissionGrant](Get-MgBetaGroupPermissionGrant.md)
 The permissions that have been granted for a group to a specific application.
 Supports $expand.
@@ -501,8 +488,9 @@ Get the number of the resource
 ### [Get-MgBetaGroupPermissionGrantDelta](Get-MgBetaGroupPermissionGrantDelta.md)
 Invoke function delta
 
-### [Get-MgBetaGroupPermissionGrantDelta](Get-MgBetaGroupPermissionGrantDelta.md)
-Invoke function delta
+### [Get-MgBetaGroupPermissionGrantMemberGroup](Get-MgBetaGroupPermissionGrantMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaGroupPermissionGrantMemberObject](Get-MgBetaGroupPermissionGrantMemberObject.md)
 Invoke action getMemberObjects
@@ -589,8 +577,7 @@ Invoke action getWebPartsByPosition
 Invoke action getPositionOfWebPart
 
 ### [Get-MgBetaGroupThread](Get-MgBetaGroupThread.md)
-Get a specific thread that belongs to a group.
-You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
+Get a thread object.
 
 ### [Get-MgBetaGroupThreadCount](Get-MgBetaGroupThreadCount.md)
 Get the number of the resource
@@ -674,6 +661,24 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 ### [Get-MgBetaGroupTransitiveMemberCount](Get-MgBetaGroupTransitiveMemberCount.md)
 Get the number of the resource
 
+### [Get-MgBetaGroupTransitiveMemberCountAsApplication](Get-MgBetaGroupTransitiveMemberCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberCountAsDevice](Get-MgBetaGroupTransitiveMemberCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberCountAsGroup](Get-MgBetaGroupTransitiveMemberCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberCountAsOrgContact](Get-MgBetaGroupTransitiveMemberCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberCountAsServicePrincipal](Get-MgBetaGroupTransitiveMemberCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberCountAsUser](Get-MgBetaGroupTransitiveMemberCountAsUser.md)
+Get the number of the resource
+
 ### [Get-MgBetaGroupTransitiveMemberOf](Get-MgBetaGroupTransitiveMemberOf.md)
 The groups that a group is a member of, either directly and through nested membership.
 Nullable.
@@ -685,6 +690,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaGroupTransitiveMemberOfCount](Get-MgBetaGroupTransitiveMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaGroupTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaGroupTransitiveMemberOfCountAsGroup](Get-MgBetaGroupTransitiveMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaGroupUserOwnedObject](Get-MgBetaGroupUserOwnedObject.md)
@@ -703,17 +714,21 @@ Grant users access to a link represented by a [permission][].
 ### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
 Grant users access to a link represented by a [permission][].
 
-### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
-Grant users access to a link represented by a [permission][].
+### [Invoke-MgBetaAcceptGroupCalendarEvent](Invoke-MgBetaAcceptGroupCalendarEvent.md)
+Accept the specified event in a user calendar.
 
-### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
-Grant users access to a link represented by a [permission][].
+### [Invoke-MgBetaAcceptGroupCalendarEventTentatively](Invoke-MgBetaAcceptGroupCalendarEventTentatively.md)
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
-Grant users access to a link represented by a [permission][].
+### [Invoke-MgBetaAcceptGroupEvent](Invoke-MgBetaAcceptGroupEvent.md)
+Accept the specified event in a user calendar.
 
-### [Grant-MgBetaGroupSitePermission](Grant-MgBetaGroupSitePermission.md)
-Grant users access to a link represented by a [permission][].
+### [Invoke-MgBetaAcceptGroupEventTentatively](Invoke-MgBetaAcceptGroupEventTentatively.md)
+Tentatively accept the specified event in a user calendar.
+If the event allows proposals for new times, on responding tentative to the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ### [Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt](Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt.md)
 Invoke action decryptBuffer
@@ -736,17 +751,21 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 ### [Invoke-MgBetaCheckoutGroupDriveRoot](Invoke-MgBetaCheckoutGroupDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
-### [Invoke-MgBetaCheckoutGroupDriveRoot](Invoke-MgBetaCheckoutGroupDriveRoot.md)
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+### [Invoke-MgBetaDeclineGroupCalendarEvent](Invoke-MgBetaDeclineGroupCalendarEvent.md)
+Decline invitation to the specified event in a user calendar.
+If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-### [Invoke-MgBetaCheckoutGroupDriveRoot](Invoke-MgBetaCheckoutGroupDriveRoot.md)
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+### [Invoke-MgBetaDeclineGroupEvent](Invoke-MgBetaDeclineGroupEvent.md)
+Decline invitation to the specified event in a user calendar.
+If the event allows proposals for new times, on declining the event, an invitee can choose to suggest an alternative time by including the **proposedNewTime** parameter.
+For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
-### [Invoke-MgBetaCheckoutGroupDriveRoot](Invoke-MgBetaCheckoutGroupDriveRoot.md)
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+### [Invoke-MgBetaDismissGroupCalendarEventReminder](Invoke-MgBetaDismissGroupCalendarEventReminder.md)
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
-### [Invoke-MgBetaCheckoutGroupDriveRoot](Invoke-MgBetaCheckoutGroupDriveRoot.md)
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+### [Invoke-MgBetaDismissGroupEventReminder](Invoke-MgBetaDismissGroupEventReminder.md)
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ### [Invoke-MgBetaExtractGroupDriveItemSensitivityLabel](Invoke-MgBetaExtractGroupDriveItemSensitivityLabel.md)
 Invoke action extractSensitivityLabels
@@ -764,28 +783,31 @@ Follow a driveItem.
 ### [Invoke-MgBetaFollowGroupDriveRoot](Invoke-MgBetaFollowGroupDriveRoot.md)
 Follow a driveItem.
 
-### [Invoke-MgBetaFollowGroupDriveRoot](Invoke-MgBetaFollowGroupDriveRoot.md)
-Follow a driveItem.
+### [Invoke-MgBetaForwardGroupCalendarEvent](Invoke-MgBetaForwardGroupCalendarEvent.md)
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ### [Invoke-MgBetaForwardGroupConversationThreadPost](Invoke-MgBetaForwardGroupConversationThreadPost.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
-### [Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo](Invoke-MgBetaForwardGroupConversationThreadPostInReplyTo.md)
-Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
+### [Invoke-MgBetaForwardGroupEvent](Invoke-MgBetaForwardGroupEvent.md)
+This action allows the organizer or attendee of a meeting event to forward the \nmeeting request to a new recipient.
+If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action \nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's \ncopy of the meeting event.
+This convenience is not available when forwarding from an Outlook.com account.
 
 ### [Invoke-MgBetaForwardGroupThreadPost](Invoke-MgBetaForwardGroupThreadPost.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaForwardGroupThreadPostInReplyTo](Invoke-MgBetaForwardGroupThreadPostInReplyTo.md)
 Forward a post to a recipient.
-You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
+You can specify both the parent conversation and thread in the request, \nor, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaGraphGroup](Invoke-MgBetaGraphGroup.md)
 Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group.
@@ -795,10 +817,10 @@ Supported for Microsoft 365 groups only.
 Invoke function sharedWithMe
 
 ### [Invoke-MgBetaInviteGroupDriveItem](Invoke-MgBetaInviteGroupDriveItem.md)
-Sends a sharing invitation for a **DriveItem**.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a **DriveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ### [Invoke-MgBetaInviteGroupDriveRoot](Invoke-MgBetaInviteGroupDriveRoot.md)
-Sends a sharing invitation for a **DriveItem**.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
+Sends a sharing invitation for a **DriveItem**.\nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
 ### [Invoke-MgBetaPreviewGroupDriveItem](Invoke-MgBetaPreviewGroupDriveItem.md)
 Invoke action preview
@@ -837,44 +859,36 @@ Reply to a thread in a group conversation and add a new post to it.
 You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupConversationThreadPost](Invoke-MgBetaReplyGroupConversationThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo](Invoke-MgBetaReplyGroupConversationThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupThread](Invoke-MgBetaReplyGroupThread.md)
 Reply to a thread in a group conversation and add a new post to it.
 You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupThreadPost](Invoke-MgBetaReplyGroupThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaReplyGroupThreadPostInReplyTo](Invoke-MgBetaReplyGroupThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgBetaRetryGroupServiceProvisioning](Invoke-MgBetaRetryGroupServiceProvisioning.md)
-Invoke action retryServiceProvisioning
+Retry the group service provisioning.
 
 ### [Invoke-MgBetaSignGroupSiteInformationProtectionDigest](Invoke-MgBetaSignGroupSiteInformationProtectionDigest.md)
 Invoke action signDigest
 
-### [Invoke-MgBetaSignGroupSiteInformationProtectionDigest](Invoke-MgBetaSignGroupSiteInformationProtectionDigest.md)
-Invoke action signDigest
+### [Invoke-MgBetaSnoozeGroupCalendarEventReminder](Invoke-MgBetaSnoozeGroupCalendarEventReminder.md)
+Postpone a reminder for an event in a user calendar until a new time.
 
-### [Invoke-MgBetaSignGroupSiteInformationProtectionDigest](Invoke-MgBetaSignGroupSiteInformationProtectionDigest.md)
-Invoke action signDigest
+### [Invoke-MgBetaSnoozeGroupEventReminder](Invoke-MgBetaSnoozeGroupEventReminder.md)
+Postpone a reminder for an event in a user calendar until a new time.
 
 ### [Invoke-MgBetaSubscribeGroupByMail](Invoke-MgBetaSubscribeGroupByMail.md)
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
@@ -909,8 +923,10 @@ Users in the accepted senders list can post to conversations of the group .
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ### [New-MgBetaGroupConversation](New-MgBetaGroupConversation.md)
-Create a new conversation by including a thread and a post.
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgBetaGroupConversationThread](New-MgBetaGroupConversationThread.md)
 Create new navigation property to threads for groups
@@ -918,8 +934,15 @@ Create new navigation property to threads for groups
 ### [New-MgBetaGroupConversationThreadPostAttachment](New-MgBetaGroupConversationThreadPostAttachment.md)
 Create new navigation property to attachments for groups
 
-### [New-MgBetaGroupConversationThreadPostAttachment](New-MgBetaGroupConversationThreadPostAttachment.md)
-Create new navigation property to attachments for groups
+### [New-MgBetaGroupConversationThreadPostAttachmentUploadSession](New-MgBetaGroupConversationThreadPostAttachmentUploadSession.md)
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
+The item can be a message or event.
+Use this approach to attach a file if the file size is between 3 MB and 150 MB.
+To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
+Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+This allows transfer to be resumed, in case the network connection is dropped during upload.
+The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ### [New-MgBetaGroupConversationThreadPostExtension](New-MgBetaGroupConversationThreadPostExtension.md)
 Create new navigation property to extensions for groups
@@ -927,8 +950,15 @@ Create new navigation property to extensions for groups
 ### [New-MgBetaGroupConversationThreadPostInReplyToAttachment](New-MgBetaGroupConversationThreadPostInReplyToAttachment.md)
 Create new navigation property to attachments for groups
 
-### [New-MgBetaGroupConversationThreadPostInReplyToAttachment](New-MgBetaGroupConversationThreadPostInReplyToAttachment.md)
-Create new navigation property to attachments for groups
+### [New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession](New-MgBetaGroupConversationThreadPostInReplyToAttachmentUploadSession.md)
+Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to an Outlook item.
+The item can be a message or event.
+Use this approach to attach a file if the file size is between 3 MB and 150 MB.
+To attach a file that's smaller than 3 MB, do a `POST` operation on the **attachments** navigation property of the Outlook item; see how to do this for a message or for an event.
+As part of the response, this action returns an upload URL that you can use in subsequent sequential `PUT` queries.
+Request headers for each `PUT` operation let you specify the exact range of bytes to be uploaded.
+This allows transfer to be resumed, in case the network connection is dropped during upload.
+The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ### [New-MgBetaGroupConversationThreadPostInReplyToExtension](New-MgBetaGroupConversationThreadPostInReplyToExtension.md)
 Create new navigation property to extensions for groups
@@ -941,12 +971,12 @@ Create new navigation property to mentions for groups
 
 ### [New-MgBetaGroupDriveItemLink](New-MgBetaGroupDriveItemLink.md)
 You can use **createLink** action to share a driveItem via a sharing link.
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgBetaGroupDriveItemListItemLink](New-MgBetaGroupDriveItemListItemLink.md)
 Create a sharing link for a listItem.
-The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 **listItem** resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupDriveItemUploadSession](New-MgBetaGroupDriveItemUploadSession.md)
@@ -956,17 +986,17 @@ To upload a file using an upload session:
 
 ### [New-MgBetaGroupDriveListItemLink](New-MgBetaGroupDriveListItemLink.md)
 Create a sharing link for a listItem.
-The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 **listItem** resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupDriveRootLink](New-MgBetaGroupDriveRootLink.md)
 You can use **createLink** action to share a driveItem via a sharing link.
-The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
+The **createLink** action will create a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, the existing sharing link will be returned.
 DriveItem resources inherit sharing permissions from their ancestors.
 
 ### [New-MgBetaGroupDriveRootListItemLink](New-MgBetaGroupDriveRootListItemLink.md)
 Create a sharing link for a listItem.
-The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 **listItem** resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupDriveRootUploadSession](New-MgBetaGroupDriveRootUploadSession.md)
@@ -1014,7 +1044,7 @@ The template named `Group.Unified` can be used to configure tenant-wide Microsof
 
 ### [New-MgBetaGroupSiteListItemLink](New-MgBetaGroupSiteListItemLink.md)
 Create a sharing link for a listItem.
-The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
+The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.\nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 **listItem** resources inherit sharing permissions from the list the item resides in.
 
 ### [New-MgBetaGroupThread](New-MgBetaGroupThread.md)

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetadeviceappmanagement
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagement?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -45,12 +42,12 @@ Update-MgBetaDeviceAppManagement [-AdditionalProperties <Hashtable>]
  [-WindowsInformationProtectionPolicies <IMicrosoftGraphWindowsInformationProtectionPolicy[]>]
  [-WindowsInformationProtectionWipeActions <IMicrosoftGraphWindowsInformationProtectionWipeAction[]>]
  [-WindowsManagedAppProtections <IMicrosoftGraphWindowsManagedAppProtection[]>]
- [-WindowsManagementApp <IMicrosoftGraphWindowsManagementApp>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WindowsManagementApp <IMicrosoftGraphWindowsManagementApp>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-WhatIf] [-Confirm]
+Update-MgBetaDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -59,15 +56,19 @@ Update deviceAppManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -75,7 +76,7 @@ Update deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -91,7 +92,7 @@ Android managed app policies.
 To construct, see NOTES section for ANDROIDMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedAppProtection[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -107,7 +108,7 @@ Singleton entity that acts as a container for all device app management function
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAppManagement
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
 Parameter Sets: Update
 Aliases:
 
@@ -123,7 +124,7 @@ Default managed app policies.
 To construct, see NOTES section for DEFAULTMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDefaultManagedAppProtection[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDefaultManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -139,7 +140,7 @@ Device app management tasks.
 To construct, see NOTES section for DEVICEAPPMANAGEMENTTASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceAppManagementTask[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagementTask[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -155,7 +156,7 @@ The Windows Enterprise Code Signing Certificate.
 To construct, see NOTES section for ENTERPRISECODESIGNINGCERTIFICATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnterpriseCodeSigningCertificate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnterpriseCodeSigningCertificate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -171,7 +172,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -187,7 +188,7 @@ The IOS Lob App Provisioning Configurations.
 To construct, see NOTES section for IOSLOBAPPPROVISIONINGCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIosLobAppProvisioningConfiguration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosLobAppProvisioningConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -203,7 +204,7 @@ iOS managed app policies.
 To construct, see NOTES section for IOSMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIosManagedAppProtection[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIosManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -218,7 +219,7 @@ Accept wildcard characters: False
 Whether the account is enabled for syncing applications from the Microsoft Store for Business.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -234,7 +235,7 @@ Managed app policies.
 To construct, see NOTES section for MANAGEDAPPPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -250,7 +251,7 @@ The managed app registrations.
 To construct, see NOTES section for MANAGEDAPPREGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppRegistration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppRegistration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -266,7 +267,7 @@ The managed app statuses.
 To construct, see NOTES section for MANAGEDAPPSTATUSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppStatus[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppStatus[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -282,7 +283,7 @@ The mobile eBook categories.
 To construct, see NOTES section for MANAGEDEBOOKCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedEBookCategory[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedEBookCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -298,7 +299,7 @@ The Managed eBook.
 To construct, see NOTES section for MANAGEDEBOOKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedEBook[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedEBook[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -314,7 +315,7 @@ Windows information protection for apps running on devices which are MDM enrolle
 To construct, see NOTES section for MDMWINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMdmWindowsInformationProtectionPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -333,7 +334,7 @@ The format is -\<country/regioncode2\>, where is a lowercase two-letter code der
 For example, en-US for English (United States) is a specific culture.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -348,7 +349,7 @@ Accept wildcard characters: False
 The last time an application sync from the Microsoft Store for Business was completed.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -363,7 +364,7 @@ Accept wildcard characters: False
 The last time the apps from the Microsoft Store for Business were synced successfully for the account.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -379,7 +380,7 @@ Portal to which admin syncs available Microsoft Store for Business apps.
 This is available in the Intune Admin Console.
 
 ```yaml
-Type: MicrosoftStoreForBusinessPortalSelectionOptions
+Type: Microsoft.Graph.Beta.PowerShell.Support.MicrosoftStoreForBusinessPortalSelectionOptions
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -395,7 +396,7 @@ The mobile app categories.
 To construct, see NOTES section for MOBILEAPPCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppCategory[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -411,7 +412,7 @@ The Managed Device Mobile Application Configurations.
 To construct, see NOTES section for MOBILEAPPCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedDeviceMobileAppConfiguration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedDeviceMobileAppConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -427,7 +428,7 @@ The mobile apps.
 To construct, see NOTES section for MOBILEAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileApp[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileApp[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -443,7 +444,7 @@ The PolicySet of Policies and Applications
 To construct, see NOTES section for POLICYSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPolicySet[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPolicySet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -459,7 +460,7 @@ symantecCodeSigningCertificate
 To construct, see NOTES section for SYMANTECCODESIGNINGCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSymantecCodeSigningCertificate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSymantecCodeSigningCertificate
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -475,7 +476,7 @@ Targeted managed app configurations.
 To construct, see NOTES section for TARGETEDMANAGEDAPPCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetedManagedAppConfiguration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -491,7 +492,7 @@ List of Vpp tokens for this organization.
 To construct, see NOTES section for VPPTOKENS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVppToken[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -507,7 +508,7 @@ The collection of Windows Defender Application Control Supplemental Policies.
 To construct, see NOTES section for WDACSUPPLEMENTALPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -523,7 +524,7 @@ Windows information protection device registrations that are not MDM enrolled.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONDEVICEREGISTRATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -539,7 +540,7 @@ Windows information protection for apps running on devices which are not MDM enr
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -555,7 +556,7 @@ Windows information protection wipe actions.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONWIPEACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionWipeAction[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionWipeAction[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -571,7 +572,7 @@ Windows managed app policies.
 To construct, see NOTES section for WINDOWSMANAGEDAPPPROTECTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsManagedAppProtection[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagedAppProtection[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -587,7 +588,7 @@ Windows management app entity.
 To construct, see NOTES section for WINDOWSMANAGEMENTAPP properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsManagementApp
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsManagementApp
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -602,7 +603,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -618,7 +619,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -635,14 +636,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAppManagement
+
 ## NOTES
 
 ALIASES
 
-Update-MgDeviceAppMgt
+Update-BetaDeviceAppMgt
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -716,6 +719,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
   - `[AllowedAndroidDeviceModels <String[]>]`: List of device models allowed, as a string, for the managed app to work.
+  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfAndroidDeviceManufacturerNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
@@ -724,9 +728,10 @@ To create the parameters described below, construct a hash table containing the 
   - `[AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfDevicePasscodeComplexityLessThanMedium <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
+  - `[AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[ApprovedKeyboards <IMicrosoftGraphKeyValuePair[]>]`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed. A key should be Android package id for a keyboard and value should be a friendly name
-    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: List of apps to which the policy is deployed.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
@@ -841,6 +846,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
     - `[AllowedAndroidDeviceModels <String[]>]`: List of device models allowed, as a string, for the managed app to work.
+    - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfAndroidDeviceManufacturerNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
@@ -849,9 +855,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfDevicePasscodeComplexityLessThanMedium <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
+    - `[AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[ApprovedKeyboards <IMicrosoftGraphKeyValuePair[]>]`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed. A key should be Android package id for a keyboard and value should be a friendly name
-      - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-      - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
     - `[Apps <IMicrosoftGraphManagedMobileApp[]>]`: List of apps to which the policy is deployed.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[MobileAppIdentifier <IMicrosoftGraphMobileAppIdentifier>]`: The identifier for a mobile app.
@@ -952,6 +959,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work. (Android only)
     - `[AllowedAndroidDeviceModels <String[]>]`: List of device models allowed, as a string, for the managed app to work. (Android Only)
     - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work. (iOS Only)
+    - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfAndroidDeviceManufacturerNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
     - `[AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
@@ -1340,36 +1348,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
     - `[Description <String>]`: The description of the app.
     - `[Developer <String>]`: The developer of the app.
-    - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The list of installation states for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-      - `[DeviceId <String>]`: Device ID
-      - `[DeviceName <String>]`: Device name
-      - `[DisplayVersion <String>]`: Human readable version of the application
-      - `[ErrorCode <Int32?>]`: The error code for install or uninstall failures.
-      - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-      - `[InstallStateDetail <ResultantAppStateDetail?>]`: Enum indicating additional details regarding why an application has a particular install state.
-      - `[LastSyncDateTime <DateTime?>]`: Last sync date time
-      - `[MobileAppInstallStatusValue <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-      - `[OSDescription <String>]`: OS Description
-      - `[OSVersion <String>]`: OS Version
-      - `[UserName <String>]`: Device User Name
-      - `[UserPrincipalName <String>]`: User Principal Name
     - `[DisplayName <String>]`: The admin provided or imported title of the app.
     - `[InformationUrl <String>]`: The more information Url.
-    - `[InstallSummary <IMicrosoftGraphMobileAppInstallSummary>]`: Contains properties for the installation summary of a mobile app. This will be deprecated starting May, 2023 (Intune Release 2305).
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this app.
-      - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this app.
-      - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this app.
-      - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this app.
-      - `[NotApplicableDeviceCount <Int32?>]`: Number of Devices that are not applicable for this app.
-      - `[NotApplicableUserCount <Int32?>]`: Number of Users whose devices were all not applicable for this app.
-      - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this app installed.
-      - `[NotInstalledUserCount <Int32?>]`: Number of Users that have 1 or more devices that did not install this app.
-      - `[PendingInstallDeviceCount <Int32?>]`: Number of Devices that have been notified to install this app.
-      - `[PendingInstallUserCount <Int32?>]`: Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.
     - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
     - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
     - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
@@ -1390,15 +1370,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
     - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
     - `[UploadState <Int32?>]`: The upload state.
-    - `[UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>]`: The list of installation states for this mobile app.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-      - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The install state of the app on devices.
-      - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
-      - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
-      - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
-      - `[UserName <String>]`: User name.
-      - `[UserPrincipalName <String>]`: User Principal Name.
   - `[PolicySets <IMicrosoftGraphPolicySet[]>]`: The PolicySet of Policies and Applications
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Assignments <IMicrosoftGraphPolicySetAssignment[]>]`: Assignments of the PolicySet.
@@ -1513,18 +1484,18 @@ To create the parameters described below, construct a hash table containing the 
     - `[VppTokenAccountType <VppTokenAccountType?>]`: Possible types of an Apple Volume Purchase Program token.
   - `[WdacSupplementalPolicies <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]>]`: The collection of Windows Defender Application Control Supplemental Policies.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+    - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for the Windows Defender Application Control Supplemental Policy.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
-    - `[Content <Byte[]>]`: The WindowsDefenderApplicationControl supplemental policy content in byte array format.
-    - `[ContentFileName <String>]`: The WindowsDefenderApplicationControl supplemental policy content's file name.
-    - `[CreationDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was uploaded.
+    - `[Content <Byte[]>]`: Indicates the content of the Windows Defender Application Control Supplemental Policy in byte array format.
+    - `[ContentFileName <String>]`: Indicates the file name associated with the content of the Windows Defender Application Control Supplemental Policy.
+    - `[CreationDateTime <DateTime?>]`: Indicates the created date and time when the Windows Defender Application Control Supplemental Policy was uploaded.
     - `[DeploySummary <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>]`: Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeployedDeviceCount <Int32?>]`: Number of Devices that have successfully deployed this WindowsDefenderApplicationControl supplemental policy.
       - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to deploy this WindowsDefenderApplicationControl supplemental policy.
-    - `[Description <String>]`: The description of WindowsDefenderApplicationControl supplemental policy.
+    - `[Description <String>]`: The description of the Windows Defender Application Control Supplemental Policy.
     - `[DeviceStatuses <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]>]`: The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses?>]`: Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses.
@@ -1537,10 +1508,10 @@ To create the parameters described below, construct a hash table containing the 
       - `[PolicyVersion <String>]`: Human readable version of the WindowsDefenderApplicationControl supplemental policy.
       - `[UserName <String>]`: The name of the user of this device.
       - `[UserPrincipalName <String>]`: User Principal Name.
-    - `[DisplayName <String>]`: The display name of WindowsDefenderApplicationControl supplemental policy.
-    - `[LastModifiedDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was last modified.
-    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this WindowsDefenderApplicationControl supplemental policy entity.
-    - `[Version <String>]`: The WindowsDefenderApplicationControl supplemental policy's version.
+    - `[DisplayName <String>]`: The display name of the Windows Defender Application Control Supplemental Policy.
+    - `[LastModifiedDateTime <DateTime?>]`: Indicates the last modified date and time of the Windows Defender Application Control Supplemental Policy.
+    - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
+    - `[Version <String>]`: Indicates the Windows Defender Application Control Supplemental Policy's version.
   - `[WindowsInformationProtectionDeviceRegistrations <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]>]`: Windows information protection device registrations that are not MDM enrolled.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeviceMacAddress <String>]`: Device Mac address.
@@ -1705,6 +1676,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowedAndroidDeviceManufacturers <String>]`: Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work. (Android only)
   - `[AllowedAndroidDeviceModels <String[]>]`: List of device models allowed, as a string, for the managed app to work. (Android Only)
   - `[AllowedIosDeviceModels <String>]`: Semicolon seperated list of device models allowed, as a string, for the managed app to work. (iOS Only)
+  - `[AppActionIfAccountIsClockedOut <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfAndroidDeviceManufacturerNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfAndroidDeviceModelNotAllowed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfAndroidSafetyNetAppsVerificationFailed <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
@@ -1730,8 +1702,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[CustomDialerAppPackageId <String>]`: PackageId of a custom dialer app to click-to-open a phone number on Android.
   - `[CustomDialerAppProtocol <String>]`: Protocol of a custom dialer app to click-to-open a phone number on iOS, for example, skype:.
   - `[CustomSettings <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs to be sent to the affected users, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[DeployedAppCount <Int32?>]`: Count of apps to which the current policy is deployed.
   - `[DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]`: The ManagedAppEntity is the base entity type for all other entity types under app management workflow.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1922,8 +1894,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <String>]`: Version of the entity.
   - `[DisableProtectionOfManagedOutboundOpenInData <Boolean?>]`: Disable protection of data transferred to other apps through IOS OpenIn option. This setting is only allowed to be True when AllowedOutboundDataTransferDestinations is set to ManagedApps.
   - `[ExemptedAppProtocols <IMicrosoftGraphKeyValuePair[]>]`: Apps in this list will be exempt from the policy and will be able to receive data from managed apps.
-    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[ExemptedUniversalLinks <String[]>]`: A list of custom urls that are allowed to invocate an unmanaged app
   - `[FaceIdBlocked <Boolean?>]`: Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
   - `[FilterOpenInToOnlyManagedApps <Boolean?>]`: Defines if open-in operation is supported from the managed app to the filesharing locations selected. This setting only applies when AllowedOutboundDataTransferDestinations is set to ManagedApps and DisableProtectionOfManagedOutboundOpenInData is set to False.
@@ -2186,36 +2158,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[DependentAppCount <Int32?>]`: The total number of dependencies the child app has.
   - `[Description <String>]`: The description of the app.
   - `[Developer <String>]`: The developer of the app.
-  - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The list of installation states for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-    - `[DeviceId <String>]`: Device ID
-    - `[DeviceName <String>]`: Device name
-    - `[DisplayVersion <String>]`: Human readable version of the application
-    - `[ErrorCode <Int32?>]`: The error code for install or uninstall failures.
-    - `[InstallState <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-    - `[InstallStateDetail <ResultantAppStateDetail?>]`: Enum indicating additional details regarding why an application has a particular install state.
-    - `[LastSyncDateTime <DateTime?>]`: Last sync date time
-    - `[MobileAppInstallStatusValue <ResultantAppState?>]`: A list of possible states for application status on an individual device. When devices contact the Intune service and find targeted application enforcement intent, the status of the enforcement is recorded and becomes accessible in the Graph API. Since the application status is identified during device interaction with the Intune service, status records do not immediately appear upon application group assignment; it is created only after the assignment is evaluated in the service and devices start receiving the policy during check-ins.
-    - `[OSDescription <String>]`: OS Description
-    - `[OSVersion <String>]`: OS Version
-    - `[UserName <String>]`: Device User Name
-    - `[UserPrincipalName <String>]`: User Principal Name
   - `[DisplayName <String>]`: The admin provided or imported title of the app.
   - `[InformationUrl <String>]`: The more information Url.
-  - `[InstallSummary <IMicrosoftGraphMobileAppInstallSummary>]`: Contains properties for the installation summary of a mobile app. This will be deprecated starting May, 2023 (Intune Release 2305).
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to install this app.
-    - `[FailedUserCount <Int32?>]`: Number of Users that have 1 or more device that failed to install this app.
-    - `[InstalledDeviceCount <Int32?>]`: Number of Devices that have successfully installed this app.
-    - `[InstalledUserCount <Int32?>]`: Number of Users whose devices have all succeeded to install this app.
-    - `[NotApplicableDeviceCount <Int32?>]`: Number of Devices that are not applicable for this app.
-    - `[NotApplicableUserCount <Int32?>]`: Number of Users whose devices were all not applicable for this app.
-    - `[NotInstalledDeviceCount <Int32?>]`: Number of Devices that does not have this app installed.
-    - `[NotInstalledUserCount <Int32?>]`: Number of Users that have 1 or more devices that did not install this app.
-    - `[PendingInstallDeviceCount <Int32?>]`: Number of Devices that have been notified to install this app.
-    - `[PendingInstallUserCount <Int32?>]`: Number of Users that have 1 or more device that have been notified to install this app and have 0 devices with failures.
   - `[IsAssigned <Boolean?>]`: The value indicating whether the app is assigned to at least one group.
   - `[IsFeatured <Boolean?>]`: The value indicating whether the app is marked as featured by the admin.
   - `[LargeIcon <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
@@ -2239,15 +2183,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupersededAppCount <Int32?>]`: The total number of apps this app is directly or indirectly superseded by.
   - `[SupersedingAppCount <Int32?>]`: The total number of apps this app directly or indirectly supersedes.
   - `[UploadState <Int32?>]`: The upload state.
-  - `[UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>]`: The list of installation states for this mobile app.
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[App <IMicrosoftGraphMobileApp>]`: An abstract class containing the base properties for Intune mobile apps. Note: Listing mobile apps with `$expand=assignments` has been deprecated. Instead get the list of apps without the `$expand` query on `assignments`. Then, perform the expansion on individual applications.
-    - `[DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>]`: The install state of the app on devices.
-    - `[FailedDeviceCount <Int32?>]`: Failed Device Count.
-    - `[InstalledDeviceCount <Int32?>]`: Installed Device Count.
-    - `[NotInstalledDeviceCount <Int32?>]`: Not installed device count.
-    - `[UserName <String>]`: User name.
-    - `[UserPrincipalName <String>]`: User Principal Name.
 
 `POLICYSETS <IMicrosoftGraphPolicySet[]>`: The PolicySet of Policies and Applications
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -2292,8 +2227,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `TARGETEDMANAGEDAPPCONFIGURATIONS <IMicrosoftGraphTargetedManagedAppConfiguration[]>`: Targeted managed app configurations.
   - `[CustomSettings <IMicrosoftGraphKeyValuePair[]>]`: A set of string key and string value pairs to be sent to apps for users to whom the configuration is scoped, unalterned by this service
-    - `[Name <String>]`: Name for this key-value pair. For more information about possible names for each resource type that uses this configuration, see keyValuePair names and values.
-    - `[Value <String>]`: Value for this key-value pair. For more information about possible values for each resource type that uses this configuration, see keyValuePair names and values.
+    - `[Name <String>]`: Name for this key-value pair
+    - `[Value <String>]`: Value for this key-value pair
   - `[Settings <IMicrosoftGraphDeviceManagementConfigurationSetting[]>]`: List of settings contained in this App Configuration policy
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]`: List of related Setting Definitions. This property is read-only.
@@ -2392,21 +2327,21 @@ To create the parameters described below, construct a hash table containing the 
 
 `WDACSUPPLEMENTALPOLICIES <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicy[]>`: The collection of Windows Defender Application Control Supplemental Policies.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+  - `[Assignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]`: The associated group assignments for the Windows Defender Application Control Supplemental Policy.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Target <IMicrosoftGraphDeviceAndAppManagementAssignmentTarget>]`: Base type for assignment targets.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The Id of the filter for the target assignment.
       - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
-  - `[Content <Byte[]>]`: The WindowsDefenderApplicationControl supplemental policy content in byte array format.
-  - `[ContentFileName <String>]`: The WindowsDefenderApplicationControl supplemental policy content's file name.
-  - `[CreationDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was uploaded.
+  - `[Content <Byte[]>]`: Indicates the content of the Windows Defender Application Control Supplemental Policy in byte array format.
+  - `[ContentFileName <String>]`: Indicates the file name associated with the content of the Windows Defender Application Control Supplemental Policy.
+  - `[CreationDateTime <DateTime?>]`: Indicates the created date and time when the Windows Defender Application Control Supplemental Policy was uploaded.
   - `[DeploySummary <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentSummary>]`: Contains properties for the deployment summary of a WindowsDefenderApplicationControl supplemental policy.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeployedDeviceCount <Int32?>]`: Number of Devices that have successfully deployed this WindowsDefenderApplicationControl supplemental policy.
     - `[FailedDeviceCount <Int32?>]`: Number of Devices that have failed to deploy this WindowsDefenderApplicationControl supplemental policy.
-  - `[Description <String>]`: The description of WindowsDefenderApplicationControl supplemental policy.
+  - `[Description <String>]`: The description of the Windows Defender Application Control Supplemental Policy.
   - `[DeviceStatuses <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyDeploymentStatus[]>]`: The list of device deployment states for this WindowsDefenderApplicationControl supplemental policy.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeploymentStatus <WindowsDefenderApplicationControlSupplementalPolicyStatuses?>]`: Enum values for the various WindowsDefenderApplicationControl supplemental policy deployment statuses.
@@ -2419,10 +2354,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[PolicyVersion <String>]`: Human readable version of the WindowsDefenderApplicationControl supplemental policy.
     - `[UserName <String>]`: The name of the user of this device.
     - `[UserPrincipalName <String>]`: User Principal Name.
-  - `[DisplayName <String>]`: The display name of WindowsDefenderApplicationControl supplemental policy.
-  - `[LastModifiedDateTime <DateTime?>]`: The date and time when the WindowsDefenderApplicationControl supplemental policy was last modified.
-  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this WindowsDefenderApplicationControl supplemental policy entity.
-  - `[Version <String>]`: The WindowsDefenderApplicationControl supplemental policy's version.
+  - `[DisplayName <String>]`: The display name of the Windows Defender Application Control Supplemental Policy.
+  - `[LastModifiedDateTime <DateTime?>]`: Indicates the last modified date and time of the Windows Defender Application Control Supplemental Policy.
+  - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for the Windows Defender Application Control Supplemental Policy entity.
+  - `[Version <String>]`: Indicates the Windows Defender Application Control Supplemental Policy's version.
 
 `WINDOWSINFORMATIONPROTECTIONDEVICEREGISTRATIONS <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration[]>`: Windows information protection device registrations that are not MDM enrolled.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -2577,7 +2512,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ManagedInstallerConfiguredDateTime <String>]`: Managed Installer Configured Date Time
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagement?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgDeviceAppManagement](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagement?view=graph-powershell-v1.0)

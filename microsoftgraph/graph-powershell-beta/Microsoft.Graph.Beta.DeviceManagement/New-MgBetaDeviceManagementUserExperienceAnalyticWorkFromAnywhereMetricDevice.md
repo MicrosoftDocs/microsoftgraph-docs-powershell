@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticworkfromanywheremetricdevice
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to metricDevices for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -28,14 +25,22 @@ New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
  [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
  [-UpgradeEligibility <OperatingSystemUpgradeEligibility>] [-WindowsScore <Double>]
- [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-WorkFromAnywhereScore <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  -UserExperienceAnalyticsWorkFromAnywhereMetricId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -52,15 +57,7 @@ New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
  [-ProcessorCoreCountCheckFailed] [-ProcessorFamilyCheckFailed] [-ProcessorSpeedCheckFailed] [-RamCheckFailed]
  [-SecureBootCheckFailed] [-SerialNumber <String>] [-StorageCheckFailed] [-TenantAttached] [-TpmCheckFailed]
  [-UpgradeEligibility <OperatingSystemUpgradeEligibility>] [-WindowsScore <Double>]
- [-WorkFromAnywhereScore <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-WorkFromAnywhereScore <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -68,14 +65,14 @@ Create new navigation property to metricDevices for deviceManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -88,7 +85,7 @@ Create new navigation property to metricDevices for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,10 +97,13 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPilotProfileAssigned
-The user experience analytics work from anywhere intune device's autopilotProfileAssigned.
+When TRUE, indicates the intune device's autopilot profile is assigned.
+When FALSE, indicates it's not Assigned.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,10 +115,13 @@ Accept wildcard characters: False
 ```
 
 ### -AutoPilotRegistered
-The user experience work from anywhere intune device's autopilotRegistered.
+When TRUE, indicates the intune device's autopilot is registered.
+When FALSE, indicates it's not registered.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,10 +133,12 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAdDeviceId
-The user experience work from anywhere azure Ad device Id.
+The Azure Active Directory (Azure AD) device Id.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,10 +150,12 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAdJoinType
-The user experience work from anywhere device's azure Ad joinType.
+The work from anywhere device's Azure Active Directory (Azure AD) join type.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,10 +167,13 @@ Accept wildcard characters: False
 ```
 
 ### -AzureAdRegistered
-The user experience work from anywhere device's azureAdRegistered.
+When TRUE, indicates the device's Azure Active Directory (Azure AD) is registered.
+When False, indicates it's not registered.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,11 +185,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-The user experience analytics Device for work from anywhere report
+The user experience analytics device for work from anywhere report.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -191,11 +201,15 @@ Accept wildcard characters: False
 ```
 
 ### -CloudIdentityScore
-The user experience work from anywhere per device cloud identity score.
+Indicates per device cloud identity score.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,11 +221,15 @@ Accept wildcard characters: False
 ```
 
 ### -CloudManagementScore
-The user experience work from anywhere per device cloud management score.
+Indicates per device cloud management score.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -223,11 +241,15 @@ Accept wildcard characters: False
 ```
 
 ### -CloudProvisioningScore
-The user experience work from anywhere per device cloud provisioning score.
+Indicates per device cloud provisioning score.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -239,10 +261,13 @@ Accept wildcard characters: False
 ```
 
 ### -CompliancePolicySetToIntune
-The user experience work from anywhere device's compliancePolicySetToIntune.
+When TRUE, indicates the device's compliance policy is set to intune.
+When FALSE, indicates it's not set to intune.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -254,10 +279,12 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-The user experience work from anywhere device Id.
+The Intune device id of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -269,10 +296,12 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceName
-The work from anywhere device's name.
+The name of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -287,7 +316,7 @@ Accept wildcard characters: False
 userExperienceAnalyticsHealthState
 
 ```yaml
-Type: UserExperienceAnalyticsHealthState
+Type: Microsoft.Graph.Beta.PowerShell.Support.UserExperienceAnalyticsHealthState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -303,7 +332,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -319,8 +348,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -331,10 +360,13 @@ Accept wildcard characters: False
 ```
 
 ### -IsCloudManagedGatewayEnabled
-The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.
+When TRUE, indicates the device's Cloud Management Gateway for Configuration Manager is enabled.
+When FALSE, indicates it's not enabled.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -346,10 +378,12 @@ Accept wildcard characters: False
 ```
 
 ### -ManagedBy
-The user experience work from anywhere management agent of the device.
+The management agent of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -361,10 +395,12 @@ Accept wildcard characters: False
 ```
 
 ### -Manufacturer
-The user experience work from anywhere device's manufacturer.
+The manufacturer name of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -376,10 +412,12 @@ Accept wildcard characters: False
 ```
 
 ### -Model
-The user experience work from anywhere device's model.
+The model name of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -391,10 +429,13 @@ Accept wildcard characters: False
 ```
 
 ### -OSCheckFailed
-The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates OS check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -406,10 +447,12 @@ Accept wildcard characters: False
 ```
 
 ### -OSDescription
-The user experience work from anywhere device's OS Description.
+The OS description of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -421,10 +464,12 @@ Accept wildcard characters: False
 ```
 
 ### -OSVersion
-The user experience work from anywhere device's OS Version.
+The OS version of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -436,10 +481,13 @@ Accept wildcard characters: False
 ```
 
 ### -OtherWorkloadsSetToIntune
-The user experience work from anywhere device's otherWorkloadsSetToIntune.
+When TRUE, indicates the device's other workloads is set to intune.
+When FALSE, indicates it's not set to intune.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -451,10 +499,12 @@ Accept wildcard characters: False
 ```
 
 ### -Ownership
-The user experience work from anywhere device's ownership.
+Ownership of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -466,10 +516,13 @@ Accept wildcard characters: False
 ```
 
 ### -Processor64BitCheckFailed
-The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -481,10 +534,13 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessorCoreCountCheckFailed
-The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates processor hardware core count check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -496,10 +552,13 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessorFamilyCheckFailed
-The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates processor hardware family check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -511,10 +570,13 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessorSpeedCheckFailed
-The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates processor hardware speed check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -526,10 +588,13 @@ Accept wildcard characters: False
 ```
 
 ### -RamCheckFailed
-Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows
+When TRUE, indicates RAM hardware check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -541,10 +606,13 @@ Accept wildcard characters: False
 ```
 
 ### -SecureBootCheckFailed
-The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates secure boot hardware check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -556,10 +624,12 @@ Accept wildcard characters: False
 ```
 
 ### -SerialNumber
-The user experience work from anywhere device's serial number.
+The serial number of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -571,10 +641,13 @@ Accept wildcard characters: False
 ```
 
 ### -StorageCheckFailed
-The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.
+When TRUE, indicates storage hardware check failed for device to upgrade to the latest version of windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -586,10 +659,13 @@ Accept wildcard characters: False
 ```
 
 ### -TenantAttached
-The user experience work from anywhere device's tenantAttached.
+When TRUE, indicates the device is Tenant Attached.
+When FALSE, indicates it's not Tenant Attached.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -601,10 +677,13 @@ Accept wildcard characters: False
 ```
 
 ### -TpmCheckFailed
-The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.
+When TRUE, indicates Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.
+When FALSE, indicates the check succeeded.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -616,10 +695,10 @@ Accept wildcard characters: False
 ```
 
 ### -UpgradeEligibility
-Work From Anywhere windows device upgrade eligibility status
+Work From Anywhere windows device upgrade eligibility status.
 
 ```yaml
-Type: OperatingSystemUpgradeEligibility
+Type: Microsoft.Graph.Beta.PowerShell.Support.OperatingSystemUpgradeEligibility
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -634,8 +713,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsWorkFromAnywhereMetric
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -646,11 +725,15 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsScore
-The user experience work from anywhere per device windows score.
+Indicates per device windows score.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -662,11 +745,15 @@ Accept wildcard characters: False
 ```
 
 ### -WorkFromAnywhereScore
-The user experience work from anywhere per device overall score.
+Indicates work from anywhere per device overall score.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -681,7 +768,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -697,7 +784,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -714,10 +801,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice
+
 ## NOTES
 
 ALIASES
@@ -727,50 +817,55 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>`: The user experience analytics Device for work from anywhere report
+`BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereDevice>`: The user experience analytics device for work from anywhere report.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AutoPilotProfileAssigned <Boolean?>]`: The user experience analytics work from anywhere intune device's autopilotProfileAssigned.
-  - `[AutoPilotRegistered <Boolean?>]`: The user experience work from anywhere intune device's autopilotRegistered.
-  - `[AzureAdDeviceId <String>]`: The user experience work from anywhere azure Ad device Id.
-  - `[AzureAdJoinType <String>]`: The user experience work from anywhere device's azure Ad joinType.
-  - `[AzureAdRegistered <Boolean?>]`: The user experience work from anywhere device's azureAdRegistered.
-  - `[CloudIdentityScore <Double?>]`: The user experience work from anywhere per device cloud identity score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CloudManagementScore <Double?>]`: The user experience work from anywhere per device cloud management score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CloudProvisioningScore <Double?>]`: The user experience work from anywhere per device cloud provisioning score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CompliancePolicySetToIntune <Boolean?>]`: The user experience work from anywhere device's compliancePolicySetToIntune.
-  - `[DeviceId <String>]`: The user experience work from anywhere device Id.
-  - `[DeviceName <String>]`: The work from anywhere device's name.
+  - `[AutoPilotProfileAssigned <Boolean?>]`: When TRUE, indicates the intune device's autopilot profile is assigned. When FALSE, indicates it's not Assigned. Supports: $select, $OrderBy. Read-only.
+  - `[AutoPilotRegistered <Boolean?>]`: When TRUE, indicates the intune device's autopilot is registered. When FALSE, indicates it's not registered. Supports: $select, $OrderBy. Read-only.
+  - `[AzureAdDeviceId <String>]`: The Azure Active Directory (Azure AD) device Id. Supports: $select, $OrderBy. Read-only.
+  - `[AzureAdJoinType <String>]`: The work from anywhere device's Azure Active Directory (Azure AD) join type. Supports: $select, $OrderBy. Read-only.
+  - `[AzureAdRegistered <Boolean?>]`: When TRUE, indicates the device's Azure Active Directory (Azure AD) is registered. When False, indicates it's not registered. Supports: $select, $OrderBy. Read-only.
+  - `[CloudIdentityScore <Double?>]`: Indicates per device cloud identity score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudManagementScore <Double?>]`: Indicates per device cloud management score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudProvisioningScore <Double?>]`: Indicates per device cloud provisioning score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CompliancePolicySetToIntune <Boolean?>]`: When TRUE, indicates the device's compliance policy is set to intune. When FALSE, indicates it's not set to intune. Supports: $select, $OrderBy. Read-only.
+  - `[DeviceId <String>]`: The Intune device id of the device. Supports: $select, $OrderBy. Read-only.
+  - `[DeviceName <String>]`: The name of the device. Supports: $select, $OrderBy. Read-only.
   - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[IsCloudManagedGatewayEnabled <Boolean?>]`: The user experience work from anywhere device's Cloud Management Gateway for Configuration Manager is enabled.
-  - `[ManagedBy <String>]`: The user experience work from anywhere management agent of the device.
-  - `[Manufacturer <String>]`: The user experience work from anywhere device's manufacturer.
-  - `[Model <String>]`: The user experience work from anywhere device's model.
-  - `[OSCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is OS check failed for device to upgrade to the latest version of windows.
-  - `[OSDescription <String>]`: The user experience work from anywhere device's OS Description.
-  - `[OSVersion <String>]`: The user experience work from anywhere device's OS Version.
-  - `[OtherWorkloadsSetToIntune <Boolean?>]`: The user experience work from anywhere device's otherWorkloadsSetToIntune.
-  - `[Ownership <String>]`: The user experience work from anywhere device's ownership.
-  - `[Processor64BitCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows.
-  - `[ProcessorCoreCountCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware core count check failed for device to upgrade to the latest version of windows.
-  - `[ProcessorFamilyCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware family check failed for device to upgrade to the latest version of windows.
-  - `[ProcessorSpeedCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is processor hardware speed check failed for device to upgrade to the latest version of windows.
-  - `[RamCheckFailed <Boolean?>]`: Is the user experience analytics work from anywhere device RAM hardware check failed for device to upgrade to the latest version of windows
-  - `[SecureBootCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is secure boot hardware check failed for device to upgrade to the latest version of windows.
-  - `[SerialNumber <String>]`: The user experience work from anywhere device's serial number.
-  - `[StorageCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is storage hardware check failed for device to upgrade to the latest version of windows.
-  - `[TenantAttached <Boolean?>]`: The user experience work from anywhere device's tenantAttached.
-  - `[TpmCheckFailed <Boolean?>]`: The user experience work from anywhere device, Is Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows.
-  - `[UpgradeEligibility <OperatingSystemUpgradeEligibility?>]`: Work From Anywhere windows device upgrade eligibility status
-  - `[WindowsScore <Double?>]`: The user experience work from anywhere per device windows score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[WorkFromAnywhereScore <Double?>]`: The user experience work from anywhere per device overall score. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[IsCloudManagedGatewayEnabled <Boolean?>]`: When TRUE, indicates the device's Cloud Management Gateway for Configuration Manager is enabled. When FALSE, indicates it's not enabled. Supports: $select, $OrderBy. Read-only.
+  - `[ManagedBy <String>]`: The management agent of the device. Supports: $select, $OrderBy. Read-only.
+  - `[Manufacturer <String>]`: The manufacturer name of the device. Supports: $select, $OrderBy. Read-only.
+  - `[Model <String>]`: The model name of the device. Supports: $select, $OrderBy. Read-only.
+  - `[OSCheckFailed <Boolean?>]`: When TRUE, indicates OS check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[OSDescription <String>]`: The OS description of the device. Supports: $select, $OrderBy. Read-only.
+  - `[OSVersion <String>]`: The OS version of the device. Supports: $select, $OrderBy. Read-only.
+  - `[OtherWorkloadsSetToIntune <Boolean?>]`: When TRUE, indicates the device's other workloads is set to intune. When FALSE, indicates it's not set to intune. Supports: $select, $OrderBy. Read-only.
+  - `[Ownership <String>]`: Ownership of the device. Supports: $select, $OrderBy. Read-only.
+  - `[Processor64BitCheckFailed <Boolean?>]`: When TRUE, indicates processor hardware 64-bit architecture check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[ProcessorCoreCountCheckFailed <Boolean?>]`: When TRUE, indicates processor hardware core count check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[ProcessorFamilyCheckFailed <Boolean?>]`: When TRUE, indicates processor hardware family check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[ProcessorSpeedCheckFailed <Boolean?>]`: When TRUE, indicates processor hardware speed check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[RamCheckFailed <Boolean?>]`: When TRUE, indicates RAM hardware check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[SecureBootCheckFailed <Boolean?>]`: When TRUE, indicates secure boot hardware check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[SerialNumber <String>]`: The serial number of the device. Supports: $select, $OrderBy. Read-only.
+  - `[StorageCheckFailed <Boolean?>]`: When TRUE, indicates storage hardware check failed for device to upgrade to the latest version of windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[TenantAttached <Boolean?>]`: When TRUE, indicates the device is Tenant Attached. When FALSE, indicates it's not Tenant Attached. Supports: $select, $OrderBy. Read-only.
+  - `[TpmCheckFailed <Boolean?>]`: When TRUE, indicates Trusted Platform Module (TPM) hardware check failed for device to the latest version of upgrade to windows. When FALSE, indicates the check succeeded. Supports: $select, $OrderBy. Read-only.
+  - `[UpgradeEligibility <OperatingSystemUpgradeEligibility?>]`: Work From Anywhere windows device upgrade eligibility status.
+  - `[WindowsScore <Double?>]`: Indicates per device windows score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[WorkFromAnywhereScore <Double?>]`: Indicates work from anywhere per device overall score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AlertRuleId <String>]`: The unique identifier of alertRule
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
+  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
   - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
@@ -855,6 +950,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SecurityBaselineSettingStateId <String>]`: The unique identifier of securityBaselineSettingState
   - `[SecurityBaselineStateId <String>]`: The unique identifier of securityBaselineState
   - `[SettingStateDeviceSummaryId <String>]`: The unique identifier of settingStateDeviceSummary
+  - `[UserExperienceAnalyticsAnomalyCorrelationGroupOverviewId <String>]`: The unique identifier of userExperienceAnalyticsAnomalyCorrelationGroupOverview
   - `[UserExperienceAnalyticsAnomalyDeviceId <String>]`: The unique identifier of userExperienceAnalyticsAnomalyDevice
   - `[UserExperienceAnalyticsAnomalyId <String>]`: The unique identifier of userExperienceAnalyticsAnomaly
   - `[UserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetailsId <String>]`: The unique identifier of userExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails
@@ -897,11 +993,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
-  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice?view=graph-powershell-v1.0)

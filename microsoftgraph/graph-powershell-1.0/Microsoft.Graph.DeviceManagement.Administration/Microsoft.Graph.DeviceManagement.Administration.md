@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.DeviceManagement.Administration
-Module Guid: 161c9a36-ca9e-4f0b-8697-6a9029b1c067
+Module Guid: 9b36a6b5-e56e-4477-8d4f-14c83bad0284
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration
 Help Version: 1.0.0.0
 Locale: en-US
@@ -51,7 +51,7 @@ The list of Device Management Partners configured by the tenant.
 Get the number of the resource
 
 ### [Get-MgDeviceManagementRemoteAssistancePartner](Get-MgDeviceManagementRemoteAssistancePartner.md)
-The remote assist partners.
+Read properties and relationships of the remoteAssistancePartner object.
 
 ### [Get-MgDeviceManagementRemoteAssistancePartnerCount](Get-MgDeviceManagementRemoteAssistancePartnerCount.md)
 Get the number of the resource
@@ -67,6 +67,9 @@ The Role Assignments.
 
 ### [Get-MgDeviceManagementRoleAssignmentCount](Get-MgDeviceManagementRoleAssignmentCount.md)
 Get the number of the resource
+
+### [Get-MgDeviceManagementRoleAssignmentRoleDefinition](Get-MgDeviceManagementRoleAssignmentRoleDefinition.md)
+Role definition this assignment is part of.
 
 ### [Get-MgDeviceManagementRoleDefinition](Get-MgDeviceManagementRoleDefinition.md)
 The Role Definitions.
@@ -84,7 +87,7 @@ Get the number of the resource
 Role definition this assignment is part of.
 
 ### [Get-MgDeviceManagementTelecomExpenseManagementPartner](Get-MgDeviceManagementTelecomExpenseManagementPartner.md)
-The telecom expense management partners.
+Read properties and relationships of the telecomExpenseManagementPartner object.
 
 ### [Get-MgDeviceManagementTelecomExpenseManagementPartnerCount](Get-MgDeviceManagementTelecomExpenseManagementPartnerCount.md)
 Get the number of the resource
@@ -129,7 +132,7 @@ Create new navigation property to mobileThreatDefenseConnectors for deviceManage
 Create new navigation property to deviceManagementPartners for deviceManagement
 
 ### [New-MgDeviceManagementRemoteAssistancePartner](New-MgDeviceManagementRemoteAssistancePartner.md)
-Create new navigation property to remoteAssistancePartners for deviceManagement
+Create a new remoteAssistancePartner object.
 
 ### [New-MgDeviceManagementResourceOperation](New-MgDeviceManagementResourceOperation.md)
 Create new navigation property to resourceOperations for deviceManagement
@@ -144,7 +147,7 @@ Create new navigation property to roleDefinitions for deviceManagement
 Create new navigation property to roleAssignments for deviceManagement
 
 ### [New-MgDeviceManagementTelecomExpenseManagementPartner](New-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+Create a new telecomExpenseManagementPartner object.
 
 ### [New-MgDeviceManagementTermAndCondition](New-MgDeviceManagementTermAndCondition.md)
 Create new navigation property to termsAndConditions for deviceManagement
@@ -177,7 +180,7 @@ Delete navigation property mobileThreatDefenseConnectors for deviceManagement
 Delete navigation property deviceManagementPartners for deviceManagement
 
 ### [Remove-MgDeviceManagementRemoteAssistancePartner](Remove-MgDeviceManagementRemoteAssistancePartner.md)
-Delete navigation property remoteAssistancePartners for deviceManagement
+Deletes a remoteAssistancePartner.
 
 ### [Remove-MgDeviceManagementResourceOperation](Remove-MgDeviceManagementResourceOperation.md)
 Delete navigation property resourceOperations for deviceManagement
@@ -192,7 +195,7 @@ Delete navigation property roleDefinitions for deviceManagement
 Delete navigation property roleAssignments for deviceManagement
 
 ### [Remove-MgDeviceManagementTelecomExpenseManagementPartner](Remove-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Delete navigation property telecomExpenseManagementPartners for deviceManagement
+Deletes a telecomExpenseManagementPartner.
 
 ### [Remove-MgDeviceManagementTermAndCondition](Remove-MgDeviceManagementTermAndCondition.md)
 Delete navigation property termsAndConditions for deviceManagement
@@ -225,7 +228,7 @@ Update the navigation property mobileThreatDefenseConnectors in deviceManagement
 Update the navigation property deviceManagementPartners in deviceManagement
 
 ### [Update-MgDeviceManagementRemoteAssistancePartner](Update-MgDeviceManagementRemoteAssistancePartner.md)
-Update the navigation property remoteAssistancePartners in deviceManagement
+Update the properties of a remoteAssistancePartner object.
 
 ### [Update-MgDeviceManagementResourceOperation](Update-MgDeviceManagementResourceOperation.md)
 Update the navigation property resourceOperations in deviceManagement
@@ -240,7 +243,7 @@ Update the navigation property roleDefinitions in deviceManagement
 Update the navigation property roleAssignments in deviceManagement
 
 ### [Update-MgDeviceManagementTelecomExpenseManagementPartner](Update-MgDeviceManagementTelecomExpenseManagementPartner.md)
-Update the navigation property telecomExpenseManagementPartners in deviceManagement
+Update the properties of a telecomExpenseManagementPartner object.
 
 ### [Update-MgDeviceManagementTermAndCondition](Update-MgDeviceManagementTermAndCondition.md)
 Update the navigation property termsAndConditions in deviceManagement

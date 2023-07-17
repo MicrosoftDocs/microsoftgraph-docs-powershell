@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/get-mgbetagroupplannerplandetail
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a **plannerPlanDetails** object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanDetail?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -32,23 +29,19 @@ Retrieve the properties and relationships of a **plannerPlanDetails** object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Beta.Planner
+{{ Add code here }}
 ```
 
-$params = @{
-	SharedWith = @{
-		"6463a5ce-2119-4198-9f2a-628761df4a62" = $true
-		"D95e6152-f683-4d78-9ff5-67ad180fea4a" = $false
-	}
-	CategoryDescriptions = @{
-		Category1 = "Indoors"
-		Category3 = $null
-	}
-}
+{{ Add output here }}
 
-Update-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +49,7 @@ Update-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $par
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -71,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -87,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -102,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of plannerPlan
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -117,7 +110,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -134,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
+
 ## NOTES
 
 ALIASES
@@ -157,4 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanDetail?view=graph-powershell-v1.0)
+

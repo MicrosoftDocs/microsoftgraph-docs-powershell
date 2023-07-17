@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Teams
-Module Guid: af847e8b-7fd6-4a13-aa6f-88b1b1835715
+Module Guid: e991b581-6934-45d4-9a44-a158ea66b125
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -526,7 +526,7 @@ See available templates.
 Generic representation of a team template definition for a team with a specific structure and configuration.
 
 ### [Get-MgBetaTeam](Get-MgBetaTeam.md)
-Get entity from teams by key
+Retrieve the properties and relationships of the specified team.
 
 ### [Get-MgBetaTeamAllChannelCount](Get-MgBetaTeamAllChannelCount.md)
 Get the number of the resource
@@ -846,6 +846,12 @@ Generic representation of a team template definition for a team with a specific 
 ### [Get-MgBetaTeamwork](Get-MgBetaTeamwork.md)
 Get teamwork
 
+### [Get-MgBetaTeamworkDeletedChat](Get-MgBetaTeamworkDeletedChat.md)
+Get deletedChats from teamwork
+
+### [Get-MgBetaTeamworkDeletedChatCount](Get-MgBetaTeamworkDeletedChatCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaTeamworkDeletedTeam](Get-MgBetaTeamworkDeletedTeam.md)
 A collection of deleted teams.
 
@@ -1076,6 +1082,12 @@ Retrieve the chat of the specified user and Teams app.
 ### [Get-MgBetaUserTeamworkInstalledAppCount](Get-MgBetaUserTeamworkInstalledAppCount.md)
 Get the number of the resource
 
+### [Get-MgBetaUserTeamworkInstalledAppTeamApp](Get-MgBetaUserTeamworkInstalledAppTeamApp.md)
+The app that is installed.
+
+### [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition.md)
+The details of this version of the app.
+
 ### [Hide-MgBetaChatForUser](Hide-MgBetaChatForUser.md)
 Hide a chat for a user.
 
@@ -1180,7 +1192,8 @@ Install a teamsApp to the specified chat.
 Add a conversationMember to a chat.
 
 ### [New-MgBetaChatMessage](New-MgBetaChatMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before creating a chat message.
 
 ### [New-MgBetaChatMessageHostedContent](New-MgBetaChatMessageHostedContent.md)
 Create new navigation property to hostedContents for chats
@@ -1216,7 +1229,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgBetaGroupTeamChannelMessage](New-MgBetaGroupTeamChannelMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 ### [New-MgBetaGroupTeamChannelMessageHostedContent](New-MgBetaGroupTeamChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for groups
@@ -1250,7 +1263,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgBetaGroupTeamPrimaryChannelMessage](New-MgBetaGroupTeamPrimaryChannelMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 ### [New-MgBetaGroupTeamPrimaryChannelMessageHostedContent](New-MgBetaGroupTeamPrimaryChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for groups
@@ -1268,7 +1281,7 @@ Create new navigation property to sharedWithTeams for groups
 Create new navigation property to tabs for groups
 
 ### [New-MgBetaGroupTeamScheduleOfferShiftRequest](New-MgBetaGroupTeamScheduleOfferShiftRequest.md)
-Create new navigation property to offerShiftRequests for groups
+Create an instance of an offerShiftRequest.
 
 ### [New-MgBetaGroupTeamScheduleOpenShift](New-MgBetaGroupTeamScheduleOpenShift.md)
 Create an instance of an openshift object.
@@ -1327,7 +1340,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgBetaTeamChannelMessage](New-MgBetaTeamChannelMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 ### [New-MgBetaTeamChannelMessageHostedContent](New-MgBetaTeamChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for teams
@@ -1367,7 +1380,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgBetaTeamPrimaryChannelMessage](New-MgBetaTeamPrimaryChannelMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 ### [New-MgBetaTeamPrimaryChannelMessageHostedContent](New-MgBetaTeamPrimaryChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for teams
@@ -1385,7 +1398,7 @@ Create new navigation property to sharedWithTeams for teams
 Create new navigation property to tabs for teams
 
 ### [New-MgBetaTeamScheduleOfferShiftRequest](New-MgBetaTeamScheduleOfferShiftRequest.md)
-Create new navigation property to offerShiftRequests for teams
+Create an instance of an offerShiftRequest.
 
 ### [New-MgBetaTeamScheduleOpenShift](New-MgBetaTeamScheduleOpenShift.md)
 Create an instance of an openshift object.
@@ -1421,6 +1434,9 @@ Create a standard tag for members in the team.
 ### [New-MgBetaTeamTagMember](New-MgBetaTeamTagMember.md)
 Create a new teamworkTagMember object in a team.
 
+### [New-MgBetaTeamworkDeletedChat](New-MgBetaTeamworkDeletedChat.md)
+Create new navigation property to deletedChats for teamwork
+
 ### [New-MgBetaTeamworkDeletedTeam](New-MgBetaTeamworkDeletedTeam.md)
 Create new navigation property to deletedTeams for teamwork
 
@@ -1438,7 +1454,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [New-MgBetaTeamworkDeletedTeamChannelMessage](New-MgBetaTeamworkDeletedTeamChannelMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified channel.
 
 ### [New-MgBetaTeamworkDeletedTeamChannelMessageHostedContent](New-MgBetaTeamworkDeletedTeamChannelMessageHostedContent.md)
 Create new navigation property to hostedContents for teamwork
@@ -1476,11 +1492,12 @@ Create new navigation property to chats for users
 ### [New-MgBetaUserChatInstalledApp](New-MgBetaUserChatInstalledApp.md)
 Install a teamsApp to the specified chat.
 
-### [New-MgBetaUserChatInstalledApp](New-MgBetaUserChatInstalledApp.md)
-Install a teamsApp to the specified chat.
+### [New-MgBetaUserChatMember](New-MgBetaUserChatMember.md)
+Add a conversationMember to a chat.
 
 ### [New-MgBetaUserChatMessage](New-MgBetaUserChatMessage.md)
-Send a new chatMessage in the specified channel or a chat.
+Send a new chatMessage in the specified chat.
+This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before creating a chat message.
 
 ### [New-MgBetaUserChatMessageHostedContent](New-MgBetaUserChatMessageHostedContent.md)
 Create new navigation property to hostedContents for users
@@ -1505,9 +1522,8 @@ This API cannot create a new chat; you must use the list chats method to retriev
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
-### [New-MgBetaUserChatTab](New-MgBetaUserChatTab.md)
-Add (pin) a tab to the specified chat.
-\nThe corresponding app must already be installed in the chat.
+### [New-MgBetaUserTeamworkAssociatedTeam](New-MgBetaUserTeamworkAssociatedTeam.md)
+Create new navigation property to associatedTeams for users
 
 ### [New-MgBetaUserTeamworkInstalledApp](New-MgBetaUserTeamworkInstalledApp.md)
 Install an app in the personal scope of the specified user.
@@ -1590,6 +1606,9 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ### [Remove-MgBetaGroupTeamChannelTab](Remove-MgBetaGroupTeamChannelTab.md)
 Delete navigation property tabs for groups
+
+### [Remove-MgBetaGroupTeamIncomingChannel](Remove-MgBetaGroupTeamIncomingChannel.md)
+Remove an incoming channel (a **channel** shared with a **team**) from a team.
 
 ### [Remove-MgBetaGroupTeamInstalledApp](Remove-MgBetaGroupTeamInstalledApp.md)
 Uninstalls an app from the specified team.
@@ -1702,6 +1721,9 @@ This operation is allowed only for channels with a **membershipType** value of `
 ### [Remove-MgBetaTeamChannelTab](Remove-MgBetaTeamChannelTab.md)
 Delete navigation property tabs for teams
 
+### [Remove-MgBetaTeamIncomingChannel](Remove-MgBetaTeamIncomingChannel.md)
+Remove an incoming channel (a **channel** shared with a **team**) from a team.
+
 ### [Remove-MgBetaTeamInstalledApp](Remove-MgBetaTeamInstalledApp.md)
 Uninstalls an app from the specified team.
 
@@ -1780,6 +1802,9 @@ Delete a tag object permanently.
 
 ### [Remove-MgBetaTeamTagMember](Remove-MgBetaTeamTagMember.md)
 Delete a member from a standard tag in a team.
+
+### [Remove-MgBetaTeamworkDeletedChat](Remove-MgBetaTeamworkDeletedChat.md)
+Delete navigation property deletedChats for teamwork
 
 ### [Remove-MgBetaTeamworkDeletedTeam](Remove-MgBetaTeamworkDeletedTeam.md)
 Delete navigation property deletedTeams for teamwork
@@ -2060,6 +2085,9 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 ### [Undo-MgBetaTeamPrimaryChannelMessageSoftDelete](Undo-MgBetaTeamPrimaryChannelMessageSoftDelete.md)
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
+### [Undo-MgBetaTeamworkDeletedChatDelete](Undo-MgBetaTeamworkDeletedChatDelete.md)
+Invoke action undoDelete
+
 ### [Undo-MgBetaTeamworkDeletedTeamChannelMessageReplySoftDelete](Undo-MgBetaTeamworkDeletedTeamChannelMessageReplySoftDelete.md)
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
@@ -2127,8 +2155,7 @@ Update the properties of the specified tab in a chat.
 Update the properties of the specified channel.
 
 ### [Update-MgBetaGroupTeamChannelMember](Update-MgBetaGroupTeamChannelMember.md)
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 ### [Update-MgBetaGroupTeamChannelMessage](Update-MgBetaGroupTeamChannelMessage.md)
 Update a chatMessage object.
@@ -2173,8 +2200,7 @@ Update the navigation property photo in groups
 Update the navigation property primaryChannel in groups
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMember](Update-MgBetaGroupTeamPrimaryChannelMember.md)
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMessage](Update-MgBetaGroupTeamPrimaryChannelMessage.md)
 Update a chatMessage object.
@@ -2251,8 +2277,7 @@ Update Preapproval policy associated with a Teams App.
 Update the properties of the specified channel.
 
 ### [Update-MgBetaTeamChannelMember](Update-MgBetaTeamChannelMember.md)
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 ### [Update-MgBetaTeamChannelMessage](Update-MgBetaTeamChannelMessage.md)
 Update a chatMessage object.
@@ -2297,8 +2322,7 @@ Update the navigation property photo in teams
 Update the navigation property primaryChannel in teams
 
 ### [Update-MgBetaTeamPrimaryChannelMember](Update-MgBetaTeamPrimaryChannelMember.md)
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 ### [Update-MgBetaTeamPrimaryChannelMessage](Update-MgBetaTeamPrimaryChannelMessage.md)
 Update a chatMessage object.
@@ -2365,6 +2389,9 @@ Update the navigation property members in teams
 ### [Update-MgBetaTeamwork](Update-MgBetaTeamwork.md)
 Update teamwork
 
+### [Update-MgBetaTeamworkDeletedChat](Update-MgBetaTeamworkDeletedChat.md)
+Update the navigation property deletedChats in teamwork
+
 ### [Update-MgBetaTeamworkDeletedTeam](Update-MgBetaTeamworkDeletedTeam.md)
 Update the navigation property deletedTeams in teamwork
 
@@ -2372,8 +2399,7 @@ Update the navigation property deletedTeams in teamwork
 Update the navigation property channels in teamwork
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMember](Update-MgBetaTeamworkDeletedTeamChannelMember.md)
-Update the role of a conversationMember in a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
+Update the role of a conversationMember in a \nteam.\nor channel.
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMessage](Update-MgBetaTeamworkDeletedTeamChannelMessage.md)
 Update a chatMessage object.

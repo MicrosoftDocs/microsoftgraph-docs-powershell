@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetapolicydefaultappmanagementpolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a tenantAppManagementPolicy object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,14 @@ Update the properties of a tenantAppManagementPolicy object.
 Update-MgBetaPolicyDefaultAppManagementPolicy [-AdditionalProperties <Hashtable>]
  [-ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-DeletedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsEnabled]
- [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-WhatIf] [-Confirm]
+ [-ServicePrincipalRestrictions <IMicrosoftGraphAppManagementConfiguration>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTenantAppManagementPolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,50 +32,52 @@ Update the properties of a tenantAppManagementPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
+
 $params = @{
-	IsEnabled = $true
-	ApplicationRestrictions = @{
-		PasswordCredentials = @(
+	isEnabled = $true
+	applicationRestrictions = @{
+		passwordCredentials = @(
 			@{
-				RestrictionType = "passwordAddition"
-				MaxLifetime = $null
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+				restrictionType = "passwordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "passwordLifetime"
-				MaxLifetime = "P4DT12H30M5S"
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
+				restrictionType = "passwordLifetime"
+				maxLifetime = "P4DT12H30M5S"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2017-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "symmetricKeyAddition"
-				MaxLifetime = $null
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
+				restrictionType = "symmetricKeyAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2021-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "customPasswordAddition"
-				MaxLifetime = $null
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictionType = "customPasswordAddition"
+				maxLifetime = $null
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 			@{
-				RestrictionType = "symmetricKeyLifetime"
-				MaxLifetime = "P40D"
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictionType = "symmetricKeyLifetime"
+				maxLifetime = "P40D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
-		KeyCredentials = @(
+		keyCredentials = @(
 			@{
-				RestrictionType = "asymmetricKeyLifetime"
-				MaxLifetime = "P30D"
-				RestrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
+				restrictionType = "asymmetricKeyLifetime"
+				maxLifetime = "P30D"
+				restrictForAppsCreatedAfterDateTime = [System.DateTime]::Parse("2015-01-01T10:37:00Z")
 			}
 		)
 	}
 }
+
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
-```
 
 ## PARAMETERS
 
@@ -86,7 +85,7 @@ Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -102,7 +101,7 @@ appManagementConfiguration
 To construct, see NOTES section for APPLICATIONRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +117,7 @@ tenantAppManagementPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTenantAppManagementPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
 Parameter Sets: Update
 Aliases:
 
@@ -134,7 +133,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -150,7 +149,7 @@ Description for this policy.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -166,7 +165,7 @@ Display name for this policy.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -182,7 +181,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -198,7 +197,7 @@ Denotes whether the policy is enabled.
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -214,7 +213,7 @@ appManagementConfiguration
 To construct, see NOTES section for SERVICEPRINCIPALRESTRICTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppManagementConfiguration
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -229,7 +228,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -245,7 +244,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -262,9 +261,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTenantAppManagementPolicy
+
 ## NOTES
 
 ALIASES
@@ -277,6 +278,7 @@ To create the parameters described below, construct a hash table containing the 
 `APPLICATIONRESTRICTIONS <IMicrosoftGraphAppManagementConfiguration>`: appManagementConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+    - `[CertificateBasedApplicationConfigurationIds <String[]>]`: 
     - `[MaxLifetime <TimeSpan?>]`: 
     - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
     - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
@@ -294,6 +296,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ApplicationRestrictions <IMicrosoftGraphAppManagementConfiguration>]`: appManagementConfiguration
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+      - `[CertificateBasedApplicationConfigurationIds <String[]>]`: 
       - `[MaxLifetime <TimeSpan?>]`: 
       - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
       - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
@@ -307,6 +310,7 @@ To create the parameters described below, construct a hash table containing the 
 `SERVICEPRINCIPALRESTRICTIONS <IMicrosoftGraphAppManagementConfiguration>`: appManagementConfiguration
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[KeyCredentials <IMicrosoftGraphKeyCredentialConfiguration[]>]`: Collection of keyCredential restrictions settings to be applied to an application or service principal.
+    - `[CertificateBasedApplicationConfigurationIds <String[]>]`: 
     - `[MaxLifetime <TimeSpan?>]`: 
     - `[RestrictForAppsCreatedAfterDateTime <DateTime?>]`: Timestamp when the policy is enforced for all apps created on or after the specified date. For existing applications, the enforcement date would be back dated. To apply to all applications regardless of their creation date, this property would be null. Nullable.
     - `[RestrictionType <String>]`: appKeyCredentialRestrictionType
@@ -316,4 +320,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-[Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-v1.0)
+

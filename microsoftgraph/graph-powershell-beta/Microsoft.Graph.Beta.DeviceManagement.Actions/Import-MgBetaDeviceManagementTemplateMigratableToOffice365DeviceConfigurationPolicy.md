@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/import-mgbetadevicemanagementtemplatemigratabletooffice365deviceconfigurationpolicy
 schema: 2.0.0
@@ -10,21 +10,18 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action importOffice365DeviceConfigurationPolicies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Import (Default)
 ```
 Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
- -DeviceManagementTemplateId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -DeviceManagementTemplateId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
 ```
 Import-MgBetaDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy
- -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,14 +29,14 @@ Invoke action importOffice365DeviceConfigurationPolicies
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -52,7 +49,7 @@ Invoke action importOffice365DeviceConfigurationPolicies
 The unique identifier of deviceManagementTemplate
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Import
 Aliases:
 
@@ -68,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: ImportViaIdentity
 Aliases:
 
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +96,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +113,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementIntent
+
 ## NOTES
 
 ALIASES
@@ -182,4 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementTemplateMigratableToOffice365DeviceConfigurationPolicy?view=graph-powershell-v1.0)
+

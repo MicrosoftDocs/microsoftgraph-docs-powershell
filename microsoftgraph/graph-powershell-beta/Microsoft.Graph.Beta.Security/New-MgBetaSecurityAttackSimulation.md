@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecurityattacksimulation
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an attack simulation campaign for a tenant.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,16 +18,19 @@ New-MgBetaSecurityAttackSimulation [-AdditionalProperties <Hashtable>] [-AttackT
  [-AttackType <String>] [-AutomationId <String>] [-CompletionDateTime <DateTime>]
  [-CreatedBy <IMicrosoftGraphEmailIdentity>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-DurationInDays <Int32>]
+ [-EndUserNotificationSetting <IMicrosoftGraphEndUserNotificationSetting>]
  [-ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-Id <String>]
  [-IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>] [-IsAutomated]
- [-LastModifiedBy <IMicrosoftGraphEmailIdentity>] [-LastModifiedDateTime <DateTime>]
- [-LaunchDateTime <DateTime>] [-Payload <IMicrosoftGraphPayload>] [-PayloadDeliveryPlatform <String>]
- [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LandingPage <IMicrosoftGraphLandingPage>] [-LastModifiedBy <IMicrosoftGraphEmailIdentity>]
+ [-LastModifiedDateTime <DateTime>] [-LaunchDateTime <DateTime>] [-LoginPage <IMicrosoftGraphLoginPage>]
+ [-OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>] [-Payload <IMicrosoftGraphPayload>]
+ [-PayloadDeliveryPlatform <String>] [-Report <IMicrosoftGraphSimulationReport>] [-Status <String>]
+ [-TrainingSetting <IMicrosoftGraphTrainingSetting>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-WhatIf] [-Confirm]
+New-MgBetaSecurityAttackSimulation -BodyParameter <IMicrosoftGraphSimulation> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,14 +39,14 @@ Create an attack simulation campaign for a tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -59,7 +59,7 @@ Create an attack simulation campaign for a tenant.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 simulationAttackTechnique
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 simulationAttackType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -104,7 +104,7 @@ Accept wildcard characters: False
 Unique identifier for the attack simulation automation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +120,7 @@ simulation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
 Parameter Sets: Create
 Aliases:
 
@@ -136,7 +136,7 @@ Date and time of completion of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +152,7 @@ emailIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +167,7 @@ Accept wildcard characters: False
 Date and time of creation of the attack simulation and training campaign.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Accept wildcard characters: False
 Description of the attack simulation and training campaign.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -198,7 +198,7 @@ Display name of the attack simulation and training campaign.
 Supports $filter and $orderby.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -213,7 +213,23 @@ Accept wildcard characters: False
 Simulation duration in days.
 
 ```yaml
-Type: Int32
+Type: System.Int32
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndUserNotificationSetting
+endUserNotificationSetting
+To construct, see NOTES section for ENDUSERNOTIFICATIONSETTING properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEndUserNotificationSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +245,7 @@ accountTargetContent
 To construct, see NOTES section for EXCLUDEDACCOUNTTARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccountTargetContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -245,7 +261,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -261,7 +277,7 @@ accountTargetContent
 To construct, see NOTES section for INCLUDEDACCOUNTTARGET properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccountTargetContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccountTargetContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -277,7 +293,23 @@ Flag that represents if the attack simulation and training campaign was created 
 Supports $filter and $orderby.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LandingPage
+landingPage
+To construct, see NOTES section for LANDINGPAGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLandingPage
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -293,7 +325,7 @@ emailIdentity
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEmailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEmailIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -308,7 +340,7 @@ Accept wildcard characters: False
 Date and time of the most recent modification of the attack simulation and training campaign.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -324,7 +356,39 @@ Date and time of the launch/start of the attack simulation and training campaign
 Supports $filter and $orderby.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -LoginPage
+loginPage
+To construct, see NOTES section for LOGINPAGE properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLoginPage
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OAuthConsentAppDetail
+oAuthConsentAppDetail
+To construct, see NOTES section for OAUTHCONSENTAPPDETAIL properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOAuthConsentAppDetail
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -340,7 +404,7 @@ payload
 To construct, see NOTES section for PAYLOAD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPayload
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPayload
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -355,7 +419,7 @@ Accept wildcard characters: False
 payloadDeliveryPlatform
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -371,7 +435,7 @@ simulationReport
 To construct, see NOTES section for REPORT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSimulationReport
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulationReport
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -386,7 +450,23 @@ Accept wildcard characters: False
 simulationStatus
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -TrainingSetting
+trainingSetting
+To construct, see NOTES section for TRAININGSETTING properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrainingSetting
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -401,7 +481,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -417,7 +497,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -434,9 +514,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSimulation
+
 ## NOTES
 
 ALIASES
@@ -455,21 +537,86 @@ To create the parameters described below, construct a hash table containing the 
   - `[CompletionDateTime <DateTime?>]`: Date and time of completion of the attack simulation and training campaign. Supports $filter and $orderby.
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Email <String>]`: Email address of the user.
   - `[CreatedDateTime <DateTime?>]`: Date and time of creation of the attack simulation and training campaign.
   - `[Description <String>]`: Description of the attack simulation and training campaign.
   - `[DisplayName <String>]`: Display name of the attack simulation and training campaign. Supports $filter and $orderby.
   - `[DurationInDays <Int32?>]`: Simulation duration in days.
+  - `[EndUserNotificationSetting <IMicrosoftGraphEndUserNotificationSetting>]`: endUserNotificationSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[NotificationPreference <String>]`: endUserNotificationPreference
+    - `[PositiveReinforcement <IMicrosoftGraphPositiveReinforcementNotification>]`: positiveReinforcementNotification
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DefaultLanguage <String>]`: 
+      - `[EndUserNotification <IMicrosoftGraphEndUserNotification>]`: endUserNotification
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+        - `[CreatedDateTime <DateTime?>]`: 
+        - `[Description <String>]`: 
+        - `[Details <IMicrosoftGraphEndUserNotificationDetail[]>]`: 
+          - `[Id <String>]`: The unique identifier for an entity. Read-only.
+          - `[EmailContent <String>]`: 
+          - `[IsDefaultLangauge <Boolean?>]`: 
+          - `[Language <String>]`: 
+          - `[Locale <String>]`: 
+          - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+          - `[Subject <String>]`: 
+        - `[DisplayName <String>]`: 
+        - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+        - `[LastModifiedDateTime <DateTime?>]`: 
+        - `[NotificationType <String>]`: endUserNotificationType
+        - `[Source <String>]`: simulationContentSource
+        - `[Status <String>]`: simulationContentStatus
+        - `[SupportedLocales <String[]>]`: 
+      - `[DeliveryPreference <String>]`: notificationDeliveryPreference
+    - `[SettingType <String>]`: endUserNotificationSettingType
   - `[ExcludedAccountTarget <IMicrosoftGraphAccountTargetContent>]`: accountTargetContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Type <String>]`: accountTargetContentType
   - `[IncludedAccountTarget <IMicrosoftGraphAccountTargetContent>]`: accountTargetContent
   - `[IsAutomated <Boolean?>]`: Flag that represents if the attack simulation and training campaign was created from a simulation automation flow. Supports $filter and $orderby.
+  - `[LandingPage <IMicrosoftGraphLandingPage>]`: landingPage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[Details <IMicrosoftGraphLandingPageDetail[]>]`: 
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[Content <String>]`: 
+      - `[IsDefaultLangauge <Boolean?>]`: 
+      - `[Language <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Locale <String>]`: 
+    - `[Source <String>]`: simulationContentSource
+    - `[Status <String>]`: simulationContentStatus
+    - `[SupportedLocales <String[]>]`: 
   - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
   - `[LastModifiedDateTime <DateTime?>]`: Date and time of the most recent modification of the attack simulation and training campaign.
   - `[LaunchDateTime <DateTime?>]`: Date and time of the launch/start of the attack simulation and training campaign. Supports $filter and $orderby.
+  - `[LoginPage <IMicrosoftGraphLoginPage>]`: loginPage
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Content <String>]`: 
+    - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Description <String>]`: 
+    - `[DisplayName <String>]`: 
+    - `[Language <String>]`: 
+    - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[LastModifiedDateTime <DateTime?>]`: 
+    - `[Source <String>]`: simulationContentSource
+    - `[Status <String>]`: simulationContentStatus
+  - `[OAuthConsentAppDetail <IMicrosoftGraphOAuthConsentAppDetail>]`: oAuthConsentAppDetail
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[AppScope <String>]`: oAuthAppScope
+    - `[DisplayLogo <String>]`: 
+    - `[DisplayName <String>]`: 
   - `[Payload <IMicrosoftGraphPayload>]`: payload
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -538,6 +685,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[CompromisedDateTime <DateTime?>]`: Date and time of the compromising online action by a user in an attack simulation and training campaign.
       - `[InProgressTrainingsCount <Int32?>]`: Number of trainings in progress by a user in an attack simulation and training campaign.
       - `[IsCompromised <Boolean?>]`: Indicates whether a user was compromised in an attack simulation and training campaign.
+      - `[LatestSimulationActivity <String>]`: Indicates latest user activity.
       - `[ReportedPhishDateTime <DateTime?>]`: Date and time when a user reported the delivered payload as phishing in the attack simulation and training campaign.
       - `[SimulationEvents <IMicrosoftGraphUserSimulationEventInfo[]>]`: List of simulation events of a user in the attack simulation and training campaign.
         - `[Browser <String>]`: Browser information from where the simulation event was initiated by a user in an attack simulation and training campaign.
@@ -549,7 +697,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[DisplayName <String>]`: Display name of the user.
         - `[Email <String>]`: Email address of the user.
-        - `[UserId <String>]`: This is the id property value of the user resource that represents the user in the Azure Active Directory tenant.
+        - `[OutOfOfficeDays <Int32?>]`: Number of days the user is OOF during a simulation journey/course of a campaign.
+        - `[UserId <String>]`: The id property value of the user resource that represents the user in the Azure Active Directory tenant.
       - `[TrainingEvents <IMicrosoftGraphUserTrainingEventInfo[]>]`: List of training events of a user in the attack simulation and training campaign.
         - `[DisplayName <String>]`: Display name of the training.
         - `[LatestTrainingStatus <String>]`: trainingStatus
@@ -563,12 +712,49 @@ To create the parameters described below, construct a hash table containing the 
         - `[TrainingCompletedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
         - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
   - `[Status <String>]`: simulationStatus
+  - `[TrainingSetting <IMicrosoftGraphTrainingSetting>]`: trainingSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[SettingType <String>]`: trainingSettingType
 
 `CREATEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
+  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+  - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Email <String>]`: Email address of the user.
+
+`ENDUSERNOTIFICATIONSETTING <IMicrosoftGraphEndUserNotificationSetting>`: endUserNotificationSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[NotificationPreference <String>]`: endUserNotificationPreference
+  - `[PositiveReinforcement <IMicrosoftGraphPositiveReinforcementNotification>]`: positiveReinforcementNotification
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DefaultLanguage <String>]`: 
+    - `[EndUserNotification <IMicrosoftGraphEndUserNotification>]`: endUserNotification
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique identifier for an entity. Read-only.
+      - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[Email <String>]`: Email address of the user.
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Description <String>]`: 
+      - `[Details <IMicrosoftGraphEndUserNotificationDetail[]>]`: 
+        - `[Id <String>]`: The unique identifier for an entity. Read-only.
+        - `[EmailContent <String>]`: 
+        - `[IsDefaultLangauge <Boolean?>]`: 
+        - `[Language <String>]`: 
+        - `[Locale <String>]`: 
+        - `[SentFrom <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+        - `[Subject <String>]`: 
+      - `[DisplayName <String>]`: 
+      - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+      - `[LastModifiedDateTime <DateTime?>]`: 
+      - `[NotificationType <String>]`: endUserNotificationType
+      - `[Source <String>]`: simulationContentSource
+      - `[Status <String>]`: simulationContentStatus
+      - `[SupportedLocales <String[]>]`: 
+    - `[DeliveryPreference <String>]`: notificationDeliveryPreference
+  - `[SettingType <String>]`: endUserNotificationSettingType
 
 `EXCLUDEDACCOUNTTARGET <IMicrosoftGraphAccountTargetContent>`: accountTargetContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -578,11 +764,58 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Type <String>]`: accountTargetContentType
 
+`LANDINGPAGE <IMicrosoftGraphLandingPage>`: landingPage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[Email <String>]`: Email address of the user.
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[Description <String>]`: 
+  - `[Details <IMicrosoftGraphLandingPageDetail[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[Content <String>]`: 
+    - `[IsDefaultLangauge <Boolean?>]`: 
+    - `[Language <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Locale <String>]`: 
+  - `[Source <String>]`: simulationContentSource
+  - `[Status <String>]`: simulationContentStatus
+  - `[SupportedLocales <String[]>]`: 
+
 `LASTMODIFIEDBY <IMicrosoftGraphEmailIdentity>`: emailIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
+  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+  - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Email <String>]`: Email address of the user.
+
+`LOGINPAGE <IMicrosoftGraphLoginPage>`: loginPage
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[Content <String>]`: 
+  - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[Email <String>]`: Email address of the user.
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[Description <String>]`: 
+  - `[DisplayName <String>]`: 
+  - `[Language <String>]`: 
+  - `[LastModifiedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
+  - `[LastModifiedDateTime <DateTime?>]`: 
+  - `[Source <String>]`: simulationContentSource
+  - `[Status <String>]`: simulationContentStatus
+
+`OAUTHCONSENTAPPDETAIL <IMicrosoftGraphOAuthConsentAppDetail>`: oAuthConsentAppDetail
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[AppScope <String>]`: oAuthAppScope
+  - `[DisplayLogo <String>]`: 
+  - `[DisplayName <String>]`: 
 
 `PAYLOAD <IMicrosoftGraphPayload>`: payload
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -591,8 +824,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Complexity <String>]`: payloadComplexity
   - `[CreatedBy <IMicrosoftGraphEmailIdentity>]`: emailIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Email <String>]`: Email address of the user.
   - `[CreatedDateTime <DateTime?>]`: Date and time when the attack simulation and training campaign payload.
   - `[Description <String>]`: Description of the attack simulation and training campaign payload.
@@ -656,6 +889,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CompromisedDateTime <DateTime?>]`: Date and time of the compromising online action by a user in an attack simulation and training campaign.
     - `[InProgressTrainingsCount <Int32?>]`: Number of trainings in progress by a user in an attack simulation and training campaign.
     - `[IsCompromised <Boolean?>]`: Indicates whether a user was compromised in an attack simulation and training campaign.
+    - `[LatestSimulationActivity <String>]`: Indicates latest user activity.
     - `[ReportedPhishDateTime <DateTime?>]`: Date and time when a user reported the delivered payload as phishing in the attack simulation and training campaign.
     - `[SimulationEvents <IMicrosoftGraphUserSimulationEventInfo[]>]`: List of simulation events of a user in the attack simulation and training campaign.
       - `[Browser <String>]`: Browser information from where the simulation event was initiated by a user in an attack simulation and training campaign.
@@ -667,7 +901,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[DisplayName <String>]`: Display name of the user.
       - `[Email <String>]`: Email address of the user.
-      - `[UserId <String>]`: This is the id property value of the user resource that represents the user in the Azure Active Directory tenant.
+      - `[OutOfOfficeDays <Int32?>]`: Number of days the user is OOF during a simulation journey/course of a campaign.
+      - `[UserId <String>]`: The id property value of the user resource that represents the user in the Azure Active Directory tenant.
     - `[TrainingEvents <IMicrosoftGraphUserTrainingEventInfo[]>]`: List of training events of a user in the attack simulation and training campaign.
       - `[DisplayName <String>]`: Display name of the training.
       - `[LatestTrainingStatus <String>]`: trainingStatus
@@ -681,8 +916,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[TrainingCompletedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
       - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
 
-## RELATED LINKS
-[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
+`TRAININGSETTING <IMicrosoftGraphTrainingSetting>`: trainingSetting
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[SettingType <String>]`: trainingSettingType
 
 ## RELATED LINKS
-[New-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
+

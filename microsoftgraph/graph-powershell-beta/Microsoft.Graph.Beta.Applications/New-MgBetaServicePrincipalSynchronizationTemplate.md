@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/new-mgbetaserviceprincipalsynchronizationtemplate
 schema: 2.0.0
@@ -10,37 +10,36 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to templates for servicePrincipals
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
  [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default] [-Description <String>]
- [-Discoverable] [-FactoryTag <String>] [-Id <String>] [-Metadata <IMicrosoftGraphMetadataEntry[]>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Discoverable] [-FactoryTag <String>] [-Id <String>]
+ [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ApplicationId <String>] [-Default] [-Description <String>]
- [-Discoverable] [-FactoryTag <String>] [-Id <String>] [-Metadata <IMicrosoftGraphMetadataEntry[]>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaServicePrincipalSynchronizationTemplate -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationTemplate> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Discoverable] [-FactoryTag <String>] [-Id <String>]
+ [-Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,14 +47,14 @@ Create new navigation property to templates for servicePrincipals
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -68,7 +67,7 @@ Create new navigation property to templates for servicePrincipals
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +82,7 @@ Accept wildcard characters: False
 Identifier of the application this template belongs to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +98,7 @@ synchronizationTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationTemplate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -114,7 +113,7 @@ Accept wildcard characters: False
 true if this template is recommended to be the default for the application.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +128,7 @@ Accept wildcard characters: False
 Description of the template.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +143,7 @@ Accept wildcard characters: False
 true if this template should appear in the collection of templates available for the application instance (service principal).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +159,7 @@ One of the well-known factory tags supported by the synchronization engine.
 The factoryTag tells the synchronization engine which implementation to use when processing jobs based on this template.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +175,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,8 +191,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -209,7 +208,7 @@ Unless mentioned explicitly, metadata values should not be changed.
 To construct, see NOTES section for METADATA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMetadataEntry[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationMetadataEntry[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -225,7 +224,7 @@ synchronizationSchema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -240,8 +239,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -255,7 +254,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -271,7 +270,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -288,10 +287,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationTemplate
+
 ## NOTES
 
 ALIASES
@@ -309,8 +311,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Description <String>]`: Description of the template.
   - `[Discoverable <Boolean?>]`: true if this template should appear in the collection of templates available for the application instance (service principal).
   - `[FactoryTag <String>]`: One of the well-known factory tags supported by the synchronization engine. The factoryTag tells the synchronization engine which implementation to use when processing jobs based on this template.
-  - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
-    - `[Key <String>]`: Name of the metadata property.
+  - `[Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+    - `[Key <String>]`: synchronizationMetadata
     - `[Value <String>]`: Value of the metadata property.
   - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -321,7 +323,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
       - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: Collection of objects supported by the directory.
-        - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
+        - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: Defines attributes of the object.
           - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
           - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
             - `[Key <String>]`: Key.
@@ -329,7 +331,9 @@ To create the parameters described below, construct a hash table containing the 
           - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
           - `[DefaultValue <String>]`: 
           - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
-          - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+          - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
+            - `[Key <String>]`: attributeDefinitionMetadata
+            - `[Value <String>]`: Value of the metadata property.
           - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
           - `[Mutability <String>]`: mutability
           - `[Name <String>]`: Name of the attribute. Must be unique within the object definition. Not nullable.
@@ -338,9 +342,11 @@ To create the parameters described below, construct a hash table containing the 
             - `[ReferencedProperty <String>]`: Currently not supported. Name of the property in the referenced object, the value for which is used as the reference.
           - `[Required <Boolean?>]`: true if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.
           - `[Type <String>]`: attributeType
-        - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: 
-        - `[Name <String>]`: 
-        - `[SupportedApis <String[]>]`: 
+        - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: Metadata for the given object.
+          - `[Key <String>]`: objectDefinitionMetadata
+          - `[Value <String>]`: Value of the metadata property.
+        - `[Name <String>]`: Name of the object. Must be unique within a directory definition. Not nullable.
+        - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
       - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
       - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
     - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
@@ -363,16 +369,18 @@ To create the parameters described below, construct a hash table containing the 
           - `[MatchingPriority <Int32?>]`: If higher than 0, this attribute will be used to perform an initial match of the objects between source and target directories. The synchronization engine will try to find the matching object using attribute with lowest value of matching priority first. If not found, the attribute with the next matching priority will be used, and so on a until match is found or no more matching attributes are left. Only attributes that are expected to have unique values, such as email, should be used as matching attributes.
           - `[Source <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Expression <String>]`: 
-            - `[Name <String>]`: 
-            - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: 
+            - `[Expression <String>]`: Equivalent expression representation of this attributeMappingSource object.
+            - `[Name <String>]`: Name parameter of the mapping source. Depending on the type property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.
+            - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: If this object represents a function, lists function parameters. Parameters consist of attributeMappingSource objects themselves, allowing for complex expressions. If type is not Function, this property will be null/empty array.
               - `[Key <String>]`: The name of the parameter.
               - `[Value <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
             - `[Type <String>]`: attributeMappingSourceType
           - `[TargetAttributeName <String>]`: Name of the attribute on the target object.
         - `[Enabled <Boolean?>]`: When true, this object mapping will be processed during synchronization. When false, this object mapping will be skipped.
         - `[FlowTypes <String>]`: objectFlowTypes
-        - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+        - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+          - `[Key <String>]`: objectMappingMetadata
+          - `[Value <String>]`: Value of the metadata property.
         - `[Name <String>]`: Human-friendly name of the object mapping.
         - `[Scope <IMicrosoftGraphFilter>]`: filter
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -423,8 +431,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-`METADATA <IMicrosoftGraphMetadataEntry[]>`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
-  - `[Key <String>]`: Name of the metadata property.
+`METADATA <IMicrosoftGraphSynchronizationMetadataEntry[]>`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+  - `[Key <String>]`: synchronizationMetadata
   - `[Value <String>]`: Value of the metadata property.
 
 `SCHEMA <IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
@@ -436,7 +444,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
     - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: Collection of objects supported by the directory.
-      - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
+      - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: Defines attributes of the object.
         - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
         - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
           - `[Key <String>]`: Key.
@@ -444,8 +452,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
         - `[DefaultValue <String>]`: 
         - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
-        - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
-          - `[Key <String>]`: Name of the metadata property.
+        - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
+          - `[Key <String>]`: attributeDefinitionMetadata
           - `[Value <String>]`: Value of the metadata property.
         - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
         - `[Mutability <String>]`: mutability
@@ -455,9 +463,11 @@ To create the parameters described below, construct a hash table containing the 
           - `[ReferencedProperty <String>]`: Currently not supported. Name of the property in the referenced object, the value for which is used as the reference.
         - `[Required <Boolean?>]`: true if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.
         - `[Type <String>]`: attributeType
-      - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: 
-      - `[Name <String>]`: 
-      - `[SupportedApis <String[]>]`: 
+      - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: Metadata for the given object.
+        - `[Key <String>]`: objectDefinitionMetadata
+        - `[Value <String>]`: Value of the metadata property.
+      - `[Name <String>]`: Name of the object. Must be unique within a directory definition. Not nullable.
+      - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
     - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
     - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
   - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
@@ -480,16 +490,18 @@ To create the parameters described below, construct a hash table containing the 
         - `[MatchingPriority <Int32?>]`: If higher than 0, this attribute will be used to perform an initial match of the objects between source and target directories. The synchronization engine will try to find the matching object using attribute with lowest value of matching priority first. If not found, the attribute with the next matching priority will be used, and so on a until match is found or no more matching attributes are left. Only attributes that are expected to have unique values, such as email, should be used as matching attributes.
         - `[Source <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Expression <String>]`: 
-          - `[Name <String>]`: 
-          - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: 
+          - `[Expression <String>]`: Equivalent expression representation of this attributeMappingSource object.
+          - `[Name <String>]`: Name parameter of the mapping source. Depending on the type property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.
+          - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: If this object represents a function, lists function parameters. Parameters consist of attributeMappingSource objects themselves, allowing for complex expressions. If type is not Function, this property will be null/empty array.
             - `[Key <String>]`: The name of the parameter.
             - `[Value <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
           - `[Type <String>]`: attributeMappingSourceType
         - `[TargetAttributeName <String>]`: Name of the attribute on the target object.
       - `[Enabled <Boolean?>]`: When true, this object mapping will be processed during synchronization. When false, this object mapping will be skipped.
       - `[FlowTypes <String>]`: objectFlowTypes
-      - `[Metadata <IMicrosoftGraphMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+      - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
+        - `[Key <String>]`: objectMappingMetadata
+        - `[Value <String>]`: Value of the metadata property.
       - `[Name <String>]`: Human-friendly name of the object mapping.
       - `[Scope <IMicrosoftGraphFilter>]`: filter
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -511,7 +523,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[New-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-v1.0)

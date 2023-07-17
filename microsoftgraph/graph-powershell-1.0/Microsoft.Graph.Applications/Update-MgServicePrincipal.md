@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgserviceprincipal
 schema: 2.0.0
@@ -10,26 +10,23 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in servicePrincipals
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIns <IMicrosoftGraphAddIn[]>]
  [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>] [-AppDescription <String>]
- [-AppDisplayName <String>] [-AppId <String>] [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>]
- [-AppOwnerOrganizationId <String>] [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoleAssignmentRequired] [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>]
- [-AppRoles <IMicrosoftGraphAppRole[]>] [-ApplicationTemplateId <String>]
+ [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
+ [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
+ [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
+ [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
  [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
  [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
@@ -39,34 +36,41 @@ Update-MgServicePrincipal -ServicePrincipalId <String> [-AccountEnabled] [-AddIn
  [-PreferredTokenSigningKeyThumbprint <String>] [-ReplyUrls <String[]>]
  [-ResourceSpecificApplicationPermissions <IMicrosoftGraphResourceSpecificPermission[]>]
  [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
- [-ServicePrincipalType <String>] [-SignInAudience <String>] [-Tags <String[]>]
- [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
+ [-ServicePrincipalType <String>] [-SignInAudience <String>]
+ [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
+ [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgServicePrincipal -ServicePrincipalId <String> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgServicePrincipal -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphServicePrincipal> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-AddIns <IMicrosoftGraphAddIn[]>] [-AdditionalProperties <Hashtable>] [-AlternativeNames <String[]>]
- [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>]
+ [-AppDescription <String>] [-AppDisplayName <String>] [-AppId <String>] [-ApplicationTemplateId <String>]
  [-AppManagementPolicies <IMicrosoftGraphAppManagementPolicy[]>] [-AppOwnerOrganizationId <String>]
  [-AppRoleAssignedTo <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoleAssignmentRequired]
  [-AppRoleAssignments <IMicrosoftGraphAppRoleAssignment[]>] [-AppRoles <IMicrosoftGraphAppRole[]>]
- [-ApplicationTemplateId <String>] [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
+ [-ClaimsMappingPolicies <IMicrosoftGraphClaimsMappingPolicy[]>]
  [-CreatedObjects <IMicrosoftGraphDirectoryObject[]>]
  [-DelegatedPermissionClassifications <IMicrosoftGraphDelegatedPermissionClassification[]>]
  [-DeletedDateTime <DateTime>] [-Description <String>] [-DisabledByMicrosoftStatus <String>]
  [-DisplayName <String>] [-Endpoints <IMicrosoftGraphEndpoint[]>]
- [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>]
- [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Homepage <String>] [-Id <String>]
+ [-FederatedIdentityCredentials <IMicrosoftGraphFederatedIdentityCredential[]>] [-Homepage <String>]
+ [-HomeRealmDiscoveryPolicies <IMicrosoftGraphHomeRealmDiscoveryPolicy[]>] [-Id <String>]
  [-Info <IMicrosoftGraphInformationalUrl>] [-KeyCredentials <IMicrosoftGraphKeyCredential[]>]
  [-LoginUrl <String>] [-LogoutUrl <String>] [-MemberOf <IMicrosoftGraphDirectoryObject[]>] [-Notes <String>]
  [-NotificationEmailAddresses <String[]>] [-Oauth2PermissionGrants <IMicrosoftGraphOAuth2PermissionGrant[]>]
@@ -76,17 +80,12 @@ Update-MgServicePrincipal -InputObject <IApplicationsIdentity> [-AccountEnabled]
  [-PreferredTokenSigningKeyThumbprint <String>] [-ReplyUrls <String[]>]
  [-ResourceSpecificApplicationPermissions <IMicrosoftGraphResourceSpecificPermission[]>]
  [-SamlSingleSignOnSettings <IMicrosoftGraphSamlSingleSignOnSettings>] [-ServicePrincipalNames <String[]>]
- [-ServicePrincipalType <String>] [-SignInAudience <String>] [-Tags <String[]>]
- [-TokenEncryptionKeyId <String>] [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
+ [-ServicePrincipalType <String>] [-SignInAudience <String>]
+ [-Synchronization <IMicrosoftGraphSynchronization>] [-Tags <String[]>] [-TokenEncryptionKeyId <String>]
+ [-TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]
  [-TokenLifetimePolicies <IMicrosoftGraphTokenLifetimePolicy[]>]
  [-TransitiveMemberOf <IMicrosoftGraphDirectoryObject[]>]
- [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgServicePrincipal -InputObject <IApplicationsIdentity> -BodyParameter <IMicrosoftGraphServicePrincipal>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VerifiedPublisher <IMicrosoftGraphVerifiedPublisher>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -94,7 +93,7 @@ Update entity in servicePrincipals
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
@@ -112,7 +111,7 @@ If set to false, then no users will be able to sign in to this app, even if they
 Supports $filter (eq, ne, not, in).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +129,7 @@ This will let services like Microsoft 365 call the application in the context of
 To construct, see NOTES section for ADDINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAddIn[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAddIn[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +144,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +160,7 @@ Used to retrieve service principals by subscription, identify resource group and
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +175,7 @@ Accept wildcard characters: False
 The description exposed by the associated application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +190,7 @@ Accept wildcard characters: False
 The display name exposed by the associated application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +206,7 @@ The unique identifier for the associated application (its appId property).
 Supports $filter (eq, ne, not, in, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +223,7 @@ Read-only.
 Supports $filter (eq, ne, NOT, startsWith).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -240,7 +239,7 @@ The appManagementPolicy applied to this application.
 To construct, see NOTES section for APPMANAGEMENTPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppManagementPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppManagementPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +256,7 @@ This is applicable only to service principals backed by applications.
 Supports $filter (eq, ne, NOT, ge, le).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +273,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNEDTO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -292,7 +291,7 @@ Not nullable.
 Supports $filter (eq, ne, NOT).
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -309,7 +308,7 @@ Supports $expand.
 To construct, see NOTES section for APPROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRoleAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRoleAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -327,7 +326,7 @@ Not nullable.
 To construct, see NOTES section for APPROLES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppRole[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAppRole[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -343,7 +342,7 @@ servicePrincipal
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServicePrincipal
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -360,7 +359,7 @@ Supports $expand.
 To construct, see NOTES section for CLAIMSMAPPINGPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphClaimsMappingPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphClaimsMappingPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -378,7 +377,7 @@ Nullable.
 To construct, see NOTES section for CREATEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -394,7 +393,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for DELEGATEDPERMISSIONCLASSIFICATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDelegatedPermissionClassification[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDelegatedPermissionClassification[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -410,7 +409,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -428,7 +427,7 @@ The maximum allowed size is 1024 characters.
 Supports $filter (eq, ne, not, ge, le, startsWith) and $search.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -445,7 +444,7 @@ Possible values are: null (default value), NotDisabled, and DisabledDueToViolati
 Supports $filter (eq, ne, not).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -461,7 +460,7 @@ The display name for the service principal.
 Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -477,7 +476,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ENDPOINTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEndpoint[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEndpoint[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -494,7 +493,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0).
 To construct, see NOTES section for FEDERATEDIDENTITYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFederatedIdentityCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphFederatedIdentityCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -509,7 +508,7 @@ Accept wildcard characters: False
 Home page or landing page of the application.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -526,7 +525,7 @@ Supports $expand.
 To construct, see NOTES section for HOMEREALMDISCOVERYPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphHomeRealmDiscoveryPolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphHomeRealmDiscoveryPolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -542,7 +541,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -558,7 +557,7 @@ informationalUrl
 To construct, see NOTES section for INFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInformationalUrl
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationalUrl
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -574,8 +573,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -592,7 +591,7 @@ Supports $filter (eq, not, ge, le).
 To construct, see NOTES section for KEYCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphKeyCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -610,7 +609,7 @@ When blank, Azure AD performs IdP-initiated sign-on for applications configured 
 The user launches the application from Microsoft 365, the Azure AD My Apps, or the Azure AD SSO URL.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -625,7 +624,7 @@ Accept wildcard characters: False
 Specifies the URL that will be used by Microsoft's authorization service to logout an user using OpenId Connect front-channel, back-channel or SAML logout protocols.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -644,7 +643,7 @@ Supports $expand.
 To construct, see NOTES section for MEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -660,7 +659,7 @@ Free text field to capture information about the service principal, typically us
 Maximum allowed size is 1024 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -676,7 +675,7 @@ Specifies the list of email addresses where Azure AD sends a notification when t
 This is only for the certificates used to sign the SAML token issued for Azure AD Gallery applications.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -694,7 +693,7 @@ Nullable.
 To construct, see NOTES section for OAUTH2PERMISSIONGRANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOAuth2PermissionGrant[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOAuth2PermissionGrant[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -712,7 +711,7 @@ Not nullable.
 To construct, see NOTES section for OAUTH2PERMISSIONSCOPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPermissionScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPermissionScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -731,7 +730,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNEDOBJECTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -751,7 +750,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 To construct, see NOTES section for OWNERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -768,7 +767,7 @@ Not nullable.
 To construct, see NOTES section for PASSWORDCREDENTIALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPasswordCredential[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPasswordCredential[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -785,7 +784,7 @@ Azure AD uses the preferred single sign-on mode to launch the application from M
 The supported values are password, saml, notSupported, and oidc.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -801,7 +800,7 @@ This property can be used on SAML applications (apps that have preferredSingleSi
 For applications that are not SAML, do not write or otherwise rely on this property.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -817,7 +816,7 @@ The URLs that user tokens are sent to for sign in with the associated applicatio
 Not nullable.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -835,7 +834,7 @@ Read-only.
 To construct, see NOTES section for RESOURCESPECIFICAPPLICATIONPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceSpecificPermission[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceSpecificPermission[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -851,7 +850,7 @@ samlSingleSignOnSettings
 To construct, see NOTES section for SAMLSINGLESIGNONSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSamlSingleSignOnSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSamlSingleSignOnSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -866,8 +865,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -886,7 +885,7 @@ Not nullable.
 Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -909,7 +908,7 @@ The appId value does not associate the service principal with an app registratio
 The service principal can only be used in the tenant where it was created.__SocialIdp - For internal use.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -926,7 +925,23 @@ Read-only.
 Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Synchronization
+synchronization
+To construct, see NOTES section for SYNCHRONIZATION properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronization
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -943,7 +958,7 @@ Not nullable.
 The value is the union of strings set here and on the associated application entity's tags property.Supports $filter (eq, not, ge, le, startsWith).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -960,7 +975,7 @@ When configured, Azure AD issues tokens for this application encrypted using the
 The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -976,7 +991,7 @@ The tokenIssuancePolicies assigned to this service principal.
 To construct, see NOTES section for TOKENISSUANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTokenIssuancePolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenIssuancePolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -992,7 +1007,7 @@ The tokenLifetimePolicies assigned to this service principal.
 To construct, see NOTES section for TOKENLIFETIMEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTokenLifetimePolicy[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTokenLifetimePolicy[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1008,7 +1023,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TRANSITIVEMEMBEROF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryObject[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1024,7 +1039,7 @@ verifiedPublisher
 To construct, see NOTES section for VERIFIEDPUBLISHER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVerifiedPublisher
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphVerifiedPublisher
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -1039,7 +1054,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1055,7 +1070,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1072,10 +1087,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphServicePrincipal
+
 ## NOTES
 
 ALIASES
@@ -1251,7 +1269,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CustomKeyIdentifier <Byte[]>]`: A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate.
     - `[DisplayName <String>]`: Friendly name for the key. Optional.
     - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-    - `[Key <Byte[]>]`: The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
+    - `[Key <Byte[]>]`: The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.  From a .cer certificate, you can read the key using the Convert.ToBase64String() method. For more information, see Get the certificate key.
     - `[KeyId <String>]`: The unique identifier (GUID) for the key.
     - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
@@ -1303,6 +1321,166 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePrincipalNames <String[]>]`: Contains the list of identifiersUris, copied over from the associated application. Additional values can be added to hybrid applications. These values can be used to identify the permissions exposed by this app within Azure AD. For example,Client apps can specify a resource URI which is based on the values of this property to acquire an access token, which is the URI returned in the 'aud' claim.The any operator is required for filter expressions on multi-valued properties. Not nullable.  Supports $filter (eq, not, ge, le, startsWith).
   - `[ServicePrincipalType <String>]`: Identifies whether the service principal represents an application, a managed identity, or a legacy application. This is set by Azure AD internally. The servicePrincipalType property can be set to three different values: __Application - A service principal that represents an application or service. The appId property identifies the associated app registration, and matches the appId of an application, possibly from a different tenant. If the associated app registration is missing, tokens are not issued for the service principal.__ManagedIdentity - A service principal that represents a managed identity. Service principals representing managed identities can be granted access and permissions, but cannot be updated or modified directly.__Legacy - A service principal that represents an app created before app registrations, or through legacy experiences. Legacy service principal can have credentials, service principal names, reply URLs, and other properties which are editable by an authorized user, but does not have an associated app registration. The appId value does not associate the service principal with an app registration. The service principal can only be used in the tenant where it was created.__SocialIdp - For internal use.
   - `[SignInAudience <String>]`: Specifies the Microsoft accounts that are supported for the current application. Read-only. Supported values are:AzureADMyOrg: Users with a Microsoft work or school account in my organization's Azure AD tenant (single-tenant).AzureADMultipleOrgs: Users with a Microsoft work or school account in any organization's Azure AD tenant (multi-tenant).AzureADandPersonalMicrosoftAccount: Users with a personal Microsoft account, or a work or school account in any organization's Azure AD tenant.PersonalMicrosoftAccount: Users with a personal Microsoft account only.
+  - `[Synchronization <IMicrosoftGraphSynchronization>]`: synchronization
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Expiration <DateTime?>]`: 
+        - `[Interval <TimeSpan?>]`: 
+        - `[State <String>]`: synchronizationScheduleState
+      - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: 
+          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
+          - `[DiscoveryDateTime <DateTime?>]`: 
+          - `[Name <String>]`: 
+          - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: 
+            - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
+              - `[Anchor <Boolean?>]`: 
+              - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
+                - `[Key <String>]`: 
+                - `[Value <String>]`: 
+              - `[CaseExact <Boolean?>]`: 
+              - `[DefaultValue <String>]`: 
+              - `[FlowNullValues <Boolean?>]`: 
+              - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: 
+                - `[Key <String>]`: attributeDefinitionMetadata
+                - `[Value <String>]`: 
+              - `[Multivalued <Boolean?>]`: 
+              - `[Mutability <String>]`: mutability
+              - `[Name <String>]`: 
+              - `[ReferencedObjects <IMicrosoftGraphReferencedObject[]>]`: 
+                - `[ReferencedObjectName <String>]`: 
+                - `[ReferencedProperty <String>]`: 
+              - `[Required <Boolean?>]`: 
+              - `[Type <String>]`: attributeType
+            - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: 
+              - `[Key <String>]`: objectDefinitionMetadata
+              - `[Value <String>]`: 
+            - `[Name <String>]`: 
+            - `[SupportedApis <String[]>]`: 
+          - `[ReadOnly <Boolean?>]`: 
+          - `[Version <String>]`: 
+        - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: 
+          - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IncludedContainers <String[]>]`: 
+          - `[Editable <Boolean?>]`: 
+          - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[IncludedGroups <String[]>]`: 
+          - `[Id <String>]`: 
+          - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
+          - `[Name <String>]`: 
+          - `[ObjectMappings <IMicrosoftGraphObjectMapping[]>]`: 
+            - `[AttributeMappings <IMicrosoftGraphAttributeMapping[]>]`: 
+              - `[DefaultValue <String>]`: 
+              - `[ExportMissingReferences <Boolean?>]`: 
+              - `[FlowBehavior <String>]`: attributeFlowBehavior
+              - `[FlowType <String>]`: attributeFlowType
+              - `[MatchingPriority <Int32?>]`: 
+              - `[Source <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
+                - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                - `[Expression <String>]`: 
+                - `[Name <String>]`: 
+                - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: 
+                  - `[Key <String>]`: 
+                  - `[Value <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
+                - `[Type <String>]`: attributeMappingSourceType
+              - `[TargetAttributeName <String>]`: 
+            - `[Enabled <Boolean?>]`: 
+            - `[FlowTypes <String>]`: objectFlowTypes
+            - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: 
+              - `[Key <String>]`: objectMappingMetadata
+              - `[Value <String>]`: 
+            - `[Name <String>]`: 
+            - `[Scope <IMicrosoftGraphFilter>]`: filter
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[CategoryFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
+                - `[Clauses <IMicrosoftGraphFilterClause[]>]`: 
+                  - `[OperatorName <String>]`: 
+                  - `[SourceOperandName <String>]`: 
+                  - `[TargetOperand <IMicrosoftGraphFilterOperand>]`: filterOperand
+                    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                    - `[Values <String[]>]`: 
+                - `[Name <String>]`: 
+              - `[Groups <IMicrosoftGraphFilterGroup[]>]`: 
+              - `[InputFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
+            - `[SourceObjectName <String>]`: 
+            - `[TargetObjectName <String>]`: 
+          - `[Priority <Int32?>]`: 
+          - `[SourceDirectoryName <String>]`: 
+          - `[TargetDirectoryName <String>]`: 
+        - `[Version <String>]`: 
+      - `[Status <IMicrosoftGraphSynchronizationStatus>]`: synchronizationStatus
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[Code <String>]`: synchronizationStatusCode
+        - `[CountSuccessiveCompleteFailures <Int64?>]`: 
+        - `[EscrowsPruned <Boolean?>]`: 
+        - `[LastExecution <IMicrosoftGraphSynchronizationTaskExecution>]`: synchronizationTaskExecution
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[ActivityIdentifier <String>]`: 
+          - `[CountEntitled <Int64?>]`: 
+          - `[CountEntitledForProvisioning <Int64?>]`: 
+          - `[CountEscrowed <Int64?>]`: 
+          - `[CountEscrowedRaw <Int64?>]`: 
+          - `[CountExported <Int64?>]`: 
+          - `[CountExports <Int64?>]`: 
+          - `[CountImported <Int64?>]`: 
+          - `[CountImportedDeltas <Int64?>]`: 
+          - `[CountImportedReferenceDeltas <Int64?>]`: 
+          - `[Error <IMicrosoftGraphSynchronizationError>]`: synchronizationError
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Code <String>]`: 
+            - `[Message <String>]`: 
+            - `[TenantActionable <Boolean?>]`: 
+          - `[State <String>]`: synchronizationTaskExecutionResult
+          - `[TimeBegan <DateTime?>]`: 
+          - `[TimeEnded <DateTime?>]`: 
+        - `[LastSuccessfulExecution <IMicrosoftGraphSynchronizationTaskExecution>]`: synchronizationTaskExecution
+        - `[LastSuccessfulExecutionWithExports <IMicrosoftGraphSynchronizationTaskExecution>]`: synchronizationTaskExecution
+        - `[Progress <IMicrosoftGraphSynchronizationProgress[]>]`: 
+          - `[CompletedUnits <Int64?>]`: 
+          - `[ProgressObservationDateTime <DateTime?>]`: 
+          - `[TotalUnits <Int64?>]`: 
+          - `[Units <String>]`: 
+        - `[Quarantine <IMicrosoftGraphSynchronizationQuarantine>]`: synchronizationQuarantine
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[CurrentBegan <DateTime?>]`: 
+          - `[Error <IMicrosoftGraphSynchronizationError>]`: synchronizationError
+          - `[NextAttempt <DateTime?>]`: 
+          - `[Reason <String>]`: quarantineReason
+          - `[SeriesBegan <DateTime?>]`: 
+          - `[SeriesCount <Int64?>]`: 
+        - `[SteadyStateFirstAchievedTime <DateTime?>]`: 
+        - `[SteadyStateLastAchievedTime <DateTime?>]`: 
+        - `[SynchronizedEntryCountByType <IMicrosoftGraphStringKeyLongValuePair[]>]`: 
+          - `[Key <String>]`: 
+          - `[Value <Int64?>]`: 
+        - `[TroubleshootingUrl <String>]`: 
+      - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: 
+        - `[Name <String>]`: Name for this key-value pair
+        - `[Value <String>]`: Value for this key-value pair
+      - `[TemplateId <String>]`: 
+    - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
+      - `[Key <String>]`: synchronizationSecret
+      - `[Value <String>]`: 
+    - `[Templates <IMicrosoftGraphSynchronizationTemplate[]>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[ApplicationId <String>]`: 
+      - `[Default <Boolean?>]`: 
+      - `[Description <String>]`: 
+      - `[Discoverable <Boolean?>]`: 
+      - `[FactoryTag <String>]`: 
+      - `[Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]`: 
+        - `[Key <String>]`: synchronizationMetadata
+        - `[Value <String>]`: 
+      - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
   - `[Tags <String[]>]`: Custom strings that can be used to categorize and identify the service principal. Not nullable. The value is the union of strings set here and on the associated application entity's tags property.Supports $filter (eq, not, ge, le, startsWith).
   - `[TokenEncryptionKeyId <String>]`: Specifies the keyId of a public key from the keyCredentials collection. When configured, Azure AD issues tokens for this application encrypted using the key specified by this property. The application code that receives the encrypted token must use the matching private key to decrypt the token before it can be used for the signed-in user.
   - `[TokenIssuancePolicies <IMicrosoftGraphTokenIssuancePolicy[]>]`: The tokenIssuancePolicies assigned to this service principal.
@@ -1392,6 +1570,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ApplicationTemplateId <String>]`: The unique identifier of applicationTemplate
   - `[ClaimsMappingPolicyId <String>]`: The unique identifier of claimsMappingPolicy
   - `[DelegatedPermissionClassificationId <String>]`: The unique identifier of delegatedPermissionClassification
+  - `[DirectoryDefinitionId <String>]`: The unique identifier of directoryDefinition
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
   - `[EndpointId <String>]`: The unique identifier of endpoint
   - `[ExtensionPropertyId <String>]`: The unique identifier of extensionProperty
@@ -1400,6 +1579,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[HomeRealmDiscoveryPolicyId <String>]`: The unique identifier of homeRealmDiscoveryPolicy
   - `[OAuth2PermissionGrantId <String>]`: The unique identifier of oAuth2PermissionGrant
   - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SynchronizationJobId <String>]`: The unique identifier of synchronizationJob
+  - `[SynchronizationTemplateId <String>]`: The unique identifier of synchronizationTemplate
   - `[TokenIssuancePolicyId <String>]`: The unique identifier of tokenIssuancePolicy
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
@@ -1408,7 +1589,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CustomKeyIdentifier <Byte[]>]`: A 40-character binary type that can be used to identify the credential. Optional. When not provided in the payload, defaults to the thumbprint of the certificate.
   - `[DisplayName <String>]`: Friendly name for the key. Optional.
   - `[EndDateTime <DateTime?>]`: The date and time at which the credential expires. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[Key <Byte[]>]`: The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.
+  - `[Key <Byte[]>]`: The certificate's raw data in byte array converted to Base64 string. Returned only on $select for a single object, that is, GET applications/{applicationId}?$select=keyCredentials or GET servicePrincipals/{servicePrincipalId}?$select=keyCredentials; otherwise, it is always null.  From a .cer certificate, you can read the key using the Convert.ToBase64String() method. For more information, see Get the certificate key.
   - `[KeyId <String>]`: The unique identifier (GUID) for the key.
   - `[StartDateTime <DateTime?>]`: The date and time at which the credential becomes valid.The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[Type <String>]`: The type of key credential; for example, Symmetric, AsymmetricX509Cert.
@@ -1465,6 +1646,167 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[RelayState <String>]`: The relative URI the service provider would redirect to after completion of the single sign-on flow.
 
+`SYNCHRONIZATION <IMicrosoftGraphSynchronization>`: synchronization
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Jobs <IMicrosoftGraphSynchronizationJob[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Schedule <IMicrosoftGraphSynchronizationSchedule>]`: synchronizationSchedule
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Expiration <DateTime?>]`: 
+      - `[Interval <TimeSpan?>]`: 
+      - `[State <String>]`: synchronizationScheduleState
+    - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: 
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
+        - `[DiscoveryDateTime <DateTime?>]`: 
+        - `[Name <String>]`: 
+        - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: 
+          - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
+            - `[Anchor <Boolean?>]`: 
+            - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
+              - `[Key <String>]`: 
+              - `[Value <String>]`: 
+            - `[CaseExact <Boolean?>]`: 
+            - `[DefaultValue <String>]`: 
+            - `[FlowNullValues <Boolean?>]`: 
+            - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: 
+              - `[Key <String>]`: attributeDefinitionMetadata
+              - `[Value <String>]`: 
+            - `[Multivalued <Boolean?>]`: 
+            - `[Mutability <String>]`: mutability
+            - `[Name <String>]`: 
+            - `[ReferencedObjects <IMicrosoftGraphReferencedObject[]>]`: 
+              - `[ReferencedObjectName <String>]`: 
+              - `[ReferencedProperty <String>]`: 
+            - `[Required <Boolean?>]`: 
+            - `[Type <String>]`: attributeType
+          - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: 
+            - `[Key <String>]`: objectDefinitionMetadata
+            - `[Value <String>]`: 
+          - `[Name <String>]`: 
+          - `[SupportedApis <String[]>]`: 
+        - `[ReadOnly <Boolean?>]`: 
+        - `[Version <String>]`: 
+      - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: 
+        - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IncludedContainers <String[]>]`: 
+        - `[Editable <Boolean?>]`: 
+        - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[IncludedGroups <String[]>]`: 
+        - `[Id <String>]`: 
+        - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
+        - `[Name <String>]`: 
+        - `[ObjectMappings <IMicrosoftGraphObjectMapping[]>]`: 
+          - `[AttributeMappings <IMicrosoftGraphAttributeMapping[]>]`: 
+            - `[DefaultValue <String>]`: 
+            - `[ExportMissingReferences <Boolean?>]`: 
+            - `[FlowBehavior <String>]`: attributeFlowBehavior
+            - `[FlowType <String>]`: attributeFlowType
+            - `[MatchingPriority <Int32?>]`: 
+            - `[Source <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Expression <String>]`: 
+              - `[Name <String>]`: 
+              - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: 
+                - `[Key <String>]`: 
+                - `[Value <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
+              - `[Type <String>]`: attributeMappingSourceType
+            - `[TargetAttributeName <String>]`: 
+          - `[Enabled <Boolean?>]`: 
+          - `[FlowTypes <String>]`: objectFlowTypes
+          - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: 
+            - `[Key <String>]`: objectMappingMetadata
+            - `[Value <String>]`: 
+          - `[Name <String>]`: 
+          - `[Scope <IMicrosoftGraphFilter>]`: filter
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[CategoryFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
+              - `[Clauses <IMicrosoftGraphFilterClause[]>]`: 
+                - `[OperatorName <String>]`: 
+                - `[SourceOperandName <String>]`: 
+                - `[TargetOperand <IMicrosoftGraphFilterOperand>]`: filterOperand
+                  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+                  - `[Values <String[]>]`: 
+              - `[Name <String>]`: 
+            - `[Groups <IMicrosoftGraphFilterGroup[]>]`: 
+            - `[InputFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
+          - `[SourceObjectName <String>]`: 
+          - `[TargetObjectName <String>]`: 
+        - `[Priority <Int32?>]`: 
+        - `[SourceDirectoryName <String>]`: 
+        - `[TargetDirectoryName <String>]`: 
+      - `[Version <String>]`: 
+    - `[Status <IMicrosoftGraphSynchronizationStatus>]`: synchronizationStatus
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Code <String>]`: synchronizationStatusCode
+      - `[CountSuccessiveCompleteFailures <Int64?>]`: 
+      - `[EscrowsPruned <Boolean?>]`: 
+      - `[LastExecution <IMicrosoftGraphSynchronizationTaskExecution>]`: synchronizationTaskExecution
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ActivityIdentifier <String>]`: 
+        - `[CountEntitled <Int64?>]`: 
+        - `[CountEntitledForProvisioning <Int64?>]`: 
+        - `[CountEscrowed <Int64?>]`: 
+        - `[CountEscrowedRaw <Int64?>]`: 
+        - `[CountExported <Int64?>]`: 
+        - `[CountExports <Int64?>]`: 
+        - `[CountImported <Int64?>]`: 
+        - `[CountImportedDeltas <Int64?>]`: 
+        - `[CountImportedReferenceDeltas <Int64?>]`: 
+        - `[Error <IMicrosoftGraphSynchronizationError>]`: synchronizationError
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Code <String>]`: 
+          - `[Message <String>]`: 
+          - `[TenantActionable <Boolean?>]`: 
+        - `[State <String>]`: synchronizationTaskExecutionResult
+        - `[TimeBegan <DateTime?>]`: 
+        - `[TimeEnded <DateTime?>]`: 
+      - `[LastSuccessfulExecution <IMicrosoftGraphSynchronizationTaskExecution>]`: synchronizationTaskExecution
+      - `[LastSuccessfulExecutionWithExports <IMicrosoftGraphSynchronizationTaskExecution>]`: synchronizationTaskExecution
+      - `[Progress <IMicrosoftGraphSynchronizationProgress[]>]`: 
+        - `[CompletedUnits <Int64?>]`: 
+        - `[ProgressObservationDateTime <DateTime?>]`: 
+        - `[TotalUnits <Int64?>]`: 
+        - `[Units <String>]`: 
+      - `[Quarantine <IMicrosoftGraphSynchronizationQuarantine>]`: synchronizationQuarantine
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[CurrentBegan <DateTime?>]`: 
+        - `[Error <IMicrosoftGraphSynchronizationError>]`: synchronizationError
+        - `[NextAttempt <DateTime?>]`: 
+        - `[Reason <String>]`: quarantineReason
+        - `[SeriesBegan <DateTime?>]`: 
+        - `[SeriesCount <Int64?>]`: 
+      - `[SteadyStateFirstAchievedTime <DateTime?>]`: 
+      - `[SteadyStateLastAchievedTime <DateTime?>]`: 
+      - `[SynchronizedEntryCountByType <IMicrosoftGraphStringKeyLongValuePair[]>]`: 
+        - `[Key <String>]`: 
+        - `[Value <Int64?>]`: 
+      - `[TroubleshootingUrl <String>]`: 
+    - `[SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>]`: 
+      - `[Name <String>]`: Name for this key-value pair
+      - `[Value <String>]`: Value for this key-value pair
+    - `[TemplateId <String>]`: 
+  - `[Secrets <IMicrosoftGraphSynchronizationSecretKeyStringValuePair[]>]`: 
+    - `[Key <String>]`: synchronizationSecret
+    - `[Value <String>]`: 
+  - `[Templates <IMicrosoftGraphSynchronizationTemplate[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[ApplicationId <String>]`: 
+    - `[Default <Boolean?>]`: 
+    - `[Description <String>]`: 
+    - `[Discoverable <Boolean?>]`: 
+    - `[FactoryTag <String>]`: 
+    - `[Metadata <IMicrosoftGraphSynchronizationMetadataEntry[]>]`: 
+      - `[Key <String>]`: synchronizationMetadata
+      - `[Value <String>]`: 
+    - `[Schema <IMicrosoftGraphSynchronizationSchema>]`: synchronizationSchema
+
 `TOKENISSUANCEPOLICIES <IMicrosoftGraphTokenIssuancePolicy[]>`: The tokenIssuancePolicies assigned to this service principal.
   - `[AppliesTo <IMicrosoftGraphDirectoryObject[]>]`: 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -1498,7 +1840,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
-[Update-MgBetaBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)
 
-## RELATED LINKS
-[Update-MgBetaBetaServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServicePrincipal?view=graph-powershell-beta)

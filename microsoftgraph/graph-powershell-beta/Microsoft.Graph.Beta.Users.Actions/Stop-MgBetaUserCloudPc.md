@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetausercloudpc
 schema: 2.0.0
@@ -13,32 +13,29 @@ This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
 Only IT admin users can perform this action.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### PowerOff (Default)
 ```
-Stop-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Stop
-```
-Stop-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### StopViaIdentity
-```
-Stop-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Stop-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### PowerOffViaIdentity
 ```
-Stop-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Stop-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### Stop
+```
+Stop-MgBetaUserCloudPc -CloudPcId <String> -UserId <String> [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### StopViaIdentity
+```
+Stop-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -50,15 +47,19 @@ Only IT admin users can perform this action.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -66,7 +67,7 @@ Only IT admin users can perform this action.
 The unique identifier of cloudPC
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: PowerOff, Stop
 Aliases:
 
@@ -82,8 +83,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: StopViaIdentity, PowerOffViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: PowerOffViaIdentity, StopViaIdentity
 Aliases:
 
 Required: True
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -112,7 +113,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: PowerOff, Stop
 Aliases:
 
@@ -127,7 +128,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +144,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,9 +161,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -215,4 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserCloudPc?view=graph-powershell-v1.0)
+

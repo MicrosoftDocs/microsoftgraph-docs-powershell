@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Users
-Module Guid: a6a39b7d-b95b-4bfd-9a3e-202f472b4f59
+Module Guid: 521f3081-748a-4366-824a-eb6195b361dd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -28,6 +28,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 ### [Get-MgUserCreatedObjectCount](Get-MgUserCreatedObjectCount.md)
 Get the number of the resource
 
+### [Get-MgUserCreatedObjectCountAsServicePrincipal](Get-MgUserCreatedObjectCountAsServicePrincipal.md)
+Get the number of the resource
+
 ### [Get-MgUserDirectReport](Get-MgUserDirectReport.md)
 The users and contacts that report to the user.
 (The users and contacts that have their manager property set to this user.) Read-only.
@@ -41,6 +44,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.orgConta
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 
 ### [Get-MgUserDirectReportCount](Get-MgUserDirectReportCount.md)
+Get the number of the resource
+
+### [Get-MgUserDirectReportCountAsOrgContact](Get-MgUserDirectReportCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgUserDirectReportCountAsUser](Get-MgUserDirectReportCountAsUser.md)
 Get the number of the resource
 
 ### [Get-MgUserExtension](Get-MgUserExtension.md)
@@ -59,53 +68,10 @@ Read-only.
 ### [Get-MgUserLicenseDetailCount](Get-MgUserLicenseDetailCount.md)
 Get the number of the resource
 
-### [Get-MgUserListCreatedObjectCountAsServicePrincipal](Get-MgUserListCreatedObjectCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgUserListDirectReportCountAsOrgContact](Get-MgUserListDirectReportCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgUserListDirectReportCountAsUser](Get-MgUserListDirectReportCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgUserListMemberOfCountAsAdministrativeUnit](Get-MgUserListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgUserListMemberOfCountAsGroup](Get-MgUserListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgUserListOwnedDeviceCountAsAppRoleAssignment](Get-MgUserListOwnedDeviceCountAsAppRoleAssignment.md)
-Get the number of the resource
-
-### [Get-MgUserListOwnedDeviceCountAsDevice](Get-MgUserListOwnedDeviceCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgUserListOwnedDeviceCountAsEndpoint](Get-MgUserListOwnedDeviceCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgUserListOwnedObjectCountAsApplication](Get-MgUserListOwnedObjectCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgUserListOwnedObjectCountAsGroup](Get-MgUserListOwnedObjectCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgUserListOwnedObjectCountAsServicePrincipal](Get-MgUserListOwnedObjectCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgUserListRegisteredDeviceCountAsAppRoleAssignment](Get-MgUserListRegisteredDeviceCountAsAppRoleAssignment.md)
-Get the number of the resource
-
-### [Get-MgUserListRegisteredDeviceCountAsDevice](Get-MgUserListRegisteredDeviceCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgUserListRegisteredDeviceCountAsEndpoint](Get-MgUserListRegisteredDeviceCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgUserListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgUserListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgUserListTransitiveMemberOfCountAsGroup](Get-MgUserListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
+### [Get-MgUserMailboxSetting](Get-MgUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
 
 ### [Get-MgUserManager](Get-MgUserManager.md)
 Returns the user or organizational contact assigned as the user's manager.
@@ -124,16 +90,22 @@ Supports $expand.
 ### [Get-MgUserMemberOfAsAdministrativeUnit](Get-MgUserMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgUserMemberOfAsDirectoryRole](Get-MgUserMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgUserMemberOfAsGroup](Get-MgUserMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
-
 ### [Get-MgUserMemberOfCount](Get-MgUserMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgUserMemberOfCountAsAdministrativeUnit](Get-MgUserMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgUserMemberOfCountAsDirectoryRole](Get-MgUserMemberOfCountAsDirectoryRole.md)
+Get the number of the resource
+
+### [Get-MgUserMemberOfCountAsGroup](Get-MgUserMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgUserOauth2PermissionGrant](Get-MgUserOauth2PermissionGrant.md)
@@ -166,6 +138,15 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 ### [Get-MgUserOwnedDeviceCount](Get-MgUserOwnedDeviceCount.md)
 Get the number of the resource
 
+### [Get-MgUserOwnedDeviceCountAsAppRoleAssignment](Get-MgUserOwnedDeviceCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgUserOwnedDeviceCountAsDevice](Get-MgUserOwnedDeviceCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgUserOwnedDeviceCountAsEndpoint](Get-MgUserOwnedDeviceCountAsEndpoint.md)
+Get the number of the resource
+
 ### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
 Directory objects that are owned by the user.
 Read-only.
@@ -184,9 +165,20 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 ### [Get-MgUserOwnedObjectCount](Get-MgUserOwnedObjectCount.md)
 Get the number of the resource
 
+### [Get-MgUserOwnedObjectCountAsApplication](Get-MgUserOwnedObjectCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgUserOwnedObjectCountAsGroup](Get-MgUserOwnedObjectCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgUserOwnedObjectCountAsServicePrincipal](Get-MgUserOwnedObjectCountAsServicePrincipal.md)
+Get the number of the resource
+
 ### [Get-MgUserPhoto](Get-MgUserPhoto.md)
-The user's profile photo.
-Read-only.
+Get the specified profilePhoto or its metadata (**profilePhoto** properties).
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,\n360x360, 432x432, 504x504, and 648x648.
+Photos can be any dimension if they are stored in Azure Active Directory.
+You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
 ### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
 Get media content for the navigation property photo from users
@@ -212,8 +204,17 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 ### [Get-MgUserRegisteredDeviceCount](Get-MgUserRegisteredDeviceCount.md)
 Get the number of the resource
 
+### [Get-MgUserRegisteredDeviceCountAsAppRoleAssignment](Get-MgUserRegisteredDeviceCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgUserRegisteredDeviceCountAsDevice](Get-MgUserRegisteredDeviceCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgUserRegisteredDeviceCountAsEndpoint](Get-MgUserRegisteredDeviceCountAsEndpoint.md)
+Get the number of the resource
+
 ### [Get-MgUserSetting](Get-MgUserSetting.md)
-Get settings from users
+Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 Retrieve the properties and relationships of a shiftPreferences object by ID.
@@ -231,47 +232,47 @@ Nullable.
 ### [Get-MgUserTodoListExtensionCount](Get-MgUserTodoListExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgUserTodoListTask](Get-MgUserTodoListTask.md)
+### [Get-MgUserTodoTask](Get-MgUserTodoTask.md)
 Read the properties and relationships of a todoTask object.
 
-### [Get-MgUserTodoListTaskAttachment](Get-MgUserTodoListTaskAttachment.md)
+### [Get-MgUserTodoTaskAttachment](Get-MgUserTodoTaskAttachment.md)
 Read the properties and relationships of a taskFileAttachment object.
 
-### [Get-MgUserTodoListTaskAttachmentContent](Get-MgUserTodoListTaskAttachmentContent.md)
+### [Get-MgUserTodoTaskAttachmentContent](Get-MgUserTodoTaskAttachmentContent.md)
 Get media content for the navigation property attachments from users
 
-### [Get-MgUserTodoListTaskAttachmentCount](Get-MgUserTodoListTaskAttachmentCount.md)
+### [Get-MgUserTodoTaskAttachmentCount](Get-MgUserTodoTaskAttachmentCount.md)
 Get the number of the resource
 
-### [Get-MgUserTodoListTaskAttachmentSession](Get-MgUserTodoListTaskAttachmentSession.md)
+### [Get-MgUserTodoTaskAttachmentSession](Get-MgUserTodoTaskAttachmentSession.md)
 Get attachmentSessions from users
 
-### [Get-MgUserTodoListTaskAttachmentSessionContent](Get-MgUserTodoListTaskAttachmentSessionContent.md)
+### [Get-MgUserTodoTaskAttachmentSessionContent](Get-MgUserTodoTaskAttachmentSessionContent.md)
 The content streams that are uploaded.
 
-### [Get-MgUserTodoListTaskAttachmentSessionCount](Get-MgUserTodoListTaskAttachmentSessionCount.md)
+### [Get-MgUserTodoTaskAttachmentSessionCount](Get-MgUserTodoTaskAttachmentSessionCount.md)
 Get the number of the resource
 
-### [Get-MgUserTodoListTaskChecklistItem](Get-MgUserTodoListTaskChecklistItem.md)
+### [Get-MgUserTodoTaskChecklistItem](Get-MgUserTodoTaskChecklistItem.md)
 Read the properties and relationships of a checklistItem object.
 
-### [Get-MgUserTodoListTaskChecklistItemCount](Get-MgUserTodoListTaskChecklistItemCount.md)
+### [Get-MgUserTodoTaskChecklistItemCount](Get-MgUserTodoTaskChecklistItemCount.md)
 Get the number of the resource
 
-### [Get-MgUserTodoListTaskCount](Get-MgUserTodoListTaskCount.md)
+### [Get-MgUserTodoTaskCount](Get-MgUserTodoTaskCount.md)
 Get the number of the resource
 
-### [Get-MgUserTodoListTaskExtension](Get-MgUserTodoListTaskExtension.md)
+### [Get-MgUserTodoTaskExtension](Get-MgUserTodoTaskExtension.md)
 The collection of open extensions defined for the task.
 Nullable.
 
-### [Get-MgUserTodoListTaskExtensionCount](Get-MgUserTodoListTaskExtensionCount.md)
+### [Get-MgUserTodoTaskExtensionCount](Get-MgUserTodoTaskExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
+### [Get-MgUserTodoTaskLinkedResource](Get-MgUserTodoTaskLinkedResource.md)
 Read the properties and relationships of a linkedResource object.
 
-### [Get-MgUserTodoListTaskLinkedResourceCount](Get-MgUserTodoListTaskLinkedResourceCount.md)
+### [Get-MgUserTodoTaskLinkedResourceCount](Get-MgUserTodoTaskLinkedResourceCount.md)
 Get the number of the resource
 
 ### [Get-MgUserTransitiveMemberOf](Get-MgUserTransitiveMemberOf.md)
@@ -281,13 +282,22 @@ Nullable.
 ### [Get-MgUserTransitiveMemberOfAsAdministrativeUnit](Get-MgUserTransitiveMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgUserTransitiveMemberOfAsDirectoryRole](Get-MgUserTransitiveMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgUserTransitiveMemberOfAsGroup](Get-MgUserTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-### [Get-MgUserTodoListTaskLinkedResource](Get-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
 ### [Get-MgUserTransitiveMemberOfCount](Get-MgUserTransitiveMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgUserTransitiveMemberOfCountAsAdministrativeUnit](Get-MgUserTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgUserTransitiveMemberOfCountAsDirectoryRole](Get-MgUserTransitiveMemberOfCountAsDirectoryRole.md)
+Get the number of the resource
+
+### [Get-MgUserTransitiveMemberOfCountAsGroup](Get-MgUserTransitiveMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [New-MgUser](New-MgUser.md)
@@ -297,11 +307,6 @@ You can optionally specify any other writable properties.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
 
 ### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
 Create an outlookCategory object in the user's master list of categories.
@@ -331,9 +336,6 @@ Create a linkedResource object to associate a specified task with an item in a p
 For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
 You can also create a **linkedResource** object while creating a task.
 
-### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete user.
  When deleted, user resources are moved to a temporary container and can be restored within 30 days.
@@ -345,6 +347,9 @@ Delete navigation property extensions for users
 
 ### [Remove-MgUserLicenseDetail](Remove-MgUserLicenseDetail.md)
 Delete navigation property licenseDetails for users
+
+### [Remove-MgUserManager](Remove-MgUserManager.md)
+Remove a user's manager.
 
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 Remove a user's manager.
@@ -408,6 +413,9 @@ Update the navigation property extensions in users
 ### [Update-MgUserLicenseDetail](Update-MgUserLicenseDetail.md)
 Update the navigation property licenseDetails in users
 
+### [Update-MgUserMailboxSetting](Update-MgUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgUserOutlookMasterCategory](Update-MgUserOutlookMasterCategory.md)
 Update the writable property, **color**, of the specified outlookCategory object.
 You cannot modify the **displayName** property \nonce you have created the category.
@@ -416,7 +424,9 @@ You cannot modify the **displayName** property \nonce you have created the categ
 Update the navigation property photo in users
 
 ### [Update-MgUserSetting](Update-MgUserSetting.md)
-Update the navigation property settings in users
+Update the properties of the userSettings object.
+\nUsers in the same organization can have different settings based on their preference or on the organization policies.
+\nTo get the user current settings, see current user settings.
 
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 Update the properties and relationships of a shiftPreferences object.

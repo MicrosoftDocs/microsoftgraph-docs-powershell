@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Sites
-Module Guid: b6db6022-51a8-459f-adc6-451f0c6e2a6a
+Module Guid: e45ab622-7f7c-48c5-88eb-8356fd60875a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgSiteContentTypeToDefaultContentLocation](Copy-MgSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -40,9 +40,8 @@ The file can then be added as a default file or template via a POST operation.
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgSiteListContentTypeToDefaultContentLocation](Copy-MgSiteListContentTypeToDefaultContentLocation.md)
-Copy a file to a default content location in a [content type][contentType].
-The file can then be added as a default file or template via a POST operation.
+### [Copy-MgSiteOnenoteNotebook](Copy-MgSiteOnenoteNotebook.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -64,8 +63,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ### [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionToSectionGroup.md)
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionToSectionGroup.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteOnenotePageToSection](Copy-MgSiteOnenotePageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgSiteOnenoteSectionGroupSectionPageToSection](Copy-MgSiteOnenoteSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -81,13 +81,17 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteOnenoteSectionToNotebook](Copy-MgSiteOnenoteSectionToNotebook.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteOnenoteSectionToSectionGroup](Copy-MgSiteOnenoteSectionToSectionGroup.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Get-MgAdminSharepoint](Get-MgAdminSharepoint.md)
+Get sharepoint from admin
+
+### [Get-MgAdminSharepointSetting](Get-MgAdminSharepointSetting.md)
+Get the tenant-level settings for SharePoint and OneDrive.
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 The list of SharePoint sites in this group.
@@ -168,6 +172,15 @@ Get the number of the resource
 ### [Get-MgGroupSiteCount](Get-MgGroupSiteCount.md)
 Get the number of the resource
 
+### [Get-MgGroupSiteCreatedByUser](Get-MgGroupSiteCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupSiteCreatedByUserMailboxSetting](Get-MgGroupSiteCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupSiteDefaultDrive](Get-MgGroupSiteDefaultDrive.md)
 The default drive (document library) for this site.
 
@@ -190,6 +203,24 @@ This collection can't be enumerated.
 ### [Get-MgGroupSiteItemCount](Get-MgGroupSiteItemCount.md)
 Get the number of the resource
 
+### [Get-MgGroupSiteItemLastModifiedByUser](Get-MgGroupSiteItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupSiteItemLastModifiedByUserMailboxSetting](Get-MgGroupSiteItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgGroupSiteLastModifiedByUser](Get-MgGroupSiteLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgGroupSiteLastModifiedByUserMailboxSetting](Get-MgGroupSiteLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupSiteList](Get-MgGroupSiteList.md)
 Returns the metadata for a [list][].
 
@@ -204,15 +235,6 @@ The source column for the content type column.
 
 ### [Get-MgGroupSiteListContentType](Get-MgGroupSiteListContentType.md)
 The collection of content types present in this list.
-
-### [Get-MgGroupSiteListContentTypeBase](Get-MgGroupSiteListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgGroupSiteListContentTypeBaseType](Get-MgGroupSiteListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgGroupSiteListContentTypeBaseTypeCount](Get-MgGroupSiteListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgGroupSiteListContentTypeColumn](Get-MgGroupSiteListContentTypeColumn.md)
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
@@ -241,6 +263,15 @@ Get the number of the resource
 ### [Get-MgGroupSiteListCount](Get-MgGroupSiteListCount.md)
 Get the number of the resource
 
+### [Get-MgGroupSiteListCreatedByUser](Get-MgGroupSiteListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupSiteListCreatedByUserMailboxSetting](Get-MgGroupSiteListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupSiteListDrive](Get-MgGroupSiteListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -251,11 +282,23 @@ Returns the metadata for an [item][] in a [list][].
 ### [Get-MgGroupSiteListItemAnalytic](Get-MgGroupSiteListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgGroupSiteListItemCreatedByUser](Get-MgGroupSiteListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgGroupSiteListItemCreatedByUserMailboxSetting](Get-MgGroupSiteListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgGroupSiteListItemDocumentSetVersion](Get-MgGroupSiteListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgGroupSiteListItemDocumentSetVersionCount](Get-MgGroupSiteListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgGroupSiteListItemDocumentSetVersionField](Get-MgGroupSiteListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgGroupSiteListItemDriveItem](Get-MgGroupSiteListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -393,9 +436,8 @@ If the status is `failed`, the error and `@api.diagnostics` properties provide e
 Get the number of the resource
 
 ### [Get-MgGroupSiteOnenotePage](Get-MgGroupSiteOnenotePage.md)
-The pages in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a page object.
+**Getting page information** Access a page's metadata by page identifier: **Getting page content** You can use the page's `content` endpoint to get the HTML content of a page: The `includeIDs=true` query option is used to update pages.
 
 ### [Get-MgGroupSiteOnenotePageContent](Get-MgGroupSiteOnenotePageContent.md)
 The page's HTML content.
@@ -961,6 +1003,24 @@ Get externalColumns from sites
 ### [Get-MgSiteExternalColumnCount](Get-MgSiteExternalColumnCount.md)
 Get the number of the resource
 
+### [Get-MgSiteItemLastModifiedByUser](Get-MgSiteItemLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgSiteItemLastModifiedByUserMailboxSetting](Get-MgSiteItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
+### [Get-MgSiteLastModifiedByUser](Get-MgSiteLastModifiedByUser.md)
+Identity of the user who last modified the item.
+Read-only.
+
+### [Get-MgSiteLastModifiedByUserMailboxSetting](Get-MgSiteLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgSiteList](Get-MgSiteList.md)
 Returns the metadata for a [list][].
 
@@ -975,15 +1035,6 @@ The source column for the content type column.
 
 ### [Get-MgSiteListContentType](Get-MgSiteListContentType.md)
 The collection of content types present in this list.
-
-### [Get-MgSiteListContentTypeBase](Get-MgSiteListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgSiteListContentTypeBaseType](Get-MgSiteListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgSiteListContentTypeBaseTypeCount](Get-MgSiteListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgSiteListContentTypeColumn](Get-MgSiteListContentTypeColumn.md)
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
@@ -1015,6 +1066,15 @@ Get the number of the resource
 ### [Get-MgSiteListCount](Get-MgSiteListCount.md)
 Get the number of the resource
 
+### [Get-MgSiteListCreatedByUser](Get-MgSiteListCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgSiteListCreatedByUserMailboxSetting](Get-MgSiteListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgSiteListDrive](Get-MgSiteListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1028,11 +1088,23 @@ Invoke function getActivitiesByInterval
 ### [Get-MgSiteListItemAnalytic](Get-MgSiteListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
+### [Get-MgSiteListItemCreatedByUser](Get-MgSiteListItemCreatedByUser.md)
+Identity of the user who created the item.
+Read-only.
+
+### [Get-MgSiteListItemCreatedByUserMailboxSetting](Get-MgSiteListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
+Returned only on $select.
+
 ### [Get-MgSiteListItemDocumentSetVersion](Get-MgSiteListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgSiteListItemDocumentSetVersionCount](Get-MgSiteListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgSiteListItemDocumentSetVersionField](Get-MgSiteListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgSiteListItemDriveItem](Get-MgSiteListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1064,7 +1136,14 @@ The set of subscriptions on the list.
 ### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
+### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+
+### [Get-MgSiteOperation](Get-MgSiteOperation.md)
+Get the status of a rich long-running operation on a site or a list.
+
+### [Get-MgSiteOperationCount](Get-MgSiteOperationCount.md)
 Get the number of the resource
 
 ### [Get-MgSitePermission](Get-MgSitePermission.md)
@@ -1509,16 +1588,19 @@ Create a new section group in the specified notebook.
 Create a new onenoteSection in the specified section group.
 
 ### [New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOnenoteNotebookSectionPage](New-MgGroupSiteOnenoteNotebookSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOnenoteOperation](New-MgGroupSiteOnenoteOperation.md)
 Create new navigation property to operations for groups
 
 ### [New-MgGroupSiteOnenotePage](New-MgGroupSiteOnenotePage.md)
-Create new navigation property to pages for groups
+Create a new OneNote page in the default section of the default notebook.
+To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.
+Example: `../onenote/pages?sectionName=My%20section` The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.
+If you're targeting other notebooks, you can create pages in a specified section.
 
 ### [New-MgGroupSiteOnenoteResource](New-MgGroupSiteOnenoteResource.md)
 Create new navigation property to resources for groups
@@ -1533,10 +1615,10 @@ Create new navigation property to sectionGroups for groups
 Create a new onenoteSection in the specified section group.
 
 ### [New-MgGroupSiteOnenoteSectionGroupSectionPage](New-MgGroupSiteOnenoteSectionGroupSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOnenoteSectionPage](New-MgGroupSiteOnenoteSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOperation](New-MgGroupSiteOperation.md)
 Create new navigation property to operations for groups
@@ -1575,7 +1657,7 @@ Create new navigation property to relations for groups
 Create new navigation property to relations for groups
 
 ### [New-MgGroupSiteTermStoreSet](New-MgGroupSiteTermStoreSet.md)
-Create new navigation property to sets for groups
+Create a new set object.
 
 ### [New-MgGroupSiteTermStoreSetChild](New-MgGroupSiteTermStoreSetChild.md)
 Create a new term object.
@@ -1670,6 +1752,9 @@ Create new navigation property to operations for sites
 ### [New-MgSiteListSubscription](New-MgSiteListSubscription.md)
 Create new navigation property to subscriptions for sites
 
+### [New-MgSiteOperation](New-MgSiteOperation.md)
+Create new navigation property to operations for sites
+
 ### [New-MgSitePermission](New-MgSitePermission.md)
 Create a new permission object on a site.
 
@@ -1704,7 +1789,7 @@ Create new navigation property to relations for sites
 Create new navigation property to relations for sites
 
 ### [New-MgSiteTermStoreSet](New-MgSiteTermStoreSet.md)
-Create new navigation property to sets for sites
+Create a new set object.
 
 ### [New-MgSiteTermStoreSetChild](New-MgSiteTermStoreSetChild.md)
 Create a new term object.
@@ -1757,9 +1842,11 @@ Publishes a [contentType][] present in the content type hub site.
 ### [Publish-MgSiteListContentType](Publish-MgSiteListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
 
-### [Remove-MgGroupSite](Remove-MgGroupSite.md)
-The list of SharePoint sites in this group.
-Access the default site with /sites/root.
+### [Remove-MgAdminSharepoint](Remove-MgAdminSharepoint.md)
+Delete navigation property sharepoint for admin
+
+### [Remove-MgAdminSharepointSetting](Remove-MgAdminSharepointSetting.md)
+Delete navigation property settings for admin
 
 ### [Remove-MgGroupSiteAnalytic](Remove-MgGroupSiteAnalytic.md)
 Delete navigation property analytics for groups
@@ -1802,6 +1889,9 @@ Removes an item from a [list][].
 
 ### [Remove-MgGroupSiteListItemDocumentSetVersion](Remove-MgGroupSiteListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgGroupSiteListItemDocumentSetVersionField](Remove-MgGroupSiteListItemDocumentSetVersionField.md)
+Delete navigation property fields for groups
 
 ### [Remove-MgGroupSiteListItemField](Remove-MgGroupSiteListItemField.md)
 Delete navigation property fields for groups
@@ -1995,6 +2085,9 @@ Removes an item from a [list][].
 ### [Remove-MgSiteListItemDocumentSetVersion](Remove-MgSiteListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
+### [Remove-MgSiteListItemDocumentSetVersionField](Remove-MgSiteListItemDocumentSetVersionField.md)
+Delete navigation property fields for sites
+
 ### [Remove-MgSiteListItemField](Remove-MgSiteListItemField.md)
 Delete navigation property fields for sites
 
@@ -2009,6 +2102,9 @@ Delete navigation property operations for sites
 
 ### [Remove-MgSiteListSubscription](Remove-MgSiteListSubscription.md)
 Delete navigation property subscriptions for sites
+
+### [Remove-MgSiteOperation](Remove-MgSiteOperation.md)
+Delete navigation property operations for sites
 
 ### [Remove-MgSitePermission](Remove-MgSitePermission.md)
 Delete a permission object on a site.
@@ -2146,6 +2242,12 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgSiteListContentType](Unpublish-MgSiteListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
+### [Update-MgAdminSharepoint](Update-MgAdminSharepoint.md)
+Update the navigation property sharepoint in admin
+
+### [Update-MgAdminSharepointSetting](Update-MgAdminSharepointSetting.md)
+Update one or more tenant-level settings for SharePoint and OneDrive.
+
 ### [Update-MgGroupSite](Update-MgGroupSite.md)
 Update the navigation property sites in groups
 
@@ -2165,10 +2267,16 @@ Update the navigation property columns in groups
 Update a [content type][contentType].
 
 ### [Update-MgGroupSiteContentTypeColumn](Update-MgGroupSiteContentTypeColumn.md)
-Update the navigation property columns in groups
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgGroupSiteContentTypeColumnLink](Update-MgGroupSiteContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
+
+### [Update-MgGroupSiteCreatedByUserMailboxSetting](Update-MgGroupSiteCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgGroupSiteLastModifiedByUserMailboxSetting](Update-MgGroupSiteLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteList](Update-MgGroupSiteList.md)
 Update the navigation property lists in groups
@@ -2180,25 +2288,40 @@ Update the navigation property columns in groups
 Update the navigation property contentTypes in groups
 
 ### [Update-MgGroupSiteListContentTypeColumn](Update-MgGroupSiteListContentTypeColumn.md)
-Update the navigation property columns in groups
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgGroupSiteListContentTypeColumnLink](Update-MgGroupSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
 
+### [Update-MgGroupSiteListCreatedByUserMailboxSetting](Update-MgGroupSiteListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgGroupSiteListItem](Update-MgGroupSiteListItem.md)
 Update the navigation property items in groups
+
+### [Update-MgGroupSiteListItemCreatedByUserMailboxSetting](Update-MgGroupSiteListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteListItemDocumentSetVersion](Update-MgGroupSiteListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
+### [Update-MgGroupSiteListItemDocumentSetVersionField](Update-MgGroupSiteListItemDocumentSetVersionField.md)
+Update the navigation property fields in groups
+
 ### [Update-MgGroupSiteListItemField](Update-MgGroupSiteListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgGroupSiteListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteListItemVersion](Update-MgGroupSiteListItemVersion.md)
 Update the navigation property versions in groups
 
 ### [Update-MgGroupSiteListItemVersionField](Update-MgGroupSiteListItemVersionField.md)
 Update the navigation property fields in groups
+
+### [Update-MgGroupSiteListLastModifiedByUserMailboxSetting](Update-MgGroupSiteListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgGroupSiteListOperation](Update-MgGroupSiteListOperation.md)
 Update the navigation property operations in groups
@@ -2360,7 +2483,7 @@ Update the navigation property columns in sites
 Update a [content type][contentType].
 
 ### [Update-MgSiteContentTypeColumn](Update-MgSiteContentTypeColumn.md)
-Update the navigation property columns in sites
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgSiteContentTypeColumnLink](Update-MgSiteContentTypeColumnLink.md)
 Update the navigation property columnLinks in sites
@@ -2375,25 +2498,40 @@ Update the navigation property columns in sites
 Update the navigation property contentTypes in sites
 
 ### [Update-MgSiteListContentTypeColumn](Update-MgSiteListContentTypeColumn.md)
-Update the navigation property columns in sites
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgSiteListContentTypeColumnLink](Update-MgSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in sites
 
+### [Update-MgSiteListCreatedByUserMailboxSetting](Update-MgSiteListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgSiteListItem](Update-MgSiteListItem.md)
 Update the navigation property items in sites
+
+### [Update-MgSiteListItemCreatedByUserMailboxSetting](Update-MgSiteListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgSiteListItemDocumentSetVersion](Update-MgSiteListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in sites
 
+### [Update-MgSiteListItemDocumentSetVersionField](Update-MgSiteListItemDocumentSetVersionField.md)
+Update the navigation property fields in sites
+
 ### [Update-MgSiteListItemField](Update-MgSiteListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgSiteListItemLastModifiedByUserMailboxSetting](Update-MgSiteListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgSiteListItemVersion](Update-MgSiteListItemVersion.md)
 Update the navigation property versions in sites
 
 ### [Update-MgSiteListItemVersionField](Update-MgSiteListItemVersionField.md)
 Update the navigation property fields in sites
+
+### [Update-MgSiteListLastModifiedByUserMailboxSetting](Update-MgSiteListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgSiteListOperation](Update-MgSiteListOperation.md)
 Update the navigation property operations in sites
@@ -2415,6 +2553,9 @@ Invoke action onenotePatchContent
 
 ### [Update-MgSiteOnenoteSectionPageContent](Update-MgSiteOnenoteSectionPageContent.md)
 Invoke action onenotePatchContent
+
+### [Update-MgSiteOperation](Update-MgSiteOperation.md)
+Update the navigation property operations in sites
 
 ### [Update-MgSitePermission](Update-MgSitePermission.md)
 Update an application permission object on a site.

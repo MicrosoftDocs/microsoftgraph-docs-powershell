@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagement
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update roleManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,13 +17,14 @@ Update roleManagement
 Update-MgBetaRoleManagement [-AdditionalProperties <Hashtable>]
  [-CloudPc <IMicrosoftGraphRbacApplicationMultiple>]
  [-DeviceManagement <IMicrosoftGraphRbacApplicationMultiple>] [-Directory <IMicrosoftGraphRbacApplication>]
+ [-EnterpriseApps <IMicrosoftGraphRbacApplication[]>]
  [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-Exchange <IMicrosoftGraphUnifiedRbacApplication>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-WhatIf] [-Confirm]
+Update-MgBetaRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -35,15 +33,19 @@ Update roleManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +53,7 @@ Update roleManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,7 +69,7 @@ roleManagement
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRoleManagement
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement
 Parameter Sets: Update
 Aliases:
 
@@ -83,7 +85,7 @@ rbacApplicationMultiple
 To construct, see NOTES section for CLOUDPC properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplicationMultiple
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +101,7 @@ rbacApplicationMultiple
 To construct, see NOTES section for DEVICEMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplicationMultiple
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -115,7 +117,23 @@ rbacApplication
 To construct, see NOTES section for DIRECTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EnterpriseApps
+.
+To construct, see NOTES section for ENTERPRISEAPPS properties and create a hash table.
+
+```yaml
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -131,7 +149,7 @@ rbacApplication
 To construct, see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplication
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -147,7 +165,7 @@ unifiedRbacApplication
 To construct, see NOTES section for EXCHANGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacApplication
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -162,7 +180,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -178,7 +196,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -195,9 +213,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleManagement
+
 ## NOTES
 
 ALIASES
@@ -227,6 +247,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[AuthenticationContextId <String>]`: 
         - `[Description <String>]`: Description for the action. Supports $filter (eq).
         - `[IsAuthenticationContextSettable <Boolean?>]`: 
+        - `[IsPrivileged <Boolean?>]`: 
         - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
         - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -260,6 +281,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
         - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
         - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+        - `[IsPrivileged <Boolean?>]`: 
         - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
         - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
           - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -276,7 +298,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]`: 
     - `[RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]`: 
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-      - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
+      - `[Steps <IMicrosoftGraphApprovalStep[]>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
         - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
@@ -455,7 +477,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Exchange <IMicrosoftGraphUnifiedRbacApplication>]`: unifiedRbacApplication
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]`: 
+    - `[CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]`: Workload-specific scope object that represents the resources for which the principal has been granted access.
       - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
       - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -484,6 +506,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
       - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -517,6 +540,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
       - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[IsPrivileged <Boolean?>]`: 
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
         - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -545,6 +569,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
       - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -578,6 +603,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
       - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[IsPrivileged <Boolean?>]`: 
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
         - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -606,6 +632,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
       - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -616,7 +643,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
+    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
       - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
@@ -651,6 +678,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
       - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[IsPrivileged <Boolean?>]`: 
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
         - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -830,6 +858,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
       - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -840,7 +869,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
+    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
       - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
@@ -875,6 +904,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
       - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[IsPrivileged <Boolean?>]`: 
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
         - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -1055,6 +1085,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
       - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1065,7 +1096,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ResourceScopeId <String>]`: Not implemented.
   - `[RoleAssignmentApprovals <IMicrosoftGraphApproval[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: 
+    - `[Steps <IMicrosoftGraphApprovalStep[]>]`: Used to represent the decision associated with a single step in the approval process configured in approvalStage.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AssignedToMe <Boolean?>]`: Indicates whether the step is assigned to the calling user to review. Read-only.
       - `[DisplayName <String>]`: The label provided by the policy creator to identify an approval step. Read-only.
@@ -1100,6 +1131,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
       - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[IsPrivileged <Boolean?>]`: 
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
         - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -1265,7 +1297,7 @@ To create the parameters described below, construct a hash table containing the 
 `EXCHANGE <IMicrosoftGraphUnifiedRbacApplication>`: unifiedRbacApplication
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]`: 
+  - `[CustomAppScopes <IMicrosoftGraphCustomAppScope[]>]`: Workload-specific scope object that represents the resources for which the principal has been granted access.
     - `[DisplayName <String>]`: Provides the display name of the app-specific resource represented by the app scope. Provided for display purposes since appScopeId is often an immutable, non-human-readable id. This property is read only.
     - `[Type <String>]`: Describes the type of app-specific resource represented by the app scope. Provided for display purposes, so a user interface can convey to the user the kind of app specific resource represented by the app scope. This property is read only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1286,6 +1318,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[AuthenticationContextId <String>]`: 
       - `[Description <String>]`: Description for the action. Supports $filter (eq).
       - `[IsAuthenticationContextSettable <Boolean?>]`: 
+      - `[IsPrivileged <Boolean?>]`: 
       - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
       - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1321,6 +1354,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
       - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
       - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+      - `[IsPrivileged <Boolean?>]`: 
       - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
       - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
         - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -1333,7 +1367,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TransitiveRoleAssignments <IMicrosoftGraphUnifiedRoleAssignment[]>]`: Resource to grant access to users or groups that are transitive.
 
 ## RELATED LINKS
-[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgRoleManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagement?view=graph-powershell-v1.0)

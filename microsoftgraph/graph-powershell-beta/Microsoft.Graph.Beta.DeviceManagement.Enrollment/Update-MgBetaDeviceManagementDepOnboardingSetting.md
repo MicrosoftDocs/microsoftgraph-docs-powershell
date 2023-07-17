@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementdeponboardingsetting
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property depOnboardingSettings in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -26,13 +23,19 @@ Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <Strin
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDepOnboardingSetting -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrollmentIdentity>
+ -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -46,13 +49,7 @@ Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagemen
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -60,15 +57,19 @@ Update the navigation property depOnboardingSettings in deviceManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -76,7 +77,7 @@ Update the navigation property depOnboardingSettings in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +92,7 @@ Accept wildcard characters: False
 The Apple ID used to obtain the current token.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -108,7 +109,7 @@ The onboarded service instance manages an Apple Token used to synchronize data b
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepOnboardingSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -123,7 +124,7 @@ Accept wildcard characters: False
 Consent granted for data sharing with Apple Dep Service
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +141,7 @@ This type of profile must be assigned to Apple DEP serial numbers before the cor
 To construct, see NOTES section for DEFAULTIOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepIosEnrollmentProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepIosEnrollmentProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +158,7 @@ This type of profile must be assigned to Apple DEP serial numbers before the cor
 To construct, see NOTES section for DEFAULTMACOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepMacOSEnrollmentProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepMacOSEnrollmentProfile
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -172,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of depOnboardingSetting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -188,7 +189,7 @@ The enrollment profiles.
 To construct, see NOTES section for ENROLLMENTPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentProfile[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,7 +205,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +221,7 @@ The imported Apple device identities.
 To construct, see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImportedAppleDeviceIdentity[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -236,8 +237,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrollmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -251,7 +252,7 @@ Accept wildcard characters: False
 When the service was onboarded.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +267,7 @@ Accept wildcard characters: False
 When the service last syned with Intune
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +282,7 @@ Accept wildcard characters: False
 Error code reported by Apple during last dep sync.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +297,7 @@ Accept wildcard characters: False
 When Intune last requested a sync.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +312,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -326,7 +327,7 @@ Accept wildcard characters: False
 Whether or not the Dep token sharing is enabled with the School Data Sync service.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -341,7 +342,7 @@ Accept wildcard characters: False
 Gets synced device count
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -356,7 +357,7 @@ Accept wildcard characters: False
 When the token will expire.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -371,7 +372,7 @@ Accept wildcard characters: False
 Friendly Name for Dep Token
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -386,7 +387,7 @@ Accept wildcard characters: False
 depTokenType
 
 ```yaml
-Type: DepTokenType
+Type: Microsoft.Graph.Beta.PowerShell.Support.DepTokenType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -401,7 +402,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -417,7 +418,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -434,10 +435,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+
 ## NOTES
 
 ALIASES
@@ -461,6 +465,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
     - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
     - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
+    - `[EnrollmentTimeAzureAdGroupIds <String[]>]`: EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile
     - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
     - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
     - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -521,6 +526,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
     - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
     - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
+    - `[EnrollmentTimeAzureAdGroupIds <String[]>]`: EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile
     - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
     - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
     - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -545,6 +551,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AdminAccountFullName <String>]`: Indicates what the full name for the admin account is
     - `[AdminAccountPassword <String>]`: Indicates what the password for the admin account is
     - `[AdminAccountUserName <String>]`: Indicates what the user name for the admin account is
+    - `[AutoAdvanceSetupEnabled <Boolean?>]`: Indicates if Setup Assistant will automatically advance through its screen
     - `[AutoUnlockWithWatchDisabled <Boolean?>]`: Indicates if UnlockWithWatch screen is disabled
     - `[ChooseYourLockScreenDisabled <Boolean?>]`: Indicates if iCloud Documents and Desktop screen is disabled
     - `[DontAutoPopulatePrimaryAccountInfo <Boolean?>]`: Indicates whether Setup Assistant will auto populate the primary account information
@@ -557,6 +564,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[PrimaryAccountFullName <String>]`: Indicates what the full name for the primary account is
     - `[PrimaryAccountUserName <String>]`: Indicates what the account name for the primary account is
     - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
+    - `[RequestRequiresNetworkTether <Boolean?>]`: Indicates if the device is network-tethered to run the command
     - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
     - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
     - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -601,6 +609,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
   - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
   - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
+  - `[EnrollmentTimeAzureAdGroupIds <String[]>]`: EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile
   - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
   - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
   - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -662,6 +671,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DiagnosticsDisabled <Boolean?>]`: Indicates if diagnostics setup pane is disabled
   - `[DisplayToneSetupDisabled <Boolean?>]`: Indicates if displaytone setup screen is disabled
   - `[EnabledSkipKeys <String[]>]`: enabledSkipKeys contains all the enabled skip keys as strings
+  - `[EnrollmentTimeAzureAdGroupIds <String[]>]`: EnrollmentTimeAzureAdGroupIds contains list of enrollment time Azure Group Ids to be associated with profile
   - `[IsDefault <Boolean?>]`: Indicates if this is the default profile
   - `[IsMandatory <Boolean?>]`: Indicates if the profile is mandatory
   - `[LocationDisabled <Boolean?>]`: Indicates if Location service setup pane is disabled
@@ -686,6 +696,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AdminAccountFullName <String>]`: Indicates what the full name for the admin account is
   - `[AdminAccountPassword <String>]`: Indicates what the password for the admin account is
   - `[AdminAccountUserName <String>]`: Indicates what the user name for the admin account is
+  - `[AutoAdvanceSetupEnabled <Boolean?>]`: Indicates if Setup Assistant will automatically advance through its screen
   - `[AutoUnlockWithWatchDisabled <Boolean?>]`: Indicates if UnlockWithWatch screen is disabled
   - `[ChooseYourLockScreenDisabled <Boolean?>]`: Indicates if iCloud Documents and Desktop screen is disabled
   - `[DontAutoPopulatePrimaryAccountInfo <Boolean?>]`: Indicates whether Setup Assistant will auto populate the primary account information
@@ -698,6 +709,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PrimaryAccountFullName <String>]`: Indicates what the full name for the primary account is
   - `[PrimaryAccountUserName <String>]`: Indicates what the account name for the primary account is
   - `[RegistrationDisabled <Boolean?>]`: Indicates if registration is disabled
+  - `[RequestRequiresNetworkTether <Boolean?>]`: Indicates if the device is network-tethered to run the command
   - `[SetPrimarySetupAccountAsRegularUser <Boolean?>]`: Indicates whether Setup Assistant will set the account as a regular user
   - `[SkipPrimarySetupAccountCreation <Boolean?>]`: Indicates whether Setup Assistant will skip the user interface for primary account setup
   - `[ZoomDisabled <Boolean?>]`: Indicates if zoom setup pane is disabled
@@ -753,7 +765,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)

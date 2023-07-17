@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityconditionalaccesspolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new conditionalAccessPolicy.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,15 +17,15 @@ Create a new conditionalAccessPolicy.
 New-MgBetaIdentityConditionalAccessPolicy [-AdditionalProperties <Hashtable>]
  [-Conditions <IMicrosoftGraphConditionalAccessConditionSet>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
- [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>] [-ModifiedDateTime <DateTime>]
- [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>] [-State <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-GrantControls <IMicrosoftGraphConditionalAccessGrantControls>] [-Id <String>]
+ [-ModifiedDateTime <DateTime>] [-SessionControls <IMicrosoftGraphConditionalAccessSessionControls>]
+ [-State <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditionalAccessPolicy> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,94 +33,222 @@ Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
 
 $params = @{
-  DisplayName = "Access to EXO requires MFA"
-  State = "enabled"
-  Conditions = @{
-    ClientAppTypes = @(
-      "mobileAppsAndDesktopClients"
-      "browser"
-    )
-    Applications = @{
-      IncludeApplications = @(
-        "b457cbac-03cb-4b15-9eef-79f24f8d3247"
-      )
-    }
-    Users = @{
-      IncludeGroups = @(
-        "f39e2655-3fae-43ad-94e2-c2b593cfc473"
-       )
-    }
-    Locations = @{
-      IncludeLocations = @(
-        "All"
-      )
-      ExcludeLocations = @(
-        "AllTrusted"
-      )
-    }
-   }
-   GrantControls = @{
-     Operator = "OR"
-     BuiltInControls = @(
-       "mfa"
-     )
-   }
+	displayName = "Access to EXO requires MFA"
+	state = "enabled"
+	conditions = @{
+		clientAppTypes = @(
+			"mobileAppsAndDesktopClients"
+			"browser"
+		)
+		applications = @{
+			includeApplications = @(
+				"00000002-0000-0ff1-ce00-000000000000"
+			)
+		}
+		users = @{
+			includeGroups = @(
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+			)
+		}
+		locations = @{
+			includeLocations = @(
+				"All"
+			)
+			excludeLocations = @(
+				"AllTrusted"
+			)
+		}
+	}
+	grantControls = @{
+		operator = "OR"
+		builtInControls = @(
+			"mfa"
+		)
+	}
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-Id                                   CreatedDateTime      Description DisplayName                ModifiedDateTime State
---                                   ---------------      ----------- -----------                ---------------- -----
-1c9afd06-3f59-464e-a6d9-193d99764a01 7/29/2022 9:46:18 AM             Access to EXO requires MFA                  enabled
-
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 ```
 
 $params = @{
-  DisplayName = "Block access to EXO non-trusted regions."
-  State = "enabled"
-  Conditions = @{
-    ClientAppTypes = @(
-      "all"
-    )
-    Applications = @{
-      IncludeApplications = @(
-        "b457cbac-03cb-4b15-9eef-79f24f8d3247"
-      )
-    }
-    Users = @{
-      IncludeGroups = @(
-        "f39e2655-3fae-43ad-94e2-c2b593cfc473"
-      )
-    }
-    Locations = @{
-      IncludeLocations = @(
-        "0824dbaf-6277-4db0-8112-b29fd356f2c4"
-      )
-    }
-  }
-  GrantControls = @{
-    Operator = "OR"
-    BuiltInControls = @(
-      "block"
-    )
-    }
-  }
+	displayName = "Block access to EXO non-trusted regions."
+	state = "enabled"
+	conditions = @{
+		clientAppTypes = @(
+			"all"
+		)
+		applications = @{
+			includeApplications = @(
+				"00000002-0000-0ff1-ce00-000000000000"
+			)
+		}
+		users = @{
+			includeGroups = @(
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+			)
+		}
+		locations = @{
+			includeLocations = @(
+				"198ad66e-87b3-4157-85a3-8a7b51794ee9"
+			)
+		}
+	}
+	grantControls = @{
+		operator = "OR"
+		builtInControls = @(
+			"block"
+		)
+	}
+}
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-Id                                   CreatedDateTime       Description DisplayName                              ModifiedDateTime State
---                                   ---------------       ----------- -----------                              ---------------- -----
-61c7530f-5c1d-44b2-a972-4ae658b7a9ac 7/29/2022 10:03:30 AM             Block access to EXO non-trusted regions.
-                enabled
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
+
+$params = @{
+	displayName = "Demo app for documentation"
+	state = "disabled"
+	conditions = @{
+		signInRiskLevels = @(
+			"high"
+			"medium"
+		)
+		clientAppTypes = @(
+			"mobileAppsAndDesktopClients"
+			"exchangeActiveSync"
+			"other"
+		)
+		applications = @{
+			includeApplications = @(
+				"All"
+			)
+			excludeApplications = @(
+				"499b84ac-1321-427f-aa17-267ca6975798"
+				"00000007-0000-0000-c000-000000000000"
+				"de8bc8b5-d9f9-48b1-a8ad-b748da725064"
+				"00000012-0000-0000-c000-000000000000"
+				"797f4846-ba00-4fd7-ba43-dac1f8f63013"
+				"05a65629-4c1b-48c1-a78b-804c4abdd4af"
+				"7df0a125-d3be-4c96-aa54-591f83ff541c"
+			)
+			includeUserActions = @(
+			)
+		}
+		users = @{
+			includeUsers = @(
+				"a702a13d-a437-4a07-8a7e-8c052de62dfd"
+			)
+			excludeUsers = @(
+				"124c5b6a-ffa5-483a-9b88-04c3fce5574a"
+				"GuestsOrExternalUsers"
+			)
+			includeGroups = @(
+			)
+			excludeGroups = @(
+			)
+			includeRoles = @(
+				"9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+				"cf1c38e5-3621-4004-a7cb-879624dced7c"
+				"c4e39bd9-1100-46d3-8c65-fb160da0071f"
+			)
+			excludeRoles = @(
+				"b0f54661-2d74-4c50-afa3-1ec803f12efe"
+			)
+		}
+		platforms = @{
+			includePlatforms = @(
+				"all"
+			)
+			excludePlatforms = @(
+				"iOS"
+				"windowsPhone"
+			)
+		}
+		locations = @{
+			includeLocations = @(
+				"AllTrusted"
+			)
+			excludeLocations = @(
+				"00000000-0000-0000-0000-000000000000"
+				"d2136c9c-b049-47ae-b9cf-316e04ef7198"
+			)
+		}
+	}
+	grantControls = @{
+		operator = "OR"
+		builtInControls = @(
+			"mfa"
+			"compliantDevice"
+			"domainJoinedDevice"
+			"approvedApplication"
+			"compliantApplication"
+		)
+		customAuthenticationFactors = @(
+		)
+		termsOfUse = @(
+			"ce580154-086a-40fd-91df-8a60abac81a0"
+			"7f29d675-caff-43e1-8a53-1b8516ed2075"
+		)
+	}
+	sessionControls = @{
+		applicationEnforcedRestrictions = $null
+		persistentBrowser = $null
+		cloudAppSecurity = @{
+			cloudAppSecurityType = "blockDownloads"
+			isEnabled = $true
+		}
+		signInFrequency = @{
+			value = 4
+			type = "hours"
+			isEnabled = $true
+		}
+	}
+}
+
+New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
+
+### -------------------------- EXAMPLE 4 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
+
+$params = @{
+	displayName = "Require MFA to EXO from non-compliant devices."
+	state = "enabled"
+	conditions = @{
+		applications = @{
+			includeApplications = @(
+				"00000002-0000-0ff1-ce00-000000000000"
+			)
+		}
+		users = @{
+			includeGroups = @(
+				"ba8e7ded-8b0f-4836-ba06-8ff1ecc5c8ba"
+			)
+		}
+	}
+	grantControls = @{
+		operator = "OR"
+		builtInControls = @(
+			"mfa"
+		)
+	}
+}
+
+New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
 ## PARAMETERS
 
@@ -131,7 +256,7 @@ Id                                   CreatedDateTime       Description DisplayNa
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +272,7 @@ conditionalAccessPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessPolicy
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -163,7 +288,7 @@ conditionalAccessConditionSet
 To construct, see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessConditionSet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessConditionSet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +305,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -195,7 +320,7 @@ Accept wildcard characters: False
 Not used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +335,7 @@ Accept wildcard characters: False
 Specifies a display name for the conditionalAccessPolicy object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +351,7 @@ conditionalAccessGrantControls
 To construct, see NOTES section for GRANTCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessGrantControls
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessGrantControls
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +367,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +384,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Readonly.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -275,7 +400,7 @@ conditionalAccessSessionControls
 To construct, see NOTES section for SESSIONCONTROLS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConditionalAccessSessionControls
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessSessionControls
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -290,7 +415,7 @@ Accept wildcard characters: False
 conditionalAccessPolicyState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +430,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -321,7 +446,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -338,9 +463,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy
+
 ## NOTES
 
 ALIASES
@@ -565,7 +692,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)

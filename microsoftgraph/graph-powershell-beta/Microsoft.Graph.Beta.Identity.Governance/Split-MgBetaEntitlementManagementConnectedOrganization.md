@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.identity.governance/split-mgbetaentitlementmanagementconnectedorganization
 schema: 2.0.0
@@ -10,13 +10,10 @@ schema: 2.0.0
 ## SYNOPSIS
 Split elements of a connectedOrganization
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Split-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Split-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
-Split-MgBetaEntitlementManagementConnectedOrganization [-ByIdentitySource]
+Split-MgBetaEntitlementManagementConnectedOrganization -ByIdentitySource
  [-ConnectedOrganization <IMicrosoftGraphConnectedOrganization[]>] [<CommonParameters>]
 ```
 
@@ -25,14 +22,14 @@ Split elements of one or more Azure AD entitlement management connected organiza
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -43,8 +40,9 @@ Split elements of one or more Azure AD entitlement management connected organiza
 
 ### -ByIdentitySource
 
+
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -60,7 +58,7 @@ The connected organization.
 To construct, see NOTES section for CONNECTEDORGANIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConnectedOrganization[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization[]
 Parameter Sets: (All)
 Aliases:
 
@@ -77,6 +75,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectedOrganization[]
+
 ## OUTPUTS
 
 ## NOTES
@@ -104,4 +103,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
-[Split-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Split-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
+

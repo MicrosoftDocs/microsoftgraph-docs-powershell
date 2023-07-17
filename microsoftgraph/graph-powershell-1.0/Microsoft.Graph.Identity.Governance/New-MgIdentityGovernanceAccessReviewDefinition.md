@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewdefinition
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create a new accessReviewScheduleDefinition object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -25,14 +22,14 @@ New-MgIdentityGovernanceAccessReviewDefinition
  [-InstanceEnumerationScope <Hashtable>] [-Instances <IMicrosoftGraphAccessReviewInstance[]>]
  [-LastModifiedDateTime <DateTime>] [-Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]
  [-Scope <Hashtable>] [-Settings <IMicrosoftGraphAccessReviewScheduleSettings>]
- [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-WhatIf] [-Confirm]
+ [-StageSettings <IMicrosoftGraphAccessReviewStageSettings[]>] [-Status <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter <IMicrosoftGraphAccessReviewScheduleDefinition>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,238 +37,247 @@ Create a new accessReviewScheduleDefinition object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
+
 $params = @{
-	DisplayName = "Review employee access to LinkedIn"
-	DescriptionForAdmins = "Review employee access to LinkedIn"
-	Scope = @{
-		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
-		PrincipalScopes = @(
-			@{
-				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				Query = "/users"
-				QueryType = "MicrosoftGraph"
-			}
-		)
-		ResourceScopes = @(
-			@{
-				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-				Query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
-				QueryType = "MicrosoftGraph"
-			}
-		)
+	displayName = "Test create"
+	descriptionForAdmins = "New scheduled access review"
+	descriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		queryType = "MicrosoftGraph"
 	}
-	Reviewers = @(
+	reviewers = @(
 		@{
-			Query = "./manager"
-			QueryType = "MicrosoftGraph"
-			QueryRoot = "decisions"
+			query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+			queryType = "MicrosoftGraph"
 		}
 	)
-	BackupReviewers = @(
-	)
-	FallbackReviewers = @(
-		@{
-			Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
-			QueryType = "MicrosoftGraph"
-		}
-	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $true
-		DefaultDecision = "Recommendation"
-		InstanceDurationInDays = 180
-		AutoApplyDecisionsEnabled = $true
-		RecommendationsEnabled = $true
-		Recurrence = @{
-			Pattern = @{
-				Type = "absoluteMonthly"
-				Interval = 6
-				DayOfMonth = 0
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $false
+		defaultDecision = "None"
+		instanceDurationInDays = 1
+		recommendationsEnabled = $true
+		recurrence = @{
+			pattern = @{
+				type = "weekly"
+				interval = 1
 			}
-			Range = @{
-				Type = "numbered"
-				StartDate = "2021-05-05"
-				EndDate = "2022-05-05"
+			range = @{
+				type = "noEnd"
+				startDate = "2020-09-08T12:02:30.667Z"
 			}
 		}
 	}
 }
-New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
 
-### EXAMPLE 2
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
+
 $params = @{
-	DisplayName = "Group Multi-stage Access Review"
-	DescriptionForAdmins = "New scheduled access review"
-	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
-	Scope = @{
+	displayName = "Review inactive guests on teams"
+	descriptionForAdmins = "Control guest user access to our teams."
+	descriptionForReviewers = "Information security is everyone's responsibility.
+Review our access policy for more."
+	instanceEnumerationScope = @{
 		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-		QueryType = "MicrosoftGraph"
+		query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
+		queryType = "MicrosoftGraph"
 	}
-	StageSettings = @(
+	scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewInactiveUsersQueryScope"
+		query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
+		queryType = "MicrosoftGraph"
+		inactiveDuration = "P30D"
+	}
+	reviewers = @(
 		@{
-			StageId = "1"
-			DurationInDays = 2
-			RecommendationsEnabled = $false
-			DecisionsThatWillMoveToNextStage = @(
+			query = "./owners"
+			queryType = "MicrosoftGraph"
+		}
+	)
+	fallbackReviewers = @(
+		@{
+			query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
+			queryType = "MicrosoftGraph"
+		}
+	)
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		recommendationsEnabled = $true
+		instanceDurationInDays = 3
+		recurrence = @{
+			pattern = @{
+				type = "absoluteMonthly"
+				dayOfMonth = 5
+				interval = 3
+			}
+			range = @{
+				type = "noEnd"
+				startDate = "2020-05-04T00:00:00.000Z"
+			}
+		}
+		defaultDecisionEnabled = $true
+		defaultDecision = "Deny"
+		autoApplyDecisionsEnabled = $true
+	}
+}
+
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+```
+
+$params = @{
+	displayName = "Review employee access to LinkedIn"
+	descriptionForAdmins = "Review employee access to LinkedIn"
+	scope = @{
+		"@odata.type" = "#microsoft.graph.principalResourceMembershipsScope"
+		principalScopes = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				query = "/users"
+				queryType = "MicrosoftGraph"
+			}
+		)
+		resourceScopes = @(
+			@{
+				"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+				query = "/servicePrincipals/bae11f90-7d5d-46ba-9f55-8112b59d92ae"
+				queryType = "MicrosoftGraph"
+			}
+		)
+	}
+	reviewers = @(
+		@{
+			query = "./manager"
+			queryType = "MicrosoftGraph"
+			queryRoot = "decisions"
+		}
+	)
+	backupReviewers = @(
+	)
+	fallbackReviewers = @(
+		@{
+			query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+			queryType = "MicrosoftGraph"
+		}
+	)
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $true
+		defaultDecision = "Recommendation"
+		instanceDurationInDays = 180
+		autoApplyDecisionsEnabled = $true
+		recommendationsEnabled = $true
+		recurrence = @{
+			pattern = @{
+				type = "absoluteMonthly"
+				interval = 6
+				dayOfMonth = 0
+			}
+			range = @{
+				type = "numbered"
+				startDate = "2021-05-05"
+				endDate = "2022-05-05"
+			}
+		}
+	}
+}
+
+New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
+
+### -------------------------- EXAMPLE 4 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Identity.Governance
+```
+
+$params = @{
+	displayName = "Group Multi-stage Access Review"
+	descriptionForAdmins = "New scheduled access review"
+	descriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
+	scope = @{
+		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
+		query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
+		queryType = "MicrosoftGraph"
+	}
+	stageSettings = @(
+		@{
+			stageId = "1"
+			durationInDays = 2
+			recommendationsEnabled = $false
+			decisionsThatWillMoveToNextStage = @(
 				"NotReviewed"
 				"Approve"
 			)
-			Reviewers = @(
+			reviewers = @(
 				@{
-					Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-					QueryType = "MicrosoftGraph"
+					query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
+					queryType = "MicrosoftGraph"
 				}
 			)
 		}
 		@{
-			StageId = "2"
-			DependsOn = @(
+			stageId = "2"
+			dependsOn = @(
 				"1"
 			)
-			DurationInDays = 2
-			RecommendationsEnabled = $true
-			Reviewers = @(
+			durationInDays = 2
+			recommendationsEnabled = $true
+			reviewers = @(
 				@{
-					Query = "./manager"
-					QueryType = "MicrosoftGraph"
-					QueryRoot = "decisions"
+					query = "./manager"
+					queryType = "MicrosoftGraph"
+					queryRoot = "decisions"
 				}
 			)
-			FallbackReviewers = @(
+			fallbackReviewers = @(
 				@{
-					Query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
-					QueryType = "MicrosoftGraph"
+					query = "/groups/072ac5f4-3f13-4088-ab30-0a276f3e6322/transitiveMembers"
+					queryType = "MicrosoftGraph"
 				}
 			)
 		}
 	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $false
-		DefaultDecision = "None"
-		InstanceDurationInDays = 4
-		Recurrence = @{
-			Pattern = @{
-				Type = "weekly"
-				Interval = 1
+	settings = @{
+		mailNotificationsEnabled = $true
+		reminderNotificationsEnabled = $true
+		justificationRequiredOnApproval = $true
+		defaultDecisionEnabled = $false
+		defaultDecision = "None"
+		instanceDurationInDays = 4
+		recurrence = @{
+			pattern = @{
+				type = "weekly"
+				interval = 1
 			}
-			Range = @{
-				Type = "noEnd"
-				StartDate = "2020-09-08T12:02:30.667Z"
+			range = @{
+				type = "noEnd"
+				startDate = "2020-09-08T12:02:30.667Z"
 			}
 		}
-		DecisionHistoriesForReviewersEnabled = $true
+		decisionHistoriesForReviewersEnabled = $true
 	}
 }
-New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-$params = @{
-	DisplayName = "Review inactive guests on teams"
-	DescriptionForAdmins = "Control guest user access to our teams."
-	DescriptionForReviewers = "Information security is everyone's responsibility. Review our access policy for more."
-	InstanceEnumerationScope = @{
-		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		Query = "/groups?$filter=(groupTypes/any(c:c+eq+'Unified') and resourceProvisioningOptions/Any(x:x eq 'Team')')"
-		QueryType = "MicrosoftGraph"
-	}
-	Scope = @{
-		"@odata.type" = "#microsoft.graph.accessReviewInactiveUsersQueryScope"
-		Query = "./members/microsoft.graph.user/?$filter=(userType eq 'Guest')"
-		QueryType = "MicrosoftGraph"
-		InactiveDuration = "P30D"
-	}
-	Reviewers = @(
-		@{
-			Query = "./owners"
-			QueryType = "MicrosoftGraph"
-		}
-	)
-	FallbackReviewers = @(
-		@{
-			Query = "/users/fc9a2c2b-1ddc-486d-a211-5fe8ca77fa1f"
-			QueryType = "MicrosoftGraph"
-		}
-	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		RecommendationsEnabled = $true
-		InstanceDurationInDays = 3
-		Recurrence = @{
-			Pattern = @{
-				Type = "absoluteMonthly"
-				DayOfMonth = 5
-				Interval = 3
-			}
-			Range = @{
-				Type = "noEnd"
-				StartDate = "2020-05-04T00:00:00.000Z"
-			}
-		}
-		DefaultDecisionEnabled = $true
-		DefaultDecision = "Deny"
-		AutoApplyDecisionsEnabled = $true
-	}
-}
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
-
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Identity.Governance
-$params = @{
-	DisplayName = "Test create"
-	DescriptionForAdmins = "New scheduled access review"
-	DescriptionForReviewers = "If you have any questions, contact jerry@contoso.com"
-	Scope = @{
-		"@odata.type" = "#microsoft.graph.accessReviewQueryScope"
-		Query = "/groups/02f3bafb-448c-487c-88c2-5fd65ce49a41/transitiveMembers"
-		QueryType = "MicrosoftGraph"
-	}
-	Reviewers = @(
-		@{
-			Query = "/users/398164b1-5196-49dd-ada2-364b49f99b27"
-			QueryType = "MicrosoftGraph"
-		}
-	)
-	Settings = @{
-		MailNotificationsEnabled = $true
-		ReminderNotificationsEnabled = $true
-		JustificationRequiredOnApproval = $true
-		DefaultDecisionEnabled = $false
-		DefaultDecision = "None"
-		InstanceDurationInDays = 1
-		RecommendationsEnabled = $true
-		Recurrence = @{
-			Pattern = @{
-				Type = "weekly"
-				Interval = 1
-			}
-			Range = @{
-				Type = "noEnd"
-				StartDate = "2020-09-08T12:02:30.667Z"
-			}
-		}
-	}
-}
-New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
-```
 
 ## PARAMETERS
 
@@ -280,7 +286,7 @@ Defines the list of additional users or group members to be notified of the acce
 To construct, see NOTES section for ADDITIONALNOTIFICATIONRECIPIENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewNotificationRecipientItem[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewNotificationRecipientItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -295,7 +301,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -311,7 +317,7 @@ accessReviewScheduleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScheduleDefinition
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -327,7 +333,7 @@ userIdentity
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserIdentity
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserIdentity
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -344,7 +350,7 @@ Supports $select.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -360,7 +366,7 @@ Description provided by review creators to provide more context of the review to
 Supports $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -378,7 +384,7 @@ Email notifications support up to 256 characters.
 Supports $select.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -395,7 +401,7 @@ Supports $select and $orderBy.
 Required on create.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -417,7 +423,7 @@ NOTE: The value of this property will be ignored if fallback reviewers are assig
 To construct, see NOTES section for FALLBACKREVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -433,7 +439,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -448,7 +454,7 @@ Accept wildcard characters: False
 accessReviewScope
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -467,7 +473,7 @@ If a review has multiple resources and multiple instances, each resource will ha
 To construct, see NOTES section for INSTANCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewInstance[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewInstance[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -484,7 +490,7 @@ Supports $select.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -505,7 +511,7 @@ NOTE: The value of this property will be ignored if reviewers are assigned throu
 To construct, see NOTES section for REVIEWERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewReviewerScope[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewReviewerScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -520,7 +526,7 @@ Accept wildcard characters: False
 accessReviewScope
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -536,7 +542,7 @@ accessReviewScheduleSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewScheduleSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -556,7 +562,7 @@ When this property is defined, its settings are used instead of the correspondin
 To construct, see NOTES section for STAGESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessReviewStageSettings[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewStageSettings[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -574,7 +580,7 @@ Supports $select, $orderby, and $filter (eq only).
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -589,7 +595,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -605,7 +611,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -622,9 +628,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewScheduleDefinition
+
 ## NOTES
 
 ALIASES
@@ -676,6 +684,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
       - `[ApplyResult <String>]`: The result of applying the decision. Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported. Supports $select, $orderby, and $filter (eq only). Read-only.
       - `[Decision <String>]`: Result of the review. Possible values: Approve, Deny, NotReviewed, or DontKnow. Supports $select, $orderby, and $filter (eq only).
+      - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
       - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
       - `[Principal <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -718,6 +729,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[InstanceDurationInDays <Int32?>]`: Duration of an access review instance in days. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its durationInDays setting will be used instead of the value of this property.
     - `[JustificationRequiredOnApproval <Boolean?>]`: Indicates whether reviewers are required to provide justification with their decision. Default value is false.
     - `[MailNotificationsEnabled <Boolean?>]`: Indicates whether emails are enabled or disabled. Default value is false.
+    - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting[]>]`: Optional. Describes the types of insights that aid reviewers to make access review decisions. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationInsightSettings setting will be used instead of the value of this property.
+    - `[RecommendationLookBackDuration <TimeSpan?>]`: Optional field. Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to deny if the user is inactive during the look-back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationLookBackDuration setting will be used instead of the value of this property.
     - `[RecommendationsEnabled <Boolean?>]`: Indicates whether decision recommendations are enabled or disabled. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationsEnabled setting will be used instead of the value of this property.
     - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -743,6 +756,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DependsOn <String[]>]`: Defines the sequential or parallel order of the stages and depends on the stageId. Only sequential stages are currently supported. For example, if stageId is 2, then dependsOn must be 1. If stageId is 1, do not specify dependsOn. Required if stageId is not 1.
     - `[DurationInDays <Int32?>]`: The duration of the stage. Required.  NOTE: The cumulative value of this property across all stages  1. Will override the instanceDurationInDays setting on the accessReviewScheduleDefinition object. 2. Cannot exceed the length of one recurrence. That is, if the review recurs weekly, the cumulative durationInDays cannot exceed 7.
     - `[FallbackReviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: If provided, the fallback reviewers are asked to complete a review if the primary reviewers do not exist. For example, if managers are selected as reviewers and a principal under review does not have a manager in Azure AD, the fallback reviewers are asked to review that principal. NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition object.
+    - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting[]>]`: 
     - `[RecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled. Required. NOTE: The value of this property will override override the corresponding setting on the accessReviewScheduleDefinition object.
     - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition.
     - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings object. The stageId will be used by the dependsOn property to indicate the order of the stages. Required.
@@ -779,6 +793,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[AppliedDateTime <DateTime?>]`: The timestamp when the approval decision was applied.00000000-0000-0000-0000-000000000000 if the assigned reviewer hasn't applied the decision or it was automatically applied. The DatetimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.  Supports $select. Read-only.
     - `[ApplyResult <String>]`: The result of applying the decision. Possible values: New, AppliedSuccessfully, AppliedWithUnknownFailure, AppliedSuccessfullyButObjectNotFound and ApplyNotSupported. Supports $select, $orderby, and $filter (eq only). Read-only.
     - `[Decision <String>]`: Result of the review. Possible values: Approve, Deny, NotReviewed, or DontKnow. Supports $select, $orderby, and $filter (eq only).
+    - `[Insights <IMicrosoftGraphGovernanceInsight[]>]`: Insights are recommendations to reviewers on whether to approve or deny a decision. There can be multiple insights associated with an accessReviewInstanceDecisionItem.
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[InsightCreatedDateTime <DateTime?>]`: Indicates when the insight was created.
     - `[Justification <String>]`: Justification left by the reviewer when they made the decision.
     - `[Principal <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -828,6 +845,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[InstanceDurationInDays <Int32?>]`: Duration of an access review instance in days. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its durationInDays setting will be used instead of the value of this property.
   - `[JustificationRequiredOnApproval <Boolean?>]`: Indicates whether reviewers are required to provide justification with their decision. Default value is false.
   - `[MailNotificationsEnabled <Boolean?>]`: Indicates whether emails are enabled or disabled. Default value is false.
+  - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting[]>]`: Optional. Describes the types of insights that aid reviewers to make access review decisions. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationInsightSettings setting will be used instead of the value of this property.
+  - `[RecommendationLookBackDuration <TimeSpan?>]`: Optional field. Indicates the period of inactivity (with respect to the start date of the review instance) that recommendations will be configured from. The recommendation will be to deny if the user is inactive during the look-back duration. For reviews of groups and Azure AD roles, any duration is accepted. For reviews of applications, 30 days is the maximum duration. If not specified, the duration is 30 days. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationLookBackDuration setting will be used instead of the value of this property.
   - `[RecommendationsEnabled <Boolean?>]`: Indicates whether decision recommendations are enabled or disabled. NOTE: If the stageSettings of the accessReviewScheduleDefinition object is defined, its recommendationsEnabled setting will be used instead of the value of this property.
   - `[Recurrence <IMicrosoftGraphPatternedRecurrence>]`: patternedRecurrence
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -857,12 +876,10 @@ To create the parameters described below, construct a hash table containing the 
     - `[Query <String>]`: The query specifying who will be the reviewer.
     - `[QueryRoot <String>]`: In the scenario where reviewers need to be specified dynamically, this property is used to indicate the relative source of the query. This property is only required if a relative query, for example, ./manager, is specified. Possible value: decisions.
     - `[QueryType <String>]`: The type of query. Examples include MicrosoftGraph and ARM.
+  - `[RecommendationInsightSettings <IMicrosoftGraphAccessReviewRecommendationInsightSetting[]>]`: 
   - `[RecommendationsEnabled <Boolean?>]`: Indicates whether showing recommendations to reviewers is enabled. Required. NOTE: The value of this property will override override the corresponding setting on the accessReviewScheduleDefinition object.
   - `[Reviewers <IMicrosoftGraphAccessReviewReviewerScope[]>]`: Defines who the reviewers are. If none are specified, the review is a self-review (users review their own access).  For examples of options for assigning reviewers, see Assign reviewers to your access review definition using the Microsoft Graph API. NOTE: The value of this property will override the corresponding setting on the accessReviewScheduleDefinition.
   - `[StageId <String>]`: Unique identifier of the accessReviewStageSettings object. The stageId will be used by the dependsOn property to indicate the order of the stages. Required.
 
 ## RELATED LINKS
-[New-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
 
-## RELATED LINKS
-[New-MgBetaBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)

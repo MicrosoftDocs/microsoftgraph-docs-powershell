@@ -1,62 +1,95 @@
 ---
-external help file: Microsoft.Graph.Files-help.xml
+external help file:
 Module Name: Microsoft.Graph.Files
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/publish-mgsharelistcontenttype
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.files/remove-mgdrive
 schema: 2.0.0
 ---
 
-# Publish-MgShareListContentType
+# Remove-MgDrive
 
 ## SYNOPSIS
-Publishes a [contentType][] present in the content type hub site.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
+Delete entity from drives
 
 ## SYNTAX
 
-### Publish (Default)
+### Delete (Default)
 ```
-Publish-MgShareListContentType -ContentTypeId <String> -SharedDriveItemId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgDrive -DriveId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### PublishViaIdentity
+### DeleteViaIdentity
 ```
-Publish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgDrive -InputObject <IFilesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Publishes a [contentType][] present in the content type hub site.
+Delete entity from drives
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Files
 ```
 
-{{ Add output here }}
+# A UPN can also be used as -UserId.
+Get-MgUserDefaultDrive -UserId $userId
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Files
 ```
 
-{{ Add output here }}
+Get-MgUserDefaultDrive -UserId $userId
+
+### -------------------------- EXAMPLE 3 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Files
+```
+
+Get-MgGroupDefaultDrive -GroupId $groupId
+
+### -------------------------- EXAMPLE 4 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Sites
+```
+
+Get-MgSiteDefaultDrive -SiteId $siteId
+
+### -------------------------- EXAMPLE 5 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Files
+```
+
+Get-MgDrive -DriveId $driveId
 
 ## PARAMETERS
 
-### -ContentTypeId
-The unique identifier of contentType
+### -DriveId
+The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: Publish
+Type: System.String
+Parameter Sets: Delete
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IfMatch
+ETag
+
+```yaml
+Type: System.String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -68,8 +101,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFilesIdentity
-Parameter Sets: PublishViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IFilesIdentity
+Parameter Sets: DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -83,7 +116,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -94,26 +127,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SharedDriveItemId
-The unique identifier of sharedDriveItem
-
-```yaml
-Type: String
-Parameter Sets: Publish
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +164,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IFilesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -185,4 +205,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
+

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Users.Functions
-Module Guid: b53508ce-473d-40c4-af4d-c4ec94c881f9
+Module Guid: 50397432-5c20-4e7b-9711-49ba822ffeda
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -184,9 +184,6 @@ Invoke function getFileVaultKey
 ### [Get-MgBetaUserManagedDeviceNonCompliantSetting](Get-MgBetaUserManagedDeviceNonCompliantSetting.md)
 Invoke function getNonCompliantSettings
 
-### [Get-MgBetaUserManagedDeviceOemWarranty](Get-MgBetaUserManagedDeviceOemWarranty.md)
-Invoke function getOemWarranty
-
 ### [Get-MgBetaUserManagedDeviceWithAppFailure](Get-MgBetaUserManagedDeviceWithAppFailure.md)
 Retrieves the list of devices with failed apps
 
@@ -203,6 +200,9 @@ Invoke function getRecentNotebooks
 
 ### [Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl](Get-MgBetaUserOnlineMeetingVirtualAppointmentJoinWebUrl.md)
 Invoke function getVirtualAppointmentJoinWebUrl
+
+### [Get-MgBetaUserPermissionGrantDelta](Get-MgBetaUserPermissionGrantDelta.md)
+Invoke function delta
 
 ### [Get-MgBetaUserPlannerAllDelta](Get-MgBetaUserPlannerAllDelta.md)
 Invoke function delta
@@ -225,7 +225,7 @@ Invoke function delta
 ### [Get-MgBetaUserTodoListDelta](Get-MgBetaUserTodoListDelta.md)
 Invoke function delta
 
-### [Get-MgBetaUserTodoListTaskDelta](Get-MgBetaUserTodoListTaskDelta.md)
+### [Get-MgBetaUserTodoTaskDelta](Get-MgBetaUserTodoTaskDelta.md)
 Invoke function delta
 
 ### [Invoke-MgBetaAppUserManagedDeviceDiagnostic](Invoke-MgBetaAppUserManagedDeviceDiagnostic.md)

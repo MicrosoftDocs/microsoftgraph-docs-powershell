@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Users
-Module Guid: 7b035ff6-5872-474f-9814-617b889b17c2
+Module Guid: be423d32-d102-476b-bd6a-74dc4e8a9fa9
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,6 +18,12 @@ These _default_ properties are noted in the Properties section.
 To get properties that are _not_ returned by default, do a GET operation for the user and specify the properties in a `$select` OData query option.
 Because the **user** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
+### [Get-MgBetaUserAppRoleAssignedResource](Get-MgBetaUserAppRoleAssignedResource.md)
+Get appRoleAssignedResources from users
+
+### [Get-MgBetaUserAppRoleAssignedResourceCount](Get-MgBetaUserAppRoleAssignedResourceCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaUserCount](Get-MgBetaUserCount.md)
 Get the number of the resource
 
@@ -30,6 +36,9 @@ Nullable.
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
 ### [Get-MgBetaUserCreatedObjectCount](Get-MgBetaUserCreatedObjectCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserCreatedObjectCountAsServicePrincipal](Get-MgBetaUserCreatedObjectCountAsServicePrincipal.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserDirectReport](Get-MgBetaUserDirectReport.md)
@@ -47,6 +56,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.user
 ### [Get-MgBetaUserDirectReportCount](Get-MgBetaUserDirectReportCount.md)
 Get the number of the resource
 
+### [Get-MgBetaUserDirectReportCountAsOrgContact](Get-MgBetaUserDirectReportCountAsOrgContact.md)
+Get the number of the resource
+
+### [Get-MgBetaUserDirectReportCountAsUser](Get-MgBetaUserDirectReportCountAsUser.md)
+Get the number of the resource
+
 ### [Get-MgBetaUserExtension](Get-MgBetaUserExtension.md)
 The collection of open extensions defined for the user.
 Supports $expand.
@@ -55,59 +70,60 @@ Nullable.
 ### [Get-MgBetaUserExtensionCount](Get-MgBetaUserExtensionCount.md)
 Get the number of the resource
 
+### [Get-MgBetaUserInsight](Get-MgBetaUserInsight.md)
+Get insights from users
+
+### [Get-MgBetaUserInsightShared](Get-MgBetaUserInsightShared.md)
+Access this property from the derived type itemInsights.
+
+### [Get-MgBetaUserInsightSharedCount](Get-MgBetaUserInsightSharedCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserInsightSharedLastSharedMethod](Get-MgBetaUserInsightSharedLastSharedMethod.md)
+Get lastSharedMethod from users
+
+### [Get-MgBetaUserInsightSharedResource](Get-MgBetaUserInsightSharedResource.md)
+Used for navigating to the item that was shared.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
+
+### [Get-MgBetaUserInsightTrending](Get-MgBetaUserInsightTrending.md)
+Access this property from the derived type itemInsights.
+
+### [Get-MgBetaUserInsightTrendingCount](Get-MgBetaUserInsightTrendingCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserInsightTrendingResource](Get-MgBetaUserInsightTrendingResource.md)
+Used for navigating to the trending document.
+
+### [Get-MgBetaUserInsightUsed](Get-MgBetaUserInsightUsed.md)
+Access this property from the derived type itemInsights.
+
+### [Get-MgBetaUserInsightUsedCount](Get-MgBetaUserInsightUsedCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserInsightUsedResource](Get-MgBetaUserInsightUsedResource.md)
+Used for navigating to the item that was used.
+For file attachments, the type is fileAttachment.
+For linked attachments, the type is driveItem.
+
 ### [Get-MgBetaUserLicenseDetail](Get-MgBetaUserLicenseDetail.md)
 Get licenseDetails from users
 
 ### [Get-MgBetaUserLicenseDetailCount](Get-MgBetaUserLicenseDetailCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserListCreatedObjectCountAsServicePrincipal](Get-MgBetaUserListCreatedObjectCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListDirectReportCountAsOrgContact](Get-MgBetaUserListDirectReportCountAsOrgContact.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListDirectReportCountAsUser](Get-MgBetaUserListDirectReportCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListMemberOfCountAsAdministrativeUnit](Get-MgBetaUserListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListMemberOfCountAsGroup](Get-MgBetaUserListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListOwnedDeviceCountAsDevice](Get-MgBetaUserListOwnedDeviceCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListOwnedDeviceCountAsEndpoint](Get-MgBetaUserListOwnedDeviceCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListOwnedObjectCountAsApplication](Get-MgBetaUserListOwnedObjectCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListOwnedObjectCountAsGroup](Get-MgBetaUserListOwnedObjectCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListOwnedObjectCountAsServicePrincipal](Get-MgBetaUserListOwnedObjectCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListRegisteredDeviceCountAsDevice](Get-MgBetaUserListRegisteredDeviceCountAsDevice.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListRegisteredDeviceCountAsEndpoint](Get-MgBetaUserListRegisteredDeviceCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaUserListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgBetaUserListTransitiveMemberOfCountAsGroup](Get-MgBetaUserListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
+### [Get-MgBetaUserMailboxSetting](Get-MgBetaUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
 
 ### [Get-MgBetaUserManager](Get-MgBetaUserManager.md)
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
-### [Get-MgBetaUserManager](Get-MgBetaUserManager.md)
+### [Get-MgBetaUserManagerByRef](Get-MgBetaUserManagerByRef.md)
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
@@ -124,6 +140,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaUserMemberOfCount](Get-MgBetaUserMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserMemberOfCountAsAdministrativeUnit](Get-MgBetaUserMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaUserMemberOfCountAsGroup](Get-MgBetaUserMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserNotification](Get-MgBetaUserNotification.md)
@@ -227,6 +249,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 ### [Get-MgBetaUserOwnedDeviceCount](Get-MgBetaUserOwnedDeviceCount.md)
 Get the number of the resource
 
+### [Get-MgBetaUserOwnedDeviceCountAsDevice](Get-MgBetaUserOwnedDeviceCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaUserOwnedDeviceCountAsEndpoint](Get-MgBetaUserOwnedDeviceCountAsEndpoint.md)
+Get the number of the resource
+
 ### [Get-MgBetaUserOwnedObject](Get-MgBetaUserOwnedObject.md)
 Directory objects that are owned by the user.
 Read-only.
@@ -243,6 +271,15 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
 ### [Get-MgBetaUserOwnedObjectCount](Get-MgBetaUserOwnedObjectCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserOwnedObjectCountAsApplication](Get-MgBetaUserOwnedObjectCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgBetaUserOwnedObjectCountAsGroup](Get-MgBetaUserOwnedObjectCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgBetaUserOwnedObjectCountAsServicePrincipal](Get-MgBetaUserOwnedObjectCountAsServicePrincipal.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserPhoto](Get-MgBetaUserPhoto.md)
@@ -270,6 +307,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 ### [Get-MgBetaUserRegisteredDeviceCount](Get-MgBetaUserRegisteredDeviceCount.md)
 Get the number of the resource
 
+### [Get-MgBetaUserRegisteredDeviceCountAsDevice](Get-MgBetaUserRegisteredDeviceCountAsDevice.md)
+Get the number of the resource
+
+### [Get-MgBetaUserRegisteredDeviceCountAsEndpoint](Get-MgBetaUserRegisteredDeviceCountAsEndpoint.md)
+Get the number of the resource
+
 ### [Get-MgBetaUserSetting](Get-MgBetaUserSetting.md)
 Get settings from users
 
@@ -280,10 +323,16 @@ Read the properties and relationships of a contactMergeSuggestions object.
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ### [Get-MgBetaUserSettingRegionalAndLanguageSetting](Get-MgBetaUserSettingRegionalAndLanguageSetting.md)
-Get the properties of a regionalAndLanguageSettings object.
+Retrieve the properties of a user's regionalAndLanguageSettings.
 
 ### [Get-MgBetaUserSettingShiftPreference](Get-MgBetaUserSettingShiftPreference.md)
 Retrieve the properties and relationships of a shiftPreferences object by ID.
+
+### [Get-MgBetaUserSponsor](Get-MgBetaUserSponsor.md)
+Get sponsors from users
+
+### [Get-MgBetaUserSponsorCount](Get-MgBetaUserSponsorCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserTodoList](Get-MgBetaUserTodoList.md)
 Read the properties and relationships of a todoTaskList object.
@@ -298,47 +347,47 @@ Nullable.
 ### [Get-MgBetaUserTodoListExtensionCount](Get-MgBetaUserTodoListExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTodoListTask](Get-MgBetaUserTodoListTask.md)
+### [Get-MgBetaUserTodoTask](Get-MgBetaUserTodoTask.md)
 Read the properties and relationships of a todoTask object.
 
-### [Get-MgBetaUserTodoListTaskAttachment](Get-MgBetaUserTodoListTaskAttachment.md)
+### [Get-MgBetaUserTodoTaskAttachment](Get-MgBetaUserTodoTaskAttachment.md)
 Read the properties and relationships of a taskFileAttachment object.
 
-### [Get-MgBetaUserTodoListTaskAttachmentContent](Get-MgBetaUserTodoListTaskAttachmentContent.md)
+### [Get-MgBetaUserTodoTaskAttachmentContent](Get-MgBetaUserTodoTaskAttachmentContent.md)
 Get media content for the navigation property attachments from users
 
-### [Get-MgBetaUserTodoListTaskAttachmentCount](Get-MgBetaUserTodoListTaskAttachmentCount.md)
+### [Get-MgBetaUserTodoTaskAttachmentCount](Get-MgBetaUserTodoTaskAttachmentCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTodoListTaskAttachmentSession](Get-MgBetaUserTodoListTaskAttachmentSession.md)
+### [Get-MgBetaUserTodoTaskAttachmentSession](Get-MgBetaUserTodoTaskAttachmentSession.md)
 Get attachmentSessions from users
 
-### [Get-MgBetaUserTodoListTaskAttachmentSessionContent](Get-MgBetaUserTodoListTaskAttachmentSessionContent.md)
+### [Get-MgBetaUserTodoTaskAttachmentSessionContent](Get-MgBetaUserTodoTaskAttachmentSessionContent.md)
 The content streams that are uploaded.
 
-### [Get-MgBetaUserTodoListTaskAttachmentSessionCount](Get-MgBetaUserTodoListTaskAttachmentSessionCount.md)
+### [Get-MgBetaUserTodoTaskAttachmentSessionCount](Get-MgBetaUserTodoTaskAttachmentSessionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTodoListTaskChecklistItem](Get-MgBetaUserTodoListTaskChecklistItem.md)
+### [Get-MgBetaUserTodoTaskChecklistItem](Get-MgBetaUserTodoTaskChecklistItem.md)
 Read the properties and relationships of a checklistItem object.
 
-### [Get-MgBetaUserTodoListTaskChecklistItemCount](Get-MgBetaUserTodoListTaskChecklistItemCount.md)
+### [Get-MgBetaUserTodoTaskChecklistItemCount](Get-MgBetaUserTodoTaskChecklistItemCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTodoListTaskCount](Get-MgBetaUserTodoListTaskCount.md)
+### [Get-MgBetaUserTodoTaskCount](Get-MgBetaUserTodoTaskCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTodoListTaskExtension](Get-MgBetaUserTodoListTaskExtension.md)
+### [Get-MgBetaUserTodoTaskExtension](Get-MgBetaUserTodoTaskExtension.md)
 The collection of open extensions defined for the task.
 Nullable.
 
-### [Get-MgBetaUserTodoListTaskExtensionCount](Get-MgBetaUserTodoListTaskExtensionCount.md)
+### [Get-MgBetaUserTodoTaskExtensionCount](Get-MgBetaUserTodoTaskExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserTodoListTaskLinkedResource](Get-MgBetaUserTodoListTaskLinkedResource.md)
+### [Get-MgBetaUserTodoTaskLinkedResource](Get-MgBetaUserTodoTaskLinkedResource.md)
 Read the properties and relationships of a linkedResource object.
 
-### [Get-MgBetaUserTodoListTaskLinkedResourceCount](Get-MgBetaUserTodoListTaskLinkedResourceCount.md)
+### [Get-MgBetaUserTodoTaskLinkedResourceCount](Get-MgBetaUserTodoTaskLinkedResourceCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserTransitiveMemberOf](Get-MgBetaUserTransitiveMemberOf.md)
@@ -352,6 +401,12 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgBetaUserTransitiveMemberOfCount](Get-MgBetaUserTransitiveMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgBetaUserTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaUserTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaUserTransitiveMemberOfCountAsGroup](Get-MgBetaUserTransitiveMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserTransitiveReport](Get-MgBetaUserTransitiveReport.md)
@@ -371,6 +426,15 @@ To get properties that are not returned by default, do a GET operation and speci
 
 ### [New-MgBetaUserExtension](New-MgBetaUserExtension.md)
 Create new navigation property to extensions for users
+
+### [New-MgBetaUserInsightShared](New-MgBetaUserInsightShared.md)
+Create new navigation property to shared for users
+
+### [New-MgBetaUserInsightTrending](New-MgBetaUserInsightTrending.md)
+Create new navigation property to trending for users
+
+### [New-MgBetaUserInsightUsed](New-MgBetaUserInsightUsed.md)
+Create new navigation property to used for users
 
 ### [New-MgBetaUserNotification](New-MgBetaUserNotification.md)
 Create new navigation property to notifications for users
@@ -447,8 +511,26 @@ To learn more, see deletedItems.
 ### [Remove-MgBetaUserExtension](Remove-MgBetaUserExtension.md)
 Delete navigation property extensions for users
 
+### [Remove-MgBetaUserInsight](Remove-MgBetaUserInsight.md)
+Delete navigation property insights for users
+
+### [Remove-MgBetaUserInsightShared](Remove-MgBetaUserInsightShared.md)
+Delete navigation property shared for users
+
+### [Remove-MgBetaUserInsightTrending](Remove-MgBetaUserInsightTrending.md)
+Delete navigation property trending for users
+
+### [Remove-MgBetaUserInsightUsed](Remove-MgBetaUserInsightUsed.md)
+Delete navigation property used for users
+
 ### [Remove-MgBetaUserLicenseDetail](Remove-MgBetaUserLicenseDetail.md)
 Delete navigation property licenseDetails for users
+
+### [Remove-MgBetaUserManager](Remove-MgBetaUserManager.md)
+Remove a user's manager.
+
+### [Remove-MgBetaUserManagerByRef](Remove-MgBetaUserManagerByRef.md)
+Remove a user's manager.
 
 ### [Remove-MgBetaUserNotification](Remove-MgBetaUserNotification.md)
 Delete navigation property notifications for users
@@ -526,7 +608,7 @@ Delete navigation property extensions for users
 Deletes a linkedResource object.
 
 ### [Set-MgBetaUserManagerByRef](Set-MgBetaUserManagerByRef.md)
-Use this API to assign a user's manager.
+Assign a user's manager.
 
 ### [Set-MgBetaUserPhotoContent](Set-MgBetaUserPhotoContent.md)
 Update media content for the navigation property photo in users
@@ -545,8 +627,23 @@ Compare member and guest default permissions to see properties they can manage.
 ### [Update-MgBetaUserExtension](Update-MgBetaUserExtension.md)
 Update the navigation property extensions in users
 
+### [Update-MgBetaUserInsight](Update-MgBetaUserInsight.md)
+Update the navigation property insights in users
+
+### [Update-MgBetaUserInsightShared](Update-MgBetaUserInsightShared.md)
+Update the navigation property shared in users
+
+### [Update-MgBetaUserInsightTrending](Update-MgBetaUserInsightTrending.md)
+Update the navigation property trending in users
+
+### [Update-MgBetaUserInsightUsed](Update-MgBetaUserInsightUsed.md)
+Update the navigation property used in users
+
 ### [Update-MgBetaUserLicenseDetail](Update-MgBetaUserLicenseDetail.md)
 Update the navigation property licenseDetails in users
+
+### [Update-MgBetaUserMailboxSetting](Update-MgBetaUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaUserNotification](Update-MgBetaUserNotification.md)
 Update the navigation property notifications in users

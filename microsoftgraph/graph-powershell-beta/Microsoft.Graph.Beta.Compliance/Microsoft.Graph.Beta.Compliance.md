@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Compliance
-Module Guid: c9e0859a-16da-4dca-b57f-c9cd26d5db0d
+Module Guid: bc4ea23f-6d67-4b7c-aed7-5e47b012a9bc
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -58,6 +58,9 @@ Read the properties and relationships of a custodian object.
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianCount](Get-MgBetaComplianceEdiscoveryCaseCustodianCount.md)
 Get the number of the resource
 
+### [Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation](Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation.md)
+Get lastIndexOperation from compliance
+
 ### [Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource](Get-MgBetaComplianceEdiscoveryCaseCustodianSiteSource.md)
 Read the properties and relationships of a siteSource object.
 
@@ -113,9 +116,6 @@ This is the container for a mailbox and OneDrive for Business site.
 ### [Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSourceCount](Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSourceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaComplianceEdiscoveryCaseListOperationCountAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseListOperationCountAsCaseExportOperation.md)
-Get the number of the resource
-
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource.md)
 Read the properties and relationships of a noncustodialDataSource object.
 
@@ -125,6 +125,9 @@ Get the number of the resource
 ### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceDataSource.md)
 User source or SharePoint site data source as non-custodial data source.
 
+### [Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation](Get-MgBetaComplianceEdiscoveryCaseNoncustodialDataSourceLastIndexOperation.md)
+Get lastIndexOperation from compliance
+
 ### [Get-MgBetaComplianceEdiscoveryCaseOperation](Get-MgBetaComplianceEdiscoveryCaseOperation.md)
 Returns a list of case operation objects for this case.
 Nullable.
@@ -133,6 +136,9 @@ Nullable.
 Get the item of type microsoft.graph.ediscovery.caseOperation as microsoft.graph.ediscovery.caseExportOperation
 
 ### [Get-MgBetaComplianceEdiscoveryCaseOperationCount](Get-MgBetaComplianceEdiscoveryCaseOperationCount.md)
+Get the number of the resource
+
+### [Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation](Get-MgBetaComplianceEdiscoveryCaseOperationCountAsCaseExportOperation.md)
 Get the number of the resource
 
 ### [Get-MgBetaComplianceEdiscoveryCaseReviewSet](Get-MgBetaComplianceEdiscoveryCaseReviewSet.md)
@@ -195,12 +201,55 @@ Get the number of the resource
 ### [Get-MgBetaComplianceEdiscoveryCaseTagParent](Get-MgBetaComplianceEdiscoveryCaseTagParent.md)
 Returns the parent tag of the specified tag.
 
+### [Get-MgBetaPrivacySubjectRightsRequest](Get-MgBetaPrivacySubjectRightsRequest.md)
+Read the properties and relationships of a subjectRightsRequest object.
+
+### [Get-MgBetaPrivacySubjectRightsRequestApprover](Get-MgBetaPrivacySubjectRightsRequestApprover.md)
+Get approvers from privacy
+
+### [Get-MgBetaPrivacySubjectRightsRequestApproverCount](Get-MgBetaPrivacySubjectRightsRequestApproverCount.md)
+Get the number of the resource
+
+### [Get-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting](Get-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaPrivacySubjectRightsRequestCollaborator](Get-MgBetaPrivacySubjectRightsRequestCollaborator.md)
+Get collaborators from privacy
+
+### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorCount](Get-MgBetaPrivacySubjectRightsRequestCollaboratorCount.md)
+Get the number of the resource
+
+### [Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](Get-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaPrivacySubjectRightsRequestCount](Get-MgBetaPrivacySubjectRightsRequestCount.md)
+Get the number of the resource
+
+### [Get-MgBetaPrivacySubjectRightsRequestNote](Get-MgBetaPrivacySubjectRightsRequestNote.md)
+List of notes associated with the request.
+
+### [Get-MgBetaPrivacySubjectRightsRequestNoteCount](Get-MgBetaPrivacySubjectRightsRequestNoteCount.md)
+Get the number of the resource
+
+### [Get-MgBetaPrivacySubjectRightsRequestTeam](Get-MgBetaPrivacySubjectRightsRequestTeam.md)
+Information about the Microsoft Teams team that was created for the request.
+
 ### [Initialize-MgBetaComplianceEdiscoveryCaseCustodian](Initialize-MgBetaComplianceEdiscoveryCaseCustodian.md)
 Activate a custodian that has been released from a case to make them part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 ### [Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy](Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy.md)
 Invoke function asHierarchy
+
+### [Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics.md)
+Run an estimate of the number of emails and documents in the source collection.
+To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
 ### [Invoke-MgBetaReopenComplianceEdiscoveryCase](Invoke-MgBetaReopenComplianceEdiscoveryCase.md)
 Reopen an eDiscovery case that was closed.
@@ -256,6 +305,12 @@ Create new navigation property to additionalSources for compliance
 ### [New-MgBetaComplianceEdiscoveryCaseTag](New-MgBetaComplianceEdiscoveryCaseTag.md)
 Create a new tag for the specified case.
 The tags are used in review sets while reviewing content.
+
+### [New-MgBetaPrivacySubjectRightsRequest](New-MgBetaPrivacySubjectRightsRequest.md)
+Create a new subjectRightsRequest object.
+
+### [New-MgBetaPrivacySubjectRightsRequestNote](New-MgBetaPrivacySubjectRightsRequestNote.md)
+Create a new authoredNote object.
 
 ### [Publish-MgBetaComplianceEdiscoveryCaseCustodian](Publish-MgBetaComplianceEdiscoveryCaseCustodian.md)
 Release a custodian from a case.
@@ -324,6 +379,12 @@ Delete navigation property additionalSources for compliance
 ### [Remove-MgBetaComplianceEdiscoveryCaseTag](Remove-MgBetaComplianceEdiscoveryCaseTag.md)
 Delete a tag object.
 
+### [Remove-MgBetaPrivacySubjectRightsRequest](Remove-MgBetaPrivacySubjectRightsRequest.md)
+Delete navigation property subjectRightsRequests for privacy
+
+### [Remove-MgBetaPrivacySubjectRightsRequestNote](Remove-MgBetaPrivacySubjectRightsRequestNote.md)
+Delete navigation property notes for privacy
+
 ### [Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault](Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault.md)
 Reset a caseSettings object to the default values.
 
@@ -389,4 +450,16 @@ Update the navigation property additionalSources in compliance
 
 ### [Update-MgBetaComplianceEdiscoveryCaseTag](Update-MgBetaComplianceEdiscoveryCaseTag.md)
 Update the properties of a tag object.
+
+### [Update-MgBetaPrivacySubjectRightsRequest](Update-MgBetaPrivacySubjectRightsRequest.md)
+Update the properties of a subjectRightsRequest object.
+
+### [Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting](Update-MgBetaPrivacySubjectRightsRequestApproverMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting](Update-MgBetaPrivacySubjectRightsRequestCollaboratorMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaPrivacySubjectRightsRequestNote](Update-MgBetaPrivacySubjectRightsRequestNote.md)
+Update the navigation property notes in privacy
 

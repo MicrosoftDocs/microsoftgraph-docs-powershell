@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancial
 schema: 2.0.0
@@ -10,20 +10,17 @@ schema: 2.0.0
 ## SYNOPSIS
 Update financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaFinancial [-AdditionalProperties <Hashtable>] [-Companies <IMicrosoftGraphCompany[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancial [-AdditionalProperties <Hashtable>] [-Companies <IMicrosoftGraphCompany[]>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaFinancial -BodyParameter <IMicrosoftGraphFinancials> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancial -BodyParameter <IMicrosoftGraphFinancials> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +28,14 @@ Update financials
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -51,7 +48,7 @@ Update financials
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -67,7 +64,7 @@ financials
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphFinancials
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
 Parameter Sets: Update
 Aliases:
 
@@ -83,7 +80,22 @@ Accept wildcard characters: False
 To construct, see NOTES section for COMPANIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompany[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Id
+.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
+
 ## NOTES
 
 ALIASES
@@ -146,34 +160,35 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphFinancials>`: financials
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Companies <IMicrosoftGraphCompany[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Accounts <IMicrosoftGraphAccount[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Blocked <Boolean?>]`: 
       - `[Category <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
       - `[SubCategory <String>]`: 
     - `[AgedAccountsPayable <IMicrosoftGraphAgedAccountsPayable[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AgedAsOfDate <DateTime?>]`: 
       - `[BalanceDue <Decimal?>]`: 
       - `[CurrencyCode <String>]`: 
       - `[CurrentAmount <Decimal?>]`: 
+      - `[Id <String>]`: 
       - `[Name <String>]`: 
       - `[Period1Amount <Decimal?>]`: 
       - `[Period2Amount <Decimal?>]`: 
       - `[Period3Amount <Decimal?>]`: 
       - `[PeriodLengthFilter <String>]`: 
+      - `[VendorId <String>]`: 
       - `[VendorNumber <String>]`: 
     - `[AgedAccountsReceivable <IMicrosoftGraphAgedAccountsReceivable[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AgedAsOfDate <DateTime?>]`: 
       - `[BalanceDue <Decimal?>]`: 
       - `[CurrencyCode <String>]`: 
       - `[CurrentAmount <Decimal?>]`: 
+      - `[CustomerId <String>]`: 
       - `[CustomerNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[Name <String>]`: 
       - `[Period1Amount <Decimal?>]`: 
       - `[Period2Amount <Decimal?>]`: 
@@ -181,7 +196,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[PeriodLengthFilter <String>]`: 
     - `[BusinessProfileId <String>]`: 
     - `[CompanyInformation <IMicrosoftGraphCompanyInformation[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[City <String>]`: 
@@ -194,6 +208,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DisplayName <String>]`: 
       - `[Email <String>]`: 
       - `[FaxNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[Industry <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PhoneNumber <String>]`: 
@@ -201,27 +216,25 @@ To create the parameters described below, construct a hash table containing the 
       - `[TaxRegistrationNumber <String>]`: 
       - `[Website <String>]`: 
     - `[CountriesRegions <IMicrosoftGraphCountryRegion[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AddressFormat <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Currencies <IMicrosoftGraphCurrency[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AmountDecimalPlaces <String>]`: 
       - `[AmountRoundingPrecision <Decimal?>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Symbol <String>]`: 
     - `[CustomerPaymentJournals <IMicrosoftGraphCustomerPaymentJournal[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[BalancingAccountId <String>]`: 
       - `[BalancingAccountNumber <String>]`: 
       - `[Code <String>]`: 
       - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Amount <Decimal?>]`: 
         - `[AppliesToInvoiceId <String>]`: 
         - `[AppliesToInvoiceNumber <String>]`: 
@@ -229,7 +242,6 @@ To create the parameters described below, construct a hash table containing the 
         - `[ContactId <String>]`: 
         - `[Customer <IMicrosoftGraphCustomer>]`: customer
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
           - `[Blocked <String>]`: 
           - `[Currency <IMicrosoftGraphCurrency>]`: currency
@@ -237,38 +249,39 @@ To create the parameters described below, construct a hash table containing the 
           - `[CurrencyId <String>]`: 
           - `[DisplayName <String>]`: 
           - `[Email <String>]`: 
+          - `[Id <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
           - `[Number <String>]`: 
           - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Code <String>]`: 
             - `[DisplayName <String>]`: 
+            - `[Id <String>]`: 
             - `[LastModifiedDateTime <DateTime?>]`: 
           - `[PaymentMethodId <String>]`: 
           - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
             - `[Code <String>]`: 
             - `[DiscountDateCalculation <String>]`: 
             - `[DiscountPercent <Decimal?>]`: 
             - `[DisplayName <String>]`: 
             - `[DueDateCalculation <String>]`: 
+            - `[Id <String>]`: 
             - `[LastModifiedDateTime <DateTime?>]`: 
           - `[PaymentTermsId <String>]`: 
           - `[PhoneNumber <String>]`: 
           - `[Picture <IMicrosoftGraphPicture[]>]`: 
-            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Content <Byte[]>]`: 
             - `[ContentType <String>]`: 
             - `[Height <Int32?>]`: 
+            - `[Id <String>]`: 
             - `[Width <Int32?>]`: 
           - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Code <String>]`: 
             - `[DisplayName <String>]`: 
+            - `[Id <String>]`: 
             - `[LastModifiedDateTime <DateTime?>]`: 
           - `[ShipmentMethodId <String>]`: 
           - `[TaxAreaDisplayName <String>]`: 
@@ -282,34 +295,36 @@ To create the parameters described below, construct a hash table containing the 
         - `[Description <String>]`: 
         - `[DocumentNumber <String>]`: 
         - `[ExternalDocumentNumber <String>]`: 
+        - `[Id <String>]`: 
         - `[JournalDisplayName <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[LineNumber <Int32?>]`: 
         - `[PostingDate <DateTime?>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
     - `[Customers <IMicrosoftGraphCustomer[]>]`: 
     - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Dimensions <IMicrosoftGraphDimension[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[DisplayName <String>]`: 
     - `[Employees <IMicrosoftGraphEmployee[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[BirthDate <DateTime?>]`: 
       - `[DisplayName <String>]`: 
       - `[Email <String>]`: 
       - `[EmploymentDate <DateTime?>]`: 
       - `[GivenName <String>]`: 
+      - `[Id <String>]`: 
       - `[JobTitle <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[MiddleName <String>]`: 
@@ -323,7 +338,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[Surname <String>]`: 
       - `[TerminationDate <DateTime?>]`: 
     - `[GeneralLedgerEntries <IMicrosoftGraphGeneralLedgerEntry[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AccountNumber <String>]`: 
@@ -332,19 +346,21 @@ To create the parameters described below, construct a hash table containing the 
       - `[Description <String>]`: 
       - `[DocumentNumber <String>]`: 
       - `[DocumentType <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[PostingDate <DateTime?>]`: 
+    - `[Id <String>]`: 
     - `[ItemCategories <IMicrosoftGraphItemCategory[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Items <IMicrosoftGraphItem[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[BaseUnitOfMeasureId <String>]`: 
       - `[Blocked <Boolean?>]`: 
       - `[DisplayName <String>]`: 
       - `[Gtin <String>]`: 
+      - `[Id <String>]`: 
       - `[Inventory <Decimal?>]`: 
       - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
       - `[ItemCategoryCode <String>]`: 
@@ -359,7 +375,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[UnitCost <Decimal?>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[AccountId <String>]`: 
       - `[AccountNumber <String>]`: 
@@ -368,17 +383,18 @@ To create the parameters described below, construct a hash table containing the 
       - `[Description <String>]`: 
       - `[DocumentNumber <String>]`: 
       - `[ExternalDocumentNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[JournalDisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[LineNumber <Int32?>]`: 
       - `[PostingDate <DateTime?>]`: 
     - `[Journals <IMicrosoftGraphJournal[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Account <IMicrosoftGraphAccount>]`: account
       - `[BalancingAccountId <String>]`: 
       - `[BalancingAccountNumber <String>]`: 
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Name <String>]`: 
@@ -411,7 +427,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[TotalTaxAmount <Decimal?>]`: 
       - `[UnitCost <Decimal?>]`: 
     - `[PurchaseInvoices <IMicrosoftGraphPurchaseInvoice[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[Currency <IMicrosoftGraphCurrency>]`: currency
       - `[CurrencyCode <String>]`: 
@@ -419,6 +434,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DiscountAmount <Decimal?>]`: 
       - `[DiscountAppliedBeforeTax <Boolean?>]`: 
       - `[DueDate <DateTime?>]`: 
+      - `[Id <String>]`: 
       - `[InvoiceDate <DateTime?>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
@@ -438,7 +454,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[TotalTaxAmount <Decimal?>]`: 
       - `[Vendor <IMicrosoftGraphVendor>]`: vendor
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[Balance <Decimal?>]`: 
         - `[Blocked <String>]`: 
@@ -447,6 +462,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[CurrencyId <String>]`: 
         - `[DisplayName <String>]`: 
         - `[Email <String>]`: 
+        - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Number <String>]`: 
         - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
@@ -489,7 +505,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesCreditMemos <IMicrosoftGraphSalesCreditMemo[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
       - `[BillToName <String>]`: 
@@ -507,6 +522,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DueDate <DateTime?>]`: 
       - `[Email <String>]`: 
       - `[ExternalDocumentNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[InvoiceId <String>]`: 
       - `[InvoiceNumber <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
@@ -549,7 +565,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesInvoices <IMicrosoftGraphSalesInvoice[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
       - `[BillToName <String>]`: 
@@ -567,6 +582,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DueDate <DateTime?>]`: 
       - `[Email <String>]`: 
       - `[ExternalDocumentNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[InvoiceDate <DateTime?>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
@@ -619,7 +635,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesOrders <IMicrosoftGraphSalesOrder[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
       - `[BillToName <String>]`: 
@@ -636,6 +651,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Email <String>]`: 
       - `[ExternalDocumentNumber <String>]`: 
       - `[FullyShipped <Boolean?>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
       - `[OrderDate <DateTime?>]`: 
@@ -680,7 +696,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[UnitOfMeasureId <String>]`: 
       - `[UnitPrice <Decimal?>]`: 
     - `[SalesQuotes <IMicrosoftGraphSalesQuote[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AcceptedDate <DateTime?>]`: 
       - `[BillToCustomerId <String>]`: 
       - `[BillToCustomerNumber <String>]`: 
@@ -698,6 +713,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[DueDate <DateTime?>]`: 
       - `[Email <String>]`: 
       - `[ExternalDocumentNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
       - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
@@ -720,9 +736,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[ShipmentMethods <IMicrosoftGraphShipmentMethod[]>]`: 
     - `[SystemVersion <String>]`: 
     - `[TaxAreas <IMicrosoftGraphTaxArea[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[TaxType <String>]`: 
     - `[TaxGroups <IMicrosoftGraphTaxGroup[]>]`: 
@@ -732,42 +748,44 @@ To create the parameters described below, construct a hash table containing the 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[TaxType <String>]`: 
     - `[UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Code <String>]`: 
       - `[DisplayName <String>]`: 
+      - `[Id <String>]`: 
       - `[InternationalStandardCode <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Vendors <IMicrosoftGraphVendor[]>]`: 
+  - `[Id <String>]`: 
 
 `COMPANIES <IMicrosoftGraphCompany[]>`: .
-  - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Accounts <IMicrosoftGraphAccount[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Blocked <Boolean?>]`: 
     - `[Category <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[SubCategory <String>]`: 
   - `[AgedAccountsPayable <IMicrosoftGraphAgedAccountsPayable[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AgedAsOfDate <DateTime?>]`: 
     - `[BalanceDue <Decimal?>]`: 
     - `[CurrencyCode <String>]`: 
     - `[CurrentAmount <Decimal?>]`: 
+    - `[Id <String>]`: 
     - `[Name <String>]`: 
     - `[Period1Amount <Decimal?>]`: 
     - `[Period2Amount <Decimal?>]`: 
     - `[Period3Amount <Decimal?>]`: 
     - `[PeriodLengthFilter <String>]`: 
+    - `[VendorId <String>]`: 
     - `[VendorNumber <String>]`: 
   - `[AgedAccountsReceivable <IMicrosoftGraphAgedAccountsReceivable[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AgedAsOfDate <DateTime?>]`: 
     - `[BalanceDue <Decimal?>]`: 
     - `[CurrencyCode <String>]`: 
     - `[CurrentAmount <Decimal?>]`: 
+    - `[CustomerId <String>]`: 
     - `[CustomerNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[Name <String>]`: 
     - `[Period1Amount <Decimal?>]`: 
     - `[Period2Amount <Decimal?>]`: 
@@ -775,7 +793,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[PeriodLengthFilter <String>]`: 
   - `[BusinessProfileId <String>]`: 
   - `[CompanyInformation <IMicrosoftGraphCompanyInformation[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[City <String>]`: 
@@ -788,6 +805,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: 
     - `[Email <String>]`: 
     - `[FaxNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[Industry <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PhoneNumber <String>]`: 
@@ -795,27 +813,25 @@ To create the parameters described below, construct a hash table containing the 
     - `[TaxRegistrationNumber <String>]`: 
     - `[Website <String>]`: 
   - `[CountriesRegions <IMicrosoftGraphCountryRegion[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AddressFormat <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Currencies <IMicrosoftGraphCurrency[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AmountDecimalPlaces <String>]`: 
     - `[AmountRoundingPrecision <Decimal?>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Symbol <String>]`: 
   - `[CustomerPaymentJournals <IMicrosoftGraphCustomerPaymentJournal[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[BalancingAccountId <String>]`: 
     - `[BalancingAccountNumber <String>]`: 
     - `[Code <String>]`: 
     - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Amount <Decimal?>]`: 
       - `[AppliesToInvoiceId <String>]`: 
       - `[AppliesToInvoiceNumber <String>]`: 
@@ -823,7 +839,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[ContactId <String>]`: 
       - `[Customer <IMicrosoftGraphCustomer>]`: customer
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
         - `[Blocked <String>]`: 
         - `[Currency <IMicrosoftGraphCurrency>]`: currency
@@ -831,38 +846,39 @@ To create the parameters described below, construct a hash table containing the 
         - `[CurrencyId <String>]`: 
         - `[DisplayName <String>]`: 
         - `[Email <String>]`: 
+        - `[Id <String>]`: 
         - `[LastModifiedDateTime <DateTime?>]`: 
         - `[Number <String>]`: 
         - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Code <String>]`: 
           - `[DisplayName <String>]`: 
+          - `[Id <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
         - `[PaymentMethodId <String>]`: 
         - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[CalculateDiscountOnCreditMemos <Boolean?>]`: 
           - `[Code <String>]`: 
           - `[DiscountDateCalculation <String>]`: 
           - `[DiscountPercent <Decimal?>]`: 
           - `[DisplayName <String>]`: 
           - `[DueDateCalculation <String>]`: 
+          - `[Id <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
         - `[PaymentTermsId <String>]`: 
         - `[PhoneNumber <String>]`: 
         - `[Picture <IMicrosoftGraphPicture[]>]`: 
-          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Content <Byte[]>]`: 
           - `[ContentType <String>]`: 
           - `[Height <Int32?>]`: 
+          - `[Id <String>]`: 
           - `[Width <Int32?>]`: 
         - `[ShipmentMethod <IMicrosoftGraphShipmentMethod>]`: shipmentMethod
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Code <String>]`: 
           - `[DisplayName <String>]`: 
+          - `[Id <String>]`: 
           - `[LastModifiedDateTime <DateTime?>]`: 
         - `[ShipmentMethodId <String>]`: 
         - `[TaxAreaDisplayName <String>]`: 
@@ -876,34 +892,36 @@ To create the parameters described below, construct a hash table containing the 
       - `[Description <String>]`: 
       - `[DocumentNumber <String>]`: 
       - `[ExternalDocumentNumber <String>]`: 
+      - `[Id <String>]`: 
       - `[JournalDisplayName <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[LineNumber <Int32?>]`: 
       - `[PostingDate <DateTime?>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[CustomerPayments <IMicrosoftGraphCustomerPayment[]>]`: 
   - `[Customers <IMicrosoftGraphCustomer[]>]`: 
   - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Dimensions <IMicrosoftGraphDimension[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Code <String>]`: 
     - `[DimensionValues <IMicrosoftGraphDimensionValue[]>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[DisplayName <String>]`: 
   - `[Employees <IMicrosoftGraphEmployee[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[BirthDate <DateTime?>]`: 
     - `[DisplayName <String>]`: 
     - `[Email <String>]`: 
     - `[EmploymentDate <DateTime?>]`: 
     - `[GivenName <String>]`: 
+    - `[Id <String>]`: 
     - `[JobTitle <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[MiddleName <String>]`: 
@@ -917,7 +935,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Surname <String>]`: 
     - `[TerminationDate <DateTime?>]`: 
   - `[GeneralLedgerEntries <IMicrosoftGraphGeneralLedgerEntry[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AccountNumber <String>]`: 
@@ -926,19 +943,21 @@ To create the parameters described below, construct a hash table containing the 
     - `[Description <String>]`: 
     - `[DocumentNumber <String>]`: 
     - `[DocumentType <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[PostingDate <DateTime?>]`: 
+  - `[Id <String>]`: 
   - `[ItemCategories <IMicrosoftGraphItemCategory[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Items <IMicrosoftGraphItem[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[BaseUnitOfMeasureId <String>]`: 
     - `[Blocked <Boolean?>]`: 
     - `[DisplayName <String>]`: 
     - `[Gtin <String>]`: 
+    - `[Id <String>]`: 
     - `[Inventory <Decimal?>]`: 
     - `[ItemCategory <IMicrosoftGraphItemCategory>]`: itemCategory
     - `[ItemCategoryCode <String>]`: 
@@ -953,7 +972,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[UnitCost <Decimal?>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[AccountId <String>]`: 
     - `[AccountNumber <String>]`: 
@@ -962,17 +980,18 @@ To create the parameters described below, construct a hash table containing the 
     - `[Description <String>]`: 
     - `[DocumentNumber <String>]`: 
     - `[ExternalDocumentNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[JournalDisplayName <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[LineNumber <Int32?>]`: 
     - `[PostingDate <DateTime?>]`: 
   - `[Journals <IMicrosoftGraphJournal[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Account <IMicrosoftGraphAccount>]`: account
     - `[BalancingAccountId <String>]`: 
     - `[BalancingAccountNumber <String>]`: 
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[JournalLines <IMicrosoftGraphJournalLine[]>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Name <String>]`: 
@@ -1005,7 +1024,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[TotalTaxAmount <Decimal?>]`: 
     - `[UnitCost <Decimal?>]`: 
   - `[PurchaseInvoices <IMicrosoftGraphPurchaseInvoice[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[BuyFromAddress <IMicrosoftGraphPostalAddressType>]`: postalAddressType
     - `[Currency <IMicrosoftGraphCurrency>]`: currency
     - `[CurrencyCode <String>]`: 
@@ -1013,6 +1031,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DiscountAmount <Decimal?>]`: 
     - `[DiscountAppliedBeforeTax <Boolean?>]`: 
     - `[DueDate <DateTime?>]`: 
+    - `[Id <String>]`: 
     - `[InvoiceDate <DateTime?>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
@@ -1032,7 +1051,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[TotalTaxAmount <Decimal?>]`: 
     - `[Vendor <IMicrosoftGraphVendor>]`: vendor
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[Address <IMicrosoftGraphPostalAddressType>]`: postalAddressType
       - `[Balance <Decimal?>]`: 
       - `[Blocked <String>]`: 
@@ -1041,6 +1059,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[CurrencyId <String>]`: 
       - `[DisplayName <String>]`: 
       - `[Email <String>]`: 
+      - `[Id <String>]`: 
       - `[LastModifiedDateTime <DateTime?>]`: 
       - `[Number <String>]`: 
       - `[PaymentMethod <IMicrosoftGraphPaymentMethod>]`: paymentMethod
@@ -1083,7 +1102,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesCreditMemos <IMicrosoftGraphSalesCreditMemo[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
     - `[BillToName <String>]`: 
@@ -1101,6 +1119,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DueDate <DateTime?>]`: 
     - `[Email <String>]`: 
     - `[ExternalDocumentNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[InvoiceId <String>]`: 
     - `[InvoiceNumber <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
@@ -1143,7 +1162,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesInvoices <IMicrosoftGraphSalesInvoice[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
     - `[BillToName <String>]`: 
@@ -1161,6 +1179,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DueDate <DateTime?>]`: 
     - `[Email <String>]`: 
     - `[ExternalDocumentNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[InvoiceDate <DateTime?>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
@@ -1213,7 +1232,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesOrders <IMicrosoftGraphSalesOrder[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
     - `[BillToName <String>]`: 
@@ -1230,6 +1248,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Email <String>]`: 
     - `[ExternalDocumentNumber <String>]`: 
     - `[FullyShipped <Boolean?>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[OrderDate <DateTime?>]`: 
@@ -1274,7 +1293,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[UnitOfMeasureId <String>]`: 
     - `[UnitPrice <Decimal?>]`: 
   - `[SalesQuotes <IMicrosoftGraphSalesQuote[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AcceptedDate <DateTime?>]`: 
     - `[BillToCustomerId <String>]`: 
     - `[BillToCustomerNumber <String>]`: 
@@ -1292,6 +1310,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DueDate <DateTime?>]`: 
     - `[Email <String>]`: 
     - `[ExternalDocumentNumber <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[Number <String>]`: 
     - `[PaymentTerm <IMicrosoftGraphPaymentTerm>]`: paymentTerm
@@ -1314,9 +1333,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[ShipmentMethods <IMicrosoftGraphShipmentMethod[]>]`: 
   - `[SystemVersion <String>]`: 
   - `[TaxAreas <IMicrosoftGraphTaxArea[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[TaxType <String>]`: 
   - `[TaxGroups <IMicrosoftGraphTaxGroup[]>]`: 
@@ -1326,15 +1345,12 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: 
     - `[TaxType <String>]`: 
   - `[UnitsOfMeasure <IMicrosoftGraphUnitOfMeasure[]>]`: 
-    - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[Code <String>]`: 
     - `[DisplayName <String>]`: 
+    - `[Id <String>]`: 
     - `[InternationalStandardCode <String>]`: 
     - `[LastModifiedDateTime <DateTime?>]`: 
   - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
 ## RELATED LINKS
-[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)

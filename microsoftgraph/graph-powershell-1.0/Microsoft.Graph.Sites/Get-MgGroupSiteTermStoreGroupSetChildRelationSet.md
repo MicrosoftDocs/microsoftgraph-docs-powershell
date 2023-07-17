@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/get-mggroupsitetermstoregroupsetchildrelationset
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The [set] in which the relation is relevant.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaGroupSiteTermStoreGroupSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetChildRelationSet?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get1 (Default)
@@ -22,20 +19,6 @@ Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <St
  [<CommonParameters>]
 ```
 
-### Get3
-```
-Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -TermId <String> -StoreId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
-```
-
-### Get2
-```
-Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <String> -RelationId <String>
- -SetId <String> -SiteId <String> -TermId <String> -TermId1 <String> -StoreId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
 ### Get
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <String> -RelationId <String>
@@ -43,13 +26,21 @@ Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <St
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity3
+### Get2
 ```
-Get-MgGroupSiteTermStoreGroupSetChildRelationSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <String> -RelationId <String>
+ -SetId <String> -SiteId <String> -StoreId <String> -TermId <String> -TermId1 <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### Get3
+```
+Get-MgGroupSiteTermStoreGroupSetChildRelationSet -GroupId <String> -GroupId1 <String> -RelationId <String>
+ -SetId <String> -SiteId <String> -StoreId <String> -TermId <String> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity2
+### GetViaIdentity
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelationSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -61,7 +52,13 @@ Get-MgGroupSiteTermStoreGroupSetChildRelationSet -InputObject <ISitesIdentity> [
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity2
+```
+Get-MgGroupSiteTermStoreGroupSetChildRelationSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity3
 ```
 Get-MgGroupSiteTermStoreGroupSetChildRelationSet -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -72,14 +69,14 @@ The [set] in which the relation is relevant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -92,7 +89,7 @@ The [set] in which the relation is relevant.
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -107,8 +104,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get3, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2, Get3
 Aliases:
 
 Required: True
@@ -122,8 +119,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get3, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2, Get3
 Aliases:
 
 Required: True
@@ -138,8 +135,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: GetViaIdentity3, GetViaIdentity2, GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1, GetViaIdentity2, GetViaIdentity3
 Aliases:
 
 Required: True
@@ -153,7 +150,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -168,8 +165,8 @@ Accept wildcard characters: False
 The unique identifier of relation
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get3, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2, Get3
 Aliases:
 
 Required: True
@@ -183,8 +180,8 @@ Accept wildcard characters: False
 The unique identifier of set
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get3, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2, Get3
 Aliases:
 
 Required: True
@@ -198,8 +195,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get3, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2, Get3
 Aliases:
 
 Required: True
@@ -213,8 +210,8 @@ Accept wildcard characters: False
 The unique identifier of store
 
 ```yaml
-Type: String
-Parameter Sets: Get3, Get2
+Type: System.String
+Parameter Sets: Get2, Get3
 Aliases:
 
 Required: True
@@ -228,8 +225,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get3, Get2, Get
+Type: System.String
+Parameter Sets: Get, Get1, Get2, Get3
 Aliases:
 
 Required: True
@@ -243,8 +240,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: String
-Parameter Sets: Get2, Get
+Type: System.String
+Parameter Sets: Get, Get2
 Aliases:
 
 Required: True
@@ -260,9 +257,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermStoreSet
+
 ## NOTES
 
 ALIASES
@@ -313,4 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaGroupSiteTermStoreGroupSetChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteTermStoreGroupSetChildRelationSet?view=graph-powershell-beta)
+

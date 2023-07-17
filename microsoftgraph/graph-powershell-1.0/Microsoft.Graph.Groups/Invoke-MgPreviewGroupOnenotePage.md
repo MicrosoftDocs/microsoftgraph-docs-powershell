@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/invoke-mgpreviewgrouponenotepage
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function preview
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBetaPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -30,14 +27,14 @@ Invoke function preview
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +47,7 @@ Invoke function preview
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Preview
 Aliases:
 
@@ -66,7 +63,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
 Parameter Sets: PreviewViaIdentity
 Aliases:
 
@@ -81,7 +78,7 @@ Accept wildcard characters: False
 The unique identifier of onenotePage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Preview
 Aliases:
 
@@ -98,9 +95,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnenotePagePreview
+
 ## NOTES
 
 ALIASES
@@ -148,4 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaBetaPreviewGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaPreviewGroupOnenotePage?view=graph-powershell-beta)
+

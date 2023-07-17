@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/update-mgteamscheduleshift
 schema: 2.0.0
@@ -12,37 +12,34 @@ Replace an existing shift.
 If the specified shift doesn't exist, this method returns `404 Not found`.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> [-AdditionalProperties <Hashtable>]
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgTeamScheduleShift -ShiftId <String> -TeamId <String> -BodyParameter <IMicrosoftGraphShift> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-DraftShift <IMicrosoftGraphShiftItem>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgTeamScheduleShift -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphShift> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-SchedulingGroupId <String>] [-SharedShift <IMicrosoftGraphShiftItem>] [-UserId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -52,59 +49,19 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Teams
-$params = @{
-	Id = "SHFT_577b75d2-a927-48c0-a5d1-dc984894e7b8"
-	CreatedDateTime = [System.DateTime]::Parse("2019-03-14T04:32:51.451Z")
-	LastModifiedDateTime = [System.DateTime]::Parse("2019-03-14T05:32:51.451Z")
-	UserId = "c5d0c76b-80c4-481c-be50-923cd8d680a1"
-	SchedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
-	LastModifiedBy = @{
-		Application = $null
-		Device = $null
-		Conversation = $null
-		User = @{
-			Id = "366c0b19-49b1-41b5-a03f-9f3887bd0ed8"
-			DisplayName = "John Doe"
-		}
-	}
-	SharedShift = @{
-		DisplayName = "Day shift"
-		Notes = "Please do inventory as part of your shift."
-		StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		EndDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
-		Theme = "blue"
-		Activities = @(
-			@{
-				IsPaid = $true
-				StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				EndDateTime = [System.DateTime]::Parse("2019-03-11T15:15:00Z")
-				Code = ""
-				DisplayName = "Lunch"
-			}
-		)
-	}
-	DraftShift = @{
-		DisplayName = "Day shift"
-		Notes = "Please do inventory as part of your shift."
-		StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-		EndDateTime = [System.DateTime]::Parse("2019-03-12T00:00:00Z")
-		Theme = "blue"
-		Activities = @(
-			@{
-				IsPaid = $true
-				StartDateTime = [System.DateTime]::Parse("2019-03-11T15:00:00Z")
-				EndDateTime = [System.DateTime]::Parse("2019-03-11T15:30:00Z")
-				Code = ""
-				DisplayName = "Lunch"
-			}
-		)
-	}
-}
-Update-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId -BodyParameter $params
+{{ Add code here }}
 ```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -112,7 +69,7 @@ Update-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId -BodyParameter $par
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +85,7 @@ shift
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShift
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -144,7 +101,7 @@ shiftItem
 To construct, see NOTES section for DRAFTSHIFT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShiftItem
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftItem
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +117,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,8 +133,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -192,7 +149,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +165,7 @@ ID of the scheduling group the shift is part of.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -224,7 +181,7 @@ shiftItem
 To construct, see NOTES section for SHAREDSHIFT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShiftItem
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftItem
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -239,8 +196,8 @@ Accept wildcard characters: False
 The unique identifier of shift
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -254,8 +211,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -270,7 +227,7 @@ ID of the user assigned to the shift.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +242,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +258,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,10 +275,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
+
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift
+
 ## NOTES
 
 ALIASES
@@ -433,4 +393,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
 ## RELATED LINKS
-[Update-MgBetaBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamScheduleShift?view=graph-powershell-beta)
+

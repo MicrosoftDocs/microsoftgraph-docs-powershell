@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecuritythreatsubmission
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmission?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,14 +21,14 @@ A threat submission sent to Microsoft; for example, a suspicious email threat, U
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -44,7 +41,7 @@ A threat submission sent to Microsoft; for example, a suspicious email threat, U
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -59,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -78,9 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityThreatSubmissionRoot
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmission?view=graph-powershell-v1.0)
+

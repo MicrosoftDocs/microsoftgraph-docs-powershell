@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Identity.Governance
-Module Guid: ed44fc7e-287e-41dd-b86e-b46e398f0832
+Module Guid: bb382676-1881-4bf6-949e-a413ef601471
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance
 Help Version: 1.0.0.0
 Locale: en-US
@@ -199,7 +199,7 @@ Get the number of the resource
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension.md)
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ### [Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource](Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResource.md)
 Retrieve a list of accessPackageResource objects in an accessPackageCatalog.
@@ -313,7 +313,7 @@ This API returns up to 1,000 deleted objects owned by the user, sorted by ID, an
 Retrieve the properties of an entitlementManagementSettings object.
 
 ### [Get-MgBetaEntitlementManagementSubject](Get-MgBetaEntitlementManagementSubject.md)
-Get subjects from identityGovernance
+Represents the subjects within entitlement management.
 
 ### [Get-MgBetaEntitlementManagementSubjectConnectedOrganization](Get-MgBetaEntitlementManagementSubjectConnectedOrganization.md)
 The connected organization of the subject.
@@ -498,6 +498,15 @@ Read the properties and relationships of a workflow object.
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowCount.md)
 Get the number of the resource
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedBy.md)
+The user who created the workflow.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 Read the properties and relationships of a customTaskExtension object.
 
@@ -531,11 +540,20 @@ Retrieve a deleted workflow object.
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCount.md)
 Get the number of the resource
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy.md)
+The user who created the workflow.
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowExecutionScope.md)
 The unique identifier of the Azure AD identity that last modified the workflow object.
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy.md)
+The user who last modified the workflow.
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowRun.md)
 Read the properties and relationships of a run object.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+The tasks in the workflow.
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport.md)
 Represents the aggregation of task execution data for tasks within a workflow object.
@@ -552,7 +570,10 @@ The unique identifier of the Azure AD identity that last modified the workflow o
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeCount.md)
 Get the number of the resource
 
-### [Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeMailboxSetting.md)
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedBy.md)
+The user who last modified the workflow.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting.md)
 Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
@@ -603,11 +624,35 @@ The associated individual task execution.
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting.md)
 Read the properties and relationships of a lifecycleManagementSettings object.
 
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
+The tasks in the workflow.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition.md)
 Read the details of a built-in workflow task.
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinitionCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinitionCount.md)
 Get the number of the resource
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult.md)
+The result of processing the task.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultCount.md)
+Get the number of the resource
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubject](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubject.md)
+The unique identifier of the Azure AD user targeted for the task execution.Supports $filter(eq, ne) and $expand.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask.md)
+The related workflow task
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport](Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskReport.md)
 Represents the aggregation of task execution data for tasks within a workflow object.
@@ -693,6 +738,48 @@ Read the properties and relationships of a workflowVersion object.
 
 ### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCount.md)
 Get the number of the resource
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy.md)
+The user who created the workflow.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedBy.md)
+The user who last modified the workflow.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
+The tasks in the workflow.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskCount.md)
+Get the number of the resource
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult.md)
+The result of processing the task.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultCount](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultCount.md)
+Get the number of the resource
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject.md)
+The unique identifier of the Azure AD user targeted for the task execution.Supports $filter(eq, ne) and $expand.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask](Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultTask.md)
+The related workflow task
 
 ### [Get-MgBetaIdentityGovernancePrivilegedAccess](Get-MgBetaIdentityGovernancePrivilegedAccess.md)
 Get privilegedAccess from identityGovernance
@@ -818,13 +905,15 @@ Supports $expand.
 Schedule created by this request.
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlert](Get-MgBetaIdentityGovernanceRoleManagementAlert.md)
-Get alerts from identityGovernance
+Represents the alert entity.
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration](Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration.md)
-Get alertConfigurations from identityGovernance
+The various configurations of an alert for Azure AD roles.
+The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition](Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition.md)
-Get alertDefinition from identityGovernance
+The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
+Supports $expand.
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationCount](Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationCount.md)
 Get the number of the resource
@@ -833,19 +922,20 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition](Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition.md)
-Get alertDefinitions from identityGovernance
+Defines an alert, its impact, and measures to mitigate or prevent it.
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertDefinitionCount](Get-MgBetaIdentityGovernanceRoleManagementAlertDefinitionCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertIncident](Get-MgBetaIdentityGovernanceRoleManagementAlertIncident.md)
-Get alertIncidents from identityGovernance
+Read the properties and relationships of an alert incident.
+The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertIncidentCount](Get-MgBetaIdentityGovernanceRoleManagementAlertIncidentCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertOperation](Get-MgBetaIdentityGovernanceRoleManagementAlertOperation.md)
-Get operations from identityGovernance
+Represents operations on resources that take a long time to complete and can run in the background until completion.
 
 ### [Get-MgBetaIdentityGovernanceRoleManagementAlertOperationCount](Get-MgBetaIdentityGovernanceRoleManagementAlertOperationCount.md)
 Get the number of the resource
@@ -1178,6 +1268,9 @@ Get the number of the resource
 ### [Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction.md)
 Read the properties and relationships of an unifiedRbacResourceAction object.
 
+### [Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionAuthenticationContext.md)
+Get authenticationContext from roleManagement
+
 ### [Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementDirectoryResourceNamespaceResourceActionCount.md)
 Get the number of the resource
 
@@ -1232,8 +1325,16 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleAppScope](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleCount](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleDirectoryScope.md)
+The directory object that is the scope of the role eligibility or assignment.
+Read-only.
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance.md)
 Get the instance of an active role assignment.
@@ -1243,8 +1344,25 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceAppScope.md)
+Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceCount](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope.md)
+The directory object that is the scope of the assignment or role eligibility.
+Read-only.
+
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstancePrincipal.md)
+The principal that's getting a role assignment or role eligibility through the request.
+
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstanceRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedulePrincipal](Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedulePrincipal.md)
+The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRequest.md)
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
@@ -1279,6 +1397,9 @@ Supports $expand.
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
 ### [Get-MgBetaRoleManagementDirectoryRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleDefinition.md)
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online
@@ -1296,14 +1417,39 @@ Get the number of the resource
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule](Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedule.md)
 Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
 
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleAppScope](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleCount](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleDirectoryScope.md)
+The directory object that is the scope of the role eligibility or assignment.
+Read-only.
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance.md)
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
 
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceAppScope](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceAppScope.md)
+Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceCount](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope.md)
+The directory object that is the scope of the assignment or role eligibility.
+Read-only.
+
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstancePrincipal.md)
+The principal that's getting a role assignment or role eligibility through the request.
+
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal](Get-MgBetaRoleManagementDirectoryRoleEligibilitySchedulePrincipal.md)
+The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
 Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object.
@@ -1333,6 +1479,9 @@ Supports $expand.
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRoleDefinition](Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
 ### [Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignment](Get-MgBetaRoleManagementDirectoryTransitiveRoleAssignment.md)
 Get transitiveRoleAssignments from roleManagement
 
@@ -1361,6 +1510,263 @@ Provided so that callers can get the role definition using $expand at the same t
 roleDefinition.id will be auto expanded.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementEnterpriseApp](Get-MgBetaRoleManagementEnterpriseApp.md)
+Get enterpriseApps from roleManagement
+
+### [Get-MgBetaRoleManagementEnterpriseAppCount](Get-MgBetaRoleManagementEnterpriseAppCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespace](Get-MgBetaRoleManagementEnterpriseAppResourceNamespace.md)
+Read the properties and relationships of an unifiedRbacResourceNamespace object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceCount](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
+Read the properties and relationships of an unifiedRbacResourceAction object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionAuthenticationContext.md)
+Get authenticationContext from roleManagement
+
+### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope](Get-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope.md)
+Get resourceScope from roleManagement
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignment](Get-MgBetaRoleManagementEnterpriseAppRoleAssignment.md)
+Retrieve the properties and relationships of a unifiedRoleAssignment object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval.md)
+Get roleAssignmentApprovals from roleManagement
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep.md)
+Retrieve the properties of an approvalStep object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStepCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStepCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope.md)
+Details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentPrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentPrincipal.md)
+The assigned principal.
+Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
+roleDefinition.id will be auto expanded.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule.md)
+Retrieve the schedule for an active role assignment operation.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleActivatedUsing](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it is null.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
+Nullable.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleDirectoryScope.md)
+The directory object that is the scope of the role eligibility or assignment.
+Read-only.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance.md)
+Get the instance of an active role assignment.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceActivatedUsing](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it is null.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceAppScope.md)
+Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
+Nullable.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceDirectoryScope.md)
+The directory object that is the scope of the assignment or role eligibility.
+Read-only.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstancePrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstancePrincipal.md)
+The principal that's getting a role assignment or role eligibility through the request.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedulePrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedulePrincipal.md)
+The principal that's getting a role assignment or that's eligible for a role through the request.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
+In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestActivatedUsing](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestActivatedUsing.md)
+If the request is from an eligible administrator to activate a role, this parameter will show the related eligible assignment for that activation.
+Otherwise, it's null.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestAppScope.md)
+Read-only property with details of the app-specific scope when the assignment is scoped to an app.
+Nullable.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestCount](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal.md)
+The principal that's getting a role assignment through the request.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestRoleDefinition.md)
+Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestTargetSchedule](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequestTargetSchedule.md)
+The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
+Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
+The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionCount](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
+Read-only collection of role definitions that the given role definition inherits from.
+Only Azure AD built-in roles support this attribute.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFromCount](Get-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFromCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule.md)
+Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
+Nullable.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleCount](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleDirectoryScope.md)
+The directory object that is the scope of the role eligibility or assignment.
+Read-only.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance.md)
+Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceAppScope.md)
+Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
+Nullable.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceCount](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceDirectoryScope.md)
+The directory object that is the scope of the assignment or role eligibility.
+Read-only.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstancePrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstancePrincipal.md)
+The principal that's getting a role assignment or role eligibility through the request.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedulePrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedulePrincipal.md)
+The principal that's getting a role assignment or that's eligible for a role through the request.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
+Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestAppScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility is scoped to an app.
+Nullable.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestCount](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestDirectoryScope.md)
+The directory object that is the scope of the role eligibility.
+Read-only.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestPrincipal](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestPrincipal.md)
+The principal that's getting a role eligibility through the request.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestRoleDefinition.md)
+Detailed information for the unifiedRoleDefinition object that is referenced through the roleDefinitionId property.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestTargetSchedule](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequestTargetSchedule.md)
+The schedule for a role eligibility that is referenced through the targetScheduleId property.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment.md)
+Get transitiveRoleAssignments from roleManagement
+
+### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope.md)
+Details of the app specific scope when the assignment scope is app specific.
+Containment entity.
+
+### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentCount](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentCount.md)
+Get the number of the resource
+
+### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentDirectoryScope](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentDirectoryScope.md)
+The directory object that is the scope of the assignment.
+Provided so that callers can get the directory object using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentPrincipal](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentPrincipal.md)
+The assigned principal.
+Provided so that callers can get the principal using $expand at the same time as getting the role assignment.
+Read-only.
+Supports $expand.
+
+### [Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition](Get-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition.md)
+The roleDefinition the assignment is for.
+Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
+roleDefinition.id will be auto expanded.
+Supports $expand.
+
 ### [Get-MgBetaRoleManagementEntitlementManagement](Get-MgBetaRoleManagementEntitlementManagement.md)
 The RbacApplication for Entitlement Management
 
@@ -1372,6 +1778,9 @@ Get the number of the resource
 
 ### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction](Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
 Read the properties and relationships of an unifiedRbacResourceAction object.
+
+### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceActionAuthenticationContext](Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceActionAuthenticationContext.md)
+Get authenticationContext from roleManagement
 
 ### [Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceActionCount](Get-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceActionCount.md)
 Get the number of the resource
@@ -1427,8 +1836,16 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleCount](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleDirectoryScope.md)
+The directory object that is the scope of the role eligibility or assignment.
+Read-only.
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance.md)
 Get the instance of an active role assignment.
@@ -1438,8 +1855,25 @@ If the request is from an eligible administrator to activate a role, this parame
 Otherwise, it is null.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceAppScope.md)
+Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceCount](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceDirectoryScope.md)
+The directory object that is the scope of the assignment or role eligibility.
+Read-only.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal.md)
+The principal that's getting a role assignment or role eligibility through the request.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstanceRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentSchedulePrincipal.md)
+The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest.md)
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
@@ -1474,6 +1908,9 @@ Supports $expand.
 The schedule for an eligible role assignment that is referenced through the targetScheduleId property.
 Supports $expand.
 
+### [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleDefinition.md)
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online
@@ -1491,14 +1928,39 @@ Get the number of the resource
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedule.md)
 Read the properties and relationships of an unifiedRoleEligibilitySchedule object.
 
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope.md)
+Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleCount](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleDirectoryScope.md)
+The directory object that is the scope of the role eligibility or assignment.
+Read-only.
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstance.md)
 Read the properties and relationships of an unifiedRoleEligibilityScheduleInstance object.
 
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceAppScope](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceAppScope.md)
+Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
+Nullable.
+
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceCount.md)
 Get the number of the resource
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope.md)
+The directory object that is the scope of the assignment or role eligibility.
+Read-only.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstancePrincipal](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstancePrincipal.md)
+The principal that's getting a role assignment or role eligibility through the request.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilitySchedulePrincipal.md)
+The principal that's getting a role assignment or that's eligible for a role through the request.
 
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest.md)
 Read the properties and relationships of an unifiedRoleEligibilityScheduleRequest object.
@@ -1527,6 +1989,9 @@ Supports $expand.
 ### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequestTargetSchedule.md)
 The schedule for a role eligibility that is referenced through the targetScheduleId property.
 Supports $expand.
+
+### [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition](Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition.md)
+Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 ### [Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment](Get-MgBetaRoleManagementEntitlementManagementTransitiveRoleAssignment.md)
 Get transitiveRoleAssignments from roleManagement
@@ -1573,6 +2038,9 @@ Invoke action importResourceActions
 ### [Import-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction](Import-MgBetaRoleManagementDirectoryResourceNamespaceResourceAction.md)
 Invoke action importResourceActions
 
+### [Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](Import-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
+Invoke action importResourceActions
+
 ### [Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction](Import-MgBetaRoleManagementEntitlementManagementResourceNamespaceResourceAction.md)
 Invoke action importResourceActions
 
@@ -1617,6 +2085,12 @@ Invoke function assignedPrincipals
 Invoke function assignedPrincipals
 
 ### [Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementDirectoryRoleDefinitionPrincipal.md)
+Invoke function assignedPrincipals
+
+### [Invoke-MgBetaAssignedRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFromPrincipal](Invoke-MgBetaAssignedRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFromPrincipal.md)
+Invoke function assignedPrincipals
+
+### [Invoke-MgBetaAssignedRoleManagementEnterpriseAppRoleDefinitionPrincipal](Invoke-MgBetaAssignedRoleManagementEnterpriseAppRoleDefinitionPrincipal.md)
 Invoke function assignedPrincipals
 
 ### [Invoke-MgBetaAssignedRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromPrincipal](Invoke-MgBetaAssignedRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFromPrincipal.md)
@@ -1724,6 +2198,27 @@ Invoke function filterByCurrentUser
 ### [Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser](Invoke-MgBetaFilterRoleManagementDirectoryRoleEligibilityScheduleRequestByCurrentUser.md)
 Invoke function filterByCurrentUser
 
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentApprovalByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentApprovalByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleRequestByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleAssignmentScheduleRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceByCurrentUser.md)
+Invoke function filterByCurrentUser
+
+### [Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleRequestByCurrentUser](Invoke-MgBetaFilterRoleManagementEnterpriseAppRoleEligibilityScheduleRequestByCurrentUser.md)
+Invoke function filterByCurrentUser
+
 ### [Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentApprovalByCurrentUser](Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleAssignmentApprovalByCurrentUser.md)
 Invoke function filterByCurrentUser
 
@@ -1778,6 +2273,12 @@ Invoke action remediate
 Invoke function roleScheduleInstances
 
 ### [Invoke-MgBetaScheduleRoleManagementDirectoryRole](Invoke-MgBetaScheduleRoleManagementDirectoryRole.md)
+Invoke function roleSchedules
+
+### [Invoke-MgBetaScheduleRoleManagementEnterpriseApp](Invoke-MgBetaScheduleRoleManagementEnterpriseApp.md)
+Invoke function roleScheduleInstances
+
+### [Invoke-MgBetaScheduleRoleManagementEnterpriseAppRole](Invoke-MgBetaScheduleRoleManagementEnterpriseAppRole.md)
 Invoke function roleSchedules
 
 ### [Invoke-MgBetaScheduleRoleManagementEntitlementManagement](Invoke-MgBetaScheduleRoleManagementEntitlementManagement.md)
@@ -2014,8 +2515,17 @@ Create a new customTaskExtension object.
 ### [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion](New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowNewVersion.md)
 Create a new version of the workflow object.
 
+### [New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+Create new navigation property to tasks for identityGovernance
+
 ### [New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion](New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion.md)
 Create a new version of the workflow object.
+
+### [New-MgBetaIdentityGovernanceLifecycleWorkflowTask](New-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
+Create new navigation property to tasks for identityGovernance
+
+### [New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](New-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
+Create new navigation property to tasks for identityGovernance
 
 ### [New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval](New-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval.md)
 Create new navigation property to assignmentApprovals for identityGovernance
@@ -2185,6 +2695,57 @@ This operation allows both admins and eligible users to add, revoke, or extend e
 ### [New-MgBetaRoleManagementDirectoryTransitiveRoleAssignment](New-MgBetaRoleManagementDirectoryTransitiveRoleAssignment.md)
 Create new navigation property to transitiveRoleAssignments for roleManagement
 
+### [New-MgBetaRoleManagementEnterpriseApp](New-MgBetaRoleManagementEnterpriseApp.md)
+Create new navigation property to enterpriseApps for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppResourceNamespace](New-MgBetaRoleManagementEnterpriseAppResourceNamespace.md)
+Create new navigation property to resourceNamespaces for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](New-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
+Create new navigation property to resourceActions for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleAssignment](New-MgBetaRoleManagementEnterpriseAppRoleAssignment.md)
+Create a new unifiedRoleAssignment object.
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval](New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval.md)
+Create new navigation property to roleAssignmentApprovals for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep](New-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep.md)
+Create new navigation property to steps for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](New-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule.md)
+Create new navigation property to roleAssignmentSchedules for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance.md)
+Create new navigation property to roleAssignmentScheduleInstances for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](New-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
+Create a new unifiedRoleAssignmentScheduleRequest object.
+This operation allows both admins and users to add, remove, extend, or renew assignments.
+To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
+See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleDefinition](New-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
+Create a new unifiedRoleDefinition object for an RBAC provider.
+This feature requires an Azure AD Premium P1 or P2 license.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](New-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
+Create new navigation property to inheritsPermissionsFrom for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule](New-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule.md)
+Create new navigation property to roleEligibilitySchedules for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance.md)
+Create new navigation property to roleEligibilityScheduleInstances for roleManagement
+
+### [New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](New-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
+Create a new unifiedRoleEligibilityScheduleRequest object.
+This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
+
+### [New-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment](New-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment.md)
+Create new navigation property to transitiveRoleAssignments for roleManagement
+
 ### [New-MgBetaRoleManagementEntitlementManagementResourceNamespace](New-MgBetaRoleManagementEntitlementManagementResourceNamespace.md)
 Create new navigation property to resourceNamespaces for roleManagement
 
@@ -2321,7 +2882,7 @@ Delete an accessPackageCatalog.
 Delete navigation property accessPackageCustomWorkflowExtensions for identityGovernance
 
 ### [Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension.md)
-Delete an accessPackageAssignmentRequestWorkflowExtension object.
+Delete an accessPackageAssignmentWorkflowExtension object.
 The custom workflow extension must first be removed from any associated policies before it can be deleted.
 Follow these steps to remove the custom workflow extension from any associated policies:\n1.
 First retrieve the accessPackageCatalogId by calling the Get accessPackageAssignmentPolicies operation and appending `?$expand=accessPackage($expand=accessPackageCatalog)` to the query.
@@ -2440,13 +3001,22 @@ You can restore a deleted workflow and its associated objects within 30 days of 
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Remove-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 Delete a customTaskExtension object.
-Can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
+A custom task extension  can only be deleted if it is not referenced in any task objects in a lifecycle workflow.
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem](Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem.md)
 Delete navigation property deletedItems for identityGovernance
 
 ### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow.md)
 Delete a workflow object.
+
+### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+Delete navigation property tasks for identityGovernance
+
+### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
+Delete navigation property tasks for identityGovernance
+
+### [Remove-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Remove-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
+Delete navigation property tasks for identityGovernance
 
 ### [Remove-MgBetaIdentityGovernancePrivilegedAccess](Remove-MgBetaIdentityGovernancePrivilegedAccess.md)
 Delete navigation property privilegedAccess for identityGovernance
@@ -2691,6 +3261,63 @@ Delete navigation property transitiveRoleAssignments for roleManagement
 ### [Remove-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Remove-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
 Delete navigation property appScope for roleManagement
 
+### [Remove-MgBetaRoleManagementEnterpriseApp](Remove-MgBetaRoleManagementEnterpriseApp.md)
+Delete navigation property enterpriseApps for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppResourceNamespace](Remove-MgBetaRoleManagementEnterpriseAppResourceNamespace.md)
+Delete navigation property resourceNamespaces for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](Remove-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
+Delete navigation property resourceActions for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope](Remove-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope.md)
+Delete navigation property resourceScope for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignment](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignment.md)
+Delete a unifiedRoleAssignment object.
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval.md)
+Delete navigation property roleAssignmentApprovals for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep.md)
+Delete navigation property steps for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope.md)
+Delete navigation property appScope for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule.md)
+Delete navigation property roleAssignmentSchedules for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance.md)
+Delete navigation property roleAssignmentScheduleInstances for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](Remove-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
+Delete navigation property roleAssignmentScheduleRequests for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleDefinition](Remove-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
+Delete a unifiedRoleDefinition object for an RBAC provider.
+You cannot delete built-in roles.
+This feature requires an Azure AD Premium P1 or P2 license.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Remove-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
+Delete navigation property inheritsPermissionsFrom for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule](Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule.md)
+Delete navigation property roleEligibilitySchedules for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance.md)
+Delete navigation property roleEligibilityScheduleInstances for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
+Delete navigation property roleEligibilityScheduleRequests for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment](Remove-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment.md)
+Delete navigation property transitiveRoleAssignments for roleManagement
+
+### [Remove-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope](Remove-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope.md)
+Delete navigation property appScope for roleManagement
+
 ### [Remove-MgBetaRoleManagementEntitlementManagement](Remove-MgBetaRoleManagementEntitlementManagement.md)
 Delete navigation property entitlementManagement for roleManagement
 
@@ -2782,17 +3409,27 @@ It is performed on an accessPackageAssignmentRequest object whose **requestStatu
 ### [Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult](Resume-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResult.md)
 Resume a task processing result that's `inProgress`.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+For more information, see: Lifecycle Workflows extensibility approach.
+
+### [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult.md)
+Resume a task processing result that's `inProgress`.
+In the default case an Azure Logic Apps system-assigned managed identity calls this API.
+For more information, see: Lifecycle Workflows extensibility approach.
 
 ### [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult.md)
 Resume a task processing result that's `inProgress`.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+For more information, see: Lifecycle Workflows extensibility approach.
 
 ### [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult](Resume-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTaskProcessingResult.md)
 Resume a task processing result that's `inProgress`.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+For more information, see: Lifecycle Workflows extensibility approach.
+
+### [Resume-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](Resume-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult.md)
+Resume a task processing result that's `inProgress`.
+In the default case an Azure Logic Apps system-assigned managed identity calls this API.
+For more information, see: Lifecycle Workflows extensibility approach.
 
 ### [Select-MgBetaEntitlementManagementAccessPackage](Select-MgBetaEntitlementManagementAccessPackage.md)
 Select matching entitlement management accessPackage
@@ -2841,6 +3478,9 @@ After the access review instance stops, the instance status will be `Completed`,
 Stopping an instance will not effect future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
 
+### [Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceApplyDecision.md)
+Invoke action stopApplyDecisions
+
 ### [Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage.md)
 Stop an access review stage that is `inProgress`.
 After the access review stage stops, the stage **status** will be `Completed` and the reviewers can no longer give input.
@@ -2855,6 +3495,9 @@ Stop a currently active accessReviewInstance.
 After the access review instance stops, the instance status will be `Completed`, the reviewers can no longer give input, and the access review decisions can be applied.
 Stopping an instance will not effect future instances.
 To prevent a recurring access review from starting future instances, update the schedule definition to change its scheduled end date.
+
+### [Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision](Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision.md)
+Invoke action stopApplyDecisions
 
 ### [Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage.md)
 Stop an access review stage that is `inProgress`.
@@ -2882,6 +3525,14 @@ Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `G
 After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
 
 ### [Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](Stop-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest.md)
+Immediately cancel a unifiedRoleEligibilityScheduleRequest that is in a `Granted` status, and have the system automatically delete the cancelled request after 30 days.
+After calling this action, the **status** of the cancelled unifiedRoleEligibilityScheduleRequest changes to `Revoked`.
+
+### [Stop-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](Stop-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
+Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days.
+After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
+
+### [Stop-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](Stop-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
 Immediately cancel a unifiedRoleEligibilityScheduleRequest that is in a `Granted` status, and have the system automatically delete the cancelled request after 30 days.
 After calling this action, the **status** of the cancelled unifiedRoleEligibilityScheduleRequest changes to `Revoked`.
 
@@ -3104,6 +3755,9 @@ Update the properties of a workflow object.
 Only the properties listed in the request body table can be updated.
 To update any other workflow properties, see workflow: createNewVersion.
 
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension](Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension.md)
 Update the properties of a customTaskExtension object.
 
@@ -3113,7 +3767,10 @@ Update property mailboxSettings value.
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedByMailboxSetting.md)
 Update property mailboxSettings value.
 
-### [Update-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowExecutionScopeMailboxSetting.md)
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](Update-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask.md)
+Update the navigation property tasks in identityGovernance
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowLastModifiedByMailboxSetting.md)
 Update property mailboxSettings value.
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowRunTaskProcessingResultSubjectMailboxSetting.md)
@@ -3125,6 +3782,12 @@ Update property mailboxSettings value.
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting.md)
 Update the properties of a lifecycleManagementSettings object.
 
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowTask](Update-MgBetaIdentityGovernanceLifecycleWorkflowTask.md)
+Update the navigation property tasks in identityGovernance
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultSubjectMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResultSubjectMailboxSetting.md)
 Update property mailboxSettings value.
 
@@ -3132,6 +3795,18 @@ Update property mailboxSettings value.
 Update property mailboxSettings value.
 
 ### [Update-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubjectMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedByMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionLastModifiedByMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask.md)
+Update the navigation property tasks in identityGovernance
+
+### [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting](Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubjectMailboxSetting.md)
 Update property mailboxSettings value.
 
 ### [Update-MgBetaIdentityGovernancePrivilegedAccess](Update-MgBetaIdentityGovernancePrivilegedAccess.md)
@@ -3372,6 +4047,63 @@ Update the navigation property roleEligibilityScheduleRequests in roleManagement
 Update the navigation property transitiveRoleAssignments in roleManagement
 
 ### [Update-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementDirectoryTransitiveRoleAssignmentAppScope.md)
+Update the navigation property appScope in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseApp](Update-MgBetaRoleManagementEnterpriseApp.md)
+Update the navigation property enterpriseApps in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppResourceNamespace](Update-MgBetaRoleManagementEnterpriseAppResourceNamespace.md)
+Update the navigation property resourceNamespaces in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction](Update-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceAction.md)
+Update the navigation property resourceActions in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope](Update-MgBetaRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope.md)
+Update the navigation property resourceScope in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignment](Update-MgBetaRoleManagementEnterpriseAppRoleAssignment.md)
+Update the navigation property roleAssignments in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval](Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApproval.md)
+Update the navigation property roleAssignmentApprovals in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep](Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep.md)
+Apply approve or deny decision on an approvalStep object.
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope](Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope.md)
+Update the navigation property appScope in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule](Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentSchedule.md)
+Update the navigation property roleAssignmentSchedules in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstance.md)
+Update the navigation property roleAssignmentScheduleInstances in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](Update-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleRequest.md)
+Update the navigation property roleAssignmentScheduleRequests in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleDefinition](Update-MgBetaRoleManagementEnterpriseAppRoleDefinition.md)
+Update the properties of a unifiedRoleDefinition object for an RBAC provider.
+You cannot update built-in roles.
+This feature requires an Azure AD Premium P1 or P2 license.
+The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](Update-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom.md)
+Update the navigation property inheritsPermissionsFrom in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule](Update-MgBetaRoleManagementEnterpriseAppRoleEligibilitySchedule.md)
+Update the navigation property roleEligibilitySchedules in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleInstance.md)
+Update the navigation property roleEligibilityScheduleInstances in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](Update-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest.md)
+Update the navigation property roleEligibilityScheduleRequests in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment](Update-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignment.md)
+Update the navigation property transitiveRoleAssignments in roleManagement
+
+### [Update-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope](Update-MgBetaRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope.md)
 Update the navigation property appScope in roleManagement
 
 ### [Update-MgBetaRoleManagementEntitlementManagement](Update-MgBetaRoleManagementEntitlementManagement.md)

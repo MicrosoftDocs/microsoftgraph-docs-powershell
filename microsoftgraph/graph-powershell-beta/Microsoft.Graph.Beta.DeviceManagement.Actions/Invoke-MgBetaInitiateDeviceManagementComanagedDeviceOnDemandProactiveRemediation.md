@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/invoke-mgbetainitiatedevicemanagementcomanageddeviceondemandproactiveremediation
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Perform On Demand Proactive Remediation
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### InitiateExpanded (Default)
 ```
 Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -26,14 +23,7 @@ Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation
 ```
 Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation -ManagedDeviceId <String>
  -Body <IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### InitiateViaIdentityExpanded
-```
-Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>] [-ScriptPolicyId <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### InitiateViaIdentity
@@ -41,7 +31,14 @@ Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation
 Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### InitiateViaIdentityExpanded
+```
+Invoke-MgBetaInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ScriptPolicyId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,15 +46,19 @@ Perform On Demand Proactive Remediation
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
-### EXAMPLE 2
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
+
+
 
 ## PARAMETERS
 
@@ -65,7 +66,7 @@ Perform On Demand Proactive Remediation
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: InitiateExpanded, InitiateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Initiate
 Aliases:
 
@@ -97,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: InitiateViaIdentity
 Aliases:
 
@@ -113,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: InitiateViaIdentityExpanded, InitiateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: InitiateViaIdentity, InitiateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,8 +129,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: InitiateExpanded, Initiate
+Type: System.String
+Parameter Sets: Initiate, InitiateExpanded
 Aliases:
 
 Required: True
@@ -143,7 +144,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: InitiateExpanded, InitiateViaIdentityExpanded
 Aliases:
 
@@ -173,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -189,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -206,10 +207,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths75JpwmDevicemanagementComanageddevicesManageddeviceIdMicrosoftGraphInitiateondemandproactiveremediationPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -281,4 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation?view=graph-powershell-v1.0)
+

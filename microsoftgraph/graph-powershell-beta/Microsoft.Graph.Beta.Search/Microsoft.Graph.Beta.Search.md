@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Search
-Module Guid: 86086860-e94a-49aa-b74a-474cbbad7b83
+Module Guid: 52fba820-d350-4ba4-bc37-774e5120fc35
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search
 Help Version: 1.0.0.0
 Locale: en-US
@@ -61,6 +61,9 @@ Get operations from external
 ### [Get-MgBetaExternalConnectionOperationCount](Get-MgBetaExternalConnectionOperationCount.md)
 Get the number of the resource
 
+### [Get-MgBetaExternalConnectionQuota](Get-MgBetaExternalConnectionQuota.md)
+Retrieve the properties and relationships of a connectionQuota object.
+
 ### [Get-MgBetaExternalConnectionSchema](Get-MgBetaExternalConnectionSchema.md)
 Retrieve the properties of a schema for an externalConnection.
 
@@ -68,7 +71,7 @@ Retrieve the properties of a schema for an externalConnection.
 Get industryData from external
 
 ### [Get-MgBetaExternalIndustryDataConnector](Get-MgBetaExternalIndustryDataConnector.md)
-Read the properties and relationships of an industryDataConnector object.
+Read the properties and relationships of an azureDataLakeConnector object.
 
 ### [Get-MgBetaExternalIndustryDataConnectorCount](Get-MgBetaExternalIndustryDataConnectorCount.md)
 Get the number of the resource
@@ -77,7 +80,7 @@ Get the number of the resource
 The sourceSystemDefinition this connector is connected to.
 
 ### [Get-MgBetaExternalIndustryDataInboundFlow](Get-MgBetaExternalIndustryDataInboundFlow.md)
-Read the properties and relationships of an inboundFlow object.
+Read the properties and relationships of an inboundFileFlow object.
 
 ### [Get-MgBetaExternalIndustryDataInboundFlowCount](Get-MgBetaExternalIndustryDataInboundFlowCount.md)
 Get the number of the resource
@@ -117,6 +120,9 @@ Get the number of the resource
 
 ### [Get-MgBetaExternalIndustryDataRunCount](Get-MgBetaExternalIndustryDataRunCount.md)
 Get the number of the resource
+
+### [Get-MgBetaExternalIndustryDataRunStatistics](Get-MgBetaExternalIndustryDataRunStatistics.md)
+Invoke function getStatistics
 
 ### [Get-MgBetaExternalIndustryDataSourceSystem](Get-MgBetaExternalIndustryDataSourceSystem.md)
 Read the properties and relationships of a sourceSystemDefinition object.
@@ -174,7 +180,7 @@ Create new navigation property to activities for external
 Create new navigation property to operations for external
 
 ### [New-MgBetaExternalIndustryDataConnector](New-MgBetaExternalIndustryDataConnector.md)
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
 
 ### [New-MgBetaExternalIndustryDataInboundFlow](New-MgBetaExternalIndustryDataInboundFlow.md)
 Create a new inboundFlow object.
@@ -222,14 +228,17 @@ Delete navigation property activities for external
 ### [Remove-MgBetaExternalConnectionOperation](Remove-MgBetaExternalConnectionOperation.md)
 Delete navigation property operations for external
 
+### [Remove-MgBetaExternalConnectionQuota](Remove-MgBetaExternalConnectionQuota.md)
+Delete navigation property quota for external
+
 ### [Remove-MgBetaExternalConnectionSchema](Remove-MgBetaExternalConnectionSchema.md)
 Delete navigation property schema for external
 
 ### [Remove-MgBetaExternalIndustryDataConnector](Remove-MgBetaExternalIndustryDataConnector.md)
-Delete an azureDataLakeConnector object.
+Delete an industryDataConnector object.
 
 ### [Remove-MgBetaExternalIndustryDataInboundFlow](Remove-MgBetaExternalIndustryDataInboundFlow.md)
-Delete an inboundFileFlow object.
+Delete an inboundFlow object.
 
 ### [Remove-MgBetaExternalIndustryDataOperation](Remove-MgBetaExternalIndustryDataOperation.md)
 Delete navigation property operations for external
@@ -279,11 +288,14 @@ Update the navigation property activities in external
 ### [Update-MgBetaExternalConnectionOperation](Update-MgBetaExternalConnectionOperation.md)
 Update the navigation property operations in external
 
+### [Update-MgBetaExternalConnectionQuota](Update-MgBetaExternalConnectionQuota.md)
+Update the navigation property quota in external
+
 ### [Update-MgBetaExternalConnectionSchema](Update-MgBetaExternalConnectionSchema.md)
 Update the properties of a schema for an externalConnection.
 
 ### [Update-MgBetaExternalIndustryDataConnector](Update-MgBetaExternalIndustryDataConnector.md)
-Update the properties of an industryDataConnector object.
+Update the properties of an azureDataLakeConnector object.
 
 ### [Update-MgBetaExternalIndustryDataInboundFlow](Update-MgBetaExternalIndustryDataInboundFlow.md)
 Update the properties of an inboundFlow object.
@@ -313,5 +325,5 @@ Update the properties of a bookmark object.
 Update search
 
 ### [Update-MgBetaSearchQna](Update-MgBetaSearchQna.md)
-Update the navigation property qnas in search
+Update the properties of a qna object.
 

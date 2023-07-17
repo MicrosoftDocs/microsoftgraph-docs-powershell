@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Sites
-Module Guid: 2ec9a0b8-50b2-4698-9ee8-ef700ece52bb
+Module Guid: fe4fea0f-addd-4233-a5ce-b2769cdd6e3a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites
 Help Version: 1.0.0.0
 Locale: en-US
@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaSiteListContentTypeCopy](Add-MgBetaSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Confirm-MgBetaSiteInformationProtectionSignature](Confirm-MgBetaSiteInformationProtectionSignature.md)
 Invoke action verifySignature
@@ -43,9 +43,10 @@ The file can then be added as a default file or template via a POST operation.
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgBetaSiteListContentTypeToDefaultContentLocation](Copy-MgBetaSiteListContentTypeToDefaultContentLocation.md)
-Copy a file to a default content location in a [content type][contentType].
-The file can then be added as a default file or template via a POST operation.
+### [Copy-MgBetaSiteOnenoteNotebook](Copy-MgBetaSiteOnenoteNotebook.md)
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -71,9 +72,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup](Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup.md)
-Copies a section to a specific section group.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenotePageToSection](Copy-MgBetaSiteOnenotePageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -91,13 +92,19 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToNotebook](Copy-MgBetaSiteOnenoteSectionToNotebook.md)
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToSectionGroup](Copy-MgBetaSiteOnenoteSectionToSectionGroup.md)
+Copies a section to a specific section group.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Get-MgBetaAdminSharepoint](Get-MgBetaAdminSharepoint.md)
+Get sharepoint from admin
+
+### [Get-MgBetaAdminSharepointSetting](Get-MgBetaAdminSharepointSetting.md)
+Get the tenant-level settings for SharePoint and OneDrive.
 
 ### [Get-MgBetaGroupSite](Get-MgBetaGroupSite.md)
 The list of SharePoint sites in this group.
@@ -177,6 +184,15 @@ Get the number of the resource
 
 ### [Get-MgBetaGroupSiteCount](Get-MgBetaGroupSiteCount.md)
 Get the number of the resource
+
+### [Get-MgBetaGroupSiteCreatedByUser](Get-MgBetaGroupSiteCreatedByUser.md)
+Get createdByUser from groups
+
+### [Get-MgBetaGroupSiteCreatedByUserMailboxSetting](Get-MgBetaGroupSiteCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
 
 ### [Get-MgBetaGroupSiteDefaultDrive](Get-MgBetaGroupSiteDefaultDrive.md)
 The default drive (document library) for this site.
@@ -261,6 +277,24 @@ This collection cannot be enumerated.
 ### [Get-MgBetaGroupSiteItemCount](Get-MgBetaGroupSiteItemCount.md)
 Get the number of the resource
 
+### [Get-MgBetaGroupSiteItemLastModifiedByUser](Get-MgBetaGroupSiteItemLastModifiedByUser.md)
+Get lastModifiedByUser from groups
+
+### [Get-MgBetaGroupSiteItemLastModifiedByUserMailboxSetting](Get-MgBetaGroupSiteItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaGroupSiteLastModifiedByUser](Get-MgBetaGroupSiteLastModifiedByUser.md)
+Get lastModifiedByUser from groups
+
+### [Get-MgBetaGroupSiteLastModifiedByUserMailboxSetting](Get-MgBetaGroupSiteLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
 ### [Get-MgBetaGroupSiteList](Get-MgBetaGroupSiteList.md)
 Get the list of richLongRunningOperations associated with a list.
 
@@ -278,15 +312,6 @@ The source column for content type column.
 
 ### [Get-MgBetaGroupSiteListContentType](Get-MgBetaGroupSiteListContentType.md)
 Get contentTypes from groups
-
-### [Get-MgBetaGroupSiteListContentTypeBase](Get-MgBetaGroupSiteListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgBetaGroupSiteListContentTypeBaseType](Get-MgBetaGroupSiteListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgBetaGroupSiteListContentTypeBaseTypeCount](Get-MgBetaGroupSiteListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaGroupSiteListContentTypeColumn](Get-MgBetaGroupSiteListContentTypeColumn.md)
 Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
@@ -315,6 +340,15 @@ Get the number of the resource
 ### [Get-MgBetaGroupSiteListCount](Get-MgBetaGroupSiteListCount.md)
 Get the number of the resource
 
+### [Get-MgBetaGroupSiteListCreatedByUser](Get-MgBetaGroupSiteListCreatedByUser.md)
+Get createdByUser from groups
+
+### [Get-MgBetaGroupSiteListCreatedByUserMailboxSetting](Get-MgBetaGroupSiteListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
 ### [Get-MgBetaGroupSiteListDrive](Get-MgBetaGroupSiteListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -340,14 +374,23 @@ Get listItem from groups
 ### [Get-MgBetaGroupSiteListItemAnalytic](Get-MgBetaGroupSiteListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaGroupSiteListItemCount](Get-MgBetaGroupSiteListItemCount.md)
-Get the number of the resource
+### [Get-MgBetaGroupSiteListItemCreatedByUser](Get-MgBetaGroupSiteListItemCreatedByUser.md)
+Get createdByUser from groups
+
+### [Get-MgBetaGroupSiteListItemCreatedByUserMailboxSetting](Get-MgBetaGroupSiteListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
 
 ### [Get-MgBetaGroupSiteListItemDocumentSetVersion](Get-MgBetaGroupSiteListItemDocumentSetVersion.md)
 Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaGroupSiteListItemDocumentSetVersionCount](Get-MgBetaGroupSiteListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgBetaGroupSiteListItemDocumentSetVersionField](Get-MgBetaGroupSiteListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaGroupSiteListItemDriveItem](Get-MgBetaGroupSiteListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -638,6 +681,24 @@ Get the number of the resource
 
 ### [Get-MgBetaGroupSitePageCount](Get-MgBetaGroupSitePageCount.md)
 Get the number of the resource
+
+### [Get-MgBetaGroupSitePageCreatedByUser](Get-MgBetaGroupSitePageCreatedByUser.md)
+Get createdByUser from groups
+
+### [Get-MgBetaGroupSitePageCreatedByUserMailboxSetting](Get-MgBetaGroupSitePageCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaGroupSitePageLastModifiedByUser](Get-MgBetaGroupSitePageLastModifiedByUser.md)
+Get lastModifiedByUser from groups
+
+### [Get-MgBetaGroupSitePageLastModifiedByUserMailboxSetting](Get-MgBetaGroupSitePageLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
 
 ### [Get-MgBetaGroupSitePageWebPart](Get-MgBetaGroupSitePageWebPart.md)
 Read the properties and relationships of a webPart object.
@@ -1095,6 +1156,24 @@ The collection of column definitions available in the site that are referenced f
 ### [Get-MgBetaSiteExternalColumnCount](Get-MgBetaSiteExternalColumnCount.md)
 Get the number of the resource
 
+### [Get-MgBetaSiteItemLastModifiedByUser](Get-MgBetaSiteItemLastModifiedByUser.md)
+Get lastModifiedByUser from sites
+
+### [Get-MgBetaSiteItemLastModifiedByUserMailboxSetting](Get-MgBetaSiteItemLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaSiteLastModifiedByUser](Get-MgBetaSiteLastModifiedByUser.md)
+Get lastModifiedByUser from sites
+
+### [Get-MgBetaSiteLastModifiedByUserMailboxSetting](Get-MgBetaSiteLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
 ### [Get-MgBetaSiteList](Get-MgBetaSiteList.md)
 Get the list of richLongRunningOperations associated with a list.
 
@@ -1112,15 +1191,6 @@ The source column for content type column.
 
 ### [Get-MgBetaSiteListContentType](Get-MgBetaSiteListContentType.md)
 Get contentTypes from sites
-
-### [Get-MgBetaSiteListContentTypeBase](Get-MgBetaSiteListContentTypeBase.md)
-Parent contentType from which this content type is derived.
-
-### [Get-MgBetaSiteListContentTypeBaseType](Get-MgBetaSiteListContentTypeBaseType.md)
-The collection of content types that are ancestors of this content type.
-
-### [Get-MgBetaSiteListContentTypeBaseTypeCount](Get-MgBetaSiteListContentTypeBaseTypeCount.md)
-Get the number of the resource
 
 ### [Get-MgBetaSiteListContentTypeColumn](Get-MgBetaSiteListContentTypeColumn.md)
 Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
@@ -1152,6 +1222,15 @@ Get the number of the resource
 ### [Get-MgBetaSiteListCount](Get-MgBetaSiteListCount.md)
 Get the number of the resource
 
+### [Get-MgBetaSiteListCreatedByUser](Get-MgBetaSiteListCreatedByUser.md)
+Get createdByUser from sites
+
+### [Get-MgBetaSiteListCreatedByUserMailboxSetting](Get-MgBetaSiteListCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
 ### [Get-MgBetaSiteListDrive](Get-MgBetaSiteListDrive.md)
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
@@ -1180,8 +1259,14 @@ Get listItem from sites
 ### [Get-MgBetaSiteListItemAnalytic](Get-MgBetaSiteListItemAnalytic.md)
 Analytics about the view activities that took place on this item.
 
-### [Get-MgBetaSiteListItemCount](Get-MgBetaSiteListItemCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteListItemCreatedByUser](Get-MgBetaSiteListItemCreatedByUser.md)
+Get createdByUser from sites
+
+### [Get-MgBetaSiteListItemCreatedByUserMailboxSetting](Get-MgBetaSiteListItemCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
 
 ### [Get-MgBetaSiteListItemDelta](Get-MgBetaSiteListItemDelta.md)
 Invoke function delta
@@ -1191,6 +1276,9 @@ Read the properties and relationships of a documentSetVersion object.
 
 ### [Get-MgBetaSiteListItemDocumentSetVersionCount](Get-MgBetaSiteListItemDocumentSetVersionCount.md)
 Get the number of the resource
+
+### [Get-MgBetaSiteListItemDocumentSetVersionField](Get-MgBetaSiteListItemDocumentSetVersionField.md)
+A collection of the fields and values for this version of the list item.
 
 ### [Get-MgBetaSiteListItemDriveItem](Get-MgBetaSiteListItemDriveItem.md)
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
@@ -1222,7 +1310,14 @@ The set of subscriptions on the list.
 ### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
+### [Get-MgBetaSiteOnenoteNotebookFromWebUrl](Get-MgBetaSiteOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+
+### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
+Read the properties of a richLongRunningOperation object.
+
+### [Get-MgBetaSiteOperationCount](Get-MgBetaSiteOperationCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaSitePage](Get-MgBetaSitePage.md)
@@ -1266,6 +1361,24 @@ Invoke action getPositionOfWebPart
 
 ### [Get-MgBetaSitePageCount](Get-MgBetaSitePageCount.md)
 Get the number of the resource
+
+### [Get-MgBetaSitePageCreatedByUser](Get-MgBetaSitePageCreatedByUser.md)
+Get createdByUser from sites
+
+### [Get-MgBetaSitePageCreatedByUserMailboxSetting](Get-MgBetaSitePageCreatedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
+
+### [Get-MgBetaSitePageLastModifiedByUser](Get-MgBetaSitePageLastModifiedByUser.md)
+Get lastModifiedByUser from sites
+
+### [Get-MgBetaSitePageLastModifiedByUserMailboxSetting](Get-MgBetaSitePageLastModifiedByUserMailboxSetting.md)
+Settings for the primary mailbox of the signed-in user.
+You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
+For more information, see User preferences for languages and regional formats.
+Returned only on $select.
 
 ### [Get-MgBetaSitePageWebPart](Get-MgBetaSitePageWebPart.md)
 Read the properties and relationships of a webPart object.
@@ -1792,7 +1905,7 @@ Create new navigation property to operations for groups
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ### [New-MgBetaGroupSitePageCanvaLayoutHorizontalSection](New-MgBetaGroupSitePageCanvaLayoutHorizontalSection.md)
-Create new navigation property to horizontalSections for groups
+Create a horizontalSection object in a given sitePage.
 
 ### [New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn](New-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn.md)
 Create new navigation property to columns for groups
@@ -1943,11 +2056,14 @@ Create new navigation property to operations for sites
 ### [New-MgBetaSiteListSubscription](New-MgBetaSiteListSubscription.md)
 Create new navigation property to subscriptions for sites
 
+### [New-MgBetaSiteOperation](New-MgBetaSiteOperation.md)
+Create new navigation property to operations for sites
+
 ### [New-MgBetaSitePage](New-MgBetaSitePage.md)
 Create a new [sitePage][] in the site pages [list][] in a [site][].
 
 ### [New-MgBetaSitePageCanvaLayoutHorizontalSection](New-MgBetaSitePageCanvaLayoutHorizontalSection.md)
-Create new navigation property to horizontalSections for sites
+Create a horizontalSection object in a given sitePage.
 
 ### [New-MgBetaSitePageCanvaLayoutHorizontalSectionColumn](New-MgBetaSitePageCanvaLayoutHorizontalSectionColumn.md)
 Create new navigation property to columns for sites
@@ -2048,6 +2164,12 @@ Publishes a [contentType][] present in a content type hub site.
 ### [Publish-MgBetaSitePage](Publish-MgBetaSitePage.md)
 Invoke action publish
 
+### [Remove-MgBetaAdminSharepoint](Remove-MgBetaAdminSharepoint.md)
+Delete navigation property sharepoint for admin
+
+### [Remove-MgBetaAdminSharepointSetting](Remove-MgBetaAdminSharepointSetting.md)
+Delete navigation property settings for admin
+
 ### [Remove-MgBetaGroupSiteAnalytic](Remove-MgBetaGroupSiteAnalytic.md)
 Delete navigation property analytics for groups
 
@@ -2119,6 +2241,9 @@ Delete navigation property activities for groups
 
 ### [Remove-MgBetaGroupSiteListItemDocumentSetVersion](Remove-MgBetaGroupSiteListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
+
+### [Remove-MgBetaGroupSiteListItemDocumentSetVersionField](Remove-MgBetaGroupSiteListItemDocumentSetVersionField.md)
+Delete navigation property fields for groups
 
 ### [Remove-MgBetaGroupSiteListItemField](Remove-MgBetaGroupSiteListItemField.md)
 Delete navigation property fields for groups
@@ -2208,7 +2333,7 @@ Delete navigation property webparts for groups
 Delete navigation property webParts for groups
 
 ### [Remove-MgBetaGroupSitePermission](Remove-MgBetaGroupSitePermission.md)
-Delete a permission object on a site.
+Delete navigation property permissions for groups
 
 ### [Remove-MgBetaGroupSiteTermStore](Remove-MgBetaGroupSiteTermStore.md)
 Delete navigation property termStore for groups
@@ -2339,6 +2464,9 @@ Delete navigation property activities for sites
 ### [Remove-MgBetaSiteListItemDocumentSetVersion](Remove-MgBetaSiteListItemDocumentSetVersion.md)
 Delete a version of a document set in a list.
 
+### [Remove-MgBetaSiteListItemDocumentSetVersionField](Remove-MgBetaSiteListItemDocumentSetVersionField.md)
+Delete navigation property fields for sites
+
 ### [Remove-MgBetaSiteListItemField](Remove-MgBetaSiteListItemField.md)
 Delete navigation property fields for sites
 
@@ -2353,6 +2481,9 @@ Delete navigation property operations for sites
 
 ### [Remove-MgBetaSiteListSubscription](Remove-MgBetaSiteListSubscription.md)
 Delete navigation property subscriptions for sites
+
+### [Remove-MgBetaSiteOperation](Remove-MgBetaSiteOperation.md)
+Delete navigation property operations for sites
 
 ### [Remove-MgBetaSitePage](Remove-MgBetaSitePage.md)
 Delete navigation property pages for sites
@@ -2379,7 +2510,7 @@ Delete navigation property webparts for sites
 Delete navigation property webParts for sites
 
 ### [Remove-MgBetaSitePermission](Remove-MgBetaSitePermission.md)
-Delete a permission object on a site.
+Delete navigation property permissions for sites
 
 ### [Remove-MgBetaSiteTermStore](Remove-MgBetaSiteTermStore.md)
 Delete navigation property termStore for sites
@@ -2546,6 +2677,12 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgBetaSiteListContentType](Unpublish-MgBetaSiteListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
+### [Update-MgBetaAdminSharepoint](Update-MgBetaAdminSharepoint.md)
+Update the navigation property sharepoint in admin
+
+### [Update-MgBetaAdminSharepointSetting](Update-MgBetaAdminSharepointSetting.md)
+Update one or more tenant-level settings for SharePoint and OneDrive.
+
 ### [Update-MgBetaGroupSite](Update-MgBetaGroupSite.md)
 Update the navigation property sites in groups
 
@@ -2569,6 +2706,9 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 
 ### [Update-MgBetaGroupSiteContentTypeColumnLink](Update-MgBetaGroupSiteContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
+
+### [Update-MgBetaGroupSiteCreatedByUserMailboxSetting](Update-MgBetaGroupSiteCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupSiteInformationProtection](Update-MgBetaGroupSiteInformationProtection.md)
 Update the navigation property informationProtection in groups
@@ -2597,6 +2737,9 @@ Update the navigation property threatAssessmentRequests in groups
 ### [Update-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult](Update-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult.md)
 Update the navigation property results in groups
 
+### [Update-MgBetaGroupSiteLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaGroupSiteList](Update-MgBetaGroupSiteList.md)
 Update the navigation property lists in groups
 
@@ -2612,23 +2755,38 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### [Update-MgBetaGroupSiteListContentTypeColumnLink](Update-MgBetaGroupSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
 
+### [Update-MgBetaGroupSiteListCreatedByUserMailboxSetting](Update-MgBetaGroupSiteListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaGroupSiteListItem](Update-MgBetaGroupSiteListItem.md)
 Update the navigation property items in groups
 
 ### [Update-MgBetaGroupSiteListItemActivity](Update-MgBetaGroupSiteListItemActivity.md)
 Update the navigation property activities in groups
 
+### [Update-MgBetaGroupSiteListItemCreatedByUserMailboxSetting](Update-MgBetaGroupSiteListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaGroupSiteListItemDocumentSetVersion](Update-MgBetaGroupSiteListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in groups
 
+### [Update-MgBetaGroupSiteListItemDocumentSetVersionField](Update-MgBetaGroupSiteListItemDocumentSetVersionField.md)
+Update the navigation property fields in groups
+
 ### [Update-MgBetaGroupSiteListItemField](Update-MgBetaGroupSiteListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupSiteListItemVersion](Update-MgBetaGroupSiteListItemVersion.md)
 Update the navigation property versions in groups
 
 ### [Update-MgBetaGroupSiteListItemVersionField](Update-MgBetaGroupSiteListItemVersionField.md)
 Update the navigation property fields in groups
+
+### [Update-MgBetaGroupSiteListLastModifiedByUserMailboxSetting](Update-MgBetaGroupSiteListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupSiteListOperation](Update-MgBetaGroupSiteListOperation.md)
 Update the navigation property operations in groups
@@ -2691,7 +2849,7 @@ Update the properties of a sitePage object.
 Update the navigation property canvasLayout in groups
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection](Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection.md)
-Update the navigation property horizontalSections in groups
+Update the properties of a horizontalSection object.
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn](Update-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn.md)
 Update the navigation property columns in groups
@@ -2700,10 +2858,18 @@ Update the navigation property columns in groups
 Update the navigation property webparts in groups
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutVerticalSection](Update-MgBetaGroupSitePageCanvaLayoutVerticalSection.md)
-Update the navigation property verticalSection in groups
+Create a verticalSection object in a given sitePage.
+A sitePage can only have one vertical section.
+If a vertical section already exists, this method returns a `409 Conflict` response code.
 
 ### [Update-MgBetaGroupSitePageCanvaLayoutVerticalSectionWebpart](Update-MgBetaGroupSitePageCanvaLayoutVerticalSectionWebpart.md)
 Update the navigation property webparts in groups
+
+### [Update-MgBetaGroupSitePageCreatedByUserMailboxSetting](Update-MgBetaGroupSitePageCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting](Update-MgBetaGroupSitePageLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaGroupSitePageWebPart](Update-MgBetaGroupSitePageWebPart.md)
 Update the navigation property webParts in groups
@@ -2834,23 +3000,38 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### [Update-MgBetaSiteListContentTypeColumnLink](Update-MgBetaSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in sites
 
+### [Update-MgBetaSiteListCreatedByUserMailboxSetting](Update-MgBetaSiteListCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaSiteListItem](Update-MgBetaSiteListItem.md)
 Update the navigation property items in sites
 
 ### [Update-MgBetaSiteListItemActivity](Update-MgBetaSiteListItemActivity.md)
 Update the navigation property activities in sites
 
+### [Update-MgBetaSiteListItemCreatedByUserMailboxSetting](Update-MgBetaSiteListItemCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
 ### [Update-MgBetaSiteListItemDocumentSetVersion](Update-MgBetaSiteListItemDocumentSetVersion.md)
 Update the navigation property documentSetVersions in sites
 
+### [Update-MgBetaSiteListItemDocumentSetVersionField](Update-MgBetaSiteListItemDocumentSetVersionField.md)
+Update the navigation property fields in sites
+
 ### [Update-MgBetaSiteListItemField](Update-MgBetaSiteListItemField.md)
 Update the properties on a **[listItem][]**.
+
+### [Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting](Update-MgBetaSiteListItemLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaSiteListItemVersion](Update-MgBetaSiteListItemVersion.md)
 Update the navigation property versions in sites
 
 ### [Update-MgBetaSiteListItemVersionField](Update-MgBetaSiteListItemVersionField.md)
 Update the navigation property fields in sites
+
+### [Update-MgBetaSiteListLastModifiedByUserMailboxSetting](Update-MgBetaSiteListLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaSiteListOperation](Update-MgBetaSiteListOperation.md)
 Update the navigation property operations in sites
@@ -2873,6 +3054,9 @@ Invoke action onenotePatchContent
 ### [Update-MgBetaSiteOnenoteSectionPageContent](Update-MgBetaSiteOnenoteSectionPageContent.md)
 Invoke action onenotePatchContent
 
+### [Update-MgBetaSiteOperation](Update-MgBetaSiteOperation.md)
+Update the navigation property operations in sites
+
 ### [Update-MgBetaSitePage](Update-MgBetaSitePage.md)
 Update the properties of a sitePage object.
 
@@ -2880,7 +3064,7 @@ Update the properties of a sitePage object.
 Update the navigation property canvasLayout in sites
 
 ### [Update-MgBetaSitePageCanvaLayoutHorizontalSection](Update-MgBetaSitePageCanvaLayoutHorizontalSection.md)
-Update the navigation property horizontalSections in sites
+Update the properties of a horizontalSection object.
 
 ### [Update-MgBetaSitePageCanvaLayoutHorizontalSectionColumn](Update-MgBetaSitePageCanvaLayoutHorizontalSectionColumn.md)
 Update the navigation property columns in sites
@@ -2889,10 +3073,18 @@ Update the navigation property columns in sites
 Update the navigation property webparts in sites
 
 ### [Update-MgBetaSitePageCanvaLayoutVerticalSection](Update-MgBetaSitePageCanvaLayoutVerticalSection.md)
-Update the navigation property verticalSection in sites
+Create a verticalSection object in a given sitePage.
+A sitePage can only have one vertical section.
+If a vertical section already exists, this method returns a `409 Conflict` response code.
 
 ### [Update-MgBetaSitePageCanvaLayoutVerticalSectionWebpart](Update-MgBetaSitePageCanvaLayoutVerticalSectionWebpart.md)
 Update the navigation property webparts in sites
+
+### [Update-MgBetaSitePageCreatedByUserMailboxSetting](Update-MgBetaSitePageCreatedByUserMailboxSetting.md)
+Update property mailboxSettings value.
+
+### [Update-MgBetaSitePageLastModifiedByUserMailboxSetting](Update-MgBetaSitePageLastModifiedByUserMailboxSetting.md)
+Update property mailboxSettings value.
 
 ### [Update-MgBetaSitePageWebPart](Update-MgBetaSitePageWebPart.md)
 Update the navigation property webParts in sites

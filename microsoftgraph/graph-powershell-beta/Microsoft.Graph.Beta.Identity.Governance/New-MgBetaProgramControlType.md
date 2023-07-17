@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprogramcontroltype
 schema: 2.0.0
@@ -10,20 +10,17 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to programControlTypes
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgProgramControlType](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControlType?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaProgramControlType [-AdditionalProperties <Hashtable>] [-ControlTypeGroupId <String>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaProgramControlType -BodyParameter <IMicrosoftGraphProgramControlType> [-WhatIf] [-Confirm]
+New-MgBetaProgramControlType -BodyParameter <IMicrosoftGraphProgramControlType> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,14 +29,14 @@ Add new entity to programControlTypes
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -52,7 +49,7 @@ Add new entity to programControlTypes
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +65,7 @@ programControlType
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProgramControlType
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgramControlType
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +95,7 @@ Accept wildcard characters: False
 The name of the program control type
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +111,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -145,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -162,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgramControlType
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProgramControlType
+
 ## NOTES
 
 ALIASES
@@ -181,4 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The name of the program control type
 
 ## RELATED LINKS
-[New-MgProgramControlType](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControlType?view=graph-powershell-v1.0)
+

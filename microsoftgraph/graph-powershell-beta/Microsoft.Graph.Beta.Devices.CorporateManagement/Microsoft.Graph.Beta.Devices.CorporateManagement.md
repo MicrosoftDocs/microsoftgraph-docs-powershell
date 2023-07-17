@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
-Module Guid: 906db379-27d2-4f0e-a48a-eeafdd990176
+Module Guid: 2dc84d70-4256-45b6-833b-1024274af5a4
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,6 +24,12 @@ Android managed app policies.
 List of apps to which the policy is deployed.
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAppCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+
+### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignmentCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount](Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount.md)
@@ -92,17 +98,17 @@ List of apps to which the policy is deployed.
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAppCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAppCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
+
+### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignmentCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignmentCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 Navigation property to deployment summary of the configuration.
-
-### [Get-MgBetaDeviceAppManagementListMobileAppCountAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementListMobileAppCountAsManagedMobileLobApp.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceAppManagementListMobileAppCountAsMobileLobApp](Get-MgBetaDeviceAppManagementListMobileAppCountAsMobileLobApp.md)
-Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementManagedAppPolicy](Get-MgBetaDeviceAppManagementManagedAppPolicy.md)
 Managed app policies.
@@ -185,7 +191,25 @@ Get the number of the resource
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 Windows information protection for apps running on devices which are MDM enrolled.
 
+### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+Navigation property to list of security groups targeted for policy.
+
+### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignmentCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Another way to input exempt apps through xml files
+
+### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Another way to input protected apps through xml files
+
+### [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementMobileApp](Get-MgBetaDeviceAppManagementMobileApp.md)
@@ -242,46 +266,16 @@ App configuration user status summary.
 ### [Get-MgBetaDeviceAppManagementMobileAppCount](Get-MgBetaDeviceAppManagementMobileAppCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceAppManagementMobileAppDeviceStatus](Get-MgBetaDeviceAppManagementMobileAppDeviceStatus.md)
-The list of installation states for this mobile app.
-
-### [Get-MgBetaDeviceAppManagementMobileAppDeviceStatusApp](Get-MgBetaDeviceAppManagementMobileAppDeviceStatusApp.md)
-The navigation link to the mobile app.
-
-### [Get-MgBetaDeviceAppManagementMobileAppDeviceStatusCount](Get-MgBetaDeviceAppManagementMobileAppDeviceStatusCount.md)
+### [Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceAppManagementMobileAppInstallSummary](Get-MgBetaDeviceAppManagementMobileAppInstallSummary.md)
-Mobile App Install Summary.
-
-### [Get-MgBetaDeviceAppManagementMobileAppRelatedAppState](Get-MgBetaDeviceAppManagementMobileAppRelatedAppState.md)
-Invoke function getRelatedAppStates
+### [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp.md)
+Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementMobileAppRelationship](Get-MgBetaDeviceAppManagementMobileAppRelationship.md)
 List of relationships for this mobile app.
 
 ### [Get-MgBetaDeviceAppManagementMobileAppRelationshipCount](Get-MgBetaDeviceAppManagementMobileAppRelationshipCount.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceAppManagementMobileAppTopMobileApp](Get-MgBetaDeviceAppManagementMobileAppTopMobileApp.md)
-Invoke function getTopMobileApps
-
-### [Get-MgBetaDeviceAppManagementMobileAppUserStatus](Get-MgBetaDeviceAppManagementMobileAppUserStatus.md)
-The list of installation states for this mobile app.
-
-### [Get-MgBetaDeviceAppManagementMobileAppUserStatusApp](Get-MgBetaDeviceAppManagementMobileAppUserStatusApp.md)
-The navigation link to the mobile app.
-
-### [Get-MgBetaDeviceAppManagementMobileAppUserStatusCount](Get-MgBetaDeviceAppManagementMobileAppUserStatusCount.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus](Get-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus.md)
-The install state of the app on devices.
-
-### [Get-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatusApp](Get-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatusApp.md)
-The navigation link to the mobile app.
-
-### [Get-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatusCount](Get-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatusCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementPolicySet](Get-MgBetaDeviceAppManagementPolicySet.md)
@@ -326,6 +320,19 @@ Get the number of the resource
 ### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 Navigation property to deployment summary of the configuration.
 
+### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+List of settings contained in this App Configuration policy
+
+### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition.md)
+List of related Setting Definitions.
+This property is read-only.
+
+### [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinitionCount](Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSettingDefinitionCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceAppManagementTask](Get-MgBetaDeviceAppManagementTask.md)
 Device app management tasks.
 
@@ -345,7 +352,7 @@ Invoke function getLicensesForApp
 The collection of Windows Defender Application Control Supplemental Policies.
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment.md)
-The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+The associated group assignments for the Windows Defender Application Control Supplemental Policy.
 
 ### [Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignmentCount](Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignmentCount.md)
 Get the number of the resource
@@ -368,7 +375,25 @@ Get the number of the resource
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 Windows information protection for apps running on devices which are not MDM enrolled.
 
+### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+Navigation property to list of security groups targeted for policy.
+
+### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignmentCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Another way to input exempt apps through xml files
+
+### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFileCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Another way to input protected apps through xml files
+
+### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount](Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFileCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
@@ -563,6 +588,9 @@ Create new navigation property to androidManagedAppProtections for deviceAppMana
 ### [New-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](New-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
 Create new navigation property to apps for deviceAppManagement
 
+### [New-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
+
 ### [New-MgBetaDeviceAppManagementDefaultManagedAppProtection](New-MgBetaDeviceAppManagementDefaultManagedAppProtection.md)
 Create new navigation property to defaultManagedAppProtections for deviceAppManagement
 
@@ -592,6 +620,9 @@ Create new navigation property to iosManagedAppProtections for deviceAppManageme
 
 ### [New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](New-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 Create new navigation property to apps for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](New-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
 
 ### [New-MgBetaDeviceAppManagementManagedAppPolicy](New-MgBetaDeviceAppManagementManagedAppPolicy.md)
 Create new navigation property to managedAppPolicies for deviceAppManagement
@@ -632,6 +663,15 @@ Create new navigation property to deviceStates for deviceAppManagement
 ### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 Create new navigation property to mdmWindowsInformationProtectionPolicies for deviceAppManagement
 
+### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Create new navigation property to protectedAppLockerFiles for deviceAppManagement
+
 ### [New-MgBetaDeviceAppManagementMobileApp](New-MgBetaDeviceAppManagementMobileApp.md)
 Create new navigation property to mobileApps for deviceAppManagement
 
@@ -653,17 +693,8 @@ Create new navigation property to deviceStatuses for deviceAppManagement
 ### [New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](New-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus.md)
 Create new navigation property to userStatuses for deviceAppManagement
 
-### [New-MgBetaDeviceAppManagementMobileAppDeviceStatus](New-MgBetaDeviceAppManagementMobileAppDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceAppManagement
-
 ### [New-MgBetaDeviceAppManagementMobileAppRelationship](New-MgBetaDeviceAppManagementMobileAppRelationship.md)
 Create new navigation property to relationships for deviceAppManagement
-
-### [New-MgBetaDeviceAppManagementMobileAppUserStatus](New-MgBetaDeviceAppManagementMobileAppUserStatus.md)
-Create new navigation property to userStatuses for deviceAppManagement
-
-### [New-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus](New-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus.md)
-Create new navigation property to deviceStatuses for deviceAppManagement
 
 ### [New-MgBetaDeviceAppManagementPolicySet](New-MgBetaDeviceAppManagementPolicySet.md)
 Create new navigation property to policySets for deviceAppManagement
@@ -682,6 +713,9 @@ Create new navigation property to apps for deviceAppManagement
 
 ### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment.md)
 Create new navigation property to assignments for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+Create new navigation property to settings for deviceAppManagement
 
 ### [New-MgBetaDeviceAppManagementTask](New-MgBetaDeviceAppManagementTask.md)
 Create new navigation property to deviceAppManagementTasks for deviceAppManagement
@@ -703,6 +737,15 @@ Create new navigation property to windowsInformationProtectionDeviceRegistration
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 Create new navigation property to windowsInformationProtectionPolicies for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+Create new navigation property to assignments for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Create new navigation property to exemptAppLockerFiles for deviceAppManagement
+
+### [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Create new navigation property to protectedAppLockerFiles for deviceAppManagement
 
 ### [New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](New-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
 Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
@@ -770,6 +813,9 @@ Delete navigation property androidManagedAppProtections for deviceAppManagement
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
 Delete navigation property apps for deviceAppManagement
 
+### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+Delete navigation property assignments for deviceAppManagement
+
 ### [Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
 Delete navigation property deploymentSummary for deviceAppManagement
 
@@ -805,6 +851,9 @@ Delete navigation property iosManagedAppProtections for deviceAppManagement
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 Delete navigation property apps for deviceAppManagement
+
+### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+Delete navigation property assignments for deviceAppManagement
 
 ### [Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Remove-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 Delete navigation property deploymentSummary for deviceAppManagement
@@ -851,6 +900,15 @@ Delete navigation property deviceStates for deviceAppManagement
 ### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 Delete navigation property mdmWindowsInformationProtectionPolicies for deviceAppManagement
 
+### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+Delete navigation property assignments for deviceAppManagement
+
+### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Delete navigation property exemptAppLockerFiles for deviceAppManagement
+
+### [Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Delete navigation property protectedAppLockerFiles for deviceAppManagement
+
 ### [Remove-MgBetaDeviceAppManagementMobileApp](Remove-MgBetaDeviceAppManagementMobileApp.md)
 Delete navigation property mobileApps for deviceAppManagement
 
@@ -878,20 +936,8 @@ Delete navigation property userStatuses for deviceAppManagement
 ### [Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
 Delete navigation property userStatusSummary for deviceAppManagement
 
-### [Remove-MgBetaDeviceAppManagementMobileAppDeviceStatus](Remove-MgBetaDeviceAppManagementMobileAppDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceAppManagement
-
-### [Remove-MgBetaDeviceAppManagementMobileAppInstallSummary](Remove-MgBetaDeviceAppManagementMobileAppInstallSummary.md)
-Delete navigation property installSummary for deviceAppManagement
-
 ### [Remove-MgBetaDeviceAppManagementMobileAppRelationship](Remove-MgBetaDeviceAppManagementMobileAppRelationship.md)
 Delete navigation property relationships for deviceAppManagement
-
-### [Remove-MgBetaDeviceAppManagementMobileAppUserStatus](Remove-MgBetaDeviceAppManagementMobileAppUserStatus.md)
-Delete navigation property userStatuses for deviceAppManagement
-
-### [Remove-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus](Remove-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus.md)
-Delete navigation property deviceStatuses for deviceAppManagement
 
 ### [Remove-MgBetaDeviceAppManagementPolicySet](Remove-MgBetaDeviceAppManagementPolicySet.md)
 Delete navigation property policySets for deviceAppManagement
@@ -917,6 +963,9 @@ Delete navigation property assignments for deviceAppManagement
 ### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 Delete navigation property deploymentSummary for deviceAppManagement
 
+### [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Remove-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+Delete navigation property settings for deviceAppManagement
+
 ### [Remove-MgBetaDeviceAppManagementTask](Remove-MgBetaDeviceAppManagementTask.md)
 Delete navigation property deviceAppManagementTasks for deviceAppManagement
 
@@ -940,6 +989,15 @@ Delete navigation property windowsInformationProtectionDeviceRegistrations for d
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 Delete navigation property windowsInformationProtectionPolicies for deviceAppManagement
+
+### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+Delete navigation property assignments for deviceAppManagement
+
+### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Delete navigation property exemptAppLockerFiles for deviceAppManagement
+
+### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Delete navigation property protectedAppLockerFiles for deviceAppManagement
 
 ### [Remove-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Remove-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
 Delete navigation property windowsInformationProtectionWipeActions for deviceAppManagement
@@ -1055,6 +1113,9 @@ Update the navigation property androidManagedAppProtections in deviceAppManageme
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionApp.md)
 Update the navigation property apps in deviceAppManagement
 
+### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionAssignment.md)
+Update the navigation property assignments in deviceAppManagement
+
 ### [Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementAndroidManagedAppProtectionDeploymentSummary.md)
 Update the navigation property deploymentSummary in deviceAppManagement
 
@@ -1090,6 +1151,9 @@ Update the navigation property iosManagedAppProtections in deviceAppManagement
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionApp.md)
 Update the navigation property apps in deviceAppManagement
+
+### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionAssignment.md)
+Update the navigation property assignments in deviceAppManagement
 
 ### [Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](Update-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary.md)
 Update the navigation property deploymentSummary in deviceAppManagement
@@ -1136,6 +1200,15 @@ Update the navigation property deviceStates in deviceAppManagement
 ### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy.md)
 Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
 
+### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment.md)
+Update the navigation property assignments in deviceAppManagement
+
+### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Update the navigation property exemptAppLockerFiles in deviceAppManagement
+
+### [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Update the navigation property protectedAppLockerFiles in deviceAppManagement
+
 ### [Update-MgBetaDeviceAppManagementMobileApp](Update-MgBetaDeviceAppManagementMobileApp.md)
 Update the navigation property mobileApps in deviceAppManagement
 
@@ -1163,20 +1236,8 @@ Update the navigation property userStatuses in deviceAppManagement
 ### [Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](Update-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary.md)
 Update the navigation property userStatusSummary in deviceAppManagement
 
-### [Update-MgBetaDeviceAppManagementMobileAppDeviceStatus](Update-MgBetaDeviceAppManagementMobileAppDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceAppManagement
-
-### [Update-MgBetaDeviceAppManagementMobileAppInstallSummary](Update-MgBetaDeviceAppManagementMobileAppInstallSummary.md)
-Update the navigation property installSummary in deviceAppManagement
-
 ### [Update-MgBetaDeviceAppManagementMobileAppRelationship](Update-MgBetaDeviceAppManagementMobileAppRelationship.md)
 Update the navigation property relationships in deviceAppManagement
-
-### [Update-MgBetaDeviceAppManagementMobileAppUserStatus](Update-MgBetaDeviceAppManagementMobileAppUserStatus.md)
-Update the navigation property userStatuses in deviceAppManagement
-
-### [Update-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus](Update-MgBetaDeviceAppManagementMobileAppUserStatusDeviceStatus.md)
-Update the navigation property deviceStatuses in deviceAppManagement
 
 ### [Update-MgBetaDeviceAppManagementMultipleMobileAppRelationship](Update-MgBetaDeviceAppManagementMultipleMobileAppRelationship.md)
 Invoke action updateRelationships
@@ -1208,6 +1269,9 @@ Update the navigation property assignments in deviceAppManagement
 ### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationDeploymentSummary.md)
 Update the navigation property deploymentSummary in deviceAppManagement
 
+### [Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting](Update-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting.md)
+Update the navigation property settings in deviceAppManagement
+
 ### [Update-MgBetaDeviceAppManagementTask](Update-MgBetaDeviceAppManagementTask.md)
 Update the navigation property deviceAppManagementTasks in deviceAppManagement
 
@@ -1234,6 +1298,15 @@ Update the navigation property windowsInformationProtectionDeviceRegistrations i
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicy.md)
 Update the navigation property windowsInformationProtectionPolicies in deviceAppManagement
+
+### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyAssignment.md)
+Update the navigation property assignments in deviceAppManagement
+
+### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile.md)
+Update the navigation property exemptAppLockerFiles in deviceAppManagement
+
+### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile.md)
+Update the navigation property protectedAppLockerFiles in deviceAppManagement
 
 ### [Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction](Update-MgBetaDeviceAppManagementWindowsInformationProtectionWipeAction.md)
 Update the navigation property windowsInformationProtectionWipeActions in deviceAppManagement

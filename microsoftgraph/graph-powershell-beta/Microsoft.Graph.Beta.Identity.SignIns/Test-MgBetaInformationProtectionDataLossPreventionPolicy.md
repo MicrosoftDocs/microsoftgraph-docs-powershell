@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetainformationprotectiondatalosspreventionpolicy
 schema: 2.0.0
@@ -10,23 +10,20 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action evaluate
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
 ```
 Test-MgBetaInformationProtectionDataLossPreventionPolicy [-AdditionalProperties <Hashtable>]
  [-EvaluationInput <IMicrosoftGraphDlpEvaluationInput>] [-NotificationInfo <IMicrosoftGraphDlpNotification>]
- [-Target <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Target <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaInformationProtectionDataLossPreventionPolicy
  -BodyParameter <IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -34,14 +31,14 @@ Invoke action evaluate
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -54,7 +51,7 @@ Invoke action evaluate
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -70,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate
 Aliases:
 
@@ -86,7 +83,7 @@ dlpEvaluationInput
 To construct, see NOTES section for EVALUATIONINPUT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDlpEvaluationInput
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDlpEvaluationInput
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -102,7 +99,7 @@ dlpNotification
 To construct, see NOTES section for NOTIFICATIONINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDlpNotification
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDlpNotification
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -117,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -132,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,9 +162,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1JhdydfInformationprotectionDatalosspreventionpoliciesMicrosoftGraphEvaluatePostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDlpEvaluatePoliciesJobResponse
+
 ## NOTES
 
 ALIASES
@@ -216,4 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Author <String>]`: 
 
 ## RELATED LINKS
-[Test-MgInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
+

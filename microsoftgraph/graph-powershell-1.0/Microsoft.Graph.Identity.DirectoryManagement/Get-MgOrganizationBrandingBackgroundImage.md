@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgorganizationbrandingbackgroundimage
 schema: 2.0.0
@@ -12,9 +12,6 @@ Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
 A smaller image will reduce bandwidth requirements and make the page load faster.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBetaOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingBackgroundImage?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -25,8 +22,8 @@ Get-MgOrganizationBrandingBackgroundImage -OrganizationId <String> -OutFile <Str
 
 ### GetViaIdentity
 ```
-Get-MgOrganizationBrandingBackgroundImage -InputObject <IIdentityDirectoryManagementIdentity> -OutFile <String>
- [-PassThru] [<CommonParameters>]
+Get-MgOrganizationBrandingBackgroundImage -InputObject <IIdentityDirectoryManagementIdentity>
+ -OutFile <String> [-PassThru] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,33 +33,19 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+{{ Add code here }}
 ```
 
-Get-MgOrganizationBranding -OrganizationId $organizationId
 
-### EXAMPLE 2
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
+{{ Add code here }}
 ```
 
-Get-MgOrganizationBranding -OrganizationId $organizationId
 
-### EXAMPLE 3
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
-
-Get-MgOrganizationBranding -OrganizationId $organizationId
-
-### EXAMPLE 4
-```powershell
-Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
-
-Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
 
 ## PARAMETERS
 
@@ -71,7 +54,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -86,7 +69,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -101,7 +84,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -116,7 +99,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -133,9 +116,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -169,4 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaBetaOrganizationBrandingBackgroundImage](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingBackgroundImage?view=graph-powershell-beta)
+

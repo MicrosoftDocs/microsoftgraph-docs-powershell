@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Education
-Module Guid: 5e057b01-57db-4f60-92da-a61e5245933e
+Module Guid: be67cdcb-5126-4a33-b2ed-e16c8895b981
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education
 Help Version: 1.0.0.0
 Locale: en-US
@@ -49,6 +49,9 @@ Only teachers can perform this operation.
 ### [Get-MgBetaEducationClassAssignmentDelta](Get-MgBetaEducationClassAssignmentDelta.md)
 Invoke function delta
 
+### [Get-MgBetaEducationClassAssignmentGradingCategory](Get-MgBetaEducationClassAssignmentGradingCategory.md)
+Get gradingCategory from education
+
 ### [Get-MgBetaEducationClassAssignmentResource](Get-MgBetaEducationClassAssignmentResource.md)
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
@@ -67,6 +70,12 @@ Only teachers, students, and applications with application permissions can perfo
 ### [Get-MgBetaEducationClassAssignmentSetting](Get-MgBetaEducationClassAssignmentSetting.md)
 Read the properties and relationships of an educationAssignmentSettings object.
 Only teachers can perform this operation.
+
+### [Get-MgBetaEducationClassAssignmentSettingGradingCategory](Get-MgBetaEducationClassAssignmentSettingGradingCategory.md)
+Get gradingCategories from education
+
+### [Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount](Get-MgBetaEducationClassAssignmentSettingGradingCategoryCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaEducationClassAssignmentSubmission](Get-MgBetaEducationClassAssignmentSubmission.md)
 Retrieve a particular submission.
@@ -169,6 +178,9 @@ Get the number of the resource
 
 ### [Get-MgBetaEducationMeAssignmentDelta](Get-MgBetaEducationMeAssignmentDelta.md)
 Invoke function delta
+
+### [Get-MgBetaEducationMeAssignmentGradingCategory](Get-MgBetaEducationMeAssignmentGradingCategory.md)
+Get gradingCategory from education
 
 ### [Get-MgBetaEducationMeAssignmentResource](Get-MgBetaEducationMeAssignmentResource.md)
 Get the properties of an education assignment resource associated with an assignment.
@@ -333,6 +345,9 @@ Get the number of the resource
 
 ### [Get-MgBetaEducationUserAssignmentDelta](Get-MgBetaEducationUserAssignmentDelta.md)
 Invoke function delta
+
+### [Get-MgBetaEducationUserAssignmentGradingCategory](Get-MgBetaEducationUserAssignmentGradingCategory.md)
+Get gradingCategory from education
 
 ### [Get-MgBetaEducationUserAssignmentResource](Get-MgBetaEducationUserAssignmentResource.md)
 Get the properties of an education assignment resource associated with an assignment.
@@ -539,6 +554,9 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
+### [New-MgBetaEducationClassAssignmentSettingGradingCategory](New-MgBetaEducationClassAssignmentSettingGradingCategory.md)
+Create new navigation property to gradingCategories for education
+
 ### [New-MgBetaEducationClassAssignmentSubmission](New-MgBetaEducationClassAssignmentSubmission.md)
 Create new navigation property to submissions for education
 
@@ -702,6 +720,10 @@ Delete ref of navigation property categories for education
 ### [Remove-MgBetaEducationClassAssignmentDefault](Remove-MgBetaEducationClassAssignmentDefault.md)
 Delete navigation property assignmentDefaults for education
 
+### [Remove-MgBetaEducationClassAssignmentGradingCategory](Remove-MgBetaEducationClassAssignmentGradingCategory.md)
+Remove a gradingCategory from an educationAssignment.
+Only teachers can perform this operation.
+
 ### [Remove-MgBetaEducationClassAssignmentResource](Remove-MgBetaEducationClassAssignmentResource.md)
 Delete a specific educationAssignmentResource attached to an assignment.
 Only teachers in the class can remove a resource.
@@ -717,6 +739,9 @@ This method does not delete the rubric itself and can only be performed by teach
 
 ### [Remove-MgBetaEducationClassAssignmentSetting](Remove-MgBetaEducationClassAssignmentSetting.md)
 Delete navigation property assignmentSettings for education
+
+### [Remove-MgBetaEducationClassAssignmentSettingGradingCategory](Remove-MgBetaEducationClassAssignmentSettingGradingCategory.md)
+Delete navigation property gradingCategories for education
 
 ### [Remove-MgBetaEducationClassAssignmentSubmission](Remove-MgBetaEducationClassAssignmentSubmission.md)
 Delete navigation property submissions for education
@@ -749,6 +774,10 @@ Delete navigation property assignments for education
 
 ### [Remove-MgBetaEducationMeAssignmentCategoryByRef](Remove-MgBetaEducationMeAssignmentCategoryByRef.md)
 Delete ref of navigation property categories for education
+
+### [Remove-MgBetaEducationMeAssignmentGradingCategory](Remove-MgBetaEducationMeAssignmentGradingCategory.md)
+Remove a gradingCategory from an educationAssignment.
+Only teachers can perform this operation.
 
 ### [Remove-MgBetaEducationMeAssignmentResource](Remove-MgBetaEducationMeAssignmentResource.md)
 Delete a specific educationAssignmentResource attached to an assignment.
@@ -810,6 +839,10 @@ Delete navigation property assignments for education
 
 ### [Remove-MgBetaEducationUserAssignmentCategoryByRef](Remove-MgBetaEducationUserAssignmentCategoryByRef.md)
 Delete ref of navigation property categories for education
+
+### [Remove-MgBetaEducationUserAssignmentGradingCategory](Remove-MgBetaEducationUserAssignmentGradingCategory.md)
+Remove a gradingCategory from an educationAssignment.
+Only teachers can perform this operation.
 
 ### [Remove-MgBetaEducationUserAssignmentResource](Remove-MgBetaEducationUserAssignmentResource.md)
 Delete a specific educationAssignmentResource attached to an assignment.
@@ -971,6 +1004,9 @@ Only teachers can perform this operation.
 ### [Update-MgBetaEducationClassAssignmentSetting](Update-MgBetaEducationClassAssignmentSetting.md)
 Update the properties of an educationAssignmentSettings object.
 Only Teachers can update these settings.
+
+### [Update-MgBetaEducationClassAssignmentSettingGradingCategory](Update-MgBetaEducationClassAssignmentSettingGradingCategory.md)
+Update the navigation property gradingCategories in education
 
 ### [Update-MgBetaEducationClassAssignmentSubmission](Update-MgBetaEducationClassAssignmentSubmission.md)
 Update the navigation property submissions in education

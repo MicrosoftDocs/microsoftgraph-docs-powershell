@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementintunebrandingprofile
 schema: 2.0.0
@@ -10,59 +10,58 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property intuneBrandingProfiles in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementIntuneBrandingProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementIntuneBrandingProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
- [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
- [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
- [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
- [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisableDeviceCategorySelection]
- [-DisplayName <String>] [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>]
- [-IsDefaultProfile] [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
+ [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>]
+ [-ContactItEmailAddress <String>] [-ContactItName <String>] [-ContactItNotes <String>]
+ [-ContactItPhoneNumber <String>] [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>]
+ [-CustomCantSeePrivacyMessage <String>] [-CustomPrivacyMessage <String>] [-DisableClientTelemetry]
+ [-DisableDeviceCategorySelection] [-DisplayName <String>]
+ [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>] [-IsDefaultProfile]
+ [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
  [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
  [-LightBackgroundLogo <IMicrosoftGraphMimeContent>] [-OnlineSupportSiteName <String>]
- [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>] [-ProfileName <String>]
- [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
- [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
- [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>]
+ [-ProfileName <String>] [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification]
+ [-ShowAzureAdEnterpriseApps] [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo]
+ [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -IntuneBrandingProfileId <String>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
  [-AdditionalProperties <Hashtable>] [-Assignments <IMicrosoftGraphIntuneBrandingProfileAssignment[]>]
- [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>] [-ContactItEmailAddress <String>]
- [-ContactItName <String>] [-ContactItNotes <String>] [-ContactItPhoneNumber <String>]
- [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>] [-CustomCantSeePrivacyMessage <String>]
- [-CustomPrivacyMessage <String>] [-DisableClientTelemetry] [-DisableDeviceCategorySelection]
- [-DisplayName <String>] [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>]
- [-IsDefaultProfile] [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
+ [-CompanyPortalBlockedActions <IMicrosoftGraphCompanyPortalBlockedAction[]>]
+ [-ContactItEmailAddress <String>] [-ContactItName <String>] [-ContactItNotes <String>]
+ [-ContactItPhoneNumber <String>] [-CreatedDateTime <DateTime>] [-CustomCanSeePrivacyMessage <String>]
+ [-CustomCantSeePrivacyMessage <String>] [-CustomPrivacyMessage <String>] [-DisableClientTelemetry]
+ [-DisableDeviceCategorySelection] [-DisplayName <String>]
+ [-EnrollmentAvailability <EnrollmentAvailabilityOptions>] [-Id <String>] [-IsDefaultProfile]
+ [-IsFactoryResetDisabled] [-IsRemoveDeviceDisabled]
  [-LandingPageCustomizedImage <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
  [-LightBackgroundLogo <IMicrosoftGraphMimeContent>] [-OnlineSupportSiteName <String>]
- [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>] [-ProfileName <String>]
- [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification] [-ShowAzureAdEnterpriseApps]
- [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo] [-ShowOfficeWebApps]
- [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementIntuneBrandingProfile -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphIntuneBrandingProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OnlineSupportSiteUrl <String>] [-PrivacyUrl <String>] [-ProfileDescription <String>]
+ [-ProfileName <String>] [-RoleScopeTagIds <String[]>] [-SendDeviceOwnershipChangePushNotification]
+ [-ShowAzureAdEnterpriseApps] [-ShowConfigurationManagerApps] [-ShowDisplayNameNextToLogo] [-ShowLogo]
+ [-ShowOfficeWebApps] [-ThemeColor <IMicrosoftGraphRgbColor>] [-ThemeColorLogo <IMicrosoftGraphMimeContent>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -70,14 +69,14 @@ Update the navigation property intuneBrandingProfiles in deviceManagement
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -90,7 +89,7 @@ Update the navigation property intuneBrandingProfiles in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +105,7 @@ The list of group assignments for the branding profile
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIntuneBrandingProfileAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfileAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,7 +121,7 @@ This entity contains data which is used in customizing the tenant level appearan
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIntuneBrandingProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -138,7 +137,7 @@ Collection of blocked actions on the company portal as per platform and device o
 To construct, see NOTES section for COMPANYPORTALBLOCKEDACTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompanyPortalBlockedAction[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanyPortalBlockedAction[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +152,7 @@ Accept wildcard characters: False
 E-mail address of the person/organization responsible for IT support
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +167,7 @@ Accept wildcard characters: False
 Name of the person/organization responsible for IT support
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +182,7 @@ Accept wildcard characters: False
 Text comments regarding the person/organization responsible for IT support
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +197,7 @@ Accept wildcard characters: False
 Phone number of the person/organization responsible for IT support
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +212,7 @@ Accept wildcard characters: False
 Time when the BrandingProfile was created
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,7 +227,7 @@ Accept wildcard characters: False
 Text comments regarding what the admin has access to on the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -243,7 +242,7 @@ Accept wildcard characters: False
 Text comments regarding what the admin doesn't have access to on the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -258,7 +257,7 @@ Accept wildcard characters: False
 Text comments regarding what the admin doesn't have access to on the device
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +273,7 @@ Applies to telemetry sent from all clients to the Intune service.
 When disabled, all proactive troubleshooting and issue warnings within the client are turned off, and telemetry settings appear inactive or hidden to the device user.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +288,7 @@ Accept wildcard characters: False
 Boolean that indicates if Device Category Selection will be shown in Company Portal
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +303,7 @@ Accept wildcard characters: False
 Company/organization name that is displayed to end users
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +318,7 @@ Accept wildcard characters: False
 Options available for enrollment flow customization
 
 ```yaml
-Type: EnrollmentAvailabilityOptions
+Type: Microsoft.Graph.Beta.PowerShell.Support.EnrollmentAvailabilityOptions
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -335,7 +334,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -351,8 +350,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -366,8 +365,8 @@ Accept wildcard characters: False
 The unique identifier of intuneBrandingProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -381,7 +380,7 @@ Accept wildcard characters: False
 Boolean that represents whether the profile is used as default or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -396,7 +395,7 @@ Accept wildcard characters: False
 Boolean that represents whether the adminsistrator has disabled the 'Factory Reset' action on corporate owned devices.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -411,7 +410,7 @@ Accept wildcard characters: False
 Boolean that represents whether the adminsistrator has disabled the 'Remove Device' action on corporate owned devices.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -427,7 +426,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LANDINGPAGECUSTOMIZEDIMAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -442,7 +441,7 @@ Accept wildcard characters: False
 Time when the BrandingProfile was last modified
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -458,7 +457,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LIGHTBACKGROUNDLOGO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -470,10 +469,10 @@ Accept wildcard characters: False
 ```
 
 ### -OnlineSupportSiteName
-Display name of the company/organization's IT helpdesk site
+Display name of the company/organization’s IT helpdesk site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -485,10 +484,10 @@ Accept wildcard characters: False
 ```
 
 ### -OnlineSupportSiteUrl
-URL to the company/organization's IT helpdesk site
+URL to the company/organization’s IT helpdesk site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -500,10 +499,10 @@ Accept wildcard characters: False
 ```
 
 ### -PrivacyUrl
-URL to the company/organization's privacy policy
+URL to the company/organization’s privacy policy
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -518,7 +517,7 @@ Accept wildcard characters: False
 Description of the profile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -533,7 +532,7 @@ Accept wildcard characters: False
 Name of the profile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -548,7 +547,7 @@ Accept wildcard characters: False
 List of scope tags assigned to the branding profile
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -563,7 +562,7 @@ Accept wildcard characters: False
 Boolean that indicates if a push notification is sent to users when their device ownership type changes from personal to corporate
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -578,7 +577,7 @@ Accept wildcard characters: False
 Boolean that indicates if AzureAD Enterprise Apps will be shown in Company Portal
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -593,7 +592,7 @@ Accept wildcard characters: False
 Boolean that indicates if Configuration Manager Apps will be shown in Company Portal
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -608,7 +607,7 @@ Accept wildcard characters: False
 Boolean that represents whether the administrator-supplied display name will be shown next to the logo image or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -623,7 +622,7 @@ Accept wildcard characters: False
 Boolean that represents whether the administrator-supplied logo images are shown or not
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -638,7 +637,7 @@ Accept wildcard characters: False
 Boolean that indicates if Office WebApps will be shown in Company Portal
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -654,7 +653,7 @@ Color in RGB.
 To construct, see NOTES section for THEMECOLOR properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRgbColor
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRgbColor
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -670,7 +669,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for THEMECOLORLOGO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -685,7 +684,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -701,7 +700,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -718,10 +717,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIntuneBrandingProfile
+
 ## NOTES
 
 ALIASES
@@ -772,9 +774,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Byte[]>]`: The byte array that contains the actual content.
   - `[LastModifiedDateTime <DateTime?>]`: Time when the BrandingProfile was last modified
   - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site
-  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site
-  - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy
+  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization’s IT helpdesk site
+  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization’s IT helpdesk site
+  - `[PrivacyUrl <String>]`: URL to the company/organization’s privacy policy
   - `[ProfileDescription <String>]`: Description of the profile
   - `[ProfileName <String>]`: Name of the profile
   - `[RoleScopeTagIds <String[]>]`: List of scope tags assigned to the branding profile
@@ -800,6 +802,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AuditEventId <String>]`: The unique identifier of auditEvent
   - `[CartToClassAssociationId <String>]`: The unique identifier of cartToClassAssociation
   - `[CloudPcAuditEventId <String>]`: The unique identifier of cloudPcAuditEvent
+  - `[CloudPcBulkActionId <String>]`: The unique identifier of cloudPcBulkAction
   - `[CloudPcDeviceImageId <String>]`: The unique identifier of cloudPcDeviceImage
   - `[CloudPcExportJobId <String>]`: The unique identifier of cloudPcExportJob
   - `[CloudPcExternalPartnerSettingId <String>]`: The unique identifier of cloudPcExternalPartnerSetting
@@ -875,7 +878,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementIntuneBrandingProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementIntuneBrandingProfile?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[Update-MgDeviceManagementIntuneBrandingProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementIntuneBrandingProfile?view=graph-powershell-v1.0)

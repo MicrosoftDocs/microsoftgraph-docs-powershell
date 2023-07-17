@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.DeviceManagement
-Module Guid: 446e024a-ce43-4b41-8942-f7a5a45487a0
+Module Guid: 97adecad-5ac5-4e63-add9-5b0f3ed8ab8d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -11,6 +11,31 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Beta.DeviceManagement Cmdlets
+### [Get-MgBetaAdminEdge](Get-MgBetaAdminEdge.md)
+A container for Microsoft Edge resources.
+Read-only.
+
+### [Get-MgBetaAdminEdgeInternetExplorerMode](Get-MgBetaAdminEdgeInternetExplorerMode.md)
+A container for Internet Explorer mode resources.
+
+### [Get-MgBetaAdminEdgeInternetExplorerModeSiteList](Get-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
+Get a browserSiteList that contains browserSite and browserSharedCookie resources.
+
+### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount](Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount.md)
+Get the number of the resource
+
+### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
+Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
+
+### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookieCount](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookieCount.md)
+Get the number of the resource
+
+### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
+Get a browserSite that resides on a browserSiteList.
+
+### [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSiteCount](Get-MgBetaAdminEdgeInternetExplorerModeSiteListSiteCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceManagement](Get-MgBetaDeviceManagement.md)
 Get deviceManagement
 
@@ -507,6 +532,12 @@ The settings this category contains
 ### [Get-MgBetaDeviceManagementIntentCategorySettingCount](Get-MgBetaDeviceManagementIntentCategorySettingCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceManagementIntentCategorySettingDefinition](Get-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
+The setting definitions this category contains
+
+### [Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount](Get-MgBetaDeviceManagementIntentCategorySettingDefinitionCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceManagementIntentCount](Get-MgBetaDeviceManagementIntentCount.md)
 Get the number of the resource
 
@@ -690,6 +721,21 @@ Get the number of the resource
 ### [Get-MgBetaDeviceManagementMobileAppTroubleshootingEventCount](Get-MgBetaDeviceManagementMobileAppTroubleshootingEventCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceManagementMonitoring](Get-MgBetaDeviceManagementMonitoring.md)
+Get monitoring from deviceManagement
+
+### [Get-MgBetaDeviceManagementMonitoringAlertRecord](Get-MgBetaDeviceManagementMonitoringAlertRecord.md)
+Read the properties and relationships of an alertRecord object.
+
+### [Get-MgBetaDeviceManagementMonitoringAlertRecordCount](Get-MgBetaDeviceManagementMonitoringAlertRecordCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceManagementMonitoringAlertRule](Get-MgBetaDeviceManagementMonitoringAlertRule.md)
+Read the properties and relationships of an alertRule object.
+
+### [Get-MgBetaDeviceManagementMonitoringAlertRuleCount](Get-MgBetaDeviceManagementMonitoringAlertRuleCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceManagementNotificationMessageTemplate](Get-MgBetaDeviceManagementNotificationMessageTemplate.md)
 The Notification Message Templates.
 
@@ -789,6 +835,12 @@ The settings this category contains
 ### [Get-MgBetaDeviceManagementTemplateCategoryRecommendedSettingCount](Get-MgBetaDeviceManagementTemplateCategoryRecommendedSettingCount.md)
 Get the number of the resource
 
+### [Get-MgBetaDeviceManagementTemplateCategorySettingDefinition](Get-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
+The setting definitions this category contains
+
+### [Get-MgBetaDeviceManagementTemplateCategorySettingDefinitionCount](Get-MgBetaDeviceManagementTemplateCategorySettingDefinitionCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaDeviceManagementTemplateCount](Get-MgBetaDeviceManagementTemplateCount.md)
 Get the number of the resource
 
@@ -805,6 +857,12 @@ Get the number of the resource
 The settings this category contains
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSettingCount](Get-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSettingCount.md)
+Get the number of the resource
+
+### [Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
+The setting definitions this category contains
+
+### [Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinitionCount](Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinitionCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementTemplateMigratableToCount](Get-MgBetaDeviceManagementTemplateMigratableToCount.md)
@@ -830,6 +888,12 @@ Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
 The user experience analytics anomaly entity contains anomaly details.
+
+### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
+The user experience analytics anomaly correlation group overview entity contains the information for each correlation group of an anomaly.
+
+### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverviewCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverviewCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCount.md)
 Get the number of the resource
@@ -899,6 +963,7 @@ User experience analytics appHealth overview
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue.md)
 The metric values for the user experience analytics category.
+Read-only.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount](Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValueCount.md)
 Get the number of the resource
@@ -907,28 +972,28 @@ Get the number of the resource
 User experience analytics baselines
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric.md)
-The user experience analytics app health metrics.
+The scores and insights for the application health metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBatteryHealthMetric.md)
-The user experience analytics battery health metrics.
+The scores and insights for the battery health metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric.md)
-The user experience analytics best practices metrics.
+The scores and insights for the best practices metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric.md)
-The user experience analytics device boot performance metrics.
+The scores and insights for the device boot performance metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineRebootAnalyticMetric.md)
-The user experience analytics reboot analytics metrics.
+The scores and insights for the reboot analytics metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineResourcePerformanceMetric.md)
-The user experience analytics resource performance metrics.
+The scores and insights for the resource performance metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric.md)
-The user experience analytics work from anywhere metrics.
+The scores and insights for the work from anywhere metrics.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](Get-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact.md)
 User Experience Analytics Battery Health App Impact
@@ -980,6 +1045,7 @@ Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValue.md)
 The metric values for the user experience analytics category.
+Read-only.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValueCount](Get-MgBetaDeviceManagementUserExperienceAnalyticCategoryMetricValueCount.md)
 Get the number of the resource
@@ -1094,6 +1160,7 @@ Get the number of the resource
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice.md)
 The work from anywhere metric devices.
+Read-only.
 
 ### [Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount](Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDeviceCount.md)
 Get the number of the resource
@@ -1128,17 +1195,14 @@ List of devices affected by current malware with the malware state on each devic
 ### [Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount](Get-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareStateCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfile](Get-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-A collection of windows quality update profiles
+### [New-MgBetaAdminEdgeInternetExplorerModeSiteList](New-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
+Create a new browserSiteList object to support Internet Explorer mode.
 
-### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-The list of group assignments of the profile.
+### [New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](New-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
+Create a new browserSharedCookie object in a browserSiteList.
 
-### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignmentCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignmentCount.md)
-Get the number of the resource
-
-### [Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount](Get-MgBetaDeviceManagementWindowsQualityUpdateProfileCount.md)
-Get the number of the resource
+### [New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](New-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
+Create a new browserSite object in a browserSiteList.
 
 ### [New-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState](New-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummaryAdvancedThreatProtectionOnboardingDeviceSettingState.md)
 Create new navigation property to advancedThreatProtectionOnboardingDeviceSettingStates for deviceManagement
@@ -1344,6 +1408,9 @@ Create new navigation property to categories for deviceManagement
 ### [New-MgBetaDeviceManagementIntentCategorySetting](New-MgBetaDeviceManagementIntentCategorySetting.md)
 Create new navigation property to settings for deviceManagement
 
+### [New-MgBetaDeviceManagementIntentCategorySettingDefinition](New-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
+Create new navigation property to settingDefinitions for deviceManagement
+
 ### [New-MgBetaDeviceManagementIntentDeviceSettingStateSummary](New-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 Create new navigation property to deviceSettingStateSummaries for deviceManagement
 
@@ -1416,6 +1483,12 @@ Create new navigation property to mobileAppTroubleshootingEvents for deviceManag
 ### [New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Create new navigation property to appLogCollectionRequests for deviceManagement
 
+### [New-MgBetaDeviceManagementMonitoringAlertRecord](New-MgBetaDeviceManagementMonitoringAlertRecord.md)
+Create new navigation property to alertRecords for deviceManagement
+
+### [New-MgBetaDeviceManagementMonitoringAlertRule](New-MgBetaDeviceManagementMonitoringAlertRule.md)
+Create an alertRule object.
+
 ### [New-MgBetaDeviceManagementNotificationMessageTemplate](New-MgBetaDeviceManagementNotificationMessageTemplate.md)
 Create new navigation property to notificationMessageTemplates for deviceManagement
 
@@ -1464,6 +1537,9 @@ Create new navigation property to categories for deviceManagement
 ### [New-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](New-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
 Create new navigation property to recommendedSettings for deviceManagement
 
+### [New-MgBetaDeviceManagementTemplateCategorySettingDefinition](New-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
+Create new navigation property to settingDefinitions for deviceManagement
+
 ### [New-MgBetaDeviceManagementTemplateMigratableTo](New-MgBetaDeviceManagementTemplateMigratableTo.md)
 Create new navigation property to migratableTo for deviceManagement
 
@@ -1472,6 +1548,9 @@ Create new navigation property to categories for deviceManagement
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](New-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
 Create new navigation property to recommendedSettings for deviceManagement
+
+### [New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](New-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
+Create new navigation property to settingDefinitions for deviceManagement
 
 ### [New-MgBetaDeviceManagementTemplateMigratableToSetting](New-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 Create new navigation property to settings for deviceManagement
@@ -1484,6 +1563,9 @@ Create new navigation property to troubleshootingEvents for deviceManagement
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](New-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
 Create new navigation property to userExperienceAnalyticsAnomaly for deviceManagement
+
+### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
+Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
 
 ### [New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
 Create new navigation property to userExperienceAnalyticsAnomalyDevice for deviceManagement
@@ -1614,11 +1696,20 @@ Create new navigation property to windowsMalwareInformation for deviceManagement
 ### [New-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](New-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 Create new navigation property to deviceMalwareStates for deviceManagement
 
-### [New-MgBetaDeviceManagementWindowsQualityUpdateProfile](New-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-Create new navigation property to windowsQualityUpdateProfiles for deviceManagement
+### [Remove-MgBetaAdminEdge](Remove-MgBetaAdminEdge.md)
+Delete navigation property edge for admin
 
-### [New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](New-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Create new navigation property to assignments for deviceManagement
+### [Remove-MgBetaAdminEdgeInternetExplorerMode](Remove-MgBetaAdminEdgeInternetExplorerMode.md)
+Delete navigation property internetExplorerMode for admin
+
+### [Remove-MgBetaAdminEdgeInternetExplorerModeSiteList](Remove-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
+Delete a browserSiteList object.
+
+### [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
+Delete a browserSharedCookie from a browserSiteList.
+
+### [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
+Delete a browserSite from a browserSiteList.
 
 ### [Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Remove-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Delete navigation property advancedThreatProtectionOnboardingStateSummary for deviceManagement
@@ -1866,6 +1957,9 @@ Delete navigation property categories for deviceManagement
 ### [Remove-MgBetaDeviceManagementIntentCategorySetting](Remove-MgBetaDeviceManagementIntentCategorySetting.md)
 Delete navigation property settings for deviceManagement
 
+### [Remove-MgBetaDeviceManagementIntentCategorySettingDefinition](Remove-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
+Delete navigation property settingDefinitions for deviceManagement
+
 ### [Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Remove-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 Delete navigation property deviceSettingStateSummaries for deviceManagement
 
@@ -1956,6 +2050,15 @@ Delete navigation property mobileAppTroubleshootingEvents for deviceManagement
 ### [Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Remove-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Delete navigation property appLogCollectionRequests for deviceManagement
 
+### [Remove-MgBetaDeviceManagementMonitoring](Remove-MgBetaDeviceManagementMonitoring.md)
+Delete navigation property monitoring for deviceManagement
+
+### [Remove-MgBetaDeviceManagementMonitoringAlertRecord](Remove-MgBetaDeviceManagementMonitoringAlertRecord.md)
+Delete navigation property alertRecords for deviceManagement
+
+### [Remove-MgBetaDeviceManagementMonitoringAlertRule](Remove-MgBetaDeviceManagementMonitoringAlertRule.md)
+Delete navigation property alertRules for deviceManagement
+
 ### [Remove-MgBetaDeviceManagementNotificationMessageTemplate](Remove-MgBetaDeviceManagementNotificationMessageTemplate.md)
 Delete navigation property notificationMessageTemplates for deviceManagement
 
@@ -2004,6 +2107,9 @@ Delete navigation property categories for deviceManagement
 ### [Remove-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Remove-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
 Delete navigation property recommendedSettings for deviceManagement
 
+### [Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition](Remove-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
+Delete navigation property settingDefinitions for deviceManagement
+
 ### [Remove-MgBetaDeviceManagementTemplateMigratableTo](Remove-MgBetaDeviceManagementTemplateMigratableTo.md)
 Delete navigation property migratableTo for deviceManagement
 
@@ -2012,6 +2118,9 @@ Delete navigation property categories for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Remove-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
 Delete navigation property recommendedSettings for deviceManagement
+
+### [Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Remove-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
+Delete navigation property settingDefinitions for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementTemplateMigratableToSetting](Remove-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 Delete navigation property settings for deviceManagement
@@ -2024,6 +2133,9 @@ Delete navigation property troubleshootingEvents for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
 Delete navigation property userExperienceAnalyticsAnomaly for deviceManagement
+
+### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
+Delete navigation property userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
 
 ### [Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Remove-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
 Delete navigation property userExperienceAnalyticsAnomalyDevice for deviceManagement
@@ -2169,14 +2281,23 @@ Delete navigation property windowsMalwareInformation for deviceManagement
 ### [Remove-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Remove-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 Delete navigation property deviceMalwareStates for deviceManagement
 
-### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfile](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-Delete navigation property windowsQualityUpdateProfiles for deviceManagement
+### [Update-MgBetaAdminEdge](Update-MgBetaAdminEdge.md)
+Update the navigation property edge in admin
 
-### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+### [Update-MgBetaAdminEdgeInternetExplorerMode](Update-MgBetaAdminEdgeInternetExplorerMode.md)
+Update the navigation property internetExplorerMode in admin
 
-### [Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Remove-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Delete navigation property assignments for deviceManagement
+### [Update-MgBetaAdminEdgeInternetExplorerModeSiteList](Update-MgBetaAdminEdgeInternetExplorerModeSiteList.md)
+Update the properties of a browserSiteList object.
+
+### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie.md)
+Update the properties of a browserSharedCookie object.
+
+### [Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite](Update-MgBetaAdminEdgeInternetExplorerModeSiteListSite.md)
+Update the properties of a browserSite object.
+
+### [Update-MgBetaDeviceManagement](Update-MgBetaDeviceManagement.md)
+Update deviceManagement
 
 ### [Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](Update-MgBetaDeviceManagementAdvancedThreatProtectionOnboardingStateSummary.md)
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
@@ -2421,6 +2542,9 @@ Update the navigation property categories in deviceManagement
 ### [Update-MgBetaDeviceManagementIntentCategorySetting](Update-MgBetaDeviceManagementIntentCategorySetting.md)
 Update the navigation property settings in deviceManagement
 
+### [Update-MgBetaDeviceManagementIntentCategorySettingDefinition](Update-MgBetaDeviceManagementIntentCategorySettingDefinition.md)
+Update the navigation property settingDefinitions in deviceManagement
+
 ### [Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary](Update-MgBetaDeviceManagementIntentDeviceSettingStateSummary.md)
 Update the navigation property deviceSettingStateSummaries in deviceManagement
 
@@ -2511,6 +2635,15 @@ Update the navigation property mobileAppTroubleshootingEvents in deviceManagemen
 ### [Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest.md)
 Update the navigation property appLogCollectionRequests in deviceManagement
 
+### [Update-MgBetaDeviceManagementMonitoring](Update-MgBetaDeviceManagementMonitoring.md)
+Update the navigation property monitoring in deviceManagement
+
+### [Update-MgBetaDeviceManagementMonitoringAlertRecord](Update-MgBetaDeviceManagementMonitoringAlertRecord.md)
+Update the navigation property alertRecords in deviceManagement
+
+### [Update-MgBetaDeviceManagementMonitoringAlertRule](Update-MgBetaDeviceManagementMonitoringAlertRule.md)
+Update the properties of an alertRule object.
+
 ### [Update-MgBetaDeviceManagementNotificationMessageTemplate](Update-MgBetaDeviceManagementNotificationMessageTemplate.md)
 Update the navigation property notificationMessageTemplates in deviceManagement
 
@@ -2559,6 +2692,9 @@ Update the navigation property categories in deviceManagement
 ### [Update-MgBetaDeviceManagementTemplateCategoryRecommendedSetting](Update-MgBetaDeviceManagementTemplateCategoryRecommendedSetting.md)
 Update the navigation property recommendedSettings in deviceManagement
 
+### [Update-MgBetaDeviceManagementTemplateCategorySettingDefinition](Update-MgBetaDeviceManagementTemplateCategorySettingDefinition.md)
+Update the navigation property settingDefinitions in deviceManagement
+
 ### [Update-MgBetaDeviceManagementTemplateMigratableTo](Update-MgBetaDeviceManagementTemplateMigratableTo.md)
 Update the navigation property migratableTo in deviceManagement
 
@@ -2567,6 +2703,9 @@ Update the navigation property categories in deviceManagement
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting](Update-MgBetaDeviceManagementTemplateMigratableToCategoryRecommendedSetting.md)
 Update the navigation property recommendedSettings in deviceManagement
+
+### [Update-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition](Update-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition.md)
+Update the navigation property settingDefinitions in deviceManagement
 
 ### [Update-MgBetaDeviceManagementTemplateMigratableToSetting](Update-MgBetaDeviceManagementTemplateMigratableToSetting.md)
 Update the navigation property settings in deviceManagement
@@ -2579,6 +2718,9 @@ Update the navigation property troubleshootingEvents in deviceManagement
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomaly.md)
 Update the navigation property userExperienceAnalyticsAnomaly in deviceManagement
+
+### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview.md)
+Update the navigation property userExperienceAnalyticsAnomalyCorrelationGroupOverview in deviceManagement
 
 ### [Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice](Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice.md)
 Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceManagement
@@ -2723,10 +2865,4 @@ Update the navigation property windowsMalwareInformation in deviceManagement
 
 ### [Update-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState](Update-MgBetaDeviceManagementWindowsMalwareInformationDeviceMalwareState.md)
 Update the navigation property deviceMalwareStates in deviceManagement
-
-### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfile](Update-MgBetaDeviceManagementWindowsQualityUpdateProfile.md)
-Update the navigation property windowsQualityUpdateProfiles in deviceManagement
-
-### [Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment](Update-MgBetaDeviceManagementWindowsQualityUpdateProfileAssignment.md)
-Update the navigation property assignments in deviceManagement
 

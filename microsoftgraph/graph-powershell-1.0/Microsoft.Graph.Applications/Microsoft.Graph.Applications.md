@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 14a3d25f-3657-4573-b04d-2fc5a8fcd2c6
+Module Guid: 7f985d6e-0cbd-46ef-aead-89aed0d1fb4b
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgApplicationPassword](Add-MgApplicationPassword.md)
@@ -25,7 +25,7 @@ Adds a strong password or secret to an application.
 Adds a key credential to a servicePrincipal.
 This method along with removeKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+ServicePrincipals that don’t have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
 
 ### [Add-MgServicePrincipalPassword](Add-MgServicePrincipalPassword.md)
@@ -45,18 +45,37 @@ The **endDateTime** can be up to three years after the certificate is created.
 Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
-### [Clear-MgApplicationVerifiedPublisher](Clear-MgApplicationVerifiedPublisher.md)
-Unset the verifiedPublisher previously set on an application, removing all verified publisher properties.
-For more information, see Publisher verification.
+### [Confirm-MgApplicationMemberGroup](Confirm-MgApplicationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgApplicationMemberObject](Confirm-MgApplicationMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgApplicationMemberObject](Confirm-MgApplicationMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgServicePrincipalMemberGroup](Confirm-MgServicePrincipalMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgServicePrincipalMemberObject](Confirm-MgServicePrincipalMemberObject.md)
 Invoke action checkMemberObjects
+
+### [Find-MgApplicationSynchronizationJobSchemaDirectory](Find-MgApplicationSynchronizationJobSchemaDirectory.md)
+Invoke action discover
+
+### [Find-MgApplicationSynchronizationTemplateSchemaDirectory](Find-MgApplicationSynchronizationTemplateSchemaDirectory.md)
+Invoke action discover
+
+### [Find-MgServicePrincipalSynchronizationJobSchemaDirectory](Find-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
+Invoke action discover
+
+### [Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
+Invoke action discover
 
 ### [Get-MgApplication](Get-MgApplication.md)
 Get the properties and relationships of an application object.
@@ -81,9 +100,6 @@ Get the number of the resource
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
-### [Get-MgApplicationById](Get-MgApplicationById.md)
-Invoke action getByIds
-
 ### [Get-MgApplicationDelta](Get-MgApplicationDelta.md)
 Invoke function delta
 
@@ -105,25 +121,13 @@ Get homeRealmDiscoveryPolicies from applications
 ### [Get-MgApplicationHomeRealmDiscoveryPolicyCount](Get-MgApplicationHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgApplicationListOwnerCountAsAppRoleAssignment](Get-MgApplicationListOwnerCountAsAppRoleAssignment.md)
-Get the number of the resource
-
-### [Get-MgApplicationListOwnerCountAsEndpoint](Get-MgApplicationListOwnerCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgApplicationListOwnerCountAsServicePrincipal](Get-MgApplicationListOwnerCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgApplicationListOwnerCountAsUser](Get-MgApplicationListOwnerCountAsUser.md)
-Get the number of the resource
-
 ### [Get-MgApplicationLogo](Get-MgApplicationLogo.md)
 The main logo for the application.
 Not nullable.
 
-### [Get-MgApplicationLogo](Get-MgApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+### [Get-MgApplicationMemberGroup](Get-MgApplicationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgApplicationMemberObject](Get-MgApplicationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -155,6 +159,57 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ### [Get-MgApplicationOwnerCount](Get-MgApplicationOwnerCount.md)
+Get the number of the resource
+
+### [Get-MgApplicationOwnerCountAsAppRoleAssignment](Get-MgApplicationOwnerCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgApplicationOwnerCountAsEndpoint](Get-MgApplicationOwnerCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgApplicationOwnerCountAsServicePrincipal](Get-MgApplicationOwnerCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgApplicationOwnerCountAsUser](Get-MgApplicationOwnerCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgApplicationSynchronization](Get-MgApplicationSynchronization.md)
+Get synchronization from applications
+
+### [Get-MgApplicationSynchronizationAccessToken](Get-MgApplicationSynchronizationAccessToken.md)
+Invoke action acquireAccessToken
+
+### [Get-MgApplicationSynchronizationJob](Get-MgApplicationSynchronizationJob.md)
+Get jobs from applications
+
+### [Get-MgApplicationSynchronizationJobCount](Get-MgApplicationSynchronizationJobCount.md)
+Get the number of the resource
+
+### [Get-MgApplicationSynchronizationJobSchema](Get-MgApplicationSynchronizationJobSchema.md)
+Get schema from applications
+
+### [Get-MgApplicationSynchronizationJobSchemaDirectory](Get-MgApplicationSynchronizationJobSchemaDirectory.md)
+Get directories from applications
+
+### [Get-MgApplicationSynchronizationJobSchemaDirectoryCount](Get-MgApplicationSynchronizationJobSchemaDirectoryCount.md)
+Get the number of the resource
+
+### [Get-MgApplicationSynchronizationSecretCount](Get-MgApplicationSynchronizationSecretCount.md)
+Get the number of the resource
+
+### [Get-MgApplicationSynchronizationTemplate](Get-MgApplicationSynchronizationTemplate.md)
+Get templates from applications
+
+### [Get-MgApplicationSynchronizationTemplateCount](Get-MgApplicationSynchronizationTemplateCount.md)
+Get the number of the resource
+
+### [Get-MgApplicationSynchronizationTemplateSchema](Get-MgApplicationSynchronizationTemplateSchema.md)
+Get schema from applications
+
+### [Get-MgApplicationSynchronizationTemplateSchemaDirectory](Get-MgApplicationSynchronizationTemplateSchemaDirectory.md)
+Get directories from applications
+
+### [Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount](Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount.md)
 Get the number of the resource
 
 ### [Get-MgApplicationTemplate](Get-MgApplicationTemplate.md)
@@ -238,6 +293,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 ### [Get-MgServicePrincipalCreatedObjectCount](Get-MgServicePrincipalCreatedObjectCount.md)
 Get the number of the resource
 
+### [Get-MgServicePrincipalCreatedObjectCountAsServicePrincipal](Get-MgServicePrincipalCreatedObjectCountAsServicePrincipal.md)
+Get the number of the resource
+
 ### [Get-MgServicePrincipalDelegatedPermissionClassification](Get-MgServicePrincipalDelegatedPermissionClassification.md)
 Get delegatedPermissionClassifications from servicePrincipals
 
@@ -262,50 +320,9 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 ### [Get-MgServicePrincipalHomeRealmDiscoveryPolicyCount](Get-MgServicePrincipalHomeRealmDiscoveryPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgServicePrincipalListCreatedObjectCountAsServicePrincipal](Get-MgServicePrincipalListCreatedObjectCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListMemberOfCountAsAdministrativeUnit](Get-MgServicePrincipalListMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListMemberOfCountAsGroup](Get-MgServicePrincipalListMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnedObjectCountAsApplication](Get-MgServicePrincipalListOwnedObjectCountAsApplication.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnedObjectCountAsAppRoleAssignment](Get-MgServicePrincipalListOwnedObjectCountAsAppRoleAssignment.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnedObjectCountAsEndpoint](Get-MgServicePrincipalListOwnedObjectCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnedObjectCountAsGroup](Get-MgServicePrincipalListOwnedObjectCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnedObjectCountAsServicePrincipal](Get-MgServicePrincipalListOwnedObjectCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnerCountAsAppRoleAssignment](Get-MgServicePrincipalListOwnerCountAsAppRoleAssignment.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnerCountAsEndpoint](Get-MgServicePrincipalListOwnerCountAsEndpoint.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnerCountAsServicePrincipal](Get-MgServicePrincipalListOwnerCountAsServicePrincipal.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListOwnerCountAsUser](Get-MgServicePrincipalListOwnerCountAsUser.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListTransitiveMemberOfCountAsAdministrativeUnit](Get-MgServicePrincipalListTransitiveMemberOfCountAsAdministrativeUnit.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListTransitiveMemberOfCountAsGroup](Get-MgServicePrincipalListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
-
-### [Get-MgServicePrincipalListTransitiveMemberOfCountAsGroup](Get-MgServicePrincipalListTransitiveMemberOfCountAsGroup.md)
-Get the number of the resource
+### [Get-MgServicePrincipalMemberGroup](Get-MgServicePrincipalMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -321,13 +338,22 @@ Supports $expand.
 ### [Get-MgServicePrincipalMemberOfAsAdministrativeUnit](Get-MgServicePrincipalMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgServicePrincipalMemberOfAsDirectoryRole](Get-MgServicePrincipalMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgServicePrincipalMemberOfAsGroup](Get-MgServicePrincipalMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-### [Get-MgServicePrincipalMemberObject](Get-MgServicePrincipalMemberObject.md)
-Invoke action getMemberObjects
-
 ### [Get-MgServicePrincipalMemberOfCount](Get-MgServicePrincipalMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalMemberOfCountAsAdministrativeUnit](Get-MgServicePrincipalMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalMemberOfCountAsDirectoryRole](Get-MgServicePrincipalMemberOfCountAsDirectoryRole.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalMemberOfCountAsGroup](Get-MgServicePrincipalMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgServicePrincipalOauth2PermissionGrant](Get-MgServicePrincipalOauth2PermissionGrant.md)
@@ -362,6 +388,21 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.serviceP
 ### [Get-MgServicePrincipalOwnedObjectCount](Get-MgServicePrincipalOwnedObjectCount.md)
 Get the number of the resource
 
+### [Get-MgServicePrincipalOwnedObjectCountAsApplication](Get-MgServicePrincipalOwnedObjectCountAsApplication.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnedObjectCountAsAppRoleAssignment](Get-MgServicePrincipalOwnedObjectCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnedObjectCountAsEndpoint](Get-MgServicePrincipalOwnedObjectCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnedObjectCountAsGroup](Get-MgServicePrincipalOwnedObjectCountAsGroup.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnedObjectCountAsServicePrincipal](Get-MgServicePrincipalOwnedObjectCountAsServicePrincipal.md)
+Get the number of the resource
+
 ### [Get-MgServicePrincipalOwner](Get-MgServicePrincipalOwner.md)
 Directory objects that are owners of this servicePrincipal.
 The owners are a set of non-admin users or servicePrincipals who are allowed to modify this object.
@@ -391,6 +432,57 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 ### [Get-MgServicePrincipalOwnerCount](Get-MgServicePrincipalOwnerCount.md)
 Get the number of the resource
 
+### [Get-MgServicePrincipalOwnerCountAsAppRoleAssignment](Get-MgServicePrincipalOwnerCountAsAppRoleAssignment.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnerCountAsEndpoint](Get-MgServicePrincipalOwnerCountAsEndpoint.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnerCountAsServicePrincipal](Get-MgServicePrincipalOwnerCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalOwnerCountAsUser](Get-MgServicePrincipalOwnerCountAsUser.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalSynchronization](Get-MgServicePrincipalSynchronization.md)
+Get synchronization from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationAccessToken](Get-MgServicePrincipalSynchronizationAccessToken.md)
+Invoke action acquireAccessToken
+
+### [Get-MgServicePrincipalSynchronizationJob](Get-MgServicePrincipalSynchronizationJob.md)
+Get jobs from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationJobCount](Get-MgServicePrincipalSynchronizationJobCount.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalSynchronizationJobSchema](Get-MgServicePrincipalSynchronizationJobSchema.md)
+Get schema from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](Get-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
+Get directories from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationJobSchemaDirectoryCount](Get-MgServicePrincipalSynchronizationJobSchemaDirectoryCount.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalSynchronizationSecretCount](Get-MgServicePrincipalSynchronizationSecretCount.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalSynchronizationTemplate](Get-MgServicePrincipalSynchronizationTemplate.md)
+Get templates from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationTemplateCount](Get-MgServicePrincipalSynchronizationTemplateCount.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalSynchronizationTemplateSchema](Get-MgServicePrincipalSynchronizationTemplateSchema.md)
+Get schema from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
+Get directories from servicePrincipals
+
+### [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectoryCount](Get-MgServicePrincipalSynchronizationTemplateSchemaDirectoryCount.md)
+Get the number of the resource
+
 ### [Get-MgServicePrincipalTokenIssuancePolicy](Get-MgServicePrincipalTokenIssuancePolicy.md)
 The tokenIssuancePolicies assigned to this service principal.
 
@@ -409,10 +501,22 @@ Get transitiveMemberOf from servicePrincipals
 ### [Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgServicePrincipalTransitiveMemberOfAsGroup](Get-MgServicePrincipalTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgServicePrincipalTransitiveMemberOfCount](Get-MgServicePrincipalTransitiveMemberOfCount.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit](Get-MgServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalTransitiveMemberOfCountAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfCountAsDirectoryRole.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalTransitiveMemberOfCountAsGroup](Get-MgServicePrincipalTransitiveMemberOfCountAsGroup.md)
 Get the number of the resource
 
 ### [Get-MgUserAppRoleAssignment](Get-MgUserAppRoleAssignment.md)
@@ -422,10 +526,46 @@ Supports $expand.
 ### [Get-MgUserAppRoleAssignmentCount](Get-MgUserAppRoleAssignmentCount.md)
 Get the number of the resource
 
+### [Invoke-MgFilterApplicationSynchronizationJobSchemaOperator](Invoke-MgFilterApplicationSynchronizationJobSchemaOperator.md)
+Invoke function filterOperators
+
+### [Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator](Invoke-MgFilterApplicationSynchronizationTemplateSchemaOperator.md)
+Invoke function filterOperators
+
+### [Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator](Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator.md)
+Invoke function filterOperators
+
+### [Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator](Invoke-MgFilterServicePrincipalSynchronizationTemplateSchemaOperator.md)
+Invoke function filterOperators
+
+### [Invoke-MgFunctionApplicationSynchronizationJobSchema](Invoke-MgFunctionApplicationSynchronizationJobSchema.md)
+Invoke function functions
+
+### [Invoke-MgFunctionApplicationSynchronizationTemplateSchema](Invoke-MgFunctionApplicationSynchronizationTemplateSchema.md)
+Invoke function functions
+
+### [Invoke-MgFunctionServicePrincipalSynchronizationJobSchema](Invoke-MgFunctionServicePrincipalSynchronizationJobSchema.md)
+Invoke function functions
+
+### [Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema](Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema.md)
+Invoke function functions
+
 ### [Invoke-MgInstantiateApplicationTemplate](Invoke-MgInstantiateApplicationTemplate.md)
 Add an instance of an application from the Azure AD application gallery into your directory.
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
+
+### [Invoke-MgParseApplicationSynchronizationJobSchemaExpression](Invoke-MgParseApplicationSynchronizationJobSchemaExpression.md)
+Invoke action parseExpression
+
+### [Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression](Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression.md)
+Invoke action parseExpression
+
+### [Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression.md)
+Invoke action parseExpression
+
+### [Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression.md)
+Invoke action parseExpression
 
 ### [New-MgApplication](New-MgApplication.md)
 Create a new application object.
@@ -445,6 +585,21 @@ Maximum of 20 objects can be added to an application.
 
 ### [New-MgApplicationOwnerByRef](New-MgApplicationOwnerByRef.md)
 Add an owner to an application by posting to the owners collection.
+
+### [New-MgApplicationSynchronizationJob](New-MgApplicationSynchronizationJob.md)
+Create new navigation property to jobs for applications
+
+### [New-MgApplicationSynchronizationJobOnDemand](New-MgApplicationSynchronizationJobOnDemand.md)
+Invoke action provisionOnDemand
+
+### [New-MgApplicationSynchronizationJobSchemaDirectory](New-MgApplicationSynchronizationJobSchemaDirectory.md)
+Create new navigation property to directories for applications
+
+### [New-MgApplicationSynchronizationTemplate](New-MgApplicationSynchronizationTemplate.md)
+Create new navigation property to templates for applications
+
+### [New-MgApplicationSynchronizationTemplateSchemaDirectory](New-MgApplicationSynchronizationTemplateSchemaDirectory.md)
+Create new navigation property to directories for applications
 
 ### [New-MgApplicationTokenIssuancePolicyByRef](New-MgApplicationTokenIssuancePolicyByRef.md)
 Assign a tokenIssuancePolicy to an application.
@@ -485,13 +640,24 @@ Create new navigation property to endpoints for servicePrincipals
 ### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
-### [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef.md)
-The homeRealmDiscoveryPolicies assigned to this service principal.
-Supports $expand.
-
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
+
+### [New-MgServicePrincipalSynchronizationJob](New-MgServicePrincipalSynchronizationJob.md)
+Create new navigation property to jobs for servicePrincipals
+
+### [New-MgServicePrincipalSynchronizationJobOnDemand](New-MgServicePrincipalSynchronizationJobOnDemand.md)
+Invoke action provisionOnDemand
+
+### [New-MgServicePrincipalSynchronizationJobSchemaDirectory](New-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
+Create new navigation property to directories for servicePrincipals
+
+### [New-MgServicePrincipalSynchronizationTemplate](New-MgServicePrincipalSynchronizationTemplate.md)
+Create new navigation property to templates for servicePrincipals
+
+### [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](New-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
+Create new navigation property to directories for servicePrincipals
 
 ### [New-MgUserAppRoleAssignment](New-MgUserAppRoleAssignment.md)
 Use this API to assign an app role to a user.
@@ -505,9 +671,6 @@ After that time, they are permanently deleted.
 ### [Remove-MgApplicationAppManagementPolicyByRef](Remove-MgApplicationAppManagementPolicyByRef.md)
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
-
-### [Remove-MgApplication](Remove-MgApplication.md)
-Delete entity from applications
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete a directory extension definition represented by an extensionProperty object.
@@ -528,6 +691,27 @@ As a recommended best practice, apps should have at least two owners.
 ### [Remove-MgApplicationPassword](Remove-MgApplicationPassword.md)
 Remove a password from an application.
 
+### [Remove-MgApplicationSynchronization](Remove-MgApplicationSynchronization.md)
+Delete navigation property synchronization for applications
+
+### [Remove-MgApplicationSynchronizationJob](Remove-MgApplicationSynchronizationJob.md)
+Delete navigation property jobs for applications
+
+### [Remove-MgApplicationSynchronizationJobSchema](Remove-MgApplicationSynchronizationJobSchema.md)
+Delete navigation property schema for applications
+
+### [Remove-MgApplicationSynchronizationJobSchemaDirectory](Remove-MgApplicationSynchronizationJobSchemaDirectory.md)
+Delete navigation property directories for applications
+
+### [Remove-MgApplicationSynchronizationTemplate](Remove-MgApplicationSynchronizationTemplate.md)
+Delete navigation property templates for applications
+
+### [Remove-MgApplicationSynchronizationTemplateSchema](Remove-MgApplicationSynchronizationTemplateSchema.md)
+Delete navigation property schema for applications
+
+### [Remove-MgApplicationSynchronizationTemplateSchemaDirectory](Remove-MgApplicationSynchronizationTemplateSchemaDirectory.md)
+Delete navigation property directories for applications
+
 ### [Remove-MgApplicationTokenIssuancePolicyByRef](Remove-MgApplicationTokenIssuancePolicyByRef.md)
 Remove a tokenIssuancePolicy from an application.
 
@@ -539,6 +723,10 @@ Deletes an appRoleAssignment that a group has been granted.
 
 ### [Remove-MgServicePrincipal](Remove-MgServicePrincipal.md)
 Delete a servicePrincipal object.
+
+### [Remove-MgServicePrincipalAppManagementPolicy](Remove-MgServicePrincipalAppManagementPolicy.md)
+Remove an appManagementPolicy policy object from an application or service principal object.
+When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
 ### [Remove-MgServicePrincipalAppRoleAssignedTo](Remove-MgServicePrincipalAppRoleAssignedTo.md)
 Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
@@ -572,16 +760,67 @@ As a recommended best practice, service principals should have at least two owne
 ### [Remove-MgServicePrincipalPassword](Remove-MgServicePrincipalPassword.md)
 Remove a password from a servicePrincipal object.
 
+### [Remove-MgServicePrincipalSynchronization](Remove-MgServicePrincipalSynchronization.md)
+Delete navigation property synchronization for servicePrincipals
+
+### [Remove-MgServicePrincipalSynchronizationJob](Remove-MgServicePrincipalSynchronizationJob.md)
+Delete navigation property jobs for servicePrincipals
+
+### [Remove-MgServicePrincipalSynchronizationJobSchema](Remove-MgServicePrincipalSynchronizationJobSchema.md)
+Delete navigation property schema for servicePrincipals
+
+### [Remove-MgServicePrincipalSynchronizationJobSchemaDirectory](Remove-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
+Delete navigation property directories for servicePrincipals
+
+### [Remove-MgServicePrincipalSynchronizationTemplate](Remove-MgServicePrincipalSynchronizationTemplate.md)
+Delete navigation property templates for servicePrincipals
+
+### [Remove-MgServicePrincipalSynchronizationTemplateSchema](Remove-MgServicePrincipalSynchronizationTemplateSchema.md)
+Delete navigation property schema for servicePrincipals
+
+### [Remove-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Remove-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
+Delete navigation property directories for servicePrincipals
+
 ### [Remove-MgUserAppRoleAssignment](Remove-MgUserAppRoleAssignment.md)
 Delete an appRoleAssignment that has been granted to a user.
+
+### [Restart-MgApplicationSynchronizationJob](Restart-MgApplicationSynchronizationJob.md)
+Invoke action restart
+
+### [Restart-MgServicePrincipalSynchronizationJob](Restart-MgServicePrincipalSynchronizationJob.md)
+Invoke action restart
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 The main logo for the application.
 Not nullable.
 
+### [Set-MgApplicationSynchronization](Set-MgApplicationSynchronization.md)
+Update the navigation property synchronization in applications
+
+### [Set-MgApplicationSynchronizationSecret](Set-MgApplicationSynchronizationSecret.md)
+Update property secrets value.
+
 ### [Set-MgApplicationVerifiedPublisher](Set-MgApplicationVerifiedPublisher.md)
 Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
+
+### [Set-MgServicePrincipalSynchronization](Set-MgServicePrincipalSynchronization.md)
+Update the navigation property synchronization in servicePrincipals
+
+### [Set-MgServicePrincipalSynchronizationSecret](Set-MgServicePrincipalSynchronizationSecret.md)
+Update property secrets value.
+
+### [Start-MgApplicationSynchronizationJob](Start-MgApplicationSynchronizationJob.md)
+Invoke action start
+
+### [Start-MgServicePrincipalSynchronizationJob](Start-MgServicePrincipalSynchronizationJob.md)
+Invoke action start
+
+### [Suspend-MgApplicationSynchronizationJob](Suspend-MgApplicationSynchronizationJob.md)
+Invoke action pause
+
+### [Suspend-MgServicePrincipalSynchronizationJob](Suspend-MgServicePrincipalSynchronizationJob.md)
+Invoke action pause
 
 ### [Test-MgApplicationProperty](Test-MgApplicationProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -595,6 +834,9 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
+### [Test-MgApplicationSynchronizationJobCredential](Test-MgApplicationSynchronizationJobCredential.md)
+Invoke action validateCredentials
+
 ### [Test-MgServicePrincipalProperty](Test-MgServicePrincipalProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
 Clients can use this API to determine whether a display name or mail nickname is valid before trying to create a Microsoft 365 group.
@@ -607,6 +849,9 @@ If the properties fail multiple validations, only the first validation failure i
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 To learn more about configuring naming policies, see Configure naming policy.
 
+### [Test-MgServicePrincipalSynchronizationJobCredential](Test-MgServicePrincipalSynchronizationJobCredential.md)
+Invoke action validateCredentials
+
 ### [Update-MgApplication](Update-MgApplication.md)
 Update the properties of an application object.
 
@@ -615,6 +860,24 @@ Update the navigation property extensionProperties in applications
 
 ### [Update-MgApplicationFederatedIdentityCredential](Update-MgApplicationFederatedIdentityCredential.md)
 Update the properties of a federatedIdentityCredential object.
+
+### [Update-MgApplicationSynchronizationJob](Update-MgApplicationSynchronizationJob.md)
+Update the navigation property jobs in applications
+
+### [Update-MgApplicationSynchronizationJobSchema](Update-MgApplicationSynchronizationJobSchema.md)
+Update the navigation property schema in applications
+
+### [Update-MgApplicationSynchronizationJobSchemaDirectory](Update-MgApplicationSynchronizationJobSchemaDirectory.md)
+Update the navigation property directories in applications
+
+### [Update-MgApplicationSynchronizationTemplate](Update-MgApplicationSynchronizationTemplate.md)
+Update the navigation property templates in applications
+
+### [Update-MgApplicationSynchronizationTemplateSchema](Update-MgApplicationSynchronizationTemplateSchema.md)
+Update the navigation property schema in applications
+
+### [Update-MgApplicationSynchronizationTemplateSchemaDirectory](Update-MgApplicationSynchronizationTemplateSchemaDirectory.md)
+Update the navigation property directories in applications
 
 ### [Update-MgGroupAppRoleAssignment](Update-MgGroupAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in groups
@@ -633,6 +896,24 @@ Update the navigation property delegatedPermissionClassifications in servicePrin
 
 ### [Update-MgServicePrincipalEndpoint](Update-MgServicePrincipalEndpoint.md)
 Update the navigation property endpoints in servicePrincipals
+
+### [Update-MgServicePrincipalSynchronizationJob](Update-MgServicePrincipalSynchronizationJob.md)
+Update the navigation property jobs in servicePrincipals
+
+### [Update-MgServicePrincipalSynchronizationJobSchema](Update-MgServicePrincipalSynchronizationJobSchema.md)
+Update the navigation property schema in servicePrincipals
+
+### [Update-MgServicePrincipalSynchronizationJobSchemaDirectory](Update-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
+Update the navigation property directories in servicePrincipals
+
+### [Update-MgServicePrincipalSynchronizationTemplate](Update-MgServicePrincipalSynchronizationTemplate.md)
+Update the navigation property templates in servicePrincipals
+
+### [Update-MgServicePrincipalSynchronizationTemplateSchema](Update-MgServicePrincipalSynchronizationTemplateSchema.md)
+Update the navigation property schema in servicePrincipals
+
+### [Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
+Update the navigation property directories in servicePrincipals
 
 ### [Update-MgUserAppRoleAssignment](Update-MgUserAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in users

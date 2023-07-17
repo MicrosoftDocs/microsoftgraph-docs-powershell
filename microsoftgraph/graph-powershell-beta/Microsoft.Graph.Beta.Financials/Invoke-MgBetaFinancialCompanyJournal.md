@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/invoke-mgbetafinancialcompanyjournal
 schema: 2.0.0
@@ -10,20 +10,17 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action post
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFinancialCompanyJournal](/powershell/module/Microsoft.Graph.Financials/Invoke-MgFinancialCompanyJournal?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Post (Default)
 ```
-Invoke-MgBetaFinancialCompanyJournal -CompanyId <String> -JournalId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaFinancialCompanyJournal -CompanyId <String> -JournalId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### PostViaIdentity
 ```
-Invoke-MgBetaFinancialCompanyJournal -InputObject <IFinancialsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaFinancialCompanyJournal -InputObject <IFinancialsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,14 +29,14 @@ Invoke action post
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### EXAMPLE 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 {{ Add code here }}
 ```
@@ -52,7 +49,7 @@ Invoke action post
 The unique identifier of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Post
 Aliases:
 
@@ -68,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
 Parameter Sets: PostViaIdentity
 Aliases:
 
@@ -83,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of journal
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Post
 Aliases:
 
@@ -98,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -113,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,9 +143,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -197,4 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Invoke-MgFinancialCompanyJournal](/powershell/module/Microsoft.Graph.Financials/Invoke-MgFinancialCompanyJournal?view=graph-powershell-v1.0)
+

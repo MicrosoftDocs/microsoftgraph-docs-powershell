@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.DeviceManagement.Functions
-Module Guid: 032940ae-6560-41c9-a055-7528266df888
+Module Guid: 4e2fe7b6-ed55-4103-a24a-5a8398d8e4fd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.functions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -28,4 +28,10 @@ Retrieves the effective permissions of the currently authenticated user
 
 ### [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest.md)
 Download Apple push notification certificate signing request
+
+### [Invoke-MgExperienceDeviceManagement](Invoke-MgExperienceDeviceManagement.md)
+Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
+
+### [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice.md)
+Invoke function summarizeDevicePerformanceDevices
 

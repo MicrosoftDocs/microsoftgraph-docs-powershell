@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/remove-mgbetaprogramcontrol
 schema: 2.0.0
@@ -11,45 +11,42 @@ schema: 2.0.0
 In the Azure AD access reviews feature, delete a programControl object.
 This unlinks an access review from a program.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControl?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaProgramControl -ProgramControlId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaProgramControl -ProgramControlId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### Delete2
-```
-Remove-MgBetaProgramControl -ProgramControlId <String> -ProgramId <String> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
 Remove-MgBetaProgramControl -ProgramControlId <String> -ProgramControlId1 <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### DeleteViaIdentity2
+### Delete2
 ```
-Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaProgramControl -ProgramControlId <String> -ProgramId <String> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity2
+```
+Remove-MgBetaProgramControl -InputObject <IIdentityGovernanceIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -58,11 +55,13 @@ This unlinks an access review from a program.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgramControl -ProgramControlId $programControlId
 ```
+
+
 
 ## PARAMETERS
 
@@ -70,7 +69,7 @@ Remove-MgBetaProgramControl -ProgramControlId $programControlId
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -86,8 +85,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: DeleteViaIdentity2, DeleteViaIdentity1, DeleteViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1, DeleteViaIdentity2
 Aliases:
 
 Required: True
@@ -101,7 +100,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -116,8 +115,8 @@ Accept wildcard characters: False
 The unique identifier of programControl
 
 ```yaml
-Type: String
-Parameter Sets: Delete, Delete2, Delete1
+Type: System.String
+Parameter Sets: Delete, Delete1, Delete2
 Aliases:
 
 Required: True
@@ -131,7 +130,7 @@ Accept wildcard characters: False
 The unique identifier of programControl
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -146,7 +145,7 @@ Accept wildcard characters: False
 The unique identifier of program
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete2
 Aliases:
 
@@ -161,7 +160,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +176,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,9 +193,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -305,4 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControl?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/invoke-mgbetauploadeducationsynchronizationprofileurl
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function uploadUrl
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadEducationSynchronizationProfileUrl](/powershell/module/Microsoft.Graph.Education/Invoke-MgUploadEducationSynchronizationProfileUrl?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -31,11 +28,13 @@ Invoke function uploadUrl
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
+
+
 
 ## PARAMETERS
 
@@ -43,7 +42,7 @@ Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationP
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Upload
 Aliases:
 
@@ -59,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: UploadViaIdentity
 Aliases:
 
@@ -76,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -104,4 +105,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgUploadEducationSynchronizationProfileUrl](/powershell/module/Microsoft.Graph.Education/Invoke-MgUploadEducationSynchronizationProfileUrl?view=graph-powershell-v1.0)
+

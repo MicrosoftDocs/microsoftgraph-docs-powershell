@@ -1,6 +1,6 @@
-﻿---
+---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: 3571a09d-a3bb-4dcc-a364-e5a68e952f3e
+Module Guid: abfca319-343a-4c19-9a6d-f664778ca841
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
@@ -53,11 +53,6 @@ Nullable.
 ### [Get-MgUserContactFolderChildFolderContactExtensionCount](Get-MgUserContactFolderChildFolderContactExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](Get-MgUserContactFolderChildFolderContactMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
-
 ### [Get-MgUserContactFolderChildFolderContactPhoto](Get-MgUserContactFolderChildFolderContactPhoto.md)
 Optional contact picture.
 You can get or set a photo for a contact.
@@ -65,23 +60,8 @@ You can get or set a photo for a contact.
 ### [Get-MgUserContactFolderChildFolderContactPhotoContent](Get-MgUserContactFolderChildFolderContactPhotoContent.md)
 Get media content for the navigation property photo from users
 
-### [Get-MgUserContactFolderChildFolderContactSingleValueExtendedProperty](Get-MgUserContactFolderChildFolderContactSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
-
 ### [Get-MgUserContactFolderChildFolderCount](Get-MgUserContactFolderChildFolderCount.md)
 Get the number of the resource
-
-### [Get-MgUserContactFolderChildFolderMultiValueExtendedProperty](Get-MgUserContactFolderChildFolderMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
-
-### [Get-MgUserContactFolderChildFolderSingleValueExtendedProperty](Get-MgUserContactFolderChildFolderSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
 
 ### [Get-MgUserContactFolderContact](Get-MgUserContactFolderContact.md)
 The contacts in the folder.
@@ -100,11 +80,6 @@ Nullable.
 ### [Get-MgUserContactFolderContactExtensionCount](Get-MgUserContactFolderContactExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgUserContactFolderContactMultiValueExtendedProperty](Get-MgUserContactFolderContactMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
-
 ### [Get-MgUserContactFolderContactPhoto](Get-MgUserContactFolderContactPhoto.md)
 Optional contact picture.
 You can get or set a photo for a contact.
@@ -112,28 +87,8 @@ You can get or set a photo for a contact.
 ### [Get-MgUserContactFolderContactPhotoContent](Get-MgUserContactFolderContactPhotoContent.md)
 Get media content for the navigation property photo from users
 
-### [Get-MgUserContactFolderContactSingleValueExtendedProperty](Get-MgUserContactFolderContactSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
-
 ### [Get-MgUserContactFolderCount](Get-MgUserContactFolderCount.md)
 Get the number of the resource
-
-### [Get-MgUserContactFolderMultiValueExtendedProperty](Get-MgUserContactFolderMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
-
-### [Get-MgUserContactFolderSingleValueExtendedProperty](Get-MgUserContactFolderSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the contactFolder.
-Read-only.
-Nullable.
-
-### [Get-MgUserContactMultiValueExtendedProperty](Get-MgUserContactMultiValueExtendedProperty.md)
-The collection of multi-value extended properties defined for the contact.
-Read-only.
-Nullable.
 
 ### [Get-MgUserContactPhoto](Get-MgUserContactPhoto.md)
 Optional contact picture.
@@ -141,11 +96,6 @@ You can get or set a photo for a contact.
 
 ### [Get-MgUserContactPhotoContent](Get-MgUserContactPhotoContent.md)
 Get media content for the navigation property photo from users
-
-### [Get-MgUserContactSingleValueExtendedProperty](Get-MgUserContactSingleValueExtendedProperty.md)
-The collection of single-value extended properties defined for the contact.
-Read-only.
-Nullable.
 
 ### [New-MgUserContact](New-MgUserContact.md)
 Add a contact to the root Contacts folder or to the contacts endpoint of another contact folder.
@@ -167,41 +117,11 @@ Add a contact to the root Contacts folder or to the `contacts` endpoint of anoth
 ### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](New-MgUserContactFolderChildFolderContactMultiValueExtendedProperty.md)
-Create new navigation property to multiValueExtendedProperties for users
-
-### [New-MgUserContactFolderChildFolderContactSingleValueExtendedProperty](New-MgUserContactFolderChildFolderContactSingleValueExtendedProperty.md)
-Create new navigation property to singleValueExtendedProperties for users
-
-### [New-MgUserContactFolderChildFolderMultiValueExtendedProperty](New-MgUserContactFolderChildFolderMultiValueExtendedProperty.md)
-Create new navigation property to multiValueExtendedProperties for users
-
-### [New-MgUserContactFolderChildFolderSingleValueExtendedProperty](New-MgUserContactFolderChildFolderSingleValueExtendedProperty.md)
-Create new navigation property to singleValueExtendedProperties for users
-
 ### [New-MgUserContactFolderContact](New-MgUserContactFolderContact.md)
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ### [New-MgUserContactFolderContactExtension](New-MgUserContactFolderContactExtension.md)
 Create new navigation property to extensions for users
-
-### [New-MgUserContactFolderContactMultiValueExtendedProperty](New-MgUserContactFolderContactMultiValueExtendedProperty.md)
-Create new navigation property to multiValueExtendedProperties for users
-
-### [New-MgUserContactFolderContactSingleValueExtendedProperty](New-MgUserContactFolderContactSingleValueExtendedProperty.md)
-Create new navigation property to singleValueExtendedProperties for users
-
-### [New-MgUserContactFolderMultiValueExtendedProperty](New-MgUserContactFolderMultiValueExtendedProperty.md)
-Create new navigation property to multiValueExtendedProperties for users
-
-### [New-MgUserContactFolderSingleValueExtendedProperty](New-MgUserContactFolderSingleValueExtendedProperty.md)
-Create new navigation property to singleValueExtendedProperties for users
-
-### [New-MgUserContactMultiValueExtendedProperty](New-MgUserContactMultiValueExtendedProperty.md)
-Create new navigation property to multiValueExtendedProperties for users
-
-### [New-MgUserContactSingleValueExtendedProperty](New-MgUserContactSingleValueExtendedProperty.md)
-Create new navigation property to singleValueExtendedProperties for users
 
 ### [Remove-MgUserContact](Remove-MgUserContact.md)
 Delete a contact.
@@ -221,41 +141,11 @@ Delete navigation property contacts for users
 ### [Remove-MgUserContactFolderChildFolderContactExtension](Remove-MgUserContactFolderChildFolderContactExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](Remove-MgUserContactFolderChildFolderContactMultiValueExtendedProperty.md)
-Delete navigation property multiValueExtendedProperties for users
-
-### [Remove-MgUserContactFolderChildFolderContactSingleValueExtendedProperty](Remove-MgUserContactFolderChildFolderContactSingleValueExtendedProperty.md)
-Delete navigation property singleValueExtendedProperties for users
-
-### [Remove-MgUserContactFolderChildFolderMultiValueExtendedProperty](Remove-MgUserContactFolderChildFolderMultiValueExtendedProperty.md)
-Delete navigation property multiValueExtendedProperties for users
-
-### [Remove-MgUserContactFolderChildFolderSingleValueExtendedProperty](Remove-MgUserContactFolderChildFolderSingleValueExtendedProperty.md)
-Delete navigation property singleValueExtendedProperties for users
-
 ### [Remove-MgUserContactFolderContact](Remove-MgUserContactFolderContact.md)
 Delete navigation property contacts for users
 
 ### [Remove-MgUserContactFolderContactExtension](Remove-MgUserContactFolderContactExtension.md)
 Delete navigation property extensions for users
-
-### [Remove-MgUserContactFolderContactMultiValueExtendedProperty](Remove-MgUserContactFolderContactMultiValueExtendedProperty.md)
-Delete navigation property multiValueExtendedProperties for users
-
-### [Remove-MgUserContactFolderContactSingleValueExtendedProperty](Remove-MgUserContactFolderContactSingleValueExtendedProperty.md)
-Delete navigation property singleValueExtendedProperties for users
-
-### [Remove-MgUserContactFolderMultiValueExtendedProperty](Remove-MgUserContactFolderMultiValueExtendedProperty.md)
-Delete navigation property multiValueExtendedProperties for users
-
-### [Remove-MgUserContactFolderSingleValueExtendedProperty](Remove-MgUserContactFolderSingleValueExtendedProperty.md)
-Delete navigation property singleValueExtendedProperties for users
-
-### [Remove-MgUserContactMultiValueExtendedProperty](Remove-MgUserContactMultiValueExtendedProperty.md)
-Delete navigation property multiValueExtendedProperties for users
-
-### [Remove-MgUserContactSingleValueExtendedProperty](Remove-MgUserContactSingleValueExtendedProperty.md)
-Delete navigation property singleValueExtendedProperties for users
 
 ### [Set-MgUserContactFolderChildFolderContactPhotoContent](Set-MgUserContactFolderChildFolderContactPhotoContent.md)
 Update media content for the navigation property photo in users
@@ -284,20 +174,8 @@ Update the navigation property contacts in users
 ### [Update-MgUserContactFolderChildFolderContactExtension](Update-MgUserContactFolderChildFolderContactExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgUserContactFolderChildFolderContactMultiValueExtendedProperty](Update-MgUserContactFolderChildFolderContactMultiValueExtendedProperty.md)
-Update the navigation property multiValueExtendedProperties in users
-
 ### [Update-MgUserContactFolderChildFolderContactPhoto](Update-MgUserContactFolderChildFolderContactPhoto.md)
 Update the navigation property photo in users
-
-### [Update-MgUserContactFolderChildFolderContactSingleValueExtendedProperty](Update-MgUserContactFolderChildFolderContactSingleValueExtendedProperty.md)
-Update the navigation property singleValueExtendedProperties in users
-
-### [Update-MgUserContactFolderChildFolderMultiValueExtendedProperty](Update-MgUserContactFolderChildFolderMultiValueExtendedProperty.md)
-Update the navigation property multiValueExtendedProperties in users
-
-### [Update-MgUserContactFolderChildFolderSingleValueExtendedProperty](Update-MgUserContactFolderChildFolderSingleValueExtendedProperty.md)
-Update the navigation property singleValueExtendedProperties in users
 
 ### [Update-MgUserContactFolderContact](Update-MgUserContactFolderContact.md)
 Update the navigation property contacts in users
@@ -305,27 +183,9 @@ Update the navigation property contacts in users
 ### [Update-MgUserContactFolderContactExtension](Update-MgUserContactFolderContactExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgUserContactFolderContactMultiValueExtendedProperty](Update-MgUserContactFolderContactMultiValueExtendedProperty.md)
-Update the navigation property multiValueExtendedProperties in users
-
 ### [Update-MgUserContactFolderContactPhoto](Update-MgUserContactFolderContactPhoto.md)
 Update the navigation property photo in users
 
-### [Update-MgUserContactFolderContactSingleValueExtendedProperty](Update-MgUserContactFolderContactSingleValueExtendedProperty.md)
-Update the navigation property singleValueExtendedProperties in users
-
-### [Update-MgUserContactFolderMultiValueExtendedProperty](Update-MgUserContactFolderMultiValueExtendedProperty.md)
-Update the navigation property multiValueExtendedProperties in users
-
-### [Update-MgUserContactFolderSingleValueExtendedProperty](Update-MgUserContactFolderSingleValueExtendedProperty.md)
-Update the navigation property singleValueExtendedProperties in users
-
-### [Update-MgUserContactMultiValueExtendedProperty](Update-MgUserContactMultiValueExtendedProperty.md)
-Update the navigation property multiValueExtendedProperties in users
-
 ### [Update-MgUserContactPhoto](Update-MgUserContactPhoto.md)
 Update the navigation property photo in users
-
-### [Update-MgUserContactSingleValueExtendedProperty](Update-MgUserContactSingleValueExtendedProperty.md)
-Update the navigation property singleValueExtendedProperties in users
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationmerubric
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationRubric object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeRubric?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,12 +17,12 @@ Create a new educationRubric object.
 New-MgBetaEducationMeRubric [-AdditionalProperties <Hashtable>] [-CreatedBy <IMicrosoftGraphIdentitySet>]
  [-Description <IMicrosoftGraphEducationItemBody>] [-DisplayName <String>] [-Grading <Hashtable>]
  [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Levels <IMicrosoftGraphRubricLevel[]>]
- [-Qualities <IMicrosoftGraphRubricQuality[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Qualities <IMicrosoftGraphRubricQuality[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-WhatIf] [-Confirm]
+New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,160 +31,78 @@ Create a new educationRubric object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-$params = @{
-	DisplayName = "Example Credit Rubric"
-	Description = @{
-		Content = "This is an example of a credit rubric (no points)"
-		ContentType = "text"
-	}
-	Levels = @(
-		@{
-			DisplayName = "Good"
-			Description = @{
-				Content = ""
-				ContentType = "text"
-			}
-		}
-		@{
-			DisplayName = "Poor"
-			Description = @{
-				Content = ""
-				ContentType = "text"
-			}
-		}
-	)
-	Qualities = @(
-		@{
-			Description = @{
-				Content = "Argument"
-				ContentType = "text"
-			}
-			Criteria = @(
-				@{
-					Description = @{
-						Content = "The essay's argument is persuasive."
-						ContentType = "text"
-					}
-				}
-				@{
-					Description = @{
-						Content = "The essay's argument does not make sense."
-						ContentType = "text"
-					}
-				}
-			)
-		}
-		@{
-			Description = @{
-				Content = "Spelling and Grammar"
-				ContentType = "text"
-			}
-			Criteria = @(
-				@{
-					Description = @{
-						Content = "The essay uses proper spelling and grammar with few or no errors."
-						ContentType = "text"
-					}
-				}
-				@{
-					Description = @{
-						Content = "The essay has numerous errors in spelling and/or grammar."
-						ContentType = "text"
-					}
-				}
-			)
-		}
-	)
-}
-New-MgBetaEducationMeRubric -BodyParameter $params
 ```
 
-### EXAMPLE 2
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
 $params = @{
-	DisplayName = "Example Points Rubric"
-	Description = @{
-		Content = "This is an example of a rubric with points"
-		ContentType = "text"
+	displayName = "Example Credit Rubric"
+	description = @{
+		content = "This is an example of a credit rubric (no points)"
+		contentType = "text"
 	}
-	Levels = @(
+	levels = @(
 		@{
-			DisplayName = "Good"
-			Description = @{
-				Content = ""
-				ContentType = "text"
-			}
-			Grading = @{
-				"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
-				MaxPoints = 
+			displayName = "Good"
+			description = @{
+				content = ""
+				contentType = "text"
 			}
 		}
 		@{
-			DisplayName = "Poor"
-			Description = @{
-				Content = ""
-				ContentType = "text"
-			}
-			Grading = @{
-				"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
-				MaxPoints = 
+			displayName = "Poor"
+			description = @{
+				content = ""
+				contentType = "text"
 			}
 		}
 	)
-	Qualities = @(
+	qualities = @(
 		@{
-			Description = @{
-				Content = "Argument"
-				ContentType = "text"
+			description = @{
+				content = "Argument"
+				contentType = "text"
 			}
-			Criteria = @(
+			criteria = @(
 				@{
-					Description = @{
-						Content = "The essay's argument is persuasive."
-						ContentType = "text"
+					description = @{
+						content = "The essay's argument is persuasive."
+						contentType = "text"
 					}
 				}
 				@{
-					Description = @{
-						Content = "The essay's argument does not make sense."
-						ContentType = "text"
+					description = @{
+						content = "The essay's argument does not make sense."
+						contentType = "text"
 					}
 				}
 			)
-			Weight = 50.0
 		}
 		@{
-			Description = @{
-				Content = "Spelling and Grammar"
-				ContentType = "text"
+			description = @{
+				content = "Spelling and Grammar"
+				contentType = "text"
 			}
-			Criteria = @(
+			criteria = @(
 				@{
-					Description = @{
-						Content = "The essay uses proper spelling and grammar with few or no errors."
-						ContentType = "text"
+					description = @{
+						content = "The essay uses proper spelling and grammar with few or no errors."
+						contentType = "text"
 					}
 				}
 				@{
-					Description = @{
-						Content = "The essay has numerous errors in spelling and/or grammar."
-						ContentType = "text"
+					description = @{
+						content = "The essay has numerous errors in spelling and/or grammar."
+						contentType = "text"
 					}
 				}
 			)
-			Weight = 50.0
 		}
 	)
-	Grading = @{
-		"@odata.type" = "#microsoft.graph.educationAssignmentPointsGradeType"
-	}
 }
+
 New-MgBetaEducationMeRubric -BodyParameter $params
-```
 
 ## PARAMETERS
 
@@ -195,7 +110,7 @@ New-MgBetaEducationMeRubric -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +126,7 @@ educationRubric
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationRubric
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
 Parameter Sets: Create
 Aliases:
 
@@ -227,7 +142,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +158,7 @@ educationItemBody
 To construct, see NOTES section for DESCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationItemBody
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -258,7 +173,7 @@ Accept wildcard characters: False
 The name of this rubric.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -273,7 +188,7 @@ Accept wildcard characters: False
 educationAssignmentGradeType
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +204,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +220,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -321,7 +236,7 @@ The collection of levels making up this rubric.
 To construct, see NOTES section for LEVELS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRubricLevel[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRubricLevel[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -337,7 +252,7 @@ The collection of qualities making up this rubric.
 To construct, see NOTES section for QUALITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRubricQuality[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRubricQuality[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -352,7 +267,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -368,7 +283,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -385,9 +300,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationRubric
+
 ## NOTES
 
 ALIASES
@@ -474,4 +391,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
-[New-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeRubric?view=graph-powershell-v1.0)
+
