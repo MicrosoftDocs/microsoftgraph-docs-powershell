@@ -6,10 +6,10 @@ Param(
     [System.Collections.Generic.HashSet[string]]$BetaCommandGetVariantList = @(),
     [System.Collections.Generic.HashSet[string]]$V1CommandListVariantList = @(),
     [System.Collections.Generic.HashSet[string]]$BetaCommandListVariantList = @(),
-    [string] $ModuleMappingConfigPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
-    [string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
-    [string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph"),
-    [string] $GraphDocsPath = ("..\microsoft-graph-docs")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
+    [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
+    [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
