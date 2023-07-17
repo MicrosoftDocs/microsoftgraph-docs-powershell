@@ -8,7 +8,7 @@ Param(
 
 function Get-GraphMapping {
     $graphMapping = @{}
-    #$graphMapping.Add("v1.0", "graph-powershell-1.0")
+    $graphMapping.Add("v1.0", "graph-powershell-1.0")
     $graphMapping.Add("beta", "graph-powershell-beta")
     return $graphMapping
 }
@@ -62,7 +62,6 @@ function Update-GraphHelpByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    #Select-MgProfile -Name $GraphProfile
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         Update-GraphModuleHelp -GraphProfile $GraphProfile -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix
@@ -90,7 +89,7 @@ function Update-GraphModuleHelp {
     $moduleDocsPath = Join-Path $PSScriptRoot ".\$GraphProfilePath\$Path"
     $logsPath = Join-Path $PSScriptRoot ".\logs\$moduleImportName-$GraphProfile.txt"
 
-    Import-Module $moduleImportName -RequiredVersion 2.0.0 -Force -Global
+    Import-Module $moduleImportName -Force -Global
     Update-Help -ModuleDocsPath $moduleDocsPath -LogsPath $logsPath
 }
 
@@ -98,7 +97,6 @@ function Update-GraphModuleHelp {
 if (!(Get-Module -Name PlatyPS -ListAvailable)) {
     Install-Module PlatyPS -Force
 }
-
 Import-Module PlatyPS -Force -Scope Global
 # Errors in PlatyPS validation.
 $ErrorActionPreference = 'Continue'
@@ -106,20 +104,20 @@ $LASTEXITCODE = $null
 if ($PSEdition -ne 'Core') {
     Write-Error 'This script requires PowerShell Core to execute. [Note] Generated cmdlets will work in both PowerShell Core or Windows PowerShell.'
 }
-# Set-Location microsoftgraph-docs-powershell
-# $date = Get-Date -Format "dd-MM-yyyy"
-# $proposedBranch = "powershell_v2_test"
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }else{
-# 	Write-Host "Branch already exists"
-#     $currentBranch = git rev-parse --abbrev-ref HEAD
-#      if($currentBranch -ne $proposedBranch){
-#         git checkout $proposedBranch
-#      }
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_v2_docs_update_$date"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+    $currentBranch = git rev-parse --abbrev-ref HEAD
+     if($currentBranch -ne $proposedBranch){
+        git checkout $proposedBranch
+     }
      
-# }
+}
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }

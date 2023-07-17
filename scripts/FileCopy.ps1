@@ -2,13 +2,13 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [string] $ModuleMappingConfigPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph\config\ModulesMapping.jsonc"),
-	[string] $SDKDocsPath = ("..\..\msgraph-sdk-powershell\src"),
-	[string] $WorkLoadDocsPath = ("..\..\microsoftgraph-docs-powershell\microsoftgraph")
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/config/ModulesMapping.jsonc"),
+	[string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
+	[string] $WorkLoadDocsPath =  (Join-Path $PSScriptRoot "../microsoftgraph")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
-    #$graphMapping.Add("v1.0", "v1.0")
+    $graphMapping.Add("v1.0", "v1.0")
     $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
@@ -28,6 +28,10 @@ function Start-Copy {
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Updating files from the sdk" 
 }
 function Get-FilesByProfile{
  Param(
@@ -40,6 +44,7 @@ function Get-FilesByProfile{
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
+
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
 		$docs = Join-Path $SDKDocsPath $ModuleName $GraphProfile "docs"
@@ -60,15 +65,11 @@ function Copy-Files{
 		[ValidateNotNullOrEmpty()]
         [string] $DocPath = "..\msgraph-sdk-powershell\src\Users\v1.0\docs"
     )
-    #Write-Host "Here there " $GraphProfile
-
     $Path = "$ModulePrefix.$ModuleName"
     if($GraphProfile -eq 'beta'){
        $Path = "$ModulePrefix.Beta.$ModuleName"
     }
      $destination = Join-Path $WorkLoadDocsPath $GraphProfilePath $Path
-
-	 $source = Join-Path $DocPath "\*"
      if (-not(Test-Path $destination)) {
         New-Item -Path $destination -ItemType Directory
      }
@@ -84,7 +85,6 @@ function Copy-Files{
             Copy-Item $_  -Destination $destination
 
         }
-        #Write-Host $source " = " $destination
      }else{
 	    Write-Host -ForegroundColor DarkYellow "Copying v1 markdown files to " $destination
 	    Get-ChildItem $DocPath -Recurse -File | ForEach-Object {
@@ -92,25 +92,20 @@ function Copy-Files{
         Copy-Item $_  -Destination $destination
       }
 	 }
-     }
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Imported files from powershell sdk"
+    }     
 }
 
 
 
-# Set-Location microsoftgraph-docs-powershell
-# $date = Get-Date -Format "dd-MM-yyyy"
-# $proposedBranch = "powershell_v2_test"
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }else{
-# 	Write-Host "Branch already exists"
-#      git checkout $proposedBranch
-# }
+Set-Location microsoftgraph-docs-powershell
+$proposedBranch = "weekly_v2_docs_update_$date"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -118,7 +113,8 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-#Set-Location ..\microsoftgraph-docs-powershell
+
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
