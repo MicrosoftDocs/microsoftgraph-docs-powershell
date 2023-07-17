@@ -375,3 +375,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgGroupAppRoleAssignment?view=graph-powershell-beta)

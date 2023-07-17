@@ -1871,5 +1871,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VerifiedPublisherId <String>]`: The ID of the verified publisher from the app publisher's Partner Center account.
 
 ## RELATED LINKS
+[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipal?view=graph-powershell-v1.0)

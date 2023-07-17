@@ -1721,5 +1721,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
+[Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgApplication?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgApplication?view=graph-powershell-beta)

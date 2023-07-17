@@ -315,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)

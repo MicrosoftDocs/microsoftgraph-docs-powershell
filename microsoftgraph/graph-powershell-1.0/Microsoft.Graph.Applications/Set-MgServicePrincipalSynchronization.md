@@ -662,5 +662,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <String>]`: 
 
 ## RELATED LINKS
+[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-beta)

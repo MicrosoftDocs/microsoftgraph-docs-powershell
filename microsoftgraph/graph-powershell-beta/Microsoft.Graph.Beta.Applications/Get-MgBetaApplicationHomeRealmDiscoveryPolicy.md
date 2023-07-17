@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationHomeRealmDiscoveryPolicy?view=graph-powershell-v1.0)

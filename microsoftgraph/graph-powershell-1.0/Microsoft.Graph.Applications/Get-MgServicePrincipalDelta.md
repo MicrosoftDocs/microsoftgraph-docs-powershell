@@ -179,3 +179,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaServicePrincipalDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-beta)

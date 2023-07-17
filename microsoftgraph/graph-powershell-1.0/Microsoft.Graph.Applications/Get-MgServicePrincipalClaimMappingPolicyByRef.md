@@ -181,3 +181,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)

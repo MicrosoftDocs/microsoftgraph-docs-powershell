@@ -217,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgOnPremisePublishingProfileAgentGroupPublishedResource](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroupPublishedResource?view=graph-powershell-v1.0)

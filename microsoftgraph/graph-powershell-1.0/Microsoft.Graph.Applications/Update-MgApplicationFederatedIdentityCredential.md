@@ -332,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgApplicationFederatedIdentityCredential?view=graph-powershell-beta)

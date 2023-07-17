@@ -210,3 +210,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-beta)

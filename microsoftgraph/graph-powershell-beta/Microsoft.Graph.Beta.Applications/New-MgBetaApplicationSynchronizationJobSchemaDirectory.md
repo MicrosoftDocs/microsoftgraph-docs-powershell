@@ -390,3 +390,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
+[New-MgApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-v1.0)

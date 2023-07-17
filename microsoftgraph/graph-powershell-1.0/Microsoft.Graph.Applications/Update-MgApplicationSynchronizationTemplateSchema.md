@@ -443,5 +443,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetDirectoryName <String>]`: 
 
 ## RELATED LINKS
+[Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)

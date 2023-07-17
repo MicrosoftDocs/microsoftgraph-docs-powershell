@@ -345,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Key <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-beta)

@@ -232,3 +232,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaApplicationOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationOwner?view=graph-powershell-beta)

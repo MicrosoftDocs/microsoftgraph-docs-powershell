@@ -375,3 +375,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)

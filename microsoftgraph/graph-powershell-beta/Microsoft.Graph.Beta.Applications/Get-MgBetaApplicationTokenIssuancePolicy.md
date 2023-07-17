@@ -210,3 +210,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenIssuancePolicy?view=graph-powershell-v1.0)
