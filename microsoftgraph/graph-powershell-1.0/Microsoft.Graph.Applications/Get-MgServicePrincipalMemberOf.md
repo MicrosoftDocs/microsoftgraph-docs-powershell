@@ -45,11 +45,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalMemberOf?view=graph-powershell-beta)
+

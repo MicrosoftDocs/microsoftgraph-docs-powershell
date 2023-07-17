@@ -32,11 +32,11 @@ Deletes a delegatedPermissionClassification which had previously been set for a 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DelegatedPermissionClassificationId
 The unique identifier of delegatedPermissionClassification
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-v1.0)
+

@@ -36,18 +36,6 @@ Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IAppl
 ## DESCRIPTION
 Get directories from servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+

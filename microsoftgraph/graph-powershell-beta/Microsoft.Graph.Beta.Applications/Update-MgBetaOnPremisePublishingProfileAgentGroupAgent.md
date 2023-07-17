@@ -45,22 +45,6 @@ Update-MgBetaOnPremisePublishingProfileAgentGroupAgent -InputObject <IApplicatio
 ## DESCRIPTION
 Update the navigation property agents in onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -372,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOnPremisePublishingProfileAgentGroupAgent](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileAgentGroupAgent?view=graph-powershell-v1.0)
+

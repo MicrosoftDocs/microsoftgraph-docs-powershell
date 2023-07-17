@@ -34,22 +34,6 @@ Get-MgBetaServicePrincipalAppManagementPolicy -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 The appManagementPolicy applied to this service principal.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -299,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppManagementPolicy?view=graph-powershell-v1.0)
+

@@ -41,22 +41,6 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroupByRef -InputObject <IApplicatio
 ## DESCRIPTION
 Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Id
@@ -261,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOnPremisePublishingProfileAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroupByRef?view=graph-powershell-v1.0)
+

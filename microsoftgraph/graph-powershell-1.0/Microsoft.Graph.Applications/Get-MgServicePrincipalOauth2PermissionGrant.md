@@ -43,11 +43,11 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalOauth2PermissionGrant?view=graph-powershell-beta)
+

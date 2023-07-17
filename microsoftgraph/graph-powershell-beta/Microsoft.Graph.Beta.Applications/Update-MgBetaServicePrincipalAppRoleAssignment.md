@@ -43,22 +43,6 @@ Update-MgBetaServicePrincipalAppRoleAssignment -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Update the navigation property appRoleAssignments in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalAppRoleAssignment?view=graph-powershell-v1.0)
+

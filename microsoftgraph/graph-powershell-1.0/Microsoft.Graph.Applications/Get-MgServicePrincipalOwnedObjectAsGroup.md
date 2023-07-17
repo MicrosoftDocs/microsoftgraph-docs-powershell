@@ -34,18 +34,6 @@ Get-MgServicePrincipalOwnedObjectAsGroup -InputObject <IApplicationsIdentity> [-
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -287,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOwnedObjectAsGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalOwnedObjectAsGroup?view=graph-powershell-beta)
+

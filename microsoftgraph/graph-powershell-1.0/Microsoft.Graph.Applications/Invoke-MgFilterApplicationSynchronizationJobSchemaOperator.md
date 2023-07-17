@@ -29,18 +29,6 @@ Invoke-MgFilterApplicationSynchronizationJobSchemaOperator -InputObject <IApplic
 ## DESCRIPTION
 Invoke function filterOperators
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -236,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaFilterApplicationSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgFilterApplicationSynchronizationJobSchemaOperator?view=graph-powershell-beta)
+

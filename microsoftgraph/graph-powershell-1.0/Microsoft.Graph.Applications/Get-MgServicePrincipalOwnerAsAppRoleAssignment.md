@@ -34,18 +34,6 @@ Get-MgServicePrincipalOwnerAsAppRoleAssignment -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -303,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOwnerAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalOwnerAsAppRoleAssignment?view=graph-powershell-beta)
+

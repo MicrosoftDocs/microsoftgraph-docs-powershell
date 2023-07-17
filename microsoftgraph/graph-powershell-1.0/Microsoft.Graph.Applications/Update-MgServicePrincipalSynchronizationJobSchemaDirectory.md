@@ -45,18 +45,6 @@ Update-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Update the navigation property directories in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -392,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
+

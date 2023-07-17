@@ -32,11 +32,11 @@ Deletes an appRoleAssignment that a group has been granted.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaGroupAppRoleAssignment -GroupId $groupId -AppRoleAssignmentId $appRoleAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AppRoleAssignmentId
 The unique identifier of appRoleAssignment
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgGroupAppRoleAssignment?view=graph-powershell-v1.0)
+

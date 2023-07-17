@@ -32,11 +32,11 @@ Deletes an appRoleAssignment that a user, group, or client service principal has
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AppRoleAssignmentId
 The unique identifier of appRoleAssignment
@@ -187,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
