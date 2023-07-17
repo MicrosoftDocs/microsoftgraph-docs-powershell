@@ -13,7 +13,7 @@ function Get-GraphMapping {
     return $graphMapping
 }
 
-function Start-Copy {
+function Start-Repair {
     Param(
         $ModulesToGenerate = @()
     )
@@ -28,7 +28,10 @@ function Start-Copy {
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Repaired examples" 
 }
 function Get-FilesByProfile{
  Param(
@@ -43,11 +46,11 @@ function Get-FilesByProfile{
 
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
-        Copy-Files -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
+        Repair-Examples -GraphProfilePath $GraphProfilePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
     }
 
 }
-function Copy-Files{
+function Repair-Examples{
     param(
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0",
@@ -130,7 +133,7 @@ function Copy-Files{
                     #skip
                     }else{
                         
-                        if(-not($lines[$i] -eq "### EXAMPLE 1" -and $replacement.Contains("### EXAMPLE $exampleCounter"))){
+                        if(-not($lines[$i] -eq "EXAMPLE 1" -and $replacement.Contains("### EXAMPLE $exampleCounter"))){
                             if($lines[$i] -eq "``````"){
                             }else{
                                 $replacement += $lines[$i] + "`n"
@@ -142,7 +145,6 @@ function Copy-Files{
                 }
                 
                 $finalOutput = $extractedExample.Replace($extractedExample,$replacement).Replace("### EXAMPLE 2", $Endpath2).Replace("## PARAMETERS", $Endpath1).Replace("### EXAMPLE 3", $Endpath3).Replace("### EXAMPLE 4", $Endpath4).Replace("### EXAMPLE 5", $Endpath5).Replace("### EXAMPLE 6", $Endpath6).Replace("### EXAMPLE 7", $Endpath7).Replace("### EXAMPLE 8", $Endpath8).Replace("### EXAMPLE 9", $Endpath9).Replace("### EXAMPLE 10", $Endpath10).Replace("### EXAMPLE 11", $Endpath11).Replace("### EXAMPLE 12", $Endpath12)
-                Write-Host "Hand written "$File
                 $text = $content.ToString()
                               $text = $text.Replace($extractedExample, $finalOutput)
                                 $text | Out-File $File -Encoding UTF8
@@ -164,10 +166,16 @@ function Copy-Files{
     }
 }
 
-
-
-
-
+Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
+$proposedBranch = "weekly_v2_docs_update_$date"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
 
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
@@ -177,7 +185,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
-Start-Copy -ModulesToGenerate $ModulesToGenerate
+Start-Repair -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

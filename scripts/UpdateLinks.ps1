@@ -2,29 +2,43 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [System.Collections.Generic.HashSet[string]]$V1CommandGetVariantList= @(),
-    [System.Collections.Generic.HashSet[string]]$BetaCommandGetVariantList= @(),
-    [System.Collections.Generic.HashSet[string]]$V1CommandListVariantList= @(),
-    [System.Collections.Generic.HashSet[string]]$BetaCommandListVariantList= @(),
-    [string] $ModuleMappingConfigPath =(Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
+    [System.Collections.Generic.HashSet[string]]$V1CommandGetVariantList = @(),
+    [System.Collections.Generic.HashSet[string]]$BetaCommandGetVariantList = @(),
+    [System.Collections.Generic.HashSet[string]]$V1CommandListVariantList = @(),
+    [System.Collections.Generic.HashSet[string]]$BetaCommandListVariantList = @(),
+    [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs")
 )
-
+function Get-GraphMapping {
+    $graphMapping = @{}
+    $graphMapping.Add("v1.0", "v1.0")
+    $graphMapping.Add("beta", "beta")
+   
+    return $graphMapping
+}
 function Start-Update {
     Param(
         $ModulesToGenerate = @()
     )
 
-    $ProfilePath = "graph-powershell-beta"
-    $ModulePrefix = "Microsoft.Graph"  
-    Get-FilesByProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
+    $ModulePrefix = "Microsoft.Graph"
+    $GraphMapping = Get-GraphMapping 
+    $GraphMapping.Keys | ForEach-Object {
+        $GraphProfile = $_
+        $profilePath = "graph-powershell-1.0"
+        if ($GraphProfile -eq "beta") {
+            $ProfilePath = "graph-powershell-beta"
+        }
+        Get-FilesByProfile -GraphProfilePath $ProfilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate -GraphProfile $GraphProfile
+    }
     
     git config --global user.email "timwamalwa@gmail.com"
     git config --global user.name "Timothy Wamalwa"
     git add .
-    git commit -m "Updated links" 
+    git commit -m "Updated metadata parameters" 
+
 }
 
 function Get-FilesByProfile {
@@ -34,15 +48,18 @@ function Get-FilesByProfile {
         [ValidateNotNullOrEmpty()]
         [string] $ModulePrefix = "Microsoft.Graph",
         [ValidateNotNullOrEmpty()]
-        $ModulesToGenerate = @()
+        $ModulesToGenerate = @(),
+        [string]$GraphProfile = "v1.0"
     )
 
     $ModulesToGenerate | ForEach-Object {
         $ModuleName = $_
         $FullModuleName = "$ModulePrefix.Beta.$ModuleName"
+        if ($GraphProfile -eq "v1.0") {
+            $FullModuleName = "$ModulePrefix.$ModuleName"
+        }
         $ModulePath = Join-Path $WorkLoadDocsPath "\$GraphProfilePath\$FullModuleName"
-        Write-Host $ModulePath
-        Get-Files -GraphProfilePath $ModulePath -Module $ModuleName -ModulePrefix $ModulePrefix
+        Get-Files -GraphProfilePath $ModulePath -Module $ModuleName -ModulePrefix $ModulePrefix -GraphProfile $GraphProfile
         
     }
 
@@ -50,11 +67,12 @@ function Get-FilesByProfile {
 function Get-Files {
     param(
         [ValidateNotNullOrEmpty()]
-        [string] $GraphProfilePath = (Join-Path $PSScriptRoot "../microsoftgraph/graph-powershell-1.0/Microsoft.Graph.Users"),
+        [string] $GraphProfilePath = "..\microsoftgraph-docs-powershell\microsoftgraph\graph-powershell-v1.0\Microsoft.Graph.Users",
         [ValidateNotNullOrEmpty()]
         [string] $Module = "Users",
         [ValidateNotNullOrEmpty()]
-        [string] $ModulePrefix = "Microsoft.Graph"
+        [string] $ModulePrefix = "Microsoft.Graph",
+        [string]$GraphProfile = "v1.0"
     )
 
     $NonAllowedCommand = $GraphProfilePath.Split("\")
@@ -68,23 +86,37 @@ function Get-Files {
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
                
                 if ($Command -ne $NonAllowedCommand[$NonAllowedCommand.Count - 1]) {
-                    #Search for corresponding command on v1
-                    #Start with Get variant list
-                    $V1CommandFromGetVariant = $V1CommandGetVariantList.Contains($Command.Replace("-MgBeta", "-Mg"))
-                    if($V1CommandFromGetVariant -ne $null){
-                        Construct-Path -Command $Command -Module $Module
-                    }else{
-                        #Search from List variant
-                        $V1CommandFromListVariant = $V1CommandGetVariantList.Contains($Command.Replace("-MgBeta", "-Mg"))
-                        if($V1CommandFromListVariant -ne $null){
+                    if ($GraphProfile -eq "v1.0") {
+                        #Search for corresponding command on v1
+                        #Start with Get variant list
+                        $V1CommandFromGetVariant = $V1CommandGetVariantList.Contains($Command)
+                        if ($V1CommandFromGetVariant -ne $null) {
                             Construct-Path -Command $Command -Module $Module
                         }
+                        else {
+                            #Search from List variant
+                            $V1CommandFromListVariant = $V1CommandGetVariantList.Contains($Command)
+                            if ($V1CommandFromListVariant -ne $null) {
+                                Construct-Path -Command $Command -Module $Module
+                            }
+                        }
                     }
-
-                           
-                                
-                            
-                        
+                    else {
+                        #Search for corresponding command on beta
+                        #Start with Get variant list
+                        $BetaCommandFromGetVariant = $BetaCommandGetVariantList.Contains($Command)
+                        if ($BetaCommandFromGetVariant -ne $null) {
+                            Construct-Path -Command $Command -Module $Module
+                        }
+                        else {
+                            #Search from List variant
+                            $BetaCommandFromListVariant = $BetaCommandGetVariantList.Contains($Command)
+                            if ($BetaCommandFromListVariant -ne $null) {
+                                Construct-Path -Command $Command -Module $Module
+                            }
+                        }
+                    }
+                                                    
                 }
             }
         }
@@ -104,9 +136,9 @@ function Construct-Path {
         [string] $Module = "Users"
     )
     try {
-        $V1File = $Command.Replace("-MgBeta", "-Mg")
+       
         $BetaFilePath = Join-Path $WorkLoadDocsPath "graph-powershell-beta" "Microsoft.Graph.Beta.$Module" "$Command.md"
-        $V1FilePath = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" "Microsoft.Graph.$Module" "$V1File.md"
+        $V1FilePath = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" "Microsoft.Graph.$Module" "$Command.md"
 
         if (Test-Path $BetaFilePath) {
             Add-Link -File $BetaFilePath -Module $Module -GraphProfile "beta" -Command $Command
@@ -135,24 +167,29 @@ function Add-Link {
         [string] $Command = "Get-MgBetaUser"
     )
     try {
-             if((Get-Content -Raw -Path $File) -match '(## SYNOPSIS)[\s\S]*## SYNTAX'){
-                $BaseUrl = "/powershell/module"
-                $CommandRename = $Command.Replace("-MgBeta", "-Mg")
-                $FullModuleName = "Microsoft.Graph.$Module/$CommandRename"
-                $LinkTitle = "To view the v1.0 release of this cmdlet, view"
-                $View = "?view=graph-powershell-v1.0"
-                if($GraphProfile -eq "v1.0"){
-                    $LinkTitle = "To view the beta release of this cmdlet, view"
-                    $View = "?view=graph-powershell-beta"
-                    $CommandRename = $Command.Replace("-Mg", "-MgBeta")
-                }
+       
+        if ((Get-Content -Raw -Path $File) -match '(## SYNOPSIS)[\s\S]*## SYNTAX') {
+                
+            $BaseUrl = "/powershell/module"
+            $CommandRename = $Command.Replace("-MgBeta", "-Mg")
+            $FullModuleName = "Microsoft.Graph.$Module/$CommandRename"
+            $LinkTitle = "To view the v1.0 release of this cmdlet, view"
+            $View = "?view=graph-powershell-v1.0"
+            if ($GraphProfile -eq "v1.0") {
+                $FullModuleName = "Microsoft.Graph.Beta.$Module/$CommandRename"
+                $LinkTitle = "To view the beta release of this cmdlet, view"
+                $View = "?view=graph-powershell-beta"
+                $CommandRename = $Command.Replace("-Mg", "-MgBeta")
+            }
 
-                $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
-                $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
+            $Block = $Matches[0]
+            $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
+            $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
+            $NewBlock = $Block.Replace("## SYNTAX", $Link)
                 (Get-Content $File) | 
-                Foreach-Object { $_ -replace '## SYNTAX', $Link -replace '## RELATED LINKS', $LinkOnEndOfDoc}  | 
-                Out-File $File
-                }
+            Foreach-Object { $_ -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
+            Out-File $File
+        }
     }
     catch {
         Write-Host "`nError Message: " $_.Exception.Message
@@ -161,13 +198,7 @@ function Add-Link {
         Write-Host "`nError Item Name: "$_.Exception.ItemName
     }
 }
-if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
-    Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
-}
-If (-not (Get-Module -ErrorAction Ignore -ListAvailable PowerHTML)) {
-    Write-Verbose "Installing PowerHTML module for the current user..."
-    Install-Module PowerHTML -ErrorAction Stop -Scope CurrentUser -Force
-}
+
 Import-Module -ErrorAction Stop PowerHTML
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
@@ -180,25 +211,24 @@ if ($ModulesToGenerate.Count -eq 0) {
 $MetaDataJsonFile = Join-Path $SDKDocsPath "Authentication" "Authentication" "custom" "common" "MgCommandMetadata.json"
 $JsonContent = Get-Content -Path $MetaDataJsonFile
 $DeserializedContent = $JsonContent | ConvertFrom-Json
-foreach($Data in $DeserializedContent)
-{
-    if($Data.ApiVersion -eq "beta")
-    {
+foreach ($Data in $DeserializedContent) {
+    if ($Data.ApiVersion -eq "beta") {
         
-        if((-not($Data.Variants[0].Contains("List")))){
-            $Beta = $BetaCommandGetVariantList.Add($Data.Command)        
-        }else{
-            $Beta1 = $BetaCommandListVariantList.Add($Data.Command) 
+        if (-not($Data.Variants[0].Contains("List"))) {
+            $Beta = $V1CommandGetVariantList.Add($Data.Command)        
+        }
+        else {
+            $Beta1 = $V1CommandListVariantList.Add($Data.Command) 
         }   
     }
 
-    if($Data.ApiVersion -eq "v1.0")
-    {
+    if ($Data.ApiVersion -eq "v1.0") {
         
-        if((-not($Data.Variants[0].Contains("List")))){
-            $V1 = $V1CommandGetVariantList.Add($Data.Command)        
-        }else{
-            $V11 = $V1CommandListVariantList.Add($Data.Command)
+        if (-not($Data.Variants[0].Contains("List"))) {
+            $V1 = $BetaCommandGetVariantList.Add($Data.Command)        
+        }
+        else {
+            $V11 = $BetaCommandListVariantList.Add($Data.Command)
         }   
     }
 }
