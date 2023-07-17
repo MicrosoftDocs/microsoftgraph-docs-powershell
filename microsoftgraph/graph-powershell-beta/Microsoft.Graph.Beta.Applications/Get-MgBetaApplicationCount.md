@@ -93,3 +93,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationCount?view=graph-powershell-v1.0)

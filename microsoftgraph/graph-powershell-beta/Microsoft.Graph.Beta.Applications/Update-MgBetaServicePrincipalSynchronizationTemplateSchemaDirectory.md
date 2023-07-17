@@ -407,3 +407,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
+[Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)

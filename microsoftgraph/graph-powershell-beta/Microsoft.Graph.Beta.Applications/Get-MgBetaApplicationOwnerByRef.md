@@ -203,3 +203,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerByRef?view=graph-powershell-v1.0)

@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[Update-MgServicePrincipalLicenseDetail](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalLicenseDetail?view=graph-powershell-v1.0)

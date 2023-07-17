@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationTemplateCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTemplateCount?view=graph-powershell-v1.0)

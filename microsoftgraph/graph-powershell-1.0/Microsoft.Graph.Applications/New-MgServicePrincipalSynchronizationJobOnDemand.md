@@ -247,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[ObjectTypeName <String>]`: 
 
 ## RELATED LINKS
+[New-MgBetaServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-beta)

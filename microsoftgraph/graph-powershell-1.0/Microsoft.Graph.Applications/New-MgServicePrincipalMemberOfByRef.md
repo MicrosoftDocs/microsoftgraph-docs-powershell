@@ -212,3 +212,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalMemberOfByRef?view=graph-powershell-beta)

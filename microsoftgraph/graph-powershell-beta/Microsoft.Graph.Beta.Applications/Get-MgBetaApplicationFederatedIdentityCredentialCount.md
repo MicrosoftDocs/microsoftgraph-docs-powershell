@@ -151,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgApplicationFederatedIdentityCredentialCount](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationFederatedIdentityCredentialCount?view=graph-powershell-v1.0)

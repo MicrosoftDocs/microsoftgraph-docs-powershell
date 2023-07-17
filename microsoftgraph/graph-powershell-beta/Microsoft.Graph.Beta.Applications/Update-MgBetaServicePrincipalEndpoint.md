@@ -347,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalEndpoint?view=graph-powershell-v1.0)

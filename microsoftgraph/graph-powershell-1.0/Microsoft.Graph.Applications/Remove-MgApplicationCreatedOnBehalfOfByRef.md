@@ -174,3 +174,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[Remove-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
