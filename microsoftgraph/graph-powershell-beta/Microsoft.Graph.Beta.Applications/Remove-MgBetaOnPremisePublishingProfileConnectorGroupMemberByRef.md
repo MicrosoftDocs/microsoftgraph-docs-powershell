@@ -28,18 +28,6 @@ Remove-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef -InputObject <I
 ## DESCRIPTION
 Delete ref of navigation property members for onPremisesPublishingProfiles
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConnectorGroupId
@@ -229,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOnPremisePublishingProfileConnectorGroupMemberByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileConnectorGroupMemberByRef?view=graph-powershell-v1.0)
+

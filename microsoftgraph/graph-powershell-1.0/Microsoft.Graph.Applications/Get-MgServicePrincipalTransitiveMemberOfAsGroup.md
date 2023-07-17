@@ -34,18 +34,6 @@ Get-MgServicePrincipalTransitiveMemberOfAsGroup -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -303,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalTransitiveMemberOfAsGroup?view=graph-powershell-beta)
+

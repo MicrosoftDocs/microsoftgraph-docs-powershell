@@ -54,7 +54,6 @@ To grant an app role assignment, you need three identifiers:
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	principalId = "33ad69f9-da99-4bed-acd0-3f24235cb296"
@@ -64,7 +63,8 @@ $params = @{
 
 New-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -356,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-v1.0)
+

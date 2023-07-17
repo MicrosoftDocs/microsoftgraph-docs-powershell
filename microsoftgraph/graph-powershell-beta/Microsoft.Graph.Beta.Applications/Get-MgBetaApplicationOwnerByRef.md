@@ -32,11 +32,11 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaApplicationOwner -ApplicationId $applicationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -204,3 +204,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwnerByRef?view=graph-powershell-v1.0)
+

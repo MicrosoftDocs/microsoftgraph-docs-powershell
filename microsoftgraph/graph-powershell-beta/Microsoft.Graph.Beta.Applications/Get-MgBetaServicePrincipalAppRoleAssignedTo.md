@@ -39,11 +39,11 @@ App role assignments for this app or service, granted to users, groups, and othe
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-v1.0)
+

@@ -50,7 +50,6 @@ Maximum of 20 objects can be added to an application.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	name = "testing02"
@@ -63,7 +62,8 @@ $params = @{
 
 New-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -321,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-beta)
+

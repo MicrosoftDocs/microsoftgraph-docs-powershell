@@ -32,11 +32,11 @@ Remove a tokenIssuancePolicy from an application.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -TokenIssuancePolicyId $tokenIssuancePolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ApplicationId
 The unique identifier of application
@@ -210,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-v1.0)
+

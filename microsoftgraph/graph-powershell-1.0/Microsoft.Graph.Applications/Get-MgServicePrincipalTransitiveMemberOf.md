@@ -39,11 +39,11 @@ Get transitiveMemberOf from servicePrincipals
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -300,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-beta)
+

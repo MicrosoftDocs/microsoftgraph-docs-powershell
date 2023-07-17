@@ -34,22 +34,6 @@ Get-MgServicePrincipalEndpoint -InputObject <IApplicationsIdentity> [-ExpandProp
 ## DESCRIPTION
 Get endpoints from servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -291,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalEndpoint?view=graph-powershell-beta)
+

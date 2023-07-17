@@ -45,18 +45,6 @@ Update-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplic
 ## DESCRIPTION
 Update the navigation property directories in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -392,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+

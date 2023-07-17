@@ -29,18 +29,6 @@ Set-MgBetaServicePrincipalSynchronizationSecret -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Update property secrets value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BodyParameter
@@ -176,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Applications/Set-MgServicePrincipalSynchronizationSecret?view=graph-powershell-v1.0)
+
