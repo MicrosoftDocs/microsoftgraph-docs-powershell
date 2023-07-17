@@ -167,6 +167,7 @@ function Repair-Examples{
 }
 
 Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_v2_docs_update_$date"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
