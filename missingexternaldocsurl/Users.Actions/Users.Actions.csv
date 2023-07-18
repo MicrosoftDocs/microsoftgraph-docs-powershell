@@ -467,3 +467,16 @@ beta, Update-MgBetaUserChatInstalledApp, /users/{user-id}/chats/{chat-id}/instal
 beta, Update-MgBetaUserManagedDeviceWindowsDeviceAccount, /users/{user-id}/managedDevices/{managedDevice-id}/updateWindowsDeviceAccount
 beta, Update-MgBetaUserOnenotePageContent, /users/{user-id}/onenote/pages/{onenotePage-id}/onenotePatchContent
 beta, Update-MgBetaUserPassword, /users/{user-id}/changePassword
+beta, Confirm-MgBetaUserPermissionGrantMemberGroup, /users/{user-id}/permissionGrants/{resourceSpecificPermissionGrant-id}/checkMemberGroups
+beta, Confirm-MgBetaUserPermissionGrantMemberObject, /users/{user-id}/permissionGrants/{resourceSpecificPermissionGrant-id}/checkMemberObjects
+beta, Get-MgBetaUserPermissionGrantById, /users/{user-id}/permissionGrants/getByIds
+beta, Get-MgBetaUserPermissionGrantMemberGroup, /users/{user-id}/permissionGrants/{resourceSpecificPermissionGrant-id}/getMemberGroups
+beta, Get-MgBetaUserPermissionGrantMemberObject, /users/{user-id}/permissionGrants/{resourceSpecificPermissionGrant-id}/getMemberObjects
+beta, Get-MgBetaUserPermissionGrantUserOwnedObject, /users/{user-id}/permissionGrants/getUserOwnedObjects
+beta, Restore-MgBetaUserPermissionGrant, /users/{user-id}/permissionGrants/{resourceSpecificPermissionGrant-id}/restore
+beta, Test-MgBetaUserPermissionGrantProperty, /users/{user-id}/permissionGrants/validateProperties
+v1.0, Invoke-MgExtractUserDriveItemSensitivityLabel, /users/{user-id}/drives/{drive-id}/items/{driveItem-id}/extractSensitivityLabels
+v1.0, Invoke-MgExtractUserDriveRootSensitivityLabel, /users/{user-id}/drives/{drive-id}/root/extractSensitivityLabels
+v1.0, New-MgUserManagedDeviceLogCollectionResponseDownloadUrl, /users/{user-id}/managedDevices/{managedDevice-id}/logCollectionRequests/{deviceLogCollectionResponse-id}/createDownloadUrl
+v1.0, Set-MgUserDriveItemSensitivityLabel, /users/{user-id}/drives/{drive-id}/items/{driveItem-id}/assignSensitivityLabel
+v1.0, Set-MgUserDriveRootSensitivityLabel, /users/{user-id}/drives/{drive-id}/root/assignSensitivityLabel
