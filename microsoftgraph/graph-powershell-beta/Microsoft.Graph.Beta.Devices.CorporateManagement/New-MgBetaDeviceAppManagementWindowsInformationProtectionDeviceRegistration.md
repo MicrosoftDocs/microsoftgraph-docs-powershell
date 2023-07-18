@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementwindowsinformationprotectiondeviceregistration
 schema: 2.0.0
@@ -14,16 +14,15 @@ Create new navigation property to windowsInformationProtectionDeviceRegistration
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
- [-AdditionalProperties <Hashtable>] [-DeviceMacAddress <String>] [-DeviceName <String>]
- [-DeviceRegistrationId <String>] [-DeviceType <String>] [-Id <String>] [-LastCheckInDateTime <DateTime>]
- [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration [-AdditionalProperties <Hashtable>]
+ [-DeviceMacAddress <String>] [-DeviceName <String>] [-DeviceRegistrationId <String>] [-DeviceType <String>]
+ [-Id <String>] [-LastCheckInDateTime <DateTime>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionDeviceRegistration> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -32,19 +31,15 @@ Create new navigation property to windowsInformationProtectionDeviceRegistration
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -52,7 +47,7 @@ Create new navigation property to windowsInformationProtectionDeviceRegistration
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +63,7 @@ Represents device registration records for Bring-Your-Own-Device(BYOD) Windows d
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration
+Type: IMicrosoftGraphWindowsInformationProtectionDeviceRegistration
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +78,7 @@ Accept wildcard characters: False
 Device Mac address.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -98,7 +93,7 @@ Accept wildcard characters: False
 Device name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +108,7 @@ Accept wildcard characters: False
 Device identifier for this device registration record.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +123,7 @@ Accept wildcard characters: False
 Device type, for example, Windows laptop VS Windows phone.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +139,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -159,7 +154,7 @@ Accept wildcard characters: False
 Last checkin time of the device.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +169,7 @@ Accept wildcard characters: False
 UserId associated with this device registration record.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -189,7 +184,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +200,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,11 +217,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDeviceRegistration
-
 ## NOTES
 
 ALIASES
@@ -249,4 +242,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
-

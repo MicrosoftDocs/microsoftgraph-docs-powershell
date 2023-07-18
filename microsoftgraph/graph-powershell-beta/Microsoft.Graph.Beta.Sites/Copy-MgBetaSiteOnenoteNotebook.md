@@ -1,66 +1,69 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotenotebook
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasitelistcontenttypetodefaultcontentlocation
 schema: 2.0.0
 ---
 
-# Copy-MgBetaSiteOnenoteNotebook
+# Copy-MgBetaSiteListContentTypeToDefaultContentLocation
 
 ## SYNOPSIS
-Copies a notebook to the Notebooks folder in the destination Documents library.
-The folder is created if it doesn't exist.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
-Copy-MgBetaSiteOnenoteNotebook -NotebookId <String> -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-GroupId <String>] [-NotebookFolder <String>] [-RenameAs <String>] [-SiteCollectionId <String>]
- [-SiteId1 <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Copy-MgBetaSiteListContentTypeToDefaultContentLocation -ContentTypeId <String> -ListId <String>
+ -SiteId <String> [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Copy
 ```
-Copy-MgBetaSiteOnenoteNotebook -NotebookId <String> -SiteId <String>
- -BodyParameter <IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CopyViaIdentity
-```
-Copy-MgBetaSiteOnenoteNotebook -InputObject <ISitesIdentity>
- -BodyParameter <IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Copy-MgBetaSiteListContentTypeToDefaultContentLocation -ContentTypeId <String> -ListId <String>
+ -SiteId <String>
+ -BodyParameter <IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CopyViaIdentityExpanded
 ```
-Copy-MgBetaSiteOnenoteNotebook -InputObject <ISitesIdentity> [-SiteId <String>]
- [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-NotebookFolder <String>] [-RenameAs <String>]
- [-SiteCollectionId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Copy-MgBetaSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-DestinationFileName <String>]
+ [-SourceFile <IMicrosoftGraphItemReference>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CopyViaIdentity
+```
+Copy-MgBetaSiteListContentTypeToDefaultContentLocation -InputObject <ISitesIdentity>
+ -BodyParameter <IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Copies a notebook to the Notebooks folder in the destination Documents library.
-The folder is created if it doesn't exist.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
+Import-Module Microsoft.Graph.Beta.Sites
 ```
 
 $params = @{
-	GroupId = "groupId-value"
-	RenameAs = "renameAs-value"
+	SourceFile = @{
+		SharepointIds = @{
+			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
+			ListItemId = "2"
+		}
+	}
+	DestinationFileName = "newname.txt"
 }
 
-# A UPN can also be used as -UserId.
-Copy-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
+Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -68,7 +71,7 @@ Copy-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyPara
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -84,7 +87,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -95,11 +98,26 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -GroupId
+### -ContentTypeId
+The unique identifier of contentType
+
+```yaml
+Type: String
+Parameter Sets: CopyExpanded, Copy
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DestinationFileName
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -115,8 +133,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
 Aliases:
 
 Required: True
@@ -126,27 +144,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -NotebookFolder
-.
+### -ListId
+The unique identifier of list
 
 ```yaml
-Type: System.String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -NotebookId
-The unique identifier of notebook
-
-```yaml
-Type: System.String
-Parameter Sets: Copy, CopyExpanded
+Type: String
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -156,27 +159,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -RenameAs
-.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: System.String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SiteCollectionId
-.
-
-```yaml
-Type: System.String
-Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -190,8 +178,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Copy, CopyExpanded, CopyViaIdentityExpanded
+Type: String
+Parameter Sets: CopyExpanded, Copy
 Aliases:
 
 Required: True
@@ -201,12 +189,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SiteId1
-.
+### -SourceFile
+itemReference
+To construct, see NOTES section for SOURCEFILE properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: CopyExpanded
+Type: IMicrosoftGraphItemReference
+Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -220,7 +209,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +225,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -252,14 +241,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
-
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -269,13 +255,27 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPathsS3Y1MrSitesSiteIdOnenoteNotebooksNotebookIdMicrosoftGraphCopynotebookPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Sx36MwSitesSiteIdListsListIdContenttypesContenttypeIdMicrosoftGraphCopytodefaultcontentlocationPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[GroupId <String>]`: 
-  - `[NotebookFolder <String>]`: 
-  - `[RenameAs <String>]`: 
-  - `[SiteCollectionId <String>]`: 
-  - `[SiteId <String>]`: 
+  - `[DestinationFileName <String>]`: 
+  - `[SourceFile <IMicrosoftGraphItemReference>]`: itemReference
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+    - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
+    - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
+    - `[Name <String>]`: The name of the item being referenced. Read-only.
+    - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
+    - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+    - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
+      - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
+      - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+      - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
+      - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
+      - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
+      - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
+    - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 `INPUTOBJECT <ISitesIdentity>`: Identity Parameter
   - `[BaseItemId <String>]`: The unique identifier of baseItem
@@ -329,5 +329,23 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
   - `[WebPartId <String>]`: The unique identifier of webPart
 
-## RELATED LINKS
+`SOURCEFILE <IMicrosoftGraphItemReference>`: itemReference
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DriveId <String>]`: Unique identifier of the drive instance that contains the driveItem. Only returned if the item is located in a [drive][]. Read-only.
+  - `[DriveType <String>]`: Identifies the type of drive. Only returned if the item is located in a [drive][].  See [drive][] resource for values.
+  - `[Id <String>]`: Unique identifier of the driveItem in the drive or a listItem in a list. Read-only.
+  - `[Name <String>]`: The name of the item being referenced. Read-only.
+  - `[Path <String>]`: Path that can be used to navigate to the item. Read-only.
+  - `[ShareId <String>]`: A unique identifier for a shared resource that can be accessed via the [Shares][] API.
+  - `[SharepointIds <IMicrosoftGraphSharepointIds>]`: sharepointIds
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ListId <String>]`: The unique identifier (guid) for the item's list in SharePoint.
+    - `[ListItemId <String>]`: An integer identifier for the item within the containing list.
+    - `[ListItemUniqueId <String>]`: The unique identifier (guid) for the item within OneDrive for Business or a SharePoint site.
+    - `[SiteId <String>]`: The unique identifier (guid) for the item's site collection (SPSite).
+    - `[SiteUrl <String>]`: The SharePoint URL for the site that contains the item.
+    - `[TenantId <String>]`: The unique identifier (guid) for the tenancy.
+    - `[WebId <String>]`: The unique identifier (guid) for the item's site (SPWeb).
+  - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
+## RELATED LINKS

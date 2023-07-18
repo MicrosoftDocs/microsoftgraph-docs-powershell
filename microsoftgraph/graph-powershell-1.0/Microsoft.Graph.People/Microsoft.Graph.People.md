@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.People
 Module Guid: a6c2997d-5d65-40be-a548-f9ae6151386d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.people
@@ -14,10 +14,8 @@ Microsoft Graph PowerShell Cmdlets
 ### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
 Get lastSharedMethod from users
 
-### [Get-MgUserPerson](Get-MgUserPerson.md)
-People that are relevant to the user.
-Read-only.
-Nullable.
+### [Get-MgUserLastSharedMethodInsight](Get-MgUserLastSharedMethodInsight.md)
+Get lastSharedMethod from users
 
 ### [Get-MgUserPersonCount](Get-MgUserPersonCount.md)
 Get the number of the resource
@@ -50,8 +48,8 @@ Used for navigating to the trending document.
 ### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
 Get the number of the resource
 
-### [Get-MgUserUsedInsight](Get-MgUserUsedInsight.md)
-Calculated relationship identifying the latest documents viewed or modified by a user, including OneDrive for Business and SharePoint documents, ranked by recency of use.
+### [Get-MgUserUsedCountInsight](Get-MgUserUsedCountInsight.md)
+Get the number of the resource
 
 ### [Get-MgUserUsedResourceInsight](Get-MgUserUsedResourceInsight.md)
 Used for navigating to the item that was used.

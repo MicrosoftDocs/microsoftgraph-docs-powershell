@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetaextractgroupdriverootsensitivitylabel
 schema: 2.0.0
@@ -14,13 +14,13 @@ Invoke action extractSensitivityLabels
 
 ### Extract (Default)
 ```
-Invoke-MgBetaExtractGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String> [-Confirm] [-WhatIf]
+Invoke-MgBetaExtractGroupDriveRootSensitivityLabel -DriveId <String> -GroupId <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### ExtractViaIdentity
 ```
-Invoke-MgBetaExtractGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity> [-Confirm] [-WhatIf]
+Invoke-MgBetaExtractGroupDriveRootSensitivityLabel -InputObject <IGroupsIdentity> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -29,14 +29,14 @@ Invoke action extractSensitivityLabels
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -49,7 +49,7 @@ Invoke action extractSensitivityLabels
 The unique identifier of drive
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Extract
 Aliases:
 
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Extract
 Aliases:
 
@@ -80,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Type: IGroupsIdentity
 Parameter Sets: ExtractViaIdentity
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -111,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -128,11 +128,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSensitivityLabelAssignment
-
 ## NOTES
 
 ALIASES
@@ -189,4 +187,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-

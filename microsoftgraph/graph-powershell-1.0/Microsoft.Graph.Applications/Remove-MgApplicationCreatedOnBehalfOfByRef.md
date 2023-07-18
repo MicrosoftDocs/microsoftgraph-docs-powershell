@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/remove-mgapplication
@@ -34,10 +34,9 @@ Delete entity from applications
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 
 This example deletes the specified application.
-
 ```
-## PARAMETERS
 
+## PARAMETERS
 
 ### -ApplicationId
 key: id of application
@@ -175,5 +174,3 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-

@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Sites
 Module Guid: e45ab622-7f7c-48c5-88eb-8356fd60875a
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.sites
@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgSiteListContentTypeCopy](Add-MgSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Copy-MgSiteContentTypeToDefaultContentLocation](Copy-MgSiteContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
@@ -40,8 +40,9 @@ The file can then be added as a default file or template via a POST operation.
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgSiteOnenoteNotebook](Copy-MgSiteOnenoteNotebook.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteListContentTypeToDefaultContentLocation](Copy-MgSiteListContentTypeToDefaultContentLocation.md)
+Copy a file to a default content location in a [content type][contentType].
+The file can then be added as a default file or template via a POST operation.
 
 ### [Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -63,9 +64,8 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 ### [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionToSectionGroup.md)
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenotePageToSection](Copy-MgSiteOnenotePageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteOnenoteNotebookSectionToSectionGroup](Copy-MgSiteOnenoteNotebookSectionToSectionGroup.md)
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgSiteOnenoteSectionGroupSectionPageToSection](Copy-MgSiteOnenoteSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -81,11 +81,13 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteSectionToNotebook](Copy-MgSiteOnenoteSectionToNotebook.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgSiteOnenoteSectionToSectionGroup](Copy-MgSiteOnenoteSectionToSectionGroup.md)
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Get-MgAdminSharepoint](Get-MgAdminSharepoint.md)
 Get sharepoint from admin
@@ -1136,9 +1138,8 @@ The set of subscriptions on the list.
 ### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgSiteOnenoteNotebookFromWebUrl](Get-MgSiteOnenoteNotebookFromWebUrl.md)
-Retrieve the properties and relationships of a notebook object by using its URL path.
-The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
+### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
+Get the number of the resource
 
 ### [Get-MgSiteOperation](Get-MgSiteOperation.md)
 Get the status of a rich long-running operation on a site or a list.
@@ -1494,8 +1495,8 @@ The collection of the sub-sites under this site.
 ### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
 Get the number of the resource
 
-### [Get-MgUserFollowedSite](Get-MgUserFollowedSite.md)
-Get followedSites from users
+### [Get-MgSubSiteCount](Get-MgSubSiteCount.md)
+Get the number of the resource
 
 ### [Get-MgUserFollowedSiteCount](Get-MgUserFollowedSiteCount.md)
 Get the number of the resource
@@ -1847,6 +1848,10 @@ Delete navigation property sharepoint for admin
 
 ### [Remove-MgAdminSharepointSetting](Remove-MgAdminSharepointSetting.md)
 Delete navigation property settings for admin
+
+### [Remove-MgGroupSite](Remove-MgGroupSite.md)
+The list of SharePoint sites in this group.
+Access the default site with /sites/root.
 
 ### [Remove-MgGroupSiteAnalytic](Remove-MgGroupSiteAnalytic.md)
 Delete navigation property analytics for groups

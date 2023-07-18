@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccessauthenticationstrength
 schema: 2.0.0
@@ -17,14 +17,14 @@ Update the navigation property authenticationStrengths in identity
 Update-MgBetaIdentityConditionalAccessAuthenticationStrength [-AdditionalProperties <Hashtable>]
  [-AuthenticationCombinations <String[]>]
  [-AuthenticationMethodModes <IMicrosoftGraphAuthenticationMethodModeDetail[]>] [-Combinations <String[]>]
- [-Id <String>] [-Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>] [-Confirm] [-WhatIf]
+ [-Id <String>] [-Policies <IMicrosoftGraphAuthenticationStrengthPolicy[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update1
 ```
 Update-MgBetaIdentityConditionalAccessAuthenticationStrength
- -BodyParameter <IMicrosoftGraphAuthenticationStrengthRoot> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAuthenticationStrengthRoot> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -32,14 +32,14 @@ Update the navigation property authenticationStrengths in identity
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -52,7 +52,7 @@ Update the navigation property authenticationStrengths in identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -67,7 +67,7 @@ Accept wildcard characters: False
 A collection of all valid authentication method combinations in the system.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -83,7 +83,7 @@ Names and descriptions of all valid authentication method modes in the system.
 To construct, see NOTES section for AUTHENTICATIONMETHODMODES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationMethodModeDetail[]
+Type: IMicrosoftGraphAuthenticationMethodModeDetail[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -99,7 +99,7 @@ authenticationStrengthRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
+Type: IMicrosoftGraphAuthenticationStrengthRoot
 Parameter Sets: Update1
 Aliases:
 
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -130,7 +130,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -146,7 +146,7 @@ A collection of authentication strength policies that exist for this tenant, inc
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthPolicy[]
+Type: IMicrosoftGraphAuthenticationStrengthPolicy[]
 Parameter Sets: UpdateExpanded1
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,11 +194,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
-
 ## NOTES
 
 ALIASES
@@ -249,4 +247,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[RequirementsSatisfied <String>]`: authenticationStrengthRequirements
 
 ## RELATED LINKS
-

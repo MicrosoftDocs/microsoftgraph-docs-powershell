@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.SignIns
 Module Guid: 5c3b2b34-7a61-44d8-b74f-900e80500740
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins
@@ -424,20 +424,20 @@ Read the properties and relationships of a servicePrincipalRiskDetection object.
 ### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationEmailMethod](Get-MgUserAuthenticationEmailMethod.md)
-Retrieve a user's single email authentication method object.
+### [Get-MgServicePrincipalRiskDetectionCount](Get-MgServicePrincipalRiskDetectionCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationFido2Method](Get-MgUserAuthenticationFido2Method.md)
-Retrieve a user's single FIDO2 Security Key Authentication Method object.
+### [Get-MgUserAuthenticationEmailMethodCount](Get-MgUserAuthenticationEmailMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationMethod](Get-MgUserAuthenticationMethod.md)
-Retrieve the properties and relationships of an authenticationMethod object.
+### [Get-MgUserAuthenticationFido2MethodCount](Get-MgUserAuthenticationFido2MethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationMethodCount](Get-MgUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -461,22 +461,20 @@ The possible states of the long-running operation are `notStarted`, `running`, `
 ### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPasswordMethod](Get-MgUserAuthenticationPasswordMethod.md)
-Retrieve a password that's registered to a user, represented by a passwordAuthenticationMethod object.
-For security, the password itself will never be returned in the object and the **password** property is always `null`.
+### [Get-MgUserAuthenticationOperationCount](Get-MgUserAuthenticationOperationCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationPhoneMethod](Get-MgUserAuthenticationPhoneMethod.md)
-Retrieve a single phoneAuthenticationMethod object for a user.
-This method is available only for standard Azure AD and B2B users, but not B2C users.
+### [Get-MgUserAuthenticationPasswordMethodCount](Get-MgUserAuthenticationPasswordMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgUserAuthenticationSoftwareOathMethod](Get-MgUserAuthenticationSoftwareOathMethod.md)
-Retrieve a user's single Software OATH token authentication method object and its properties.
+### [Get-MgUserAuthenticationPhoneMethodCount](Get-MgUserAuthenticationPhoneMethodCount.md)
+Get the number of the resource
 
 ### [Get-MgUserAuthenticationSoftwareOathMethodCount](Get-MgUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -681,13 +679,8 @@ Create new navigation property to methods for users
 ### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
 Create new navigation property to operations for users
 
-### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
-Add a new phone authentication method for a user.
-A user may only have one phone of each type, captured in the **phoneType** property.
-This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
-Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
-Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
-Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
+### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
+Create new navigation property to operations for users
 
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
@@ -875,13 +868,8 @@ Deletes a microsoftAuthenticatorAuthenticationMethod object.
 ### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
 Delete navigation property operations for users
 
-### [Remove-MgUserAuthenticationPhoneMethod](Remove-MgUserAuthenticationPhoneMethod.md)
-Delete a user's phone authentication method.
-This removes the phone number from the user and they will no longer be able to use the number for authentication, whether via SMS or voice calls.
-A user cannot have an `alternateMobile` number without a `mobile` number.
-If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first update the `mobile` number to the new number, then delete the `alternateMobile` number.
-If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.
-Have the user change their default authentication method, and then delete the number.
+### [Remove-MgUserAuthenticationOperation](Remove-MgUserAuthenticationOperation.md)
+Delete navigation property operations for users
 
 ### [Remove-MgUserAuthenticationSoftwareOathMethod](Remove-MgUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.
@@ -1095,9 +1083,6 @@ Update the navigation property methods in users
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 Update the navigation property operations in users
 
-### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
-Update a user's phone number associated with a phone authentication method object.
-You can't change a phone's type.
-To change a phone's type, add a new number of the desired type and then delete the object with the original type.
-If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
+### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
+Update the navigation property operations in users
 

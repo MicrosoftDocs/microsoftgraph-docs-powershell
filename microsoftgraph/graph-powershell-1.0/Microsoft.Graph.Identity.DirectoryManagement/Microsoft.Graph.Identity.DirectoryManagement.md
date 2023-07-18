@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
 Module Guid: 9b80e8cb-70ee-4294-bd4e-e51868760423
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement
@@ -11,62 +11,35 @@ Locale: en-US
 Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Identity.DirectoryManagement Cmdlets
-### [Confirm-MgContactMemberGroup](Confirm-MgContactMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgContactMemberObject](Confirm-MgContactMemberObject.md)
+Invoke action checkMemberObjects
 
 ### [Confirm-MgContactMemberObject](Confirm-MgContactMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgContractMemberGroup](Confirm-MgContractMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgContractMemberObject](Confirm-MgContractMemberObject.md)
+Invoke action checkMemberObjects
 
 ### [Confirm-MgContractMemberObject](Confirm-MgContractMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDeviceMemberGroup](Confirm-MgDeviceMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgDeviceMemberObject](Confirm-MgDeviceMemberObject.md)
+Invoke action checkMemberObjects
 
 ### [Confirm-MgDeviceMemberObject](Confirm-MgDeviceMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDirectoryDeletedItemMemberGroup](Confirm-MgDirectoryDeletedItemMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgDirectoryDeletedItemMemberObject](Confirm-MgDirectoryDeletedItemMemberObject.md)
+Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryDeletedItemMemberObject](Confirm-MgDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDirectoryRoleMemberGroup](Confirm-MgDirectoryRoleMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
-
 ### [Confirm-MgDirectoryRoleMemberObject](Confirm-MgDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgDirectoryRoleTemplateMemberGroup](Confirm-MgDirectoryRoleTemplateMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgDirectoryRoleMemberObject](Confirm-MgDirectoryRoleMemberObject.md)
+Invoke action checkMemberObjects
 
 ### [Confirm-MgDirectoryRoleTemplateMemberObject](Confirm-MgDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
@@ -74,12 +47,8 @@ Invoke action checkMemberObjects
 ### [Confirm-MgDomain](Confirm-MgDomain.md)
 Validates the ownership of the domain.
 
-### [Confirm-MgOrganizationMemberGroup](Confirm-MgOrganizationMemberGroup.md)
-Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
-This function is transitive.
-You can check up to a maximum of 20 groups per request.
-This function supports all groups provisioned in Azure AD.
-Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
+### [Confirm-MgDomain](Confirm-MgDomain.md)
+Validates the ownership of the domain.
 
 ### [Confirm-MgOrganizationMemberObject](Confirm-MgOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -121,9 +90,8 @@ Get the number of the resource
 ### [Get-MgContactManager](Get-MgContactManager.md)
 Get this organizational contact's manager.
 
-### [Get-MgContactMemberGroup](Get-MgContactMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgContactManager](Get-MgContactManager.md)
+Get this organizational contact's manager.
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -141,6 +109,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgContactMemberOfAsGroup](Get-MgContactMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgContactMemberOfCount](Get-MgContactMemberOfCount.md)
 Get the number of the resource
@@ -161,6 +132,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgContactTransitiveMemberOfAsGroup](Get-MgContactTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgContactTransitiveMemberOfCount](Get-MgContactTransitiveMemberOfCount.md)
 Get the number of the resource
@@ -184,9 +158,8 @@ Get the number of the resource
 ### [Get-MgContractDelta](Get-MgContractDelta.md)
 Invoke function delta
 
-### [Get-MgContractMemberGroup](Get-MgContractMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgContractDelta](Get-MgContractDelta.md)
+Invoke function delta
 
 ### [Get-MgContractMemberObject](Get-MgContractMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -214,9 +187,8 @@ Nullable.
 ### [Get-MgDeviceExtensionCount](Get-MgDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgDeviceMemberGroup](Get-MgDeviceMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgDeviceExtensionCount](Get-MgDeviceExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -234,6 +206,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.administ
 
 ### [Get-MgDeviceMemberOfAsGroup](Get-MgDeviceMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
+
+### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
+Invoke action getMemberObjects
 
 ### [Get-MgDeviceMemberOfCount](Get-MgDeviceMemberOfCount.md)
 Get the number of the resource
@@ -479,9 +454,8 @@ Get the number of the resource
 ### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryDeletedItemMemberGroup](Get-MgDirectoryDeletedItemMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryDeletedItemMemberObject](Get-MgDirectoryDeletedItemMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -570,9 +544,8 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgDirectoryRoleMemberGroup](Get-MgDirectoryRoleMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgDirectoryRoleMemberCountAsUser](Get-MgDirectoryRoleMemberCountAsUser.md)
+Get the number of the resource
 
 ### [Get-MgDirectoryRoleMemberObject](Get-MgDirectoryRoleMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -600,9 +573,8 @@ Get the number of the resource
 ### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgDirectoryRoleTemplateMemberGroup](Get-MgDirectoryRoleTemplateMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgDirectoryRoleTemplateDelta](Get-MgDirectoryRoleTemplateDelta.md)
+Invoke function delta
 
 ### [Get-MgDirectoryRoleTemplateMemberObject](Get-MgDirectoryRoleTemplateMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -733,9 +705,8 @@ Nullable.
 ### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgOrganizationMemberGroup](Get-MgOrganizationMemberGroup.md)
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+### [Get-MgOrganizationExtensionCount](Get-MgOrganizationExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgOrganizationMemberObject](Get-MgOrganizationMemberObject.md)
 Return all IDs for the groups, administrative units, and directory roles that a user, group, service principal, organizational contact, device, or directory object is a member of.
@@ -775,6 +746,11 @@ Create and register a new device in the organization.
 
 ### [New-MgDeviceExtension](New-MgDeviceExtension.md)
 Create new navigation property to extensions for devices
+
+### [New-MgDeviceExtension](New-MgDeviceExtension.md)
+The collection of open extensions defined for the device.
+Read-only.
+Nullable.
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Add a user as a registered owner of the device.
