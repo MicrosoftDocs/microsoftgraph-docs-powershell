@@ -143,6 +143,10 @@ To revoke the app roles assigned in step 3, run:
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId '22c1770d-30df-49e7-a763-f39d2ef9b369' -AppRoleAssignmentId 'DXfBIt8w50mnY_OdLvmzaUbMIDgaM6pCpU8rpQHnPf0'
 ```
 
+## See also
+
+- [Grant or revoke API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?tabs=http&pivots=grant-application-permissions)
+
 ::: zone-end
 
 ::: zone pivot="grant-delegated-permissions"
@@ -330,5 +334,3 @@ When a delegated permission grant is deleted, the access it granted is revoked. 
 - [Grant or revoke API permissions using Microsoft Graph](/graph/permissions-grant-via-msgraph?tabs=http&pivots=grant-delegated-permissions)
 
 ::: zone-end
-
-
