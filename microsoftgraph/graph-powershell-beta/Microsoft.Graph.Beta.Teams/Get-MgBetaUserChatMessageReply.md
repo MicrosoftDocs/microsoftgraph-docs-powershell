@@ -334,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageReply?view=graph-powershell-v1.0)

@@ -556,5 +556,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)

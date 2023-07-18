@@ -1255,5 +1255,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Update-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicator?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicator?view=graph-powershell-v1.0)

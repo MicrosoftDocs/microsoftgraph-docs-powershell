@@ -227,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusDetail <String>]`: Details about the status of the operation.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceRoleManagementAlertOperation](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertOperation?view=graph-powershell-v1.0)

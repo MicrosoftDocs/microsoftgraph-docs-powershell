@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaReauthorizeDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgReauthorizeDriveRootSubscription?view=graph-powershell-beta)

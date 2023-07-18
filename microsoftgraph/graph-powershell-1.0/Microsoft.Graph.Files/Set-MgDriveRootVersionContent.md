@@ -200,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgDriveRootVersionContent?view=graph-powershell-beta)

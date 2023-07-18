@@ -311,5 +311,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementIntentUserState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntentUserState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementIntentUserState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementIntentUserState?view=graph-powershell-v1.0)

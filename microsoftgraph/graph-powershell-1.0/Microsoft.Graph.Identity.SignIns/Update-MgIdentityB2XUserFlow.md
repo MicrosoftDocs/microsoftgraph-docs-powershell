@@ -462,5 +462,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name of the identity provider.
 
 ## RELATED LINKS
+[Update-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityB2XUserFlow?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityB2XUserFlow?view=graph-powershell-beta)

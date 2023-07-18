@@ -112,3 +112,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0)

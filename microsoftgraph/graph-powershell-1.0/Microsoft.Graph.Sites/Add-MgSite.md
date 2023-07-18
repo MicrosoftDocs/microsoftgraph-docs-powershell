@@ -5836,5 +5836,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermStores <IMicrosoftGraphTermStore[]>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
+[Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgSite?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgSite?view=graph-powershell-beta)

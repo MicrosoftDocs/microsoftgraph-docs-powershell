@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveRootAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootAnalyticLastSevenDay?view=graph-powershell-v1.0)

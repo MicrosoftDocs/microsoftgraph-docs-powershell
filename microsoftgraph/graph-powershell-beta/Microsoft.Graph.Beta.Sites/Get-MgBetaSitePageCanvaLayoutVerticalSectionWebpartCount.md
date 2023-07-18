@@ -188,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePageCanvaLayoutVerticalSectionWebpartCount](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCanvaLayoutVerticalSectionWebpartCount?view=graph-powershell-v1.0)

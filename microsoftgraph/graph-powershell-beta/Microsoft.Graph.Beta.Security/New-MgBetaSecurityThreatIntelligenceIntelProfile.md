@@ -353,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Format <String>]`: contentFormat
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceIntelProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceIntelProfile?view=graph-powershell-v1.0)

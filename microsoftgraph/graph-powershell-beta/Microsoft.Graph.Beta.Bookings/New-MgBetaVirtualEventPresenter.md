@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
+[New-MgVirtualEventPresenter](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventPresenter?view=graph-powershell-v1.0)

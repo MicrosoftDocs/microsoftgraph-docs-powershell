@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Remove-MgUserInsightShared?view=graph-powershell-v1.0)

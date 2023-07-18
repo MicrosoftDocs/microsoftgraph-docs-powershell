@@ -584,5 +584,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[Update-MgGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetChildRelation?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetChildRelation?view=graph-powershell-v1.0)

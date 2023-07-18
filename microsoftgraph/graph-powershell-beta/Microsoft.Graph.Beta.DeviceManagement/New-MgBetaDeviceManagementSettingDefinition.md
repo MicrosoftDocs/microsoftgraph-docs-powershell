@@ -333,3 +333,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
 
 ## RELATED LINKS
+[New-MgDeviceManagementSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementSettingDefinition?view=graph-powershell-v1.0)

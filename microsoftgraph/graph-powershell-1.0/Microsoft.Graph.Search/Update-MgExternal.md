@@ -305,5 +305,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectionState
 
 ## RELATED LINKS
+[Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgExternal?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaExternal](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgExternal?view=graph-powershell-beta)

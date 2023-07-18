@@ -531,5 +531,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+[Update-MgGroupSiteInformationProtection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSiteInformationProtection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtection?view=graph-powershell-v1.0)

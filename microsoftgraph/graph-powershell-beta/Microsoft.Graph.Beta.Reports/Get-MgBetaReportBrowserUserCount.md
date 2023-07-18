@@ -154,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportBrowserUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportBrowserUserCount?view=graph-powershell-v1.0)

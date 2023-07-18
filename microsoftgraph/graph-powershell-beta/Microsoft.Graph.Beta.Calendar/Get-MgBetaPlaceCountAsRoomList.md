@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlaceCountAsRoomList](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceCountAsRoomList?view=graph-powershell-v1.0)

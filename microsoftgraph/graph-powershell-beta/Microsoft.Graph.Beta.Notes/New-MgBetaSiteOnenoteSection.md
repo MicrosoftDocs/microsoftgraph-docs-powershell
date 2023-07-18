@@ -645,5 +645,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[New-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSiteOnenoteSection](/powershell/module/Microsoft.Graph.Notes/New-MgSiteOnenoteSection?view=graph-powershell-v1.0)

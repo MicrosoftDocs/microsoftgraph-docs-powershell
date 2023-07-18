@@ -229,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemPermission?view=graph-powershell-v1.0)

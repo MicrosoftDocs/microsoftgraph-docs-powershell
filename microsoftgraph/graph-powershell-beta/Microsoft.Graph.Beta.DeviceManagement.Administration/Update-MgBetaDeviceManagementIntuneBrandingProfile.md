@@ -873,5 +873,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntuneBrandingProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementIntuneBrandingProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementIntuneBrandingProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementIntuneBrandingProfile?view=graph-powershell-v1.0)

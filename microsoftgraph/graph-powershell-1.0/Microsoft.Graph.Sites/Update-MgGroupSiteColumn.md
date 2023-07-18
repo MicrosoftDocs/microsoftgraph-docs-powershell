@@ -1165,5 +1165,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgGroupSiteColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgGroupSiteColumn?view=graph-powershell-beta)

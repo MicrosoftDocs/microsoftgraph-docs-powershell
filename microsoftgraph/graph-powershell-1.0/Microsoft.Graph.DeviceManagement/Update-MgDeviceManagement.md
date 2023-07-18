@@ -11510,5 +11510,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalMalwareCount <Int32?>]`: Count of all malware detections across all devices. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
+[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagement?view=graph-powershell-beta)

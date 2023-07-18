@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)

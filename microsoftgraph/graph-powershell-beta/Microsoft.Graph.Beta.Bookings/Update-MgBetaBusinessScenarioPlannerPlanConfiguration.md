@@ -379,3 +379,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlanTitle <String>]`: Localized title of the plan.
 
 ## RELATED LINKS
+[Update-MgBusinessScenarioPlannerPlanConfiguration](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerPlanConfiguration?view=graph-powershell-v1.0)

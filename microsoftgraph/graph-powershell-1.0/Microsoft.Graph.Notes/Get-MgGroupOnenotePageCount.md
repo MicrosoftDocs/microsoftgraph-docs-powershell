@@ -131,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupOnenotePageCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgGroupOnenotePageCount?view=graph-powershell-beta)

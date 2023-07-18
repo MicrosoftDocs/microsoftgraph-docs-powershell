@@ -437,5 +437,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
 ## RELATED LINKS
+[Update-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleShift?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleShift?view=graph-powershell-v1.0)

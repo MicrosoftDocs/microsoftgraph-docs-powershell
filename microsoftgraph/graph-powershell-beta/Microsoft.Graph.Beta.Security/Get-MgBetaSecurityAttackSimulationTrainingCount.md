@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationTrainingCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTrainingCount?view=graph-powershell-v1.0)

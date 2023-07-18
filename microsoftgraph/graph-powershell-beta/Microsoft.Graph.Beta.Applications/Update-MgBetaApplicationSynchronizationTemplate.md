@@ -546,5 +546,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
+[Update-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationTemplate?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationTemplate?view=graph-powershell-v1.0)

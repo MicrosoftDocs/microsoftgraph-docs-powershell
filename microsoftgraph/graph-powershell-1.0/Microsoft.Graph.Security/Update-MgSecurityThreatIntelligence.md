@@ -777,5 +777,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Severity <String>]`: vulnerabilitySeverity
 
 ## RELATED LINKS
+[Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityThreatIntelligence?view=graph-powershell-beta)

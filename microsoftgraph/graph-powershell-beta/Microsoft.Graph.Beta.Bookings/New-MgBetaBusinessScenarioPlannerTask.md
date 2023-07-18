@@ -922,5 +922,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
+[New-MgBusinessScenarioPlannerTask](/powershell/module/Microsoft.Graph.Bookings/New-MgBusinessScenarioPlannerTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgBusinessScenarioPlannerTask](/powershell/module/Microsoft.Graph.Bookings/New-MgBusinessScenarioPlannerTask?view=graph-powershell-v1.0)

@@ -135,3 +135,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Update-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgSearchEntity?view=graph-powershell-beta)

@@ -186,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaDeclineGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgDeclineGroupEvent?view=graph-powershell-beta)

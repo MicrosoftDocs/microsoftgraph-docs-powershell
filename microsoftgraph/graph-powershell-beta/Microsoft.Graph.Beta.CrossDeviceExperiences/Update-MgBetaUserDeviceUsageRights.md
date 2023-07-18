@@ -280,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserDeviceUsageRights](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserDeviceUsageRights?view=graph-powershell-v1.0)

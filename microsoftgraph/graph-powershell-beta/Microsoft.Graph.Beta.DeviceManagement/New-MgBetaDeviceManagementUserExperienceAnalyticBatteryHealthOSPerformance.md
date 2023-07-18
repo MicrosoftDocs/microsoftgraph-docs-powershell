@@ -253,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OSVersion <String>]`: Version of the operating system.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthOSPerformance?view=graph-powershell-v1.0)

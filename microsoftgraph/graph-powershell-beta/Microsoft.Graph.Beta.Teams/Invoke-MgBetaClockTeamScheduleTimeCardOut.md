@@ -271,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Invoke-MgClockTeamScheduleTimeCardOut](/powershell/module/Microsoft.Graph.Teams/Invoke-MgClockTeamScheduleTimeCardOut?view=graph-powershell-v1.0)

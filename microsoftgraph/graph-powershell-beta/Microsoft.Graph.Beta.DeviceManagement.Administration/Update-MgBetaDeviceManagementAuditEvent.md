@@ -483,3 +483,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Audit resource's type.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementAuditEvent?view=graph-powershell-v1.0)

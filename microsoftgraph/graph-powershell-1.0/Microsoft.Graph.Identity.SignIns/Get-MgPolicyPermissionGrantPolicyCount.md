@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaPolicyPermissionGrantPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyCount?view=graph-powershell-beta)

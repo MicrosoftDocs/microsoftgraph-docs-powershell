@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
+[Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity?view=graph-powershell-v1.0)

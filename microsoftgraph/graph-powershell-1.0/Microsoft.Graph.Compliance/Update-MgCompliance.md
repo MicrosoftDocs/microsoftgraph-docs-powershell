@@ -118,3 +118,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Update-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgCompliance?view=graph-powershell-beta)

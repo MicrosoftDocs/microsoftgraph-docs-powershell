@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeRange <String>]`: restoreTimeRange
 
 ## RELATED LINKS
+[Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc?view=graph-powershell-v1.0)

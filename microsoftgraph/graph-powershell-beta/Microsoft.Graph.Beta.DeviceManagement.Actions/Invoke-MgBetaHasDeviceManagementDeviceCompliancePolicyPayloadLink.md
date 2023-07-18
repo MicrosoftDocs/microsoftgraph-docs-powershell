@@ -146,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PayloadIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgHasDeviceManagementDeviceCompliancePolicyPayloadLink](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgHasDeviceManagementDeviceCompliancePolicyPayloadLink?view=graph-powershell-v1.0)

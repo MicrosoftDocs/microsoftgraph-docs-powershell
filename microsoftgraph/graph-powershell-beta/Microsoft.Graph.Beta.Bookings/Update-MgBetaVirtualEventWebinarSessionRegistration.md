@@ -423,3 +423,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Display name of the speaker.
 
 ## RELATED LINKS
+[Update-MgVirtualEventWebinarSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarSessionRegistration?view=graph-powershell-v1.0)

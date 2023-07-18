@@ -190,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgTerminateDeviceManagementPartner?view=graph-powershell-v1.0)

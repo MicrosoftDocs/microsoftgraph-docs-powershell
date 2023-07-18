@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Symbol <String>]`: The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
+[New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingCurrency?view=graph-powershell-beta)

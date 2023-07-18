@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBufferUserInformationProtectionDecrypt](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBufferUserInformationProtectionDecrypt?view=graph-powershell-v1.0)

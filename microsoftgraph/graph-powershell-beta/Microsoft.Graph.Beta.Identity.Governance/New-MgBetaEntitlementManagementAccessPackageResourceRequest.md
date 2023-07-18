@@ -488,5 +488,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The resource type of the subject.
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackageResourceRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackageResourceRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRequest?view=graph-powershell-v1.0)

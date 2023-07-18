@@ -476,5 +476,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementFile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAgreementFile?view=graph-powershell-v1.0)

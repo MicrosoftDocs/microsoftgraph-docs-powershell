@@ -199,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MetricType <String>]`: The user experience analytics metric type.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceMetricHistory?view=graph-powershell-v1.0)

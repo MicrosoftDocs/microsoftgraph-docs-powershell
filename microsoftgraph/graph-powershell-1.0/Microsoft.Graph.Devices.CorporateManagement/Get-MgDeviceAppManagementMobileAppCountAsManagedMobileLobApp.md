@@ -79,3 +79,4 @@ ALIASES
 Get-DeviceAppMgtMobileAppCountAsManagedMobileLobApp
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementMobileAppCountAsManagedMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp?view=graph-powershell-beta)

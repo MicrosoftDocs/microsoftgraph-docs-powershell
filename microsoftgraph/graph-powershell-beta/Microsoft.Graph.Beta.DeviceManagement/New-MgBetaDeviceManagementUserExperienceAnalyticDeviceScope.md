@@ -338,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueObjectId <String>]`: The unique identifier for a user device scope tag Id used for the creation of device scope configuration.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceScope](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceScope?view=graph-powershell-v1.0)

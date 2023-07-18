@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaSecuritySecureScoreControlProfileCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecuritySecureScoreControlProfileCount?view=graph-powershell-beta)

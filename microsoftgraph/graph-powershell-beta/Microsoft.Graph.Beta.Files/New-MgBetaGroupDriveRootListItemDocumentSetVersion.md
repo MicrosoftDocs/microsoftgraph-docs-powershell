@@ -432,3 +432,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[New-MgGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-v1.0)

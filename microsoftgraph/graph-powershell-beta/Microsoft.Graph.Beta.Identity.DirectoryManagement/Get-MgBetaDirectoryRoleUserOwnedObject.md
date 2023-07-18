@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: 
 
 ## RELATED LINKS
+[Get-MgDirectoryRoleUserOwnedObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleUserOwnedObject?view=graph-powershell-v1.0)

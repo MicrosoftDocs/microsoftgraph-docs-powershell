@@ -131,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupOnenoteSectionCount](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionCount?view=graph-powershell-v1.0)

@@ -190,3 +190,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/New-MgUserTodoList?view=graph-powershell-beta)

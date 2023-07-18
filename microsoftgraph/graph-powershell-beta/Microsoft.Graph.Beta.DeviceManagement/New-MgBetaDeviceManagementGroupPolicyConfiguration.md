@@ -410,5 +410,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Presentation <IMicrosoftGraphGroupPolicyPresentation>]`: The base entity for the display presentation of any of the additional options in a group policy definition.
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementGroupPolicyConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementGroupPolicyConfiguration?view=graph-powershell-v1.0)

@@ -387,5 +387,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
+[New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageReply?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageReply?view=graph-powershell-beta)

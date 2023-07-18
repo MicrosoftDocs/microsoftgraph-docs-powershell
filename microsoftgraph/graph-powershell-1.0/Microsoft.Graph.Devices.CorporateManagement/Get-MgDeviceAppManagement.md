@@ -78,3 +78,4 @@ ALIASES
 Get-DeviceAppMgt
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagement?view=graph-powershell-beta)

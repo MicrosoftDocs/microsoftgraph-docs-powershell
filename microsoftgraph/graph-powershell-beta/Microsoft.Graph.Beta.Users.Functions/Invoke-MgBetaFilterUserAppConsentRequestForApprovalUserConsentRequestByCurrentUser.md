@@ -271,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUser](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgFilterUserAppConsentRequestForApprovalUserConsentRequestByCurrentUser?view=graph-powershell-v1.0)

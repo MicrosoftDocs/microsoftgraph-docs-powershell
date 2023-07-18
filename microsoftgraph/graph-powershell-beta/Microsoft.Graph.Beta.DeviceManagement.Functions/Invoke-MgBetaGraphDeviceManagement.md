@@ -123,3 +123,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Invoke-MgGraphDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgGraphDeviceManagement?view=graph-powershell-v1.0)

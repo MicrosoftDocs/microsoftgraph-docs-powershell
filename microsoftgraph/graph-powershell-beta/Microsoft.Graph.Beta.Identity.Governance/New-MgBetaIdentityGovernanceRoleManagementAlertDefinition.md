@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SeverityLevel <String>]`: alertSeverity
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceRoleManagementAlertDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertDefinition?view=graph-powershell-v1.0)

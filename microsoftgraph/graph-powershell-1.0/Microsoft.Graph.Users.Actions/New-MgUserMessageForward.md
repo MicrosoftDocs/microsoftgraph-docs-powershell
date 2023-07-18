@@ -414,5 +414,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
+[New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageForward?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageForward?view=graph-powershell-beta)

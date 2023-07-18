@@ -92,3 +92,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDeviceCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceCount?view=graph-powershell-beta)

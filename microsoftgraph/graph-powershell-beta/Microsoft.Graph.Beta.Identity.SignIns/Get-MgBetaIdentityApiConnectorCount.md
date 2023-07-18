@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgIdentityApiConnectorCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityApiConnectorCount?view=graph-powershell-v1.0)

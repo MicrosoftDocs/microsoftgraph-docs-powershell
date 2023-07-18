@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecordCount?view=graph-powershell-beta)

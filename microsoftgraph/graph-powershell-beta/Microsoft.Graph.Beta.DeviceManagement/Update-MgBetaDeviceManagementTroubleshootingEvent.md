@@ -442,5 +442,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Text <String>]`: Not yet documented
 
 ## RELATED LINKS
+[Update-MgDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementTroubleshootingEvent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementTroubleshootingEvent?view=graph-powershell-v1.0)

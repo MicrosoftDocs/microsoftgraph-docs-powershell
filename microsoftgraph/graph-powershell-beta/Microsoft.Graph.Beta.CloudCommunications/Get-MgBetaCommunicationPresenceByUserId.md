@@ -144,3 +144,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Ids <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresenceByUserId?view=graph-powershell-v1.0)

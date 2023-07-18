@@ -248,5 +248,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TrimDuplicates <Boolean?>]`: Indicates whether to trim away the duplicate SharePoint files from search results. Default value is false. Optional.
 
 ## RELATED LINKS
+[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)

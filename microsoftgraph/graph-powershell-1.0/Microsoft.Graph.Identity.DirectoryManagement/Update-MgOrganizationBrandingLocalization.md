@@ -741,3 +741,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[HideTermsOfUse <Boolean?>]`: 
 
 ## RELATED LINKS
+[Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-beta)

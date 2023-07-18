@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTeamworkTeamTemplateCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamTemplateCount?view=graph-powershell-v1.0)

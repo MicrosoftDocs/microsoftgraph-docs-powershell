@@ -318,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OSVersion <String>]`: The OS version of the application. Supports: $select, $OrderBy. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-beta)

@@ -9352,5 +9352,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectType <String>]`: accessPackageSubjectType
 
 ## RELATED LINKS
+[Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignment?view=graph-powershell-beta)

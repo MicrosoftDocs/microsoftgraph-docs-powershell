@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgBetaDriveRootListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgDriveRootListItemVersionField?view=graph-powershell-beta)

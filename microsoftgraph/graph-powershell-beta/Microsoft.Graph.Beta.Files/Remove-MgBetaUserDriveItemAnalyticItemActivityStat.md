@@ -224,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)

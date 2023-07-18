@@ -257,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD roles.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)

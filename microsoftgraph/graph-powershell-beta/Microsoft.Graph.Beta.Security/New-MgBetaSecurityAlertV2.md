@@ -641,3 +641,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
+[New-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAlertV2?view=graph-powershell-v1.0)

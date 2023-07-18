@@ -1176,5 +1176,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+[Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-v1.0)

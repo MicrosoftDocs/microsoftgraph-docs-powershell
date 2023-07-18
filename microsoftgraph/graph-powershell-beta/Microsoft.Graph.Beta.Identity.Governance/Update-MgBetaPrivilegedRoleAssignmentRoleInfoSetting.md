@@ -454,3 +454,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Update-MgPrivilegedRoleAssignmentRoleInfoSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignmentRoleInfoSetting?view=graph-powershell-v1.0)

@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrint?view=graph-powershell-v1.0)

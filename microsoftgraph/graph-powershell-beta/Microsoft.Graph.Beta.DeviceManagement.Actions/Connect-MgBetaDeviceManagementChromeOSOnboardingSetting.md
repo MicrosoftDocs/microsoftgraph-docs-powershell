@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OwnerUserPrincipalName <String>]`: 
 
 ## RELATED LINKS
+[Connect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)

@@ -300,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgRedirectPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Invoke-MgRedirectPrintShareJob?view=graph-powershell-v1.0)

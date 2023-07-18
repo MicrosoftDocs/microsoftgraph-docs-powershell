@@ -14580,5 +14580,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)

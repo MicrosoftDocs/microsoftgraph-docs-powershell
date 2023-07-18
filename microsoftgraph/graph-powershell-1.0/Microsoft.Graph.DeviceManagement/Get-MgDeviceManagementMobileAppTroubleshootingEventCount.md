@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementMobileAppTroubleshootingEventCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventCount?view=graph-powershell-beta)

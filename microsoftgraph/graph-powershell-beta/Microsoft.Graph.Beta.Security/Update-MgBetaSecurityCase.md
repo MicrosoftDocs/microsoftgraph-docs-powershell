@@ -9948,5 +9948,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tags <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]`: Returns a list of ediscoveryReviewTag objects associated to this case.
 
 ## RELATED LINKS
+[Update-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCase?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCase?view=graph-powershell-v1.0)

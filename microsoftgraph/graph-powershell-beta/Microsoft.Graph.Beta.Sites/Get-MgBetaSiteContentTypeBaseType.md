@@ -365,3 +365,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteContentTypeBaseType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeBaseType?view=graph-powershell-v1.0)

@@ -318,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgTenantRelationshipManagedTenantManagementAction](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Add-MgTenantRelationshipManagedTenantManagementAction?view=graph-powershell-v1.0)

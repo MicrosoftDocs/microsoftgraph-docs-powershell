@@ -126,3 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationIoAvailableUpdateVersion?view=graph-powershell-v1.0)

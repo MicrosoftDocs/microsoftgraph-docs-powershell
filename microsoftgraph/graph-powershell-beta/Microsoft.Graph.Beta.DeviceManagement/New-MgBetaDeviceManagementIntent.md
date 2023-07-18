@@ -547,5 +547,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SuccessCount <Int32?>]`: Number of succeeded users
 
 ## RELATED LINKS
+[New-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntent?view=graph-powershell-v1.0)

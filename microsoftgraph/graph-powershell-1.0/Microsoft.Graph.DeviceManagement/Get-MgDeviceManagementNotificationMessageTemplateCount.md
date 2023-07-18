@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementNotificationMessageTemplateCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementNotificationMessageTemplateCount?view=graph-powershell-beta)

@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPolicyServicePrincipalCreationPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyServicePrincipalCreationPolicyCount?view=graph-powershell-v1.0)

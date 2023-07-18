@@ -166,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
+[Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel](/powershell/module/Microsoft.Graph.Security/Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel?view=graph-powershell-v1.0)

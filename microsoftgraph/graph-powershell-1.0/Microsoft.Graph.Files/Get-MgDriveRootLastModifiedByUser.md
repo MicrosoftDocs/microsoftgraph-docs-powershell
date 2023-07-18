@@ -149,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveRootLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveRootLastModifiedByUser?view=graph-powershell-beta)

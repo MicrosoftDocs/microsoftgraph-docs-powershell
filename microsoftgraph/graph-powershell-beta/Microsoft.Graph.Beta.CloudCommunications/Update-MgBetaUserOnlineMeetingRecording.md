@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRecording?view=graph-powershell-v1.0)

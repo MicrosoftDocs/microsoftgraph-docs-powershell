@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEntitlementManagementCatalogCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementCatalogCount?view=graph-powershell-beta)

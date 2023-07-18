@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgVirtualEventCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventCount?view=graph-powershell-v1.0)

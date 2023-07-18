@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDomainCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainCount?view=graph-powershell-beta)

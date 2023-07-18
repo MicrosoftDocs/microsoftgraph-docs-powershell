@@ -183,3 +183,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgContractDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContractDelta?view=graph-powershell-v1.0)

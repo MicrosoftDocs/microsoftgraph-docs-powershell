@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBusinessScenarioCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioCount?view=graph-powershell-v1.0)

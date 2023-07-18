@@ -1177,5 +1177,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: callTranscriptionState
 
 ## RELATED LINKS
+[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-beta)

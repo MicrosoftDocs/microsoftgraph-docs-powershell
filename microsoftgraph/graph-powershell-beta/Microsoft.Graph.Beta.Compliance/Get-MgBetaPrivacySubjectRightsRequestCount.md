@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPrivacySubjectRightsRequestCount](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestCount?view=graph-powershell-v1.0)

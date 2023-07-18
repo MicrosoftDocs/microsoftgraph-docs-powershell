@@ -5958,5 +5958,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
 ## RELATED LINKS
+[Initialize-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Initialize-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)

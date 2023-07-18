@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaSecurityThreatIntelligenceProfileIndicatorCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceProfileIndicatorCount?view=graph-powershell-beta)

@@ -78,3 +78,4 @@ ALIASES
 Get-MgBetaWuDeploymentCount
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesDeploymentCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentCount?view=graph-powershell-v1.0)

@@ -93,3 +93,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDirectoryObjectCount](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgDirectoryObjectCount?view=graph-powershell-beta)

@@ -146,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMailFolderMessageCount](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgUserMailFolderMessageCount?view=graph-powershell-beta)

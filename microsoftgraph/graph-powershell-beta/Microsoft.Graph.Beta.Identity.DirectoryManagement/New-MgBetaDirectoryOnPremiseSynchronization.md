@@ -270,5 +270,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
+[New-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOnPremiseSynchronization?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOnPremiseSynchronization?view=graph-powershell-v1.0)

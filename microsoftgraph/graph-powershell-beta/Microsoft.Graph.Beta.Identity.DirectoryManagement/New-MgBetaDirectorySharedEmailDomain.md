@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ProvisioningStatus <String>]`: 
 
 ## RELATED LINKS
+[New-MgDirectorySharedEmailDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySharedEmailDomain?view=graph-powershell-v1.0)

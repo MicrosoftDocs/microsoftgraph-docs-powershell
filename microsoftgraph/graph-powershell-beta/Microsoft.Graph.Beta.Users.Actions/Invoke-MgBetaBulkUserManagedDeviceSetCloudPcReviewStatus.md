@@ -274,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
+[Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBulkUserManagedDeviceSetCloudPcReviewStatus?view=graph-powershell-v1.0)

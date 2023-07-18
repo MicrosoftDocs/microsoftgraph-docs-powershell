@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownUserCount <Int32?>]`: Number of unknown users
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceConfigurationUserStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationUserStateSummary?view=graph-powershell-v1.0)

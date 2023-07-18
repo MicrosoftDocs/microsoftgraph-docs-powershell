@@ -505,3 +505,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/New-MgUserProfileLanguage?view=graph-powershell-v1.0)

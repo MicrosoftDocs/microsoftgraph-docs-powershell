@@ -919,5 +919,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastMessageReadDateTime <DateTime?>]`: Represents the dateTime up until which the current user has read chatMessages in a specific chat.
 
 ## RELATED LINKS
+[Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgChat?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgChat?view=graph-powershell-beta)

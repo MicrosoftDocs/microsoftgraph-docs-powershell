@@ -111,3 +111,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMe?view=graph-powershell-v1.0)

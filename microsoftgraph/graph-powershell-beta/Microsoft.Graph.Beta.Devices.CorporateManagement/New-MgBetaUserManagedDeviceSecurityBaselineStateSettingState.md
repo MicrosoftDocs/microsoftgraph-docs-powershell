@@ -441,3 +441,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
+[New-MgUserManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)

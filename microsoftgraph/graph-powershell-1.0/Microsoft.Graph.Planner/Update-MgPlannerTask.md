@@ -738,5 +738,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrderHint <String>]`: Hint value used to order the task on the progress view of the task board. For details about the supported format, see Using order hints in Planner.
 
 ## RELATED LINKS
+[Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerTask?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerTask?view=graph-powershell-beta)

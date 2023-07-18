@@ -362,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Update-MgBusinessScenarioPlannerTaskDetail](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerTaskDetail?view=graph-powershell-v1.0)

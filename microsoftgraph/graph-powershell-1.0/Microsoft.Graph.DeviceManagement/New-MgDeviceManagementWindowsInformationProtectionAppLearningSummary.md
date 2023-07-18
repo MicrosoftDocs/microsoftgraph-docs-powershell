@@ -192,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceCount <Int32?>]`: Device Count
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-beta)

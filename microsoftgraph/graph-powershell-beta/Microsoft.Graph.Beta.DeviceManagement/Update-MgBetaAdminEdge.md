@@ -284,5 +284,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
 ## RELATED LINKS
+[Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-v1.0)

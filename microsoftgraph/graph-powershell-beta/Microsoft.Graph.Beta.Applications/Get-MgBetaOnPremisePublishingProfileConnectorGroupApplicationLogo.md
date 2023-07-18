@@ -188,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOnPremisePublishingProfileConnectorGroupApplicationLogo](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupApplicationLogo?view=graph-powershell-v1.0)

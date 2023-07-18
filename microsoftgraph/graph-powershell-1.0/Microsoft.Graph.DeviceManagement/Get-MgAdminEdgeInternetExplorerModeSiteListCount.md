@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaAdminEdgeInternetExplorerModeSiteListCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListCount?view=graph-powershell-beta)

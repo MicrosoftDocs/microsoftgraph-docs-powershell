@@ -19084,5 +19084,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: When the interval starts. Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteAnalytic?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteAnalytic?view=graph-powershell-v1.0)

@@ -18120,5 +18120,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
+[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeam?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeam?view=graph-powershell-beta)

@@ -6132,5 +6132,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]`: The result of processing the task.
 
 ## RELATED LINKS
+[New-MgBetaIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaIdentityGovernanceLifecycleWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowTask?view=graph-powershell-beta)

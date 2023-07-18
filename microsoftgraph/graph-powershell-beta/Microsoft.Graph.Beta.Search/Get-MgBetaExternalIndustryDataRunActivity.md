@@ -297,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataRunActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRunActivity?view=graph-powershell-v1.0)

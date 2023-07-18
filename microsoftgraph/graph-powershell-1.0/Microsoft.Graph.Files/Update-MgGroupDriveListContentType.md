@@ -1566,5 +1566,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveListContentType?view=graph-powershell-beta)

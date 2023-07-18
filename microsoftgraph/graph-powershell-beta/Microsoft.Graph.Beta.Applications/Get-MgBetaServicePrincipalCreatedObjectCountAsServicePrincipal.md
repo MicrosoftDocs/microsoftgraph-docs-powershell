@@ -151,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalCreatedObjectCountAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalCreatedObjectCountAsServicePrincipal?view=graph-powershell-v1.0)

@@ -238,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteOperation?view=graph-powershell-v1.0)

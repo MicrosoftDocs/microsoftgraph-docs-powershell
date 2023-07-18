@@ -1186,5 +1186,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Street <String>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancialCompanySaleInvoice](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgFinancialCompanySaleInvoice](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoice?view=graph-powershell-v1.0)

@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFileLanguageFile?view=graph-powershell-v1.0)

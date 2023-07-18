@@ -342,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Update-MgFinancialCompanySaleOrderCurrency](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleOrderCurrency?view=graph-powershell-v1.0)

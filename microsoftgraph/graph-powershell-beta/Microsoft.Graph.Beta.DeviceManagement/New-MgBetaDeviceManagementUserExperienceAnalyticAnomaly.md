@@ -363,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <UserExperienceAnalyticsAnomalyState?>]`: Indicates the state of the anomaly. Eg: anomaly severity can be new, active, disabled, removed or other.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAnomaly](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomaly?view=graph-powershell-v1.0)

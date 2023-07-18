@@ -227,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
 ## RELATED LINKS
+[New-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)

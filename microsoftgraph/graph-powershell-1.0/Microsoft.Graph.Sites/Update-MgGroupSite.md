@@ -27179,5 +27179,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
+[Update-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgGroupSite?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgGroupSite?view=graph-powershell-beta)

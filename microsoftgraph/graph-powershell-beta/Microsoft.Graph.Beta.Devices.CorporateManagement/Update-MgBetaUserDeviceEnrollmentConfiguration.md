@@ -441,3 +441,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Update-MgUserDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)

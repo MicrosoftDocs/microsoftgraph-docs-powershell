@@ -342,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
+[New-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationAutomation?view=graph-powershell-v1.0)

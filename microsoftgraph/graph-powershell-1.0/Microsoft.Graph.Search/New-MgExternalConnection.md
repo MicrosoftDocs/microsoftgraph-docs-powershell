@@ -472,5 +472,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ValuesJoinedBy <String>]`: binaryOperator
 
 ## RELATED LINKS
+[New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgExternalConnection?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgExternalConnection?view=graph-powershell-beta)

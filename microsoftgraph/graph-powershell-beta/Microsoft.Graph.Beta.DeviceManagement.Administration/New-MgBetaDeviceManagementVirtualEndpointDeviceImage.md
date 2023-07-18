@@ -316,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The image version. For example, 0.0.1 and 1.5.13.
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)

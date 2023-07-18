@@ -401,3 +401,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/New-MgShareListOperation?view=graph-powershell-v1.0)

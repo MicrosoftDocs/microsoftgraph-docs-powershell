@@ -142,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Query <String>]`: 
 
 ## RELATED LINKS
+[Start-MgBetaSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Beta.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-beta)

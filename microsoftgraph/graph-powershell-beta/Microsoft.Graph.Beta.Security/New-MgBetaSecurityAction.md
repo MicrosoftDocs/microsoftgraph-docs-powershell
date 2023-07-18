@@ -432,3 +432,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+[New-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAction?view=graph-powershell-v1.0)

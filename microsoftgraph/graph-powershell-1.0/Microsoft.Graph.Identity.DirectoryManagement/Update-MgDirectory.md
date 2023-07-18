@@ -394,5 +394,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserWritebackEnabled <Boolean?>]`: Used to indicate that user writeback is enabled.
 
 ## RELATED LINKS
+[Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-beta)

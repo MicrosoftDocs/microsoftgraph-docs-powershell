@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Model <String>]`: The model name of the device.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance?view=graph-powershell-v1.0)

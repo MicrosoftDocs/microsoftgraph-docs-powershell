@@ -187,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgExtractGroupDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupDriveRootSensitivityLabel?view=graph-powershell-v1.0)

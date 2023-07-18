@@ -119,3 +119,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Ping-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization?view=graph-powershell-v1.0)

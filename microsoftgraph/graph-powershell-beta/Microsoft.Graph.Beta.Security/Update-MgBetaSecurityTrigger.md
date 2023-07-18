@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
+[Update-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTrigger?view=graph-powershell-v1.0)

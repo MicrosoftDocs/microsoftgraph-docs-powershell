@@ -182,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: 
 
 ## RELATED LINKS
+[Update-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)

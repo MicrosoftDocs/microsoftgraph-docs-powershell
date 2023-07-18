@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Remove-MgFinancialCompanySaleOrderCustomerPaymentMethod](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanySaleOrderCustomerPaymentMethod?view=graph-powershell-v1.0)

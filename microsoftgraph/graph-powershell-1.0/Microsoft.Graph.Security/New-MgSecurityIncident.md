@@ -459,3 +459,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[CreatedDateTime <DateTime?>]`: The time when the comment was submitted.
 
 ## RELATED LINKS
+[New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityIncident?view=graph-powershell-beta)

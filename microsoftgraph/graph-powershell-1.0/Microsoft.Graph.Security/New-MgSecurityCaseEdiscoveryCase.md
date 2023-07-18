@@ -6542,5 +6542,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
+[New-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-beta)

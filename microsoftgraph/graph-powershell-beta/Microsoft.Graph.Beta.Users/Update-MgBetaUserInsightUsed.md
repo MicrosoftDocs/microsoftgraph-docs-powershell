@@ -341,3 +341,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
 
 ## RELATED LINKS
+[Update-MgUserInsightUsed](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsightUsed?view=graph-powershell-v1.0)

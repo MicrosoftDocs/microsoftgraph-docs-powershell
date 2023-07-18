@@ -333,3 +333,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Copy-MgSiteOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteSectionToNotebook?view=graph-powershell-v1.0)

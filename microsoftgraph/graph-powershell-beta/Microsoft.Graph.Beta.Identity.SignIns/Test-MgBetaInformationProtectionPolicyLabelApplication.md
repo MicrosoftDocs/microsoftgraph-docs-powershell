@@ -256,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
+[Test-MgInformationProtectionPolicyLabelApplication](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgInformationProtectionPolicyLabelApplication?view=graph-powershell-v1.0)

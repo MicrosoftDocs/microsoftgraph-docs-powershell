@@ -173,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PolicySettings <String>]`: cloudPcPolicySettingType
 
 ## RELATED LINKS
+[Add-MgDeviceManagementVirtualEndpointProvisioningPolicyConfig](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Add-MgDeviceManagementVirtualEndpointProvisioningPolicyConfig?view=graph-powershell-v1.0)

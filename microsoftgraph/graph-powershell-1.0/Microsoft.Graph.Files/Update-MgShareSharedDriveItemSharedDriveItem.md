@@ -26298,5 +26298,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermStores <IMicrosoftGraphTermStore[]>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)

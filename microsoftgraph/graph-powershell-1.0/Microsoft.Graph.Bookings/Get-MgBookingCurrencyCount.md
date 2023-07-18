@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaBookingCurrencyCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingCurrencyCount?view=graph-powershell-beta)

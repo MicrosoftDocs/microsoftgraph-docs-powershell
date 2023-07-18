@@ -231,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Compare-MgDeviceManagementTemplateMigratableTo](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Compare-MgDeviceManagementTemplateMigratableTo?view=graph-powershell-v1.0)

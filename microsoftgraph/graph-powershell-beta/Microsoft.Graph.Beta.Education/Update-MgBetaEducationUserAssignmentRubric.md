@@ -406,3 +406,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
+[Update-MgEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentRubric?view=graph-powershell-v1.0)

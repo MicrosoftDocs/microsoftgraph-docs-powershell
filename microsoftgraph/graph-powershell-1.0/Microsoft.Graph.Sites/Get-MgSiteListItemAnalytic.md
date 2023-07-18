@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteListItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteListItemAnalytic?view=graph-powershell-beta)

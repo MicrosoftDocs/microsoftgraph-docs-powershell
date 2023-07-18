@@ -661,5 +661,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TemplateId <String>]`: Template id
 
 ## RELATED LINKS
+[Update-MgDeviceManagementConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementConfigurationPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementConfigurationPolicy](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementConfigurationPolicy?view=graph-powershell-v1.0)

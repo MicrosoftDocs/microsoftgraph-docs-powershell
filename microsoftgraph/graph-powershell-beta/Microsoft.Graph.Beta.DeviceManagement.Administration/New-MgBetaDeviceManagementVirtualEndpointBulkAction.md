@@ -222,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: 
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointBulkAction](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointBulkAction?view=graph-powershell-v1.0)

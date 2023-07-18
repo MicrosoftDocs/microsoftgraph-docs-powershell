@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportUserCredentialUsageDetailCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportUserCredentialUsageDetailCount?view=graph-powershell-v1.0)

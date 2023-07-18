@@ -560,5 +560,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)

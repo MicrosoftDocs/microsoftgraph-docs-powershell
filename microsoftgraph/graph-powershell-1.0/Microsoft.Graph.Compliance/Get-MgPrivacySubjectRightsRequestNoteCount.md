@@ -125,3 +125,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
 
 ## RELATED LINKS
+[Get-MgBetaPrivacySubjectRightsRequestNoteCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgPrivacySubjectRightsRequestNoteCount?view=graph-powershell-beta)

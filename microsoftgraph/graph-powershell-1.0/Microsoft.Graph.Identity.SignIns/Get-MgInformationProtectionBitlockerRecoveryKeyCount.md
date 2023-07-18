@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaInformationProtectionBitlockerRecoveryKeyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKeyCount?view=graph-powershell-beta)

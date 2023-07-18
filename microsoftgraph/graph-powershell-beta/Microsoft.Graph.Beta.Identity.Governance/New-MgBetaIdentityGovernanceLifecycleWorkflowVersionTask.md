@@ -9876,5 +9876,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]`: The result of processing the task.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-v1.0)

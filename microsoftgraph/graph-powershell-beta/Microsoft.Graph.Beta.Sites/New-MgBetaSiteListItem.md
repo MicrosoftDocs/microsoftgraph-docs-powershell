@@ -28865,5 +28865,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItem?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItem?view=graph-powershell-v1.0)

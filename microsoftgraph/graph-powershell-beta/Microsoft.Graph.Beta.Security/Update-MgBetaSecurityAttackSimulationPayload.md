@@ -675,5 +675,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationPayload?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationPayload](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationPayload?view=graph-powershell-v1.0)

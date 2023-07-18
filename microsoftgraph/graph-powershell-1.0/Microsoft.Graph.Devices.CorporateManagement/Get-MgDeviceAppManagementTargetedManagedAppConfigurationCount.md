@@ -79,3 +79,4 @@ ALIASES
 Get-DeviceAppMgtTargetedManagedAppConfigurationCount
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationCount?view=graph-powershell-beta)

@@ -324,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The ID of the user.
 
 ## RELATED LINKS
+[New-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-v1.0)

@@ -247,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRosterMember?view=graph-powershell-v1.0)

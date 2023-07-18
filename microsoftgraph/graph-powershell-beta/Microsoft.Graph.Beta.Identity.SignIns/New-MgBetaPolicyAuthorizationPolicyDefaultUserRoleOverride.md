@@ -309,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride?view=graph-powershell-v1.0)

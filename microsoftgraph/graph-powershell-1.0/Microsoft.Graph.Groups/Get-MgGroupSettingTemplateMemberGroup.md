@@ -226,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupSettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSettingTemplateMemberGroup?view=graph-powershell-beta)

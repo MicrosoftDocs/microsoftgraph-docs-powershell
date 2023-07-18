@@ -184,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgDriveRootVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveRootVersion?view=graph-powershell-v1.0)

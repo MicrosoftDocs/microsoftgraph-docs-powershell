@@ -389,5 +389,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
 
 ## RELATED LINKS
+[New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)

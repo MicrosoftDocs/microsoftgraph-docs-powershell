@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOwnedDeviceAsDevice](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedDeviceAsDevice?view=graph-powershell-v1.0)

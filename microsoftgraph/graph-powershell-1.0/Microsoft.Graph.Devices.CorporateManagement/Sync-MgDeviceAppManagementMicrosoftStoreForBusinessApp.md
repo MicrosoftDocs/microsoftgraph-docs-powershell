@@ -94,3 +94,4 @@ ALIASES
 Sync-DeviceAppMgtMicrosoftStoreGraphFPreBusinessApp
 
 ## RELATED LINKS
+[Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-beta)

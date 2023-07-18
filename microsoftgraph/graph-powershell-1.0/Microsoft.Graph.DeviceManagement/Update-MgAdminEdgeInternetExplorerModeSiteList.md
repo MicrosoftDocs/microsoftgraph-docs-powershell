@@ -538,5 +538,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The URL of the site.
 
 ## RELATED LINKS
+[Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)

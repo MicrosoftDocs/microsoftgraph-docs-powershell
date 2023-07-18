@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserTodoTaskAttachmentSession](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserTodoTaskAttachmentSession?view=graph-powershell-beta)

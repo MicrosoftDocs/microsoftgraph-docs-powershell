@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaContractCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContractCount?view=graph-powershell-beta)

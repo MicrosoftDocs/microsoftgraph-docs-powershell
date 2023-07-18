@@ -204,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
+[Test-MgInformationProtectionPolicyLabelClassificationResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgInformationProtectionPolicyLabelClassificationResult?view=graph-powershell-v1.0)

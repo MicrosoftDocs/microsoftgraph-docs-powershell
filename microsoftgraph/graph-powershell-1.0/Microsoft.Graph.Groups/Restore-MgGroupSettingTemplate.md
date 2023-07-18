@@ -165,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Restore-MgBetaGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgGroupSettingTemplate?view=graph-powershell-beta)

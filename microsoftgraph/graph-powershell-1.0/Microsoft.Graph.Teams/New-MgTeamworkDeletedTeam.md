@@ -5852,5 +5852,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamworkDeletedTeam?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamworkDeletedTeam?view=graph-powershell-beta)

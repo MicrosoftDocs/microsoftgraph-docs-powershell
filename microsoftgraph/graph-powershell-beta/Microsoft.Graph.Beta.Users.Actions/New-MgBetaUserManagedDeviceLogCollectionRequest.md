@@ -259,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TemplateType <DeviceLogCollectionTemplateType?>]`: Enum for the template type used for collecting logs
 
 ## RELATED LINKS
+[New-MgUserManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionRequest?view=graph-powershell-v1.0)

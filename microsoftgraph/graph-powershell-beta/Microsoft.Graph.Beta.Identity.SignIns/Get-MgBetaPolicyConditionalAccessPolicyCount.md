@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPolicyConditionalAccessPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyConditionalAccessPolicyCount?view=graph-powershell-v1.0)

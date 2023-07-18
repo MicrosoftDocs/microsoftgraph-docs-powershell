@@ -111,3 +111,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTrigger?view=graph-powershell-v1.0)

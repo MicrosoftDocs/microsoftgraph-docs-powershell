@@ -532,5 +532,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)

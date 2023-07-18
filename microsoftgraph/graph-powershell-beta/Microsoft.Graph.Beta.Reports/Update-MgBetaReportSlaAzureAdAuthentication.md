@@ -168,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
 
 ## RELATED LINKS
+[Update-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Update-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)

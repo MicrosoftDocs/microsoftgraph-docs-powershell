@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgRoleManagementDirectoryTransitiveRoleAssignmentCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryTransitiveRoleAssignmentCount?view=graph-powershell-v1.0)

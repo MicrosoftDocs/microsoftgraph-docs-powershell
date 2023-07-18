@@ -353,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[New-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationOperation?view=graph-powershell-v1.0)

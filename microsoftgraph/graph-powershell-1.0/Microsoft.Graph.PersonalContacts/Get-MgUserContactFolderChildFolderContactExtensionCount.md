@@ -158,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserContactFolderChildFolderContactExtensionCount](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgUserContactFolderChildFolderContactExtensionCount?view=graph-powershell-beta)

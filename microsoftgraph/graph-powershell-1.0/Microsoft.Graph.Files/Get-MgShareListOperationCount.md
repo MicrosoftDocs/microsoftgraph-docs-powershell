@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaShareListOperationCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListOperationCount?view=graph-powershell-beta)

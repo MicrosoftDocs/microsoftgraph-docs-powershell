@@ -528,5 +528,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
+[Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlanner?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlanner?view=graph-powershell-beta)

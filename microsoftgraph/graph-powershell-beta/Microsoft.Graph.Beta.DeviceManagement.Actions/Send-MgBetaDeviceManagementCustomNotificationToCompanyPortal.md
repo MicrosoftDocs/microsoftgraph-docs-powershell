@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[NotificationTitle <String>]`: 
 
 ## RELATED LINKS
+[Send-MgDeviceManagementCustomNotificationToCompanyPortal](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Send-MgDeviceManagementCustomNotificationToCompanyPortal?view=graph-powershell-v1.0)

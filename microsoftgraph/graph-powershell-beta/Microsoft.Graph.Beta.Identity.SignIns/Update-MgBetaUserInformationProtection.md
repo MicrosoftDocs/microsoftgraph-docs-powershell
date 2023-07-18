@@ -544,5 +544,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
+[Update-MgUserInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtection?view=graph-powershell-v1.0)

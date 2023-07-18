@@ -625,5 +625,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.
 
 ## RELATED LINKS
+[Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)

@@ -15619,5 +15619,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
+[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClass?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClass?view=graph-powershell-beta)

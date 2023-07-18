@@ -1551,5 +1551,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
+[Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-v1.0)

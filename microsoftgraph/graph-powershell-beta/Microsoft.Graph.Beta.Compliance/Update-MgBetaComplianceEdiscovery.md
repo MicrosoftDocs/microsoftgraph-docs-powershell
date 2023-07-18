@@ -9923,5 +9923,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscovery?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscovery?view=graph-powershell-v1.0)

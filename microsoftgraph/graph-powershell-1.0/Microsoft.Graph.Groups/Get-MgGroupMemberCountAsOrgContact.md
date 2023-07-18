@@ -174,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupMemberCountAsOrgContact](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupMemberCountAsOrgContact?view=graph-powershell-beta)

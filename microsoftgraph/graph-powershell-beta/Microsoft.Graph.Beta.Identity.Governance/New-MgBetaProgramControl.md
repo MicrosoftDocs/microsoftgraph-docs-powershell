@@ -568,5 +568,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the resource, indicating whether it is a group or an app.
 
 ## RELATED LINKS
+[New-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControl?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControl?view=graph-powershell-v1.0)

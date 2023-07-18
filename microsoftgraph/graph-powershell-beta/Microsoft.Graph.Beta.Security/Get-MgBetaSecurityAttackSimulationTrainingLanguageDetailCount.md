@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationTrainingLanguageDetailCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationTrainingLanguageDetailCount?view=graph-powershell-v1.0)

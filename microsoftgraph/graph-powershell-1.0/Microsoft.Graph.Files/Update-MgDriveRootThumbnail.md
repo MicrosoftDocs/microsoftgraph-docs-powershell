@@ -340,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
+[Update-MgBetaDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgDriveRootThumbnail?view=graph-powershell-beta)

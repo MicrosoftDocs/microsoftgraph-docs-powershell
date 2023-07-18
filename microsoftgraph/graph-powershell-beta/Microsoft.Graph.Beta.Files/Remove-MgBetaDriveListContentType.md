@@ -197,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListContentType?view=graph-powershell-v1.0)

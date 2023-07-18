@@ -201,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount?view=graph-powershell-v1.0)

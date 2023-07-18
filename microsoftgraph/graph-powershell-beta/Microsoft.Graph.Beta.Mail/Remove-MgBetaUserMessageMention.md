@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserMessageMention](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessageMention?view=graph-powershell-v1.0)

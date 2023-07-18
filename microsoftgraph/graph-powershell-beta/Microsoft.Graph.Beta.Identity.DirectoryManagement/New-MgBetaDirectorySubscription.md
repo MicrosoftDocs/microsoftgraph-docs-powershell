@@ -299,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[New-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySubscription?view=graph-powershell-v1.0)

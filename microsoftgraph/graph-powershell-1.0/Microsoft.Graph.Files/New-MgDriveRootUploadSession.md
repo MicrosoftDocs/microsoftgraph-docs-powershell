@@ -240,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+[New-MgBetaDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveRootUploadSession?view=graph-powershell-beta)

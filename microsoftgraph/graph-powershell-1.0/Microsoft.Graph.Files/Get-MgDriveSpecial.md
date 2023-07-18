@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveSpecial?view=graph-powershell-beta)

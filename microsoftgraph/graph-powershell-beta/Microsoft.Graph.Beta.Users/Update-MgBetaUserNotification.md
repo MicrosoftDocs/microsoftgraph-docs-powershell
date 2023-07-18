@@ -372,3 +372,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
 ## RELATED LINKS
+[Update-MgUserNotification](/powershell/module/Microsoft.Graph.Users/Update-MgUserNotification?view=graph-powershell-v1.0)

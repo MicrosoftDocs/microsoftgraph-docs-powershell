@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IssuerSubjectKeyIdentifier <String>]`: 
 
 ## RELATED LINKS
+[Update-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration?view=graph-powershell-v1.0)

@@ -6024,5 +6024,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)

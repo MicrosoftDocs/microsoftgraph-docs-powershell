@@ -568,5 +568,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
+[Update-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerRoster?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerRoster?view=graph-powershell-v1.0)

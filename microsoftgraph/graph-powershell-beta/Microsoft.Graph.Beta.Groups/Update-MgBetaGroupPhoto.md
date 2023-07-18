@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupPhoto?view=graph-powershell-v1.0)

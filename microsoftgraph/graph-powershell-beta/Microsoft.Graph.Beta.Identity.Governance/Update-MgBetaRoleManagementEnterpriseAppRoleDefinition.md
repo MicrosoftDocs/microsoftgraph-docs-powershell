@@ -536,5 +536,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseAppRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseAppRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleDefinition?view=graph-powershell-v1.0)

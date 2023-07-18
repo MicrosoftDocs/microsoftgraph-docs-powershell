@@ -9829,5 +9829,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
+[Update-MgDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)

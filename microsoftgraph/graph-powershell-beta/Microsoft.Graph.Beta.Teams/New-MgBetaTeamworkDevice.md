@@ -844,5 +844,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The current status of the async operation, for example, Queued, Scheduled, InProgress,  Successful, Cancelled, and Failed.
 
 ## RELATED LINKS
+[New-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDevice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDevice?view=graph-powershell-v1.0)

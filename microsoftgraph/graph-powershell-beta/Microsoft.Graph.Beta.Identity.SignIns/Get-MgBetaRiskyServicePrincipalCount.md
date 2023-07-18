@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgRiskyServicePrincipalCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipalCount?view=graph-powershell-v1.0)

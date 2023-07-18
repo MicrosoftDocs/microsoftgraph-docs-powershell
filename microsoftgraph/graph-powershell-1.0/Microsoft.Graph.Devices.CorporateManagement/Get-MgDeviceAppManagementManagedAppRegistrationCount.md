@@ -78,3 +78,4 @@ ALIASES
 Get-DeviceAppMgtManagedAppRegistrationCount
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementManagedAppRegistrationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationCount?view=graph-powershell-beta)

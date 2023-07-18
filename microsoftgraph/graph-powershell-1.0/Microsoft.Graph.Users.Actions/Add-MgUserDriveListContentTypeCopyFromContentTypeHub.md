@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)

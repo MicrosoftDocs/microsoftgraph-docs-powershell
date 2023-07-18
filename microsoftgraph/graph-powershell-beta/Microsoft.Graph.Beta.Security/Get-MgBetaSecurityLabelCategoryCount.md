@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityLabelCategoryCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategoryCount?view=graph-powershell-v1.0)

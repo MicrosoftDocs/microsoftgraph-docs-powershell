@@ -183,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserDriveItemListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemCreatedByUserMailboxSetting?view=graph-powershell-v1.0)

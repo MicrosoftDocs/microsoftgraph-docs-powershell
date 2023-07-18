@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTeamworkDeletedTeamCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamCount?view=graph-powershell-v1.0)

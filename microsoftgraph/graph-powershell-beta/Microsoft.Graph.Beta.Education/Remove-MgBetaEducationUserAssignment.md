@@ -186,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignment?view=graph-powershell-v1.0)

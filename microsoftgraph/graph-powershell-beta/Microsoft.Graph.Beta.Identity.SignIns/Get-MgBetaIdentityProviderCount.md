@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgIdentityProviderCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProviderCount?view=graph-powershell-v1.0)

@@ -169,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteByPath](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSiteByPath?view=graph-powershell-v1.0)

@@ -185,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Undo-MgBetaTeamPrimaryChannelMessageSoftDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Undo-MgTeamPrimaryChannelMessageSoftDelete?view=graph-powershell-beta)

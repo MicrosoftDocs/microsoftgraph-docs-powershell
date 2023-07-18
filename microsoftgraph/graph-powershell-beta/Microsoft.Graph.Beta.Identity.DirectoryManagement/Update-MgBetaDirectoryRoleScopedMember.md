@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The identifier of the identity. This property is read-only.
 
 ## RELATED LINKS
+[Update-MgDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleScopedMember?view=graph-powershell-v1.0)

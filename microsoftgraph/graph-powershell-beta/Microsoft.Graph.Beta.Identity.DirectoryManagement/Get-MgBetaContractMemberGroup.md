@@ -183,3 +183,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgContractMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContractMemberGroup?view=graph-powershell-v1.0)

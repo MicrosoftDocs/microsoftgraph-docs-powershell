@@ -343,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementPolicySet](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementPolicySet?view=graph-powershell-v1.0)

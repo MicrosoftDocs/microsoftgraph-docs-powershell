@@ -241,3 +241,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgShareListItemActivity](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemActivity?view=graph-powershell-v1.0)

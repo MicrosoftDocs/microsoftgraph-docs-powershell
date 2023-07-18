@@ -795,5 +795,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[HoldStatus <String>]`: dataSourceHoldStatus
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)

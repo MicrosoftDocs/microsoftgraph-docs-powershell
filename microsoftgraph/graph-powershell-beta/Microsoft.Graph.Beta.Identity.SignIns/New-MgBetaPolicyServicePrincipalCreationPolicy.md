@@ -272,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
 ## RELATED LINKS
+[New-MgPolicyServicePrincipalCreationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyServicePrincipalCreationPolicy?view=graph-powershell-v1.0)

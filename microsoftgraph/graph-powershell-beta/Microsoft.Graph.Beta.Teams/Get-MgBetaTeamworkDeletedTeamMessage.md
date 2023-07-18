@@ -171,3 +171,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTeamworkDeletedTeamMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamMessage?view=graph-powershell-v1.0)

@@ -739,3 +739,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnitPrice <Decimal?>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancialCompanySaleQuoteLine](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleQuoteLine?view=graph-powershell-v1.0)

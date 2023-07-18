@@ -227,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
+[Test-MgBetaContractProperty](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Test-MgContractProperty?view=graph-powershell-beta)

@@ -230,5 +230,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The name of the property to sort on. Required.
 
 ## RELATED LINKS
+[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgQuerySearch?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgQuerySearch?view=graph-powershell-beta)

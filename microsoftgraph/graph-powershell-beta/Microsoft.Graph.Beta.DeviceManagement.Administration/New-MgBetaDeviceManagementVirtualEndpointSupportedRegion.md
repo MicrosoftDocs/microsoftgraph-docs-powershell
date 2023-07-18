@@ -212,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedSolution <String>]`: cloudPcManagementService
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointSupportedRegion](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointSupportedRegion?view=graph-powershell-v1.0)

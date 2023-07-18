@@ -79,3 +79,4 @@ ALIASES
 Get-BetaDeviceAppMgtEnterpriseCodeSigningCertificateCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementEnterpriseCodeSigningCertificateCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementEnterpriseCodeSigningCertificateCount?view=graph-powershell-v1.0)

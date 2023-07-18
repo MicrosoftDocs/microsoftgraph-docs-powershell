@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMailFolderChildFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgUserMailFolderChildFolderMessageDelta?view=graph-powershell-beta)

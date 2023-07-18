@@ -452,3 +452,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileEmail?view=graph-powershell-v1.0)

@@ -293,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SerialNumber <String>]`: The intune device's serial number.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice?view=graph-powershell-v1.0)

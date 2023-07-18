@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Find-MgPolicyAuthenticationStrengthPolicyByMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/Find-MgPolicyAuthenticationStrengthPolicyByMethodMode?view=graph-powershell-v1.0)

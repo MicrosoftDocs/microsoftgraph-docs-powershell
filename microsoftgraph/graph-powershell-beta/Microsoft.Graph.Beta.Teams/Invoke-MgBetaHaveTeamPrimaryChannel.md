@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamPrimaryChannel?view=graph-powershell-v1.0)

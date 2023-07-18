@@ -237,3 +237,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteSectionPage?view=graph-powershell-v1.0)

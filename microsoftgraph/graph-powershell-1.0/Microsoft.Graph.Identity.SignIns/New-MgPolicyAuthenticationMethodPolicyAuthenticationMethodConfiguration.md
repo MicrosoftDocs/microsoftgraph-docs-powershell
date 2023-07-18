@@ -186,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetType <String>]`: authenticationMethodTargetType
 
 ## RELATED LINKS
+[New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)

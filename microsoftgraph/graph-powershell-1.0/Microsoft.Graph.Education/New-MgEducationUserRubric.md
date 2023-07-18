@@ -386,3 +386,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
+[New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationUserRubric?view=graph-powershell-beta)

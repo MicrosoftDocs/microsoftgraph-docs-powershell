@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgCompliance?view=graph-powershell-beta)

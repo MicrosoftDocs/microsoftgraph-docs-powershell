@@ -671,5 +671,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHost?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceHost?view=graph-powershell-v1.0)

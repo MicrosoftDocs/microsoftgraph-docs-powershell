@@ -785,5 +785,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalLicenses <Int32?>]`: 
 
 ## RELATED LINKS
+[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-v1.0)

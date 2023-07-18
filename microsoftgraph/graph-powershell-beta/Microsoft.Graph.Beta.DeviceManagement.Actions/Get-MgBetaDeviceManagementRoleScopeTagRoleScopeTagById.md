@@ -146,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementRoleScopeTagRoleScopeTagById](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementRoleScopeTagRoleScopeTagById?view=graph-powershell-v1.0)

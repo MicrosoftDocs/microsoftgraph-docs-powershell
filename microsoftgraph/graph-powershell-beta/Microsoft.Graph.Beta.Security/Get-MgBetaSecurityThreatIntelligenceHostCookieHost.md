@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostCookieHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostCookieHost?view=graph-powershell-v1.0)

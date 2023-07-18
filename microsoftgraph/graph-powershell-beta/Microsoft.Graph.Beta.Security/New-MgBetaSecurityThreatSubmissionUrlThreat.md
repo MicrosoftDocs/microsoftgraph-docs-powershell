@@ -367,3 +367,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserMailboxSetting <String>]`: userMailboxSetting
 
 ## RELATED LINKS
+[New-MgSecurityThreatSubmissionUrlThreat](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionUrlThreat?view=graph-powershell-v1.0)

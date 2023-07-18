@@ -456,3 +456,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
+[Update-MgUserSecurityInformationProtectionSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtectionSensitivityLabel?view=graph-powershell-v1.0)

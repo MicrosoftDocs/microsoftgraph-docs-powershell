@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveContentTypeBaseType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveContentTypeBaseType?view=graph-powershell-beta)

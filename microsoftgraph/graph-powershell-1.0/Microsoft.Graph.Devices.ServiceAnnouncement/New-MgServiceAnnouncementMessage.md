@@ -443,3 +443,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsRead <Boolean?>]`: Indicates whether the user read the message.
 
 ## RELATED LINKS
+[New-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgServiceAnnouncementMessage?view=graph-powershell-beta)

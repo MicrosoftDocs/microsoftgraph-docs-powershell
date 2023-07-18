@@ -220,3 +220,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectoryFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryFeatureRolloutPolicyApplyTo?view=graph-powershell-v1.0)

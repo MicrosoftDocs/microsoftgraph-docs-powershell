@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgChatCount](/powershell/module/Microsoft.Graph.Teams/Get-MgChatCount?view=graph-powershell-v1.0)

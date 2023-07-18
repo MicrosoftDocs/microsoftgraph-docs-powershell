@@ -218,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgUserEventExtension?view=graph-powershell-beta)

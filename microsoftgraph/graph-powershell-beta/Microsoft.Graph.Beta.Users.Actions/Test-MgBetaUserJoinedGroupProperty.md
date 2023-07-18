@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserJoinedGroupProperty](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserJoinedGroupProperty?view=graph-powershell-v1.0)

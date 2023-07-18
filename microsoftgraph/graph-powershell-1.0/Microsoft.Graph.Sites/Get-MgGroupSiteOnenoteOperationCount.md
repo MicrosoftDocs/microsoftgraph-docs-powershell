@@ -176,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupSiteOnenoteOperationCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenoteOperationCount?view=graph-powershell-beta)

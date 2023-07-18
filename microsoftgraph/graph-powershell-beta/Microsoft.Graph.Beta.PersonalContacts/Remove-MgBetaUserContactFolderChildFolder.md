@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactFolderChildFolder?view=graph-powershell-v1.0)

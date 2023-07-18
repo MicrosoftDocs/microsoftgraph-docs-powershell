@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMe?view=graph-powershell-beta)

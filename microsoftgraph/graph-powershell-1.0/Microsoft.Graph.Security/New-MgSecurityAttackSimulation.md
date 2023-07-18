@@ -517,5 +517,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
 
 ## RELATED LINKS
+[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAttackSimulation?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAttackSimulation?view=graph-powershell-beta)

@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgTrustFrameworkPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkPolicyCount?view=graph-powershell-v1.0)

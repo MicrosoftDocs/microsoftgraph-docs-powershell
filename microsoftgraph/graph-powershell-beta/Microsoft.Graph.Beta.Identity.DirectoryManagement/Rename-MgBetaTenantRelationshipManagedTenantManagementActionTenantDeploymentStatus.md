@@ -224,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: 
 
 ## RELATED LINKS
+[Rename-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Rename-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus?view=graph-powershell-v1.0)

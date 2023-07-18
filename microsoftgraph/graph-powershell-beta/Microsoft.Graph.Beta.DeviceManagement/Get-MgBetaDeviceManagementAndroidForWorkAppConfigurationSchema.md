@@ -392,5 +392,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAndroidForWorkAppConfigurationSchema?view=graph-powershell-v1.0)

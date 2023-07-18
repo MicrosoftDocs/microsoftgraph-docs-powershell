@@ -187,3 +187,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationMeAssignmentDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeAssignmentDelta?view=graph-powershell-beta)

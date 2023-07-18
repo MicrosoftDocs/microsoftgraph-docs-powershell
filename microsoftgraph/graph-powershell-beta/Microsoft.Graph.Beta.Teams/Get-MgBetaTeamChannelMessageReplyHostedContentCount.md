@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamChannelMessageReplyHostedContentCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelMessageReplyHostedContentCount?view=graph-powershell-v1.0)

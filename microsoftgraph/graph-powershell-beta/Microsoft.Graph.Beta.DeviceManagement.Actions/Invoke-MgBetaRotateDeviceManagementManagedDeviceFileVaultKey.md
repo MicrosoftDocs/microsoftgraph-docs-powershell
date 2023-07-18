@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgRotateDeviceManagementManagedDeviceFileVaultKey](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgRotateDeviceManagementManagedDeviceFileVaultKey?view=graph-powershell-v1.0)

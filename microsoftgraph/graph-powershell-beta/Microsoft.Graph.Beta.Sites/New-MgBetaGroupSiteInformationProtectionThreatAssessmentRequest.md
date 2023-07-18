@@ -420,3 +420,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
+[New-MgGroupSiteInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)

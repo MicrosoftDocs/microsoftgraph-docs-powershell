@@ -401,5 +401,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Invoke-MgBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-beta)

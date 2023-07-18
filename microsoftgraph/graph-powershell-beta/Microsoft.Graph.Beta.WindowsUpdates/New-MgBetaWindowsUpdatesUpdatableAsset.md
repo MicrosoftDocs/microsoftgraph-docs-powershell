@@ -134,3 +134,4 @@ ALIASES
 New-MgBetaWuUpdatableAsset
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)

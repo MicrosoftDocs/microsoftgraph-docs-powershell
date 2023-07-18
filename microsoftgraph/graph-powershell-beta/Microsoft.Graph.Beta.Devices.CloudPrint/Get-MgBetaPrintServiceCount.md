@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPrintServiceCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceCount?view=graph-powershell-v1.0)

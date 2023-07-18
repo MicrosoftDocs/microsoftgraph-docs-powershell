@@ -299,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Target <Int32?>]`: The target threshold value.
 
 ## RELATED LINKS
+[New-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)

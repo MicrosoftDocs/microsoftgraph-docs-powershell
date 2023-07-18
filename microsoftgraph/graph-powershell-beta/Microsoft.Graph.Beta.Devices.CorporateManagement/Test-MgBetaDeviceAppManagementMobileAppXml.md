@@ -144,3 +144,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OfficeConfigurationXml <Byte[]>]`: 
 
 ## RELATED LINKS
+[Test-MgDeviceAppManagementMobileAppXml](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Test-MgDeviceAppManagementMobileAppXml?view=graph-powershell-v1.0)

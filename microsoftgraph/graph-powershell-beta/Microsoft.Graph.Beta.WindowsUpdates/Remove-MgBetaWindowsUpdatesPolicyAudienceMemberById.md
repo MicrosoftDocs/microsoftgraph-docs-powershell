@@ -247,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Remove-MgWindowsUpdatesPolicyAudienceMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicyAudienceMemberById?view=graph-powershell-v1.0)

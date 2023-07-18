@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCount?view=graph-powershell-v1.0)

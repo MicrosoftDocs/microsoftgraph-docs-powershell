@@ -131,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesPolicyAudienceMemberCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyAudienceMemberCount?view=graph-powershell-v1.0)

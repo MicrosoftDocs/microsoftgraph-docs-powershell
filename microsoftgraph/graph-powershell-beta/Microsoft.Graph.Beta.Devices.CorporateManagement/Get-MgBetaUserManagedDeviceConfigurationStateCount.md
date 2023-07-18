@@ -202,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgUserManagedDeviceConfigurationStateCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceConfigurationStateCount?view=graph-powershell-v1.0)

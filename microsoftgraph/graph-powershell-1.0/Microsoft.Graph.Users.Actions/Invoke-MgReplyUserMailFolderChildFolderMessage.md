@@ -405,5 +405,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)

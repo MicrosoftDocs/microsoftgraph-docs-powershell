@@ -335,5 +335,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
+[New-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)

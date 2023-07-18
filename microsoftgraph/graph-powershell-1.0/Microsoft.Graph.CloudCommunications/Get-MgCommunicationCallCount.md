@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaCommunicationCallCount](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallCount?view=graph-powershell-beta)

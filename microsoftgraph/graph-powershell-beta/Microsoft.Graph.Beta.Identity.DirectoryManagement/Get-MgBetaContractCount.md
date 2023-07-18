@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgContractCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContractCount?view=graph-powershell-v1.0)

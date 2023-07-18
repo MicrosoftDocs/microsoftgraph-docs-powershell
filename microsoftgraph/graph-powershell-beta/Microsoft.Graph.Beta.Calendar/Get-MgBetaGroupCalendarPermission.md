@@ -249,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarPermission?view=graph-powershell-v1.0)

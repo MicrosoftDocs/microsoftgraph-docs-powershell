@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataRunCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRunCount?view=graph-powershell-v1.0)

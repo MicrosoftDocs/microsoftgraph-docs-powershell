@@ -364,5 +364,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespace?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespace?view=graph-powershell-v1.0)

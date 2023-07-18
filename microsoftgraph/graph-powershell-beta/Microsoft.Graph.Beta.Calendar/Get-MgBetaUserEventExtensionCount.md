@@ -132,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserEventExtensionCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExtensionCount?view=graph-powershell-v1.0)

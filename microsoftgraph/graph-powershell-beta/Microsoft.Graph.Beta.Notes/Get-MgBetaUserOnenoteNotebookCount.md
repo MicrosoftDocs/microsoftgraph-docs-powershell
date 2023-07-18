@@ -131,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOnenoteNotebookCount](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebookCount?view=graph-powershell-v1.0)

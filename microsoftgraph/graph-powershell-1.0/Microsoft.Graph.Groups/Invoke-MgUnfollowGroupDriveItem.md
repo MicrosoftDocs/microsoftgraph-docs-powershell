@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Invoke-MgBetaUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgUnfollowGroupDriveItem?view=graph-powershell-beta)

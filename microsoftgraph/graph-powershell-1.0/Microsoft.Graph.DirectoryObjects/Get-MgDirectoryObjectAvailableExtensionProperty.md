@@ -140,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsSyncedFromOnPremises <Boolean?>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)

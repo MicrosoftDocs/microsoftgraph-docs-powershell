@@ -108,3 +108,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)

@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaReportDailyPrintUsageByUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportDailyPrintUsageByUserCount?view=graph-powershell-beta)

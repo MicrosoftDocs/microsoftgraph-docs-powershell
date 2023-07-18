@@ -501,5 +501,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction?view=graph-powershell-v1.0)

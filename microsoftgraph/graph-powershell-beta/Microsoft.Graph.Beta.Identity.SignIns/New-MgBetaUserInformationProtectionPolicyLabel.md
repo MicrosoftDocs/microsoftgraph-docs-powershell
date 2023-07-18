@@ -404,3 +404,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
 
 ## RELATED LINKS
+[New-MgUserInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserInformationProtectionPolicyLabel?view=graph-powershell-v1.0)

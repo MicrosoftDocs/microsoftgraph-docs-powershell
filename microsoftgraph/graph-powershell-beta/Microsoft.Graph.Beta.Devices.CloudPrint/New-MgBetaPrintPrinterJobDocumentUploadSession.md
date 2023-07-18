@@ -252,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Size <Int64?>]`: The document's size in bytes.
 
 ## RELATED LINKS
+[New-MgPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterJobDocumentUploadSession?view=graph-powershell-v1.0)

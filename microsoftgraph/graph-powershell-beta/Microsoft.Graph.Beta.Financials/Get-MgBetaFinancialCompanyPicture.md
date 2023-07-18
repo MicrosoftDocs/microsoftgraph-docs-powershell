@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Get-MgFinancialCompanyPicture](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyPicture?view=graph-powershell-v1.0)

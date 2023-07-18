@@ -744,5 +744,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgSiteOnenoteNotebookSection?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSiteOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgSiteOnenoteNotebookSection?view=graph-powershell-beta)

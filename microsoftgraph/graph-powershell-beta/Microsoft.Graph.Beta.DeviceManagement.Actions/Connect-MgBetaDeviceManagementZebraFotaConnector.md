@@ -81,3 +81,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Connect-MgDeviceManagementZebraFotaConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementZebraFotaConnector?view=graph-powershell-v1.0)

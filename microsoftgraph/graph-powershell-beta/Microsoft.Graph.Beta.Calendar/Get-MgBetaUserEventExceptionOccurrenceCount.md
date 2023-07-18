@@ -134,3 +134,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserEventExceptionOccurrenceCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExceptionOccurrenceCount?view=graph-powershell-v1.0)

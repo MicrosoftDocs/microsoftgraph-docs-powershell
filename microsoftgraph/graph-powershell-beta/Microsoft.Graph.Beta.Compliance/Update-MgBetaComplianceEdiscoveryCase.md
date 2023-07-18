@@ -15081,5 +15081,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)

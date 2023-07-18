@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport?view=graph-powershell-v1.0)

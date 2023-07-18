@@ -368,5 +368,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RequestedValue <String>]`: requestedDeploymentStateValue
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)

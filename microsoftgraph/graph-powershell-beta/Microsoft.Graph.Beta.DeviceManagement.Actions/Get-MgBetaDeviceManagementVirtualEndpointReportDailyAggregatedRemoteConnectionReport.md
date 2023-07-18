@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport?view=graph-powershell-v1.0)

@@ -578,5 +578,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
+[New-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-beta)

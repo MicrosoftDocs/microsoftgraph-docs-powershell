@@ -685,3 +685,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PrintBlocked <Boolean?>]`: When TRUE, indicates that printing is blocked from managed apps. When FALSE, indicates that printing is allowed from managed apps. Default value is FALSE.
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementWindowsManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsManagedAppProtection?view=graph-powershell-v1.0)

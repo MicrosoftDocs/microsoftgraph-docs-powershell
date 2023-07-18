@@ -232,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
+[Get-MgReportAzureAdApplicationSignInSummary](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAzureAdApplicationSignInSummary?view=graph-powershell-v1.0)

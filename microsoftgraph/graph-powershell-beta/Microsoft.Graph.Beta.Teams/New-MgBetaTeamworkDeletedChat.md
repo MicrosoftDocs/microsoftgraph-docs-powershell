@@ -131,3 +131,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedChat?view=graph-powershell-v1.0)

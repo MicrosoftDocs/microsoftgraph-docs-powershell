@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementReportExportJobCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgDeviceManagementReportExportJobCount?view=graph-powershell-beta)

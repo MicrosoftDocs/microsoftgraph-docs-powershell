@@ -79,3 +79,4 @@ ALIASES
 Get-DeviceAppMgtIoManagedAppProtectionCount
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementiOSManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSManagedAppProtectionCount?view=graph-powershell-beta)

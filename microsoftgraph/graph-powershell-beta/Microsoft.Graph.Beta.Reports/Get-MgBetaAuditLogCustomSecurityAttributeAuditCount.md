@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAuditLogCustomSecurityAttributeAuditCount](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogCustomSecurityAttributeAuditCount?view=graph-powershell-v1.0)

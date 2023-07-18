@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationMeRubricCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeRubricCount?view=graph-powershell-beta)

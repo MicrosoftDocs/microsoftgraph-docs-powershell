@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartTime <DateTime?>]`: Currently, the start time value is ignored, but a value is required when creating an oAuth2PermissionGrant. Required.
 
 ## RELATED LINKS
+[New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-v1.0)

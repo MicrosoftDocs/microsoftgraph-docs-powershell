@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaServicePrincipalRiskDetectionCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgServicePrincipalRiskDetectionCount?view=graph-powershell-beta)

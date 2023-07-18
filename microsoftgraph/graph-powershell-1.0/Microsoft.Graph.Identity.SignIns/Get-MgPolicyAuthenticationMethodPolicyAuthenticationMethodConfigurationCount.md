@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfigurationCount?view=graph-powershell-beta)

@@ -140,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig?view=graph-powershell-v1.0)

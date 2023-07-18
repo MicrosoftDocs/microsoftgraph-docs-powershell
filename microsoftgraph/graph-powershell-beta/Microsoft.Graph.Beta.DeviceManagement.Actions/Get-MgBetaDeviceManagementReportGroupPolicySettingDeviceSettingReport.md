@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportGroupPolicySettingDeviceSettingReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportGroupPolicySettingDeviceSettingReport?view=graph-powershell-v1.0)

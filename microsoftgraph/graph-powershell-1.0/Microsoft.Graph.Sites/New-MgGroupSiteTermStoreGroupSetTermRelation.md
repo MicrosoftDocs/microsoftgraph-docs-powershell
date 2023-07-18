@@ -576,5 +576,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteTermStoreGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteTermStoreGroupSetTermRelation?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteTermStoreGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteTermStoreGroupSetTermRelation?view=graph-powershell-beta)

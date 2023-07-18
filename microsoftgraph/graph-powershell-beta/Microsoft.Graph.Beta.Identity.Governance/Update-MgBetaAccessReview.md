@@ -709,5 +709,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
 
 ## RELATED LINKS
+[Update-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReview?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReview?view=graph-powershell-v1.0)

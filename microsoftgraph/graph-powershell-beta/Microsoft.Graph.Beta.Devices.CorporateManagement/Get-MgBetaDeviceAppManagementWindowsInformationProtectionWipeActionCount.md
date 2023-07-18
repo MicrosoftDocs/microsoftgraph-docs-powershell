@@ -79,3 +79,4 @@ ALIASES
 Get-BetaDeviceAppMgtWindowInformationProtectionWipeActionCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementWindowsInformationProtectionWipeActionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionWipeActionCount?view=graph-powershell-v1.0)

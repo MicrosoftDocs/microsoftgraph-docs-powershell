@@ -211,3 +211,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[Get-MgBetaContactTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactTransitiveMemberOfByRef?view=graph-powershell-beta)

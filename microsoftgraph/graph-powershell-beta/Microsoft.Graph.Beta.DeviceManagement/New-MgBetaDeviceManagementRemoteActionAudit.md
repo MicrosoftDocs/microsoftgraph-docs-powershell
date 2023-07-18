@@ -293,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: [deprecated] Please use InitiatedByUserPrincipalName instead.
 
 ## RELATED LINKS
+[New-MgDeviceManagementRemoteActionAudit](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementRemoteActionAudit?view=graph-powershell-v1.0)

@@ -210,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Restore-MgBetaGroupDriveRootVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgGroupDriveRootVersion?view=graph-powershell-beta)

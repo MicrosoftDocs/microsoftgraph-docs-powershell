@@ -192,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsGroupOwnerManagementEnabled <Boolean?>]`: If true, group owners can create and manage access reviews on groups they own.
 
 ## RELATED LINKS
+[Update-MgPolicyAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAccessReviewPolicy?view=graph-powershell-v1.0)

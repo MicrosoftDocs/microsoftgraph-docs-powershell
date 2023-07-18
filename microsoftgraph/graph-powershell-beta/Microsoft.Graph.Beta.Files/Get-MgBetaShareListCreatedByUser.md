@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUser?view=graph-powershell-v1.0)

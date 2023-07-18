@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaReportAuthenticationMethodUserRegistrationDetailCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetailCount?view=graph-powershell-beta)

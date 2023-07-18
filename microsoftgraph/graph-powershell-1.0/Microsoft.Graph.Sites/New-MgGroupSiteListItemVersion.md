@@ -372,3 +372,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteListItemVersion?view=graph-powershell-beta)

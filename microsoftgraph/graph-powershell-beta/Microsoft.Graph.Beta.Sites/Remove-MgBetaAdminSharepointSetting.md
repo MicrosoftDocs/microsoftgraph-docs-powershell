@@ -107,3 +107,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgAdminSharepointSetting](/powershell/module/Microsoft.Graph.Sites/Remove-MgAdminSharepointSetting?view=graph-powershell-v1.0)

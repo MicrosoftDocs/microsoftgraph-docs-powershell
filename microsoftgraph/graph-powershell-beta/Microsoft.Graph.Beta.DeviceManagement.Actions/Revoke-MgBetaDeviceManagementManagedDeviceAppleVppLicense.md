@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Revoke-MgDeviceManagementManagedDeviceAppleVppLicense](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Revoke-MgDeviceManagementManagedDeviceAppleVppLicense?view=graph-powershell-v1.0)

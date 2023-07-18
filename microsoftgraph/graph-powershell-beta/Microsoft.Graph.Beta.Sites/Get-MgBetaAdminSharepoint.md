@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Get-MgAdminSharepoint?view=graph-powershell-v1.0)

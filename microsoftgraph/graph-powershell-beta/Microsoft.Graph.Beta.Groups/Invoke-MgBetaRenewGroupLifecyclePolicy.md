@@ -143,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[GroupId <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgRenewGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRenewGroupLifecyclePolicy?view=graph-powershell-v1.0)

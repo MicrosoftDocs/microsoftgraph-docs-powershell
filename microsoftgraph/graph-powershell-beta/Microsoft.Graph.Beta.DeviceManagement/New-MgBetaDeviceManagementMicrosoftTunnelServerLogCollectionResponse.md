@@ -261,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <MicrosoftTunnelLogCollectionStatus?>]`: Enum type that represent the status of log collection
 
 ## RELATED LINKS
+[New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse?view=graph-powershell-v1.0)

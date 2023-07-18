@@ -469,3 +469,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+[Update-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationLandingPage?view=graph-powershell-v1.0)

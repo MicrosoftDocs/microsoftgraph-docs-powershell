@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
+[Start-MgTeamScheduleTimeCardBreak](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamScheduleTimeCardBreak?view=graph-powershell-v1.0)

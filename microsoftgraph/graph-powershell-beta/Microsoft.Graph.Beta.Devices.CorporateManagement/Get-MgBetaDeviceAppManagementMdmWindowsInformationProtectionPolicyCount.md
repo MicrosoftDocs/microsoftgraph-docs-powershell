@@ -79,3 +79,4 @@ ALIASES
 Get-BetaDeviceAppMgtMdmWindowInformationProtectionPolicyCount
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount?view=graph-powershell-v1.0)

@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DataCategory <WindowsPrivacyDataCategory?>]`: Windows privacy data category specifier for privacy data access.
 
 ## RELATED LINKS
+[Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl?view=graph-powershell-v1.0)

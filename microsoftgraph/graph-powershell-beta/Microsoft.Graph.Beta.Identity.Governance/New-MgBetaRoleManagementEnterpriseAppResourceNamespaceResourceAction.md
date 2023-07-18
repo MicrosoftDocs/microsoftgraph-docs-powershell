@@ -484,5 +484,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: 
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespaceResourceAction?view=graph-powershell-v1.0)

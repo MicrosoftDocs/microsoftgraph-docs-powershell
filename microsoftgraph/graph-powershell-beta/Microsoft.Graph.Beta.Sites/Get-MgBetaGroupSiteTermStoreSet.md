@@ -335,3 +335,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSet?view=graph-powershell-v1.0)

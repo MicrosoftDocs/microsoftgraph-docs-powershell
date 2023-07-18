@@ -218,3 +218,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDriveRootActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootActivity?view=graph-powershell-v1.0)

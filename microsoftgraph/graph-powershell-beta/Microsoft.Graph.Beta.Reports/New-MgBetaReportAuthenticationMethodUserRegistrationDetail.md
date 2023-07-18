@@ -427,3 +427,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: signInUserType
 
 ## RELATED LINKS
+[New-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/New-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-v1.0)

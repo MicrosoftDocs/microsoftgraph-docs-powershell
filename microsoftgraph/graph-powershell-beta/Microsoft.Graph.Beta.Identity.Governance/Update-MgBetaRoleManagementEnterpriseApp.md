@@ -1293,5 +1293,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseApp](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseApp?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseApp](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseApp?view=graph-powershell-v1.0)

@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamwork?view=graph-powershell-beta)

@@ -354,3 +354,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Update-MgBetaEntitlementManagementCatalogCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementCatalogCustomWorkflowExtension?view=graph-powershell-beta)

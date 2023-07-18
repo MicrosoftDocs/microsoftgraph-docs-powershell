@@ -1135,5 +1135,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
+[Update-MgDriveListColumn](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListColumn?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDriveListColumn](/powershell/module/Microsoft.Graph.Files/Update-MgDriveListColumn?view=graph-powershell-v1.0)

@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveSpecial?view=graph-powershell-v1.0)

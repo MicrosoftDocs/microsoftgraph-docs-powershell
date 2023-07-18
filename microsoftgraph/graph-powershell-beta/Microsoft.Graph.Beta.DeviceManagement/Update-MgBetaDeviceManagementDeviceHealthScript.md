@@ -10116,5 +10116,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemediationSkippedDeviceCount <Int32?>]`: Number of devices for which remediation was skipped
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceHealthScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScript?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceHealthScript](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceHealthScript?view=graph-powershell-v1.0)

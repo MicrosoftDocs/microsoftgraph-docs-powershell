@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAuditLogSignInCount](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogSignInCount?view=graph-powershell-v1.0)

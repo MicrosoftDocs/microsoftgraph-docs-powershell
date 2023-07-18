@@ -94,3 +94,4 @@ ALIASES
 Sync-BetaDeviceAppMgtVppTokenLicenseCount
 
 ## RELATED LINKS
+[Sync-MgDeviceAppManagementVppTokenLicenseCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0)

@@ -156,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgBetaSecurityIncidentAlertCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityIncidentAlertCount?view=graph-powershell-beta)

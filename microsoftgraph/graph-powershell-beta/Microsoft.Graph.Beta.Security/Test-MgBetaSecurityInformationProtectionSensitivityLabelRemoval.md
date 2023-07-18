@@ -192,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[JustificationMessage <String>]`: Message that indicates why a downgrade is justified. The message will appear in administrative logs.
 
 ## RELATED LINKS
+[Test-MgSecurityInformationProtectionSensitivityLabelRemoval](/powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelRemoval?view=graph-powershell-v1.0)

@@ -142,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgTenantRelationshipManagedTenantGroupSearch](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgTenantRelationshipManagedTenantGroupSearch?view=graph-powershell-v1.0)

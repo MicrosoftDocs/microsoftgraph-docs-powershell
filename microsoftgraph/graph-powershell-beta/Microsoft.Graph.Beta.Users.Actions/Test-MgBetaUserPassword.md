@@ -143,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Password <String>]`: 
 
 ## RELATED LINKS
+[Test-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserPassword?view=graph-powershell-v1.0)

@@ -417,5 +417,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgReplyGroupConversationThreadPost?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Invoke-MgBetaReplyGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgReplyGroupConversationThreadPost?view=graph-powershell-beta)

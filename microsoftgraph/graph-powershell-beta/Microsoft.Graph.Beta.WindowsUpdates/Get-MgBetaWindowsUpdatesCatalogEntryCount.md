@@ -78,3 +78,4 @@ ALIASES
 Get-MgBetaWuCatalogEntryCount
 
 ## RELATED LINKS
+[Get-MgWindowsUpdatesCatalogEntryCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesCatalogEntryCount?view=graph-powershell-v1.0)

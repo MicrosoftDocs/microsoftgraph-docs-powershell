@@ -550,3 +550,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgUserProfileEducationalActivity](/powershell/module/Microsoft.Graph.People/New-MgUserProfileEducationalActivity?view=graph-powershell-v1.0)

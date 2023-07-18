@@ -279,5 +279,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
 ## RELATED LINKS
+[Update-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgAdminEdgeInternetExplorerMode?view=graph-powershell-beta)

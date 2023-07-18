@@ -665,5 +665,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
 
 ## RELATED LINKS
+[Update-MgDeviceManagementConfigurationSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementConfigurationSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementConfigurationSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementConfigurationSetting?view=graph-powershell-v1.0)

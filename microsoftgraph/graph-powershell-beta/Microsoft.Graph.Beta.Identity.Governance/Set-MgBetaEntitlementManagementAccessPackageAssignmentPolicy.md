@@ -15390,5 +15390,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Issuers <String[]>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
 
 ## RELATED LINKS
+[Set-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Set-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)

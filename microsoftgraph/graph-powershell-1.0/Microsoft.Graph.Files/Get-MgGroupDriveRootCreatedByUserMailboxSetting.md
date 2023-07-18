@@ -166,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupDriveRootCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveRootCreatedByUserMailboxSetting?view=graph-powershell-beta)

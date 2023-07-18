@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: alertStatusType
 
 ## RELATED LINKS
+[New-MgDeviceManagementMonitoringAlertRecord](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMonitoringAlertRecord?view=graph-powershell-v1.0)

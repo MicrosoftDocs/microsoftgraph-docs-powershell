@@ -108,3 +108,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)

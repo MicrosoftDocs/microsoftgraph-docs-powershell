@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementResourceAccessProfileCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementResourceAccessProfileCount?view=graph-powershell-v1.0)

@@ -613,5 +613,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteTermStoreSetChildRelation?view=graph-powershell-beta)

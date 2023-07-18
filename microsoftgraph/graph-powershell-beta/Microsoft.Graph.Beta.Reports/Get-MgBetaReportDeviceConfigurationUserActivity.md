@@ -80,3 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDeviceConfigurationUserActivity?view=graph-powershell-v1.0)

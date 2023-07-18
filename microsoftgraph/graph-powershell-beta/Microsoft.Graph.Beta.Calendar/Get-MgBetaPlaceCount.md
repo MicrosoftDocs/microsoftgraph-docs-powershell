@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPlaceCount](/powershell/module/Microsoft.Graph.Calendar/Get-MgPlaceCount?view=graph-powershell-v1.0)

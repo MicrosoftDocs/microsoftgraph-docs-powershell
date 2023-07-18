@@ -513,5 +513,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
 
 ## RELATED LINKS
+[Update-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)

@@ -1122,5 +1122,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: usageRightState
 
 ## RELATED LINKS
+[New-MgUserDevice](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDevice?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserDevice](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDevice?view=graph-powershell-v1.0)

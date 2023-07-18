@@ -422,3 +422,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Display name of the speaker.
 
 ## RELATED LINKS
+[Update-MgVirtualEventSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionRegistration?view=graph-powershell-v1.0)

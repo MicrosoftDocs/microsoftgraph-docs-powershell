@@ -150,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBetaFollowDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgFollowDriveRoot?view=graph-powershell-beta)

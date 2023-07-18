@@ -357,3 +357,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Update-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelCitation?view=graph-powershell-v1.0)

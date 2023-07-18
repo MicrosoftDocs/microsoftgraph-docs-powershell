@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS
+[New-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)

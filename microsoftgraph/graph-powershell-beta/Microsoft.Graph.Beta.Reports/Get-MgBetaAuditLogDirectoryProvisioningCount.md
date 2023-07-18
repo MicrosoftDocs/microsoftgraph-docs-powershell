@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgAuditLogDirectoryProvisioningCount](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryProvisioningCount?view=graph-powershell-v1.0)

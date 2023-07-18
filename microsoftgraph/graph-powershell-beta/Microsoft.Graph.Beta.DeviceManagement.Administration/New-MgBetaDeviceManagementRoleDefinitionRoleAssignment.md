@@ -397,5 +397,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: List of Scope Tags for this Entity instance.
 
 ## RELATED LINKS
+[New-MgDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-v1.0)

@@ -315,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatMember?view=graph-powershell-v1.0)

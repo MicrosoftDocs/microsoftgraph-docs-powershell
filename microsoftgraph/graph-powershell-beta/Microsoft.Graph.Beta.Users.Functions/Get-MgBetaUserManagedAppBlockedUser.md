@@ -126,3 +126,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserManagedAppBlockedUser](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppBlockedUser?view=graph-powershell-v1.0)

@@ -147,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListCreatedByUser?view=graph-powershell-v1.0)

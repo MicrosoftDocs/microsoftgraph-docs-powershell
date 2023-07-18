@@ -141,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserActivityHistoryItemCount](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgUserActivityHistoryItemCount?view=graph-powershell-beta)

@@ -14866,5 +14866,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgDriveItemListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgDriveItemListItem?view=graph-powershell-beta)

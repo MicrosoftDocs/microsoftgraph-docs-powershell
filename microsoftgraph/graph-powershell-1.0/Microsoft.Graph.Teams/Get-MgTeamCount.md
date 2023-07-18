@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaTeamCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamCount?view=graph-powershell-beta)

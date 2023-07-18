@@ -318,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Author <String>]`: 
 
 ## RELATED LINKS
+[Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)

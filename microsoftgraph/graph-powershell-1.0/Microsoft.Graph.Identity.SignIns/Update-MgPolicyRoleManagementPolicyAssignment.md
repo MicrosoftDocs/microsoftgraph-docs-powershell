@@ -393,5 +393,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of the scope where the policy is created. One of Directory, DirectoryRole. Required.
 
 ## RELATED LINKS
+[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)

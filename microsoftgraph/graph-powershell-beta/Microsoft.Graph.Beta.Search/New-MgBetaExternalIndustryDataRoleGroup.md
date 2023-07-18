@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
+[New-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)

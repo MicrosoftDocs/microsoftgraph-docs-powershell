@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityProviderTenantSettingCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityProviderTenantSettingCount?view=graph-powershell-v1.0)

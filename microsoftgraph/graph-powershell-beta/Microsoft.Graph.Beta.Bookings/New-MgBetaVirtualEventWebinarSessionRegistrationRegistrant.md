@@ -243,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[New-MgVirtualEventWebinarSessionRegistrationRegistrant](/powershell/module/Microsoft.Graph.Bookings/New-MgVirtualEventWebinarSessionRegistrationRegistrant?view=graph-powershell-v1.0)

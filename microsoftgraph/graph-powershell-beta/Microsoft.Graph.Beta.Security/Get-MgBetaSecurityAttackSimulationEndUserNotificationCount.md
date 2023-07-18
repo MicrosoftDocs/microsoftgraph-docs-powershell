@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationEndUserNotificationCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotificationCount?view=graph-powershell-v1.0)

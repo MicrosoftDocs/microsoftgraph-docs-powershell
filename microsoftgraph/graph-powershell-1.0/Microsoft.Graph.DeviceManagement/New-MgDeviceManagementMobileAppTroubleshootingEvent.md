@@ -172,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <AppLogUploadState?>]`: AppLogUploadStatus
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)

@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaEducationSchoolCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationSchoolCount?view=graph-powershell-beta)

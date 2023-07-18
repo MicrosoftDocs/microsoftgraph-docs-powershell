@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: Specifies whether this policy scope is configurable by the admin. The default value is false. An admin can set it to true to enable Local Admin Password Solution (LAPS) within their organzation.
 
 ## RELATED LINKS
+[Update-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-v1.0)

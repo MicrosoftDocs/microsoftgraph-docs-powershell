@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgInvitationCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitationCount?view=graph-powershell-v1.0)

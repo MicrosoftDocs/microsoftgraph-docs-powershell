@@ -522,5 +522,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: 
 
 ## RELATED LINKS
+[Update-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-beta)

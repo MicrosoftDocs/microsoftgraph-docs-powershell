@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataInboundFlowCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowCount?view=graph-powershell-v1.0)

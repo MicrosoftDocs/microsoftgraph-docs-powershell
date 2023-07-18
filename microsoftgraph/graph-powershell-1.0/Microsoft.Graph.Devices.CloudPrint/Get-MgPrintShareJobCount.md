@@ -135,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPrintShareJobCount](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintShareJobCount?view=graph-powershell-beta)

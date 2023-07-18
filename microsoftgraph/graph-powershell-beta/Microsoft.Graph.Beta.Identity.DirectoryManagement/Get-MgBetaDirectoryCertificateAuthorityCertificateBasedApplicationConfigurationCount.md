@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationCount?view=graph-powershell-v1.0)

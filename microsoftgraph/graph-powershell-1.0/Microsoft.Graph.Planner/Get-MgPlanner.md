@@ -72,3 +72,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgPlanner?view=graph-powershell-beta)

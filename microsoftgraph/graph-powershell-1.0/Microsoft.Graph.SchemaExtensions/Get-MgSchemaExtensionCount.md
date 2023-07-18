@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaSchemaExtensionCount](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgSchemaExtensionCount?view=graph-powershell-beta)

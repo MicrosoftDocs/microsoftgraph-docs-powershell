@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDirectoryImpactedResourceCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryImpactedResourceCount?view=graph-powershell-v1.0)

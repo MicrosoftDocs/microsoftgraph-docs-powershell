@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgInformationProtectionPolicyLabelCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionPolicyLabelCount?view=graph-powershell-v1.0)

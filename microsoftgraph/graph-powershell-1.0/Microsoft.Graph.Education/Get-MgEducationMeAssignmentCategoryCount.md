@@ -133,3 +133,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgBetaEducationMeAssignmentCategoryCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeAssignmentCategoryCount?view=graph-powershell-beta)

@@ -146,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[HostName <String>]`: 
 
 ## RELATED LINKS
+[Request-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Request-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl?view=graph-powershell-v1.0)

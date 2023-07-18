@@ -202,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Get-MgFinancialCompanyPurchaseInvoiceLineItemPictureCount](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyPurchaseInvoiceLineItemPictureCount?view=graph-powershell-v1.0)

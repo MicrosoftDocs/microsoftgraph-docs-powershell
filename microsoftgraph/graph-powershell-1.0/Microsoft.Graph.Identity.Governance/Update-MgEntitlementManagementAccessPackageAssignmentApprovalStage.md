@@ -395,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[Update-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentApprovalStage?view=graph-powershell-beta)

@@ -143,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaApplicationTokenIssuancePolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationTokenIssuancePolicyCount?view=graph-powershell-beta)

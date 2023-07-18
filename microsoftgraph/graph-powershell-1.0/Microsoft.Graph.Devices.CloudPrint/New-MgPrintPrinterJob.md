@@ -493,5 +493,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[New-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintPrinterJob?view=graph-powershell-beta)

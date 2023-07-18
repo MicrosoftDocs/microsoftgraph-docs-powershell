@@ -160,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatOperationCount](/powershell/module/Microsoft.Graph.Teams/Get-MgChatOperationCount?view=graph-powershell-v1.0)

@@ -410,5 +410,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate?view=graph-powershell-v1.0)

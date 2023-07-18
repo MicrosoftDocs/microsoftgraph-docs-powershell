@@ -287,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Update-MgBusinessScenarioPlannerTaskConfiguration](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerTaskConfiguration?view=graph-powershell-v1.0)

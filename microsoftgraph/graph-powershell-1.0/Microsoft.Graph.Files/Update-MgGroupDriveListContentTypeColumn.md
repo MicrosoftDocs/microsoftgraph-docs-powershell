@@ -1166,5 +1166,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveListContentTypeColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveListContentTypeColumn?view=graph-powershell-beta)

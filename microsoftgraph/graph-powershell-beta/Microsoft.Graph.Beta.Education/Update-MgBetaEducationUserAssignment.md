@@ -752,5 +752,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignment?view=graph-powershell-v1.0)

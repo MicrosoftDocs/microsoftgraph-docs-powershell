@@ -92,3 +92,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupCount?view=graph-powershell-beta)

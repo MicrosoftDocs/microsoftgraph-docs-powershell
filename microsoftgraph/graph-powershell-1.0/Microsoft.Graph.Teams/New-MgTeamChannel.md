@@ -9205,5 +9205,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Deep link URL of the tab instance. Read only.
 
 ## RELATED LINKS
+[New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannel?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannel?view=graph-powershell-beta)

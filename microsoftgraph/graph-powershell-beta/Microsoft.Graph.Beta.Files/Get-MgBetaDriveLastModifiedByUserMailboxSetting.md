@@ -165,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDriveLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Get-MgDriveLastModifiedByUserMailboxSetting?view=graph-powershell-v1.0)

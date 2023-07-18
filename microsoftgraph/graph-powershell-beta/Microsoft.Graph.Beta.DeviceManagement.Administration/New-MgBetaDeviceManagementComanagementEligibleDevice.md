@@ -455,3 +455,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: UserName
 
 ## RELATED LINKS
+[New-MgDeviceManagementComanagementEligibleDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementComanagementEligibleDevice?view=graph-powershell-v1.0)

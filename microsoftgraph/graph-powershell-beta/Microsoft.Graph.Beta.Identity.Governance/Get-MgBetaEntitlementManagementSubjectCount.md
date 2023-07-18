@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEntitlementManagementSubjectCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSubjectCount?view=graph-powershell-v1.0)

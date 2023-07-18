@@ -152,3 +152,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Request-MgPrivilegedApprovalMy](/powershell/module/Microsoft.Graph.Identity.Governance/Request-MgPrivilegedApprovalMy?view=graph-powershell-v1.0)

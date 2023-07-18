@@ -77,3 +77,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportMonthlyPrintUsageSummaryByPrinterCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageSummaryByPrinterCount?view=graph-powershell-v1.0)

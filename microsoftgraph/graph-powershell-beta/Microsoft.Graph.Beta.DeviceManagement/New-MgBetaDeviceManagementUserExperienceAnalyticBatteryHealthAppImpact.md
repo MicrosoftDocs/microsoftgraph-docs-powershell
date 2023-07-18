@@ -250,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsForegroundApp <Boolean?>]`: true if the user had active interaction with the app.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthAppImpact?view=graph-powershell-v1.0)

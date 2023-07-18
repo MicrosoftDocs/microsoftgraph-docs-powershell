@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
+[Update-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationMeAssignmentResource?view=graph-powershell-beta)

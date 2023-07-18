@@ -159,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Get-MgFinancialCompanyJournalCount](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyJournalCount?view=graph-powershell-v1.0)

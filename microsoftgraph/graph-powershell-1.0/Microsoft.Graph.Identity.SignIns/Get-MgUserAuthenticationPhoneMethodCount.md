@@ -178,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgBetaUserAuthenticationPhoneMethodCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgUserAuthenticationPhoneMethodCount?view=graph-powershell-beta)

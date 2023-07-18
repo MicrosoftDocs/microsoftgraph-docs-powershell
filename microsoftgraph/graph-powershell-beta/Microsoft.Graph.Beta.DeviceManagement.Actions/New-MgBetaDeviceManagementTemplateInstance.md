@@ -305,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueJson <String>]`: JSON representation of the value
 
 ## RELATED LINKS
+[New-MgDeviceManagementTemplateInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementTemplateInstance?view=graph-powershell-v1.0)

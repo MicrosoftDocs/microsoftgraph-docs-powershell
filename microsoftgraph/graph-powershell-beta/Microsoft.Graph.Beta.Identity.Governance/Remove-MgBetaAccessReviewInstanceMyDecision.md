@@ -284,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgAccessReviewInstanceMyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAccessReviewInstanceMyDecision?view=graph-powershell-v1.0)

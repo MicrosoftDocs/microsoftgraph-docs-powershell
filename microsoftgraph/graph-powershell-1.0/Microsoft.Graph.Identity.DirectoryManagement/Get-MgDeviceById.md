@@ -171,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaDeviceById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceById?view=graph-powershell-beta)

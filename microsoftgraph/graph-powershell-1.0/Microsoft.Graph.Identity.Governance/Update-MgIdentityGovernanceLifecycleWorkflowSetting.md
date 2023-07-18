@@ -187,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UseCompanyBranding <Boolean?>]`: Specifies if the organization's banner logo should be included in email notifications. The banner logo will replace the Microsoft logo at the top of the email notification. If true the banner logo will be taken from the tenant's branding settings. This value can only be set to true if the organizationalBranding bannerLogo property is set.
 
 ## RELATED LINKS
+[Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)

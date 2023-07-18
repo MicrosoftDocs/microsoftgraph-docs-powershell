@@ -399,3 +399,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharingType <String>]`: Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
 
 ## RELATED LINKS
+[New-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightShared?view=graph-powershell-v1.0)

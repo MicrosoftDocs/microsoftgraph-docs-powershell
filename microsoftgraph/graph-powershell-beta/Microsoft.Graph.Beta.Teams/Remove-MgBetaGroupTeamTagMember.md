@@ -226,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTagMember?view=graph-powershell-v1.0)

@@ -177,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemItemLastModifiedByUser?view=graph-powershell-v1.0)

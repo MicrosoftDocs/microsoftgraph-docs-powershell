@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Set-MgVirtualEventSessionTranscriptContent](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventSessionTranscriptContent?view=graph-powershell-v1.0)

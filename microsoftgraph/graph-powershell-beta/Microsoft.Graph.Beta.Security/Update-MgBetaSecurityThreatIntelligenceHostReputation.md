@@ -321,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Severity <String>]`: hostReputationRuleSeverity
 
 ## RELATED LINKS
+[Update-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-v1.0)

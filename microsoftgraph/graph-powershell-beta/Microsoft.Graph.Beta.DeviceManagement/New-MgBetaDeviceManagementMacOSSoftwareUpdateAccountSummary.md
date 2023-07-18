@@ -363,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The user ID.
 
 ## RELATED LINKS
+[New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary?view=graph-powershell-v1.0)

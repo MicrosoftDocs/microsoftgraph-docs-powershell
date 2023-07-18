@@ -289,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS
+[Update-MgDeviceAppManagementMultipleMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultipleMobileAppRelationship?view=graph-powershell-v1.0)

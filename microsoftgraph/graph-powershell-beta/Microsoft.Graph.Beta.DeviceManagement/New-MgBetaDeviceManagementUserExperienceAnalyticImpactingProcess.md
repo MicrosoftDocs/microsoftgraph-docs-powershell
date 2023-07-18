@@ -245,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Publisher <String>]`: The publisher of the process.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticImpactingProcess](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticImpactingProcess?view=graph-powershell-v1.0)

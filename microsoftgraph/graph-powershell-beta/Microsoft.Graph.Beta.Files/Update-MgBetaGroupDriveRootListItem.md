@@ -28838,5 +28838,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootListItem?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootListItem?view=graph-powershell-v1.0)

@@ -232,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Restore-MgGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveListItemVersion?view=graph-powershell-v1.0)

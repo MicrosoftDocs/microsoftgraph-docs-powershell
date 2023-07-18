@@ -111,3 +111,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscovery?view=graph-powershell-v1.0)

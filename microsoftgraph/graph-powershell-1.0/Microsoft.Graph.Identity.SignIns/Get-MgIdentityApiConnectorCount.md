@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaIdentityApiConnectorCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityApiConnectorCount?view=graph-powershell-beta)

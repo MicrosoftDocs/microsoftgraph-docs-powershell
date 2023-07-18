@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBufferInformationProtectionEncrypt](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgBufferInformationProtectionEncrypt?view=graph-powershell-v1.0)

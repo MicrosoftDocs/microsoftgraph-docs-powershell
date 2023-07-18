@@ -283,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserPermissionGrantDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserPermissionGrantDelta?view=graph-powershell-v1.0)

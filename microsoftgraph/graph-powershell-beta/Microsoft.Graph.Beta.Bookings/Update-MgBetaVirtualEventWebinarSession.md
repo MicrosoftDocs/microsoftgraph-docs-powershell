@@ -1031,5 +1031,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
+[Update-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarSession?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarSession?view=graph-powershell-v1.0)

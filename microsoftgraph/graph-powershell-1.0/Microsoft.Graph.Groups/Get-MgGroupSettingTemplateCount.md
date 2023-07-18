@@ -76,3 +76,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgBetaGroupSettingTemplateCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSettingTemplateCount?view=graph-powershell-beta)

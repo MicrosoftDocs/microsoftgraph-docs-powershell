@@ -402,5 +402,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization, false otherwise. The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
+[Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)

@@ -513,3 +513,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ToolTip <String>]`: 
 
 ## RELATED LINKS
+[New-MgGroupSiteInformationProtectionSensitivityLabel](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteInformationProtectionSensitivityLabel?view=graph-powershell-v1.0)

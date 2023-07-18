@@ -336,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[New-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/New-MgChatPermissionGrant?view=graph-powershell-v1.0)

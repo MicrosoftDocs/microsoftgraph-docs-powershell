@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementReportWindowsQualityUpdateAlertPerPolicyPerDeviceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportWindowsQualityUpdateAlertPerPolicyPerDeviceReport?view=graph-powershell-v1.0)

@@ -580,5 +580,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the entity was last modified.
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementGroupPolicyConfigurationDefinitionValuePresentationValue?view=graph-powershell-v1.0)

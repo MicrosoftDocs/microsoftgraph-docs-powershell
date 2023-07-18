@@ -349,3 +349,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Text <String>]`: The question in the specific language. Required.
 
 ## RELATED LINKS
+[Update-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)

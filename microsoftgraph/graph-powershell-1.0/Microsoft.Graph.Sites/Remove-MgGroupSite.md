@@ -207,3 +207,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgGroupSite?view=graph-powershell-beta)

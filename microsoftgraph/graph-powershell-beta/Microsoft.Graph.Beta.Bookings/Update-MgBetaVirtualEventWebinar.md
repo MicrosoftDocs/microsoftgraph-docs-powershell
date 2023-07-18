@@ -829,5 +829,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[Update-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinar?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinar?view=graph-powershell-v1.0)

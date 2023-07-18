@@ -321,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgUserTodoList?view=graph-powershell-beta)

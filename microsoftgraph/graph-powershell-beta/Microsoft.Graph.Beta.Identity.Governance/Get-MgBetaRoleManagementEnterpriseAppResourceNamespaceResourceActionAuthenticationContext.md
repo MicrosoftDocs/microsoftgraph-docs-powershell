@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgRoleManagementEnterpriseAppResourceNamespaceResourceActionAuthenticationContext](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppResourceNamespaceResourceActionAuthenticationContext?view=graph-powershell-v1.0)

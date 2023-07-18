@@ -181,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Display name for the device category.
 
 ## RELATED LINKS
+[New-MgBetaDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-beta)

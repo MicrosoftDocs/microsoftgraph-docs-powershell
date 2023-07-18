@@ -233,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastRefreshedDateTime <DateTime?>]`: Recorded date time of this runtime details instance.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthRuntimeDetail?view=graph-powershell-v1.0)

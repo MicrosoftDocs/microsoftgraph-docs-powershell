@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <DeviceAppManagementTaskStatus?>]`: Device app management task status.
 
 ## RELATED LINKS
+[New-MgDeviceAppManagementTask](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTask?view=graph-powershell-v1.0)

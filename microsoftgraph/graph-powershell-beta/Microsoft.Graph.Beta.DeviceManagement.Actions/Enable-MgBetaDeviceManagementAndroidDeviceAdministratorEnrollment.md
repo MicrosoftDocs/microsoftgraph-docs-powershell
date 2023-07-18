@@ -97,3 +97,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementAndroidDeviceAdministratorEnrollment?view=graph-powershell-v1.0)

@@ -188,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Get-MgBetaGroupConversationThreadPostExtensionCount](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupConversationThreadPostExtensionCount?view=graph-powershell-beta)

@@ -224,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaSiteTermStoreSetRelationToTerm](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteTermStoreSetRelationToTerm?view=graph-powershell-beta)

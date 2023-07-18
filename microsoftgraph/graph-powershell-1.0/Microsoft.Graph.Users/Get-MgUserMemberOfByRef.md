@@ -102,3 +102,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[Get-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserMemberOfByRef?view=graph-powershell-beta)

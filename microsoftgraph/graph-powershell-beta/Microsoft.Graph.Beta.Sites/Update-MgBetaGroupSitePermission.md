@@ -618,5 +618,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[Update-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePermission?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePermission?view=graph-powershell-v1.0)

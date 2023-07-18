@@ -100,3 +100,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Enable-MgDeviceManagementUnlicensedAdminstrator](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementUnlicensedAdminstrator?view=graph-powershell-v1.0)

@@ -152,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Start-MgPrintPrinterShareJobPrintJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Start-MgPrintPrinterShareJobPrintJob?view=graph-powershell-v1.0)

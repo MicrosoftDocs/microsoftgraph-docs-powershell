@@ -558,3 +558,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ToolTip <String>]`: 
 
 ## RELATED LINKS
+[Update-MgUserInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)

@@ -230,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgUserEventExceptionOccurrenceInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0)

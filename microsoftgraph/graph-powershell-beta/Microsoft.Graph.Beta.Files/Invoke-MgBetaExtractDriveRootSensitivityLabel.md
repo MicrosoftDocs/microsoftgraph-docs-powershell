@@ -151,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgExtractDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Invoke-MgExtractDriveRootSensitivityLabel?view=graph-powershell-v1.0)

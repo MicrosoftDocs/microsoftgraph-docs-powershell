@@ -934,5 +934,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[Update-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatMessage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatMessage?view=graph-powershell-v1.0)

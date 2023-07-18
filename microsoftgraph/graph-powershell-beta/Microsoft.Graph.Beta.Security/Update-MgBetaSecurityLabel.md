@@ -516,5 +516,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RetentionTrigger <String>]`: retentionTrigger
 
 ## RELATED LINKS
+[Update-MgSecurityLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabel?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabel?view=graph-powershell-v1.0)

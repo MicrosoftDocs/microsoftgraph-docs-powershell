@@ -79,3 +79,4 @@ ALIASES
 Get-DeviceAppMgtAndroidManagedAppProtectionCount
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionCount?view=graph-powershell-beta)

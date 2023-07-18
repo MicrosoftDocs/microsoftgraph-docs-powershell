@@ -191,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsedCount <Int32?>]`: The number of service plans that the account uses.
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointSharedUseServicePlan](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointSharedUseServicePlan?view=graph-powershell-v1.0)

@@ -215,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition?view=graph-powershell-v1.0)

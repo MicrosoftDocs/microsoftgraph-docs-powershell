@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgShareListItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDelta?view=graph-powershell-v1.0)

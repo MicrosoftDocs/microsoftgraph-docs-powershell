@@ -244,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: The list of scope tags for the configuration.
 
 ## RELATED LINKS
+[New-MgDeviceManagementGroupPolicyObjectFile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyObjectFile?view=graph-powershell-v1.0)

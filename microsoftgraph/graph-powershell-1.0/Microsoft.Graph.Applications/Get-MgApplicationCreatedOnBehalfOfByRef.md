@@ -148,3 +148,4 @@ BODYPARAMETER `<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)

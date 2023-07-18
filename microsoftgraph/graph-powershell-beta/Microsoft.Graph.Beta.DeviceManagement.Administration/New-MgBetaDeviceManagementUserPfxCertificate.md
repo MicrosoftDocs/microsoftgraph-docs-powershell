@@ -342,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User Principal Name of the PFX certificate.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserPfxCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementUserPfxCertificate?view=graph-powershell-v1.0)

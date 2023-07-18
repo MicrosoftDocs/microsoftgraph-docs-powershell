@@ -165,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPhoto?view=graph-powershell-v1.0)

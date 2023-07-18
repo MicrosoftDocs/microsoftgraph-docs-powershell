@@ -383,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
+[New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgUserChatTab?view=graph-powershell-beta)

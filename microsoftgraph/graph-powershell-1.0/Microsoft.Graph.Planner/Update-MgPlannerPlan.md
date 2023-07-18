@@ -600,5 +600,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
+[Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlan?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlan?view=graph-powershell-beta)
