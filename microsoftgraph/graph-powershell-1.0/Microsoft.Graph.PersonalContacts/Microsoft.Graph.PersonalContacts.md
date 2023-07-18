@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.PersonalContacts
 Module Guid: abfca319-343a-4c19-9a6d-f664778ca841
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts

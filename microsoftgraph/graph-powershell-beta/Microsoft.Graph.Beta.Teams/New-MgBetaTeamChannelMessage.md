@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetateamchannelmessage
@@ -121,8 +121,8 @@ $params = @{
   "title": "This is an example of posting a card",
   "subtitle": "&lt;h3&gt;This is the subtitle&lt;/h3&gt;",
   "text": "Here is some body text.
-&lt;br&gt;\r\nAnd a &lt;a href=\"http://microsoft.com/\"&gt;hyperlink&lt;/a&gt;.
-&lt;br&gt;\r\nAnd below that is some buttons:",
+&lt;br&gt;rnAnd a &lt;a href="http://microsoft.com/"&gt;hyperlink&lt;/a&gt;.
+&lt;br&gt;rnAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -358,8 +358,8 @@ $params = @{
   "title": "This is an example of posting a card",
   "subtitle": "&lt;h3&gt;This is the subtitle&lt;/h3&gt;",
   "text": "Here is some body text.
-&lt;br&gt;\r\nAnd a &lt;a href=\"http://microsoft.com/\"&gt;hyperlink&lt;/a&gt;.
-&lt;br&gt;\r\nAnd below that is some buttons:",
+&lt;br&gt;rnAnd a &lt;a href="http://microsoft.com/"&gt;hyperlink&lt;/a&gt;.
+&lt;br&gt;rnAnd below that is some buttons:",
   "buttons": [
     {
       "type": "messageBack",
@@ -1017,7 +1017,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1116,7 +1116,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 `MENTIONS <IMicrosoftGraphChatMessageMention[]>`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+  - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
   - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
   - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1217,7 +1217,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
   - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
   - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, channel, and tag.
-    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
+    - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
     - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
     - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
