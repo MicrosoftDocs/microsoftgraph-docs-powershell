@@ -43,11 +43,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDeviceTransitiveMemberOf -DeviceId $deviceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -305,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceTransitiveMemberOf?view=graph-powershell-beta)
+

@@ -34,11 +34,11 @@ Only sharing permissions that are **not** inherited can be deleted.\nThe **inher
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Remove-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DriveId
 The unique identifier of drive
@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemPermission?view=graph-powershell-v1.0)
+

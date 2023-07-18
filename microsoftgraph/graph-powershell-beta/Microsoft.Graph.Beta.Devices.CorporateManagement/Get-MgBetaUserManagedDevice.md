@@ -34,22 +34,6 @@ Get-MgBetaUserManagedDevice -InputObject <IDevicesCorporateManagementIdentity> [
 ## DESCRIPTION
 The managed devices associated with the user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -335,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDevice?view=graph-powershell-v1.0)
+

@@ -36,11 +36,11 @@ If the printer is shared again in the future, any Windows users who had previous
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintShare -PrinterShareId $printerShareId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -169,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShare?view=graph-powershell-v1.0)
+

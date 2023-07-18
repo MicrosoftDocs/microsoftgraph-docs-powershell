@@ -43,18 +43,6 @@ Add-MgExternalConnectionItemActivity -InputObject <ISearchIdentity>
 ## DESCRIPTION
 Invoke action addActivities
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -230,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgExternalConnectionItemActivity?view=graph-powershell-beta)
+

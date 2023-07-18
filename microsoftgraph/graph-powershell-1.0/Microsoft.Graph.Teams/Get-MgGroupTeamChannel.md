@@ -53,18 +53,6 @@ Get-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -317,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamChannel?view=graph-powershell-beta)
+

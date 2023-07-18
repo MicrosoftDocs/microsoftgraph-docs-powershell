@@ -29,18 +29,6 @@ Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice
 ## DESCRIPTION
 Invoke function summarizeDevicePerformanceDevices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-beta)
+

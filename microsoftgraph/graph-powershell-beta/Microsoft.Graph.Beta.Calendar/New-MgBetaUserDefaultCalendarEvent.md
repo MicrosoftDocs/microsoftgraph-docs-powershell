@@ -73,18 +73,6 @@ New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParamet
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1796,3 +1784,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserDefaultCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserDefaultCalendarEvent?view=graph-powershell-v1.0)
+

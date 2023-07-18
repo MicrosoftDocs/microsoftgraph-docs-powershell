@@ -34,11 +34,11 @@ Because a class is also a universal group, deleting a class deletes the group.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClass -EducationClassId $educationClassId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationClassId
 The unique identifier of educationClass
@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClass?view=graph-powershell-beta)
+

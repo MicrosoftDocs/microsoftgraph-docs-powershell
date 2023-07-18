@@ -32,11 +32,11 @@ Use this API to remove a member (user, group, or device) from an administrative 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
@@ -203,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
+

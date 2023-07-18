@@ -45,18 +45,6 @@ Remove-MgBetaWindowsUpdatesPolicyAudienceExclusionMember -InputObject <IWindowsU
 Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesPolicyAudienceExclusionMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicyAudienceExclusionMember?view=graph-powershell-v1.0)
+

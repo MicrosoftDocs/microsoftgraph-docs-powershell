@@ -32,11 +32,11 @@ Delete a retentionEvent object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Remove-MgBetaSecurityTriggerRetentionEvent -RetentionEventId $retentionEventId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -222,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerRetentionEvent?view=graph-powershell-v1.0)
+

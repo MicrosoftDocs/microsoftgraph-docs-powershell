@@ -28,22 +28,6 @@ Remove-MgBetaUserManagedDeviceLogCollectionResponse -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Delete navigation property logCollectionRequests for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceLogCollectionResponseId
@@ -254,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-v1.0)
+

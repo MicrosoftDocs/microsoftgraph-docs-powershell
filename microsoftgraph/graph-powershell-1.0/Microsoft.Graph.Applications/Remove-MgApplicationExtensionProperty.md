@@ -34,11 +34,11 @@ You can delete only directory extensions that aren't synced from on-premises act
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ApplicationId
 The unique identifier of application
@@ -189,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplicationExtensionProperty?view=graph-powershell-beta)
+

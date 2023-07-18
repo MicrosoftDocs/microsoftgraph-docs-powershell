@@ -72,22 +72,6 @@ Update-MgBetaUserOnlineMeetingAttendanceReport -InputObject <ICloudCommunication
 ## DESCRIPTION
 Update the navigation property attendanceReports in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -371,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingAttendanceReport?view=graph-powershell-v1.0)
+

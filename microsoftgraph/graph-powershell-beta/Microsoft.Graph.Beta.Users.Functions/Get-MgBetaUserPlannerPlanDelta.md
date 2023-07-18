@@ -28,18 +28,6 @@ Get-MgBetaUserPlannerPlanDelta -InputObject <IUsersFunctionsIdentity> [-Filter <
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -283,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPlannerPlanDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserPlannerPlanDelta?view=graph-powershell-v1.0)
+

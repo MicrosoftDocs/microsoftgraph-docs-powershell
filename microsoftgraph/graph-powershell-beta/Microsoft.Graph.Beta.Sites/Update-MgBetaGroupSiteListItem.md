@@ -55,22 +55,6 @@ Update-MgBetaGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property items in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -28898,3 +28882,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteListItem](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItem?view=graph-powershell-v1.0)
+

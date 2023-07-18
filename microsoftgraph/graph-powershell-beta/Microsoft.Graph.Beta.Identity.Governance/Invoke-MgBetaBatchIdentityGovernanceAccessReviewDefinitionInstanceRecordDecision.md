@@ -52,7 +52,6 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	Decision = "Approve"
@@ -62,7 +61,8 @@ $params = @{
 
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessReviewInstanceId
 The unique identifier of accessReviewInstance
@@ -373,3 +373,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-v1.0)
+

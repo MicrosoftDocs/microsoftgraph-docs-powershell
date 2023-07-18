@@ -20,18 +20,6 @@ Remove-MgBetaPolicyFederatedTokenValidationPolicy [-IfMatch <String>] [-PassThru
 ## DESCRIPTION
 Delete navigation property federatedTokenValidationPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-v1.0)
+

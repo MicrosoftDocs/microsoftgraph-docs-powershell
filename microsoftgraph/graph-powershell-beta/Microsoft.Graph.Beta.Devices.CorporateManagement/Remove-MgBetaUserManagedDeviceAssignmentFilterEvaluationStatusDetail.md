@@ -29,22 +29,6 @@ Remove-MgBetaUserManagedDeviceAssignmentFilterEvaluationStatusDetail
 ## DESCRIPTION
 Delete navigation property assignmentFilterEvaluationStatusDetails for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AssignmentFilterEvaluationStatusDetailsId
@@ -255,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceAssignmentFilterEvaluationStatusDetail?view=graph-powershell-v1.0)
+

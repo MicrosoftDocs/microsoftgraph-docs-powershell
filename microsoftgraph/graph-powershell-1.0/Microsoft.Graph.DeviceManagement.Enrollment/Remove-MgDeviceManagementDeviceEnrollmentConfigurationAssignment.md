@@ -29,18 +29,6 @@ Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 ## DESCRIPTION
 Delete navigation property assignments for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceEnrollmentConfigurationId
@@ -176,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
+

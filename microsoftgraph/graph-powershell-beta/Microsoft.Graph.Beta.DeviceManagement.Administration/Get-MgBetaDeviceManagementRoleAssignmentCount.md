@@ -19,18 +19,6 @@ Get-MgBetaDeviceManagementRoleAssignmentCount [-Filter <String>] [-Search <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementRoleAssignmentCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleAssignmentCount?view=graph-powershell-v1.0)
+

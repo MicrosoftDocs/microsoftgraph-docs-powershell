@@ -38,22 +38,6 @@ Get-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsIdent
 Collection of pages with the default content to display in a user flow for a specified language.
 This collection does not allow any kind of modification.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -346,3 +330,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
+

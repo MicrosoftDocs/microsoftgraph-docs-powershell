@@ -39,11 +39,11 @@ Classes for which the user is a teacher.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationUserTaughtClass -EducationUserId $educationUserId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -262,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeTaughtClass?view=graph-powershell-v1.0)
+

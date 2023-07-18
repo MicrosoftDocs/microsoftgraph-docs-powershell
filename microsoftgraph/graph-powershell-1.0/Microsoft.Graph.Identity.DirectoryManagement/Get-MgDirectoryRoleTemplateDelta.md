@@ -20,18 +20,6 @@ Get-MgDirectoryRoleTemplateDelta [-Filter <String>] [-Property <String[]>] [-Sea
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -184,3 +172,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateDelta?view=graph-powershell-beta)
+

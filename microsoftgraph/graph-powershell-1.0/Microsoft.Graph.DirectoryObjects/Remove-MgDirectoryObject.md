@@ -32,11 +32,11 @@ Delete a directory object, for example, a group, user, application, or service p
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 Remove-MgDirectoryObject -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -153,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgDirectoryObject?view=graph-powershell-beta)
+

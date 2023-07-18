@@ -55,18 +55,6 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationship -InputObject <IIdentit
 Update the properties of a delegatedAdminRelationship object.
 A relationship can only be updated if it's in the `created` **status**.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessAssignments
@@ -482,3 +470,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-v1.0)
+

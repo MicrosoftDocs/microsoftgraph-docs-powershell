@@ -32,11 +32,11 @@ Revoke the specified user's access to submit print jobs to the associated printe
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Remove-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -UserId $userId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -Id
 Delete Uri
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgPrintShareAllowedUserByRef?view=graph-powershell-beta)
+

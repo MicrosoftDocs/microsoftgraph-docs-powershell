@@ -27,22 +27,6 @@ New-MgBetaDeviceManagementDepOnboardingSettingEncryptionPublicKey
 ## DESCRIPTION
 Generate a public key to use to encrypt the Apple device enrollment program token
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -180,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey?view=graph-powershell-v1.0)
+

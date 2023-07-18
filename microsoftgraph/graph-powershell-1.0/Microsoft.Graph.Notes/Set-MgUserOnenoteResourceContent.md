@@ -27,22 +27,6 @@ Set-MgUserOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stream>] 
 ## DESCRIPTION
 The content stream
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -186,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-beta)
+

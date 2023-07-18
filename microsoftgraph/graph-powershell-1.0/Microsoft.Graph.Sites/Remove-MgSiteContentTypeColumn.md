@@ -32,11 +32,11 @@ Remove a [column][columndefinition] from a [site][], a [list][], or a [content t
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ColumnDefinitionId
 The unique identifier of columnDefinition
@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteContentTypeColumn?view=graph-powershell-beta)
+

@@ -36,7 +36,6 @@ Create a new **printerShare** for the specified printer.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	displayName = "ShareName"
@@ -46,7 +45,8 @@ $params = @{
 
 New-MgPrintShare -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -11930,3 +11930,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-beta)
+

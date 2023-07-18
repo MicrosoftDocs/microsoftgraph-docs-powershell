@@ -32,11 +32,11 @@ Get the last ediscoveryEstimateOperation objects and their properties.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase
@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-v1.0)
+

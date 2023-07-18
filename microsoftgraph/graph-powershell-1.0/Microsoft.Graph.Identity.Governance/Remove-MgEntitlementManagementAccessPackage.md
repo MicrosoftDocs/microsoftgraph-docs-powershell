@@ -34,11 +34,11 @@ You cannot delete an access package if it has any **accessPackageAssignment**.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageId
 The unique identifier of accessPackage
@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-beta)
+

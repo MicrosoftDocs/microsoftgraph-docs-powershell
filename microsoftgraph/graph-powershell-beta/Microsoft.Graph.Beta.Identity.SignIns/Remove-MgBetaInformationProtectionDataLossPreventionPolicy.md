@@ -27,22 +27,6 @@ Remove-MgBetaInformationProtectionDataLossPreventionPolicy -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property dataLossPreventionPolicies for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DataLossPreventionPolicyId
@@ -233,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
+

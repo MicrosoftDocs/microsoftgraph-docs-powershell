@@ -36,18 +36,6 @@ Get-MgExternalConnectionItemActivity -InputObject <ISearchIdentity> [-ExpandProp
 Returns a list of activities performed on the item.
 Write-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-beta)
+

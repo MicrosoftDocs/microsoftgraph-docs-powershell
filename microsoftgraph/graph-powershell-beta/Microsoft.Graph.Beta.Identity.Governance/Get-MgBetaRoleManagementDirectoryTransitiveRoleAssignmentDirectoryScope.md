@@ -34,18 +34,6 @@ Provided so that callers can get the directory object using $expand at the same 
 Read-only.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
+

@@ -19,18 +19,6 @@ Get-MgPolicyTokenIssuancePolicyCount [-Filter <String>] [-Search <String>] [<Com
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyTokenIssuancePolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyTokenIssuancePolicyCount?view=graph-powershell-beta)
+

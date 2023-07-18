@@ -41,22 +41,6 @@ Remove-MgGroupFromLifecyclePolicy -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Removes a group from a lifecycle policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupFromLifecyclePolicy?view=graph-powershell-beta)
+

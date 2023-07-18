@@ -39,11 +39,11 @@ Retrieve a list of daily print usage summaries, grouped by printer.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportDailyPrintUsageByPrinter -PrintUsageByPrinterId $printUsageByPrinterId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByPrinter?view=graph-powershell-v1.0)
+

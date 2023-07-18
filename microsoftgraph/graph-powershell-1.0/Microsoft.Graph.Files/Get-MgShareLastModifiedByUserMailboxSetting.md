@@ -43,18 +43,6 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale and time zone.
 Returned only on $select.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -164,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaShareLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareLastModifiedByUserMailboxSetting?view=graph-powershell-beta)
+

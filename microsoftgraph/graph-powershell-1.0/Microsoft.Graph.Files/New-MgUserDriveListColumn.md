@@ -59,22 +59,6 @@ New-MgUserDriveListColumn -InputObject <IFilesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1139,3 +1123,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgUserDriveListColumn?view=graph-powershell-beta)
+

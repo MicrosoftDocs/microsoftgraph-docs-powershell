@@ -53,22 +53,6 @@ Get-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 ## DESCRIPTION
 Read the properties and relationships of a set object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -358,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteTermStoreSet?view=graph-powershell-beta)
+

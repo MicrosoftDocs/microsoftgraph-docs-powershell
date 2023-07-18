@@ -37,11 +37,11 @@ A smaller image will reduce bandwidth requirements and make the page load faster
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -Data
 .
@@ -231,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgOrganizationBrandingLocalizationBackgroundImage](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationBackgroundImage?view=graph-powershell-v1.0)
+

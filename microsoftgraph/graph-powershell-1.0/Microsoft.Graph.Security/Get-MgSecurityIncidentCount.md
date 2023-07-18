@@ -19,18 +19,6 @@ Get-MgSecurityIncidentCount [-Filter <String>] [-Search <String>] [<CommonParame
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityIncidentCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityIncidentCount?view=graph-powershell-beta)
+

@@ -47,22 +47,6 @@ This method is part of the content type publishing changes to optimize the synci
 The method allows users to pull content types directly from the content type hub to a site or list.
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -224,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+

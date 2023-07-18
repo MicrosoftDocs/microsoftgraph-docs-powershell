@@ -19,18 +19,6 @@ Get-MgSecurityAlertCount [-Filter <String>] [-Search <String>] [<CommonParameter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAlertCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityAlertCount?view=graph-powershell-beta)
+

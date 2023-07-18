@@ -20,22 +20,6 @@ Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property deletedItems for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItem?view=graph-powershell-v1.0)
+

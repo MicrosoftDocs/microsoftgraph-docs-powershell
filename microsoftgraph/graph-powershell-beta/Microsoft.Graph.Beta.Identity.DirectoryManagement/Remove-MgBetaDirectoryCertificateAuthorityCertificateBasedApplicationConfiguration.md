@@ -29,18 +29,6 @@ Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ## DESCRIPTION
 Delete navigation property certificateBasedApplicationConfigurations for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CertificateBasedApplicationConfigurationId
@@ -198,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration?view=graph-powershell-v1.0)
+

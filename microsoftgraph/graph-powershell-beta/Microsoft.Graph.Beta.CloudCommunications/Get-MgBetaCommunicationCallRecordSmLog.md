@@ -27,18 +27,6 @@ Get-MgBetaCommunicationCallRecordSmLog -InputObject <ICloudCommunicationsIdentit
 ## DESCRIPTION
 Invoke function getSmsLog
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -202,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationCallRecordSmLog](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSmLog?view=graph-powershell-v1.0)
+

@@ -27,18 +27,6 @@ Get-MgBetaExternalIndustryDataConnectorSourceSystem -InputObject <ISearchIdentit
 ## DESCRIPTION
 The sourceSystemDefinition this connector is connected to.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -142,3 +130,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalIndustryDataConnectorSourceSystem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataConnectorSourceSystem?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Get-MgDeviceAppManagementManagedEBook -InputObject <IDevicesCorporateManagementI
 ## DESCRIPTION
 The Managed eBook.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -286,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+

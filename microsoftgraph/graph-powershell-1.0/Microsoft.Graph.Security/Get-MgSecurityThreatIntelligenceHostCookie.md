@@ -53,18 +53,6 @@ Get-MgSecurityThreatIntelligenceHostCookie -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a hostCookie object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -319,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
+

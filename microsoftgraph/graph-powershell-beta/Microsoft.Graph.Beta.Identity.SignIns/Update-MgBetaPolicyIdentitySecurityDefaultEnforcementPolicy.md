@@ -34,7 +34,6 @@ Update the properties of an identitySecurityDefaultsEnforcementPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	isEnabled = $false
@@ -42,7 +41,8 @@ $params = @{
 
 Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -213,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+

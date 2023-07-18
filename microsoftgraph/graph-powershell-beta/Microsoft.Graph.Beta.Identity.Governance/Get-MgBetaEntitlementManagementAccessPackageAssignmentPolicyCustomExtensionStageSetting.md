@@ -39,18 +39,6 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStage
 The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -368,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-v1.0)
+

@@ -39,11 +39,11 @@ Read the properties and relationships of a caseOperation object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -CaseOperationId $caseOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -297,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
+

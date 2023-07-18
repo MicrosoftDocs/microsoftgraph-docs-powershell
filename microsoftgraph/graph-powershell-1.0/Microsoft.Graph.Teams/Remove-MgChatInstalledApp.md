@@ -32,11 +32,11 @@ Uninstall an app installed within a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ChatId
 The unique identifier of chat
@@ -198,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgChatInstalledApp?view=graph-powershell-beta)
+

@@ -28,18 +28,6 @@ Get-MgBetaIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentity
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -229,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-v1.0)
+

@@ -43,18 +43,6 @@ Update-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISite
 ## DESCRIPTION
 Update the navigation property columns in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-v1.0)
+

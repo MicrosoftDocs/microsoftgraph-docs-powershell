@@ -41,11 +41,11 @@ Read the properties and relationships of an accessReviewInstanceDecisionItem obj
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessReviewInstanceDecisionItemId
 The unique identifier of accessReviewInstanceDecisionItem
@@ -335,3 +335,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+

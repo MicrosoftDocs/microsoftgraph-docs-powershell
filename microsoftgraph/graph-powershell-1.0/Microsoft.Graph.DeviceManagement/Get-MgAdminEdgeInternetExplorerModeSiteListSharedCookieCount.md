@@ -27,18 +27,6 @@ Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount -InputObject <IDevi
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BrowserSiteListId
@@ -177,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookieCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListSharedCookieCount?view=graph-powershell-beta)
+

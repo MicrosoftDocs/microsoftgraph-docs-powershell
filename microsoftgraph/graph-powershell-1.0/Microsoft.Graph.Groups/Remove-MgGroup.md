@@ -39,9 +39,10 @@ To learn more, see deletedItems.
 ### EXAMPLE 1
 ```powershell
 Remove-MgGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
-```
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -GroupId
 The unique identifier of group
@@ -192,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroup?view=graph-powershell-beta)
+

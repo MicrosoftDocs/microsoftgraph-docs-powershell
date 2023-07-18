@@ -62,7 +62,6 @@ Update the properties of a class.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	description = "History - World History 1"
@@ -71,7 +70,8 @@ $params = @{
 
 Update-MgBetaEducationClass -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -24952,3 +24952,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClass?view=graph-powershell-v1.0)
+

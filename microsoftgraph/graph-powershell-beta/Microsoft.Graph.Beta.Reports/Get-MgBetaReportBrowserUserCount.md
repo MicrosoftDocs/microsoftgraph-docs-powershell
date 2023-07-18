@@ -26,22 +26,6 @@ Get-MgBetaReportBrowserUserCount -InputObject <IReportsIdentity> -OutFile <Strin
 ## DESCRIPTION
 Invoke function getBrowserUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -155,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportBrowserUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportBrowserUserCount?view=graph-powershell-v1.0)
+

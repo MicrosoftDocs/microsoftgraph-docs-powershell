@@ -38,22 +38,6 @@ Get an open extension (openTypeExtension object) identified by name or fully qua
 The table in the Permissions section lists the resources that support open extensions.
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-v1.0)
+

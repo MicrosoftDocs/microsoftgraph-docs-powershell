@@ -19,18 +19,6 @@ Get-MgBetaDeviceManagementGroupPolicyCategoryCount [-Filter <String>] [-Search <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementGroupPolicyCategoryCount](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyCategoryCount?view=graph-powershell-v1.0)
+

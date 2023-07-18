@@ -71,22 +71,6 @@ Update-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the navigation property groups in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -465,3 +449,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteTermStoreGroup?view=graph-powershell-beta)
+

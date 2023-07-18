@@ -35,11 +35,11 @@ This can only be done by a teacher.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Remove-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -213,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+

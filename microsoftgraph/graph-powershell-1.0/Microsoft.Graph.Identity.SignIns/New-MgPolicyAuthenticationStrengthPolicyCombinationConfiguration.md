@@ -45,18 +45,6 @@ New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject <I
 Create a new authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be created, and these may only be created for custom authentication strength policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
+

@@ -29,22 +29,6 @@ Get-MgShareListContentTypeCompatibleHubContentType -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaShareListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+

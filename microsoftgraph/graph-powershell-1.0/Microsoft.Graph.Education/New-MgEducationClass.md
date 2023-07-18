@@ -40,7 +40,6 @@ Create a new educationClass object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationClass"
@@ -63,7 +62,8 @@ $params = @{
 
 New-MgEducationClass -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -15623,3 +15623,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClass?view=graph-powershell-beta)
+

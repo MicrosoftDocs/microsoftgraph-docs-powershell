@@ -41,7 +41,6 @@ Create a new partner configuration in a cross-tenant access policy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	tenantId = "3d0f5dec-5d3d-455c-8016-e2af1ae4d31a"
@@ -71,7 +70,8 @@ $params = @{
 
 New-MgBetaPolicyCrossTenantAccessPolicyPartner -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -432,3 +432,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-v1.0)
+

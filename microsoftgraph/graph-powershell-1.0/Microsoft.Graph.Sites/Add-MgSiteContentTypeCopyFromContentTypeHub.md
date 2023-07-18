@@ -52,7 +52,6 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentTypeId = "0x0101"
@@ -60,10 +59,10 @@ $params = @{
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentTypeId = "0x0101"
@@ -71,7 +70,8 @@ $params = @{
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -246,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+

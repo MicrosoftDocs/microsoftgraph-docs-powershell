@@ -34,18 +34,6 @@ Get-MgBetaGroupTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -335,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMessageReply?view=graph-powershell-v1.0)
+

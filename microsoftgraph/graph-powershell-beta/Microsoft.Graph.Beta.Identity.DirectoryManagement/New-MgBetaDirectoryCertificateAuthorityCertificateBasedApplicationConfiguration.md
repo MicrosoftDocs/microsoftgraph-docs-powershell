@@ -31,18 +31,6 @@ New-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ## DESCRIPTION
 Create new navigation property to certificateBasedApplicationConfigurations for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -225,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration?view=graph-powershell-v1.0)
+

@@ -64,7 +64,6 @@ Assignments start in the Draft state, which means that students will not see the
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	dueDateTime = [System.DateTime]::Parse("2022-09-16T00:00:00Z")
@@ -86,7 +85,8 @@ $params = @{
 
 New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AddedStudentAction
 educationAddedStudentAction
@@ -756,3 +756,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-v1.0)
+

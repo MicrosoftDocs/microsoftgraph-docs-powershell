@@ -34,18 +34,6 @@ Get-MgReportAuthenticationMethodUserRegistrationDetail -InputObject <IReportsIde
 ## DESCRIPTION
 Get userRegistrationDetails from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -272,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+

@@ -20,18 +20,6 @@ Remove-MgBetaSecurityThreatIntelligence [-IfMatch <String>] [-PassThru] [-WhatIf
 ## DESCRIPTION
 Delete navigation property threatIntelligence for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligence?view=graph-powershell-v1.0)
+

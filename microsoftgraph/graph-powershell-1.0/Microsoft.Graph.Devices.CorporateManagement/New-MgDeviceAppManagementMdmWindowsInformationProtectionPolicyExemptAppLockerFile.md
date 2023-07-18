@@ -47,18 +47,6 @@ New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFil
 ## DESCRIPTION
 Create new navigation property to exemptAppLockerFiles for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
+

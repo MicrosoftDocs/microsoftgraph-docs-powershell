@@ -39,11 +39,11 @@ Get an externalGroup object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroup?view=graph-powershell-beta)
+

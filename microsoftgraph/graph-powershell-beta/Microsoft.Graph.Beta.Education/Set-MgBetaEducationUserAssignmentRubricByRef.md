@@ -43,22 +43,6 @@ Set-MgBetaEducationUserAssignmentRubricByRef -InputObject <IEducationIdentity>
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -256,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Set-MgEducationUserAssignmentRubricByRef?view=graph-powershell-v1.0)
+

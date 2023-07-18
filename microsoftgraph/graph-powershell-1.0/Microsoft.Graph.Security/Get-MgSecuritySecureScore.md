@@ -39,11 +39,11 @@ Retrieve the properties and relationships of a secureScore object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecuritySecureScore -SecureScoreId $secureScoreId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecuritySecureScore?view=graph-powershell-beta)
+

@@ -55,18 +55,6 @@ Update-MgUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -622,3 +610,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-beta)
+

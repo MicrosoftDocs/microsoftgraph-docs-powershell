@@ -29,18 +29,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -209,3 +197,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredUserByRef?view=graph-powershell-v1.0)
+

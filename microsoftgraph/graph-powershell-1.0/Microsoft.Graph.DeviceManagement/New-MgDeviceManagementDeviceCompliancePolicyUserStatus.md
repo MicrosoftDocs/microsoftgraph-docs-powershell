@@ -43,18 +43,6 @@ New-MgDeviceManagementDeviceCompliancePolicyUserStatus -InputObject <IDeviceMana
 ## DESCRIPTION
 Create new navigation property to userStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -326,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementDeviceCompliancePolicyUserStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyUserStatus?view=graph-powershell-beta)
+

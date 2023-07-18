@@ -36,18 +36,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest
 ## DESCRIPTION
 Read the properties and relationships of a privilegedAccessGroupEligibilityScheduleRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-v1.0)
+

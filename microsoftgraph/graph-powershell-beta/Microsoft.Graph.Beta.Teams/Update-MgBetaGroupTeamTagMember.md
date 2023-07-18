@@ -41,22 +41,6 @@ Update-MgBetaGroupTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property members in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -311,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTagMember?view=graph-powershell-v1.0)
+

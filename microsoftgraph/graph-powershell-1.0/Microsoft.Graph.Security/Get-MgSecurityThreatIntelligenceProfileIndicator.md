@@ -34,18 +34,6 @@ Get-MgSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Get intelligenceProfileIndicators from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -285,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+

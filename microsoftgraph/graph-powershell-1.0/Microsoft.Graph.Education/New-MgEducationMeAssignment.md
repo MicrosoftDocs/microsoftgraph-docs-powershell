@@ -39,25 +39,25 @@ Create new navigation property to assignments for education
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationMeAssignment
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AddedStudentAction
 educationAddedStudentAction
@@ -653,3 +653,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationMeAssignment?view=graph-powershell-beta)
+

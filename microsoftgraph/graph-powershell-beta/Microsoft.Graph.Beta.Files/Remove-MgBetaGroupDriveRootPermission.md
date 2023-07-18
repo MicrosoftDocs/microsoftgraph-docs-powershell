@@ -29,22 +29,6 @@ Remove-MgBetaGroupDriveRootPermission -InputObject <IFilesIdentity> [-IfMatch <S
 Remove access to a DriveItem.
 Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
+

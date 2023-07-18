@@ -32,11 +32,11 @@ Publishes a [contentType][] present in the content type hub site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Publish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ContentTypeId
 The unique identifier of contentType
@@ -205,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Publish-MgSiteListContentType?view=graph-powershell-beta)
+

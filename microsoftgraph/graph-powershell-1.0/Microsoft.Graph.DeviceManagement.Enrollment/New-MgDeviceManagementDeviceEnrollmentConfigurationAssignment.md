@@ -42,18 +42,6 @@ New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -213,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
+

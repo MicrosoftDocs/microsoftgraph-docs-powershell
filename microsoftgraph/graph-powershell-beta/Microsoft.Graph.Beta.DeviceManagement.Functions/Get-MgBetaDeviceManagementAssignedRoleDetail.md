@@ -19,22 +19,6 @@ Get-MgBetaDeviceManagementAssignedRoleDetail [<CommonParameters>]
 ## DESCRIPTION
 Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -51,3 +35,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementAssignedRoleDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementAssignedRoleDetail?view=graph-powershell-v1.0)
+

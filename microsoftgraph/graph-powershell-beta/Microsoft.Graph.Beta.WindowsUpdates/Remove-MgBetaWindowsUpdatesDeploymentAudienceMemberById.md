@@ -45,22 +45,6 @@ Remove-MgBetaWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUp
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesDeploymentAudienceMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeploymentAudienceMemberById?view=graph-powershell-v1.0)
+

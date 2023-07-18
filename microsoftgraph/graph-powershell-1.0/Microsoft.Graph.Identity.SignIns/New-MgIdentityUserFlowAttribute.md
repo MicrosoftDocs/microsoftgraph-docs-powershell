@@ -33,7 +33,6 @@ Create a new identityUserFlowAttribute object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Hobby"
@@ -43,7 +42,8 @@ $params = @{
 
 New-MgIdentityUserFlowAttribute -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-beta)
+

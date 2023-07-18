@@ -43,18 +43,6 @@ Resume-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanc
 ## DESCRIPTION
 Invoke action resume
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
@@ -294,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Resume-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+

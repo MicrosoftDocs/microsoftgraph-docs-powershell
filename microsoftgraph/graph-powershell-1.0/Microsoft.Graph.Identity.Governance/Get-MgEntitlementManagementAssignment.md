@@ -51,11 +51,11 @@ In Azure AD entitlement management, retrieve the properties and relationships of
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignment -AccessPackageAssignmentId $accessPackageAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageAssignmentId
 The unique identifier of accessPackageAssignment
@@ -330,3 +330,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+

@@ -43,11 +43,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDomainServiceConfigurationRecord -DomainId $domainId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -289,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainServiceConfigurationRecord?view=graph-powershell-beta)
+

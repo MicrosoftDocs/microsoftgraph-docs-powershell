@@ -32,11 +32,11 @@ Delete an externalGroup object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Remove-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExternalConnectionId
 The unique identifier of externalConnection
@@ -173,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgExternalConnectionGroup?view=graph-powershell-beta)
+

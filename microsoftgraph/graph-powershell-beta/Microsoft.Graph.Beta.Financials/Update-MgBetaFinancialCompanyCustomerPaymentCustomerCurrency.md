@@ -43,22 +43,6 @@ Update-MgBetaFinancialCompanyCustomerPaymentCustomerCurrency -InputObject <IFina
 ## DESCRIPTION
 Update the navigation property currency in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgFinancialCompanyCustomerPaymentCustomerCurrency](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentCustomerCurrency?view=graph-powershell-v1.0)
+

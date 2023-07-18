@@ -45,22 +45,6 @@ Update-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecuri
 ## DESCRIPTION
 Update the navigation property userSources in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -430,3 +414,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource?view=graph-powershell-v1.0)
+

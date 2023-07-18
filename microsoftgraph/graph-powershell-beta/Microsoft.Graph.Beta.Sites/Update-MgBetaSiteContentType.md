@@ -58,7 +58,6 @@ Update a [content type][contentType].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	name = "updatedCt"
@@ -105,7 +104,8 @@ $params = @{
 
 Update-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1617,3 +1617,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentType?view=graph-powershell-v1.0)
+

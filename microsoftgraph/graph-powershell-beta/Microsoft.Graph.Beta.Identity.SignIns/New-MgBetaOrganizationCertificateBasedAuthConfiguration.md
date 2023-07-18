@@ -41,18 +41,6 @@ New-MgBetaOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentityS
 ## DESCRIPTION
 Create a new certificateBasedAuthConfiguration object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-v1.0)
+

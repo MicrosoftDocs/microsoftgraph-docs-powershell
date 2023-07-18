@@ -72,7 +72,6 @@ Update the properties of a store object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	defaultLanguageTag = "en-US"
@@ -80,7 +79,8 @@ $params = @{
 
 Update-MgSiteTermStore -SiteId $siteId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -463,3 +463,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteTermStore?view=graph-powershell-beta)
+

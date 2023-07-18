@@ -29,18 +29,6 @@ Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail
 ## DESCRIPTION
 Delete navigation property serviceManagementDetails for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminCustomerId
@@ -178,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-beta)
+

@@ -48,7 +48,6 @@ Update the properties of an openShift object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	schedulingGroupId = "TAG_228940ed-ff84-4e25-b129-1b395cf78be0"
@@ -74,7 +73,8 @@ $params = @{
 
 Update-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -439,3 +439,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-v1.0)
+

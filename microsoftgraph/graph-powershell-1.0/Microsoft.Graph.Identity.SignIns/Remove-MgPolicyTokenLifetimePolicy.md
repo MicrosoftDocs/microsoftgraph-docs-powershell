@@ -32,11 +32,11 @@ Delete a tokenLifetimePolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-beta)
+

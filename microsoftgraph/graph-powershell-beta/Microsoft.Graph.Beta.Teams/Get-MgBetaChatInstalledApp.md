@@ -39,11 +39,11 @@ Get an app installed in a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -302,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgChatInstalledApp?view=graph-powershell-v1.0)
+

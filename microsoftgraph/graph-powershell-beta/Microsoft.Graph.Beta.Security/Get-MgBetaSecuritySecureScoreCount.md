@@ -19,18 +19,6 @@ Get-MgBetaSecuritySecureScoreCount [-Filter <String>] [-Search <String>] [<Commo
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecuritySecureScoreCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScoreCount?view=graph-powershell-v1.0)
+

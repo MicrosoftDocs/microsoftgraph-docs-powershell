@@ -27,18 +27,6 @@ Remove-MgGroupDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-
 ## DESCRIPTION
 Delete navigation property itemActivityStats for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+

@@ -39,11 +39,11 @@ Get transitiveMemberOf from contacts
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaContactTransitiveMemberOf -OrgContactId $orgContactId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -321,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContactTransitiveMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactTransitiveMemberOf?view=graph-powershell-v1.0)
+

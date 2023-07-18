@@ -46,7 +46,6 @@ Update the role of a conversationMember in a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -57,7 +56,8 @@ $params = @{
 
 Update-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -294,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamMember?view=graph-powershell-beta)
+

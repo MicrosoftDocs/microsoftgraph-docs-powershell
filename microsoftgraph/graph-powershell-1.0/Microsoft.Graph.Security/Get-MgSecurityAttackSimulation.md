@@ -44,11 +44,11 @@ Get attackSimulation from security
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulation
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityAttackSimulation?view=graph-powershell-beta)
+

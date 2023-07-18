@@ -49,22 +49,6 @@ Create a sharing link for a listItem.
 The **createLink** action creates a new sharing link if the specified link type doesn't already exist for the calling application.nIf a sharing link of the specified type already exists for the app, this action will return the existing sharing link.
 **listItem** resources inherit sharing permissions from the list the item resides in.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -381,3 +365,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupDriveListItemLink](/powershell/module/Microsoft.Graph.Groups/New-MgGroupDriveListItemLink?view=graph-powershell-v1.0)
+

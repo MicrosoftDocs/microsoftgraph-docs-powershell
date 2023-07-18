@@ -32,11 +32,11 @@ Unpublish a [contentType][] from a content type hub site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ContentTypeId
 The unique identifier of contentType
@@ -217,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Unpublish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteListContentType?view=graph-powershell-v1.0)
+

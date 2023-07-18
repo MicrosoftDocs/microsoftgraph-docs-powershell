@@ -20,18 +20,6 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview [-ExpandProperty <
 ## DESCRIPTION
 User experience analytics appHealth overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverview?view=graph-powershell-beta)
+

@@ -27,22 +27,6 @@ Get-MgBetaUserDriveItemListItemDriveItem -InputObject <IFilesIdentity> [-ExpandP
 ## DESCRIPTION
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -182,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemListItemDriveItem?view=graph-powershell-v1.0)
+

@@ -27,22 +27,6 @@ Reset-MgBetaIdentityGovernanceAccessReviewDecisionInstanceDecision -InputObject 
 ## DESCRIPTION
 Resets decisions of all accessReviewInstanceDecisionItem objects on an accessReviewInstance to `notReviewed`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -240,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgIdentityGovernanceAccessReviewDecisionInstanceDecision?view=graph-powershell-v1.0)
+

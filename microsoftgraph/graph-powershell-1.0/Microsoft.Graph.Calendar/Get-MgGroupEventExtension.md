@@ -43,11 +43,11 @@ The following table lists the three scenarios where you can get an open extensio
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
-```
 
 Get-MgGroupEventExtension -GroupId $groupId -EventId $eventId -ExtensionId $extensionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgGroupEventExtension?view=graph-powershell-beta)
+

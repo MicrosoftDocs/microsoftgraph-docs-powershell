@@ -27,22 +27,6 @@ Publish-MgBetaGroupSitePage -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf]
 ## DESCRIPTION
 Invoke action publish
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -218,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgGroupSitePage](/powershell/module/Microsoft.Graph.Groups/Publish-MgGroupSitePage?view=graph-powershell-v1.0)
+

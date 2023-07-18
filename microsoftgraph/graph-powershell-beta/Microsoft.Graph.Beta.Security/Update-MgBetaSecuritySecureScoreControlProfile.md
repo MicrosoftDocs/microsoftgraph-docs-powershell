@@ -56,7 +56,6 @@ Update an editable **secureScoreControlProfiles** property within any integrated
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = ""
@@ -72,10 +71,10 @@ $params = @{
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = ""
@@ -91,7 +90,8 @@ $params = @{
 
 Update-MgBetaSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActionType
 Control action type (Config, Review, Behavior).
@@ -643,3 +643,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
+

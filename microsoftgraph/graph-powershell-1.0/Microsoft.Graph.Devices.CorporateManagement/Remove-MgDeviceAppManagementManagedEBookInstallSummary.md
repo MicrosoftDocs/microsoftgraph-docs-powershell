@@ -27,18 +27,6 @@ Remove-MgDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCor
 ## DESCRIPTION
 Delete navigation property installSummary for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -189,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-beta)
+

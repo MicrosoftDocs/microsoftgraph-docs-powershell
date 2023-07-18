@@ -27,18 +27,6 @@ Sync-MgBetaDeviceManagementWindowsDriverUpdateProfileInventory -InputObject <IDe
 ## DESCRIPTION
 Sync the driver inventory of a WindowsDriverUpdateProfile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Sync-MgDeviceManagementWindowsDriverUpdateProfileInventory](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementWindowsDriverUpdateProfileInventory?view=graph-powershell-v1.0)
+

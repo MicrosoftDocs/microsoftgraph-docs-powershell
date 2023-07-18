@@ -39,18 +39,6 @@ Get-MgGroupSiteTermStoreSetParentGroupSetCount -InputObject <ISitesIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -219,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteTermStoreSetParentGroupSetCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetCount?view=graph-powershell-beta)
+

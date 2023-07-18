@@ -27,22 +27,6 @@ Remove-MgUserEventExtension -InputObject <ICalendarIdentity> [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property extensions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EventId
@@ -199,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgUserEventExtension?view=graph-powershell-beta)
+

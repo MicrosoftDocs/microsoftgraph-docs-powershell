@@ -27,18 +27,6 @@ Remove-MgBetaBusinessScenarioPlanner -InputObject <IBookingsIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property planner for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -175,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
+

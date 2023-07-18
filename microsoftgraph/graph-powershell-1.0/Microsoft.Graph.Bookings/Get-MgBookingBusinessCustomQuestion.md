@@ -39,11 +39,11 @@ Read the properties and relationships of a bookingCustomQuestion object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -271,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingBusinessCustomQuestion?view=graph-powershell-beta)
+

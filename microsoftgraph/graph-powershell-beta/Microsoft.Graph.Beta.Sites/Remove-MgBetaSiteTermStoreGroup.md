@@ -32,11 +32,11 @@ Delete a group object in a term [store].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -GroupId
 The unique identifier of group
@@ -217,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroup?view=graph-powershell-v1.0)
+

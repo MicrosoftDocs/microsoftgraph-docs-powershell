@@ -27,18 +27,6 @@ Get-MgBookingBusinessServiceCount -InputObject <IBookingsIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BookingBusinessId
@@ -131,3 +119,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessServiceCount](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingBusinessServiceCount?view=graph-powershell-beta)
+

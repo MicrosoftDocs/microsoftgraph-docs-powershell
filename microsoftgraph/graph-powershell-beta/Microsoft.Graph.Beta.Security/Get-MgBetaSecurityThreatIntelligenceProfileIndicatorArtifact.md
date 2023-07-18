@@ -27,18 +27,6 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact -InputObject <ISecu
 ## DESCRIPTION
 The artifact related to this indicator.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicatorArtifact?view=graph-powershell-v1.0)
+

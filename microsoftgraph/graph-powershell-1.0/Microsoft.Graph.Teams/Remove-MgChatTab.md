@@ -32,11 +32,11 @@ Remove (unpin) a tab from the specified chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatTab -ChatId $chatId -TeamsTabId $teamsTabId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ChatId
 The unique identifier of chat
@@ -198,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgChatTab?view=graph-powershell-beta)
+

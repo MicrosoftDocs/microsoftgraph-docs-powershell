@@ -27,22 +27,6 @@ Get-MgBetaDeviceCommandResponsepayload -InputObject <IIdentityDirectoryManagemen
 ## DESCRIPTION
 Get responsepayload from devices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CommandId
@@ -184,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceCommandResponsepayload](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceCommandResponsepayload?view=graph-powershell-v1.0)
+

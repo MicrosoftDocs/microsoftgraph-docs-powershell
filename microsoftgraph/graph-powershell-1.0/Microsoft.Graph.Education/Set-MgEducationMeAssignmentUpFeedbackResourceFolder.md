@@ -31,18 +31,6 @@ Create a SharePoint folder to upload feedback files for a given educationSubmiss
 Only teachers can perform this operation.
 The teacher determines the resources to upload in the feedback resources folder of a submission.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -139,3 +127,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaEducationMeAssignmentUpFeedbackResourceFolder](/powershell/module/Microsoft.Graph.Beta.Education/Set-MgEducationMeAssignmentUpFeedbackResourceFolder?view=graph-powershell-beta)
+

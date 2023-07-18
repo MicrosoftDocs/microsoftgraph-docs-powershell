@@ -39,18 +39,18 @@ Retrieve the metadata for a specific version of a DriveItem.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersion?view=graph-powershell-v1.0)
+

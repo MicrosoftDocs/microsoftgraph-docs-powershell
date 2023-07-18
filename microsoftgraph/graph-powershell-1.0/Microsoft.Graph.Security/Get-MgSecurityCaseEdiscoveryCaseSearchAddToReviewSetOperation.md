@@ -27,22 +27,6 @@ Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation -InputObject <ISec
 ## DESCRIPTION
 Adds the results of the eDiscovery search to the specified reviewSet.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -176,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
+

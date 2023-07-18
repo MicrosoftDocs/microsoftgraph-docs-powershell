@@ -27,18 +27,6 @@ Remove-MgBetaDriveRootChild -InputObject <IFilesIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Remove an item from a [bundle][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveRootChild](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootChild?view=graph-powershell-v1.0)
+

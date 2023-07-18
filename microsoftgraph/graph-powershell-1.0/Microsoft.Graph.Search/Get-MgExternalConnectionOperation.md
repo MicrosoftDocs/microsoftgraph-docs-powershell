@@ -39,11 +39,11 @@ Read the properties and relationships of a connectionOperation object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Get-MgExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionOperation?view=graph-powershell-beta)
+

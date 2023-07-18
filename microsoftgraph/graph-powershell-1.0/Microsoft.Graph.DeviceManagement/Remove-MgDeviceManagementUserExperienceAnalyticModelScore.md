@@ -27,18 +27,6 @@ Remove-MgDeviceManagementUserExperienceAnalyticModelScore -InputObject <IDeviceM
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsModelScores for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementUserExperienceAnalyticModelScore](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticModelScore?view=graph-powershell-beta)
+

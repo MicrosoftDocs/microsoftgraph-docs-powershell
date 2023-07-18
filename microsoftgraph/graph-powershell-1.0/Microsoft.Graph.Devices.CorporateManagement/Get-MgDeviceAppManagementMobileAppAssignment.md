@@ -34,18 +34,6 @@ Get-MgDeviceAppManagementMobileAppAssignment -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 The list of group assignments for this mobile app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -301,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAssignment?view=graph-powershell-beta)
+

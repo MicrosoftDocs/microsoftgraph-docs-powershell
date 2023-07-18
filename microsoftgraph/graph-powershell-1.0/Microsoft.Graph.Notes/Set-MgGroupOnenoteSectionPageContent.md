@@ -27,22 +27,6 @@ Set-MgGroupOnenoteSectionPageContent -InputObject <INotesIdentity> [-Data <Strea
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -201,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaGroupOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgGroupOnenoteSectionPageContent?view=graph-powershell-beta)
+

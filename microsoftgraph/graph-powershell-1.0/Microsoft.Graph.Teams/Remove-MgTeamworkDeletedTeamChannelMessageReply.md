@@ -28,18 +28,6 @@ Remove-MgTeamworkDeletedTeamChannelMessageReply -InputObject <ITeamsIdentity> [-
 ## DESCRIPTION
 Delete navigation property replies for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -232,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-beta)
+

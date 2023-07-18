@@ -28,22 +28,6 @@ Compare-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManageme
 ## DESCRIPTION
 Invoke function compare
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -232,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Compare-MgDeviceManagementTemplateMigratableTo](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Compare-MgDeviceManagementTemplateMigratableTo?view=graph-powershell-v1.0)
+

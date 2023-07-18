@@ -46,7 +46,6 @@ Update a user's email address associated with an email Authentication Method obj
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	emailAddress = "kim@contoso.com"
@@ -54,7 +53,8 @@ $params = @{
 
 Update-MgBetaUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -297,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-v1.0)
+

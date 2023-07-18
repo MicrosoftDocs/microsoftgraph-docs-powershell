@@ -43,18 +43,6 @@ Update-MgGroupSiteAnalyticItemActivityStatActivity -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Update the navigation property activities in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -6044,3 +6032,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupSiteAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgGroupSiteAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+

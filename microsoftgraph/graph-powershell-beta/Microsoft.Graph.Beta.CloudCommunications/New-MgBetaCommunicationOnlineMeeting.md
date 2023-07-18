@@ -51,18 +51,18 @@ Create new navigation property to sessions for communications
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -587,3 +587,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeeting?view=graph-powershell-v1.0)
+

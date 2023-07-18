@@ -29,18 +29,6 @@ Disable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIden
 Disable SMS sign-in for an existing `mobile` phone number registered to a user.
 The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -186,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
+

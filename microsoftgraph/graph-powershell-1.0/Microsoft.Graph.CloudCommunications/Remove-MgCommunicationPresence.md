@@ -27,22 +27,6 @@ Remove-MgCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property presences for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -171,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgCommunicationPresence?view=graph-powershell-beta)
+

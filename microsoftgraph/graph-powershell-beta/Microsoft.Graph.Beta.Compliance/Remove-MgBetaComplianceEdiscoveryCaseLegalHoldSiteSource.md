@@ -27,22 +27,6 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplian
 ## DESCRIPTION
 Delete navigation property siteSources for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -206,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+

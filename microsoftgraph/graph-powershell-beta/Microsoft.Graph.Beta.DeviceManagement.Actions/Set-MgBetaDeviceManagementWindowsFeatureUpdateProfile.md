@@ -43,18 +43,6 @@ Set-MgBetaDeviceManagementWindowsFeatureUpdateProfile -InputObject <IDeviceManag
 ## DESCRIPTION
 Invoke action assign
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -271,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementWindowsFeatureUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsFeatureUpdateProfile?view=graph-powershell-v1.0)
+

@@ -27,11 +27,11 @@ Make sure you do not specify the same user or group in the rejected senders and 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupRejectedSender -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -168,3 +168,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupRejectedSenderByRef?view=graph-powershell-beta)
+

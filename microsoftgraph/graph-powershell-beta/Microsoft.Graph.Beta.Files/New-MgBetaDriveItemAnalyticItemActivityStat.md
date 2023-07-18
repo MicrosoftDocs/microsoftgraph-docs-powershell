@@ -47,18 +47,6 @@ New-MgBetaDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -9816,3 +9804,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/New-MgDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+

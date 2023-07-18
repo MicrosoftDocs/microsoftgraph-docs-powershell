@@ -46,18 +46,6 @@ Update-MgDeviceManagementTermAndConditionAcceptanceStatus
 ## DESCRIPTION
 Update the navigation property acceptanceStatuses in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AcceptedDateTime
@@ -348,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+

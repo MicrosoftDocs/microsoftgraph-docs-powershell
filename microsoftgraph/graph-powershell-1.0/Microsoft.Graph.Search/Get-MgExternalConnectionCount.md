@@ -19,18 +19,6 @@ Get-MgExternalConnectionCount [-Filter <String>] [-Search <String>] [<CommonPara
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionCount?view=graph-powershell-beta)
+

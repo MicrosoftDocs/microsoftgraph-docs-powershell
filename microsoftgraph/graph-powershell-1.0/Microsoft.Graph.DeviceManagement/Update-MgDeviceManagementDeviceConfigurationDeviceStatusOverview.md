@@ -43,22 +43,6 @@ Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <I
 ## DESCRIPTION
 Update the navigation property deviceStatusOverview in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -362,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-beta)
+

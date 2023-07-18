@@ -27,22 +27,6 @@ Remove-MgSecurityCaseEdiscoveryCaseSetting -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property settings for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -192,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
+

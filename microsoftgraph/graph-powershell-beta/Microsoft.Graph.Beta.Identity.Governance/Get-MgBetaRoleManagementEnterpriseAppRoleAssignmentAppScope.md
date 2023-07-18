@@ -29,18 +29,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentAppScope -InputObject <IIdent
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -237,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEnterpriseAppRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentAppScope?view=graph-powershell-v1.0)
+

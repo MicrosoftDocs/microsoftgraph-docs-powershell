@@ -19,18 +19,6 @@ Get-MgDirectoryAdministrativeUnitCount [-Filter <String>] [-Search <String>] [<C
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryAdministrativeUnitCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitCount?view=graph-powershell-beta)
+

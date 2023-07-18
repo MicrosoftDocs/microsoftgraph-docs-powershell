@@ -62,18 +62,6 @@ Update-MgBetaRoleManagementEnterpriseApp -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Update the navigation property enterpriseApps in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1297,3 +1285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRoleManagementEnterpriseApp](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseApp?view=graph-powershell-v1.0)
+

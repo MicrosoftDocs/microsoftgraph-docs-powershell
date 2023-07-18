@@ -56,9 +56,10 @@ Update the properties of an internalDomainFederation object.
 ### EXAMPLE 1
 ```powershell
 Update-MgDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
-```
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -ActiveSignInUri
 URL of the endpoint used by active clients when authenticating with federated domains set up for single sign-on in Azure Active Directory (Azure AD).
@@ -459,3 +460,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-beta)
+

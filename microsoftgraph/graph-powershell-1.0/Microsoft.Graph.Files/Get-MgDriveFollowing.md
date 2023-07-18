@@ -41,11 +41,11 @@ Only in OneDrive for Business.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveFollowing -DriveId $driveId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -290,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveFollowing?view=graph-powershell-beta)
+

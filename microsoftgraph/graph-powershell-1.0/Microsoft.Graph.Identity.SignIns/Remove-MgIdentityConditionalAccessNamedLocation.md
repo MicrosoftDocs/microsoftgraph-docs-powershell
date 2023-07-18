@@ -32,11 +32,12 @@ Delete an ipNamedLocation object.
 ### EXAMPLE 1
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 Remove-MgIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -IfMatch
 ETag
@@ -207,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+

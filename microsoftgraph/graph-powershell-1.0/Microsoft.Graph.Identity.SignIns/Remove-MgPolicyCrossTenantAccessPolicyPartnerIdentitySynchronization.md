@@ -28,18 +28,6 @@ Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObjec
 ## DESCRIPTION
 Delete the user synchronization policy for a partner-specific configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CrossTenantAccessPolicyConfigurationPartnerTenantId
@@ -211,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+

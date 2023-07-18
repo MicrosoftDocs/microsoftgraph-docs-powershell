@@ -34,22 +34,6 @@ Get-MgBetaDriveListOperation -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The collection of long running operations for the list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -295,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListOperation?view=graph-powershell-v1.0)
+

@@ -19,22 +19,6 @@ Invoke-MgBetaHasDeviceManagementZebraFotaConnectorActiveDeployment [-WhatIf] [-C
 ## DESCRIPTION
 Invoke action hasActiveDeployments
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgHasDeviceManagementZebraFotaConnectorActiveDeployment?view=graph-powershell-v1.0)
+

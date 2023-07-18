@@ -36,11 +36,11 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Remove-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ConnectedOrganizationId
 The unique identifier of connectedOrganization
@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-v1.0)
+

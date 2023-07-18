@@ -53,22 +53,6 @@ New-MgGroupSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new [listItem][] in a [list][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14899,3 +14883,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteListItem?view=graph-powershell-beta)
+

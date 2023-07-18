@@ -27,22 +27,6 @@ Remove-MgBetaDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdminis
 ## DESCRIPTION
 Delete navigation property roleScopeTags for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementRoleScopeTag](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementRoleScopeTag?view=graph-powershell-v1.0)
+

@@ -36,11 +36,11 @@ You cannot delete an access package assignment request if it has any **accessPac
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageAssignmentRequestId
 The unique identifier of accessPackageAssignmentRequest
@@ -210,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+

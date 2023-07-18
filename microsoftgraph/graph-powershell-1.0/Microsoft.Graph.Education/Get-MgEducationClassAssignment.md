@@ -43,11 +43,11 @@ Students can only see assignments assigned to them; teachers and applications wi
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignment?view=graph-powershell-beta)
+

@@ -42,22 +42,6 @@ To include the **key** property in the response, use the `$select` OData query p
 Including the `$select` query parameter triggers an Azure AD audit of the operation and generates an audit log.
 For more information on audit logs for bitlocker recovery keys, see the KeyManagement category filter of Azure AD audit logs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -319,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaInformationProtectionBitlockerRecoveryKey](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgInformationProtectionBitlockerRecoveryKey?view=graph-powershell-beta)
+

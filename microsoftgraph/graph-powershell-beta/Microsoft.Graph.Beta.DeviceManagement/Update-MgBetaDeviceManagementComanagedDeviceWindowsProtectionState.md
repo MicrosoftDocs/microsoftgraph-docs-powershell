@@ -55,18 +55,6 @@ Update-MgBetaDeviceManagementComanagedDeviceWindowsProtectionState -InputObject 
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -715,3 +703,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementComanagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComanagedDeviceWindowsProtectionState?view=graph-powershell-v1.0)
+

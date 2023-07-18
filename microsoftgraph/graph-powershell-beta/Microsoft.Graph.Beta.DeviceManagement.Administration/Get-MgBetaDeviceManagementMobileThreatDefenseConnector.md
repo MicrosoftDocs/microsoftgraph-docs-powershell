@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementMobileThreatDefenseConnector -InputObject <IDeviceMana
 ## DESCRIPTION
 The list of Mobile threat Defense connectors configured by the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -312,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-v1.0)
+

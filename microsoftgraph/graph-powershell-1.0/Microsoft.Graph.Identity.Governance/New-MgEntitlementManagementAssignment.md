@@ -36,11 +36,11 @@ Create new navigation property to assignments for identityGovernance
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignment
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackage
 accessPackage
@@ -9211,3 +9211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+

@@ -59,18 +59,18 @@ For details, see the examples section.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -ExpandProperty "*"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
+

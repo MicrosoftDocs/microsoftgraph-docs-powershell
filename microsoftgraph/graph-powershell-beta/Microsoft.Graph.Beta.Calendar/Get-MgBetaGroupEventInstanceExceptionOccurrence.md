@@ -34,22 +34,6 @@ Get-MgBetaGroupEventInstanceExceptionOccurrence -InputObject <ICalendarIdentity>
 ## DESCRIPTION
 Get exceptionOccurrences from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -297,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupEventInstanceExceptionOccurrence](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrence?view=graph-powershell-v1.0)
+

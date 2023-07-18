@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtens
 ## DESCRIPTION
 A list of unsupported group policy extensions inside the Group Policy Object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -330,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension?view=graph-powershell-v1.0)
+

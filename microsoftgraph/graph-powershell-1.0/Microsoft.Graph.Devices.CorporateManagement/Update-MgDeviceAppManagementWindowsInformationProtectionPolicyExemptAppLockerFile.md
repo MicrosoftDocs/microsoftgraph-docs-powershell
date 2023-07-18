@@ -47,18 +47,6 @@ Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFil
 ## DESCRIPTION
 Update the navigation property exemptAppLockerFiles in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgDeviceAppManagementWindowsInformationProtectionPolicyExemptAppLockerFile?view=graph-powershell-beta)
+

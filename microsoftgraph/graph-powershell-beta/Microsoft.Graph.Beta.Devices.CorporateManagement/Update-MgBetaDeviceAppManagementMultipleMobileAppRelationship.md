@@ -45,18 +45,6 @@ Update-MgBetaDeviceAppManagementMultipleMobileAppRelationship
 ## DESCRIPTION
 Invoke action updateRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceAppManagementMultipleMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultipleMobileAppRelationship?view=graph-powershell-v1.0)
+

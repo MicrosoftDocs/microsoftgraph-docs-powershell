@@ -20,22 +20,6 @@ Remove-MgBetaDeviceManagementAndroidForWorkSetting [-IfMatch <String>] [-PassThr
 ## DESCRIPTION
 Delete navigation property androidForWorkSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Get-MgEntitlementManagementCatalogCustomWorkflowExtension -InputObject <IIdentit
 ## DESCRIPTION
 Get customWorkflowExtensions from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementCatalogCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementCatalogCustomWorkflowExtension?view=graph-powershell-beta)
+

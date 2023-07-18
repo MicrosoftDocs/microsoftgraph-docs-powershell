@@ -42,22 +42,6 @@ Represents the set of Microsoft 365 groups and security groups in Azure AD that 
 Returned only on $expand.
 For an example about how to get the assignments relationship, see Get cloudPcProvisioningPolicy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -335,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointProvisioningPolicyAssignment?view=graph-powershell-v1.0)
+

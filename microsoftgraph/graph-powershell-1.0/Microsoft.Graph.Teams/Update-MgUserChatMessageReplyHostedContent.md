@@ -43,22 +43,6 @@ Update-MgUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> -BodyPa
 ## DESCRIPTION
 Update the navigation property hostedContents in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -316,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgUserChatMessageReplyHostedContent?view=graph-powershell-beta)
+

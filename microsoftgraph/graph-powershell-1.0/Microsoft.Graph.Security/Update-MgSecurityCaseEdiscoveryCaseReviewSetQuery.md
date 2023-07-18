@@ -50,7 +50,6 @@ Update the properties of an ediscoveryReviewSetQuery object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "My Query 1 (update)"
@@ -59,7 +58,8 @@ $params = @{
 
 Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -380,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
+

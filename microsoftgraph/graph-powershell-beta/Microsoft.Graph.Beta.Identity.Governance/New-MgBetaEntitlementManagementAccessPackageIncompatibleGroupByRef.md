@@ -44,7 +44,6 @@ Add a group to the list of groups that have been marked as incompatible on an ac
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/groups/c0a74b4d-2694-4d5d-a964-1bee4ff0aaf2"
@@ -52,7 +51,8 @@ $params = @{
 
 New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageId
 The unique identifier of accessPackage
@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-v1.0)
+

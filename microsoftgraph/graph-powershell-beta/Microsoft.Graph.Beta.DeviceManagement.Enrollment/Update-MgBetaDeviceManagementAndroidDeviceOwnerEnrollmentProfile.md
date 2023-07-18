@@ -55,18 +55,6 @@ Update-MgBetaDeviceManagementAndroidDeviceOwnerEnrollmentProfile
 ## DESCRIPTION
 Update the navigation property androidDeviceOwnerEnrollmentProfiles in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountId
@@ -579,3 +567,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementAndroidDeviceOwnerEnrollmentProfile?view=graph-powershell-v1.0)
+

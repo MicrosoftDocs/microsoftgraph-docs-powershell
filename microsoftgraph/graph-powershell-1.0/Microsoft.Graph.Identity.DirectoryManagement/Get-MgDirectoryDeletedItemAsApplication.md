@@ -34,18 +34,6 @@ Get-MgDirectoryDeletedItemAsApplication -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -275,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryDeletedItemAsApplication](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemAsApplication?view=graph-powershell-beta)
+

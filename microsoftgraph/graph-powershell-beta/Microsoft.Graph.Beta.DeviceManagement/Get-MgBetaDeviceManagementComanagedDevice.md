@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementComanagedDevice -InputObject <IDeviceManagementIdentit
 ## DESCRIPTION
 The list of co-managed devices report
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -396,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementComanagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDevice?view=graph-powershell-v1.0)
+

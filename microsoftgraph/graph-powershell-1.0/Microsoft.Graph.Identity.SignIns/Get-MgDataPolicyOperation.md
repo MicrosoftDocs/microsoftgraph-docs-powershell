@@ -39,11 +39,11 @@ Retrieve the properties of a **dataPolicyOperation** object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgDataPolicyOperation?view=graph-powershell-beta)
+

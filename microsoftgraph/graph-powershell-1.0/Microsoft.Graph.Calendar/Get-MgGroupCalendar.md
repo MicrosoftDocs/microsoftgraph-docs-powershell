@@ -27,22 +27,6 @@ Get-MgGroupCalendar -InputObject <ICalendarIdentity> [-Property <String[]>] [<Co
 The group's calendar.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -123,3 +107,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgGroupCalendar?view=graph-powershell-beta)
+

@@ -48,11 +48,11 @@ Create new navigation property to tasks for print
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -342,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintTaskDefinitionTask?view=graph-powershell-beta)
+

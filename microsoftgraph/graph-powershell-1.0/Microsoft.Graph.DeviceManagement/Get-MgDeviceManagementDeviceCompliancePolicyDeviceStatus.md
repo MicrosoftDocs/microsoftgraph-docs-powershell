@@ -34,18 +34,6 @@ Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDeviceMa
 ## DESCRIPTION
 List of DeviceComplianceDeviceStatus.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -320,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-beta)
+

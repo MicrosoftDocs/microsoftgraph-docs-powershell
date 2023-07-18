@@ -27,18 +27,6 @@ Get-MgBetaBusinessScenarioPlanner -InputObject <IBookingsIdentity> [-ExpandPrope
 ## DESCRIPTION
 Read the properties and relationships of a businessScenarioPlanner object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -144,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
+

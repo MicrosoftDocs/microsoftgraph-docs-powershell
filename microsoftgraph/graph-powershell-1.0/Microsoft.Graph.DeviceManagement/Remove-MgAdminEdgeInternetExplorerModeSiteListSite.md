@@ -27,18 +27,6 @@ Remove-MgAdminEdgeInternetExplorerModeSiteListSite -InputObject <IDeviceManageme
 ## DESCRIPTION
 Delete a browserSite from a browserSiteList.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BrowserSiteId
@@ -223,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+

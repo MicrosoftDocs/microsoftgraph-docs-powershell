@@ -20,22 +20,6 @@ Get-MgBetaDeviceManagementAndroidForWorkSetting [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 The singleton Android for Work settings entity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)
+

@@ -45,22 +45,6 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdent
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -348,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoList?view=graph-powershell-v1.0)
+

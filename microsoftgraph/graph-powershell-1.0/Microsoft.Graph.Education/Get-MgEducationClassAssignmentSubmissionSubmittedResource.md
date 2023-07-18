@@ -47,11 +47,11 @@ Note that teachers can leave notes in some resources.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+

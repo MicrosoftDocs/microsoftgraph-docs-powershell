@@ -27,22 +27,6 @@ Remove-MgBetaUserDriveItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItem?view=graph-powershell-v1.0)
+

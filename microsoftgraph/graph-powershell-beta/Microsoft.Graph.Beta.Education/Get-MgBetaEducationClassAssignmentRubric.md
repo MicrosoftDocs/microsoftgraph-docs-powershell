@@ -34,11 +34,11 @@ Only teachers, students, and applications with application permissions can perfo
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentRubric -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -151,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentRubric?view=graph-powershell-v1.0)
+

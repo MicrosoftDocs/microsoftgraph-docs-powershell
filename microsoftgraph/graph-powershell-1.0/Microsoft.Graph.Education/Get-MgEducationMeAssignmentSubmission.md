@@ -50,18 +50,6 @@ The grade and feedback from a teacher are part of the educationOutcome associate
 Only teachers or applications with application permissions can add or change grades and feedback.
 Students will not see the grade or feedback until the **assignment** has been released.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -293,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-beta)
+

@@ -36,11 +36,11 @@ Existing access tokens will continue to be valid for their lifetime, but new acc
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -230,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
+

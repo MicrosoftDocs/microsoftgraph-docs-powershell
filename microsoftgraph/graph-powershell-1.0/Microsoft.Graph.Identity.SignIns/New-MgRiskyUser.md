@@ -33,11 +33,11 @@ Create new navigation property to riskyUsers for identityProtection
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgRiskyUser
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -323,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-beta)
+

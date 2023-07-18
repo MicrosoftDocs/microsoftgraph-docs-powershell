@@ -34,18 +34,6 @@ Get-MgBetaVirtualEventWebinarSession -InputObject <IBookingsIdentity> [-ExpandPr
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventSession object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -287,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgVirtualEventWebinarSession](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSession?view=graph-powershell-v1.0)
+

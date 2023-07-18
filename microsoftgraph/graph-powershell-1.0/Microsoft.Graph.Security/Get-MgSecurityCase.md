@@ -19,22 +19,6 @@ Get-MgSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonP
 ## DESCRIPTION
 Get cases from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCase?view=graph-powershell-beta)
+

@@ -35,18 +35,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentApprovalStep -InputObject <II
 ## DESCRIPTION
 Retrieve the properties of an approvalStep object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -379,3 +367,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEnterpriseAppRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
+

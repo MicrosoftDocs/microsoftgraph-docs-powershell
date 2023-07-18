@@ -20,22 +20,6 @@ Get-MgBetaDeviceManagementVirtualEndpoint [-ExpandProperty <String[]>] [-Propert
 ## DESCRIPTION
 Get virtualEndpoint from deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpoint](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpoint?view=graph-powershell-v1.0)
+

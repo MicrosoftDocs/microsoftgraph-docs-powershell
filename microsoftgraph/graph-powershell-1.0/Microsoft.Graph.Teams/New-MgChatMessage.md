@@ -64,7 +64,6 @@ This API can't create a new chat; you must use the list chats method to retrieve
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -74,7 +73,8 @@ $params = @{
 
 New-MgChatMessage -ChatId $chatId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -886,3 +886,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgChatMessage?view=graph-powershell-beta)
+

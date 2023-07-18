@@ -44,7 +44,6 @@ Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/2441b489-4f12-4882-b039-8f6006bd66da"
@@ -52,7 +51,8 @@ $params = @{
 
 New-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-beta)
+

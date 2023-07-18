@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationAssignment
 ## DESCRIPTION
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -336,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationAssignment?view=graph-powershell-v1.0)
+

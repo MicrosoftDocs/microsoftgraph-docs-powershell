@@ -27,22 +27,6 @@ Set-MgBetaGroupOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Stre
 ## DESCRIPTION
 Update content for the navigation property resources in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -186,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgGroupOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgGroupOnenoteResourceContent?view=graph-powershell-v1.0)
+

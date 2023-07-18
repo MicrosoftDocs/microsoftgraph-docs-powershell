@@ -40,7 +40,6 @@ Create a new team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -50,10 +49,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -72,10 +71,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -157,10 +156,10 @@ Use this channel to make important team, product, and service announcements."
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -169,10 +168,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -206,10 +205,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 6
+```
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
@@ -219,10 +218,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 7
+```
+### Example 7
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
@@ -257,10 +256,10 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-### EXAMPLE 8
+```
+### Example 8
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -279,7 +278,8 @@ $params = @{
 
 New-MgTeam -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -18124,3 +18124,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeam?view=graph-powershell-beta)
+

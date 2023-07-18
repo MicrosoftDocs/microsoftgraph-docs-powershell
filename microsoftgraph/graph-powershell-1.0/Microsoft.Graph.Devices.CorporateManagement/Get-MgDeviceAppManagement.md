@@ -19,18 +19,6 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<
 ## DESCRIPTION
 Read properties and relationships of the deviceAppManagement object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -79,3 +67,4 @@ Get-DeviceAppMgt
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagement?view=graph-powershell-beta)
+

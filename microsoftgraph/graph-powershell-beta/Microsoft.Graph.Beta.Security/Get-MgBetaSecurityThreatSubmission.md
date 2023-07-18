@@ -19,22 +19,6 @@ Get-MgBetaSecurityThreatSubmission [-ExpandProperty <String[]>] [-Property <Stri
 ## DESCRIPTION
 A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmission?view=graph-powershell-v1.0)
+

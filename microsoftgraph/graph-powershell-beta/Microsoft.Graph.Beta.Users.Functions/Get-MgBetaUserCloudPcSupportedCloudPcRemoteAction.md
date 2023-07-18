@@ -27,18 +27,6 @@ Get-MgBetaUserCloudPcSupportedCloudPcRemoteAction -InputObject <IUsersFunctionsI
 ## DESCRIPTION
 Invoke function getSupportedCloudPcRemoteActions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -221,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCloudPcSupportedCloudPcRemoteAction](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcSupportedCloudPcRemoteAction?view=graph-powershell-v1.0)
+

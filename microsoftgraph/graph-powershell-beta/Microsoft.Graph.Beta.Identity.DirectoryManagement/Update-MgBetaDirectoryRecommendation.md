@@ -51,22 +51,6 @@ Update-MgBetaDirectoryRecommendation -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Update the navigation property recommendations in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionSteps
@@ -577,3 +561,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRecommendation?view=graph-powershell-v1.0)
+

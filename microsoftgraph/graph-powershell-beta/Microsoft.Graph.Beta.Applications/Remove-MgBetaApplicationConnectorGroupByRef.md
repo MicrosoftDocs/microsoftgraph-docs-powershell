@@ -27,22 +27,6 @@ Remove-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Delete ref of navigation property connectorGroup for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -187,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
+

@@ -27,22 +27,6 @@ Remove-MgBetaGroupTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <
 ## DESCRIPTION
 Delete a timeCard instance in a schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -212,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamScheduleTimeCard?view=graph-powershell-v1.0)
+

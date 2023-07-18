@@ -38,11 +38,11 @@ Create new navigation property to secureScoreControlProfiles for security
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecuritySecureScoreControlProfile
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActionType
 Control action type (Config, Review, Behavior).
@@ -488,3 +488,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+

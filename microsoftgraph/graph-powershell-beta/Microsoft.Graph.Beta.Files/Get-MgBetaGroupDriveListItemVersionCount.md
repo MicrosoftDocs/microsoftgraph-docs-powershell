@@ -27,18 +27,6 @@ Get-MgBetaGroupDriveListItemVersionCount -InputObject <IFilesIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -178,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveListItemVersionCount](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListItemVersionCount?view=graph-powershell-v1.0)
+

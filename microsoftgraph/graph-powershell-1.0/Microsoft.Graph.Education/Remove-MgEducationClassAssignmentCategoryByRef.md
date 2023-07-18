@@ -35,11 +35,11 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationCategoryId $educationCategoryId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -210,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
+

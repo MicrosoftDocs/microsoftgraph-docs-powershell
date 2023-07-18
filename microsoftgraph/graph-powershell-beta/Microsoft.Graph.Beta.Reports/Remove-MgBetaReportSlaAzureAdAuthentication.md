@@ -20,18 +20,6 @@ Remove-MgBetaReportSlaAzureAdAuthentication [-IfMatch <String>] [-PassThru] [-Wh
 ## DESCRIPTION
 Delete navigation property azureADAuthentication for reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
+

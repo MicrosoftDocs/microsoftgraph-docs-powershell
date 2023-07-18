@@ -26,22 +26,6 @@ Clear-MgBetaUserAndBlockManagedApp -InputObject <IUsersActionsIdentity> [-PassTh
 ## DESCRIPTION
 Blocks the managed app user from app check-in.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -183,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgUserAndBlockManagedApp](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserAndBlockManagedApp?view=graph-powershell-v1.0)
+

@@ -36,22 +36,6 @@ Get-MgBetaShareItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -297,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareItem?view=graph-powershell-v1.0)
+

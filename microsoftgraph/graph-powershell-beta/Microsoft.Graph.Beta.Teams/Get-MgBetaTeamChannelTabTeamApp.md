@@ -27,22 +27,6 @@ Get-MgBetaTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 The application that is linked to the tab.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -196,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTabTeamApp?view=graph-powershell-v1.0)
+

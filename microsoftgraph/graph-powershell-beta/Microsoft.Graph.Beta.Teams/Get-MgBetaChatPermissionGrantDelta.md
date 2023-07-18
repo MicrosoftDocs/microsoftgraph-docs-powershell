@@ -28,18 +28,6 @@ Get-MgBetaChatPermissionGrantDelta -InputObject <ITeamsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -284,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatPermissionGrantDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantDelta?view=graph-powershell-v1.0)
+

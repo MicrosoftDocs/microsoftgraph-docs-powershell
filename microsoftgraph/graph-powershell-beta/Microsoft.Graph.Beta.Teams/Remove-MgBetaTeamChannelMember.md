@@ -29,22 +29,6 @@ Remove-MgBetaTeamChannelMember -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete a conversationMember from a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannelMember?view=graph-powershell-v1.0)
+

@@ -20,18 +20,6 @@ Get-MgServicePrincipalCount [-Filter <String>] [-Search <String>] -ConsistencyLe
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -94,3 +82,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalCount?view=graph-powershell-beta)
+

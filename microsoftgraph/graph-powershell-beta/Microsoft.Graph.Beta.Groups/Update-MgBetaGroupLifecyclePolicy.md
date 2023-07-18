@@ -72,7 +72,6 @@ Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource typ
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	groupLifetimeInDays = 180
@@ -82,7 +81,8 @@ $params = @{
 
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -330,3 +330,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+

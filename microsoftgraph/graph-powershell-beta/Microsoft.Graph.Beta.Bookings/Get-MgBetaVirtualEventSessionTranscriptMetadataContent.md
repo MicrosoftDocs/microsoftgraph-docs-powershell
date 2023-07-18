@@ -29,18 +29,6 @@ Get-MgBetaVirtualEventSessionTranscriptMetadataContent -InputObject <IBookingsId
 A field that represents the time-aligned metadata of the utterances in the transcript.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -176,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgVirtualEventSessionTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionTranscriptMetadataContent?view=graph-powershell-v1.0)
+

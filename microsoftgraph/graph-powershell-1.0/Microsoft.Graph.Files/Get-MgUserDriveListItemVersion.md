@@ -34,22 +34,6 @@ Get-MgUserDriveListItemVersion -InputObject <IFilesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -325,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgUserDriveListItemVersion?view=graph-powershell-beta)
+

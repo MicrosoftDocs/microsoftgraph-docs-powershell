@@ -46,7 +46,6 @@ Create a new bookingCustomQuestion object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
@@ -58,7 +57,8 @@ $params = @{
 
 New-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessCustomQuestion?view=graph-powershell-beta)
+

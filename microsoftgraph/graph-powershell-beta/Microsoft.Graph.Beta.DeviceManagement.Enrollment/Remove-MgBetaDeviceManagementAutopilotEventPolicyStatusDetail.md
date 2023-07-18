@@ -29,18 +29,6 @@ Remove-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail
 ## DESCRIPTION
 Delete navigation property policyStatusDetails for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementAutopilotEventId
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementAutopilotEventPolicyStatusDetail?view=graph-powershell-v1.0)
+

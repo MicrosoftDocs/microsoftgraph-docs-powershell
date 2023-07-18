@@ -41,11 +41,11 @@ The **startDateTime** and **endDateTime** properties are always returned in UTC.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -273,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingBusinessAppointment?view=graph-powershell-beta)
+

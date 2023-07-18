@@ -42,22 +42,6 @@ Update-MgBetaFinancialCompanySaleCreditMemoCustomerPaymentMethod -InputObject <I
 ## DESCRIPTION
 Update the navigation property paymentMethod in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgFinancialCompanySaleCreditMemoCustomerPaymentMethod](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleCreditMemoCustomerPaymentMethod?view=graph-powershell-v1.0)
+

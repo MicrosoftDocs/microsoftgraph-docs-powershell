@@ -44,22 +44,6 @@ For example, contoso.com requires verification.
 If a root domain is verified, subdomains of the root domain are automatically verified.
 For example, subdomain.contoso.com is automatically be verified if contoso.com has been verified.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -541,3 +525,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDomain?view=graph-powershell-v1.0)
+

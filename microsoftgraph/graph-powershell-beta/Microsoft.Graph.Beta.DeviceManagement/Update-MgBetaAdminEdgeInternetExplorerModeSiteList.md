@@ -47,18 +47,6 @@ Update-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManageme
 ## DESCRIPTION
 Update the properties of a browserSiteList object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -626,3 +614,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-v1.0)
+

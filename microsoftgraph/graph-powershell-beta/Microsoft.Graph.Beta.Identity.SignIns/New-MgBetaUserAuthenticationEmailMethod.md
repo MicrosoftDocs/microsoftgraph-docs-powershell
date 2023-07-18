@@ -49,7 +49,6 @@ A user may only have one email authentication method.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	emailAddress = "kim@contoso.com"
@@ -57,7 +56,8 @@ $params = @{
 
 New-MgBetaUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -285,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationEmailMethod?view=graph-powershell-v1.0)
+

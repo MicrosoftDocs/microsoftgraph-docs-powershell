@@ -32,11 +32,11 @@ Get the default channel, **General**, of a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamPrimaryChannel -TeamId $teamId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -159,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannel?view=graph-powershell-v1.0)
+

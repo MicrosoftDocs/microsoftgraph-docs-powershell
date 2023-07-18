@@ -29,18 +29,6 @@ Remove-MgApplicationAppManagementPolicyByRef -InputObject <IApplicationsIdentity
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
+

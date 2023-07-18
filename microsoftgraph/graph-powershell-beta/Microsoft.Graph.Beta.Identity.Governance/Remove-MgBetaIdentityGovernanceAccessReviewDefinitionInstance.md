@@ -28,22 +28,6 @@ Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property instances for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -271,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+

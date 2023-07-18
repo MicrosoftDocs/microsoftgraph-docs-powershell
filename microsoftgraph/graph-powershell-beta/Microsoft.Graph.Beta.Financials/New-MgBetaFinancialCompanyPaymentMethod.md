@@ -41,22 +41,6 @@ New-MgBetaFinancialCompanyPaymentMethod -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Create new navigation property to paymentMethods for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgFinancialCompanyPaymentMethod](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyPaymentMethod?view=graph-powershell-v1.0)
+

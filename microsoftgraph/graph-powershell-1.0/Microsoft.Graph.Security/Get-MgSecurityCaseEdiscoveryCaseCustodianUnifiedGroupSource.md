@@ -41,11 +41,11 @@ Data source entity for groups associated with the custodian.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
+

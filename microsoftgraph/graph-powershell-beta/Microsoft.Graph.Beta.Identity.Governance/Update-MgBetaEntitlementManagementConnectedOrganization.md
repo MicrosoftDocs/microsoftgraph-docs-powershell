@@ -52,7 +52,6 @@ Update a connectedOrganization object to change one or more of its properties.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	displayName = "Connected organization new name"
@@ -62,7 +61,8 @@ $params = @{
 
 Update-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -482,3 +482,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
+

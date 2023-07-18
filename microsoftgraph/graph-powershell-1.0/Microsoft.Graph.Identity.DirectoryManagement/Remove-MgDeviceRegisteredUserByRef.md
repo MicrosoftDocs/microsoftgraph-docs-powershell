@@ -27,18 +27,6 @@ Remove-MgDeviceRegisteredUserByRef -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Remove a user as a registered user of the device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -206,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgDeviceRegisteredUserByRef?view=graph-powershell-beta)
+

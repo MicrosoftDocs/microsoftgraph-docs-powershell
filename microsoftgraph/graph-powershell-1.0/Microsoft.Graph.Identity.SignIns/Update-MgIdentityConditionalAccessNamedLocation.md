@@ -46,23 +46,24 @@ Update the properties of a countryNamedLocation object.
 ### EXAMPLE 1
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 $params = @{
 "@odata.type" = "#microsoft.graph.countryNamedLocation"
 DisplayName = "Named location with unknown countries and regions"
 CountriesAndRegions = @(
-    "US"
-    "XK"
-    "ID"
-    "CA"
+"US"
+"XK"
+"ID"
+"CA"
 )
 IncludeUnknownCountriesAndRegions = $true
 }
 
 Update-MgIdentityConditionalAccessNamedLocation -NamedLocationId '1f0fd623-bf8f-4003-9627-32a68c3cdcc1' -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -307,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+

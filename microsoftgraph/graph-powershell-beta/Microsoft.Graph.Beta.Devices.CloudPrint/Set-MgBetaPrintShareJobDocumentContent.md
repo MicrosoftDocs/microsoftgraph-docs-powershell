@@ -27,18 +27,6 @@ Set-MgBetaPrintShareJobDocumentContent -InputObject <IDevicesCloudPrintIdentity>
 ## DESCRIPTION
 Update media content for the navigation property documents in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -216,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Set-MgPrintShareJobDocumentContent?view=graph-powershell-v1.0)
+

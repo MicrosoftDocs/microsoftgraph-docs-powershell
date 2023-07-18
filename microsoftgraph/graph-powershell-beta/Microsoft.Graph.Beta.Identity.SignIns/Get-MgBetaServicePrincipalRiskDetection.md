@@ -39,11 +39,11 @@ Read the properties and relationships of a servicePrincipalRiskDetection object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaServicePrincipalRiskDetection -ServicePrincipalRiskDetectionId $servicePrincipalRiskDetectionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -323,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgServicePrincipalRiskDetection?view=graph-powershell-v1.0)
+

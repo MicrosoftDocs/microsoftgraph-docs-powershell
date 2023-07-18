@@ -32,11 +32,11 @@ Remove an ediscoveryReviewTag object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Remove-MgBetaSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewTagId $ediscoveryReviewTagId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase
@@ -237,3 +237,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-v1.0)
+

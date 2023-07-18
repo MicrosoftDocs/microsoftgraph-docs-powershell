@@ -34,22 +34,6 @@ Get-MgBetaFinancialCompanyCountryRegion -InputObject <IFinancialsIdentity> [-Exp
 ## DESCRIPTION
 Get countriesRegions from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -307,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanyCountryRegion](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyCountryRegion?view=graph-powershell-v1.0)
+

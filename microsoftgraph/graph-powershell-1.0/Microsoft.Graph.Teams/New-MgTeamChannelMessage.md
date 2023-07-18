@@ -62,7 +62,6 @@ Send a new chatMessage in the specified channel.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -72,10 +71,10 @@ $params = @{
 
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -99,10 +98,10 @@ $params = @{
 
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	subject = $null
@@ -139,10 +138,10 @@ $params = @{
 
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -162,10 +161,10 @@ $params = @{
 
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	subject = $null
@@ -281,7 +280,6 @@ New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $p
 ### -------------------------- EXAMPLE 6 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -308,7 +306,6 @@ New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $p
 ### -------------------------- EXAMPLE 7 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -339,7 +336,6 @@ New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $p
 ### -------------------------- EXAMPLE 8 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	subject = $null
@@ -380,7 +376,6 @@ New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $p
 ### -------------------------- EXAMPLE 9 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	subject = "Announcement Subheading"
@@ -414,7 +409,8 @@ $params = @{
 
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1230,7 +1226,8 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannelMessage?view=graph-powershell-beta)
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1751,3 +1748,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannelMessage?view=graph-powershell-beta)
+

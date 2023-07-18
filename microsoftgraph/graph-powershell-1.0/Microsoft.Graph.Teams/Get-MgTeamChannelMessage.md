@@ -51,18 +51,18 @@ Retrieve a single message or a message reply in a channel or a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -359,3 +359,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamChannelMessage?view=graph-powershell-beta)
+

@@ -27,18 +27,6 @@ Send-MgBetaFinancialCompanySalesQuote -InputObject <IFinancialsIdentity> [-PassT
 ## DESCRIPTION
 Invoke action send
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgFinancialCompanySalesQuote](/powershell/module/Microsoft.Graph.Financials/Send-MgFinancialCompanySalesQuote?view=graph-powershell-v1.0)
+

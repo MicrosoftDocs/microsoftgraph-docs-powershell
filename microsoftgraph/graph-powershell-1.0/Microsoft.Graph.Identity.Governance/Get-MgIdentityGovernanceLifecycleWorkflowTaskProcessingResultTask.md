@@ -28,18 +28,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask -InputObject <
 ## DESCRIPTION
 The related workflow task
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskProcessingResultTask?view=graph-powershell-beta)
+

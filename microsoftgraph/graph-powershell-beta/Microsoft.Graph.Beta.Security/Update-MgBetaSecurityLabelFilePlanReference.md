@@ -41,18 +41,6 @@ Update-MgBetaSecurityLabelFilePlanReference -InputObject <ISecurityIdentity> -Bo
 ## DESCRIPTION
 Update the navigation property filePlanReferences in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -311,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelFilePlanReference?view=graph-powershell-v1.0)
+

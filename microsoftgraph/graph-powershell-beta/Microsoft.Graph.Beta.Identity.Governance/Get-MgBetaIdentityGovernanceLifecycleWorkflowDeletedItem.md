@@ -20,22 +20,6 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem [-ExpandProperty <Strin
 ## DESCRIPTION
 Deleted workflows in your lifecycle workflows instance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem?view=graph-powershell-v1.0)
+

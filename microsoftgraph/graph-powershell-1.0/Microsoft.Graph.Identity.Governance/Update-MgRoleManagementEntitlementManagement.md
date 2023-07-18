@@ -36,18 +36,6 @@ Update-MgRoleManagementEntitlementManagement -BodyParameter <IMicrosoftGraphRbac
 ## DESCRIPTION
 Update the navigation property entitlementManagement in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -997,3 +985,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-beta)
+

@@ -65,11 +65,11 @@ Update a [site][], [list][] or [content type][contentType] [column][columnDefini
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1174,3 +1174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentTypeColumn?view=graph-powershell-v1.0)
+

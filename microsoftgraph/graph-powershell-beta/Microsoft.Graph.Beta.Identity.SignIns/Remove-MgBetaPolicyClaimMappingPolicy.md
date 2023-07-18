@@ -32,11 +32,11 @@ Delete a claimsMappingPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ClaimsMappingPolicyId
 The unique identifier of claimsMappingPolicy
@@ -226,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyClaimMappingPolicy?view=graph-powershell-v1.0)
+

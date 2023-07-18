@@ -20,18 +20,6 @@ Get-MgSecurityThreatIntelligencePassiveDnsRecordCount [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecordCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecordCount?view=graph-powershell-beta)
+

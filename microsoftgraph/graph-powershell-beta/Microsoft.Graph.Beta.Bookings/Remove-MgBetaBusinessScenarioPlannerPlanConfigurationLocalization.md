@@ -28,18 +28,6 @@ Remove-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <
 ## DESCRIPTION
 Delete a plannerPlanConfigurationLocalization object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBusinessScenarioPlannerPlanConfigurationLocalization](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlannerPlanConfigurationLocalization?view=graph-powershell-v1.0)
+

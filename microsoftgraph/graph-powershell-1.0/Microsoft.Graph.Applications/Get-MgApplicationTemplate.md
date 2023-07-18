@@ -39,11 +39,11 @@ Retrieve the properties of an applicationTemplate object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -269,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationTemplate?view=graph-powershell-beta)
+

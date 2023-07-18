@@ -47,22 +47,6 @@ New-MgUserDriveRootSubscription -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to subscriptions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -509,3 +493,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/New-MgUserDriveRootSubscription?view=graph-powershell-beta)
+

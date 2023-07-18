@@ -44,9 +44,8 @@ The **hasMembersWithLicenseErrors** and **isArchived** properties are an excepti
 ### EXAMPLE 1
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup | 
-  Format-List Id, DisplayName, Description, GroupTypes
-```
+Get-MgGroup |
+Format-List Id, DisplayName, Description, GroupTypes
 
 Id          : 0a1c8435-40a3-4a72-8586-e916c12b613a
 DisplayName : Marketing
@@ -58,23 +57,23 @@ DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
-Get-MgGroup -Filter "DisplayName eq 'Business Development'" | 
-  Format-List Id, DisplayName, Description, GroupTypes
-```
+Get-MgGroup -Filter "DisplayName eq 'Business Development'" |
+Format-List Id, DisplayName, Description, GroupTypes
 
 Id          : a8fbb1b5-b994-4835-9183-c7421d149132
 DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount
-```
 
 Id                                   DisplayName          Description                                                            GroupTypes          AccessType
 --                                   -----------          -----------                                                            ----------          ----------
@@ -86,13 +85,13 @@ Id                                   DisplayName          Description           
 {Unified}
 300a5486-9c58-422f-97a0-d2453977bcec Marketing resources  Marketing resources                                                    {}
 4d5f57a1-85e0-41dd-8282-ff995ad5e1c3 Business Development Welcome to the BizDev team.
-                                          {Unified}
+{Unified}
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
-```
 
 Id                                   DisplayName         Description                                                            GroupTypes AccessType
 --                                   -----------         -----------                                                            ---------- ----------
@@ -101,11 +100,11 @@ Id                                   DisplayName         Description            
 300a5486-9c58-422f-97a0-d2453977bcec Marketing resources Marketing resources                                                    {}
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName
-```
 
 Id                                   DisplayName   Description                                           GroupTypes          AccessType
 --                                   -----------   -----------                                           ----------          ----------
@@ -113,7 +112,9 @@ Id                                   DisplayName   Description                  
 f07a8d78-f18c-4c02-b339-9ebace025122 All Employees                                                       {}
 bbfa9226-a965-47e1-9db2-bcfcb2c202e6 All Users
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -All
 List all pages.
@@ -370,3 +371,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroup?view=graph-powershell-beta)
+

@@ -28,18 +28,6 @@ Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentApproval
 ## DESCRIPTION
 Delete navigation property roleAssignmentApprovals for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApprovalId
@@ -252,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEntitlementManagementRoleAssignmentApproval?view=graph-powershell-v1.0)
+

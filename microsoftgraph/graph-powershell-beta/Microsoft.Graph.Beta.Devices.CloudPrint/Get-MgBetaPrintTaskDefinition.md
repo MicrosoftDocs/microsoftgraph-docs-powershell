@@ -53,11 +53,11 @@ For details about how to use this API to add pull printing support to Universal 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -291,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinition?view=graph-powershell-v1.0)
+

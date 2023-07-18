@@ -36,11 +36,11 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 New-MgAppCatalogTeamApp -Requiresreview true
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -263,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-beta)
+

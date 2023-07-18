@@ -27,18 +27,6 @@ Get-MgUserDirectReportCount -InputObject <IUsersIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -153,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserDirectReportCount](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserDirectReportCount?view=graph-powershell-beta)
+

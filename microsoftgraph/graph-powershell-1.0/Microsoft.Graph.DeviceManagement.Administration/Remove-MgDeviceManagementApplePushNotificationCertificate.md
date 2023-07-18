@@ -20,22 +20,6 @@ Remove-MgDeviceManagementApplePushNotificationCertificate [-IfMatch <String>] [-
 ## DESCRIPTION
 Delete navigation property applePushNotificationCertificate for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
+

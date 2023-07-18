@@ -35,18 +35,6 @@ Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator -InputObject <ISecurit
 ## DESCRIPTION
 Includes an assemblage of high-fidelity network indicators of compromise.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -338,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-v1.0)
+

@@ -27,22 +27,6 @@ Remove-MgBetaDeviceManagementCartToClassAssociation -InputObject <IDeviceManagem
 ## DESCRIPTION
 Delete navigation property cartToClassAssociations for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CartToClassAssociationId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementCartToClassAssociation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementCartToClassAssociation?view=graph-powershell-v1.0)
+

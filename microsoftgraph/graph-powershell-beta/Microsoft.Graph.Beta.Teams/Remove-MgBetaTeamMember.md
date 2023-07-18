@@ -32,11 +32,11 @@ Remove a conversationMember from a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ConversationMemberId
 The unique identifier of conversationMember
@@ -205,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamMember?view=graph-powershell-v1.0)
+

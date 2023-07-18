@@ -29,18 +29,6 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfil
 ## DESCRIPTION
 Deployment profile intended to be assigned to the Windows autopilot device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -151,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile?view=graph-powershell-v1.0)
+

@@ -29,18 +29,6 @@ Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignmen
 ## DESCRIPTION
 Delete navigation property groupAssignments for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -238,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementiOSLobAppProvisioningConfigurationGroupAssignment?view=graph-powershell-v1.0)
+

@@ -32,11 +32,11 @@ Delete a timeOffRequest object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamScheduleTimeOffRequest -TeamId $teamId -TimeOffRequestId $timeOffRequestId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -205,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffRequest?view=graph-powershell-v1.0)
+

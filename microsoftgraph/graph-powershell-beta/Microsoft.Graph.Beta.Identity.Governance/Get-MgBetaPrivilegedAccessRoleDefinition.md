@@ -34,22 +34,6 @@ Get-MgBetaPrivilegedAccessRoleDefinition -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 A collection of role defintions for the provider.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -367,3 +351,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleDefinition?view=graph-powershell-v1.0)
+

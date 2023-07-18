@@ -39,18 +39,18 @@ Retrieve the app installed in the specified team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -ExpandProperty "teamsAppDefinition"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -309,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamInstalledApp?view=graph-powershell-v1.0)
+

@@ -19,18 +19,6 @@ Get-MgBetaReportDailyPrintUsageCount [-Filter <String>] [-Search <String>] [<Com
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportDailyPrintUsageCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageCount?view=graph-powershell-v1.0)
+

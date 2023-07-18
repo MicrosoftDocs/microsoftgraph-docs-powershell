@@ -29,22 +29,6 @@ Remove-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> [-IfMatch
 Delete a message in the specified user's mailbox, or delete a relationship of the message.
 For example, you can delete a specific @-mention of the specified user in the message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessageRule?view=graph-powershell-v1.0)
+

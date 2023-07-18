@@ -41,22 +41,6 @@ Update-MgBetaChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Update the navigation property members in chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -301,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgChatMember](/powershell/module/Microsoft.Graph.Teams/Update-MgChatMember?view=graph-powershell-v1.0)
+

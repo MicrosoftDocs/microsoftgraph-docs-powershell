@@ -34,18 +34,18 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -154,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareDriveItem?view=graph-powershell-v1.0)
+

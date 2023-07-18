@@ -29,22 +29,6 @@ Get-MgBetaDriveListContentTypeCompatibleHubContentType -InputObject <IFilesIdent
 ## DESCRIPTION
 Invoke function getCompatibleHubContentTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentTypeCompatibleHubContentType?view=graph-powershell-v1.0)
+

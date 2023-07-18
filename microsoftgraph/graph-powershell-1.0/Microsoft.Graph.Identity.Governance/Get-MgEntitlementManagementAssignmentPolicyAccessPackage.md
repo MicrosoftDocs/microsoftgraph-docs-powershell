@@ -29,22 +29,6 @@ Get-MgEntitlementManagementAssignmentPolicyAccessPackage -InputObject <IIdentity
 Access package containing this policy.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -184,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAssignmentPolicyAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyAccessPackage?view=graph-powershell-beta)
+

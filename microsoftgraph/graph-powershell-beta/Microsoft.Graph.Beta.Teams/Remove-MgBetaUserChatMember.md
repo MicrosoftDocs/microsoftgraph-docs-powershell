@@ -27,22 +27,6 @@ Remove-MgBetaUserChatMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Remove a conversationMember from a chat.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -227,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserChatMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgUserChatMember?view=graph-powershell-v1.0)
+

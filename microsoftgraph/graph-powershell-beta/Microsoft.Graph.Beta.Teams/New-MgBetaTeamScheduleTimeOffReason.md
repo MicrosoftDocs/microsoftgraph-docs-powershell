@@ -46,7 +46,6 @@ Create a new timeOffReason.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "Vacation"
@@ -56,7 +55,8 @@ $params = @{
 
 New-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -341,3 +341,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+

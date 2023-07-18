@@ -53,11 +53,11 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaChatPinnedMessage -ChatId $chatId -PinnedChatMessageInfoId $pinnedChatMessageInfoId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -332,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatPinnedMessage?view=graph-powershell-v1.0)
+

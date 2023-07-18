@@ -27,22 +27,6 @@ Get-MgDeviceManagementEffectivePermission -InputObject <IDeviceManagementFunctio
 ## DESCRIPTION
 Retrieves the effective permissions of the currently authenticated user
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -179,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgDeviceManagementEffectivePermission?view=graph-powershell-beta)
+

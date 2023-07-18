@@ -34,18 +34,6 @@ Get-MgDeviceRegisteredUserAsEndpoint -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.endpoint
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceRegisteredUserAsEndpoint](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceRegisteredUserAsEndpoint?view=graph-powershell-beta)
+

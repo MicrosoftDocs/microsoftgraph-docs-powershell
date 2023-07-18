@@ -27,18 +27,6 @@ Get-MgBetaPolicyAppManagementPolicyApplyToCount -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppManagementPolicyId
@@ -198,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyAppManagementPolicyApplyToCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAppManagementPolicyApplyToCount?view=graph-powershell-v1.0)
+

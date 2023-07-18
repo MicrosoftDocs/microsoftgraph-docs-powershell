@@ -44,7 +44,6 @@ Update the properties on a **[listItem][]**.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	Color = "Fuchsia"
@@ -53,7 +52,8 @@ $params = @{
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -266,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemField?view=graph-powershell-v1.0)
+

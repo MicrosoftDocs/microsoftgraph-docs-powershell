@@ -19,18 +19,6 @@ Get-MgRoleManagementDirectory [-ExpandProperty <String[]>] [-Property <String[]>
 ## DESCRIPTION
 Get directory from roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectory?view=graph-powershell-beta)
+

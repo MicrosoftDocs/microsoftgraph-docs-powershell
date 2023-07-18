@@ -62,7 +62,6 @@ Update the properties of an educationClass object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	description = "History - World History 1"
@@ -71,7 +70,8 @@ $params = @{
 
 Update-MgEducationClass -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -15675,3 +15675,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClass?view=graph-powershell-beta)
+

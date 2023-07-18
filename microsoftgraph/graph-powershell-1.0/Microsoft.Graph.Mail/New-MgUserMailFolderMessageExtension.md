@@ -45,22 +45,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -232,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMailFolderMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgUserMailFolderMessageExtension?view=graph-powershell-beta)
+

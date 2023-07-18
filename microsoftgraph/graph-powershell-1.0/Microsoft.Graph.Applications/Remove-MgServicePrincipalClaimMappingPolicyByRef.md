@@ -32,11 +32,11 @@ Remove a claimsMappingPolicy from a servicePrincipal.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 Remove-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -ClaimsMappingPolicyId $claimsMappingPolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ClaimsMappingPolicyId
 The unique identifier of claimsMappingPolicy
@@ -202,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
+

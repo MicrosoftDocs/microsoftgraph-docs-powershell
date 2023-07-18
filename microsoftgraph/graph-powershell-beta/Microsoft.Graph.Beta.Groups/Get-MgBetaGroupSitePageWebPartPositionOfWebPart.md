@@ -27,18 +27,6 @@ Get-MgBetaGroupSitePageWebPartPositionOfWebPart -InputObject <IGroupsIdentity> [
 ## DESCRIPTION
 Invoke action getPositionOfWebPart
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -214,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSitePageWebPartPositionOfWebPart?view=graph-powershell-v1.0)
+

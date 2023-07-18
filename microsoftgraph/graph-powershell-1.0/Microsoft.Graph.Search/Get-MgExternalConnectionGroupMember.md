@@ -41,11 +41,11 @@ You can add Azure Active Directory users, Azure Active Directory groups, or an e
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Remove-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -IdentityId $identityId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -287,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroupMember?view=graph-powershell-beta)
+

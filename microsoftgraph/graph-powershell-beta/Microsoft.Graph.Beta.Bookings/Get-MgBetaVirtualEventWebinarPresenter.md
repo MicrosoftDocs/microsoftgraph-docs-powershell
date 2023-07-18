@@ -34,18 +34,6 @@ Get-MgBetaVirtualEventWebinarPresenter -InputObject <IBookingsIdentity> [-Expand
 ## DESCRIPTION
 Presenters' information of the virtual event.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -287,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarPresenter?view=graph-powershell-v1.0)
+

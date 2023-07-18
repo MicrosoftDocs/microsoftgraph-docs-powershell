@@ -27,22 +27,6 @@ Remove-MgGroupDriveRootListItemField -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property fields for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgGroupDriveRootListItemField?view=graph-powershell-beta)
+

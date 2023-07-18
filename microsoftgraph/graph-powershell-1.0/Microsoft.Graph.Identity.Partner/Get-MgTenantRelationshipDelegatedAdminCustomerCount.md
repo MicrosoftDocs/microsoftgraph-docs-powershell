@@ -19,18 +19,6 @@ Get-MgTenantRelationshipDelegatedAdminCustomerCount [-Filter <String>] [-Search 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaTenantRelationshipDelegatedAdminCustomerCount](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerCount?view=graph-powershell-beta)
+

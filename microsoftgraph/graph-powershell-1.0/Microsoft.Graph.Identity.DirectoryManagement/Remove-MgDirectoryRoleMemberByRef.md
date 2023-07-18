@@ -38,11 +38,11 @@ For details, see Role template IDs.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryRoleMemberByRef -DirectoryRoleId $directoryRoleId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgDirectoryRoleMemberByRef?view=graph-powershell-beta)
+

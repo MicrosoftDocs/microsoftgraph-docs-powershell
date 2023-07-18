@@ -29,22 +29,6 @@ Remove-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 Delete navigation property appLogCollectionRequests for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AppLogCollectionRequestId
@@ -255,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+

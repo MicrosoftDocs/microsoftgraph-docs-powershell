@@ -19,22 +19,6 @@ Get-MgBetaSecurityLabel [-ExpandProperty <String[]>] [-Property <String[]>] [<Co
 ## DESCRIPTION
 Get labels from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecurityLabel](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabel?view=graph-powershell-v1.0)
+

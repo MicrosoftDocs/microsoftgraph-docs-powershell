@@ -28,18 +28,6 @@ New-MgBetaExternalIndustryDataYear -BodyParameter <IMicrosoftGraphIndustryDataYe
 ## DESCRIPTION
 Create a new yearTimePeriodDefinition object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -218,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgExternalIndustryDataYear](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataYear?view=graph-powershell-v1.0)
+

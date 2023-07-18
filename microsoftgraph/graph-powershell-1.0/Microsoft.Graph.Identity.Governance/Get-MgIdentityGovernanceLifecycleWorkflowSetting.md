@@ -20,18 +20,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowSetting [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Read the properties and relationships of a lifecycleManagementSettings object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowSetting?view=graph-powershell-beta)
+

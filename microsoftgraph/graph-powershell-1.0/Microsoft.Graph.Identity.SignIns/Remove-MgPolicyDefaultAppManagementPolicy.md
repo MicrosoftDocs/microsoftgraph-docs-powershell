@@ -20,18 +20,6 @@ Remove-MgPolicyDefaultAppManagementPolicy [-IfMatch <String>] [-PassThru] [-What
 ## DESCRIPTION
 Delete navigation property defaultAppManagementPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
+

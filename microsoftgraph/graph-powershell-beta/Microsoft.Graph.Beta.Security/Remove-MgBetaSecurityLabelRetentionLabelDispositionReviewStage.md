@@ -27,22 +27,6 @@ Remove-MgBetaSecurityLabelRetentionLabelDispositionReviewStage -InputObject <ISe
 ## DESCRIPTION
 Delete navigation property dispositionReviewStages for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DispositionReviewStageId
@@ -244,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-v1.0)
+

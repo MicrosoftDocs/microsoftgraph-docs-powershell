@@ -33,11 +33,11 @@ Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObje
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -257,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-v1.0)
+

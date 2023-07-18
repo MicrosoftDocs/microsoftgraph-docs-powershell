@@ -44,11 +44,11 @@ To retrieve the decisions on the instance, use List accessReviewInstanceDecision
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessReviewInstanceId
 The unique identifier of accessReviewInstance
@@ -365,3 +365,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+

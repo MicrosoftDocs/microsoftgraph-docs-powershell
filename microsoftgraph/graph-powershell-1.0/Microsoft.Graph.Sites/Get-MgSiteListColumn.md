@@ -39,11 +39,11 @@ The collection of field definitions for this list.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteListColumn -SiteId $siteId -ListId $listId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteListColumn?view=graph-powershell-beta)
+

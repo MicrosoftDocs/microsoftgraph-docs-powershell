@@ -40,7 +40,6 @@ This operation is used to assign a user to an access package, update the assignm
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminAdd"
@@ -53,10 +52,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "adminRemove"
@@ -67,10 +66,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	requestType = "userAdd"
@@ -81,10 +80,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -116,10 +115,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.accessPackageAssignmentRequest"
@@ -151,7 +150,8 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackage
 accessPackage
@@ -9432,3 +9432,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+

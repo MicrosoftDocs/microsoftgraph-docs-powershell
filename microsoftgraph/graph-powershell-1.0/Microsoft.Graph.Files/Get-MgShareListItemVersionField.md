@@ -39,22 +39,6 @@ Get-MgShareListItemVersionField -InputObject <IFilesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -194,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaShareListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListItemVersionField?view=graph-powershell-beta)
+

@@ -32,11 +32,11 @@ Delete a printer's task trigger to prevent related print events from triggering 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintPrinterTaskTrigger -PrinterId $printerId -PrintTaskTriggerId $printTaskTriggerId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -180,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterTaskTrigger?view=graph-powershell-v1.0)
+

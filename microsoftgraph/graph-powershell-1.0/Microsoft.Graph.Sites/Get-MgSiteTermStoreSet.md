@@ -58,11 +58,11 @@ Read the properties and relationships of a set object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteTermStoreSet -SiteId $siteId -SetId $setId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -336,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteTermStoreSet?view=graph-powershell-beta)
+

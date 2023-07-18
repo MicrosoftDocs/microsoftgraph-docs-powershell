@@ -47,22 +47,6 @@ New-MgBetaTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create an instance of a swapShiftsChangeRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -426,3 +410,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSwapShiftChangeRequest?view=graph-powershell-v1.0)
+

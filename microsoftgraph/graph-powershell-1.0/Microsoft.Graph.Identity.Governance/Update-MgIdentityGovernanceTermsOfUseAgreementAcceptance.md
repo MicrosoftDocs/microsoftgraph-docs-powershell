@@ -79,18 +79,6 @@ Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIdentity
 ## DESCRIPTION
 Update the navigation property agreementAcceptances in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -524,3 +512,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-beta)
+

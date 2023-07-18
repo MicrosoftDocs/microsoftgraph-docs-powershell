@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistrat
 ## DESCRIPTION
 Invoke function getUserIdsWithFlaggedAppRegistration
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -125,3 +113,4 @@ Get-BetaDeviceAppMgtManagedAppRegistrationUserIdGraphWPreFlaggedAppRegistration
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationUserIdWithFlaggedAppRegistration?view=graph-powershell-v1.0)
+

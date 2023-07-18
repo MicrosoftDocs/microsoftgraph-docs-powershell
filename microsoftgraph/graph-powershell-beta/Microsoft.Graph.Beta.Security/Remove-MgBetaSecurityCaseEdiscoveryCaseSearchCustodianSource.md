@@ -27,18 +27,6 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecu
 ## DESCRIPTION
 Remove a dataSource object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DataSourceId
@@ -255,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-v1.0)
+

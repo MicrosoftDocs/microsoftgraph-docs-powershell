@@ -60,22 +60,6 @@ New-MgBetaGroupSiteContentTypeColumn -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1181,3 +1165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentTypeColumn?view=graph-powershell-v1.0)
+

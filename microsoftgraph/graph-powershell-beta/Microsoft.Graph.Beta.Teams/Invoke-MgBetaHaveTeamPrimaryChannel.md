@@ -27,22 +27,6 @@ Invoke-MgBetaHaveTeamPrimaryChannel -InputObject <ITeamsIdentity> [-TenantId <St
 ## DESCRIPTION
 Invoke function doesUserHaveAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -181,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgHaveTeamPrimaryChannel?view=graph-powershell-v1.0)
+

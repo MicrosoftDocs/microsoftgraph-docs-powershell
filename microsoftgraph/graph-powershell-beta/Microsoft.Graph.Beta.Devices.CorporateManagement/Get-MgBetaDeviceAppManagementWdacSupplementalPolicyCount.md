@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicyCount [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ Get-BetaDeviceAppMgtWdacSupplementalPolicyCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWdacSupplementalPolicyCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWdacSupplementalPolicyCount?view=graph-powershell-v1.0)
+

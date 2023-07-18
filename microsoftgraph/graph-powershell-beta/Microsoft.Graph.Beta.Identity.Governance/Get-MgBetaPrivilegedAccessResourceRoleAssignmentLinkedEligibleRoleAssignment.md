@@ -31,22 +31,6 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment
 Read-only.
 If this is an active assignment and created due to activation on an eligible assignment, it represents the object of that eligible assignment; Otherwise, the value is null.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -258,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentLinkedEligibleRoleAssignment?view=graph-powershell-v1.0)
+

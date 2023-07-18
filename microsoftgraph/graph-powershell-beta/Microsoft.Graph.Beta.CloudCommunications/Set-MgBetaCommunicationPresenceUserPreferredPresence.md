@@ -53,22 +53,6 @@ Otherwise, the user's presence stays as Offline.
 A presence session can be created as a result of a successful setPresence operation, or if the user is signed in on a Teams client.
 Read more about presence sessions and their time-out and expiration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -271,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresenceUserPreferredPresence?view=graph-powershell-v1.0)
+

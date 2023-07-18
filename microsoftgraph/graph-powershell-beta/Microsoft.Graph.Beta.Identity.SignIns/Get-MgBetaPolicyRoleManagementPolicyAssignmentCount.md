@@ -19,18 +19,6 @@ Get-MgBetaPolicyRoleManagementPolicyAssignmentCount [-Filter <String>] [-Search 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyRoleManagementPolicyAssignmentCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentCount?view=graph-powershell-v1.0)
+

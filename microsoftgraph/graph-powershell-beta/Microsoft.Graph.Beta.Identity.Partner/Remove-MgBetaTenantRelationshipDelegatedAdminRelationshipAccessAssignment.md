@@ -29,18 +29,6 @@ Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment
 ## DESCRIPTION
 Delete a delegatedAdminAccessAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminAccessAssignmentId
@@ -178,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Identity.Partner/Remove-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-v1.0)
+

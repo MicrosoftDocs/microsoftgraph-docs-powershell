@@ -33,18 +33,6 @@ You cannot delete built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -257,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-v1.0)
+

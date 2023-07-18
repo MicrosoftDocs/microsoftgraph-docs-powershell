@@ -32,11 +32,11 @@ Deletes an externalConnection object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 Remove-MgExternalConnection -ExternalConnectionId $externalConnectionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExternalConnectionId
 The unique identifier of externalConnection
@@ -158,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgExternalConnection?view=graph-powershell-beta)
+

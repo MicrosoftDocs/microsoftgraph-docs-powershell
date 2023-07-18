@@ -41,18 +41,6 @@ New-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <IIde
 ## DESCRIPTION
 Create a new delegatedAdminRelationshipRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Action
@@ -263,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-v1.0)
+

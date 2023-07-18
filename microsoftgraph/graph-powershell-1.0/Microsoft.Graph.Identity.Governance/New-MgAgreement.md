@@ -29,22 +29,6 @@ New-MgAgreement -BodyParameter <IMicrosoftGraphAgreement> [-WhatIf] [-Confirm] [
 ## DESCRIPTION
 Add new entity to agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Acceptances
@@ -414,3 +398,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgAgreement?view=graph-powershell-beta)
+

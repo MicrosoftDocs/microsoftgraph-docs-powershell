@@ -41,18 +41,6 @@ New-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Add a new conversation member to a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamMember?view=graph-powershell-v1.0)
+

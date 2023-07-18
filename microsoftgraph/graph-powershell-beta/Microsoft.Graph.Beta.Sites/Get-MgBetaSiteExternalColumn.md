@@ -34,22 +34,6 @@ Get-MgBetaSiteExternalColumn -InputObject <ISitesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The collection of column definitions available in the site that are referenced from the sites in the parent hierarchy of the current site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteExternalColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteExternalColumn?view=graph-powershell-v1.0)
+

@@ -49,18 +49,6 @@ New-MgGroupSiteOnenoteSectionGroup -InputObject <ISitesIdentity> -BodyParameter 
 ## DESCRIPTION
 Create new navigation property to sectionGroups for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -850,3 +838,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupSiteOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteOnenoteSectionGroup?view=graph-powershell-beta)
+

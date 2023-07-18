@@ -26,11 +26,11 @@ Get the educationClass resources owned by an educationSchool.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -182,3 +182,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationSchoolClassByRef?view=graph-powershell-beta)
+

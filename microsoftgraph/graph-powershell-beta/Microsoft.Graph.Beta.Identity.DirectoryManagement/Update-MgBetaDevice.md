@@ -74,7 +74,6 @@ Only certain properties of a device can be updated through approved Mobile Devic
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	accountEnabled = $false
@@ -82,17 +81,18 @@ $params = @{
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 }
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccountEnabled
 true if the account is enabled; otherwise, false.
@@ -1180,3 +1180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-v1.0)
+

@@ -19,18 +19,6 @@ Get-MgSecurityTriggerTypeRetentionEventTypeCount [-Filter <String>] [-Search <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityTriggerTypeRetentionEventTypeCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityTriggerTypeRetentionEventTypeCount?view=graph-powershell-beta)
+

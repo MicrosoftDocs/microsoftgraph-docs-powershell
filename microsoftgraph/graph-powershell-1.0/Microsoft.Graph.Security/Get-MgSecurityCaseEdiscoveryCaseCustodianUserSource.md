@@ -41,11 +41,11 @@ This is the container for a custodian's mailbox and OneDrive for Business site.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-beta)
+

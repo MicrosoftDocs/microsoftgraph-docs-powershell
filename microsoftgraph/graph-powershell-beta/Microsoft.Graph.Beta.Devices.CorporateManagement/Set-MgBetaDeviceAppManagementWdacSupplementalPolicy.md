@@ -46,18 +46,6 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Invoke action assign
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
+

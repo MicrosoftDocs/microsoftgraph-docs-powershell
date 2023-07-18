@@ -19,18 +19,6 @@ Remove-MgBetaRoleManagementCloudPc [-IfMatch <String>] [-PassThru] [-WhatIf] [-C
 ## DESCRIPTION
 Delete navigation property cloudPC for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -108,3 +96,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
+

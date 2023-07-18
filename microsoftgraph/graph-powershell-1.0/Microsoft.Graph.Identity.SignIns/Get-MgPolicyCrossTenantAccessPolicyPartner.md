@@ -39,11 +39,11 @@ Read the properties and relationships of a partner-specific configuration.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+

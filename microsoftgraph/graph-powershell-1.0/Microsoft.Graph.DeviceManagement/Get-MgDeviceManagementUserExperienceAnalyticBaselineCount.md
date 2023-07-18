@@ -20,18 +20,6 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineCount [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineCount?view=graph-powershell-beta)
+

@@ -27,22 +27,6 @@ Remove-MgBetaSecurityIPSecurityProfile -InputObject <ISecurityIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property ipSecurityProfiles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -229,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityIPSecurityProfile](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityIPSecurityProfile?view=graph-powershell-v1.0)
+

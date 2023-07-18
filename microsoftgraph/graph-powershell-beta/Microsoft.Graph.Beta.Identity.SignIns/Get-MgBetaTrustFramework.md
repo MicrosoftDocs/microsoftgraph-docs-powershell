@@ -19,22 +19,6 @@ Get-MgBetaTrustFramework [-ExpandProperty <String[]>] [-Property <String[]>] [<C
 ## DESCRIPTION
 Get trustFramework
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgTrustFramework](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFramework?view=graph-powershell-v1.0)
+

@@ -34,22 +34,6 @@ Get-MgApplicationHomeRealmDiscoveryPolicy -InputObject <IApplicationsIdentity> [
 ## DESCRIPTION
 Get homeRealmDiscoveryPolicies from applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -291,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
+

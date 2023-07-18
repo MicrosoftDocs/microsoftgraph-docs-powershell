@@ -27,18 +27,6 @@ Set-MgBetaCommunicationOnlineMeetingBroadcastRecording -InputObject <ICloudCommu
 ## DESCRIPTION
 Update broadcastRecording for the navigation property onlineMeetings in communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgCommunicationOnlineMeetingBroadcastRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationOnlineMeetingBroadcastRecording?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Get-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Retrieve the app installed in the specified team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -305,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamInstalledApp?view=graph-powershell-v1.0)
+

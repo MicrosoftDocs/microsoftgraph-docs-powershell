@@ -57,11 +57,11 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageCatalogId
 The unique identifier of accessPackageCatalog
@@ -351,3 +351,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+

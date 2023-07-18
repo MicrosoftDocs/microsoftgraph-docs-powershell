@@ -64,11 +64,11 @@ Update the navigation property assignmentPolicies in identityGovernance
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackage
 accessPackage
@@ -9442,3 +9442,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+

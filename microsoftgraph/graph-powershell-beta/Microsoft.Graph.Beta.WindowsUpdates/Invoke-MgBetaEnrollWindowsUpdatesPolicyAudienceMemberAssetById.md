@@ -43,18 +43,6 @@ Invoke-MgBetaEnrollWindowsUpdatesPolicyAudienceMemberAssetById -InputObject <IWi
 ## DESCRIPTION
 Invoke action enrollAssetsById
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesPolicyAudienceMemberAssetById?view=graph-powershell-v1.0)
+

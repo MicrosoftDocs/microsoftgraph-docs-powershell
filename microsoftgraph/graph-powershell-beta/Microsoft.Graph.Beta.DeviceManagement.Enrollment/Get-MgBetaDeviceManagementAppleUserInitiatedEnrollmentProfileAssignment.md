@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment
 ## DESCRIPTION
 The list of assignments for this profile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -295,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementAppleUserInitiatedEnrollmentProfileAssignment?view=graph-powershell-v1.0)
+

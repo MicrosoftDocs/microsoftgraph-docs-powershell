@@ -19,18 +19,6 @@ Get-MgBetaPolicyAuthenticationStrengthPolicyCount [-Filter <String>] [-Search <S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyAuthenticationStrengthPolicyCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationStrengthPolicyCount?view=graph-powershell-v1.0)
+

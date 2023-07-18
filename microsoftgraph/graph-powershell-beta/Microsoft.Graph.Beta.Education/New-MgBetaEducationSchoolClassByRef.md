@@ -44,7 +44,6 @@ Add a class to a school.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/classes/11006"
@@ -52,7 +51,8 @@ $params = @{
 
 New-MgBetaEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -218,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchoolClassByRef?view=graph-powershell-v1.0)
+

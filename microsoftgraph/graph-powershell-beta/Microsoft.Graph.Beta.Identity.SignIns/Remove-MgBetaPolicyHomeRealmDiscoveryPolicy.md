@@ -32,11 +32,11 @@ Delete a homeRealmDiscoveryPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaPolicyHomeRealmDiscoveryPolicy -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -HomeRealmDiscoveryPolicyId
 The unique identifier of homeRealmDiscoveryPolicy
@@ -226,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-v1.0)
+

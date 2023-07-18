@@ -47,18 +47,6 @@ Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice
 ## DESCRIPTION
 Assigns resource account to Autopilot devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityResourceAccountToDevice?view=graph-powershell-v1.0)
+

@@ -27,18 +27,6 @@ Stop-MgBetaPrintShareJobPrintJob -InputObject <IDevicesCloudPrintIdentity> [-Pas
 ## DESCRIPTION
 Invoke action cancelPrintJob
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -168,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgPrintShareJobPrintJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Stop-MgPrintShareJobPrintJob?view=graph-powershell-v1.0)
+

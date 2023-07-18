@@ -27,18 +27,6 @@ Remove-MgBetaUserSecurity -InputObject <ISecurityIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property security for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -225,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserSecurity](/powershell/module/Microsoft.Graph.Security/Remove-MgUserSecurity?view=graph-powershell-v1.0)
+

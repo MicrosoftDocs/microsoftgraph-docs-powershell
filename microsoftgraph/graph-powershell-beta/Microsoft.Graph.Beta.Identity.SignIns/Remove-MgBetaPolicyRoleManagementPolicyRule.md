@@ -28,22 +28,6 @@ Remove-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Delete navigation property rules for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -249,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyRoleManagementPolicyRule?view=graph-powershell-v1.0)
+

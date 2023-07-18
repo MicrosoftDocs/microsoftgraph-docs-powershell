@@ -44,11 +44,11 @@ Delete a groupLifecyclePolicy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -GroupId
 The unique identifier of group
@@ -214,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupLifecyclePolicy?view=graph-powershell-beta)
+

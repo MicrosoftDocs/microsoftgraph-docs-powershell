@@ -32,11 +32,12 @@ Delete a conditionalAccessPolicy object.
 ### EXAMPLE 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
-```
 
 Remove-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -ConditionalAccessPolicyId
 The unique identifier of conditionalAccessPolicy
@@ -226,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+

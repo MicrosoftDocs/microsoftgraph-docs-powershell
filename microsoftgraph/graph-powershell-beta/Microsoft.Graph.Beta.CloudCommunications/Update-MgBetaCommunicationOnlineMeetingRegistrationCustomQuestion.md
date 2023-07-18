@@ -43,22 +43,6 @@ Update-MgBetaCommunicationOnlineMeetingRegistrationCustomQuestion -InputObject <
 ## DESCRIPTION
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -295,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
+

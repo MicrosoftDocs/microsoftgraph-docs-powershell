@@ -34,18 +34,18 @@ There are two ways to get the **id** of a **callRecord**:
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -CallRecordId
 The unique identifier of callRecord
@@ -142,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallRecord?view=graph-powershell-beta)
+

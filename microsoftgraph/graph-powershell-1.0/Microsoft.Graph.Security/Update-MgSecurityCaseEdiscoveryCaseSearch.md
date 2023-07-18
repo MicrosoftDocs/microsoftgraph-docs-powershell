@@ -60,7 +60,6 @@ Update the properties of an ediscoverySearch object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "Teams search"
@@ -68,7 +67,8 @@ $params = @{
 
 Update-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -814,3 +814,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+

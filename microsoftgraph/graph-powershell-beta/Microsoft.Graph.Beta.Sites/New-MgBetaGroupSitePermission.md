@@ -51,22 +51,6 @@ New-MgBetaGroupSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new permission object on a site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -607,3 +591,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePermission?view=graph-powershell-v1.0)
+

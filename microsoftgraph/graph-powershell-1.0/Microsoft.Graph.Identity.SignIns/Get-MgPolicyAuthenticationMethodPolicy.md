@@ -24,11 +24,11 @@ Read the properties and relationships of an authenticationMethodsPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyAuthenticationMethodPolicy
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -74,3 +74,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
+

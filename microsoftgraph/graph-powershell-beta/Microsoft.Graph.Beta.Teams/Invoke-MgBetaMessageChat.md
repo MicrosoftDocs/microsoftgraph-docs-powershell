@@ -20,22 +20,6 @@ Invoke-MgBetaMessageChat [-Count] [-Filter <String>] [-Property <String[]>] [-Se
 ## DESCRIPTION
 Invoke function allMessages
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -157,3 +141,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgMessageChat](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageChat?view=graph-powershell-v1.0)
+

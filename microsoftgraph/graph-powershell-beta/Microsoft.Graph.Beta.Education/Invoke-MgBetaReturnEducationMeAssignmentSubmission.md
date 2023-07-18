@@ -36,11 +36,11 @@ This action can only be done by the teacher.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Invoke-MgBetaReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -154,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+

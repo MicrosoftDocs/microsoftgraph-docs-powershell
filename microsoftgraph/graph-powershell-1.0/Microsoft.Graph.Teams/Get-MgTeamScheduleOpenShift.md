@@ -39,11 +39,11 @@ Retrieve the properties and relationships of an openshift object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamScheduleOpenShift?view=graph-powershell-beta)
+

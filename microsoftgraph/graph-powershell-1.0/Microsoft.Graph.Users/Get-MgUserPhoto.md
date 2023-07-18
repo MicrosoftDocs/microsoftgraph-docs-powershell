@@ -52,13 +52,14 @@ You can get the metadata of the largest available photo, or specify a size to ge
 ### EXAMPLE 1
 ```powershell
 Get-MgUserPhoto -UserId '3bb40cd7-03fe-40b7-8a1c-a14fdf0ab5fe'
-```
 
 Id      Height Width
 --      ------ -----
 240X240 240    240
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -All
 List all pages.
@@ -262,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserPhoto?view=graph-powershell-beta)
+

@@ -19,18 +19,6 @@ Get-MgServiceAnnouncementIssueCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementIssueCount](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementIssueCount?view=graph-powershell-beta)
+

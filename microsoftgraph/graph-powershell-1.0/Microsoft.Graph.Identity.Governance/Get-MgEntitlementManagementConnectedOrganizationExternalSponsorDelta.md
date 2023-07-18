@@ -29,18 +29,6 @@ Get-MgEntitlementManagementConnectedOrganizationExternalSponsorDelta -InputObjec
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -301,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorDelta](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementConnectedOrganizationExternalSponsorDelta?view=graph-powershell-beta)
+

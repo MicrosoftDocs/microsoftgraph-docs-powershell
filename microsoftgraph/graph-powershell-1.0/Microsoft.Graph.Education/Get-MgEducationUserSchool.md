@@ -36,18 +36,6 @@ Get-MgEducationUserSchool -InputObject <IEducationIdentity> [-ExpandProperty <St
 Schools to which the user belongs.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -279,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationUserSchool?view=graph-powershell-beta)
+

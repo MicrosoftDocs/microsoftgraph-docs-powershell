@@ -27,18 +27,6 @@ Set-MgBetaVirtualEventWebinarSessionRecordingContent -InputObject <IBookingsIden
 ## DESCRIPTION
 Update content for the navigation property recordings in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgVirtualEventWebinarSessionRecordingContent](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventWebinarSessionRecordingContent?view=graph-powershell-v1.0)
+

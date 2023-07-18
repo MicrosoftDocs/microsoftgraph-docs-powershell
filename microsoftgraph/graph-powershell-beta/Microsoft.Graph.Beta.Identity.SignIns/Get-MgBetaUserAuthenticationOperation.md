@@ -45,11 +45,11 @@ Possible states include: `Succeeded` and `Failed` are terminal states.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -344,3 +344,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationOperation?view=graph-powershell-v1.0)
+

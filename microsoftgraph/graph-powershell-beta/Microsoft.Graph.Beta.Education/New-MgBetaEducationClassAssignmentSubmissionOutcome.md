@@ -54,7 +54,6 @@ If the file doesn't exist or is not in that folder, the `POST` request will fail
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackResourceOutcome"
@@ -66,7 +65,8 @@ $params = @{
 
 New-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -298,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+

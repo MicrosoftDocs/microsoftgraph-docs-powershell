@@ -34,22 +34,6 @@ Get-MgBetaReportDailyPrintUsageSummaryByUser -InputObject <IReportsIdentity> [-E
 ## DESCRIPTION
 Get dailyPrintUsageSummariesByUser from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -284,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportDailyPrintUsageSummaryByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageSummaryByUser?view=graph-powershell-v1.0)
+

@@ -40,22 +40,6 @@ Read-only.
 Nullable.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -316,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDeviceMemberOf](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceMemberOf?view=graph-powershell-v1.0)
+

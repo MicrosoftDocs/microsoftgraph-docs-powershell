@@ -34,18 +34,6 @@ Get-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <ICloudC
 ## DESCRIPTION
 Registrants of the online meeting.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -285,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationOnlineMeetingRegistrationRegistrant](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRegistrationRegistrant?view=graph-powershell-v1.0)
+

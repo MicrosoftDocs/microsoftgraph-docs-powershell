@@ -38,22 +38,6 @@ Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord -InputObject <I
 List of attendance records of an attendance report.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+

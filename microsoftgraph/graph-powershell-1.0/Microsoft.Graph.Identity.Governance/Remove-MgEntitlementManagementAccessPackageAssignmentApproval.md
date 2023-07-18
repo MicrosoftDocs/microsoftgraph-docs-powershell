@@ -27,22 +27,6 @@ Remove-MgEntitlementManagementAccessPackageAssignmentApproval -InputObject <IIde
 ## DESCRIPTION
 Delete navigation property accessPackageAssignmentApprovals for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApprovalId
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-beta)
+

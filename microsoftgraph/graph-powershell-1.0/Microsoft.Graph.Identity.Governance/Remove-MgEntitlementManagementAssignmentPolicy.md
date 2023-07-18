@@ -32,11 +32,11 @@ In Azure AD entitlement management, delete an accessPackageAssignmentPolicy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageAssignmentPolicyId
 The unique identifier of accessPackageAssignmentPolicy
@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+

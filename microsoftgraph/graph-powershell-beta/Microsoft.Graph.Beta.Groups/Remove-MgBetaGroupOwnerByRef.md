@@ -34,11 +34,11 @@ When owners are assigned to a group, the last owner (a user object) of the group
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Remove-MgBetaGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -228,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+

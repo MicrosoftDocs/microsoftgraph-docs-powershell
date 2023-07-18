@@ -72,7 +72,6 @@ Only the user in the tenant who sent the message can perform data loss preventio
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	policyViolation = @{
@@ -90,10 +89,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	messageType = "message"
@@ -127,10 +126,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	messageType = "message"
@@ -197,10 +196,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	messageType = "message"
@@ -297,10 +296,10 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	messageType = "message"
@@ -629,7 +628,8 @@ $params = @{
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1459,3 +1459,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMessage?view=graph-powershell-beta)
+

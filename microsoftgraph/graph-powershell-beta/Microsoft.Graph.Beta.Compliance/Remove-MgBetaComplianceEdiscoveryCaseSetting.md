@@ -27,22 +27,6 @@ Remove-MgBetaComplianceEdiscoveryCaseSetting -InputObject <IComplianceIdentity> 
 ## DESCRIPTION
 Delete navigation property settings for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -176,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
+

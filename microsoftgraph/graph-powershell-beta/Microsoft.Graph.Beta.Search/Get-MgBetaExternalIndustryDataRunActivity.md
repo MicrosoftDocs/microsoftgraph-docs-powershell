@@ -46,18 +46,6 @@ Get-MgBetaExternalIndustryDataRunActivity -InputObject <ISearchIdentity> [-Expan
 ## DESCRIPTION
 The set of activities performed during the run.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalIndustryDataRunActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRunActivity?view=graph-powershell-v1.0)
+

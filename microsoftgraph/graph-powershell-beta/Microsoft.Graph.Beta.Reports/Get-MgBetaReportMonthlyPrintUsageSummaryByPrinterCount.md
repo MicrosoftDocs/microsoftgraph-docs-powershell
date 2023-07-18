@@ -20,18 +20,6 @@ Get-MgBetaReportMonthlyPrintUsageSummaryByPrinterCount [-Filter <String>] [-Sear
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportMonthlyPrintUsageSummaryByPrinterCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportMonthlyPrintUsageSummaryByPrinterCount?view=graph-powershell-v1.0)
+

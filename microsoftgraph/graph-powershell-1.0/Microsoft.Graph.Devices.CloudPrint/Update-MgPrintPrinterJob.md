@@ -45,18 +45,6 @@ Update-MgPrintPrinterJob -InputObject <IDevicesCloudPrintIdentity> -BodyParamete
 ## DESCRIPTION
 Update the navigation property jobs in print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -512,3 +500,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPrintPrinterJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintPrinterJob?view=graph-powershell-beta)
+

@@ -29,18 +29,6 @@ Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -210,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance?view=graph-powershell-beta)
+

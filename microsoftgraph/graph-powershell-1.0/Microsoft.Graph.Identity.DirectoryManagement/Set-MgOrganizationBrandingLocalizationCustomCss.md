@@ -28,18 +28,6 @@ Set-MgOrganizationBrandingLocalizationCustomCss -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Update customCSS for the navigation property localizations in organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -210,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
+

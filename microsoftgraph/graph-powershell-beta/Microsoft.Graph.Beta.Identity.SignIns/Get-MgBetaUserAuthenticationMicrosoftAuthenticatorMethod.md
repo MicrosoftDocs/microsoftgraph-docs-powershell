@@ -39,11 +39,11 @@ Read the properties and relationships of a microsoftAuthenticatorAuthenticationM
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId -MicrosoftAuthenticatorAuthenticationMethodId $microsoftAuthenticatorAuthenticationMethodId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -338,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-v1.0)
+

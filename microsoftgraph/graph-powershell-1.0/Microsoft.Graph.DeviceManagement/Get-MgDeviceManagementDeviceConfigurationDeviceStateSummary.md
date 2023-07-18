@@ -20,22 +20,6 @@ Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary [-ExpandProperty <St
 ## DESCRIPTION
 The device configuration device state summary for this account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceConfigurationDeviceStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStateSummary?view=graph-powershell-beta)
+

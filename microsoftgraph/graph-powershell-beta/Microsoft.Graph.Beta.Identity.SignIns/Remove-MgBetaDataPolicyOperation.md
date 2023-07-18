@@ -32,11 +32,11 @@ Delete entity from dataPolicyOperations
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DataPolicyOperationId
 The unique identifier of dataPolicyOperation
@@ -226,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgDataPolicyOperation?view=graph-powershell-v1.0)
+

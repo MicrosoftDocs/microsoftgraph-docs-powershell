@@ -32,11 +32,11 @@ Deletes an accessReviewScheduleDefinition object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessReviewScheduleDefinitionId
 The unique identifier of accessReviewScheduleDefinition
@@ -206,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+

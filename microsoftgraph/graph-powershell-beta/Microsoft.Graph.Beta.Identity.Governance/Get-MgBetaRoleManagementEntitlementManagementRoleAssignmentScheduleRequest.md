@@ -36,18 +36,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequest
 ## DESCRIPTION
 In PIM, read the details of a request for an active and persistent role assignment made through the unifiedRoleAssignmentScheduleRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -350,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+

@@ -44,22 +44,6 @@ Update-MgBetaEducationSynchronizationProfileError -InputObject <IEducationIdenti
 ## DESCRIPTION
 Update the navigation property errors in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationSynchronizationProfileError](/powershell/module/Microsoft.Graph.Education/Update-MgEducationSynchronizationProfileError?view=graph-powershell-v1.0)
+

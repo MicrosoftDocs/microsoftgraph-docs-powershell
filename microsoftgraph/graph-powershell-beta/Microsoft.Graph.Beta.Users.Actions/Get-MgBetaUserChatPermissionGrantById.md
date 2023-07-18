@@ -43,22 +43,6 @@ Get-MgBetaUserChatPermissionGrantById -InputObject <IUsersActionsIdentity>
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -267,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserChatPermissionGrantById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserChatPermissionGrantById?view=graph-powershell-v1.0)
+

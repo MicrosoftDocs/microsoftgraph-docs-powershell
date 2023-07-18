@@ -38,22 +38,6 @@ The collection of open extensions defined for the device.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -317,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceExtension?view=graph-powershell-v1.0)
+

@@ -48,7 +48,6 @@ Update the properties of featureRolloutPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "PasswordHashSync Rollout Policy"
@@ -59,7 +58,8 @@ $params = @{
 
 Update-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -375,3 +375,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyFeatureRolloutPolicy?view=graph-powershell-v1.0)
+

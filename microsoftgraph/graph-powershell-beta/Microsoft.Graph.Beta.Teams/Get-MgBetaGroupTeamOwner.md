@@ -40,22 +40,6 @@ Currently, when creating a team using application permissions, exactly one owner
 When using user delegated permissions, no owner can be specified (the current user is the owner).
 Owner must be specified as an object ID (GUID), not a UPN.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamOwner](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamOwner?view=graph-powershell-v1.0)
+

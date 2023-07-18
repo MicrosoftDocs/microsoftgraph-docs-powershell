@@ -52,7 +52,6 @@ Update the navigation property userAttributeAssignments in identity
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	userInputType = "textBox"
@@ -60,7 +59,8 @@ $params = @{
 
 Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -414,3 +414,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
+

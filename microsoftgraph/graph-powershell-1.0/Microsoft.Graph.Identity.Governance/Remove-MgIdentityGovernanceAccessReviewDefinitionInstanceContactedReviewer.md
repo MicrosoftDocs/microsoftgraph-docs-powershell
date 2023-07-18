@@ -29,22 +29,6 @@ Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
 ## DESCRIPTION
 Delete navigation property contactedReviewers for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
+

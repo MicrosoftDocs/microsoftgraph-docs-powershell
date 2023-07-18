@@ -27,18 +27,6 @@ Get-MgBetaSecurityThreatIntelligenceHostReputation -InputObject <ISecurityIdenti
 ## DESCRIPTION
 Get the properties and relationships of a hostReputation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatIntelligenceHostReputation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostReputation?view=graph-powershell-v1.0)
+

@@ -29,22 +29,6 @@ Get-MgUserActivityHistoryItemActivity -InputObject <ICrossDeviceExperiencesIdent
 Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityHistoryItemId
@@ -163,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgUserActivityHistoryItemActivity?view=graph-powershell-beta)
+

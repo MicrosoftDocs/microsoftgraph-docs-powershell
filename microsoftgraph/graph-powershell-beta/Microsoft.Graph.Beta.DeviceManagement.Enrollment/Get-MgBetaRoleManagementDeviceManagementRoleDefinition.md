@@ -36,18 +36,6 @@ Get-MgBetaRoleManagementDeviceManagementRoleDefinition -InputObject <IDeviceMana
 Get the properties and relationships of a unifiedRoleDefinition object of an RBAC provider.
 The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)\n- directory (Azure AD directory roles)\n- entitlement management (Azure AD entitlement management)\n- Exchange Online
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -279,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementRoleDefinition?view=graph-powershell-v1.0)
+

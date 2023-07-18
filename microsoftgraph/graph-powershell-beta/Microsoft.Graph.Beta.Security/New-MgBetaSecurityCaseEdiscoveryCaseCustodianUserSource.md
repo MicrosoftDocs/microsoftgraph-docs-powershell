@@ -44,22 +44,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSource -InputObject <ISecurityI
 ## DESCRIPTION
 Create a new userSource object associated with an eDiscovery custodian.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,3 +398,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityCaseEdiscoveryCaseCustodianUserSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUserSource?view=graph-powershell-v1.0)
+

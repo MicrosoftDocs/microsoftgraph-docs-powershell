@@ -39,18 +39,18 @@ Get the details of a role management policy assignment including the policy and 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId -ExpandProperty "policy(`$expand=rules)"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -311,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
+

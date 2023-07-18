@@ -39,11 +39,11 @@ A collection of simulation automation runs.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -297,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
+

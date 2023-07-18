@@ -39,11 +39,11 @@ Read the properties and relationships of a userConsentRequest object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId -UserConsentRequestId $userConsentRequestId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -318,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
+

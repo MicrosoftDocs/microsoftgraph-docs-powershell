@@ -39,22 +39,6 @@ Remove-MgBetaFinancialCompanySaleInvoiceLineItemCategory -InputObject <IFinancia
 ## DESCRIPTION
 Delete navigation property itemCategory for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -237,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgFinancialCompanySaleInvoiceLineItemCategory](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanySaleInvoiceLineItemCategory?view=graph-powershell-v1.0)
+

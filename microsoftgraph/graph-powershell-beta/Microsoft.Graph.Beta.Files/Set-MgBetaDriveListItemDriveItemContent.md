@@ -27,22 +27,6 @@ Set-MgBetaDriveListItemDriveItemContent -InputObject <IFilesIdentity> [-Data <St
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -201,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDriveListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Set-MgDriveListItemDriveItemContent?view=graph-powershell-v1.0)
+

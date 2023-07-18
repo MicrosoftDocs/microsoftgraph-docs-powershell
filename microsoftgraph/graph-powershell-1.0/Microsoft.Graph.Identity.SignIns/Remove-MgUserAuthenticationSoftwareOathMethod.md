@@ -32,11 +32,11 @@ Delete a user's Software OATH token authentication method object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgUserAuthenticationSoftwareOathMethod -UserId $userId -SoftwareOathAuthenticationMethodId $softwareOathAuthenticationMethodId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -222,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserAuthenticationSoftwareOathMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationSoftwareOathMethod?view=graph-powershell-beta)
+

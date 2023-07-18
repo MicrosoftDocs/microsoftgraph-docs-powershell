@@ -27,22 +27,6 @@ Remove-MgEducationUserAssignment -InputObject <IEducationIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property assignments for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -184,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationUserAssignment?view=graph-powershell-beta)
+

@@ -29,22 +29,6 @@ Get-MgBetaEducationMeAssignmentCategoryDelta -InputObject <IEducationIdentity> [
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -264,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationMeAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentCategoryDelta?view=graph-powershell-v1.0)
+

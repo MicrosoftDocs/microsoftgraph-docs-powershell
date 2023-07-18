@@ -41,22 +41,6 @@ Update-MgUserManagedDeviceCategory -InputObject <IDevicesCorporateManagementIden
 ## DESCRIPTION
 Update the navigation property deviceCategory in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -277,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgUserManagedDeviceCategory?view=graph-powershell-beta)
+

@@ -20,18 +20,6 @@ Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileCount [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsFeatureUpdateProfileCount](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsFeatureUpdateProfileCount?view=graph-powershell-v1.0)
+

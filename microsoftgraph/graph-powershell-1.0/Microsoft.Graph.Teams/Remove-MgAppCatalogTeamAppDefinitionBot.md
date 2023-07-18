@@ -32,11 +32,11 @@ Delete navigation property bot for appCatalogs
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -198,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-beta)
+

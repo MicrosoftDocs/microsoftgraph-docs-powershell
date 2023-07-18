@@ -45,22 +45,6 @@ New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to historyItems for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveDurationSeconds
@@ -444,3 +428,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserActivityHistoryItem](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgUserActivityHistoryItem?view=graph-powershell-beta)
+

@@ -44,7 +44,6 @@ Assign a claimsMappingPolicy to a servicePrincipal.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/claimsMappingPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
@@ -52,7 +51,8 @@ $params = @{
 
 New-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -225,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
+

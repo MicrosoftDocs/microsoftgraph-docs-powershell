@@ -36,22 +36,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 ## DESCRIPTION
 Data sources that represent Exchange mailboxes.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -358,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource?view=graph-powershell-v1.0)
+

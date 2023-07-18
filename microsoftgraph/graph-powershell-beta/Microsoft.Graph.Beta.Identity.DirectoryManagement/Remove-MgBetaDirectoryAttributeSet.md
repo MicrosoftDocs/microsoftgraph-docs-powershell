@@ -27,22 +27,6 @@ Remove-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property attributeSets for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttributeSetId
@@ -200,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAttributeSet?view=graph-powershell-v1.0)
+

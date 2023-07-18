@@ -28,22 +28,6 @@ Remove-MgPolicyRoleManagementPolicyEffectiveRule -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Delete navigation property effectiveRules for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -230,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+

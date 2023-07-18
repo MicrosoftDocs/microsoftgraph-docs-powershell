@@ -50,7 +50,6 @@ Update the properties of a workforceintegration object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "displayName-value"
@@ -66,7 +65,8 @@ $params = @{
 
 Update-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -439,3 +439,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkWorkforceIntegration?view=graph-powershell-v1.0)
+

@@ -30,18 +30,6 @@ New-MgBetaDeviceManagementDerivedCredential
 ## DESCRIPTION
 Create new navigation property to derivedCredentials for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -226,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
+

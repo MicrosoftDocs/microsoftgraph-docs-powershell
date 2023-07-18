@@ -19,22 +19,6 @@ Get-MgBetaExternal [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonP
 ## DESCRIPTION
 Get external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgExternal](/powershell/module/Microsoft.Graph.Search/Get-MgExternal?view=graph-powershell-v1.0)
+

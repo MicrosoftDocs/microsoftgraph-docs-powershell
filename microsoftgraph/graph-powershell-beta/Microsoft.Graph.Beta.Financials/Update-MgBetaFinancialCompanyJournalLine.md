@@ -77,22 +77,6 @@ Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property journalLines in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -507,3 +491,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgFinancialCompanyJournalLine](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyJournalLine?view=graph-powershell-v1.0)
+

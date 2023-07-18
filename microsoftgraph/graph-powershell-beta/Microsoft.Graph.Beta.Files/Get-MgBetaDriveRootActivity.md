@@ -21,22 +21,6 @@ Get-MgBetaDriveRootActivity -DriveId <String> [-ExpandProperty <String[]>] [-Fil
 ## DESCRIPTION
 The list of recent activities that took place on this item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -219,3 +203,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDriveRootActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootActivity?view=graph-powershell-v1.0)
+

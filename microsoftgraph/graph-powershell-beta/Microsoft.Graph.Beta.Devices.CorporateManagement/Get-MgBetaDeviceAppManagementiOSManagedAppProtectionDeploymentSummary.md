@@ -28,18 +28,6 @@ Get-MgBetaDeviceAppManagementiOSManagedAppProtectionDeploymentSummary
 ## DESCRIPTION
 Navigation property to deployment summary of the configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSManagedAppProtectionDeploymentSummary?view=graph-powershell-v1.0)
+

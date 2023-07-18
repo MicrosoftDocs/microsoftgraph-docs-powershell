@@ -31,18 +31,6 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 Create a new inboundFlow object.
 The following prerequisite resources are required when you create an **inboundFlow**:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,3 +344,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
+

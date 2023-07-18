@@ -34,22 +34,6 @@ Get-MgBetaGroupSiteContentType -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the metadata for a [content type][contentType] in a [site][] or a [list][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -336,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentType?view=graph-powershell-v1.0)
+

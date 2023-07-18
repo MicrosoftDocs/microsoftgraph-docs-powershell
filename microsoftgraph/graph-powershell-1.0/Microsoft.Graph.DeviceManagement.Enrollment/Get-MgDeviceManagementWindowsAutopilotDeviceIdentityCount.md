@@ -20,18 +20,6 @@ Get-MgDeviceManagementWindowsAutopilotDeviceIdentityCount [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeviceIdentityCount?view=graph-powershell-beta)
+

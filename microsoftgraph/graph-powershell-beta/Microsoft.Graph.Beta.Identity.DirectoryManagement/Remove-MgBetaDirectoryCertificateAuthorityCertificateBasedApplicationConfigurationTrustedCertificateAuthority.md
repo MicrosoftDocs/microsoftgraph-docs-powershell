@@ -29,18 +29,6 @@ Remove-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfigurati
 ## DESCRIPTION
 Delete navigation property trustedCertificateAuthorities for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CertificateAuthorityAsEntityId
@@ -213,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority?view=graph-powershell-v1.0)
+

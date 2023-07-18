@@ -19,18 +19,6 @@ Get-MgBetaDeviceManagementScriptCount [-Filter <String>] [-Search <String>] [<Co
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementScriptCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementScriptCount?view=graph-powershell-v1.0)
+

@@ -19,22 +19,6 @@ Get-MgBetaDeviceManagementComanagementEligibleDeviceSummary [<CommonParameters>]
 ## DESCRIPTION
 Invoke function getComanagementEligibleDevicesSummary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -51,3 +35,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementComanagementEligibleDeviceSummary](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagementEligibleDeviceSummary?view=graph-powershell-v1.0)
+

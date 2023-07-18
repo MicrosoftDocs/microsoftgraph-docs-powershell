@@ -38,18 +38,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion -InputObject 
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -340,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion?view=graph-powershell-beta)
+

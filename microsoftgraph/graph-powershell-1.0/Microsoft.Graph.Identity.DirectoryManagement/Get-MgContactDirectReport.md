@@ -45,11 +45,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactDirectReport -OrgContactId $orgContactId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContactDirectReport](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactDirectReport?view=graph-powershell-beta)
+

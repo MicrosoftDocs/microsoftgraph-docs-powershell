@@ -46,18 +46,18 @@ Create new navigation property to attachments for admin
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessageAttachmentArchive -ServiceUpdateMessageId $serviceUpdateMessageId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -279,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+

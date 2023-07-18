@@ -24,11 +24,11 @@ Retrieve the properties of an entitlementManagementSettings object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementSetting
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -74,3 +74,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-beta)
+

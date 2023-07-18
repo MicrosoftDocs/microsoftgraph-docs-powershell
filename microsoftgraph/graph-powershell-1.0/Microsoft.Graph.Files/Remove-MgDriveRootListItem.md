@@ -27,22 +27,6 @@ Remove-MgDriveRootListItem -InputObject <IFilesIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property listItem for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -183,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDriveRootListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgDriveRootListItem?view=graph-powershell-beta)
+

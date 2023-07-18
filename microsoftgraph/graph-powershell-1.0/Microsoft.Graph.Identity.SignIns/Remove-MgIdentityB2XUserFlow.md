@@ -32,11 +32,11 @@ Delete a b2xIdentityUserFlow object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityB2XUserFlow -B2xIdentityUserFlowId $b2xIdentityUserFlowId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -B2XIdentityUserFlowId
 The unique identifier of b2xIdentityUserFlow
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityB2XUserFlow?view=graph-powershell-beta)
+

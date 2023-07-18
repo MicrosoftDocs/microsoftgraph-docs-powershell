@@ -38,22 +38,23 @@ When creating a new invitation you have several options available:
 ### EXAMPLE 1
 ```powershell
 New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
-```
 
-Id                                   InviteRedeemUrl                                                                                                   
---                                   ---------------                                                                                                   
+Id                                   InviteRedeemUrl
+--                                   ---------------
 e4247160-a778-428a-8218-bcaf717870dd https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserType Member
-```
 
-Id                                   InviteRedeemUrl                                                                                                   
---                                   ---------------                                                                                                   
+Id                                   InviteRedeemUrl
+--                                   ---------------
 2fe815c1-aecc-4f66-b1d0-952a60df2409 https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -6041,3 +6042,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgInvitation?view=graph-powershell-beta)
+

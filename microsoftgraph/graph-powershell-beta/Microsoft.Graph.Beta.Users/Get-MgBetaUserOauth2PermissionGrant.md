@@ -39,11 +39,11 @@ Get oauth2PermissionGrants from users
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
-```
 
 Get-MgBetaUserOauth2PermissionGrant -UserId $userId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-v1.0)
+

@@ -20,18 +20,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceCoun
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstanceCount?view=graph-powershell-v1.0)
+

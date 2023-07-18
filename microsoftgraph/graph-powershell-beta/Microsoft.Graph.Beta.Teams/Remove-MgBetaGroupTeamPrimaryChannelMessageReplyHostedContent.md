@@ -28,22 +28,6 @@ Remove-MgBetaGroupTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITea
 ## DESCRIPTION
 Delete navigation property hostedContents for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatMessageHostedContentId
@@ -243,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+

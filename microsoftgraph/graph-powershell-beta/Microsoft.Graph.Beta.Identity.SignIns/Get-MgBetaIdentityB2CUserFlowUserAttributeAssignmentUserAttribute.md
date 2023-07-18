@@ -28,22 +28,6 @@ Get-MgBetaIdentityB2CUserFlowUserAttributeAssignmentUserAttribute -InputObject <
 ## DESCRIPTION
 The user attribute that you want to add to your user flow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId
@@ -218,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2CUserFlowUserAttributeAssignmentUserAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowUserAttributeAssignmentUserAttribute?view=graph-powershell-v1.0)
+

@@ -32,18 +32,18 @@ Retrieve the properties and relationships of a call object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCall -CallId $callId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCall -CallId $callId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -CallId
 The unique identifier of call
@@ -146,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCall?view=graph-powershell-v1.0)
+

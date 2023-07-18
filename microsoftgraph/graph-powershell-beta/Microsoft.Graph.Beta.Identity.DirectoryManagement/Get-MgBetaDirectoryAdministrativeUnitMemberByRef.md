@@ -28,18 +28,18 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
@@ -207,3 +207,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)
+

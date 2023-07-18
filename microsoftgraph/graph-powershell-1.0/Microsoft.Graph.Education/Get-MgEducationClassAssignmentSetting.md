@@ -32,7 +32,6 @@ Specifies class-level assignments settings.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	submissionAnimationDisabled = $true
@@ -40,7 +39,8 @@ $params = @{
 
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationClassId
 The unique identifier of educationClass
@@ -135,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-beta)
+

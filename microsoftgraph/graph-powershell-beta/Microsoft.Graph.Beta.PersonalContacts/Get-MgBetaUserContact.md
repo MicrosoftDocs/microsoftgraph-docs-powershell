@@ -41,12 +41,12 @@ There are two scenarios where an app can get a contact in another user's contact
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Beta.PersonalContacts
-```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserContact -UserId $userId -ContactId $contactId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -271,4 +271,5 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Get-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContact?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact)
+
 

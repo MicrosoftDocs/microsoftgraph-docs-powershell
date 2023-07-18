@@ -34,18 +34,6 @@ Get-MgBetaSecurityLabelAuthority -InputObject <ISecurityIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a authorityTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelAuthority?view=graph-powershell-v1.0)
+

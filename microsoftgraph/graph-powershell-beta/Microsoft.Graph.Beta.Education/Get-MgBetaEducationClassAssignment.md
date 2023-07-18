@@ -45,11 +45,11 @@ You can use the `Prefer` header in your request to get the `inactive` status in 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -283,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignment?view=graph-powershell-v1.0)
+

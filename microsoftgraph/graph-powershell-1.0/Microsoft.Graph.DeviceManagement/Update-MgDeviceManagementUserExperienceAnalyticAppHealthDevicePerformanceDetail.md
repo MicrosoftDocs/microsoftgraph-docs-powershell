@@ -48,18 +48,6 @@ Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsAppHealthDevicePerformanceDetails in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -382,3 +370,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthDevicePerformanceDetail?view=graph-powershell-beta)
+

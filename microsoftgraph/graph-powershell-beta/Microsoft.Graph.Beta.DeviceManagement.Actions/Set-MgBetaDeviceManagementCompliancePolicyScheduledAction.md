@@ -45,22 +45,6 @@ Set-MgBetaDeviceManagementCompliancePolicyScheduledAction -InputObject <IDeviceM
 ## DESCRIPTION
 Invoke action setScheduledActions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -268,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementCompliancePolicyScheduledAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementCompliancePolicyScheduledAction?view=graph-powershell-v1.0)
+

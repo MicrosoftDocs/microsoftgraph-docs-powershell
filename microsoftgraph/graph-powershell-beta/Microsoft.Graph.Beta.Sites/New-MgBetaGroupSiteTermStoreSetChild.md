@@ -79,22 +79,6 @@ New-MgBetaGroupSiteTermStoreSetChild -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a new term object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -642,3 +626,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreSetChild?view=graph-powershell-v1.0)
+

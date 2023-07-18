@@ -27,22 +27,6 @@ Remove-MgBetaAgreementFileLocalization -InputObject <IIdentityGovernanceIdentity
 ## DESCRIPTION
 Delete navigation property localizations for agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgreementFileLocalizationId
@@ -270,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAgreementFileLocalization?view=graph-powershell-v1.0)
+

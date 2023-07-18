@@ -39,11 +39,11 @@ Get the status of an operation that adds the large gallery view to a call.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
 
 Get-MgBetaCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallOperation?view=graph-powershell-v1.0)
+

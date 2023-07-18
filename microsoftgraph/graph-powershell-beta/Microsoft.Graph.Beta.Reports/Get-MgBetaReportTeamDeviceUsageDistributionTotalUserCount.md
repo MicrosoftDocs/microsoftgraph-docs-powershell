@@ -27,22 +27,6 @@ Get-MgBetaReportTeamDeviceUsageDistributionTotalUserCount -InputObject <IReports
 ## DESCRIPTION
 Invoke function getTeamsDeviceUsageDistributionTotalUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -156,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportTeamDeviceUsageDistributionTotalUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamDeviceUsageDistributionTotalUserCount?view=graph-powershell-v1.0)
+

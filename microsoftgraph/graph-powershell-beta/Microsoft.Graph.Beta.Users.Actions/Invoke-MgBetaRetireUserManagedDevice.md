@@ -27,22 +27,6 @@ Invoke-MgBetaRetireUserManagedDevice -InputObject <IUsersActionsIdentity> [-Pass
 ## DESCRIPTION
 Retire a device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -199,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetireUserManagedDevice?view=graph-powershell-v1.0)
+

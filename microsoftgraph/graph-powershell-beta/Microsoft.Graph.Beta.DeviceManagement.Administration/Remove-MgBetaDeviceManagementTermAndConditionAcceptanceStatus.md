@@ -28,18 +28,6 @@ Remove-MgBetaDeviceManagementTermAndConditionAcceptanceStatus
 ## DESCRIPTION
 Delete navigation property acceptanceStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -227,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
+

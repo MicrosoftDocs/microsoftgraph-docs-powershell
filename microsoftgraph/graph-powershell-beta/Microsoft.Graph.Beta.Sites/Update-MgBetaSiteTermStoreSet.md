@@ -52,7 +52,6 @@ Update the properties of a set object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	description = "mySet"
@@ -60,7 +59,8 @@ $params = @{
 
 Update-MgBetaSiteTermStoreSet -SiteId $siteId -SetId $setId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -612,3 +612,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+

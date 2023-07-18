@@ -29,22 +29,6 @@ Get-MgBetaPrintTaskDefinitionTaskTrigger -InputObject <IDevicesCloudPrintIdentit
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -158,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintTaskDefinitionTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinitionTaskTrigger?view=graph-powershell-v1.0)
+

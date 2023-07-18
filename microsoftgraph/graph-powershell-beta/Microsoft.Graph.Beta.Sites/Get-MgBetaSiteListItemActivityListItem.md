@@ -27,18 +27,6 @@ Get-MgBetaSiteListItemActivityListItem -InputObject <ISitesIdentity> [-ExpandPro
 ## DESCRIPTION
 Get listItem from sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -219,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemActivityListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemActivityListItem?view=graph-powershell-v1.0)
+

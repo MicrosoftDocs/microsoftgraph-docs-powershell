@@ -19,18 +19,6 @@ Remove-MgAdminSharepointSetting [-IfMatch <String>] [-PassThru] [-WhatIf] [-Conf
 ## DESCRIPTION
 Delete navigation property settings for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -108,3 +96,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgAdminSharepointSetting?view=graph-powershell-beta)
+

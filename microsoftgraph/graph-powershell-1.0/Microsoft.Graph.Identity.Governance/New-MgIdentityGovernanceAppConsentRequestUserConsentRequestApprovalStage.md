@@ -51,11 +51,11 @@ Create new navigation property to stages for identityGovernance
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -391,3 +391,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+

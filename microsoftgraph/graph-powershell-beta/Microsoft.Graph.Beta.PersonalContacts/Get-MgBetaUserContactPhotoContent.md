@@ -27,22 +27,6 @@ Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutF
 ## DESCRIPTION
 Get media content for the navigation property photo from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactId
@@ -148,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserContactPhotoContent](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactPhotoContent?view=graph-powershell-v1.0)
+

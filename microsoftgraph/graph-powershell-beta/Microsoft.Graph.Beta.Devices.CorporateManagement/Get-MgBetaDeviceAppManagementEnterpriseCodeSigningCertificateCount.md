@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementEnterpriseCodeSigningCertificateCount [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ Get-BetaDeviceAppMgtEnterpriseCodeSigningCertificateCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementEnterpriseCodeSigningCertificateCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementEnterpriseCodeSigningCertificateCount?view=graph-powershell-v1.0)
+

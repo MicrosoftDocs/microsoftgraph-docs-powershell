@@ -43,18 +43,6 @@ Update-MgTenantRelationshipDelegatedAdminCustomer -InputObject <IIdentityPartner
 ## DESCRIPTION
 Update the navigation property delegatedAdminCustomers in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -259,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+

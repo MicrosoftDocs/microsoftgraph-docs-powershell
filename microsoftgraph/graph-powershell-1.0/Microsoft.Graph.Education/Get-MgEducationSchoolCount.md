@@ -19,18 +19,6 @@ Get-MgEducationSchoolCount [-Filter <String>] [-Search <String>] [<CommonParamet
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolCount](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationSchoolCount?view=graph-powershell-beta)
+

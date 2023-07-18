@@ -27,18 +27,6 @@ Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property deviceStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceComplianceDeviceStatusId
@@ -223,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementDeviceCompliancePolicyDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgDeviceManagementDeviceCompliancePolicyDeviceStatus?view=graph-powershell-beta)
+

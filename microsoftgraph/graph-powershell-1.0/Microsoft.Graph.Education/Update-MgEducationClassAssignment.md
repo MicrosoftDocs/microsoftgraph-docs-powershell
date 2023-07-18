@@ -66,7 +66,6 @@ Don't use a PATCH operation for this purpose.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Reading and review test 09.03 #5"
@@ -80,7 +79,8 @@ $params = @{
 
 Update-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AddedStudentAction
 educationAddedStudentAction
@@ -735,3 +735,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignment?view=graph-powershell-beta)
+

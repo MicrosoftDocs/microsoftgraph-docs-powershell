@@ -27,22 +27,6 @@ Remove-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Delete navigation property usageRights for devices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceUsageRights](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceUsageRights?view=graph-powershell-v1.0)
+

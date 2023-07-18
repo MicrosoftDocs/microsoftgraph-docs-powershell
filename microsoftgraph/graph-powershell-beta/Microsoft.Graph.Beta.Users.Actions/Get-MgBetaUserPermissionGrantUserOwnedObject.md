@@ -43,18 +43,6 @@ Get-MgBetaUserPermissionGrantUserOwnedObject -InputObject <IUsersActionsIdentity
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPermissionGrantUserOwnedObject](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserPermissionGrantUserOwnedObject?view=graph-powershell-v1.0)
+

@@ -27,22 +27,6 @@ Restore-MgBetaDriveItemListItemVersion -InputObject <IFilesIdentity> [-PassThru]
 ## DESCRIPTION
 Invoke action restoreVersion
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Files/Restore-MgDriveItemListItemVersion?view=graph-powershell-v1.0)
+

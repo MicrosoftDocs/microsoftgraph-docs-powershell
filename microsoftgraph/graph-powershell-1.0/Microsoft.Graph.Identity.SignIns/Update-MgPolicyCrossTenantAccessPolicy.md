@@ -35,7 +35,6 @@ Update the properties of a cross-tenant access policy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	allowedCloudEndpoints = @(
@@ -45,7 +44,8 @@ $params = @{
 
 Update-MgPolicyCrossTenantAccessPolicy -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -352,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
+

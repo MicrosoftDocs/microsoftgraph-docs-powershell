@@ -27,22 +27,6 @@ Invoke-MgBetaReauthorizeDriveItemSubscription -InputObject <IFilesIdentity> [-Pa
 ## DESCRIPTION
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReauthorizeDriveItemSubscription](/powershell/module/Microsoft.Graph.Files/Invoke-MgReauthorizeDriveItemSubscription?view=graph-powershell-v1.0)
+

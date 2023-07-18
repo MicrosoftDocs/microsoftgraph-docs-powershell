@@ -28,18 +28,6 @@ Remove-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdenti
 ## DESCRIPTION
 Delete navigation property alertIncidents for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -267,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceRoleManagementAlertIncident](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceRoleManagementAlertIncident?view=graph-powershell-v1.0)
+

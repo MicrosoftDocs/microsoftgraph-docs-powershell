@@ -66,7 +66,6 @@ For more information, see the Extensions section in Known issues with Microsoft 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
-```
 
 $params = @{
 	owner = "ef4cb9a8-97c3-4ca7-854b-5cb5ced376fa"
@@ -92,7 +91,8 @@ $params = @{
 
 Update-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -331,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-v1.0)
+

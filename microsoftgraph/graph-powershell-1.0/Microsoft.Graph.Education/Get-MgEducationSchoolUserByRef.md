@@ -26,11 +26,11 @@ Get the educationUser resources associated with an educationSchool.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -182,3 +182,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-beta)
+

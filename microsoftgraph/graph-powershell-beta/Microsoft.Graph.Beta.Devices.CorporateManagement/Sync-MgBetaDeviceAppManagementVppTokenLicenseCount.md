@@ -19,18 +19,6 @@ Sync-MgBetaDeviceAppManagementVppTokenLicenseCount [-PassThru] [-WhatIf] [-Confi
 ## DESCRIPTION
 Invoke action syncLicenseCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -PassThru
@@ -95,3 +83,4 @@ Sync-BetaDeviceAppMgtVppTokenLicenseCount
 
 ## RELATED LINKS
 [Sync-MgDeviceAppManagementVppTokenLicenseCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0)
+

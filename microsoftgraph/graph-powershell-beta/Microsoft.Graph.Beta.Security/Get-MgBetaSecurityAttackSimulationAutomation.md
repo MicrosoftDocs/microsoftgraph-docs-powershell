@@ -39,11 +39,11 @@ Get an attack simulation automation for a tenant.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAttackSimulationAutomation -SimulationAutomationId $simulationAutomationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomation?view=graph-powershell-v1.0)
+

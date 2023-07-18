@@ -39,11 +39,11 @@ Retrieve the properties and relationships of a directoryroletemplate object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryRoleTemplate -DirectoryRoleTemplateId $directoryRoleTemplateId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplate?view=graph-powershell-v1.0)
+

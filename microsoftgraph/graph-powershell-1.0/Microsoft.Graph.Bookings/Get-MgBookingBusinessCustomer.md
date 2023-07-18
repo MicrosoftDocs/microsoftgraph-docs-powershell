@@ -39,11 +39,11 @@ Get the properties and relationships of a bookingCustomer object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -272,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingBusinessCustomer?view=graph-powershell-beta)
+

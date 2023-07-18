@@ -39,7 +39,6 @@ Retrieve the properties and relationships of a tokenIssuancePolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
@@ -51,7 +50,8 @@ $params = @{
 
 Update-MgBetaPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -331,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyTokenIssuancePolicy?view=graph-powershell-v1.0)
+

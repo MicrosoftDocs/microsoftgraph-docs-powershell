@@ -47,18 +47,6 @@ New-MgUserDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -6120,3 +6108,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/New-MgUserDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+

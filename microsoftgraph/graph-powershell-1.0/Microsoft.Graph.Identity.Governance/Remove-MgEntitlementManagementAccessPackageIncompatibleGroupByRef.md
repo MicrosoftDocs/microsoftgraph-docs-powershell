@@ -32,11 +32,11 @@ Remove a group from the list of groups that have been marked as incompatible on 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageId
 The unique identifier of accessPackage
@@ -236,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+

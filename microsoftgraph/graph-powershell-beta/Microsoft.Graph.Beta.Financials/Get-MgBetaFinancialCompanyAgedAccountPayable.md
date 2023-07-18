@@ -34,22 +34,6 @@ Get-MgBetaFinancialCompanyAgedAccountPayable -InputObject <IFinancialsIdentity> 
 ## DESCRIPTION
 Get agedAccountsPayable from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgedAccountsPayableId
@@ -307,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanyAgedAccountPayable](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyAgedAccountPayable?view=graph-powershell-v1.0)
+

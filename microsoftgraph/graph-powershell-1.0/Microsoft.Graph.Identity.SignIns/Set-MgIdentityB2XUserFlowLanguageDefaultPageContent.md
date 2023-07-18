@@ -28,22 +28,6 @@ Set-MgIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentitySignI
 ## DESCRIPTION
 Update media content for the navigation property defaultPages in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -263,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+

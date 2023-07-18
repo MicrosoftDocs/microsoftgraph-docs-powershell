@@ -34,11 +34,11 @@ If a configuration includes a user synchronization policy, you must first delete
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -CrossTenantAccessPolicyConfigurationPartnerTenantId
 The unique identifier of crossTenantAccessPolicyConfigurationPartner
@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+

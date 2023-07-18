@@ -39,11 +39,11 @@ Get teamsApps from appCatalogs
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaAppCatalogTeamApp -TeamsAppId $teamsAppId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -287,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamApp?view=graph-powershell-v1.0)
+

@@ -31,18 +31,6 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope
 Read-only property with details of the app-specific scope when the role eligibility or assignment is scoped to an app.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -182,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope?view=graph-powershell-beta)
+

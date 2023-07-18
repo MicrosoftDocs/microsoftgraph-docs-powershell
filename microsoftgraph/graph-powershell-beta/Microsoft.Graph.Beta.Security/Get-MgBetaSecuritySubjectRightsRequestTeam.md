@@ -27,22 +27,6 @@ Get-MgBetaSecuritySubjectRightsRequestTeam -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Information about the Microsoft Teams team that was created for the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecuritySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestTeam?view=graph-powershell-v1.0)
+

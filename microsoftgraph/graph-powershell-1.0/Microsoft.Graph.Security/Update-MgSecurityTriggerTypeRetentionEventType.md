@@ -43,18 +43,6 @@ Update-MgSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property retentionEventTypes in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-beta)
+

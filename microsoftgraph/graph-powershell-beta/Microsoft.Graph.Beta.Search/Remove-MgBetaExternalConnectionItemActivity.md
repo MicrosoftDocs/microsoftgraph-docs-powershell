@@ -27,22 +27,6 @@ Remove-MgBetaExternalConnectionItemActivity -InputObject <ISearchIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property activities for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExternalActivityId
@@ -207,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)
+

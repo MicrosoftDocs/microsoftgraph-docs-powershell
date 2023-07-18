@@ -29,18 +29,6 @@ Remove-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceActionResour
 ## DESCRIPTION
 Delete navigation property resourceScope for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)
+

@@ -36,18 +36,6 @@ Get-MgBetaDeviceManagementWindowsFeatureUpdateProfileAssignment
 ## DESCRIPTION
 The list of group assignments of the profile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -294,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsFeatureUpdateProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsFeatureUpdateProfileAssignment?view=graph-powershell-v1.0)
+

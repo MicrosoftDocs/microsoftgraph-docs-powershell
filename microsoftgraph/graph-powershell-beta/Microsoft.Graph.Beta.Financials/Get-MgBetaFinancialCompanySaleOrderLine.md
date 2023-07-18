@@ -53,22 +53,6 @@ Get-MgBetaFinancialCompanySaleOrderLine -InputObject <IFinancialsIdentity> [-Exp
 ## DESCRIPTION
 Get salesOrderLines from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -341,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanySaleOrderLine](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleOrderLine?view=graph-powershell-v1.0)
+

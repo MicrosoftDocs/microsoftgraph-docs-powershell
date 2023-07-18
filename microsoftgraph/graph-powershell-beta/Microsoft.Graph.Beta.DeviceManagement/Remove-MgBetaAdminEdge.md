@@ -19,18 +19,6 @@ Remove-MgBetaAdminEdge [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<Co
 ## DESCRIPTION
 Delete navigation property edge for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -108,3 +96,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdge?view=graph-powershell-v1.0)
+

@@ -29,18 +29,6 @@ Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExte
 ## DESCRIPTION
 Get customExtension from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -195,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension?view=graph-powershell-beta)
+

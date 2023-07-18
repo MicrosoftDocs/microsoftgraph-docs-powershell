@@ -58,11 +58,11 @@ Children terms of set in term [store].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -363,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChild?view=graph-powershell-v1.0)
+

@@ -29,18 +29,6 @@ Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition
 ## DESCRIPTION
 Navigation link to the terms and conditions that are assigned.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition?view=graph-powershell-v1.0)
+

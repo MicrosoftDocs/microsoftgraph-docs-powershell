@@ -34,18 +34,6 @@ Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance -InputObject <IIden
 ## DESCRIPTION
 Get the instance of a role eligibility.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstance?view=graph-powershell-beta)
+

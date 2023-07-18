@@ -53,22 +53,6 @@ Update-MgUserDriveListContentType -InputObject <IFilesIdentity> -BodyParameter <
 ## DESCRIPTION
 Update the navigation property contentTypes in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1570,3 +1554,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgUserDriveListContentType?view=graph-powershell-beta)
+

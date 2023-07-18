@@ -43,7 +43,6 @@ Create a new **plannerTask**.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	planId = "xqQg5FS2LkCp935s-FIFm2QAFkHM"
@@ -59,7 +58,8 @@ $params = @{
 
 New-MgBetaPlannerTask -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActiveChecklistItemCount
 Number of checklist items with value set to false, representing incomplete items.
@@ -798,3 +798,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-v1.0)
+

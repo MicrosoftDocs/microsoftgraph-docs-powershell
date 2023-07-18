@@ -39,11 +39,11 @@ Read the properties and relationships of a riskDetection object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgRiskDetection -RiskDetectionId $riskDetectionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -304,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-beta)
+

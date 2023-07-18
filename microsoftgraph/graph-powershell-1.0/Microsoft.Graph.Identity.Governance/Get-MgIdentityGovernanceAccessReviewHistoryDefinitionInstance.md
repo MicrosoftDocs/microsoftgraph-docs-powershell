@@ -42,11 +42,11 @@ A definition that does not recur will have exactly one instance.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessReviewHistoryDefinitionId
 The unique identifier of accessReviewHistoryDefinition
@@ -321,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-beta)
+

@@ -39,11 +39,11 @@ Retrieve the properties and relationships of a **participant** object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -276,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallParticipant?view=graph-powershell-beta)
+

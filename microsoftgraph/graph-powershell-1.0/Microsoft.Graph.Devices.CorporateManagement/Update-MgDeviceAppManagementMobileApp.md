@@ -48,18 +48,6 @@ Update-MgDeviceAppManagementMobileApp -InputObject <IDevicesCorporateManagementI
 ## DESCRIPTION
 Update the navigation property mobileApps in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -508,3 +496,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-beta)
+

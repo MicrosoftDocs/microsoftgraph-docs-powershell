@@ -33,11 +33,11 @@ Delete an identityUserFlowAttributeAssignment object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -B2XIdentityUserFlowId
 The unique identifier of b2xIdentityUserFlow
@@ -223,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
+

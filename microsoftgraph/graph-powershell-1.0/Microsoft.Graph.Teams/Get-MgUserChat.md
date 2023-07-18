@@ -43,11 +43,11 @@ To access a chat, at least one chat member must belong to the tenant the request
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserChat -UserId $userId -ChatId $chatId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -299,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgUserChat?view=graph-powershell-beta)
+

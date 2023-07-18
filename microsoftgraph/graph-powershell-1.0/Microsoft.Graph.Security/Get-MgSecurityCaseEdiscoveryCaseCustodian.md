@@ -39,11 +39,11 @@ Read the properties and relationships of an ediscoveryCustodian object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -297,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+

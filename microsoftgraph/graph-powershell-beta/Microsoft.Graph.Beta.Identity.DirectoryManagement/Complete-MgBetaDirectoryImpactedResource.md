@@ -26,22 +26,6 @@ Complete-MgBetaDirectoryImpactedResource -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Complete an impactedResource object and update its **status** to `completedByUser`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ImpactedResourceId
@@ -169,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Complete-MgDirectoryImpactedResource?view=graph-powershell-v1.0)
+

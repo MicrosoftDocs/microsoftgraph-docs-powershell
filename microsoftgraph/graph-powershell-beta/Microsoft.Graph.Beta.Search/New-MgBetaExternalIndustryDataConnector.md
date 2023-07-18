@@ -28,18 +28,6 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ## DESCRIPTION
 Create a new azureDataLakeConnector object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
+

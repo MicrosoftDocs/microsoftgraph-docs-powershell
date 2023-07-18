@@ -43,22 +43,6 @@ New-MgGroupDriveListItemVersion -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create new navigation property to versions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -344,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgGroupDriveListItemVersion?view=graph-powershell-beta)
+

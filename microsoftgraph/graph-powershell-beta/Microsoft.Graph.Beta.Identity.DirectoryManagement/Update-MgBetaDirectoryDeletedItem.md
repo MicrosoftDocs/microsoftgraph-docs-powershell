@@ -40,22 +40,6 @@ Update-MgBetaDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Update the navigation property deletedItems in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -252,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryDeletedItem?view=graph-powershell-v1.0)
+

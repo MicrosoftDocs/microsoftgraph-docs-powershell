@@ -32,11 +32,11 @@ Delete ref of navigation property members for directory
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
@@ -223,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)
+

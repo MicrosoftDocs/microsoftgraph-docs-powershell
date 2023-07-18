@@ -27,22 +27,6 @@ Remove-MgGroupCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete calendarPermission.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CalendarPermissionId
@@ -184,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgGroupCalendarPermission?view=graph-powershell-beta)
+

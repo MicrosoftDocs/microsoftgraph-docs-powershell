@@ -32,11 +32,11 @@ Get this organizational contact's manager.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContactManager -OrgContactId $orgContactId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -142,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContactMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactMemberGroup?view=graph-powershell-beta)
+

@@ -27,22 +27,6 @@ Send-MgBetaIdentityGovernanceAccessReviewDecisionInstanceReminder -InputObject <
 ## DESCRIPTION
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -240,3 +224,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgIdentityGovernanceAccessReviewDecisionInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgIdentityGovernanceAccessReviewDecisionInstanceReminder?view=graph-powershell-v1.0)
+

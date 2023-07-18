@@ -43,18 +43,6 @@ Invoke-MgBetaBufferGroupSiteInformationProtectionDecrypt -InputObject <IGroupsId
 ## DESCRIPTION
 Invoke action decryptBuffer
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -318,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBufferGroupSiteInformationProtectionDecrypt](/powershell/module/Microsoft.Graph.Groups/Invoke-MgBufferGroupSiteInformationProtectionDecrypt?view=graph-powershell-v1.0)
+

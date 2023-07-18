@@ -46,22 +46,6 @@ Update-MgBetaDeviceManagementComanagedDeviceSecurityBaselineState -InputObject <
 ## DESCRIPTION
 Update the navigation property securityBaselineStates in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -468,3 +452,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementComanagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComanagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
+

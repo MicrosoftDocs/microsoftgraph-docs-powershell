@@ -27,18 +27,6 @@ Remove-MgBetaGroupSiteInformationProtectionPolicyLabel -InputObject <ISitesIdent
 ## DESCRIPTION
 Delete navigation property labels for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -235,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+

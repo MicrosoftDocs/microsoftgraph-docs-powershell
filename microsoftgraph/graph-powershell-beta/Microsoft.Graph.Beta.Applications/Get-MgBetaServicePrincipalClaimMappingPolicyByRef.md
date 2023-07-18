@@ -26,11 +26,11 @@ List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 Get-MgBetaServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -182,3 +182,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-v1.0)
+

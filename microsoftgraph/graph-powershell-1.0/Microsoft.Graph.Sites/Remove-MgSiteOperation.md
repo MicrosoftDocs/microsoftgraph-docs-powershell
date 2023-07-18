@@ -27,18 +27,6 @@ Remove-MgSiteOperation -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property operations for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteOperation?view=graph-powershell-beta)
+

@@ -27,18 +27,6 @@ Remove-MgRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete navigation property roleAssignmentSchedules for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
+

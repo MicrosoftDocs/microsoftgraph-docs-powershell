@@ -41,22 +41,6 @@ Invoke-MgCheckinDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -270,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaCheckinDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgCheckinDriveRoot?view=graph-powershell-beta)
+

@@ -34,11 +34,11 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationMeRubric -EducationRubricId $educationRubricId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationRubricId
 The unique identifier of educationRubric
@@ -164,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationMeRubric?view=graph-powershell-beta)
+

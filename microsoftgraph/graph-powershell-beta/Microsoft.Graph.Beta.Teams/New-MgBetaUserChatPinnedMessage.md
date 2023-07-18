@@ -41,18 +41,6 @@ New-MgBetaUserChatPinnedMessage -InputObject <ITeamsIdentity>
 Pin a chat message in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can pin a chat message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,3 +430,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatPinnedMessage?view=graph-powershell-v1.0)
+

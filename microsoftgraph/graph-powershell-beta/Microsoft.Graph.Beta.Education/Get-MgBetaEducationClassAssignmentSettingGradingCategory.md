@@ -34,18 +34,6 @@ Get-MgBetaEducationClassAssignmentSettingGradingCategory -InputObject <IEducatio
 ## DESCRIPTION
 Get gradingCategories from education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-v1.0)
+

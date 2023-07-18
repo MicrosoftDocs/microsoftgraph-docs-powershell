@@ -34,18 +34,6 @@ Get-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagem
 ## DESCRIPTION
 Get bulkActions from deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -308,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointBulkAction](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointBulkAction?view=graph-powershell-v1.0)
+

@@ -39,11 +39,11 @@ Retrieve the properties and relationships of an offerShiftRequest object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleOfferShiftRequest -TeamId $teamId -OfferShiftRequestId $offerShiftRequestId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamScheduleOfferShiftRequest?view=graph-powershell-beta)
+

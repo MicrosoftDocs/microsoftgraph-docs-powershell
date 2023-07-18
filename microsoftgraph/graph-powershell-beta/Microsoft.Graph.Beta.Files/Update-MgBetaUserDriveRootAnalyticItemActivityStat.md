@@ -47,18 +47,6 @@ Update-MgBetaUserDriveRootAnalyticItemActivityStat -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property itemActivityStats in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -9831,3 +9819,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootAnalyticItemActivityStat?view=graph-powershell-v1.0)
+

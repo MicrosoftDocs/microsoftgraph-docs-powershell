@@ -27,18 +27,6 @@ Remove-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property messages for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -216,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+

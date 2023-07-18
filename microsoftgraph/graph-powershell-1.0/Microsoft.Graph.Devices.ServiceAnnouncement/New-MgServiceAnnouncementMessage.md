@@ -36,11 +36,11 @@ Create new navigation property to messages for admin
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementMessage
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActionRequiredByDateTime
 The expected deadline of the action for the message.
@@ -444,3 +444,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgServiceAnnouncementMessage?view=graph-powershell-beta)
+

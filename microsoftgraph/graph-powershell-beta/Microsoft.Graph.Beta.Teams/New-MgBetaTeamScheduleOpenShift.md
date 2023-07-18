@@ -43,22 +43,6 @@ New-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Create an instance of an openshift object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -409,3 +393,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-v1.0)
+

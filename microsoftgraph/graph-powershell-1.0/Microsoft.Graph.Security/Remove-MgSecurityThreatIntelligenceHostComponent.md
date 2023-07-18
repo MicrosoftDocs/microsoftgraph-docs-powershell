@@ -27,18 +27,6 @@ Remove-MgSecurityThreatIntelligenceHostComponent -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Delete navigation property hostComponents for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HostComponentId
@@ -188,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityThreatIntelligenceHostComponent](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityThreatIntelligenceHostComponent?view=graph-powershell-beta)
+

@@ -36,18 +36,6 @@ Get-MgRoleManagementEntitlementManagementRoleDefinition -InputObject <IIdentityG
 Read the properties and relationships of a unifiedRoleDefinition object.
 The following role-based access control (RBAC) providers are currently supported:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -308,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+

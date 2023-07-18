@@ -19,18 +19,6 @@ Get-MgBetaDirectoryRoleCount [-Filter <String>] [-Search <String>] [<CommonParam
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryRoleCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleCount?view=graph-powershell-v1.0)
+

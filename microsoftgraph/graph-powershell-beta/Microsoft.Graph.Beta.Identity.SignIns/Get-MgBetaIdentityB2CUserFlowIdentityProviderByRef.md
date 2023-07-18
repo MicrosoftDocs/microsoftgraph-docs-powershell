@@ -21,22 +21,6 @@ Get-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2CIdentityUserFlowId <Strin
 ## DESCRIPTION
 Get the identity providers in a b2cIdentityUserFlow object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -189,3 +173,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
+

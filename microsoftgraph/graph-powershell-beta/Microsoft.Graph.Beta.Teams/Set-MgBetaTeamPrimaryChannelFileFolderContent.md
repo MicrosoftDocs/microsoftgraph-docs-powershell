@@ -32,11 +32,11 @@ The content stream, if the item represents a file.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -Data
 .
@@ -193,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPrimaryChannelFileFolderContent?view=graph-powershell-v1.0)
+

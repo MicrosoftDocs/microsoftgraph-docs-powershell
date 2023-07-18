@@ -32,11 +32,11 @@ Delete a tokenIssuancePolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+

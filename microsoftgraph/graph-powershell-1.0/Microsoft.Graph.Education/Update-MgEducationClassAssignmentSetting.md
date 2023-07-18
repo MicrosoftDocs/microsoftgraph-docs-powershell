@@ -46,7 +46,6 @@ Only Teachers can update these settings.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	submissionAnimationDisabled = $true
@@ -54,7 +53,8 @@ $params = @{
 
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignmentSetting?view=graph-powershell-beta)
+

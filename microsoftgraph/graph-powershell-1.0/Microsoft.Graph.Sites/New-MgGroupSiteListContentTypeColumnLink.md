@@ -40,22 +40,6 @@ New-MgGroupSiteListContentTypeColumnLink -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to columnLinks for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -293,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteListContentTypeColumnLink?view=graph-powershell-beta)
+

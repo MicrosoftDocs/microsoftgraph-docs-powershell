@@ -27,22 +27,6 @@ Get-MgUserContactPhoto -InputObject <IPersonalContactsIdentity> [-Property <Stri
 Optional contact picture.
 You can get or set a photo for a contact.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactId
@@ -133,3 +117,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserContactPhoto](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgUserContactPhoto?view=graph-powershell-beta)
+

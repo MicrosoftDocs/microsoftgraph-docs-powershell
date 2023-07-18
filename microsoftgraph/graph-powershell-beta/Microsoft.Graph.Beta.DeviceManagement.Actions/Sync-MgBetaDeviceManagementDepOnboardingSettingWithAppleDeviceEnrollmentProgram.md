@@ -27,22 +27,6 @@ Sync-MgBetaDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram
 ## DESCRIPTION
 Synchronizes between Apple Device Enrollment Program and Intune
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -195,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Sync-MgDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementDepOnboardingSettingWithAppleDeviceEnrollmentProgram?view=graph-powershell-v1.0)
+

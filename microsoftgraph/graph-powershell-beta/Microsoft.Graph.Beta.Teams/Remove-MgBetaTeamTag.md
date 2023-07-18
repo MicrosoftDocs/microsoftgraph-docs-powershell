@@ -32,11 +32,11 @@ Delete a tag object permanently.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -205,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamTag?view=graph-powershell-v1.0)
+

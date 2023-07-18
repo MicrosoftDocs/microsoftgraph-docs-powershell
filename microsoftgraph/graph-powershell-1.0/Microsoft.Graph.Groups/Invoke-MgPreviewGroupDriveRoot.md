@@ -41,22 +41,6 @@ Invoke-MgPreviewGroupDriveRoot -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Invoke action preview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaPreviewGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgPreviewGroupDriveRoot?view=graph-powershell-beta)
+

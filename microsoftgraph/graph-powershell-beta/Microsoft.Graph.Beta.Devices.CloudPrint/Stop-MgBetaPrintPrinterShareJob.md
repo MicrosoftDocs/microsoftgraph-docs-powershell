@@ -29,18 +29,6 @@ Stop-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Pass
 Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -170,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgPrintPrinterShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Stop-MgPrintPrinterShareJob?view=graph-powershell-v1.0)
+

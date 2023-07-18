@@ -57,11 +57,11 @@ Retrieve the properties and relationships of a connectedOrganization object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -393,3 +393,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
+

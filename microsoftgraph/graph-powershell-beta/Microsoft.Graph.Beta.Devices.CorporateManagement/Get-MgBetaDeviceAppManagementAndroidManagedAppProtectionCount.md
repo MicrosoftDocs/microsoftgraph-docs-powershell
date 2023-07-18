@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementAndroidManagedAppProtectionCount [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ Get-BetaDeviceAppMgtAndroidManagedAppProtectionCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementAndroidManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionCount?view=graph-powershell-v1.0)
+

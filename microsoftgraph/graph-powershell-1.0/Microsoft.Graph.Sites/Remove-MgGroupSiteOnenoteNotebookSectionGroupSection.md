@@ -28,18 +28,6 @@ Remove-MgGroupSiteOnenoteNotebookSectionGroupSection -InputObject <ISitesIdentit
 ## DESCRIPTION
 Delete navigation property sections for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -254,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupSiteOnenoteNotebookSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgGroupSiteOnenoteNotebookSectionGroupSection?view=graph-powershell-beta)
+

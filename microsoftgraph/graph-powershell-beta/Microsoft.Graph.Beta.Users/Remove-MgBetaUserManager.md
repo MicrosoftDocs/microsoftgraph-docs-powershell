@@ -27,18 +27,6 @@ Remove-MgBetaUserManager -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pas
 ## DESCRIPTION
 Remove a user's manager.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -177,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManager](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManager?view=graph-powershell-v1.0)
+

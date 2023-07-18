@@ -47,22 +47,6 @@ Update-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> -BodyParameter <
 ## DESCRIPTION
 Replace an existing timeCard with updated values.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -517,3 +501,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
+

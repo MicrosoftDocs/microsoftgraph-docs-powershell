@@ -80,7 +80,6 @@ This method updates any solution that has a record of the referenced alert ID.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "String"
@@ -101,10 +100,10 @@ $params = @{
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	assignedTo = "String"
@@ -125,7 +124,8 @@ $params = @{
 
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActivityGroupName
 Name or alias of the activity group (attacker) this alert is attributed to.
@@ -1269,3 +1269,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAlert?view=graph-powershell-v1.0)
+

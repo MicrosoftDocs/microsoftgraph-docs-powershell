@@ -29,18 +29,6 @@ Remove-MgBetaDeviceAppManagementiOSLobAppProvisioningConfiguration
 ## DESCRIPTION
 Delete navigation property iosLobAppProvisioningConfigurations for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -223,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementiOSLobAppProvisioningConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementiOSLobAppProvisioningConfiguration?view=graph-powershell-v1.0)
+

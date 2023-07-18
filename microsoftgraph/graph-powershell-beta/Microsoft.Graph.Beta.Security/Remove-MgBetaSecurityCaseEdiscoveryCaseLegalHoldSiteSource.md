@@ -28,22 +28,6 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -InputObject <ISecuri
 ## DESCRIPTION
 Delete navigation property siteSources for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -260,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+

@@ -36,22 +36,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInsight -InputObject <IIdentityG
 Insights are recommendations to reviewers on whether to approve or deny a decision.
 There can be multiple insights associated with an accessReviewInstanceDecisionItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -369,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDecisionInsight](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDecisionInsight?view=graph-powershell-v1.0)
+

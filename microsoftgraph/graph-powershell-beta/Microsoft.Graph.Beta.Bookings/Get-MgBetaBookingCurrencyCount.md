@@ -19,18 +19,6 @@ Get-MgBetaBookingCurrencyCount [-Filter <String>] [-Search <String>] [<CommonPar
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBookingCurrencyCount](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingCurrencyCount?view=graph-powershell-v1.0)
+

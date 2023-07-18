@@ -38,18 +38,6 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue
 The metric values for the user experience analytics category.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -309,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-beta)
+

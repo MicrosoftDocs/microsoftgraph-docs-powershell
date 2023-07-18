@@ -27,18 +27,6 @@ Set-MgOrganizationBrandingSquareLogoDark -InputObject <IIdentityDirectoryManagem
 ## DESCRIPTION
 Update squareLogoDark for the navigation property branding in organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaOrganizationBrandingSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgOrganizationBrandingSquareLogoDark?view=graph-powershell-beta)
+

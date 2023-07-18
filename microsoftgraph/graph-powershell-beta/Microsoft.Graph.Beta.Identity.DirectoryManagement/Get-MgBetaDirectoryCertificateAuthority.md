@@ -20,18 +20,6 @@ Get-MgBetaDirectoryCertificateAuthority [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 Get certificateAuthorities from directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)
+

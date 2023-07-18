@@ -41,22 +41,6 @@ Update-MgTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Update the role of a conversationMember in a team or channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -309,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMember?view=graph-powershell-beta)
+

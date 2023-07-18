@@ -41,22 +41,6 @@ Update-MgBetaDeviceManagementRoleScopeTag -InputObject <IDeviceManagementAdminis
 ## DESCRIPTION
 Update the navigation property roleScopeTags in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementRoleScopeTag](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementRoleScopeTag?view=graph-powershell-v1.0)
+

@@ -21,18 +21,6 @@ Get-MgBetaDriveRootAnalyticItemActivityStatActivity -DriveId <String> -ItemActiv
 ## DESCRIPTION
 Exposes the itemActivities represented in this itemActivityStat resource.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -230,3 +218,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDriveRootAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootAnalyticItemActivityStatActivity?view=graph-powershell-v1.0)
+

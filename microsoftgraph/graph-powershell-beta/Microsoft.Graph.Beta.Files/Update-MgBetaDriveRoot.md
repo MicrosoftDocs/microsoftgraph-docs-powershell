@@ -77,22 +77,6 @@ Update-MgBetaDriveRoot -InputObject <IFilesIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Update the navigation property root in drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -34531,3 +34515,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Update-MgDriveRoot?view=graph-powershell-v1.0)
+

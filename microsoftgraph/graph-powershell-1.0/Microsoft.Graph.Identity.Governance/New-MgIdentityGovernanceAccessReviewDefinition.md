@@ -40,7 +40,6 @@ Create a new accessReviewScheduleDefinition object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Test create"
@@ -80,10 +79,10 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Review inactive guests on teams"
@@ -138,10 +137,10 @@ Review our access policy for more."
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Review employee access to LinkedIn"
@@ -204,10 +203,10 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Group Multi-stage Access Review"
@@ -279,7 +278,8 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalNotificationRecipients
 Defines the list of additional users or group members to be notified of the access review progress.
@@ -884,3 +884,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-beta)
+

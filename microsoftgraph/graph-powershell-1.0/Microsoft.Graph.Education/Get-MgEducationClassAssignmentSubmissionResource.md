@@ -47,46 +47,46 @@ This resource is wrapped with a possible pointer back to the assignment resource
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-### EXAMPLE 6
+```
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -347,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-beta)
+

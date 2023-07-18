@@ -57,7 +57,6 @@ Create a new [contentType][] in a [site][].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	name = "docSet"
@@ -71,7 +70,8 @@ $params = @{
 
 New-MgSiteContentType -SiteId $siteId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1556,3 +1556,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteContentType?view=graph-powershell-beta)
+

@@ -36,18 +36,6 @@ Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Read the properties and relationships of an allowedValue object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
+

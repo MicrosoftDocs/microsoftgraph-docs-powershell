@@ -41,22 +41,6 @@ New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecurityId
 ## DESCRIPTION
 Create a new additional source associated with an eDiscovery search.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -325,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+

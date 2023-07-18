@@ -27,18 +27,6 @@ Get-MgBetaTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DelegatedAdminCustomerId
@@ -130,3 +118,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetailCount?view=graph-powershell-v1.0)
+

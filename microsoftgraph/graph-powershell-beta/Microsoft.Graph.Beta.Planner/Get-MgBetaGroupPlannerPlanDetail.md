@@ -27,22 +27,6 @@ Get-MgBetaGroupPlannerPlanDetail -InputObject <IPlannerIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a **plannerPlanDetails** object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -151,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanDetail?view=graph-powershell-v1.0)
+

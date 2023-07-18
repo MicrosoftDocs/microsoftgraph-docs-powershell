@@ -27,22 +27,6 @@ Remove-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Deletes an authenticationEventListener object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationEventListenerId
@@ -233,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityAuthenticationEventListener?view=graph-powershell-v1.0)
+

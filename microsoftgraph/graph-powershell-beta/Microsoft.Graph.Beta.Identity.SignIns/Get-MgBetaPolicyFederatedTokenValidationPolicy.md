@@ -20,18 +20,6 @@ Get-MgBetaPolicyFederatedTokenValidationPolicy [-ExpandProperty <String[]>] [-Pr
 ## DESCRIPTION
 Get federatedTokenValidationPolicy from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-v1.0)
+

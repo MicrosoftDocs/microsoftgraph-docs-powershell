@@ -60,7 +60,6 @@ Create a new ediscoverySearch object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "My search 2"
@@ -78,7 +77,8 @@ $params = @{
 
 New-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -809,3 +809,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+

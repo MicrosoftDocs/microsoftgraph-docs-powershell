@@ -19,18 +19,6 @@ Get-MgBetaChatRscConfiguration [<CommonParameters>]
 ## DESCRIPTION
 Get chat RSC configuration for tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -47,3 +35,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgChatRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgChatRscConfiguration?view=graph-powershell-v1.0)
+

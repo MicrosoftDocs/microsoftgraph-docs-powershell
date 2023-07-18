@@ -39,11 +39,11 @@ Retrieve the properties and relationships of plannerTask object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 Get-MgBetaPlannerTask -PlannerTaskId $plannerTaskId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -257,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTask?view=graph-powershell-v1.0)
+

@@ -39,18 +39,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom
 Read-only collection of role definitions that the given role definition inherits from.
 Only Azure AD built-in roles support this attribute.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -368,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+

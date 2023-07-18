@@ -34,18 +34,6 @@ Get-MgTeamworkDeletedTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -313,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+

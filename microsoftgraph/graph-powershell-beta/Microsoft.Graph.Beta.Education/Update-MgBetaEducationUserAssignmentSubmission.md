@@ -50,22 +50,6 @@ Update-MgBetaEducationUserAssignmentSubmission -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Update the navigation property submissions in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -499,3 +483,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
+

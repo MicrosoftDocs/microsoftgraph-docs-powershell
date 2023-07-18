@@ -20,22 +20,6 @@ Get-MgBetaUserManagedAppBlockedUser [-Count] [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Invoke function getManagedAppBlockedUsers
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -127,3 +111,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserManagedAppBlockedUser](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppBlockedUser?view=graph-powershell-v1.0)
+

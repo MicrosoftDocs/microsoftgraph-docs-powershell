@@ -19,18 +19,6 @@ Get-MgReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <String
 ## DESCRIPTION
 Get authenticationMethods from reports
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-beta)
+

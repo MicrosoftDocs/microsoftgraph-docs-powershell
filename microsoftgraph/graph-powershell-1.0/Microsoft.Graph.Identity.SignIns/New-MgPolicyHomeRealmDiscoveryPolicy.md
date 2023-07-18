@@ -28,22 +28,6 @@ New-MgPolicyHomeRealmDiscoveryPolicy -BodyParameter <Hashtable> [-WhatIf] [-Conf
 ## DESCRIPTION
 Create a new homeRealmDiscoveryPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
+

@@ -36,7 +36,6 @@ Create a new accessReviewHistoryDefinition object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Last quarter's group reviews April 2021"
@@ -67,7 +66,8 @@ $params = @{
 
 New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -420,3 +420,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
+

@@ -53,22 +53,6 @@ Get-MgShareListItemDocumentSetVersion -InputObject <IFilesIdentity> [-ExpandProp
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -329,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaShareListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListItemDocumentSetVersion?view=graph-powershell-beta)
+

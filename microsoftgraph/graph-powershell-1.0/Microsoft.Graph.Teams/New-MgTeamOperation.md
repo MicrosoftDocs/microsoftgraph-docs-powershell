@@ -43,22 +43,6 @@ New-MgTeamOperation -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 ## DESCRIPTION
 Create new navigation property to operations for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -366,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamOperation?view=graph-powershell-beta)
+

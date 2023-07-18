@@ -54,11 +54,11 @@ Create new navigation property to instances for identityGovernance
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessReviewScheduleDefinitionId
 The unique identifier of accessReviewScheduleDefinition
@@ -555,3 +555,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+

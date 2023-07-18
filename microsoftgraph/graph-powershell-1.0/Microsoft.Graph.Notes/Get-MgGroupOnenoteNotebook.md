@@ -34,18 +34,6 @@ Get-MgGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -276,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgGroupOnenoteNotebook?view=graph-powershell-beta)
+

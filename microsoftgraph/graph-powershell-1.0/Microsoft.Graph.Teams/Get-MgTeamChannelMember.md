@@ -39,11 +39,11 @@ Get a conversationMember from a channel.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -ConversationMemberId $conversationMemberId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamChannelMember?view=graph-powershell-beta)
+

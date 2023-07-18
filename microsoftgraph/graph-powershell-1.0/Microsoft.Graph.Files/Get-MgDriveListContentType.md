@@ -34,22 +34,6 @@ Get-MgDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 The collection of content types present in this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -295,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveListContentType?view=graph-powershell-beta)
+

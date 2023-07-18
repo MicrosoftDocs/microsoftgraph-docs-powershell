@@ -47,18 +47,6 @@ Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 Update the properties of an authenticationCombinationConfiguration object.
 In use, only fido2combinationConfigurations may be updated as they are the only type of authenticationCombinationConfiguration that may be created.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -285,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
+

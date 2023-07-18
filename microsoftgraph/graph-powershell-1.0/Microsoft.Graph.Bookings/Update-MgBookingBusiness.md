@@ -60,7 +60,6 @@ Update the properties of a bookingBusiness object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	email = "admin@fabrikam.com"
@@ -75,7 +74,8 @@ $params = @{
 
 Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -785,3 +785,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBookingBusiness?view=graph-powershell-beta)
+

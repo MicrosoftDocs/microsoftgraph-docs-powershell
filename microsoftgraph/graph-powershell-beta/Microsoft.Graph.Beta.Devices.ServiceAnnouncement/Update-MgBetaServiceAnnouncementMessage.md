@@ -49,22 +49,6 @@ Update-MgBetaServiceAnnouncementMessage -InputObject <IDevicesServiceAnnouncemen
 ## DESCRIPTION
 Update the navigation property messages in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionRequiredByDateTime
@@ -507,3 +491,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementMessage?view=graph-powershell-v1.0)
+

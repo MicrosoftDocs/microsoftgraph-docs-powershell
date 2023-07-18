@@ -63,18 +63,6 @@ New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice
 ## DESCRIPTION
 Create new navigation property to metricDevices for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -908,3 +896,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetricDevice?view=graph-powershell-beta)
+

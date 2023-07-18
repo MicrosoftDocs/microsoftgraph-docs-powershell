@@ -28,22 +28,6 @@ Remove-MgBetaGroupConversationThreadPostInReplyToExtension -InputObject <IGroups
 ## DESCRIPTION
 Delete navigation property extensions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationId
@@ -264,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupConversationThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversationThreadPostInReplyToExtension?view=graph-powershell-v1.0)
+

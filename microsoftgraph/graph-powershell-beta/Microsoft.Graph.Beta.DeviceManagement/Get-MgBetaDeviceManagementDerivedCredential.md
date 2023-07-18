@@ -34,18 +34,6 @@ Get-MgBetaDeviceManagementDerivedCredential -InputObject <IDeviceManagementIdent
 ## DESCRIPTION
 Collection of Derived credential settings associated with account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -392,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
+

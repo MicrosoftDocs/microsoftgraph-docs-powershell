@@ -25,7 +25,6 @@ Delete navigation property identitySecurityDefaultsEnforcementPolicy for policie
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	isEnabled = $false
@@ -33,7 +32,8 @@ $params = @{
 
 Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -110,3 +110,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+

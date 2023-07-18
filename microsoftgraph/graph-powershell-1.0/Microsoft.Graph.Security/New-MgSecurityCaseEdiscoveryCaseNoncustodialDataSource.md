@@ -52,7 +52,6 @@ Create a new ediscoveryNoncustodialDataSource object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	dataSource = @{
@@ -62,7 +61,8 @@ $params = @{
 
 New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -403,3 +403,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)
+

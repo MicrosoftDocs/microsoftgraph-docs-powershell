@@ -32,11 +32,11 @@ Removes an item from a [list][].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Remove-MgSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteListItem?view=graph-powershell-beta)
+

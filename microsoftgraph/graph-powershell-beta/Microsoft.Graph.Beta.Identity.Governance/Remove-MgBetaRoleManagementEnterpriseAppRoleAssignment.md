@@ -27,18 +27,6 @@ Remove-MgBetaRoleManagementEnterpriseAppRoleAssignment -InputObject <IIdentityGo
 ## DESCRIPTION
 Delete a unifiedRoleAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -266,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementEnterpriseAppRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEnterpriseAppRoleAssignment?view=graph-powershell-v1.0)
+

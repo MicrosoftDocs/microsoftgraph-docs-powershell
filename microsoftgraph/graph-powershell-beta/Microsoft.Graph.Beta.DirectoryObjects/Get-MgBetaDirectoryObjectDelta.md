@@ -20,18 +20,6 @@ Get-MgBetaDirectoryObjectDelta [-Filter <String>] [-Property <String[]>] [-Searc
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -184,3 +172,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryObjectDelta](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectDelta?view=graph-powershell-v1.0)
+

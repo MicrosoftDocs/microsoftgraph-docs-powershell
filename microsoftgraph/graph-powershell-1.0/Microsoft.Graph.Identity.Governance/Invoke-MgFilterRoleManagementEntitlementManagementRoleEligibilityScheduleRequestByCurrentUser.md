@@ -29,18 +29,6 @@ Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 ## DESCRIPTION
 Invoke function filterByCurrentUser
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -255,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgFilterRoleManagementEntitlementManagementRoleEligibilityScheduleRequestByCurrentUser?view=graph-powershell-beta)
+

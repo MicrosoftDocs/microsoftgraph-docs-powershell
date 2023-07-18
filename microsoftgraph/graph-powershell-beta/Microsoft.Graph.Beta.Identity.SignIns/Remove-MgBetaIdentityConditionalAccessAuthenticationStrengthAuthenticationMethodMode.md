@@ -29,22 +29,6 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethod
 ## DESCRIPTION
 Delete navigation property authenticationMethodModes for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModeDetailId
@@ -235,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode?view=graph-powershell-v1.0)
+

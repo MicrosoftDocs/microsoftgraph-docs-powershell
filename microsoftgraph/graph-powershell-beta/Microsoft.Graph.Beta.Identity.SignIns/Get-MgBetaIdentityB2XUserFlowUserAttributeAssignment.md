@@ -40,18 +40,18 @@ The user attribute assignments included in the user flow.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -ExpandProperty "userAttribute"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
+

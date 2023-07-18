@@ -38,11 +38,11 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentDefault -EducationClassId $educationClassId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationClassId
 The unique identifier of educationClass
@@ -137,3 +137,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-beta)
+

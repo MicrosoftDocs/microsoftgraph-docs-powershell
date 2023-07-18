@@ -27,22 +27,6 @@ New-MgBetaDirectoryObject -BodyParameter <IMicrosoftGraphDirectoryObject> [-What
 ## DESCRIPTION
 Add new entity to directoryObjects
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -164,3 +148,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/New-MgDirectoryObject?view=graph-powershell-v1.0)
+

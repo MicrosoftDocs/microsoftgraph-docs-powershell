@@ -27,22 +27,6 @@ Remove-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property extensions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContactId
@@ -194,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContactExtension?view=graph-powershell-v1.0)
+

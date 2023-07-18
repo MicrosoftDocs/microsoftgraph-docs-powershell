@@ -33,11 +33,11 @@ Deletes a microsoftAuthenticatorAuthenticationMethod object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId -MicrosoftAuthenticatorAuthenticationMethodId $microsoftAuthenticatorAuthenticationMethodId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -242,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-v1.0)
+

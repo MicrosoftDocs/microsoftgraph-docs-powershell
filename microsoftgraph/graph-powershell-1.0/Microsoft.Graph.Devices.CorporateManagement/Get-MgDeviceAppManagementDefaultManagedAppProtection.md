@@ -34,18 +34,6 @@ Get-MgDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevicesCorpo
 ## DESCRIPTION
 Default managed app policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -286,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-beta)
+

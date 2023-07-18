@@ -39,11 +39,11 @@ Retrieve the properties and relationships of an alert object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityAlert -AlertId $alertId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AlertId
 The unique identifier of alert
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAlert?view=graph-powershell-v1.0)
+

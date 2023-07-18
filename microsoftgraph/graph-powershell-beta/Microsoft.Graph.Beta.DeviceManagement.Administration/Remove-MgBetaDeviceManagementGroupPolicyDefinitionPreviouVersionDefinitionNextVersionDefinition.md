@@ -28,22 +28,6 @@ Remove-MgBetaDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVe
 ## DESCRIPTION
 Delete navigation property nextVersionDefinition for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupPolicyDefinitionId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition?view=graph-powershell-v1.0)
+

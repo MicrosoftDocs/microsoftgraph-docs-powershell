@@ -32,11 +32,11 @@ Delete a connectedOrganization object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Remove-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ConnectedOrganizationId
 The unique identifier of connectedOrganization
@@ -248,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
+

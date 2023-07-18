@@ -48,7 +48,6 @@ Create a new siteSource object associated with an eDiscovery custodian.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	site = @{
@@ -58,7 +57,8 @@ $params = @{
 
 New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -6035,3 +6035,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-beta)
+

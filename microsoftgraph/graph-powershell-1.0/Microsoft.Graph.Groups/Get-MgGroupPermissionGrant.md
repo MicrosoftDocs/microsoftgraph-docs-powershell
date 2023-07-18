@@ -41,11 +41,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupPermissionGrant -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -301,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-beta)
+

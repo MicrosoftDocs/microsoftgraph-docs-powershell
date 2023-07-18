@@ -44,7 +44,6 @@ Update the properties of a bookingCustomer object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingCustomer"
@@ -54,7 +53,8 @@ $params = @{
 
 Update-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -209,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBookingBusinessCustomer?view=graph-powershell-beta)
+

@@ -39,11 +39,11 @@ Get operations from external
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -282,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-v1.0)
+

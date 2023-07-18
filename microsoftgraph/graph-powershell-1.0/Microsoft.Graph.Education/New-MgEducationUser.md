@@ -45,7 +45,6 @@ Create a new educationUser object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationUser"
@@ -112,7 +111,8 @@ $params = @{
 
 New-MgEducationUser -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccountEnabled
 True if the account is enabled; otherwise, false.
@@ -16041,3 +16041,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationUser?view=graph-powershell-beta)
+

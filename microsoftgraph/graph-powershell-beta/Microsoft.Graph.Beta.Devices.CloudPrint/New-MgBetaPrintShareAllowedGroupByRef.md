@@ -44,7 +44,6 @@ Grant the specified group access to submit print jobs to the associated printerS
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/groups/{groupId}"
@@ -52,7 +51,8 @@ $params = @{
 
 New-MgBetaPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -218,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareAllowedGroupByRef?view=graph-powershell-v1.0)
+

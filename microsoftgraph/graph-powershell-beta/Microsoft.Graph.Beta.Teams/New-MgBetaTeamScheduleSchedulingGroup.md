@@ -46,7 +46,6 @@ Create a new schedulingGroup.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	displayName = "Cashiers"
@@ -59,7 +58,8 @@ $params = @{
 
 New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -328,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+

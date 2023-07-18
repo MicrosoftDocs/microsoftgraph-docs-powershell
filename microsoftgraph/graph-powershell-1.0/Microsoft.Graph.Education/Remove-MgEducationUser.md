@@ -32,11 +32,11 @@ Delete a user.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationUser -EducationUserId $educationUserId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationUserId
 The unique identifier of educationUser
@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationUser?view=graph-powershell-beta)
+

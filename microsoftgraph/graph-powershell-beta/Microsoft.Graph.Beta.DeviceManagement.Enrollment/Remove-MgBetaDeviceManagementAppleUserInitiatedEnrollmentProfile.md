@@ -29,18 +29,6 @@ Remove-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfile
 ## DESCRIPTION
 Delete navigation property appleUserInitiatedEnrollmentProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppleUserInitiatedEnrollmentProfileId
@@ -182,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementAppleUserInitiatedEnrollmentProfile?view=graph-powershell-v1.0)
+

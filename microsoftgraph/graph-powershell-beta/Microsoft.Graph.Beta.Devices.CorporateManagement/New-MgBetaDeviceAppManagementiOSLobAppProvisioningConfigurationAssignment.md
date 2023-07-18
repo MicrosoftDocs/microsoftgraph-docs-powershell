@@ -45,18 +45,6 @@ New-MgBetaDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment
 ## DESCRIPTION
 Create new navigation property to assignments for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -286,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementiOSLobAppProvisioningConfigurationAssignment?view=graph-powershell-v1.0)
+

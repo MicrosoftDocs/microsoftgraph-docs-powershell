@@ -70,7 +70,6 @@ The **ID** is also known as the **tenantId** of the organization.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 $params = @{
 	marketingNotificationEmails = @(
@@ -93,7 +92,8 @@ $params = @{
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -942,3 +942,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgOrganization?view=graph-powershell-beta)
+

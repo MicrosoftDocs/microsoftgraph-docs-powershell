@@ -32,11 +32,11 @@ Remove a conversationMember from a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Remove-MgChatMember -ChatId $chatId -ConversationMemberId $conversationMemberId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ChatId
 The unique identifier of chat
@@ -198,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgChatMember?view=graph-powershell-beta)
+

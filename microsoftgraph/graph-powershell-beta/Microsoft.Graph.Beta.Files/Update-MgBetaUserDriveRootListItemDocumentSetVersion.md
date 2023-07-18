@@ -47,22 +47,6 @@ Update-MgBetaUserDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentit
 ## DESCRIPTION
 Update the navigation property documentSetVersions in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -448,3 +432,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemDocumentSetVersion?view=graph-powershell-v1.0)
+

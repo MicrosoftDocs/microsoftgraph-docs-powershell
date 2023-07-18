@@ -45,18 +45,6 @@ Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Update the navigation property shared in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -415,3 +403,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsightShared?view=graph-powershell-v1.0)
+

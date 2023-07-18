@@ -27,18 +27,6 @@ Remove-MgBetaDriveItemRetentionLabel -InputObject <IFilesIdentity> [-IfMatch <St
 ## DESCRIPTION
 Delete navigation property retentionLabel for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveItemRetentionLabel](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemRetentionLabel?view=graph-powershell-v1.0)
+

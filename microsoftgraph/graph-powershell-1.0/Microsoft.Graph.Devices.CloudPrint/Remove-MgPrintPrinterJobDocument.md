@@ -27,18 +27,6 @@ Remove-MgPrintPrinterJobDocument -InputObject <IDevicesCloudPrintIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property documents for print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -198,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgPrintPrinterJobDocument?view=graph-powershell-beta)
+

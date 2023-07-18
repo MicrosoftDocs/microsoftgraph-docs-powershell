@@ -20,22 +20,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadines
 ## DESCRIPTION
 User experience analytics work from anywhere hardware readiness metrics.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-v1.0)
+

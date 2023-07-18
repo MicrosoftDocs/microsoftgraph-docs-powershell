@@ -27,22 +27,6 @@ Remove-MgEducationClassTeacherByRef -InputObject <IEducationIdentity> [-Id <Stri
 ## DESCRIPTION
 Remove teacher from an educationClass.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationClassId
@@ -199,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassTeacherByRef?view=graph-powershell-beta)
+

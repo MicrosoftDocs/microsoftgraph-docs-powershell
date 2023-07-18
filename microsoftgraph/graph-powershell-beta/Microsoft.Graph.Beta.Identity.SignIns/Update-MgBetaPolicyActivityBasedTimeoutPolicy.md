@@ -48,7 +48,6 @@ Update the properties of an activityBasedTimeoutPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	definition = @(
@@ -60,7 +59,8 @@ $params = @{
 
 Update-MgBetaPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActivityBasedTimeoutPolicyId
 The unique identifier of activityBasedTimeoutPolicy
@@ -369,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-v1.0)
+

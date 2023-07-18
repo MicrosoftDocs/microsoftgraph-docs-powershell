@@ -19,18 +19,6 @@ Get-MgBetaWindowsUpdatesResourceConnectionCount [-Filter <String>] [-Search <Str
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -79,3 +67,4 @@ Get-MgBetaWuResourceConnectionCount
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesResourceConnectionCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesResourceConnectionCount?view=graph-powershell-v1.0)
+

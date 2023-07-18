@@ -48,18 +48,18 @@ Create new navigation property to tabs for groups
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -470,3 +470,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelTab?view=graph-powershell-v1.0)
+

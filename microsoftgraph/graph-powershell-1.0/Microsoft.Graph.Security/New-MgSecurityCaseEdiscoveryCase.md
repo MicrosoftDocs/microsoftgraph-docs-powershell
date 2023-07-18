@@ -41,7 +41,6 @@ Create a new ediscoveryCase object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 $params = @{
 	displayName = "CONTOSO LITIGATION-005"
@@ -51,7 +50,8 @@ $params = @{
 
 New-MgSecurityCaseEdiscoveryCase -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -6546,3 +6546,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+

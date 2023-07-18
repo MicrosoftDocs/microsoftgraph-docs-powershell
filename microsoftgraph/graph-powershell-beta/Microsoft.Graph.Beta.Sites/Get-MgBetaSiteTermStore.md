@@ -32,11 +32,11 @@ Read the properties and relationships of a store object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStore -SiteId $siteId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -171,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStore?view=graph-powershell-v1.0)
+

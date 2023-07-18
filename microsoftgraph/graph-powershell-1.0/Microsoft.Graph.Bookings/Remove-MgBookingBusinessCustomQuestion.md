@@ -32,11 +32,11 @@ Delete a bookingCustomQuestion object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -BookingBusinessId
 The unique identifier of bookingBusiness
@@ -174,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-beta)
+

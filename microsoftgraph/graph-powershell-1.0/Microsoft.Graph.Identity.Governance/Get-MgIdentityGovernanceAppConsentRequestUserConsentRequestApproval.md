@@ -27,22 +27,6 @@ Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval -InputObject
 ## DESCRIPTION
 Approval decisions associated with a request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AppConsentRequestId
@@ -197,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApproval](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApproval?view=graph-powershell-beta)
+

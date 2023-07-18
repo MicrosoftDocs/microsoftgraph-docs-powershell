@@ -43,22 +43,6 @@ Update-MgEducationClassAssignmentSubmissionSubmittedResource -InputObject <IEduc
 ## DESCRIPTION
 Update the navigation property submittedResources in education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+

@@ -29,22 +29,6 @@ Set-MgBetaUserOnlineMeetingTranscriptContent -InputObject <ICloudCommunicationsI
 A field that represents the content of the transcript.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -212,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserOnlineMeetingTranscriptContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingTranscriptContent?view=graph-powershell-v1.0)
+

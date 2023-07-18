@@ -40,18 +40,6 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -371,3 +359,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
+

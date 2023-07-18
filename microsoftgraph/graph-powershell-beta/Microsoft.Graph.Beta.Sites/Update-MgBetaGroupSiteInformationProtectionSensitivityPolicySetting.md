@@ -41,18 +41,6 @@ Update-MgBetaGroupSiteInformationProtectionSensitivityPolicySetting -InputObject
 ## DESCRIPTION
 Update the navigation property sensitivityPolicySettings in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -320,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)
+

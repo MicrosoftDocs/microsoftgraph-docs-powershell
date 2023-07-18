@@ -32,7 +32,6 @@ Create a new identityApiConnector object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Test API"
@@ -46,10 +45,10 @@ $params = @{
 
 New-MgIdentityApiConnector -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Test API"
@@ -63,7 +62,8 @@ $params = @{
 
 New-MgIdentityApiConnector -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -216,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-beta)
+

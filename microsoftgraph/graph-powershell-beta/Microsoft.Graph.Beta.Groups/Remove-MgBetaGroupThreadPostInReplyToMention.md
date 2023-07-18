@@ -27,22 +27,6 @@ Remove-MgBetaGroupThreadPostInReplyToMention -InputObject <IGroupsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property mentions for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -248,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupThreadPostInReplyToMention](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThreadPostInReplyToMention?view=graph-powershell-v1.0)
+

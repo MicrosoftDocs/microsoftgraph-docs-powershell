@@ -28,22 +28,6 @@ Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition
 ## DESCRIPTION
 Role definition this assignment is part of.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -159,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition?view=graph-powershell-beta)
+

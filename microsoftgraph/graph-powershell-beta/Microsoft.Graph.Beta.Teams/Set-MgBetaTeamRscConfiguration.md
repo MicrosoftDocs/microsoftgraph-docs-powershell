@@ -20,18 +20,6 @@ Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-Ad
 ## DESCRIPTION
 Update Team RSC configuration for tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -110,3 +98,4 @@ ALIASES
 
 ## RELATED LINKS
 [Set-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamRscConfiguration?view=graph-powershell-v1.0)
+

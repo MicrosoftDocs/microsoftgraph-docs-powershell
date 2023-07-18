@@ -32,18 +32,6 @@ New-MgDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBoo
 ## DESCRIPTION
 Create new navigation property to managedEBooks for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,3 +430,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+

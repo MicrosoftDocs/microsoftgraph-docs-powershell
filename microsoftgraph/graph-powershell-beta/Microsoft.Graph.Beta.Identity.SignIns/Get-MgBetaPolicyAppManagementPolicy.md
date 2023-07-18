@@ -39,11 +39,11 @@ Read the properties of an appManagementPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -323,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAppManagementPolicy?view=graph-powershell-v1.0)
+

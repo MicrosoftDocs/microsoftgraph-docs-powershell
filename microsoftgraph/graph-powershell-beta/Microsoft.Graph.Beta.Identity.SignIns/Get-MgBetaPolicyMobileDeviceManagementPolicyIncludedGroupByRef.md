@@ -21,22 +21,6 @@ Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManageme
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -189,3 +173,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)
+

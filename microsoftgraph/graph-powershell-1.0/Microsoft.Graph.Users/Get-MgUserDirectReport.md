@@ -45,7 +45,6 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Get-MgUserDirectReport -UserId '075b32dd-edb7-47cf-89ef-f3f733683a3f'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -55,7 +54,9 @@ f890ceed-822a-4647-8748-73d88013ae9d
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 68906e46-27f9-4c5e-914b-b931696088fe
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -All
 List all pages.
@@ -305,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserDirectReport](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserDirectReport?view=graph-powershell-beta)
+

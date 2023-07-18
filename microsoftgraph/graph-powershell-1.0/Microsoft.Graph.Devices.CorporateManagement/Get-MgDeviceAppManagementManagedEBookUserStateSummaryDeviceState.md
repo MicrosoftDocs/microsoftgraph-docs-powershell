@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState
 ## DESCRIPTION
 The install state of the eBook.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -319,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedEBookUserStateSummaryDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState?view=graph-powershell-beta)
+

@@ -30,18 +30,6 @@ Get-MgGroupSiteOnenoteNotebookSectionParentSectionGroup -InputObject <ISitesIden
 The section group that contains the section.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -210,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteOnenoteNotebookSectionParentSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenoteNotebookSectionParentSectionGroup?view=graph-powershell-beta)
+

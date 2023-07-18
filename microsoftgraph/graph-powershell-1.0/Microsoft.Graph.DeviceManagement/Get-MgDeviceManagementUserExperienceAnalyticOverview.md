@@ -20,18 +20,6 @@ Get-MgDeviceManagementUserExperienceAnalyticOverview [-ExpandProperty <String[]>
 ## DESCRIPTION
 User experience analytics overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
+

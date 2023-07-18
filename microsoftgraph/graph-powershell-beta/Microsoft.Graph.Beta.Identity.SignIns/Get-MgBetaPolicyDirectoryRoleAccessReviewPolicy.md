@@ -20,22 +20,6 @@ Get-MgBetaPolicyDirectoryRoleAccessReviewPolicy [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Get directoryRoleAccessReviewPolicy from policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
+

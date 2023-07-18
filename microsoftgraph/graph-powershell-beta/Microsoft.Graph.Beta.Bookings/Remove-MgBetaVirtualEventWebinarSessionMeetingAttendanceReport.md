@@ -27,18 +27,6 @@ Remove-MgBetaVirtualEventWebinarSessionMeetingAttendanceReport -InputObject <IBo
 ## DESCRIPTION
 Delete navigation property meetingAttendanceReport for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -190,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgVirtualEventWebinarSessionMeetingAttendanceReport](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionMeetingAttendanceReport?view=graph-powershell-v1.0)
+

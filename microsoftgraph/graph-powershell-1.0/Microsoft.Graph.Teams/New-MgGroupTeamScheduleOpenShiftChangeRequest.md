@@ -43,22 +43,6 @@ New-MgGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create instance of an openShiftChangeRequest object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-beta)
+

@@ -27,22 +27,6 @@ Remove-MgBetaServiceAnnouncementMessageAttachment -InputObject <IDevicesServiceA
 ## DESCRIPTION
 Delete navigation property attachments for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -178,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementMessageAttachment?view=graph-powershell-v1.0)
+

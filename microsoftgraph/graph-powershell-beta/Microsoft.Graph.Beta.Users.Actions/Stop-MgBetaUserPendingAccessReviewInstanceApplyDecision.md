@@ -27,18 +27,6 @@ Stop-MgBetaUserPendingAccessReviewInstanceApplyDecision -InputObject <IUsersActi
 ## DESCRIPTION
 Invoke action stopApplyDecisions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -195,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgUserPendingAccessReviewInstanceApplyDecision](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserPendingAccessReviewInstanceApplyDecision?view=graph-powershell-v1.0)
+

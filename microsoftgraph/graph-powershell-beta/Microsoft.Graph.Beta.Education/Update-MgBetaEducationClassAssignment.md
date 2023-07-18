@@ -66,7 +66,6 @@ Use the publish action to change the **assignment** status.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	displayName = "Reading and review test 09.03 #5"
@@ -80,7 +79,8 @@ $params = @{
 
 Update-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AddedStudentAction
 educationAddedStudentAction
@@ -765,3 +765,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-v1.0)
+

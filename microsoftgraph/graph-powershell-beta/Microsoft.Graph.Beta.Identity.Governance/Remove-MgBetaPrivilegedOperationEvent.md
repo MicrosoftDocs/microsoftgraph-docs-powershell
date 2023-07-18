@@ -27,22 +27,6 @@ Remove-MgBetaPrivilegedOperationEvent -InputObject <IIdentityGovernanceIdentity>
 ## DESCRIPTION
 Delete entity from privilegedOperationEvents
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -255,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrivilegedOperationEvent](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedOperationEvent?view=graph-powershell-v1.0)
+

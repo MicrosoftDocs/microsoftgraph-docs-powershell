@@ -32,18 +32,6 @@ New-MgRoleManagementDirectoryRoleDefinition -BodyParameter <IMicrosoftGraphUnifi
 Create a new custom unifiedRoleDefinition object.
 This feature requires an Azure AD Premium P1 or P2 license.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -336,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-beta)
+

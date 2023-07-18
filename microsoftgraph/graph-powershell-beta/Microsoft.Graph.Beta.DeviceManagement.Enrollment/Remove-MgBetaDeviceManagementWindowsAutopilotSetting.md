@@ -20,18 +20,6 @@ Remove-MgBetaDeviceManagementWindowsAutopilotSetting [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property windowsAutopilotSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
+

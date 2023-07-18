@@ -34,18 +34,6 @@ Get-MgRoleManagementEntitlementManagementRoleAssignment -InputObject <IIdentityG
 ## DESCRIPTION
 Retrieve the properties and relationships of a unifiedRoleAssignment object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementEntitlementManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignment?view=graph-powershell-beta)
+

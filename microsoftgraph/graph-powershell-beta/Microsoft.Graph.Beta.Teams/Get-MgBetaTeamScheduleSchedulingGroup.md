@@ -38,11 +38,11 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Get-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -SchedulingGroupId $schedulingGroupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -286,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+

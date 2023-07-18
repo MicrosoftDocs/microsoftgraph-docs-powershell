@@ -19,22 +19,6 @@ Enable-MgBetaDeviceManagementLegacyPcManagement [-PassThru] [-WhatIf] [-Confirm]
 ## DESCRIPTION
 Invoke action enableLegacyPcManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -97,3 +81,4 @@ ALIASES
 
 ## RELATED LINKS
 [Enable-MgDeviceManagementLegacyPcManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementLegacyPcManagement?view=graph-powershell-v1.0)
+

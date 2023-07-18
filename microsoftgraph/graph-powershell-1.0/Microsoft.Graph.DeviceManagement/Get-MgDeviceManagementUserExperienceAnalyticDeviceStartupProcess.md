@@ -35,18 +35,6 @@ Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess -InputObject <I
 ## DESCRIPTION
 User experience analytics device Startup Processes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-beta)
+

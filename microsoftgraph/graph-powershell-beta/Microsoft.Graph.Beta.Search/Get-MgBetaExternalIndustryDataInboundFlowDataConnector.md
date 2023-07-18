@@ -27,18 +27,6 @@ Get-MgBetaExternalIndustryDataInboundFlowDataConnector -InputObject <ISearchIden
 ## DESCRIPTION
 The data connector in the context of which this flow pulls in data from a source system.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -142,3 +130,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalIndustryDataInboundFlowDataConnector](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowDataConnector?view=graph-powershell-v1.0)
+

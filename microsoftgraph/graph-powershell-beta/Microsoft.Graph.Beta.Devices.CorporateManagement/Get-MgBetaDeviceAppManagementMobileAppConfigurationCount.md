@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementMobileAppConfigurationCount [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ Get-BetaDeviceAppMgtMobileAppConfigurationCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppConfigurationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppConfigurationCount?view=graph-powershell-v1.0)
+

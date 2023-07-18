@@ -41,18 +41,6 @@ Update-MgBetaGroupSiteListItemDocumentSetVersionField -InputObject <ISitesIdenti
 ## DESCRIPTION
 Update the navigation property fields in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+

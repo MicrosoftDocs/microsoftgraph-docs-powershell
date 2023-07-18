@@ -21,22 +21,6 @@ Get-MgBetaUserDriveListActivity -DriveId <String> -UserId <String> [-ExpandPrope
 ## DESCRIPTION
 The recent activities that took place within this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -234,3 +218,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserDriveListActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListActivity?view=graph-powershell-v1.0)
+

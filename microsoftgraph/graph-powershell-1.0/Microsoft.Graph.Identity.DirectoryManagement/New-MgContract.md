@@ -32,11 +32,11 @@ Add new entity to contracts
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgContract
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -228,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-beta)
+

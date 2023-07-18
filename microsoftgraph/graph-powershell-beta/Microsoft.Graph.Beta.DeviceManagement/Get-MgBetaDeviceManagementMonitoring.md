@@ -19,18 +19,6 @@ Get-MgBetaDeviceManagementMonitoring [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get monitoring from deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
+

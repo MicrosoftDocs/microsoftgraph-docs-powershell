@@ -27,22 +27,6 @@ Remove-MgBetaPrivilegedRoleAssignmentRoleInfoSetting -InputObject <IIdentityGove
 ## DESCRIPTION
 Delete navigation property settings for privilegedRoleAssignments
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -255,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrivilegedRoleAssignmentRoleInfoSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedRoleAssignmentRoleInfoSetting?view=graph-powershell-v1.0)
+

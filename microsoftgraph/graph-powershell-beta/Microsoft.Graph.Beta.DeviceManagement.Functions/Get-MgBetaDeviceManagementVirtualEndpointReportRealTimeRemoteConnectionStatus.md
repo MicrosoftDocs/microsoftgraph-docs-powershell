@@ -27,18 +27,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus
 ## DESCRIPTION
 Invoke function getRealTimeRemoteConnectionStatus
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcId
@@ -152,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus?view=graph-powershell-v1.0)
+

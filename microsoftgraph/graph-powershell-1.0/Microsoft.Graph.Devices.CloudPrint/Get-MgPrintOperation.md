@@ -39,11 +39,11 @@ Retrieve the properties and relationships of a printOperation object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintOperation -PrintOperationId $printOperationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -262,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintOperation?view=graph-powershell-beta)
+

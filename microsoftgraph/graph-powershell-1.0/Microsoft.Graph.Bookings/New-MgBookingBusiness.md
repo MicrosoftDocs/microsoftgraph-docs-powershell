@@ -42,7 +42,6 @@ You can include other information such as business address, web site address, an
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	displayName = "Fourth Coffee"
@@ -63,7 +62,8 @@ Box 123"
 
 New-MgBookingBusiness -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -732,3 +732,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusiness?view=graph-powershell-beta)
+

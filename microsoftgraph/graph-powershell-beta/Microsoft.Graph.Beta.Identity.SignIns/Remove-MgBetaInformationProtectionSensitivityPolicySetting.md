@@ -20,22 +20,6 @@ Remove-MgBetaInformationProtectionSensitivityPolicySetting [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property sensitivityPolicySettings for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)
+

@@ -41,46 +41,46 @@ Only teachers, students, and applications with application permissions can perfo
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 6
+```
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -326,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignmentResource?view=graph-powershell-beta)
+

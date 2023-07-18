@@ -19,22 +19,6 @@ Connect-MgBetaDeviceManagementZebraFotaConnector [-WhatIf] [-Confirm] [<CommonPa
 ## DESCRIPTION
 Invoke action connect
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Connect-MgDeviceManagementZebraFotaConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementZebraFotaConnector?view=graph-powershell-v1.0)
+

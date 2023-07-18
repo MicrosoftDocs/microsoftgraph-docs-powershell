@@ -47,18 +47,6 @@ Update-MgUserDriveRootListItemCreatedByUserMailboxSetting -InputObject <IFilesId
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -412,3 +400,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveRootListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgUserDriveRootListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
+

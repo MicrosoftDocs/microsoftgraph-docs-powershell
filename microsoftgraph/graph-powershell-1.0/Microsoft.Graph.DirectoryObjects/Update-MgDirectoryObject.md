@@ -44,11 +44,11 @@ Update entity in directoryObjects
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -204,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Update-MgDirectoryObject?view=graph-powershell-beta)
+

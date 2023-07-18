@@ -45,18 +45,6 @@ New-MgDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceManag
 ## DESCRIPTION
 Create new navigation property to deviceStatuses for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -360,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+

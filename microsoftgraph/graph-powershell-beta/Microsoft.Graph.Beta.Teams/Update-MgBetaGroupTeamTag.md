@@ -43,22 +43,6 @@ Update-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Update the properties of a teamworkTag object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -358,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamTag?view=graph-powershell-v1.0)
+

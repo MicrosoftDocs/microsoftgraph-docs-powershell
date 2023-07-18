@@ -53,18 +53,6 @@ Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance -InputObject <IIdentityGov
 ## DESCRIPTION
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -340,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-beta)
+

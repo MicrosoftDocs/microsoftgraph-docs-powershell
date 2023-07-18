@@ -43,11 +43,11 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusinessCalendarView -BookingBusinessId $bookingBusinessId -Start "2018-04-30T00:00:00Z" -End "2018-05-10T00:00:00Z"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingBusinessCalendarView?view=graph-powershell-beta)
+

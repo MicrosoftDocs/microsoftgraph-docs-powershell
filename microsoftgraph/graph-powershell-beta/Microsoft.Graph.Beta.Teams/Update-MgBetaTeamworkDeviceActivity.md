@@ -45,22 +45,6 @@ Update-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Update the navigation property activity in teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivePeripherals
@@ -369,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamworkDeviceActivity](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceActivity?view=graph-powershell-v1.0)
+

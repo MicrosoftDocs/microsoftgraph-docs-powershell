@@ -33,22 +33,6 @@ New-MgDeviceManagementDeviceConfiguration -BodyParameter <IMicrosoftGraphDeviceC
 ## DESCRIPTION
 Create new navigation property to deviceConfigurations for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -437,3 +421,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementDeviceConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceConfiguration?view=graph-powershell-beta)
+

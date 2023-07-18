@@ -41,11 +41,11 @@ Since the **organization** resource supports extensions, you can also use the `G
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgOrganization -OrganizationId $organizationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -272,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganization?view=graph-powershell-beta)
+

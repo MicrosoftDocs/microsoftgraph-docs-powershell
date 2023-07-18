@@ -36,22 +36,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -InputObject <ISecurityI
 ## DESCRIPTION
 Data sources that represent SharePoint sites.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -358,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+

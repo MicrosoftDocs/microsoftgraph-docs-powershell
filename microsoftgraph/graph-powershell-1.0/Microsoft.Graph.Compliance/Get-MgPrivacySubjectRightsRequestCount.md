@@ -19,18 +19,6 @@ Get-MgPrivacySubjectRightsRequestCount [-Filter <String>] [-Search <String>] [<C
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPrivacySubjectRightsRequestCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgPrivacySubjectRightsRequestCount?view=graph-powershell-beta)
+

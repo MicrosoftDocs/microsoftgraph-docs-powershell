@@ -80,7 +80,6 @@ You can also use update to move an item to another parent by updating the item's
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	name = "new-file-name.docx"
@@ -88,7 +87,8 @@ $params = @{
 
 Update-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -18658,3 +18658,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgDriveItem?view=graph-powershell-beta)
+

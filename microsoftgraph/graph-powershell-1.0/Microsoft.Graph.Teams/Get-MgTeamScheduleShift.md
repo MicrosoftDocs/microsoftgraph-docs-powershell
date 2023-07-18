@@ -37,11 +37,11 @@ Retrieve the properties and relationships of a shift object by ID.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -278,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamScheduleShift?view=graph-powershell-beta)
+

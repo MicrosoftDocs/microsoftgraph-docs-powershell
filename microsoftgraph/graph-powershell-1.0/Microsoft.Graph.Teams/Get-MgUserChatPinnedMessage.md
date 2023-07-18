@@ -48,18 +48,6 @@ Get-MgUserChatPinnedMessage -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 A collection of all the pinned messages in the chat.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -328,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgUserChatPinnedMessage?view=graph-powershell-beta)
+

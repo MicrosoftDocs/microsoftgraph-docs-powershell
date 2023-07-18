@@ -35,22 +35,6 @@ Get-MgGroupSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -355,3 +339,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListContentTypeColumn?view=graph-powershell-beta)
+

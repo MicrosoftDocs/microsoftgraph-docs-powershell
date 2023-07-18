@@ -38,11 +38,11 @@ timeOffItem instances that have been assigned this reason remain assigned to thi
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -TimeOffReasonId $timeOffReasonId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+

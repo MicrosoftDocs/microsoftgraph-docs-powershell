@@ -41,18 +41,6 @@ Update-MgDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceMana
 ## DESCRIPTION
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -273,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
+

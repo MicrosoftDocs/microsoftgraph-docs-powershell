@@ -34,18 +34,6 @@ Get-MgBetaSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Read the properties of a richLongRunningOperation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -317,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOperation?view=graph-powershell-v1.0)
+

@@ -26,18 +26,6 @@ Remove-MgGroupPhoto -InputObject <IGroupsIdentity> [-IfMatch <String>] [-PassThr
 ## DESCRIPTION
 Delete navigation property photo for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -189,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupPhoto?view=graph-powershell-beta)
+

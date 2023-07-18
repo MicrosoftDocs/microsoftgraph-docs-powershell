@@ -41,11 +41,11 @@ Sign-ins that are interactive in nature (where a username/password is passed as 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgAuditLogSignIn -SignInId $signInId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -271,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgAuditLogSignIn?view=graph-powershell-beta)
+

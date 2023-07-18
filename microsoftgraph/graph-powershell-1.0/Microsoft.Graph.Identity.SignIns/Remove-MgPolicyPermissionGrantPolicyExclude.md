@@ -31,11 +31,12 @@ Deletes a permissionGrantConditionSet from the **excludes** collection of a perm
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 Remove-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "60ba4fac-d39e-47b3-bd99-4394cb88a2f8" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
-```
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -IfMatch
 ETag
@@ -221,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+

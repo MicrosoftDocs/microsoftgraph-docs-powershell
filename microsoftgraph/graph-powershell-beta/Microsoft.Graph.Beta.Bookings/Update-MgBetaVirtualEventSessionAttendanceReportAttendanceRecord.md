@@ -45,18 +45,6 @@ Update-MgBetaVirtualEventSessionAttendanceReportAttendanceRecord -InputObject <I
 ## DESCRIPTION
 Update the navigation property attendanceRecords in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -376,3 +364,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgVirtualEventSessionAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionAttendanceReportAttendanceRecord?view=graph-powershell-v1.0)
+

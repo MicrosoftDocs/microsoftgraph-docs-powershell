@@ -67,18 +67,6 @@ Update-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Update the properties of a businessScenarioTask object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -941,3 +929,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBusinessScenarioPlannerTask](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerTask?view=graph-powershell-v1.0)
+

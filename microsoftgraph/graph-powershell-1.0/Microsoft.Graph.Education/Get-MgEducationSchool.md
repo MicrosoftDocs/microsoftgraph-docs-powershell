@@ -39,11 +39,11 @@ Read the properties and relationships of an educationSchool object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationSchool -EducationSchoolId $educationSchoolId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -259,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationSchool?view=graph-powershell-beta)
+

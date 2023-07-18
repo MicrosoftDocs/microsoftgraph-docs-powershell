@@ -76,7 +76,6 @@ To retrieve the default branding, see Get branding.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -86,7 +85,8 @@ $params = @{
 
 New-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -787,3 +787,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationBrandingLocalization?view=graph-powershell-v1.0)
+

@@ -49,22 +49,6 @@ Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledAc
 ## DESCRIPTION
 Update the navigation property scheduledActionConfigurations in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActionType
@@ -351,3 +335,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-beta)
+

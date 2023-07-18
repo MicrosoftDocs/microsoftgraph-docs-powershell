@@ -34,22 +34,6 @@ Get-MgBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -278,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingBusinessService?view=graph-powershell-beta)
+

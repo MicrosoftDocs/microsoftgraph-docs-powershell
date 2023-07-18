@@ -45,7 +45,6 @@ Create a new teamworkTagMember object in a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	userId = "97f62344-57dc-409c-88ad-c4af14158ff5"
@@ -53,7 +52,8 @@ $params = @{
 
 New-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -285,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamTagMember?view=graph-powershell-beta)
+

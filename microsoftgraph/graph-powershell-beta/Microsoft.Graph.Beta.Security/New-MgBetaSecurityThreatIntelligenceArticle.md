@@ -30,18 +30,6 @@ New-MgBetaSecurityThreatIntelligenceArticle -BodyParameter <IMicrosoftGraphSecur
 ## DESCRIPTION
 Create new navigation property to articles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatIntelligenceArticle?view=graph-powershell-v1.0)
+

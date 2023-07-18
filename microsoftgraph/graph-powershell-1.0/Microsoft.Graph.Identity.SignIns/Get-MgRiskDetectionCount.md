@@ -19,18 +19,6 @@ Get-MgRiskDetectionCount [-Filter <String>] [-Search <String>] [<CommonParameter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaRiskDetectionCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgRiskDetectionCount?view=graph-powershell-beta)
+

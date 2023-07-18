@@ -34,7 +34,6 @@ Create a new educationRubric object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Example Credit Rubric"
@@ -104,7 +103,8 @@ $params = @{
 
 New-MgEducationMeRubric -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -390,3 +390,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationMeRubric?view=graph-powershell-beta)
+

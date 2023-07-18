@@ -42,22 +42,6 @@ Clear-MgBetaUserManagedAppRegistrationByAzureAdDeviceId -InputObject <IUsersActi
 ## DESCRIPTION
 Issues a wipe operation on an app registration with specified aad device Id.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -250,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgUserManagedAppRegistrationByAzureAdDeviceId](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserManagedAppRegistrationByAzureAdDeviceId?view=graph-powershell-v1.0)
+

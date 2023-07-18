@@ -27,18 +27,6 @@ Remove-MgPrivacySubjectRightsRequestNote -InputObject <IComplianceIdentity> [-If
 ## DESCRIPTION
 Delete navigation property notes for privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthoredNoteId
@@ -172,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+

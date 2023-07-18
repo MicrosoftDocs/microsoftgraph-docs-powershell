@@ -35,18 +35,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport
 ## DESCRIPTION
 Represents the aggregation of task execution data for tasks within a workflow object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTaskReport?view=graph-powershell-beta)
+

@@ -27,22 +27,6 @@ Remove-MgIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceId
 ## DESCRIPTION
 Delete navigation property appConsentRequests for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AppConsentRequestId
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
+

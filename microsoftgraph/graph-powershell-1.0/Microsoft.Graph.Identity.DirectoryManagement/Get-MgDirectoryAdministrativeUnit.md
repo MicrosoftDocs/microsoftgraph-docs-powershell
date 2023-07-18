@@ -39,11 +39,11 @@ Retrieve the properties and relationships of an administrativeUnit object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
@@ -270,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-beta)
+

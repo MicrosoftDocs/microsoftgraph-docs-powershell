@@ -43,11 +43,11 @@ The operation returns an error if the issue does not exist for the tenant.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementIssue -ServiceHealthIssueId $serviceHealthIssueId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -257,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementIssue?view=graph-powershell-beta)
+

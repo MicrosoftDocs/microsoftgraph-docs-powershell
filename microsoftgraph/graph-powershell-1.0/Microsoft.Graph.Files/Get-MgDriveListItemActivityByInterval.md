@@ -43,22 +43,6 @@ Get-MgDriveListItemActivityByInterval -InputObject <IFilesIdentity> [-Count] [-F
 ## DESCRIPTION
 Invoke function getActivitiesByInterval
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -303,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveListItemActivityByInterval?view=graph-powershell-beta)
+

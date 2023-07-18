@@ -27,18 +27,6 @@ Update-MgBetaAdminReportSetting -BodyParameter <IMicrosoftGraphAdminReportSettin
 ## DESCRIPTION
 Update tenant-level settings for Microsoft 365 reports.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -162,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Update-MgAdminReportSetting?view=graph-powershell-v1.0)
+

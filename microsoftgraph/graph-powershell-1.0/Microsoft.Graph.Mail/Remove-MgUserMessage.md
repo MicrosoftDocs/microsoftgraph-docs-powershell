@@ -29,22 +29,6 @@ Remove-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-IfMatch <
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 See the table in the Permissions section for the list of resources that support open extensions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExtensionId
@@ -214,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgUserMessage?view=graph-powershell-beta)
+

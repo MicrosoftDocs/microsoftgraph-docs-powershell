@@ -27,18 +27,6 @@ Get-MgGroupSiteOnenoteNotebookSectionPageContent -InputObject <ISitesIdentity> -
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupId
@@ -222,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteOnenoteNotebookSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenoteNotebookSectionPageContent?view=graph-powershell-beta)
+

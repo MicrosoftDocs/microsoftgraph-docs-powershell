@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment
 ## DESCRIPTION
 Navigation property to list of security groups targeted for policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
+

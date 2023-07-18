@@ -19,18 +19,6 @@ Get-MgRoleManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<Commo
 ## DESCRIPTION
 Get roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgRoleManagement?view=graph-powershell-beta)
+

@@ -54,7 +54,6 @@ Update the properties of an educationSchool object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Fabrikam Arts High School"
@@ -64,7 +63,8 @@ Los Angeles School District"
 
 Update-MgEducationSchool -EducationSchoolId $educationSchoolId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -9656,3 +9656,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationSchool?view=graph-powershell-beta)
+

@@ -46,11 +46,11 @@ Create new navigation property to languages for identity
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+

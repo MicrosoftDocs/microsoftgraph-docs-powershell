@@ -28,18 +28,6 @@ Remove-MgBetaVirtualEventSessionRegistrationCustomQuestion -InputObject <IBookin
 ## DESCRIPTION
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -206,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgVirtualEventSessionRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSessionRegistrationCustomQuestion?view=graph-powershell-v1.0)
+

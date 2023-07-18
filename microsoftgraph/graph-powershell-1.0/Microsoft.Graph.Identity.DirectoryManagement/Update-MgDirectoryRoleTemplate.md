@@ -46,11 +46,11 @@ Update entity in directoryRoleTemplates
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryRoleTemplate -DirectoryRoleTemplateId $directoryRoleTemplateId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -260,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgDirectoryRoleTemplate?view=graph-powershell-beta)
+

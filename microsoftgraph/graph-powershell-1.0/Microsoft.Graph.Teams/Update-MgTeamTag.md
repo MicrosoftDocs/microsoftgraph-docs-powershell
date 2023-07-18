@@ -47,7 +47,6 @@ Update the properties of a tag object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	displayName = "Finance"
@@ -55,7 +54,8 @@ $params = @{
 
 Update-MgTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -359,3 +359,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamTag?view=graph-powershell-beta)
+

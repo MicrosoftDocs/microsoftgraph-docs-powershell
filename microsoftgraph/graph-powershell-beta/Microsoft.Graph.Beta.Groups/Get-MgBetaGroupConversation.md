@@ -38,11 +38,11 @@ Get a conversation object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupConversation -GroupId $groupId -ConversationId $conversationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -292,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-v1.0)
+

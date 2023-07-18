@@ -43,18 +43,6 @@ Update-MgDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCor
 ## DESCRIPTION
 Update the navigation property installSummary in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -323,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-beta)
+

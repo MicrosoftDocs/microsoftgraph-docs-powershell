@@ -32,7 +32,6 @@ Delete entity from organization
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	marketingNotificationEmails = @(
@@ -55,7 +54,8 @@ $params = @{
 
 Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -212,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganization?view=graph-powershell-v1.0)
+

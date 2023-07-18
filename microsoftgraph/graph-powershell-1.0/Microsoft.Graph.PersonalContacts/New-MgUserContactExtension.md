@@ -39,22 +39,6 @@ New-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -208,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserContactExtension](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgUserContactExtension?view=graph-powershell-beta)
+

@@ -34,7 +34,6 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Get-MgBetaDirectoryRoleMember -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -44,7 +43,9 @@ f890ceed-822a-4647-8748-73d88013ae9d
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
 7425a698-2aa8-4333-9352-04f52e3a4c9d
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -All
 List all pages.
@@ -242,3 +243,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-v1.0)
+

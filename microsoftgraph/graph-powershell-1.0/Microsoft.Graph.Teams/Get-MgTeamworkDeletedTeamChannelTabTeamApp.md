@@ -29,18 +29,6 @@ Get-MgTeamworkDeletedTeamChannelTabTeamApp -InputObject <ITeamsIdentity> [-Expan
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -187,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamworkDeletedTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamworkDeletedTeamChannelTabTeamApp?view=graph-powershell-beta)
+

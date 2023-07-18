@@ -27,18 +27,6 @@ Remove-MgSecurityIncident -InputObject <ISecurityIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property incidents for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -188,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityIncident?view=graph-powershell-beta)
+

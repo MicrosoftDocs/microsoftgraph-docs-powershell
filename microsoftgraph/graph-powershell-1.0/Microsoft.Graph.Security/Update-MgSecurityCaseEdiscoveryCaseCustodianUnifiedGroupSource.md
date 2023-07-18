@@ -45,22 +45,6 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISe
 ## DESCRIPTION
 Update the navigation property unifiedGroupSources in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -6067,3 +6051,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
+

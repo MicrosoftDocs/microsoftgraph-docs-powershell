@@ -27,22 +27,6 @@ Remove-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Delete navigation property featureRolloutPolicies for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -FeatureRolloutPolicyId
@@ -200,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFeatureRolloutPolicy?view=graph-powershell-v1.0)
+

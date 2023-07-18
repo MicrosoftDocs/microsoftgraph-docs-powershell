@@ -29,22 +29,6 @@ Find-MgBetaPolicyAuthenticationStrengthPolicyByMethodMode -InputObject <IIdentit
 ## DESCRIPTION
 Invoke function findByMethodMode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthenticationMethodModes
@@ -279,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgPolicyAuthenticationStrengthPolicyByMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/Find-MgPolicyAuthenticationStrengthPolicyByMethodMode?view=graph-powershell-v1.0)
+

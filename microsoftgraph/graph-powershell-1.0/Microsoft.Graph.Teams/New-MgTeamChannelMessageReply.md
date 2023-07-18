@@ -62,7 +62,6 @@ Create a new reply to a chatMessage in a specified channel.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -73,7 +72,8 @@ $params = @{
 
 New-MgTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -903,3 +903,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannelMessageReply?view=graph-powershell-beta)
+

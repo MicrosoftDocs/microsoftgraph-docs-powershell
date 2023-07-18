@@ -27,22 +27,6 @@ Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident
 ## DESCRIPTION
 Invoke function incidentReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -147,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReportServiceAnnouncementHealthOverviewIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementHealthOverviewIssueIncident?view=graph-powershell-beta)
+

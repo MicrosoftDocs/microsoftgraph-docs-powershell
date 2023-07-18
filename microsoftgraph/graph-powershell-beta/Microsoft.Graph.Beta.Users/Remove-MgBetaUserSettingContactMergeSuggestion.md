@@ -27,22 +27,6 @@ Remove-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity> [-I
 ## DESCRIPTION
 Delete navigation property contactMergeSuggestions for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -181,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserSettingContactMergeSuggestion](/powershell/module/Microsoft.Graph.Users/Remove-MgUserSettingContactMergeSuggestion?view=graph-powershell-v1.0)
+

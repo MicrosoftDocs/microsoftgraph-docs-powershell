@@ -44,7 +44,6 @@ Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
@@ -52,7 +51,8 @@ $params = @{
 
 New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -225,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
+

@@ -57,22 +57,6 @@ Update-MgUserChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Update the navigation property messages in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -915,3 +899,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgUserChatMessage?view=graph-powershell-beta)
+

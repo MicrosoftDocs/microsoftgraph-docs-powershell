@@ -43,12 +43,12 @@ Nullable.
 ### EXAMPLE 1
 ```
 Import-Module Microsoft.Graph.Calendar
-```
 
 # A UPN can also be used as -UserId.
 Get-MgUserCalendar -UserId $userId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -263,4 +263,5 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgBetaUserCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgUserCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendar)
+
 

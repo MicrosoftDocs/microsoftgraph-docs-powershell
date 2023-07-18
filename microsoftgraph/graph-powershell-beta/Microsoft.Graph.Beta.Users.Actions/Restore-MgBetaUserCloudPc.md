@@ -43,22 +43,6 @@ Restore-MgBetaUserCloudPc -InputObject <IUsersActionsIdentity>
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserCloudPc?view=graph-powershell-v1.0)
+

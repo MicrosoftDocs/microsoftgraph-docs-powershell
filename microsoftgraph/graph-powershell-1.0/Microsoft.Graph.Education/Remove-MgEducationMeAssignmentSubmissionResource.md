@@ -36,22 +36,6 @@ If the resource was copied from the assignment, a new copy of the resource will 
 This allows you to 'reset' the resource to its original state.
 If the resource was not copied from the assignment but was added from the student, the resource is simply deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -208,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
+

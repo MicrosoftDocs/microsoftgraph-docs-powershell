@@ -33,22 +33,6 @@ Send-MgTeamworkActivityNotificationToRecipient
 Send activity feed notifications to multiple users, in bulk.
 For more details about sending notifications and the requirements for doing so, seensending Teams activity notifications.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityType
@@ -290,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
+

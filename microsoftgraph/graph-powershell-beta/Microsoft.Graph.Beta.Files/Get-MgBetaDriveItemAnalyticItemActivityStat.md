@@ -34,18 +34,6 @@ Get-MgBetaDriveItemAnalyticItemActivityStat -InputObject <IFilesIdentity> [-Expa
 ## DESCRIPTION
 Get itemActivityStats from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -306,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+

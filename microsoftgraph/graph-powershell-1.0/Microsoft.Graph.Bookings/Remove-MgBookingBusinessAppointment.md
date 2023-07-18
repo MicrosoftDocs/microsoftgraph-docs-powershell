@@ -32,11 +32,11 @@ Delete a bookingAppointment in the specified bookingBusiness.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Remove-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -BookingAppointmentId
 The unique identifier of bookingAppointment
@@ -174,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBookingBusinessAppointment?view=graph-powershell-beta)
+

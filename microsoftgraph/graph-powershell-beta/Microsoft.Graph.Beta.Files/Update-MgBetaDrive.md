@@ -27,22 +27,6 @@ Unpublish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [
 ## DESCRIPTION
 Unpublish a [contentType][] from a content type hub site.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ContentTypeId
@@ -183,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDrive](/powershell/module/Microsoft.Graph.Files/Update-MgDrive?view=graph-powershell-v1.0)
+

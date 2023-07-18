@@ -45,22 +45,6 @@ Update-MgBetaPolicyServicePrincipalCreationPolicy -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Update the navigation property servicePrincipalCreationPolicies in policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyServicePrincipalCreationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyServicePrincipalCreationPolicy?view=graph-powershell-v1.0)
+

@@ -20,22 +20,6 @@ Get-MgBetaInformationProtectionSensitivityPolicySetting [-ExpandProperty <String
 ## DESCRIPTION
 Get sensitivityPolicySettings from informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)
+

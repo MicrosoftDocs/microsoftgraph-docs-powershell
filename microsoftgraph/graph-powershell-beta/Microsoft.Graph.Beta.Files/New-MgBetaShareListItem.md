@@ -55,22 +55,6 @@ New-MgBetaShareListItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ## DESCRIPTION
 Create a new [listItem][] in a [list][].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activities
@@ -28827,3 +28811,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgShareListItem](/powershell/module/Microsoft.Graph.Files/New-MgShareListItem?view=graph-powershell-v1.0)
+

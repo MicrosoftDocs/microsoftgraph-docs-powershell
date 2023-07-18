@@ -19,18 +19,6 @@ Get-MgDeviceCount [-Filter <String>] [-Search <String>] -ConsistencyLevel <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConsistencyLevel
@@ -93,3 +81,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceCount?view=graph-powershell-beta)
+

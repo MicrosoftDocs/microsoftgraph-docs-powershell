@@ -41,22 +41,6 @@ Get-MgSiteTermStoreSetParentGroupSetTermChildRelationSet -InputObject <ISitesIde
 ## DESCRIPTION
 The [set] in which the relation is relevant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -270,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreSetParentGroupSetTermChildRelationSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteTermStoreSetParentGroupSetTermChildRelationSet?view=graph-powershell-beta)
+

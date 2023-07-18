@@ -35,7 +35,6 @@ Update the properties of an authenticationMethodsPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	registrationEnforcement = @{
@@ -57,7 +56,8 @@ $params = @{
 
 Update-MgPolicyAuthenticationMethodPolicy -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -332,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
+

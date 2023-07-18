@@ -34,18 +34,6 @@ Get-MgBetaExternalIndustryDataOperation -InputObject <ISearchIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a fileValidateOperation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -270,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalIndustryDataOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataOperation?view=graph-powershell-v1.0)
+

@@ -19,18 +19,6 @@ Get-MgBetaWindowsUpdatesCatalogEntryCount [-Filter <String>] [-Search <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -79,3 +67,4 @@ Get-MgBetaWuCatalogEntryCount
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesCatalogEntryCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesCatalogEntryCount?view=graph-powershell-v1.0)
+

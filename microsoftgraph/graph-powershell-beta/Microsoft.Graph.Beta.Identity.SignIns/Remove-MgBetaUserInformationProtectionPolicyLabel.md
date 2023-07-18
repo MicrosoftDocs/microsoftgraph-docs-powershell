@@ -27,22 +27,6 @@ Remove-MgBetaUserInformationProtectionPolicyLabel -InputObject <IIdentitySignIns
 ## DESCRIPTION
 Delete navigation property labels for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -248,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+

@@ -39,11 +39,11 @@ Get the list of richLongRunningOperations associated with a list.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteList -SiteId $siteId -ListId $listId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-v1.0)
+

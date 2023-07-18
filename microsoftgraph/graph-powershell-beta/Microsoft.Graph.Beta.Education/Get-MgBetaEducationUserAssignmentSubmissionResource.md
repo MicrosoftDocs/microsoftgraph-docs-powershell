@@ -42,18 +42,6 @@ Only teachers, students, and applications with application permissions can perfo
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -318,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-v1.0)
+

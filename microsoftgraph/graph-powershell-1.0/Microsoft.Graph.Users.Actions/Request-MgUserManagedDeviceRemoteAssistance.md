@@ -27,22 +27,6 @@ Request-MgUserManagedDeviceRemoteAssistance -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Request remote assistance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -188,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Request-MgBetaUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Request-MgUserManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+

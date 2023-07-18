@@ -34,18 +34,6 @@ Get-MgBetaRoleManagementDeviceManagementResourceNamespace -InputObject <IDeviceM
 ## DESCRIPTION
 Get resourceNamespaces from roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -277,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)
+

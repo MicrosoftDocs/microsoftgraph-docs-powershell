@@ -70,7 +70,6 @@ Update the properties of an organizationalBrandingLocalization object for a spec
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	backgroundColor = "#00000F"
@@ -79,10 +78,10 @@ $params = @{
 
 Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	signInPageText = "Welcome to Contoso France."
@@ -91,7 +90,8 @@ $params = @{
 
 Update-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -807,3 +807,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-v1.0)
+

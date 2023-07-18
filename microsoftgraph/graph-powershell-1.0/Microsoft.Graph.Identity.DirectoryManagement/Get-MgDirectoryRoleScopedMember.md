@@ -43,11 +43,11 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -289,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryRoleScopedMember?view=graph-powershell-beta)
+

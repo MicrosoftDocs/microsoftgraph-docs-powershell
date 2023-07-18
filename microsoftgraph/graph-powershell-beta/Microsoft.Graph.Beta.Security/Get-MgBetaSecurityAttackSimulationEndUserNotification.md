@@ -34,18 +34,6 @@ Get-MgBetaSecurityAttackSimulationEndUserNotification -InputObject <ISecurityIde
 ## DESCRIPTION
 Get endUserNotifications from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulationEndUserNotification](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationEndUserNotification?view=graph-powershell-v1.0)
+

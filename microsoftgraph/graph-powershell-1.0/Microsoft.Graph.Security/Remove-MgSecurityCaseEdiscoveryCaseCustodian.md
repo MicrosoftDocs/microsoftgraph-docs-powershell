@@ -27,22 +27,6 @@ Remove-MgSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [-
 ## DESCRIPTION
 Delete navigation property custodians for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -207,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+

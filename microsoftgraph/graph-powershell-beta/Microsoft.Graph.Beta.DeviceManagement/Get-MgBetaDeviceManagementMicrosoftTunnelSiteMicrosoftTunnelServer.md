@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer -InputObject 
 ## DESCRIPTION
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -411,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer?view=graph-powershell-v1.0)
+

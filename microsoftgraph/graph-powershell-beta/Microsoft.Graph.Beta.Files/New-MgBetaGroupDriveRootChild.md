@@ -77,18 +77,6 @@ New-MgBetaGroupDriveRootChild -InputObject <IFilesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create new navigation property to children for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activities
@@ -34542,3 +34530,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupDriveRootChild](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootChild?view=graph-powershell-v1.0)
+

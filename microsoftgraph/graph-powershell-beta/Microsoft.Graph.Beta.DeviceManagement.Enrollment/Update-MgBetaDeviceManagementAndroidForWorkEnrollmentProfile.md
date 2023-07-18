@@ -45,18 +45,6 @@ Update-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property androidForWorkEnrollmentProfiles in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountId
@@ -389,3 +377,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementAndroidForWorkEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementAndroidForWorkEnrollmentProfile?view=graph-powershell-v1.0)
+

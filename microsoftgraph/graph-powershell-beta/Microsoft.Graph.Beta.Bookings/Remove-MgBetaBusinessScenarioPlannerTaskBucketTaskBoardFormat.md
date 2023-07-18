@@ -27,18 +27,6 @@ Remove-MgBetaBusinessScenarioPlannerTaskBucketTaskBoardFormat -InputObject <IBoo
 ## DESCRIPTION
 Delete navigation property bucketTaskBoardFormat for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BusinessScenarioId
@@ -190,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBusinessScenarioPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlannerTaskBucketTaskBoardFormat?view=graph-powershell-v1.0)
+

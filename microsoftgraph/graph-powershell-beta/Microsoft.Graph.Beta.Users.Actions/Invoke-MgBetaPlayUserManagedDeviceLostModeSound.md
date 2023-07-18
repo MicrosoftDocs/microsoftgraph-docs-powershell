@@ -43,22 +43,6 @@ Invoke-MgBetaPlayUserManagedDeviceLostModeSound -InputObject <IUsersActionsIdent
 ## DESCRIPTION
 Play lost mode sound
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -266,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgPlayUserManagedDeviceLostModeSound](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPlayUserManagedDeviceLostModeSound?view=graph-powershell-v1.0)
+

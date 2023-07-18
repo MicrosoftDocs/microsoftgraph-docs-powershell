@@ -26,18 +26,6 @@ Get-MgBetaDriveBundleCount -InputObject <IFilesIdentity> [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -147,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveBundleCount](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundleCount?view=graph-powershell-v1.0)
+

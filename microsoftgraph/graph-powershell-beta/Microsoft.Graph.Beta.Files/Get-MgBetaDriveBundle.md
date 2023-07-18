@@ -39,11 +39,11 @@ Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveBundle -DriveId $driveId -DriveItemId $driveItemId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -288,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundle?view=graph-powershell-v1.0)
+

@@ -41,18 +41,6 @@ Add-MgBetaTenantRelationshipManagedTenantAlertUserInputLog -InputObject <IIdenti
 ## DESCRIPTION
 Invoke action addUserInputLog
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -231,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgTenantRelationshipManagedTenantAlertUserInputLog](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Add-MgTenantRelationshipManagedTenantAlertUserInputLog?view=graph-powershell-v1.0)
+

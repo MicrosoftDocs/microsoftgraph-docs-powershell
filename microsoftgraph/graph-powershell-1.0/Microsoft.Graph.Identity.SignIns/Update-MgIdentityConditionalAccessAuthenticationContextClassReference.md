@@ -49,7 +49,6 @@ If ID has been used, this call updates the authenticationContextClassReference o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Contoso medium"
@@ -59,7 +58,8 @@ $params = @{
 
 Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+

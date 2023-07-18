@@ -29,18 +29,6 @@ Get-MgBetaUserCloudPcProvisionedCloudPc -InputObject <IUsersFunctionsIdentity> [
 ## DESCRIPTION
 Invoke function getProvisionedCloudPCs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -268,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCloudPcProvisionedCloudPc](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcProvisionedCloudPc?view=graph-powershell-v1.0)
+

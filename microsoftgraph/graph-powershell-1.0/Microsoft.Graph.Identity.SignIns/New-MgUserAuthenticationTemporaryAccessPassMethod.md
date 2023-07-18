@@ -54,7 +54,6 @@ If the user requires a new Temporary Access Pass while the current Temporary Acc
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	startDateTime = [System.DateTime]::Parse("2022-06-05T00:00:00.000Z")
@@ -64,7 +63,8 @@ $params = @{
 
 New-MgUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -373,3 +373,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+

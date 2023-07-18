@@ -28,18 +28,6 @@ Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObject <
 ## DESCRIPTION
 Get the user synchronization policy of a partner-specific configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CrossTenantAccessPolicyConfigurationPartnerTenantId
@@ -180,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+

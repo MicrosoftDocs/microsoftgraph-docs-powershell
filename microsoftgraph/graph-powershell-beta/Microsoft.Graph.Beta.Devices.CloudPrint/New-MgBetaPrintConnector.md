@@ -34,11 +34,11 @@ Create new navigation property to connectors for print
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintConnector
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -320,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-v1.0)
+

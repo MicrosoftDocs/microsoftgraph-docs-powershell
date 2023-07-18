@@ -29,22 +29,6 @@ Invoke-MgQuerySearch -Body <IPaths1Kd2XrlSearchMicrosoftGraphQueryPostRequestbod
 Runs the query specified in the request body.
 Search results are provided in the response.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgQuerySearch?view=graph-powershell-beta)
+

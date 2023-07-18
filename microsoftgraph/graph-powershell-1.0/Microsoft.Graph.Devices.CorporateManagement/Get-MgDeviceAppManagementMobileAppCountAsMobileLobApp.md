@@ -20,18 +20,6 @@ Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp [-Filter <String>] [-Searc
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ Get-DeviceAppMgtMobileAppCountAsMobileLobApp
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppCountAsMobileLobApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsMobileLobApp?view=graph-powershell-beta)
+

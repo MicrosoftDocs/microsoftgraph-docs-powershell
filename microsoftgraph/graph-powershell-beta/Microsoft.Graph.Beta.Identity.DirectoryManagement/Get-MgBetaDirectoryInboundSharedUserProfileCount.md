@@ -19,18 +19,6 @@ Get-MgBetaDirectoryInboundSharedUserProfileCount [-Filter <String>] [-Search <St
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryInboundSharedUserProfileCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryInboundSharedUserProfileCount?view=graph-powershell-v1.0)
+

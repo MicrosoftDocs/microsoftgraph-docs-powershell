@@ -36,7 +36,6 @@ Create a new conditionalAccessPolicy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Access to EXO requires MFA"
@@ -75,10 +74,10 @@ $params = @{
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Block access to EXO non-trusted regions."
@@ -113,10 +112,10 @@ $params = @{
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Demo app for documentation"
@@ -220,10 +219,10 @@ $params = @{
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Require MFA to EXO from non-compliant devices."
@@ -250,7 +249,8 @@ $params = @{
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -694,3 +694,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+

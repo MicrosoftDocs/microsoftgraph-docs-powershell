@@ -30,18 +30,6 @@ New-MgBetaIdentityAuthenticationEventFlow -BodyParameter <IMicrosoftGraphAuthent
 Create a new authenticationEventsFlow object that is of the type specified in the request body.
 You can create only an externalUsersSelfServiceSignupEventsFlow object type.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventFlow?view=graph-powershell-v1.0)
+

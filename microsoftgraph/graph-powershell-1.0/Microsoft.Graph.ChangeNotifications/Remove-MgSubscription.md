@@ -34,11 +34,11 @@ For the list of resources that support subscribing to change notifications, see 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
-```
 
 Remove-MgSubscription -SubscriptionId $subscriptionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -155,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-beta)
+

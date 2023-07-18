@@ -27,18 +27,6 @@ Get-MgTeamworkDeletedTeamChannelMessageHostedContentCount -InputObject <ITeamsId
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -185,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamworkDeletedTeamChannelMessageHostedContentCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamworkDeletedTeamChannelMessageHostedContentCount?view=graph-powershell-beta)
+

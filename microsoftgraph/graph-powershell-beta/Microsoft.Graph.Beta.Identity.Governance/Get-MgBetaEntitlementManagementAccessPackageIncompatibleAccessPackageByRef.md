@@ -26,11 +26,11 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageId
 The unique identifier of accessPackage
@@ -182,3 +182,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-v1.0)
+

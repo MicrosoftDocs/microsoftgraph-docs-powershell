@@ -27,18 +27,6 @@ Remove-MgPolicyAuthenticationStrengthPolicy -InputObject <IIdentitySignInsIdenti
 ## DESCRIPTION
 Delete a custom authenticationStrengthPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationStrengthPolicyId
@@ -210,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-beta)
+

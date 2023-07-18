@@ -28,18 +28,6 @@ Remove-MgServicePrincipalSynchronizationTemplateSchemaDirectory -InputObject <IA
 ## DESCRIPTION
 Delete navigation property directories for servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DirectoryDefinitionId
@@ -206,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
+

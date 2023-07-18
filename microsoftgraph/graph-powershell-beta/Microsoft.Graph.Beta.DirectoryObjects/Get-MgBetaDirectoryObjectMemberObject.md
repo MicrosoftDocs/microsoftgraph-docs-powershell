@@ -46,7 +46,6 @@ Invoke action getMemberObjects
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	SecurityEnabledOnly = $true
@@ -54,7 +53,8 @@ $params = @{
 
 Get-MgBetaDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -192,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectMemberObject?view=graph-powershell-v1.0)
+

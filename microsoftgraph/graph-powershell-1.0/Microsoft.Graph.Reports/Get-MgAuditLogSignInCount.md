@@ -19,18 +19,6 @@ Get-MgAuditLogSignInCount [-Filter <String>] [-Search <String>] [<CommonParamete
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaAuditLogSignInCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgAuditLogSignInCount?view=graph-powershell-beta)
+

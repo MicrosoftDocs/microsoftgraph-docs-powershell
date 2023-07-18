@@ -27,22 +27,6 @@ Set-MgBetaSiteOnenoteResourceContent -InputObject <INotesIdentity> [-Data <Strea
 ## DESCRIPTION
 Update content for the navigation property resources in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -186,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgSiteOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgSiteOnenoteResourceContent?view=graph-powershell-v1.0)
+

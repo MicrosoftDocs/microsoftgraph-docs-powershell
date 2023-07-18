@@ -20,18 +20,6 @@ Get-MgBetaDeviceAppManagementManagedAppRegistrationCount [-Filter <String>] [-Se
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ Get-BetaDeviceAppMgtManagedAppRegistrationCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementManagedAppRegistrationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationCount?view=graph-powershell-v1.0)
+

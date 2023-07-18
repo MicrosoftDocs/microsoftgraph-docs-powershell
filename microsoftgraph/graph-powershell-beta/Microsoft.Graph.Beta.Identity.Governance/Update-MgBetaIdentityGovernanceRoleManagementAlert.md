@@ -74,18 +74,6 @@ Update-MgBetaIdentityGovernanceRoleManagementAlert
 ## DESCRIPTION
 Invoke action refresh
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -586,3 +574,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityGovernanceRoleManagementAlert](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceRoleManagementAlert?view=graph-powershell-v1.0)
+

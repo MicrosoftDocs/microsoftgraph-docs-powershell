@@ -30,22 +30,6 @@ Get-MgBetaPrivilegedAccessResourceRoleAssignmentResource -InputObject <IIdentity
 Read-only.
 The resource associated with the role assignment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -257,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessResourceRoleAssignmentResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentResource?view=graph-powershell-v1.0)
+

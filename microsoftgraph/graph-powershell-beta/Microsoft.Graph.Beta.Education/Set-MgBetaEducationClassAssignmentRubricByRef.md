@@ -48,7 +48,6 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/education/me/rubrics/ceb3863e-6912-4ea9-ac41-3c2bb7b6672d"
@@ -56,7 +55,8 @@ $params = @{
 
 Set-MgBetaEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -253,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Set-MgEducationClassAssignmentRubricByRef?view=graph-powershell-v1.0)
+

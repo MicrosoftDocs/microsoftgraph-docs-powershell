@@ -34,11 +34,11 @@ Create new navigation property to secureScores for security
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecuritySecureScore -Top 1
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ActiveUserCount
 Active user count of the given tenant.
@@ -333,3 +333,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecuritySecureScore?view=graph-powershell-beta)
+

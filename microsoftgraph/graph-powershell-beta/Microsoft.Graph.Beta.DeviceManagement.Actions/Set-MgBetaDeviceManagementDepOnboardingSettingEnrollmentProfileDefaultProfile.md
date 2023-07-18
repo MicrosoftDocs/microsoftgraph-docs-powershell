@@ -27,22 +27,6 @@ Set-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile
 ## DESCRIPTION
 Invoke action setDefaultProfile
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -210,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile?view=graph-powershell-v1.0)
+

@@ -29,22 +29,6 @@ Remove-MgBetaUserManagedDeviceSecurityBaselineStateSettingState
 ## DESCRIPTION
 Delete navigation property settingStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -270,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
+

@@ -37,7 +37,6 @@ Create a new chat object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -61,10 +60,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	chatType = "group"
@@ -96,10 +95,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -123,10 +122,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	chatType = "group"
@@ -158,10 +157,10 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	chatType = "oneOnOne"
@@ -186,7 +185,8 @@ $params = @{
 
 New-MgChat -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -981,3 +981,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgChat?view=graph-powershell-beta)
+

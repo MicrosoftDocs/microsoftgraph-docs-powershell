@@ -19,18 +19,6 @@ Invoke-MgExperienceDeviceManagement [<CommonParameters>]
 ## DESCRIPTION
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -47,3 +35,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-beta)
+

@@ -45,22 +45,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -235,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarGroup?view=graph-powershell-v1.0)
+

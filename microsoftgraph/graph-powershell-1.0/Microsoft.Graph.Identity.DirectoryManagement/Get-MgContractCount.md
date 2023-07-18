@@ -19,18 +19,6 @@ Get-MgContractCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaContractCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContractCount?view=graph-powershell-beta)
+

@@ -20,18 +20,6 @@ Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadiness
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereHardwareReadinessMetric?view=graph-powershell-beta)
+

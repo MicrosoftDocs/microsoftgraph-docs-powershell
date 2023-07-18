@@ -47,18 +47,6 @@ New-MgGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new OneNote notebook.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -689,3 +677,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgGroupOnenoteNotebook?view=graph-powershell-beta)
+

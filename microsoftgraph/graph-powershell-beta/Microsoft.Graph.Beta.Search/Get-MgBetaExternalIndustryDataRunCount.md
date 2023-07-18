@@ -19,18 +19,6 @@ Get-MgBetaExternalIndustryDataRunCount [-Filter <String>] [-Search <String>] [<C
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgExternalIndustryDataRunCount](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRunCount?view=graph-powershell-v1.0)
+

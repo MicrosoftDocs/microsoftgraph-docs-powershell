@@ -48,7 +48,6 @@ Only teachers can update these settings.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	addedStudentAction = "assignIfOpen"
@@ -57,7 +56,8 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AddedStudentAction
 educationAddedStudentAction
@@ -274,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
+

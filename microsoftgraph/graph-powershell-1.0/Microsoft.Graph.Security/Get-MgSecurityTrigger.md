@@ -19,18 +19,6 @@ Get-MgSecurityTrigger [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 ## DESCRIPTION
 Get triggers from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityTrigger?view=graph-powershell-beta)
+

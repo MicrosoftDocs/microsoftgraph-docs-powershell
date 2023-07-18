@@ -48,7 +48,6 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/users/{id}"
@@ -56,7 +55,8 @@ $params = @{
 
 New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -305,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-v1.0)
+

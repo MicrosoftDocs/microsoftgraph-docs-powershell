@@ -19,22 +19,6 @@ Get-MgReportDeviceConfigurationDeviceActivity -OutFile <String> [-PassThru] [<Co
 ## DESCRIPTION
 Metadata for the device configuration device activity report
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -OutFile
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaReportDeviceConfigurationDeviceActivity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportDeviceConfigurationDeviceActivity?view=graph-powershell-beta)
+

@@ -28,11 +28,11 @@ Delegated tokens must be members of the class to get the teacher list.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassTeacher -EducationClassId $educationClassId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -184,3 +184,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacherByRef?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Get-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdenti
 ## DESCRIPTION
 Get subscriptions from directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -293,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySubscription?view=graph-powershell-v1.0)
+

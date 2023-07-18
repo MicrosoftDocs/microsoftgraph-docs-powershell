@@ -27,22 +27,6 @@ Disconnect-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManage
 ## DESCRIPTION
 A request to remove the active TeamViewer connector
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -156,3 +140,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Disconnect-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disconnect-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
+

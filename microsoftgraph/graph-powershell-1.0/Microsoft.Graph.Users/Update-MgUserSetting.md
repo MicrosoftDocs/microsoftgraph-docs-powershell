@@ -45,22 +45,6 @@ Update the properties of the userSettings object.
 \nUsers in the same organization can have different settings based on their preference or on the organization policies.
 \nTo get the user current settings, see current user settings.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgUserSetting?view=graph-powershell-beta)
+

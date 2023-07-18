@@ -32,18 +32,6 @@ New-MgServicePrincipalRiskDetection -BodyParameter <IMicrosoftGraphServicePrinci
 ## DESCRIPTION
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -500,3 +488,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgServicePrincipalRiskDetection?view=graph-powershell-beta)
+

@@ -27,22 +27,6 @@ Remove-MgShareListContentTypeColumn -InputObject <IFilesIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Remove a [column][columndefinition] from a [site][], a [list][], or a [content type][contentType].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-beta)
+

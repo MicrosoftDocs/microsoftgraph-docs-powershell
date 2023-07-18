@@ -27,18 +27,6 @@ Remove-MgBetaVirtualEventSessionRecording -InputObject <IBookingsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property recordings for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgVirtualEventSessionRecording](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSessionRecording?view=graph-powershell-v1.0)
+

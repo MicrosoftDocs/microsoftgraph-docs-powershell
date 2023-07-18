@@ -46,7 +46,6 @@ Update the navigation property details in planner
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	sharedWith = @{
@@ -61,7 +60,8 @@ $params = @{
 
 Update-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -307,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlanDetail?view=graph-powershell-beta)
+

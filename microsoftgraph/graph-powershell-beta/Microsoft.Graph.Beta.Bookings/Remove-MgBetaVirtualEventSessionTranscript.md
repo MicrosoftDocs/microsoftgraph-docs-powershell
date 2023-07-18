@@ -27,18 +27,6 @@ Remove-MgBetaVirtualEventSessionTranscript -InputObject <IBookingsIdentity> [-If
 ## DESCRIPTION
 Delete navigation property transcripts for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgVirtualEventSessionTranscript](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSessionTranscript?view=graph-powershell-v1.0)
+

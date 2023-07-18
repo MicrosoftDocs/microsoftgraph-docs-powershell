@@ -34,22 +34,6 @@ Get-MgServiceAnnouncementHealthOverviewIssue -InputObject <IDevicesServiceAnnoun
 ## DESCRIPTION
 A collection of issues that happened on the service, with detailed information for each issue.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -275,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+

@@ -44,7 +44,6 @@ Create a new bookingStaffMember in the specified bookingBusiness.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.bookingStaffMember"
@@ -127,7 +126,8 @@ $params = @{
 
 New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-beta)
+

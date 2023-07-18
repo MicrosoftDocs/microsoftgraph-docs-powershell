@@ -20,22 +20,6 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrength [-ExpandProperty <Stri
 ## DESCRIPTION
 Get authenticationStrengths from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityConditionalAccessAuthenticationStrength](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrength?view=graph-powershell-v1.0)
+

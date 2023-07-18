@@ -32,11 +32,11 @@ Revoke the specified group's access to submit print jobs to the associated print
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -GroupId
 The unique identifier of group
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShareAllowedGroupByRef?view=graph-powershell-v1.0)
+

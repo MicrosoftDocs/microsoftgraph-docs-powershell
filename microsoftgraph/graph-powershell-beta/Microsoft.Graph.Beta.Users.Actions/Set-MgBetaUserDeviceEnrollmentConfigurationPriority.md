@@ -41,22 +41,6 @@ Set-MgBetaUserDeviceEnrollmentConfigurationPriority -InputObject <IUsersActionsI
 ## DESCRIPTION
 Invoke action setPriority
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserDeviceEnrollmentConfigurationPriority?view=graph-powershell-v1.0)
+

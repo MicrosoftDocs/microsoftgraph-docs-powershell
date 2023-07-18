@@ -36,11 +36,11 @@ Create new navigation property to riskDetections for identityProtection
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgRiskDetection
 
-## PARAMETERS
+```
+## Parameters
 
 ### -Activity
 activityType
@@ -484,3 +484,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-beta)
+

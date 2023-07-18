@@ -32,11 +32,11 @@ Unpin a message from a chat.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaChatPinnedMessage -ChatId $chatId -PinnedChatMessageInfoId $pinnedChatMessageInfoId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ChatId
 The unique identifier of chat
@@ -205,3 +205,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatPinnedMessage?view=graph-powershell-v1.0)
+

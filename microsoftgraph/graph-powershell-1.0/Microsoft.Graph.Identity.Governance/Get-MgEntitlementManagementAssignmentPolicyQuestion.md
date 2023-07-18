@@ -34,18 +34,6 @@ Get-MgEntitlementManagementAssignmentPolicyQuestion -InputObject <IIdentityGover
 ## DESCRIPTION
 Questions that are posed to the  requestor.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
+

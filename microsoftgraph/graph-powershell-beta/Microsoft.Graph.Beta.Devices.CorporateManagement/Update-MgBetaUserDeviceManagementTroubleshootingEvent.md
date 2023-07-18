@@ -46,22 +46,6 @@ Update-MgBetaUserDeviceManagementTroubleshootingEvent -InputObject <IDevicesCorp
 ## DESCRIPTION
 Update the navigation property deviceManagementTroubleshootingEvents in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -386,3 +370,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-v1.0)
+

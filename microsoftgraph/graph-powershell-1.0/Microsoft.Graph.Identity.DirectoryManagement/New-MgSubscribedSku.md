@@ -34,11 +34,11 @@ Add new entity to subscribedSkus
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgSubscribedSku
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccountId
 .
@@ -329,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgSubscribedSku?view=graph-powershell-beta)
+

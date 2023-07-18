@@ -50,7 +50,6 @@ Update the properties of a **plannerPlan** object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	title = "title-value"
@@ -58,7 +57,8 @@ $params = @{
 
 Update-MgPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -604,3 +604,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlan?view=graph-powershell-beta)
+

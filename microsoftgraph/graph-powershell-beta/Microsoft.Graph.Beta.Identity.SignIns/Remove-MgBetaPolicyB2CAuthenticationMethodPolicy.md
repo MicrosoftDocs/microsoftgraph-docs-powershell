@@ -20,22 +20,6 @@ Remove-MgBetaPolicyB2CAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru]
 ## DESCRIPTION
 Delete navigation property b2cAuthenticationMethodsPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyB2CAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyB2CAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+

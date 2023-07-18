@@ -36,22 +36,6 @@ Get-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceMana
 ## DESCRIPTION
 Collection of setting categories within the template
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -428,3 +412,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementTemplateMigratableToCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateMigratableToCategory?view=graph-powershell-v1.0)
+

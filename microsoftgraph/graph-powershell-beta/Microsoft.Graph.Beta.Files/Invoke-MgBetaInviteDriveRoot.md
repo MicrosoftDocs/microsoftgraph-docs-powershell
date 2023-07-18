@@ -45,22 +45,6 @@ Invoke-MgBetaInviteDriveRoot -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Sends a sharing invitation for a **DriveItem**.nA sharing invitation provides permissions to the recipients and optionally sends an email to the recipients to notify them the item was shared.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -343,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgInviteDriveRoot](/powershell/module/Microsoft.Graph.Files/Invoke-MgInviteDriveRoot?view=graph-powershell-v1.0)
+

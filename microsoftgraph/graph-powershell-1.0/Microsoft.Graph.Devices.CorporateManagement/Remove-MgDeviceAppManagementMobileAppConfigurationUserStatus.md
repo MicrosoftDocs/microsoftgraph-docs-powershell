@@ -28,18 +28,6 @@ Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus -InputObject <IDevi
 ## DESCRIPTION
 Delete navigation property userStatuses for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -205,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-beta)
+

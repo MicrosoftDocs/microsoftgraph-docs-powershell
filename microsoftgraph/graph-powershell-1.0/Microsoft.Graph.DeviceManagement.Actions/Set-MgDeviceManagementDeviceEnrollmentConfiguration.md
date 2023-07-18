@@ -45,22 +45,6 @@ Set-MgDeviceManagementDeviceEnrollmentConfiguration -InputObject <IDeviceManagem
 ## DESCRIPTION
 Invoke action assign
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
+

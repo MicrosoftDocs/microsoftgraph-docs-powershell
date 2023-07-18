@@ -35,7 +35,6 @@ Create a new accessPackageCatalog object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "sales"
@@ -46,7 +45,8 @@ $params = @{
 
 New-MgEntitlementManagementCatalog -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackages
 The access packages in this catalog.
@@ -6201,3 +6201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+

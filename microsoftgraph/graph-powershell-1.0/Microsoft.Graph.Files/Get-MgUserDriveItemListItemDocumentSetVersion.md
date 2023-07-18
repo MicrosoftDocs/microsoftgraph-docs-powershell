@@ -35,22 +35,6 @@ Get-MgUserDriveItemListItemDocumentSetVersion -InputObject <IFilesIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a documentSetVersion object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -326,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+

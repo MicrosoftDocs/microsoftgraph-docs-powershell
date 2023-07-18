@@ -40,18 +40,18 @@ Since the **device** resource supports extensions, you can also use the `GET` op
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDevice -DeviceId $deviceId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -314,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDevice?view=graph-powershell-v1.0)
+

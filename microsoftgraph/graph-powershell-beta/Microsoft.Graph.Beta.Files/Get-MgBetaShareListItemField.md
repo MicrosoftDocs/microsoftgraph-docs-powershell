@@ -39,22 +39,6 @@ Get-MgBetaShareListItemField -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -179,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemField?view=graph-powershell-v1.0)
+

@@ -43,18 +43,6 @@ Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization -InputObjec
 ## DESCRIPTION
 Update the user synchronization policy of a partner-specific configuration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization?view=graph-powershell-beta)
+

@@ -27,18 +27,6 @@ Remove-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySi
 ## DESCRIPTION
 Delete a certificateBasedAuthConfiguration object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CertificateBasedAuthConfigurationId
@@ -225,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
+

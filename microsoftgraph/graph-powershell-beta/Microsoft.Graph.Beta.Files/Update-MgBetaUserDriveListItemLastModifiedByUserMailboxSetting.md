@@ -47,18 +47,6 @@ Update-MgBetaUserDriveListItemLastModifiedByUserMailboxSetting -InputObject <IFi
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -444,3 +432,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDriveListItemLastModifiedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListItemLastModifiedByUserMailboxSetting?view=graph-powershell-v1.0)
+

@@ -41,39 +41,39 @@ A threat assessment request can be one of the following types:
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId -ExpandProperty "results"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -353,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
+

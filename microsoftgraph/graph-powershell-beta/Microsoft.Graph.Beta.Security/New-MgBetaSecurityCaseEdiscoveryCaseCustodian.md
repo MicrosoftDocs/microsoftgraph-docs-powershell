@@ -53,7 +53,6 @@ Create a new ediscoveryCustodian object.nAfter the custodian object is created, 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 $params = @{
 	email = "AdeleV@contoso.com"
@@ -61,7 +60,8 @@ $params = @{
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AcknowledgedDateTime
 Date and time the custodian acknowledged a hold notification.
@@ -14610,3 +14610,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+

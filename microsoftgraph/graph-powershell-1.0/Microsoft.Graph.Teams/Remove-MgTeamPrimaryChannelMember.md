@@ -27,22 +27,6 @@ Remove-MgTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete a conversationMember from a channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ConversationMemberId
@@ -205,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamPrimaryChannelMember?view=graph-powershell-beta)
+

@@ -55,25 +55,25 @@ Create new navigation property to chats for users
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserChat -UserId $userId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgUserChat -UserId $userId -ExpandProperty "members"
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChat -Sort "lastMessagePreview/createdDateTime desc"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -933,3 +933,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserChat](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgUserChat?view=graph-powershell-beta)
+

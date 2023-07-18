@@ -34,7 +34,6 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 ### EXAMPLE 1
 ```powershell
 Get-MgGroupMember -GroupId '7b7be3ab-d2b3-441c-8111-2e89b8493fff'
-```
 
 Id                                   DeletedDateTime
 --                                   ---------------
@@ -43,7 +42,9 @@ Id                                   DeletedDateTime
 f9f1bd4f-16ca-4404-925e-5b08b6a3832f
 5441e919-583c-4292-aa3f-98250d8d217b
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -All
 List all pages.
@@ -241,3 +242,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupMember?view=graph-powershell-beta)
+

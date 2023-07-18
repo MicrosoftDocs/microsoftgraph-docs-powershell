@@ -34,11 +34,11 @@ This method does not delete the rubric itself and can only be performed by teach
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -179,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassAssignmentRubric?view=graph-powershell-beta)
+

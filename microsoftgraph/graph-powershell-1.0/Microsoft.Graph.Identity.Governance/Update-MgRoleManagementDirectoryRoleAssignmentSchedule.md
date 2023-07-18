@@ -51,18 +51,6 @@ Update-MgRoleManagementDirectoryRoleAssignmentSchedule -InputObject <IIdentityGo
 ## DESCRIPTION
 Update the navigation property roleAssignmentSchedules in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivatedUsing
@@ -717,3 +705,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
+

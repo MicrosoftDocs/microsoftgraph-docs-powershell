@@ -19,18 +19,6 @@ Get-MgBetaSearchQnaCount [-Filter <String>] [-Search <String>] [<CommonParameter
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSearchQnaCount](/powershell/module/Microsoft.Graph.Search/Get-MgSearchQnaCount?view=graph-powershell-v1.0)
+

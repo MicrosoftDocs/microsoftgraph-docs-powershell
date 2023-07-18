@@ -46,22 +46,6 @@ Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
 Read more about presence sessions and their time-out and expiration.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -232,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Clear-MgCommunicationPresence?view=graph-powershell-v1.0)
+

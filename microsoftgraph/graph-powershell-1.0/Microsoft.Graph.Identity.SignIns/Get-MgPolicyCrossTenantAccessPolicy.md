@@ -24,11 +24,11 @@ Read the properties and relationships of a crossTenantAccessPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyCrossTenantAccessPolicy
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -74,3 +74,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
+

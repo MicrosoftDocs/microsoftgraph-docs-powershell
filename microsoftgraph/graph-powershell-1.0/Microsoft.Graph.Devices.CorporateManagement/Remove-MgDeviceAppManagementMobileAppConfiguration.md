@@ -27,18 +27,6 @@ Remove-MgDeviceAppManagementMobileAppConfiguration -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Delete navigation property mobileAppConfigurations for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -189,3 +177,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-beta)
+

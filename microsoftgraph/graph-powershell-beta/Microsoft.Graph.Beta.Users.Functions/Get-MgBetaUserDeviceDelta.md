@@ -28,22 +28,6 @@ Get-MgBetaUserDeviceDelta -InputObject <IUsersFunctionsIdentity> [-Filter <Strin
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -287,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDeviceDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDeviceDelta?view=graph-powershell-v1.0)
+

@@ -37,22 +37,6 @@ Get-MgBetaUserMobileAppTroubleshootingEventAppLogCollectionRequest
 ## DESCRIPTION
 The collection property of AppLogUploadRequest.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -353,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+

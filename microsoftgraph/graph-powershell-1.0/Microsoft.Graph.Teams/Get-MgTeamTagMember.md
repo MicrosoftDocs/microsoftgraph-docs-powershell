@@ -39,11 +39,11 @@ Get the properties and relationships of a member of a standard tag in a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -310,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamTagMember?view=graph-powershell-beta)
+

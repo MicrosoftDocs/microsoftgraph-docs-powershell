@@ -29,18 +29,6 @@ Remove-MgBetaRoleManagementEnterpriseAppRoleEligibilityScheduleRequest
 ## DESCRIPTION
 Delete navigation property roleEligibilityScheduleRequests for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -268,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+

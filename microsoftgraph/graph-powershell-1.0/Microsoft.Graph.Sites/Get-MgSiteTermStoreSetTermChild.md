@@ -53,22 +53,6 @@ Get-MgSiteTermStoreSetTermChild -InputObject <ISitesIdentity> [-ExpandProperty <
 ## DESCRIPTION
 Children of current term.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -373,3 +357,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-beta)
+

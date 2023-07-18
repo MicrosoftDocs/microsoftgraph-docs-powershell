@@ -28,22 +28,6 @@ Remove-MgIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignInsI
 ## DESCRIPTION
 Delete navigation property overridesPages for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+

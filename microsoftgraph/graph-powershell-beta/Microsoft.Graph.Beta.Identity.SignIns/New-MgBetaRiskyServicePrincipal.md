@@ -35,11 +35,11 @@ Create new navigation property to riskyServicePrincipals for identityProtection
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaRiskyServicePrincipal
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccountEnabled
 true if the service principal account is enabled; otherwise, false.
@@ -362,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyServicePrincipal?view=graph-powershell-v1.0)
+

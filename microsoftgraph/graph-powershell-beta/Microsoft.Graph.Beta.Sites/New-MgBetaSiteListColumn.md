@@ -59,22 +59,6 @@ New-MgBetaSiteListColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 ## DESCRIPTION
 Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1165,3 +1149,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListColumn?view=graph-powershell-v1.0)
+

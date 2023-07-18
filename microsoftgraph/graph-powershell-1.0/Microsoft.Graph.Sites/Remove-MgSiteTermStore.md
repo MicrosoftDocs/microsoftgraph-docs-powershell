@@ -44,7 +44,6 @@ Delete navigation property termStore for sites
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	defaultLanguageTag = "en-US"
@@ -52,7 +51,8 @@ $params = @{
 
 Update-MgSiteTermStore -SiteId $siteId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -221,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteTermStore?view=graph-powershell-beta)
+

@@ -50,7 +50,6 @@ Update an existing accessPackageCatalog object to change one or more of its prop
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Catalog One"
@@ -58,7 +57,8 @@ $params = @{
 
 Update-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackageCatalogId
 The unique identifier of accessPackageCatalog
@@ -6301,3 +6301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+

@@ -19,18 +19,6 @@ Get-MgPolicyAppManagementPolicyCount [-Filter <String>] [-Search <String>] [<Com
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAppManagementPolicyCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyAppManagementPolicyCount?view=graph-powershell-beta)
+

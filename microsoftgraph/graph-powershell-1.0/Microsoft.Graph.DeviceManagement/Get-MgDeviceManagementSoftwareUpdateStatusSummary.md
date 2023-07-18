@@ -20,22 +20,6 @@ Get-MgDeviceManagementSoftwareUpdateStatusSummary [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The software update status summary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-beta)
+

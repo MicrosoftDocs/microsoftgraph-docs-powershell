@@ -19,18 +19,6 @@ Get-MgServiceAnnouncementHealthOverviewCount [-Filter <String>] [-Search <String
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementHealthOverviewCount](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewCount?view=graph-powershell-beta)
+

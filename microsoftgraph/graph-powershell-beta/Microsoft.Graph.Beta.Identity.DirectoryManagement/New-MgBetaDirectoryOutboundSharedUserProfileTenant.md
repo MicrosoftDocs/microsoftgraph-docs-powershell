@@ -39,22 +39,6 @@ New-MgBetaDirectoryOutboundSharedUserProfileTenant -InputObject <IIdentityDirect
 ## DESCRIPTION
 Create new navigation property to tenants for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -235,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryOutboundSharedUserProfileTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOutboundSharedUserProfileTenant?view=graph-powershell-v1.0)
+

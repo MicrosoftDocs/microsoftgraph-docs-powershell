@@ -43,22 +43,6 @@ New-MgBetaUserDriveRootThumbnail -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create new navigation property to thumbnails for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -342,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveRootThumbnail?view=graph-powershell-v1.0)
+

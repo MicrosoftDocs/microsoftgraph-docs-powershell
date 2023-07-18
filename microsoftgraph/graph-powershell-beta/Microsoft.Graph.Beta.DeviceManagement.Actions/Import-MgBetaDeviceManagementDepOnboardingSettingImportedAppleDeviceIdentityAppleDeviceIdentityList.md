@@ -47,22 +47,6 @@ Import-MgBetaDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppl
 ## DESCRIPTION
 Invoke action importAppleDeviceIdentityList
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -294,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Import-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentityAppleDeviceIdentityList?view=graph-powershell-v1.0)
+

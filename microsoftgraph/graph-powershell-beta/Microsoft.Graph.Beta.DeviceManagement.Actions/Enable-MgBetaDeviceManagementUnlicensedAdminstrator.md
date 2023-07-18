@@ -23,22 +23,6 @@ Upon enabling, users assigned as administrators via Role Assignment Memberships 
 You are limited to 350 unlicensed direct members for each AAD security group in a role assignment, but you can assign multiple AAD security groups to a role if you need to support more than 350 unlicensed administrators.
 Licensed administrators will continue to function as-is in that transitive memberships apply and are not subject to the 350 member limit.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -101,3 +85,4 @@ ALIASES
 
 ## RELATED LINKS
 [Enable-MgDeviceManagementUnlicensedAdminstrator](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementUnlicensedAdminstrator?view=graph-powershell-v1.0)
+

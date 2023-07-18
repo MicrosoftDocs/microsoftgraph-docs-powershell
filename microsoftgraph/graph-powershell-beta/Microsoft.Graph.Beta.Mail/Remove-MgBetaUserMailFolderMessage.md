@@ -27,22 +27,6 @@ Remove-MgBetaUserMailFolderMessage -InputObject <IMailIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property messages for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -199,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderMessage?view=graph-powershell-v1.0)
+

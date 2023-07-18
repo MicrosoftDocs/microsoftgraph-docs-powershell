@@ -43,18 +43,6 @@ Update-MgGroupDriveRootAnalytic -InputObject <IFilesIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update the navigation property analytics in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -11670,3 +11658,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupDriveRootAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveRootAnalytic?view=graph-powershell-beta)
+

@@ -48,7 +48,6 @@ Update the properties of a federatedIdentityCredential object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-```
 
 $params = @{
 	name = "testing02"
@@ -62,7 +61,8 @@ $params = @{
 
 Update-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -343,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationFederatedIdentityCredential?view=graph-powershell-v1.0)
+

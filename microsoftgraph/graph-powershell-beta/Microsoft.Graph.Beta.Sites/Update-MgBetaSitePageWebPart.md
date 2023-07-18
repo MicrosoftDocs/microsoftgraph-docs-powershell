@@ -39,18 +39,6 @@ Update-MgBetaSitePageWebPart -InputObject <ISitesIdentity> -BodyParameter <Hasht
 ## DESCRIPTION
 Update the navigation property webParts in sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageWebPart?view=graph-powershell-v1.0)
+

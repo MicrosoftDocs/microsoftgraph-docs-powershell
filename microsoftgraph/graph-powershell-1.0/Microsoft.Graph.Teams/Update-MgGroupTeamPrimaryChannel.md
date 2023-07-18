@@ -54,11 +54,11 @@ Update the navigation property primaryChannel in groups
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -9116,3 +9116,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgGroupTeamPrimaryChannel?view=graph-powershell-beta)
+

@@ -20,18 +20,6 @@ Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount [-Filter <S
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummaryCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicySettingStateSummaryCount?view=graph-powershell-beta)
+

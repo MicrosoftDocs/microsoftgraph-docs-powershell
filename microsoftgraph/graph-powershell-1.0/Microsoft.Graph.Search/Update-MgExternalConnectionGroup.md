@@ -46,7 +46,6 @@ Update the properties of an externalGroup object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Search
-```
 
 $params = @{
 	displayName = "Contoso Marketing"
@@ -55,7 +54,8 @@ $params = @{
 
 Update-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -272,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgExternalConnectionGroup?view=graph-powershell-beta)
+

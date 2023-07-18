@@ -27,18 +27,6 @@ Remove-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Delete navigation property subscriptions for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanySubscriptionId
@@ -196,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectorySubscription?view=graph-powershell-v1.0)
+

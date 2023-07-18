@@ -34,11 +34,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDeviceRegisteredOwner -DeviceId $deviceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -206,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
+

@@ -51,18 +51,6 @@ New-MgBetaUserManagedDeviceHealthScriptState -InputObject <IDevicesCorporateMana
 ## DESCRIPTION
 Create new navigation property to deviceHealthScriptStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -551,3 +539,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserManagedDeviceHealthScriptState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserManagedDeviceHealthScriptState?view=graph-powershell-v1.0)
+

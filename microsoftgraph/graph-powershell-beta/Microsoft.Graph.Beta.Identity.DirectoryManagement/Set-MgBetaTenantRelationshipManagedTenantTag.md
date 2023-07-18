@@ -41,18 +41,6 @@ Set-MgBetaTenantRelationshipManagedTenantTag -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Assign the tenant tag to the specified managed tenants.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -231,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgTenantRelationshipManagedTenantTag](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgTenantRelationshipManagedTenantTag?view=graph-powershell-v1.0)
+

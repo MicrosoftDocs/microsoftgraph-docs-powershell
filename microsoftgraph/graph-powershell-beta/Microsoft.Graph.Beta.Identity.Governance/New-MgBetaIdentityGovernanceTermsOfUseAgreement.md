@@ -30,18 +30,6 @@ New-MgBetaIdentityGovernanceTermsOfUseAgreement -BodyParameter <IMicrosoftGraphA
 ## DESCRIPTION
 Create a new agreement object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Acceptances
@@ -409,3 +397,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-v1.0)
+

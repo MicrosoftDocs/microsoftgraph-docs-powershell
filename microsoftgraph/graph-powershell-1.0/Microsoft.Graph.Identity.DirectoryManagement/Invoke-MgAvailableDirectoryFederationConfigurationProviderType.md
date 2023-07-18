@@ -20,22 +20,6 @@ Invoke-MgAvailableDirectoryFederationConfigurationProviderType [-Count] [-Filter
 ## DESCRIPTION
 Invoke function availableProviderTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -127,3 +111,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgBetaAvailableDirectoryFederationConfigurationProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Invoke-MgAvailableDirectoryFederationConfigurationProviderType?view=graph-powershell-beta)
+

@@ -27,18 +27,6 @@ Get-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <St
 ## DESCRIPTION
 Get the default channel, **General**, of a team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -155,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamPrimaryChannel?view=graph-powershell-beta)
+

@@ -20,22 +20,6 @@ Get-MgBetaDeviceManagementAndroidManagedStoreAccountEnterpriseSetting [-ExpandPr
 ## DESCRIPTION
 The singleton Android managed store account enterprise settings entity.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting?view=graph-powershell-v1.0)
+

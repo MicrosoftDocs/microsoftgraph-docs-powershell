@@ -46,18 +46,6 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property deviceStatuses in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -479,3 +467,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-v1.0)
+

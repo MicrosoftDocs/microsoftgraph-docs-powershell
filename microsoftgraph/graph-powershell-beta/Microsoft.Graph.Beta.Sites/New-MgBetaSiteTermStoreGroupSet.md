@@ -52,11 +52,11 @@ Create new navigation property to sets for sites
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -608,3 +608,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+

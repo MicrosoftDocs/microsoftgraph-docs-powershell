@@ -27,18 +27,6 @@ Get-MgServicePrincipalSynchronizationJobSchema -InputObject <IApplicationsIdenti
 ## DESCRIPTION
 Get schema from servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -159,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
+

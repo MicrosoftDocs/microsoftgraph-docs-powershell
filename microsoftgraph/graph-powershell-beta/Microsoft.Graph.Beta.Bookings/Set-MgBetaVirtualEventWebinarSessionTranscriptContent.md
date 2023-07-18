@@ -30,18 +30,6 @@ Set-MgBetaVirtualEventWebinarSessionTranscriptContent -InputObject <IBookingsIde
 A field that represents the content of the transcript.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallTranscriptId
@@ -211,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgVirtualEventWebinarSessionTranscriptContent](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventWebinarSessionTranscriptContent?view=graph-powershell-v1.0)
+

@@ -27,18 +27,6 @@ Get-MgSiteListItemDocumentSetVersionField -InputObject <ISitesIdentity> [-Expand
 ## DESCRIPTION
 A collection of the fields and values for this version of the list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteListItemDocumentSetVersionField?view=graph-powershell-beta)
+

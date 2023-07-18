@@ -19,18 +19,6 @@ Get-MgOauth2PermissionGrantCount [-Filter <String>] [-Search <String>] [<CommonP
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaOauth2PermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgOauth2PermissionGrantCount?view=graph-powershell-beta)
+

@@ -45,18 +45,6 @@ Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice
 ## DESCRIPTION
 Assigns user to Autopilot devices.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-beta)
+

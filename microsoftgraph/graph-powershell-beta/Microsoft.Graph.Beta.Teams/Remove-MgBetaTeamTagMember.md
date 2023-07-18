@@ -32,11 +32,11 @@ Delete a member from a standard tag in a team.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -220,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamTagMember?view=graph-powershell-v1.0)
+

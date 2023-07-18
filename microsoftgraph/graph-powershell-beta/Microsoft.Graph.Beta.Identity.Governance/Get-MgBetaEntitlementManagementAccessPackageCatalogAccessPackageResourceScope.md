@@ -21,22 +21,6 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageResourceScope -A
 ## DESCRIPTION
 Get accessPackageResourceScopes from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -219,3 +203,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope?view=graph-powershell-v1.0)
+

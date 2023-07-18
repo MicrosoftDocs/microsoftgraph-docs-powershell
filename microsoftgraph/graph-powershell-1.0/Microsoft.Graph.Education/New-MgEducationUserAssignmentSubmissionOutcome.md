@@ -49,18 +49,6 @@ Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or isn't in that folder, the `POST` request will fail.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
+

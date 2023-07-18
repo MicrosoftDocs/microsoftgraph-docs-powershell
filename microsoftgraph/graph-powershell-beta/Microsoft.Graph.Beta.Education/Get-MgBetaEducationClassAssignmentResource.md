@@ -42,46 +42,46 @@ Only teachers, students, and applications with application permissions can perfo
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-### EXAMPLE 6
+```
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -330,3 +330,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentResource?view=graph-powershell-v1.0)
+

@@ -20,18 +20,6 @@ Get-MgDeviceManagementAuditEventAuditCategory [-Count] [-Filter <String>] [-Sear
 ## DESCRIPTION
 Invoke function getAuditCategories
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -123,3 +111,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
+

@@ -31,18 +31,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrin
 References the principal that's in the scope of the membership or ownership eligibility request through the group that's governed by PIM.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleInstancePrincipal?view=graph-powershell-v1.0)
+

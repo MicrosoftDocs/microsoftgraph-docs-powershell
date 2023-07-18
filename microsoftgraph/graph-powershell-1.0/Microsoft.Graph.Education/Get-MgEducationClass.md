@@ -45,11 +45,11 @@ If you're using the delegated token, the user will only see classes in which the
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Get-MgEducationClass -EducationClassId $educationClassId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -265,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClass?view=graph-powershell-beta)
+

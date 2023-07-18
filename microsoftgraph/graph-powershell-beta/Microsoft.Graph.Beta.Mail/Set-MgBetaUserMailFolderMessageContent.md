@@ -27,22 +27,6 @@ Set-MgBetaUserMailFolderMessageContent -InputObject <IMailIdentity> [-Data <Stre
 ## DESCRIPTION
 Update media content for the navigation property messages in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -217,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserMailFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Set-MgUserMailFolderMessageContent?view=graph-powershell-v1.0)
+

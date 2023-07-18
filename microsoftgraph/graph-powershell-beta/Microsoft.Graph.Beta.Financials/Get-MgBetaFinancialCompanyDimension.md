@@ -34,22 +34,6 @@ Get-MgBetaFinancialCompanyDimension -InputObject <IFinancialsIdentity> [-ExpandP
 ## DESCRIPTION
 Get dimensions from financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -307,3 +291,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgFinancialCompanyDimension](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyDimension?view=graph-powershell-v1.0)
+

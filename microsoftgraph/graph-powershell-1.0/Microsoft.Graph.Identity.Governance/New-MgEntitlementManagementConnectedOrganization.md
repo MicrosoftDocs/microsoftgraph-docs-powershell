@@ -35,11 +35,11 @@ Create a new connectedOrganization object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementConnectedOrganization
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -289,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
+

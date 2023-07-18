@@ -47,11 +47,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 Get-MgBetaGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-v1.0)
+

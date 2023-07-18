@@ -34,18 +34,6 @@ Get-MgGroupOwnerAsServicePrincipal -InputObject <IGroupsIdentity> [-ExpandProper
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -318,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupOwnerAsServicePrincipal?view=graph-powershell-beta)
+

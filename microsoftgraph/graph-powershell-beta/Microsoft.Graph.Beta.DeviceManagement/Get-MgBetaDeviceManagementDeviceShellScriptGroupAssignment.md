@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -InputObject <IDevice
 ## DESCRIPTION
 The list of group assignments for the device management script.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -411,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceShellScriptGroupAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceShellScriptGroupAssignment?view=graph-powershell-v1.0)
+

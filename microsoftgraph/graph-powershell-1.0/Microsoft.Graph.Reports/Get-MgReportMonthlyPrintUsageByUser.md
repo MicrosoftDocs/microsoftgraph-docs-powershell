@@ -39,11 +39,11 @@ Get monthlyPrintUsageByUser from reports
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Reports
-```
 
 Get-MgReportMonthlyPrintUsageByUser
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -269,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportMonthlyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportMonthlyPrintUsageByUser?view=graph-powershell-beta)
+

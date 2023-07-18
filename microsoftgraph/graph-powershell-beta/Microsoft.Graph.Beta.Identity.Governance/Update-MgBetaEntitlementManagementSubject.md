@@ -46,22 +46,6 @@ Update-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Update the navigation property subjects in identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId
@@ -492,3 +476,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
+

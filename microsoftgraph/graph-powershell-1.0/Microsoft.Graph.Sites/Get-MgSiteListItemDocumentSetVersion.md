@@ -39,11 +39,11 @@ Read the properties and relationships of a documentSetVersion object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -332,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+

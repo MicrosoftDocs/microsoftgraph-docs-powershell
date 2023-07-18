@@ -39,11 +39,11 @@ Custodian sources that are included in the eDiscovery search.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -312,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-beta)
+

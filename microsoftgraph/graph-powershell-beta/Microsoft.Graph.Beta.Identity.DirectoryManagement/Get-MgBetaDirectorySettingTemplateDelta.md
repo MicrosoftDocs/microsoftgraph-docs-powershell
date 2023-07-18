@@ -21,18 +21,6 @@ Get-MgBetaDirectorySettingTemplateDelta [-Filter <String>] [-Property <String[]>
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -185,3 +173,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectorySettingTemplateDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySettingTemplateDelta?view=graph-powershell-v1.0)
+

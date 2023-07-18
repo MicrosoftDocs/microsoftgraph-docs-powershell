@@ -39,11 +39,11 @@ The connectors that are associated with the printer.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 Get-MgPrintPrinterConnector -PrinterId $printerId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -277,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintPrinterConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintPrinterConnector?view=graph-powershell-beta)
+

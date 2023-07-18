@@ -33,11 +33,11 @@ Delete an authenticationContextClassReference object that's not published or use
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Remove-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AuthenticationContextClassReferenceId
 The unique identifier of authenticationContextClassReference
@@ -208,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+

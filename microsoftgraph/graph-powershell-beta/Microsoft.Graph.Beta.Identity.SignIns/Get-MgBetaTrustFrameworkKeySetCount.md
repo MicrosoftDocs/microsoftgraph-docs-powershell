@@ -19,18 +19,6 @@ Get-MgBetaTrustFrameworkKeySetCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgTrustFrameworkKeySetCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySetCount?view=graph-powershell-v1.0)
+

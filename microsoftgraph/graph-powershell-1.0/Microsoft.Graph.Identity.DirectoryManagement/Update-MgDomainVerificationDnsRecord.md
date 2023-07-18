@@ -41,22 +41,6 @@ Update-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementI
 ## DESCRIPTION
 Update the navigation property verificationDnsRecords in domains
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -312,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgDomainVerificationDnsRecord?view=graph-powershell-beta)
+

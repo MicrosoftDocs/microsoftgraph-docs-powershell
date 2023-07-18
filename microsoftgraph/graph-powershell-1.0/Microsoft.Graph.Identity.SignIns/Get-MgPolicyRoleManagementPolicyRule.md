@@ -42,11 +42,11 @@ The rule can be one of the following types that are derived from the unifiedRole
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -322,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
+

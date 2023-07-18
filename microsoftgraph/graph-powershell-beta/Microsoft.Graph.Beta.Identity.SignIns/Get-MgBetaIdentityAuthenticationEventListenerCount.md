@@ -19,18 +19,6 @@ Get-MgBetaIdentityAuthenticationEventListenerCount [-Filter <String>] [-Search <
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -77,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityAuthenticationEventListenerCount](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventListenerCount?view=graph-powershell-v1.0)
+

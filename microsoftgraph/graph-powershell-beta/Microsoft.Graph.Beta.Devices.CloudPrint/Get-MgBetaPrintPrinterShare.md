@@ -70,11 +70,11 @@ Get printerShares from print
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Get-MgBetaPrintPrinterShare -PrinterId $printerId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -308,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShare?view=graph-powershell-v1.0)
+

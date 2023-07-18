@@ -28,22 +28,6 @@ Remove-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 ## DESCRIPTION
 Delete navigation property microsoftApplicationDataAccess for organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -201,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)
+

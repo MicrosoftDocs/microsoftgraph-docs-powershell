@@ -71,7 +71,6 @@ Only teachers can perform this operation.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	displayName = "Quizzes"
@@ -79,7 +78,8 @@ $params = @{
 
 New-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -258,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClassAssignmentCategory?view=graph-powershell-beta)
+

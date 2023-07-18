@@ -25,11 +25,11 @@ Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -75,3 +75,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-beta)
+

@@ -47,22 +47,6 @@ Update-MgSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property simulationAutomations in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -426,3 +410,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityAttackSimulationAutomation?view=graph-powershell-beta)
+

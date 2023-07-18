@@ -27,18 +27,6 @@ Start-MgBetaPrintPrinterShareJob -InputObject <IDevicesCloudPrintIdentity> [-Wha
 ## DESCRIPTION
 Invoke action start
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -153,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgPrintPrinterShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Start-MgPrintPrinterShareJob?view=graph-powershell-v1.0)
+

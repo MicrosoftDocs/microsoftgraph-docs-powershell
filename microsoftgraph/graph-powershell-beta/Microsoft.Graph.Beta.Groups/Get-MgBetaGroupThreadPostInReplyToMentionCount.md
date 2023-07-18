@@ -27,18 +27,6 @@ Get-MgBetaGroupThreadPostInReplyToMentionCount -InputObject <IGroupsIdentity> [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ConversationThreadId
@@ -183,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThreadPostInReplyToMentionCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToMentionCount?view=graph-powershell-v1.0)
+

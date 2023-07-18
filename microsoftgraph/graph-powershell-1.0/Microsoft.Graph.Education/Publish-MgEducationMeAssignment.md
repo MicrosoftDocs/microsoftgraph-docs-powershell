@@ -44,11 +44,11 @@ To update the properties of a published **assignment**, see update an assignment
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -144,3 +144,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgEducationMeAssignment?view=graph-powershell-beta)
+

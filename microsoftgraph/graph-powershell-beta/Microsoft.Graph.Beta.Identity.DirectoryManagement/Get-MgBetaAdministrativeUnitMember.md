@@ -23,22 +23,6 @@ Get-MgBetaAdministrativeUnitMember -AdministrativeUnitId <String> [-ExpandProper
 Users and groups that are members of this administrative unit.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdministrativeUnitId
@@ -237,3 +221,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAdministrativeUnitMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitMember?view=graph-powershell-v1.0)
+

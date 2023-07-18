@@ -34,18 +34,6 @@ Get-MgBetaUserSecurityInformationProtectionSensitivityLabel -InputObject <ISecur
 ## DESCRIPTION
 Read the Microsoft Purview Information Protection labels for the user or organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -337,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSecurityInformationProtectionSensitivityLabel](/powershell/module/Microsoft.Graph.Security/Get-MgUserSecurityInformationProtectionSensitivityLabel?view=graph-powershell-v1.0)
+

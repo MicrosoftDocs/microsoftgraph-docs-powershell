@@ -29,18 +29,6 @@ Remove-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ## DESCRIPTION
 Delete navigation property allowedValues for directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AllowedValueId
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
+

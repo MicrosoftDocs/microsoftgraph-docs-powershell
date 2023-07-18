@@ -33,18 +33,6 @@ This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -GroupSettingTemplateId
@@ -166,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgGroupSettingTemplate?view=graph-powershell-beta)
+

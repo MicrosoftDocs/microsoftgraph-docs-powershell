@@ -33,22 +33,6 @@ Getting a resources collection is not supported, but you can get the binary cont
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -158,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgSiteOnenoteResource?view=graph-powershell-beta)
+

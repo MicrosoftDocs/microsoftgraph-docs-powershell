@@ -40,7 +40,6 @@ Update the default configuration of a cross-tenant access policy.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 $params = @{
 	b2bCollaborationOutbound = @{
@@ -67,7 +66,8 @@ $params = @{
 
 Update-MgBetaPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -397,3 +397,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-v1.0)
+

@@ -20,22 +20,6 @@ Remove-MgPolicyAdminConsentRequestPolicy [-IfMatch <String>] [-PassThru] [-WhatI
 ## DESCRIPTION
 Delete navigation property adminConsentRequestPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+

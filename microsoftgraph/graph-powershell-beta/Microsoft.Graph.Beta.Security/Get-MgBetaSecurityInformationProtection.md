@@ -20,22 +20,6 @@ Get-MgBetaSecurityInformationProtection [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 Get informationProtection from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtection?view=graph-powershell-v1.0)
+

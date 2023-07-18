@@ -20,18 +20,6 @@ Get-MgBetaIdentityGovernancePrivilegedAccess [-ExpandProperty <String[]>] [-Prop
 ## DESCRIPTION
 Get privilegedAccess from identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgIdentityGovernancePrivilegedAccess](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccess?view=graph-powershell-v1.0)
+

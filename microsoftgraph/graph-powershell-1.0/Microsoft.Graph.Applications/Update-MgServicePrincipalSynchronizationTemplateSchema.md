@@ -45,18 +45,6 @@ Update-MgServicePrincipalSynchronizationTemplateSchema -InputObject <IApplicatio
 ## DESCRIPTION
 Update the navigation property schema in servicePrincipals
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -449,3 +437,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-beta)
+

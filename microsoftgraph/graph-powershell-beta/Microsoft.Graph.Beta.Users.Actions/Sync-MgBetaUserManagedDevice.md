@@ -27,22 +27,6 @@ Sync-MgBetaUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru] [-
 ## DESCRIPTION
 Invoke action syncDevice
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -199,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Sync-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Sync-MgUserManagedDevice?view=graph-powershell-v1.0)
+

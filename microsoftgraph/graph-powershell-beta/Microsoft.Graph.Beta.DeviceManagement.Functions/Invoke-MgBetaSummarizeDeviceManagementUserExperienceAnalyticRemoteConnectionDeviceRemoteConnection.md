@@ -29,22 +29,6 @@ Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDevi
 ## DESCRIPTION
 Invoke function summarizeDeviceRemoteConnection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -233,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticRemoteConnectionDeviceRemoteConnection?view=graph-powershell-v1.0)
+

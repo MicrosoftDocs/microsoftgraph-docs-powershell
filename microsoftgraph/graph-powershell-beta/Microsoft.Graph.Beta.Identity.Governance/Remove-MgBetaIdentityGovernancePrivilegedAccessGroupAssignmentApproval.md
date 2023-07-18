@@ -28,18 +28,6 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApproval
 ## DESCRIPTION
 Delete navigation property assignmentApprovals for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApprovalId
@@ -252,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApproval?view=graph-powershell-v1.0)
+

@@ -19,18 +19,6 @@ Get-MgBetaTeamAppPreApproval -TeamsAppId <String> [<CommonParameters>]
 ## DESCRIPTION
 Get Preapproval policy associated with a Teams App.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -TeamsAppId
@@ -62,3 +50,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamAppPreApproval?view=graph-powershell-v1.0)
+

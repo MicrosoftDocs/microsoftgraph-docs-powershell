@@ -34,18 +34,6 @@ Get-MgBetaDeviceAppManagementWindowsManagedAppProtection -InputObject <IDevicesC
 ## DESCRIPTION
 Windows managed app policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -318,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWindowsManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsManagedAppProtection?view=graph-powershell-v1.0)
+

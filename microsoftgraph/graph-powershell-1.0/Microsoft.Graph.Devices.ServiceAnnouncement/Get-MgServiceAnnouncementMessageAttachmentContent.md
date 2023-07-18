@@ -27,18 +27,6 @@ Get-MgServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServiceA
 ## DESCRIPTION
 The attachment content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -143,3 +131,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-beta)
+

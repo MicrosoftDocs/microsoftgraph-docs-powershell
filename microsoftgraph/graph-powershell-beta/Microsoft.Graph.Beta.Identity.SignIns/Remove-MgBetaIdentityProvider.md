@@ -36,11 +36,11 @@ In Azure AD B2C, this operation can currently delete a socialIdentityProvider, o
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Remove-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IdentityProviderBaseId
 The unique identifier of identityProviderBase
@@ -230,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityProvider?view=graph-powershell-v1.0)
+

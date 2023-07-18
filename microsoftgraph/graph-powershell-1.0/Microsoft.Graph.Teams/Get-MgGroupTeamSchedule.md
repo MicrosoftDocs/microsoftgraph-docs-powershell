@@ -35,18 +35,6 @@ During schedule provisioning, clients can use the GET method to get the schedule
 If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
 Clients can also inspect the configuration of the schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -163,3 +151,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamSchedule?view=graph-powershell-beta)
+

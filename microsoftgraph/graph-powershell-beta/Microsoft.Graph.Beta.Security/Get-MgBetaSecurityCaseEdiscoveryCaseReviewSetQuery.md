@@ -39,11 +39,11 @@ Read the properties and relationships of an ediscoveryReviewSetQuery object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -349,3 +349,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
+

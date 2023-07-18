@@ -34,11 +34,11 @@ Existing shift instances assigned to the scheduling group remain part of the gro
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -SchedulingGroupId $schedulingGroupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -207,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+

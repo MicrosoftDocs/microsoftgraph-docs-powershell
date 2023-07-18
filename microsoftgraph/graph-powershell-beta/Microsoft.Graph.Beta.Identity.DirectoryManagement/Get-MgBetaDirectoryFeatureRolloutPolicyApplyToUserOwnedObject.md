@@ -46,22 +46,6 @@ Get-MgBetaDirectoryFeatureRolloutPolicyApplyToUserOwnedObject
 Retrieve a list of recently deleted application and group objects owned by the specified user.
 This API returns up to 1,000 deleted objects owned by the user, sorted by ID, and doesn't support pagination.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -256,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryFeatureRolloutPolicyApplyToUserOwnedObject?view=graph-powershell-v1.0)
+

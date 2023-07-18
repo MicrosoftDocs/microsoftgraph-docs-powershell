@@ -42,18 +42,6 @@ Update-MgBetaUserOnlineMeetingRegistrationRegistrant -InputObject <ICloudCommuni
 ## DESCRIPTION
 Update the navigation property registrants in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -257,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserOnlineMeetingRegistrationRegistrant](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRegistrationRegistrant?view=graph-powershell-v1.0)
+

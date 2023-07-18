@@ -19,22 +19,6 @@ Get-MgReportOffice365ActivationUserDetail -OutFile <String> [-PassThru] [<Common
 ## DESCRIPTION
 Invoke function getOffice365ActivationsUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -OutFile
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaReportOffice365ActivationUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365ActivationUserDetail?view=graph-powershell-beta)
+

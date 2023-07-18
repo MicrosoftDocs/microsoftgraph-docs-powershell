@@ -41,18 +41,6 @@ Update-MgDeviceManagementUserExperienceAnalyticMetricHistory -InputObject <IDevi
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsMetricHistory in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementUserExperienceAnalyticMetricHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticMetricHistory?view=graph-powershell-beta)
+

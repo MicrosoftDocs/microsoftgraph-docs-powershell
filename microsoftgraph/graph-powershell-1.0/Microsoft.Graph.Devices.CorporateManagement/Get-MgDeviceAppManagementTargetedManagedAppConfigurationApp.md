@@ -35,18 +35,6 @@ Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp -InputObject <IDevic
 ## DESCRIPTION
 List of apps to which the policy is deployed.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationApp?view=graph-powershell-beta)
+

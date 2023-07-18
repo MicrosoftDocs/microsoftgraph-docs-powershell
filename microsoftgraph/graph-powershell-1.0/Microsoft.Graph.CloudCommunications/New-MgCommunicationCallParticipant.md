@@ -50,11 +50,11 @@ Create new navigation property to participants for communications
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallParticipant -CallId $callId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -385,3 +385,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgCommunicationCallParticipant?view=graph-powershell-beta)
+

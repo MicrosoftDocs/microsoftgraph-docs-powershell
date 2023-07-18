@@ -32,7 +32,6 @@ Delete navigation property fields for sites
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 $params = @{
 	Color = "Fuchsia"
@@ -41,7 +40,8 @@ $params = @{
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -237,3 +237,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemField?view=graph-powershell-v1.0)
+

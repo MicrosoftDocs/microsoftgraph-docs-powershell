@@ -31,18 +31,6 @@ Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrinci
 The principal that's getting a role assignment through the request.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-v1.0)
+

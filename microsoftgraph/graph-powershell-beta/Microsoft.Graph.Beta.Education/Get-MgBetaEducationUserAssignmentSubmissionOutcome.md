@@ -41,7 +41,6 @@ Get outcomes from education
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationFeedbackOutcome"
@@ -49,10 +48,10 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationPointsOutcome"
@@ -64,10 +63,10 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationRubricOutcome"
@@ -79,7 +78,8 @@ $params = @{
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -343,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+

@@ -27,18 +27,6 @@ Remove-MgSecurityThreatIntelligenceArticle -InputObject <ISecurityIdentity> [-If
 ## DESCRIPTION
 Delete navigation property articles for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ArticleId
@@ -188,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
+

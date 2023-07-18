@@ -47,7 +47,6 @@ Because the **user** resource supports extensions, you can also use the `GET` op
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgBetaUser -All | Format-List  ID, DisplayName, Mail, UserPrincipalName
-```
 
 Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
 DisplayName       : Kristi Laar
@@ -59,26 +58,26 @@ DisplayName       : Adele Vance
 Mail              : AdeleV@contoso.com
 UserPrincipalName : AdeleV@contoso.com
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
-Get-MgBetaUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' | 
-  Format-List  ID, DisplayName, Mail, UserPrincipalName
-```
+Get-MgBetaUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' |
+Format-List  ID, DisplayName, Mail, UserPrincipalName
 
 Id                : e4e2b110-8d4f-434f-a990-7cd63e23aed6
 DisplayName       : Kristi Laar
 Mail              : Adams@contoso.com
 UserPrincipalName : Adams@contoso.com
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgBetaUser -Count userCount -ConsistencyLevel eventual
-```
 
-Id                                   DisplayName              Mail                           UserPrincipalName        
---                                   -----------              ----                           -----------------               
+Id                                   DisplayName              Mail                           UserPrincipalName
+--                                   -----------              ----                           -----------------
 00f9b5d4-290f-413d-ab86-feb3cdc23736 Johanna Lorenz           JohannaL@Contoso.com           JohannaL@Contoso.com
 0568f35e-9177-4630-abd6-d533b21f1f78 Brian Johnson (TAILSPIN) BrianJ@Contoso.com             BrianJ@Contoso.com
 075b32dd-edb7-47cf-89ef-f3f733683a3f Patti Fernandez          PattiF@Contoso.com             PattiF@Contoso.com
@@ -87,45 +86,47 @@ Id                                   DisplayName              Mail              
 180d5d54-159d-4970-ae07-99c8b658fa89 Allan Deyoung            AllanD@Contoso.com             AllanD@Contoso.com
 185190a7-54f0-4892-add3-211c21327570 Debra Berger             DebraB@Contoso.com             DebraB@Contoso.com
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgBetaUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'a')" -Top 1
-```
 
 Id                                   DisplayName   Mail                               UserPrincipalName                  UserType
 --                                   -----------   ----                               -----------------                  --------
 577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@M365x814237.OnMicrosoft.com AllanD@M365x814237.OnMicrosoft.com Member
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgBetaUser -ConsistencyLevel eventual -Count userCount -Search '"DisplayName:Conf"'
-```
 
-Id                                   DisplayName       Mail                UserPrincipalName                   
---                                   -----------       ----                -----------------                             
+Id                                   DisplayName       Mail                UserPrincipalName
+--                                   -----------       ----                -----------------
 0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Contoso.com   Baker@Contoso.com
 1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room Stevens Stevens@Contoso.com Stevens@Contoso.com
 4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Crystal Crystal@Contoso.com Crystal@Contoso.com
 82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Contoso.com    Hood@Contoso.com
 a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Rainier@Contoso.com
 
-### EXAMPLE 6
+```
+### Example 6
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgBetaUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'Conf')" -OrderBy UserPrincipalName
-```
 
-Id                                   DisplayName       Mail                UserPrincipalName                   
---                                   -----------       ----                -----------------                   
+Id                                   DisplayName       Mail                UserPrincipalName
+--                                   -----------       ----                -----------------
 0d005a1a-5e61-4388-bf5e-9060d727f891 Conf Room Baker   Baker@Contoso.com   Baker@Contoso.com
 4aec2afd-be23-46d1-9138-f5ee6b77af5a Conf Room Crystal Crystal@Contoso.com Crystal@Contoso.com
 82a56dfc-31f9-4b90-8a1c-6c4326bbffd9 Conf Room Hood    Hood@Contoso.com    Hood@Contoso.com
 a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Rainier@Contoso.com
 1e34292e-e5a3-46fd-9cac-8d37f2d3ab4a Conf Room Stevens Stevens@Contoso.com Stevens@Contoso.com
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -All
 List all pages.
@@ -354,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-v1.0)
+

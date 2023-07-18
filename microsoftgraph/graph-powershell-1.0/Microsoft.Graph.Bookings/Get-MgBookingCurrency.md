@@ -41,11 +41,11 @@ Use the **id** property, which is the currency code, to specify the currency.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingCurrency -BookingCurrencyId $bookingCurrencyId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -258,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingCurrency?view=graph-powershell-beta)
+

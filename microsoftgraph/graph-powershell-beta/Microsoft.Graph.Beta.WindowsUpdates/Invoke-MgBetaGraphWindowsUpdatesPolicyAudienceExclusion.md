@@ -43,18 +43,6 @@ Invoke-MgBetaGraphWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUp
 ## DESCRIPTION
 Invoke action unenrollAssetsById
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -269,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgGraphWindowsUpdatesPolicyAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgGraphWindowsUpdatesPolicyAudienceExclusion?view=graph-powershell-v1.0)
+

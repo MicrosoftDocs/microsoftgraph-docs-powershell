@@ -27,18 +27,6 @@ Remove-MgBetaDeviceManagementMonitoringAlertRule -InputObject <IDeviceManagement
 ## DESCRIPTION
 Delete navigation property alertRules for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertRuleId
@@ -295,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)
+

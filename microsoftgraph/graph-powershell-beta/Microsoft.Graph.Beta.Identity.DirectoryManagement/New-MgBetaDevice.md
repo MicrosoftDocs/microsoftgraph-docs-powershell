@@ -45,7 +45,6 @@ Create a new device.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 $params = @{
 	accountEnabled = $false
@@ -63,7 +62,8 @@ $params = @{
 
 New-MgBetaDevice -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccountEnabled
 true if the account is enabled; otherwise, false.
@@ -1064,3 +1064,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDevice?view=graph-powershell-v1.0)
+

@@ -41,11 +41,11 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Users
-```
 
 Get-MgUserTransitiveMemberOf -UserId $userId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -295,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-beta)
+

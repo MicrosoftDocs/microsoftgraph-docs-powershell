@@ -39,11 +39,11 @@ Measurements of tenants' security posture to help protect them from threats.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-```
 
 Get-MgBetaSecuritySecureScore -SecureScoreId $secureScoreId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -319,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScore?view=graph-powershell-v1.0)
+

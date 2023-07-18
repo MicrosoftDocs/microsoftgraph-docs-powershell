@@ -20,18 +20,6 @@ Remove-MgAdminEdgeInternetExplorerMode [-IfMatch <String>] [-PassThru] [-WhatIf]
 ## DESCRIPTION
 Delete navigation property internetExplorerMode for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -109,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgAdminEdgeInternetExplorerMode?view=graph-powershell-beta)
+

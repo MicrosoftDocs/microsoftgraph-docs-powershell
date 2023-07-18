@@ -27,22 +27,6 @@ Restore-MgUserManagedDevicePasscode -InputObject <IUsersActionsIdentity> [-PassT
 ## DESCRIPTION
 Recover passcode
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -188,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaUserManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgUserManagedDevicePasscode?view=graph-powershell-beta)
+

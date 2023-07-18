@@ -41,18 +41,6 @@ Update-MgBetaSecurityThreatIntelligenceSubdomain -InputObject <ISecurityIdentity
 ## DESCRIPTION
 Update the navigation property subdomains in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -400,3 +388,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityThreatIntelligenceSubdomain](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligenceSubdomain?view=graph-powershell-v1.0)
+

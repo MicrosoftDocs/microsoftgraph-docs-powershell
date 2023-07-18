@@ -51,11 +51,11 @@ Retrieve the properties and relationships of a user.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Get-MgBetaEducationUser -EducationUserId $educationUserId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -275,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUser?view=graph-powershell-v1.0)
+

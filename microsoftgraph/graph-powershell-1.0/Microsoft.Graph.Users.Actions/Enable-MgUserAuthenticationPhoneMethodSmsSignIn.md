@@ -29,18 +29,6 @@ Enable-MgUserAuthenticationPhoneMethodSmsSignIn -InputObject <IUsersActionsIdent
 Enable SMS sign-in for an existing `mobile` phone number registered to a user.
 To be successfully enabled:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -186,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Enable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Enable-MgUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
+

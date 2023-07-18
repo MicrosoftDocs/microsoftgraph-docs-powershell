@@ -47,22 +47,6 @@ New-MgDriveRootListItemDocumentSetVersion -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Create a new version of a document set item in a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -418,3 +402,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+

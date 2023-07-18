@@ -48,7 +48,6 @@ Currently, only **one** task trigger can be specified per printer, but this limi
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
-```
 
 $params = @{
 	event = "jobStarted"
@@ -57,7 +56,8 @@ $params = @{
 
 New-MgPrintPrinterTaskTrigger -PrinterId $printerId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -283,3 +283,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintPrinterTaskTrigger?view=graph-powershell-beta)
+

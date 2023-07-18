@@ -32,11 +32,11 @@ Delete a samlOrWsFedExternalDomainFederation object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Remove-MgDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IdentityProviderBaseId
 The unique identifier of identityProviderBase
@@ -173,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgDirectoryFederationConfiguration?view=graph-powershell-beta)
+

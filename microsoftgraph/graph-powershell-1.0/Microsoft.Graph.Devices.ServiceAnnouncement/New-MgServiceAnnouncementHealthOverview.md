@@ -33,18 +33,18 @@ Create new navigation property to healthOverviews for admin
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementHealthOverview
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
-```
 
 Get-MgServiceAnnouncementHealthOverview -ExpandProperty "issues"
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -246,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgServiceAnnouncementHealthOverview?view=graph-powershell-beta)
+

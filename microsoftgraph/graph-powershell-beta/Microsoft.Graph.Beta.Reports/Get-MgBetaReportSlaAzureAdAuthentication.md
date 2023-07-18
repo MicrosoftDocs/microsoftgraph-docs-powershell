@@ -24,18 +24,6 @@ Read the properties and relationships of an azureADAuthentication object to find
 The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
 This object provides you with your tenant's actual performance against this commitment.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -82,3 +70,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
+

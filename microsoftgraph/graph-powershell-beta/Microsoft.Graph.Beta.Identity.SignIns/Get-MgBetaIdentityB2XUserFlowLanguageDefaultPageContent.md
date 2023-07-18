@@ -28,22 +28,6 @@ Get-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent -InputObject <IIdentityS
 ## DESCRIPTION
 Get media content for the navigation property defaultPages from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -B2XIdentityUserFlowId
@@ -233,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-v1.0)
+

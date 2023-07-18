@@ -20,18 +20,6 @@ Get-MgBetaDeviceManagementWindowsAutopilotSetting [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 The Windows autopilot account settings.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
+

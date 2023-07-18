@@ -27,22 +27,6 @@ Remove-MgBetaFinancialCompanyPurchaseInvoiceVendorPaymentTerm -InputObject <IFin
 ## DESCRIPTION
 Delete navigation property paymentTerm for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -210,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgFinancialCompanyPurchaseInvoiceVendorPaymentTerm](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyPurchaseInvoiceVendorPaymentTerm?view=graph-powershell-v1.0)
+

@@ -29,18 +29,6 @@ Start-MgBetaDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck
 Run health checks on the cloudPcOnPremisesConnection object.
 This will trigger a new health check for this cloudPcOnPremisesConnection object and change the healthCheckStatus and healthCheckStatusDetails properties when check finished.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcOnPremisesConnectionId
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Start-MgDeviceManagementVirtualEndpointOnPremiseConnectionHealthCheck?view=graph-powershell-v1.0)
+

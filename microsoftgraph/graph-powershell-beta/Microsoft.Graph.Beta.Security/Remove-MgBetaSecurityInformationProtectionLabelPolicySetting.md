@@ -20,22 +20,6 @@ Remove-MgBetaSecurityInformationProtectionLabelPolicySetting [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property labelPolicySettings for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
+

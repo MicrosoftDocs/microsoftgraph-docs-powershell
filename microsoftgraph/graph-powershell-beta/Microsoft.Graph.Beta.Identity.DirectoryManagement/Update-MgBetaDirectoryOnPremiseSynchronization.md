@@ -45,18 +45,6 @@ Update-MgBetaDirectoryOnPremiseSynchronization -InputObject <IIdentityDirectoryM
 ## DESCRIPTION
 Update the properties of an onPremisesDirectorySynchronization object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -365,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryOnPremiseSynchronization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryOnPremiseSynchronization?view=graph-powershell-v1.0)
+

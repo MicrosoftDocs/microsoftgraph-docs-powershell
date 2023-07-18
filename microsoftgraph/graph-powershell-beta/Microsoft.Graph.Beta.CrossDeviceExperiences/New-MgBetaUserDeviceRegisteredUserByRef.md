@@ -39,18 +39,6 @@ New-MgBetaUserDeviceRegisteredUserByRef -InputObject <ICrossDeviceExperiencesIde
 ## DESCRIPTION
 Add a registered user for the device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -227,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDeviceRegisteredUserByRef?view=graph-powershell-v1.0)
+

@@ -20,18 +20,6 @@ Get-MgBetaDeviceManagementMicrosoftTunnelServerLogCollectionResponseCount [-Filt
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseCount?view=graph-powershell-v1.0)
+

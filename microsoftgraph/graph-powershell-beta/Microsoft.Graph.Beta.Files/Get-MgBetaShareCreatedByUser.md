@@ -27,18 +27,6 @@ Get-MgBetaShareCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Get createdByUser from shares
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareCreatedByUser?view=graph-powershell-v1.0)
+

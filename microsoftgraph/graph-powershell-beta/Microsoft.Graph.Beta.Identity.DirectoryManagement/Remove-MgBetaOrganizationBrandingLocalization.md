@@ -35,11 +35,11 @@ To delete the organizationalBrandingLocalization object, all images (Stream type
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Remove-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -211,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationBrandingLocalization?view=graph-powershell-v1.0)
+

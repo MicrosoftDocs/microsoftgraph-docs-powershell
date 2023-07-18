@@ -47,7 +47,6 @@ Update the navigation property buckets in planner
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
-```
 
 $params = @{
 	name = "Development"
@@ -55,7 +54,8 @@ $params = @{
 
 Update-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -504,3 +504,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerBucket?view=graph-powershell-v1.0)
+

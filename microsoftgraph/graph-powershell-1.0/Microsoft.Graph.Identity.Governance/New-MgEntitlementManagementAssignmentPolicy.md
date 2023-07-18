@@ -43,7 +43,6 @@ The request will include a reference to the accessPackage that will contain this
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "New Policy"
@@ -80,10 +79,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "policy for external access requests"
@@ -201,10 +200,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Sales department users"
@@ -227,10 +226,10 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "A Policy With Questions"
@@ -326,7 +325,8 @@ $params = @{
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AccessPackage
 accessPackage
@@ -9612,3 +9612,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+

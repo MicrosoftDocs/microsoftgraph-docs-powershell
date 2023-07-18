@@ -32,18 +32,6 @@ The roleDefinition the assignment is for.
 Supports $expand.
 roleDefinition.Id will be auto expanded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -183,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentRoleDefinition?view=graph-powershell-beta)
+

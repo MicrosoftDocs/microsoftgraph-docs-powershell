@@ -27,18 +27,6 @@ Get-MgBetaDriveRootRetentionLabel -InputObject <IFilesIdentity> [-ExpandProperty
 ## DESCRIPTION
 Get retentionLabel from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootRetentionLabel?view=graph-powershell-v1.0)
+

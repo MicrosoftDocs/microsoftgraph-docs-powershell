@@ -39,11 +39,11 @@ Retrieve the properties and relationships of a directoryObject object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -266,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-beta)
+

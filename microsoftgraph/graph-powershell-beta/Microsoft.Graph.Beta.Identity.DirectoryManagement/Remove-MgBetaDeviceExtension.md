@@ -27,22 +27,6 @@ Remove-MgBetaDeviceExtension -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Delete navigation property extensions for devices
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceExtension?view=graph-powershell-v1.0)
+

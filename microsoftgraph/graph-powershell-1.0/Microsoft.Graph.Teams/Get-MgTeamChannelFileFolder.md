@@ -32,11 +32,11 @@ Get the metadata for the location where the files of a channel are stored.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ChannelId
 The unique identifier of channel
@@ -167,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamChannelFileFolder?view=graph-powershell-beta)
+

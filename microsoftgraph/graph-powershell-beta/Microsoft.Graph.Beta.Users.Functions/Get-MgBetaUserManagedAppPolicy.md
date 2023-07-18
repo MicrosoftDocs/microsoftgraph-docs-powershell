@@ -28,22 +28,6 @@ Get-MgBetaUserManagedAppPolicy -InputObject <IUsersFunctionsIdentity> [-Count] [
 ## DESCRIPTION
 Gets app restrictions for a given user.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -241,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManagedAppPolicy](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedAppPolicy?view=graph-powershell-v1.0)
+

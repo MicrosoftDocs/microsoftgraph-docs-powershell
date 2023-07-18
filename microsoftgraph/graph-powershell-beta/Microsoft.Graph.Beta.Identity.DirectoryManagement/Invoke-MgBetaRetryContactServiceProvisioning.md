@@ -27,18 +27,6 @@ Invoke-MgBetaRetryContactServiceProvisioning -InputObject <IIdentityDirectoryMan
 ## DESCRIPTION
 Invoke action retryServiceProvisioning
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -181,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgRetryContactServiceProvisioning](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgRetryContactServiceProvisioning?view=graph-powershell-v1.0)
+

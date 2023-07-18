@@ -52,11 +52,12 @@ Update the navigation property includes in policies
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 Update-MgPolicyPermissionGrantPolicyInclude -PermissionGrantConditionSetId "084b9abc-cf56-4d84-bdb0-5ad8f3a51038" -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -PermissionType "application" -ResourceApplication "00000000-0000-0000-0000-000000000000" -Permissions "00000000-0000-0000-0000-000000000000", "00000000-0000-0000-0000-000000000001"
-```
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -AdditionalProperties
 Additional Parameters
@@ -404,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+

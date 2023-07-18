@@ -20,18 +20,6 @@ Get-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping
 ## DESCRIPTION
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping?view=graph-powershell-v1.0)
+

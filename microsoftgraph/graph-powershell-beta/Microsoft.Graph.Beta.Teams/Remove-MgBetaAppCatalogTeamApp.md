@@ -36,11 +36,11 @@ You can also use this API to remove a submitted app from the review process.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 Remove-MgBetaAppCatalogTeamApp -TeamsAppId $teamsAppId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamApp?view=graph-powershell-v1.0)
+

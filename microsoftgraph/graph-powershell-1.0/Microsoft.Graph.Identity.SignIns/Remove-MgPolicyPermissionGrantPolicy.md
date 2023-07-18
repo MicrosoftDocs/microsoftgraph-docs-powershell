@@ -31,11 +31,12 @@ Delete a permissionGrantPolicy object.
 
 ### EXAMPLE 1
 ```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 Remove-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
-```
 
-## PARAMETERS
+```
+## Parameters
+
 
 ### -IfMatch
 ETag
@@ -206,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicy?view=graph-powershell-beta)
+

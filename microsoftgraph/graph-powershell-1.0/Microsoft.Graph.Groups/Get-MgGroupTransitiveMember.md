@@ -41,11 +41,11 @@ Nullable.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Get-MgGroupTransitiveMember -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -317,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupTransitiveMember?view=graph-powershell-beta)
+

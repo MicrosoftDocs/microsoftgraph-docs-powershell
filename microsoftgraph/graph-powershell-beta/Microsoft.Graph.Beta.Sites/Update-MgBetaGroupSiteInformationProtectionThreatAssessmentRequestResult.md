@@ -43,18 +43,6 @@ Update-MgBetaGroupSiteInformationProtectionThreatAssessmentRequestResult -InputO
 ## DESCRIPTION
 Update the navigation property results in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -337,3 +325,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-v1.0)
+

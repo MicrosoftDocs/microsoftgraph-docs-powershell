@@ -27,22 +27,6 @@ Remove-MgBetaUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdenti
 ## DESCRIPTION
 Delete navigation property historyItems for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityHistoryItemId
@@ -197,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Remove-MgUserActivityHistoryItem?view=graph-powershell-v1.0)
+

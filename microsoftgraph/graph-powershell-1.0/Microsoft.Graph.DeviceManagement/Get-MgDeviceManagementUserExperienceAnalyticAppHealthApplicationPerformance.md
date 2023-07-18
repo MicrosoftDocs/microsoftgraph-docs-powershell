@@ -36,18 +36,6 @@ Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance
 ## DESCRIPTION
 User experience analytics appHealth Application Performance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -307,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance?view=graph-powershell-beta)
+

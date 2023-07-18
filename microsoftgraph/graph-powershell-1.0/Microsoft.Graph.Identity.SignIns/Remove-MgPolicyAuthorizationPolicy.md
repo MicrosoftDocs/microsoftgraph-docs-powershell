@@ -19,22 +19,6 @@ Remove-MgPolicyAuthorizationPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] [-C
 ## DESCRIPTION
 Delete navigation property authorizationPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +96,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyAuthorizationPolicy?view=graph-powershell-beta)
+

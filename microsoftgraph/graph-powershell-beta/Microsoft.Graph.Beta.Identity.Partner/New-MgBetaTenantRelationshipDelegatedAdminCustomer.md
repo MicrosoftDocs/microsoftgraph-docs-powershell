@@ -28,18 +28,6 @@ New-MgBetaTenantRelationshipDelegatedAdminCustomer -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -204,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-v1.0)
+

@@ -43,11 +43,11 @@ These objects represent a language available in a user flow.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -323,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+

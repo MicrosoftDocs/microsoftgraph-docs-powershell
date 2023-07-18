@@ -27,18 +27,6 @@ Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsScoreHistory for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -208,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-beta)
+

@@ -47,18 +47,6 @@ Update-MgUserDriveItemListItemCreatedByUserMailboxSetting -InputObject <IFilesId
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -427,3 +415,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserDriveItemListItemCreatedByUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgUserDriveItemListItemCreatedByUserMailboxSetting?view=graph-powershell-beta)
+

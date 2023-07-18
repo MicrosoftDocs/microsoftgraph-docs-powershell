@@ -28,18 +28,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy
 ## DESCRIPTION
 The unique identifier of the AAD identity that last modified the workflow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -179,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy?view=graph-powershell-beta)
+

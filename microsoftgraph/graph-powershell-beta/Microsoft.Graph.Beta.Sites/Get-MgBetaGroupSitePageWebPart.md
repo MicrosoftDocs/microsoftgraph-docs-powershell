@@ -34,18 +34,6 @@ Get-MgBetaGroupSitePageWebPart -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Read the properties and relationships of a webPart object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -348,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSitePageWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageWebPart?view=graph-powershell-v1.0)
+

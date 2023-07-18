@@ -31,22 +31,6 @@ For drives in SharePoint, the associated document library list item.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -171,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveItemListItem?view=graph-powershell-beta)
+

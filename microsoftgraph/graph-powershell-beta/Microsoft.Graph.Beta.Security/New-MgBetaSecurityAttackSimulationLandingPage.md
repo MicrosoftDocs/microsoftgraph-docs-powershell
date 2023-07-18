@@ -30,18 +30,6 @@ New-MgBetaSecurityAttackSimulationLandingPage -BodyParameter <IMicrosoftGraphLan
 ## DESCRIPTION
 Create new navigation property to landingPages for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -351,3 +339,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityAttackSimulationLandingPage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityAttackSimulationLandingPage?view=graph-powershell-v1.0)
+

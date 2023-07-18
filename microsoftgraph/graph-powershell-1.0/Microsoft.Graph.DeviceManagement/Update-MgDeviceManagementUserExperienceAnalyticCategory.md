@@ -43,18 +43,6 @@ Update-MgDeviceManagementUserExperienceAnalyticCategory -InputObject <IDeviceMan
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsCategories in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -300,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
+

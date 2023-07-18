@@ -34,18 +34,6 @@ Get-MgBetaVirtualEventWebinar -InputObject <IBookingsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Read the properties and relationships of a virtualEventWebinar object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -272,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgVirtualEventWebinar](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinar?view=graph-powershell-v1.0)
+

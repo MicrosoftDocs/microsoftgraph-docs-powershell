@@ -35,18 +35,6 @@ Get-MgTenantRelationshipDelegatedAdminRelationshipOperation -InputObject <IIdent
 ## DESCRIPTION
 Read the properties of a delegatedAdminRelationshipOperation object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -274,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipOperation](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipOperation?view=graph-powershell-beta)
+

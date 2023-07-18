@@ -28,22 +28,6 @@ Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <
 ## DESCRIPTION
 Delete navigation property decisions for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -244,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+

@@ -42,11 +42,11 @@ A teacher can also submit a student's assignment on their behalf.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
-```
 
 Submit-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment
@@ -175,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Submit-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Submit-MgEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
+

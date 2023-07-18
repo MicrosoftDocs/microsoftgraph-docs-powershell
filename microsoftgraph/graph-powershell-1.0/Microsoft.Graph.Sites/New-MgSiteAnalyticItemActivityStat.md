@@ -47,18 +47,6 @@ New-MgSiteAnalyticItemActivityStat -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create new navigation property to itemActivityStats for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Access
@@ -6119,3 +6107,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+

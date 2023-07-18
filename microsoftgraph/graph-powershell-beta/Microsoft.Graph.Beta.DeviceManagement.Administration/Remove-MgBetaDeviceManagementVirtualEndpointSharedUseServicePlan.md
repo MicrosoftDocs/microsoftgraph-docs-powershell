@@ -28,18 +28,6 @@ Remove-MgBetaDeviceManagementVirtualEndpointSharedUseServicePlan
 ## DESCRIPTION
 Delete navigation property sharedUseServicePlans for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CloudPcSharedUseServicePlanId
@@ -212,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementVirtualEndpointSharedUseServicePlan](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointSharedUseServicePlan?view=graph-powershell-v1.0)
+

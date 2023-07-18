@@ -33,11 +33,11 @@ Create a new authenticationContextClassReference.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
-```
 
 Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -195,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-v1.0)
+

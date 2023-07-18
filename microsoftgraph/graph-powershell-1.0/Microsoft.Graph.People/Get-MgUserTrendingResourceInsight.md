@@ -27,22 +27,6 @@ Get-MgUserTrendingResourceInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 ## DESCRIPTION
 Used for navigating to the trending document.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -148,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTrendingResourceInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserTrendingResourceInsight?view=graph-powershell-beta)
+

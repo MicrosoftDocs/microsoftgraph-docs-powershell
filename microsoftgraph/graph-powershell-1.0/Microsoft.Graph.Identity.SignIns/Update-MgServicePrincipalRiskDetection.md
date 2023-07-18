@@ -51,18 +51,6 @@ Update-MgServicePrincipalRiskDetection -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property servicePrincipalRiskDetections in identityProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Activity
@@ -611,3 +599,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgServicePrincipalRiskDetection?view=graph-powershell-beta)
+

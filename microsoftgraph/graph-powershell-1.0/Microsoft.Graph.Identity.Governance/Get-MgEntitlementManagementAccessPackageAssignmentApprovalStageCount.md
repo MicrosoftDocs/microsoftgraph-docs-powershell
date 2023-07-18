@@ -27,18 +27,6 @@ Get-MgEntitlementManagementAccessPackageAssignmentApprovalStageCount -InputObjec
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApprovalId
@@ -178,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStageCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentApprovalStageCount?view=graph-powershell-beta)
+

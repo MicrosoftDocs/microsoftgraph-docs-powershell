@@ -40,22 +40,6 @@ This includes URLs, file attachments, and reference attachments to OneDrive for 
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -282,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserSharedInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserSharedInsight?view=graph-powershell-beta)
+

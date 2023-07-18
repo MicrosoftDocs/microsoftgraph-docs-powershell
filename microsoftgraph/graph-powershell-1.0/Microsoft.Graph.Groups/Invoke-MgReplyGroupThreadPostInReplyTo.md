@@ -49,7 +49,6 @@ You can specify both the parent conversation and thread in the request, or, you 
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 $params = @{
 	Post = @{
@@ -106,7 +105,8 @@ $params = @{
 
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -405,3 +405,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgReplyGroupThreadPostInReplyTo?view=graph-powershell-beta)
+

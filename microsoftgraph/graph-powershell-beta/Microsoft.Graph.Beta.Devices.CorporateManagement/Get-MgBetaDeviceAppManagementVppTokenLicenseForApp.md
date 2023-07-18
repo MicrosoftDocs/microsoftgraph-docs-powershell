@@ -27,18 +27,6 @@ Get-MgBetaDeviceAppManagementVppTokenLicenseForApp -InputObject <IDevicesCorpora
 ## DESCRIPTION
 Invoke function getLicensesForApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -BundleId
@@ -235,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementVppTokenLicenseForApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenLicenseForApp?view=graph-powershell-v1.0)
+

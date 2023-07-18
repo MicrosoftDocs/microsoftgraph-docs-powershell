@@ -48,11 +48,11 @@ Update the navigation property file in agreements
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -431,3 +431,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgAgreementFile?view=graph-powershell-beta)
+

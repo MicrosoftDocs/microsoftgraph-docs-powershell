@@ -19,18 +19,6 @@ Remove-MgIdentityConditionalAccess [-IfMatch <String>] [-PassThru] [-WhatIf] [-C
 ## DESCRIPTION
 Delete navigation property conditionalAccess for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -108,3 +96,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityConditionalAccess?view=graph-powershell-beta)
+

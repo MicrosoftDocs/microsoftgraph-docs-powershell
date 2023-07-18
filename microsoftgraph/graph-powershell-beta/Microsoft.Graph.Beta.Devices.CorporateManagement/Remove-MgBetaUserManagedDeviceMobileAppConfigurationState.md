@@ -28,22 +28,6 @@ Remove-MgBetaUserManagedDeviceMobileAppConfigurationState -InputObject <IDevices
 ## DESCRIPTION
 Delete navigation property managedDeviceMobileAppConfigurationStates for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -254,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagedDeviceMobileAppConfigurationState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceMobileAppConfigurationState?view=graph-powershell-v1.0)
+

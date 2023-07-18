@@ -47,18 +47,6 @@ New-MgSiteOnenoteSectionGroupSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new onenoteSection in the specified section group.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -748,3 +736,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgSiteOnenoteSectionGroupSection?view=graph-powershell-beta)
+

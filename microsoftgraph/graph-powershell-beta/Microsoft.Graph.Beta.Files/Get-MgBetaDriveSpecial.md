@@ -47,11 +47,11 @@ If a user deletes one, it is recreated when written to again.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
-```
 
 Get-MgBetaDriveSpecial -DriveId $driveId -DriveItemId $driveItemId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -296,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-v1.0)
+

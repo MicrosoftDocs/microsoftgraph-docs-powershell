@@ -39,11 +39,11 @@ All sets under the group in a term [store].
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -329,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+

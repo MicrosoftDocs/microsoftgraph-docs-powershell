@@ -45,22 +45,6 @@ Set-MgBetaDeviceManagementAppleUserInitiatedEnrollmentProfilePriority
 ## DESCRIPTION
 Invoke action setPriority
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -264,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementAppleUserInitiatedEnrollmentProfilePriority?view=graph-powershell-v1.0)
+

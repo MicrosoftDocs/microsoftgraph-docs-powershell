@@ -19,22 +19,6 @@ Get-MgPolicyAuthorizationPolicy [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Retrieve the properties of an authorizationPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +65,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyAuthorizationPolicy?view=graph-powershell-beta)
+

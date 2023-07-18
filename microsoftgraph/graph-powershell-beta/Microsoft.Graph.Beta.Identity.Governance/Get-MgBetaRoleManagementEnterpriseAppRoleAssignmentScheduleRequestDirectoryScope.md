@@ -33,18 +33,6 @@ The directory object that is the scope of the assignment.
 Read-only.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -241,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestDirectoryScope?view=graph-powershell-v1.0)
+

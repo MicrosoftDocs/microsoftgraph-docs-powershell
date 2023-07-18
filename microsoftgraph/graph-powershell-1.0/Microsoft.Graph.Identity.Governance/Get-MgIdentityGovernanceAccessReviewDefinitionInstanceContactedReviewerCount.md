@@ -27,18 +27,6 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewerCount?view=graph-powershell-beta)
+

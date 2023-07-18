@@ -39,22 +39,6 @@ Get-MgBetaShareListItemDriveItemContent -InputObject <IFilesIdentity> -OutFile <
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -179,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareListItemDriveItemContent](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemDriveItemContent?view=graph-powershell-v1.0)
+

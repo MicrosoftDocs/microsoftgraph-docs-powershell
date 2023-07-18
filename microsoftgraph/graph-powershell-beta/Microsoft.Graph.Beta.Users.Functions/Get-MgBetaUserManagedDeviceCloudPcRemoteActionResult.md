@@ -27,22 +27,6 @@ Get-MgBetaUserManagedDeviceCloudPcRemoteActionResult -InputObject <IUsersFunctio
 ## DESCRIPTION
 Invoke function getCloudPcRemoteActionResults
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -225,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManagedDeviceCloudPcRemoteActionResult](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceCloudPcRemoteActionResult?view=graph-powershell-v1.0)
+

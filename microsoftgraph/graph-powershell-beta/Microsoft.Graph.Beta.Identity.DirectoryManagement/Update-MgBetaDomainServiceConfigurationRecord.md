@@ -41,22 +41,6 @@ Update-MgBetaDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryMa
 ## DESCRIPTION
 Update the navigation property serviceConfigurationRecords in domains
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -332,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainServiceConfigurationRecord?view=graph-powershell-v1.0)
+

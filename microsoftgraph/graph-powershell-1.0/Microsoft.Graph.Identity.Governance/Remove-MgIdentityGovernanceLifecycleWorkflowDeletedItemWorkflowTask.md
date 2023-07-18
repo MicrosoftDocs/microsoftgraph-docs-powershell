@@ -27,18 +27,6 @@ Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject
 ## DESCRIPTION
 Delete navigation property tasks for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
+

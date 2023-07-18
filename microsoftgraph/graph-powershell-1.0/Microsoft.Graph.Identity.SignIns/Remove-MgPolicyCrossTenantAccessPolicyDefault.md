@@ -25,7 +25,6 @@ Delete navigation property default for policies
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	b2bCollaborationOutbound = @{
@@ -52,7 +51,8 @@ $params = @{
 
 Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -IfMatch
 ETag
@@ -129,3 +129,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
+

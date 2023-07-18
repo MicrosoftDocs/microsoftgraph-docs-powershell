@@ -37,22 +37,6 @@ Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule -InputObject 
 The list of scheduled action per rule for this compliance policy.
 This is a required property when creating any individual per-platform compliance policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -327,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
+

@@ -28,22 +28,6 @@ Remove-MgBetaFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipme
 ## DESCRIPTION
 Delete navigation property shipmentMethod for financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -226,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentMethod](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyCustomerPaymentJournalCustomerPaymentCustomerShipmentMethod?view=graph-powershell-v1.0)
+

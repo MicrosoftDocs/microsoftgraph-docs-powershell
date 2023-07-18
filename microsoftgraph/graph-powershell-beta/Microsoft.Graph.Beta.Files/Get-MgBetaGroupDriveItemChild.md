@@ -40,22 +40,6 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -331,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveItemChild](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemChild?view=graph-powershell-v1.0)
+

@@ -27,18 +27,6 @@ Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric -InputObject
 ## DESCRIPTION
 The scores and insights for the application health metrics.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -177,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineAppHealthMetric?view=graph-powershell-beta)
+

@@ -30,18 +30,6 @@ New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerformance for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveDeviceCount
@@ -242,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance?view=graph-powershell-beta)
+

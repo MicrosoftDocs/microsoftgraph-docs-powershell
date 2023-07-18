@@ -27,22 +27,6 @@ Remove-MgBetaGroupSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property sets for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -254,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+

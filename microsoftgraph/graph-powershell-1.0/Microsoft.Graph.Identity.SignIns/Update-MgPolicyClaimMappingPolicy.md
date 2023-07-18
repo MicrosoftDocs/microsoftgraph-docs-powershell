@@ -48,7 +48,6 @@ Update the properties of a claimsMappingPolicy object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "UpdateClaimsPolicy"
@@ -56,7 +55,8 @@ $params = @{
 
 Update-MgPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -346,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyClaimMappingPolicy?view=graph-powershell-beta)
+

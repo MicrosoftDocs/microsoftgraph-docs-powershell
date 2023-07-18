@@ -44,22 +44,6 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthAuthenticationMethod
 ## DESCRIPTION
 Update the navigation property authenticationMethodModes in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -304,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode?view=graph-powershell-v1.0)
+

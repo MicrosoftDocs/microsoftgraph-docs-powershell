@@ -44,18 +44,6 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment
 ## DESCRIPTION
 Update the navigation property assignments in deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
+

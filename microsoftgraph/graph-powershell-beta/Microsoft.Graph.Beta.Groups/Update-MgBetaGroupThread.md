@@ -50,7 +50,6 @@ Update a thread object.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	originalStartTimeZone = "originalStartTimeZone-value"
@@ -62,7 +61,8 @@ $params = @{
 
 Update-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -528,3 +528,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-v1.0)
+

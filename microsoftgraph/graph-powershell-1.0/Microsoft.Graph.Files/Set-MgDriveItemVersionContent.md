@@ -27,22 +27,6 @@ Set-MgDriveItemVersionContent -InputObject <IFilesIdentity> [-Data <Stream>] -In
 ## DESCRIPTION
 The content stream for this version of the item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaDriveItemVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgDriveItemVersionContent?view=graph-powershell-beta)
+

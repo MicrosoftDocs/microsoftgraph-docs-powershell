@@ -32,11 +32,11 @@ Delete a school.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Remove-MgEducationSchool -EducationSchoolId $educationSchoolId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -EducationSchoolId
 The unique identifier of educationSchool
@@ -162,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationSchool?view=graph-powershell-beta)
+

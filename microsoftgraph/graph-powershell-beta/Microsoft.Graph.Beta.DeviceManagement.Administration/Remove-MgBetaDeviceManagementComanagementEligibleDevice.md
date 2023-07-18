@@ -27,22 +27,6 @@ Remove-MgBetaDeviceManagementComanagementEligibleDevice -InputObject <IDeviceMan
 ## DESCRIPTION
 Delete navigation property comanagementEligibleDevices for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ComanagementEligibleDeviceId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementComanagementEligibleDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementComanagementEligibleDevice?view=graph-powershell-v1.0)
+

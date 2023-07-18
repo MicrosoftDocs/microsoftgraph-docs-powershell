@@ -20,22 +20,6 @@ Get-MgPrintShareAllowedUserByRef -PrinterShareId <String> [-Filter <String>] [-S
 ## DESCRIPTION
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -188,3 +172,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintShareAllowedUserByRef?view=graph-powershell-beta)
+

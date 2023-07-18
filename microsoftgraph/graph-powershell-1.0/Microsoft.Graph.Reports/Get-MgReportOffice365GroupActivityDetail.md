@@ -37,22 +37,6 @@ Get-MgReportOffice365GroupActivityDetail -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getOffice365GroupsActivityDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Date
@@ -173,3 +157,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportOffice365GroupActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365GroupActivityDetail?view=graph-powershell-beta)
+

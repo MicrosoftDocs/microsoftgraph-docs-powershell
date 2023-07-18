@@ -27,18 +27,6 @@ Get-MgBetaWindowsUpdatesPolicyAudience -InputObject <IWindowsUpdatesIdentity> [-
 ## DESCRIPTION
 Specifies the audience to target.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -132,3 +120,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesPolicyAudience](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyAudience?view=graph-powershell-v1.0)
+

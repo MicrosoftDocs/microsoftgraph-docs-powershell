@@ -34,18 +34,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObject <I
 ## DESCRIPTION
 The tasks in the workflow.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-beta)
+

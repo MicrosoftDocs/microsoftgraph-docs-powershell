@@ -67,11 +67,11 @@ Update entity in sites
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Get-MgSite -SiteId $siteId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -27160,3 +27160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSite?view=graph-powershell-beta)
+

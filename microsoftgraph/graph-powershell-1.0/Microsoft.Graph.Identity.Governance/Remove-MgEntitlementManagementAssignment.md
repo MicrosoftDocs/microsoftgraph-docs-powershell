@@ -27,22 +27,6 @@ Remove-MgEntitlementManagementAssignment -InputObject <IIdentityGovernanceIdenti
 ## DESCRIPTION
 Delete navigation property assignments for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageAssignmentId
@@ -213,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+

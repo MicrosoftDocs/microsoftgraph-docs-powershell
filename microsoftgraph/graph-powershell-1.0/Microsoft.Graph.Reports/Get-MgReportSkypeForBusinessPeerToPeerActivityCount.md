@@ -27,22 +27,6 @@ Get-MgReportSkypeForBusinessPeerToPeerActivityCount -InputObject <IReportsIdenti
 ## DESCRIPTION
 Invoke function getSkypeForBusinessPeerToPeerActivityCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -148,3 +132,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSkypeForBusinessPeerToPeerActivityCount?view=graph-powershell-beta)
+

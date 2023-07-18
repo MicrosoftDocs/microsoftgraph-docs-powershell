@@ -45,22 +45,6 @@ New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObject 
 ## DESCRIPTION
 Create new navigation property to deviceSettingStateSummaries for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -396,3 +380,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-beta)
+

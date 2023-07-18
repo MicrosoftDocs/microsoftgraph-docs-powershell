@@ -27,18 +27,6 @@ Get-MgBetaPrintPrinterJobDocumentContent -InputObject <IDevicesCloudPrintIdentit
 ## DESCRIPTION
 Get media content for the navigation property documents from print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -167,3 +155,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterJobDocumentContent?view=graph-powershell-v1.0)
+

@@ -34,18 +34,6 @@ Get-MgBetaDeviceAppManagementMobileAppRelationship -InputObject <IDevicesCorpora
 ## DESCRIPTION
 List of relationships for this mobile app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -333,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppRelationship](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppRelationship?view=graph-powershell-v1.0)
+

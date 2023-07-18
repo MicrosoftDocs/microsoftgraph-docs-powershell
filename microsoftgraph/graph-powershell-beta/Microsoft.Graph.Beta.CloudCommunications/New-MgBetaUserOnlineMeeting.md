@@ -28,22 +28,6 @@ New-MgBetaCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatI
 ## DESCRIPTION
 Create new navigation property to presences for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Activity
@@ -246,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgUserOnlineMeeting?view=graph-powershell-v1.0)
+

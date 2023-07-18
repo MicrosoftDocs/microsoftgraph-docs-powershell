@@ -43,18 +43,6 @@ New-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -292,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamChannelMember?view=graph-powershell-beta)
+

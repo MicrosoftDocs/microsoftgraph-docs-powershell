@@ -49,22 +49,6 @@ Update-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Update the navigation property b2xUserFlows in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -466,3 +450,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityB2XUserFlow?view=graph-powershell-beta)
+

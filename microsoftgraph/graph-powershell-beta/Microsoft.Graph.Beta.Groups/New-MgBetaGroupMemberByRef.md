@@ -46,7 +46,6 @@ The following table shows the types of members that can be added to either secur
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-```
 
 $params = @{
 	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
@@ -54,7 +53,8 @@ $params = @{
 
 New-MgBetaGroupMemberByRef -GroupId $groupId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -251,3 +251,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupMemberByRef?view=graph-powershell-v1.0)
+

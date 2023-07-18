@@ -44,18 +44,6 @@ Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceActionResourceScope
 ## DESCRIPTION
 Update the navigation property resourceScope in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -282,3 +270,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPcResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)
+

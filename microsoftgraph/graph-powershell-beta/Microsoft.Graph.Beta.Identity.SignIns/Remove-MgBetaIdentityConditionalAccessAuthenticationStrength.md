@@ -20,22 +20,6 @@ Remove-MgBetaIdentityConditionalAccessAuthenticationStrength [-IfMatch <String>]
 ## DESCRIPTION
 Delete navigation property authenticationStrengths for identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgIdentityConditionalAccessAuthenticationStrength](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessAuthenticationStrength?view=graph-powershell-v1.0)
+

@@ -34,11 +34,11 @@ Supports $expand.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
-```
 
 Get-MgDirectoryRoleMember -DirectoryRoleId $directoryRoleId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -206,3 +206,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryRoleMemberByRef?view=graph-powershell-beta)
+

@@ -41,11 +41,11 @@ An **oAuth2PermissionGrant** represents delegated permissions which have been gr
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 Get-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -All
 List all pages.
@@ -306,3 +306,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgOauth2PermissionGrant?view=graph-powershell-beta)
+

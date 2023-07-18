@@ -26,18 +26,6 @@ Update-MgAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-WhatIf] [-
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -231,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgAdminSharepoint?view=graph-powershell-beta)
+

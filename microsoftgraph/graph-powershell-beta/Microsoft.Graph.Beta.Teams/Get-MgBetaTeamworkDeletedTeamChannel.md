@@ -34,22 +34,6 @@ Get-MgBetaTeamworkDeletedTeamChannel -InputObject <ITeamsIdentity> [-ExpandPrope
 ## DESCRIPTION
 The channels those are either shared with this deleted team or created in this deleted team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -309,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
+

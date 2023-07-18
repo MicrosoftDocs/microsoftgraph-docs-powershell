@@ -38,22 +38,6 @@ Groups and administrative units that this device is a member of.
 This operation is transitive.
 Supports $expand.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -314,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDeviceTransitiveMemberOf](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceTransitiveMemberOf?view=graph-powershell-v1.0)
+

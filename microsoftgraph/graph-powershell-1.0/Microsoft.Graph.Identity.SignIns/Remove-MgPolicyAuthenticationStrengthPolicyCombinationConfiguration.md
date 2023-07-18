@@ -28,18 +28,6 @@ Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration -InputObject
 ## DESCRIPTION
 Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AuthenticationCombinationConfigurationId
@@ -226,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-beta)
+

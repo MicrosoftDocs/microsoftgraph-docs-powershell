@@ -38,18 +38,6 @@ New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest
 In PIM, request for a role eligibility for a principal through the unifiedRoleEligibilityScheduleRequest object.
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Action
@@ -729,3 +717,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+

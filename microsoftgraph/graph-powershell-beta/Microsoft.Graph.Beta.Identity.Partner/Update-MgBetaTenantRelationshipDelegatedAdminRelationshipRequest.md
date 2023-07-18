@@ -43,18 +43,6 @@ Update-MgBetaTenantRelationshipDelegatedAdminRelationshipRequest -InputObject <I
 ## DESCRIPTION
 Update the navigation property requests in tenantRelationships
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Action
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTenantRelationshipDelegatedAdminRelationshipRequest](/powershell/module/Microsoft.Graph.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationshipRequest?view=graph-powershell-v1.0)
+

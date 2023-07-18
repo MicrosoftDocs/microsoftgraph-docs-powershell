@@ -25,18 +25,6 @@ Get-MgTeamMemberCount -InputObject <ITeamsIdentity> [-Filter <String>] [-Search 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -153,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamMemberCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamMemberCount?view=graph-powershell-beta)
+

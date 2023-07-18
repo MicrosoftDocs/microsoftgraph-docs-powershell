@@ -34,11 +34,11 @@ You can't remove a member from groups with dynamic memberships.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Remove-MgGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject
@@ -219,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupMemberByRef?view=graph-powershell-beta)
+

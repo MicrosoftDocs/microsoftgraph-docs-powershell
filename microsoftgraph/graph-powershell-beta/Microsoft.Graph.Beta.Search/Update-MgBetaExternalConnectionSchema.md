@@ -46,11 +46,11 @@ Update the properties of a schema for an externalConnection.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
-```
 
 Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -267,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgExternalConnectionSchema](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionSchema?view=graph-powershell-v1.0)
+

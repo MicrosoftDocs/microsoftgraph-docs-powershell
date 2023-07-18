@@ -32,7 +32,6 @@ The values of the columns set on this list item.
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	Color = "Fuchsia"
@@ -41,7 +40,8 @@ $params = @{
 
 Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -ExpandProperty
 Expand related entities
@@ -194,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteListItemField?view=graph-powershell-beta)
+

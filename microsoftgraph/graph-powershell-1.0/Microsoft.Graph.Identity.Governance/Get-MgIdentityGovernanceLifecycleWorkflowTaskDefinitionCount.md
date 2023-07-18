@@ -20,18 +20,6 @@ Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinitionCount [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -78,3 +66,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinitionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskDefinitionCount?view=graph-powershell-beta)
+

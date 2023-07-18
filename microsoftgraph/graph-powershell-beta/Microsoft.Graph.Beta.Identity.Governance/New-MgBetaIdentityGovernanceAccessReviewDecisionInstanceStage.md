@@ -45,22 +45,6 @@ New-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStage -InputObject <IIde
 ## DESCRIPTION
 Create new navigation property to stages for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -668,3 +652,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)
+

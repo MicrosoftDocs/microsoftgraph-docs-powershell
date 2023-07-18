@@ -27,22 +27,6 @@ Get-MgBetaGroupDriveListColumnSourceColumn -InputObject <IFilesIdentity> [-Expan
 ## DESCRIPTION
 The source column for content type column.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -182,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListColumnSourceColumn?view=graph-powershell-v1.0)
+

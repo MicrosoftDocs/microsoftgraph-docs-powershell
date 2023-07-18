@@ -27,18 +27,6 @@ Get-MgBetaUserTodoTaskAttachmentContent -InputObject <IUsersIdentity> -OutFile <
 ## DESCRIPTION
 Get media content for the navigation property attachments from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttachmentBaseId
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-v1.0)
+

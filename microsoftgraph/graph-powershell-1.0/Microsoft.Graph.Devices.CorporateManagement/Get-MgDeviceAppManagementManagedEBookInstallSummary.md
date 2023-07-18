@@ -27,18 +27,6 @@ Get-MgDeviceAppManagementManagedEBookInstallSummary -InputObject <IDevicesCorpor
 ## DESCRIPTION
 Mobile App Install Summary.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -158,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedEBookInstallSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookInstallSummary?view=graph-powershell-beta)
+

@@ -48,7 +48,6 @@ This operation is allowed only for channels with a **membershipType** value of `
 ### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -60,17 +59,17 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 2
+```
+### Example 2
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId
 
-### EXAMPLE 3
+```
+### Example 3
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -82,10 +81,10 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 4
+```
+### Example 4
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -96,10 +95,10 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 5
+```
+### Example 5
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -111,10 +110,10 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-### EXAMPLE 6
+```
+### Example 6
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
@@ -125,7 +124,8 @@ $params = @{
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
-## PARAMETERS
+```
+## Parameters
 
 ### -AdditionalProperties
 Additional Parameters
@@ -362,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannelMember?view=graph-powershell-beta)
+

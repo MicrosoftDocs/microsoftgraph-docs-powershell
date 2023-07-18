@@ -60,22 +60,6 @@ New-MgShareListContentTypeColumn -InputObject <IFilesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Add a column to a [content type][contentType] in a site, or a list with a request that specifies a [columnDefinition][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1140,3 +1124,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareListContentTypeColumn?view=graph-powershell-beta)
+

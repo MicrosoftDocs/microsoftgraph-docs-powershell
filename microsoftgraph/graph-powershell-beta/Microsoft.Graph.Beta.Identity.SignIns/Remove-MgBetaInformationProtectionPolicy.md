@@ -20,22 +20,6 @@ Remove-MgBetaInformationProtectionPolicy [-IfMatch <String>] [-PassThru] [-WhatI
 ## DESCRIPTION
 Delete navigation property policy for informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -113,3 +97,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionPolicy?view=graph-powershell-v1.0)
+

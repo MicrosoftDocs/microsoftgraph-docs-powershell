@@ -27,18 +27,6 @@ Remove-MgBetaDeviceAppManagementDefaultManagedAppProtection -InputObject <IDevic
 ## DESCRIPTION
 Delete navigation property defaultManagedAppProtections for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DefaultManagedAppProtectionId
@@ -221,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementDefaultManagedAppProtection?view=graph-powershell-v1.0)
+

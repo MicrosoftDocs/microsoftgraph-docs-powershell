@@ -46,22 +46,6 @@ Update-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Update the properties of the specified tab in a chat.
 \nThis can be used to configure the content of the tab.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -488,3 +472,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-v1.0)
+

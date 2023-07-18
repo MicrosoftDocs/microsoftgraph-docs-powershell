@@ -35,22 +35,6 @@ Get-MgGroupSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the metadata for a specific version of a ListItem.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -355,3 +339,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListItemVersion?view=graph-powershell-beta)
+

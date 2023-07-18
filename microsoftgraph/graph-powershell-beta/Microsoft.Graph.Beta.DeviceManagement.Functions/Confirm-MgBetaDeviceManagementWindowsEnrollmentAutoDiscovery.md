@@ -26,18 +26,6 @@ Confirm-MgBetaDeviceManagementWindowsEnrollmentAutoDiscovery -InputObject <IDevi
 ## DESCRIPTION
 Invoke function verifyWindowsEnrollmentAutoDiscovery
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DomainName
@@ -121,3 +109,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Confirm-MgDeviceManagementWindowsEnrollmentAutoDiscovery?view=graph-powershell-v1.0)
+
