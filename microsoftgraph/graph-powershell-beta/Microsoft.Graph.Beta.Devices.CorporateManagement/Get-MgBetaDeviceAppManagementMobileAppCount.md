@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/get-mgbetadeviceappmanagementmobileappcount
 schema: 2.0.0
@@ -10,29 +10,30 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
-### Get (Default)
 ```
 Get-MgBetaDeviceAppManagementMobileAppCount [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
-### Get1
-```
-Get-MgBetaDeviceAppManagementMobileAppCount -Status <String> [<CommonParameters>]
-```
-
-### GetViaIdentity
-```
-Get-MgBetaDeviceAppManagementMobileAppCount -InputObject <IDevicesCorporateManagementIdentity>
- [<CommonParameters>]
-```
-
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -40,30 +41,14 @@ Get the number of the resource
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InputObject
-Identity Parameter
-To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
-
-```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: GetViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
@@ -71,26 +56,11 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Status
-Usage: status='{status}'
-
-```yaml
-Type: String
-Parameter Sets: Get1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -102,17 +72,15 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
 ## OUTPUTS
 
 ### System.Int32
-### System.Int64
+
 ## NOTES
 
 ALIASES
 
-Get-MgDeviceAppMgtMobileAppCount
+Get-BetaDeviceAppMgtMobileAppCount
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementMobileAppCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCount?view=graph-powershell-v1.0)
 

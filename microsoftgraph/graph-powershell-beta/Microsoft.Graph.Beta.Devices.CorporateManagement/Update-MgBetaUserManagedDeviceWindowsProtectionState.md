@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicewindowsprotectionstate
 schema: 2.0.0
@@ -10,53 +10,66 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property windowsProtectionState in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserManagedDeviceWindowsProtectionState -ManagedDeviceId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
- [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <WindowsDeviceHealthState>]
- [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
- [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
- [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
- [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
- [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
- [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired]
+ [-Id <String>] [-IsVirtualMachine] [-LastFullScanDateTime <DateTime>]
+ [-LastFullScanSignatureVersion <String>] [-LastQuickScanDateTime <DateTime>]
+ [-LastQuickScanSignatureVersion <String>] [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled]
+ [-NetworkInspectionSystemEnabled] [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue]
+ [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>]
+ [-TamperProtectionEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserManagedDeviceWindowsProtectionState -ManagedDeviceId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AntiMalwareVersion <String>]
- [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>] [-DeviceState <WindowsDeviceHealthState>]
- [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired] [-Id <String>] [-IsVirtualMachine]
- [-LastFullScanDateTime <DateTime>] [-LastFullScanSignatureVersion <String>]
- [-LastQuickScanDateTime <DateTime>] [-LastQuickScanSignatureVersion <String>]
- [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled] [-NetworkInspectionSystemEnabled]
- [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue] [-RealTimeProtectionEnabled]
- [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>] [-TamperProtectionEnabled] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserManagedDeviceWindowsProtectionState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphWindowsProtectionState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DetectedMalwareState <IMicrosoftGraphWindowsDeviceMalwareState[]>]
+ [-DeviceState <WindowsDeviceHealthState>] [-EngineVersion <String>] [-FullScanOverdue] [-FullScanRequired]
+ [-Id <String>] [-IsVirtualMachine] [-LastFullScanDateTime <DateTime>]
+ [-LastFullScanSignatureVersion <String>] [-LastQuickScanDateTime <DateTime>]
+ [-LastQuickScanSignatureVersion <String>] [-LastReportedDateTime <DateTime>] [-MalwareProtectionEnabled]
+ [-NetworkInspectionSystemEnabled] [-ProductStatus <WindowsDefenderProductStatus>] [-QuickScanOverdue]
+ [-RealTimeProtectionEnabled] [-RebootRequired] [-SignatureUpdateOverdue] [-SignatureVersion <String>]
+ [-TamperProtectionEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsProtectionState in users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -64,7 +77,7 @@ Update the navigation property windowsProtectionState in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +92,7 @@ Accept wildcard characters: False
 Current anti malware version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -95,7 +108,7 @@ Device protection status entity.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsProtectionState
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -111,7 +124,7 @@ Device malware list
 To construct, see NOTES section for DETECTEDMALWARESTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDeviceMalwareState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDeviceMalwareState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +139,7 @@ Accept wildcard characters: False
 Computer endpoint protection state
 
 ```yaml
-Type: WindowsDeviceHealthState
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsDeviceHealthState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +154,7 @@ Accept wildcard characters: False
 Current endpoint protection engine's version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,10 +166,11 @@ Accept wildcard characters: False
 ```
 
 ### -FullScanOverdue
-Full scan overdue or not
+When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,10 +182,11 @@ Accept wildcard characters: False
 ```
 
 ### -FullScanRequired
-Full scan required or not
+When TRUE indicates full scan is required, when FALSE indicates full scan is not required.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +202,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,8 +218,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -215,10 +230,11 @@ Accept wildcard characters: False
 ```
 
 ### -IsVirtualMachine
-Indicates whether the device is a virtual machine.
+When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +249,7 @@ Accept wildcard characters: False
 Last quick scan datetime
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -248,7 +264,7 @@ Accept wildcard characters: False
 Last full scan signature version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -263,7 +279,7 @@ Accept wildcard characters: False
 Last quick scan datetime
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -278,7 +294,7 @@ Accept wildcard characters: False
 Last quick scan signature version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +309,7 @@ Accept wildcard characters: False
 Last device health status reported time
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -305,10 +321,10 @@ Accept wildcard characters: False
 ```
 
 ### -MalwareProtectionEnabled
-Anti malware is enabled or not
+When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -323,8 +339,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -335,10 +351,11 @@ Accept wildcard characters: False
 ```
 
 ### -NetworkInspectionSystemEnabled
-Network inspection system enabled or not
+When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -353,7 +370,7 @@ Accept wildcard characters: False
 Product Status of Windows Defender
 
 ```yaml
-Type: WindowsDefenderProductStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsDefenderProductStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -365,10 +382,11 @@ Accept wildcard characters: False
 ```
 
 ### -QuickScanOverdue
-Quick scan overdue or not
+When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -380,10 +398,11 @@ Accept wildcard characters: False
 ```
 
 ### -RealTimeProtectionEnabled
-Real time protection is enabled or not
+When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -395,10 +414,11 @@ Accept wildcard characters: False
 ```
 
 ### -RebootRequired
-Reboot required or not
+When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -410,10 +430,11 @@ Accept wildcard characters: False
 ```
 
 ### -SignatureUpdateOverdue
-Signature out of date or not
+When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -428,7 +449,7 @@ Accept wildcard characters: False
 Current malware definitions version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -440,10 +461,11 @@ Accept wildcard characters: False
 ```
 
 ### -TamperProtectionEnabled
-Indicates whether the Windows Defender tamper protection feature is enabled.
+When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled.
+Defaults to setting on client device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -458,8 +480,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -473,7 +495,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -489,7 +511,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -506,10 +528,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsProtectionState
+
 ## NOTES
 
 ALIASES
@@ -537,23 +562,23 @@ To create the parameters described below, construct a hash table containing the 
     - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
   - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
   - `[EngineVersion <String>]`: Current endpoint protection engine's version
-  - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-  - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-  - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+  - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+  - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+  - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
   - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
   - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
   - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
   - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
   - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-  - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-  - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+  - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+  - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
   - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-  - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-  - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-  - `[RebootRequired <Boolean?>]`: Reboot required or not?
-  - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+  - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+  - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+  - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+  - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
   - `[SignatureVersion <String>]`: Current malware definitions version
-  - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+  - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
 
 `DETECTEDMALWARESTATE <IMicrosoftGraphWindowsDeviceMalwareState[]>`: Device malware list
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -635,8 +660,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Update-MgUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-v1.0)
 

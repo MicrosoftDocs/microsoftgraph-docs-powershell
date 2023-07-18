@@ -1,52 +1,50 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetacheckoutgroupdriveroot
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetadismissgroupeventreminder
 schema: 2.0.0
 ---
 
-# Invoke-MgBetaCheckoutGroupDriveRoot
+# Invoke-MgBetaDismissGroupEventReminder
 
 ## SYNOPSIS
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupEventReminder?view=graph-powershell-v1.0)
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## SYNTAX
 
-### Checkout (Default)
+### Dismiss (Default)
 ```
-Invoke-MgBetaCheckoutGroupDriveRoot -DriveId <String> -GroupId <String> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaDismissGroupEventReminder -EventId <String> -GroupId <String> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
-### CheckoutViaIdentity
+### DismissViaIdentity
 ```
-Invoke-MgBetaCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Invoke-MgBetaDismissGroupEventReminder -InputObject <IGroupsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
+Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
-Import-Module Microsoft.Graph.Beta.Files
+Import-Module Microsoft.Graph.Beta.Users.Actions
 ```
 
-Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+# A UPN can also be used as -UserId.
+Invoke-MgBetaDismissUserEventReminder -UserId $userId -EventId $eventId
 
 ## PARAMETERS
 
-### -DriveId
-The unique identifier of drive
+### -EventId
+The unique identifier of event
 
 ```yaml
-Type: String
-Parameter Sets: Checkout
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -60,8 +58,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: Checkout
+Type: System.String
+Parameter Sets: Dismiss
 Aliases:
 
 Required: True
@@ -76,8 +74,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CheckoutViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: DismissViaIdentity
 Aliases:
 
 Required: True
@@ -91,7 +89,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -122,7 +120,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -139,9 +137,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -198,5 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgDismissGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDismissGroupEventReminder?view=graph-powershell-v1.0)
 

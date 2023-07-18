@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/set-mgbetauserlicense
 schema: 2.0.0
@@ -14,35 +14,34 @@ You can also enable and disable specific plans associated with a subscription.
 To learn more about subscriptions and licenses, see this Technet article.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserLicense](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserLicense?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### AssignExpanded (Default)
 ```
-Set-MgBetaUserLicense -UserId <String> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
- [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaUserLicense -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-AddLicenses <IMicrosoftGraphAssignedLicense[]>] [-RemoveLicenses <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Assign
 ```
 Set-MgBetaUserLicense -UserId <String>
- -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentityExpanded
-```
-Set-MgBetaUserLicense -InputObject <IUsersActionsIdentity> [-AddLicenses <IMicrosoftGraphAssignedLicense[]>]
- [-AdditionalProperties <Hashtable>] [-RemoveLicenses <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentity
 ```
 Set-MgBetaUserLicense -InputObject <IUsersActionsIdentity>
- -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentityExpanded
+```
+Set-MgBetaUserLicense -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AddLicenses <IMicrosoftGraphAssignedLicense[]>] [-RemoveLicenses <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,9 +53,10 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 ## EXAMPLES
 
-### Example 1
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
@@ -66,17 +66,17 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
-```
-### Example 2
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $FlowSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'FLOW_FREE'
 $addLicenses = @(
-@{SkuId = $EmsSku.SkuId},
-@{SkuId = $FlowSku.SkuId}
-)
+  @{SkuId = $EmsSku.SkuId},
+  @{SkuId = $FlowSku.SkuId}
+  )
 
 Set-MgBetaUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
 
@@ -84,18 +84,18 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
-```
-### Example 3
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $disabledPlans = $EmsSku.ServicePlans | where ServicePlanName -in ("MFA_PREMIUM", "INTUNE_A") | Select -ExpandProperty ServicePlanId
 $addLicenses = @(
-@{SkuId = $EmsSku.SkuId
-DisabledPlans = $disabledPlans
-}
-)
+  @{SkuId = $EmsSku.SkuId
+  DisabledPlans = $disabledPlans
+  }
+  )
 
 Set-MgBetaUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
 
@@ -103,29 +103,29 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
-```
-### Example 4
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 $userLicense = Get-MgBetaUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
 
 $userDisabledPlans = $userLicense.ServicePlans |
-Where ProvisioningStatus -eq "Disabled" |
-Select -ExpandProperty ServicePlanId
+  Where ProvisioningStatus -eq "Disabled" |
+  Select -ExpandProperty ServicePlanId
 
 $newDisabledPlans = $EmsSku.ServicePlans |
-Where ServicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
-Select -ExpandProperty ServicePlanId
+  Where ServicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
+  Select -ExpandProperty ServicePlanId
 
 $disabledPlans = $userDisabledPlans + $newDisabledPlans | Select -Unique
 
 $addLicenses = @(
-@{SkuId = $EmsSku.SkuId
-DisabledPlans = $disabledPlans
-}
-)
+  @{SkuId = $EmsSku.SkuId
+  DisabledPlans = $disabledPlans
+  }
+  )
 
 Set-MgBetaUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
 
@@ -133,10 +133,10 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
-```
-### Example 5
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 Select-MgBetaProfile -Name Beta
 $mgUser = Get-MgBetaUser -UserId '38955658-c844-4f59-9430-6519430ac89b'
@@ -148,10 +148,10 @@ Id                                   DisplayName    Mail UserPrincipalName      
 --                                   -----------    ---- -----------------                      --------
 82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
 
-```
-### Example 6
+### -------------------------- EXAMPLE 6 --------------------------
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
+```
 
 $EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
 
@@ -161,15 +161,13 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
-```
 ## PARAMETERS
-
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -185,7 +183,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ADDLICENSES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAssignedLicense[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAssignedLicense[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -201,7 +199,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -217,8 +215,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -232,7 +230,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -247,8 +245,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -262,7 +260,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -278,7 +276,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -295,10 +293,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComponents103UmuuRequestbodiesAssignlicenserequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUser
+
 ## NOTES
 
 ALIASES
@@ -362,6 +363,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserLicense](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserLicense?view=graph-powershell-v1.0)
-
 
