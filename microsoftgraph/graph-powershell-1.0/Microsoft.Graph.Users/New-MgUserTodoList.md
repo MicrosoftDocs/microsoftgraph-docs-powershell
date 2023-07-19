@@ -46,7 +46,18 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Users
+
+$params = @{
+	displayName = "Travel items"
+}
+
+# A UPN can also be used as -UserId.
+New-MgUserTodoList -UserId $userId -BodyParameter $params
+```
 This example shows how to use the New-MgUserTodoList Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -199,3 +210,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 [New-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserTodoList?view=graph-powershell-beta)
+
