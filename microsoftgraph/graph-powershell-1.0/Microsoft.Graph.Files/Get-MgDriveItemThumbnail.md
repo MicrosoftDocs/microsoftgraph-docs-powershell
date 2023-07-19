@@ -14,7 +14,7 @@ Read-only.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,6 +326,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
+[Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItemThumbnail?view=graph-powershell-beta)
 
 

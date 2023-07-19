@@ -12,7 +12,7 @@ Read-only.
 Information about acceptances of this agreement.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -313,5 +313,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
+[Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 

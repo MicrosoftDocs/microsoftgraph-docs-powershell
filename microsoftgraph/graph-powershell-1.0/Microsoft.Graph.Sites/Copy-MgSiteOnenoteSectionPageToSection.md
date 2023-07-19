@@ -12,7 +12,7 @@ Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteSectionPageToSection](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaSiteOnenoteSectionPageToSection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteSectionPageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteSectionPageToSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,5 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaSiteOnenoteSectionPageToSection](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaSiteOnenoteSectionPageToSection?view=graph-powershell-beta)
+[Copy-MgBetaSiteOnenoteSectionPageToSection](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteSectionPageToSection?view=graph-powershell-beta)
 

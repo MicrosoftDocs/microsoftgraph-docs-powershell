@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property userExperienceAnalyticsOverview for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -99,5 +99,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
 

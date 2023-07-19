@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of an educationSchool object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchool?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchool?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -265,6 +265,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchool?view=graph-powershell-beta)
+[Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchool?view=graph-powershell-beta)
 
 

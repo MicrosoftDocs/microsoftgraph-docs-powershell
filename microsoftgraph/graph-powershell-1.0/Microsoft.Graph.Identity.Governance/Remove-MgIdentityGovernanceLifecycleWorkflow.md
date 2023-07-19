@@ -12,7 +12,7 @@ Delete a workflow object and its associated tasks, taskProcessingResults and ver
 You can restore a deleted workflow and its associated objects within 30 days of deletion.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -201,5 +201,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+[Remove-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of field definitions for this list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaShareListColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -281,5 +281,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaShareListColumn?view=graph-powershell-beta)
+[Get-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaShareListColumn?view=graph-powershell-beta)
 

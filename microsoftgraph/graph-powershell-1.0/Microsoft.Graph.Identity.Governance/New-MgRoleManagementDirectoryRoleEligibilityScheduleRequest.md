@@ -12,7 +12,7 @@ In PIM, request for a role eligibility for a principal through the unifiedRoleEl
 This operation allows both admins and eligible users to add, revoke, or extend eligible assignments.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -716,8 +716,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
+[New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequest?view=graph-powershell-beta)
 

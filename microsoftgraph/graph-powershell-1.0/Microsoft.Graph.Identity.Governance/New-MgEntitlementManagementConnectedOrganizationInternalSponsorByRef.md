@@ -12,7 +12,7 @@ Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -267,6 +267,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
+[New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-beta)
 
 

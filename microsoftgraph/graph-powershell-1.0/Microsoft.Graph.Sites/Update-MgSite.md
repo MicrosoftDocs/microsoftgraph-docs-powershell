@@ -11,7 +11,7 @@ schema: 2.0.0
 Update entity in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -27163,9 +27163,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store. This relationship can only be used to load a specific term set.
 
 ## RELATED LINKS
-[Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSite?view=graph-powershell-beta)
+[Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSite?view=graph-powershell-beta)
+[Update-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSite?view=graph-powershell-beta)
 
 

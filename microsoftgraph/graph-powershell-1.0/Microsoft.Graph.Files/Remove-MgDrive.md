@@ -11,7 +11,7 @@ schema: 2.0.0
 Publishes a [contentType][] present in the content type hub site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDrive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDrive?view=graph-powershell-beta)
+[Remove-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDrive?view=graph-powershell-beta)
 

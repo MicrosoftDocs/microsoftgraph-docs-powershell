@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new schedulingGroup.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -280,5 +280,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+[New-MgBetaGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 

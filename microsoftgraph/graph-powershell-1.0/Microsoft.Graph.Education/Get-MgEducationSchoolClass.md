@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the educationClass resources owned by an educationSchool.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -214,5 +214,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
+[Get-MgBetaEducationSchoolClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolClass?view=graph-powershell-beta)
 

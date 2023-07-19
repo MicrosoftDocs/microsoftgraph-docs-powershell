@@ -12,7 +12,7 @@ Calling this method will enable the current user to receive email notifications 
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -175,5 +175,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
+[Invoke-MgBetaSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSubscribeGroupByMail?view=graph-powershell-beta)
 

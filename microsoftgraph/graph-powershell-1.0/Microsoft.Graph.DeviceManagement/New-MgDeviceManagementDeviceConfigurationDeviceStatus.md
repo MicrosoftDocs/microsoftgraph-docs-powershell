@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceStatuses for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -350,5 +350,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-beta)
 

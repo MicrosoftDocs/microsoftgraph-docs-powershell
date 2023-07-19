@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -325,6 +325,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+[Get-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
 
 

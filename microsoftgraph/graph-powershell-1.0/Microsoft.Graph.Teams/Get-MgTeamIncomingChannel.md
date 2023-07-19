@@ -11,7 +11,7 @@ schema: 2.0.0
 List of channels shared with the team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -301,6 +301,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
+[Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
 
 

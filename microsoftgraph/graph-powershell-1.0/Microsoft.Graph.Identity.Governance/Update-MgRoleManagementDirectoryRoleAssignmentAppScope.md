@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property appScope in roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -271,5 +271,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
+[Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaRoleManagementDirectoryRoleAssignmentAppScope?view=graph-powershell-beta)
 

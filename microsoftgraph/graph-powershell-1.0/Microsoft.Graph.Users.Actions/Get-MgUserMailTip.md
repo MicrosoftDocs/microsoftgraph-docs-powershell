@@ -13,7 +13,7 @@ Note that by making a `POST` call to the `getMailTips` action, you can request s
 The requested MailTips are returned in a mailTips collection.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMailTip?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -246,5 +246,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMailTip?view=graph-powershell-beta)
+[Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserMailTip?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property sharepoint for admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaAdminSharepoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -98,5 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaAdminSharepoint?view=graph-powershell-beta)
+[Remove-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

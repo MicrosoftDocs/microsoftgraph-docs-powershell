@@ -14,7 +14,7 @@ To learn more about group-based licensing, see What is group-based licensing in 
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupLicense?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupLicense?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -287,5 +287,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupLicense?view=graph-powershell-beta)
+[Set-MgBetaGroupLicense](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgBetaGroupLicense?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property settings for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -178,5 +178,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
+[Remove-MgBetaSecurityCaseEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSetting?view=graph-powershell-beta)
 

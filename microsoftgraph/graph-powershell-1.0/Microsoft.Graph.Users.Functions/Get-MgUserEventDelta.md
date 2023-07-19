@@ -14,7 +14,7 @@ The initial call is a full synchronization, and every subsequent **delta** call 
 This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -301,5 +301,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
+[Get-MgBetaUserEventDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgBetaUserEventDelta?view=graph-powershell-beta)
 

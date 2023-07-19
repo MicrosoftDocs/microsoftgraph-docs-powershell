@@ -12,7 +12,7 @@ Update the properties of a delegatedAdminRelationship object.
 A relationship can only be updated if it's in the `created` **status**.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -472,5 +472,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: delegatedAdminRelationshipRequestStatus
 
 ## RELATED LINKS
-[Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+[Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
 

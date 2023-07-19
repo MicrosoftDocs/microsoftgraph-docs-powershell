@@ -11,7 +11,7 @@ schema: 2.0.0
 To indicate which terms are related to the current term as either pinned or reused.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -377,5 +377,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-beta)
+[Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetTermRelation?view=graph-powershell-beta)
 

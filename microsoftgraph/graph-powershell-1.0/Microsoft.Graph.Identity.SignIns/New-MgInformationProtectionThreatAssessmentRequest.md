@@ -12,7 +12,7 @@ Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -374,6 +374,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
-[New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+[New-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to instances for identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -558,9 +558,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: Specifies the status of an accessReviewStage. Possible values: Initializing, NotStarted, Starting, InProgress, Completing, Completed, AutoReviewing, and AutoReviewed. Supports $orderby, and $filter (eq only). Read-only.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+[New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
+[New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-beta)
 
 

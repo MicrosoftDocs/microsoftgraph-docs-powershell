@@ -14,7 +14,7 @@ Photos can be any dimension if they are stored in Azure Active Directory.
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -267,6 +267,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserPhoto?view=graph-powershell-beta)
+[Get-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserPhoto?view=graph-powershell-beta)
 
 

@@ -12,7 +12,7 @@ The metric values for the user experience analytics category.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,5 +299,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOverviewMetricValue?view=graph-powershell-beta)
 

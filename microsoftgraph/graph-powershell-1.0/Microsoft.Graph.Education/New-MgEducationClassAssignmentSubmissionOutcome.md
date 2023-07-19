@@ -14,7 +14,7 @@ To create a new file-based resource, upload the file to the feedback resources f
 If the file doesn't exist or isn't in that folder, the `POST` request will fail.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -301,6 +301,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+[New-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaRoleManagement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -742,8 +742,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
 
 ## RELATED LINKS
-[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaRoleManagement?view=graph-powershell-beta)
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaRoleManagement?view=graph-powershell-beta)
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 

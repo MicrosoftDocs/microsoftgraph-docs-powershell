@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property deviceCompliancePolicySettingStateSummaries in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -447,5 +447,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementDeviceCompliancePolicySettingStateSummary?view=graph-powershell-beta)
 

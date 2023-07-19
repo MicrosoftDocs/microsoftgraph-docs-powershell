@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to servicePrincipalRiskDetections for identityProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -490,5 +490,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: Provides the State where the sign-in originated. This is calculated using latitude/longitude information from the sign-in activity.
 
 ## RELATED LINKS
-[New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
+[New-MgBetaServicePrincipalRiskDetection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaServicePrincipalRiskDetection?view=graph-powershell-beta)
 

@@ -12,7 +12,7 @@ Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
+[Add-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgBetaGroupFavorite?view=graph-powershell-beta)
 

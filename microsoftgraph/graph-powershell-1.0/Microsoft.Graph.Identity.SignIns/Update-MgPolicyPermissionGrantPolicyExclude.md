@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property excludes in policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -409,6 +409,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+[Update-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 
 

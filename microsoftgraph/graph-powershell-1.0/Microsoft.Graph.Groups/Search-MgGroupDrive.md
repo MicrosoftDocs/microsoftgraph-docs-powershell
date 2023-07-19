@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function search
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Search-MgBetaGroupDrive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -255,5 +255,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Search-MgBetaGroupDrive?view=graph-powershell-beta)
+[Search-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Search-MgBetaGroupDrive?view=graph-powershell-beta)
 

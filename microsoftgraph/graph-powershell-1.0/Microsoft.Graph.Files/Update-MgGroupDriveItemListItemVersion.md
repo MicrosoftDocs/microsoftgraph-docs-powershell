@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property versions in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -346,5 +346,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveItemListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemListItemVersion?view=graph-powershell-beta)
 

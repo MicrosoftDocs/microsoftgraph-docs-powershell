@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceConfigurationStates for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -397,4 +397,4 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState\[]>: .
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses?view=graph-powershell-beta)
+[Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses?view=graph-powershell-beta)

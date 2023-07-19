@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,5 +299,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
+[Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgBetaUserDefaultCalendarSchedule?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property languages for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -215,5 +215,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+[Remove-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 

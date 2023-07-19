@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties of an authorizationPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
+[Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 

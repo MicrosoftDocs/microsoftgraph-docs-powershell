@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property auditEvents in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -414,5 +414,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceId <String>]`: Audit resource's Id.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgBetaDeviceManagementAuditEvent?view=graph-powershell-beta)
 

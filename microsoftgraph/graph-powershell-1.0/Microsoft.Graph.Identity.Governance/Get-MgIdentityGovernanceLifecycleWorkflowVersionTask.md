@@ -11,7 +11,7 @@ schema: 2.0.0
 The tasks in the workflow.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,5 +326,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new identityApiConnector object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -226,6 +226,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetUrl <String>]`: The URL of the API endpoint to call.
 
 ## RELATED LINKS
-[New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
+[New-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaIdentityApiConnector?view=graph-powershell-beta)
 
 

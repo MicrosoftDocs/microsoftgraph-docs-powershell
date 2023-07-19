@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property documentSetVersions in drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -419,5 +419,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+[Update-MgBetaDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 

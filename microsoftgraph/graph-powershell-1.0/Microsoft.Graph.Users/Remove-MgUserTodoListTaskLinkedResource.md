@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property extensions for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -208,5 +208,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
+[Remove-MgBetaUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserTodoListTaskLinkedResource?view=graph-powershell-beta)
 

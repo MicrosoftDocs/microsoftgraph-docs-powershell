@@ -11,7 +11,7 @@ schema: 2.0.0
 Get directory
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectory?view=graph-powershell-beta)
+[Get-MgBetaDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectory?view=graph-powershell-beta)
 

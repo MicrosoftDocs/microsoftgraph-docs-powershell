@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsCategories for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -188,5 +188,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Double?>]`: The value of the user experience analytics metric.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
 

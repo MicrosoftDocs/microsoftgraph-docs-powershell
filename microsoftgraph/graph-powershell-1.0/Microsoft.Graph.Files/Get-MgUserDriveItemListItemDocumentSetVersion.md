@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a documentSetVersion object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,5 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+[Get-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
 

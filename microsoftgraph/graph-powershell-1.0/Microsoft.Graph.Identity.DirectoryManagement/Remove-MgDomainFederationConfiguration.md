@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an internalDomainFederation object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -191,6 +191,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
+[Remove-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDomainFederationConfiguration?view=graph-powershell-beta)
 
 

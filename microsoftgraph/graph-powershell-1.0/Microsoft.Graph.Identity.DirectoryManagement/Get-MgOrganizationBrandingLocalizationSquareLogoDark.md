@@ -11,7 +11,7 @@ schema: 2.0.0
 Get squareLogoDark for the navigation property localizations from organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -150,5 +150,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
+[Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
 

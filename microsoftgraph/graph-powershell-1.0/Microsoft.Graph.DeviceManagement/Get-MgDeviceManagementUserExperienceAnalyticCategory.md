@@ -11,7 +11,7 @@ schema: 2.0.0
 User experience analytics categories
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -295,5 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementUserExperienceAnalyticCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticCategory?view=graph-powershell-beta)
 

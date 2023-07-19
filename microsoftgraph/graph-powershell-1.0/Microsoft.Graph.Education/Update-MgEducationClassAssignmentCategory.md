@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property assignmentCategories in education
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -221,5 +221,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+[Update-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
 

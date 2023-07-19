@@ -11,7 +11,7 @@ schema: 2.0.0
 Navigation property to list of security groups targeted for policy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -294,5 +294,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicyAssignment?view=graph-powershell-beta)
 

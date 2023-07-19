@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new version of a document set item in a list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -419,5 +419,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+[New-MgBetaGroupDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 

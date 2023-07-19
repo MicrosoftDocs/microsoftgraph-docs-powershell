@@ -11,7 +11,7 @@ schema: 2.0.0
 Get documents from print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -285,5 +285,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
+[Get-MgBetaPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobDocument?view=graph-powershell-beta)
 

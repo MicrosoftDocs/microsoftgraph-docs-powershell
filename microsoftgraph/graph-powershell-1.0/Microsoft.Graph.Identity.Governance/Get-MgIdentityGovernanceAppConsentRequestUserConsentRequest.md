@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a userConsentRequest object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -324,6 +324,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
 
 

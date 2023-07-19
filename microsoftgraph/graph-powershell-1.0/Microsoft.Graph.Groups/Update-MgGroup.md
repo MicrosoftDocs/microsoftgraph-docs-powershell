@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a group object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -16573,8 +16573,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroup?view=graph-powershell-beta)
+[Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroup?view=graph-powershell-beta)
+[Update-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroup?view=graph-powershell-beta)
 

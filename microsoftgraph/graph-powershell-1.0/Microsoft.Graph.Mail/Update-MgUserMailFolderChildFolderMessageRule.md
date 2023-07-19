@@ -11,7 +11,7 @@ schema: 2.0.0
 Change writable properties on a messageRule object and save the changes.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -519,8 +519,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Reverse passive DNS retrieval about this host.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -290,5 +290,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-beta)
+[Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-beta)
 

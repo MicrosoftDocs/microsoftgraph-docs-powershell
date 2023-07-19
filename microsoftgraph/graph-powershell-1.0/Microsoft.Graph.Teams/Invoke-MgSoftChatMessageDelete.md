@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSoftChatMessageDelete?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftChatMessageDelete?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,5 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgBetaSoftChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSoftChatMessageDelete?view=graph-powershell-beta)
+[Invoke-MgBetaSoftChatMessageDelete](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaSoftChatMessageDelete?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Questions that are posed to the  requestor.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -311,5 +311,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
+[Get-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
 

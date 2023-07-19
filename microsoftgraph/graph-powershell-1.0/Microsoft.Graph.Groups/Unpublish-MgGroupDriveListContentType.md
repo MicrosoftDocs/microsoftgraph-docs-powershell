@@ -11,7 +11,7 @@ schema: 2.0.0
 Unpublish a [contentType][] from a content type hub site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -195,5 +195,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
+[Unpublish-MgBetaGroupDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Unpublish-MgBetaGroupDriveListContentType?view=graph-powershell-beta)
 

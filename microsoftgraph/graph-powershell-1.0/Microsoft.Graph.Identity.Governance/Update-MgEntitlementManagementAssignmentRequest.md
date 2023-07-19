@@ -14,7 +14,7 @@ You can only reprocess a request within 14 days from the time the original reque
 For requests completed more than 14 days, you will need to ask the users to cancel the request(s) and make a new request in the MyAccess portal.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -9453,8 +9453,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 

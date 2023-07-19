@@ -12,7 +12,7 @@ Mark a schedulingGroup as inactive by setting its **isActive** property.\nThis m
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -206,6 +206,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
+[Remove-MgBetaTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamScheduleSchedulingGroup?view=graph-powershell-beta)
 
 

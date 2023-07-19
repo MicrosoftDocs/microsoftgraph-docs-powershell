@@ -14,7 +14,7 @@ This resource is in the 'working' resource list and should be considered work in
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -306,5 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
+[Get-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
 

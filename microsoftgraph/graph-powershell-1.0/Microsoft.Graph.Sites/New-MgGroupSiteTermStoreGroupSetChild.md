@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new term object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -709,8 +709,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreGroupSetChild?view=graph-powershell-beta)
 

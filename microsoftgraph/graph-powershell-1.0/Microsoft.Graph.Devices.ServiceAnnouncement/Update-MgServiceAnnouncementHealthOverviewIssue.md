@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property issues in admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -453,5 +453,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[PostType <String>]`: postType
 
 ## RELATED LINKS
-[Update-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+[Update-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 

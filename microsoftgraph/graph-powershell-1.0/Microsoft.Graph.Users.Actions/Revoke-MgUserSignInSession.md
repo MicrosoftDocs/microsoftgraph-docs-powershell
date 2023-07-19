@@ -13,7 +13,7 @@ Typically, this operation is performed (by the user or an administrator) if the 
 This operation prevents access to the organization's data through applications on the device by requiring the user to sign in again to all applications that they have previously consented to, independent of device.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Applications/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -146,5 +146,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Applications/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
+[Revoke-MgBetaUserSignInSession](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Revoke-MgBetaUserSignInSession?view=graph-powershell-beta)
 

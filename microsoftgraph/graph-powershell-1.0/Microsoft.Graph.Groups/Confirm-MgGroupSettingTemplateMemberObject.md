@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action checkMemberObjects
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupSettingTemplateMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaGroupSettingTemplateMemberObject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupSettingTemplateMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupSettingTemplateMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -215,5 +215,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Confirm-MgBetaGroupSettingTemplateMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaGroupSettingTemplateMemberObject?view=graph-powershell-beta)
+[Confirm-MgBetaGroupSettingTemplateMemberObject](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupSettingTemplateMemberObject?view=graph-powershell-beta)
 

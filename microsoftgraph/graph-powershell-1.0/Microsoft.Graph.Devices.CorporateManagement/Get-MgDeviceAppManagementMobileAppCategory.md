@@ -11,7 +11,7 @@ schema: 2.0.0
 The mobile app categories.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,5 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 

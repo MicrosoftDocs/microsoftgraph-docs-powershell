@@ -12,7 +12,7 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Update-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
+[Update-MgBetaGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupThreadPostInReplyToExtension?view=graph-powershell-beta)
 

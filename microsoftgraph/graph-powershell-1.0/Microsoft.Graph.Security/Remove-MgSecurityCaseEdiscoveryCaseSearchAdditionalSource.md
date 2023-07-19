@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property additionalSources for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -208,5 +208,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+[Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
 

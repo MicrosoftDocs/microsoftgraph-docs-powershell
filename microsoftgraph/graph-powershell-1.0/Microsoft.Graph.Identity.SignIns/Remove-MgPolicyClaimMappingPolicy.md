@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a claimsMappingPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,6 +213,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+[Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
 
 

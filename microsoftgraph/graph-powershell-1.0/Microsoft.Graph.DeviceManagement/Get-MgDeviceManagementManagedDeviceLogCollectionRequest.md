@@ -11,7 +11,7 @@ schema: 2.0.0
 List of log collection requests
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,5 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementManagedDeviceLogCollectionRequest?view=graph-powershell-beta)
 

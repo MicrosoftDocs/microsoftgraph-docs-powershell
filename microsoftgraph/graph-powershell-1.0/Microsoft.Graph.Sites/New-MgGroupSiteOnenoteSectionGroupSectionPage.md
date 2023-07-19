@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new page in the specified section.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -712,8 +712,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
+[New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
+[New-MgBetaGroupSiteOnenoteSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteSectionGroupSectionPage?view=graph-powershell-beta)
 

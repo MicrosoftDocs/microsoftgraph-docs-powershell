@@ -12,7 +12,7 @@ Submits the print job to the associated printer or printerShare.
 It will be printed after any existing pending **jobs** are completed, aborted, or canceled.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -143,5 +143,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
+[Start-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Start-MgBetaPrintShareJob?view=graph-powershell-beta)
 

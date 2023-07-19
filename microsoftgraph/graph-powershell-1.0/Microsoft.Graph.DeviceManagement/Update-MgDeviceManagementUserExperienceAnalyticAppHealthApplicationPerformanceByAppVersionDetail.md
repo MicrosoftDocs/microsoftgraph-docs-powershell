@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property userExperienceAnalyticsAppHealthApplicationPerformanceByAppVersionDetails in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -382,5 +382,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDetail?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelSharedWithTeamCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamChannelSharedWithTeamCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelSharedWithTeamCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelSharedWithTeamCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,5 +160,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamChannelSharedWithTeamCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamChannelSharedWithTeamCount?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamChannelSharedWithTeamCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamChannelSharedWithTeamCount?view=graph-powershell-beta)
 

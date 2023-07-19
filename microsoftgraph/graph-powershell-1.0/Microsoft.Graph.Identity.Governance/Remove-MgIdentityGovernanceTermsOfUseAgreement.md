@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an agreement object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -199,5 +199,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
+[Remove-MgBetaIdentityGovernanceTermsOfUseAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceTermsOfUseAgreement?view=graph-powershell-beta)
 

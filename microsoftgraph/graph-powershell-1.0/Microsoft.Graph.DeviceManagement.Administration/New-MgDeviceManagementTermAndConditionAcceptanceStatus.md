@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to acceptanceStatuses for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -320,5 +320,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-beta)
 

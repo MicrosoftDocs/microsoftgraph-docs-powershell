@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property extensions in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -232,5 +232,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMessage?view=graph-powershell-beta)
+[Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMessage?view=graph-powershell-beta)
 

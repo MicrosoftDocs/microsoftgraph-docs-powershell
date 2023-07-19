@@ -13,7 +13,7 @@ Update the properties of the userSettings object.
 \nTo get the user current settings, see current user settings.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -321,5 +321,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
-[Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserSetting?view=graph-powershell-beta)
+[Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
 

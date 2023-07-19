@@ -11,7 +11,7 @@ schema: 2.0.0
 App configuration user status summary.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -150,5 +150,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-beta)
 

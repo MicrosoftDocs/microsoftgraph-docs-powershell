@@ -12,7 +12,7 @@ Identity of the user who created the item.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveListItemCreatedByUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItemCreatedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -170,5 +170,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveListItemCreatedByUser?view=graph-powershell-beta)
+[Get-MgBetaUserDriveListItemCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListItemCreatedByUser?view=graph-powershell-beta)
 

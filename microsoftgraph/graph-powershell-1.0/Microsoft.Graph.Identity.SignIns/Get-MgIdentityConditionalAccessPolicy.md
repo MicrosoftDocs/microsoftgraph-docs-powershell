@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -352,6 +352,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+[Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property resources in education
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -296,5 +296,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
+[Update-MgBetaEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUserAssignmentSubmissionResource?view=graph-powershell-beta)
 

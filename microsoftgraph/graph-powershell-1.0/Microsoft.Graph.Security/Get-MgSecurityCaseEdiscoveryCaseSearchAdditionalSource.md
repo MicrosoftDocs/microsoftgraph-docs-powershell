@@ -11,7 +11,7 @@ schema: 2.0.0
 Adds an additional source to the eDiscovery search.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -318,6 +318,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
+[Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-beta)
 
 

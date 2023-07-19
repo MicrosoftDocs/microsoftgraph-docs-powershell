@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a browserSiteList object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -529,8 +529,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The URL of the site.
 
 ## RELATED LINKS
-[Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+[Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+[Update-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 

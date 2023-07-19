@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property swapShiftsChangeRequests in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -394,5 +394,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
+[Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 

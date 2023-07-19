@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property primaryChannel for teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -189,6 +189,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+[Remove-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
 
 

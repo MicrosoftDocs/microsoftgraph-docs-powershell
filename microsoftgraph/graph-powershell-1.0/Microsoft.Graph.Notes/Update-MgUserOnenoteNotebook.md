@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property notebooks in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -691,8 +691,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+[Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+[Update-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Update-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
 

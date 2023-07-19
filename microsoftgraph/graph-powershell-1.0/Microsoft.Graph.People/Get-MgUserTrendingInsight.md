@@ -13,7 +13,7 @@ Trending documents are calculated based on activity of the user's closest networ
 Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTrendingInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTrendingInsight?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTrendingInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserTrendingInsight?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -266,5 +266,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTrendingInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTrendingInsight?view=graph-powershell-beta)
+[Get-MgBetaUserTrendingInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserTrendingInsight?view=graph-powershell-beta)
 

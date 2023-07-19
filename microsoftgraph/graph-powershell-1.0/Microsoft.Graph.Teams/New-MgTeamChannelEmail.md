@@ -14,7 +14,7 @@ To have Teams provision an email address, you can call **provisionEmail**, or th
 To remove the email address of a **channel**, use the removeEmail method.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
+[New-MgBetaTeamChannelEmail](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelEmail?view=graph-powershell-beta)
 

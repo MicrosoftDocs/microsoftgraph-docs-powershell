@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootPermissionCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveRootPermissionCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootPermissionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootPermissionCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,5 +153,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootPermissionCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveRootPermissionCount?view=graph-powershell-beta)
+[Get-MgBetaUserDriveRootPermissionCount](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootPermissionCount?view=graph-powershell-beta)
 

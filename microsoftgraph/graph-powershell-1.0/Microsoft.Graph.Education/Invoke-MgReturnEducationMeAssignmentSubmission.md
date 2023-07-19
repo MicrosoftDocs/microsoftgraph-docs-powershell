@@ -13,7 +13,7 @@ This action changes the status of the submission from 'submitted' to 'returned' 
 This action can only be done by the teacher.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -157,6 +157,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
+[Invoke-MgBetaReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgBetaReturnEducationMeAssignmentSubmission?view=graph-powershell-beta)
 
 

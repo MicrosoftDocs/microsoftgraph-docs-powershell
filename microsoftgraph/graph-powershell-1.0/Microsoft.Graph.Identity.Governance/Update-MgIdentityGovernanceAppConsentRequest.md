@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property appConsentRequests in identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -369,8 +369,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequest?view=graph-powershell-beta)
 

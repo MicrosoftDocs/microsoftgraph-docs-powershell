@@ -13,7 +13,7 @@ In the default case an Azure Logic Apps system-assigned managed identity calls t
 For more information, see: Lifecycle Workflows extensibility approach.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Applications/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,5 +326,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Applications/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
+[Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskProcessingResult?view=graph-powershell-beta)
 

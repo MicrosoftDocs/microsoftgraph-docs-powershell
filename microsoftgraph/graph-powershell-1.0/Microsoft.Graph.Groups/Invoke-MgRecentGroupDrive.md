@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function recent
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -240,5 +240,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
+[Invoke-MgBetaRecentGroupDrive](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaRecentGroupDrive?view=graph-powershell-beta)
 

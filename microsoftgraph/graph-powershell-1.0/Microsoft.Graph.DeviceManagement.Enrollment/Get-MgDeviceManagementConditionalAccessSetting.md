@@ -12,7 +12,7 @@ The Exchange on premises conditional access settings.
 On premises conditional access will require devices to be both enrolled and compliant for mail access
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,5 +70,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
 

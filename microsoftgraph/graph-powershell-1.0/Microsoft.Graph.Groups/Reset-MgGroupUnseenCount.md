@@ -12,7 +12,7 @@ Reset the unseenCount of all the posts that the current user has not seen since 
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Applications/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Groups/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Applications/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
+[Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Groups/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Validates the ownership of the domain.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,5 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
+[Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgBetaOrganizationMemberGroup?view=graph-powershell-beta)
 

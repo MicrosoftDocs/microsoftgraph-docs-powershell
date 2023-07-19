@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a member to an Office 365 group or security group through the members navigation property.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -205,6 +205,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupMember?view=graph-powershell-beta)
+[New-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMember?view=graph-powershell-beta)
 
 

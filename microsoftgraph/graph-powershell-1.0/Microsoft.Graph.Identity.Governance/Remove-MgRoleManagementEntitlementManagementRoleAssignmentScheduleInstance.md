@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property roleAssignmentScheduleInstances for roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -201,5 +201,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-beta)
+[Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstance?view=graph-powershell-beta)
 

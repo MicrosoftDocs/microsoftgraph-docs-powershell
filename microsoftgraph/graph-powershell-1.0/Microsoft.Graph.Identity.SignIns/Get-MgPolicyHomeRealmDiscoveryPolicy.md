@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,6 +310,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
+[Get-MgBetaPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-beta)
 
 

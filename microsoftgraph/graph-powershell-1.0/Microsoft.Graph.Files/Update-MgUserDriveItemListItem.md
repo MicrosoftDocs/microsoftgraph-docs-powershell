@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property listItem in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -14868,8 +14868,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
+[Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
+[Update-MgBetaUserDriveItemListItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaUserDriveItemListItem?view=graph-powershell-beta)
 

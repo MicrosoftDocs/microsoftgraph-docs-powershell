@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getRecentNotebooks
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -212,5 +212,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
+[Get-MgBetaSiteRecentNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteRecentNotebook?view=graph-powershell-beta)
 

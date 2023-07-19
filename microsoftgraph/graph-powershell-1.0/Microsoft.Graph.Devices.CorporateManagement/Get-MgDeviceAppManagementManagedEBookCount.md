@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementManagedEBookCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,5 +69,5 @@ ALIASES
 Get-DeviceAppMgtManagedEBookCount
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementManagedEBookCount?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookCount?view=graph-powershell-beta)
 

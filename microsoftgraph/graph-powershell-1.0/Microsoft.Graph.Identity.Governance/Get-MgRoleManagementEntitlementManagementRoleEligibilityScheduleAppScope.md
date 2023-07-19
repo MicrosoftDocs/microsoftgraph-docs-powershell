@@ -12,7 +12,7 @@ Read-only property with details of the app-specific scope when the role eligibil
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementEntitlementManagementRoleEligibilityScheduleAppScope?view=graph-powershell-beta)
 

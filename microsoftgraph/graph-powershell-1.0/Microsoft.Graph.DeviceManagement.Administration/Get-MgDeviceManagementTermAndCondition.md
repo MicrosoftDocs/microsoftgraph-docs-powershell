@@ -11,7 +11,7 @@ schema: 2.0.0
 The terms and conditions associated with device management of the company.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
 

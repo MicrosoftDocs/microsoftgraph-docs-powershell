@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property swapShiftsChangeRequests for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -191,5 +191,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
+[Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
 

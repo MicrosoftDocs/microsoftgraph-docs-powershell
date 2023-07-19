@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a workflowVersion object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -311,5 +311,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-beta)
 

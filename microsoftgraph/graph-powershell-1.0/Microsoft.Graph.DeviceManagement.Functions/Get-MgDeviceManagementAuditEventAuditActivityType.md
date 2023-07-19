@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getAuditActivityTypes
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementAuditEventAuditActivityType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditActivityType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -165,5 +165,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementAuditEventAuditActivityType?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditActivityType?view=graph-powershell-beta)
 

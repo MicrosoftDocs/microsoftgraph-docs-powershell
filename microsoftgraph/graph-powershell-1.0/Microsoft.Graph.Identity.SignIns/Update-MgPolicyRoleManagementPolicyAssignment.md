@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property roleManagementPolicyAssignments in policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -380,8 +380,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of the scope where the policy is created. One of Directory, DirectoryRole. Required.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
+[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
+[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 

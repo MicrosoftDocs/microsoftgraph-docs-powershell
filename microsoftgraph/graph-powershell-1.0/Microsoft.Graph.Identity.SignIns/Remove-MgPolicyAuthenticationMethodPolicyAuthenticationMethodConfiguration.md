@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property authenticationMethodConfigurations for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -232,5 +232,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+[Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
 

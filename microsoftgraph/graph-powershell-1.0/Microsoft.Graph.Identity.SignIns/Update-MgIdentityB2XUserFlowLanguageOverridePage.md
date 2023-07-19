@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property overridesPages in identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -261,5 +261,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+[Update-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 

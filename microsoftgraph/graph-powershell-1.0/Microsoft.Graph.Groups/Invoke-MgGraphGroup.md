@@ -12,7 +12,7 @@ Calling this method will prevent the current user from receiving email notificat
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
+[Invoke-MgBetaGraphGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaGraphGroup?view=graph-powershell-beta)
 

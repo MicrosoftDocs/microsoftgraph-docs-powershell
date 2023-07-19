@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property userRegistrationDetails for reports
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -165,5 +165,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+[Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 

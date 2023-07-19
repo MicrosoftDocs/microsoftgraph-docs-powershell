@@ -11,7 +11,7 @@ schema: 2.0.0
 In Azure AD entitlement management, approve or deny an approvalStage object in an approval.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -400,5 +400,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
 

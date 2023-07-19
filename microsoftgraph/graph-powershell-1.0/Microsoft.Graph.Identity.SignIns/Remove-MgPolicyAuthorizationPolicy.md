@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property authorizationPolicy for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -98,5 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
+[Remove-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
 

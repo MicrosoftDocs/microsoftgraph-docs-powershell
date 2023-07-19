@@ -14,7 +14,7 @@ Aborting a print job will only succeed if there is a printTask in a `processing`
 For details about how to register a task trigger, see Extending Universal Print to support pull printing.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAbortPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaAbortPrintShareJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAbortPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaAbortPrintShareJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -229,5 +229,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaAbortPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaAbortPrintShareJob?view=graph-powershell-beta)
+[Invoke-MgBetaAbortPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Invoke-MgBetaAbortPrintShareJob?view=graph-powershell-beta)
 

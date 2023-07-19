@@ -13,7 +13,7 @@ This is a reverse navigation property.
 When navigating to components from a host, this should be assumed to be a return reference.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -151,5 +151,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-beta)
+[Get-MgBetaSecurityThreatIntelligenceHostComponentHost](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceHostComponentHost?view=graph-powershell-beta)
 

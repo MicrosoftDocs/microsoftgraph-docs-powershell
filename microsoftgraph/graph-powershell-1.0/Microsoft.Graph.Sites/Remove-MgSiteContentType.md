@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove a [content type][contentType] from a [list][] or a [site][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,6 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
+[Remove-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteContentType?view=graph-powershell-beta)
 
 

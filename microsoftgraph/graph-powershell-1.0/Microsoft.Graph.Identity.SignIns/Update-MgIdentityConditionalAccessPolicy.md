@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a conditionalAccessPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -568,8 +568,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+[Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+[Update-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 

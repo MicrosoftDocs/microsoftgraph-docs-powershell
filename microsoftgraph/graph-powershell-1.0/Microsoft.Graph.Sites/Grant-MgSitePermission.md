@@ -11,7 +11,7 @@ schema: 2.0.0
 Grant users access to a link represented by a [permission][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Grant-MgBetaSitePermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaSitePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -285,5 +285,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Grant-MgBetaSitePermission?view=graph-powershell-beta)
+[Grant-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Grant-MgBetaSitePermission?view=graph-powershell-beta)
 

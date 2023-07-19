@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftUserChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSoftUserChatMessageReplyDelete?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSoftUserChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageReplyDelete?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -204,5 +204,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaSoftUserChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSoftUserChatMessageReplyDelete?view=graph-powershell-beta)
+[Invoke-MgBetaSoftUserChatMessageReplyDelete](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSoftUserChatMessageReplyDelete?view=graph-powershell-beta)
 

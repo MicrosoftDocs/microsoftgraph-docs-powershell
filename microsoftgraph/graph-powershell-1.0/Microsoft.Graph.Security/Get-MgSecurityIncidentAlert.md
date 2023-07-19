@@ -12,7 +12,7 @@ The list of related alerts.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityIncidentAlert?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -292,5 +292,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityIncidentAlert?view=graph-powershell-beta)
+[Get-MgBetaSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncidentAlert?view=graph-powershell-beta)
 

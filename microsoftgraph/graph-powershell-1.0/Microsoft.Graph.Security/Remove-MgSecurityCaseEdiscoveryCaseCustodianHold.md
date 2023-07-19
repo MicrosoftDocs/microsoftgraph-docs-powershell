@@ -13,7 +13,7 @@ After the operation is created, you can get the status by retrieving the `Locati
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -268,5 +268,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-beta)
+[Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-beta)
 

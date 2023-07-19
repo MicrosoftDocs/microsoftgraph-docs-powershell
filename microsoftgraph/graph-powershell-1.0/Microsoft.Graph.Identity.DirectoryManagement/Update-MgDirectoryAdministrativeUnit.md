@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an administrativeUnit object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -372,6 +372,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+[Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
 
 

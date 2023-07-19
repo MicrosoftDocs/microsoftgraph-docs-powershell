@@ -11,7 +11,7 @@ schema: 2.0.0
 The scores and insights for the best practices metrics.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineBestPracticeMetric?view=graph-powershell-beta)
 

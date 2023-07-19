@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceCompliancePolicyStates for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -361,5 +361,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[New-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
+[New-MgBetaUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaUserManagedDeviceCompliancePolicyState?view=graph-powershell-beta)
 

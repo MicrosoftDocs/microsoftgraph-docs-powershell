@@ -11,7 +11,7 @@ schema: 2.0.0
 Download Apple push notification certificate signing request
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -38,5 +38,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-beta)
+[Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgBetaDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-beta)
 

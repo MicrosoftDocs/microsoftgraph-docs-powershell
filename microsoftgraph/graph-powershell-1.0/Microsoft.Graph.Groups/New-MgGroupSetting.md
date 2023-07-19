@@ -14,7 +14,7 @@ Group settings apply to only Microsoft 365 groups.
 The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
-[New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSetting?view=graph-powershell-beta)
+[New-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupSetting?view=graph-powershell-beta)
 

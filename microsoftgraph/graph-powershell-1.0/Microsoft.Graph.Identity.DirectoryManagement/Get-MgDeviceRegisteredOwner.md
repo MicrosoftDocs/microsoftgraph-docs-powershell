@@ -15,7 +15,7 @@ Nullable.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -238,5 +238,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
+[Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
 

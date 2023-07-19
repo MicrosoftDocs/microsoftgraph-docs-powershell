@@ -14,7 +14,7 @@ To get properties that are _not_ returned by default, specify them in a `$select
 The **hasMembersWithLicenseErrors** and **isArchived** properties are an exception and are not returned in the `$select` query.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -404,6 +404,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroup?view=graph-powershell-beta)
+[Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroup?view=graph-powershell-beta)
 
 

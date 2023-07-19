@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSkypeForBusinessDeviceUsageUserCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,5 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount?view=graph-powershell-beta)
+[Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessDeviceUsageUserCount?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -242,6 +242,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+[Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
 
 

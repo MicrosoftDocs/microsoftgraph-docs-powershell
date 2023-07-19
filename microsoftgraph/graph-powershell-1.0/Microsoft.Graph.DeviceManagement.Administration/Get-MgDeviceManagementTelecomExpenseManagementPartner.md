@@ -11,7 +11,7 @@ schema: 2.0.0
 Read properties and relationships of the telecomExpenseManagementPartner object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property alerts_v2 for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -178,5 +178,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+[Remove-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 

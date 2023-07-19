@@ -81,18 +81,13 @@ function Copy-Files{
             $Link = "($BaseUrl/$FullModuleName$View"
             $NewLink = "/module/Microsoft.Graph.Beta.$Module/$NewCommand"
             $content = Get-Content -Path $File
-            foreach($line in $content){
+            #foreach($line in $content){
                 
                # if($line.Contains($LinkTitle)){
                  
                 
-                   $Content | 
-            Foreach-Object {
-                  $_ -replace "Microsoft.Graph.Beta.Applications", "Microsoft.Graph.Beta.$Module"
-
-                 }  | 
-            Out-File $File
-                }
+                   $Content -replace "Microsoft.Graph.Beta.Applications", "Microsoft.Graph.Beta.$Module" | Out-File $File
+                #}
             #}
           
             

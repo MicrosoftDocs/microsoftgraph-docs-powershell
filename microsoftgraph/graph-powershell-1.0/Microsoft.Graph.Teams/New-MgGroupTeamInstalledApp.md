@@ -11,7 +11,7 @@ schema: 2.0.0
 Install an app to the specified team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -366,8 +366,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version number of the application.
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
+[New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
+[New-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamInstalledApp?view=graph-powershell-beta)
 

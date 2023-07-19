@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new ediscoveryReviewTag object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -384,5 +384,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
-[New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
+[New-MgBetaSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseTag?view=graph-powershell-beta)
 

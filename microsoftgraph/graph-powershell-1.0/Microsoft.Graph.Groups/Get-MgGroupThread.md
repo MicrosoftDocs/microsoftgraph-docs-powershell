@@ -12,7 +12,7 @@ Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupThread?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -274,6 +274,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupThread?view=graph-powershell-beta)
+[Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThread?view=graph-powershell-beta)
 
 

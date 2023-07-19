@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property itemActivityStats in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6121,8 +6121,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteAnalyticItemActivityStat?view=graph-powershell-beta)
 

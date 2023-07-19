@@ -12,7 +12,7 @@ The printTaskDefinition that was used to create this task.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJobTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintShareJobTaskDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJobTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobTaskDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -159,5 +159,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintShareJobTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintShareJobTaskDefinition?view=graph-powershell-beta)
+[Get-MgBetaPrintShareJobTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobTaskDefinition?view=graph-powershell-beta)
 

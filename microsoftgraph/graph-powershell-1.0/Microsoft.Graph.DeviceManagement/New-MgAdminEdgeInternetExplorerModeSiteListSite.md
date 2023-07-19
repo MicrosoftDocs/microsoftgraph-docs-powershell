@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new browserSite object in a browserSiteList.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -477,8 +477,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+[New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+[New-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
 

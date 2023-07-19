@@ -11,7 +11,7 @@ schema: 2.0.0
 The unique identifier of the Azure AD user that modified the custom task extension last.Supports $filter(eq, ne) and $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -169,5 +169,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtensionLastModifiedBy?view=graph-powershell-beta)
 

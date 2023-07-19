@@ -11,7 +11,7 @@ schema: 2.0.0
 Get security from reports
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSecurity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSecurity?view=graph-powershell-beta)
+[Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
 

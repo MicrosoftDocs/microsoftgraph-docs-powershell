@@ -12,7 +12,7 @@ Delete an open extension (openTypeExtension object) from the specified instance 
 See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -205,5 +205,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserMessage?view=graph-powershell-beta)
+[Remove-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgBetaUserMessage?view=graph-powershell-beta)
 

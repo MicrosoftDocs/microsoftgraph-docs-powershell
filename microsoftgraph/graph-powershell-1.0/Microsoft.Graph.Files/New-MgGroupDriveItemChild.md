@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to children for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18658,8 +18658,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
+[New-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaGroupDriveItemChild?view=graph-powershell-beta)
 

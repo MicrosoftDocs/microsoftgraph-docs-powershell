@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property threads in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -493,8 +493,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
+[Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
+[Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupConversationThread?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of an attributeSet object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -263,5 +263,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+[Get-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 

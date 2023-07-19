@@ -11,7 +11,7 @@ schema: 2.0.0
 The Managed eBook.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebook](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebook)
 

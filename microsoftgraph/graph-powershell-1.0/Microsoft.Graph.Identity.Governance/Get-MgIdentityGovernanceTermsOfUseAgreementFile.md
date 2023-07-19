@@ -12,7 +12,7 @@ Retrieve the details of the default file for an agreement, including the languag
 The file information is specified through the agreementFile object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,5 +299,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-beta)
 

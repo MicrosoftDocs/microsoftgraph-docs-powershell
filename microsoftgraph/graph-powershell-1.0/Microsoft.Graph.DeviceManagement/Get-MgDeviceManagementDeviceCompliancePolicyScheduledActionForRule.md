@@ -12,7 +12,7 @@ The list of scheduled action per rule for this compliance policy.
 This is a required property when creating any individual per-platform compliance policies.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -313,5 +313,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
 

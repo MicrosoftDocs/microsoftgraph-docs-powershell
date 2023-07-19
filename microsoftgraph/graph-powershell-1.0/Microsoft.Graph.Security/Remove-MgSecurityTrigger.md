@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property triggers for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityTrigger?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTrigger?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -98,5 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSecurityTrigger?view=graph-powershell-beta)
+[Remove-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgBetaSecurityTrigger?view=graph-powershell-beta)
 

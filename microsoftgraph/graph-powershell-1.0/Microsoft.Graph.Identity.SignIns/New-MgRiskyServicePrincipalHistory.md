@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to history for identityProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -466,5 +466,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
+[New-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 

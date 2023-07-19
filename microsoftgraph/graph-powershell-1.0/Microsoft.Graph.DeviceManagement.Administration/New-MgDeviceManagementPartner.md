@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceManagementPartners for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
 

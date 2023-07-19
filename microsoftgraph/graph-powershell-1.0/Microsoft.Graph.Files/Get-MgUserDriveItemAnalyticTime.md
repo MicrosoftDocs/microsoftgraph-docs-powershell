@@ -11,7 +11,7 @@ schema: 2.0.0
 Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveItemAnalyticTime?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticTime?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveItemAnalyticTime?view=graph-powershell-beta)
+[Get-MgBetaUserDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveItemAnalyticTime?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property schedule for teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamSchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -189,6 +189,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamSchedule?view=graph-powershell-beta)
+[Remove-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 

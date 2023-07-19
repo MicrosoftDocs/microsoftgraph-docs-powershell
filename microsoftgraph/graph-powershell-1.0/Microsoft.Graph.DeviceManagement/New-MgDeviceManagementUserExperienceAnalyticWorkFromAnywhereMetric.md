@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsWorkFromAnywhereMetrics for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -225,8 +225,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkFromAnywhereScore <Double?>]`: Indicates work from anywhere per device overall score. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticWorkFromAnywhereMetric?view=graph-powershell-beta)
 

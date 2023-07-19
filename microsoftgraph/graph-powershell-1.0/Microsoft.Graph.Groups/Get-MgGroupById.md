@@ -12,7 +12,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupById?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -178,5 +178,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupById?view=graph-powershell-beta)
+[Get-MgBetaGroupById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupById?view=graph-powershell-beta)
 

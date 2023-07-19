@@ -11,7 +11,7 @@ schema: 2.0.0
 The values of the columns set on this list item.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,5 +153,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
+[Get-MgBetaUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveRootListItemField?view=graph-powershell-beta)
 

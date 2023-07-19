@@ -11,7 +11,7 @@ schema: 2.0.0
 List of Vpp tokens for this organization.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -276,5 +276,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 

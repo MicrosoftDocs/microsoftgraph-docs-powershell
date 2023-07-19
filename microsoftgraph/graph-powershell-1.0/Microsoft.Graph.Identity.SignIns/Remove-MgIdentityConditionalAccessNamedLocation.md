@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an ipNamedLocation object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -212,6 +212,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+[Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
 
 

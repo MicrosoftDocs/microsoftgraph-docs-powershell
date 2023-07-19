@@ -11,7 +11,7 @@ schema: 2.0.0
 Deletes an externalConnection object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -164,6 +164,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
+[Remove-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgBetaExternalConnection?view=graph-powershell-beta)
 
 

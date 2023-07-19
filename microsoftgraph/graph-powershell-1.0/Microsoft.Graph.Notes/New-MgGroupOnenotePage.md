@@ -14,7 +14,7 @@ Example: `../onenote/pages?sectionName=My%20section` The `POST /onenote/pages` o
 If you're targeting other notebooks, you can create pages in a specified section.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -642,8 +642,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
+[New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
+[New-MgBetaGroupOnenotePage](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaGroupOnenotePage?view=graph-powershell-beta)
 

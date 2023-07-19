@@ -11,7 +11,7 @@ schema: 2.0.0
 The [set] in which the term is created.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroupSetChildSet](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStoreSetParentGroupSetChildSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteTermStoreSetParentGroupSetChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChildSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -263,5 +263,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteTermStoreSetParentGroupSetChildSet](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStoreSetParentGroupSetChildSet?view=graph-powershell-beta)
+[Get-MgBetaSiteTermStoreSetParentGroupSetChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreSetParentGroupSetChildSet?view=graph-powershell-beta)
 

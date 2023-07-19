@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of an article object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -275,5 +275,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
+[Get-MgBetaSecurityThreatIntelligenceArticle](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityThreatIntelligenceArticle?view=graph-powershell-beta)
 

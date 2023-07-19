@@ -12,7 +12,7 @@ The access packages that are incompatible with this package.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,6 +326,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
+[Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
 
 

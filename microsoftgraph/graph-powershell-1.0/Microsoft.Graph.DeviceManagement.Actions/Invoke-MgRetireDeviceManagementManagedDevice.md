@@ -11,7 +11,7 @@ schema: 2.0.0
 Retire a device
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -142,5 +142,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
+[Invoke-MgBetaRetireDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaRetireDeviceManagementManagedDevice?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to managedAppPolicies for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -216,5 +216,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Version of the entity.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
+[New-MgBetaDeviceAppManagementManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementManagedAppPolicy?view=graph-powershell-beta)
 

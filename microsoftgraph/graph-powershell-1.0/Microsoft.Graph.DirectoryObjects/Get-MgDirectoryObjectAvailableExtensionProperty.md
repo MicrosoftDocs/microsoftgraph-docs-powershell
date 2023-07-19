@@ -12,7 +12,7 @@ Return all directory extension definitions that have been registered in a direct
 The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -144,5 +144,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsSyncedFromOnPremises <Boolean?>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)
+[Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgBetaDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)
 

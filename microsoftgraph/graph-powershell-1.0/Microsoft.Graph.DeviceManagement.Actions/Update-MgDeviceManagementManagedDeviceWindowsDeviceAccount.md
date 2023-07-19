@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action updateWindowsDeviceAccount
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -232,5 +232,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SessionInitiationProtocalAddress <String>]`: Not yet documented
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgBetaDeviceManagementManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
 

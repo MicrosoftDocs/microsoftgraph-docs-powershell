@@ -11,7 +11,7 @@ schema: 2.0.0
 Read properties and relationships of the deviceAppManagement object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -69,5 +69,5 @@ ALIASES
 Get-DeviceAppMgt
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
 

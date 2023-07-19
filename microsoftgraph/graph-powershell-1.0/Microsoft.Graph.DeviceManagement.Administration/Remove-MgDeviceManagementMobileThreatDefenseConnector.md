@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property mobileThreatDefenseConnectors for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,5 +160,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementMobileThreatDefenseConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Remove-MgBetaDeviceManagementMobileThreatDefenseConnector?view=graph-powershell-beta)
 

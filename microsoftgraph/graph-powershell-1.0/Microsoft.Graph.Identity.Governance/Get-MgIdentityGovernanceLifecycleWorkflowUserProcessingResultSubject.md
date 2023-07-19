@@ -11,7 +11,7 @@ schema: 2.0.0
 The unique identifier of the AAD user targeted for the taskProcessingResult.Supports $filter(eq, ne) and $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,5 +183,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowUserProcessingResultSubject?view=graph-powershell-beta)
 

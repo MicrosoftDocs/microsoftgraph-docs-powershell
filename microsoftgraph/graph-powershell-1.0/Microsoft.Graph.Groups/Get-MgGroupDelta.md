@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,5 +183,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupDelta?view=graph-powershell-beta)
+[Get-MgBetaGroupDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupDelta?view=graph-powershell-beta)
 

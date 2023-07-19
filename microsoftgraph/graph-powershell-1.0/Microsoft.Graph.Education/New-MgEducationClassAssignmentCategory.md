@@ -12,7 +12,7 @@ Creates a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -264,6 +264,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+[New-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
 
 

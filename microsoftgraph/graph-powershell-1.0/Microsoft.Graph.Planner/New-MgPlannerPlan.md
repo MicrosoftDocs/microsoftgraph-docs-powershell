@@ -11,7 +11,7 @@ schema: 2.0.0
 Use this API to create a new **plannerPlan**.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPlannerPlan?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -554,9 +554,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPlannerPlan?view=graph-powershell-beta)
+[New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPlannerPlan?view=graph-powershell-beta)
+[New-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgBetaPlannerPlan?view=graph-powershell-beta)
 
 

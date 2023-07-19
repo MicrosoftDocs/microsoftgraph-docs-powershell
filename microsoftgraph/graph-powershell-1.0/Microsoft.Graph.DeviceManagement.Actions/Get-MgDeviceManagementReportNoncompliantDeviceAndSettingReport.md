@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action getNoncompliantDevicesAndSettingsReport
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -293,5 +293,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get a browserSite that resides on a browserSiteList.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,5 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
+[Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-beta)
 

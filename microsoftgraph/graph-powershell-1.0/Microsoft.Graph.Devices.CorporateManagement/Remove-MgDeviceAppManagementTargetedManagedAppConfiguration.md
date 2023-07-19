@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property targetedManagedAppConfigurations for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -179,5 +179,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+[Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
 

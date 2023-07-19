@@ -19,7 +19,7 @@ Only teachers or applications with application permissions can add or change gra
 Students will not see the grade or feedback until the **assignment** has been released.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,5 +299,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
+[Get-MgBetaEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmission?view=graph-powershell-beta)
 

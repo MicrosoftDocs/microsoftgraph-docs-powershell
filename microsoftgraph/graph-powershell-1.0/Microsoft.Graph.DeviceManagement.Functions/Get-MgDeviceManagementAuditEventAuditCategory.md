@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getAuditCategories
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -113,5 +113,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementAuditEventAuditCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementAuditEventAuditCategory?view=graph-powershell-beta)
 

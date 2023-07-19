@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -162,5 +162,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount?view=graph-powershell-beta)
+[Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUserSourceCount?view=graph-powershell-beta)
 

@@ -15,7 +15,7 @@ Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -511,9 +511,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
+[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
+[New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
 
 

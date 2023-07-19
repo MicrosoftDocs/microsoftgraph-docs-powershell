@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to authenticationMethodConfigurations for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -173,5 +173,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetType <String>]`: authenticationMethodTargetType
 
 ## RELATED LINKS
-[New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+[New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
 

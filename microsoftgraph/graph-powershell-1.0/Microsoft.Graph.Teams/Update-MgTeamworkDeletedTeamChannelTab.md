@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -388,5 +388,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+[Update-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 

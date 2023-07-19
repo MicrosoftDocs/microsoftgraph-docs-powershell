@@ -12,7 +12,7 @@ Return all the group IDs for the groups that the specified user, group, service 
 This function is transitive.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSettingTemplateMemberGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSettingTemplateMemberGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -217,5 +217,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupSettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSettingTemplateMemberGroup?view=graph-powershell-beta)
+[Get-MgBetaGroupSettingTemplateMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSettingTemplateMemberGroup?view=graph-powershell-beta)
 

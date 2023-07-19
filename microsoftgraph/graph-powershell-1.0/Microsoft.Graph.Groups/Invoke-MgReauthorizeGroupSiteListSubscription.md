@@ -11,7 +11,7 @@ schema: 2.0.0
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -210,5 +210,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
+[Invoke-MgBetaReauthorizeGroupSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaReauthorizeGroupSiteListSubscription?view=graph-powershell-beta)
 

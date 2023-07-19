@@ -11,7 +11,7 @@ schema: 2.0.0
 Revoke the specified group's access to submit print jobs to the associated printerShare.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -201,6 +201,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+[Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
 
 

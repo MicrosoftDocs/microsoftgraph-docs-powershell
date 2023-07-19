@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsScoreHistory for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,5 +153,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartupDateTime <DateTime?>]`: The device startup date time. The value cannot be modified and is automatically populated. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Returned by default.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticScoreHistory?view=graph-powershell-beta)
 

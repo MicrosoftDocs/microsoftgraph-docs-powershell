@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property hostCookies in security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -390,8 +390,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
+[Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
+[Update-MgBetaSecurityThreatIntelligenceHostCookie](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHostCookie?view=graph-powershell-beta)
 

@@ -18,7 +18,7 @@ This server-side filtering might result in empty pages if the user is particular
 To get your application's activities, use the **nextLink** property to paginate.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -240,5 +240,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
+[Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
 

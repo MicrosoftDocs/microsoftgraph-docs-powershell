@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property deviceCategory for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -198,5 +198,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
 

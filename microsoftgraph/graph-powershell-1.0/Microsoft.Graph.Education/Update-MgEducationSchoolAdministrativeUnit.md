@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property administrativeUnit in education
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -344,5 +344,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
-[Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
+[Update-MgBetaEducationSchoolAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationSchoolAdministrativeUnit?view=graph-powershell-beta)
 

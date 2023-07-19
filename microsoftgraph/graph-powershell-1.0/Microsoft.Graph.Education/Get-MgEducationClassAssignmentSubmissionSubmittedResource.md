@@ -14,7 +14,7 @@ Resources are available to a teacher or an application with application permissi
 Note that teachers can leave notes in some resources.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -318,6 +318,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+[Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
 
 

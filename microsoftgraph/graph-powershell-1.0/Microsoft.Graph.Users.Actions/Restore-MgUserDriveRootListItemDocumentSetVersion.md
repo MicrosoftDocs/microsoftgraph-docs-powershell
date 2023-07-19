@@ -11,7 +11,7 @@ schema: 2.0.0
 Restore a document set version.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaUserDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -202,5 +202,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgBetaUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaUserDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
+[Restore-MgBetaUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveRootListItemDocumentSetVersion?view=graph-powershell-beta)
 

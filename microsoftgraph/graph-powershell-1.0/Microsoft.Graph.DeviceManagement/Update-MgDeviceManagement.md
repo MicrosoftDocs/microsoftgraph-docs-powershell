@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a deviceManagement object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -11497,8 +11497,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TotalMalwareCount <Int32?>]`: Count of all malware detections across all devices. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagement?view=graph-powershell-beta)
 

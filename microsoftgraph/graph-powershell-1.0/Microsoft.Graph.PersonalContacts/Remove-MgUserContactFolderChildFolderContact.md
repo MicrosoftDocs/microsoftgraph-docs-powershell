@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property contacts for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -195,5 +195,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
+[Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolderChildFolderContact?view=graph-powershell-beta)
 

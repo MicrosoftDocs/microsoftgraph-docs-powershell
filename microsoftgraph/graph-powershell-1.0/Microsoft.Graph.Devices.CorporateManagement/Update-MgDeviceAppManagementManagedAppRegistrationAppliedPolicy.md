@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property appliedPolicies in deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -314,5 +314,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
+[Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to services for print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintService?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,6 +172,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 ## RELATED LINKS
-[New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintService?view=graph-powershell-beta)
+[New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintService?view=graph-powershell-beta)
 
 

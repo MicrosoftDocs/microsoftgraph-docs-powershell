@@ -11,7 +11,7 @@ schema: 2.0.0
 Update teamwork
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamwork?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -5896,8 +5896,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
 ## RELATED LINKS
-[Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamwork?view=graph-powershell-beta)
+[Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamwork?view=graph-powershell-beta)
+[Update-MgBetaTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamwork?view=graph-powershell-beta)
 

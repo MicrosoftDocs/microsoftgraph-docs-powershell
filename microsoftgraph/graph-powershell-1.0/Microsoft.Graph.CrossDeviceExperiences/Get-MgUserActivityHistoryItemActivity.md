@@ -12,7 +12,7 @@ Optional.
 NavigationProperty/Containment; navigation property to the associated activity.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -149,5 +149,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
+[Get-MgBetaUserActivityHistoryItemActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/Get-MgBetaUserActivityHistoryItemActivity?view=graph-powershell-beta)
 

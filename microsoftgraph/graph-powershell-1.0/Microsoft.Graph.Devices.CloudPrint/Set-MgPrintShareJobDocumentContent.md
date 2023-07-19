@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property documents in print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Set-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -206,5 +206,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
+[Set-MgBetaPrintShareJobDocumentContent](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Set-MgBetaPrintShareJobDocumentContent?view=graph-powershell-beta)
 

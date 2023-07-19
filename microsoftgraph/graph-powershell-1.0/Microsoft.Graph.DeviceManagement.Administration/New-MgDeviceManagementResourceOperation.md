@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to resourceOperations for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,5 +183,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the Resource this operation is performed on.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementResourceOperation?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property issues for admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -164,5 +164,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Remove-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+[Remove-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgBetaServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
 

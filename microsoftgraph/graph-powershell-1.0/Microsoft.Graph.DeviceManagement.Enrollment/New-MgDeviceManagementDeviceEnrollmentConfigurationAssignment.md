@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to assignments for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -203,5 +203,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgBetaDeviceManagementDeviceEnrollmentConfigurationAssignment?view=graph-powershell-beta)
 

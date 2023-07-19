@@ -11,7 +11,7 @@ schema: 2.0.0
 Deletes a permissionGrantConditionSet from the **includes** collection of a permissionGrantPolicy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -227,6 +227,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
+[Remove-MgBetaPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyInclude?view=graph-powershell-beta)
 
 

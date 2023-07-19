@@ -11,7 +11,7 @@ schema: 2.0.0
 The source column for the content type column.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveListColumnSourceColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumnSourceColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDriveListColumnSourceColumn?view=graph-powershell-beta)
+[Get-MgBetaUserDriveListColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDriveListColumnSourceColumn?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a single message or a message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamChannelMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -369,6 +369,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamChannelMessage?view=graph-powershell-beta)
+[Get-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 

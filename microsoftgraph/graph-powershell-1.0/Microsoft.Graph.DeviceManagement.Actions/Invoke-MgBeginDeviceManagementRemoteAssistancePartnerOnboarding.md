@@ -12,7 +12,7 @@ A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -144,5 +144,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
+[Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
 

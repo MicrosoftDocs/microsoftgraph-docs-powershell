@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property messages for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -206,5 +206,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
+[Remove-MgBetaUserChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaUserChatMessage?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property messages in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -938,8 +938,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ContentType <String>]`: bodyType
 
 ## RELATED LINKS
-[Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+[Update-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 

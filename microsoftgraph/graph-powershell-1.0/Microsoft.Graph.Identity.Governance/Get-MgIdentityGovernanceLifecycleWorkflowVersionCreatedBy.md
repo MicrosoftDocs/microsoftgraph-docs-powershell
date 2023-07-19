@@ -11,7 +11,7 @@ schema: 2.0.0
 The user who created the workflow.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,5 +183,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionCreatedBy?view=graph-powershell-beta)
 

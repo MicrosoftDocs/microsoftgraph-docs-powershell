@@ -11,7 +11,7 @@ schema: 2.0.0
 Get lastSharedMethod from users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserLastSharedMethodInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserLastSharedMethodInsight?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserLastSharedMethodInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserLastSharedMethodInsight?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,5 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserLastSharedMethodInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserLastSharedMethodInsight?view=graph-powershell-beta)
+[Get-MgBetaUserLastSharedMethodInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserLastSharedMethodInsight?view=graph-powershell-beta)
 

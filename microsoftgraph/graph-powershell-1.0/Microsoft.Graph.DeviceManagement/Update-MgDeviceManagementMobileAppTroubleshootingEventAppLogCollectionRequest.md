@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property appLogCollectionRequests in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -318,5 +318,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-beta)
 

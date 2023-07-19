@@ -11,7 +11,7 @@ schema: 2.0.0
 Get a session cookie that can be shared between a Microsoft Edge process and an Internet Explorer process, while using Internet Explorer mode.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,5 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
+[Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-beta)
 

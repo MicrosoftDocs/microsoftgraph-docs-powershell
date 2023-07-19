@@ -13,7 +13,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -173,5 +173,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
+[Get-MgBetaInvitationInvitedUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInvitationInvitedUserMailboxSetting?view=graph-powershell-beta)
 

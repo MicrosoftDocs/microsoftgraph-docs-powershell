@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property contentTypes in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1567,8 +1567,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
+[Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
+[Update-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteListContentType?view=graph-powershell-beta)
 

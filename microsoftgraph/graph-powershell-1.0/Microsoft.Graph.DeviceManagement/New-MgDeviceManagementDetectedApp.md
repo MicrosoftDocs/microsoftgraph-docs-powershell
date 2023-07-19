@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to detectedApps for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -5948,8 +5948,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementDetectedApp](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementDetectedApp?view=graph-powershell-beta)
 

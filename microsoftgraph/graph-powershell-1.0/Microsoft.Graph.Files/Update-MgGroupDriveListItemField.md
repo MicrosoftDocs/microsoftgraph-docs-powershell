@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties on a **[listItem][]**.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -228,5 +228,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveListItemField?view=graph-powershell-beta)
 

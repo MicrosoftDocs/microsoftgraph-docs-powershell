@@ -13,7 +13,7 @@ Attacks are typically inflicted on different types of entities, such as devices,
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -279,5 +279,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
+[Get-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityIncident?view=graph-powershell-beta)
 

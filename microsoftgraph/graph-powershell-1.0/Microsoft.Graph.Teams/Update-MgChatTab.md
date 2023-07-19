@@ -12,7 +12,7 @@ Update the properties of the specified tab in a chat.
 \nThis can be used to configure the content of the tab.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaChatTab?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -391,6 +391,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaChatTab?view=graph-powershell-beta)
+[Update-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatTab?view=graph-powershell-beta)
 
 

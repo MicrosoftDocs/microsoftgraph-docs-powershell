@@ -12,7 +12,7 @@ Send activity feed notifications to multiple users, in bulk.
 For more details about sending notifications and the requirements for doing so, seensending Teams activity notifications.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -276,5 +276,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
+[Send-MgBetaTeamworkActivityNotificationToRecipient](/powershell/module/Microsoft.Graph.Beta.Teams/Send-MgBetaTeamworkActivityNotificationToRecipient?view=graph-powershell-beta)
 

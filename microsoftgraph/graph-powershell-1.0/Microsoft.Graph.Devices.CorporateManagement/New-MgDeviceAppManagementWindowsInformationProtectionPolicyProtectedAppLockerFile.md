@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to protectedAppLockerFiles for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -285,5 +285,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
+[New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-beta)
 

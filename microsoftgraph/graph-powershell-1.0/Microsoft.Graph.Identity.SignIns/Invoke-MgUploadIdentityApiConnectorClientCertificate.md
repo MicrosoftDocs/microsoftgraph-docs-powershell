@@ -13,7 +13,7 @@ The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUploadIdentityApiConnectorClientCertificate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityApiConnectorClientCertificate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -270,5 +270,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUploadIdentityApiConnectorClientCertificate?view=graph-powershell-beta)
+[Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaUploadIdentityApiConnectorClientCertificate?view=graph-powershell-beta)
 

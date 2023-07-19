@@ -20,7 +20,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -339,5 +339,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty?view=graph-powershell-beta)
+[Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Test-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorProperty?view=graph-powershell-beta)
 

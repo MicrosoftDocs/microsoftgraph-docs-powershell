@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function incidentReport
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -127,5 +127,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
+[Invoke-MgBetaReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgBetaReportServiceAnnouncementIssueIncident?view=graph-powershell-beta)
 

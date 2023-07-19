@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new customSecurityAttributeDefinition object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -306,5 +306,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsePreDefinedValuesOnly <Boolean?>]`: Indicates whether only predefined values can be assigned to the custom security attribute. If set to false, free-form values are allowed. Can later be changed from true to false, but cannot be changed from false to true. If type is set to Boolean, usePreDefinedValuesOnly cannot be set to true.
 
 ## RELATED LINKS
-[New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
+[New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
 

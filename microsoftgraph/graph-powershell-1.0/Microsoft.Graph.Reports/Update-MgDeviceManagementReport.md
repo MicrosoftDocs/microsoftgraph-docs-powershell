@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property reports in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -175,5 +175,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Update-MgBetaDeviceManagementReport?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property deviceEnrollmentConfigurations for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -149,5 +149,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementDeviceEnrollmentConfiguration?view=graph-powershell-beta)
 

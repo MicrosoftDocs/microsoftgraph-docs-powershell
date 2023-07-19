@@ -13,7 +13,7 @@ The **createLink** action will create a new sharing link if the specified link t
 DriveItem resources inherit sharing permissions from their ancestors.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserDriveRootLink?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserDriveRootLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,5 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserDriveRootLink?view=graph-powershell-beta)
+[New-MgBetaUserDriveRootLink](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserDriveRootLink?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -70,5 +70,5 @@ ALIASES
 Get-DeviceAppMgtWindowInformationProtectionPolicyCount
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementWindowsInformationProtectionPolicyCount?view=graph-powershell-beta)
 

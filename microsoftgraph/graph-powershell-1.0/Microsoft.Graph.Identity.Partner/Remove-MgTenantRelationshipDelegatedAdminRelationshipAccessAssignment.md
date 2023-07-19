@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a delegatedAdminAccessAssignment object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -167,5 +167,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+[Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Remove-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 

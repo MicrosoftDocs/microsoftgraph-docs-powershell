@@ -12,7 +12,7 @@ Schools to which the user belongs.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeSchool?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeSchool?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -267,6 +267,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeSchool?view=graph-powershell-beta)
+[Get-MgBetaEducationMeSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeSchool?view=graph-powershell-beta)
 
 

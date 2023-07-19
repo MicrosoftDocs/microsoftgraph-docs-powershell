@@ -12,7 +12,7 @@ Catalog of the access package containing this policy.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicyCatalog?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAssignmentPolicyCatalog?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -170,5 +170,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaEntitlementManagementAssignmentPolicyCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicyCatalog?view=graph-powershell-beta)
+[Get-MgBetaEntitlementManagementAssignmentPolicyCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaEntitlementManagementAssignmentPolicyCatalog?view=graph-powershell-beta)
 

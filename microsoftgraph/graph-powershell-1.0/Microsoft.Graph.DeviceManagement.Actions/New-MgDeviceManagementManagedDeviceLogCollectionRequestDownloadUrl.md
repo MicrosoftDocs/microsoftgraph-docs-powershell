@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action createDownloadUrl
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -142,5 +142,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/New-MgBetaDeviceManagementManagedDeviceLogCollectionRequestDownloadUrl?view=graph-powershell-beta)
 

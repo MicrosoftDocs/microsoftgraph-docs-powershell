@@ -12,7 +12,7 @@ Cancel a print job.
 Print jobs can be canceled only on behalf of a user, using delegated permissions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Stop-MgBetaPrintShareJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Stop-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Stop-MgBetaPrintShareJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,5 +160,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Stop-MgBetaPrintShareJob?view=graph-powershell-beta)
+[Stop-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Stop-MgBetaPrintShareJob?view=graph-powershell-beta)
 

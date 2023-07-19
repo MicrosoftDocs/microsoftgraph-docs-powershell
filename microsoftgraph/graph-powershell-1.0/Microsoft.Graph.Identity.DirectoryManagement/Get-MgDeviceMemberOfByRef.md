@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action getMemberObjects
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -214,4 +214,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
+[Get-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)

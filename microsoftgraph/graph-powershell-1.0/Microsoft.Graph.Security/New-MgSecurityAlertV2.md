@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to alerts_v2 for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -615,5 +615,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Verdict <String>]`: evidenceVerdict
 
 ## RELATED LINKS
-[New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+[New-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 

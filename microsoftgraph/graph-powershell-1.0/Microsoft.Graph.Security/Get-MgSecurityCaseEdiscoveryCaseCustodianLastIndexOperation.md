@@ -11,7 +11,7 @@ schema: 2.0.0
 Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -175,6 +175,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
+[Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
 
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property schema in external
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -253,6 +253,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: propertyType
 
 ## RELATED LINKS
-[Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+[Update-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 

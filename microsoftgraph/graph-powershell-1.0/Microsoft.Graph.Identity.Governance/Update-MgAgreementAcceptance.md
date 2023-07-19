@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property acceptances in agreements
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAgreementAcceptance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -482,5 +482,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAgreementAcceptance?view=graph-powershell-beta)
+[Update-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaAgreementAcceptance?view=graph-powershell-beta)
 

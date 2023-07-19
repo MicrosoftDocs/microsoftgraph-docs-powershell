@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property logCollectionRequests in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -389,5 +389,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Update-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
+[Update-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
 

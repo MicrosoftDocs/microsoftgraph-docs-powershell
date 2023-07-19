@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new timeOff instance in a schedule.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -316,5 +316,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
+[New-MgBetaGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamScheduleTimeOff?view=graph-powershell-beta)
 

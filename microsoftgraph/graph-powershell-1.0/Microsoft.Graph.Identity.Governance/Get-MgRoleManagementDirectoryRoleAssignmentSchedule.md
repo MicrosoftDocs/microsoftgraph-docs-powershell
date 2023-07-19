@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the schedule for an active role assignment operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -296,5 +296,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentSchedule?view=graph-powershell-beta)
 

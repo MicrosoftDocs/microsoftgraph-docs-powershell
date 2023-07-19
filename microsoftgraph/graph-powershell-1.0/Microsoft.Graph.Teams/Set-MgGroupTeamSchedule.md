@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property schedule in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -791,8 +791,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: ID of the user assigned to the timeOff. Required.
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
+[Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
+[Set-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsAppHealthApplicationPerformanceByOSVersion for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -309,5 +309,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[OSVersion <String>]`: The OS version of the application. Supports: $select, $OrderBy. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByOsversion?view=graph-powershell-beta)
 

@@ -13,7 +13,7 @@ Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -729,9 +729,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+[New-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 

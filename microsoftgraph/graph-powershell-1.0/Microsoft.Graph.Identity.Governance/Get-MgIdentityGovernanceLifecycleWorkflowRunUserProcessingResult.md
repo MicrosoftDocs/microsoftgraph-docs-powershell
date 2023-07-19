@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the user processing result of a user processing result of a run.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -327,5 +327,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaIdentityGovernanceLifecycleWorkflowRunUserProcessingResult?view=graph-powershell-beta)
 

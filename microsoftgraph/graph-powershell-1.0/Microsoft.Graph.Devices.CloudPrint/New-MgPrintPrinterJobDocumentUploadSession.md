@@ -14,7 +14,7 @@ Request headers for each `PUT` operation can be used to specify the exact range 
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -242,5 +242,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Size <Int64?>]`: The document's size in bytes.
 
 ## RELATED LINKS
-[New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
+[New-MgBetaPrintPrinterJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgBetaPrintPrinterJobDocumentUploadSession?view=graph-powershell-beta)
 

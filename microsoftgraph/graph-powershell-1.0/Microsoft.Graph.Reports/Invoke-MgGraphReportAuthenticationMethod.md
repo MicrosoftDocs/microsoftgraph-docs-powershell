@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function usersRegisteredByFeature
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,5 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
+[Invoke-MgBetaGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Invoke-MgBetaGraphReportAuthenticationMethod?view=graph-powershell-beta)
 

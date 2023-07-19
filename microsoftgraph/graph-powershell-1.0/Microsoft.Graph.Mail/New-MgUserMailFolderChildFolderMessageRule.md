@@ -12,7 +12,7 @@ Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -505,8 +505,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+[New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+[New-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
 

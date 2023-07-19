@@ -11,7 +11,7 @@ schema: 2.0.0
 Update customCSS for the navigation property localizations in organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -200,5 +200,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
+[Set-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
 

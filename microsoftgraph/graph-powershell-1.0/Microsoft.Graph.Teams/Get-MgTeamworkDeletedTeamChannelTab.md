@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -303,5 +303,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
+[Get-MgBetaTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamworkDeletedTeamChannelTab?view=graph-powershell-beta)
 

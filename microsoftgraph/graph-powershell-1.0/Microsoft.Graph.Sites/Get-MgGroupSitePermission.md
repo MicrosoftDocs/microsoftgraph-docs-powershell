@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a permission object on a site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,5 +310,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
+[Get-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSitePermission?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new set object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -633,8 +633,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
 

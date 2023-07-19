@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property members in teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamTagMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTagMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -290,5 +290,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamTagMember?view=graph-powershell-beta)
+[Update-MgBetaTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaTeamTagMember?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property attributeSets for directory
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -166,5 +166,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
+[Remove-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
 

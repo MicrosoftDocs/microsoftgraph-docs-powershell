@@ -11,7 +11,7 @@ schema: 2.0.0
 Update entity in groupSettingTemplates
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -295,5 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
+[Update-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgBetaGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update entity in subscribedSkus
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -406,6 +406,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
-[Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
+[Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
 
 

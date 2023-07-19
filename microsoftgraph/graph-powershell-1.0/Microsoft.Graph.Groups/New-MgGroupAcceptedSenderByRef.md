@@ -13,7 +13,7 @@ Users in the accepted senders list can post to conversations of the group .
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -250,6 +250,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
+[New-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
 
 

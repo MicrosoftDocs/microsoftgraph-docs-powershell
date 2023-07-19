@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property contactedReviewers in identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -316,5 +316,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
 

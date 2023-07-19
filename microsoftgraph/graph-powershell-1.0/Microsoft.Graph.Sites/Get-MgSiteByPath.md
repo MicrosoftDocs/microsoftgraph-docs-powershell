@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getByPath
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteByPath](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteByPath?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteByPath?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,5 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteByPath](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteByPath?view=graph-powershell-beta)
+[Get-MgBetaSiteByPath](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteByPath?view=graph-powershell-beta)
 

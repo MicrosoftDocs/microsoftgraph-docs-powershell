@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property decisions for identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -230,5 +230,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+[Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
 

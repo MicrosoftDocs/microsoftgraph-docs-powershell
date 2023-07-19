@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property userExperienceAnalyticsAppHealthApplicationPerformance for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -200,5 +200,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformance?view=graph-powershell-beta)
 

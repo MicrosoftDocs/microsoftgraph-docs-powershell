@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete user from shared Apple device
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -209,5 +209,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Remove-MgBetaDeviceManagementManagedDeviceUserFromSharedAppleDevice?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Send a new chatMessage in the specified channel.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -968,6 +968,6 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## NOTES
 
 ## RELATED LINKS
-[New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
+[New-MgBetaTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessage?view=graph-powershell-beta)
 
 

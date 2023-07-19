@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to mobileAppCategories for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -167,5 +167,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The date and time the mobileAppCategory was last modified.
 
 ## RELATED LINKS
-[New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
+[New-MgBetaDeviceAppManagementMobileAppCategory](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgBetaDeviceAppManagementMobileAppCategory?view=graph-powershell-beta)
 

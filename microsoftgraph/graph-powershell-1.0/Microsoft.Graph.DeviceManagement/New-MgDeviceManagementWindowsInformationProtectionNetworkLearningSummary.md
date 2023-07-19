@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -166,5 +166,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Website url
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgBetaDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-beta)
 

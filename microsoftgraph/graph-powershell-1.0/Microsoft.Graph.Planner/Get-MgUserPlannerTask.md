@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a list of **plannertask** objects assigned to a User.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -215,5 +215,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
+[Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaUserPlannerTask?view=graph-powershell-beta)
 

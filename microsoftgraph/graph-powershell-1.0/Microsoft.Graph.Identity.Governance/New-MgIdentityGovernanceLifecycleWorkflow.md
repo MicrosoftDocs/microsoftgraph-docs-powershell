@@ -12,7 +12,7 @@ Create a new workflow object.
 You can create up to 50 workflows in a tenant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26384,8 +26384,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionNumber <Int32?>]`: The version of the workflow.Supports $filter(lt, le, gt, ge, eq, ne) and $orderby.
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+[New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
+[New-MgBetaIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceLifecycleWorkflow?view=graph-powershell-beta)
 

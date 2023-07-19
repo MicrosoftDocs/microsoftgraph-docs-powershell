@@ -11,7 +11,7 @@ schema: 2.0.0
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6304,9 +6304,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
 
 

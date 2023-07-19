@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property notificationMessageTemplates for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -198,5 +198,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementNotificationMessageTemplate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgBetaDeviceManagementNotificationMessageTemplate?view=graph-powershell-beta)
 

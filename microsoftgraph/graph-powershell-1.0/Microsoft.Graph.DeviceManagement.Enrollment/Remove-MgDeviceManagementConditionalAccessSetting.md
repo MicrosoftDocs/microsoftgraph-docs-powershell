@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property conditionalAccessSettings for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -99,5 +99,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
+[Remove-MgBetaDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementConditionalAccessSetting?view=graph-powershell-beta)
 

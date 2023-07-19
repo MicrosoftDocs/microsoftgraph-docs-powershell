@@ -11,7 +11,7 @@ schema: 2.0.0
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -343,5 +343,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
+[Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
 

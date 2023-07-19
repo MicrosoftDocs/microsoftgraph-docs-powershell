@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -204,5 +204,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
+[Add-MgBetaDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Files/Add-MgBetaDriveListContentTypeCopy?view=graph-powershell-beta)
 

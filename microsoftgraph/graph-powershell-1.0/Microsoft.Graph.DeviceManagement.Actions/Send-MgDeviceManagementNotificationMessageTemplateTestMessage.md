@@ -11,7 +11,7 @@ schema: 2.0.0
 Sends test message using the specified notificationMessageTemplate in the default locale
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -142,5 +142,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
+[Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Send-MgBetaDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-beta)
 

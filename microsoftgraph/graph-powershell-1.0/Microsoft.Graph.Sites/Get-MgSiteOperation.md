@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the status of a rich long-running operation on a site or a list.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -295,5 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteOperation?view=graph-powershell-beta)
+[Get-MgBetaSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteOperation?view=graph-powershell-beta)
 

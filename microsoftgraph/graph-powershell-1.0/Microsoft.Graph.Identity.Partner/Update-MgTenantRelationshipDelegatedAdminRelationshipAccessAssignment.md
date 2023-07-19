@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a delegatedAdminAccessAssignment object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -308,5 +308,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
+[Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignment?view=graph-powershell-beta)
 

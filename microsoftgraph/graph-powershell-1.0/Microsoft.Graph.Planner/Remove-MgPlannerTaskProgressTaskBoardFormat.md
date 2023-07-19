@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property progressTaskBoardFormat for planner
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -167,6 +167,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
+[Remove-MgBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Remove-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
 
 

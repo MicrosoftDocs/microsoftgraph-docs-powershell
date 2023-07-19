@@ -12,7 +12,7 @@ Update the properties of a sharing permission by patching the permission resourc
 Only the **roles** property can be modified this way.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -594,8 +594,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItemPermission?view=graph-powershell-beta)
 

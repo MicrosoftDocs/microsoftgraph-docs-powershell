@@ -14,7 +14,7 @@ See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -223,5 +223,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
+[New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
 

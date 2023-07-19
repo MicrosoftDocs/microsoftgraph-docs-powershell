@@ -13,7 +13,7 @@ This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -263,6 +263,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+[Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
 
 

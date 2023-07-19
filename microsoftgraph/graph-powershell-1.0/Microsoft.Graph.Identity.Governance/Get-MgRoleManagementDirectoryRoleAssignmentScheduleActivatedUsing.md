@@ -13,7 +13,7 @@ Otherwise, it is null.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleActivatedUsing?view=graph-powershell-beta)
 

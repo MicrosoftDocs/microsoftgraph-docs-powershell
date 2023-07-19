@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action sync
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Sync-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Sync-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -209,5 +209,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Sync-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Sync-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
+[Sync-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Sync-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
 

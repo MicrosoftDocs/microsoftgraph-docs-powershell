@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to permissions for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -547,8 +547,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
+[New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
+[New-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveRootPermission?view=graph-powershell-beta)
 
