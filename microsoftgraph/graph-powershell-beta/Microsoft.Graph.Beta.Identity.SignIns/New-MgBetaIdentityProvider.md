@@ -38,7 +38,7 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 ### Example 1: Create a specific social identity provider (Azure AD and Azure AD B2C)
 
 ```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "microsoft.graph.socialIdentityProvider"
@@ -48,16 +48,16 @@ $params = @{
 	clientSecret = "000000000000"
 }
 
-New-MgBetaIdentityProvider -BodyParameter $params
+New-MgIdentityProvider -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
+This example shows how to use the New-MgIdentityProvider Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 2: Retrieves Apple identity provider (only for Azure AD B2C)
 
 ```powershell
-Import-Module Microsoft.Graph.Beta.Identity.SignIns
+Import-Module Microsoft.Graph.Identity.SignIns
 
 $params = @{
 	"@odata.type" = "microsoft.graph.appleManagedIdentityProvider"
@@ -65,7 +65,14 @@ $params = @{
 	developerId = "UBF8T346G9"
 	serviceId = "com.microsoft.rts.b2c.test.client"
 	keyId = "99P6D879C4"
-	certificateData = "
+	certificateData = "******"
+}
+
+New-MgIdentityProvider -BodyParameter $params
+```
+This example shows how to use the New-MgIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 ## PARAMETERS
 
 ### -AdditionalProperties
