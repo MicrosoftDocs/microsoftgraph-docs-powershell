@@ -63,7 +63,6 @@ $accessPackageResource = @{
   "originId"= '8902df17-a973-438f-8321-8b619aa18dc4'
   "originSystem"= 'AadGroup'
   }
-```
 
 $accessPackageResourceRole = @{
   "originId"= 'Member_8902df17-a973-438f-8321-8b619aa18dc4'
@@ -80,7 +79,7 @@ $accessPackageResourceScope = @{
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
 
 
-```Output
+Output
 AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
 AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
 CreatedBy                  : admin@M365x814237.onmicrosoft.com

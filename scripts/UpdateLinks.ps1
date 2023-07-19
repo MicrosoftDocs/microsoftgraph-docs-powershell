@@ -176,10 +176,11 @@ function Add-Link {
             $LinkTitle = "To view the v1.0 release of this cmdlet, view"
             $View = "?view=graph-powershell-v1.0"
             if ($GraphProfile -eq "v1.0") {
+                $CommandRename = $Command.Replace("-Mg", "-MgBeta")
                 $FullModuleName = "Microsoft.Graph.Beta.$Module/$CommandRename"
                 $LinkTitle = "To view the beta release of this cmdlet, view"
                 $View = "?view=graph-powershell-beta"
-                $CommandRename = $Command.Replace("-Mg", "-MgBeta")
+                
             }
 
             $Block = $Matches[0]
