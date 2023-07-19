@@ -3,11 +3,11 @@ title: "Error handling and troubleshooting cmdlets"
 description: "Learn how to diagnose common errors in Microsoft Graph PowerShell"
 
 ms.topic: troubleshooting
-ms.date: 05/22/2023
+ms.date: 07/19/2023
 ms.author: eunicewaweru
 manager: CelesteDG
 author: msewaweru
-reviewer: maisarissi,peombwa
+reviewer: carolkigoonya,peombwa
 ---
 
 # Troubleshooting common errors in Microsoft Graph PowerShell
