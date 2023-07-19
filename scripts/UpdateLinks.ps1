@@ -187,7 +187,7 @@ function Add-Link {
             $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
             $NewBlock = $Block.Replace("## SYNTAX", $Link)
                 (Get-Content $File) | 
-            Foreach-Object { $_ -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
+            Foreach-Object { $_ -replace '## SYNTAX', $Link }  | 
             Out-File $File
         }
     }
@@ -232,18 +232,18 @@ foreach ($Data in $DeserializedContent) {
         }   
     }
 }
-Set-Location microsoftgraph-docs-powershell
-$date = Get-Date -Format "dd-MM-yyyy"
-$proposedBranch = "weekly_v2_docs_update_$date"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}
-else {
-    Write-Host "Branch already exists"
-    git checkout $proposedBranch
-}
-Set-Location ..\microsoftgraph-docs-powershell
+# Set-Location microsoftgraph-docs-powershell
+# $date = Get-Date -Format "dd-MM-yyyy"
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }
+# else {
+#     Write-Host "Branch already exists"
+#     git checkout $proposedBranch
+# }
+# Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Update -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
