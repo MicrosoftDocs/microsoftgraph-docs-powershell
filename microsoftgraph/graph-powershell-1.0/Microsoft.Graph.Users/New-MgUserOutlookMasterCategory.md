@@ -45,13 +45,6 @@ The collection of open extensions defined for the user.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-This example shows how to use the New-MgUserOutlookMasterCategory Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
