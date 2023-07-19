@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get provisioning from auditLogs
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgAuditLogProvisioning?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

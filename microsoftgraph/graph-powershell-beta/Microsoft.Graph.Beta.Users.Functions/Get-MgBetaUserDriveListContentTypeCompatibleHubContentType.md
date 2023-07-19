@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getCompatibleHubContentTypes
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveListContentTypeCompatibleHubContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

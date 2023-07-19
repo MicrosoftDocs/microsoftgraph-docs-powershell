@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the privacy settings for itemInsights and meeting hours insights of a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingItemInsight?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

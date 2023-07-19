@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property itemInsights for organization
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgOrganizationSettingItemInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationSettingItemInsight?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

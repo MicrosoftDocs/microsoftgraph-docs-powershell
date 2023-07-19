@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to mobileAppIntentAndStates for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMobileAppIntentAndState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserMobileAppIntentAndState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

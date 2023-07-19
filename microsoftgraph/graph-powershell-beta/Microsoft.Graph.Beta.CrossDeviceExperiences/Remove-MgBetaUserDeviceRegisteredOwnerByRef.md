@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user as a registered owner of the device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Remove-MgUserDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

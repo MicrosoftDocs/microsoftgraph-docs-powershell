@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes a personAnnotation object from a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileNote](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileNote?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

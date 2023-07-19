@@ -11,6 +11,9 @@ schema: 2.0.0
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgPlayCommunicationCallPrompt?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PlayExpanded (Default)

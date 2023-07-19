@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of role assignment requests for the resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property unifiedGroupSources for compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseLegalHoldUnifiedGroupSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

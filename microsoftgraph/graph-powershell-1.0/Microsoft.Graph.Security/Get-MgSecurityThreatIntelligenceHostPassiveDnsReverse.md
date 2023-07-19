@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reverse passive DNS retrieval about this host.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceHostPassiveDnsReverse](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceHostPassiveDnsReverse?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of **plannertask** objects assigned to a User.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgUserPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

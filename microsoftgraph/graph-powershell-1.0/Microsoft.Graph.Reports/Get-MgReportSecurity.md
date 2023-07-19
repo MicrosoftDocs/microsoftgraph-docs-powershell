@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get security from reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSecurity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

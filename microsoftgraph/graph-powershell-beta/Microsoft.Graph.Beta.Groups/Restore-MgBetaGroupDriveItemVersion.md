@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveItemVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Restore (Default)

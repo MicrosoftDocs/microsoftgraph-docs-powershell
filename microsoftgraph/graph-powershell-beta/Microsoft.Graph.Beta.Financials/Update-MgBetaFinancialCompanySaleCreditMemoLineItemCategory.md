@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property itemCategory in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleCreditMemoLineItemCategory](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleCreditMemoLineItemCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

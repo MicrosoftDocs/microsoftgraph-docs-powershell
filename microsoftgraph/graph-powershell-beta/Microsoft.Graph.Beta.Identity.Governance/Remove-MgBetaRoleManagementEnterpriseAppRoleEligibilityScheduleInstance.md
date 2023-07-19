@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property roleEligibilityScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

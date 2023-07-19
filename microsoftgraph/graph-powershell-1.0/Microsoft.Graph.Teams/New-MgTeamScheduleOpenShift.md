@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an instance of an openShift object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamScheduleOpenShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

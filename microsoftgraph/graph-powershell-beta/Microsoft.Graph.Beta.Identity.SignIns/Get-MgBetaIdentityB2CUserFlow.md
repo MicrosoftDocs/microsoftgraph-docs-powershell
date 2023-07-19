@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a b2cUserFlow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlow?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

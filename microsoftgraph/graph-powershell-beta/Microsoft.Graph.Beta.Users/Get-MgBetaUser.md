@@ -14,6 +14,9 @@ These _default_ properties are noted in the Properties section.
 To get properties that are _not_ returned by default, do a GET operation for the user and specify the properties in a `$select` OData query option.
 Because the **user** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **user** instance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

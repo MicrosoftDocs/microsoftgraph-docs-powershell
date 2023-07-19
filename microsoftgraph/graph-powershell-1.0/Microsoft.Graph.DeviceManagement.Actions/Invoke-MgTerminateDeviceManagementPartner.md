@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action terminate
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTerminateDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgTerminateDeviceManagementPartner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Terminate (Default)

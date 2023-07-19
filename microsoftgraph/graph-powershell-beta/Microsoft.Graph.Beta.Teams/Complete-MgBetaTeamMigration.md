@@ -13,6 +13,9 @@ Complete the message migration process by removing `migration mode` from a team.
 After a **completeMigration** request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Complete (Default)

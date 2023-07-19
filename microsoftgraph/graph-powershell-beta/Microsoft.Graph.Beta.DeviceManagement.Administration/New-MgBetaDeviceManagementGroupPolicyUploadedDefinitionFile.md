@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to groupPolicyUploadedDefinitionFiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementGroupPolicyUploadedDefinitionFile](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementGroupPolicyUploadedDefinitionFile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

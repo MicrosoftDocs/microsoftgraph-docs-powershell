@@ -11,6 +11,9 @@ schema: 2.0.0
 Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Unset (Default)

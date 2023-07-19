@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Set of commands sent to this device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceCommand](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceCommand?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

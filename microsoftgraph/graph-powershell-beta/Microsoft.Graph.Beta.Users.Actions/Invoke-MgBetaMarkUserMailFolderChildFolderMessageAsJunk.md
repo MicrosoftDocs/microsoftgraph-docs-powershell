@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action markAsJunk
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)

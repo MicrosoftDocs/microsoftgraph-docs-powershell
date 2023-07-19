@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/Invoke-MgReauthorizeSiteListSubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reauthorize (Default)

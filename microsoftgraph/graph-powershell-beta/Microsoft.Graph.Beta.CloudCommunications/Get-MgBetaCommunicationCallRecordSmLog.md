@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSmsLog
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationCallRecordSmLog](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallRecordSmLog?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

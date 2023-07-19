@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

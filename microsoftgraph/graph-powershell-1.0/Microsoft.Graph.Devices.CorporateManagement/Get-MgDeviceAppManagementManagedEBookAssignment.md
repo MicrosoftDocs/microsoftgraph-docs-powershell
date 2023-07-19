@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of assignments for this eBook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementManagedEBookAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

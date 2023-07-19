@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property assignments in education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUserAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

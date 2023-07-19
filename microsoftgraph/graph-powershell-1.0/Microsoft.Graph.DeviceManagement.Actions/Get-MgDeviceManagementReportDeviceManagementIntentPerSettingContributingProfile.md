@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getDeviceManagementIntentPerSettingContributingProfiles
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceManagementIntentPerSettingContributingProfile?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

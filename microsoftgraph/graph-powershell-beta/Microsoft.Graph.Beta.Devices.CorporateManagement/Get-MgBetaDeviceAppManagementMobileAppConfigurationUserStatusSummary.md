@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 App configuration user status summary.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppConfigurationUserStatusSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

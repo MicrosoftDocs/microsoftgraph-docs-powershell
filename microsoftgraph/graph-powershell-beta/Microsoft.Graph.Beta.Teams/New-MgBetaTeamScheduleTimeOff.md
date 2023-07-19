@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeOff?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

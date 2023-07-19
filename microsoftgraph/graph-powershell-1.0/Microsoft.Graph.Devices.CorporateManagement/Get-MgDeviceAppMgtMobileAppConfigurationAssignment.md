@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of group assignemenets for app configration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtMobileAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtMobileAppConfigurationAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

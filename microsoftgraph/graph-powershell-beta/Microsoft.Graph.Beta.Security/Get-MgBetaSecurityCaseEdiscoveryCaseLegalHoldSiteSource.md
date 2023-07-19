@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Data sources that represent SharePoint sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

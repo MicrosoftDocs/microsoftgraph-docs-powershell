@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The managed devices that executes the device management script.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

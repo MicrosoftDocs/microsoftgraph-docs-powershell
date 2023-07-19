@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property policies in trustFramework
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTrustFrameworkPolicyContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgTrustFrameworkPolicyContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

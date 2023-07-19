@@ -11,6 +11,9 @@ schema: 2.0.0
 List of related Setting Definitions.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationSettingDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

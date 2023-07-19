@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action disable
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Disable-MgDeviceManagementComanagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disable-MgDeviceManagementComanagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Disable (Default)

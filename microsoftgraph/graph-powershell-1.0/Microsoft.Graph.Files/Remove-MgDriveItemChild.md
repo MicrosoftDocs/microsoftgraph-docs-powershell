@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an item from a [bundle][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

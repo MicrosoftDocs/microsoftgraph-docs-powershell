@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a registered device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

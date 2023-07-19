@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Associate a [content type][contentType] with a list of hub sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Join-MgDriveListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Files/Join-MgDriveListContentTypeWithHubSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

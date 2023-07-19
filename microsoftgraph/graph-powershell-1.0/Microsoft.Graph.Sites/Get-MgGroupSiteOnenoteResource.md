@@ -13,6 +13,9 @@ Getting a resources collection is not supported, but you can get the binary cont
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenoteResource](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenoteResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

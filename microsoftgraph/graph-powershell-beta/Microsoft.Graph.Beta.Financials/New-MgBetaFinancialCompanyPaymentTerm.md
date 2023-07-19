@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to paymentTerms for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyPaymentTerm](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyPaymentTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

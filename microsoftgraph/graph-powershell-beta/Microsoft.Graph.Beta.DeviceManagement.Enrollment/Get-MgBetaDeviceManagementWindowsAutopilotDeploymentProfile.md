@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Windows auto pilot deployment profiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowsAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeploymentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

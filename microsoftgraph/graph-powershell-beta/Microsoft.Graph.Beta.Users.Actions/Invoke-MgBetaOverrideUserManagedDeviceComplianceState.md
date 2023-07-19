@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action overrideComplianceState
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgOverrideUserManagedDeviceComplianceState](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgOverrideUserManagedDeviceComplianceState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### OverrideExpanded (Default)

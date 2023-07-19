@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdministrativeUnitMemberAsDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitMemberAsDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

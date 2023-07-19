@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### BatchExpanded (Default)

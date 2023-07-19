@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Used for navigating to the trending document.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTrendingResourceInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserTrendingResourceInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

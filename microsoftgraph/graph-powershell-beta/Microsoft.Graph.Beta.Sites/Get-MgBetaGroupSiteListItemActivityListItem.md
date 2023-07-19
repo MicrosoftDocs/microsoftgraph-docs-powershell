@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get listItem from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemActivityListItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemActivityListItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

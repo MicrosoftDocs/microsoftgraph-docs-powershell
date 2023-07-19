@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOffice365GroupsActivityCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365GroupActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365GroupActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

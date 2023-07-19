@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property sensitivityPolicySettings for informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

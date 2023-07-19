@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSkypeForBusinessParticipantActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessParticipantActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessParticipantActivityUserCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

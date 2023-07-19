@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Definition of the previous version of this definition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

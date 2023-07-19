@@ -13,6 +13,9 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootChild](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootChild?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

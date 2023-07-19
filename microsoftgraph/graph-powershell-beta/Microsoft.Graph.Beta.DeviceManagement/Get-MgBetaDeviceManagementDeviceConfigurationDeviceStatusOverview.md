@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device Configuration devices status overview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

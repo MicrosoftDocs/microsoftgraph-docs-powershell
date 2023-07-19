@@ -11,6 +11,9 @@ schema: 2.0.0
 Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns `404 Not found`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

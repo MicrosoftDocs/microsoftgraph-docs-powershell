@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property messages for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

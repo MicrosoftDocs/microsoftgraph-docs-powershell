@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get licenseDetails from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

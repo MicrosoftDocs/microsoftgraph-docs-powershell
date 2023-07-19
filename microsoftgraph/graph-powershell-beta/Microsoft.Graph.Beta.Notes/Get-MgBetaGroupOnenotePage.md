@@ -12,6 +12,9 @@ The pages in all OneNote notebooks that are owned by the user or group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenotePage](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenotePage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

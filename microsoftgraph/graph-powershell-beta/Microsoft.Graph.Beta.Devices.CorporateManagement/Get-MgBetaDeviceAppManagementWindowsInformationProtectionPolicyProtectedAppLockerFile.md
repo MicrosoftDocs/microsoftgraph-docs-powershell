@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Another way to input protected apps through xml files
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionPolicyProtectedAppLockerFile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

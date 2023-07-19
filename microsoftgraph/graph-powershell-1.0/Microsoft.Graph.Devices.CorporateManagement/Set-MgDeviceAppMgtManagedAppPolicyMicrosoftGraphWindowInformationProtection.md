@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device configuration states for this device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgDeviceAppMgtManagedAppPolicyMicrosoftGraphWindowInformationProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

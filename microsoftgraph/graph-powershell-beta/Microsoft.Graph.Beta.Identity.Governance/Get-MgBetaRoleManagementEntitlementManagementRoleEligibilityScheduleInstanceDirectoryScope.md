@@ -11,6 +11,9 @@ schema: 2.0.0
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleInstanceDirectoryScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

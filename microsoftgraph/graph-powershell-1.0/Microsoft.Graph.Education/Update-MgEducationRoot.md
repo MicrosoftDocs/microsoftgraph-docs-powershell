@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

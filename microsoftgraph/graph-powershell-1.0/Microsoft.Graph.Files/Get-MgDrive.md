@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from drives by key
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

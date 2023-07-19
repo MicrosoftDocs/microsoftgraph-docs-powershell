@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an item from a [bundle][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveItemChild](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveItemChild?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

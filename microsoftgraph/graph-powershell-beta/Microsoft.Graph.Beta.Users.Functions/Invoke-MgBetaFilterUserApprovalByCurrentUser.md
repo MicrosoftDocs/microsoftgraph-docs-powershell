@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function filterByCurrentUser
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterUserApprovalByCurrentUser](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgFilterUserApprovalByCurrentUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Filter (Default)

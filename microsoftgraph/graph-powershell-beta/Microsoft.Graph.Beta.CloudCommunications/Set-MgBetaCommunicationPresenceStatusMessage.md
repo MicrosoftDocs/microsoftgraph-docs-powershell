@@ -11,6 +11,9 @@ schema: 2.0.0
 Set a presence status message for a user.
 An optional expiration date and time can be supplied.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgCommunicationPresenceStatusMessage](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgCommunicationPresenceStatusMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a delegatedAdminRelationship object.
 A relationship can only be updated if it's in the `created` **status**.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTenantRelationshipDelegatedAdminRelationship](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Update-MgTenantRelationshipDelegatedAdminRelationship?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

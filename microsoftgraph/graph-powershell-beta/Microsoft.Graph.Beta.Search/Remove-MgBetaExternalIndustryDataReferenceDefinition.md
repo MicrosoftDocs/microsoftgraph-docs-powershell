@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property referenceDefinitions for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgExternalIndustryDataReferenceDefinition](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataReferenceDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

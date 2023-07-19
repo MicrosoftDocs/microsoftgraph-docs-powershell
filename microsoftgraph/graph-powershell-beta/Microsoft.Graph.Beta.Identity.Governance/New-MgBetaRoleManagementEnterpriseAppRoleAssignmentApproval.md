@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignmentApprovals for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEnterpriseAppRoleAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

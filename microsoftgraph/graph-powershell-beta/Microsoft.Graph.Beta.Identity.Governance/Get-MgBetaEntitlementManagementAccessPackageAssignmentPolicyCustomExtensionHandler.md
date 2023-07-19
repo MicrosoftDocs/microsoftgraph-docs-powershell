@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of stages when to execute one or more custom access package workflow extensions.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionHandler?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

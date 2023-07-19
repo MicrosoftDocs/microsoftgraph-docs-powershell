@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getConfigurationPolicyDevicesReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportConfigurationPolicyDeviceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportConfigurationPolicyDeviceReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

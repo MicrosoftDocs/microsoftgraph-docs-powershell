@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action windowsDefenderScan
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ScanExpanded (Default)

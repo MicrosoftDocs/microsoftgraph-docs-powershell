@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the details of an outboundSharedUserProfile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

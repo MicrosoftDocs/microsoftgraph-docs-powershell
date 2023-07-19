@@ -11,6 +11,9 @@ schema: 2.0.0
 Add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

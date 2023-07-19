@@ -11,6 +11,9 @@ schema: 2.0.0
 Postpone action on an impactedResource object to a specified future date and time by marking its **status** as `postponed`.
 On the specified date and time, Azure AD will automatically mark the status of the **impactedResource** object to `active`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPostponeDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgPostponeDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PostponeExpanded (Default)

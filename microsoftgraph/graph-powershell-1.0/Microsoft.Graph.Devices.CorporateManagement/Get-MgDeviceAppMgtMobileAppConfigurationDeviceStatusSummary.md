@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 App configuration device status summary.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

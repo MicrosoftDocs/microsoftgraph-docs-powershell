@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to defaultPages for identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2CUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2CUserFlowLanguageDefaultPage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

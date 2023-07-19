@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new **plannerPlan**.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

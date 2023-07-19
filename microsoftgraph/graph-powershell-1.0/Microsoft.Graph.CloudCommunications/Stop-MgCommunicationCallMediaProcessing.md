@@ -14,6 +14,9 @@ The **cancelMediaProcessing** method cancels any operation that is in-process as
 For example, this method can be used to clean up the IVR operation queue for a new media operation.
 However, it will not cancel a **subscribeToTone** operation because it operates independent of any operation queue.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Stop-MgBetaCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)

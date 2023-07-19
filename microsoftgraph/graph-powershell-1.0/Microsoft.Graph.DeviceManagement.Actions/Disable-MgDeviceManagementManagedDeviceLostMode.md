@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Disable lost mode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Disable-MgBetaDeviceManagementManagedDeviceLostMode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Disable-MgDeviceManagementManagedDeviceLostMode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Disable (Default)

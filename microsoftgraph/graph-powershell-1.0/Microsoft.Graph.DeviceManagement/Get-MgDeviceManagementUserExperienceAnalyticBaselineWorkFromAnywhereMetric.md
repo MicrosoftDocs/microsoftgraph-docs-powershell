@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The scores and insights for the work from anywhere metrics.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

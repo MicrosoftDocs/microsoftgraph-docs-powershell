@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection property of AppLogUploadRequest.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

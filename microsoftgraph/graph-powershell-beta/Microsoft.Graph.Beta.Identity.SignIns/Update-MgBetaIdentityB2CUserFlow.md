@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a b2cIdentityUserFlow object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityB2CUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlow?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

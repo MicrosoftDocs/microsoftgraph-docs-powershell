@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of messages in the mailFolder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessage](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

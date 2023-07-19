@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only collection of role definitions that the given role definition inherits from.
 Only Azure AD built-in roles support this attribute.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

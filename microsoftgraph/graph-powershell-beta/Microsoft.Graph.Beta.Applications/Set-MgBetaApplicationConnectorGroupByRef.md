@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign a connectorGroup to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

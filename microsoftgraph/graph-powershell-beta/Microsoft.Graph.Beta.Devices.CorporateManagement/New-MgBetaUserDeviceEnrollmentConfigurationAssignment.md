@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to assignments for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserDeviceEnrollmentConfigurationAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

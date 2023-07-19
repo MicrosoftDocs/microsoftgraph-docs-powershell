@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property photo from teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPhotoContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

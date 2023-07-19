@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgSearchEntity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

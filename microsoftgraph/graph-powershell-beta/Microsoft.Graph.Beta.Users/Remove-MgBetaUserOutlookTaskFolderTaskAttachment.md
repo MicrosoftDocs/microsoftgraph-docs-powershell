@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property attachments for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOutlookTaskFolderTaskAttachment](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTaskFolderTaskAttachment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootActivityByInterval](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupDriveRootActivityByInterval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

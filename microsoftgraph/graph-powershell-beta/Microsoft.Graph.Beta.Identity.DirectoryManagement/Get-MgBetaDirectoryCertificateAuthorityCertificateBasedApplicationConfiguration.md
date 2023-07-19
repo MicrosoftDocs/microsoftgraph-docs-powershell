@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get certificateBasedApplicationConfigurations from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

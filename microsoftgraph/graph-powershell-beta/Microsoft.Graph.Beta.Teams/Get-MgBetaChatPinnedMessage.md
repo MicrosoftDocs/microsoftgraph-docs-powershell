@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the pinned messages in the chat.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPinnedMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

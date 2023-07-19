@@ -11,6 +11,9 @@ schema: 2.0.0
 References the principal that's in the scope of this membership or ownership assignment request to the group that's governed by PIM.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernancePrivilegedAccessGroupAssignmentSchedulePrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

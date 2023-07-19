@@ -11,6 +11,9 @@ schema: 2.0.0
 Return all directory extension definitions that have been registered in a directory, including through multi-tenant apps.
 The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Get-MgDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

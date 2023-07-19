@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The zip file that contains all attachments for a message.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

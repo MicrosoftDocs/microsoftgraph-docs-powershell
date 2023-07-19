@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceRoleManagementAlertDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new staff member in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessStaffMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

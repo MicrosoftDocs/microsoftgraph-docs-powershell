@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The terms and conditions associated with device management of the company.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -12,6 +12,9 @@ The scoped-role administrative unit memberships for this user.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgUserScopedRoleMemberOf?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

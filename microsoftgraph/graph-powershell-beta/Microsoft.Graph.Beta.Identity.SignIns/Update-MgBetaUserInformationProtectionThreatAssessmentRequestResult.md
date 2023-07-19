@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property results in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgUserInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

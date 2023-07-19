@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to referenceDefinitions for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataReferenceDefinition](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataReferenceDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

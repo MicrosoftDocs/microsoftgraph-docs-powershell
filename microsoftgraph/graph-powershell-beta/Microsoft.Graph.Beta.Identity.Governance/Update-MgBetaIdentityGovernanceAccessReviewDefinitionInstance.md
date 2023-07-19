@@ -13,6 +13,9 @@ Only the **reviewers** and **fallbackReviewers** properties can be updated but t
 You can only add reviewers to the **fallbackReviewers** property but can't remove existing **fallbackReviewers**.
 To update an **accessReviewInstance**, it's **status** must be `InProgress`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

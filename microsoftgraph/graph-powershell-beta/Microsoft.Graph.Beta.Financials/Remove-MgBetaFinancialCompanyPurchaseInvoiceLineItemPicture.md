@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property picture for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanyPurchaseInvoiceLineItemPicture](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyPurchaseInvoiceLineItemPicture?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

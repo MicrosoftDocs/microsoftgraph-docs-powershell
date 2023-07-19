@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the metadata for an [item][] in a [list][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListItem](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

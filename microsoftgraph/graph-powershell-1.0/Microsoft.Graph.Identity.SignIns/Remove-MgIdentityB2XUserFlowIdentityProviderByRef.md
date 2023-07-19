@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property userFlowIdentityProviders for identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProviderByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

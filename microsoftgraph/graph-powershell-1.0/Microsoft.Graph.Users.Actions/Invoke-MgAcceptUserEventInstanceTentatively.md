@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Accept the specified event in a user calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgAcceptUserEventInstanceTentatively?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)

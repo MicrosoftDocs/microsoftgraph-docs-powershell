@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property assignments in education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationMeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

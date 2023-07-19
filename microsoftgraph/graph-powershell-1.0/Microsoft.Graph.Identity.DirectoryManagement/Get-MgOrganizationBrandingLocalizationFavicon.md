@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get favicon for the navigation property localizations from organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

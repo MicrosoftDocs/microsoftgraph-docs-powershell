@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property macOSSoftwareUpdateAccountSummaries for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

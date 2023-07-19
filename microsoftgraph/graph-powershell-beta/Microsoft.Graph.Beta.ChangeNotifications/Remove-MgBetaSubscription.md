@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Remove-MgSubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property roleAssignmentScheduleInstances for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function summary
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummaryIdentityGovernanceLifecycleWorkflowTaskReport](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Invoke-MgSummaryIdentityGovernanceLifecycleWorkflowTaskReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Summary (Default)

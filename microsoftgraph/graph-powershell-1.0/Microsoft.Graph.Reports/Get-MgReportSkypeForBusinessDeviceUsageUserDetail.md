@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSkypeForBusinessDeviceUsageUserDetail
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSkypeForBusinessDeviceUsageUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

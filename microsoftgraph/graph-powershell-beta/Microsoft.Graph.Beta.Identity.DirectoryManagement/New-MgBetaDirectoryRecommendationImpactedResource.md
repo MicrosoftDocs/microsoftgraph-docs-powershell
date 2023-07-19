@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to impactedResources for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

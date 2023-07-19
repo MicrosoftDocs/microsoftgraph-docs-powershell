@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of setting categories within the intent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

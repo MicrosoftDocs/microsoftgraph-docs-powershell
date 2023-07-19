@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action start
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgPrintShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Start-MgPrintShareJob?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Start (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getActiveKey
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTrustFrameworkKeySetActiveKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySetActiveKey?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

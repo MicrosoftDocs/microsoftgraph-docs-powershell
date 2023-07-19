@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the default configuration of a cross-tenant access policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

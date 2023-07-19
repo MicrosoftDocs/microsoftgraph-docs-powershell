@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property decisions in accessReviews
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReviewDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

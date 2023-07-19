@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleAssignmentSchedules in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEnterpriseAppRoleAssignmentSchedule](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleAssignmentSchedule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

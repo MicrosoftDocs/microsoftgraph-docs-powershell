@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an operationalInsightsConnection object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesResourceConnection](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getByPath
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteByPath](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteByPath?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

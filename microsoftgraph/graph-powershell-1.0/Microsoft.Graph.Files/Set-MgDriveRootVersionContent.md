@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream for this version of the item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaDriveRootVersionContent](/powershell/module/Microsoft.Graph.Beta.Files/Set-MgDriveRootVersionContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

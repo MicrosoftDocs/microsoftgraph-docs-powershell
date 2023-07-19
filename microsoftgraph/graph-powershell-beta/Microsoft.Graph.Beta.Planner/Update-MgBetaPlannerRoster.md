@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property rosters in planner
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerRoster?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

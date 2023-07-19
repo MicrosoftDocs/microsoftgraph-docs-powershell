@@ -12,6 +12,9 @@ Retrieve a callTranscript object associated with an onlineMeeting.
 Retrieving the transcript returns the metadata of the single transcript associated with the online meeting.
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionTranscript](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionTranscript?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

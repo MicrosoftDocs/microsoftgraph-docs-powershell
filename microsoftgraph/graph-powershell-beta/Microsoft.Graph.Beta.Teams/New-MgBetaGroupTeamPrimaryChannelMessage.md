@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send a new chatMessage in the specified channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamPrimaryChannelMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

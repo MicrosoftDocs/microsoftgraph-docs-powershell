@@ -11,6 +11,9 @@ schema: 2.0.0
 Add the large gallery view to a call.
 For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Add-MgCommunicationCallLargeGalleryView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

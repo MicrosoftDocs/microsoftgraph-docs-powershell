@@ -13,6 +13,9 @@ This API is useful when a label should be set automatically based on classificat
 To evaluate based on classification results, provide contentInfo, which includes existing content metadata key/value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteInformationProtectionPolicyLabelClassificationResult](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionPolicyLabelClassificationResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)

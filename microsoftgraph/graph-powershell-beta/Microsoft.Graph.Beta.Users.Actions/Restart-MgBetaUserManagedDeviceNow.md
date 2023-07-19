@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reboot device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restart-MgUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserManagedDeviceNow?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reboot (Default)

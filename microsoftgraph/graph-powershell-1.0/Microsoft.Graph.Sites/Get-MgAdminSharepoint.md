@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get sharepoint from admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgAdminSharepoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

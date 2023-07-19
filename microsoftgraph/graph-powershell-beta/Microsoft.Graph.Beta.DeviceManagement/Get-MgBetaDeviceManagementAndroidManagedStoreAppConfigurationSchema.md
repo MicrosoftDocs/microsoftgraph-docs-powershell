@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Android Enterprise app configuration schema entities.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSearchEntity](/powershell/module/Microsoft.Graph.Beta.Search/Update-MgSearchEntity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

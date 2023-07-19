@@ -12,6 +12,9 @@ In Azure AD entitlement management, callers can automatically reevaluate and enf
 The **state** of the access package assignment must be `Delivered` for the administrator to reprocess the user's assignment.
 Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reprocess (Default)

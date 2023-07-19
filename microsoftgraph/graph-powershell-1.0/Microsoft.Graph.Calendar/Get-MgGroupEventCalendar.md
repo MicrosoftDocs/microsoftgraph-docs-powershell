@@ -12,6 +12,9 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEventCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgGroupEventCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

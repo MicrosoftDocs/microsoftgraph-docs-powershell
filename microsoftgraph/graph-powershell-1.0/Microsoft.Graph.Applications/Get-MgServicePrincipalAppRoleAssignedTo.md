@@ -11,6 +11,9 @@ schema: 2.0.0
 App role assignments for this app or service, granted to users, groups, and other service principals.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

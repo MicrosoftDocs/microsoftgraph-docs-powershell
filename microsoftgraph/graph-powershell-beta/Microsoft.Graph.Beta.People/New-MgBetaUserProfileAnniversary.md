@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new personAnniversary object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserProfileAnniversary](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAnniversary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

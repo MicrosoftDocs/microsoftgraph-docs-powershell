@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a member from a standard tag in a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamTagMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamTagMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

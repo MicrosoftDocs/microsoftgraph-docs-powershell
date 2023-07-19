@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only property with details of the app-specific scope when the assignment or role eligibility is scoped to an app.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleEligibilityScheduleInstanceAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

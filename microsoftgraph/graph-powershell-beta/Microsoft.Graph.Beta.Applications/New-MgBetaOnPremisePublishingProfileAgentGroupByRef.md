@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property ref to agentGroups for onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfileAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgentGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)

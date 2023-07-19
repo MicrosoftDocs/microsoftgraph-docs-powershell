@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Send (Default)

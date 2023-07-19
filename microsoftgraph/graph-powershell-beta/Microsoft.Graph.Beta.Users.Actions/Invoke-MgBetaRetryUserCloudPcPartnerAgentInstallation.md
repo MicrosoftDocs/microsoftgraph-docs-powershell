@@ -11,6 +11,9 @@ schema: 2.0.0
 Retry installation for the partner agents which failed to install on the Cloud PC.
 Service side will check which agent installation failed firstly and retry.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryUserCloudPcPartnerAgentInstallation](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetryUserCloudPcPartnerAgentInstallation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Retry (Default)

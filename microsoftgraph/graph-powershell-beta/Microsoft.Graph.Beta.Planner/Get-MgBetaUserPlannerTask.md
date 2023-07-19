@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of **plannertask** objects assigned to a User.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerTask](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

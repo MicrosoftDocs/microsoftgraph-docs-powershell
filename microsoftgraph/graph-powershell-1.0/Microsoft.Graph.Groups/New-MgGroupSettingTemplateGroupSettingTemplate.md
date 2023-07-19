@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to groupSettingTemplates
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

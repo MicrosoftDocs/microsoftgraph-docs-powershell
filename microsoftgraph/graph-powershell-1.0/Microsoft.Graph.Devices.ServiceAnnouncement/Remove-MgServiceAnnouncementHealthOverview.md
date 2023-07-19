@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property healthOverviews for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementHealthOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

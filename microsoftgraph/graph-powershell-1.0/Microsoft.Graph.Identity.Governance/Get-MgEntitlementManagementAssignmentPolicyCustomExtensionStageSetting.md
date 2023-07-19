@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get customExtensionStageSettings from identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

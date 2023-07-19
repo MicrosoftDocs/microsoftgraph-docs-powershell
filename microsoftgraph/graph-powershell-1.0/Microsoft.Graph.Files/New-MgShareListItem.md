@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new [listItem][] in a [list][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

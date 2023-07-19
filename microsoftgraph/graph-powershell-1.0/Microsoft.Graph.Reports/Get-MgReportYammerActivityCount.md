@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getYammerActivityCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportYammerActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

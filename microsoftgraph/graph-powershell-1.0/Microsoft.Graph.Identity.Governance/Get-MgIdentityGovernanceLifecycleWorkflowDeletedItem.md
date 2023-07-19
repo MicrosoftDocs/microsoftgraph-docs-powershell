@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deleted workflows in your lifecycle workflows instance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

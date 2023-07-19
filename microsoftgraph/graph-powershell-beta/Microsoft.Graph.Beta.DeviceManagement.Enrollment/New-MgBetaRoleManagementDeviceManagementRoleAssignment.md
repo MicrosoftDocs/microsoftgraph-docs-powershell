@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new unifiedRoleAssignmentMultiple object for an RBAC provider.
 The following RBAC providers are currently supported:n- Cloud PC n- device management (Intune) For other Microsoft 365 applications (like Azure AD), use unifiedRoleAssignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an event object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgGroupEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

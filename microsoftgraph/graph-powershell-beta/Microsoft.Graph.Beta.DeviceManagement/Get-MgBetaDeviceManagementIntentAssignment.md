@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of assignments
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

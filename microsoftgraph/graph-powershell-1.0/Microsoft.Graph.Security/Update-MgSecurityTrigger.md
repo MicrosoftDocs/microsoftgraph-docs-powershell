@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggers in security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityTrigger](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityTrigger?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

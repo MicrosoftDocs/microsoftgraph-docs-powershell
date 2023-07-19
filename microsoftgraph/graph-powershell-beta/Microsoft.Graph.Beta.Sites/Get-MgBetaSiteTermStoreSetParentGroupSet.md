@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 All sets under the group in a term [store].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetParentGroupSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

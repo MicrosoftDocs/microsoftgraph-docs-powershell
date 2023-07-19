@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieves the list of devices with failed or pending apps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceWithFailedApp](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceWithFailedApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

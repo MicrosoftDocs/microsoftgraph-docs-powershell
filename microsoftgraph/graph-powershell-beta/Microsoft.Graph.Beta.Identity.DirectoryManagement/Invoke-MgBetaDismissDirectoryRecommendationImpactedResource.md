@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Dismiss an impactedResources object and update its status to `dismissed`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgDismissDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)

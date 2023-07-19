@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subscriptions for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgUserDriveListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

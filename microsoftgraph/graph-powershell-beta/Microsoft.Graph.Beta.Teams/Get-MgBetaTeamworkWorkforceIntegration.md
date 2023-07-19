@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a workforceintegration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkWorkforceIntegration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

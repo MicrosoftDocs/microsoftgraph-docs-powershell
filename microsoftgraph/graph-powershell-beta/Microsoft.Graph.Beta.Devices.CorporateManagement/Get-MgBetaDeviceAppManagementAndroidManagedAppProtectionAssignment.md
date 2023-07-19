@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementAndroidManagedAppProtectionAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

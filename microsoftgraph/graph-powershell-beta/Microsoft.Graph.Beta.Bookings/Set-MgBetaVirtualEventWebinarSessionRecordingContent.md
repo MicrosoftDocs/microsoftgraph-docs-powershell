@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property recordings in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgVirtualEventWebinarSessionRecordingContent](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventWebinarSessionRecordingContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

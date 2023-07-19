@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new reviewSet object.
 The request body contains the display name of the review set, which is the only writable property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

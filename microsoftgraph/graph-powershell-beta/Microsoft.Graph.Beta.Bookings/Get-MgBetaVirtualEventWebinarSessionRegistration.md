@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionRegistration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

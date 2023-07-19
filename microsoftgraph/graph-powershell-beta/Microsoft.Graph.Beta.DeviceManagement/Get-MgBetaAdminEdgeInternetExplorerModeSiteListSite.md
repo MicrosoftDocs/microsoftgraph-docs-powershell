@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a browserSite that resides on a browserSiteList.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminEdgeInternetExplorerModeSiteListSite](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteListSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

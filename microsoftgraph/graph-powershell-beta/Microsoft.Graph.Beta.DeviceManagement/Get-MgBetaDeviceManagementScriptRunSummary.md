@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Run summary for device management script.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementScriptRunSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementScriptRunSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The available categories
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

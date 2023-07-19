@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update picture for the navigation property companyInformation in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgFinancialCompanyInformationPicture](/powershell/module/Microsoft.Graph.Financials/Set-MgFinancialCompanyInformationPicture?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

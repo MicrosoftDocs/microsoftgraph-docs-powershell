@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Recover passcode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restore-MgDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Recover (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Zero or more long running operations triggered on the app registration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedAppRegistrationOperation](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtManagedAppRegistrationOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

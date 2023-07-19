@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update favicon for the navigation property branding in organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgOrganizationBrandingFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

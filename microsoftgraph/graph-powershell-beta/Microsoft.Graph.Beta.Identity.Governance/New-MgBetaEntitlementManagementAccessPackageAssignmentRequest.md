@@ -11,6 +11,9 @@ schema: 2.0.0
 In Azure AD Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, or to remove an access package assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateRequestAdminAdd (Default)

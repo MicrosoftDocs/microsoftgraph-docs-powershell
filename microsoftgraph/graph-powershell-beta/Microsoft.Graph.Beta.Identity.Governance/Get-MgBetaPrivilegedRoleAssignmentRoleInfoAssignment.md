@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get assignments from privilegedRoleAssignments
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedRoleAssignmentRoleInfoAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleAssignmentRoleInfoAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

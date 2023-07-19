@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Perform MDM key recovery and TPM attestation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementComanagedDeviceMobileDeviceManagementKeyRecovery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Initiate (Default)

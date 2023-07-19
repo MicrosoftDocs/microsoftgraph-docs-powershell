@@ -11,6 +11,9 @@ schema: 2.0.0
 Identity of the user who created the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgUserDriveCreatedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

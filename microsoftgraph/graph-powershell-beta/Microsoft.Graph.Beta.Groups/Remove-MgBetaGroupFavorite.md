@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFavorite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Remove (Default)

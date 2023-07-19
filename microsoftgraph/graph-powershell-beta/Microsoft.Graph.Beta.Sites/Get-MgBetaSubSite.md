@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSubSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List2 (Default)

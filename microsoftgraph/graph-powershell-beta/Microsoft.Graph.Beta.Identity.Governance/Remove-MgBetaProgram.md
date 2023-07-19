@@ -12,6 +12,9 @@ In the Azure AD access reviews feature, delete a program object.
 Do not delete a program which still has `programControl` linked to it, those access reviews should first be deleted or unlinked from the program and linked to a different program.
 Also, please note that the built-in default program cannot be deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgram?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

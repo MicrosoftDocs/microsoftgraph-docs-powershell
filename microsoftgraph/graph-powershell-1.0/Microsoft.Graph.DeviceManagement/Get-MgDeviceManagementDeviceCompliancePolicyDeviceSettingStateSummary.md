@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Compliance Setting State Device Summary
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceSettingStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

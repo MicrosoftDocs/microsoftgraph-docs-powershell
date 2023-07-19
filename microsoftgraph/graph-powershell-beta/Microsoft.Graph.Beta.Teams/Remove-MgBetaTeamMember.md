@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a conversationMember from a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

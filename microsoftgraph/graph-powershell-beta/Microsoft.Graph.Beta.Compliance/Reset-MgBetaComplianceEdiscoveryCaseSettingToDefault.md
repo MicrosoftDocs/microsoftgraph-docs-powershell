@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgComplianceEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Compliance/Reset-MgComplianceEdiscoveryCaseSettingToDefault?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reset (Default)

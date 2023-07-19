@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a plannerUser object.
 The returned properties include the user's favorite plans and recently viewed plans.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlanner?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

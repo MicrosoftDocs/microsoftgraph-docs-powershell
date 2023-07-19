@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of Exchange Connectors configured by the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeConnector?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Apply approve or deny decision on an approvalStep object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagementRoleAssignmentApprovalStep?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

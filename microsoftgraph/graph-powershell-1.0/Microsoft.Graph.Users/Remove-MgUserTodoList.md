@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property shiftPreferences for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgUserTodoList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

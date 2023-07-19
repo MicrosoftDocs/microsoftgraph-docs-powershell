@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of Vpp tokens for this organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtVppToken?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

@@ -11,6 +11,9 @@ schema: 2.0.0
 Returns a list of activities performed on the item.
 Write-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

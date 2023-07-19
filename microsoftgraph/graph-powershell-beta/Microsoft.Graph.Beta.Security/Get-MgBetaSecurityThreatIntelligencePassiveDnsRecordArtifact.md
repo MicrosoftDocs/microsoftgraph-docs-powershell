@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The artifact related to this passiveDnsRecord entry.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecordArtifact?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

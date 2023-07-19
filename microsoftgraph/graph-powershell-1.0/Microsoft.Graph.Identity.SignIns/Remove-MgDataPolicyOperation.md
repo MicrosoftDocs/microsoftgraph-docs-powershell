@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from dataPolicyOperations
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgDataPolicyOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

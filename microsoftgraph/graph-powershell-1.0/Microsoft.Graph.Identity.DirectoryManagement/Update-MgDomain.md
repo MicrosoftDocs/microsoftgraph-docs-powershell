@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of domain object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

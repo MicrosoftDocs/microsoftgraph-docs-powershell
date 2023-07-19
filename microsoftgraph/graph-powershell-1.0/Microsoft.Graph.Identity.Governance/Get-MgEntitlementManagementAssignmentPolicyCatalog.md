@@ -11,6 +11,9 @@ schema: 2.0.0
 Catalog of the access package containing this policy.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyCatalog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a **plannerPlan** object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

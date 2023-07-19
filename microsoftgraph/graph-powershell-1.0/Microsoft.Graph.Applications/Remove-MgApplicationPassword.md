@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a password from an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplicationPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

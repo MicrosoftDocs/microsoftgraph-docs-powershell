@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpin a message from a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatPinnedMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

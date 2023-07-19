@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property microsoftTunnelServers in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

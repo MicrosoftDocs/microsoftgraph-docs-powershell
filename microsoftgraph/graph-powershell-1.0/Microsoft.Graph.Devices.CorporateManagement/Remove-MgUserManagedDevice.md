@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property managedDevices for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

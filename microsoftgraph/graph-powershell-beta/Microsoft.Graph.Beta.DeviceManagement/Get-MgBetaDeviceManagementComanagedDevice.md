@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of co-managed devices report
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

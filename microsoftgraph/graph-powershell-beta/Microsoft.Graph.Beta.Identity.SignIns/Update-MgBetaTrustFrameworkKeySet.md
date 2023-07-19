@@ -12,6 +12,9 @@ Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

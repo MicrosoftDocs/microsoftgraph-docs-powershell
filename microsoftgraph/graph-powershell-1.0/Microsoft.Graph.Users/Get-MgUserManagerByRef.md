@@ -11,6 +11,9 @@ schema: 2.0.0
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserManagerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

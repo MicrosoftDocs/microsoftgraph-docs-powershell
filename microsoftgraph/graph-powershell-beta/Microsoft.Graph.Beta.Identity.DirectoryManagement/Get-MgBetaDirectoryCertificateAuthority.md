@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get certificateAuthorities from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

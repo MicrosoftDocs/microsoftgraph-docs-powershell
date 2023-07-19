@@ -12,6 +12,9 @@ The section groups in the notebook.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteNotebookSectionGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

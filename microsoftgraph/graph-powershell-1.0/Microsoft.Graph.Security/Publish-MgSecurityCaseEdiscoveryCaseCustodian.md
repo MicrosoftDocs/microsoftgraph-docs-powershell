@@ -11,6 +11,9 @@ schema: 2.0.0
 Release a custodian from a case.
 For details, see Release a custodian from a case.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Release (Default)

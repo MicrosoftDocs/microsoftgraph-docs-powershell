@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get dailyPrintUsage from reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

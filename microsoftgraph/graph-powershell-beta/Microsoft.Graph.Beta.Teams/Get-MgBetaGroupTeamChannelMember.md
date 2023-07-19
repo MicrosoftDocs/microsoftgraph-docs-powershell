@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a conversationMember from a channel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

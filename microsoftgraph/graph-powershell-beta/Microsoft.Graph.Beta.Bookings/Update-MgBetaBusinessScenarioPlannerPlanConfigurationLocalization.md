@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a plannerPlanConfigurationLocalization object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBusinessScenarioPlannerPlanConfigurationLocalization](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlannerPlanConfigurationLocalization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

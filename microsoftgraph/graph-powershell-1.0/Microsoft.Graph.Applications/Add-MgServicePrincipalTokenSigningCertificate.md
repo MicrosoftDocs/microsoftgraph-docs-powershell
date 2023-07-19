@@ -17,6 +17,9 @@ When set during creation through the **displayName** property, the subject of th
 The **startDateTime** is set to the same time the certificate is created using the action.
 The **endDateTime** can be up to three years after the certificate is created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to logCollectionRequests for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/New-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

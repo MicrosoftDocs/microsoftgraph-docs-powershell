@@ -12,6 +12,9 @@ Retrieve a single chat (without its messages).
 This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

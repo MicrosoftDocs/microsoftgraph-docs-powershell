@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The imported device identities.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

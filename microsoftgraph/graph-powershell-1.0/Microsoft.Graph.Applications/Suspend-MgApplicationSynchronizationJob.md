@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action pause
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Suspend-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Suspend-MgApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Pause (Default)

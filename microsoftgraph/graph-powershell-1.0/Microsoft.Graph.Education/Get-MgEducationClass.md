@@ -13,6 +13,9 @@ A class is a universal group with a special property that indicates to the syste
 Group members represent the students; group admins represent the teachers in the class.
 If you're using the delegated token, the user will only see classes in which they are members.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClass?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property columns for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgGroupDriveListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

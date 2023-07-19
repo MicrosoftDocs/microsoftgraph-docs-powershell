@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 User experience analytics devices without cloud identity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceWithoutCloudIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

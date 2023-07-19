@@ -12,6 +12,9 @@ Update the properties of the currently authenticated organization.
 In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.
 The **ID** is also known as the **tenantId** of the organization.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

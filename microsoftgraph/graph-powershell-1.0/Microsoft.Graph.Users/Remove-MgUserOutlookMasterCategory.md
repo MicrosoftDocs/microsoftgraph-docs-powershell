@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

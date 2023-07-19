@@ -12,6 +12,9 @@ Get a set of mail folders that have been added, deleted, or removed from the use
 A **delta** function call for mail folders in a mailbox is similar to a GET request, except that by appropriately \napplying state tokens in one or more of these calls, \nyou can query for incremental changes in the mail folders.
 This allows you to maintain and synchronize \na local store of a user's mail folders without having to fetch all the mail folders of that mailbox from the server every time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolderDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserMailFolderChildFolderDelta?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

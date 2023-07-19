@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a user or group from the rejected-senders list of the specified group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupRejectedSenderByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

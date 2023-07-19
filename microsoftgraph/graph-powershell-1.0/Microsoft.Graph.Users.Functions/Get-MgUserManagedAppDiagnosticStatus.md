@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Gets diagnostics validation status for a given user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppDiagnosticStatus](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgUserManagedAppDiagnosticStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
 This function is transitive.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdministrativeUnitMemberGroup](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitMemberGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

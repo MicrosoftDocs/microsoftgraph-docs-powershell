@@ -12,6 +12,9 @@ Evaluate whether a user or device is or would be a member of a dynamic group.
 The membership rule is returned along with other details that were used in the evaluation.
 You can complete this operation in the following ways:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupDynamicMembership](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembership?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)

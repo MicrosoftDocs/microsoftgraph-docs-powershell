@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Uninstalls an app from the specified team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

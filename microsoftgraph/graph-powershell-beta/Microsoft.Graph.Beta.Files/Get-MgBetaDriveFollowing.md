@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of items the user is following.
 Only in OneDrive for Business.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveFollowing](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowing?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

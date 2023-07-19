@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property listItem for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveItemListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveItemListItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

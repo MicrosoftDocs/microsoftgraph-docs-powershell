@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

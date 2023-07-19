@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

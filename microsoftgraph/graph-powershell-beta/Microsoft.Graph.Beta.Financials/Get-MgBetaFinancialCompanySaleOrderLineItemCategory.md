@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get itemCategory from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanySaleOrderLineItemCategory](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleOrderLineItemCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

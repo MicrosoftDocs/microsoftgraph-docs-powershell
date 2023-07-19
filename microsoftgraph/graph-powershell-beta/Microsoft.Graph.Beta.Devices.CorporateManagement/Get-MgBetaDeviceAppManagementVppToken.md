@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of Vpp tokens for this organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

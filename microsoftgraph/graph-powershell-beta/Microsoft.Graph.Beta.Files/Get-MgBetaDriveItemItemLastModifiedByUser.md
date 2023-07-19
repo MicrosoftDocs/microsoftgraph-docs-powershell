@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastModifiedByUser from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemItemLastModifiedByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

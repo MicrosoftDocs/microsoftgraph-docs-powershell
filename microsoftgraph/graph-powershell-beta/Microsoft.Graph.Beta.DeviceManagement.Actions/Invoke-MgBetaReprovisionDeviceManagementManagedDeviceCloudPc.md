@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reprovision a Cloud PC with an Intune managed device ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReprovisionDeviceManagementManagedDeviceCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cloud (Default)

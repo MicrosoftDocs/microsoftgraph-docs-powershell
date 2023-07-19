@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a [content type][contentType].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

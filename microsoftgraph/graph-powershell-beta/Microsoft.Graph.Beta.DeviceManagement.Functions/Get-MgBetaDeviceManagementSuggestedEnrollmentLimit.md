@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSuggestedEnrollmentLimit
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementSuggestedEnrollmentLimit](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementSuggestedEnrollmentLimit?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

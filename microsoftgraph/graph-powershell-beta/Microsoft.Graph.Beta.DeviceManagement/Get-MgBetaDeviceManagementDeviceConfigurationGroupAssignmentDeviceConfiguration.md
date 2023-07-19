@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The navigation link to the Device Configuration being targeted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationGroupAssignmentDeviceConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the activity status of a Microsoft Teams-enabled device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeviceActivity](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

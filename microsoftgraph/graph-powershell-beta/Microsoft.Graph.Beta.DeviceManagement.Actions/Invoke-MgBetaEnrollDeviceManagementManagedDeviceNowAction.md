@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Trigger comanagement enrollment action on ConfigurationManager client
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgEnrollDeviceManagementManagedDeviceNowAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgEnrollDeviceManagementManagedDeviceNowAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Enroll (Default)

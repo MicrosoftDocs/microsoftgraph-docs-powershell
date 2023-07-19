@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getNoncompliantDevicesAndSettingsReport
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportNoncompliantDeviceAndSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgDeviceManagementReportNoncompliantDeviceAndSettingReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

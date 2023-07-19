@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The appManagementPolicy applied to this application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

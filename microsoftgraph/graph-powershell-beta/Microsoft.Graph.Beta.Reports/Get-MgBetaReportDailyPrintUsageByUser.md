@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of daily print usage summaries, grouped by user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

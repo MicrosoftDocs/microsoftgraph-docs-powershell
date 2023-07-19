@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an onPremisesAgentGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOnPremisePublishingProfileAgentGroup](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileAgentGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

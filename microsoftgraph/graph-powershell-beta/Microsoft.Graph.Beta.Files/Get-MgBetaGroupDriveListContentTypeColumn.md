@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

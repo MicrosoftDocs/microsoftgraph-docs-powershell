@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deployment profile intended to be assigned to the Windows autopilot device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeviceIdentityIntendedDeploymentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

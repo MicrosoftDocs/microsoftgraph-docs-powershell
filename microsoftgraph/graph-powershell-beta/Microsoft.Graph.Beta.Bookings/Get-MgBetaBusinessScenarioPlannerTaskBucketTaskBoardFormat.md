@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of **plannerBucketTaskBoardTaskFormat** object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBusinessScenarioPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlannerTaskBucketTaskBoardFormat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

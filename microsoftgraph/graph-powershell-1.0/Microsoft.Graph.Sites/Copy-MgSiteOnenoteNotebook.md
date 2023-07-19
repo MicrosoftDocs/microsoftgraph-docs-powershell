@@ -11,6 +11,9 @@ schema: 2.0.0
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgSiteOnenoteNotebook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

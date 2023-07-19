@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgUnfollowDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Unfollow (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getApplicableContentTypesForList
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteApplicableContentTypeForList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

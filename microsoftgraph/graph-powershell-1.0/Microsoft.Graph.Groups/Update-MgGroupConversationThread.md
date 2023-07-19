@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property threads in groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupConversationThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

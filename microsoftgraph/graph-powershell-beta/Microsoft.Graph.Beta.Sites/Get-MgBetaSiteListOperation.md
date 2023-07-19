@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of long running operations for the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

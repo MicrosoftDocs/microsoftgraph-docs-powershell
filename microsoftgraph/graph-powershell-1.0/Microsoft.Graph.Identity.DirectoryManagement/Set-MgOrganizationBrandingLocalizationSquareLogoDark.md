@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update squareLogoDark for the navigation property localizations in organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

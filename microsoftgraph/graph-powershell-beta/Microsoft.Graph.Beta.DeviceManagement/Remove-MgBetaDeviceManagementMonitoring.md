@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property monitoring for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

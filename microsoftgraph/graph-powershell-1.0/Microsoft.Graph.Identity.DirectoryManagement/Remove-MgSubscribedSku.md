@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from subscribedSkus
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Remove-MgSubscribedSku?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

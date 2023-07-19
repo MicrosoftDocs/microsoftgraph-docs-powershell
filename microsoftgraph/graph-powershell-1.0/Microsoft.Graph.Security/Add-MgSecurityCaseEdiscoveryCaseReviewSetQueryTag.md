@@ -11,6 +11,9 @@ schema: 2.0.0
 Apply tags to files in an eDiscovery review set.
 For details, see Tag documents in a review set in eDiscovery.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)

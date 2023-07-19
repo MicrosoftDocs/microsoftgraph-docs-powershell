@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List the recent activities that took place on an item or under a hierarchy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveActivity](/powershell/module/Microsoft.Graph.Files/Get-MgDriveActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

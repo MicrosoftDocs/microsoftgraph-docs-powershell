@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unenrollAssetsById
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphWindowsUpdatesPolicyAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgGraphWindowsUpdatesPolicyAudienceExclusion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GraphExpanded (Default)

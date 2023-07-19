@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

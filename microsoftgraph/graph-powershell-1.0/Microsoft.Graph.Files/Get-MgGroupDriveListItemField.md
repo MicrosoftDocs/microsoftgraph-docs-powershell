@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

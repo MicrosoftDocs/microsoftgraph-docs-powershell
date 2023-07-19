@@ -12,6 +12,9 @@ Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveItemPermission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an educationSchool object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

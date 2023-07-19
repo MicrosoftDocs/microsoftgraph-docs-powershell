@@ -11,6 +11,9 @@ schema: 2.0.0
 Check a user's password against the organization's password validation policy and report whether the password is valid.
 Use this action to provide real-time feedback on password strength while the user types their password.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserPassword?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

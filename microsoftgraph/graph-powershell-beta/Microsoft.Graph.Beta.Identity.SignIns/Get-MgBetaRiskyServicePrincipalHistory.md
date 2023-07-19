@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the risk history of Azure AD service principals.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipalHistory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

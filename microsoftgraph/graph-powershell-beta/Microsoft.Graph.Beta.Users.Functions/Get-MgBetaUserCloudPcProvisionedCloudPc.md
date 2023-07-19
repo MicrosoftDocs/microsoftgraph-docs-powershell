@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getProvisionedCloudPCs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCloudPcProvisionedCloudPc](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcProvisionedCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

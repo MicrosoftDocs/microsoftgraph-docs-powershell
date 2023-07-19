@@ -19,6 +19,9 @@ This criteria for the **owner** property allows a signed-in user to make updates
 When using Graph Explorer to update a **schemaExtension** resource, include the **owner** property in the PATCH request body.
 For more information, see the Extensions section in Known issues with Microsoft Graph.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Update-MgSchemaExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

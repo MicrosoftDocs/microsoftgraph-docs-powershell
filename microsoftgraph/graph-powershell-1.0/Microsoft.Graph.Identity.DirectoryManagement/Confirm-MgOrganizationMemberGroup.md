@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Validates the ownership of the domain.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaOrganizationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgOrganizationMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Verify (Default)

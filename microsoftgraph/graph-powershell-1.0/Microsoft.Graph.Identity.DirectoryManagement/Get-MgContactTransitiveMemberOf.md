@@ -12,6 +12,9 @@ Groups that this contact is a member of, including groups that the contact is ne
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactTransitiveMemberOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

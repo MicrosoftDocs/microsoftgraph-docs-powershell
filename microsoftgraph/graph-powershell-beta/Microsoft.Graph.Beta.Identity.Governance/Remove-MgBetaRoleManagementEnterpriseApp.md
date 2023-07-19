@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property enterpriseApps for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementEnterpriseApp](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementEnterpriseApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

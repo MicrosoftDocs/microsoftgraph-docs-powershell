@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the Proprietary Device Health Script
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementDeviceHealthScriptGlobalScriptHighestAvailableVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

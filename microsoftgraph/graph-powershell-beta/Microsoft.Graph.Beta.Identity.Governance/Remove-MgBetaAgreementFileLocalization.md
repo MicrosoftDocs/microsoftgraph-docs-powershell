@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property localizations for agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAgreementFileLocalization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

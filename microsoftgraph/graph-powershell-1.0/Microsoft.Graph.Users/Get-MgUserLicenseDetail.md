@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of this user's license details.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserLicenseDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

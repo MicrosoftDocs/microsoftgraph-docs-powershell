@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In Azure AD entitlement management, approve or deny an approvalStage object in an approval.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

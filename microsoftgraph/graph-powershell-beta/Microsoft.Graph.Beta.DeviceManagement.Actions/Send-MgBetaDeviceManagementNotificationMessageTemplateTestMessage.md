@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sends test message using the specified notificationMessageTemplate in the default locale
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgDeviceManagementNotificationMessageTemplateTestMessage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Send-MgDeviceManagementNotificationMessageTemplateTestMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Send (Default)

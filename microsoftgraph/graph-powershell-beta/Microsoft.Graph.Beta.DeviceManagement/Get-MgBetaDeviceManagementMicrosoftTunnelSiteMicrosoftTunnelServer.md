@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A list of MicrosoftTunnelServers that are registered to this MicrosoftTunnelSite
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a connectorGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

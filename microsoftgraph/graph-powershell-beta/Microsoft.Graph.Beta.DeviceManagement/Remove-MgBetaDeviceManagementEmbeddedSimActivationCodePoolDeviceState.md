@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deviceStates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

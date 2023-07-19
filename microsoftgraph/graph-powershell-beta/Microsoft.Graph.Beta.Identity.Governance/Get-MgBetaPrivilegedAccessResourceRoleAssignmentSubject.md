@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 The subject associated with the role assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceRoleAssignmentSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentSubject?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

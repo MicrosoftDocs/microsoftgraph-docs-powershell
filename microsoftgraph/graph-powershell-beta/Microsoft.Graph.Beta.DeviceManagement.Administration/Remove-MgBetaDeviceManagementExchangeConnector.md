@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property exchangeConnectors for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementExchangeConnector?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

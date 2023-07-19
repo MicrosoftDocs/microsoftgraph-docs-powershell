@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Move a mailfolder and its contents to another mailfolder.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgUserMailFolderChildFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MoveExpanded (Default)

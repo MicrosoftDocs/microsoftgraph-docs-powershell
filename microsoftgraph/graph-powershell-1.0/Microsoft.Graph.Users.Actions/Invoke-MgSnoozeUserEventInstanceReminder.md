@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action windowsDefenderScan
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ScanExpanded (Default)

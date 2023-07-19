@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to issues for admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/New-MgServiceAnnouncementIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

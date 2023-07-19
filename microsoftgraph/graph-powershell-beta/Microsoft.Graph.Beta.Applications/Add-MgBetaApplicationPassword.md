@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds a strong password to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

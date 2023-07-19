@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Tags associated with the file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileTag](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSetFileTag?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

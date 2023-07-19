@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action requestSignupUrl
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Request-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Request-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingSignupUrl?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RequestExpanded (Default)

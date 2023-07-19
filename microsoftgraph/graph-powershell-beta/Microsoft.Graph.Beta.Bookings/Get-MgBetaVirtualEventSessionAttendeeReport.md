@@ -11,6 +11,9 @@ schema: 2.0.0
 The content stream of the attendee report of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionAttendeeReport](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionAttendeeReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

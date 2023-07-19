@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

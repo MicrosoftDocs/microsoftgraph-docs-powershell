@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFeatureRolloutPolicyApplyToByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

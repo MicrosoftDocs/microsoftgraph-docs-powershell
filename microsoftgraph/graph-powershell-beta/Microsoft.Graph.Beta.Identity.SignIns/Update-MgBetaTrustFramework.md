@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update trustFramework
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTrustFramework](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFramework?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

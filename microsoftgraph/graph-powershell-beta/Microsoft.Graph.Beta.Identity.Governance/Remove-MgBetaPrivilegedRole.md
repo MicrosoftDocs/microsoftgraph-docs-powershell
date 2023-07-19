@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from privilegedRoles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivilegedRole](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

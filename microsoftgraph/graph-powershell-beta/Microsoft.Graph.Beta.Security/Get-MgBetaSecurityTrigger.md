@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get triggers from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTrigger](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTrigger?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

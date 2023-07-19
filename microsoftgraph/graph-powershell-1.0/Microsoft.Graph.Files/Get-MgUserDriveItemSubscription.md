@@ -11,6 +11,9 @@ schema: 2.0.0
 The set of subscriptions on the item.
 Only supported on the root of a drive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgUserDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

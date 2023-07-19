@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an identityUserFlowAttribute.
 Only custom user flow attributes can be deleted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityUserFlowAttribute?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property messages in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Set-MgUserMessageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

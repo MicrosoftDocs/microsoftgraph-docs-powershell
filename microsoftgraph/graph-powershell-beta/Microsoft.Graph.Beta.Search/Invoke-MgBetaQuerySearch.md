@@ -11,6 +11,9 @@ schema: 2.0.0
 Run a specified search query.
 Search results are provided in the response.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)

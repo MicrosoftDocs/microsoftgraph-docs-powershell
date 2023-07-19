@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property windowsProtectionState for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

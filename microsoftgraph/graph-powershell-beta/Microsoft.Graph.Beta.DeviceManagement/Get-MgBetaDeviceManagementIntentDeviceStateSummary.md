@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceStateSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

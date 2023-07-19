@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a connectionOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

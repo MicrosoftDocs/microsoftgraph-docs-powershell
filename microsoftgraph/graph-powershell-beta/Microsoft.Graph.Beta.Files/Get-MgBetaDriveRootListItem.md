@@ -12,6 +12,9 @@ For drives in SharePoint, the associated document library list item.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootListItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootListItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

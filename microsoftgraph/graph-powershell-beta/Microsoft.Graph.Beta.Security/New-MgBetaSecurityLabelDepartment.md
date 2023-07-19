@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new departmentTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelDepartment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

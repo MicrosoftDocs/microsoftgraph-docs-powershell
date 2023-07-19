@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Security baseline states for this device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

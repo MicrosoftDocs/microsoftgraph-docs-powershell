@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In Azure AD entitlement management, delete an accessPackageAssignmentPolicy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

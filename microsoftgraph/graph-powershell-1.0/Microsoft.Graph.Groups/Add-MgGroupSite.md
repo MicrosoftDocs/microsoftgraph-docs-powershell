@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Add-MgGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

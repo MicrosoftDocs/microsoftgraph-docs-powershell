@@ -13,6 +13,9 @@ Provided so that callers can get the directory object using $expand at the same 
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryTransitiveRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

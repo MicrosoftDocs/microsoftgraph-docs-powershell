@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a languageProficiency object within a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileLanguage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

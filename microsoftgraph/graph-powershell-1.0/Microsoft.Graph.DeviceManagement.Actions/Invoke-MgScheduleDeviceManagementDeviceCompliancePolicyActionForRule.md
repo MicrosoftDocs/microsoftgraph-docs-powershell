@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action scheduleActionsForRules
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaScheduleDeviceManagementDeviceCompliancePolicyActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgScheduleDeviceManagementDeviceCompliancePolicyActionForRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ScheduleExpanded (Default)

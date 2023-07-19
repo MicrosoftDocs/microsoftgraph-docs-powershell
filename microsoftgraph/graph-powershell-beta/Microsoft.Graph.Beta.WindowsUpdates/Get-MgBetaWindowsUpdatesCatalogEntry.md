@@ -11,6 +11,9 @@ schema: 2.0.0
 Lists the content that you can approve for deployment.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesCatalogEntry](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesCatalogEntry?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property attendanceReports for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingAttendanceReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)

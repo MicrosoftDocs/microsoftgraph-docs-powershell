@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property results in informationProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

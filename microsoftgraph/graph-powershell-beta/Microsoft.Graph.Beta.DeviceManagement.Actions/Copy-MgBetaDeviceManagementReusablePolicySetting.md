@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action clone
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgDeviceManagementReusablePolicySetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Copy-MgDeviceManagementReusablePolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Clone (Default)

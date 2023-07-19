@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Sync the driver inventory of a WindowsDriverUpdateProfile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceManagementWindowsDriverUpdateProfileInventory](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementWindowsDriverUpdateProfileInventory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Sync (Default)

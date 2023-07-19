@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Allow applications to share screen content with the participants of a group call.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Rename-MgCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.CloudCommunications/Rename-MgCommunicationCallScreenSharingRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)

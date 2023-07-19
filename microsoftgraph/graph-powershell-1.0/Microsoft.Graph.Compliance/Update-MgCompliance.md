@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update compliance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgCompliance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

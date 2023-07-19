@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewSiteOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgPreviewSiteOnenoteSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Preview (Default)

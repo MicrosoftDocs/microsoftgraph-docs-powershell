@@ -11,6 +11,9 @@ schema: 2.0.0
 Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

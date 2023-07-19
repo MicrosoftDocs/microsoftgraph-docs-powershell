@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to usageRights for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDeviceUsageRights](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDeviceUsageRights?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

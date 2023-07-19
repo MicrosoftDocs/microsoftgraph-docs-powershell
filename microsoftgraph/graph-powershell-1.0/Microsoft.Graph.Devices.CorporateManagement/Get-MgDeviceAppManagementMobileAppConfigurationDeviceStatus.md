@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of ManagedDeviceMobileAppConfigurationDeviceStatus.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagementMobileAppConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppConfigurationDeviceStatus?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

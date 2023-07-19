@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Summary of all certificates for all devices.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

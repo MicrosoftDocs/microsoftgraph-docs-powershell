@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The available templates
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

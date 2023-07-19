@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset passcode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)

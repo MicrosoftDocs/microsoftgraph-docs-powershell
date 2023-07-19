@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get accounts from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyAccount](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyAccount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

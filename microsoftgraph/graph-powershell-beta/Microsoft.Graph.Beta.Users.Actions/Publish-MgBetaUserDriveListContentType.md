@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Publishes a [contentType][] present in a content type hub site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Publish-MgUserDriveListContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

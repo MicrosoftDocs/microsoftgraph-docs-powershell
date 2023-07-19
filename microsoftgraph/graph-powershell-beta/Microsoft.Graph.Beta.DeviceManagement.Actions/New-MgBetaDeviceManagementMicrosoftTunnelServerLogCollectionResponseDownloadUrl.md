@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDownloadUrl
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponseDownloadUrl?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Create (Default)

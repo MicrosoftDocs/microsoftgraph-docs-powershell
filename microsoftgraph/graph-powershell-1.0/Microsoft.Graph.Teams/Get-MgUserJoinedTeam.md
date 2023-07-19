@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the teams in Microsoft Teams that the user is a direct member of.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgUserJoinedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

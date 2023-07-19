@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans that have been recently viewed by the user in apps that support recent plans.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPlannerRecentPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRecentPlan?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

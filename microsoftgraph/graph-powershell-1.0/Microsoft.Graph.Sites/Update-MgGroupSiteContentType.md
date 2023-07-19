@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a [content type][contentType].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSiteContentType](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgGroupSiteContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new workPosition in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/New-MgUserProfilePosition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

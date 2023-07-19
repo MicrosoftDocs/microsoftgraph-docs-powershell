@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property printerShares in print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrintPrinterShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterShare?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

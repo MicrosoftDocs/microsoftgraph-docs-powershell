@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device compliance devices status overview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyDeviceStatusOverview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

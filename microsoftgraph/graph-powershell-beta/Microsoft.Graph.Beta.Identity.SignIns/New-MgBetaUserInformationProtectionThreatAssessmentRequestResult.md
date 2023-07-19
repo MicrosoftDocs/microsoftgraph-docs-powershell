@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to results for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

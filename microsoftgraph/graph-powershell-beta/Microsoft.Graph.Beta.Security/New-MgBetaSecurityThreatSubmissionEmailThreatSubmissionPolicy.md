@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to emailThreatSubmissionPolicies for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

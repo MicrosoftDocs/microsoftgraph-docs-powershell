@@ -11,6 +11,9 @@ schema: 2.0.0
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

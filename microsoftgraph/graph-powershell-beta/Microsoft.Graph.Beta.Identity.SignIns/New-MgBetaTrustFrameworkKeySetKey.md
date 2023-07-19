@@ -11,6 +11,9 @@ schema: 2.0.0
 Generate a trustFrameworkKey and a secret automatically in the trustFrameworkKeyset.
 The caller doesn't have to provide a secret.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTrustFrameworkKeySetKey](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySetKey?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GenerateExpanded (Default)

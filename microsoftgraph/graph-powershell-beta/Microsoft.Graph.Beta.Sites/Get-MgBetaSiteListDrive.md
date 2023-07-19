@@ -11,6 +11,9 @@ schema: 2.0.0
 Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListDrive?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

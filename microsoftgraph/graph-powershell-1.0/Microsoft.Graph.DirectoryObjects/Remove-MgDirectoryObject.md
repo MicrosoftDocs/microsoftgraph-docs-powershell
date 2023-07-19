@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a directory object, for example, a group, user, application, or service principal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDirectoryObject](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Remove-MgDirectoryObject?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

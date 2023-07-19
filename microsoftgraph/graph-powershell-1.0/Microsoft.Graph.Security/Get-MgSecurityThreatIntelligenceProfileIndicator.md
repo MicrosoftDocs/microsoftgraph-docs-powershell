@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get intelligenceProfileIndicators from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

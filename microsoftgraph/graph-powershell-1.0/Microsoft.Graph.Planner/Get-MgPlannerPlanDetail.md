@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a **plannerPlanDetails** object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgPlannerPlanDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

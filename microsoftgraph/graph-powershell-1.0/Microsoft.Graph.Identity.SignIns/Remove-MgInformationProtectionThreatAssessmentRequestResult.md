@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property results for informationProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

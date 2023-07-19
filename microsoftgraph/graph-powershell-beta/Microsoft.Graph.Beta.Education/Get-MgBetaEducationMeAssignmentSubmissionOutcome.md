@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get outcomes from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

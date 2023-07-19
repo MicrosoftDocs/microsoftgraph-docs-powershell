@@ -11,6 +11,9 @@ schema: 2.0.0
 The parent label associated with a child label.
 Null if the label has no parent.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityInformationProtectionSensitivityLabelParent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtectionSensitivityLabelParent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

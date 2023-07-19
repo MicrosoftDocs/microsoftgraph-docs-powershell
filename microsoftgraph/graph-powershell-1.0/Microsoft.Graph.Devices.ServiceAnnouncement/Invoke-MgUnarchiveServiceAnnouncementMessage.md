@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnarchiveExpanded (Default)

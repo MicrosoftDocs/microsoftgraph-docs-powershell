@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get createdByUser from shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemCreatedByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new [contentType][] for a [site][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteContentType](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

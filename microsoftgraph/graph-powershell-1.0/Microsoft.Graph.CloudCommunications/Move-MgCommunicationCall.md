@@ -12,6 +12,9 @@ Transfer an active peer-to-peer call or group call.
 A consultative transfer means that the transferor can inform the person they want to transfer the call to (the transferee), before the transfer is made.
 This is opposed to transfering the call directly.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Move-MgCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### TransferExpanded (Default)

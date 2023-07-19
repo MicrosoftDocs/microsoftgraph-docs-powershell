@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAttackSimulationRepeatOffenders
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

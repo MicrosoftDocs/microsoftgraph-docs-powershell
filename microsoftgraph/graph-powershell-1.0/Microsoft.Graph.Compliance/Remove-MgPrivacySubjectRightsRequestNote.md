@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property notes for privacy
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a class from a school.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationSchoolClassByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

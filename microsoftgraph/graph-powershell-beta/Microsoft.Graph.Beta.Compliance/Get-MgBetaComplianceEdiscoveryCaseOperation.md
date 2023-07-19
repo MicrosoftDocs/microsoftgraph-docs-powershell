@@ -11,6 +11,9 @@ schema: 2.0.0
 Returns a list of case operation objects for this case.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

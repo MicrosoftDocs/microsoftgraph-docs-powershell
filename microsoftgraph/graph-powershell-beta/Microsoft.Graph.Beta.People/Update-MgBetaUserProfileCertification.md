@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a personCertification object from a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserProfileCertification](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileCertification?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

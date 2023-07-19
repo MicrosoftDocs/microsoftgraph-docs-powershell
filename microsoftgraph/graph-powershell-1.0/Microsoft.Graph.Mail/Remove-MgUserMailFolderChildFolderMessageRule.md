@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the specified messageRule object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolderChildFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgUserMailFolderChildFolderMessageRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

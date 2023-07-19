@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property reviewSets for compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

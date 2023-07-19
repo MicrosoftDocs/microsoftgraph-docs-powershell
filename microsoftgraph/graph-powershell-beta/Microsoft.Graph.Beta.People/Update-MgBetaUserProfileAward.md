@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a personAward object from a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserProfileAward](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileAward?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

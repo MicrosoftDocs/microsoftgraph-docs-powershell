@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getYammerDeviceUsageUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerDeviceUsageUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerDeviceUsageUserDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

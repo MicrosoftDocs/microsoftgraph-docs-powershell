@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes a domain from a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomain?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

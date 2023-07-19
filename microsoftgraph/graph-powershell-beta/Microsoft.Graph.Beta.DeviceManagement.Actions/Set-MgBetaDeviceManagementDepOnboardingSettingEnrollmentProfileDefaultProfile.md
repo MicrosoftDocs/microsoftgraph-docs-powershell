@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setDefaultProfile
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDefaultProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

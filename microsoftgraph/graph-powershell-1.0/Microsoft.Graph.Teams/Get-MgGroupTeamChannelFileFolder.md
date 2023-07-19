@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the metadata for the location where the files of a channel are stored.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

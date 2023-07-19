@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property hostTrackers for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

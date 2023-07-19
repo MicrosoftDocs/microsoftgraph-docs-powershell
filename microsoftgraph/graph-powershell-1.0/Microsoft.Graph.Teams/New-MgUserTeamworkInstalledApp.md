@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Install an app in the personal scope of the specified user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgUserTeamworkInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

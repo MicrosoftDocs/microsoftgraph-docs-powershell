@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of simulation automation runs.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

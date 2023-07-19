@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reboot device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaDeviceManagementManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Restart-MgDeviceManagementManagedDeviceNow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reboot (Default)

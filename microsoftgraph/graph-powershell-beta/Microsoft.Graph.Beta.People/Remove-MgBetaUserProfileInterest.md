@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes a personInterest object from a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileInterest](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileInterest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

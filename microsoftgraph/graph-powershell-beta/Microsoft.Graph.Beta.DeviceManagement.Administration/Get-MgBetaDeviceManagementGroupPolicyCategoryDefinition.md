@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The immediate GroupPolicyDefinition children of the category
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyCategoryDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyCategoryDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

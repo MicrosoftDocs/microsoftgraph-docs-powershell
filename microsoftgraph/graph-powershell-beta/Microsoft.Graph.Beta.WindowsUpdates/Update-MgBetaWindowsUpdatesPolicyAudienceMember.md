@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property members in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgWindowsUpdatesPolicyAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicyAudienceMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

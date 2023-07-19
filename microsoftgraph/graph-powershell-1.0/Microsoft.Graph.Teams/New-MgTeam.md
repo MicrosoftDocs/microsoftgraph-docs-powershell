@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reports singleton
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

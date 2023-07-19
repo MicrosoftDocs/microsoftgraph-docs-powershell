@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of the sub-sites under this site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List2 (Default)

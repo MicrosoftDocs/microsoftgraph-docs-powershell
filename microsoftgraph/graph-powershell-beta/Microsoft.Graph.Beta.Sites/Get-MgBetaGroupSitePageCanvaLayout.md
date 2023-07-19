@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Indicates the layout of the content in a given SharePoint page, including horizontal sections and vertical section
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageCanvaLayout](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageCanvaLayout?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

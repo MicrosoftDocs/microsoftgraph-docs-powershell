@@ -11,6 +11,9 @@ schema: 2.0.0
 Used to access the underlying driveItem.
 Deprecated -- use driveItem instead.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareRoot](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

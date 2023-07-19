@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validateCredentials
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Test-MgBetaApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

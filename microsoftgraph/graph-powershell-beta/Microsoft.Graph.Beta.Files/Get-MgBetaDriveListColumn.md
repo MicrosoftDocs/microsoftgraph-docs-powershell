@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get columns from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

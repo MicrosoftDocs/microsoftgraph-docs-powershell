@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove (unpin) a tab from the specified chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgUserChatTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

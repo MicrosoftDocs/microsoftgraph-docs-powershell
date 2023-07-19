@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get schemaExtension
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

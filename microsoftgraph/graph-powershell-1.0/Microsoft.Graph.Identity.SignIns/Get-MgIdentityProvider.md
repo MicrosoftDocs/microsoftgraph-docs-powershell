@@ -12,6 +12,9 @@ Get the properties and relationships of the specified identity provider configur
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

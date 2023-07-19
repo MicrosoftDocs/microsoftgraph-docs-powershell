@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of the fields and values for this version of the list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

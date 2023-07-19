@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get enrollment configurations targeted to the user
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

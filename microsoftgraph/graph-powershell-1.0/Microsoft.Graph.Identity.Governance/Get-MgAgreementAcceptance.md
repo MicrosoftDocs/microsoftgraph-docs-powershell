@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 Information about acceptances of this agreement.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgAgreementAcceptance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

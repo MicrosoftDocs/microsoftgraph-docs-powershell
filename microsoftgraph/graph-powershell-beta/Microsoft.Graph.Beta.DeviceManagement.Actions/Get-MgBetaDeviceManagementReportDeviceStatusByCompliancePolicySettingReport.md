@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getDeviceStatusByCompliancePolicySettingReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportDeviceStatusByCompliancePolicySettingReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceStatusByCompliancePolicySettingReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new internalDomainFederation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgDomainFederationConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

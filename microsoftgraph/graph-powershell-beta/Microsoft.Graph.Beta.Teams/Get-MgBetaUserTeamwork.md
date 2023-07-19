@@ -12,6 +12,9 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamwork](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamwork?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

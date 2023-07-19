@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Contains the collection of directories and all of their objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

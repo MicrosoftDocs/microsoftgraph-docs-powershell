@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getDevicesWithoutCompliancePolicyReport
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceWithoutCompliancePolicyReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceWithoutCompliancePolicyReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

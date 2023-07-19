@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the app installed in the specified team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

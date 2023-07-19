@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a [permission][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgAcceptGroupEventTentatively?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)

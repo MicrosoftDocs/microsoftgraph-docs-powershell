@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Pre-configured synchronization settings for a particular application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getComplianceSettingNonComplianceReport
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportComplianceSettingNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportComplianceSettingNonComplianceReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

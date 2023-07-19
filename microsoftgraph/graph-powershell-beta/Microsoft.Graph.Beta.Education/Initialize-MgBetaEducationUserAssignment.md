@@ -11,6 +11,9 @@ schema: 2.0.0
 Activate an `inactive` educationAssignment to signal that the assignment has further action items for teachers and students.
 This action can only be performed by a teacher on currently inactive assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Initialize-MgEducationUserAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Activate (Default)

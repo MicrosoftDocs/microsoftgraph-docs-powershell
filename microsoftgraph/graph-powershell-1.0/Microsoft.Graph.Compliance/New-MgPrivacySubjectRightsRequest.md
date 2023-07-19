@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new subjectRightsRequest object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgPrivacySubjectRightsRequest?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

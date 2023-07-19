@@ -11,6 +11,9 @@ schema: 2.0.0
 Set the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

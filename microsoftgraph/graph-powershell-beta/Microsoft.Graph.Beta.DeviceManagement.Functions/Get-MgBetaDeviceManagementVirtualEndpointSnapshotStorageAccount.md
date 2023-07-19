@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getStorageAccounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointSnapshotStorageAccount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

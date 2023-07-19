@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceRegisteredOwnerAsAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerAsAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -14,6 +14,9 @@ If an invite to a group call is received, the notification will contain the chat
 The bot is expected to answer, reject, or redirect the call before the call times out.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AnswerExpanded (Default)

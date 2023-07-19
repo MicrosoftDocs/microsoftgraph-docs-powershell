@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get headerLogo for the navigation property branding from organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

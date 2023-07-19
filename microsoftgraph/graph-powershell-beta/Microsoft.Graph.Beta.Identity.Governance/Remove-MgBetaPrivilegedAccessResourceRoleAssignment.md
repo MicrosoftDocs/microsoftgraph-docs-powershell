@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property roleAssignments for privilegedAccess
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

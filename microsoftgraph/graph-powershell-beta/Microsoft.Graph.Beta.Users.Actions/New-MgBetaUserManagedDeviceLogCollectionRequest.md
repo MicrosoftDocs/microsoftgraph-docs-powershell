@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDeviceLogCollectionRequest
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

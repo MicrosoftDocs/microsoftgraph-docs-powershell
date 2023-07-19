@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

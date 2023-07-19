@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an accessPackageCatalog.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

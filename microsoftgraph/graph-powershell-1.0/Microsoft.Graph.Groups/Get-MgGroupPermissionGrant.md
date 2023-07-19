@@ -11,6 +11,9 @@ schema: 2.0.0
 The permission that has been granted for a group to a specific application.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

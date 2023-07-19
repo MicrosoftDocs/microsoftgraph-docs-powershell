@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Encryption report for devices in this account
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceEncryptionState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceEncryptionState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

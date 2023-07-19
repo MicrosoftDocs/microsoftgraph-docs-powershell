@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List the tokenLifetimePolicy objects that are assigned to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

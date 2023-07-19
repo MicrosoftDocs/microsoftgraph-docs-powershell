@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property documents for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterJobDocument?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

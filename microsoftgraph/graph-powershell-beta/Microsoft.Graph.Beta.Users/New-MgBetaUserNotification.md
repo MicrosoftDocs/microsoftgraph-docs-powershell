@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to notifications for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserNotification](/powershell/module/Microsoft.Graph.Users/New-MgUserNotification?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The tokenIssuancePolicies assigned to this service principal.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTokenIssuancePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

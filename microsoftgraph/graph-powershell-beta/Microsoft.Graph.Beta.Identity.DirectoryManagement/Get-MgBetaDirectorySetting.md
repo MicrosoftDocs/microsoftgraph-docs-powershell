@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties of a specific directory setting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

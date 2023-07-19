@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactTransitiveMemberOfByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Creates a new groupLifecyclePolicy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Locate a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Locate (Default)

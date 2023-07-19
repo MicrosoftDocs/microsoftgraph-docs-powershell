@@ -12,6 +12,9 @@ The collection of open extensions defined for the group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupExtension](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

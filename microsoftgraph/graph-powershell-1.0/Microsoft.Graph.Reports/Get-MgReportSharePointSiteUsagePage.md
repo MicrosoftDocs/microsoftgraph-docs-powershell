@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSharePointSiteUsagePages
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSharePointSiteUsagePage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

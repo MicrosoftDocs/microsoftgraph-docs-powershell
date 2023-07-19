@@ -12,6 +12,9 @@ Referencing the assigned principal.
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentPrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

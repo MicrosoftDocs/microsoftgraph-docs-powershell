@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Enable lost mode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgDeviceManagementComanagedDeviceLostMode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementComanagedDeviceLostMode?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EnableExpanded (Default)

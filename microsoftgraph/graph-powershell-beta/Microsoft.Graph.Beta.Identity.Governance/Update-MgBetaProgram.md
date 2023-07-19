@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In the Azure AD access reviews feature, update an existing program object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgProgram?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

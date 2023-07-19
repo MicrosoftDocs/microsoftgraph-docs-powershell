@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkRestoreDeviceManagementManagedDeviceCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### BulkExpanded (Default)

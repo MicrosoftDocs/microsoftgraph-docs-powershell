@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get submittedResources from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

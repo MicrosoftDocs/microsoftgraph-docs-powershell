@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Children terms of set in term [store].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetChild?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

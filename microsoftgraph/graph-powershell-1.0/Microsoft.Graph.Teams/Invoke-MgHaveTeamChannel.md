@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function doesUserHaveAccess
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaHaveTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgHaveTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Have (Default)

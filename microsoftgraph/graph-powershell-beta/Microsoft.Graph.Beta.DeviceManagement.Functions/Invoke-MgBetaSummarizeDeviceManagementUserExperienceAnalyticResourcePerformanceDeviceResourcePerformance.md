@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function summarizeDeviceResourcePerformance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Summarize (Default)

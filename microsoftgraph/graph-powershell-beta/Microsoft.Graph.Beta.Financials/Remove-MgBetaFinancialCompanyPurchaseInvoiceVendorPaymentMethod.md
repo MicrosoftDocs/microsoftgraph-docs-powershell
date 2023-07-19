@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property paymentMethod for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanyPurchaseInvoiceVendorPaymentMethod](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyPurchaseInvoiceVendorPaymentMethod?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

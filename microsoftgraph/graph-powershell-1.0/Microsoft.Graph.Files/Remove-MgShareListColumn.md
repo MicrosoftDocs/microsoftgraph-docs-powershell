@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property columns for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgShareListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

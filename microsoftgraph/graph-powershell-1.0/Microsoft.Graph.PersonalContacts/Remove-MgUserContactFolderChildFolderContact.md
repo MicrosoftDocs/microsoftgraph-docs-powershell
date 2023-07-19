@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property contacts for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgUserContactFolderChildFolderContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

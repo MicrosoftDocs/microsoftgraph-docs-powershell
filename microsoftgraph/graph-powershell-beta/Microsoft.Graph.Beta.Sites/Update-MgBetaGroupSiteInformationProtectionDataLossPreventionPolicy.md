@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property dataLossPreventionPolicies in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

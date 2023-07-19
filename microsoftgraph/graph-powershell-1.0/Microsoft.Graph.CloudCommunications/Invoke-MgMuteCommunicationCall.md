@@ -12,6 +12,9 @@ Allows the application to mute itself.
 This is a server mute, meaning that the server will drop all audio packets for this participant, even if the participant continues to stream audio.
 For more details about how to handle mute operations, see muteParticipantOperation
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMuteCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MuteExpanded (Default)

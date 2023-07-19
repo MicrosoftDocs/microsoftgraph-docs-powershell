@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getEmailActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportEmailActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailActivityUserCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

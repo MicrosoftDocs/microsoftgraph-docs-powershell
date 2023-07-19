@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of all compliance policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementCompliancePolicy](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

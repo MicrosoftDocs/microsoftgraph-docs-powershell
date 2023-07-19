@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Logout shared Apple device active user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Logout (Default)

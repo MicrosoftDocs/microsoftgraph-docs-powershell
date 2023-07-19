@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userStatuses for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementiOSLobAppProvisioningConfigurationUserStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Data source entity for a the legal hold.
 This is the container for a mailbox and OneDrive for Business site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseLegalHoldUserSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseLegalHoldUserSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

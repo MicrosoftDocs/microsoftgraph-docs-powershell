@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getLicensesForApp
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementVppTokenLicenseForApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenLicenseForApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

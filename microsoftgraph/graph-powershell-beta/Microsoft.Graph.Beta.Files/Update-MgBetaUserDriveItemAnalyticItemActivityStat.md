@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property itemActivityStats in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItemAnalyticItemActivityStat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

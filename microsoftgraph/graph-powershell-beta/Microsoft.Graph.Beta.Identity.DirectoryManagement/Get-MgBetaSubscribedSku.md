@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a specific commercial subscription that an organization has acquired.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSubscribedSku?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

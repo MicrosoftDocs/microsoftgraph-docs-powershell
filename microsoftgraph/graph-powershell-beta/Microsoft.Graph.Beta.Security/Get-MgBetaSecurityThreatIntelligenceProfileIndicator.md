@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get intelligenceProfileIndicators from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a member to the plannerRoster object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRosterMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for this administrative unit.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

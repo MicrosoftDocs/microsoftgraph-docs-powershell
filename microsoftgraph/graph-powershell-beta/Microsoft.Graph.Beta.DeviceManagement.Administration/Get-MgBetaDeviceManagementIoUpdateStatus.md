@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The IOS software update installation statuses for this account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementIoUpdateStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

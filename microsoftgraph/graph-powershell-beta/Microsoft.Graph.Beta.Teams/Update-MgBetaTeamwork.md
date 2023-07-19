@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

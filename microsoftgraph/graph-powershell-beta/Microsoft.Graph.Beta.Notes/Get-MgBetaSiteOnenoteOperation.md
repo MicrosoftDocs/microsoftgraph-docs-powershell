@@ -14,6 +14,9 @@ This applies to operations that return the **Operation-Location** header in the 
 If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

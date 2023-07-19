@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The source column for the content type column.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentTypeColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveListContentTypeColumnSourceColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

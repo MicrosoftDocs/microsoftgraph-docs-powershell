@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from agreements
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgAgreement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

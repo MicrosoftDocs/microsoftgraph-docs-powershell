@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property planner for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

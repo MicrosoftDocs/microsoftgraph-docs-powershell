@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get bulkActions from deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointBulkAction](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointBulkAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

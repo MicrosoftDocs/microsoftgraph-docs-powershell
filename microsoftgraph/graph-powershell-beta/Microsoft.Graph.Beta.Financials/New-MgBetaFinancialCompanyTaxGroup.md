@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to taxGroups for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyTaxGroup](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyTaxGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

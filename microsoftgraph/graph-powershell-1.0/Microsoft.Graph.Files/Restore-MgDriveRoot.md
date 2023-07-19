@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 **NOTE**: This functionality is currently only available for OneDrive Personal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Restore-MgDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)

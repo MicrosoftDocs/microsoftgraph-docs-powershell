@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get externalColumns from sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteExternalColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

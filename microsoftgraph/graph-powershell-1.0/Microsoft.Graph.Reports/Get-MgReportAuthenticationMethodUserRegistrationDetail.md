@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get userRegistrationDetails from reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

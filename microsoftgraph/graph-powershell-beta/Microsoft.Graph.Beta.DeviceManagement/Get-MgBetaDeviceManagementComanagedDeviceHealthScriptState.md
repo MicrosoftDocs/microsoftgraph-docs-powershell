@@ -12,6 +12,9 @@ Results of device health scripts that ran for this device.
 Default is empty list.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDeviceHealthScriptState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceHealthScriptState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

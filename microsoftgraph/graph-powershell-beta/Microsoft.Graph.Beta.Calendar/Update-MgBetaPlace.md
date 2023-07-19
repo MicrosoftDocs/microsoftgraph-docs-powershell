@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlace?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

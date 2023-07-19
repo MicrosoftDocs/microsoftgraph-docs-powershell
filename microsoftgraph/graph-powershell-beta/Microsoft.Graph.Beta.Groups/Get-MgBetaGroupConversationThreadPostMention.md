@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get mentions from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostMention](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostMention?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

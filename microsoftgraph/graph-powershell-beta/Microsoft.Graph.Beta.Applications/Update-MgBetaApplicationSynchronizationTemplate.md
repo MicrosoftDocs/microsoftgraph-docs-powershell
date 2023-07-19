@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update (override) the synchronization template associated with a given application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

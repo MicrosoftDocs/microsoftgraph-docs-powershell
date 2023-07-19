@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getFormsUserActivityUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportFormUserActivityUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportFormUserActivityUserCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

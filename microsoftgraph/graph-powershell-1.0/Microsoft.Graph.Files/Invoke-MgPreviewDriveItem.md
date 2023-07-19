@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action preview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgPreviewDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)

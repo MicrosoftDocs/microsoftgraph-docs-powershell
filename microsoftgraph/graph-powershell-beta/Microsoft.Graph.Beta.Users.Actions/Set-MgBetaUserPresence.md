@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Set the availability and activity status in a presence session of an application for a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

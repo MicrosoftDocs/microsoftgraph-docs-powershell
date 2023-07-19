@@ -12,6 +12,9 @@ Get the properties and relationships of an Outlook task in the user's mailbox.
 By default, this operation (and the POST, PATCH, and complete task operations) returns date-related properties in UTC.
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

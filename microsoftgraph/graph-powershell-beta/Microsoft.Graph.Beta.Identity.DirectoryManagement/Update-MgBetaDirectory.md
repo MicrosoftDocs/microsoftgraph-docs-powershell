@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

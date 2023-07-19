@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign a user's manager.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Set-MgUserManagerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

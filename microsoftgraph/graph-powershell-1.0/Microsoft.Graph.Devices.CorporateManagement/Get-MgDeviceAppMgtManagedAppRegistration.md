@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The managed app registrations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtManagedAppRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The [set] in which the term is created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetParentGroupSetTermChildSet](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetTermChildSet?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

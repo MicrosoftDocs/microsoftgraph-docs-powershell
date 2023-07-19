@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property hostedContents in chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgChatMessageHostedContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

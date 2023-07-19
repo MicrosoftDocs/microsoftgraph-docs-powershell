@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityGovernanceRoleManagementAlertOperation](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceRoleManagementAlertOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

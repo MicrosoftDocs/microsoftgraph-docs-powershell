@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an itemEmail object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileEmail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove an educationRubric from an educationAssignment.
 This method does not delete the rubric itself and can only be performed by teachers.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassAssignmentRubricByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

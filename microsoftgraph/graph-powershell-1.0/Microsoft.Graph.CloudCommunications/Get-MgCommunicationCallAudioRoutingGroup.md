@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get audioRoutingGroups from communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

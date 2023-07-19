@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Conceptual container for user and group directory objects.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

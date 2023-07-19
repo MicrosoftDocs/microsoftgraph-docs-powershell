@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a school.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/New-MgEducationSchool?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

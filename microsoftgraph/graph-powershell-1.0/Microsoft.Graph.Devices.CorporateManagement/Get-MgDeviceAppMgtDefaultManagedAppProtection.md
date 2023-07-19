@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default managed app policies.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtDefaultManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtDefaultManagedAppProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

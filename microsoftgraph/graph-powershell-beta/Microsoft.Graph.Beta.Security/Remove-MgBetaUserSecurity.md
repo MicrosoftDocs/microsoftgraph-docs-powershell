@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property security for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSecurity](/powershell/module/Microsoft.Graph.Security/Remove-MgUserSecurity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

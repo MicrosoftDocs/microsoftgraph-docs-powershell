@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assigns user to Autopilot devices.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

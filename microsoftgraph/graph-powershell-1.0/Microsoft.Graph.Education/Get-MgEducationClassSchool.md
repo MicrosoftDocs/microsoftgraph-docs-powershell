@@ -11,6 +11,9 @@ schema: 2.0.0
 All schools that this class is associated with.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

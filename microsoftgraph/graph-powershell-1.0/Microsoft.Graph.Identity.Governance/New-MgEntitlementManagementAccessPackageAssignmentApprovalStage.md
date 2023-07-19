@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to stages for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentApprovalStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

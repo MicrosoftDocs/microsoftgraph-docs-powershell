@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an existing category.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

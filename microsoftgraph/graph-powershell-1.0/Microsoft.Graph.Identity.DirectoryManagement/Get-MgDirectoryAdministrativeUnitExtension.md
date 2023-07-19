@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for this administrative unit.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryAdministrativeUnitExtension](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryAdministrativeUnitExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

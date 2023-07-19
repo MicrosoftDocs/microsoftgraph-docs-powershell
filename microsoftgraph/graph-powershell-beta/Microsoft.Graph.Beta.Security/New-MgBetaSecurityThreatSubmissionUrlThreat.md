@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new urlThreatSubmission object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatSubmissionUrlThreat](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionUrlThreat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

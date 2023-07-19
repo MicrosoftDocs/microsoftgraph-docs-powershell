@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the Boolean **selfServiceSignUp** property of an authenticationFlowsPolicy object.
 The properties **id**, **type**, and **description** cannot be modified.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

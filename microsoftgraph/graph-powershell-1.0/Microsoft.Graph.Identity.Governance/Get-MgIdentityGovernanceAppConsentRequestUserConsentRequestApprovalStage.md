@@ -11,6 +11,9 @@ schema: 2.0.0
 In Azure AD entitlement management, retrieve the properties of an approvalStage object.
 An approval stage is contained within an approval object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

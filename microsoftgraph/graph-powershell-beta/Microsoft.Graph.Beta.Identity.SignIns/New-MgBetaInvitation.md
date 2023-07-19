@@ -12,6 +12,9 @@ Use this API to create a new invitation.
 Invitation adds an external user to the organization.
 When creating a new invitation you have several options available:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

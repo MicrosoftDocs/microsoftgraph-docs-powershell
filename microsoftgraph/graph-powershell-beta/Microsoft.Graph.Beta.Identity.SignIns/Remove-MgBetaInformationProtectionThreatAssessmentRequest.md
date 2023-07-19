@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property threatAssessmentRequests for informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

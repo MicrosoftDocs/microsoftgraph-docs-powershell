@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property azureADAuthentication in reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Update-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -12,6 +12,9 @@ To move a DriveItem to a new parent item, your app requests to update the **pare
 This is a special case of the Update method.nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
 Items cannot be moved between Drives using this request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

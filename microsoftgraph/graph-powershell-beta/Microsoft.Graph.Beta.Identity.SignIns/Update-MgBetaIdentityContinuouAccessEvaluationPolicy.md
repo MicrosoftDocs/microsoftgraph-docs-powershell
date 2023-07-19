@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a continuousAccessEvaluationPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityContinuouAccessEvaluationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityContinuouAccessEvaluationPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

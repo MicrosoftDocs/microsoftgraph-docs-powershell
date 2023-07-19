@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property thumbnails for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootThumbnail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

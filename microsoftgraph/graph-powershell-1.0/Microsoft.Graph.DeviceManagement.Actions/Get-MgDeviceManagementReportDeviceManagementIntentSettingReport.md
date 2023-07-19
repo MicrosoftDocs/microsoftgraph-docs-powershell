@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getDeviceManagementIntentSettingsReport
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReportDeviceManagementIntentSettingReport](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceManagementIntentSettingReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

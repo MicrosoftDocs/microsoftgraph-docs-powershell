@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getByIds
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

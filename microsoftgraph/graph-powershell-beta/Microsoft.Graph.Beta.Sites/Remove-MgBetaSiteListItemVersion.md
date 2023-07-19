@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property versions for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

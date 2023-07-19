@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Policy assignments
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementCompliancePolicyAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicyAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

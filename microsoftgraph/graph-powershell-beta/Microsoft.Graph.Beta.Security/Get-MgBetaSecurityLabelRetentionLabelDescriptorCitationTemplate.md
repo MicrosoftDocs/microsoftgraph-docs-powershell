@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

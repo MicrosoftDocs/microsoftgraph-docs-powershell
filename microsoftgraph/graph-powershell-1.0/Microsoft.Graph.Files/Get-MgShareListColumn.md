@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of field definitions for this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

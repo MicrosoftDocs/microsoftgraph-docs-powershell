@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Questions that are posed to the  requestor.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

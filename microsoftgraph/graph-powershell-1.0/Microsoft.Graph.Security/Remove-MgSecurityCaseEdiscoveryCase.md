@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an ediscoveryCase object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

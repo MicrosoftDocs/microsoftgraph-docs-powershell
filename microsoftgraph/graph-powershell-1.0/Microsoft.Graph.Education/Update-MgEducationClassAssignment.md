@@ -13,6 +13,9 @@ Only teachers can perform this action.
 Alternatively, request to change the status of an **assignment** with publish action.
 Don't use a PATCH operation for this purpose.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Details of the app specific scope when the assignment scope is app specific.
 Containment entity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

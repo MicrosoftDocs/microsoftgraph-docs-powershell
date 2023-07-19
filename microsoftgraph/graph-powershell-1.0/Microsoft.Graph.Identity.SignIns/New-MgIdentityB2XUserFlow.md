@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new b2xIdentityUserFlow object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlow](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityB2XUserFlow?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

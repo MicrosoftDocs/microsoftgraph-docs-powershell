@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get an externalGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

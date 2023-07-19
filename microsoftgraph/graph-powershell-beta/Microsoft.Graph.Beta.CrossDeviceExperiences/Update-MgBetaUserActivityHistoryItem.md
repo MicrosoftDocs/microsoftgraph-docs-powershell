@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an existing history item for an existing user activity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserActivityHistoryItem](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserActivityHistoryItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

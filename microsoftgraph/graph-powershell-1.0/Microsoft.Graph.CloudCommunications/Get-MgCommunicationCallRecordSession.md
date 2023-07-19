@@ -13,6 +13,9 @@ Peer-to-peer calls typically only have one session, whereas group calls typicall
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecordSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallRecordSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

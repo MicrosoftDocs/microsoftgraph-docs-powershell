@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

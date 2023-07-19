@@ -11,6 +11,9 @@ schema: 2.0.0
 The metric values for the user experience analytics category.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticCategoryMetricValue?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

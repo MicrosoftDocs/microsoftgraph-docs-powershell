@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListSubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

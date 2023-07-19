@@ -12,6 +12,9 @@ Selective Planner services available to the group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlanner](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlanner?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

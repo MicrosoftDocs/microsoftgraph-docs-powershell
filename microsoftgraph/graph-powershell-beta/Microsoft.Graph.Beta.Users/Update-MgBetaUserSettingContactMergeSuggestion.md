@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a contactMergeSuggestions object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingContactMergeSuggestion](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingContactMergeSuggestion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

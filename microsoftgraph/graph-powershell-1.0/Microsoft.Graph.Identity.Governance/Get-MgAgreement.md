@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from agreements by key
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgAgreement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

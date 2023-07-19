@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds the results of the eDiscovery search to the specified reviewSet.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseSearchAddToReviewSetOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

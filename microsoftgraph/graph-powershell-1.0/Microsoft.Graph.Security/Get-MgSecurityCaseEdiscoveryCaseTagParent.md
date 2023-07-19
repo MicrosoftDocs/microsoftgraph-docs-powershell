@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the parent tag of the specified tag.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseTagParent](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseTagParent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

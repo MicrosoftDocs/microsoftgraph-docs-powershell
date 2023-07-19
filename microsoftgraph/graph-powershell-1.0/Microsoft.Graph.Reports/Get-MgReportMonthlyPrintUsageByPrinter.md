@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get monthlyPrintUsageByPrinter from reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

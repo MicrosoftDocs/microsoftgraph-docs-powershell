@@ -11,6 +11,9 @@ schema: 2.0.0
 Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRenewGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Invoke-MgRenewGroupLifecyclePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RenewExpanded (Default)

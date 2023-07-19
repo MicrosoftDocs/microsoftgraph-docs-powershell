@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property members in chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgChatMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

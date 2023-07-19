@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties of a **dataPolicyOperation** object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgDataPolicyOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

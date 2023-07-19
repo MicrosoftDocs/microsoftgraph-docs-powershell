@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function assignedPrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAssignedRoleManagementExchangeRoleDefinitionInheritPermissionFromPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAssignedRoleManagementExchangeRoleDefinitionInheritPermissionFromPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Assigned (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getPositionOfWebPart
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageWebPartPositionOfWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageWebPartPositionOfWebPart?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

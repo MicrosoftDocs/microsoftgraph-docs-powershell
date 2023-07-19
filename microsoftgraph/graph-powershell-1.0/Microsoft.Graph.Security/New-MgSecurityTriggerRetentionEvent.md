@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new retentionEvent object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

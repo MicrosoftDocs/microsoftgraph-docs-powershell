@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a categoryTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelCategory](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The app that is installed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaChatInstalledAppTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgChatInstalledAppTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

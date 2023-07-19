@@ -13,6 +13,9 @@ You can use both the object ID and template ID of the **directoryRole** with thi
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleMemberByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

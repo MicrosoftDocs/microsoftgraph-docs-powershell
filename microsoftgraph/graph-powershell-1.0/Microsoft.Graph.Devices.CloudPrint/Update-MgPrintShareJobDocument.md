@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property documents in print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintShareJobDocument?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

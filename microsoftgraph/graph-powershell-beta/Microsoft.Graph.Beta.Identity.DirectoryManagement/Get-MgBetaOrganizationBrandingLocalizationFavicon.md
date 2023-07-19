@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A custom icon (favicon) to replace a default Microsoft product favicon on an Azure AD tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationFavicon?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

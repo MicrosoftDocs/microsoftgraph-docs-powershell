@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property azureADAuthentication for reports
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Remove-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

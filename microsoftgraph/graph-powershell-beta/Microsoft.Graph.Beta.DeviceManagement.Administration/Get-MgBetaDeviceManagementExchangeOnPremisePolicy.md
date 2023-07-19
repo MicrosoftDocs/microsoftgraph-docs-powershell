@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of Exchange On Premisis policies configured by the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementExchangeOnPremisePolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementExchangeOnPremisePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

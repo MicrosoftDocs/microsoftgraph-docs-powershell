@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of all the tabs in the channel.
 A navigation property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelTab?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

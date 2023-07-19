@@ -12,6 +12,9 @@ The collection of work activities that a user spent time on during and outside o
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserActivityStatistics](/powershell/module/Microsoft.Graph.People/Get-MgUserActivityStatistics?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

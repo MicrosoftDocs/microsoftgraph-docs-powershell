@@ -11,6 +11,9 @@ schema: 2.0.0
 The content stream of the recording of a Teams live event.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRecording?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

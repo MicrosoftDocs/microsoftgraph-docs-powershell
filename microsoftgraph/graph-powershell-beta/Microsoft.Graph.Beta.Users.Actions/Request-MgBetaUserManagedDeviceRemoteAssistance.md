@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Request remote assistance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Request-MgUserManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Users.Actions/Request-MgUserManagedDeviceRemoteAssistance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Request (Default)

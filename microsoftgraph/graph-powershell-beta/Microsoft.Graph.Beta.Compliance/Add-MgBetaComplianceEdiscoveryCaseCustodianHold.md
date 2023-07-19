@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action applyHold
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgComplianceEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseCustodianHold?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)

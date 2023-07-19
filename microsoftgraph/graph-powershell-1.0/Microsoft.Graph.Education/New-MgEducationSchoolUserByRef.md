@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a user to a school.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationSchoolUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

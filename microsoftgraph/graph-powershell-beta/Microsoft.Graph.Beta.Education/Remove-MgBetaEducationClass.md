@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClass](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClass?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

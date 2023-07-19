@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create Preapproval policy associated with a Teams App.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/New-MgTeamAppPreApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

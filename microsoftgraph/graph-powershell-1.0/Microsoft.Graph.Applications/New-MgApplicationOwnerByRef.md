@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an owner to an application by posting to the owners collection.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationOwnerByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

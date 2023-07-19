@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of channels shared with the team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamIncomingChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

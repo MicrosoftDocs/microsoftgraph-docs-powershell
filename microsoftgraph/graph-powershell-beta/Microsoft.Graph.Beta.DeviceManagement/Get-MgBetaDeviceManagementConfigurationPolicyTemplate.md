@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of all templates
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementConfigurationPolicyTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicyTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

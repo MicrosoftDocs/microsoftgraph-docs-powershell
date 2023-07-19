@@ -13,6 +13,9 @@ When you create a channel, the maximum length of the channel's `displayName` is 
 This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property list for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveList](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveList?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

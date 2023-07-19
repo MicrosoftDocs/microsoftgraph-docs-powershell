@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property endpoints for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupEndpoint](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupEndpoint?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

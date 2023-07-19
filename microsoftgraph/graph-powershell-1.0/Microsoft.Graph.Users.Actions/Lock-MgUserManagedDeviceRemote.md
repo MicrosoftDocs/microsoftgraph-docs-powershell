@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Lock-MgBetaUserManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Lock-MgUserManagedDeviceRemote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Lock (Default)

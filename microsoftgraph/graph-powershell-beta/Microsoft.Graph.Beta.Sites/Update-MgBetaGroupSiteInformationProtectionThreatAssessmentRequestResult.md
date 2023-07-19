@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property results in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

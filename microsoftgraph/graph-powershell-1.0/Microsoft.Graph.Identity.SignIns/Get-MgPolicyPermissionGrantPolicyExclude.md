@@ -11,6 +11,9 @@ schema: 2.0.0
 Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

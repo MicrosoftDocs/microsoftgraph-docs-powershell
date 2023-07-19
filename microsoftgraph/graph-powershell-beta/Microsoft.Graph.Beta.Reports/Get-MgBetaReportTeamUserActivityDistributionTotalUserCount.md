@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getTeamsUserActivityDistributionTotalUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamUserActivityDistributionTotalUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamUserActivityDistributionTotalUserCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

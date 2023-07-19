@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationRoot](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

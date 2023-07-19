@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property settingTemplates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementConfigurationPolicyTemplateSettingTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

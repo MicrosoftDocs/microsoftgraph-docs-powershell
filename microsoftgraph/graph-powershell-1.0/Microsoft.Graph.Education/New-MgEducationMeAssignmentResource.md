@@ -12,6 +12,9 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationMeAssignmentResource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

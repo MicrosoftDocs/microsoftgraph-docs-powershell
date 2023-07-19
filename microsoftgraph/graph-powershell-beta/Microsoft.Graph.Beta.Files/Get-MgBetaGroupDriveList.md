@@ -12,6 +12,9 @@ For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveList](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveList?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

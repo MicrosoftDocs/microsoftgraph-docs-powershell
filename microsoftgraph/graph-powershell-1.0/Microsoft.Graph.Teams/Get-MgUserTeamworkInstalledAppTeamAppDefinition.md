@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The details of this version of the app.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgUserTeamworkInstalledAppTeamAppDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

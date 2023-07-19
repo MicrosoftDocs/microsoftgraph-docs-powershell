@@ -13,6 +13,9 @@ This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered on, it is allocated to a user, and licenses are assigned immediately.
 Only IT admin users can perform this action.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Start-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PowerOn (Default)

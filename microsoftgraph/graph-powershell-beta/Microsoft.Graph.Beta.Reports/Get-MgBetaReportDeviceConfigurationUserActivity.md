@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Metadata for the device configuration user activity report
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportDeviceConfigurationUserActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

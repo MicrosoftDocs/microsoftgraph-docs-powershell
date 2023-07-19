@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get dataLossPreventionPolicies from informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

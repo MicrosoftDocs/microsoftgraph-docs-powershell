@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgDirectoryRoleMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDirectoryRoleMemberObject?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

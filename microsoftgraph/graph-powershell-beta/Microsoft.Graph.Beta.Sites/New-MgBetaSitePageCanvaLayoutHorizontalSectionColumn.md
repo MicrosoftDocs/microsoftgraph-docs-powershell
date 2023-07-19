@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to columns for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSitePageCanvaLayoutHorizontalSectionColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSitePageCanvaLayoutHorizontalSectionColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The access packages that are incompatible with this package.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

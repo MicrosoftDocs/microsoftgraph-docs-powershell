@@ -11,6 +11,9 @@ schema: 2.0.0
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgUserChatTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

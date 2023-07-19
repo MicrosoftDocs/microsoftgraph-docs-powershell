@@ -11,6 +11,9 @@ schema: 2.0.0
 Parse a given string expression into an attributeMappingSource object.
 For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression](/powershell/module/Microsoft.Graph.Applications/Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)

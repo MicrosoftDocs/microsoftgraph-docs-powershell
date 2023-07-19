@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get vendors from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyVendor](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyVendor?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

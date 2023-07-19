@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an educationRubric object.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeRubric?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

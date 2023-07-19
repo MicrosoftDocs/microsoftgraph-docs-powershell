@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the status of a specific school data synchronization profile in the tenant.
 The response will indicate the status of the sync.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationSynchronizationProfileStatus](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfileStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

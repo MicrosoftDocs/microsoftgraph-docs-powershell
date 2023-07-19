@@ -14,6 +14,9 @@ The organizer can also cancel an occurrence of a recurring meeting \nby providin
 An attendee calling this action gets an error (HTTP 400 Bad Request), with the following\nerror message: 'Your request can't be completed.
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CancelExpanded (Default)

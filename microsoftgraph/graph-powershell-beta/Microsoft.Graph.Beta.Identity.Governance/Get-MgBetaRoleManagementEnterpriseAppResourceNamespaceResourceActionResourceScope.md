@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get resourceScope from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

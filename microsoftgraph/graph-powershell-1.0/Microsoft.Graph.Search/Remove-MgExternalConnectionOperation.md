@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgExternalConnectionOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

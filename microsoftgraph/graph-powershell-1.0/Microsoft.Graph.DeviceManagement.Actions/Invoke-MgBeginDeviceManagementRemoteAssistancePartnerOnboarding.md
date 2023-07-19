@@ -11,6 +11,9 @@ schema: 2.0.0
 A request to start onboarding.
 Must be coupled with the appropriate TeamViewer account information
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaBeginDeviceManagementRemoteAssistancePartnerOnboarding](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBeginDeviceManagementRemoteAssistancePartnerOnboarding?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Begin (Default)

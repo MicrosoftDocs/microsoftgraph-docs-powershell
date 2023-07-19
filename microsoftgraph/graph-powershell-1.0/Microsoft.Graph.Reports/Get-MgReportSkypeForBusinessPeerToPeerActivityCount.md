@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSkypeForBusinessPeerToPeerActivityCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSkypeForBusinessPeerToPeerActivityCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

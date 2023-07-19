@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset a caseSettings object to the default values.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Beta.Security/Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)

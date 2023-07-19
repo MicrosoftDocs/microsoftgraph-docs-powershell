@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

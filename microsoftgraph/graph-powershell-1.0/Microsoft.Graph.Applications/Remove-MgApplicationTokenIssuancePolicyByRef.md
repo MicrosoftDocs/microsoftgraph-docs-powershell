@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a tokenIssuancePolicy from an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

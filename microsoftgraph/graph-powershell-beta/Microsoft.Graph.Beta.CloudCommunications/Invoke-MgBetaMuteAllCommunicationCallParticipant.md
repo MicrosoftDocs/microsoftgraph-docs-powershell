@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Mute all participants in the call.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMuteAllCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteAllCommunicationCallParticipant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### MuteExpanded1 (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get team RSC configuration for tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamRscConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

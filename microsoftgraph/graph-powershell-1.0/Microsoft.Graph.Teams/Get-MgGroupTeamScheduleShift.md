@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a shift object by ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamScheduleShift?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

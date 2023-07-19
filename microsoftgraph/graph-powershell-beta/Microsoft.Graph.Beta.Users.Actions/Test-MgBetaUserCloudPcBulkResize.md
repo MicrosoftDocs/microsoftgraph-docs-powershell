@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserCloudPcBulkResize](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserCloudPcBulkResize?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

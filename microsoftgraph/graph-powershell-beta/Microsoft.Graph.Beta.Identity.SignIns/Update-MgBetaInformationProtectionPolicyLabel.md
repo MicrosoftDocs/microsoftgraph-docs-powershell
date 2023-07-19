@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property labels in informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

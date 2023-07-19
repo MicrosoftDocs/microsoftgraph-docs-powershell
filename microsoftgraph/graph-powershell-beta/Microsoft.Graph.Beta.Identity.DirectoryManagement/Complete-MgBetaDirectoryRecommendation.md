@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Complete a recommendation object and update its **status** to `completedByUser`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Complete-MgDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Complete-MgDirectoryRecommendation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Complete (Default)

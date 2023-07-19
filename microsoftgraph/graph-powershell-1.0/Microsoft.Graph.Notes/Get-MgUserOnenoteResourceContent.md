@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content stream
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgUserOnenoteResourceContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Revoke all Apple Vpp licenses for a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Revoke-MgUserManagedDeviceAppleVppLicense](/powershell/module/Microsoft.Graph.Users.Actions/Revoke-MgUserManagedDeviceAppleVppLicense?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Revoke (Default)

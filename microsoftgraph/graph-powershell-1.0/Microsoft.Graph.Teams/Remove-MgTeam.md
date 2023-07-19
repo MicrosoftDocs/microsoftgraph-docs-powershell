@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from teams
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

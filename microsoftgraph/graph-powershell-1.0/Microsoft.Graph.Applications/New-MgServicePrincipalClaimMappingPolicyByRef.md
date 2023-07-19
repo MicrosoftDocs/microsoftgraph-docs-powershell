@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign a claimsMappingPolicy to a servicePrincipal.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

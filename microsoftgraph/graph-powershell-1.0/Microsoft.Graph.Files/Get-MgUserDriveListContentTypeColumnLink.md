@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of columns that are required by this content type.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgUserDriveListContentTypeColumnLink?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

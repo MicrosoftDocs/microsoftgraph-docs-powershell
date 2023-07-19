@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a horizontalSection object in a given sitePage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSitePageCanvaLayoutHorizontalSection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

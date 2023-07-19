@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function managedDeviceEnrollmentFailureDetails
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportManagedDeviceEnrollmentFailureDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentFailureDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Detail (Default)

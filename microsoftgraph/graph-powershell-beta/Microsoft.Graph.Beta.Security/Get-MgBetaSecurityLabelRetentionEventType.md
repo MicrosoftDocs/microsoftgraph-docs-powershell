@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the type associated with a retention event.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionEventType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionEventType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

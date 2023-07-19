@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action enable
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgDeviceManagementAssignmentFilter](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementAssignmentFilter?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EnableExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a print service endpoint.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintServiceEndpoint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

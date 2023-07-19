@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationCallOperation](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

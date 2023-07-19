@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property onlineMeetings for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeeting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

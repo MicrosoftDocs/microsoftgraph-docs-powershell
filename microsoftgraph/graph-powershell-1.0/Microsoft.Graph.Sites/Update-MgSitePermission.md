@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an application permission object on a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

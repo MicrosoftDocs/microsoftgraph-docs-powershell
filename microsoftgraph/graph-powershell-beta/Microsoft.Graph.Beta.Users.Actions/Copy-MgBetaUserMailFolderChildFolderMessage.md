@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Copy a mailfolder and its contents to another mailfolder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

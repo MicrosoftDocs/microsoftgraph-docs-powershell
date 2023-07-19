@@ -11,6 +11,9 @@ schema: 2.0.0
 All driveItems contained in the sharing root.
 This collection cannot be enumerated.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

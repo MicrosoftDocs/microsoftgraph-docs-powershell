@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgChat?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

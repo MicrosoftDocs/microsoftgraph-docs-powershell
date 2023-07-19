@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property iosLobAppProvisioningConfigurations for deviceAppManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementiOSLobAppProvisioningConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementiOSLobAppProvisioningConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

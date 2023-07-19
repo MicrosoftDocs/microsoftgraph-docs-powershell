@@ -14,6 +14,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventExceptionOccurrenceInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventExceptionOccurrenceInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

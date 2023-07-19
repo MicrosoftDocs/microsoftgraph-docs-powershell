@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of scheduled action per rule for this compliance policy.
 This is a required property when creating any individual per-platform compliance policies.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

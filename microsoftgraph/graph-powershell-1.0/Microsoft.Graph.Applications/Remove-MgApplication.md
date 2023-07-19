@@ -12,6 +12,9 @@ Delete an application object.
 When deleted, apps are moved to a temporary container and can be restored within 30 days.
 After that time, they are permanently deleted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplication?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

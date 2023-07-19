@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the metadata for a [list][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List1 (Default)

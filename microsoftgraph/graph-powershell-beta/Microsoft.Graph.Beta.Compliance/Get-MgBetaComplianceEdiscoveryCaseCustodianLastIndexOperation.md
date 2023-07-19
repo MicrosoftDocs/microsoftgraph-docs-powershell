@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastIndexOperation from compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

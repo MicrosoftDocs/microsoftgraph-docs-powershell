@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property notebooks for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Remove-MgUserOnenoteNotebook?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

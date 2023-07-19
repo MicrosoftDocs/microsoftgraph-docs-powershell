@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update planner
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action uploadNewVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUploadDeviceManagementGroupPolicyUploadedDefinitionFileNewVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UploadExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgUserDeviceMemberObject](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserDeviceMemberObject?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)

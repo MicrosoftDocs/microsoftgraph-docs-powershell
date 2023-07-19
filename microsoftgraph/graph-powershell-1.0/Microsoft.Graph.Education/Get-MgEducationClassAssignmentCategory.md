@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

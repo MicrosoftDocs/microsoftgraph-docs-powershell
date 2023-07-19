@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get events from solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEvent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

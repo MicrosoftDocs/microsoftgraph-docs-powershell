@@ -11,6 +11,9 @@ schema: 2.0.0
 A member added to an externalGroup.
 You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroupMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

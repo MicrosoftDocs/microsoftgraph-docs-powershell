@@ -13,6 +13,9 @@ Invoke function getAllSites
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

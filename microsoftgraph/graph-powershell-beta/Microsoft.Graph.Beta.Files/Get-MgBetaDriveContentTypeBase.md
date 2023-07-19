@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Parent contentType from which this content type is derived.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveContentTypeBase](/powershell/module/Microsoft.Graph.Files/Get-MgDriveContentTypeBase?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a user's email address represented by an emailAuthenticationMethod object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

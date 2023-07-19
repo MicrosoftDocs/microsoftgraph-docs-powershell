@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new educationRubric object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationMeRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

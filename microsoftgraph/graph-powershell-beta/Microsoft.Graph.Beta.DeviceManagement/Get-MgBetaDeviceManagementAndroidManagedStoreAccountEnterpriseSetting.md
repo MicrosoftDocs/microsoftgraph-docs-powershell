@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The singleton Android managed store account enterprise settings entity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

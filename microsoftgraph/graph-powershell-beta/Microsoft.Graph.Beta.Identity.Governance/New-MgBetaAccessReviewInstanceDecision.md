@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to decisions for accessReviews
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

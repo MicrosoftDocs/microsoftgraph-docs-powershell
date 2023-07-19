@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get applications from onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileConnectorGroupApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupApplication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

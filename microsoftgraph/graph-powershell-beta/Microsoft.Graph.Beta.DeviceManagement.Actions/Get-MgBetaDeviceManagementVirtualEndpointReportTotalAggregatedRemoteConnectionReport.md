@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the total aggregated remote connection usage of a Cloud PC during a given time span.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportTotalAggregatedRemoteConnectionReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

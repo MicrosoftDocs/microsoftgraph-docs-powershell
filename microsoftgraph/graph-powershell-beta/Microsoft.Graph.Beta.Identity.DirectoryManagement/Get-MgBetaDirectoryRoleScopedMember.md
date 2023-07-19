@@ -12,6 +12,9 @@ Members of this directory role that are scoped to administrative units.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleScopedMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of the specified tab in a chat.
 \nThis can be used to configure the content of the tab.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgUserChatTab?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

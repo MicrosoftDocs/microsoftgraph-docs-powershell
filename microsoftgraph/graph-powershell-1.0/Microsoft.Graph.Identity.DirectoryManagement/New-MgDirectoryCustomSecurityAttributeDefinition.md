@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new customSecurityAttributeDefinition object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

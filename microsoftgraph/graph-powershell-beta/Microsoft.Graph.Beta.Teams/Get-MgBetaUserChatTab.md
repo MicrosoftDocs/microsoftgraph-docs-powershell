@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified tab in a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatTab?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

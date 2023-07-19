@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get root from shares
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareRoot](/powershell/module/Microsoft.Graph.Files/Get-MgShareRoot?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

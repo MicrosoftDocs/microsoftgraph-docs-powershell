@@ -17,6 +17,9 @@ The state of the **assignment** goes back to `draft` if there is any backend fai
 To update the properties of a published **assignment**, see update an assignment.
 To update the properties of a published assignment, see update an assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgEducationUserAssignment](/powershell/module/Microsoft.Graph.Education/Publish-MgEducationUserAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Publish (Default)

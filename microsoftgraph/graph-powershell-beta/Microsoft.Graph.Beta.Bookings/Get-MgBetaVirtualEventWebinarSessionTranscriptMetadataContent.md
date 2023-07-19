@@ -11,6 +11,9 @@ schema: 2.0.0
 A field that represents the time-aligned metadata of the utterances in the transcript.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionTranscriptMetadataContent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionTranscriptMetadataContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

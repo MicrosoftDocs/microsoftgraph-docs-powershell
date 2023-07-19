@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getEmailAppUsageVersionsUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportEmailAppUsageVersionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportEmailAppUsageVersionUserCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

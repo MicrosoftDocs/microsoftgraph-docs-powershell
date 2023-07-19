@@ -12,6 +12,9 @@ Replace an existing shift.
 If the specified shift doesn't exist, this method returns `404 Not found`.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamScheduleShift?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

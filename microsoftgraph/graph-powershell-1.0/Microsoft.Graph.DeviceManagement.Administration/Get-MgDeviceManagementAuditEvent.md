@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Audit Events
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementAuditEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementAuditEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

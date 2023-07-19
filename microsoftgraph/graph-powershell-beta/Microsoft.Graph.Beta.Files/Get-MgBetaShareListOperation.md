@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of long running operations for the list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListOperation](/powershell/module/Microsoft.Graph.Files/Get-MgShareListOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Bypass activation lock
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Skip-MgUserManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.Users.Actions/Skip-MgUserManagedDeviceActivationLock?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Bypass (Default)

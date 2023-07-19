@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the last addToReviewSetOperation object associated with a source collection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the details of the default file for an agreement, including the language and version information.
 The file information is specified through the agreementFile object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

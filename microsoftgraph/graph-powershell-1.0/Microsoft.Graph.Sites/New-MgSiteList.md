@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new [list][] in a [site][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a citationTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelCitation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

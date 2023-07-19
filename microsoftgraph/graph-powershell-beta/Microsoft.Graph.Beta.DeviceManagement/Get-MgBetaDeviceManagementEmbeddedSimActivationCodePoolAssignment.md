@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigational property to a list of targets to which this pool is assigned.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementEmbeddedSimActivationCodePoolAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

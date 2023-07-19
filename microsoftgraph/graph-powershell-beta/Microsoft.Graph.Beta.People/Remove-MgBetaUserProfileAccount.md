@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an userAccountInformation object from a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileAccount](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileAccount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

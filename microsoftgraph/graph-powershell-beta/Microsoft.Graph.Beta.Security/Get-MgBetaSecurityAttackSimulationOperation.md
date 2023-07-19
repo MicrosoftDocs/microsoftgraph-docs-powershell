@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get an attack simulation operation to track a long-running operation request for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

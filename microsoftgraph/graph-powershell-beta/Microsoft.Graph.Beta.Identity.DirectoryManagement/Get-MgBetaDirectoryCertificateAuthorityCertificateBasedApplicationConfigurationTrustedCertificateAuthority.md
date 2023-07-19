@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get trustedCertificateAuthorities from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfigurationTrustedCertificateAuthority?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

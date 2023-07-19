@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action reenable
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReenableDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReenableDeviceManagementManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reenable (Default)

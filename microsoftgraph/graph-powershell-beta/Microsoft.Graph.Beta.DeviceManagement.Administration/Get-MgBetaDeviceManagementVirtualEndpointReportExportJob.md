@@ -13,6 +13,9 @@ You can download a report by first creating a new cloudPcExportJob resource to i
 Use this GET operation to verify the **exportJobStatus** property of the **cloudPcExportJob** resource.
 When the property becomes `completed`, the report has finished downloading in the location specified by the **exportUrl** property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReportExportJob](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointReportExportJob?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

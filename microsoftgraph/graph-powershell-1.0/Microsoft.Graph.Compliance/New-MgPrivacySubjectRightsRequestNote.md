@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new authoredNote object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

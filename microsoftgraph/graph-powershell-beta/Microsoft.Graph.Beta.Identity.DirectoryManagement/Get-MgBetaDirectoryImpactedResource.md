@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get impactedResources from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryImpactedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

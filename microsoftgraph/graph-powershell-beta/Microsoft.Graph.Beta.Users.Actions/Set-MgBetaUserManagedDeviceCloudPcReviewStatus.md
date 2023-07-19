@@ -12,6 +12,9 @@ Set the review status of a specific Cloud PC device.
 Use this API to set the review status of a Cloud PC to in review if you consider a Cloud PC as suspicious.
 After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

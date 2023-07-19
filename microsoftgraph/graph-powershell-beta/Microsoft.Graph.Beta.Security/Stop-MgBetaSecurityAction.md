@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Cancel a security operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/Stop-MgSecurityAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)

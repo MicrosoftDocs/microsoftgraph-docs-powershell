@@ -11,6 +11,9 @@ schema: 2.0.0
 Make the scheduling page of a business available to external customers.
 Set the **isPublished** property to `true`, and the **publicUrl** property to the URL of the scheduling page.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Publish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Publish-MgBookingBusiness?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Publish (Default)

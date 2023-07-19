@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of scheduled action configurations for this compliance policy.
 This collection can contain a maximum of 100 elements.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicyScheduledActionForRuleScheduledActionConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

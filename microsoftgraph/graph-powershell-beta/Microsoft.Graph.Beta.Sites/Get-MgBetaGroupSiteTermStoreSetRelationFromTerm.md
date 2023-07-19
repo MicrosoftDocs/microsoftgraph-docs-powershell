@@ -12,6 +12,9 @@ The from [term] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the [set].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetRelationFromTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

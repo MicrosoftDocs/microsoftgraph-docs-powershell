@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The attachment content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

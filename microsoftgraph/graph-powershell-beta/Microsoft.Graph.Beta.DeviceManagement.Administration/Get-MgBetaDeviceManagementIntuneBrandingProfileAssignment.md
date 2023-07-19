@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of group assignments for the branding profile
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntuneBrandingProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementIntuneBrandingProfileAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

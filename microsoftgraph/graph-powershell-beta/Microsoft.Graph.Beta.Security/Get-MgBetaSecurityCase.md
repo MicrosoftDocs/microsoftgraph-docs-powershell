@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get cases from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCase](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCase?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

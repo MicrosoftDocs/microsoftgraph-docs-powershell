@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Zero or more policies admin intended for the app as of now.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedAppRegistrationIntendedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtManagedAppRegistrationIntendedPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

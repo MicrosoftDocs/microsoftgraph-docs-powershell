@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property assignments in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDeviceEnrollmentConfigurationAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceEnrollmentConfigurationAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

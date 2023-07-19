@@ -11,6 +11,9 @@ schema: 2.0.0
 A container for Microsoft Edge resources.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdge?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Copy-MgDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

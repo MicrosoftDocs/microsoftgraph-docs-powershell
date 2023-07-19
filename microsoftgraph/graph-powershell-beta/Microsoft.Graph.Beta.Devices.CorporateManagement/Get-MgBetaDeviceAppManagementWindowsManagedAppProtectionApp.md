@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of apps to which the policy is deployed.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsManagedAppProtectionApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

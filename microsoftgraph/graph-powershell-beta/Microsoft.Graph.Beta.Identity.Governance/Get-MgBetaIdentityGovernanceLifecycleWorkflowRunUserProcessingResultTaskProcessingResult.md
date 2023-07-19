@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The associated individual task execution.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowRunUserProcessingResultTaskProcessingResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

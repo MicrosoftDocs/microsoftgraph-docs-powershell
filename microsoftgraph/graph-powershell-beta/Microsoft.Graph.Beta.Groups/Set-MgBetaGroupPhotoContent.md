@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupPhotoContent](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupPhotoContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

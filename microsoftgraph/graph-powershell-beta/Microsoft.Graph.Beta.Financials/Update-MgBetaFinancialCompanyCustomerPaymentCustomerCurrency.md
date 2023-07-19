@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property currency in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanyCustomerPaymentCustomerCurrency](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentCustomerCurrency?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

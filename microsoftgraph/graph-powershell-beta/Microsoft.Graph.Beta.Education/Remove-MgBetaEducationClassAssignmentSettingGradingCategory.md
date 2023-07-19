@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property gradingCategories for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSettingGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSettingGradingCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

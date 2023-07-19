@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Join-MgBetaGroupSiteContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Groups/Join-MgGroupSiteContentTypeWithHubSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AssociateExpanded (Default)

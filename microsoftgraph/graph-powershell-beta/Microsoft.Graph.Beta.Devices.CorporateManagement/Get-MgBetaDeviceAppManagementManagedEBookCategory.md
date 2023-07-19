@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The mobile eBook categories.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBookCategory](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

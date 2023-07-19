@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents the current status of a user's response to a company's customizable terms of use agreement.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getFormsUserActivityUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportFormUserActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportFormUserActivityUserDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

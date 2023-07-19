@@ -11,6 +11,9 @@ schema: 2.0.0
 Subscribe to DTMF (dual-tone multi-frequency signaling).
 This allows you to be notified when the user presses keys on a 'dialpad'.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSubscribeCommunicationCallToTone](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgSubscribeCommunicationCallToTone?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SubscribeExpanded (Default)

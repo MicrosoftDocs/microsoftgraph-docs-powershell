@@ -12,6 +12,9 @@ List of onPremisesAgent that are assigned to an onPremisesAgentGroup.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileAgentGroupAgent](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileAgentGroupAgent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

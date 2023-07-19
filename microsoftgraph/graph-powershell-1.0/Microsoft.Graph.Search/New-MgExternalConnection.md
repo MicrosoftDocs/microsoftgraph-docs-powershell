@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new externalConnection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Search/New-MgExternalConnection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

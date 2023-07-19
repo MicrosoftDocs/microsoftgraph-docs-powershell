@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from programs by key
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgProgram?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

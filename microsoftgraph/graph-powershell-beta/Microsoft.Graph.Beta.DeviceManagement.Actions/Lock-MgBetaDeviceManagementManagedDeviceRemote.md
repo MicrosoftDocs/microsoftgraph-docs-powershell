@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Lock-MgDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Lock-MgDeviceManagementManagedDeviceRemote?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Lock (Default)

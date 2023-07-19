@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get customCSS for the navigation property branding from organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingCustomCss?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

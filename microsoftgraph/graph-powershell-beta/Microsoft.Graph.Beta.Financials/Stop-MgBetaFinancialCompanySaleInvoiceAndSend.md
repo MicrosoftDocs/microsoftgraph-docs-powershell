@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancelAndSend
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgFinancialCompanySaleInvoiceAndSend](/powershell/module/Microsoft.Graph.Financials/Stop-MgFinancialCompanySaleInvoiceAndSend?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from groupSettingTemplates
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a store object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

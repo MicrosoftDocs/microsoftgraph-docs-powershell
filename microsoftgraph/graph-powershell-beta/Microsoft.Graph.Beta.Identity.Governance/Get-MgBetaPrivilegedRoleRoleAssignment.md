@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from privilegedRoleAssignments by key
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedRoleRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

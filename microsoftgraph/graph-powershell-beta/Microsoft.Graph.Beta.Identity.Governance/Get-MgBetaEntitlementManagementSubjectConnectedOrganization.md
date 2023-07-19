@@ -12,6 +12,9 @@ The connected organization of the subject.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSubjectConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSubjectConnectedOrganization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Shut down device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownDeviceManagementManagedDeviceShut](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownDeviceManagementManagedDeviceShut?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Down (Default)

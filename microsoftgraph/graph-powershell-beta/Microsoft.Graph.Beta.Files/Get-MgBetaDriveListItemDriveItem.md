@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

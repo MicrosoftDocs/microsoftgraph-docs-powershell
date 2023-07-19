@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a personAnniversary object from the user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileAnniversary](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileAnniversary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation link to the terms and conditions that are assigned.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndConditionGroupAssignmentTermAndCondition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

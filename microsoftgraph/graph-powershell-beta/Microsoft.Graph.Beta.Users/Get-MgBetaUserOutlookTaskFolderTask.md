@@ -12,6 +12,9 @@ The tasks in this task folder.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

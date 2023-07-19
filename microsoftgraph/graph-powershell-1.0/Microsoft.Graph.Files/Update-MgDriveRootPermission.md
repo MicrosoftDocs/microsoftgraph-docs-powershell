@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a sharing permission by patching the permission resource.
 Only the **roles** property can be modified this way.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootPermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgDriveRootPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

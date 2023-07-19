@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete calendarPermission.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgUserEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

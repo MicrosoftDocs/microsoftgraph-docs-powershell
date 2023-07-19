@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get approvers from privacy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestApprover?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

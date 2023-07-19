@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

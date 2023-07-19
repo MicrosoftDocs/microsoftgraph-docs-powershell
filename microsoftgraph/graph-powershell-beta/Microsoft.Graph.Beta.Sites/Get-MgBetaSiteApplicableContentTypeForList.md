@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getApplicableContentTypesForList
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteApplicableContentTypeForList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteApplicableContentTypeForList?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

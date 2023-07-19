@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action windowsPrivacyAccessControls
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDeviceManagementDeviceConfigurationWindowsPrivacyAccessControl?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AccessExpanded1 (Default)

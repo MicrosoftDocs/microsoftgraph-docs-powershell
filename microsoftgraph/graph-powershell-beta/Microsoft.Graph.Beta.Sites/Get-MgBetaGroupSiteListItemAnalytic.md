@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Analytics about the view activities that took place on this item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemAnalytic?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

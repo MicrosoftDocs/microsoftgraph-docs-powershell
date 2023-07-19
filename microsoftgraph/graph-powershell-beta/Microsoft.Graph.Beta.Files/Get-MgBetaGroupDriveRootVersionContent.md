@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property versions from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveRootVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveRootVersionContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

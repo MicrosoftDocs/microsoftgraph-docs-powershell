@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Used to access the underlying site
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareSite](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

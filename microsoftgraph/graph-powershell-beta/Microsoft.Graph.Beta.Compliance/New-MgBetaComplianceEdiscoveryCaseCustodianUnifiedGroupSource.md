@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new unifiedGroupSource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

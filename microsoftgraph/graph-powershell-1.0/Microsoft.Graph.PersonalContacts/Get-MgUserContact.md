@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a contact object.
 There are two scenarios where an app can get a contact in another user's contact folder:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Get-MgUserContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

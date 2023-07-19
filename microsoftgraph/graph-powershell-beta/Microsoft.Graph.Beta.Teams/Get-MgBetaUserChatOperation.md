@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the specified Teams async operation that ran or is running on a specific resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChatOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

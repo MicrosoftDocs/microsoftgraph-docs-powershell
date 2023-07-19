@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of content types present in this list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveListContentType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

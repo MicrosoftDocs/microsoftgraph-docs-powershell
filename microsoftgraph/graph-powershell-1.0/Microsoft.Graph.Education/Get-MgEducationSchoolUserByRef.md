@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the educationUser resources associated with an educationSchool.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

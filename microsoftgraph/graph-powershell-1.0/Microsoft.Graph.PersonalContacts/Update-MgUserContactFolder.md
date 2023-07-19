@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property extensions in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgUserContactFolder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

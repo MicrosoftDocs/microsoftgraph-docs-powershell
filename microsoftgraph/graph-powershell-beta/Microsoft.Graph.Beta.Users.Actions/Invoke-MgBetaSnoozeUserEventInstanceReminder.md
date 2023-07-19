@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action signDigest
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SignExpanded (Default)

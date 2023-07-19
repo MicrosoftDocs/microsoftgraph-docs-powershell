@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property summary for privilegedApproval
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivilegedApprovalRoleInfoSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedApprovalRoleInfoSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

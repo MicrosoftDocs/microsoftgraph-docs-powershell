@@ -11,6 +11,9 @@ schema: 2.0.0
 Identity of the user who last modified the item.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveRootItemLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveRootItemLastModifiedByUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -12,6 +12,9 @@ The user's calendars.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgUserCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

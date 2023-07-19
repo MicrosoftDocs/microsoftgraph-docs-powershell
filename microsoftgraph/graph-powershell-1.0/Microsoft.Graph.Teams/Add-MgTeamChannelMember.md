@@ -11,6 +11,9 @@ schema: 2.0.0
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Add-MgTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

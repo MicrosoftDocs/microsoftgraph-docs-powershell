@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionRegistrationCustomQuestion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove device from Device Firmware Configuration Interface management
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserManagedDeviceFirmwareConfigurationInterfaceManagement](/powershell/module/Microsoft.Graph.Users.Actions/Remove-MgUserManagedDeviceFirmwareConfigurationInterfaceManagement?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Remove (Default)

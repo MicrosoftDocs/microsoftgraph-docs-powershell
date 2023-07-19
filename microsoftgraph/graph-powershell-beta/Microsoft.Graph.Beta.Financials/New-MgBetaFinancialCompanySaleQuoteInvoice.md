@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action makeInvoice
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanySaleQuoteInvoice](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanySaleQuoteInvoice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Make (Default)

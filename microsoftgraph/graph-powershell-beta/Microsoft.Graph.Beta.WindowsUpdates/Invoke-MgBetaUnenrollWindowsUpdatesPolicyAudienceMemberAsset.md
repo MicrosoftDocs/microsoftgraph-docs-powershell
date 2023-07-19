@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unenrollAssets
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgUnenrollWindowsUpdatesPolicyAudienceMemberAsset?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UnenrollExpanded (Default)

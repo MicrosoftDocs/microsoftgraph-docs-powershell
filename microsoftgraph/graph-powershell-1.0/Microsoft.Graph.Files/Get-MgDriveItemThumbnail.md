@@ -13,6 +13,9 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveItemThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

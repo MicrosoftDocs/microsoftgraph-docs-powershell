@@ -12,6 +12,9 @@ List of onPremisesAgentGroups that a publishedResource is assigned to.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileAgentGroupPublishedResourceAgentGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

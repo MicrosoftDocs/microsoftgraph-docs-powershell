@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

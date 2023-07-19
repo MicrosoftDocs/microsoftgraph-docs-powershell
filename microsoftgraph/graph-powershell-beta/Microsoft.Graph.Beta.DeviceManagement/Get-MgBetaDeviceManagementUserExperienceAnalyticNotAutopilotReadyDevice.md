@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 User experience analytics devices not Windows Autopilot ready.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

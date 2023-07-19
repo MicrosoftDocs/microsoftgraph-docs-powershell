@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a group from the list of groups included in a mobile app management policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

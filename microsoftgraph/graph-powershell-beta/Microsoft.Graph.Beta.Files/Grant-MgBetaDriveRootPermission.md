@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a [permission][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Grant-MgDriveRootPermission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)

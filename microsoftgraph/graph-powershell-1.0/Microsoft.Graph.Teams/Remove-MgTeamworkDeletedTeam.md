@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property deletedTeams for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamworkDeletedTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

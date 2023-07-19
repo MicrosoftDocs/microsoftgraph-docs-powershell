@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 User Experience Analytics Battery Health Model Performance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

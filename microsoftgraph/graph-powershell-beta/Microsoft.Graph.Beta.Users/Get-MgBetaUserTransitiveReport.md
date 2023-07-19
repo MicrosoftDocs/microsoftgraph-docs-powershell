@@ -11,6 +11,9 @@ schema: 2.0.0
 The transitive reports for a user.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

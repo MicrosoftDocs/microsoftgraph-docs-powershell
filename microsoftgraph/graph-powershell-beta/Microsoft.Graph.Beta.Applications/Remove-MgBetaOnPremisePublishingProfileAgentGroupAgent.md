@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property agents for onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgOnPremisePublishingProfileAgentGroupAgent](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroupAgent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get createdByUser from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListItemCreatedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListItemCreatedByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

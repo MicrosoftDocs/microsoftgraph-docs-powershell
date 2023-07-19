@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get allTime from drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemAnalyticTime](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalyticTime?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

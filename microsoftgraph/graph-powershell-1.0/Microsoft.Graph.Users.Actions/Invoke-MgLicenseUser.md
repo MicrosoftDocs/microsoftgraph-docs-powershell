@@ -12,6 +12,9 @@ Reprocess all group-based license assignments for the user.
 To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
 Also see Identify and resolve license assignment problems for a group in Azure Active Directory for more details.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaLicenseUser](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgLicenseUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### License (Default)

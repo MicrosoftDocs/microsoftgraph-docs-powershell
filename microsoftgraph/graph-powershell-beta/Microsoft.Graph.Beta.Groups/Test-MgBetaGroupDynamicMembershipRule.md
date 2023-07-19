@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action evaluateDynamicMembership
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupDynamicMembershipRule](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembershipRule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded1 (Default)

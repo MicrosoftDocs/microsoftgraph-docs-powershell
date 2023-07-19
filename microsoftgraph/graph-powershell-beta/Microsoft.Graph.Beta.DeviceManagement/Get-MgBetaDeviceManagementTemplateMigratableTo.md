@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of templates this template can migrate to
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTemplateMigratableTo](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateMigratableTo?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

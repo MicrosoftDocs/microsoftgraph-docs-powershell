@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of page objects from the specified section.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionPage](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgUserOnenoteSectionPage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

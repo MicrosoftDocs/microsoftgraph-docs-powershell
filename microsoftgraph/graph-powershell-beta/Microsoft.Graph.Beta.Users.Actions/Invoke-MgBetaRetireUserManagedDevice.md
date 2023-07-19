@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retire a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetireUserManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Retire (Default)

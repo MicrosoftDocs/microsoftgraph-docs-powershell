@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property attendanceRecords in users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

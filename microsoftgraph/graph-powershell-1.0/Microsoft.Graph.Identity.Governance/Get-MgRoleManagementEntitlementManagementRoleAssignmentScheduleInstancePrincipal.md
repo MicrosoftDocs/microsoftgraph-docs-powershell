@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The principal that's getting a role assignment or role eligibility through the request.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleInstancePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

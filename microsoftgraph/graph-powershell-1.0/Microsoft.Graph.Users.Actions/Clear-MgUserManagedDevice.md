@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Wipe a device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Clear-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Clear-MgUserManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### WipeExpanded (Default)

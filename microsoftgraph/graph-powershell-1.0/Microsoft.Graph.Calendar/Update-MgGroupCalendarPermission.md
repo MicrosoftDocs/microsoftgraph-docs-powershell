@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the permissions assigned to an existing sharee or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgGroupCalendarPermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

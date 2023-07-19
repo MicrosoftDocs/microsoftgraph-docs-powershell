@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action runHuntingQuery
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RunExpanded (Default)

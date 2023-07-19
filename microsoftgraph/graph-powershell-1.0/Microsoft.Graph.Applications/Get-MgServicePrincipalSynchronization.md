@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get synchronization from servicePrincipals
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

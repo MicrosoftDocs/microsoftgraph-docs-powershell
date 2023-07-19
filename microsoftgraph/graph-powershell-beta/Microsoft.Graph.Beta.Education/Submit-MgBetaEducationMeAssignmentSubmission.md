@@ -15,6 +15,9 @@ During the submit process, all the resources are copied to the **submittedResour
 The teacher will be looking at the submitted resources list for grading.
 A teacher can also submit a student's assignment on their behalf.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Submit-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Submit-MgEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Submit (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property fields for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

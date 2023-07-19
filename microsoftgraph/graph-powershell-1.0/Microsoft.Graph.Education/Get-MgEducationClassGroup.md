@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The underlying Microsoft 365 group object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationClassGroup](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationClassGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

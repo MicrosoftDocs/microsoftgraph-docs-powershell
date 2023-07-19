@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpublish a [contentType][] from a content type hub site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDrive](/powershell/module/Microsoft.Graph.Files/Update-MgDrive?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)

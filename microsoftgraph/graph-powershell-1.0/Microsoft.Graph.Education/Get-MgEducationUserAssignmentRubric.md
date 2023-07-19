@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationUserAssignmentRubric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Adds (pins) a tab to the specified channel within a team.
 \nThe corresponding app must already be installed in the team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamChannelTab?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

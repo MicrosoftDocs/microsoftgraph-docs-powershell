@@ -13,6 +13,9 @@ Currently, only one printerShare can be associated with the printer.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintPrinterShare?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

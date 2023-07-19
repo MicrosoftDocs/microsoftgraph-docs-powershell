@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from onPremisesPublishingProfiles by key
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

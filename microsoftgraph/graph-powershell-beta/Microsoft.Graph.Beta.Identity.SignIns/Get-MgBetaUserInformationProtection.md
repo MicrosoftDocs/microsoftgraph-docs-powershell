@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get informationProtection from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInformationProtection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserInformationProtection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

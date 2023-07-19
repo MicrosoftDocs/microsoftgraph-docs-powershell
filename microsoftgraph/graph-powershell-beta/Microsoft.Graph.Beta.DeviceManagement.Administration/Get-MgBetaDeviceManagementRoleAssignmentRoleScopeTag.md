@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of Role Scope Tags defined on the Role Assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRoleAssignmentRoleScopeTag](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleAssignmentRoleScopeTag?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

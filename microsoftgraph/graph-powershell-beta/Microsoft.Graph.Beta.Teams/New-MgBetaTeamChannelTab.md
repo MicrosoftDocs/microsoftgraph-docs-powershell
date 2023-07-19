@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to tabs for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelTab?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

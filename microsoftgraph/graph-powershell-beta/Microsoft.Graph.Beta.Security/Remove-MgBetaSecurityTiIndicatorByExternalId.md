@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests, when the request contains external IDs instead of IDs.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityTiIndicatorByExternalId](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicatorByExternalId?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### DeleteExpanded (Default)

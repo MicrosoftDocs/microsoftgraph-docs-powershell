@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOfAsGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

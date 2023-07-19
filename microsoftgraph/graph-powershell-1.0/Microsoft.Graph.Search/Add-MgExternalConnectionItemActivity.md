@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action addActivities
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Beta.Search/Add-MgExternalConnectionItemActivity?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

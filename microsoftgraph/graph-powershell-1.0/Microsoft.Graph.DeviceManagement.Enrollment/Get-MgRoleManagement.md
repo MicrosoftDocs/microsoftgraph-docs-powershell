@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Get-MgRoleManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

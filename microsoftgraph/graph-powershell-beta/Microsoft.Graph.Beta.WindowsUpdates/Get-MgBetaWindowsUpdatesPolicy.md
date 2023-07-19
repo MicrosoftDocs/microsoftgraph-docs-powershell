@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an updatePolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

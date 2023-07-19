@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function functions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaFunctionServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgFunctionServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Function (Default)

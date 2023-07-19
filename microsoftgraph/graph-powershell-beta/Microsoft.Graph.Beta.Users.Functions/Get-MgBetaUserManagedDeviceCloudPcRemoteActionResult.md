@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getCloudPcRemoteActionResults
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceCloudPcRemoteActionResult](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceCloudPcRemoteActionResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

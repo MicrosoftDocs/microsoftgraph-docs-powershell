@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListColumn](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

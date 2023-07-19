@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove an ediscoveryNoncustodialDataSource object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

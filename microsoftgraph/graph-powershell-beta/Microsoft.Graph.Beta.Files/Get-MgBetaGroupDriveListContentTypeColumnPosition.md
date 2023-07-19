@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Column order information in a content type.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentTypeColumnPosition](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentTypeColumnPosition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

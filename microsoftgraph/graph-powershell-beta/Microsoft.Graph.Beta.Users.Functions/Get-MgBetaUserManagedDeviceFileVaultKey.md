@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getFileVaultKey
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceFileVaultKey](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserManagedDeviceFileVaultKey?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

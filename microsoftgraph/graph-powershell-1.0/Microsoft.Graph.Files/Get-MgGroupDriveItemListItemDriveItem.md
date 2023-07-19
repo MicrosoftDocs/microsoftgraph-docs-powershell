@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemListItemDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveItemListItemDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

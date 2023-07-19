@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveMemberOfAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOfAsAdministrativeUnit?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -12,6 +12,9 @@ Delete a specific cloudPcOnPremisesConnection object.
 When you delete an Azure network connection, permissions to the service are removed from the specified Azure resources.
 You cannot delete an Azure network connection when it's in use, as indicated by the **inUse** property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointOnPremiseConnection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

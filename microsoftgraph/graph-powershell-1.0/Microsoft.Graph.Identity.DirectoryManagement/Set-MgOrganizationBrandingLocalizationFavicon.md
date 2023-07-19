@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update favicon for the navigation property localizations in organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationFavicon?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

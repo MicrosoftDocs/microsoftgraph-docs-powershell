@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an attachment from a user calendar event, message, Outlook task, or post.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventExceptionOccurrenceAttachment](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventExceptionOccurrenceAttachment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

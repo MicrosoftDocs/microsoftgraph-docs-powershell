@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get broadcastRecording for the navigation property onlineMeetings from communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingBroadcastRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingBroadcastRecording?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

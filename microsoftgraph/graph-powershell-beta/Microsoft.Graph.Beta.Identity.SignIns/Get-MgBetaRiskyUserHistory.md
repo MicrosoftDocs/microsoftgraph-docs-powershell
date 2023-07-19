@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a riskyUserHistoryItem object of a riskyUser.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUserHistory](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUserHistory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

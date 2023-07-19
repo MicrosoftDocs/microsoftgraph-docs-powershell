@@ -14,6 +14,9 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 \nYou should continue to GET until the status is not 'running'.
 \nThe recommended delay between GETs is 5 seconds.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CloneExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection property of MobileAppTroubleshootingEvent.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

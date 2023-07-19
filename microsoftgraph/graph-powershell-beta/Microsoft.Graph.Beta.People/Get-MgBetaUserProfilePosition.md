@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a workPosition object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Get-MgUserProfilePosition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

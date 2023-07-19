@@ -12,6 +12,9 @@ Remove a key credential from an application.
 This method along with addKey can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplicationKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

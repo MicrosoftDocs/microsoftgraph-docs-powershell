@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Used to access the underlying listItem
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

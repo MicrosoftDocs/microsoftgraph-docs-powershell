@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Validate that the credentials are valid in the tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)

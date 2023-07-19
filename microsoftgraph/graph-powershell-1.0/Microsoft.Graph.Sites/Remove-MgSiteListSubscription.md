@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subscriptions for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

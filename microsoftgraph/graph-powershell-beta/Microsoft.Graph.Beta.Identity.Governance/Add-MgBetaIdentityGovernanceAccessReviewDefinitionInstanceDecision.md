@@ -11,6 +11,9 @@ schema: 2.0.0
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be `Completed` to call this method.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Apply (Default)

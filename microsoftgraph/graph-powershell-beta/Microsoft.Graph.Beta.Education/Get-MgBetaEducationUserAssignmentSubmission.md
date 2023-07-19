@@ -20,6 +20,9 @@ Students will not see the grade or feedback until the **assignment** has been re
 Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status.
 For details, see the examples section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

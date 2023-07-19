@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property resourceAccessProfiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementResourceAccessProfile](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementResourceAccessProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

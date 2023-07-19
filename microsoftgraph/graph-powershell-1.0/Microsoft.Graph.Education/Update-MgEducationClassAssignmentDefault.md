@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

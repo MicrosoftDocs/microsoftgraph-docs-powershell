@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Set mobile device management authority
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgOrganizationMobileDeviceManagementAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationMobileDeviceManagementAuthority?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

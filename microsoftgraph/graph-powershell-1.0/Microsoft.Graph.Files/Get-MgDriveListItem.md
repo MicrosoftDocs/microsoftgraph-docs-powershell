@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the metadata for an [item][] in a [list][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

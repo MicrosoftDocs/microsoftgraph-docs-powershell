@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove teacher from an educationClass.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassTeacherByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 The role definition associated with the role assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

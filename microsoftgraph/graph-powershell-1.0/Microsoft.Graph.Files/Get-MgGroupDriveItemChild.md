@@ -13,6 +13,9 @@ Only items representing folders have children.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveItemChild](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveItemChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

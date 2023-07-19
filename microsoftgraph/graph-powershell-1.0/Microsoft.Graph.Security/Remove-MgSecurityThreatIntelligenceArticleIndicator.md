@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property articleIndicators for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

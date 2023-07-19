@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property calendarView in solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

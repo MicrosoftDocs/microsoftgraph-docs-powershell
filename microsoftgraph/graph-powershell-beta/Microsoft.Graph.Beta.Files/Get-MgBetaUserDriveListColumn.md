@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get columns from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

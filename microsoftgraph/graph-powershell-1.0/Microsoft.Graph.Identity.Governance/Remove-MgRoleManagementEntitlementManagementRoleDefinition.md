@@ -12,6 +12,9 @@ Delete a unifiedRoleDefinition object.
 You cannot delete built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

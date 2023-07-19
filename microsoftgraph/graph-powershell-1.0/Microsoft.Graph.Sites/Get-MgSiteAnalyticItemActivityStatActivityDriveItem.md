@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Exposes the driveItem that was the target of this activity.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

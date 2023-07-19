@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternal](/powershell/module/Microsoft.Graph.Search/Get-MgExternal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

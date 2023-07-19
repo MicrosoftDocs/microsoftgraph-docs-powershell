@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update content for the navigation property resources in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

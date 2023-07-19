@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Targeted managed app configurations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtTargetedManagedAppConfiguration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

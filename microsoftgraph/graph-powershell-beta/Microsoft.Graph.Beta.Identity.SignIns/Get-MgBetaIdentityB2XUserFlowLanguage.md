@@ -12,6 +12,9 @@ The languages supported for customization within the user flow.
 Language customization is enabled by default in self-service sign up user flow.
 You cannot create custom languages in self-service sign up user flows.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

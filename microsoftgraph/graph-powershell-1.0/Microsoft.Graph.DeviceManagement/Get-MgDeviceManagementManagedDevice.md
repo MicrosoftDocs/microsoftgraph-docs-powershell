@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of managed devices.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementManagedDevice?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

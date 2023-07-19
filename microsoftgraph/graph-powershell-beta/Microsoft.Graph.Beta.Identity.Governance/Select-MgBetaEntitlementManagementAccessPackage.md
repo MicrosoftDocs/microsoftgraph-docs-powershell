@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Select matching entitlement management accessPackage
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Select-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Select-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

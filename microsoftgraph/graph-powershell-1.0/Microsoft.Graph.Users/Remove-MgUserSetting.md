@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property settings for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get picture from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyCustomerPicture](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyCustomerPicture?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

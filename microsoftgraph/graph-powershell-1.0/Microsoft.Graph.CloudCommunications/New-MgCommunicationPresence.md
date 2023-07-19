@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to presences for communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgCommunicationPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A list of printTasks that were triggered by this print job.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintShareJobTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareJobTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

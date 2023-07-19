@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unassigns the user from an Autopilot device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnassignDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserFromDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnassignDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceUserFromDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Unassign (Default)

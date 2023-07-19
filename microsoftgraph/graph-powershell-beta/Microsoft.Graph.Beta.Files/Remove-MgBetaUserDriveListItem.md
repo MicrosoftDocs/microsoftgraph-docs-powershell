@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Removes an item from a [list][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserDriveListItem](/powershell/module/Microsoft.Graph.Files/Remove-MgUserDriveListItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

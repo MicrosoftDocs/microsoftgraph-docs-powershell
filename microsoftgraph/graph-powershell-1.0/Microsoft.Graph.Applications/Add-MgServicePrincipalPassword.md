@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a strong password or secret to a servicePrincipal object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaServicePrincipalPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgServicePrincipalPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

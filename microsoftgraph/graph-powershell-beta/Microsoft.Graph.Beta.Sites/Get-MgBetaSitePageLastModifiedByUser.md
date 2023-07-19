@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastModifiedByUser from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageLastModifiedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageLastModifiedByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

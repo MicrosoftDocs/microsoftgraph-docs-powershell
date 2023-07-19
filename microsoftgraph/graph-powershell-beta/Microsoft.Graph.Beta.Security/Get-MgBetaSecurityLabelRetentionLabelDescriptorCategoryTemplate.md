@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies a group of similar types of content in a particular department.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCategoryTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

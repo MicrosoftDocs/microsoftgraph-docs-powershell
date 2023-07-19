@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property transcripts for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingTranscript?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

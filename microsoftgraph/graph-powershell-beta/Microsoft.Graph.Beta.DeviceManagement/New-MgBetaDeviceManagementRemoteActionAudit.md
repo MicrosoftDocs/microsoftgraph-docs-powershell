@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to remoteActionAudits for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementRemoteActionAudit](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementRemoteActionAudit?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

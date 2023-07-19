@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get itemActivityStats from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteAnalyticItemActivityStat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

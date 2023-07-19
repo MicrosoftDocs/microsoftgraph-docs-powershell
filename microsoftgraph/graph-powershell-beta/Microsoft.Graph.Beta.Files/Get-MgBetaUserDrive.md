@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of drives available for this user.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDrive?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

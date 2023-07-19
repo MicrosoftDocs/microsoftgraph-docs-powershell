@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property attachments in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserTodoListTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

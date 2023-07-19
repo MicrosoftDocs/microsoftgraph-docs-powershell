@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add an educationUser member to an educationClass.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClassMemberByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

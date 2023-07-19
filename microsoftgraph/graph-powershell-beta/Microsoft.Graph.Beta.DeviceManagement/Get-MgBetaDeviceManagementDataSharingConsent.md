@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Data sharing consents.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

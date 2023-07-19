@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action updateIndex
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Update (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Wipe a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### WipeExpanded (Default)

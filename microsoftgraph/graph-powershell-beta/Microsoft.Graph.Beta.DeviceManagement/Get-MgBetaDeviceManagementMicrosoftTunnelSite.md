@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of MicrosoftTunnelSite settings associated with account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMicrosoftTunnelSite](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

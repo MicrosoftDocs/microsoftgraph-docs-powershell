@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The group policy presentations associated with the definition.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

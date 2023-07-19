@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property offerShiftRequests for teams
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

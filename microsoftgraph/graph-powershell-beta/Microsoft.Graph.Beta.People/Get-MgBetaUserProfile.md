@@ -13,6 +13,9 @@ The **profile** resource exposes various rich properties that are descriptive of
 To get one of these navigation properties, use the corresponding GET method on that property.
 See the methods exposed by **profile**.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserProfile](/powershell/module/Microsoft.Graph.People/Get-MgUserProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

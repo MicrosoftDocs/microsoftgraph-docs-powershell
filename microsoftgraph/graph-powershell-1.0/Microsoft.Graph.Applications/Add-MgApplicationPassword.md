@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds a strong password or secret to an application.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgApplicationPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

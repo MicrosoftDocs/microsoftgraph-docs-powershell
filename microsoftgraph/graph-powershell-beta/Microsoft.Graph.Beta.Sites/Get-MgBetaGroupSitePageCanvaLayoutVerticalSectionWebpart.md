@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of web parts in this section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageCanvaLayoutVerticalSectionWebpart](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSitePageCanvaLayoutVerticalSectionWebpart?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

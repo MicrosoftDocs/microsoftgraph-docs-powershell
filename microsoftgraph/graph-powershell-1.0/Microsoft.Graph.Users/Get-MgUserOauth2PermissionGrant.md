@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get oauth2PermissionGrants from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserOauth2PermissionGrant?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

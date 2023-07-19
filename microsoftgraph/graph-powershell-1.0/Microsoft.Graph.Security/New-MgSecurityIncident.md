@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to incidents for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityIncident](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityIncident?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

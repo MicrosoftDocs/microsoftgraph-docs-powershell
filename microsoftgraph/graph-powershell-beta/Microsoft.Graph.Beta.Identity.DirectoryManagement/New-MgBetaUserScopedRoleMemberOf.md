@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to scopedRoleMemberOf for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserScopedRoleMemberOf](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgUserScopedRoleMemberOf?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

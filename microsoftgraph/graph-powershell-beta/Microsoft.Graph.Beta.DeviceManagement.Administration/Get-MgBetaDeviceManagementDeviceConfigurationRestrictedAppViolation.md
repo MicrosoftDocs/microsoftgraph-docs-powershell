@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restricted apps violations for this account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementDeviceConfigurationRestrictedAppViolation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

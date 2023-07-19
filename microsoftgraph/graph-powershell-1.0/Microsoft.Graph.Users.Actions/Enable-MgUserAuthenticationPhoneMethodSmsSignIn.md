@@ -11,6 +11,9 @@ schema: 2.0.0
 Enable SMS sign-in for an existing `mobile` phone number registered to a user.
 To be successfully enabled:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Enable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Enable-MgUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Enable (Default)

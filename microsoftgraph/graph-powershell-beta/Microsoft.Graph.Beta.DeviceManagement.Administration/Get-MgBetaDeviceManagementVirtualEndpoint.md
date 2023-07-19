@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get virtualEndpoint from deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpoint](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpoint?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

@@ -11,6 +11,9 @@ schema: 2.0.0
 There is exactly one accessReviewScheduleDefinition associated with each instance.
 It is the parent schedule for the instance, where instances are created for each recurrence of a review definition and each group selected to review by the definition.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDecisionInstanceDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The principal that's getting a role assignment through the request.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

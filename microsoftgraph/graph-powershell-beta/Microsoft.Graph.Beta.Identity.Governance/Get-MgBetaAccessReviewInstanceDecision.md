@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of decisions for this access review.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAccessReviewInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewInstanceDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

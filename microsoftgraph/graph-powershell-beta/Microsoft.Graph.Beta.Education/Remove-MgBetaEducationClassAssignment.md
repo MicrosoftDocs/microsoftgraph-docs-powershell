@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete an existing assignment.
 Only teachers within a class can delete assignments.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

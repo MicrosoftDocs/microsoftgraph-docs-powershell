@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action approveApps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Approve-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Approve-MgDeviceManagementAndroidManagedStoreAccountEnterpriseSettingApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ApproveExpanded (Default)

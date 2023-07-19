@@ -12,6 +12,9 @@ For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

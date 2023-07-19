@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

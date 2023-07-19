@@ -11,6 +11,9 @@ schema: 2.0.0
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintTaskDefinitionTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinitionTaskTrigger?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -12,6 +12,9 @@ Allow admins to mark an event in Azure AD sign in logs as safe.
 Admins can either mark the events flagged as risky by Azure AD Identity Protection as safe, or they can mark unflagged events as safe.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgAuditLogSignInSafe](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInSafe?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)

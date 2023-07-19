@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property paymentTerm in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleInvoicePaymentTerm](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoicePaymentTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

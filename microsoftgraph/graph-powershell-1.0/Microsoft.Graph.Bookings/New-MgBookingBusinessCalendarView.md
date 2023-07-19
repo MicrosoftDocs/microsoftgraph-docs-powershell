@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to calendarView for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessCalendarView?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

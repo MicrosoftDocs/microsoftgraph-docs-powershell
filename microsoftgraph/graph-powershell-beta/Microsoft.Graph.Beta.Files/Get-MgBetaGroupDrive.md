@@ -11,6 +11,9 @@ schema: 2.0.0
 The group's drives.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDrive?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

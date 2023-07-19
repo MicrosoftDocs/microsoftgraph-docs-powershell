@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property currency for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanyPurchaseInvoiceCurrency](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyPurchaseInvoiceCurrency?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

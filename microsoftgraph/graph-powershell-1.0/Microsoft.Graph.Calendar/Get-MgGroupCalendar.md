@@ -11,6 +11,9 @@ schema: 2.0.0
 The group's calendar.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgGroupCalendar?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

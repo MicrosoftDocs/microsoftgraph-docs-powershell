@@ -11,6 +11,9 @@ schema: 2.0.0
 Initiate an export from a **reviewSet** query.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ExportExpanded (Default)

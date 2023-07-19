@@ -14,6 +14,9 @@ After that time, they're permanently deleted.
 This isn't applicable to Security groups and Distribution groups which are permanently deleted immediately.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

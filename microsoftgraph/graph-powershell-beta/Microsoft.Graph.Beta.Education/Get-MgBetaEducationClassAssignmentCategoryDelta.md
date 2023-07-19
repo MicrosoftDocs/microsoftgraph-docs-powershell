@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentCategoryDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategoryDelta?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delta (Default)

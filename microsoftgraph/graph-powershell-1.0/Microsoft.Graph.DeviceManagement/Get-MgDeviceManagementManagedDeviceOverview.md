@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device overview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementManagedDeviceOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

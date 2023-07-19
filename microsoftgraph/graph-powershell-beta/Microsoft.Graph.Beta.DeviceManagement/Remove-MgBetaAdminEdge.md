@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property edge for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgAdminEdge?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

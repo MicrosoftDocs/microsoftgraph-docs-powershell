@@ -13,6 +13,9 @@ Provided so that callers can get the directory objects using $expand at the same
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

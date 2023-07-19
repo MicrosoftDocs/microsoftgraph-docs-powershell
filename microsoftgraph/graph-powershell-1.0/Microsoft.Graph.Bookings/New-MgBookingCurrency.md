@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to bookingCurrencies for solutions
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

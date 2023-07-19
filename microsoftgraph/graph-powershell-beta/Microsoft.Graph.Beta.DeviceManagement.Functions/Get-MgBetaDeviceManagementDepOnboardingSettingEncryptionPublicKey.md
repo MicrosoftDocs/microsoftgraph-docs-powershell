@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a public key to use to encrypt the Apple device enrollment program token
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDepOnboardingSettingEncryptionPublicKey?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

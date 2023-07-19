@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from contacts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgContact?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveListContentTypeToDefaultContentLocation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)

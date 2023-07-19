@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update Chat RSC configuration for tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgChatRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgChatRscConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

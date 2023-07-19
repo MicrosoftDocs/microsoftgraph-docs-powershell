@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getM365AppPlatformUserCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportM365AppPlatformUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportM365AppPlatformUserCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

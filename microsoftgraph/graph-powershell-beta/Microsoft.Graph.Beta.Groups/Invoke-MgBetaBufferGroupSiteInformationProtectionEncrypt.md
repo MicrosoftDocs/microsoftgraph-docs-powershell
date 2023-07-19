@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action encryptBuffer
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBufferGroupSiteInformationProtectionEncrypt](/powershell/module/Microsoft.Graph.Groups/Invoke-MgBufferGroupSiteInformationProtectionEncrypt?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### BufferExpanded (Default)

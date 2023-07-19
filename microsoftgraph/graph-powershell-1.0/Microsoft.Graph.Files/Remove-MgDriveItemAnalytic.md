@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property analytics for drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveItemAnalytic](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgDriveItemAnalytic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

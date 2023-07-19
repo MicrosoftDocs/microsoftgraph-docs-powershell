@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The software update status summary.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementSoftwareUpdateStatusSummary](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementSoftwareUpdateStatusSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies the audience to target.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesPolicyAudience](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyAudience?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new reviewSetQuery object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

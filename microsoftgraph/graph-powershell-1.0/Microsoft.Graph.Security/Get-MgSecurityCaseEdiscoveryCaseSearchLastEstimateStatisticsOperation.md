@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the last  ediscoveryEstimateOperation objects and their properties.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

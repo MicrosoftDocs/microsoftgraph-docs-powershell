@@ -11,6 +11,9 @@ schema: 2.0.0
 Unshare a channel with a team by deleting the corresponding sharedWithChannelTeamInfo resource.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelSharedWithTeam?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

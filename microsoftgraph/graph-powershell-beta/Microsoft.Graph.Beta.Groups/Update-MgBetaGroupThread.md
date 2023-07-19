@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update a thread object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeviceOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a single message or a message reply in a channel or a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

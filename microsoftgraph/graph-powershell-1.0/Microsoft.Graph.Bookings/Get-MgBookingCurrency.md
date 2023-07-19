@@ -11,6 +11,9 @@ schema: 2.0.0
 Get the properties of a bookingCurrency object that is available to a Microsoft Bookings business.
 Use the **id** property, which is the currency code, to specify the currency.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBookingCurrency?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

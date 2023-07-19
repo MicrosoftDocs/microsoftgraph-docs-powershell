@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes an internalDomainFederation object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomainFederationConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

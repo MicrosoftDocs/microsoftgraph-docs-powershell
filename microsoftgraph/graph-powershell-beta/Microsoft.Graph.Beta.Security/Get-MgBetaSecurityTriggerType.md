@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get triggerTypes from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

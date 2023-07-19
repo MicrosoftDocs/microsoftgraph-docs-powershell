@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of role defintions for the provider.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

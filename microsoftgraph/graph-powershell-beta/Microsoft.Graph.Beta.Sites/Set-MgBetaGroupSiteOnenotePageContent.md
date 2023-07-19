@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupSiteOnenotePageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenotePageContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)

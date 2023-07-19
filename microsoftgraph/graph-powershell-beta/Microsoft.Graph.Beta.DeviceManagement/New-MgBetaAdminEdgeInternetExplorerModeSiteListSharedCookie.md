@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new browserSharedCookie object in a browserSiteList.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteListSharedCookie?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

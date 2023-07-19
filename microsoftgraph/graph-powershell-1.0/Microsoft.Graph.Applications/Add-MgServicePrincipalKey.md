@@ -14,6 +14,9 @@ As part of the request validation for this method, a proof of possession of an e
 ServicePrincipals that don't have any existing valid certificates (i.e.: no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 Update servicePrincipal can be used to perform an update instead.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgServicePrincipalKey?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

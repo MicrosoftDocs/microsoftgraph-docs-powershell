@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A threat submission sent to Microsoft; for example, a suspicious email threat, URL threat, or file threat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatSubmission](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

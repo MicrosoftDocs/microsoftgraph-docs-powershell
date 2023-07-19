@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In the Azure AD access reviews feature, delete an accessReview object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgAccessReview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

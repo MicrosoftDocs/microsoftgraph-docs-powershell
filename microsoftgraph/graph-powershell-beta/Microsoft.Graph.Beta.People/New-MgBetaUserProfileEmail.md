@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new itemEmail object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/New-MgUserProfileEmail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property drives for groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgGroupDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

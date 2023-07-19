@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get includes from policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyServicePrincipalCreationPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyServicePrincipalCreationPolicyInclude?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

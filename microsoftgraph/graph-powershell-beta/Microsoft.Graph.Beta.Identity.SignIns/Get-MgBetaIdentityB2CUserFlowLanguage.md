@@ -14,6 +14,9 @@ These objects represent a language available in a user flow.
 For more information, see Update b2cIdentityUserFlow.
 Language customization is enabled by default in Azure Active Directory user flows.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowLanguage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

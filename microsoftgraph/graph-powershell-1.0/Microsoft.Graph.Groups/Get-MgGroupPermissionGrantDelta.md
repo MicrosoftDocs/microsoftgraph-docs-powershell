@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrantDelta](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupPermissionGrantDelta?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delta (Default)

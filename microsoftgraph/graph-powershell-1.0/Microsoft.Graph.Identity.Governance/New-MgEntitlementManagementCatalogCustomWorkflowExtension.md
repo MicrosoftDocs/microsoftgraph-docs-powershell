@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to customWorkflowExtensions for identityGovernance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementCatalogCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementCatalogCustomWorkflowExtension?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

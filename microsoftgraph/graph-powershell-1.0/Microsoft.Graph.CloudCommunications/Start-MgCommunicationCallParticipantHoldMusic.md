@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Put a participant on hold and play music in the background.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Start-MgCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### StartExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOwnedObjectAsApplication](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObjectAsApplication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

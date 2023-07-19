@@ -16,6 +16,9 @@ When using MIME format:n- Provide the applicable Internet message headers and th
 This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to forward a message, and send it later.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)

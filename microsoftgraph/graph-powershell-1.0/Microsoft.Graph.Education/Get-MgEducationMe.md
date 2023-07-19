@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get me from education
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMe](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMe?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

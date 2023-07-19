@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get joinedGroups from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserJoinedGroup](/powershell/module/Microsoft.Graph.Groups/Get-MgUserJoinedGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

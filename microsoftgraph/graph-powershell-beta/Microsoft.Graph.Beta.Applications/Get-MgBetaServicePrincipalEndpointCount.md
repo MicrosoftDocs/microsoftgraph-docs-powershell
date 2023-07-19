@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalEndpointCount](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalEndpointCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

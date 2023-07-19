@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a column for a [list][list] with a request that specifies a [columnDefinition][columnDefinition].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareListColumn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

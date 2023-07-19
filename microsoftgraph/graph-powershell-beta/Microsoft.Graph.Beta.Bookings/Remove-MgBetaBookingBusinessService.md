@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a bookingService object in the specified bookingBusiness.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessService?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

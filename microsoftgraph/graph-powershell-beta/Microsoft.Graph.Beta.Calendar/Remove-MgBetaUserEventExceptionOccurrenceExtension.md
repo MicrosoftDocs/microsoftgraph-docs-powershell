@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property extensions for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserEventExceptionOccurrenceExtension](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEventExceptionOccurrenceExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

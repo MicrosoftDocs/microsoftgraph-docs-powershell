@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Resize-MgUserManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Resize-MgUserManagedDeviceCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ResizeExpanded (Default)

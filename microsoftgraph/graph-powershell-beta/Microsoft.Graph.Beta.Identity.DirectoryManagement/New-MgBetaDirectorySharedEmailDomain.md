@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sharedEmailDomains for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectorySharedEmailDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySharedEmailDomain?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Search-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Files/Search-MgDriveRoot?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Search (Default)

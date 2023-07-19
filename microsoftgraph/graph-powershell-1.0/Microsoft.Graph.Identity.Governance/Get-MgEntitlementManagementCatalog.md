@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ListAll (Default)

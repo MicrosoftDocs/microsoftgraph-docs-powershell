@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device Configuration users status overview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

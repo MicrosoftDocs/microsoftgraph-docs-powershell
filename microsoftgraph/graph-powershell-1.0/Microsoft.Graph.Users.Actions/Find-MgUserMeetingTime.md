@@ -14,6 +14,9 @@ nBased on this value, you can better adjust the parameters and call **findMeetin
 The algorithm used to suggest meeting times and locations undergoes fine-tuning from time to time.
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### FindExpanded (Default)

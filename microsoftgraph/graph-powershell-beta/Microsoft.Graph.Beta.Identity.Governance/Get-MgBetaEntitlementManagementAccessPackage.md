@@ -12,6 +12,9 @@ Retrieve an access package with a list of accessPackageResourceRoleScope objects
 These objects represent the resource roles that an access package assigns to each subject.
 Each object links to an accessPackageResourceRole and an accessPackageResourceScope.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)

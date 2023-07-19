@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property issues in admin
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

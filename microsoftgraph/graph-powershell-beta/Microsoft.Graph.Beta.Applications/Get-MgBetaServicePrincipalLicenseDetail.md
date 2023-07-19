@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get licenseDetails from servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalLicenseDetail](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalLicenseDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

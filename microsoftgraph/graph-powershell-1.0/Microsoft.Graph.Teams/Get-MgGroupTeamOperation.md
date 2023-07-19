@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The async operations that ran or are running on this team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

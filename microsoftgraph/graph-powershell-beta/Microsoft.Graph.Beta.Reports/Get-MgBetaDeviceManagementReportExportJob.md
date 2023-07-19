@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Entity representing a job to export a report
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportExportJob](/powershell/module/Microsoft.Graph.Reports/Get-MgDeviceManagementReportExportJob?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Classes to which the user belongs.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserClass?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

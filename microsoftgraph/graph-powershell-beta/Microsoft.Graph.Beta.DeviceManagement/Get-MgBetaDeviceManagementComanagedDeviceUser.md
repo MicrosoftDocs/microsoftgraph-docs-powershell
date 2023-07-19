@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The primary users associated with the managed device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDeviceUser](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

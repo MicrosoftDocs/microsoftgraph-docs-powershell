@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Install a teamsApp to the specified chat.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgUserChatInstalledApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

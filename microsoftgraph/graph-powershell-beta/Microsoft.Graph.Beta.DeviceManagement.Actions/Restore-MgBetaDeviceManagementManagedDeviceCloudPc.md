@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgDeviceManagementManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restore-MgDeviceManagementManagedDeviceCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)

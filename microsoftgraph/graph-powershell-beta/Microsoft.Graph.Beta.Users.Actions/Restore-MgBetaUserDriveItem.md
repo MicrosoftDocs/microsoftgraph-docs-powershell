@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserDriveItem](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RestoreExpanded (Default)

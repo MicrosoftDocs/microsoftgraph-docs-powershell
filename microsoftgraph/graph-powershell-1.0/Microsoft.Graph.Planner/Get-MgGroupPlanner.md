@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Entry-point to Planner resource that might exist for a Unified Group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgGroupPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

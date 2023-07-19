@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user experience analytics device events entity contains NRT device timeline event details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

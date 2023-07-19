@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of settings contained in this App Configuration policy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the writable properties of an Outlook task folder.
 You cannot change the **name** property value of the default task folder, 'Tasks'.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

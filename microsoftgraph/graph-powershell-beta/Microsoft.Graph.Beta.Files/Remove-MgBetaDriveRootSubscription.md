@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subscriptions for drives
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveRootSubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get notifications from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserNotification](/powershell/module/Microsoft.Graph.Users/Get-MgUserNotification?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

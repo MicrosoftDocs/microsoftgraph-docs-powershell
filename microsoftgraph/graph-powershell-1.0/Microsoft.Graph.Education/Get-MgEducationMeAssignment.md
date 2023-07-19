@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assignments belonging to the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

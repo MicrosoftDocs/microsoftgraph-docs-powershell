@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserChatPinnedMessageCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgUserChatPinnedMessageCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

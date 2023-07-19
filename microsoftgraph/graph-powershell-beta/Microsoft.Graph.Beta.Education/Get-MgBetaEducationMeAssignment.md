@@ -11,6 +11,9 @@ schema: 2.0.0
 List of assignments for the user.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

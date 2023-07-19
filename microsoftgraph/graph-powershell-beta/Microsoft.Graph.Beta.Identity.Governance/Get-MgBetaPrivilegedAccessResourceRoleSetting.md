@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of role settings for the resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

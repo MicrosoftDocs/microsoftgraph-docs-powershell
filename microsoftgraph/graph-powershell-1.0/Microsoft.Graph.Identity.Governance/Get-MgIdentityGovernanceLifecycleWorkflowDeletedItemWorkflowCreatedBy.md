@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user who created the workflow.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowCreatedBy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

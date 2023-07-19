@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of log collection requests
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceLogCollectionResponse](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceLogCollectionResponse?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

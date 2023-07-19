@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupConversationThreadPostAttachment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

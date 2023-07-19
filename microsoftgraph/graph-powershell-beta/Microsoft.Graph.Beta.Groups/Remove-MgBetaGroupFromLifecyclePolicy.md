@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action removeGroup
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupFromLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupFromLifecyclePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

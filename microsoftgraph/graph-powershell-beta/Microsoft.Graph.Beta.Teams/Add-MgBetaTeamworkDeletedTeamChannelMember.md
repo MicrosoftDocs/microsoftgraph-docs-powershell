@@ -11,6 +11,9 @@ schema: 2.0.0
 Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Translate identifiers of Outlook-related resources between formats.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTranslateUserExchangeId](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgTranslateUserExchangeId?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### TranslateExpanded (Default)

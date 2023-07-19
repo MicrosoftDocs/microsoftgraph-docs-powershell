@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListItemActivityByInterval](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItemActivityByInterval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)

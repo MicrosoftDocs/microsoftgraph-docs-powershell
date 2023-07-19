@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property defaultPages in identity
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

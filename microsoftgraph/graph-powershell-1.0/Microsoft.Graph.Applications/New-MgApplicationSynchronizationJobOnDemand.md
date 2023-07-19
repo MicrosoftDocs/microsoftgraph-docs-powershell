@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action provisionOnDemand
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationSynchronizationJobOnDemand?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ProvisionExpanded (Default)

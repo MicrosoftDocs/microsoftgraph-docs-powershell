@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The install state of the eBook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBookUserStateSummaryDeviceState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

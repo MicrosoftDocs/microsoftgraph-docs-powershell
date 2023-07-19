@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The mobile apps.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtMobileApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

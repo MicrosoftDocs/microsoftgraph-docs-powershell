@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Rotate BitLockerKeys
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRotateUserManagedDeviceBitLockerKey](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRotateUserManagedDeviceBitLockerKey?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Rotate (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of states of all users that the intent is applied to
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentUserState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentUserState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

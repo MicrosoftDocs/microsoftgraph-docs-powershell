@@ -13,6 +13,9 @@ After the access review stage stops, the stage **status** will be `Completed` an
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceAccessReviewDecisionInstanceStage](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDecisionInstanceStage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Stop (Default)

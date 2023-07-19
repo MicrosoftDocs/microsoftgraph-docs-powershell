@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Set device name of the device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserManagedDeviceName](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserManagedDeviceName?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

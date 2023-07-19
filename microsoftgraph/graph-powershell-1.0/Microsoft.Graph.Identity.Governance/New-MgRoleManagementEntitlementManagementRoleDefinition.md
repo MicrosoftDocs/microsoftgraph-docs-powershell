@@ -11,6 +11,9 @@ schema: 2.0.0
 Create a new custom unifiedRoleDefinition object.
 This feature requires an Azure AD Premium P1 or P2 license.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementEntitlementManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

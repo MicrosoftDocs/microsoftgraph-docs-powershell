@@ -13,6 +13,9 @@ A navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupConversationThread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The result of processing the task.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

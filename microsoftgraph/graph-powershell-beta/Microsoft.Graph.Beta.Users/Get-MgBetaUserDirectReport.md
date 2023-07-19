@@ -13,6 +13,9 @@ The users and contacts that report to the user.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDirectReport](/powershell/module/Microsoft.Graph.Users/Get-MgUserDirectReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

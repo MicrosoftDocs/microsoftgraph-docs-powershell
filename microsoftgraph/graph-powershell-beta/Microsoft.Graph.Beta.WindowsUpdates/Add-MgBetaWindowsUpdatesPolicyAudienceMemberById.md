@@ -11,6 +11,9 @@ schema: 2.0.0
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgWindowsUpdatesPolicyAudienceMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesPolicyAudienceMemberById?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

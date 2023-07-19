@@ -11,6 +11,9 @@ schema: 2.0.0
 Represents the configured tasks to execute and their execution sequence within a workflow.
 This relationship is expanded by default.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplateTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTemplateTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

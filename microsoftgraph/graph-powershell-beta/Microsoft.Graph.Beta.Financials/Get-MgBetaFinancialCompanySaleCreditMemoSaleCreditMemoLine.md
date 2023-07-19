@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get salesCreditMemoLines from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanySaleCreditMemoSaleCreditMemoLine](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleCreditMemoSaleCreditMemoLine?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function supportedTimeZones
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaTimeUserOutlook](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Invoke-MgTimeUserOutlook?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Time (Default)

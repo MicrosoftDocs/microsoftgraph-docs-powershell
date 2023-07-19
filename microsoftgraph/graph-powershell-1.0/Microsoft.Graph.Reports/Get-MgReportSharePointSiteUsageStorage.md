@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSharePointSiteUsageStorage
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsageStorage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSharePointSiteUsageStorage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

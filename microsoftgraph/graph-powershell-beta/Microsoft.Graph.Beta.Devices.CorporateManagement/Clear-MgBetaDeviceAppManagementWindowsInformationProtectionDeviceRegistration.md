@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action wipe
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Clear-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Wipe (Default)

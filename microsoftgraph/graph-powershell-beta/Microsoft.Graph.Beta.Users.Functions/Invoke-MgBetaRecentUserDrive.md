@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function recent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRecentUserDrive](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgRecentUserDrive?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Recent (Default)

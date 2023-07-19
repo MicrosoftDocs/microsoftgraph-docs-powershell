@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get approvers from security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestApprover](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestApprover?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

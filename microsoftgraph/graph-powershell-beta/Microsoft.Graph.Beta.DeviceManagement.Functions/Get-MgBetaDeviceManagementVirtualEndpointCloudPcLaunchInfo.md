@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getCloudPcLaunchInfo
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointCloudPcLaunchInfo?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

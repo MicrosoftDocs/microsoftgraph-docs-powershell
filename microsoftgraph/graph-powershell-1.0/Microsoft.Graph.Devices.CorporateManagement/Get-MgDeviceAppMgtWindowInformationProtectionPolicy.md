@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Windows information protection for apps running on devices which are not MDM enrolled.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtWindowInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtWindowInformationProtectionPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get informationProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgInformationProtection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

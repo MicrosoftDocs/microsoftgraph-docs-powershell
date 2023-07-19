@@ -13,6 +13,9 @@ Provided so that callers can get the principal using $expand at the same time as
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property items in external
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Search/Set-MgExternalConnectionItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)

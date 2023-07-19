@@ -11,6 +11,9 @@ schema: 2.0.0
 The device protection status.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceWindowsProtectionState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceWindowsProtectionState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

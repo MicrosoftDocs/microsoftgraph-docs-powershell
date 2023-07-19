@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property windowsInformationProtectionNetworkLearningSummaries for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementWindowsInformationProtectionNetworkLearningSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

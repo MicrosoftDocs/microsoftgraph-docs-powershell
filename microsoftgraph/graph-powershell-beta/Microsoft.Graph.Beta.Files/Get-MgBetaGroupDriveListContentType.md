@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get contentTypes from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveListContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

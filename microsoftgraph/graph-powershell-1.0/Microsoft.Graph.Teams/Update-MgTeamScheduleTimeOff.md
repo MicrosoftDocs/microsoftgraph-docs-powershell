@@ -11,6 +11,9 @@ schema: 2.0.0
 Replace an existing timeOff object.
 If the specified timeOff object doesn't exist, this method returns `404 Not found`.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

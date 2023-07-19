@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get industryData from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryData](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryData?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

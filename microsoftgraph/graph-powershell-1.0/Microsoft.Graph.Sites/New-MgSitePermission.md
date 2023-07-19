@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new permission object on a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

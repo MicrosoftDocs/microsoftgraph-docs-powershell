@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to channels for teamwork
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamworkDeletedTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

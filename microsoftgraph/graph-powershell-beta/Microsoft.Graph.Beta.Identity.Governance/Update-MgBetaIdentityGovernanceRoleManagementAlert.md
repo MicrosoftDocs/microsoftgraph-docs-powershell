@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action refresh
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceRoleManagementAlert](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceRoleManagementAlert?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RefreshExpanded (Default)

@@ -13,6 +13,9 @@ This action supports Microsoft Endpoint Manager (MEM) admin scenarios.
 After a Windows 365 Frontline Cloud PC is powered off, it is de-allocated, and licenses are revoked immediately.
 Only IT admin users can perform this action.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PowerOff (Default)

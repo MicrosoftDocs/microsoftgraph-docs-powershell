@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The sourceSystemDefinition this connector is connected to.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataConnectorSourceSystem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataConnectorSourceSystem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a custom registration question from a meetingRegistration object on behalf of the organizer.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventSessionRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSessionRegistrationCustomQuestion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

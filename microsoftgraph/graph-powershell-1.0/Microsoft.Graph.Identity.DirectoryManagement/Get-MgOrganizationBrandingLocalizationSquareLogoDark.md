@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get squareLogoDark for the navigation property localizations from organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationSquareLogoDark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

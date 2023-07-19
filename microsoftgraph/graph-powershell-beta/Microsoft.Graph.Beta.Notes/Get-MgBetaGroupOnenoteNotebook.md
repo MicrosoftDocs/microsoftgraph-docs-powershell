@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a notebook object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteNotebook?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

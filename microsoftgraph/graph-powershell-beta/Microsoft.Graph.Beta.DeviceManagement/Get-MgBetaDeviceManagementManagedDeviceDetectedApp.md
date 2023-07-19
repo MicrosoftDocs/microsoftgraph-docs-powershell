@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 All applications currently installed on the device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceDetectedApp](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceDetectedApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

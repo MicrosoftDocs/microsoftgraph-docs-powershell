@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property pinnedMessages in chats
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgChatPinnedMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

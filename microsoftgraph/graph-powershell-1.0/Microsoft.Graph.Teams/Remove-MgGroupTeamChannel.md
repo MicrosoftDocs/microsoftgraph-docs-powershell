@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete the channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The main logo for the application.
 Not nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

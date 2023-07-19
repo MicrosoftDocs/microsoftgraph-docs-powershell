@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property emailThreats for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

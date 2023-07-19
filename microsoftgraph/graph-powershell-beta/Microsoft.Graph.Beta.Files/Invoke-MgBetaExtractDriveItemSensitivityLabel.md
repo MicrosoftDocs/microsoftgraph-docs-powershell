@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Invoke-MgExtractDriveItemSensitivityLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Extract (Default)

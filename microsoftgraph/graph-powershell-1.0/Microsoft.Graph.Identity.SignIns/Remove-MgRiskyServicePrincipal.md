@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property riskyServicePrincipals for identityProtection
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgRiskyServicePrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

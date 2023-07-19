@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a tiIndicator object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

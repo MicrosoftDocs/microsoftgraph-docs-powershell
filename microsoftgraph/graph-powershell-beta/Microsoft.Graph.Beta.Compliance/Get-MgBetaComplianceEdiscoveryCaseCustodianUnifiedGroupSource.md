@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a unifiedGroupSource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a class to a school.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationSchoolClassByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

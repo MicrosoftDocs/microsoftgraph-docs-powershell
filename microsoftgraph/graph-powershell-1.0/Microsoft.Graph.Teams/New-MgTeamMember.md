@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a new conversationMember to a team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property progressTaskBoardFormat for solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBusinessScenarioPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlannerTaskProgressTaskBoardFormat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

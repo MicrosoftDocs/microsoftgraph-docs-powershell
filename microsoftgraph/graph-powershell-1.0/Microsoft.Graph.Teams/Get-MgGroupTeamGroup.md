@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get group from groups
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamGroup](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

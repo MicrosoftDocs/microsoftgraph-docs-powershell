@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Mark a list of serviceUpdateMessages as **unread** for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageUnread?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)

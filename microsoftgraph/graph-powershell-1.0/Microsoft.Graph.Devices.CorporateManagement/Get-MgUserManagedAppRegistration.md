@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Zero or more managed app registrations that belong to the user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedAppRegistration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgUserManagedAppRegistration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

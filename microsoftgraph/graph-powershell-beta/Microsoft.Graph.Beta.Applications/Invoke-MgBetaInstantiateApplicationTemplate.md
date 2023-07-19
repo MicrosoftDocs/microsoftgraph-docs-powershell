@@ -12,6 +12,9 @@ Add an instance of an application from the Azure AD application gallery into you
 You can also use this API to instantiate non-gallery apps.
 Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Applications/Invoke-MgInstantiateApplicationTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### InstantiateExpanded (Default)

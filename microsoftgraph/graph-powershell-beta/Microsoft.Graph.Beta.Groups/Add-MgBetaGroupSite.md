@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

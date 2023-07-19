@@ -13,6 +13,9 @@ Licenses assigned to the group will be assigned to all users in the group.
 To learn more about group-based licensing, see What is group-based licensing in Azure Active Directory.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupLicense](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupLicense?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

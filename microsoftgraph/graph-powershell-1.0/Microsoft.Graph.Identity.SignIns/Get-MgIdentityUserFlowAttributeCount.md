@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityUserFlowAttributeCount](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityUserFlowAttributeCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a conversationMember from a channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

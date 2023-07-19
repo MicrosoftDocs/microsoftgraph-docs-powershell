@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a connectedOrganization object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

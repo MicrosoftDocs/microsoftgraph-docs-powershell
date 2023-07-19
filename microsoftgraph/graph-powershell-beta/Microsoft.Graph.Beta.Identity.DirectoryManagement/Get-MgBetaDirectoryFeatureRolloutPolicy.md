@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get featureRolloutPolicies from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryFeatureRolloutPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

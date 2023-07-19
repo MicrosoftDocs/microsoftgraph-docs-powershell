@@ -12,6 +12,9 @@ Update the privacy settings to display or return the specified type of insights 
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSettingItemInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingItemInsight?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

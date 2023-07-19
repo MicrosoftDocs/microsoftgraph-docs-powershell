@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action send
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgFinancialCompanySalesQuote](/powershell/module/Microsoft.Graph.Financials/Send-MgFinancialCompanySalesQuote?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Send (Default)

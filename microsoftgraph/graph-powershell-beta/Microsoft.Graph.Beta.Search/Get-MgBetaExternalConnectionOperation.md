@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get operations from external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

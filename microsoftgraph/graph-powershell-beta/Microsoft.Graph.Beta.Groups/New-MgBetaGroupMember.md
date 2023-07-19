@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a member to an Office 365 group or security group through the members navigation property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupMember](/powershell/module/Microsoft.Graph.Groups/New-MgGroupMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

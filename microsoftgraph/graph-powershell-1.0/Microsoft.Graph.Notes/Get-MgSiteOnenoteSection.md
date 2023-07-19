@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a onenoteSection object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgSiteOnenoteSection?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

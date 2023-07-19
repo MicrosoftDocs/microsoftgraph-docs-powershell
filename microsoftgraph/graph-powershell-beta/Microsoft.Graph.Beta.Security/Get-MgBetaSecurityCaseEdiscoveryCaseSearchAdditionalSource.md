@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds an additional source to the eDiscovery search.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

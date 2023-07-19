@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to contracts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

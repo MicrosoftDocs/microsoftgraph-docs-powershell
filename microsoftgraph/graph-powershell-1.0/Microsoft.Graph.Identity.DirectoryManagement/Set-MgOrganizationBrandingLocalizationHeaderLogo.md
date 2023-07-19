@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update headerLogo for the navigation property localizations in organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingLocalizationHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationHeaderLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

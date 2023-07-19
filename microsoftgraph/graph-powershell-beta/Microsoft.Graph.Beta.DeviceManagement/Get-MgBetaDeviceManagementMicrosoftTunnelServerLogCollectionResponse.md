@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of MicrosoftTunnelServerLogCollectionResponse settings associated with account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMicrosoftTunnelServerLogCollectionResponse?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

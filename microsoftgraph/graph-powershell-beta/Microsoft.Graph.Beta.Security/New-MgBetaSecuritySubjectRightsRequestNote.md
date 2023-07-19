@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new authoredNote object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecuritySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySubjectRightsRequestNote?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

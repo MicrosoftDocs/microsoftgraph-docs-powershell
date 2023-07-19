@@ -14,6 +14,9 @@ Navigation property.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventInstance](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

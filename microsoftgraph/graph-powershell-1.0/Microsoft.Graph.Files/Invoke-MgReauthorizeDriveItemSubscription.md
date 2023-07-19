@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReauthorizeDriveItemSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgReauthorizeDriveItemSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reauthorize (Default)

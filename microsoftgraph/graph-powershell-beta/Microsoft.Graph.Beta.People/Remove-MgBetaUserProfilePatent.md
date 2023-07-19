@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes an itemPatent object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfilePatent](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePatent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

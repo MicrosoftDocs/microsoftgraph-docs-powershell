@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action stopApplyDecisions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserPendingAccessReviewInstanceApplyDecision](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserPendingAccessReviewInstanceApplyDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Stop (Default)

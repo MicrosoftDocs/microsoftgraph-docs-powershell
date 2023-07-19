@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get customers from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyCustomer](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyCustomer?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

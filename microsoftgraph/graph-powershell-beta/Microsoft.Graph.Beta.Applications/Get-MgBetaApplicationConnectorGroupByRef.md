@@ -11,6 +11,9 @@ schema: 2.0.0
 The connectorGroup the application is using with Azure AD Application Proxy.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

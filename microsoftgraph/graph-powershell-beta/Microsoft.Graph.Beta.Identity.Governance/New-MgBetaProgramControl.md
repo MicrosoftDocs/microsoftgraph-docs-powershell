@@ -12,6 +12,9 @@ In the Azure AD access reviews feature, create a new programControl object.
 This links an access review to a program.
 Prior to making this request, the caller must have previously
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgramControl?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

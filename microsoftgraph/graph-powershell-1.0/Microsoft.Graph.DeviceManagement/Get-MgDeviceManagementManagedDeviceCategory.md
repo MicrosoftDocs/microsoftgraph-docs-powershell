@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device category
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceCategory](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementManagedDeviceCategory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

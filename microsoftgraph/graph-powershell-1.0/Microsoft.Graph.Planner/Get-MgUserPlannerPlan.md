@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of **plannerplan** objects shared with a user object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgUserPlannerPlan?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

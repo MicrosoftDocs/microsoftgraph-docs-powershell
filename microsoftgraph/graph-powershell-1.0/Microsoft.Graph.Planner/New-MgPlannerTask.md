@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new **plannerTask**.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Planner/New-MgPlannerTask?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

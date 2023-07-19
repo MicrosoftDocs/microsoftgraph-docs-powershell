@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDismissGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgDismissGroupCalendarEventReminder?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Checkout (Default)

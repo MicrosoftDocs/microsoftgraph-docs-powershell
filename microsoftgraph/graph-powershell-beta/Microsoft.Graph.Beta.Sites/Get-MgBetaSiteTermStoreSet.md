@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a set object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

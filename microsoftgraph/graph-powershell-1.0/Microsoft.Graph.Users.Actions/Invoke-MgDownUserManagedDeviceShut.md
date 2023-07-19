@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Shut down device
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaDownUserManagedDeviceShut](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgDownUserManagedDeviceShut?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Down (Default)

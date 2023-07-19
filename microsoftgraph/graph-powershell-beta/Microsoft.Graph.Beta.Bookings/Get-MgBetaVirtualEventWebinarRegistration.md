@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Registration configuration of the webinar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarRegistration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

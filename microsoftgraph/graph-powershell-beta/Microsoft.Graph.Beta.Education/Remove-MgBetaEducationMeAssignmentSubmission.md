@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property submissions for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

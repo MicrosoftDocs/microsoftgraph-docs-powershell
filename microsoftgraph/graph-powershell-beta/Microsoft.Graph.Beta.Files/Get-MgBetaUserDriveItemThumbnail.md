@@ -13,6 +13,9 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveItemThumbnail](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveItemThumbnail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

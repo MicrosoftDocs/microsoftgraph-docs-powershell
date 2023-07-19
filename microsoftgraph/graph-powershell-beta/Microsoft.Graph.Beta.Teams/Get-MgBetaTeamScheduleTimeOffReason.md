@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a timeOffReason object by ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

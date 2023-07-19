@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Play lost mode sound
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPlayUserManagedDeviceLostModeSound](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgPlayUserManagedDeviceLostModeSound?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PlayExpanded (Default)

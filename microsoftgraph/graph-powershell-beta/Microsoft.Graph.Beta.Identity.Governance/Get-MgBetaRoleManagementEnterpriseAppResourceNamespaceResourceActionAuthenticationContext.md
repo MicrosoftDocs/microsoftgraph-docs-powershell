@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get authenticationContext from roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppResourceNamespaceResourceActionAuthenticationContext](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppResourceNamespaceResourceActionAuthenticationContext?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

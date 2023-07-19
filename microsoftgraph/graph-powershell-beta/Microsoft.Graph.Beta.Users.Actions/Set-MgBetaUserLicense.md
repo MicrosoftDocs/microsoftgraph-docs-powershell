@@ -14,6 +14,9 @@ You can also enable and disable specific plans associated with a subscription.
 To learn more about subscriptions and licenses, see this Technet article.
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserLicense](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserLicense?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)

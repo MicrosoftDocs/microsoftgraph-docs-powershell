@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the details of a role management policy.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyRoleManagementPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

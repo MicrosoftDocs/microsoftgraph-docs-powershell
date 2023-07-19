@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of channels shared with the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamIncomingChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamIncomingChannel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

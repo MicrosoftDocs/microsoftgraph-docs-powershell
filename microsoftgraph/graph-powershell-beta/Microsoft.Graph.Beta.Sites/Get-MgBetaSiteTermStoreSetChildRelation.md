@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 To indicate which terms are related to the current term as either pinned or reused.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChildRelation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

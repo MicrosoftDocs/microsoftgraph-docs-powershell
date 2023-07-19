@@ -12,6 +12,9 @@ Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the **distributionMethod** property for the app must be set to `organization`.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

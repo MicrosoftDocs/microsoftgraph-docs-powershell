@@ -11,6 +11,9 @@ schema: 2.0.0
 Schools to which the user belongs.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationUserSchool](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationUserSchool?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The channels that are either shared with this deleted team or created in this deleted team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamworkDeletedTeamChannel?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

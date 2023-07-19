@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The printer that this printer share is related to.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterSharePrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterSharePrinter?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the properties and relationships of a member of a standard tag in a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTagMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

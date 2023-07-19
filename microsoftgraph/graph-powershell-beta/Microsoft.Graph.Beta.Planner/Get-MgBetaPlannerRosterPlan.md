@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieves the plans contained by the plannerRoster.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerRosterPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterPlan?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

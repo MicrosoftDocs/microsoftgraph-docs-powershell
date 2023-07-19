@@ -12,6 +12,9 @@ The collection of task folders in the task group.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

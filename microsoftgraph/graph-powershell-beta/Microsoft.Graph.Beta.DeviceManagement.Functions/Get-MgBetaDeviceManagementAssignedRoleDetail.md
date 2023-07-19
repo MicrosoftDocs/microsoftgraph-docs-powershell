@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieves the assigned role definitions and role assignments of the currently authenticated user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementAssignedRoleDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementAssignedRoleDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

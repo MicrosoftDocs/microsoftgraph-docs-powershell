@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Trigger an indexOperation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Update (Default)

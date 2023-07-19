@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getTeamsTeamActivityDistributionCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDistributionCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportTeamActivityDistributionCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property messages from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMailFolderMessageContent](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgUserMailFolderMessageContent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Runs the query specified in the request body.
 Search results are provided in the response.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaQuerySearch](/powershell/module/Microsoft.Graph.Beta.Search/Invoke-MgQuerySearch?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)

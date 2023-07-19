@@ -11,6 +11,9 @@ schema: 2.0.0
 The section that contains the page.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOnenoteSectionPageParentSection](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOnenoteSectionPageParentSection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

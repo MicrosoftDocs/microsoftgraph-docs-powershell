@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of the specified team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeam?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

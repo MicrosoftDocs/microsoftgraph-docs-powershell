@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Users that are flagged as at-risk by Azure AD Identity Protection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveBundle](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveBundle?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

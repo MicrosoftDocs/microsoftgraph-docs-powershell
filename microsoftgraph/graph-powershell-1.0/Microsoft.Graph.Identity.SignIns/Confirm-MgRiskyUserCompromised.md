@@ -11,6 +11,9 @@ schema: 2.0.0
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)

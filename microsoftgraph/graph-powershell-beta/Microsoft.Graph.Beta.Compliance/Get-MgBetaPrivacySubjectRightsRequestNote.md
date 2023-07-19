@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of notes associated with the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestNote?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

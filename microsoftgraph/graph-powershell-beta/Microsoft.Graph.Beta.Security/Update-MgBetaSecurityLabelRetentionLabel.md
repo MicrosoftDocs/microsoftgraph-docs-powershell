@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the properties of a retentionLabel object.
 To update a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to localizations for agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFileLocalization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

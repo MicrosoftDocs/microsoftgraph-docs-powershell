@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The content streams that are uploaded.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentSessionContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

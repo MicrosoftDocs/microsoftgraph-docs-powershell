@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new noncustodialDataSource object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

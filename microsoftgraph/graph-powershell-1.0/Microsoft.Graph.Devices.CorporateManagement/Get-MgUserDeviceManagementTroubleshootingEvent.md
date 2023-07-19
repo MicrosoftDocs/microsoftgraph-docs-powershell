@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of troubleshooting events for this user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDeviceManagementTroubleshootingEvent](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgUserDeviceManagementTroubleshootingEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

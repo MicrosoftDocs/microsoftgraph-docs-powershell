@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A list of group policy settings to MDM/Intune mappings.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyMigrationReportGroupPolicySettingMapping?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

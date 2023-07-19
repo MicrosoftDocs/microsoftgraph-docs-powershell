@@ -13,6 +13,9 @@ These are the class-level assignment defaults respected by new assignments creat
 Callers can continue to specify custom values on each **assignment** creation if they don't want the default behaviors.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

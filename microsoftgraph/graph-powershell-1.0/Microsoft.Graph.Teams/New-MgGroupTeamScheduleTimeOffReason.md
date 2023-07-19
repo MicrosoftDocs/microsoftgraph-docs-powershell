@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new timeOffReason.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

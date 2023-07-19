@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getPrinterArchivedPrintJobs
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

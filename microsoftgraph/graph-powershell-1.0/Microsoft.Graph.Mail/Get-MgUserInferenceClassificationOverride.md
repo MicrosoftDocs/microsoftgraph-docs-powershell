@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

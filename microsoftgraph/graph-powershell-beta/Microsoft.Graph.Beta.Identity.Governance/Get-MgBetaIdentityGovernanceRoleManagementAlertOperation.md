@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents operations on resources that take a long time to complete and can run in the background until completion.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceRoleManagementAlertOperation](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

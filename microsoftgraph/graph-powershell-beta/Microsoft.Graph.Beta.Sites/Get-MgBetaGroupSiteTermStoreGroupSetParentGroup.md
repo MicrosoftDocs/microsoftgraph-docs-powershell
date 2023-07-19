@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The parent [group] that contains the set.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetParentGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

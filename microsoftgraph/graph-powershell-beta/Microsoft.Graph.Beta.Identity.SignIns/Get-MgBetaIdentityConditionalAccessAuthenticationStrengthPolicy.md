@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of authentication strength policies that exist for this tenant, including both built-in and custom policies.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List1 (Default)

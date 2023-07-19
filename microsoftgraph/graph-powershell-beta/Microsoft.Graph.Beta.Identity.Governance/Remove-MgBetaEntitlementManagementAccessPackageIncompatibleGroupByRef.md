@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

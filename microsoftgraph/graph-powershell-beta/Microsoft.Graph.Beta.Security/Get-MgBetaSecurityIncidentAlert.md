@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of related alerts.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityIncidentAlert](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncidentAlert?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

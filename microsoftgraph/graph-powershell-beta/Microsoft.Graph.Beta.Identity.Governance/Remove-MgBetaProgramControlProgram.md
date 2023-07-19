@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property program for programControls
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgProgramControlProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControlProgram?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

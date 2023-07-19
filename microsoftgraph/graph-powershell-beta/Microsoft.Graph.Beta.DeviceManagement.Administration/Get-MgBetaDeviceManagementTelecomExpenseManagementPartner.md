@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The telecom expense management partners.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

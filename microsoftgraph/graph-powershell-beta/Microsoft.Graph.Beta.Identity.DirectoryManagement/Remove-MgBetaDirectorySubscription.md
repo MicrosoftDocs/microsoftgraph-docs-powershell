@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property subscriptions for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectorySubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

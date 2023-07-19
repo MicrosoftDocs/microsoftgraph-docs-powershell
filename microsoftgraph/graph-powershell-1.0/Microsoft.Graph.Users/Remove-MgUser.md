@@ -13,6 +13,9 @@ Delete user.
 After that time, they are permanently deleted.
 To learn more, see deletedItems.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

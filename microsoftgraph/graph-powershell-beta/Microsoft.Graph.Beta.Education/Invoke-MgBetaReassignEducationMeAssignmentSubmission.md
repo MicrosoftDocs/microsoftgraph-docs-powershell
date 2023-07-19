@@ -15,6 +15,9 @@ This means that the `reassigned` status will be mapped to the `returned` status,
 If the header `Prefer: include-unknown-enum-members` is provided, a reassigned submission retains the `reassigned` status.
 For details, see the examples section.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReassignEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reassign (Default)

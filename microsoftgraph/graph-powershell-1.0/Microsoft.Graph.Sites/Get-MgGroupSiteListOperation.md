@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of long-running operations on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

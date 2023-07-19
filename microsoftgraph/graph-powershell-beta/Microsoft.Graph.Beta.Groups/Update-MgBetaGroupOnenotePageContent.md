@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action onenotePatchContent
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupOnenotePageContent](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupOnenotePageContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PatchExpanded (Default)

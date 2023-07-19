@@ -12,6 +12,9 @@ The user's activities across devices.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

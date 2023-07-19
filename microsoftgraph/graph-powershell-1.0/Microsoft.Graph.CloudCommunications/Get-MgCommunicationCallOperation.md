@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the status of an operation that adds the large gallery view to a call.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallOperation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

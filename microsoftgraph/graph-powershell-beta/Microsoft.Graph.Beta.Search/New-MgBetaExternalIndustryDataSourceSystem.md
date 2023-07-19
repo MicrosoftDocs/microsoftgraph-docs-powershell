@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new sourceSystemDefinition object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataSourceSystem](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataSourceSystem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

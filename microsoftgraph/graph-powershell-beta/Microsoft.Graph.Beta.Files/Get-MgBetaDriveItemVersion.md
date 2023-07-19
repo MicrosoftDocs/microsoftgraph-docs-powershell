@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the metadata for a specific version of a DriveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unpublish a [contentType][] from a content type hub site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Unpublish (Default)

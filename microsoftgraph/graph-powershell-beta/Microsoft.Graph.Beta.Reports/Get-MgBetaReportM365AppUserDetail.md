@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getM365AppUserDetail
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportM365AppUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppUserDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

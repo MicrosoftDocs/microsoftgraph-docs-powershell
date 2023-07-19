@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the role of a conversationMember in a team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

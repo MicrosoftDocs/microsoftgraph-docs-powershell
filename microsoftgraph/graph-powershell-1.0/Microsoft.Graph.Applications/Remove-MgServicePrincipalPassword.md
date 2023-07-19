@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a password from a servicePrincipal object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalPassword?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

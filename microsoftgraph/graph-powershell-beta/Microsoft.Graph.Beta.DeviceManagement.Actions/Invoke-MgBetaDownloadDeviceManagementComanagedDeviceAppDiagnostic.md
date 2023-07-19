@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action downloadAppDiagnostics
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownloadDeviceManagementComanagedDeviceAppDiagnostic](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownloadDeviceManagementComanagedDeviceAppDiagnostic?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### DownloadExpanded (Default)

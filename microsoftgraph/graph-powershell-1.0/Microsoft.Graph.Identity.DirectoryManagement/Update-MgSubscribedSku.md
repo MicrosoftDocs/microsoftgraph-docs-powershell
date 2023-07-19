@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in subscribedSkus
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgSubscribedSku?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

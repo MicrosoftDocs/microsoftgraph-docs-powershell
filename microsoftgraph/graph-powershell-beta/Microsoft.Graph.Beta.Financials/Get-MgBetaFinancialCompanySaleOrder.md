@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get salesOrders from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanySaleOrder](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleOrder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

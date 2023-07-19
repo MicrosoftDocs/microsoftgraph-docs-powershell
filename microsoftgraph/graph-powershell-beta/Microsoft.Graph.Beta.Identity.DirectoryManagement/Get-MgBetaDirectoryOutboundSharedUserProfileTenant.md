@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of external Azure AD tenants that the user has shared profile data with.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryOutboundSharedUserProfileTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOutboundSharedUserProfileTenant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

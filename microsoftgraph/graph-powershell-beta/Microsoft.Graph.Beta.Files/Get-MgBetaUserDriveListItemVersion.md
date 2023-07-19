@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of previous versions of the list item.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListItemVersion](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListItemVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

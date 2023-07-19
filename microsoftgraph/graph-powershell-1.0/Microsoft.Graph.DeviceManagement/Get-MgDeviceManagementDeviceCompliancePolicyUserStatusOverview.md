@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device compliance users status overview
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceCompliancePolicyUserStatusOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementDeviceCompliancePolicyUserStatusOverview?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

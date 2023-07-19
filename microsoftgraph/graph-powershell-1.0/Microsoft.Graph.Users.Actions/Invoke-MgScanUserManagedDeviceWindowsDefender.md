@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action windowsDefenderScan
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaScanUserManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgScanUserManagedDeviceWindowsDefender?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ScanExpanded (Default)

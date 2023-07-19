@@ -11,6 +11,9 @@ schema: 2.0.0
 Read the properties and relationships of the cloudPcOrganizationSettings from the current tenant.
 A tenant has only one **cloudPcOrganizationSettings** object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointOrganizationSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointOrganizationSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

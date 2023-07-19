@@ -2872,6 +2872,9 @@ ms.prod: outlook
 ## SYNOPSIS
 Retrieve the properties and relationships of user object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

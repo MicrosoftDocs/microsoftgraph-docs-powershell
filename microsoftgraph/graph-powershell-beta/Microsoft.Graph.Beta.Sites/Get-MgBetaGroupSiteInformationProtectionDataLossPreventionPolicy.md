@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get dataLossPreventionPolicies from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

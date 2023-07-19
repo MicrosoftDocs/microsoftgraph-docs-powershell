@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a riskyUser object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

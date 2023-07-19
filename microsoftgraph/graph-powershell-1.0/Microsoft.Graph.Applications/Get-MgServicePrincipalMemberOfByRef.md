@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalMemberOfByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

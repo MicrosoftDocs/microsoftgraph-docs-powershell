@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Managed device mobile app configuration states for this device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceMobileAppConfigurationState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceMobileAppConfigurationState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

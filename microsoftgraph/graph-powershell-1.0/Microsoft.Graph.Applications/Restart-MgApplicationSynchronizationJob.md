@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action restart
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restart-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RestartExpanded (Default)

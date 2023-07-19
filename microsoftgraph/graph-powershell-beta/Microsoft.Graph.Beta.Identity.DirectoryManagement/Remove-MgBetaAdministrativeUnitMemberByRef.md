@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property members for administrativeUnits
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

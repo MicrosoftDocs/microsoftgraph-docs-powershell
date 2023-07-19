@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties on a **[listItem][]**.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemField?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)

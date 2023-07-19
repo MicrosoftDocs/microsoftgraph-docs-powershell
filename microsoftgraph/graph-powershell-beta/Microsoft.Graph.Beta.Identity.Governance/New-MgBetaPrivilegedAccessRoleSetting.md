@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleSettings for privilegedAccess
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessRoleSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

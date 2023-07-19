@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAttackSimulationSimulationUserCoverage
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSecurityAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationUserCoverage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

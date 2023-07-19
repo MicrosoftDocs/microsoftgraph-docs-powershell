@@ -15,6 +15,9 @@ When using MIME format:\n- Provide the applicable Internet message headers and t
 This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply to a message, and send it later.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)

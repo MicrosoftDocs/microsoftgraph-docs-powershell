@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Resource Operations.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementResourceOperation](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementResourceOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

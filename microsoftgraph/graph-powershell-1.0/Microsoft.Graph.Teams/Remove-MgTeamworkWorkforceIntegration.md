@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an instance of a workforceIntegration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

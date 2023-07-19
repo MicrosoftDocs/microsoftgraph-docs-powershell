@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAllSites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgAllGroupSite](/powershell/module/Microsoft.Graph.Groups/Get-MgAllGroupSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

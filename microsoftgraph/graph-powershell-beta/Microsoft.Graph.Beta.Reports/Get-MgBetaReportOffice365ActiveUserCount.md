@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOffice365ActiveUserCounts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportOffice365ActiveUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActiveUserCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

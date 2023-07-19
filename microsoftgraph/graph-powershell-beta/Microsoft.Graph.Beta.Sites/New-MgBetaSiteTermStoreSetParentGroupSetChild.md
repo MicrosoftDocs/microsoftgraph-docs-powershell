@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new term object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteTermStoreSetParentGroupSetChild](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetParentGroupSetChild?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

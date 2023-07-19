@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Syncs Intune account with Microsoft Store For Business
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

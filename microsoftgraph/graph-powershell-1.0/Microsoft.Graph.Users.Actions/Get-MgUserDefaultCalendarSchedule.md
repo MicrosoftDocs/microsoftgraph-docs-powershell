@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Get-MgUserDefaultCalendarSchedule?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

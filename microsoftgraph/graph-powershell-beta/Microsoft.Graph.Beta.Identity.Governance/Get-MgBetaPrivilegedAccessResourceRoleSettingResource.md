@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 The associated resource for this role setting.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceRoleSettingResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleSettingResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

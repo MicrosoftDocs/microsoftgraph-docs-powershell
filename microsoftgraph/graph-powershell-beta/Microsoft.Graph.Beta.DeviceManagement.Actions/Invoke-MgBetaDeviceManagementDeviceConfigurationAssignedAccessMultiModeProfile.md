@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assignedAccessMultiModeProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDeviceManagementDeviceConfigurationAssignedAccessMultiModeProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AccessExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get synchronization from applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationSynchronization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

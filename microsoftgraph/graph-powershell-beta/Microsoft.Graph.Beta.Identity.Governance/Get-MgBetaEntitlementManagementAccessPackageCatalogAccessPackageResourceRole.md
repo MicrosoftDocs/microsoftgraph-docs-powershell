@@ -12,6 +12,9 @@ Retrieve a list of accessPackageResourceRole objects of an accessPackageResource
 The resource should have been added to the catalog by creating an accessPackageResourceRequest.
 This list of roles can then be used by the caller to select a role, which is needed when subsequently creating an accessPackageResourceRoleScope.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

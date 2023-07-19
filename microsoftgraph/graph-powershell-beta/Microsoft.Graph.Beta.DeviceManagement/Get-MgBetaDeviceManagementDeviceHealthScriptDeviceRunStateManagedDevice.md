@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The managed device on which the device health script executed
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceHealthScriptDeviceRunStateManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

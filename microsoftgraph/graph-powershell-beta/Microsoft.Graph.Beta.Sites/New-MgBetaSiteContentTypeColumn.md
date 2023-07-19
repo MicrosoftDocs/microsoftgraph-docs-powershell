@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteContentTypeColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

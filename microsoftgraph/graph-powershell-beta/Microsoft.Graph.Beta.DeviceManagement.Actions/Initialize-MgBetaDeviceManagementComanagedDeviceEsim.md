@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Activate eSIM on the device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgDeviceManagementComanagedDeviceEsim](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Initialize-MgDeviceManagementComanagedDeviceEsim?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)

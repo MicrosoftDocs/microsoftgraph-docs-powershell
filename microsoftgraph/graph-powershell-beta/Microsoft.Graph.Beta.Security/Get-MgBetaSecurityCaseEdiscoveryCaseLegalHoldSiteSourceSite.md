@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The SharePoint site associated with the siteSource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSourceSite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

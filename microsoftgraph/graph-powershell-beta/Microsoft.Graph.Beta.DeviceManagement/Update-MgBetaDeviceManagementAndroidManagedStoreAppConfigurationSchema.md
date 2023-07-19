@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property androidManagedStoreAppConfigurationSchemas in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAndroidManagedStoreAppConfigurationSchema?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

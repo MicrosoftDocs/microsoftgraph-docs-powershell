@@ -11,6 +11,9 @@ schema: 2.0.0
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSubscribeGroupByMail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Subscribe (Default)

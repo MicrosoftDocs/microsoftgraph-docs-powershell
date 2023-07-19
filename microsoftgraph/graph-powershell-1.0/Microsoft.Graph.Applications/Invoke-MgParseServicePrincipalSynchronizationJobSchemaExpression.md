@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action parseExpression
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaParseServicePrincipalSynchronizationJobSchemaExpression](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ParseExpanded (Default)

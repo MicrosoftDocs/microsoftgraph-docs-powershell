@@ -13,6 +13,9 @@ The contact's direct reports.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactDirectReport](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactDirectReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

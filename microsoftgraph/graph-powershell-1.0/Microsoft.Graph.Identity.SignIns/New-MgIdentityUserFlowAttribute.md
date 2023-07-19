@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new identityUserFlowAttribute object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

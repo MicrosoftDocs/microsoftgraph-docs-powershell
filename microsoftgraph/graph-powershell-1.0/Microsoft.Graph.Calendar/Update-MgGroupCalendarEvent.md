@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update an event object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgGroupCalendarEvent?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reports singleton
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgDeviceManagementReport?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

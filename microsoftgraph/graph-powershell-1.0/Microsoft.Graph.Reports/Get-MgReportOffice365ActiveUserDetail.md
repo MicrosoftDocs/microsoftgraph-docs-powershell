@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOffice365ActiveUserDetail
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActiveUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365ActiveUserDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

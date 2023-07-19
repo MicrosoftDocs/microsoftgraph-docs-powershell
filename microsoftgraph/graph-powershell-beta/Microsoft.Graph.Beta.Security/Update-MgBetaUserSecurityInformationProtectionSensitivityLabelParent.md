@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property parent in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSecurityInformationProtectionSensitivityLabelParent](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtectionSensitivityLabelParent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

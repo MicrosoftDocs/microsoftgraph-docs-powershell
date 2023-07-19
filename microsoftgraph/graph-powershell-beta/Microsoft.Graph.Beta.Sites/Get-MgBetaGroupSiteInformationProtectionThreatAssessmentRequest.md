@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a specified threatAssessmentRequest object.
 A threat assessment request can be one of the following types:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

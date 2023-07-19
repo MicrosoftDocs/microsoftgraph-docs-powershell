@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function preview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Sites/Invoke-MgPreviewSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Preview (Default)

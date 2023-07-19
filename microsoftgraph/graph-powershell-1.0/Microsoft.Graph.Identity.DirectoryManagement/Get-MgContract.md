@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of contract object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContract?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

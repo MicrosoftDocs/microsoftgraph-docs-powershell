@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property paymentTerm for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanySaleOrderPaymentTerm](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanySaleOrderPaymentTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

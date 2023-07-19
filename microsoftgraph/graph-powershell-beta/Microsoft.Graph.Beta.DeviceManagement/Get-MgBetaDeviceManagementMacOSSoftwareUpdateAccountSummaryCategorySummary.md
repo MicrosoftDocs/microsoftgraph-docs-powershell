@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Summary of the updates by category.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

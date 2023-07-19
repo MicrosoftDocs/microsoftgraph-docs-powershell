@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Unfollow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnfollowGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgUnfollowGroupDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Unfollow (Default)

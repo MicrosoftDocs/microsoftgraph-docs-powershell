@@ -11,6 +11,9 @@ schema: 2.0.0
 Remove members of the same type from an updatableAssetGroup.
 You can also use the method removeMembers to remove members.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgWindowsUpdatesUpdatableAssetMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAssetMemberById?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)

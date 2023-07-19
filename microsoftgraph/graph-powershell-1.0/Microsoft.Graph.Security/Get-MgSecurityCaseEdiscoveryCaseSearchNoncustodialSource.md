@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 noncustodialDataSource sources that are included in the eDiscovery search
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseSearchNoncustodialSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityCaseEdiscoveryCaseSearchNoncustodialSource?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

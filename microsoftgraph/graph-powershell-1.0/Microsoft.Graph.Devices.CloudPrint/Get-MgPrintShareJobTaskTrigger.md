@@ -11,6 +11,9 @@ schema: 2.0.0
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintShareJobTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintShareJobTaskTrigger?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

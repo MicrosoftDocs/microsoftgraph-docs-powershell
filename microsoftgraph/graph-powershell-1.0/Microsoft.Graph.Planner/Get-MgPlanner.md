@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get planner
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgPlanner?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

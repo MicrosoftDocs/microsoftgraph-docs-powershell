@@ -14,6 +14,9 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain.
 If the domain was successfully deleted, a 404 HTTP response code will be returned in the response.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForceDomainDelete](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgForceDomainDelete?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ForceExpanded (Default)

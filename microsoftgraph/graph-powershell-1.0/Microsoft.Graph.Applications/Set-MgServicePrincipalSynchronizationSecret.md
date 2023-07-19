@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update property secrets value.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronizationSecret](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgServicePrincipalSynchronizationSecret?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of PFX certificates associated with a user.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserPfxCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementUserPfxCertificate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

@@ -12,6 +12,9 @@ Start the process of applying hold on eDiscovery non-custodial data sources.
 After the operation is created, you can get the status by retrieving the `Location` parameter from the response headers.
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Beta.Security/Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies the assets to exclude from the audience.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesPolicyAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyAudienceExclusion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

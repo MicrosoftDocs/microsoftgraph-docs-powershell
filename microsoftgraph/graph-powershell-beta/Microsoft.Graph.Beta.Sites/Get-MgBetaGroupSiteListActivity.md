@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The recent activities that took place within this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteListActivity](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteListActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

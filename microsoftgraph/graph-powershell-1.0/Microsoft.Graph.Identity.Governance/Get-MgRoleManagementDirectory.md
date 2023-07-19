@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get directory from roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectory](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectory?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

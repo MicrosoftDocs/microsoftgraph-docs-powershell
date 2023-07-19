@@ -16,6 +16,9 @@ The current timeout value is 15 seconds.
 This API does not end existing calls that have already been answered.
 Use delete call to end a call.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaRejectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgRejectCommunicationCall?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RejectExpanded (Default)

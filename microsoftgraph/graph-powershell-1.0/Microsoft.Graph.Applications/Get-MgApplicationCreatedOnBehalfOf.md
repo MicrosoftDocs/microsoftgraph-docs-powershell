@@ -11,6 +11,9 @@ schema: 2.0.0
 Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCreatedOnBehalfOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get customCSS for the navigation property localizations from organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

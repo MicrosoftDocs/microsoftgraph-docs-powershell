@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Download Apple push notification certificate signing request
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgDownloadDeviceManagementApplePushNotificationCertificateApplePushNotificationCertificateSigningRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

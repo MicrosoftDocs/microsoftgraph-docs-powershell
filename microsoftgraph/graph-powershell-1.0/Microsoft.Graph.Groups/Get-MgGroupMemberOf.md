@@ -14,6 +14,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupMemberOf?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

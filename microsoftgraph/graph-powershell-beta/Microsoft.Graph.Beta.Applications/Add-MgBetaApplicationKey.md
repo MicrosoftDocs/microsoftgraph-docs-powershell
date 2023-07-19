@@ -14,6 +14,9 @@ As part of the request validation for this method, a proof of possession of an e
 Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationKey?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)

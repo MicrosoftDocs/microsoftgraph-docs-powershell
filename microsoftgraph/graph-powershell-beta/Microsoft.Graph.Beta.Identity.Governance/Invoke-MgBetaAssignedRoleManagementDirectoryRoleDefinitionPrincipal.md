@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function assignedPrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAssignedRoleManagementDirectoryRoleDefinitionPrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAssignedRoleManagementDirectoryRoleDefinitionPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Assigned (Default)

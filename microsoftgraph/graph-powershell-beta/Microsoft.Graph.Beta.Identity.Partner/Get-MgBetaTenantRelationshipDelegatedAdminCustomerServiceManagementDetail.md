@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Contains the management details of a service in the customer tenant that's managed by delegated administration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail](/powershell/module/Microsoft.Graph.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomerServiceManagementDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

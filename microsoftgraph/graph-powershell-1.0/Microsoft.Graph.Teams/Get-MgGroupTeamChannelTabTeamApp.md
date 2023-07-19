@@ -11,6 +11,9 @@ schema: 2.0.0
 The application that is linked to the tab.
 This cannot be changed after tab creation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamChannelTabTeamApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

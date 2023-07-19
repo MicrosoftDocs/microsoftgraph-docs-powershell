@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function allMessages
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMessageTeamworkDeletedTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageTeamworkDeletedTeamChannel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Message (Default)

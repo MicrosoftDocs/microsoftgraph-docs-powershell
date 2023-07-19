@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties of a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryDeletedItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

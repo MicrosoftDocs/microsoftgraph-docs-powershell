@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of installation states for this eBook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedEBookUserStateSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtManagedEBookUserStateSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

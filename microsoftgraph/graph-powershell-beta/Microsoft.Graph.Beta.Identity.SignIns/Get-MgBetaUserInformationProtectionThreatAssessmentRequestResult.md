@@ -12,6 +12,9 @@ A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

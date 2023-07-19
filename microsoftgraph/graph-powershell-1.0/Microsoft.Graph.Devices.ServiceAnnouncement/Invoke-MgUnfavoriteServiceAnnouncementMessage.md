@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UnfavoriteExpanded (Default)

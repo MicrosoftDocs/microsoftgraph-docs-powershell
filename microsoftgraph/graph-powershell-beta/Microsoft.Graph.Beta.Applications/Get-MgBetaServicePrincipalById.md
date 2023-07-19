@@ -11,6 +11,9 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalById](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalById?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

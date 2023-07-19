@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action hasPayloadLinks
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgHasUserDeviceEnrollmentConfigurationPayloadLink?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### LinkExpanded (Default)

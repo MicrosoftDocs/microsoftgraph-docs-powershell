@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Request remote assistance
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Request-MgBetaDeviceManagementManagedDeviceRemoteAssistance](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Request-MgDeviceManagementManagedDeviceRemoteAssistance?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Request (Default)

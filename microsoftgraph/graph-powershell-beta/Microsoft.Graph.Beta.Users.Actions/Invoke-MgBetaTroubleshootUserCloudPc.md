@@ -11,6 +11,9 @@ schema: 2.0.0
 Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTroubleshootUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgTroubleshootUserCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Troubleshoot (Default)

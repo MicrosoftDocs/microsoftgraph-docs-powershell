@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property attendanceRecords for users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgUserPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Cloud PC related reports.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

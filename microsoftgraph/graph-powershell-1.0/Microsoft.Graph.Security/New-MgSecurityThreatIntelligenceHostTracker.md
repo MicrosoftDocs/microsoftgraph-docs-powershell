@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to hostTrackers for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

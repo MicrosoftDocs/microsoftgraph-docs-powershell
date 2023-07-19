@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action enableSmsSignIn
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Enable-MgUserAuthenticationMethodSmsSignIn](/powershell/module/Microsoft.Graph.Users.Actions/Enable-MgUserAuthenticationMethodSmsSignIn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Enable (Default)

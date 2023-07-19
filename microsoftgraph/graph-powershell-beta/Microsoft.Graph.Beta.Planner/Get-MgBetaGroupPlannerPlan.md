@@ -12,6 +12,9 @@ Read-only.
 Nullable.
 Returns the plannerPlans owned by the group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlan?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

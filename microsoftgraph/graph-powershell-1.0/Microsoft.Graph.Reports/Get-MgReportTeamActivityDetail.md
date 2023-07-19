@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getTeamsTeamActivityDetail
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamActivityDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportTeamActivityDetail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

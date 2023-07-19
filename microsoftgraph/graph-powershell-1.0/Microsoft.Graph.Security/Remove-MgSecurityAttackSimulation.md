@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property attackSimulation for security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/Remove-MgSecurityAttackSimulation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of issues that happened on the service, with detailed information for each issue.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

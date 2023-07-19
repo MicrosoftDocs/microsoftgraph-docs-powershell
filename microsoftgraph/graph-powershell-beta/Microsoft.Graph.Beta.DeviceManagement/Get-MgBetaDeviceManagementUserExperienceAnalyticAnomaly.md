@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user experience analytics anomaly entity contains anomaly details.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticAnomaly](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticAnomaly?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

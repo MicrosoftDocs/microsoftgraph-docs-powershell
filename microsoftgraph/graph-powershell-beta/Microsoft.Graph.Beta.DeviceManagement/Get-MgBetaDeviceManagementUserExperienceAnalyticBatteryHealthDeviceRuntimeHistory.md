@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 User Experience Analytics Battery Health Device Runtime History
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

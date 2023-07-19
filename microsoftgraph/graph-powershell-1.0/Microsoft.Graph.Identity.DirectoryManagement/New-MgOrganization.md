@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

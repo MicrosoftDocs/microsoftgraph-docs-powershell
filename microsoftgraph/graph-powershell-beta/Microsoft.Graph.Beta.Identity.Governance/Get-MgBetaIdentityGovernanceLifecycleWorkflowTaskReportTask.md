@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The related lifecycle workflow task.Supports $filter(eq, ne) and $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTaskReportTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

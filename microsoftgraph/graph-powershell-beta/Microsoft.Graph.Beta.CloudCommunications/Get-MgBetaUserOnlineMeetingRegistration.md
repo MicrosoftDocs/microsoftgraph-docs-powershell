@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the externalMeetingRegistration details associated with an onlineMeeting.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

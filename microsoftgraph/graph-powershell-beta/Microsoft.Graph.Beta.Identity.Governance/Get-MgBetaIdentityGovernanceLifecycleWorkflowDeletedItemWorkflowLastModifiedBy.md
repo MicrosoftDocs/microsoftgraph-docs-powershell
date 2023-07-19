@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The user who last modified the workflow.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowLastModifiedBy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

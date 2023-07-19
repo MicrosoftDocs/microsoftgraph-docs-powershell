@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getSharePointActivityFileCounts
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointActivityFileCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSharePointActivityFileCount?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

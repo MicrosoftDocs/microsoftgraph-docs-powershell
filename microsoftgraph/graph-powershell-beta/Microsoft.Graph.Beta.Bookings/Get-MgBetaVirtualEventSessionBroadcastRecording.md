@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get broadcastRecording for the navigation property sessions from solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionBroadcastRecording](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionBroadcastRecording?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

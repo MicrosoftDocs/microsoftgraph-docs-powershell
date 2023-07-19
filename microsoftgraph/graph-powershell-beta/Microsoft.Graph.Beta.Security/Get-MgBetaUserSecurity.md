@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get security from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserSecurity](/powershell/module/Microsoft.Graph.Security/Get-MgUserSecurity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

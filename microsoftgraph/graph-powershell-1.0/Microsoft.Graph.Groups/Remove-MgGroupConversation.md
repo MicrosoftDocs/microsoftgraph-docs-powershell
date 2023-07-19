@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete conversation.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupConversation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

@@ -12,6 +12,9 @@ Clear a presence session of an application for a user.
 If it is the user's only presence session, a successful **clearPresence** changes the user's presence to `Offline/Offline`.
 Read more about presence sessions and their time-out and expiration.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Clear-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserPresence?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ClearExpanded (Default)

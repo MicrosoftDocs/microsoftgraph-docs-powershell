@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property additionalSources for compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

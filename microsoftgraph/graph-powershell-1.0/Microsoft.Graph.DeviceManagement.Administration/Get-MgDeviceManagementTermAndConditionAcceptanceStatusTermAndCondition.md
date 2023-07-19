@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation link to the terms and conditions that are assigned.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementTermAndConditionAcceptanceStatusTermAndCondition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get triggerTypes from security
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityTriggerType](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityTriggerType?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

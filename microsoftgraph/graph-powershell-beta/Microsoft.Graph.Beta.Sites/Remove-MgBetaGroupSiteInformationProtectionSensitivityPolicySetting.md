@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property sensitivityPolicySettings for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

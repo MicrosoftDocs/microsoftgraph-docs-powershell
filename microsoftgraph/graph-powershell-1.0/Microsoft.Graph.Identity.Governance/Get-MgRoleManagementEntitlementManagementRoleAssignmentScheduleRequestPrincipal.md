@@ -11,6 +11,9 @@ schema: 2.0.0
 The principal that's getting a role assignment through the request.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

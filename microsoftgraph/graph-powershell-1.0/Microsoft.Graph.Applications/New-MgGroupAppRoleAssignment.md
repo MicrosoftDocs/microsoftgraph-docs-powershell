@@ -13,6 +13,9 @@ All direct members of the group will be considered assigned.
 Security groups with dynamic memberships are supported.
 To grant an app role assignment to a group, you need three identifiers: Additional licenses might be required to use a group to manage access to applications.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgGroupAppRoleAssignment?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

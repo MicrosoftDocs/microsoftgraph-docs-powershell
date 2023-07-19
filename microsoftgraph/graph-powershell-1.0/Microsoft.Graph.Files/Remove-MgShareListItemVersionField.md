@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property fields for shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItemVersionField](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgShareListItemVersionField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete1 (Default)

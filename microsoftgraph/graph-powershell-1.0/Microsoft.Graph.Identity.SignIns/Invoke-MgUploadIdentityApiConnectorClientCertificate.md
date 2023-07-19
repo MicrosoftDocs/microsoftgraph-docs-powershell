@@ -12,6 +12,9 @@ Upload a PKCS 12 format key (.pfx) to an API connector's authentication configur
 The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgUploadIdentityApiConnectorClientCertificate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UploadExpanded (Default)

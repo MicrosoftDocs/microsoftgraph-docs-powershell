@@ -13,6 +13,9 @@ Read-only, Nullable.
 Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainNameReference?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

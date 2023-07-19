@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property securityBaselineStates for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgUserManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

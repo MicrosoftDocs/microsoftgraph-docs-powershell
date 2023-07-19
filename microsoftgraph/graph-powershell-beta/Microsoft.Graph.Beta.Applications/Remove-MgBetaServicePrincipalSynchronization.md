@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property synchronization for servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

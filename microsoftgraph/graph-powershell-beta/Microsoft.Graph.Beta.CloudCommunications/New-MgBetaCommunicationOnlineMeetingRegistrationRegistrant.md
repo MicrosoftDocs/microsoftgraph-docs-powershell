@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to registrants for communications
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationOnlineMeetingRegistrationRegistrant](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeetingRegistrationRegistrant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

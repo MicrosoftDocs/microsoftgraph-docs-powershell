@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get exceptionOccurrences from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventExceptionOccurrence](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventExceptionOccurrence?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

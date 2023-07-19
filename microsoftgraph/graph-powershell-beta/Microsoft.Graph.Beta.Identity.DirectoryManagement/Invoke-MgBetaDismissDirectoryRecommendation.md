@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Dismiss a recommendation object that you consider to be inapplicable to your tenant and update its **status** to `dismissed` .
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDismissDirectoryRecommendation](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgDismissDirectoryRecommendation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### DismissExpanded (Default)

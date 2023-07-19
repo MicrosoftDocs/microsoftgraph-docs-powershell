@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property informationProtection for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityInformationProtection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

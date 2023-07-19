@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get authenticationMethods from reports
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

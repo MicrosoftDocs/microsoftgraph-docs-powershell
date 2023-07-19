@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getLoggedOnManagedDevices
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserLoggedOnManagedDevice](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserLoggedOnManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

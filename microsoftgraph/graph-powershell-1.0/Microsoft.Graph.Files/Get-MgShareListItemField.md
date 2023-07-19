@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaShareListItemField](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgShareListItemField?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get1 (Default)

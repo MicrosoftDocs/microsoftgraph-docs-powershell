@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get onlineMeetings from communications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)

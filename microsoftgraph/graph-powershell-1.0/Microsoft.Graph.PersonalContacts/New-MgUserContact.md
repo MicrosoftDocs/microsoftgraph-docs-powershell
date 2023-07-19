@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property photo from users
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserContact](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgUserContact?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete user from shared Apple device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementComanagedDeviceUserFromSharedAppleDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Remove-MgDeviceManagementComanagedDeviceUserFromSharedAppleDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### DeleteExpanded (Default)

@@ -11,6 +11,9 @@ schema: 2.0.0
 The tokenLifetimePolicies assigned to this service principal.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTokenLifetimePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

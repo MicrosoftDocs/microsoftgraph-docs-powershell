@@ -12,6 +12,9 @@ For drives in SharePoint, the underlying document library list.
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDriveList](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgUserDriveList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

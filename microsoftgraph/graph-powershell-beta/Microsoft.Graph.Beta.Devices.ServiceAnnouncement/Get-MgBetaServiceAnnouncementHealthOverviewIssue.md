@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of issues that happened on the service, with detailed information for each issue.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

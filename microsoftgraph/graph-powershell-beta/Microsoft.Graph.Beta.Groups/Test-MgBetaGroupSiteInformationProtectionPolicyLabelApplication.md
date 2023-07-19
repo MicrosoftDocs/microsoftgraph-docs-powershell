@@ -12,6 +12,9 @@ Compute the information protection label that should be applied and return the s
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteInformationProtectionPolicyLabelApplication](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionPolicyLabelApplication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property derivedCredentials for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)

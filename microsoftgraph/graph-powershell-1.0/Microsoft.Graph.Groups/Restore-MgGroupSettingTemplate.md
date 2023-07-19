@@ -14,6 +14,9 @@ This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Restore-MgBetaGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgGroupSettingTemplate?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Restore (Default)

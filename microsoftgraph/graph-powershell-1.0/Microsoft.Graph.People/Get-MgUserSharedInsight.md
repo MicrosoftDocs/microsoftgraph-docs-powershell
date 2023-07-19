@@ -13,6 +13,9 @@ This includes URLs, file attachments, and reference attachments to OneDrive for 
 This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSharedInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserSharedInsight?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

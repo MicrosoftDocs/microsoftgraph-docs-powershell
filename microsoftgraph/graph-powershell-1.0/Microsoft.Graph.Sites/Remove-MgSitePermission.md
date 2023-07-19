@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a permission object on a site.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSitePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

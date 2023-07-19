@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a securityAction object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

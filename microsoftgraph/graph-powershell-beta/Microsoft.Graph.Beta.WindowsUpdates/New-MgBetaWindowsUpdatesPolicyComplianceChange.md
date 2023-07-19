@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new contentApproval object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

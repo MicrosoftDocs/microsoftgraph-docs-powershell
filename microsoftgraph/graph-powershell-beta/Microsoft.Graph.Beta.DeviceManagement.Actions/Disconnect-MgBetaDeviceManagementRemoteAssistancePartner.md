@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A request to remove the active TeamViewer connector
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Disconnect-MgDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementRemoteAssistancePartner?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Disconnect (Default)

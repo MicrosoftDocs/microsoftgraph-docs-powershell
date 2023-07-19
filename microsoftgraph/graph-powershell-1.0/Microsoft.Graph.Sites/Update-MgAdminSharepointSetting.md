@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update one or more tenant-level settings for SharePoint and OneDrive.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepointSetting](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgAdminSharepointSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

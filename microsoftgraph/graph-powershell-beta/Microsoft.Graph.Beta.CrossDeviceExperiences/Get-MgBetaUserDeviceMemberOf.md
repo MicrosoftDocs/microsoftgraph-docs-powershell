@@ -13,6 +13,9 @@ Read-only.
 Nullable.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDeviceMemberOf](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserDeviceMemberOf?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)

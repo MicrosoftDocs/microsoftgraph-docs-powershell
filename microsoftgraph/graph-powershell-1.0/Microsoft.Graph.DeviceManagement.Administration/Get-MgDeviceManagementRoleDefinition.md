@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Role Definitions.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementRoleDefinition?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

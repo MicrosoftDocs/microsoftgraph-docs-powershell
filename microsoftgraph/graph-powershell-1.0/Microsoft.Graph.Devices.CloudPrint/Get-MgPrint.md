@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get print
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrint](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrint?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ```

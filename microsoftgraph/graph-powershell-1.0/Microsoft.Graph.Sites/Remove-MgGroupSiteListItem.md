@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Removes an item from a [list][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgGroupSiteListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

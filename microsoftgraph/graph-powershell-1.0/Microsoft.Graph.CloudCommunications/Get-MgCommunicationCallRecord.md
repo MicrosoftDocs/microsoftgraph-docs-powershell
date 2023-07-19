@@ -11,6 +11,9 @@ schema: 2.0.0
 Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the **id** of a **callRecord**:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallRecord?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)

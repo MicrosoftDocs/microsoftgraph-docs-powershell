@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property planner in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

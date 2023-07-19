@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an identityApiConnector object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityApiConnector](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityApiConnector?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)

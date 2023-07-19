@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The set of subscriptions on the list.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteListSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

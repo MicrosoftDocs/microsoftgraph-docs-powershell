@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Accept the specified event in a user calendar.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AcceptExpanded (Default)

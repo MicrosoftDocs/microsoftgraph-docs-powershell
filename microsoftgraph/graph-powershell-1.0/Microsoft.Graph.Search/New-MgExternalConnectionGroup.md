@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new externalGroup object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/New-MgExternalConnectionGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

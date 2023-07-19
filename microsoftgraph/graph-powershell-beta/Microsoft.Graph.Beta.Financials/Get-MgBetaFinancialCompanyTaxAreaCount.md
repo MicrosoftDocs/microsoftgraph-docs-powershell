@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyTaxAreaCount](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyTaxAreaCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

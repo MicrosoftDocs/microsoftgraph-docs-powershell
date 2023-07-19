@@ -11,6 +11,9 @@ schema: 2.0.0
 The connectorGroup that the connector is a member of.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileConnectorMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorMemberOf?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```

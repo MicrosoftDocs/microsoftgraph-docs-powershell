@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new term object.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreGroupSetChild](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteTermStoreGroupSetChild?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

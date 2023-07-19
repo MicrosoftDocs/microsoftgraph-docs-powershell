@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getCompatibleHubContentTypes
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteContentTypeCompatibleHubContentType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

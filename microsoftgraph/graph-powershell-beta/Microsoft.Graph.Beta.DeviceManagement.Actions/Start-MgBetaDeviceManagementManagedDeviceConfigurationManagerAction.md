@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Trigger action on ConfigurationManager client
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Start-MgDeviceManagementManagedDeviceConfigurationManagerAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Start-MgDeviceManagementManagedDeviceConfigurationManagerAction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### TriggerExpanded (Default)

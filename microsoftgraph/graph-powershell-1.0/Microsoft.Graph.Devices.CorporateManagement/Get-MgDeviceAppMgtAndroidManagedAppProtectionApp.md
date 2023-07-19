@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of apps to which the policy is deployed.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtAndroidManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtAndroidManagedAppProtectionApp?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION

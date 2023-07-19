@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a task folder in the default task group (`My Tasks`) of the user's mailbox.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)

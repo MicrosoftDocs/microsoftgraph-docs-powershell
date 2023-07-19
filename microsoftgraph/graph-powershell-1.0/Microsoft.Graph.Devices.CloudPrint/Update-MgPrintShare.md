@@ -12,6 +12,9 @@ Update the properties of a printer share.
 This method can be used to swap printers.
 For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintShare](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)

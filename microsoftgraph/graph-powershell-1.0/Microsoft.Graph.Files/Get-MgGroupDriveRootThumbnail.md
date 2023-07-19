@@ -13,6 +13,9 @@ For more info, see [getting thumbnails][].
 Read-only.
 Nullable.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveRootThumbnail?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)

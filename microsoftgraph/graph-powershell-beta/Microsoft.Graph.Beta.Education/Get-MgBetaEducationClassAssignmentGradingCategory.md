@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get gradingCategory from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentGradingCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retire all devices from management for this user
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgUserDeviceFromManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Remove (Default)
