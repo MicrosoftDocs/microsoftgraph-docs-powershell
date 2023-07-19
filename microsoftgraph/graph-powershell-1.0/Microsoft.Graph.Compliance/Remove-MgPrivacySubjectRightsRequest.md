@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property subjectRightsRequests for privacy
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -147,5 +147,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
 
 ## RELATED LINKS
-[Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
+[Remove-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Remove-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
