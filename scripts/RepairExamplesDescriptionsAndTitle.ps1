@@ -107,9 +107,9 @@ function Import-Descriptions {
     $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
     $RetainedContent = $null
     foreach ($Ex in $RetainedExamples) {
-            $ContentBody = $Ex.Split("|")[0]
-            $ContentTitle = $Ex.Split("|")[1]
-            $ContentDescription = $Ex.Split("|")[2]
+            $ContentBody = $Ex.Split("**")[0]
+            $ContentTitle = $Ex.Split("**")[1]
+            $ContentDescription = $Ex.Split("**")[2]
             $RetainedContent += "$ContentBody$ContentDescription"  
             $TitleCount++ 
                         
@@ -127,6 +127,18 @@ function Import-Descriptions {
         $text = $text.Replace($Extracted, $FinalOutput)
           $text | Out-File $File -Encoding UTF8
      }
+     $Stream = [IO.File]::OpenWrite($File)
+     try
+     {
+         $Stream.SetLength($stream.Length - 2)
+         $Stream.Close()
+     }
+     catch
+     {
+         Write-Error "Error in removing empty lines at the end of the file: $File"
+     }
+     $Stream.Dispose()
+     $RetainedExamples.Clear()
     }
     
 }
@@ -163,7 +175,7 @@ function Get-ExistingDescriptions {
         $DescVal = $Content[$j]
         $RetainedDescription += "$DescVal`n"
     }
-    $RetainedExamples.Add("$ContentBlock|$Title|$RetainedDescription")
+    $RetainedExamples.Add("$ContentBlock**$Title**$RetainedDescription")
     if ($NoOfExamples -gt 1) {
         $NoOfExamples--
         for ($k = $Start; $k -lt $End; $k++) {
@@ -177,16 +189,16 @@ function Get-ExistingDescriptions {
     }
    
 }
-Set-Location microsoftgraph-docs-powershell
-$proposedBranch = "weekly_v2_docs_update_$date"
-$proposedBranch = "File_copy_test1"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $proposedBranch = "File_copy_test1"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#      git checkout $proposedBranch
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -194,7 +206,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
+# Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
