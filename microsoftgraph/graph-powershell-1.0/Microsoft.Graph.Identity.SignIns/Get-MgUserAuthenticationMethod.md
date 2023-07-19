@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgUserAuthenticationMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAuthenticationMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgUserAuthenticationMethod?view=graph-powershell-beta)
+[Get-MgBetaUserAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAuthenticationMethod?view=graph-powershell-beta)
 

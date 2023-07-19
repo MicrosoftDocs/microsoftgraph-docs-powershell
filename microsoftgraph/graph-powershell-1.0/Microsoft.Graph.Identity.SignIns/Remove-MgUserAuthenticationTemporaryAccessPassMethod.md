@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a users's temporaryAccessPassAuthenticationMethod object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -229,5 +229,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
+[Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-beta)
 

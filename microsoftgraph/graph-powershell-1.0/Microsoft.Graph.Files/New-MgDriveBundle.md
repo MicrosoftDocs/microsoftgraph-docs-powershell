@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to bundles for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveBundle?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveBundle?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -18627,8 +18627,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveBundle?view=graph-powershell-beta)
+[New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveBundle?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveBundle?view=graph-powershell-beta)
+[New-MgBetaDriveBundle](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveBundle?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property userExperienceAnalyticsOverview in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -161,5 +161,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Values <IMicrosoftGraphUserExperienceAnalyticsInsightValue[]>]`: The value of the user experience analytics insight.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property parentGroup for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -240,5 +240,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
+[Remove-MgBetaSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteTermStoreGroupSetParentGroup?view=graph-powershell-beta)
 

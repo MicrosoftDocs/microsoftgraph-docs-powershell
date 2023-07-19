@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property questions in identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -340,5 +340,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Text <String>]`: The question in the specific language. Required.
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementAssignmentPolicyQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentPolicyQuestion?view=graph-powershell-beta)
 

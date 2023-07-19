@@ -11,7 +11,7 @@ schema: 2.0.0
 Update a user's email address represented by an emailAuthenticationMethod object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -285,5 +285,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgUserAuthenticationEmailMethod?view=graph-powershell-beta)
+[Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
 

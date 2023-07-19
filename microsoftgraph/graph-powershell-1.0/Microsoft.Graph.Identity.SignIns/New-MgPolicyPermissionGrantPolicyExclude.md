@@ -12,7 +12,7 @@ Add conditions under which a permission grant event is *excluded* in a permissio
 You do this by adding a permissionGrantConditionSet to the **excludes** collection of a  permissionGrantPolicy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -407,5 +407,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+[New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
 

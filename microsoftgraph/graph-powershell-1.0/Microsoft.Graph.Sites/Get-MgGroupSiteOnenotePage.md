@@ -12,7 +12,7 @@ Retrieve the properties and relationships of a page object.
 **Getting page information** Access a page's metadata by page identifier: **Getting page content** You can use the page's `content` endpoint to get the HTML content of a page: The `includeIDs=true` query option is used to update pages.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenotePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,5 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteOnenotePage?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteOnenotePage?view=graph-powershell-beta)
 

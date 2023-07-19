@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property articleIndicators in security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -239,5 +239,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
+[Update-MgBetaSecurityThreatIntelligenceArticleIndicator](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityThreatIntelligenceArticleIndicator?view=graph-powershell-beta)
 

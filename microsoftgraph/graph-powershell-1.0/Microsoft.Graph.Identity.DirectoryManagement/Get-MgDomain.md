@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of domain object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomain?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomain?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -291,4 +291,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomain?view=graph-powershell-beta)
+[Get-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomain?view=graph-powershell-beta)

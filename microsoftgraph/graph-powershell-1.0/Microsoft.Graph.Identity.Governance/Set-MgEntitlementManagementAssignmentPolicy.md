@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property assignmentPolicies in identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -9446,8 +9446,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+[Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Set-MgEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+[Set-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
 

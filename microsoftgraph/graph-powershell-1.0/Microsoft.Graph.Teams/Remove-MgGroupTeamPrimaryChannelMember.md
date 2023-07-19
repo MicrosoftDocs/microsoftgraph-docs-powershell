@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a conversationMember from a channel.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -191,5 +191,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
+[Remove-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
 

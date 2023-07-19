@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property photo for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -179,5 +179,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Remove-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupPhoto?view=graph-powershell-beta)
+[Remove-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupPhoto?view=graph-powershell-beta)
 

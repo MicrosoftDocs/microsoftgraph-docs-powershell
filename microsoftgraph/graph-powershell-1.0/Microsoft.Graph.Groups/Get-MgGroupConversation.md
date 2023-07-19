@@ -11,7 +11,7 @@ schema: 2.0.0
 The group's conversations.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupConversation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupConversation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -289,5 +289,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupConversation?view=graph-powershell-beta)
+[Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupConversation?view=graph-powershell-beta)
 

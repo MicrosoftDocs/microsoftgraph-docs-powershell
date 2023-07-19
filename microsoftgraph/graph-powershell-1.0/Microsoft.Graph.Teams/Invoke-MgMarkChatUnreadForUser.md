@@ -11,7 +11,7 @@ schema: 2.0.0
 Mark a chat as unread for a user.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgMarkChatUnreadForUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaMarkChatUnreadForUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -255,5 +255,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Invoke-MgBetaMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgMarkChatUnreadForUser?view=graph-powershell-beta)
+[Invoke-MgBetaMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaMarkChatUnreadForUser?view=graph-powershell-beta)
 

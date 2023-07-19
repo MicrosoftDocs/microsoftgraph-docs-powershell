@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property jobs in print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintShareJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintShareJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -499,8 +499,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintShareJob?view=graph-powershell-beta)
+[Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintShareJob?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintShareJob?view=graph-powershell-beta)
+[Update-MgBetaPrintShareJob](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintShareJob?view=graph-powershell-beta)
 

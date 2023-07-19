@@ -13,7 +13,7 @@ For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserUsedResourceInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserUsedResourceInsight?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserUsedResourceInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserUsedResourceInsight?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -138,5 +138,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserUsedResourceInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserUsedResourceInsight?view=graph-powershell-beta)
+[Get-MgBetaUserUsedResourceInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserUsedResourceInsight?view=graph-powershell-beta)
 

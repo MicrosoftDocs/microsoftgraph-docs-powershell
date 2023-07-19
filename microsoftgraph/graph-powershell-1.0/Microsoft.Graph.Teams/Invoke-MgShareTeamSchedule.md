@@ -14,7 +14,7 @@ For each shift, openshift and timeOff instance in the specified time range, the 
 The **notifyTeam** parameter further specifies which employees can view the item.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaShareTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -281,4 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgShareTeamSchedule?view=graph-powershell-beta)
+[Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaShareTeamSchedule?view=graph-powershell-beta)

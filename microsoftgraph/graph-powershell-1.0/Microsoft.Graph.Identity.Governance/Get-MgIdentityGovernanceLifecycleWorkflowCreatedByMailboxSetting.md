@@ -13,7 +13,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowCreatedByMailboxSetting?view=graph-powershell-beta)
 

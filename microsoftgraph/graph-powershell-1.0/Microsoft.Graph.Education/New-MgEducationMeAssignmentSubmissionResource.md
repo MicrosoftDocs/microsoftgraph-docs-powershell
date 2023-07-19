@@ -15,7 +15,7 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -273,5 +273,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
+[New-MgBetaEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationMeAssignmentSubmissionResource?view=graph-powershell-beta)
 

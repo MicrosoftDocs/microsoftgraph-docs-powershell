@@ -12,7 +12,7 @@ The main logo for the application.
 Not nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgApplicationLogo?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -185,5 +185,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgApplicationLogo?view=graph-powershell-beta)
+[Set-MgBetaApplicationLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaApplicationLogo?view=graph-powershell-beta)
 

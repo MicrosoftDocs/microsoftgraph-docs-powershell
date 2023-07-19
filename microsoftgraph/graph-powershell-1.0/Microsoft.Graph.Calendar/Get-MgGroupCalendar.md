@@ -12,7 +12,7 @@ The group's calendar.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgGroupCalendar?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -109,5 +109,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgGroupCalendar?view=graph-powershell-beta)
+[Get-MgBetaGroupCalendar](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupCalendar?view=graph-powershell-beta)
 

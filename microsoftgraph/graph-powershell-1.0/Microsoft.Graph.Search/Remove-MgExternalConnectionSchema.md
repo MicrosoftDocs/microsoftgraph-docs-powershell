@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property schema for external
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgExternalConnectionSchema?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -165,5 +165,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Remove-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Search/Remove-MgExternalConnectionSchema?view=graph-powershell-beta)
+[Remove-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Add new entity to organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaOrganization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -843,8 +843,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: For example, Managed.
 
 ## RELATED LINKS
-[New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-beta)
+[New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaOrganization?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgOrganization?view=graph-powershell-beta)
+[New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaOrganization?view=graph-powershell-beta)
 

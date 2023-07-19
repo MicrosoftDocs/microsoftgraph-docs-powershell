@@ -11,7 +11,7 @@ schema: 2.0.0
 Removes an item from a [list][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgGroupDriveListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupDriveListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -199,5 +199,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgGroupDriveListItem?view=graph-powershell-beta)
+[Remove-MgBetaGroupDriveListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupDriveListItem?view=graph-powershell-beta)
 

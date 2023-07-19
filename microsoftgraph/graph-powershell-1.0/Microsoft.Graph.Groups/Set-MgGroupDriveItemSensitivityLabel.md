@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action assignSensitivityLabel
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -294,5 +294,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Groups/Set-MgGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
+[Set-MgBetaGroupDriveItemSensitivityLabel](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupDriveItemSensitivityLabel?view=graph-powershell-beta)
 

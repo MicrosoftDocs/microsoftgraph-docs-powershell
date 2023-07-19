@@ -16,7 +16,7 @@ Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgUserMail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaUserMail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -487,7 +487,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgUserMail?view=graph-powershell-beta)
+[Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaUserMail?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Send-MgUserMail?view=graph-powershell-beta)
+[Send-MgBetaUserMail](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaUserMail?view=graph-powershell-beta)

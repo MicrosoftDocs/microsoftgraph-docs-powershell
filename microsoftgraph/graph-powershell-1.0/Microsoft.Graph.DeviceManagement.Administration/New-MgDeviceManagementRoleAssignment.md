@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to roleAssignments for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -258,5 +258,5 @@ To create the parameters described below, construct a hash table containing the 
       - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgDeviceManagementRoleAssignment?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementRoleAssignment?view=graph-powershell-beta)
 

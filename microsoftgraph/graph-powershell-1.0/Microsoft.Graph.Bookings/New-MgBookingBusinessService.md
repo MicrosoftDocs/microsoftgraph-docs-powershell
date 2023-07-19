@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new bookingService for the specified bookingBusiness.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessService?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -602,5 +602,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
-[New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessService?view=graph-powershell-beta)
+[New-MgBetaBookingBusinessService](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessService?view=graph-powershell-beta)
 

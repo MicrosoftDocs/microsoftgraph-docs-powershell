@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property teamwork for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgUserTeamwork?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserTeamwork?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,5 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgUserTeamwork?view=graph-powershell-beta)
+[Remove-MgBetaUserTeamwork](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserTeamwork?view=graph-powershell-beta)
 

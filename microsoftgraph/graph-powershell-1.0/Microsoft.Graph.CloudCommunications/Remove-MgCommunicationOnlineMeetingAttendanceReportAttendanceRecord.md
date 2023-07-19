@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property attendanceRecords for communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -188,5 +188,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
+[Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaCommunicationOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-beta)
 

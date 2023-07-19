@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to delegatedAdminCustomers for tenantRelationships
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -194,5 +194,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceName <String>]`: The name of a managed service. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/New-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+[New-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get resourceNamespaces from roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -296,5 +296,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryResourceNamespace?view=graph-powershell-beta)
 

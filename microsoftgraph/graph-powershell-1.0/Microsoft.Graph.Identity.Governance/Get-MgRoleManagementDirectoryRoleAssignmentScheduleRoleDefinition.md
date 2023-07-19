@@ -11,7 +11,7 @@ schema: 2.0.0
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleAssignmentScheduleRoleDefinition?view=graph-powershell-beta)
 

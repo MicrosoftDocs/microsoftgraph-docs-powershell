@@ -11,7 +11,7 @@ schema: 2.0.0
 Get sharepoint from admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgAdminSharepoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgAdminSharepoint?view=graph-powershell-beta)
+[Get-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

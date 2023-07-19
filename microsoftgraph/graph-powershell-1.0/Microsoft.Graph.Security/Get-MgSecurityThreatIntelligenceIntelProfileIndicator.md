@@ -11,7 +11,7 @@ schema: 2.0.0
 Includes an assemblage of high-fidelity network indicators of compromise.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -291,5 +291,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
+[Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceIntelProfileIndicator?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update conversation thread
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupThread?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -500,8 +500,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupThread?view=graph-powershell-beta)
+[Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThread?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupThread?view=graph-powershell-beta)
+[Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThread?view=graph-powershell-beta)
 

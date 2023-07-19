@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to endpoints for servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalEndpoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -300,5 +300,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalEndpoint?view=graph-powershell-beta)
+[New-MgBetaServicePrincipalEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalEndpoint?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryFederationConfiguration?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -277,5 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryFederationConfiguration?view=graph-powershell-beta)
+[Get-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
 

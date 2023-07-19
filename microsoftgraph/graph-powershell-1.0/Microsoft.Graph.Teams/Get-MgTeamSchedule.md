@@ -15,7 +15,7 @@ If the provisioning failed, clients can get additional information from the `pro
 Clients can also inspect the configuration of the schedule.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamSchedule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamSchedule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -166,5 +166,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamSchedule?view=graph-powershell-beta)
+[Get-MgBetaTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamSchedule?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Move a mailfolder and its contents to another mailfolder.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgUserMailFolder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Move-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -239,4 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgUserMailFolder?view=graph-powershell-beta)
+[Move-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Move-MgBetaUserMailFolder?view=graph-powershell-beta)

@@ -16,7 +16,7 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply-all to a message and send it later.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -413,7 +413,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+[Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)
+[Invoke-MgBetaReplyUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyUserMailFolderChildFolderMessage?view=graph-powershell-beta)

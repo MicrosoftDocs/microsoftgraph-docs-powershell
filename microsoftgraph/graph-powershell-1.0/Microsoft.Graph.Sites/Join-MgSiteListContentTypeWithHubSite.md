@@ -11,7 +11,7 @@ schema: 2.0.0
 Associate a published [content type][contentType] present in a content type hub with a list of hub sites.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgSiteListContentTypeWithHubSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Applications/Join-MgBetaSiteListContentTypeWithHubSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -280,5 +280,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Sites/Join-MgSiteListContentTypeWithHubSite?view=graph-powershell-beta)
+[Join-MgBetaSiteListContentTypeWithHubSite](/powershell/module/Microsoft.Graph.Beta.Applications/Join-MgBetaSiteListContentTypeWithHubSite?view=graph-powershell-beta)
 

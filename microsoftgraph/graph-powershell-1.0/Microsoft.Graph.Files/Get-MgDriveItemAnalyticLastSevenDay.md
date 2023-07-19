@@ -11,7 +11,7 @@ schema: 2.0.0
 Get lastSevenDays from drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -153,5 +153,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
+[Get-MgBetaDriveItemAnalyticLastSevenDay](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveItemAnalyticLastSevenDay?view=graph-powershell-beta)
 

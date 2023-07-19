@@ -17,7 +17,7 @@ Attempting to send a request to a call that has already ended will result in a `
 The resources related to the call should be cleaned up on the application side.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -164,4 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-beta)
+[Invoke-MgBetaKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaKeepCommunicationCallAlive?view=graph-powershell-beta)

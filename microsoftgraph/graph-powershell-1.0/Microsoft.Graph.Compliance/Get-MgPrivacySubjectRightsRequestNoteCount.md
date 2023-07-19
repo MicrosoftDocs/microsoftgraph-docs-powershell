@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestNoteCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgPrivacySubjectRightsRequestNoteCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequestNoteCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrivacySubjectRightsRequestNoteCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -116,5 +116,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
 
 ## RELATED LINKS
-[Get-MgBetaPrivacySubjectRightsRequestNoteCount](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgPrivacySubjectRightsRequestNoteCount?view=graph-powershell-beta)
+[Get-MgBetaPrivacySubjectRightsRequestNoteCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrivacySubjectRightsRequestNoteCount?view=graph-powershell-beta)
 

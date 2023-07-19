@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userExperienceAnalyticsDeviceStartupProcesses for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -228,5 +228,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartupImpactInMS <Int32?>]`: The impact of startup process on device boot time in milliseconds. Supports: $select, $OrderBy. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcess?view=graph-powershell-beta)
 

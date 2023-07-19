@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgUserOnenoteSectionGroupCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserOnenoteSectionGroupCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -149,5 +149,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgUserOnenoteSectionGroupCount?view=graph-powershell-beta)
+[Get-MgBetaUserOnenoteSectionGroupCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserOnenoteSectionGroupCount?view=graph-powershell-beta)
 

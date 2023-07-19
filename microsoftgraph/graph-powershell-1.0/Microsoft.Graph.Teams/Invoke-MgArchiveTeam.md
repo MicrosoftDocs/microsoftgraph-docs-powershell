@@ -16,7 +16,7 @@ To archive a team, the team and group must have an owner.
 To restore a team from its archived state, use the API to unarchive.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgArchiveTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaArchiveTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaArchiveTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -247,4 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgBetaArchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgArchiveTeam?view=graph-powershell-beta)
+[Invoke-MgBetaArchiveTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaArchiveTeam?view=graph-powershell-beta)

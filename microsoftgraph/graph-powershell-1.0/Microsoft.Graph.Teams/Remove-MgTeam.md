@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete entity from teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -203,5 +203,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgTeam?view=graph-powershell-beta)
+[Remove-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeam?view=graph-powershell-beta)
 

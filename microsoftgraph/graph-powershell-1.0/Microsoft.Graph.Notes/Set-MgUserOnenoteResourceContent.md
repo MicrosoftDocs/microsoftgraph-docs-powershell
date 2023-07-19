@@ -11,7 +11,7 @@ schema: 2.0.0
 The content stream
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Notes/Set-MgUserOnenoteResourceContent?view=graph-powershell-beta)
+[Set-MgBetaUserOnenoteResourceContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaUserOnenoteResourceContent?view=graph-powershell-beta)
 

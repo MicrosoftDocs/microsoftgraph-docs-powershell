@@ -11,7 +11,7 @@ schema: 2.0.0
 The unique identifier of the Azure AD user targeted for the task execution.Supports $filter(eq, ne) and $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -215,5 +215,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceLifecycleWorkflowVersionTaskProcessingResultSubject?view=graph-powershell-beta)
 

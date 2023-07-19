@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property itemActivityStats in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6139,8 +6139,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ActorCount <Int32?>]`: The number of distinct actors that performed the action. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
+[Update-MgBetaGroupDriveItemAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupDriveItemAnalyticItemActivityStat?view=graph-powershell-beta)
 

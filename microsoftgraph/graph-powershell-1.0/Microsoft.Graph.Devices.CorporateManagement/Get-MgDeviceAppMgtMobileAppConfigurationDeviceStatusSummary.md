@@ -11,7 +11,7 @@ schema: 2.0.0
 App configuration device status summary.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatusSummary?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmobileappconfigurationdevicestatussummary](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmobileappconfigurationdevicestatussummary)
 

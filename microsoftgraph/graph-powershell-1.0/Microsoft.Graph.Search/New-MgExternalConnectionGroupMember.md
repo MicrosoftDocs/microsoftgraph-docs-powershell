@@ -11,7 +11,7 @@ schema: 2.0.0
 Create an identity resource for a new member in an externalGroup.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -269,5 +269,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/New-MgExternalConnectionGroupMember?view=graph-powershell-beta)
+[New-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 

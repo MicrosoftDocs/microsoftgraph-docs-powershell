@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOffice365ServicesUserCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365ServiceUserCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportOffice365ServiceUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -133,5 +133,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365ServiceUserCount?view=graph-powershell-beta)
+[Get-MgBetaReportOffice365ServiceUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportOffice365ServiceUserCount?view=graph-powershell-beta)
 

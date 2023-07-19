@@ -16,7 +16,7 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply-all to a message and send it later.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyAllUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -411,7 +411,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-beta)
+[Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyAllUserMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-beta)
+[Invoke-MgBetaReplyAllUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyAllUserMessage?view=graph-powershell-beta)

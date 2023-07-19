@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property licenseDetails in users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgUserLicenseDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -273,5 +273,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
-[Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgUserLicenseDetail?view=graph-powershell-beta)
+[Update-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserLicenseDetail?view=graph-powershell-beta)
 

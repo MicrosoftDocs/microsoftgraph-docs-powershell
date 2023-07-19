@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getActivitiesByInterval
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSiteListItemActivityByInterval?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListItemActivityByInterval?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -331,5 +331,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSiteListItemActivityByInterval?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListItemActivityByInterval](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListItemActivityByInterval?view=graph-powershell-beta)
 

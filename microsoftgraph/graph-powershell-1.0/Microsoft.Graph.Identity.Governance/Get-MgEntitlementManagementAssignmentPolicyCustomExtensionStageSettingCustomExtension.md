@@ -11,7 +11,7 @@ schema: 2.0.0
 Get customExtension from identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -185,5 +185,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension?view=graph-powershell-beta)
+[Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSettingCustomExtension?view=graph-powershell-beta)
 

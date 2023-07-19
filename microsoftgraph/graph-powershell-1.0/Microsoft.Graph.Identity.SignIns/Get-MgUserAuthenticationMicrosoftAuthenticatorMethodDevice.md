@@ -12,7 +12,7 @@ The registered device on which Microsoft Authenticator resides.
 This property is null if the device is not registered for passwordless Phone Sign-In.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -187,5 +187,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
+[Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserAuthenticationMicrosoftAuthenticatorMethodDevice?view=graph-powershell-beta)
 

@@ -12,7 +12,7 @@ Supports $filter (/$count eq 0, /$count ne 0).
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCreatedOnBehalfOf?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCreatedOnBehalfOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -136,5 +136,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCreatedOnBehalfOf?view=graph-powershell-beta)
+[Get-MgBetaApplicationCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCreatedOnBehalfOf?view=graph-powershell-beta)
 

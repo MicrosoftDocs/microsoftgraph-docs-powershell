@@ -11,7 +11,7 @@ schema: 2.0.0
 Copy a mailfolder and its contents to another mailfolder.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgUserMailFolder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -239,4 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Copy-MgUserMailFolder?view=graph-powershell-beta)
+[Copy-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaUserMailFolder?view=graph-powershell-beta)

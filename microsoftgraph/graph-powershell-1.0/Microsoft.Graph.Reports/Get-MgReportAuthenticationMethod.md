@@ -11,7 +11,7 @@ schema: 2.0.0
 Get authenticationMethods from reports
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-beta)
+[Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
 

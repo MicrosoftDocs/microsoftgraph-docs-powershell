@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property authenticationFlowsPolicy for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -119,5 +119,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+[Remove-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
 

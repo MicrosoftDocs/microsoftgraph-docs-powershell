@@ -11,7 +11,7 @@ schema: 2.0.0
 Grant users access to a link represented by a [permission][].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -299,4 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
-[Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)
+[Invoke-MgBetaAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaAcceptGroupCalendarEventTentatively?view=graph-powershell-beta)

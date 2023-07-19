@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property operations for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -220,5 +220,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+[Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
 

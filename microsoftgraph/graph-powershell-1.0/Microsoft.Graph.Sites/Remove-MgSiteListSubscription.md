@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property subscriptions for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteListSubscription?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteListSubscription?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,5 +213,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgSiteListSubscription?view=graph-powershell-beta)
+[Remove-MgBetaSiteListSubscription](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteListSubscription?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property bookingCurrencies for solutions
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBookingCurrency?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -152,5 +152,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Remove-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBookingCurrency?view=graph-powershell-beta)
+[Remove-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaBookingCurrency?view=graph-powershell-beta)
 

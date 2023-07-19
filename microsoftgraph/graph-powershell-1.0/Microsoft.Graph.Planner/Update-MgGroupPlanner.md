@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property planner in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgGroupPlanner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -426,8 +426,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
-[Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgGroupPlanner?view=graph-powershell-beta)
+[Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgGroupPlanner?view=graph-powershell-beta)
+[Update-MgBetaGroupPlanner](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupPlanner?view=graph-powershell-beta)
 

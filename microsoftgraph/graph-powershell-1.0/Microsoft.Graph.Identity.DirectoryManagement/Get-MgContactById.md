@@ -12,7 +12,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaContactById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactById?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaContactById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaContactById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -179,4 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaContactById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgContactById?view=graph-powershell-beta)
+[Get-MgBetaContactById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaContactById?view=graph-powershell-beta)

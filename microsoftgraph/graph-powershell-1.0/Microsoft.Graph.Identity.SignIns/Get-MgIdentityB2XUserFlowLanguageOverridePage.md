@@ -12,7 +12,7 @@ Collection of pages with the overrides messages to display in a user flow for a 
 This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -346,5 +346,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+[Get-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
 

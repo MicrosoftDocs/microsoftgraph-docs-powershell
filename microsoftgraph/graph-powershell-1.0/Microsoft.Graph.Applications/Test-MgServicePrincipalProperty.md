@@ -20,7 +20,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgServicePrincipalProperty?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -236,4 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnBehalfOfUserId <String>]`: 
 
 ## RELATED LINKS
-[Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgServicePrincipalProperty?view=graph-powershell-beta)
+[Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty?view=graph-powershell-beta)

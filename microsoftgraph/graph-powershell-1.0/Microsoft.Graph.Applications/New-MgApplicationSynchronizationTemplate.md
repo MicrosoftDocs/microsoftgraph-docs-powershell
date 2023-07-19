@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to templates for applications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -507,8 +507,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: 
 
 ## RELATED LINKS
-[New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-beta)
+[New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-beta)
+[New-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
 

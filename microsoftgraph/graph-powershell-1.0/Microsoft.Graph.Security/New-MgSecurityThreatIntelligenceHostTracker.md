@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to hostTrackers for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -310,8 +310,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+[New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
+[New-MgBetaSecurityThreatIntelligenceHostTracker](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityThreatIntelligenceHostTracker?view=graph-powershell-beta)
 

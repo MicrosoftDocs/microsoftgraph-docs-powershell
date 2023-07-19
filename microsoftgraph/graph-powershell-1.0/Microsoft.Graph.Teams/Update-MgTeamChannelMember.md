@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the role of a conversationMember in a team or channel.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamChannelMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -295,5 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMember?view=graph-powershell-beta)
+[Update-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamChannelMember?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a **printConnector** object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintConnector?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -331,5 +331,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subunit <String[]>]`: 
 
 ## RELATED LINKS
-[Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintConnector?view=graph-powershell-beta)
+[Update-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintConnector?view=graph-powershell-beta)
 

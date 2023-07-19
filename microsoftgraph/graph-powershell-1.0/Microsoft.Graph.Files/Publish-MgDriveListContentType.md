@@ -11,7 +11,7 @@ schema: 2.0.0
 Publishes a [contentType][] present in the content type hub site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Publish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgDriveListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Publish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Publish-MgBetaDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -169,5 +169,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Publish-MgDriveListContentType?view=graph-powershell-beta)
+[Publish-MgBetaDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Publish-MgBetaDriveListContentType?view=graph-powershell-beta)
 

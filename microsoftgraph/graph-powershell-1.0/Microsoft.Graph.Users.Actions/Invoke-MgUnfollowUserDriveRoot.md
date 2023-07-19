@@ -11,7 +11,7 @@ schema: 2.0.0
 Unfollow a driveItem.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnfollowUserDriveRoot?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgUnfollowUserDriveRoot?view=graph-powershell-beta)
+[Invoke-MgBetaUnfollowUserDriveRoot](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnfollowUserDriveRoot?view=graph-powershell-beta)
 

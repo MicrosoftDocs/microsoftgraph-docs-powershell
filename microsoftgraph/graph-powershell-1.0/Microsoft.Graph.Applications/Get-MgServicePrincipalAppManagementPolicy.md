@@ -11,7 +11,7 @@ schema: 2.0.0
 The appManagementPolicy applied to this application.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -277,5 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
+[Get-MgBetaServicePrincipalAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppManagementPolicy?view=graph-powershell-beta)
 

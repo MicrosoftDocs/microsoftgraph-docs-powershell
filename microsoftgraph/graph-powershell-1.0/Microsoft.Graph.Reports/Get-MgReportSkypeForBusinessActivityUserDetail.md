@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSkypeForBusinessActivityUserDetail
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSkypeForBusinessActivityUserDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSkypeForBusinessActivityUserDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -161,5 +161,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSkypeForBusinessActivityUserDetail?view=graph-powershell-beta)
+[Get-MgBetaReportSkypeForBusinessActivityUserDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSkypeForBusinessActivityUserDetail?view=graph-powershell-beta)
 

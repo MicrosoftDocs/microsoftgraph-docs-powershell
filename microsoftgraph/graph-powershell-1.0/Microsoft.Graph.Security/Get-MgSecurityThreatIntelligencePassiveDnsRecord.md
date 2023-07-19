@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a passiveDnsRecord object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -275,5 +275,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
+[Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-beta)
 

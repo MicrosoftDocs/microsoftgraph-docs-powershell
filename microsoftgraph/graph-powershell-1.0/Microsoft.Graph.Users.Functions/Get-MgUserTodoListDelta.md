@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgUserTodoListDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoListDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -262,5 +262,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Users.Functions/Get-MgUserTodoListDelta?view=graph-powershell-beta)
+[Get-MgBetaUserTodoListDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoListDelta?view=graph-powershell-beta)
 

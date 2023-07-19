@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to windowsAutopilotDeviceIdentities for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -393,5 +393,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User Principal Name.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
 

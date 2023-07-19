@@ -17,7 +17,7 @@ Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageReplyAll?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageReplyAll?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -395,7 +395,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageReplyAll?view=graph-powershell-beta)
+[New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageReplyAll?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageReplyAll?view=graph-powershell-beta)
+[New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageReplyAll?view=graph-powershell-beta)

@@ -11,7 +11,7 @@ schema: 2.0.0
 The page's HTML content.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -262,5 +262,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
+[Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
 

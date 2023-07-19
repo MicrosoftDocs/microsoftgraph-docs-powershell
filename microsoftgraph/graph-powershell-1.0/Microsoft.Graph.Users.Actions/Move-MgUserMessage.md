@@ -12,7 +12,7 @@ Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgUserMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Move-MgBetaUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -241,4 +241,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Move-MgUserMessage?view=graph-powershell-beta)
+[Move-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Move-MgBetaUserMessage?view=graph-powershell-beta)

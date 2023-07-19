@@ -12,7 +12,7 @@ The direct and transitive members of a group.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupTransitiveMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -324,5 +324,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupTransitiveMember?view=graph-powershell-beta)
+[Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)
 

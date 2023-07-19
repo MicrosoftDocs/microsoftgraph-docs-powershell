@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to connectors for print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -282,5 +282,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subunit <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-beta)
+[New-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintConnector?view=graph-powershell-beta)
 

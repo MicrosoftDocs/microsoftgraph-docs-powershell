@@ -11,7 +11,7 @@ schema: 2.0.0
 Get onlineMeetings from communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -484,5 +484,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationOnlineMeeting?view=graph-powershell-beta)
+[Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 

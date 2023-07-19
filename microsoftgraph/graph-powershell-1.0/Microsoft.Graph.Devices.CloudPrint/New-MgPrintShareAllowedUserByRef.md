@@ -11,7 +11,7 @@ schema: 2.0.0
 Grant the specified user access to submit print jobs to the associated printerShare.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintShareAllowedUserByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -225,5 +225,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintShareAllowedUserByRef?view=graph-powershell-beta)
+[New-MgBetaPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintShareAllowedUserByRef?view=graph-powershell-beta)
 

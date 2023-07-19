@@ -12,7 +12,7 @@ Identity of the user who created the item.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListCreatedByUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListCreatedByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -184,5 +184,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListCreatedByUser?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListCreatedByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListCreatedByUser?view=graph-powershell-beta)
 

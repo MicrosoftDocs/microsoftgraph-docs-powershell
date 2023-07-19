@@ -11,7 +11,7 @@ schema: 2.0.0
 Add an owner to an Office 365 group or security group through the owners navigation property.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupOwner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupOwner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -195,5 +195,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupOwner?view=graph-powershell-beta)
+[New-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupOwner?view=graph-powershell-beta)
 

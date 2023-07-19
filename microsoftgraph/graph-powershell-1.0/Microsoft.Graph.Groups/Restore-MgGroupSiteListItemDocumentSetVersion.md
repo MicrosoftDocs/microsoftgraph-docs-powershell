@@ -11,7 +11,7 @@ schema: 2.0.0
 Restore a document set version.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Restore-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -225,5 +225,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Restore-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+[Restore-MgBetaGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaGroupSiteListItemDocumentSetVersion?view=graph-powershell-beta)
 

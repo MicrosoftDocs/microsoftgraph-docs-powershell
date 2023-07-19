@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property contentTypes for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgUserDriveListContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -199,5 +199,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgUserDriveListContentType?view=graph-powershell-beta)
+[Remove-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserDriveListContentType?view=graph-powershell-beta)
 

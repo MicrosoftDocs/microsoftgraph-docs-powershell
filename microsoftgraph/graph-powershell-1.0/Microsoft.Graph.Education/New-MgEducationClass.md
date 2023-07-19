@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new educationClass object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClass?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -15627,8 +15627,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDate <DateTime?>]`: Start of the term.
 
 ## RELATED LINKS
-[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClass?view=graph-powershell-beta)
+[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClass?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationClass?view=graph-powershell-beta)
+[New-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClass?view=graph-powershell-beta)
 

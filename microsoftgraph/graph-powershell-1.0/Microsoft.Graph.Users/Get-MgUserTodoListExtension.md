@@ -12,7 +12,7 @@ The collection of open extensions defined for the task list.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserTodoListExtension?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserTodoListExtension?view=graph-powershell-beta)
+[Get-MgBetaUserTodoListExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoListExtension?view=graph-powershell-beta)
 

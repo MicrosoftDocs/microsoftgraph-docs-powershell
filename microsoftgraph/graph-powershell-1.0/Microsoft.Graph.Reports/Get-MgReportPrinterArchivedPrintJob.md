@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getPrinterArchivedPrintJobs
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportPrinterArchivedPrintJob?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -209,5 +209,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportPrinterArchivedPrintJob?view=graph-powershell-beta)
+[Get-MgBetaReportPrinterArchivedPrintJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportPrinterArchivedPrintJob?view=graph-powershell-beta)
 

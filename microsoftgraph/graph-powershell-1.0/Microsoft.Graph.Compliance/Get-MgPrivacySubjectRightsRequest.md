@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a subjectRightsRequest object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgPrivacySubjectRightsRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -244,5 +244,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
 
 ## RELATED LINKS
-[Get-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Compliance/Get-MgPrivacySubjectRightsRequest?view=graph-powershell-beta)
+[Get-MgBetaPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrivacySubjectRightsRequest?view=graph-powershell-beta)
 

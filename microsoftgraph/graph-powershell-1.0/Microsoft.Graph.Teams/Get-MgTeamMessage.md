@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getAllMessages
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -158,5 +158,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamMessage?view=graph-powershell-beta)
+[Get-MgBetaTeamMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamMessage?view=graph-powershell-beta)
 

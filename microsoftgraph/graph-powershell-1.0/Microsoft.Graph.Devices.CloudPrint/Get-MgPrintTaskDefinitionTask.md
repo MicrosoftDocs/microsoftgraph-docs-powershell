@@ -12,7 +12,7 @@ Get details about a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintTaskDefinitionTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -286,5 +286,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgPrintTaskDefinitionTask?view=graph-powershell-beta)
+[Get-MgBetaPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintTaskDefinitionTask?view=graph-powershell-beta)
 

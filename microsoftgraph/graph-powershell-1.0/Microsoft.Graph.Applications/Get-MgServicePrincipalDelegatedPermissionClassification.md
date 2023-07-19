@@ -11,7 +11,7 @@ schema: 2.0.0
 Get delegatedPermissionClassifications from servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -291,5 +291,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+[Get-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
 

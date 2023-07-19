@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties of a delegatedAdminCustomer object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -248,5 +248,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Get-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
+[Get-MgBetaTenantRelationshipDelegatedAdminCustomer](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTenantRelationshipDelegatedAdminCustomer?view=graph-powershell-beta)
 

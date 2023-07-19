@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceCompliancePolicyStateCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgUserManagedDeviceCompliancePolicyStateCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserManagedDeviceCompliancePolicyStateCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserManagedDeviceCompliancePolicyStateCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -161,5 +161,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Get-MgBetaUserManagedDeviceCompliancePolicyStateCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgUserManagedDeviceCompliancePolicyStateCount?view=graph-powershell-beta)
+[Get-MgBetaUserManagedDeviceCompliancePolicyStateCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserManagedDeviceCompliancePolicyStateCount?view=graph-powershell-beta)
 

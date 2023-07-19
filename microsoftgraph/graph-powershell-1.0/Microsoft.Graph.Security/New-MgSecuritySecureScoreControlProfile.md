@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to secureScoreControlProfiles for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -495,5 +495,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
-[New-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+[New-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 The async operations that ran or are running on this team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamOperation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamOperation?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamOperation?view=graph-powershell-beta)
 

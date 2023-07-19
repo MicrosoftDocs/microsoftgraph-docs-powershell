@@ -12,7 +12,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemById?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryDeletedItemById?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -151,5 +151,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemById?view=graph-powershell-beta)
+[Get-MgBetaDirectoryDeletedItemById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryDeletedItemById?view=graph-powershell-beta)
 

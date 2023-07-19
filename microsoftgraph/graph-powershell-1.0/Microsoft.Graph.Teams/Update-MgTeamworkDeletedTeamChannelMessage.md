@@ -16,7 +16,7 @@ This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -896,8 +896,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+[Update-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
+[Update-MgBetaTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamworkDeletedTeamChannelMessage?view=graph-powershell-beta)
 

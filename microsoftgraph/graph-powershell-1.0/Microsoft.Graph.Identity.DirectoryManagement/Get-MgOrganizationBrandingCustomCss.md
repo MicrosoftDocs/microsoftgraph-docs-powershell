@@ -11,7 +11,7 @@ schema: 2.0.0
 Get customCSS for the navigation property branding from organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingCustomCss?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,5 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingCustomCss?view=graph-powershell-beta)
+[Get-MgBetaOrganizationBrandingCustomCss](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingCustomCss?view=graph-powershell-beta)
 

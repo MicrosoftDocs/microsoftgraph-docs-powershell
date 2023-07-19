@@ -12,7 +12,7 @@ Add the large gallery view to a call.
 For details about how to identify a large gallery view participant in a roster so that you can retrieve the relevant data to subscribe to the video feed, see Identify large gallery view participants in a roster.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Add-MgCommunicationCallLargeGalleryView?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaCommunicationCallLargeGalleryView?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -208,4 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Add-MgCommunicationCallLargeGalleryView?view=graph-powershell-beta)
+[Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaCommunicationCallLargeGalleryView?view=graph-powershell-beta)

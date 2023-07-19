@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a conditionalAccessPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,5 +213,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-beta)
+[Remove-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
 

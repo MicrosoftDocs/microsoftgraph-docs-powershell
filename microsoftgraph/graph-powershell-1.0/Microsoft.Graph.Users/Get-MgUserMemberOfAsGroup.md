@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserMemberOfAsGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMemberOfAsGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -286,5 +286,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserMemberOfAsGroup?view=graph-powershell-beta)
+[Get-MgBetaUserMemberOfAsGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMemberOfAsGroup?view=graph-powershell-beta)
 

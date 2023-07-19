@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to documents for print
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintShareJobDocument?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -260,5 +260,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/New-MgPrintShareJobDocument?view=graph-powershell-beta)
+[New-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
 

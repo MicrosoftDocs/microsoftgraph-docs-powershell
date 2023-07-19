@@ -11,7 +11,7 @@ schema: 2.0.0
 The primary users associated with the managed device.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementManagedDeviceUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -205,5 +205,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgDeviceManagementManagedDeviceUser?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementManagedDeviceUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementManagedDeviceUser?view=graph-powershell-beta)
 

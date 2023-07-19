@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property contentSharingSessions for communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgCommunicationCallContentSharingSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Remove-MgCommunicationCallContentSharingSession?view=graph-powershell-beta)
+[Remove-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 

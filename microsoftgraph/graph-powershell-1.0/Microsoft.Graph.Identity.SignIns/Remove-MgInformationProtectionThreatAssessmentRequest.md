@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property threatAssessmentRequests for informationProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -200,5 +200,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+[Remove-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 

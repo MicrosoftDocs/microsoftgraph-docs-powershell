@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an alert object in an organization based on the specified alert **id** property.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityAlertV2?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -703,5 +703,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityAlertV2?view=graph-powershell-beta)
+[Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
 

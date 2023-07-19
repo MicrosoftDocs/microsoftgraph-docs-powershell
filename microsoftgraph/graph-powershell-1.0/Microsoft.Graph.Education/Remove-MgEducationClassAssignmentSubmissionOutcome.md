@@ -12,7 +12,7 @@ Delete a feedback resource from a submission.
 This can only be done by a teacher.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -217,5 +217,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+[Remove-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
 

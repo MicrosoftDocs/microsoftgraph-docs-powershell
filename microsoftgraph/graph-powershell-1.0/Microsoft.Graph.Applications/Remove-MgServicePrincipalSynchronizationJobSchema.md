@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property schema for servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -180,5 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
+[Remove-MgBetaServicePrincipalSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalSynchronizationJobSchema?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property mobileApps in deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -498,5 +498,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileApp?view=graph-powershell-beta)
+[Update-MgBetaDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceAppManagementMobileApp?view=graph-powershell-beta)
 

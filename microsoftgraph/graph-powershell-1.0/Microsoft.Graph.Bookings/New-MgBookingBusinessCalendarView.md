@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to calendarView for solutions
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessCalendarView?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -634,5 +634,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessCalendarView?view=graph-powershell-beta)
+[New-MgBetaBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessCalendarView?view=graph-powershell-beta)
 

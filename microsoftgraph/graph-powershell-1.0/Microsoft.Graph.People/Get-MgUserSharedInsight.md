@@ -14,7 +14,7 @@ This also includes URLs and reference attachments to Teams conversations.
 Ordered by recency of share.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSharedInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserSharedInsight?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSharedInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserSharedInsight?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -268,5 +268,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserSharedInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgUserSharedInsight?view=graph-powershell-beta)
+[Get-MgBetaUserSharedInsight](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserSharedInsight?view=graph-powershell-beta)
 

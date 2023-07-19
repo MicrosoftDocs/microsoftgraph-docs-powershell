@@ -17,7 +17,7 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to forward a message, and send it later.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaForwardUserMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -446,7 +446,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-beta)
+[Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaForwardUserMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-beta)
+[Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaForwardUserMessage?view=graph-powershell-beta)

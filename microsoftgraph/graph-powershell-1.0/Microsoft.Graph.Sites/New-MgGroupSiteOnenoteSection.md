@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to sections for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteOnenoteSection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -764,8 +764,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SectionsUrl <String>]`: The URL for the sections navigation property, which returns all the sections in the section group. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteOnenoteSection?view=graph-powershell-beta)
+[New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteOnenoteSection?view=graph-powershell-beta)
+[New-MgBetaGroupSiteOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteOnenoteSection?view=graph-powershell-beta)
 

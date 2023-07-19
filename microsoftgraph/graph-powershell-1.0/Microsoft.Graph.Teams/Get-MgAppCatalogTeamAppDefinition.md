@@ -11,7 +11,7 @@ schema: 2.0.0
 The details for each version of the app.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+[Get-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 

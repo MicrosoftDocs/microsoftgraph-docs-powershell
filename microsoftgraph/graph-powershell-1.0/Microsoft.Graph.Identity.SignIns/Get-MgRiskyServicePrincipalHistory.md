@@ -11,7 +11,7 @@ schema: 2.0.0
 Represents the risk history of Azure AD service principals.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgRiskyServicePrincipalHistory?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,5 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgRiskyServicePrincipalHistory?view=graph-powershell-beta)
+[Get-MgBetaRiskyServicePrincipalHistory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRiskyServicePrincipalHistory?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property photo in teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgTeamPhotoContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaTeamPhotoContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -194,5 +194,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Set-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgTeamPhotoContent?view=graph-powershell-beta)
+[Set-MgBetaTeamPhotoContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaTeamPhotoContent?view=graph-powershell-beta)
 

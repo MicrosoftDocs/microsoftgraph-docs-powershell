@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getYammerActivityUserCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportYammerActivityUserCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportYammerActivityUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -133,5 +133,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportYammerActivityUserCount?view=graph-powershell-beta)
+[Get-MgBetaReportYammerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportYammerActivityUserCount?view=graph-powershell-beta)
 

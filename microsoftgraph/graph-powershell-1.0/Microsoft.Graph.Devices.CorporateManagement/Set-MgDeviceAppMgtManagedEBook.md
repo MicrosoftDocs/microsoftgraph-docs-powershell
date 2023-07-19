@@ -11,7 +11,7 @@ schema: 2.0.0
 Device configuration states for this device.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgDeviceAppMgtManagedEBook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -242,4 +242,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-[Set-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgDeviceAppMgtManagedEBook?view=graph-powershell-beta)
+[Set-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)

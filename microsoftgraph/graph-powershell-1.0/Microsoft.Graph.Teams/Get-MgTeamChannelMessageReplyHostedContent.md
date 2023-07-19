@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -380,5 +380,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
+[Get-MgBetaTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 

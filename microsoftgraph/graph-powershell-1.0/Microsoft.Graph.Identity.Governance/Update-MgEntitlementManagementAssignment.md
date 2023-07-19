@@ -13,7 +13,7 @@ The **state** of the access package assignment must be `Delivered` for the admin
 Only admins with the Access Package Assignment Manager role, or higher, in Azure AD entitlement management can perform this action.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -9339,8 +9339,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectType <String>]`: accessPackageSubjectType
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
 

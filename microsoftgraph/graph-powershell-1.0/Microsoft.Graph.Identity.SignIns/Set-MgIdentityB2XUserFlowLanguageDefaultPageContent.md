@@ -11,7 +11,7 @@ schema: 2.0.0
 Update media content for the navigation property defaultPages in identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -249,5 +249,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Set-MgIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
+[Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaIdentityB2XUserFlowLanguageDefaultPageContent?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to assignments for identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -9215,8 +9215,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectType <String>]`: accessPackageSubjectType
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+[New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementAssignment?view=graph-powershell-beta)
+[New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
 

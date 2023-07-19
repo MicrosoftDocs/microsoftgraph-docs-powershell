@@ -11,7 +11,7 @@ schema: 2.0.0
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgCheckoutGroupDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaCheckoutGroupDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -209,4 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgCheckoutGroupDriveItem?view=graph-powershell-beta)
+[Invoke-MgBetaCheckoutGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaCheckoutGroupDriveItem?view=graph-powershell-beta)

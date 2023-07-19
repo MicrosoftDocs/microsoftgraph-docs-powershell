@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property listItem for shares
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgShareListItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaShareListItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -196,5 +196,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgShareListItem?view=graph-powershell-beta)
+[Remove-MgBetaShareListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaShareListItem?view=graph-powershell-beta)
 

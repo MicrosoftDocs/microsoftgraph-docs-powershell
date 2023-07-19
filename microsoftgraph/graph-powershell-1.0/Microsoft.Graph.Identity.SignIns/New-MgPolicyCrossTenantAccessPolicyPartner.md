@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new partner configuration in a cross-tenant access policy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -397,8 +397,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsMfaAccepted <Boolean?>]`: Specifies whether MFA from external Azure AD organizations is trusted.
 
 ## RELATED LINKS
-[New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+[New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+[New-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
 

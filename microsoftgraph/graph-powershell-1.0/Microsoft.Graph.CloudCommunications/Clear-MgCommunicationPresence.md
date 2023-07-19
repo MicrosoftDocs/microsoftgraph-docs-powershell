@@ -13,7 +13,7 @@ If it is the user's only presence session, the user's presence will change to `O
 For details about presences sessions, see presence: setPresence.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgCommunicationPresence?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.Applications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,5 +211,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Clear-MgCommunicationPresence?view=graph-powershell-beta)
+[Clear-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.Applications/Clear-MgBetaCommunicationPresence?view=graph-powershell-beta)
 

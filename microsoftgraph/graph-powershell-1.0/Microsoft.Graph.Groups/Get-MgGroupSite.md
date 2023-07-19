@@ -14,7 +14,7 @@ Invoke function getAllSites
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -297,7 +297,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSite?view=graph-powershell-beta)
+[Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSite?view=graph-powershell-beta)
 
 [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSite?view=graph-powershell-beta)
 

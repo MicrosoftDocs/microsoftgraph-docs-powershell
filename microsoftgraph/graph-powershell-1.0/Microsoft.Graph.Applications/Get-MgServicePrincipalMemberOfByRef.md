@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action getMemberObjects
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalMemberOfByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -205,4 +205,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalMemberOfByRef?view=graph-powershell-beta)
+[Get-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)

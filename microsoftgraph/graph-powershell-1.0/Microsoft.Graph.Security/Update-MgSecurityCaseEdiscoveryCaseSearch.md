@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an ediscoverySearch object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -818,8 +818,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+[Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
+[Update-MgBetaSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to userRegistrationDetails for reports
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -377,5 +377,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: signInUserType
 
 ## RELATED LINKS
-[New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Reports/New-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
+[New-MgBetaReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-beta)
 

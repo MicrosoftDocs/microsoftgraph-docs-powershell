@@ -11,7 +11,7 @@ schema: 2.0.0
 Metadata for the device configuration user activity report
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportDeviceConfigurationUserActivity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportDeviceConfigurationUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportDeviceConfigurationUserActivity?view=graph-powershell-beta)
+[Get-MgBetaReportDeviceConfigurationUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportDeviceConfigurationUserActivity?view=graph-powershell-beta)
 

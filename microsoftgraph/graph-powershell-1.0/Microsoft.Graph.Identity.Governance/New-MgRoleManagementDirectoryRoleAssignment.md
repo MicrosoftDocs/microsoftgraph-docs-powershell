@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new unifiedRoleAssignment object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -352,5 +352,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the role definition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
+[New-MgBetaRoleManagementDirectoryRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementDirectoryRoleAssignment?view=graph-powershell-beta)
 

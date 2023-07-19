@@ -12,7 +12,7 @@ The principal that's getting a role assignment through the request.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementEntitlementManagementRoleAssignmentScheduleRequestPrincipal?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to activities for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -512,8 +512,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
 ## RELATED LINKS
-[New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-beta)
+[New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserActivity?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-beta)
+[New-MgBetaUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserActivity?view=graph-powershell-beta)
 

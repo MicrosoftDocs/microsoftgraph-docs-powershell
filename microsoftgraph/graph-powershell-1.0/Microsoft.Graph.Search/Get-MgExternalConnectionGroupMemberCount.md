@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMemberCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroupMemberCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMemberCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroupMemberCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,5 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionGroupMemberCount](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroupMemberCount?view=graph-powershell-beta)
+[Get-MgBetaExternalConnectionGroupMemberCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroupMemberCount?view=graph-powershell-beta)
 

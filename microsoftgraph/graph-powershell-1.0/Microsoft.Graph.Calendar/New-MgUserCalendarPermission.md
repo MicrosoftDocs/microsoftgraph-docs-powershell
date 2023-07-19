@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgUserCalendarPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -324,5 +324,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/New-MgUserCalendarPermission?view=graph-powershell-beta)
+[New-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 

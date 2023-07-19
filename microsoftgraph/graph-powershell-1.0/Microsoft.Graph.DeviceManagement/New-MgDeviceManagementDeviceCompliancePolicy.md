@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceCompliancePolicies for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -463,8 +463,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
 

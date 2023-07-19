@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property localizations in agreements
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgAgreementFileLocalization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -421,8 +421,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgAgreementFileLocalization?view=graph-powershell-beta)
+[Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgAgreementFileLocalization?view=graph-powershell-beta)
+[Update-MgBetaAgreementFileLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAgreementFileLocalization?view=graph-powershell-beta)
 

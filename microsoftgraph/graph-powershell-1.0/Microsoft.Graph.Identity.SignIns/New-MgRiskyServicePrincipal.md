@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to riskyServicePrincipals for identityProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgRiskyServicePrincipal?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -334,5 +334,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[InitiatedBy <String>]`: The identifier of the actor of the operation.
 
 ## RELATED LINKS
-[New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgRiskyServicePrincipal?view=graph-powershell-beta)
+[New-MgBetaRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRiskyServicePrincipal?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property edge for admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgAdminEdge?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaAdminEdge?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -98,5 +98,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Remove-MgAdminEdge?view=graph-powershell-beta)
+[Remove-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaAdminEdge?view=graph-powershell-beta)
 

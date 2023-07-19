@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties and relationships of a shiftPreferences object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgUserSettingShiftPreference?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -329,5 +329,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgUserSettingShiftPreference?view=graph-powershell-beta)
+[Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 

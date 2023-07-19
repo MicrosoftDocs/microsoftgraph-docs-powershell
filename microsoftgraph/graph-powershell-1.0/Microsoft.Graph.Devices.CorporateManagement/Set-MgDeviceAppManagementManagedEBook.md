@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action assign
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -242,5 +242,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgDeviceAppManagementManagedEBook?view=graph-powershell-beta)
+[Set-MgBetaDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaDeviceAppManagementManagedEBook?view=graph-powershell-beta)
 

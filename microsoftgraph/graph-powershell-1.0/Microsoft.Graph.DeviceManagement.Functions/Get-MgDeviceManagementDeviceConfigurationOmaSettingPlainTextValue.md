@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOmaSettingPlainTextValue
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -105,5 +105,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementDeviceConfigurationOmaSettingPlainTextValue?view=graph-powershell-beta)
 

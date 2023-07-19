@@ -12,7 +12,7 @@ A member added to an externalGroup.
 You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroupMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -294,5 +294,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroupMember?view=graph-powershell-beta)
+[Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
 

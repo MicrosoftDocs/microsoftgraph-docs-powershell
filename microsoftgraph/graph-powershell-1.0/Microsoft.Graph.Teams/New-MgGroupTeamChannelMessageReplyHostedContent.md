@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to hostedContents for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -325,5 +325,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
+[New-MgBetaGroupTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamChannelMessageReplyHostedContent?view=graph-powershell-beta)
 

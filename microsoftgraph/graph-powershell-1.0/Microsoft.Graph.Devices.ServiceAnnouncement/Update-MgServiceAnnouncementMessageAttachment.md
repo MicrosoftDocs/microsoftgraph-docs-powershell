@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property attachments in admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -282,5 +282,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Update-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Update-MgServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
+[Update-MgBetaServiceAnnouncementMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaServiceAnnouncementMessageAttachment?view=graph-powershell-beta)
 

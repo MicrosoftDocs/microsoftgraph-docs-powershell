@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a permission object on a site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgGroupSitePermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupSitePermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -213,5 +213,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgGroupSitePermission?view=graph-powershell-beta)
+[Remove-MgBetaGroupSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupSitePermission?view=graph-powershell-beta)
 

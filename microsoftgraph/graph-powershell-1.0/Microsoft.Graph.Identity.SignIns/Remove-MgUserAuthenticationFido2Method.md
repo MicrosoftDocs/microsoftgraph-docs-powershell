@@ -11,7 +11,7 @@ schema: 2.0.0
 Deletes a user's FIDO2 Security Key Authentication Method object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationFido2Method?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -229,5 +229,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgUserAuthenticationFido2Method?view=graph-powershell-beta)
+[Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
 

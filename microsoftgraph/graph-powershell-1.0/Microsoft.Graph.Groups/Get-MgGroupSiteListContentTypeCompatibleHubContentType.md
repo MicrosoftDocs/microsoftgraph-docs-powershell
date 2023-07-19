@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getCompatibleHubContentTypes
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -256,5 +256,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
 

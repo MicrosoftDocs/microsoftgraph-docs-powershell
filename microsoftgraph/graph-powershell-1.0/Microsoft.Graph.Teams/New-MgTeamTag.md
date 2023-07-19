@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a standard tag for members in a team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamTag?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -358,5 +358,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The user ID of the member.
 
 ## RELATED LINKS
-[New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamTag?view=graph-powershell-beta)
+[New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamTag?view=graph-powershell-beta)
 

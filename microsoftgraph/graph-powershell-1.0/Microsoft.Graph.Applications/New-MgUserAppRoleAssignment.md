@@ -12,7 +12,7 @@ Use this API to assign an app role to a user.
 To grant an app role assignment to a user, you need three identifiers:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -58,7 +58,6 @@ New-MgUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -AppRoleID '00000000-0000-0000-0000-000000000000' |
   Format-List Id, AppRoleId, CreationTime, PrincipalDisplayName, 
   PrincipalId, PrincipalType, ResourceDisplayName, ResourceId
-```
 
 Id                   : 01B8ir38J0eoiYqyMt_qAWev_PSoYDBGmcqI9E2dyKI
 AppRoleId            : 00000000-0000-0000-0000-000000000000
@@ -385,4 +384,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgUserAppRoleAssignment?view=graph-powershell-beta)
+[New-MgBetaUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAppRoleAssignment?view=graph-powershell-beta)

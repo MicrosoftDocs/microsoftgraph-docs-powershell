@@ -12,7 +12,7 @@ Delete an identity provider from a b2xIdentityUserFlow object.
 For self-service sign-up user flows, the values can be `Google-OAUTH` or `Facebook-OAUTH`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProvider?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityB2XUserFlowIdentityProvider?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -217,5 +217,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgIdentityB2XUserFlowIdentityProvider?view=graph-powershell-beta)
+[Remove-MgBetaIdentityB2XUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityB2XUserFlowIdentityProvider?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the permissions assigned to an existing sharee or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgUserCalendarPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -359,5 +359,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgUserCalendarPermission?view=graph-powershell-beta)
+[Update-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getAttackSimulationTrainingUserCoverage
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -113,5 +113,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
+[Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-beta)
 

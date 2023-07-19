@@ -11,7 +11,7 @@ schema: 2.0.0
 Get headerLogo for the navigation property branding from organization
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,5 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
+[Get-MgBetaOrganizationBrandingHeaderLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingHeaderLogo?view=graph-powershell-beta)
 

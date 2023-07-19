@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -125,5 +125,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgUserMailFolderChildFolder?view=graph-powershell-beta)
+[New-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
 

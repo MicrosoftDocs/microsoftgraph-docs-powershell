@@ -13,7 +13,7 @@ The **requiresReview** property allows any user to submit an app for review by a
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -270,5 +270,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-beta)
+[New-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
 

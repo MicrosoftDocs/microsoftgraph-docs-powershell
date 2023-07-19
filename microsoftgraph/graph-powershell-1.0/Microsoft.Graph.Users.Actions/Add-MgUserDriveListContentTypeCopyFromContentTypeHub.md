@@ -14,7 +14,7 @@ The method allows users to pull content types directly from the content type hub
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -264,4 +264,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+[Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaUserDriveListContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)

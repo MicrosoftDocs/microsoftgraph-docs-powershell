@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new accessPackageCatalog object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6205,8 +6205,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+[New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgEntitlementManagementCatalog?view=graph-powershell-beta)
+[New-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
 

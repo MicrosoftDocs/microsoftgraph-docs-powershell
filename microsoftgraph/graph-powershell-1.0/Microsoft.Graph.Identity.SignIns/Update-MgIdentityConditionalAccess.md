@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property conditionalAccess in identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -563,8 +563,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Scenarios <String>]`: templateScenarios
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-beta)
+[Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgIdentityConditionalAccess?view=graph-powershell-beta)
+[Update-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
 

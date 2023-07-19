@@ -11,7 +11,7 @@ schema: 2.0.0
 The team associated with this group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -144,5 +144,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeam?view=graph-powershell-beta)
+[Get-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeam?view=graph-powershell-beta)
 

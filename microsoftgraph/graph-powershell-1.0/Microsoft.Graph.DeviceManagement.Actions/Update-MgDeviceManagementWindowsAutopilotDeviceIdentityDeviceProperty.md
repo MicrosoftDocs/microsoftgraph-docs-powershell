@@ -11,7 +11,7 @@ schema: 2.0.0
 Updates properties on Autopilot devices.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -261,5 +261,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Update-MgDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementWindowsAutopilotDeviceIdentityDeviceProperty?view=graph-powershell-beta)
 

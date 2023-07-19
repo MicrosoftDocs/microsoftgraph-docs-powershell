@@ -12,7 +12,7 @@ Close an eDiscovery case.
 For details, see Close a case.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Applications/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,4 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+[Close-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Applications/Close-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)

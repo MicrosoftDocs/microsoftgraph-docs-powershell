@@ -11,7 +11,7 @@ schema: 2.0.0
 Create an appManagementPolicy object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -262,5 +262,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[RestrictionType <String>]`: appCredentialRestrictionType
 
 ## RELATED LINKS
-[New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgPolicyAppManagementPolicy?view=graph-powershell-beta)
+[New-MgBetaPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyAppManagementPolicy?view=graph-powershell-beta)
 

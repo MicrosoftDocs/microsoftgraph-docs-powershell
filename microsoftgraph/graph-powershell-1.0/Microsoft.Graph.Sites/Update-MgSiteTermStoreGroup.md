@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property groups in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteTermStoreGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -451,5 +451,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
-[Update-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteTermStoreGroup?view=graph-powershell-beta)
+[Update-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
 

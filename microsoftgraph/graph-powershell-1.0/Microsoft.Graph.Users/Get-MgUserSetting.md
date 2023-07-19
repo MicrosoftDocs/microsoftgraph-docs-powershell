@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -126,5 +126,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserSetting?view=graph-powershell-beta)
+[Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserSetting?view=graph-powershell-beta)
 

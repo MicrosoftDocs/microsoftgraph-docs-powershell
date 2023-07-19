@@ -12,7 +12,7 @@ A group setting template represents a template of settings from which settings m
 This operation allows retrieval of the properties of the groupSettingTemplate object, including the available settings and their defaults.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -279,5 +279,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
+[Get-MgBetaGroupSettingTemplateGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSettingTemplateGroupSettingTemplate?view=graph-powershell-beta)
 

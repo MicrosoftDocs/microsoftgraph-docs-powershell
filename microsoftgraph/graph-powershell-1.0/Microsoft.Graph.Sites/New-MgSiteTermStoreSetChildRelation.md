@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to relations for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteTermStoreSetChildRelation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -600,8 +600,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteTermStoreSetChildRelation?view=graph-powershell-beta)
+[New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteTermStoreSetChildRelation?view=graph-powershell-beta)
+[New-MgBetaSiteTermStoreSetChildRelation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteTermStoreSetChildRelation?view=graph-powershell-beta)
 

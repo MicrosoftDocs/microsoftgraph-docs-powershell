@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function summarizeDevicePerformanceDevices
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -197,5 +197,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
-[Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-beta)
+[Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticDevicePerformanceDevice?view=graph-powershell-beta)
 

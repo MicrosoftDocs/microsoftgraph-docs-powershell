@@ -12,7 +12,7 @@ Adds (pins) a tab to the specified channel within a team.
 \nThe corresponding app must already be installed in the team.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -385,5 +385,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
+[New-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
 

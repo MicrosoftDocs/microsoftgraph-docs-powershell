@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property sharepoint in admin
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgAdminSharepoint?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -221,5 +221,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantDefaultTimezone <String>]`: The default timezone of a tenant for newly created sites. For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
-[Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgAdminSharepoint?view=graph-powershell-beta)
+[Update-MgBetaAdminSharepoint](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAdminSharepoint?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property events in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgGroupEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1571,8 +1571,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgGroupEvent?view=graph-powershell-beta)
+[Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Update-MgGroupEvent?view=graph-powershell-beta)
+[Update-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupEvent?view=graph-powershell-beta)
 

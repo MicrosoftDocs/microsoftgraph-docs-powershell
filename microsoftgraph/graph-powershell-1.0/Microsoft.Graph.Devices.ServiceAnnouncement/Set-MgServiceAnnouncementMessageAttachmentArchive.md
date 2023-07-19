@@ -11,7 +11,7 @@ schema: 2.0.0
 The zip file that contains all attachments for a message.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -181,5 +181,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Set-MgServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
+[Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
 

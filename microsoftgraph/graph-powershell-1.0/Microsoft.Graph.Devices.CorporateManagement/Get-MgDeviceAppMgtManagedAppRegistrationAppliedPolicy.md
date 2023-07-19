@@ -11,7 +11,7 @@ schema: 2.0.0
 Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppMgtManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -42,7 +42,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
-[Get-MgBetaDeviceAppMgtManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
+[Get-MgBetaDeviceAppMgtManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceAppMgtManagedAppRegistrationAppliedPolicy?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedappregistrationappliedpolicy](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedappregistrationappliedpolicy)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property replies in teams
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMessageReply?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -901,8 +901,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMessageReply?view=graph-powershell-beta)
+[Update-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamChannelMessageReply?view=graph-powershell-beta)
+[Update-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to bookingCurrencies for solutions
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingCurrency?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingCurrency?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -149,5 +149,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Symbol <String>]`: The currency symbol. For example, the currency symbol for the US dollar and for the Australian dollar is $.
 
 ## RELATED LINKS
-[New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingCurrency?view=graph-powershell-beta)
+[New-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingCurrency?view=graph-powershell-beta)
 

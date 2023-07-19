@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to riskyUsers for identityProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRiskyUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -330,5 +330,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The ID of the user.
 
 ## RELATED LINKS
-[New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-beta)
+[New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRiskyUser?view=graph-powershell-beta)
 

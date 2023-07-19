@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function userExperienceAnalyticsSummarizeWorkFromAnywhereDevices
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -37,5 +37,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Invoke-MgExperienceDeviceManagement?view=graph-powershell-beta)
+[Invoke-MgBetaExperienceDeviceManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaExperienceDeviceManagement?view=graph-powershell-beta)
 

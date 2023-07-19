@@ -13,7 +13,7 @@ When deleted, apps are moved to a temporary container and can be restored within
 After that time, they are permanently deleted.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplication?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplication?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -180,5 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgApplication?view=graph-powershell-beta)
+[Remove-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplication?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property team in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgGroupTeam?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -17967,8 +17967,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgGroupTeam?view=graph-powershell-beta)
+[Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Set-MgGroupTeam?view=graph-powershell-beta)
+[Set-MgBetaGroupTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaGroupTeam?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get entity from agreements by key
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgAgreement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAgreement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -218,5 +218,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgAgreement?view=graph-powershell-beta)
+[Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAgreement?view=graph-powershell-beta)
 

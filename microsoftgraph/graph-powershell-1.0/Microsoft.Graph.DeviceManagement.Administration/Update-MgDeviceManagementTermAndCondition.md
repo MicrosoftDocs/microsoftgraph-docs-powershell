@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property termsAndConditions in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgDeviceManagementTermAndCondition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -407,5 +407,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgDeviceManagementTermAndCondition?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementTermAndCondition?view=graph-powershell-beta)
 

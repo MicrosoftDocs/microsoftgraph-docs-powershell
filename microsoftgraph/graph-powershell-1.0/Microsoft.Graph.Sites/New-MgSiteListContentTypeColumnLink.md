@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to columnLinks for sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteListContentTypeColumnLink?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -263,5 +263,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgSiteListContentTypeColumnLink?view=graph-powershell-beta)
+[New-MgBetaSiteListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteListContentTypeColumnLink?view=graph-powershell-beta)
 

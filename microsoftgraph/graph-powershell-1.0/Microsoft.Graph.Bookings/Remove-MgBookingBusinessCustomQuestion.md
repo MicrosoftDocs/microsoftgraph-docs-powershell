@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a bookingCustomQuestion object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -181,5 +181,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/Remove-MgBookingBusinessCustomQuestion?view=graph-powershell-beta)
+[Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
 

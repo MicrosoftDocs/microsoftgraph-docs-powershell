@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSharePointSiteUsagePages
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSharePointSiteUsagePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSharePointSiteUsagePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -133,5 +133,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportSharePointSiteUsagePage?view=graph-powershell-beta)
+[Get-MgBetaReportSharePointSiteUsagePage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportSharePointSiteUsagePage?view=graph-powershell-beta)
 

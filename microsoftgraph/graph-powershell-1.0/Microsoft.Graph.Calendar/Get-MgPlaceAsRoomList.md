@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the item of type microsoft.graph.place as microsoft.graph.roomList
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgPlaceAsRoomList?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -252,5 +252,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgPlaceAsRoomList?view=graph-powershell-beta)
+[Get-MgBetaPlaceAsRoomList](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPlaceAsRoomList?view=graph-powershell-beta)
 

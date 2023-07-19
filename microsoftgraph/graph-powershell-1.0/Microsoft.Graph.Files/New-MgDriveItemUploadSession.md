@@ -12,7 +12,7 @@ Create an upload session to allow your app to upload files up to the maximum fil
 To upload a file using an upload session, there are two steps:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveItemUploadSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -242,5 +242,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
-[New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Files/New-MgDriveItemUploadSession?view=graph-powershell-beta)
+[New-MgBetaDriveItemUploadSession](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDriveItemUploadSession?view=graph-powershell-beta)
 

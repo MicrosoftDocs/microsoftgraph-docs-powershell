@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to deviceConfigurationStates for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppMgtWindowInformationProtectionPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -397,4 +397,4 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState\[]>: .
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppMgtWindowInformationProtectionPolicy?view=graph-powershell-beta)
+[Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicy?view=graph-powershell-beta)

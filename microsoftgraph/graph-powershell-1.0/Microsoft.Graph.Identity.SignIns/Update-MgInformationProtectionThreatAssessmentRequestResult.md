@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property results in informationProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -301,5 +301,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
+[Update-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
 

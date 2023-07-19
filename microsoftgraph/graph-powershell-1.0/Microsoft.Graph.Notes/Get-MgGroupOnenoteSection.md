@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a onenoteSection object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgGroupOnenoteSection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -267,5 +267,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgGroupOnenoteSection?view=graph-powershell-beta)
+[Get-MgBetaGroupOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupOnenoteSection?view=graph-powershell-beta)
 

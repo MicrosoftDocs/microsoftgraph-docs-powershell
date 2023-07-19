@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to resourceNamespaces for roleManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,5 +183,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: 
 
 ## RELATED LINKS
-[New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
+[New-MgBetaRoleManagementEntitlementManagementResourceNamespace](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaRoleManagementEntitlementManagementResourceNamespace?view=graph-powershell-beta)
 

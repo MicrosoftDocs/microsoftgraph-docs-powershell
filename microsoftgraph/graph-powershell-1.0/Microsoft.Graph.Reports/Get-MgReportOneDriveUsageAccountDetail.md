@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOneDriveUsageAccountDetail
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -159,5 +159,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
+[Get-MgBetaReportOneDriveUsageAccountDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportOneDriveUsageAccountDetail?view=graph-powershell-beta)
 

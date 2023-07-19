@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -754,5 +754,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[HideTermsOfUse <Boolean?>]`: 
 
 ## RELATED LINKS
-[Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-beta)
+[Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
 

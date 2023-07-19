@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getOffice365ActivationCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365ActivationCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportOffice365ActivationCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportOffice365ActivationCount?view=graph-powershell-beta)
+[Get-MgBetaReportOffice365ActivationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportOffice365ActivationCount?view=graph-powershell-beta)
 

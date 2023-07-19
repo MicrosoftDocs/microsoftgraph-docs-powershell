@@ -11,7 +11,7 @@ schema: 2.0.0
 Get intelligenceProfileIndicators from security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -275,5 +275,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
+[Get-MgBetaSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-beta)
 

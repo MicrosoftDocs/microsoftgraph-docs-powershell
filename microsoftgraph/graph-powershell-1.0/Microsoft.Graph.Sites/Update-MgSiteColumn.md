@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property columns in sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1136,8 +1136,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteColumn?view=graph-powershell-beta)
+[Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgSiteColumn?view=graph-powershell-beta)
+[Update-MgBetaSiteColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteColumn?view=graph-powershell-beta)
 

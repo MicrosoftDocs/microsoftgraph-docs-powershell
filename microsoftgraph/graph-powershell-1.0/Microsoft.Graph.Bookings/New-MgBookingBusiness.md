@@ -13,7 +13,7 @@ This is the first step in setting up a Bookings business where you must specify 
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the **bookingBusiness**.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusiness?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -736,8 +736,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusiness?view=graph-powershell-beta)
+[New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusiness?view=graph-powershell-beta)
+[New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusiness?view=graph-powershell-beta)
 

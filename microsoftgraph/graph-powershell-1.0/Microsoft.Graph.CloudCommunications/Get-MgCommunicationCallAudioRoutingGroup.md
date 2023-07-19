@@ -11,7 +11,7 @@ schema: 2.0.0
 Get audioRoutingGroups from communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -269,5 +269,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
+[Get-MgBetaCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationCallAudioRoutingGroup?view=graph-powershell-beta)
 

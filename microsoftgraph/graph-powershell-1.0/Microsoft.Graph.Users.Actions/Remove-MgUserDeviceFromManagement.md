@@ -11,7 +11,7 @@ schema: 2.0.0
 Retire all devices from management for this user
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgUserDeviceFromManagement?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserDeviceFromManagement?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -158,5 +158,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Remove-MgUserDeviceFromManagement?view=graph-powershell-beta)
+[Remove-MgBetaUserDeviceFromManagement](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserDeviceFromManagement?view=graph-powershell-beta)
 

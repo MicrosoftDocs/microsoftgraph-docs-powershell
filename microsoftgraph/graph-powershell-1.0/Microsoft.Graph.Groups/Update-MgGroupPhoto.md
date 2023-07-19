@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property photo in groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -248,5 +248,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Update-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupPhoto?view=graph-powershell-beta)
+[Update-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupPhoto?view=graph-powershell-beta)
 

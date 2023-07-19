@@ -12,7 +12,7 @@ The permission that has been granted for a group to a specific application.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -308,5 +308,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupPermissionGrant?view=graph-powershell-beta)
+[Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
 

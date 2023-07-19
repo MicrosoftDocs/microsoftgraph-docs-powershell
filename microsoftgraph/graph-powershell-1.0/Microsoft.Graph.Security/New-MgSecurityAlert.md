@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to alerts for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAlert?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1096,8 +1096,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAlert?view=graph-powershell-beta)
+[New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAlert?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAlert?view=graph-powershell-beta)
+[New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAlert?view=graph-powershell-beta)
 

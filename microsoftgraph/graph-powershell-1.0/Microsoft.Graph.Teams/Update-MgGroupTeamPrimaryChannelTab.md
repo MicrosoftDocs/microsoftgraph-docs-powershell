@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of the specified tab.\nThis can be used to configure the content of the tab.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -372,5 +372,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[Update-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
+[Update-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
 

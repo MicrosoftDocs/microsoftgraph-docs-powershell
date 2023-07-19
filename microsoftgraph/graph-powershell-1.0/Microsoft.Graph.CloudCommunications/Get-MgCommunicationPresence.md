@@ -11,7 +11,7 @@ schema: 2.0.0
 Get a user's presence information.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationPresence?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -268,5 +268,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-beta)
+[Get-MgBetaCommunicationPresence](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationPresence?view=graph-powershell-beta)
 

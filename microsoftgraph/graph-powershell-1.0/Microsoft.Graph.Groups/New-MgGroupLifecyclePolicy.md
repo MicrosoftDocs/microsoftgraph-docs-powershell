@@ -11,7 +11,7 @@ schema: 2.0.0
 Creates a new groupLifecyclePolicy.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -300,5 +300,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupLifecyclePolicy?view=graph-powershell-beta)
+[New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to simulations for security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAttackSimulation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -504,8 +504,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[TrainingUpdatedProperties <IMicrosoftGraphUserTrainingContentEventInfo>]`: userTrainingContentEventInfo
 
 ## RELATED LINKS
-[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAttackSimulation?view=graph-powershell-beta)
+[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Security/New-MgSecurityAttackSimulation?view=graph-powershell-beta)
+[New-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
 

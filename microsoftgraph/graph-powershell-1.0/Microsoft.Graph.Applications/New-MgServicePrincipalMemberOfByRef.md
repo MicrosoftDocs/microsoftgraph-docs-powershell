@@ -12,7 +12,7 @@ The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalMemberOfByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -215,4 +215,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-[New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgServicePrincipalMemberOfByRef?view=graph-powershell-beta)
+[New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)

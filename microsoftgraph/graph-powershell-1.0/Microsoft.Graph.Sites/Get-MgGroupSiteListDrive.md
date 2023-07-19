@@ -12,7 +12,7 @@ Only present on document libraries.
 Allows access to the list as a [drive][] resource with [driveItems][driveItem].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListDrive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -184,5 +184,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListDrive?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListDrive?view=graph-powershell-beta)
 

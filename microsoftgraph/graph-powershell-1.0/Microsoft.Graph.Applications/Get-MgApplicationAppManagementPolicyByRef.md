@@ -11,7 +11,7 @@ schema: 2.0.0
 The appManagementPolicy applied to this application.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -175,5 +175,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
+[Get-MgBetaApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationAppManagementPolicyByRef?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to exchangeConnectors for deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgDeviceManagementExchangeConnector?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -280,5 +280,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: The version of the ExchangeConnectorAgent
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgDeviceManagementExchangeConnector?view=graph-powershell-beta)
+[New-MgBetaDeviceManagementExchangeConnector](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceManagementExchangeConnector?view=graph-powershell-beta)
 

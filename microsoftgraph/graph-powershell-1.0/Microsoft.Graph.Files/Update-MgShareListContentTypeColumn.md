@@ -11,7 +11,7 @@ schema: 2.0.0
 Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareListContentTypeColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1139,8 +1139,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareListContentTypeColumn?view=graph-powershell-beta)
+[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareListContentTypeColumn?view=graph-powershell-beta)
+[Update-MgBetaShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaShareListContentTypeColumn?view=graph-powershell-beta)
 

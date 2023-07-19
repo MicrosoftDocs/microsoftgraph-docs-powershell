@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -120,5 +120,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DelegatedAdminServiceManagementDetailId <String>]`: The unique identifier of delegatedAdminServiceManagementDetail
 
 ## RELATED LINKS
-[Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Identity.Partner/Get-MgTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount?view=graph-powershell-beta)
+[Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTenantRelationshipDelegatedAdminRelationshipAccessAssignmentCount?view=graph-powershell-beta)
 

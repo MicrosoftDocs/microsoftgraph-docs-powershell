@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomainFederationConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainFederationConfigurationCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainFederationConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainFederationConfigurationCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,5 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDomainFederationConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainFederationConfigurationCount?view=graph-powershell-beta)
+[Get-MgBetaDomainFederationConfigurationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainFederationConfigurationCount?view=graph-powershell-beta)
 

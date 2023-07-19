@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an openShift object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamScheduleOpenShift?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -191,5 +191,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgGroupTeamScheduleOpenShift?view=graph-powershell-beta)
+[Remove-MgBetaGroupTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamScheduleOpenShift?view=graph-powershell-beta)
 

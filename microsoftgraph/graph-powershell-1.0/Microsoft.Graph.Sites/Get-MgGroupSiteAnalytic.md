@@ -11,7 +11,7 @@ schema: 2.0.0
 Analytics about the view activities that took place in this site.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteAnalytic?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -167,5 +167,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteAnalytic?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteAnalytic?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to versions for shares
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareListItemVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -343,5 +343,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareListItemVersion?view=graph-powershell-beta)
+[New-MgBetaShareListItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaShareListItemVersion?view=graph-powershell-beta)
 

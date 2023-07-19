@@ -13,7 +13,7 @@ The **requiresReview** property allows any user to submit an app for review by a
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -441,5 +441,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Update-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+[Update-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 

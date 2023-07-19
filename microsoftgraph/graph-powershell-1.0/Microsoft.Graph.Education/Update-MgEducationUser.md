@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an educationUser object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -16060,8 +16060,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: A string value that can be used to classify user types in your directory, such as Member and Guest. Returned only on $select. Supports $filter (eq, ne, not, in, and eq on null values). NOTE: For more information about the permissions for member and guest users, see What are the default user permissions in Azure Active Directory?
 
 ## RELATED LINKS
-[Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationUser?view=graph-powershell-beta)
+[Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUser?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationUser?view=graph-powershell-beta)
+[Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUser?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListContentTypeColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -341,5 +341,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteListContentTypeColumn?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteListContentTypeColumn?view=graph-powershell-beta)
 

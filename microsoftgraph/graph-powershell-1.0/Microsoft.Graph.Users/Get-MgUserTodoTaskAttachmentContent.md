@@ -11,7 +11,7 @@ schema: 2.0.0
 Get media content for the navigation property attachments from users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoTaskAttachmentContent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -172,5 +172,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-beta)
+[Get-MgBetaUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoTaskAttachmentContent?view=graph-powershell-beta)
 

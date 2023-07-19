@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property pinnedMessages in chats
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgChatPinnedMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -411,8 +411,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgChatPinnedMessage?view=graph-powershell-beta)
+[Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgChatPinnedMessage?view=graph-powershell-beta)
+[Update-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaChatPinnedMessage?view=graph-powershell-beta)
 

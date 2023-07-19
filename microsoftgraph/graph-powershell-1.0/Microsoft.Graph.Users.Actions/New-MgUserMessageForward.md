@@ -17,7 +17,7 @@ Send the draft message in a subsequent operation.
 Alternatively, forward a message in a single operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageForward?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageForward?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -420,7 +420,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of the person or entity.
 
 ## RELATED LINKS
-[New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageForward?view=graph-powershell-beta)
+[New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageForward?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgUserMessageForward?view=graph-powershell-beta)
+[New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageForward?view=graph-powershell-beta)

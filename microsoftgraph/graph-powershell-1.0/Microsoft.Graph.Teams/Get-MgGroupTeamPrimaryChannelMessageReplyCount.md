@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamPrimaryChannelMessageReplyCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamPrimaryChannelMessageReplyCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,5 +160,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamPrimaryChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamPrimaryChannelMessageReplyCount?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamPrimaryChannelMessageReplyCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamPrimaryChannelMessageReplyCount?view=graph-powershell-beta)
 

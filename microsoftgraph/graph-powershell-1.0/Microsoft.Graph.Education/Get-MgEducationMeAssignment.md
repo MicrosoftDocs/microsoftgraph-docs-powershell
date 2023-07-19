@@ -11,7 +11,7 @@ schema: 2.0.0
 Assignments belonging to the user.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -266,5 +266,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeAssignment?view=graph-powershell-beta)
+[Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
 

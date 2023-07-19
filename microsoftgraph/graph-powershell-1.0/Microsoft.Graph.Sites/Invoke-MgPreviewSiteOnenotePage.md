@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function preview
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgPreviewSiteOnenotePage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaPreviewSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaPreviewSiteOnenotePage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -135,5 +135,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaPreviewSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Sites/Invoke-MgPreviewSiteOnenotePage?view=graph-powershell-beta)
+[Invoke-MgBetaPreviewSiteOnenotePage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaPreviewSiteOnenotePage?view=graph-powershell-beta)
 

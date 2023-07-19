@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property columns in shares
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareListColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaShareListColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1123,8 +1123,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists.
 
 ## RELATED LINKS
-[Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareListColumn?view=graph-powershell-beta)
+[Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaShareListColumn?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgShareListColumn?view=graph-powershell-beta)
+[Update-MgBetaShareListColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaShareListColumn?view=graph-powershell-beta)
 

@@ -12,7 +12,7 @@ The application that is linked to the tab.
 This cannot be changed after tab creation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamPrimaryChannelTabTeamApp?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamPrimaryChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamPrimaryChannelTabTeamApp?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -162,5 +162,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamPrimaryChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamPrimaryChannelTabTeamApp?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamPrimaryChannelTabTeamApp](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamPrimaryChannelTabTeamApp?view=graph-powershell-beta)
 

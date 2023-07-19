@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to attachments for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupConversationThreadPostAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupConversationThreadPostAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -358,5 +358,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[New-MgBetaGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgGroupConversationThreadPostAttachment?view=graph-powershell-beta)
+[New-MgBetaGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupConversationThreadPostAttachment?view=graph-powershell-beta)
 

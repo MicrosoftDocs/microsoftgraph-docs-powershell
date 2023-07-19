@@ -12,7 +12,7 @@ Disable SMS sign-in for an existing `mobile` phone number registered to a user.
 The number will no longer be available for SMS sign-in, which can prevent your user from signing in.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Applications/Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,5 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Disable-MgUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
+[Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Applications/Disable-MgBetaUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
 

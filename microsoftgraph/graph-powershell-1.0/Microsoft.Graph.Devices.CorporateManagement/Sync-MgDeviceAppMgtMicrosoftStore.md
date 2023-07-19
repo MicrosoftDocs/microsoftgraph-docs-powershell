@@ -11,7 +11,7 @@ schema: 2.0.0
 Device configuration states for this device.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppMgtMicrosoftStore](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgDeviceAppMgtMicrosoftStore?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Sync-MgBetaDeviceAppMgtMicrosoftStore](/powershell/module/Microsoft.Graph.Beta.Applications/Sync-MgBetaDeviceAppMgtMicrosoftStore?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -242,4 +242,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
-[Sync-MgBetaDeviceAppMgtMicrosoftStore](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Sync-MgDeviceAppMgtMicrosoftStore?view=graph-powershell-beta)
+[Sync-MgBetaDeviceAppMgtMicrosoftStore](/powershell/module/Microsoft.Graph.Beta.Applications/Sync-MgBetaDeviceAppMgtMicrosoftStore?view=graph-powershell-beta)

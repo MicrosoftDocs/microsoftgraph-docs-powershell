@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to operations for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -325,5 +325,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgUserAuthenticationPhoneMethod?view=graph-powershell-beta)
+[New-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
 

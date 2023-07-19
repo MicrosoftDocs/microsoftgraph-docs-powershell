@@ -13,7 +13,7 @@ You can get or update settings for sending automatic replies to incoming message
 Returned only on $select.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeUserMailboxSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeUserMailboxSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -71,5 +71,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgEducationMeUserMailboxSetting?view=graph-powershell-beta)
+[Get-MgBetaEducationMeUserMailboxSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeUserMailboxSetting?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getTeamsDeviceUsageDistributionUserCounts
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,5 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
+[Get-MgBetaReportTeamDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportTeamDeviceUsageDistributionUserCount?view=graph-powershell-beta)
 

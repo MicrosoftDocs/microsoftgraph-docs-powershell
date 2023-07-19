@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property synchronization in servicePrincipals
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -653,8 +653,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <String>]`: 
 
 ## RELATED LINKS
-[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-beta)
+[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgServicePrincipalSynchronization?view=graph-powershell-beta)
+[Set-MgBetaServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServicePrincipalSynchronization?view=graph-powershell-beta)
 

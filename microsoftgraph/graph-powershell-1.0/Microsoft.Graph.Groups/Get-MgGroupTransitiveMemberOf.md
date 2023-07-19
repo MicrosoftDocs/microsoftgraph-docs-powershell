@@ -12,7 +12,7 @@ The groups that a group is a member of, either directly and through nested membe
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -324,5 +324,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-beta)
+[Get-MgBetaGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTransitiveMemberOf?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get an externalGroup object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroup?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -277,5 +277,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[IdentityId <String>]`: The unique identifier of identity
 
 ## RELATED LINKS
-[Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgExternalConnectionGroup?view=graph-powershell-beta)
+[Get-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
 

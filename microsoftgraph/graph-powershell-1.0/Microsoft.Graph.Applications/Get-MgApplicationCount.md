@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -83,5 +83,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgApplicationCount?view=graph-powershell-beta)
+[Get-MgBetaApplicationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCount?view=graph-powershell-beta)
 

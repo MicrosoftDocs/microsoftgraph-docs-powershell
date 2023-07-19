@@ -11,7 +11,7 @@ schema: 2.0.0
 The source column for the content type column.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteColumnSourceColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteColumnSourceColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -182,5 +182,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteColumnSourceColumn?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteColumnSourceColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteColumnSourceColumn?view=graph-powershell-beta)
 

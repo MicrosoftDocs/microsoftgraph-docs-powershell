@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property vppTokens for deviceAppManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppManagementVppToken?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -179,5 +179,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Remove-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgDeviceAppManagementVppToken?view=graph-powershell-beta)
+[Remove-MgBetaDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDeviceAppManagementVppToken?view=graph-powershell-beta)
 

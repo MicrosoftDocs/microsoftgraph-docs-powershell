@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to participants for communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgCommunicationCallParticipant?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -392,5 +392,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VideoDisabled <String>]`: onlineMeetingVideoDisabledReason
 
 ## RELATED LINKS
-[New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgCommunicationCallParticipant?view=graph-powershell-beta)
+[New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
 

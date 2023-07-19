@@ -14,7 +14,7 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgUserEventAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -201,5 +201,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgUserEventAttachment?view=graph-powershell-beta)
+[Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
 

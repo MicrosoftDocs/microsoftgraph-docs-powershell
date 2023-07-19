@@ -12,7 +12,7 @@ Add one or more existing educationCategory objects to the specified  educationAs
 Only teachers can perform this operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -221,5 +221,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Education/New-MgEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
+[New-MgBetaEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationUserAssignmentCategoryByRef?view=graph-powershell-beta)
 

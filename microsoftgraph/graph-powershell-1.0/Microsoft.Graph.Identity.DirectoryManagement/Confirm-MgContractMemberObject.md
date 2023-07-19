@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action checkMemberObjects
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Confirm-MgBetaContractMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgContractMemberObject?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Confirm-MgBetaContractMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaContractMemberObject?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -201,5 +201,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgBetaContractMemberObject](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Confirm-MgContractMemberObject?view=graph-powershell-beta)
+[Confirm-MgBetaContractMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaContractMemberObject?view=graph-powershell-beta)
 

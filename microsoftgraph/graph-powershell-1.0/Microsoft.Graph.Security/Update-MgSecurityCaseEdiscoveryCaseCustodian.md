@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property custodians in security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -9041,8 +9041,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+[Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
+[Update-MgBetaSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-beta)
 

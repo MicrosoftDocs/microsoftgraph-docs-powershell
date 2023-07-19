@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a bookingAppointment object in the specified bookingBusiness.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBookingBusinessAppointment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -649,5 +649,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBookingBusinessAppointment?view=graph-powershell-beta)
+[Update-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 

@@ -12,7 +12,7 @@ Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -278,5 +278,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgReportDailyPrintUsageByUser?view=graph-powershell-beta)
+[Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
 

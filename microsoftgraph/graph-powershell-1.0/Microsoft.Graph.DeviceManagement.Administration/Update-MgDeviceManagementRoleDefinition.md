@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property roleDefinitions in deviceManagement
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgDeviceManagementRoleDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -318,5 +318,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[NotAllowedResourceActions <String[]>]`: Not Allowed Actions.
 
 ## RELATED LINKS
-[Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Update-MgDeviceManagementRoleDefinition?view=graph-powershell-beta)
+[Update-MgBetaDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDeviceManagementRoleDefinition?view=graph-powershell-beta)
 

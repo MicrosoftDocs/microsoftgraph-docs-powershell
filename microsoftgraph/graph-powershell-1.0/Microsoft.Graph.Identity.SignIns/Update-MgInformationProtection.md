@@ -11,7 +11,7 @@ schema: 2.0.0
 Update informationProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtection?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,5 +211,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
-[Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtection?view=graph-powershell-beta)
+[Update-MgBetaInformationProtection](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaInformationProtection?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new application object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplication?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -1642,7 +1642,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RedirectUris <String[]>]`: Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and access tokens are sent.
 
 ## RELATED LINKS
-[New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplication?view=graph-powershell-beta)
+[New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgApplication?view=graph-powershell-beta)
+[New-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplication?view=graph-powershell-beta)

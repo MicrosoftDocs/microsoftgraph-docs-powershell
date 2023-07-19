@@ -12,7 +12,7 @@ In Azure AD entitlement management, retrieve the properties of an approvalStage 
 An approval stage is contained within an approval object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -331,5 +331,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
 

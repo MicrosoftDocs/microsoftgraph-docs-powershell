@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -150,4 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Invoke-MgUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta)
+[Invoke-MgBetaUnfavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnfavoriteServiceAnnouncementMessage?view=graph-powershell-beta)

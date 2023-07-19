@@ -14,7 +14,7 @@ Nullable.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceMemberOf?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceMemberOf?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -314,5 +314,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDeviceMemberOf](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDeviceMemberOf?view=graph-powershell-beta)
+[Get-MgBetaDeviceMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceMemberOf?view=graph-powershell-beta)
 

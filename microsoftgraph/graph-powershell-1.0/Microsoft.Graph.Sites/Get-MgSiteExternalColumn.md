@@ -11,7 +11,7 @@ schema: 2.0.0
 Get externalColumns from sites
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteExternalColumn?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteExternalColumn?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -295,5 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgSiteExternalColumn?view=graph-powershell-beta)
+[Get-MgBetaSiteExternalColumn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteExternalColumn?view=graph-powershell-beta)
 

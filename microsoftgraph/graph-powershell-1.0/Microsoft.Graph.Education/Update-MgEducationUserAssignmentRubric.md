@@ -12,7 +12,7 @@ Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationUserAssignmentRubric?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -395,5 +395,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Weight <Single?>]`: If present, a numerical weight for this quality.  Weights must add up to 100.
 
 ## RELATED LINKS
-[Update-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationUserAssignmentRubric?view=graph-powershell-beta)
+[Update-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
 

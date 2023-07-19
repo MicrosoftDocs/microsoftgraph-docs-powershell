@@ -11,7 +11,7 @@ schema: 2.0.0
 Postpone a reminder for an event in a user calendar until a new time.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgSnoozeUserEventReminder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSnoozeUserEventReminder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -266,4 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgSnoozeUserEventReminder?view=graph-powershell-beta)
+[Invoke-MgBetaSnoozeUserEventReminder](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSnoozeUserEventReminder?view=graph-powershell-beta)

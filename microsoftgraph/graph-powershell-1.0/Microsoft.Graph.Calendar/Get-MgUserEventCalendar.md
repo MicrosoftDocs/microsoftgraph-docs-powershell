@@ -13,7 +13,7 @@ Navigation property.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserEventCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgUserEventCalendar?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserEventCalendar](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserEventCalendar?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -126,5 +126,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserEventCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgUserEventCalendar?view=graph-powershell-beta)
+[Get-MgBetaUserEventCalendar](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserEventCalendar?view=graph-powershell-beta)
 

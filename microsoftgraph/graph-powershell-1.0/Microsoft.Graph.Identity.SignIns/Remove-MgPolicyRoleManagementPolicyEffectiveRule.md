@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property effectiveRules for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -216,5 +216,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
+[Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-beta)
 

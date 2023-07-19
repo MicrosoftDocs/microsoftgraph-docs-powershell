@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new authoredNote object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -251,5 +251,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
 
 ## RELATED LINKS
-[New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Compliance/New-MgPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
+[New-MgBetaPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrivacySubjectRightsRequestNote?view=graph-powershell-beta)
 

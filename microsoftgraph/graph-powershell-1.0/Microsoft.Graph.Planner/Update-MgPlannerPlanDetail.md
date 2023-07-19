@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property details in planner
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlanDetail?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -314,5 +314,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Planner/Update-MgPlannerPlanDetail?view=graph-powershell-beta)
+[Update-MgBetaPlannerPlanDetail](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPlannerPlanDetail?view=graph-powershell-beta)
 

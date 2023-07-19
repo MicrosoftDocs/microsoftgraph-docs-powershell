@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property tasks in identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6155,8 +6155,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[TaskProcessingResults <IMicrosoftGraphIdentityGovernanceTaskProcessingResult[]>]`: The result of processing the task.
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
+[Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityGovernanceLifecycleWorkflowVersionTask?view=graph-powershell-beta)
 

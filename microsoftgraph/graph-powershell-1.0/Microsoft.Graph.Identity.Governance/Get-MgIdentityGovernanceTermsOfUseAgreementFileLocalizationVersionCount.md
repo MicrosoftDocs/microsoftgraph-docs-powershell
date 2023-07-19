@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -183,5 +183,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount?view=graph-powershell-beta)
+[Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceTermsOfUseAgreementFileLocalizationVersionCount?view=graph-powershell-beta)
 

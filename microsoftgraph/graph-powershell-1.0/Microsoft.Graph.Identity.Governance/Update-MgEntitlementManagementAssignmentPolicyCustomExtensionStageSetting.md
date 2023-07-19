@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property customExtensionStageSettings in identityGovernance
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -311,5 +311,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Update-MgEntitlementManagementAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-beta)
+[Update-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-beta)
 

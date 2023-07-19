@@ -11,7 +11,7 @@ schema: 2.0.0
 In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Stop-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Stop-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -195,4 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Stop-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Stop-MgEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+[Stop-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Stop-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)

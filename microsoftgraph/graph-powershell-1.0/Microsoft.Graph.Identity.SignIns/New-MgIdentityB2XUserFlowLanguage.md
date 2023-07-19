@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to languages for identity
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -326,5 +326,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+[New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
 

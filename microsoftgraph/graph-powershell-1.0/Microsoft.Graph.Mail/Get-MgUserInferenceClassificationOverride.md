@@ -11,7 +11,7 @@ schema: 2.0.0
 Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -110,5 +110,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-beta)
+[Get-MgBetaUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserInferenceClassificationOverride?view=graph-powershell-beta)
 

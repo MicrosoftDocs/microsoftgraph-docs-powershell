@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetChildRelationCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteTermStoreSetChildRelationCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteTermStoreSetChildRelationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteTermStoreSetChildRelationCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -264,5 +264,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupSiteTermStoreSetChildRelationCount](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgGroupSiteTermStoreSetChildRelationCount?view=graph-powershell-beta)
+[Get-MgBetaGroupSiteTermStoreSetChildRelationCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupSiteTermStoreSetChildRelationCount?view=graph-powershell-beta)
 

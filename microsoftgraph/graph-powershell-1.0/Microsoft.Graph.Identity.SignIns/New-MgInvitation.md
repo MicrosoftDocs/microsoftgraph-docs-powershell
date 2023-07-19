@@ -13,7 +13,7 @@ Invitation adds an external user to the organization.
 When creating a new invitation you have several options available:
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgInvitation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaInvitation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6057,8 +6057,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageLanguage <String>]`: The language you want to send the default message in. If the customizedMessageBody is specified, this property is ignored, and the message is sent using the customizedMessageBody. The language format should be in ISO 639. The default is en-US.
 
 ## RELATED LINKS
-[New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgInvitation?view=graph-powershell-beta)
+[New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaInvitation?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgInvitation?view=graph-powershell-beta)
+[New-MgBetaInvitation](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaInvitation?view=graph-powershell-beta)
 

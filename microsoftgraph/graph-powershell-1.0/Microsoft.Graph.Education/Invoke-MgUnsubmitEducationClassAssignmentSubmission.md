@@ -16,7 +16,7 @@ The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,4 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Invoke-MgUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-beta)
+[Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission?view=graph-powershell-beta)

@@ -12,7 +12,7 @@ The list of items the user is following.
 Only in OneDrive for Business.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveFollowing?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupDriveFollowing?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -298,5 +298,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDriveFollowing?view=graph-powershell-beta)
+[Get-MgBetaGroupDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupDriveFollowing?view=graph-powershell-beta)
 

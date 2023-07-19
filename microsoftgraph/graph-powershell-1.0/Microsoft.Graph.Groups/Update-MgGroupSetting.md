@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a groupSetting object for tenant-wide group settings or a specific group setting.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupSetting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupSetting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -313,5 +313,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value of the setting.
 
 ## RELATED LINKS
-[Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Groups/Update-MgGroupSetting?view=graph-powershell-beta)
+[Update-MgBetaGroupSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupSetting?view=graph-powershell-beta)
 

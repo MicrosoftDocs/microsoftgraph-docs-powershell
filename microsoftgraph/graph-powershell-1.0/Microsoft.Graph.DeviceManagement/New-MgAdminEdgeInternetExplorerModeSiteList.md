@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new browserSiteList object to support Internet Explorer mode.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -426,8 +426,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The URL of the site.
 
 ## RELATED LINKS
-[New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+[New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/New-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
+[New-MgBetaAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-beta)
 

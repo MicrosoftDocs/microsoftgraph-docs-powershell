@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property itemActivityStats for drives
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -184,5 +184,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
+[Remove-MgBetaDriveRootAnalyticItemActivityStat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDriveRootAnalyticItemActivityStat?view=graph-powershell-beta)
 

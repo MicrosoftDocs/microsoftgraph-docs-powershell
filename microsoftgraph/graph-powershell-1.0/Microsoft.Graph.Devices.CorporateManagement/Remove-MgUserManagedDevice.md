@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property managedDevices for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgUserManagedDevice?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserManagedDevice?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -192,5 +192,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionPolicyId <String>]`: The unique identifier of windowsInformationProtectionPolicy
 
 ## RELATED LINKS
-[Remove-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgUserManagedDevice?view=graph-powershell-beta)
+[Remove-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserManagedDevice?view=graph-powershell-beta)
 

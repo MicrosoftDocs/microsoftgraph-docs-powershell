@@ -11,7 +11,7 @@ schema: 2.0.0
 Get a conversationMember from a channel.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamPrimaryChannelMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgTeamPrimaryChannelMember?view=graph-powershell-beta)
+[Get-MgBetaTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamPrimaryChannelMember?view=graph-powershell-beta)
 

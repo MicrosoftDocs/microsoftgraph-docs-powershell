@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function delta
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateDelta?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryRoleTemplateDelta?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplateDelta?view=graph-powershell-beta)
+[Get-MgBetaDirectoryRoleTemplateDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryRoleTemplateDelta?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property defaultAppManagementPolicy for policies
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -99,5 +99,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
+[Remove-MgBetaPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyDefaultAppManagementPolicy?view=graph-powershell-beta)
 

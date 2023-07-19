@@ -12,7 +12,7 @@ Read-only.
 Customized versions of the terms of use agreement in the Azure AD tenant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgAgreementFileVersion?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -328,5 +328,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgAgreementFileVersion?view=graph-powershell-beta)
+[Get-MgBetaAgreementFileVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAgreementFileVersion?view=graph-powershell-beta)
 

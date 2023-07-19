@@ -13,7 +13,7 @@ Read-only.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -174,5 +174,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)
+[Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Collection of applications and service principals to which the policy is applied.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyAppManagementPolicyApplyTo?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyAppManagementPolicyApplyTo?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,5 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgBetaPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgPolicyAppManagementPolicyApplyTo?view=graph-powershell-beta)
+[Get-MgBetaPolicyAppManagementPolicyApplyTo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyAppManagementPolicyApplyTo?view=graph-powershell-beta)
 

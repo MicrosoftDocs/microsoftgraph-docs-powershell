@@ -15,7 +15,7 @@ This method retrieves only non-Stream properties, for example, **usernameHintTex
 To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBranding?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -193,5 +193,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-beta)
+[Get-MgBetaOrganizationBranding](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBranding?view=graph-powershell-beta)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Add new entity to shares
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -26201,8 +26201,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermStores <IMicrosoftGraphTermStore[]>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
-[New-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+[New-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
+[New-MgBetaShareSharedDriveItemSharedDriveItem](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaShareSharedDriveItemSharedDriveItem?view=graph-powershell-beta)
 

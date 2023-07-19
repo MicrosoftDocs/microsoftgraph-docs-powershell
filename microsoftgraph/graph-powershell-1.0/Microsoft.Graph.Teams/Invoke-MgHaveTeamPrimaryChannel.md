@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function doesUserHaveAccess
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgHaveTeamPrimaryChannel?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaHaveTeamPrimaryChannel?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -160,5 +160,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgBetaHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgHaveTeamPrimaryChannel?view=graph-powershell-beta)
+[Invoke-MgBetaHaveTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaHaveTeamPrimaryChannel?view=graph-powershell-beta)
 

@@ -13,7 +13,7 @@ To update an app, the **distributionMethod** property for the app must be set to
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -426,5 +426,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-beta)
+[New-MgBetaAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaAppCatalogTeamAppDefinition?view=graph-powershell-beta)
 

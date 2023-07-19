@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action assign
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Set-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -203,5 +203,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
-[Set-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Set-MgDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
+[Set-MgBetaDeviceManagementDeviceCompliancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaDeviceManagementDeviceCompliancePolicy?view=graph-powershell-beta)
 

@@ -12,7 +12,7 @@ The group's drives.
 Read-only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDrive?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupDrive?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -294,4 +294,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgGroupDrive?view=graph-powershell-beta)
+[Get-MgBetaGroupDrive](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupDrive?view=graph-powershell-beta)

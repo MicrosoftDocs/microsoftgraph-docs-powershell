@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a tag object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamTag?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamTag?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -289,5 +289,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgGroupTeamTag?view=graph-powershell-beta)
+[Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTeamTag?view=graph-powershell-beta)
 

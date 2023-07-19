@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -141,5 +141,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-beta)
+[Get-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
 

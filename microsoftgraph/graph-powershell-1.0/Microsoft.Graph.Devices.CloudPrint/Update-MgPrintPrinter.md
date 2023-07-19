@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a printer object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintPrinter?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -6351,8 +6351,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintPrinter?view=graph-powershell-beta)
+[Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Update-MgPrintPrinter?view=graph-powershell-beta)
+[Update-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPrintPrinter?view=graph-powershell-beta)
 

@@ -13,7 +13,7 @@ This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -264,5 +264,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessage?view=graph-powershell-beta)
+[Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
 

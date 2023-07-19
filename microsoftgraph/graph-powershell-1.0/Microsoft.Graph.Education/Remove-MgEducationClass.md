@@ -12,7 +12,7 @@ Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClass?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClass?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -171,5 +171,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgEducationClass?view=graph-powershell-beta)
+[Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClass?view=graph-powershell-beta)
 

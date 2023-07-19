@@ -14,7 +14,7 @@ Alternatively, request to change the status of an **assignment** with publish ac
 Don't use a PATCH operation for this purpose.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -739,8 +739,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnsubmittedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignment?view=graph-powershell-beta)
+[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgEducationClassAssignment?view=graph-powershell-beta)
+[Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
 

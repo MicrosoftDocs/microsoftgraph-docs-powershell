@@ -15,7 +15,7 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -344,4 +344,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Invoke-MgCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-beta)
+[Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting?view=graph-powershell-beta)

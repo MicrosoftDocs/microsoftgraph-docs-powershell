@@ -14,7 +14,7 @@ See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgUserMailFolder?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -208,5 +208,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Remove-MgUserMailFolder?view=graph-powershell-beta)
+[Remove-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserMailFolder?view=graph-powershell-beta)
 

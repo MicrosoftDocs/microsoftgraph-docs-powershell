@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property photo for users
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgUserPhoto?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserPhoto?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -157,5 +157,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgUserPhoto?view=graph-powershell-beta)
+[Remove-MgBetaUserPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserPhoto?view=graph-powershell-beta)
 

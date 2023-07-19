@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property simulationAutomations in security
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityAttackSimulationAutomation?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -412,5 +412,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: simulationAutomationRunStatus
 
 ## RELATED LINKS
-[Update-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgSecurityAttackSimulationAutomation?view=graph-powershell-beta)
+[Update-MgBetaSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityAttackSimulationAutomation?view=graph-powershell-beta)
 

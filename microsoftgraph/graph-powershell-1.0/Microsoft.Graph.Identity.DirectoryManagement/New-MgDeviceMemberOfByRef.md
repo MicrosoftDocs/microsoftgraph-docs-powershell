@@ -13,7 +13,7 @@ Read-only.
 Nullable.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgDeviceMemberOfByRef?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -210,4 +210,4 @@ INPUTOBJECT `<IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-[New-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgDeviceMemberOfByRef?view=graph-powershell-beta)
+[New-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)

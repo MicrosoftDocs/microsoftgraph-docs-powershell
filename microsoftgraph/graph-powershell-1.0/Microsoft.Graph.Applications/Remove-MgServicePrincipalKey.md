@@ -13,7 +13,7 @@ This method along with addKey can be used by a servicePrincipal to automate roll
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalKey?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalKey?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -250,4 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgServicePrincipalKey?view=graph-powershell-beta)
+[Remove-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalKey?view=graph-powershell-beta)

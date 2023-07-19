@@ -11,7 +11,7 @@ schema: 2.0.0
 The list of Device Management Partners configured by the tenant.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementPartner?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsAndConditionsId <String>]`: The unique identifier of termsAndConditions
 
 ## RELATED LINKS
-[Get-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgDeviceManagementPartner?view=graph-powershell-beta)
+[Get-MgBetaDeviceManagementPartner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceManagementPartner?view=graph-powershell-beta)
 

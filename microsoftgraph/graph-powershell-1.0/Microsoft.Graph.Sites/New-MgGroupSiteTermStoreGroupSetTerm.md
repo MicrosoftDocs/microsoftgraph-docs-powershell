@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to terms for groups
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -628,8 +628,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
+[New-MgBetaGroupSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
 

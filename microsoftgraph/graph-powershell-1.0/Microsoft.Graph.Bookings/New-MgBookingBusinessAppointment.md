@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new bookingAppointment for the specified bookingBusiness.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -634,5 +634,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
 
 ## RELATED LINKS
-[New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-beta)
+[New-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 

@@ -13,7 +13,7 @@ Read-only, Nullable.
 Supports $expand.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainVerificationDnsRecord?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -296,5 +296,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgDomainVerificationDnsRecord?view=graph-powershell-beta)
+[Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
 

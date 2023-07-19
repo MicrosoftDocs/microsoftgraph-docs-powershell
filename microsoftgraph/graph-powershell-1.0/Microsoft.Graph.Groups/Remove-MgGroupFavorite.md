@@ -12,7 +12,7 @@ Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupFavorite?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupFavorite?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -176,4 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Remove-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgGroupFavorite?view=graph-powershell-beta)
+[Remove-MgBetaGroupFavorite](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupFavorite?view=graph-powershell-beta)

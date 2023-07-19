@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property threatAssessmentRequests in informationProtection
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -399,5 +399,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResultType <String>]`: threatAssessmentResultType
 
 ## RELATED LINKS
-[Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
+[Update-MgBetaInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaInformationProtectionThreatAssessmentRequest?view=graph-powershell-beta)
 

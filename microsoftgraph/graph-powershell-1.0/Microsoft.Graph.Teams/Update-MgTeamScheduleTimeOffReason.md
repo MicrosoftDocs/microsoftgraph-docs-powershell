@@ -12,7 +12,7 @@ Replace an existing timeOffReason.
 If the specified timeOffReason doesn't exist, this method returns `404 Not found`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamScheduleTimeOffReason?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -312,5 +312,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgTeamScheduleTimeOffReason?view=graph-powershell-beta)
+[Update-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
 

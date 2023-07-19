@@ -12,7 +12,7 @@ Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -282,5 +282,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
+[New-MgBetaTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamworkDeletedTeamChannelMember?view=graph-powershell-beta)
 

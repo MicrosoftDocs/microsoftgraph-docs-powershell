@@ -11,7 +11,7 @@ schema: 2.0.0
 Exposes the itemActivities represented in this itemActivityStat resource.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -236,5 +236,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
+[Get-MgBetaDriveItemAnalyticItemActivityStatActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveItemAnalyticItemActivityStatActivity?view=graph-powershell-beta)
 

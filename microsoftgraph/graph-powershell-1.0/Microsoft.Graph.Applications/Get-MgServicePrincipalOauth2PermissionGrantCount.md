@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOauth2PermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalOauth2PermissionGrantCount?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalOauth2PermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrantCount?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -134,5 +134,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaServicePrincipalOauth2PermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgServicePrincipalOauth2PermissionGrantCount?view=graph-powershell-beta)
+[Get-MgBetaServicePrincipalOauth2PermissionGrantCount](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrantCount?view=graph-powershell-beta)
 
