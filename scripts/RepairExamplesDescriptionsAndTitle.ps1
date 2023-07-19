@@ -91,8 +91,10 @@ function Import-Descriptions {
         [string]$File
     ) 
     $SearchBlock = "## EXAMPLES(?s).*## PARAMETERS"
+    $SearchBlock2 = "## DESCRIPTION(?s).*## PARAMETERS"
     $option = [System.Text.RegularExpressions.RegexOptions]::Multiline
     $Re = [regex]::new($SearchBlock, $option)
+    $Re2 = [regex]::new($SearchBlock2, $option)
     $RetainedExamples = New-Object Collections.Generic.List[string] 
     $End = 0
     $NoOfExamples = 0
@@ -103,8 +105,10 @@ function Import-Descriptions {
         $End++  
     }
     Get-ExistingDescriptions -Content $Content -File $File  -start 0 -end $End -NoOfExamples $NoOfExamples
+    if(Test-Path $File){
     $TitleCount = 1
     $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
+    $DestinationContentNonRaw = Get-Content $File
     $RetainedContent = $null
     foreach ($Ex in $RetainedExamples) {
             $ContentBody = $Ex.Split("**")[0]
@@ -116,16 +120,33 @@ function Import-Descriptions {
     }
 
    
-    if(-not($RetainedContent.Contains("Add title here"))){
+    if(-not($Null -eq $RetainedContent) -and -not($RetainedContent.Contains("Add title here"))){
      if($DestinationContent -match $Re){
         $Extracted = $Matches[0]
         $FinalOutput = "## EXAMPLES`r`n$RetainedContent`r`n## PARAMETERS"
         $text = $DestinationContent.ToString()
-        if(-not($Extracted.Contains("``````powershell"))-and $Null -eq $RetainedContent){
+        if(-not($Extracted.Contains("``````powershell"))){
             $text = $text.Replace($Extracted, "## PARAMETERS") 
+            Write-Host "Does not have snippet"
+        }else{
+            $text = $text.Replace($Extracted, $FinalOutput)
         }
-        $text = $text.Replace($Extracted, $FinalOutput)
           $text | Out-File $File -Encoding UTF8
+     }
+     if($DestinationContent -match $Re2){
+        $Extracted2 = $Matches[0]
+        $DescriptionCommand = [System.IO.Path]::GetFileNameWithoutExtension($File)
+        $Description1 = "This example shows how to use the $DescriptionCommand Cmdlet."
+        $Description2 = "To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference)."
+      
+        $text2 = $DestinationContent.ToString()
+        if(-not($Extracted2.Contains("## EXAMPLES"))){
+            Write-Host "Does not have snippet $DescriptionCommand"
+            $text2 = $text2.Replace($Description1, $null)
+            $text2 = $text2.Replace($Description2, $null)
+            $text2 | Out-File $File -Encoding UTF8
+
+        }
      }
      $Stream = [IO.File]::OpenWrite($File)
      try
@@ -135,11 +156,13 @@ function Import-Descriptions {
      }
      catch
      {
-         Write-Error "Error in removing empty lines at the end of the file: $File"
+         
      }
      $Stream.Dispose()
      $RetainedExamples.Clear()
     }
+    
+}
     
 }
 function Get-ExistingDescriptions {
@@ -189,16 +212,16 @@ function Get-ExistingDescriptions {
     }
    
 }
-Set-Location microsoftgraph-docs-powershell
-$proposedBranch = "weekly_v2_docs_update_$date"
-$proposedBranch = "File_copy_test1"
-$exists = git branch -l $proposedBranch
-if ([string]::IsNullOrEmpty($exists)) {
-    git checkout -b $proposedBranch
-}else{
-	Write-Host "Branch already exists"
-     git checkout $proposedBranch
-}
+# Set-Location microsoftgraph-docs-powershell
+# $proposedBranch = "weekly_v2_docs_update_$date"
+# $proposedBranch = "File_copy_test1"
+# $exists = git branch -l $proposedBranch
+# if ([string]::IsNullOrEmpty($exists)) {
+#     git checkout -b $proposedBranch
+# }else{
+# 	Write-Host "Branch already exists"
+#      git checkout $proposedBranch
+# }
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -206,7 +229,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-Set-Location ..\microsoftgraph-docs-powershell
+#Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"
