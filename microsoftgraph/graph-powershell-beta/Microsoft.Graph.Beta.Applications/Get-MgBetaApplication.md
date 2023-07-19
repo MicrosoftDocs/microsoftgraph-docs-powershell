@@ -42,11 +42,42 @@ Get the properties and relationships of an application object.
 
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
-Get-MgBetaApplication ### Example 1: Get a list of applications### Example 2: Get an application by Id
+Get-MgBetaApplication | 
+  Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+
+Id              : 8ea936e0-cb74-46c0-8408-d4614a596267
+DisplayName     : Test App
+AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
+SignInAudience  : AzureADandPersonalMicrosoftAccount
+PublisherDomain : Contoso.com
+```
+
+This examples gets a list of all the applications.
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+
+### Example 2: Get an application by Id
 
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
-Get-MgBetaApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" ### Example 2: Get an application by Id### Example 3: Get a count of all applications
+Get-MgBetaApplication -Filter "AppId eq '39b09640-ec3e-44c9-b3de-f52db4e1cf66'" | 
+  Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
+
+DisplayName     : Test App
+AppId           : 39b09640-ec3e-44c9-b3de-f52db4e1cf66
+SignInAudience  : AzureADandPersonalMicrosoftAccount
+PublisherDomain : Contoso.com
+```
+
+This examples gets the application by the specified Id.
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+
+### Example 3: Get a count of all applications
 
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'

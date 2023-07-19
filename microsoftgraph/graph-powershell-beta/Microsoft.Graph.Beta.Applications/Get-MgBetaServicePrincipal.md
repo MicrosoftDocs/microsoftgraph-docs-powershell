@@ -65,7 +65,22 @@ To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permissi
 
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'
-Get-MgBetaServicePrincipal -Filter "DisplayName eq 'Power BI Service'" ### Example 2: Get the service principal by display name### Example 3: Get a count of the service principals
+Get-MgBetaServicePrincipal -Filter "DisplayName eq 'Power BI Service'" | 
+  Format-List Id, DisplayName,AppId, SignInAudience
+
+Id             : 9518fb8f-8d9e-4aae-be20-d398f9cc59ac
+DisplayName    : Power BI Service
+AppId          : 60dbf324-9702-41cc-a5fa-f8d19804b014
+SignInAudience : AzureADMultipleOrgs
+```
+
+This example gets the service principal by display name.
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgBetaGraph -Scopes Permission`. For example, `Connect-MgBetaGraph -Scopes Application.Read.All, Application.ReadWrite.All`.
+
+### Example 3: Get a count of the service principals
 
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.Read.All'

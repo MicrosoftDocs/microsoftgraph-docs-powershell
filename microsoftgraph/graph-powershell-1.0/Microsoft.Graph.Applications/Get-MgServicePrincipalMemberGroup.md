@@ -140,4 +140,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberGroup?view=graph-powershell-beta)
-
