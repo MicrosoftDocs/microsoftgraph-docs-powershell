@@ -48,6 +48,9 @@ $params = @{
 New-MgBetaPrivilegedApproval -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaPrivilegedApproval Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

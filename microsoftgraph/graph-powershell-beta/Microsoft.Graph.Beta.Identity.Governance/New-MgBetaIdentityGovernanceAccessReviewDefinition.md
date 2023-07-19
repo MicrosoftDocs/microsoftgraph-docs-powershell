@@ -84,6 +84,11 @@ $params = @{
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Create an access review on all teams with inactive guest users
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -142,6 +147,11 @@ Review our access policy for more."
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Create an access review of all users to an application
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -208,6 +218,11 @@ $params = @{
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Create an access review on a group with multiple stages
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -283,7 +298,12 @@ $params = @{
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalNotificationRecipients
 Defines the list of additional users or group members to be notified of the access review progress.

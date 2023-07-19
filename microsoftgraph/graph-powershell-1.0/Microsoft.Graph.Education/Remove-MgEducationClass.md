@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.Education
 Remove-MgEducationClass -EducationClassId $educationClassId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgEducationClass Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EducationClassId
 The unique identifier of educationClass

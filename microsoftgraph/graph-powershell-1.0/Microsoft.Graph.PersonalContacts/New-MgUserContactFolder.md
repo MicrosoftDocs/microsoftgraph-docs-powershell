@@ -42,6 +42,11 @@ New-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+This example shows how to use the New-MgUserContactFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

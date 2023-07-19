@@ -60,7 +60,12 @@ $params = @{
 Update-MgEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgEducationClassAssignmentDefault Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AddedStudentAction
 educationAddedStudentAction

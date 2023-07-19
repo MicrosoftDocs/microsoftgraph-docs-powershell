@@ -83,6 +83,9 @@ $params = @{
 Update-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

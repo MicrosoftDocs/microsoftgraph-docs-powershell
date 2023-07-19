@@ -53,6 +53,9 @@ $NewOwner = @{
 
 New-MgApplicationOwnerByRef -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' -BodyParameter $NewOwner
 
+
+In this example, the first command defines the value for the $NewOwner variable. The second command adds the new owner to the specified application.
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -87,6 +87,9 @@ $params = @{
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -117,6 +120,9 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
@@ -151,6 +157,9 @@ $params = @{
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -178,6 +187,9 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaUserMail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

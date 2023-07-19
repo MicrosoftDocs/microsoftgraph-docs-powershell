@@ -81,6 +81,9 @@ $params = @{
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

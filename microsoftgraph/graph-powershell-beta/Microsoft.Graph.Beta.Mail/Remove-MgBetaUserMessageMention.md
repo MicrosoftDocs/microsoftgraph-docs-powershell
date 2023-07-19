@@ -41,6 +41,9 @@ Import-Module Microsoft.Graph.Beta.Mail
 Remove-MgBetaUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
 ```
 
+This example shows how to use the Remove-MgBetaUserMessageMention Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

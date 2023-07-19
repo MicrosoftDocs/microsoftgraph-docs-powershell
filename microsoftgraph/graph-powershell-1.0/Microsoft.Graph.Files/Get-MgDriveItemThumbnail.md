@@ -52,6 +52,11 @@ Import-Module Microsoft.Graph.Files
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId
 
 ```
+This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
@@ -59,7 +64,12 @@ Import-Module Microsoft.Graph.Files
 Get-MgDriveItemThumbnail -DriveId $driveId -DriveItemId $driveItemId -Property "c300x400_crop"
 
 ```
-## Parameters
+This example shows how to use the Get-MgDriveItemThumbnail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

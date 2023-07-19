@@ -78,6 +78,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Create peer-to-peer VoIP call with application hosted media
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -123,6 +128,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Create a group call with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -179,6 +189,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Create a group call with application hosted media
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -235,6 +250,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 5: Join scheduled meeting with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -274,6 +294,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 6: Join scheduled meeting with application hosted media
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -312,6 +337,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 7: Join a scheduled meeting with joinMeetingId and passcode
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -338,6 +368,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 8: Join a scheduled meeting with joinMeetingId
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -364,6 +399,11 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 9: Create peer-to-peer PSTN call with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -457,7 +497,12 @@ $params = @{
 New-MgCommunicationCall -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

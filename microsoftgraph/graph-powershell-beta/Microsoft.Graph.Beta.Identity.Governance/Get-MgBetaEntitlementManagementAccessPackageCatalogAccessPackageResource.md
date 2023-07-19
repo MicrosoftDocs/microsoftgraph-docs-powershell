@@ -66,6 +66,10 @@ ResourceType                     : Security Group
 Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=c41e321d-2907-4183-8224-b4cec9c9381b
 AdditionalProperties             : {}
 
+
+This example returns all access package catalog resources for the specified catalog.
+
+
 ### Example 2: Use -Filter to get all catalog resources with the display name 'Marketing resources'
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
@@ -87,6 +91,9 @@ OriginSystem                     : AadGroup
 ResourceType                     : Security Group
 Url                              : https://account.activedirectory.windowsazure.com/r?tenantId=c265ddcc-4694-4bb0-b771-4829ca21177d#/manageMembership?objectType=Group&objectId=b5cd9d19-91c0-4622-93e2-537ad8a0b3ad
 AdditionalProperties             : {}
+
+
+This example returns the resources in the specified catalog whose display name is `marketing resources`.
 
 ## PARAMETERS
 

@@ -67,6 +67,9 @@ Import-Module Microsoft.Graph.Users.Actions
 New-MgUserMessageForward -UserId $userId -MessageId $messageId
 ```
 
+This example shows how to use the New-MgUserMessageForward Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

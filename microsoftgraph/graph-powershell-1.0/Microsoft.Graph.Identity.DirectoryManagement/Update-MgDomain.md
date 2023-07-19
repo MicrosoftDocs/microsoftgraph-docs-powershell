@@ -72,7 +72,12 @@ $params = @{
 Update-MgDomain -DomainId $domainId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgDomain Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

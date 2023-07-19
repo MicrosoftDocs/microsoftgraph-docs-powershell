@@ -44,6 +44,11 @@ Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
+This example shows how to use the Copy-MgGroupOnenoteSectionToNotebook Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

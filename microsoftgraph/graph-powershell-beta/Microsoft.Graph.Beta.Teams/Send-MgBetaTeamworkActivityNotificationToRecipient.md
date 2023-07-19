@@ -74,6 +74,9 @@ $params = @{
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaTeamworkActivityNotificationToRecipient Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Send-MgBetaTeamworkActivityNotificationToRecipient Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -110,6 +113,9 @@ $params = @{
 }
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaTeamworkActivityNotificationToRecipient Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

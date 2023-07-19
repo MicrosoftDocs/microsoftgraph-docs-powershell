@@ -83,6 +83,9 @@ RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprov
 RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
 AdditionalProperties    : {}
 
+
+This example gets a list of all the access package assignment policies.
+
 ## PARAMETERS
 
 ### -AccessPackageAssignmentPolicyId

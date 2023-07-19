@@ -37,6 +37,7 @@ Get-MgBetaSiteListContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Retrieve the metadata for a [site][], [list][] or [contentType][] [column][columnDefinition].
 
+
 ## PARAMETERS
 
 ### -All

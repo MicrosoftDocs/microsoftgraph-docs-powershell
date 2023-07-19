@@ -38,6 +38,7 @@ During schedule provisioning, clients can use the GET method to get the schedule
 If the provisioning failed, clients can get additional information from the `provisionStatusCode` property.
 Clients can also inspect the configuration of the schedule.
 
+
 ## PARAMETERS
 
 ### -ExpandProperty

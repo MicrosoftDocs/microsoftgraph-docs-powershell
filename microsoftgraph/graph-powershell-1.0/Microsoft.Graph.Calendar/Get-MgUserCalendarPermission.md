@@ -62,7 +62,12 @@ Import-Module Microsoft.Graph.Calendar
 Get-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
 
 ```
-## Parameters
+This example shows how to use the Get-MgUserCalendarPermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

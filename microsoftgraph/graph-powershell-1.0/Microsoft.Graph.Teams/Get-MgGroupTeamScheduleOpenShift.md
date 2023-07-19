@@ -37,6 +37,7 @@ Get-MgGroupTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of an openshift object.
 
+
 ## PARAMETERS
 
 ### -All

@@ -79,6 +79,10 @@ ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
 
+
+This command returns a list of all the access package catalogs.
+
+
 ### Example 2: Filter the access package catalogs by the display name
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
@@ -100,6 +104,9 @@ IsExternallyVisible         : True
 ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
+
+
+This command returns the access package catalogs that meet the defined filter.
 
 ## PARAMETERS
 

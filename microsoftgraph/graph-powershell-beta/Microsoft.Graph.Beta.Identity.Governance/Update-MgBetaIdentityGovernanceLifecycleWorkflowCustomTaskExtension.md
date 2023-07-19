@@ -85,6 +85,9 @@ $params = @{
 Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

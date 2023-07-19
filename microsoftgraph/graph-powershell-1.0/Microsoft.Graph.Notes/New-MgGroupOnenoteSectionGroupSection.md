@@ -50,6 +50,7 @@ New-MgGroupOnenoteSectionGroupSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new onenoteSection in the specified section group.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -55,7 +55,12 @@ $params = @{
 New-MgBetaExternalConnection -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaExternalConnection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ActivitySettings
 activitySettings

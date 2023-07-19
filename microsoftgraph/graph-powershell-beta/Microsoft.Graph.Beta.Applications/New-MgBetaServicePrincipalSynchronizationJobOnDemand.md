@@ -73,6 +73,9 @@ $params = @{
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -91,6 +94,9 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
+
+This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
@@ -123,6 +129,9 @@ $params = @{
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -141,6 +150,9 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
+
+This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

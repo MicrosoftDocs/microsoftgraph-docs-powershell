@@ -51,7 +51,12 @@ Import-Module Microsoft.Graph.Groups
 Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgGroupLifecyclePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -GroupId
 The unique identifier of group

@@ -46,7 +46,10 @@ f9f1bd4f-16ca-4404-925e-5b08b6a3832f
 5441e919-583c-4292-aa3f-98250d8d217b
 
 ```
-## Parameters
+
+This examples gets the members of the specified group.
+
+## PARAMETERS
 
 
 ### -All

@@ -43,7 +43,10 @@ Id                                   DeletedDateTime
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 
 ```
-## Parameters
+
+This command lists the owners of the specified service principal.
+
+## PARAMETERS
 
 
 ### -All

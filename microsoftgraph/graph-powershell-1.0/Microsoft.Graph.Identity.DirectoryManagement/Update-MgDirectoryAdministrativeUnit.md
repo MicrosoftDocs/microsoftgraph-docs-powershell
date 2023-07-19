@@ -61,7 +61,12 @@ $params = @{
 Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgDirectoryAdministrativeUnit Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

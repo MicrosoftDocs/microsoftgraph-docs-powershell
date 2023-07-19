@@ -40,7 +40,12 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -GroupId $groupId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageId
 The unique identifier of accessPackage

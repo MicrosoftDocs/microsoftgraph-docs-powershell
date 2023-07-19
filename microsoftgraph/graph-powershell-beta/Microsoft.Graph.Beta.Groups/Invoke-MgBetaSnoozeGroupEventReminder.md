@@ -44,6 +44,11 @@ Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdent
 ## DESCRIPTION
 Invoke action signDigest
 
+This example shows how to use the Invoke-MgBetaSnoozeGroupEventReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

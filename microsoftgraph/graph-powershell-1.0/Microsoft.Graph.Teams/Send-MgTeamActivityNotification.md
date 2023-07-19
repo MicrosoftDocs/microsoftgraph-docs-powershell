@@ -79,6 +79,9 @@ $params = @{
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -104,6 +107,9 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
@@ -135,6 +141,9 @@ $params = @{
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -164,6 +173,9 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -42,7 +42,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementConnectedOrganization
 
 ```
-## Parameters
+This example shows how to use the New-MgEntitlementManagementConnectedOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

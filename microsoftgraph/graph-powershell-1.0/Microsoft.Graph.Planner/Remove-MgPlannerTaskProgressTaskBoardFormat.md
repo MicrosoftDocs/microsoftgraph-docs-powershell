@@ -43,7 +43,12 @@ $params = @{
 Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

@@ -62,6 +62,9 @@ $params = @{
 Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

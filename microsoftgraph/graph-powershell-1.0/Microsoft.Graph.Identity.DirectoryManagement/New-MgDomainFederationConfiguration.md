@@ -76,7 +76,10 @@ SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.Micros
 AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains('contoso.com')/federationConfiguration/$entity]}
 
 ```
-## Parameters
+
+This examples creates new federation settings for the specified domain.
+
+## PARAMETERS
 
 
 ### -ActiveSignInUri

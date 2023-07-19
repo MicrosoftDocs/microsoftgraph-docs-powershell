@@ -44,6 +44,9 @@ $params = @{
 New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

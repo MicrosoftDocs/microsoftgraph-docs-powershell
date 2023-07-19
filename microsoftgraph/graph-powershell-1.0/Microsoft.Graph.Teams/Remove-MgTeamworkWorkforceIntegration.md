@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Teams
 Remove-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgTeamworkWorkforceIntegration Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

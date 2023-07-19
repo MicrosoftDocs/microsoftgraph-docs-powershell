@@ -70,6 +70,9 @@ $params = @{
 New-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaOrganizationSettingProfileCardProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -42,7 +42,12 @@ Import-Module Microsoft.Graph.Education
 Remove-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment

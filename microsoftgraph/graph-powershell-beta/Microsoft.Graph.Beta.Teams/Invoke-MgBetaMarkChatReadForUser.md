@@ -59,6 +59,9 @@ $params = @{
 Invoke-MgBetaMarkChatReadForUser -ChatId $chatId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgBetaMarkChatReadForUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

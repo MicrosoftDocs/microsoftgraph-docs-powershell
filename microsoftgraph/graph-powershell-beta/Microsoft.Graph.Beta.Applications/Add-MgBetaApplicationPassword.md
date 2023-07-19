@@ -71,6 +71,10 @@ AdditionalProperties : {[@odata.context,
 https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
 
 ```
+
+Add a password to an application that expires in six months from the current date.
+
+
 ### Example 2: Add a password credential to an application with a start date
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.ReadWrite.All'
@@ -100,7 +104,12 @@ AdditionalProperties : {[@odata.context,
 https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
 
 ```
-## Parameters
+
+Add a password to an application that becomes valid at 12:00 am the next day and is valid for six months.
+
+Use `$secret.StartDateTime.ToLocalTime()` to convert the returned dates from UTC to the local timezone.
+
+## PARAMETERS
 
 
 ### -AdditionalProperties

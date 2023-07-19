@@ -55,7 +55,12 @@ Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaBetaPrintTaskDefinitionTask Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

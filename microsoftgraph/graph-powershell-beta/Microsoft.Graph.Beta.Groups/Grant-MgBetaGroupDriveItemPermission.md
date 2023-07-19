@@ -69,6 +69,11 @@ $params = @{
 
 Grant-MgBetaSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 
+This example shows how to use the Grant-MgBetaGroupDriveItemPermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

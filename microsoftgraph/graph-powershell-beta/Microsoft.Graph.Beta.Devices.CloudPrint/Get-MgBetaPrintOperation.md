@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintOperation -PrintOperationId $printOperationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaPrintOperation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

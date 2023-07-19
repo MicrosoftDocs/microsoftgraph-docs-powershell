@@ -42,6 +42,9 @@ $params = @{
 Update-MgBetaPolicyAccessReviewPolicy -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaPolicyAccessReviewPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

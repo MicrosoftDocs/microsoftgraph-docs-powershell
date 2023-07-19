@@ -32,7 +32,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy
 
 ```
-## Parameters
+This example shows how to use the Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

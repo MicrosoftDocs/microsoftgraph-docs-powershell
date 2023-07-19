@@ -65,6 +65,9 @@ Import-Module Microsoft.Graph.Users.Actions
 New-MgUserMessageReplyAll -UserId $userId -MessageId $messageId
 ```
 
+This example shows how to use the New-MgUserMessageReplyAll Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

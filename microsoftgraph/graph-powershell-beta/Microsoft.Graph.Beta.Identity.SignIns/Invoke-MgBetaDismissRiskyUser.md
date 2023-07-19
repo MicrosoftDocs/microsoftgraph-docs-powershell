@@ -49,6 +49,9 @@ $params = @{
 Invoke-MgBetaDismissRiskyUser -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgBetaDismissRiskyUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

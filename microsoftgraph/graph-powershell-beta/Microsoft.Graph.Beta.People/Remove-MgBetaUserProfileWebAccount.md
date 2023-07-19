@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId
 ```
 
+This example shows how to use the Remove-MgBetaUserProfileWebAccount Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

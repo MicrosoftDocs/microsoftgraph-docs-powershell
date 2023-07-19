@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Applications
 Remove-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgApplicationTokenLifetimePolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ApplicationId
 The unique identifier of application

@@ -67,6 +67,10 @@ SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphCondition
 State                : enabled
 AdditionalProperties : {}
 
+
+This example retrieves all the conditional access policies in Azure AD.
+
+
 ### Example 2: Get a conditional access policy by Id
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.Read.All'
@@ -84,6 +88,9 @@ ModifiedDateTime     : 7/29/2022 9:08:10 AM
 SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphConditionalAccessSessionControls
 State                : enabled
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
+
+
+This command retrieves the conditional access by Id.
 
 ## PARAMETERS
 

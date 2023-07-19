@@ -31,6 +31,11 @@ New-MgBetaCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatI
 ## DESCRIPTION
 Create new navigation property to presences for communications
 
+This example shows how to use the New-MgBetaUserOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -Activity

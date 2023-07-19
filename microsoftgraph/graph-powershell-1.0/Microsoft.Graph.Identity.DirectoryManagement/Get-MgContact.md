@@ -48,6 +48,9 @@ DisplayName  : Bob Kelly (TAILSPIN)
 Mail         : bobk@tailspintoys.com
 MailNickname : BobKTAILSPIN
 
+
+This example retrieves all contact objects in the directory.
+
 ## PARAMETERS
 
 ### -All

@@ -58,6 +58,9 @@ $params = @{
 Hide-MgBetaChatForUser -ChatId $chatId -BodyParameter $params
 ```
 
+This example shows how to use the Hide-MgBetaChatForUser Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

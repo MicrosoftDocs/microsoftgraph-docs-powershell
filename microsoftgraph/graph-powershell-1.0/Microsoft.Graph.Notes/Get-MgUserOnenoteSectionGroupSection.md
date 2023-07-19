@@ -33,6 +33,9 @@ Import-Module Microsoft.Graph.Notes
 Get-MgUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId
 ```
 
+This example shows how to use the Get-MgUserOnenoteSectionGroupSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

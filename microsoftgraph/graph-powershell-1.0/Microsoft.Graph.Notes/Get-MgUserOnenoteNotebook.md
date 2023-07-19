@@ -24,6 +24,11 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 ## DESCRIPTION
 Retrieve a list of page objects from the specified section.
 
+This example shows how to use the Get-MgUserOnenoteNotebook Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

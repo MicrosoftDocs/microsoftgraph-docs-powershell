@@ -48,7 +48,12 @@ Import-Module Microsoft.Graph.Groups
 Get-MgGroupTransitiveMemberOf -GroupId $groupId
 
 ```
-## Parameters
+This example shows how to use the Get-MgGroupTransitiveMemberOf Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

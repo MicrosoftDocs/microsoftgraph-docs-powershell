@@ -60,6 +60,9 @@ $params = @{
 Update-MgBetaDirectorySetting -DirectorySettingId $directorySettingId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaDirectorySetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

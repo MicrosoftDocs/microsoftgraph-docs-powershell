@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Teams
 Get-MgTeamPrimaryChannel -TeamId $teamId
 
 ```
-## Parameters
+This example shows how to use the Get-MgTeamPrimaryChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.Users
 Remove-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 ```
 
+This example shows how to use the Remove-MgBetaUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

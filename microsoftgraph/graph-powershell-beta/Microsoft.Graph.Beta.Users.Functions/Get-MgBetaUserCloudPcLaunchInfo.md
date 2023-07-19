@@ -37,6 +37,9 @@ Import-Module Microsoft.Graph.Beta.Users.Functions
 Get-MgBetaUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
 ```
 
+This example shows how to use the Get-MgBetaUserCloudPcLaunchInfo Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -CloudPcId

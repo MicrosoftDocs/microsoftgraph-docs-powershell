@@ -85,6 +85,9 @@ $params = @{
 Update-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaSecurityLabelRetentionLabel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -ActionAfterRetentionPeriod

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgDirectoryRole -DirectoryRoleId $directoryRoleId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgDirectoryRole Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DirectoryRoleId
 The unique identifier of directoryRole

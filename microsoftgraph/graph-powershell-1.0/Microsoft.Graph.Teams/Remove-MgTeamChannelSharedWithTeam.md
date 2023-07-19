@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.Teams
 Remove-MgTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgTeamChannelSharedWithTeam Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ChannelId
 The unique identifier of channel

@@ -51,7 +51,12 @@ Import-Module Microsoft.Graph.Teams
 Get-MgAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 
 ```
-## Parameters
+This example shows how to use the Update-MgAppCatalogTeamAppDefinitionBot Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

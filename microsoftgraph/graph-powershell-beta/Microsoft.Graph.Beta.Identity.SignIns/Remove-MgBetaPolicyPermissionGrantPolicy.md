@@ -38,6 +38,9 @@ Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.Permis
 Remove-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
 ```
 
+
+This command deletes the specified permission grant policy in Azure AD.
+
 ## PARAMETERS
 
 ### -IfMatch

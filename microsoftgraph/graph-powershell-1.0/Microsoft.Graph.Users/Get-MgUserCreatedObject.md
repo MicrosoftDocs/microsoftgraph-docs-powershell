@@ -54,7 +54,10 @@ f61521f6-e79a-4c70-84bc-077a18fc9bc9
 94240411-75f7-44fe-b38a-674bd9f4d7c3
 
 ```
-## Parameters
+
+This command gets a list of all directory objects that have been created by the specified user.  This works for a user who isn't in any administrator role.
+
+## PARAMETERS
 
 
 ### -All

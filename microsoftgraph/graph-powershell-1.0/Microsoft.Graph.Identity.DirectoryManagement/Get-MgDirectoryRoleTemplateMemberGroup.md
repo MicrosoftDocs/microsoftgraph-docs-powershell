@@ -23,6 +23,11 @@ Get-MgDirectoryRoleTemplateDelta [-Filter <String>] [-Property <String[]>] [-Sea
 ## DESCRIPTION
 Invoke function delta
 
+This example shows how to use the Get-MgDirectoryRoleTemplateMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

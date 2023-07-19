@@ -29,6 +29,11 @@ Get-MgDeviceExtensionCount -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
+This example shows how to use the Get-MgDeviceMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -DeviceId

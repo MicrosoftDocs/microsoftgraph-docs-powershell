@@ -88,7 +88,12 @@ $params = @{
 New-MgBetaSiteList -SiteId $siteId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaSiteList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -Activities
 The recent activities that took place within this list.

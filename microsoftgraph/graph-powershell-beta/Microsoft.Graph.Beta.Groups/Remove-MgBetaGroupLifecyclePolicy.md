@@ -51,7 +51,12 @@ Import-Module Microsoft.Graph.Beta.Groups
 Remove-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaGroupLifecyclePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -GroupId
 The unique identifier of group

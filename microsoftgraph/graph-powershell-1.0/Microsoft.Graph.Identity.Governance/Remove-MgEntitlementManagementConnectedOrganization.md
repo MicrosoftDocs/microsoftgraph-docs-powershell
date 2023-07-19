@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Remove-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgEntitlementManagementConnectedOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ConnectedOrganizationId
 The unique identifier of connectedOrganization

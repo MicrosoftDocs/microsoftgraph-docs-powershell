@@ -29,6 +29,11 @@ Confirm-MgBetaGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-What
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
 
+This example shows how to use the Confirm-MgBetaGroupMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -GroupId

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Sites
 Remove-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaSiteListItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

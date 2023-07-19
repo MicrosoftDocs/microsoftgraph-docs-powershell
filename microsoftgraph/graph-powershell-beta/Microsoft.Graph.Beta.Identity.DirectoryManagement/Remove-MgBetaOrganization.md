@@ -58,7 +58,12 @@ $params = @{
 Update-MgBetaOrganization -OrganizationId $organizationId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaBetaOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

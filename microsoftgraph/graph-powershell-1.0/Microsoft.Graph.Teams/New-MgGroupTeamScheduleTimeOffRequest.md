@@ -55,7 +55,12 @@ Import-Module Microsoft.Graph.Teams
 Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
 
 ```
-## Parameters
+This example shows how to use the New-MgGroupTeamScheduleTimeOffRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

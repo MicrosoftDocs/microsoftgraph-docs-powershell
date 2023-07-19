@@ -44,6 +44,11 @@ Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Invoke action windowsDefenderScan
 
+This example shows how to use the Invoke-MgSnoozeUserEventInstanceReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

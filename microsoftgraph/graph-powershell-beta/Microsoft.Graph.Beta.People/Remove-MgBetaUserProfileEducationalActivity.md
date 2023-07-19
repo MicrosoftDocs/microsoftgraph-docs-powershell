@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId
 ```
 
+This example shows how to use the Remove-MgBetaUserProfileEducationalActivity Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -EducationalActivityId

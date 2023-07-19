@@ -48,6 +48,11 @@ New-MgBetaSiteOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to pages for sites
 
+This example shows how to use the New-MgBetaBetaSiteOnenoteSectionGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

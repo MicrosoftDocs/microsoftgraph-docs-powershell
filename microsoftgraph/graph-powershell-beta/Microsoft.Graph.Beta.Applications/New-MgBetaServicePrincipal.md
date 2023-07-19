@@ -74,6 +74,9 @@ DisplayName    : Example App
 AppId          : ffdf268a-2fe2-49e1-8cd7-66ecb61641ec
 SignInAudience : AzureADandPersonalMicrosoftAccount
 
+
+In this example, the first command defines the service principal object in the variable $ServiceprincipalId. The second command creates a new service principal object.
+
 ## PARAMETERS
 
 ### -AccountEnabled

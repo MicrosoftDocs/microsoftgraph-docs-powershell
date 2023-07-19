@@ -77,6 +77,11 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: <span class="no-loc" dir="ltr" lang="en-us">@mentions</span> a user in a channel message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -104,6 +109,11 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Send message containing cards
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -144,6 +154,11 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Send a message with file attachment in it
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -167,6 +182,11 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 5: Send a card with inline images
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -415,7 +435,12 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -1268,7 +1293,12 @@ To create the parameters described below, construct a hash table containing the 
 [New-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessage?view=graph-powershell-v1.0)
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

@@ -90,6 +90,9 @@ $params = @{
 New-MgBetaSitePage -SiteId $siteId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaSitePage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

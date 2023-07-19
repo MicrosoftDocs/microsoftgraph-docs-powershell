@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
 
 ```
-## Parameters
+This example shows how to use the Set-MgBetaBetaGroupTeamChannelFileFolderContent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ChannelId
 The unique identifier of channel

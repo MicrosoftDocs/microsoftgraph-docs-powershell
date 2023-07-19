@@ -58,7 +58,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaChatMessageHostedContent -ChatId $chatId -ChatMessageId $chatMessageId -ChatMessageHostedContentId $chatMessageHostedContentId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaChatMessageHostedContent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

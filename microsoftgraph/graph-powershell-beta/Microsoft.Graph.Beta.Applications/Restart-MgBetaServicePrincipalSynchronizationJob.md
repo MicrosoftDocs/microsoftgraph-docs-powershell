@@ -61,6 +61,9 @@ $params = @{
 Restart-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
+This example shows how to use the Restart-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

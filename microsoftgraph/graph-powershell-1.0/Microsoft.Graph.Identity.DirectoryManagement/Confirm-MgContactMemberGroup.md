@@ -52,6 +52,11 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+This example shows how to use the Confirm-MgContactMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

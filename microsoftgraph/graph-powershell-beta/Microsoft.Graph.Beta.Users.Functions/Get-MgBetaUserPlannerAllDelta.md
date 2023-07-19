@@ -40,6 +40,9 @@ Import-Module Microsoft.Graph.Beta.Users.Functions
 Get-MgBetaUserPlannerAllDelta -UserId $userId
 ```
 
+This example shows how to use the Get-MgBetaUserPlannerAllDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

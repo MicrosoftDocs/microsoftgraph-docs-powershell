@@ -40,6 +40,9 @@ Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
 
+This example shows how to use the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

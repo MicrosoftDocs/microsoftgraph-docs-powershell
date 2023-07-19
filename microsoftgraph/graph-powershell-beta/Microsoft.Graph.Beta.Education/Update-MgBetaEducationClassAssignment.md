@@ -83,7 +83,12 @@ $params = @{
 Update-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaEducationClassAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AddedStudentAction
 educationAddedStudentAction

@@ -50,6 +50,7 @@ New-MgSiteOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <I
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

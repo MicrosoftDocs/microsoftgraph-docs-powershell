@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Sites
 Remove-MgSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgSiteListItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

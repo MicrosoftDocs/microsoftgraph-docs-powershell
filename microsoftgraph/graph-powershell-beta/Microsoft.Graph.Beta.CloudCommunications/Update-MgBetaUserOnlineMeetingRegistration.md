@@ -76,6 +76,9 @@ $params = @{
 Update-MgBetaUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

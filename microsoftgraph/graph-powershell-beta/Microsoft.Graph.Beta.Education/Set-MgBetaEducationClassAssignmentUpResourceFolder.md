@@ -44,6 +44,9 @@ $params = @{
 Set-MgBetaEducationClassAssignmentUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 ```
 
+This example shows how to use the Set-MgBetaEducationClassAssignmentUpResourceFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

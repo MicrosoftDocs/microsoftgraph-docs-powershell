@@ -49,7 +49,12 @@ Import-Module Microsoft.Graph.Beta.Education
 Submit-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ```
-## Parameters
+This example shows how to use the Submit-MgBetaEducationUserAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EducationAssignmentId
 The unique identifier of educationAssignment

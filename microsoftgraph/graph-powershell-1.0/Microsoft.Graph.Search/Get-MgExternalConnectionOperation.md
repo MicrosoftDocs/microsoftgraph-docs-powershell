@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Search
 Get-MgExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgExternalConnectionOperation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

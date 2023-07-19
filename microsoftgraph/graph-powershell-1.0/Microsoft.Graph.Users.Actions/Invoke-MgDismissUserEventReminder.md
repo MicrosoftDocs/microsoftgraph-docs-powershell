@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Users.Actions
 Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
 ```
 
+This example shows how to use the Invoke-MgDismissUserEventReminder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -EventId

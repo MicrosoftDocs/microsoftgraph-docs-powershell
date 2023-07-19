@@ -45,6 +45,7 @@ New-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 ## DESCRIPTION
 Create a standard tag for members in the team.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -55,7 +55,12 @@ Import-Module Microsoft.Graph.Security
 Get-MgSecurityAlert
 
 ```
-## Parameters
+This example shows how to use the New-MgSecurityAlert Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ActivityGroupName
 Name or alias of the activity group (attacker) this alert is attributed to.

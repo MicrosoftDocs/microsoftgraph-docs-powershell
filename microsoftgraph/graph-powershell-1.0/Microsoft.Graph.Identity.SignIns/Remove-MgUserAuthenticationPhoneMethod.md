@@ -30,6 +30,11 @@ Remove-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property operations for users
 
+This example shows how to use the Remove-MgUserAuthenticationPhoneMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

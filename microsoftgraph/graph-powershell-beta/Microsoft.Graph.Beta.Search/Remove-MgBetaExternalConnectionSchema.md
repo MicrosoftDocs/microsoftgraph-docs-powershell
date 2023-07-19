@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionSchema -ExternalConnectionId $externalConnectionId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaBetaExternalConnectionSchema Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExternalConnectionId
 The unique identifier of externalConnection

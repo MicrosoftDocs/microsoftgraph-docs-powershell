@@ -40,7 +40,12 @@ Import-Module Microsoft.Graph.Files
 Get-MgDriveRoot -DriveId $driveId
 
 ```
-## Parameters
+This example shows how to use the Get-MgDriveRoot Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DriveId
 The unique identifier of drive

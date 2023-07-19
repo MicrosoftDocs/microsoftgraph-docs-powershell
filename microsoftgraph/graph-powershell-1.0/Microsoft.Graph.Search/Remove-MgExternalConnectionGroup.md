@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Search
 Remove-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgExternalConnectionGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExternalConnectionId
 The unique identifier of externalConnection

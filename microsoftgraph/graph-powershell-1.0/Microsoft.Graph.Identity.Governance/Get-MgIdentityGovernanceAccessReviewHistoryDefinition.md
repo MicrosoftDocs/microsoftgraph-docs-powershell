@@ -50,7 +50,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
 
 ```
-## Parameters
+This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessReviewHistoryDefinitionId
 The unique identifier of accessReviewHistoryDefinition

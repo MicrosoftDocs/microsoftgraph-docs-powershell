@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Sites
 Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
 
 ```
-## Parameters
+This example shows how to use the Restore-MgBetaSiteListItemVersion Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -InputObject
 Identity Parameter

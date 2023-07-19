@@ -55,6 +55,9 @@ $params = @{
 Update-MgBetaProgram -ProgramId $programId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaProgram Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

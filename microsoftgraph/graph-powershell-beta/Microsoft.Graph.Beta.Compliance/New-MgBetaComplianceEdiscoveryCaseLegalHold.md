@@ -74,6 +74,9 @@ $params = @{
 New-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

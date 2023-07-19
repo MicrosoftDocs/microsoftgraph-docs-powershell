@@ -59,7 +59,12 @@ $params = @{
 Update-MgBetaPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaPolicyClaimMappingPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerTaskDetail -PlannerTaskId $plannerTaskId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaPlannerTaskDetail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

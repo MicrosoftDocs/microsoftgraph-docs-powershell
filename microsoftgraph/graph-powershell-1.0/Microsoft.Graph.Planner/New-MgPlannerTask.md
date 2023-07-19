@@ -60,7 +60,12 @@ $params = @{
 New-MgPlannerTask -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgPlannerTask Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ActiveChecklistItemCount
 Number of checklist items with value set to false, representing incomplete items.

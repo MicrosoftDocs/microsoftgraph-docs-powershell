@@ -30,6 +30,11 @@ Remove-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> [-IfM
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+This example shows how to use the Remove-MgBetaUserContactFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ContactId

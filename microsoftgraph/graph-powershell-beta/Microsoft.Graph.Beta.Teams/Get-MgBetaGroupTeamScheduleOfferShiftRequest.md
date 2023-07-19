@@ -37,6 +37,7 @@ Get-MgBetaGroupTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-Exp
 ## DESCRIPTION
 Retrieve the properties and relationships of an offerShiftRequest object.
 
+
 ## PARAMETERS
 
 ### -All

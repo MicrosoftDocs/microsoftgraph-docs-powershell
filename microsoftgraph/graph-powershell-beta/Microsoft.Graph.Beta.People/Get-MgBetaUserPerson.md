@@ -50,6 +50,9 @@ Import-Module Microsoft.Graph.Beta.People
 Get-MgBetaUserPerson -UserId $userId
 ```
 
+This example shows how to use the Get-MgBetaUserPerson Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

@@ -59,6 +59,9 @@ $DirObject = @{
 
 New-MgBetaDirectoryRoleMemberByRef -DirectoryRoleId 'c6bb44c1-73cc-48a1-a73c-b6a977084948' -BodyParameter $DirObject
 
+
+The first command sets the value for the directory object variable $DirObject. The second command assigns the defined directory object the directory role defined by the DirectoryRoleId
+
 ## PARAMETERS
 
 ### -AdditionalProperties

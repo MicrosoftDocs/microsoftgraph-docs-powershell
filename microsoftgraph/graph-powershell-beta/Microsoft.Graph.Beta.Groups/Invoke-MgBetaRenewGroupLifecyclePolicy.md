@@ -44,6 +44,9 @@ $params = @{
 Invoke-MgBetaRenewGroupLifecyclePolicy -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

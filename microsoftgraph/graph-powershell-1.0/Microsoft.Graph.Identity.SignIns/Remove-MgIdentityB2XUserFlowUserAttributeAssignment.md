@@ -40,7 +40,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -B2XIdentityUserFlowId
 The unique identifier of b2xIdentityUserFlow

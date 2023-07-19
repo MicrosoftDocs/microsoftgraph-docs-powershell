@@ -55,6 +55,9 @@ $params = @{
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
 
+This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

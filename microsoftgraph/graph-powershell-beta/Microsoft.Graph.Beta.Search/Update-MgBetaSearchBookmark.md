@@ -65,6 +65,9 @@ $params = @{
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

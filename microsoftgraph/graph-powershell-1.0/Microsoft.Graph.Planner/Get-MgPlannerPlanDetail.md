@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Planner
 Get-MgPlannerPlanDetail -PlannerPlanId $plannerPlanId
 
 ```
-## Parameters
+This example shows how to use the Get-MgPlannerPlanDetail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

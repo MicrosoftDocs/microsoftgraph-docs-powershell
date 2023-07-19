@@ -69,6 +69,9 @@ $params = @{
 Update-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

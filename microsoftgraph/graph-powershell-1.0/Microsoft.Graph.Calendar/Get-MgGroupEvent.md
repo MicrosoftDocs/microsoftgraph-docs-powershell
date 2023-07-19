@@ -43,7 +43,12 @@ Import-Module Microsoft.Graph.Calendar
 Get-MgGroupEvent -GroupId $groupId -EventId $eventId
 
 ```
-## Parameters
+This example shows how to use the Get-MgGroupEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

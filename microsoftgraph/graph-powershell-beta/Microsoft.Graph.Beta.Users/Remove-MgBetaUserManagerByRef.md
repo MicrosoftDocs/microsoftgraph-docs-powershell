@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Users
 Remove-MgBetaUserManagerByRef -UserId $userId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaUserManagerByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

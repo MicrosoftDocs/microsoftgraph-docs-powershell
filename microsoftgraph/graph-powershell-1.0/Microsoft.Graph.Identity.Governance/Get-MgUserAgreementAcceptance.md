@@ -32,6 +32,11 @@ Get-MgRoleManagementEntitlementManagementRoleEligibilityScheduleRoleDefinition
 ## DESCRIPTION
 Detailed information for the roleDefinition object that is referenced through the roleDefinitionId property.
 
+This example shows how to use the Get-MgUserAgreementAcceptance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

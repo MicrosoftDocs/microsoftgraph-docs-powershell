@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Reports
 Get-MgReportMonthlyPrintUsageByUser
 
 ```
-## Parameters
+This example shows how to use the Get-MgReportMonthlyPrintUsageByUser Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

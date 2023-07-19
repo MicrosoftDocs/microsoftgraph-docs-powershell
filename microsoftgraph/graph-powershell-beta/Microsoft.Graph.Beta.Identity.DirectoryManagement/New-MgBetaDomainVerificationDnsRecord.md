@@ -53,7 +53,12 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDomainVerificationDnsRecord -DomainId $domainId
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaBetaDomainVerificationDnsRecord Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

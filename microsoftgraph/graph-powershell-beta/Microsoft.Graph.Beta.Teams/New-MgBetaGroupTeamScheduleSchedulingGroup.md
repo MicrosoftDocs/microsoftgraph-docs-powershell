@@ -44,6 +44,7 @@ New-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Create a new schedulingGroup.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -82,6 +82,9 @@ $params = @{
 New-MgBetaUserMessageReply -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaUserMessageReply Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

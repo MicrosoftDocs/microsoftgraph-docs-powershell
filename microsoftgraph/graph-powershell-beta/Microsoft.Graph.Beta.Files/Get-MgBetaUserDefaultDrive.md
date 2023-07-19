@@ -30,6 +30,11 @@ Get-MgBetaShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Used to access the underlying site
 
+This example shows how to use the Get-MgBetaUserDefaultDrive Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

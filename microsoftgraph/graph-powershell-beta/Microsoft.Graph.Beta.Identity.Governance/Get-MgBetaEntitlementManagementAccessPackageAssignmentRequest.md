@@ -72,6 +72,10 @@ Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccess
 Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
 AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
 
+
+This example retrieves all access package assignment requests.
+
+
 ### Example 2: Get  access package assignment request using the request id
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
@@ -93,6 +97,9 @@ RequestType             : UserAdd
 Requestor               : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
 Schedule                : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestSchedule
 AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentRequests/$entity]}
+
+
+This example returns the access package assignment request for the specified id.
 
 ## PARAMETERS
 

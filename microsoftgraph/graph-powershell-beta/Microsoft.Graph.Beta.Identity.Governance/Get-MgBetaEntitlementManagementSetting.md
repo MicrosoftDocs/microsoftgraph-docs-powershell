@@ -34,6 +34,9 @@ Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
 
+
+This example returns the identity governance settings.
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId
 The unique identifier of activityBasedTimeoutPolicy

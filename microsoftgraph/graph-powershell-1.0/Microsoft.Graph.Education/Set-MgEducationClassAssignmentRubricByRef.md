@@ -59,7 +59,12 @@ $params = @{
 Set-MgEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Set-MgEducationClassAssignmentRubricByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

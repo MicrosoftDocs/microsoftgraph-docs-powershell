@@ -72,6 +72,9 @@ $params = @{
 Update-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserProfileProject Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -69,6 +69,11 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
+This example shows how to use the New-MgSchemaExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Creating a schema extension using just a name
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
@@ -98,6 +103,11 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
+This example shows how to use the New-MgSchemaExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Creating a schema extension setting the owner
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
@@ -128,7 +138,12 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgSchemaExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

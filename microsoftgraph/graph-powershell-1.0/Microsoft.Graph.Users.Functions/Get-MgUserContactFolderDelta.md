@@ -44,6 +44,9 @@ Import-Module Microsoft.Graph.Users.Functions
 Get-MgUserContactFolderDelta -UserId $userId
 ```
 
+This example shows how to use the Get-MgUserContactFolderDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

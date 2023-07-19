@@ -43,7 +43,10 @@ Id                                   DeletedDateTime
 5fc5c052-8774-4258-8705-0b4ab3e9a2df
 
 ```
-## Parameters
+
+This example gets the owner of the specified group.
+
+## PARAMETERS
 
 
 ### -All

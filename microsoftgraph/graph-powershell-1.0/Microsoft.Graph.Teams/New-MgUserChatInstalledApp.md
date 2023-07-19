@@ -46,6 +46,7 @@ New-MgUserChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

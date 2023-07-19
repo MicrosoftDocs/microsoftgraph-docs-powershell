@@ -36,6 +36,7 @@ Get-MgGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Property <
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeoffrequest object.
 
+
 ## PARAMETERS
 
 ### -All

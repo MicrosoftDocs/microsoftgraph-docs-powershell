@@ -61,7 +61,12 @@ $params = @{
 Update-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgEntitlementManagementCatalog Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageCatalogId
 The unique identifier of accessPackageCatalog

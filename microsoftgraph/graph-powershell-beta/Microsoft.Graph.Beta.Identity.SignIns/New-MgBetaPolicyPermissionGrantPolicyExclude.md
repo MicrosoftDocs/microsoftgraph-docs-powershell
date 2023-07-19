@@ -71,6 +71,10 @@ Permissions                                 : {00000000-0000-0000-0000-000000000
 ResourceApplication                         : 00000000-0000-0000-0000-000000000000
 AdditionalProperties                        : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#policies/permissionGrantPolicies('testtenant-sampleapp-permissions')/excludes/$entity]}
 
+
+This command creates a new permission grant policy exclude configuration for the specified permission grant policy in Azure AD.
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

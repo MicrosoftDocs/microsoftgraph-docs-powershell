@@ -50,6 +50,7 @@ New-MgBetaSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

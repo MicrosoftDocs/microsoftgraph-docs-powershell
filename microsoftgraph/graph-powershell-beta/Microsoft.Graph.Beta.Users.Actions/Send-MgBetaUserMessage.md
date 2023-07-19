@@ -45,6 +45,9 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 Send-MgBetaUserMessage -UserId $userId -MessageId $messageId
 ```
 
+This example shows how to use the Send-MgBetaUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -InputObject

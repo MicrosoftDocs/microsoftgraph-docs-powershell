@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCase Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase

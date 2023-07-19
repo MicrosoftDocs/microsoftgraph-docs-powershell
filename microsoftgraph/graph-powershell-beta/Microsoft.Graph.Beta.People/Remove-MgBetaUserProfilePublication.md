@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId
 ```
 
+This example shows how to use the Remove-MgBetaUserProfilePublication Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

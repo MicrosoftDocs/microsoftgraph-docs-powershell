@@ -53,7 +53,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityB2XUserFlowIdentityProvider -B2xIdentityUserFlowId $b2xIdentityUserFlowId
 
 ```
-## Parameters
+This example shows how to use the Get-MgIdentityB2XUserFlowIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId
 
 ```
-## Parameters
+This example shows how to use the Get-MgEntitlementManagementAccessPackage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageId
 The unique identifier of accessPackage

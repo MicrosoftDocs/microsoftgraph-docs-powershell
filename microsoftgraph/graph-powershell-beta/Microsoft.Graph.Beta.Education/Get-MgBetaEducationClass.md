@@ -52,7 +52,12 @@ Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationClass -EducationClassId $educationClassId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaEducationClass Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -64,6 +64,9 @@ $params = @{
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

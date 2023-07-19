@@ -97,6 +97,11 @@ $params = @{
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Update any property of a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -134,6 +139,11 @@ $params = @{
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Update the mentions of a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -204,6 +214,11 @@ $params = @{
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Update the content with attachments of a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -304,6 +319,11 @@ $params = @{
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 5: Update the reactions in a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -636,7 +656,12 @@ $params = @{
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

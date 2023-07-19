@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Sites
 Remove-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgSiteListItemDocumentSetVersion Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DocumentSetVersionId
 The unique identifier of documentSetVersion

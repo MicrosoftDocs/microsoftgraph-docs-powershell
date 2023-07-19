@@ -80,6 +80,11 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Notify a user about an approval needed in a chat message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -107,6 +112,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ### Example 3: Notify a user about an approval needed in a chat message using user principal name
 ```powershell
@@ -136,6 +146,11 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
+This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Notify a user about an event in relation to a chat
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -164,6 +179,11 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
+
+This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

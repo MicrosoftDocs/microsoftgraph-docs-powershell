@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase

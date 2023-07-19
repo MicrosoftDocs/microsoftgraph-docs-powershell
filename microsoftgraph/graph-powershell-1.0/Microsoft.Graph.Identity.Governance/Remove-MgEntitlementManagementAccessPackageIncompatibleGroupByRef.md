@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -GroupId $groupId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageId
 The unique identifier of accessPackage

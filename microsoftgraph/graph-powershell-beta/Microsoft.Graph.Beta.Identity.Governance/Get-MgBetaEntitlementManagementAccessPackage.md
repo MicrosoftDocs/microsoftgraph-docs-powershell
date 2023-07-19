@@ -109,6 +109,10 @@ ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 9/15/2021 7:23:44 AM
 AdditionalProperties            : {}
 
+
+This examples returns all access packages.
+
+
 ### Example 2: Get access package by Id
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
@@ -132,6 +136,9 @@ IsRoleScopesVisible             : False
 ModifiedBy                      : admin@M365x814237.onmicrosoft.com
 ModifiedDateTime                : 11/5/2021 9:08:44 AM
 AdditionalProperties            : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages/$entity]}
+
+
+This example returns the access package of the specified id.
 
 ## PARAMETERS
 

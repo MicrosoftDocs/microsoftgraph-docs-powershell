@@ -61,6 +61,9 @@ $params = @{
 Update-MgBetaUserProfileAnniversary -UserId $userId -PersonAnnualEventId $personAnnualEventId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserProfileAnniversary Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

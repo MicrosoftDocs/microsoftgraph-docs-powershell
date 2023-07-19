@@ -50,7 +50,12 @@ Import-Module Microsoft.Graph.Groups
 Get-MgGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
 
 ```
-## Parameters
+This example shows how to use the Get-MgGroupThreadPostAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

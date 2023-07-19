@@ -44,7 +44,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaTeamScheduleTimeOff Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -57,7 +57,12 @@ $params = @{
 Update-MgPlannerBucket -PlannerBucketId $plannerBucketId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ```
-## Parameters
+This example shows how to use the Update-MgPlannerBucket Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

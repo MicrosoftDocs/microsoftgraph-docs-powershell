@@ -46,6 +46,11 @@ Import-Module Microsoft.Graph.Teams
 Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
 
 ```
+This example shows how to use the Get-MgTeamChannelTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: List all the tabs belonging to a specific app in a channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -53,7 +58,12 @@ Import-Module Microsoft.Graph.Teams
 Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
 
 ```
-## Parameters
+This example shows how to use the Get-MgTeamChannelTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

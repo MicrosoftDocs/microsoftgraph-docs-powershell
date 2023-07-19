@@ -39,7 +39,10 @@ Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 Remove-MgIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
 
 ```
-## Parameters
+
+This example removes the named location specified by `$namedLocationId`.
+
+## PARAMETERS
 
 
 ### -IfMatch

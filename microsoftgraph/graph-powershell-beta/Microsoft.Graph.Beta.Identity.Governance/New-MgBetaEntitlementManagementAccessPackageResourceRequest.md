@@ -61,6 +61,9 @@ RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
 AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}
 
+
+This example creates a new resource request for addition of a resource to an access package catalog.
+
 ## PARAMETERS
 
 ### -AccessPackageResource

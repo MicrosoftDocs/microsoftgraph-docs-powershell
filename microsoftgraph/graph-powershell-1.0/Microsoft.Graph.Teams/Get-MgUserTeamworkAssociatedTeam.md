@@ -33,6 +33,11 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+This example shows how to use the Get-MgUserTeamworkAssociatedTeam Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

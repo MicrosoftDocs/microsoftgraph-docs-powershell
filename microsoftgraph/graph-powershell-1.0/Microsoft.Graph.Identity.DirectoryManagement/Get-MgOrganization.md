@@ -48,7 +48,12 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgOrganization -OrganizationId $organizationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

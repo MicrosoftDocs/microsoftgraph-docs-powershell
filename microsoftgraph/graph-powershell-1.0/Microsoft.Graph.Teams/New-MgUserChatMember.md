@@ -44,6 +44,7 @@ New-MgUserChatMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Add a conversationMember to a chat.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

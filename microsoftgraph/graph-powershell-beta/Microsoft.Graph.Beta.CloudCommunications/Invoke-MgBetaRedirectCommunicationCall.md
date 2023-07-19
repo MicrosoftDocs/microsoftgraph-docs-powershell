@@ -78,6 +78,9 @@ $params = @{
 Invoke-MgBetaRedirectCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgBetaRedirectCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Invoke-MgBetaRedirectCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -98,6 +101,9 @@ $params = @{
 }
 Invoke-MgBetaRedirectCommunicationCall -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgBetaRedirectCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Teams
 Get-MgUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgUserTeamworkInstalledAppChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

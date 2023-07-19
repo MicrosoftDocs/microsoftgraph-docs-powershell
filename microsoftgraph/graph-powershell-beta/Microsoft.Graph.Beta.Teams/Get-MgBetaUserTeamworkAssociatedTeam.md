@@ -58,6 +58,9 @@ Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
 ```
 
+This example shows how to use the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

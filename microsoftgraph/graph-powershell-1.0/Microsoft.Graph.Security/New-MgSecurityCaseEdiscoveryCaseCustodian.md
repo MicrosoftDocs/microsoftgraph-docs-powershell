@@ -63,7 +63,12 @@ $params = @{
 New-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AcknowledgedDateTime
 Date and time the custodian acknowledged a hold notification.

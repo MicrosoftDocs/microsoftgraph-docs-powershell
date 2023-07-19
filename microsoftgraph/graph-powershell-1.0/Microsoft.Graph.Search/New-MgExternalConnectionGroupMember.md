@@ -56,6 +56,11 @@ $params = @{
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Add an Azure Active Directory group as a member
 ```powershell
 Import-Module Microsoft.Graph.Search
@@ -68,6 +73,11 @@ $params = @{
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Add another external group as a member
 ```powershell
 Import-Module Microsoft.Graph.Search
@@ -80,7 +90,12 @@ $params = @{
 New-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgExternalConnectionGroupMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

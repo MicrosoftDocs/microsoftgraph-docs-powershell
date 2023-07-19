@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaChatInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ChatId
 The unique identifier of chat

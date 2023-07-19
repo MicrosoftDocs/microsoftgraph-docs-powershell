@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPolicyTokenIssuancePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

@@ -115,7 +115,12 @@ $params = @{
 New-MgBetaEducationUser -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaEducationUser Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccountEnabled
 True if the account is enabled; otherwise, false.

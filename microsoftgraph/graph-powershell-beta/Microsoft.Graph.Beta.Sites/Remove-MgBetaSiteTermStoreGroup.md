@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Sites
 Remove-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -GroupId
 The unique identifier of group

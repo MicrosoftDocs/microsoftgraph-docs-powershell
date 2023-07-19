@@ -65,6 +65,9 @@ $params = @{
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
 
+This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalDataOptions

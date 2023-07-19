@@ -43,7 +43,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IdentityProviderBaseId
 The unique identifier of identityProviderBase

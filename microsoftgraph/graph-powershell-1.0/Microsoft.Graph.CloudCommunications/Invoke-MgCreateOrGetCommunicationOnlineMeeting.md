@@ -108,6 +108,11 @@ $params = @{
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgCreateOrGetCommunicationOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AcceptedModalities

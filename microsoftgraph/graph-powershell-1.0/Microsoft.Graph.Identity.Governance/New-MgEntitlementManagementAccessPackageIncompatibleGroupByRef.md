@@ -55,7 +55,12 @@ $params = @{
 New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageId
 The unique identifier of accessPackage

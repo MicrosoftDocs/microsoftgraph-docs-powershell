@@ -44,7 +44,12 @@ Import-Module Microsoft.Graph.Teams
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 
 ```
-## Parameters
+This example shows how to use the Complete-MgTeamPrimaryChannelMigration Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -InputObject
 Identity Parameter

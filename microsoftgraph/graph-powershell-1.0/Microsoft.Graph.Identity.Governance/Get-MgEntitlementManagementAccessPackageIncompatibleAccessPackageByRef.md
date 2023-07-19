@@ -33,7 +33,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
 
 ```
-## Parameters
+This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageId
 The unique identifier of accessPackage

@@ -78,6 +78,9 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -108,6 +111,9 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -135,6 +141,9 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -161,6 +170,9 @@ $params = @{
 }
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 5: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
@@ -192,6 +204,9 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 6: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -217,6 +232,9 @@ $params = @{
 }
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 7: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
@@ -244,6 +262,9 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 8: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -270,6 +291,9 @@ $params = @{
 }
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 9: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
@@ -300,6 +324,9 @@ $params = @{
 }
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
+
+This example shows how to use the Send-MgBetaTeamActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

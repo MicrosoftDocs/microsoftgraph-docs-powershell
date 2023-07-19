@@ -23,6 +23,11 @@ Get-MgBetaContractDelta [-Filter <String>] [-Property <String[]>] [-Search <Stri
 ## DESCRIPTION
 Invoke function delta
 
+This example shows how to use the Get-MgBetaContractMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

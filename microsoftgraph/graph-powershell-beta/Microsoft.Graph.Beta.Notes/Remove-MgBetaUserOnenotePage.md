@@ -30,6 +30,11 @@ Remove-MgBetaUserOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property notebooks for users
 
+This example shows how to use the Remove-MgBetaUserOnenotePage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

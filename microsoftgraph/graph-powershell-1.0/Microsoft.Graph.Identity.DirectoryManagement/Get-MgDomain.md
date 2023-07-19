@@ -62,6 +62,9 @@ SupportedServices                : {Email, OfficeCommunicationsOnline}
 VerificationDnsRecords           :
 AdditionalProperties             : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity]}
 
+
+This example retrieves a list of the domain objects.
+
 ## PARAMETERS
 
 ### -All

@@ -59,7 +59,12 @@ $params = @{
 New-MgChatInstalledApp -ChatId $chatId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgChatInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

@@ -39,6 +39,7 @@ Get-MgEducationUserRubric -InputObject <IEducationIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
+
 ## PARAMETERS
 
 ### -All

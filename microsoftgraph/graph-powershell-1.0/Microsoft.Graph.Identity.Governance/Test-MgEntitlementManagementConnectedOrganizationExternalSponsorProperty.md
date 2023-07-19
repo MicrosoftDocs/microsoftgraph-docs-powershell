@@ -82,6 +82,11 @@ $params = @{
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
 
+This example shows how to use the Test-MgEntitlementManagementConnectedOrganizationExternalSponsorProperty Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

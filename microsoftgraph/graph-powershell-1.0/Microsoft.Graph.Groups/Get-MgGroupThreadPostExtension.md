@@ -50,7 +50,12 @@ Import-Module Microsoft.Graph.Groups
 Get-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId
 
 ```
-## Parameters
+This example shows how to use the Get-MgGroupThreadPostExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

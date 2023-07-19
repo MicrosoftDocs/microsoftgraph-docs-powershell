@@ -46,6 +46,9 @@ $params = @{
 Confirm-MgBetaRiskyServicePrincipalCompromised -BodyParameter $params
 ```
 
+This example shows how to use the Confirm-MgBetaRiskyServicePrincipalCompromised Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

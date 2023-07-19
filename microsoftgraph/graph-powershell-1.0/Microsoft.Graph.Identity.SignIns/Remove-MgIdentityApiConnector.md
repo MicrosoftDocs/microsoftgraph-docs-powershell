@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IdentityApiConnectorId
 The unique identifier of identityApiConnector

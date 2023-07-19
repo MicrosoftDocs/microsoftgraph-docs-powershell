@@ -31,6 +31,9 @@ Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaApplicationDelta
 ```
 
+This example shows how to use the Get-MgBetaApplicationDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

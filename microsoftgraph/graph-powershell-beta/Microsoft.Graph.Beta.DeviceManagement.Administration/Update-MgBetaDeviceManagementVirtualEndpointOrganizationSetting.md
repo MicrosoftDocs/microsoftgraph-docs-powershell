@@ -48,6 +48,9 @@ $params = @{
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

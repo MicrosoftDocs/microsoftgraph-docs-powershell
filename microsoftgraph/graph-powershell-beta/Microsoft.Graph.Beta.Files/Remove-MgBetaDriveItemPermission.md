@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.Beta.Files
 Remove-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaDriveItemPermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DriveId
 The unique identifier of drive

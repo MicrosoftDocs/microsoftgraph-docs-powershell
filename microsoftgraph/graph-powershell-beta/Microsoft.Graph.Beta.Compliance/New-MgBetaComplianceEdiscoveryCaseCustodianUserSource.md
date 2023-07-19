@@ -58,6 +58,9 @@ $params = @{
 New-MgBetaComplianceEdiscoveryCaseCustodianUserSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodianUserSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

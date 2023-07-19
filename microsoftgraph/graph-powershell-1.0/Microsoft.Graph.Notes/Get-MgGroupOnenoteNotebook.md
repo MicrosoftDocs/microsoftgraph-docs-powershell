@@ -37,6 +37,7 @@ Get-MgGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <Strin
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
+
 ## PARAMETERS
 
 ### -All

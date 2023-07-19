@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DirectoryObjectId
 The unique identifier of directoryObject

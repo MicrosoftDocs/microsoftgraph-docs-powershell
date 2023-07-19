@@ -47,7 +47,10 @@ f890ceed-822a-4647-8748-73d88013ae9d
 7425a698-2aa8-4333-9352-04f52e3a4c9d
 
 ```
-## Parameters
+
+This example gets the members of a directory role.
+
+## PARAMETERS
 
 
 ### -All

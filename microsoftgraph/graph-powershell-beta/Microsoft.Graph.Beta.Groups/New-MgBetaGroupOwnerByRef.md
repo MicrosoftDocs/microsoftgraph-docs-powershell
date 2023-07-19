@@ -55,6 +55,9 @@ $newGroupOwner =@{
 
 New-MgBetaGroupOwnerByRef -GroupId '1cb7317c-9c49-4dc8-a358-67ad8e95217c' -BodyParameter $newGroupOwner
 
+
+In this example, the first command defines the value of the $newGroupOwner variable. The second command creates the value is an owner of the specified group.
+
 ## PARAMETERS
 
 ### -AdditionalProperties

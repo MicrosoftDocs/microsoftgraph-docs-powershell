@@ -56,6 +56,9 @@ $params = @{
 Copy-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
 
+This example shows how to use the Copy-MgUserMailFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

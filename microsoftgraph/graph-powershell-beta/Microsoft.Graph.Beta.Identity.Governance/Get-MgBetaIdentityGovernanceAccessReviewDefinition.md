@@ -54,7 +54,12 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
 The unique identifier of accessReviewScheduleDefinition

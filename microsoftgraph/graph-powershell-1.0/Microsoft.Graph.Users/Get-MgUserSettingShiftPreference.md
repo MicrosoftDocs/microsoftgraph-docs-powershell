@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Users
 Get-MgUserSettingShiftPreference -UserId $userId
 
 ```
-## Parameters
+This example shows how to use the Get-MgUserSettingShiftPreference Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities

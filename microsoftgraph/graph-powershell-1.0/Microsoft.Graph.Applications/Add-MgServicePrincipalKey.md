@@ -71,6 +71,9 @@ $params = @{
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
 
+This example shows how to use the Add-MgServicePrincipalKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Add-MgServicePrincipalKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
@@ -87,6 +90,9 @@ $params = @{
 }
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
+
+This example shows how to use the Add-MgServicePrincipalKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

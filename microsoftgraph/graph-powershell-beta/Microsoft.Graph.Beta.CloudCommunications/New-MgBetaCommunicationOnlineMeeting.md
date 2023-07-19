@@ -58,6 +58,11 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId
 
 ```
+This example shows how to use the New-MgBetaBetaCommunicationOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Retrieve an online meeting by meeting ID
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -65,7 +70,12 @@ Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaBetaCommunicationOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

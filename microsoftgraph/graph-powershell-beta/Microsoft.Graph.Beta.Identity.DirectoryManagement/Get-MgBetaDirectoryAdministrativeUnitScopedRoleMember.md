@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit

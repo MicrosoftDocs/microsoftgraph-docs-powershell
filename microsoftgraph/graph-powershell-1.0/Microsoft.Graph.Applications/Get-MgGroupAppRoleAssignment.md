@@ -58,6 +58,9 @@ ResourceDisplayName  : Common Data Service
 ResourceId           : 93af1c70-e87f-45df-8780-8af2d7afd05e
 AdditionalProperties : {}
 
+
+This example get all app role assignments granted to the specified group.
+
 ## PARAMETERS
 
 ### -All

@@ -62,6 +62,9 @@ $params = @{
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -82,6 +85,9 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
@@ -107,6 +113,9 @@ $params = @{
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -130,6 +139,9 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

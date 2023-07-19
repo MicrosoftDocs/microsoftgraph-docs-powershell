@@ -50,6 +50,7 @@ Get-MgBetaChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
+
 ## PARAMETERS
 
 ### -All

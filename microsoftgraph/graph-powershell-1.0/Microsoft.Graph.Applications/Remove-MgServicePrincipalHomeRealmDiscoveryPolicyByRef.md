@@ -40,7 +40,12 @@ Import-Module Microsoft.Graph.Applications
 Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -HomeRealmDiscoveryPolicyId
 The unique identifier of homeRealmDiscoveryPolicy

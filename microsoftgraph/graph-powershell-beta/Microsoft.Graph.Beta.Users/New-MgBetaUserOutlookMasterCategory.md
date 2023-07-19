@@ -46,6 +46,11 @@ New-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to notifications for users
 
+This example shows how to use the New-MgBetaUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

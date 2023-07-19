@@ -88,6 +88,10 @@ RequestApprovalSettings : Microsoft.Graph.PowerShell.Models.MicrosoftGraphApprov
 RequestorSettings       : Microsoft.Graph.PowerShell.Models.MicrosoftGraphRequestorSettings
 AdditionalProperties    : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageAssignmentPolicies/$entity]}
 
+
+This example shows a request to create an access package assignment policy. In this policy no approval is required, and there are no access reviews.
+
+
 ## PARAMETERS
 
 ### -AccessPackage

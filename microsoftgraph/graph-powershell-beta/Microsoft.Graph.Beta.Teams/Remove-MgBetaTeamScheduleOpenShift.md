@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaTeamScheduleOpenShift Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

@@ -63,6 +63,9 @@ $params = @{
 Update-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AcknowledgedDateTime

@@ -74,6 +74,9 @@ $params = @{
 Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserProfileEducationalActivity Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

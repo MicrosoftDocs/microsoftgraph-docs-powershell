@@ -50,6 +50,11 @@ New-MgBetaUserMailFolderChildFolderMessageRule -InputObject <IMailIdentity>
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
+This example shows how to use the New-MgBetaUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -Actions

@@ -30,6 +30,11 @@ Remove-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [
 ## DESCRIPTION
 Delete navigation property presences for communications
 
+This example shows how to use the Remove-MgBetaUserOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

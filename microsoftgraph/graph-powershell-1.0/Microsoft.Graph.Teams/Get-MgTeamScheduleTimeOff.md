@@ -44,7 +44,12 @@ Import-Module Microsoft.Graph.Teams
 Get-MgTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
 
 ```
-## Parameters
+This example shows how to use the Get-MgTeamScheduleTimeOff Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

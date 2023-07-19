@@ -44,7 +44,10 @@ To learn more, see deletedItems.
 Remove-MgGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
 
 ```
-## Parameters
+
+This example deletes the specified group.
+
+## PARAMETERS
 
 
 ### -GroupId

@@ -55,7 +55,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
 
 ```
-## Parameters
+This example shows how to use the Update-MgAgreementFile Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

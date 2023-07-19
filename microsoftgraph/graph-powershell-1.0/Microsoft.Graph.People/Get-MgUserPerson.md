@@ -30,6 +30,11 @@ Get-MgUserLastSharedMethodInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get lastSharedMethod from users
 
+This example shows how to use the Get-MgUserPerson Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

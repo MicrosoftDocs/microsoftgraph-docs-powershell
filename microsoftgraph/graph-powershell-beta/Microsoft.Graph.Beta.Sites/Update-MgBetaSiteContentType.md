@@ -108,7 +108,12 @@ $params = @{
 Update-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaSiteContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

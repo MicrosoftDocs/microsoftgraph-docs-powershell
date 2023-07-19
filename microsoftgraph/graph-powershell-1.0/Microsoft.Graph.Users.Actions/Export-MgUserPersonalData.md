@@ -59,6 +59,9 @@ $params = @{
 Export-MgUserPersonalData -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the Export-MgUserPersonalData Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

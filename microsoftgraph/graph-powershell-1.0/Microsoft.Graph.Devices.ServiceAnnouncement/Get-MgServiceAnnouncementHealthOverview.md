@@ -48,6 +48,11 @@ Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
 
 ```
+This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Include navigation property issues
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
@@ -55,7 +60,12 @@ Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
 
 ```
-## Parameters
+This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -64,7 +64,12 @@ $params = @{
 Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

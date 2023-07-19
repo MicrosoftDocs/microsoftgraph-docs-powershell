@@ -51,6 +51,10 @@ DeletedDateTime Id                                   Description DisplayName    
 d924fbd3-69c5-4cdf-b9ea-9b0badcf9c4d             East wing Unit
 
 ```
+
+This example retrieves a list of administrative units.
+
+
 ### Example 2
 ```powershell
 {{ Add code here }}

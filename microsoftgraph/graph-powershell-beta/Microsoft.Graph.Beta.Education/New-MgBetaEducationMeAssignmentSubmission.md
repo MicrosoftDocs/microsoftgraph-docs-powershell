@@ -66,7 +66,12 @@ Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaBetaEducationMeAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

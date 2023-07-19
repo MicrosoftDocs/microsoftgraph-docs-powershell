@@ -37,6 +37,7 @@ Get-MgGroupTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of an openShiftChangeRequest object.
 
+
 ## PARAMETERS
 
 ### -All

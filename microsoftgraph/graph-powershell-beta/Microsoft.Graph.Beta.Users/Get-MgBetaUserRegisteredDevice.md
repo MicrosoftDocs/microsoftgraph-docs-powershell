@@ -52,6 +52,9 @@ Import-Module Microsoft.Graph.Beta.Users
 Get-MgBetaUserRegisteredDevice -UserId $userId
 ```
 
+This example shows how to use the Get-MgBetaUserRegisteredDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

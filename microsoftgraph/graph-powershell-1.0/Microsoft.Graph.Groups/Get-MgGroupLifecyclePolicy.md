@@ -58,7 +58,12 @@ Import-Module Microsoft.Graph.Groups
 Get-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
 
 ```
-## Parameters
+This example shows how to use the Get-MgGroupLifecyclePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Applications
 Remove-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -ClaimsMappingPolicyId $claimsMappingPolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgServicePrincipalClaimMappingPolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ClaimsMappingPolicyId
 The unique identifier of claimsMappingPolicy

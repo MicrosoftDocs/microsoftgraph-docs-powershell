@@ -48,6 +48,9 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 Complete-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 ```
 
+This example shows how to use the Complete-MgBetaUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -InputObject

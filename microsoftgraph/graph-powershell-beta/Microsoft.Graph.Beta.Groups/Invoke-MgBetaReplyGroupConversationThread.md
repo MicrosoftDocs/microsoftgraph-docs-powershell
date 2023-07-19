@@ -73,6 +73,11 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
 ```
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Include an item attachment
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -99,6 +104,11 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
 ```
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Include a reference attachment
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -125,7 +135,12 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

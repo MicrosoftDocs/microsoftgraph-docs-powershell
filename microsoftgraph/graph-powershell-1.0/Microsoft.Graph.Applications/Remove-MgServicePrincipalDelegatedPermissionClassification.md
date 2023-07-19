@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Applications
 Remove-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgServicePrincipalDelegatedPermissionClassification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DelegatedPermissionClassificationId
 The unique identifier of delegatedPermissionClassification

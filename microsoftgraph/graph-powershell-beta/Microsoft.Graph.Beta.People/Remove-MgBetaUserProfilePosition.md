@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId
 ```
 
+This example shows how to use the Remove-MgBetaUserProfilePosition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

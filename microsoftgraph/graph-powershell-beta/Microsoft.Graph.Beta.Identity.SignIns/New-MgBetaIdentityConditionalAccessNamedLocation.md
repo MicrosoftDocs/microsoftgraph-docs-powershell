@@ -56,6 +56,10 @@ Id                                   CreatedDateTime      DisplayName           
 1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM Named location with unknown countries and regions 6/13/2022 8:27:35 AM
 
 ```
+
+This example creates a country named location.
+
+
 ### Example 2: Create an ip named location
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
@@ -83,7 +87,10 @@ Id                                   CreatedDateTime      DisplayName           
 0824dbaf-6277-4db0-8112-b29fd356f2c4 6/13/2022 8:41:38 AM Untrusted IP named location 6/13/2022 8:41:38 AM
 
 ```
-## Parameters
+
+This example creates an Ip named location.
+
+## PARAMETERS
 
 
 ### -AdditionalProperties

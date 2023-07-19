@@ -54,6 +54,10 @@ adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM   dismissed            
 none                               4/20/2022 3:33:58 PM    atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    atRisk               Jason Mayer
 
+
+The command return all the user risk history 
+
+
 ### Example 2: List history of a specific user with detailed risk detection
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
@@ -68,6 +72,9 @@ adminConfirmedUserCompromised      5/27/2022 11:26:40 PM                       c
 adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM                       dismissed            Jason Mayer
 none                               4/20/2022 3:33:58 PM    anomalousToken      atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    anonymizedIPAddress atRisk               Jason Mayer
+
+
+The command return all the user risk history and expand the property of Activity
 
 ## PARAMETERS
 

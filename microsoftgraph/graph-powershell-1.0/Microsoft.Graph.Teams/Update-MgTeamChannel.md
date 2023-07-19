@@ -61,7 +61,12 @@ Import-Module Microsoft.Graph.Teams
 Update-MgTeamChannel -TeamId $teamId -ChannelId $channelId
 
 ```
-## Parameters
+This example shows how to use the Update-MgTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

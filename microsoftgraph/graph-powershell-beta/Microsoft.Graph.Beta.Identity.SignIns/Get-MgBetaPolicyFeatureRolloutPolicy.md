@@ -46,6 +46,11 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
 
 ```
+This example shows how to use the Get-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Get a feature rollout policy and expand appliesTo
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -53,7 +58,12 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -ExpandProperty "appliesTo"
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

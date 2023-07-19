@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Remove-MgIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgIdentityGovernanceAccessReviewDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessReviewScheduleDefinitionId
 The unique identifier of accessReviewScheduleDefinition

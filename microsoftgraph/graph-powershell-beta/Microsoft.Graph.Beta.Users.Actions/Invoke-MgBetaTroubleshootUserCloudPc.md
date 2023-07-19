@@ -41,6 +41,9 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 Invoke-MgBetaTroubleshootUserCloudPc -UserId $userId -CloudPCId $cloudPCId
 ```
 
+This example shows how to use the Invoke-MgBetaTroubleshootUserCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -CloudPcId

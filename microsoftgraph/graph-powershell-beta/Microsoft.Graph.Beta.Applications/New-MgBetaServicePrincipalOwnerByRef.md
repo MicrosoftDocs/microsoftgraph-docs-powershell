@@ -55,6 +55,9 @@ $newOwner = @{
 
 New-MgBetaServicePrincipalOwnerByRef -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e' -BodyParameter $newOwner
 
+
+In this example, the first command defines the value for the `$newOwner` variable in a hashtable. The second command adds the new owner to the specified service principal.
+
 ## PARAMETERS
 
 ### -AdditionalProperties

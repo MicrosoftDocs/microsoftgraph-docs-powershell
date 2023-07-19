@@ -72,6 +72,9 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -96,6 +99,9 @@ $params = @{
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -114,6 +120,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 4: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
@@ -136,6 +145,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 5: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
@@ -165,6 +177,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

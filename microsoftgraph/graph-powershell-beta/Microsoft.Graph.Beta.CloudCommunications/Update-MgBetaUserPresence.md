@@ -48,6 +48,11 @@ Update-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Update the properties of a virtualAppointment object.
 
+This example shows how to use the Update-MgBetaBetaUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

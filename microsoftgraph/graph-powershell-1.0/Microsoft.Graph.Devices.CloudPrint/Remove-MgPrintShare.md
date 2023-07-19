@@ -43,7 +43,12 @@ Import-Module Microsoft.Graph.Devices.CloudPrint
 Remove-MgPrintShare -PrinterShareId $printerShareId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPrintShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

@@ -63,6 +63,9 @@ $params = @{
 Update-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserProfilePublication Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

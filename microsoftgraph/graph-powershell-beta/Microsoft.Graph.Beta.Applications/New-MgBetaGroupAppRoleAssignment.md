@@ -78,6 +78,19 @@ ResourceId           : 1c48f923-4fbb-4d37-b772-4d577eefec9e
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#groups('f07a8d78-f18c-4c02-b339-9ebace025122')/appRoleAssignments/$entity], [@odata.id, https://graph.microsoft.com/v2/fb625e04-52aa-42da-
                        b10d-14f1195d665f/directoryObjects/$/Microsoft.DirectoryServices.Group('f07a8d78-f18c-4c02-b339-9ebace025122')/appRoleAssignments/eI168IzxAkyzOZ66zgJRIqVVeeA1CVFKmaBn-MgBetan0Bw]}
 
+
+In this example, the first command defines the `$appRoleAssignment` variable that defines the following:
+
+-`principalId`: The id of the group to which you are assigning the app role.
+
+-`resourceId`: The id of the resource servicePrincipal which has defined the app role.
+
+-`appRoleId`: The id of the appRole (defined on the resource service principal) to assign to the group. 
+
+Learn more about the [AppRoleAssignment resource](/graph/api/resources/approleassignment?view=graph-rest-1.0).
+
+The second command adds the role to the specified group.
+
 ## PARAMETERS
 
 ### -AdditionalProperties

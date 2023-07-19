@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Teams
 Remove-MgTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgTeamScheduleTimeOff Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

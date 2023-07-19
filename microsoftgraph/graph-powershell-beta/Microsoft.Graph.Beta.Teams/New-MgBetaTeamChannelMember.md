@@ -63,6 +63,11 @@ $params = @{
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Add a member with the owner role to a private channel
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -70,6 +75,11 @@ Import-Module Microsoft.Graph.Beta.Teams
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Add an owner to a channel using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -85,6 +95,11 @@ $params = @{
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Add a user who is part of the same tenant as a member to a shared channel
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -99,6 +114,11 @@ $params = @{
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 5: Add a user who is part of a different tenant as a member to a shared channel
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -114,6 +134,11 @@ $params = @{
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
+This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 6: Add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -128,7 +153,12 @@ $params = @{
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

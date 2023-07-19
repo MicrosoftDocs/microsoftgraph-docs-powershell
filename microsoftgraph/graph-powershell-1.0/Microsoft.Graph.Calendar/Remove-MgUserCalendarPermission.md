@@ -51,7 +51,12 @@ Import-Module Microsoft.Graph.Calendar
 Remove-MgUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgUserCalendarPermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -CalendarId
 The unique identifier of calendar

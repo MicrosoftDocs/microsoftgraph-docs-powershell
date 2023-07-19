@@ -65,6 +65,11 @@ Import-Module Microsoft.Graph.Sites
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
 
 ```
+This example shows how to use the Get-MgSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Get a site collection termStore group and its parent site ID
 ```powershell
 Import-Module Microsoft.Graph.Sites
@@ -72,7 +77,12 @@ Import-Module Microsoft.Graph.Sites
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId"
 
 ```
-## Parameters
+This example shows how to use the Get-MgSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

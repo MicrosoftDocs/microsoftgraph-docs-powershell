@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
 
 ```
-## Parameters
+This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit

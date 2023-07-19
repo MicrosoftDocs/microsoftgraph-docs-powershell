@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Sites
 Remove-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaSiteContentTypeColumn Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ColumnDefinitionId
 The unique identifier of columnDefinition

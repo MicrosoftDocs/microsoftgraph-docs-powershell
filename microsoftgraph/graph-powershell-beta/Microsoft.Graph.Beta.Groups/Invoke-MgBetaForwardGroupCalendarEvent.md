@@ -28,6 +28,11 @@ Invoke-MgBetaFollowGroupDriveRoot -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 ## DESCRIPTION
 Follow a driveItem.
 
+This example shows how to use the Invoke-MgBetaForwardGroupCalendarEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -DriveId

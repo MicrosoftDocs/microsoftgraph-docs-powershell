@@ -55,7 +55,12 @@ Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId
 
 ```
-## Parameters
+This example shows how to use the New-MgPrintTaskDefinitionTask Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

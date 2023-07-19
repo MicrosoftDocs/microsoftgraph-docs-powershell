@@ -74,6 +74,9 @@ $params = @{
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Invoke-MgAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -91,6 +94,9 @@ $params = @{
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Using the Invoke-MgAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -107,6 +113,9 @@ $params = @{
 }
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

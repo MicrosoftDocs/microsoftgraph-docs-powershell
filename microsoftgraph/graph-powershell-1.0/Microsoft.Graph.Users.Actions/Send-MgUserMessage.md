@@ -43,6 +43,9 @@ Import-Module Microsoft.Graph.Users.Actions
 Send-MgUserMessage -UserId $userId -MessageId $messageId
 ```
 
+This example shows how to use the Send-MgUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -InputObject

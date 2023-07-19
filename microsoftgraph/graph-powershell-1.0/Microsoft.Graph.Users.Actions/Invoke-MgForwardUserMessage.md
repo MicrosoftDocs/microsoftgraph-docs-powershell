@@ -78,6 +78,9 @@ $params = @{
 Invoke-MgForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgForwardUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -43,7 +43,12 @@ Import-Module Microsoft.Graph.Teams
 New-MgAppCatalogTeamApp -Requiresreview true
 
 ```
-## Parameters
+This example shows how to use the New-MgAppCatalogTeamApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

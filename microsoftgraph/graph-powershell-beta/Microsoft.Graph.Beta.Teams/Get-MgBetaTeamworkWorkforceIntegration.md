@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaTeamworkWorkforceIntegration Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

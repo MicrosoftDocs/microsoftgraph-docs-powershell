@@ -42,7 +42,10 @@ Id                                   DeletedDateTime
 e1428c8c-4219-4beb-b5cb-765c2590278b
 
 ```
-## Parameters
+
+The commands gets the manager of the specified user.
+
+## PARAMETERS
 
 
 ### -ExpandProperty

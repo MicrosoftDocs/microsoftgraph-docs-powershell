@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Groups
 Remove-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgGroupThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ConversationThreadId
 The unique identifier of conversationThread

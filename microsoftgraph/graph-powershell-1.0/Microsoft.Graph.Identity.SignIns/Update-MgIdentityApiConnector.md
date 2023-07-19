@@ -63,6 +63,11 @@ $params = @{
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Changing API connector to use client certificate authentication
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -78,7 +83,12 @@ $params = @{
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

@@ -61,6 +61,9 @@ $params = @{
 Copy-MgUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
 
+This example shows how to use the Copy-MgUserOnenotePageToSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

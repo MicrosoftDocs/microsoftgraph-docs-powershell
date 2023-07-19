@@ -37,7 +37,10 @@ Deletes an internalDomainFederation object.
 Remove-MgBetaDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a'
 
 ```
-## Parameters
+
+This example removes the federation settings of the specified federated domain.
+
+## PARAMETERS
 
 
 ### -DomainId

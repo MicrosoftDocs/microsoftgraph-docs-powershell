@@ -86,6 +86,9 @@ $params = @{
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
 
+This example shows how to use the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -164,6 +167,9 @@ $params = @{
 }
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
+
+This example shows how to use the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -57,7 +57,12 @@ $params = @{
 New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

@@ -37,7 +37,10 @@ Remove a user's manager.
 Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 
 ```
-## Parameters
+
+This command removes the manager of the specified user.
+
+## PARAMETERS
 
 
 ### -IfMatch

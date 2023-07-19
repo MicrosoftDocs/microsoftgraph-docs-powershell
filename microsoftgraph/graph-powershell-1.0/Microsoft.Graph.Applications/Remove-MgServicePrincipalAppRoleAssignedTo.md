@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Applications
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgServicePrincipalAppRoleAssignedTo Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AppRoleAssignmentId
 The unique identifier of appRoleAssignment

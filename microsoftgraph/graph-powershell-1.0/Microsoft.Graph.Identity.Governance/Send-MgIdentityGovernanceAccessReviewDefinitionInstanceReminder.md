@@ -38,6 +38,9 @@ Import-Module Microsoft.Graph.Identity.Governance
 Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
 
+This example shows how to use the Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

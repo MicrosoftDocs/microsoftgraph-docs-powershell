@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileInterest -UserId $userId -PersonInterestId $personInterestId
 ```
 
+This example shows how to use the Remove-MgBetaUserProfileInterest Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

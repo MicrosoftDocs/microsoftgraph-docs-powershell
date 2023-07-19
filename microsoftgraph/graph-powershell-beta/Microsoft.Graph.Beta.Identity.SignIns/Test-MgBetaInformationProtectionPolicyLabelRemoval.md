@@ -94,6 +94,9 @@ $params = @{
 Test-MgBetaInformationProtectionPolicyLabelRemoval -BodyParameter $params
 ```
 
+This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

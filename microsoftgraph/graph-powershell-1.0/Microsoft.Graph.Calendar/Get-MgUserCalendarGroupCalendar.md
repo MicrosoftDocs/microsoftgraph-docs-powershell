@@ -33,6 +33,9 @@ Import-Module Microsoft.Graph.Calendar
 Get-MgUserCalendarGroupCalendar -UserId $userId -CalendarGroupId $calendarGroupId
 ```
 
+This example shows how to use the Get-MgUserCalendarGroupCalendar Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

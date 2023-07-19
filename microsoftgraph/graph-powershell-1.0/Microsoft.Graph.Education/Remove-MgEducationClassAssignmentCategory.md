@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.Education
 Remove-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgEducationClassAssignmentCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EducationCategoryId
 The unique identifier of educationCategory

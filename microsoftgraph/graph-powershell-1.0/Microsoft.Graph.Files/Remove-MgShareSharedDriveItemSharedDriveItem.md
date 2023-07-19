@@ -39,6 +39,11 @@ Import-Module Microsoft.Graph.Files
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
+This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
@@ -46,6 +51,11 @@ Import-Module Microsoft.Graph.Files
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
+This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
@@ -53,7 +63,12 @@ Import-Module Microsoft.Graph.Files
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
 
 ```
-## Parameters
+This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

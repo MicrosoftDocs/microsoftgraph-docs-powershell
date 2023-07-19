@@ -46,6 +46,11 @@ New-MgUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphT
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
+This example shows how to use the New-MgUserTeamworkAssociatedTeam Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

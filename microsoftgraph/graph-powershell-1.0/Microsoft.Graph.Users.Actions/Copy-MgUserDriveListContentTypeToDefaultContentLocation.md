@@ -68,6 +68,11 @@ $params = @{
 
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 
+This example shows how to use the Copy-MgUserDriveListContentTypeToDefaultContentLocation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -109,7 +109,12 @@ $params = @{
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Invoke-MgReplyGroupThreadPostInReplyTo Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

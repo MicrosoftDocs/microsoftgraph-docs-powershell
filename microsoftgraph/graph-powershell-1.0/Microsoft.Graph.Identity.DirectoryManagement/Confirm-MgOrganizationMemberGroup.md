@@ -36,6 +36,11 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Confirm-MgDomain -DomainId $domainId
 ```
 
+This example shows how to use the Confirm-MgOrganizationMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -DomainId

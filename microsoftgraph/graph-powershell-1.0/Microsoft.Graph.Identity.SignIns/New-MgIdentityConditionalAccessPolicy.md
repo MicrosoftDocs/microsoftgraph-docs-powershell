@@ -78,6 +78,11 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
+This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Block access to Exchange Online from non-trusted regions
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -116,6 +121,11 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
+This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Use all conditions and controls
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -223,6 +233,11 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
+This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Require MFA to Exchange Online from non-compliant devices
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -253,7 +268,12 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgIdentityConditionalAccessPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

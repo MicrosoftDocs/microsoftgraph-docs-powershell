@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaUserAuthenticationSoftwareOathMethod -UserId $userId -SoftwareOathAuthenticationMethodId $softwareOathAuthenticationMethodId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaUserAuthenticationSoftwareOathMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

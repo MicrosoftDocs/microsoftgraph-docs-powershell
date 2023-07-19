@@ -61,6 +61,14 @@ Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
 ```
+
+This examples retrieves a list of groups.
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+
+
 ### Example 2: Get a group by the display name
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
@@ -73,6 +81,14 @@ Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
 ```
+
+This example gets a group by the specified display name.
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+
+
 ### Example 3: Get a count of all groups
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
@@ -91,6 +107,14 @@ Id                                   DisplayName          Description           
 {Unified}
 
 ```
+
+The example gets a list of all groups. The $groupCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+
+
 ### Example 4: Use -Search to get all the groups whose display name contains 'Market' including a count of the returned users
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
@@ -104,6 +128,14 @@ Id                                   DisplayName         Description            
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
 
 ```
+
+This example returns all groups whose display name contains 'Market'. The $groupCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+
+
 ### Example 5: Use -Filter to get all the applications with a display name that starts with 'A' including a count of the returned users, with the results ordered by display name
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
@@ -116,7 +148,14 @@ f07a8d78-f18c-4c02-b339-9ebace025122 All Employees                              
 bbfa9226-a965-47e1-9db2-bcfcb2c202e6 All Users
 
 ```
-## Parameters
+
+This example returns all groups whose display name starts with 'A'. The $groupCount variable contains the count of the objects in the result. Advanced query requires the ConsistencyLevel parameter set to `eventual` and the Count parameter in the command. For more information about *ConsistencyLevel* and *Count*, see [Advanced query capabilities on Azure AD directory objects](/graph/aad-advanced-queries).
+
+To learn about other permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`. For example, `Connect-MgGraph -Scopes GroupMember.Read.All, Group.Read.All`.
+
+## PARAMETERS
 
 
 ### -All

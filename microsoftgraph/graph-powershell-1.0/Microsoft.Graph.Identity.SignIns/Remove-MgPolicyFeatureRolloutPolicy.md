@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPolicyFeatureRolloutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -FeatureRolloutPolicyId
 The unique identifier of featureRolloutPolicy

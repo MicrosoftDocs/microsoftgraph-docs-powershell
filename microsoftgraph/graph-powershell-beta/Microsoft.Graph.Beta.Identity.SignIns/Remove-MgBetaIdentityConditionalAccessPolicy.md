@@ -39,7 +39,10 @@ Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 Remove-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
 
 ```
-## Parameters
+
+This example deletes the conditional access policy specified by `$conditionalAccessPolicyId`.
+
+## PARAMETERS
 
 
 ### -ConditionalAccessPolicyId

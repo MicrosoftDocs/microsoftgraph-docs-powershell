@@ -59,6 +59,9 @@ $params = @{
 Update-MgUserPassword -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgUserPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

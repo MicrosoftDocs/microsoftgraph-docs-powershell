@@ -45,6 +45,11 @@ New-MgBetaDriveRootVersion -InputObject <IFilesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create new navigation property to versions for drives
 
+This example shows how to use the New-MgBetaGroupDrive Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

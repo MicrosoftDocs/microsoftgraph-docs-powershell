@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -AppManagementPolicyId $appManagementPolicyId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaApplicationAppManagementPolicyByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ApplicationId
 The unique identifier of application

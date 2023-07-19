@@ -30,6 +30,11 @@ Remove-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 ## DESCRIPTION
 Delete a virtualAppointment object.
 
+This example shows how to use the Remove-MgBetaBetaUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaTeamTag Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

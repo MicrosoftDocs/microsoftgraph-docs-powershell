@@ -60,6 +60,9 @@ $params = @{
 Update-MgBetaOrganizationSettingContactInsight -OrganizationId $organizationId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaOrganizationSettingContactInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

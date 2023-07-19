@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Bookings
 Remove-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBookingBusinessAppointment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -BookingAppointmentId
 The unique identifier of bookingAppointment

@@ -72,7 +72,10 @@ t.DirectoryServices.ServicePrincipal('0bdb123d-b8a7-4cc9-8cc2-bd17bad06f61')/app
 wr0XutBvYZsr7FiAW3pIqP4F9944yBc]}
 
 ```
-## Parameters
+
+This example gets the application role assignments that have been granted to the specified service principal.
+
+## PARAMETERS
 
 
 ### -All

@@ -67,6 +67,10 @@ State                : enabled
 AdditionalProperties : {}
 
 ```
+
+This example retrieves all the conditional access policies in Azure AD.
+
+
 ### Example 2: Get a conditional access policy by Id
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
@@ -86,7 +90,10 @@ State                : enabled
 AdditionalProperties : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies/$entity]}
 
 ```
-## Parameters
+
+This command retrieves the conditional access by Id.
+
+## PARAMETERS
 
 
 ### -All

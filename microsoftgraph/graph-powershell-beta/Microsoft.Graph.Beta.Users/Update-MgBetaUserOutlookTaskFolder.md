@@ -64,6 +64,9 @@ $params = @{
 Update-MgBetaUserOutlookTaskFolder -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserOutlookTaskFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

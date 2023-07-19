@@ -50,6 +50,7 @@ New-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

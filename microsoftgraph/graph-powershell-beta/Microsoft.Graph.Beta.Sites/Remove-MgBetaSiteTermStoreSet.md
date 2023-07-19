@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Sites
 Remove-MgBetaSiteTermStoreSet -SiteId $siteId -SetId $setId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaSiteTermStoreSet Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

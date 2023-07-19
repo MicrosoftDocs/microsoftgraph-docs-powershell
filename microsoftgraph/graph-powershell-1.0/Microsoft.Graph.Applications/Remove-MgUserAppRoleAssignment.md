@@ -39,6 +39,9 @@ Remove-MgUserAppRoleAssignment `
 -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
 
+
+This example removes the specified application role from the specified user.
+
 ## PARAMETERS
 
 ### -AppRoleAssignmentId

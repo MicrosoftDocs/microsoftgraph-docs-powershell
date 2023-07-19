@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId
 ```
 
+This example shows how to use the Remove-MgBetaUserProfileLanguage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -IfMatch

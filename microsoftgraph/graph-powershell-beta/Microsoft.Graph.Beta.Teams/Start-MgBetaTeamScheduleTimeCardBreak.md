@@ -59,6 +59,9 @@ $params = @{
 Start-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
 ```
 
+This example shows how to use the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

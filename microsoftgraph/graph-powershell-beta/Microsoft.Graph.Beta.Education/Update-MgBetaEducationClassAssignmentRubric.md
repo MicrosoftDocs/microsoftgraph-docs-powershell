@@ -50,6 +50,7 @@ Update-MgBetaEducationClassAssignmentRubric -InputObject <IEducationIdentity>
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

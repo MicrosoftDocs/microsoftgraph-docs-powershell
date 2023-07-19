@@ -31,6 +31,11 @@ Get-MgBetaApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String>
 The main logo for the application.
 Not nullable.
 
+This example shows how to use the Get-MgBetaApplicationMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ApplicationId

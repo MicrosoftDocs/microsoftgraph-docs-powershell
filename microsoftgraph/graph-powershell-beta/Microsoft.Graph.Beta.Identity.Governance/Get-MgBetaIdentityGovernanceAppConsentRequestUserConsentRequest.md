@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId -UserConsentRequestId $userConsentRequestId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

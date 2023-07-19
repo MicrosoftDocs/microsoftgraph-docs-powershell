@@ -69,6 +69,9 @@ $params = @{
 
 Update-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '61c7530f-5c1d-44b2-a972-4ae658b7a9ac' -BodyParameter $params
 
+
+This example updates and existing access policy to add the sign in risk levels.
+
 ## PARAMETERS
 
 ### -AdditionalProperties

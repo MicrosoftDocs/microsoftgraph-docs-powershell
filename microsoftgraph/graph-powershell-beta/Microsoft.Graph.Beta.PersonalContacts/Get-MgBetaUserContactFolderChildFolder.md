@@ -52,6 +52,9 @@ Import-Module Microsoft.Graph.Beta.PersonalContacts
 Get-MgBetaUserContactFolderChildFolder -UserId $userId -ContactFolderId $contactFolderId
 ```
 
+This example shows how to use the Get-MgBetaUserContactFolderChildFolder Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

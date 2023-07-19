@@ -29,6 +29,11 @@ Get-MgUserMailFolderMessageRuleCount -InputObject <IMailIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+This example shows how to use the Get-MgUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -Filter

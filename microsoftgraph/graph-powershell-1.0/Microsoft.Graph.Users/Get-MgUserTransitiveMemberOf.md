@@ -48,7 +48,12 @@ Import-Module Microsoft.Graph.Users
 Get-MgUserTransitiveMemberOf -UserId $userId
 
 ```
-## Parameters
+This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

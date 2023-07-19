@@ -77,6 +77,9 @@ $params = @{
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 ```
 
+This example shows how to use the Set-MgBetaGroupLicense Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Set-MgBetaGroupLicense Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -90,6 +93,9 @@ $params = @{
 }
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 ```
+
+This example shows how to use the Set-MgBetaGroupLicense Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

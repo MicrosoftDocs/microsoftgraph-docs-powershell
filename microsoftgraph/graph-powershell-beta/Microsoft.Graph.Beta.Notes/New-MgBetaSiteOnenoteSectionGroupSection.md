@@ -50,6 +50,7 @@ New-MgBetaSiteOnenoteSectionGroupSection -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section in the specified section group.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -53,6 +53,9 @@ $params = @{
 New-MgBetaAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaAdministrativeUnitMemberByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

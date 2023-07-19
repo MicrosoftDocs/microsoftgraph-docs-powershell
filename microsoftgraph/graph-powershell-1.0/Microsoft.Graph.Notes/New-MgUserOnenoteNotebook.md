@@ -48,6 +48,11 @@ New-MgSiteOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMicr
 ## DESCRIPTION
 Create a new page in the specified section.
 
+This example shows how to use the New-MgUserOnenoteNotebook Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

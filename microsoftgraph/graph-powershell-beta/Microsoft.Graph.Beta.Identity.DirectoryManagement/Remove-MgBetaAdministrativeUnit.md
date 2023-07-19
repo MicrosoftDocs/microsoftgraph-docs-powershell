@@ -37,7 +37,10 @@ Delete an administrativeUnit.
 Remove-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId '416f19a5-2e01-4d15-a78c-d9028fee1ebb'
 
 ```
-## Parameters
+
+This example removes the specified administrative unit.
+
+## PARAMETERS
 
 
 ### -AdministrativeUnitId

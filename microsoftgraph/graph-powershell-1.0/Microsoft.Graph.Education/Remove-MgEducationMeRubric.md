@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.Education
 Remove-MgEducationMeRubric -EducationRubricId $educationRubricId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgEducationMeRubric Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EducationRubricId
 The unique identifier of educationRubric

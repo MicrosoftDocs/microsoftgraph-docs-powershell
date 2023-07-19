@@ -71,7 +71,10 @@ ResourceApplication                         : 00000002-0000-0000-c000-0000000000
 AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
 
 ```
-## Parameters
+
+This command retrieves a specified permission grant policy exclude configuration in Azure AD.
+
+## PARAMETERS
 
 
 ### -All

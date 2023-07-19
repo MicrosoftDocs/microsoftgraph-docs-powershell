@@ -42,7 +42,12 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Remove-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgOrganizationBrandingLocalization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

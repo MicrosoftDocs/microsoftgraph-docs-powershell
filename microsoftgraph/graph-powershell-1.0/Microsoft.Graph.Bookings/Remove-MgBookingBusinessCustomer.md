@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Bookings
 Remove-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBookingBusinessCustomer Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -BookingBusinessId
 The unique identifier of bookingBusiness

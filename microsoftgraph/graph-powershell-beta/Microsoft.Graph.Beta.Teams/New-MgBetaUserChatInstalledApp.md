@@ -46,6 +46,7 @@ New-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

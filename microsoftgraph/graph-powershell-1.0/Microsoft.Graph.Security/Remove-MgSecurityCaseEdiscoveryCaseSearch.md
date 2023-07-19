@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Security
 Remove-MgSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgSecurityCaseEdiscoveryCaseSearch Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -EdiscoveryCaseId
 The unique identifier of ediscoveryCase

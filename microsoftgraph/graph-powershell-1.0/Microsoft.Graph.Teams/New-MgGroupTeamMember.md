@@ -44,6 +44,7 @@ New-MgGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 ## DESCRIPTION
 Add a new conversationMember to a team.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

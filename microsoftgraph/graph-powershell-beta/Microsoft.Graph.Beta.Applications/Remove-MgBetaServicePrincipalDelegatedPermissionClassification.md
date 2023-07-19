@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -DelegatedPermissionClassificationId
 The unique identifier of delegatedPermissionClassification

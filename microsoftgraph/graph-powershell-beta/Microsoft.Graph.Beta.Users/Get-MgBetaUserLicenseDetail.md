@@ -50,7 +50,10 @@ SkuPartNumber        : SPB
 AdditionalProperties : {}
 
 ```
-## Parameters
+
+This example retrieves the license details for the specified user.
+
+## PARAMETERS
 
 
 ### -All

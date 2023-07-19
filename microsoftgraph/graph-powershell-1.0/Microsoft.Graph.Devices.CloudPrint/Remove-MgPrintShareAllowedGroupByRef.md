@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Devices.CloudPrint
 Remove-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -GroupId $groupId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgPrintShareAllowedGroupByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -GroupId
 The unique identifier of group

@@ -63,6 +63,9 @@ $params = @{
 Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId $updatableAssetId -BodyParameter $params
 ```
 
+This example shows how to use the Add-MgBetaWindowsUpdatesUpdatableAssetMemberById Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

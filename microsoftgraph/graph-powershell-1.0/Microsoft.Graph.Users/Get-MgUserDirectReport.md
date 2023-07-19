@@ -58,7 +58,10 @@ f890ceed-822a-4647-8748-73d88013ae9d
 68906e46-27f9-4c5e-914b-b931696088fe
 
 ```
-## Parameters
+
+This example gets the direct reports for the specified user.
+
+## PARAMETERS
 
 
 ### -All

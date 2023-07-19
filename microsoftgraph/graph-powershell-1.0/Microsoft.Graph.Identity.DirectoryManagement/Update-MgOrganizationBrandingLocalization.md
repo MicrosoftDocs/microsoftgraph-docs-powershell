@@ -81,6 +81,11 @@ $params = @{
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
@@ -93,7 +98,12 @@ $params = @{
 Update-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

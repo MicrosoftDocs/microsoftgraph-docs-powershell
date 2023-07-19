@@ -30,6 +30,11 @@ Remove-MgUserOnenoteNotebook -InputObject <INotesIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property notebooks for users
 
+This example shows how to use the Remove-MgUserOnenotePage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

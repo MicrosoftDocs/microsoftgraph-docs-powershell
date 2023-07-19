@@ -86,6 +86,9 @@ $params = @{
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

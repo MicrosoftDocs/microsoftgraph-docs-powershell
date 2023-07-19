@@ -61,6 +61,9 @@ $params = @{
 Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Groups
 Remove-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaGroupThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ConversationThreadId
 The unique identifier of conversationThread

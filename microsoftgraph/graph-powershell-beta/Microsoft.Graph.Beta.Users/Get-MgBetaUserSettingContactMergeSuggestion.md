@@ -39,6 +39,9 @@ Import-Module Microsoft.Graph.Beta.Users
 Get-MgBetaUserSettingContactMergeSuggestion -UserId $userId
 ```
 
+This example shows how to use the Get-MgBetaUserSettingContactMergeSuggestion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -ExpandProperty

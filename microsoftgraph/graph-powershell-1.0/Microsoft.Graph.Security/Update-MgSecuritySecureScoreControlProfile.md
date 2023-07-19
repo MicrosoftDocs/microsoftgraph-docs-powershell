@@ -75,6 +75,11 @@ $params = @{
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
 ```
+This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Request with Prefer header
 ```powershell
 Import-Module Microsoft.Graph.Security
@@ -94,7 +99,12 @@ $params = @{
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ActionType
 Control action type (Config, Review, Behavior).

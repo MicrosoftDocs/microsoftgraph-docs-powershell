@@ -71,6 +71,9 @@ $params = @{
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
+This example shows how to use the Add-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Add-MgApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
@@ -87,6 +90,9 @@ $params = @{
 }
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
+
+This example shows how to use the Add-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

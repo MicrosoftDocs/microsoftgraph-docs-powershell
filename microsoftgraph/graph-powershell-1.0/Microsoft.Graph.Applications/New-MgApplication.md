@@ -66,6 +66,9 @@ AppId           : c678b75d-1012-4466-8655-1672192232b4
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : M365B977454.onmicrosoft.com
 
+
+This example creates a new application.
+
 ## PARAMETERS
 
 ### -AddIns

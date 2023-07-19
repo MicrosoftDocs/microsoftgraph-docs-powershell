@@ -43,6 +43,9 @@ $params = @{
 Update-MgBetaIdentityContinuouAccessEvaluationPolicy -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

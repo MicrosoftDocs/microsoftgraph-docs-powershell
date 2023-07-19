@@ -48,7 +48,12 @@ Import-Module Microsoft.Graph.Reports
 Get-MgAuditLogDirectoryAudit -DirectoryAuditId $directoryAuditId
 
 ```
-## Parameters
+This example shows how to use the Get-MgAuditLogDirectoryAudit Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

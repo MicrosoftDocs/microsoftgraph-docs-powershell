@@ -62,6 +62,7 @@ New-MgBetaChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

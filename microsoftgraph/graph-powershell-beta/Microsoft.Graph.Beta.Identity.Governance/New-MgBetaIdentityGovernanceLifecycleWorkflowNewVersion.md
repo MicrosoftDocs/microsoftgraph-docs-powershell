@@ -94,6 +94,9 @@ $params = @{
 New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion -WorkflowId $workflowId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Search
 Remove-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaExternalConnectionGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ExternalConnectionId
 The unique identifier of externalConnection

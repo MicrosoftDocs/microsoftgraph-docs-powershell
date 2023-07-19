@@ -88,7 +88,12 @@ $params = @{
 Update-MgBetaPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaPlannerTask Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ActiveChecklistItemCount
 Number of checklist items with value set to false, representing incomplete items.

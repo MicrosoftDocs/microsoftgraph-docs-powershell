@@ -39,6 +39,7 @@ Get-MgEducationUserClass -InputObject <IEducationIdentity> [-ExpandProperty <Str
 Classes to which the user belongs.
 Nullable.
 
+
 ## PARAMETERS
 
 ### -All

@@ -39,7 +39,10 @@ Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
 
 ```
-## Parameters
+
+This example removed the named location specified by `$namedLocationId`.
+
+## PARAMETERS
 
 
 ### -IfMatch

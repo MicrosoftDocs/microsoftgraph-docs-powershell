@@ -56,6 +56,9 @@ $params = @{
 Update-MgBetaDirectoryAttributeSet -AttributeSetId $attributeSetId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaDirectoryAttributeSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

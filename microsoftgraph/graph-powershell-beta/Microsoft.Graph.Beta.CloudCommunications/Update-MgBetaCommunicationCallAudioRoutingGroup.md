@@ -63,6 +63,9 @@ $params = @{
 Update-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

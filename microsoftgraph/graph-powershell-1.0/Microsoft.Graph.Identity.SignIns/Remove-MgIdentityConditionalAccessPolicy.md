@@ -39,7 +39,10 @@ Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 Remove-MgIdentityConditionalAccessPolicy -ConditionalAccessPolicyId $conditionalAccessPolicyId
 
 ```
-## Parameters
+
+This example deletes the conditional access policy specified by `$conditionalAccessPolicyId`.
+
+## PARAMETERS
 
 
 ### -ConditionalAccessPolicyId

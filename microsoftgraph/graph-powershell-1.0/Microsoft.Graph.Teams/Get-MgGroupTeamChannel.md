@@ -56,6 +56,7 @@ Get-MgGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 List of channels either hosted in or shared with the team (incoming channels).
 
+
 ## PARAMETERS
 
 ### -All

@@ -51,7 +51,12 @@ Import-Module Microsoft.Graph.DirectoryObjects
 Get-MgDirectoryObject -DirectoryObjectId $directoryObjectId
 
 ```
-## Parameters
+This example shows how to use the Update-MgDirectoryObject Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

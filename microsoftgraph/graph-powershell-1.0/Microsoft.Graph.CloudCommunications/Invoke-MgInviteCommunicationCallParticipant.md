@@ -79,6 +79,9 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -99,6 +102,9 @@ $params = @{
 }
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 3: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
@@ -123,6 +129,9 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 4: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -146,6 +155,9 @@ $params = @{
 }
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ### Example 5: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
@@ -182,6 +194,9 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 6: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -205,6 +220,9 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 7: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -227,6 +245,9 @@ $params = @{
 }
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
+
+This example shows how to use the Invoke-MgInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

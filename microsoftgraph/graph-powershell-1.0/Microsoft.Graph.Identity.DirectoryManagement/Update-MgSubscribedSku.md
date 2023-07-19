@@ -57,7 +57,12 @@ Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgSubscribedSku -SubscribedSkuId $subscribedSkuId
 
 ```
-## Parameters
+This example shows how to use the Update-MgSubscribedSku Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccountId
 .

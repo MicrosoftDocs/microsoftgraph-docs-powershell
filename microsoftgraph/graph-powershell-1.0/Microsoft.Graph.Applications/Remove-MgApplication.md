@@ -41,7 +41,10 @@ After that time, they are permanently deleted.
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 
 ```
-## Parameters
+
+This example deletes the specified application.
+
+## PARAMETERS
 
 
 ### -ApplicationId

@@ -48,6 +48,9 @@ Import-Module Microsoft.Graph.Beta.Users.Actions
 Invoke-MgBetaInvalidateUserRefreshToken -UserId $userId
 ```
 
+This example shows how to use the Invoke-MgBetaInvalidateUserRefreshToken Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -InputObject

@@ -71,6 +71,9 @@ $params = @{
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
+This example shows how to use the Add-MgBetaApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Using the Add-MgBetaApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -87,6 +90,9 @@ $params = @{
 }
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
+
+This example shows how to use the Add-MgBetaApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

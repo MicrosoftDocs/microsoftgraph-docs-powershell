@@ -97,7 +97,12 @@ $params = @{
 Update-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -Activities
 The list of recent activities that took place on this item.

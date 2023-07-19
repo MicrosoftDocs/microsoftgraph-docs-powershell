@@ -37,7 +37,12 @@ Remove a user's manager.
 Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 
 ```
-## Parameters
+This example shows how to use the Remove-MgUserOutlookMasterCategory Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 
 ### -IfMatch

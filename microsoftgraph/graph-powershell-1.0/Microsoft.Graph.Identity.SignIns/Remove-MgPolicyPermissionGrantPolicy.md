@@ -38,7 +38,10 @@ Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.Permission
 Remove-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
 
 ```
-## Parameters
+
+This command deletes the specified permission grant policy in Azure AD.
+
+## PARAMETERS
 
 
 ### -IfMatch

@@ -47,7 +47,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 
 ```
-## Parameters
+This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessReviewInstanceId
 The unique identifier of accessReviewInstance

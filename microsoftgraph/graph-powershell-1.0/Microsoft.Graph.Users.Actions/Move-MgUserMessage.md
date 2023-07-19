@@ -58,6 +58,9 @@ $params = @{
 Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
 
+This example shows how to use the Move-MgUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

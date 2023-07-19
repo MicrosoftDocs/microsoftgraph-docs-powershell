@@ -62,6 +62,9 @@ $params = @{
 Update-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserProfilePatent Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

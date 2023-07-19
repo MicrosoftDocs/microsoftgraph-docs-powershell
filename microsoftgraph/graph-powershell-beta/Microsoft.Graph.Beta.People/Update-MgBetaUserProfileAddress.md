@@ -62,6 +62,9 @@ $params = @{
 Update-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaUserProfileAddress Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

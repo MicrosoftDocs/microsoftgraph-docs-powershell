@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Teams
 Remove-MgUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgUserTeamworkInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -IfMatch
 ETag

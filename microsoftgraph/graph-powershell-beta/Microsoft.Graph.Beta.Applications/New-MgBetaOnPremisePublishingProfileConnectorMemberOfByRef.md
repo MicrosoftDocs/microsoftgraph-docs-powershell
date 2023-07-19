@@ -55,6 +55,9 @@ $params = @{
 New-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorMemberOfByRef Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

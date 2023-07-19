@@ -57,6 +57,11 @@ $params = @{
 
 Get-MgBetaDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
+This example shows how to use the Get-MgBetaDeviceMemberObject Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

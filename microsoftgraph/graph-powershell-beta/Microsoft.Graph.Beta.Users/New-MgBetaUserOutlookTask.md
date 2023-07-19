@@ -86,6 +86,9 @@ $params = @{
 New-MgBetaUserOutlookTask -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaUserOutlookTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -60,6 +60,9 @@ $params = @{
 Remove-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
+This example shows how to use the Remove-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

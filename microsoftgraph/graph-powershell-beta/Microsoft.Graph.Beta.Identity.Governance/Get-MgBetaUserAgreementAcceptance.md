@@ -50,6 +50,9 @@ Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaUserAgreementAcceptance -UserId $userId
 ```
 
+This example shows how to use the Get-MgBetaUserAgreementAcceptance Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AgreementAcceptanceId

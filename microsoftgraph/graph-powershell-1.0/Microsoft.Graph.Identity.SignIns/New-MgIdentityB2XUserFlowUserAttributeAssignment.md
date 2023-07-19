@@ -69,7 +69,12 @@ $params = @{
 New-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

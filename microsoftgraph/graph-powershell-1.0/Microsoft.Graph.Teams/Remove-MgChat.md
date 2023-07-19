@@ -42,7 +42,12 @@ $params = @{
 Update-MgChat -ChatId $chatId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Remove-MgChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -ChatId
 The unique identifier of chat

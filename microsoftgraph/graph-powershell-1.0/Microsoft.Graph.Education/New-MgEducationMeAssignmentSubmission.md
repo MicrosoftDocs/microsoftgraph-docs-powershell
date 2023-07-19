@@ -66,7 +66,12 @@ Import-Module Microsoft.Graph.Education
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
 
 ```
-## Parameters
+This example shows how to use the New-MgEducationMeAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

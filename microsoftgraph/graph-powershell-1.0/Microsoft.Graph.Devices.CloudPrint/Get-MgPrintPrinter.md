@@ -45,6 +45,11 @@ Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintPrinter -PrinterId $printerId
 
 ```
+This example shows how to use the Get-MgPrintPrinter Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Get a printer and its capabilities
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
@@ -52,7 +57,12 @@ Import-Module Microsoft.Graph.Devices.CloudPrint
 Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
 
 ```
-## Parameters
+This example shows how to use the Get-MgPrintPrinter Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

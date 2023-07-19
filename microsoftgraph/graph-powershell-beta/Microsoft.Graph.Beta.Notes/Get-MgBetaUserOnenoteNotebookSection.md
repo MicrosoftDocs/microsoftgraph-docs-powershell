@@ -33,6 +33,9 @@ Import-Module Microsoft.Graph.Beta.Notes
 Get-MgBetaUserOnenoteNotebookSection -UserId $userId -NotebookId $notebookId
 ```
 
+This example shows how to use the Get-MgBetaUserOnenoteNotebookSection Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -All

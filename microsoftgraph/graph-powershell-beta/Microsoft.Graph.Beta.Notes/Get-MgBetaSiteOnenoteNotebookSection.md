@@ -29,6 +29,11 @@ Get-MgBetaSiteOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+This example shows how to use the Get-MgBetaSiteOnenoteNotebookSection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -Filter

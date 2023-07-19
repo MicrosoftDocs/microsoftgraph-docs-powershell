@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Beta.SchemaExtensions
 Get-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaSchemaExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

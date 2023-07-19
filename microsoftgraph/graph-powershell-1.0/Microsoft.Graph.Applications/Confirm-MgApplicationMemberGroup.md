@@ -40,6 +40,11 @@ Import-Module Microsoft.Graph.Applications
 Clear-MgApplicationVerifiedPublisher -ApplicationId $applicationId
 ```
 
+This example shows how to use the Confirm-MgApplicationMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ApplicationId

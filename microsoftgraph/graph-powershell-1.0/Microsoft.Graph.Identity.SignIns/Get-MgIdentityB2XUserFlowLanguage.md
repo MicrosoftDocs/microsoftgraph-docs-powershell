@@ -50,7 +50,12 @@ Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgIdentityB2XUserFlowLanguage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 Get-MgBetaServiceAnnouncementMessage
 
 ```
-## Parameters
+This example shows how to use the Set-MgBetaBetaServiceAnnouncementMessageAttachmentArchive Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -Data
 .

@@ -46,7 +46,12 @@ Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -CaseOperationId $caseOperationId
 
 ```
-## Parameters
+This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseOperation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -All
 List all pages.

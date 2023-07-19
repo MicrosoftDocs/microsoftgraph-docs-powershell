@@ -30,6 +30,11 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 
+This example shows how to use the Get-MgUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

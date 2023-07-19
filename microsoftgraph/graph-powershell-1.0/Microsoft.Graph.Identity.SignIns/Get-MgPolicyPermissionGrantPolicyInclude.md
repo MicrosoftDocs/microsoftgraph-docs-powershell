@@ -59,7 +59,11 @@ ResourceApplication                         : any
 AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
 
 ```
-## Parameters
+
+This command retrieves a specified permission grant policy include configuration in Azure AD.
+
+
+## PARAMETERS
 
 
 ### -All

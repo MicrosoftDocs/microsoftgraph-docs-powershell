@@ -90,6 +90,9 @@ $params = @{
 Update-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 ```
 
+This example shows how to use the Update-MgBetaBookingBusinessAppointment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalInformation

@@ -50,6 +50,9 @@ $params = @{
 Confirm-MgBetaAuditLogSignInSafe -BodyParameter $params
 ```
 
+This example shows how to use the Confirm-MgBetaAuditLogSignInSafe Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties

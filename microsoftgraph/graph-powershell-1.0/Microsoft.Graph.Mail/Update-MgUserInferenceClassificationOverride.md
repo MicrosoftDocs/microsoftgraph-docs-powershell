@@ -43,6 +43,11 @@ Update-MgUserInferenceClassification -InputObject <IMailIdentity>
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
 
+This example shows how to use the Update-MgUserInferenceClassificationOverride Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

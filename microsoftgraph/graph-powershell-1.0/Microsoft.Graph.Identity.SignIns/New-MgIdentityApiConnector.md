@@ -49,6 +49,11 @@ $params = @{
 New-MgIdentityApiConnector -BodyParameter $params
 
 ```
+This example shows how to use the New-MgIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Create an API connector with client certificate authentication
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -66,7 +71,12 @@ $params = @{
 New-MgIdentityApiConnector -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

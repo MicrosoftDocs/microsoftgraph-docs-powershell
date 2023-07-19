@@ -41,7 +41,12 @@ Import-Module Microsoft.Graph.CloudCommunications
 Remove-MgCommunicationCall -CallId $callId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgCommunicationCall Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -CallId
 The unique identifier of call

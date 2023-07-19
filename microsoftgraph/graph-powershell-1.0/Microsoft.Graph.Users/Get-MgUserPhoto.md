@@ -61,7 +61,10 @@ Id      Height Width
 240X240 240    240
 
 ```
-## Parameters
+
+This example retrieves the profile photo properties for the specified user.
+
+## PARAMETERS
 
 
 ### -All

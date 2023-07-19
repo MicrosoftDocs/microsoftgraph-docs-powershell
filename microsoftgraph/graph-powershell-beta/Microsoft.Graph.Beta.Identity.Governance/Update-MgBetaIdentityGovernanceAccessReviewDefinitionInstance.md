@@ -114,7 +114,12 @@ $params = @{
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessReviewInstanceId
 The unique identifier of accessReviewInstance

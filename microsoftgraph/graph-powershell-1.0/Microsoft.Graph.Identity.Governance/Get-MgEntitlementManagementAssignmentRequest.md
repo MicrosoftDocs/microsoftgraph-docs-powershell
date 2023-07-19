@@ -58,7 +58,12 @@ Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 
 ```
-## Parameters
+This example shows how to use the Get-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackageAssignmentRequestId
 The unique identifier of accessPackageAssignmentRequest

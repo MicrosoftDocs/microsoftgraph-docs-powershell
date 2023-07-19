@@ -56,6 +56,11 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 2: Remove an assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
@@ -70,6 +75,11 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 3: Request an assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
@@ -84,6 +94,11 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 4: Request an assignment by providing answers to questions
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
@@ -119,6 +134,11 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ### Example 5: Request an update to answers for an assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
@@ -154,7 +174,12 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the New-MgEntitlementManagementAssignmentRequest Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AccessPackage
 accessPackage

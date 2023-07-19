@@ -82,7 +82,12 @@ $params = @{
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
 
 ```
-## Parameters
+This example shows how to use the Update-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters

@@ -30,6 +30,7 @@ Get-MgGroupTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandPr
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
 
+
 ## PARAMETERS
 
 ### -ExpandProperty

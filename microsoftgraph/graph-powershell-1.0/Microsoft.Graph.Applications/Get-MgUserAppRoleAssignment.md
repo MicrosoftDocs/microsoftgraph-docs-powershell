@@ -61,6 +61,9 @@ PrincipalId          : 529827aa-d058-4821-a012-4de3ce093955
 PrincipalType        : User
 ResourceDisplayName  : dxprovisioning-worker-mfa
 
+
+This command gets all the application roles that the selected user has been assigned.
+
 ## PARAMETERS
 
 ### -All

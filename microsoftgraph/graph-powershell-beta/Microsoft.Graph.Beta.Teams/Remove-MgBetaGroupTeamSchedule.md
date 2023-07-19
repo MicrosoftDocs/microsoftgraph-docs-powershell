@@ -39,7 +39,12 @@ Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamSchedule -TeamId $teamId
 
 ```
-## Parameters
+This example shows how to use the Remove-MgBetaBetaGroupTeamSchedule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
+## PARAMETERS
 
 ### -GroupId
 The unique identifier of group

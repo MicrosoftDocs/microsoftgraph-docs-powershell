@@ -65,6 +65,10 @@ https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('mic
 https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
 
 ```
+
+This command retrieves a list of all permission grant policies in Azure AD.
+
+
 ### Example 2: Get a permission grant policy by ID
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
@@ -80,7 +84,11 @@ AdditionalProperties : {[@odata.context, https://graph.microsoft.com/beta/$metad
 [includes@odata.context, https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions')/includes]…}
 
 ```
-## Parameters
+
+This command retrieves a specified permission grant policy in Azure AD.
+
+
+## PARAMETERS
 
 
 ### -All

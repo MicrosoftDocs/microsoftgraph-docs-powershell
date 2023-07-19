@@ -61,6 +61,9 @@ $params = @{
 New-MgBetaUserProfileEmail -UserId $userId -BodyParameter $params
 ```
 
+This example shows how to use the New-MgBetaUserProfileEmail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ## PARAMETERS
 
 ### -AdditionalProperties
