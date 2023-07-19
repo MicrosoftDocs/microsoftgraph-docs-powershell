@@ -65,16 +65,7 @@ $params = @{
 	developerId = "UBF8T346G9"
 	serviceId = "com.microsoft.rts.b2c.test.client"
 	keyId = "99P6D879C4"
-	certificateData = "******"
-}
-
-New-MgBetaIdentityProvider -BodyParameter $params
-```
-This example shows how to use the New-MgBetaIdentityProvider Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
+	certificateData = "
 ## PARAMETERS
 
 ### -AdditionalProperties

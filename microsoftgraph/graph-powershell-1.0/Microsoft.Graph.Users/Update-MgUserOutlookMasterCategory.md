@@ -48,9 +48,9 @@ Update-MgUserMailboxSetting -InputObject <IUsersIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-This example shows how to use the Update-MgUserOutlookMasterCategory Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

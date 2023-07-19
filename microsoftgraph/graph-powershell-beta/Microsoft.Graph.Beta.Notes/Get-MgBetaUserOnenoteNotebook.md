@@ -28,9 +28,9 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
-This example shows how to use the Get-MgBetaUserOnenoteNotebook Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

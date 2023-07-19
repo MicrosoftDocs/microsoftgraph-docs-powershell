@@ -50,7 +50,7 @@ Create new navigation property to pages for groups
 
 This example shows how to use the New-MgBetaBetaGroupOnenoteSectionGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 
 ## PARAMETERS

@@ -30,9 +30,9 @@ Remove-MgUserTodoListTaskExtension -InputObject <IUsersIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property extensions for users
 
-This example shows how to use the Remove-MgUserTodoListTaskLinkedResource Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

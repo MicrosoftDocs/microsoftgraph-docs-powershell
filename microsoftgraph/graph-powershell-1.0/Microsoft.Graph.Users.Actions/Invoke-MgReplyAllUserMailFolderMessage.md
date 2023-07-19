@@ -30,9 +30,9 @@ Invoke-MgReauthorizeUserDriveRootSubscription -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-This example shows how to use the Invoke-MgReplyAllUserMailFolderMessage Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

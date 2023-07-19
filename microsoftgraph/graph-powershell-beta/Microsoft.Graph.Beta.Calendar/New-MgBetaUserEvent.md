@@ -76,9 +76,9 @@ New-MgBetaUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParamet
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
-This example shows how to use the New-MgBetaUserEvent Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

@@ -30,9 +30,9 @@ Remove-MgUserMessageAttachment -InputObject <IMailIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property attachments for users
 
-This example shows how to use the Remove-MgUserMessageExtension Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

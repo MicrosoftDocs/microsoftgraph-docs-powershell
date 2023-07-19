@@ -29,9 +29,9 @@ Get-MgGroupOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <String>]
 ## DESCRIPTION
 Get the number of the resource
 
-This example shows how to use the Get-MgGroupOnenoteNotebookSectionGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

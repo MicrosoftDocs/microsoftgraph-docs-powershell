@@ -42,9 +42,9 @@ Update-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property extensions in users
 
-This example shows how to use the Update-MgUserContactFolder Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

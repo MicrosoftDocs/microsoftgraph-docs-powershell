@@ -29,9 +29,9 @@ New-MgCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatIf] [
 ## DESCRIPTION
 Create new navigation property to presences for communications
 
-This example shows how to use the New-MgUserOnlineMeeting Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

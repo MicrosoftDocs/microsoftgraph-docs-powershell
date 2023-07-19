@@ -31,9 +31,9 @@ Get-MgBetaGroupPermissionGrantDelta -InputObject <IGroupsIdentity> [-Filter <Str
 ## DESCRIPTION
 Invoke function delta
 
-This example shows how to use the Get-MgBetaGroupPermissionGrantMemberGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

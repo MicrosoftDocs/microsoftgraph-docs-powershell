@@ -30,9 +30,9 @@ Get-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutFile 
 ## DESCRIPTION
 Get media content for the navigation property photo from users
 
-This example shows how to use the New-MgUserContact Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

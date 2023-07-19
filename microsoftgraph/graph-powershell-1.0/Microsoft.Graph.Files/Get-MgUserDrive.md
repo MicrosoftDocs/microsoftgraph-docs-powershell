@@ -30,9 +30,9 @@ Get-MgShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 Used to access the underlying site
 
-This example shows how to use the Get-MgUserDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

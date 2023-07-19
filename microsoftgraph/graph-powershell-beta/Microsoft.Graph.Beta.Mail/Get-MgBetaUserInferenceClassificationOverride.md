@@ -30,7 +30,7 @@ Relevance classification of the user's messages based on explicit designations w
 
 This example shows how to use the Get-MgBetaBetaUserInferenceClassificationOverride Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 
 ## PARAMETERS

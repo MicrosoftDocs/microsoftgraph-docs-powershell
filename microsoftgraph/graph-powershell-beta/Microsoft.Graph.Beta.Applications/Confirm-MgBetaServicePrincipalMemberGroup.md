@@ -44,9 +44,9 @@ Confirm-MgBetaApplicationMemberObject -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-This example shows how to use the Confirm-MgBetaServicePrincipalMemberGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

@@ -46,9 +46,9 @@ Invoke-MgBetaDeprovisionUserManagedDevice -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Invoke action deprovision
 
-This example shows how to use the Invoke-MgBetaDismissUserEventInstanceReminder Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

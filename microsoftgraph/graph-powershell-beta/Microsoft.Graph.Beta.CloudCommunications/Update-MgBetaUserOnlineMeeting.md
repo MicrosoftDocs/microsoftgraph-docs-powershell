@@ -46,9 +46,9 @@ Update-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property presences in communications
 
-This example shows how to use the Update-MgBetaUserOnlineMeeting Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

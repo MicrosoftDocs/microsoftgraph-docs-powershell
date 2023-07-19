@@ -44,9 +44,9 @@ Confirm-MgBetaContactMemberObject -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-This example shows how to use the Confirm-MgBetaContractMemberGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

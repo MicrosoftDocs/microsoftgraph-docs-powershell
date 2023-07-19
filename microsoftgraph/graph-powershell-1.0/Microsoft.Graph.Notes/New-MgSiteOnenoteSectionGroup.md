@@ -54,9 +54,9 @@ To create a page in a different section in the default notebook, you can use the
 Example: `../onenote/pages?sectionName=My%20section` The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
-This example shows how to use the New-MgSiteOnenoteSectionGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

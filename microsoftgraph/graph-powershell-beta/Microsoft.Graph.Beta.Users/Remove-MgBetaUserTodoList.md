@@ -30,9 +30,9 @@ Remove-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete navigation property shiftPreferences for users
 
-This example shows how to use the Remove-MgBetaUserTodoList Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

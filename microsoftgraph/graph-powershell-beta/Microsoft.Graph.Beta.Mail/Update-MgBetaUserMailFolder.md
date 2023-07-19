@@ -43,9 +43,9 @@ Update-MgBetaUserInferenceClassification -InputObject <IMailIdentity>
 ## DESCRIPTION
 Update the navigation property inferenceClassification in users
 
-This example shows how to use the Update-MgBetaUserMailFolder Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

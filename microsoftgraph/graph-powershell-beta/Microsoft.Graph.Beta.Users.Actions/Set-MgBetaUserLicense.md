@@ -58,12 +58,22 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgBetaSubscribedSku -All ### Example 1: Assign a license to a user### Example 2: Assign more than one licenses to a user
+$EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+
+Set-MgBetaUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses @{SkuId = $EmsSku.SkuId} -RemoveLicenses @()
+
+Id                                   DisplayName   Mail UserPrincipalName                     UserType
+--                                   -----------   ---- -----------------                     --------
+38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+```
+
+This example assigns a license from the ### Example 2: Assign more than one licenses to a user
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgBetaSubscribedSku -All  Where SkuPartNumber -eq 'FLOW_FREE'
+$EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$FlowSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'FLOW_FREE'
 $addLicenses = @(
   @{SkuId = $EmsSku.SkuId},
   @{SkuId = $FlowSku.SkuId}
@@ -75,18 +85,59 @@ Id                                   DisplayName   Mail UserPrincipalName       
 --                                   -----------   ---- -----------------                     --------
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 ```
-### Example 3: Assign a license to a user with some disabled plans
+
+This example assigns ### Example 3: Assign a license to a user with some disabled plans
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgBetaSubscribedSku -All  where ServicePlanName -in ("MFA_PREMIUM", "INTUNE_A") ### Example 4: Update a license assigned to a user to add more disabled plans leaving the user's existing disabled plans in their current state
+$EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$disabledPlans = $EmsSku.ServicePlans | where ServicePlanName -in ("MFA_PREMIUM", "INTUNE_A") | Select -ExpandProperty ServicePlanId
+$addLicenses = @(
+  @{SkuId = $EmsSku.SkuId
+  DisabledPlans = $disabledPlans
+  }
+  )
+
+Set-MgBetaUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
+
+Id                                   DisplayName   Mail UserPrincipalName                     UserType
+--                                   -----------   ---- -----------------                     --------
+38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+```
+
+This example assigns ### Example 4: Update a license assigned to a user to add more disabled plans leaving the user's existing disabled plans in their current state
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgBetaSubscribedSku -All 
-  Where ProvisioningStatus -eq "Disabled" ### Example 5: Assign licenses to a user by copying the license assignment from another user
+$EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+$userLicense = Get-MgBetaUserLicenseDetail -UserId "38955658-c844-4f59-9430-6519430ac89b"
+
+$userDisabledPlans = $userLicense.ServicePlans |
+  Where ProvisioningStatus -eq "Disabled" |
+  Select -ExpandProperty ServicePlanId
+
+$newDisabledPlans = $EmsSku.ServicePlans |
+  Where ServicePlanName -in ("AAD_PREMIUM_P2", "AAD_PREMIUM") |
+  Select -ExpandProperty ServicePlanId
+
+$disabledPlans = $userDisabledPlans + $newDisabledPlans | Select -Unique
+
+$addLicenses = @(
+  @{SkuId = $EmsSku.SkuId
+  DisabledPlans = $disabledPlans
+  }
+  )
+
+Set-MgBetaUserLicense -UserId '38955658-c844-4f59-9430-6519430ac89b' -AddLicenses $addLicenses -RemoveLicenses @()
+
+Id                                   DisplayName   Mail UserPrincipalName                     UserType
+--                                   -----------   ---- -----------------                     --------
+38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+```
+
+This example updates the ### Example 5: Assign licenses to a user by copying the license assignment from another user
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
@@ -102,14 +153,21 @@ Id                                   DisplayName    Mail UserPrincipalName      
 82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
 ```
 
-This examples copies the license assignment of user **38955658-c844-4f59-9430-6519430ac89b** and assigns it to user **82f51c98-7221-442f-8329-3faf9fe022f1**.
-
-### Example 6: Remove a license assigned to a user
+This examples copies the license assignment of user ### Example 6: Remove a license assigned to a user
 
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
-$EmsSku = Get-MgBetaSubscribedSku -All ### Example 6: Remove a license assigned to a user
+$EmsSku = Get-MgBetaSubscribedSku -All | Where SkuPartNumber -eq 'EMSPREMIUM'
+
+Set-MgBetaUserLicense -UserId "38955658-c844-4f59-9430-6519430ac89b" -AddLicenses @() -RemoveLicenses @($EmsSku.SkuId)
+
+Id                                   DisplayName   Mail UserPrincipalName                     UserType
+--                                   -----------   ---- -----------------                     --------
+38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
+```
+
+This example removes the 
 ## PARAMETERS
 
 

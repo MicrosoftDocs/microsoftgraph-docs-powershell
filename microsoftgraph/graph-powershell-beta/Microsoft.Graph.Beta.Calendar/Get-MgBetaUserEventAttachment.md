@@ -32,7 +32,7 @@ To get expanded event instances, you can get the calendar view, or\nget the inst
 
 This example shows how to use the Get-MgBetaBetaUserEventAttachment Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 
 ## PARAMETERS

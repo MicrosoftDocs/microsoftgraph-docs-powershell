@@ -28,9 +28,9 @@ Get-MgUserMessageCount -InputObject <IMailIdentity> [-Filter <String>] [-Search 
 ## DESCRIPTION
 Get the number of the resource
 
-This example shows how to use the Get-MgUserMessageExtension Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

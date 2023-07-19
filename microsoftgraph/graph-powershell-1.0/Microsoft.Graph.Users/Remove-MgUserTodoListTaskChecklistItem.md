@@ -31,9 +31,9 @@ Remove-MgUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-IfMat
 ## DESCRIPTION
 Delete navigation property attachmentSessions for users
 
-This example shows how to use the Remove-MgUserTodoListTaskChecklistItem Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

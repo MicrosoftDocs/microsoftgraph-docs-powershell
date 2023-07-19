@@ -44,9 +44,9 @@ Confirm-MgDirectoryDeletedItemMemberObject -InputObject <IIdentityDirectoryManag
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-This example shows how to use the Confirm-MgDirectoryRoleMemberGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

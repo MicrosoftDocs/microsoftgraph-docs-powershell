@@ -32,9 +32,9 @@ Remove-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-IfMatch <
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
 See the table in the Permissions section for the list of resources that support open extensions.
 
-This example shows how to use the Remove-MgUserMailFolderMessageRule Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

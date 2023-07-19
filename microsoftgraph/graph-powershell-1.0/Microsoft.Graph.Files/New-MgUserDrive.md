@@ -37,9 +37,9 @@ New-MgShareSharedDriveItemSharedDriveItem -BodyParameter <IMicrosoftGraphSharedD
 ## DESCRIPTION
 Add new entity to shares
 
-This example shows how to use the New-MgUserDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

@@ -30,9 +30,9 @@ Unpublish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Unpublish a [contentType][] from a content type hub site.
 
-This example shows how to use the Update-MgDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

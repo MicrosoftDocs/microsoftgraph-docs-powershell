@@ -44,9 +44,9 @@ Confirm-MgBetaDirectoryAdministrativeUnitMemberObject -InputObject <IIdentityDir
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
-This example shows how to use the Confirm-MgBetaDirectoryDeletedItemMemberGroup Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

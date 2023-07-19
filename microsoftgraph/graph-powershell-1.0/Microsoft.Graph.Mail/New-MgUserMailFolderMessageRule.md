@@ -48,9 +48,9 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-This example shows how to use the New-MgUserMailFolderMessageRule Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

@@ -46,9 +46,9 @@ Update-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the navigation property notifications in users
 
-This example shows how to use the Update-MgBetaUserOutlookMasterCategory Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

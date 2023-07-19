@@ -30,9 +30,9 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <S
 ## DESCRIPTION
 Update media content for the navigation property photo in users
 
-This example shows how to use the Update-MgUserContact Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

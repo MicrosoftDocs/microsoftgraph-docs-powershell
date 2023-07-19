@@ -30,9 +30,9 @@ Remove-MgBetaUserMessageAttachment -InputObject <IMailIdentity> [-IfMatch <Strin
 ## DESCRIPTION
 Delete navigation property attachments for users
 
-This example shows how to use the Remove-MgBetaUserMessageExtension Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

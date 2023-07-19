@@ -44,9 +44,9 @@ New-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to usageRights for users
 
-This example shows how to use the Remove-MgBetaUserActivity Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

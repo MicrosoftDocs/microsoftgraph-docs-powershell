@@ -53,10 +53,12 @@ This requires the use of the Teams policy-based recording solution.
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
 	ClientContext = "clientContext-value"
-	Status = "notRecording  failed"
+	Status = "notRecording | recording | failed"
 }
 Update-MgCommunicationCallRecordingStatus -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Update-MgCommunicationCallRecordingStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

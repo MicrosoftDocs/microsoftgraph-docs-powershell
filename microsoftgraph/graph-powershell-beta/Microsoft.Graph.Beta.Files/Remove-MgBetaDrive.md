@@ -30,9 +30,9 @@ Publish-MgBetaShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-W
 ## DESCRIPTION
 Publishes a [contentType][] present in a content type hub site.
 
-This example shows how to use the Remove-MgBetaDrive Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 
 ## PARAMETERS

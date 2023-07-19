@@ -50,7 +50,7 @@ Add (pin) a tab to the specified chat.
 
 This example shows how to use the New-MgBetaBetaUserTeamworkAssociatedTeam Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 
 ## PARAMETERS
