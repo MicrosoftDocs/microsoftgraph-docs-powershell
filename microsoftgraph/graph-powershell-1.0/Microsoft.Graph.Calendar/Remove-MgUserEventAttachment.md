@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete calendarPermission.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Remove-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -211,6 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
+[Remove-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEventAttachment?view=graph-powershell-beta)
 
 

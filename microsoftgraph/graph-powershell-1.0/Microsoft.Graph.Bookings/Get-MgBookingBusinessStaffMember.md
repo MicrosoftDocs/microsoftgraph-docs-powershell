@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -265,5 +265,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+[Get-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
 

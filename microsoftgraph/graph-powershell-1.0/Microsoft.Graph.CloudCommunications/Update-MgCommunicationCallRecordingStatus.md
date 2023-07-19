@@ -12,7 +12,7 @@ Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -224,5 +224,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
+[Update-MgBetaCommunicationCallRecordingStatus](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallRecordingStatus?view=graph-powershell-beta)
 

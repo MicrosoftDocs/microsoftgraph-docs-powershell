@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the specified permissions object of a user or group calendar that has been shared.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -281,6 +281,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserCalendarPermission?view=graph-powershell-beta)
+[Get-MgBetaUserCalendarPermission](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserCalendarPermission?view=graph-powershell-beta)
 
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties of a contentSharingSession object in a call.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -283,6 +283,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
+[Get-MgBetaCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaCommunicationCallContentSharingSession?view=graph-powershell-beta)
 
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to sessions for communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -625,9 +625,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: UTC time when the segment started. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ## RELATED LINKS
-[New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
+[New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
+[New-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
 
 

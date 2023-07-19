@@ -11,7 +11,7 @@ schema: 2.0.0
 Get an event object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -247,6 +247,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+[Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEvent?view=graph-powershell-beta)
 
 

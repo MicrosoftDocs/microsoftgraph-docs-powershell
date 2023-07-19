@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to presences for communications
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -171,5 +171,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
 
 ## RELATED LINKS
-[New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
+[New-MgBetaUserOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/New-MgBetaUserOnlineMeeting?view=graph-powershell-beta)
 

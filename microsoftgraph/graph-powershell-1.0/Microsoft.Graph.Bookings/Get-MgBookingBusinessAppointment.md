@@ -12,7 +12,7 @@ Get the properties and relationships of a bookingAppointment object in the speci
 The **startDateTime** and **endDateTime** properties are always returned in UTC.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -279,6 +279,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+[Get-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Get-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 
 

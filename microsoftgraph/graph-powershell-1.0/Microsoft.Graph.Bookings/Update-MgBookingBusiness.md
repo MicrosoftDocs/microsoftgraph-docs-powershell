@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a bookingBusiness object.
 
 > [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+> To view the beta release of this cmdlet, view [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -788,9 +788,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+[Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
 
 
