@@ -35,7 +35,7 @@ Add new entity to privilegedRoleAssignmentRequests
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

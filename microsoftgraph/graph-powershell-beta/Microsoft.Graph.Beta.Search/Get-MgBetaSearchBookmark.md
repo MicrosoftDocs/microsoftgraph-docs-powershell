@@ -39,13 +39,13 @@ Read the properties and relationships of a bookmark object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark -BookmarkId $bookmarkId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark

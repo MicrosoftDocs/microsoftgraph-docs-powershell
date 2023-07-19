@@ -42,13 +42,13 @@ For details, see the examples section.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgReassignEducationClassAssignmentSubmission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Invoke-MgReassignEducationClassAssignmentSubmission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
 Invoke-MgReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId

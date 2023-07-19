@@ -37,7 +37,7 @@ The maximum count of users to dismiss in one call is 60.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaDismissRiskyUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

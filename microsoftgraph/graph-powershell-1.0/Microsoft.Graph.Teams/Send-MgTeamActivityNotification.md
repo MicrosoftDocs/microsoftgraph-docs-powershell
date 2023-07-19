@@ -52,7 +52,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -79,7 +79,7 @@ $params = @{
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -105,7 +105,7 @@ $params = @{
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -135,7 +135,7 @@ $params = @{
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{

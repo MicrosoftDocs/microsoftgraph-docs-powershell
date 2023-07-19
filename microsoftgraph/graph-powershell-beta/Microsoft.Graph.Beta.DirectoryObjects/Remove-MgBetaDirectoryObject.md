@@ -32,7 +32,7 @@ Delete a directory object, for example, a group, user, application, or service p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 

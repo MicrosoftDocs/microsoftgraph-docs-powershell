@@ -42,7 +42,7 @@ A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId

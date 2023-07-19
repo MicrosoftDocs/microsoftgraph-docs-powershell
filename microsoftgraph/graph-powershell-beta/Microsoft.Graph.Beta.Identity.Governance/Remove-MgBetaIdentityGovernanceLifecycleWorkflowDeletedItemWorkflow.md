@@ -32,7 +32,7 @@ Delete a workflow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId

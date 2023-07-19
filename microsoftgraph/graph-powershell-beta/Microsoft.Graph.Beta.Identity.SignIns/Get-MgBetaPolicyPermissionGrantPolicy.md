@@ -39,7 +39,7 @@ Retrieve a single permissionGrantPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1:  List all permission grant policies
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant"  
 Get-MgBetaPolicyPermissionGrantPolicy | fl
@@ -65,7 +65,7 @@ AdditionalProperties : {[includeAllPreApprovedApplications, False], [resourceSco
                        https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/includes], [excludes@odata.context,
                        https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
 
-### EXAMPLE 2
+### Example 2: Get a permission grant policy by ID
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant"  
 Get-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl

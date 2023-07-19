@@ -38,7 +38,7 @@ Retrieve the properties and relationships of domain object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of domain objects
 ```powershell
 Get-MgBetaDomain | Format-List
 ```

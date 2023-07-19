@@ -34,7 +34,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restore-MgSiteListItemVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId

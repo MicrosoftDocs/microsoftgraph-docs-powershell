@@ -32,7 +32,7 @@ Delete a bookingBusiness object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Remove-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId

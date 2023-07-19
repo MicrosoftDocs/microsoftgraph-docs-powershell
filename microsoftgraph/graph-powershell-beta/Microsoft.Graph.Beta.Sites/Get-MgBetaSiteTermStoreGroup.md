@@ -39,14 +39,14 @@ Read the properties and relationships of a term store group object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a termStore group
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
 
 ```
-### Example 2
+### Example 2: Get a site collection termStore group and its parent site ID
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 

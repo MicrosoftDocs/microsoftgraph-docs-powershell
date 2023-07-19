@@ -56,7 +56,7 @@ Update servicePrincipal can be used to perform an update instead.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgServicePrincipalKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
@@ -71,7 +71,7 @@ $params = @{
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Add-MgServicePrincipalKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{

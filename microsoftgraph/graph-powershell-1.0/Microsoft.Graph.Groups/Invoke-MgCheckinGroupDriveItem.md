@@ -47,7 +47,7 @@ Check in a checked out **driveItem** resource, which makes the version of the do
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 ```

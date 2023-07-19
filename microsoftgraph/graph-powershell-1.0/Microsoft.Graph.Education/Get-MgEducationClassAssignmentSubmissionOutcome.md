@@ -41,14 +41,14 @@ Get outcomes from education
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get all outcomes
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ```
-### Example 2
+### Example 2: Get outcomes filtered by outcome type
 ```powershell
 Import-Module Microsoft.Graph.Education
 

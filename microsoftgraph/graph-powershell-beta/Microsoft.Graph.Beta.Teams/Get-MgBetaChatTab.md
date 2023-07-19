@@ -39,7 +39,7 @@ Retrieve the properties and relationships of the specified tab in a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

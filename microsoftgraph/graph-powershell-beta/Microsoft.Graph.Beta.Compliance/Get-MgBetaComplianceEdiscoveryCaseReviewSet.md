@@ -39,13 +39,13 @@ Retrieve the properties and relationships of a reviewSet object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -ReviewSetId $reviewSetId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId

@@ -39,7 +39,7 @@ The collection of the sub-sites under this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSubSite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSubSite -SiteId $siteId

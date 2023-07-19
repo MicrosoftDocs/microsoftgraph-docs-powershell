@@ -39,19 +39,19 @@ Read the properties and relationships of a run object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowRun Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowRun -WorkflowId $workflowId -RunId $runId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowRun Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowRun -WorkflowId $workflowId
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowRun Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowRun -WorkflowId $workflowId -RunId $runId

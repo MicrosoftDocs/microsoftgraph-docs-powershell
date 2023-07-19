@@ -42,25 +42,25 @@ Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId

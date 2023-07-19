@@ -38,7 +38,7 @@ Create new navigation property to secureScoreControlProfiles for security
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 

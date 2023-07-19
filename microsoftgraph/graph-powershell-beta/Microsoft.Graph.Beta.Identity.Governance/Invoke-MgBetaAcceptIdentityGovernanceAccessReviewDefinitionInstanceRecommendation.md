@@ -37,7 +37,7 @@ If there is not a recommendation on an accessReviewInstanceDecisionItem object n
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

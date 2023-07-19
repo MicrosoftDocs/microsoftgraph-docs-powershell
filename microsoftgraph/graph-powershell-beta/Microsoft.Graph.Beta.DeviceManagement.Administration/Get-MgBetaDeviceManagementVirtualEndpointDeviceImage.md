@@ -39,13 +39,13 @@ Read the properties and relationships of a specific cloudPcDeviceImage object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointDeviceImage

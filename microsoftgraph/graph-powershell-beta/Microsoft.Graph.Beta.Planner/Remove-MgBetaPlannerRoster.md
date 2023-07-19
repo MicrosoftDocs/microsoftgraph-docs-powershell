@@ -32,7 +32,7 @@ Delete a plannerRoster object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaPlannerRoster Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Remove-MgBetaPlannerRoster -PlannerRosterId $plannerRosterId

@@ -50,7 +50,7 @@ You can specify the parent conversation \nin the request, or, you can specify ju
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Include a file attachment
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -73,7 +73,7 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Include an item attachment
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -99,7 +99,7 @@ $params = @{
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Include a reference attachment
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

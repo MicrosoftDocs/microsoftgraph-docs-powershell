@@ -48,7 +48,7 @@ The attachment can be a file (of fileAttachment type) or Outlook item (itemAttac
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserOutlookTaskAttachment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -60,7 +60,7 @@ $params = @{
 New-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaUserOutlookTaskAttachment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

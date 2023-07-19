@@ -50,7 +50,7 @@ Update the properties of an eDiscovery reviewSetQuery.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

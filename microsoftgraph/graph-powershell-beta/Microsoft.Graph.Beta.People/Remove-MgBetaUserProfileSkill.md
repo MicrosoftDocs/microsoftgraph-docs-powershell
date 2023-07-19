@@ -32,7 +32,7 @@ Delete a skillProficiency object from a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserProfileSkill Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.

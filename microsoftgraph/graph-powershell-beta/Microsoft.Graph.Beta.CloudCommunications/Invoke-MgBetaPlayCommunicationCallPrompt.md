@@ -50,7 +50,7 @@ For more information about how to handle operations, see commsOperation
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaPlayCommunicationCallPrompt Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

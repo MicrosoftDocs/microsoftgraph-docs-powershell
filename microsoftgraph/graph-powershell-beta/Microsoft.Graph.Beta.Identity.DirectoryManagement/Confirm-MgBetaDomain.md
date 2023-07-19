@@ -31,7 +31,7 @@ Validates the ownership of the domain.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaDomain Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Confirm-MgBetaDomain -DomainId $domainId

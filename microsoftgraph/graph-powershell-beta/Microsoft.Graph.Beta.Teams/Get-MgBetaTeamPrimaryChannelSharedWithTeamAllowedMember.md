@@ -40,7 +40,7 @@ A collection of team members who have access to the shared channel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

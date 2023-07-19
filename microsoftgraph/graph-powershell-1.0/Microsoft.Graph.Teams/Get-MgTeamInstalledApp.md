@@ -39,14 +39,14 @@ Retrieve the app installed in the specified team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the installed app
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 
 ```
-### Example 2
+### Example 2: Get the names and other details of the installed app
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

@@ -25,7 +25,7 @@ Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaReportSecurityAttackSimulationRepeatOffender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportSecurityAttackSimulationRepeatOffender

@@ -58,7 +58,7 @@ That rubric can be retrieved using GET /education/classes/acdefc6b-2dc6-4e71-b1e
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

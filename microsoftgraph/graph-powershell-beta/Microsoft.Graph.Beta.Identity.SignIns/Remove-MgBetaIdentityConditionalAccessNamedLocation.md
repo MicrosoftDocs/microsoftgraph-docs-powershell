@@ -32,7 +32,7 @@ Delete a namedLocation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a named location
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 

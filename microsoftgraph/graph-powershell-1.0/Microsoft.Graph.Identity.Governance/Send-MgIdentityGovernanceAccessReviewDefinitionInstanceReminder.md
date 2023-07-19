@@ -32,7 +32,7 @@ Send a reminder to the reviewers of an active accessReviewInstance.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId

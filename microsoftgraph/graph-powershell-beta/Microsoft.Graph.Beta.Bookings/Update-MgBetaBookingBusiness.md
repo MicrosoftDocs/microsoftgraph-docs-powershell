@@ -58,7 +58,7 @@ Update the properties of a bookingBusiness object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{

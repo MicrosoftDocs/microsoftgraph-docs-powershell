@@ -49,7 +49,7 @@ Change the account type of the user on a specific Cloud PC.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Rename-MgBetaDeviceManagementVirtualEndpointCloudPcUserAccountType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{

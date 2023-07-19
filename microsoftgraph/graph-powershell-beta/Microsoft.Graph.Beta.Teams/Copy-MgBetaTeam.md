@@ -56,7 +56,7 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Copy-MgBetaTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

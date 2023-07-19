@@ -54,7 +54,7 @@ However, it will not cancel a **ubscribeToTone** operation because it operates i
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

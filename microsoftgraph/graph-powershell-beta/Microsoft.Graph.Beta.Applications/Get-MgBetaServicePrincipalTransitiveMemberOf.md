@@ -39,7 +39,7 @@ Get transitiveMemberOf from servicePrincipals
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId

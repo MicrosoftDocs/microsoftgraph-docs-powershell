@@ -43,21 +43,21 @@ In Azure AD B2C, this operation can currently get a socialIdentityProvider, or a
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
 ```
-### Example 2
+### Example 2: Retrieve a specific built-in identity provider (only for Azure AD)
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
 
 ```
-### Example 3
+### Example 3: Retrieves Apple identity provider(only for Azure AD B2C)
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

@@ -32,7 +32,7 @@ Resume the sync of a specific school data synchronization profile in the tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Resume-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Resume-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId

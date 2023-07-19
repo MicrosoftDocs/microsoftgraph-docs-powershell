@@ -46,7 +46,7 @@ Copy a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Copy-MgBetaUserMailFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

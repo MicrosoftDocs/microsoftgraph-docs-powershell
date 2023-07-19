@@ -32,21 +32,21 @@ Delete entity from shares
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
-### Example 3
+### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 

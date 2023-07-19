@@ -58,21 +58,21 @@ List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: List all channels
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannel -TeamId $teamId
 
 ```
-### Example 2
+### Example 2: List all private channels
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'"
 
 ```
-### Example 3
+### Example 3: List all shared channels
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

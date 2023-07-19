@@ -53,7 +53,7 @@ When you run a workflow on demand, the tasks are executed regardless of whether 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Initialize-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

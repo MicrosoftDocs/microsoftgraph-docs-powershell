@@ -60,7 +60,7 @@ Alternatively, forward a message in a single operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgUserMessageForward Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.

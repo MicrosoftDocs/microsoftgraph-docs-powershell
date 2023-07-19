@@ -32,7 +32,7 @@ The default drive (document library) for this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSiteDefaultDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteDefaultDrive -SiteId $siteId

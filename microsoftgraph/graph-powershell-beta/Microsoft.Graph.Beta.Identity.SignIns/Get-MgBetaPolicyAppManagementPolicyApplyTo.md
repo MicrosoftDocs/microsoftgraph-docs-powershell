@@ -39,13 +39,13 @@ Collection of application and service principals to which a policy is applied.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPolicyAppManagementPolicyApplyTo Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaPolicyAppManagementPolicyApplyTo Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyAppManagementPolicyApplyTo -AppManagementPolicyId $appManagementPolicyId -Property "id,appId,displayName,createdDateTime"

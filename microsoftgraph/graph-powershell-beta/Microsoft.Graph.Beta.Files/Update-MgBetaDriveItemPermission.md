@@ -58,7 +58,7 @@ Only the **roles** property can be modified this way.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 

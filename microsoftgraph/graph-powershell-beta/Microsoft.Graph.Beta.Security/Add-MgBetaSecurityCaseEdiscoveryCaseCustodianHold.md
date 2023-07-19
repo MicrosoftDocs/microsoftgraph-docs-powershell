@@ -62,13 +62,13 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId

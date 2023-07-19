@@ -46,7 +46,7 @@ Update the properties of a countryNamedLocation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update a country named location by adding to the list of countries
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 

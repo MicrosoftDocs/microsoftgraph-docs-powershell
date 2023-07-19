@@ -66,7 +66,7 @@ Update the properties of a bookingAppointment object in the specified bookingBus
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaBookingBusinessAppointment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{

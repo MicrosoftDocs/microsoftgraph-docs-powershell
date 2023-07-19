@@ -59,14 +59,14 @@ For details, see the examples section.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get submission
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ```
-### Example 2
+### Example 2: Get submission with $expand options
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

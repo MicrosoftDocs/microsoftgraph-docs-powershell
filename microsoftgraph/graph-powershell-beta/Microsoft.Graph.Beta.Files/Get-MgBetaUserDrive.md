@@ -41,14 +41,14 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDrive -UserId $userId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaUserDrive -UserId $userId

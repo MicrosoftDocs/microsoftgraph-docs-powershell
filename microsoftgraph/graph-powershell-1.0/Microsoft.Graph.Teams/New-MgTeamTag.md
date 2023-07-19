@@ -46,7 +46,7 @@ Create a standard tag for members in a team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

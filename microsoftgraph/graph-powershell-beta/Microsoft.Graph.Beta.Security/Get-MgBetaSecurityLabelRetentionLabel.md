@@ -39,13 +39,13 @@ Represents how customers can manage their data, whether and for how long to reta
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityLabelRetentionLabel

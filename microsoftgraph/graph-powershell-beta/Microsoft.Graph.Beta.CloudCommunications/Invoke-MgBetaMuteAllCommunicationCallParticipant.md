@@ -47,7 +47,7 @@ Mute all participants in the call.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaMuteAllCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

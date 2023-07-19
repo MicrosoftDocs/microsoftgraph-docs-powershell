@@ -32,7 +32,7 @@ Revoke the specified user's access to submit print jobs to the associated printe
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaPrintPrinterShareAllowedUserByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Remove-MgBetaPrintPrinterShareAllowedUserByRef -PrinterShareId $printerShareId -UserId $userId

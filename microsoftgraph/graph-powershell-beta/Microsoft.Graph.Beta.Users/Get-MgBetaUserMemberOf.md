@@ -45,7 +45,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 Get-MgBetaUserMemberOf -UserId $userId

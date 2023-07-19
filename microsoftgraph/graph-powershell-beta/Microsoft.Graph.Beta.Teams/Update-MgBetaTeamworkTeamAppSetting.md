@@ -33,7 +33,7 @@ Update the properties of a teamsAppSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaTeamworkTeamAppSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

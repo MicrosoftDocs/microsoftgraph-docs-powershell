@@ -44,7 +44,7 @@ Add an owner to an application by posting to the owners collection.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add an owner to an application
 ```powershell
 $NewOwner = @{
  "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/{075b32dd-edb7-47cf-89ef-f3f733683a3f}"

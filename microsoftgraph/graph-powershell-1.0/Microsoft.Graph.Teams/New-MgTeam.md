@@ -40,7 +40,7 @@ Create a new team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -53,7 +53,7 @@ $params = @{
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -75,7 +75,7 @@ $params = @{
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -160,7 +160,7 @@ Use this channel to make important team, product, and service announcements."
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -172,7 +172,7 @@ $params = @{
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -209,7 +209,7 @@ $params = @{
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 6
+### Example 6: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -222,7 +222,7 @@ $params = @{
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 7
+### Example 7: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -260,7 +260,7 @@ $params = @{
 New-MgTeam -BodyParameter $params
 
 ```
-### Example 8
+### Example 8: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

@@ -39,7 +39,7 @@ Assignments belonging to the user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the assignments of the logged in user
 ```powershell
 Import-Module Microsoft.Graph.Education
 

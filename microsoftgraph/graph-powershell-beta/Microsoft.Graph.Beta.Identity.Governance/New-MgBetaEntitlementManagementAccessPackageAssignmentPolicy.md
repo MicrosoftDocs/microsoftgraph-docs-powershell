@@ -42,7 +42,7 @@ In Azure AD entitlement management, create a new accessPackageAssignmentPolicy o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create an access package policy
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $allowedRequestors = @(@{

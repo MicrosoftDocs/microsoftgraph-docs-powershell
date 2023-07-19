@@ -26,7 +26,7 @@ Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserOnenoteNotebookSectionGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.

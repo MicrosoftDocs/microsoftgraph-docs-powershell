@@ -34,7 +34,7 @@ To learn how to customize privacy for people insights in an organization, see Cu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSettingPersonInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingPersonInsight -OrganizationId $organizationId

@@ -39,7 +39,7 @@ A collection of deleted teams.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamworkDeletedTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeletedTeam

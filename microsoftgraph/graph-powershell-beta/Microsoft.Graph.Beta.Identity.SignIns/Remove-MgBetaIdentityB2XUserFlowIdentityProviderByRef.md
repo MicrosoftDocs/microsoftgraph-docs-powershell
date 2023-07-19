@@ -33,13 +33,13 @@ Delete ref of navigation property userFlowIdentityProviders for identity
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2XUserFlowIdentityProviderByRef -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityProviderBaseId $identityProviderBaseId

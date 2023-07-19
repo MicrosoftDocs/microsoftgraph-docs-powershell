@@ -32,7 +32,7 @@ Clear the preferred availability and activity status for a user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Clear-MgUserPresenceUserPreferredPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

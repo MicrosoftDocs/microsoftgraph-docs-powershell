@@ -35,7 +35,7 @@ Create a new cloudPcUserSetting object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{

@@ -44,7 +44,7 @@ Assign a user's manager.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update a user's manager
 ```powershell
 $NewManager = @{
   "@odata.id"="https://graph.microsoft.com/v1.0/users/075b32dd-edb7-47cf-89ef-f3f733683a3f"

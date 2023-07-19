@@ -29,7 +29,7 @@ Make sure you do not specify the same user or group in the accepted senders and 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaGroupAcceptedSender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupAcceptedSender -GroupId $groupId

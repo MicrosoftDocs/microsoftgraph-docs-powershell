@@ -41,7 +41,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a user's license details
 ```powershell
 Get-MgUserLicenseDetail -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f' | Format-List
 

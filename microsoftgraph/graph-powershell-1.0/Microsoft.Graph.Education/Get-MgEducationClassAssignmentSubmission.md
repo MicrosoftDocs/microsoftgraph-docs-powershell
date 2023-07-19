@@ -55,14 +55,14 @@ Students will not see the grade or feedback until the **assignment** has been re
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get submission
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 
 ```
-### Example 2
+### Example 2: Get submission with $expand options
 ```powershell
 Import-Module Microsoft.Graph.Education
 

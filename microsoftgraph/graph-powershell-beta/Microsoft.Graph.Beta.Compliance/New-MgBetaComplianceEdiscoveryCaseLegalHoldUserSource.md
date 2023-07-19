@@ -48,7 +48,7 @@ Adds a userSource to a legalHold object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

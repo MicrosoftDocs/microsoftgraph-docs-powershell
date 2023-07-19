@@ -33,7 +33,7 @@ Create a new cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{

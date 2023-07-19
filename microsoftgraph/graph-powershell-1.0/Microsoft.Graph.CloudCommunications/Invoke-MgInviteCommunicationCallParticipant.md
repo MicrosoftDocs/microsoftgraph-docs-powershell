@@ -56,7 +56,7 @@ When an invited participant is removed, any outstanding add participant request 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -79,7 +79,7 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -100,7 +100,7 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -123,7 +123,7 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -147,7 +147,7 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 5
+### Example 5: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -182,7 +182,7 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 6
+### Example 6: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -205,7 +205,7 @@ $params = @{
 Invoke-MgInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 7
+### Example 7: Using the Invoke-MgInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

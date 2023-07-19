@@ -43,7 +43,7 @@ Callers can differentiate if the permission is inherited or not by checking the 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 

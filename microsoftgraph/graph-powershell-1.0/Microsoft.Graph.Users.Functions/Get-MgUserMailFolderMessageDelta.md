@@ -38,7 +38,7 @@ This allows you to maintain and synchronize a local store of a user's messages w
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserMailFolderMessageDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.

@@ -33,7 +33,7 @@ It may also be the unique ID of a SharePoint list item.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 

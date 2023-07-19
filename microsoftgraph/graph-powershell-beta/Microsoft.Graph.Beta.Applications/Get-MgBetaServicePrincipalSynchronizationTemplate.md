@@ -39,7 +39,7 @@ Pre-configured synchronization settings for a particular application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaServicePrincipalSynchronizationTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalSynchronizationTemplate -ServicePrincipalId $servicePrincipalId

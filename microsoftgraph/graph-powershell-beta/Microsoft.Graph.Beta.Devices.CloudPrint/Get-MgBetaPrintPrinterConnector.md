@@ -39,7 +39,7 @@ The connectors that are associated with the printer.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrintPrinterConnector Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintPrinterConnector -PrinterId $printerId

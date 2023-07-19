@@ -46,7 +46,7 @@ To update the properties of a published assignment, see update an assignment.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Publish-MgBetaEducationClassAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Publish-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId

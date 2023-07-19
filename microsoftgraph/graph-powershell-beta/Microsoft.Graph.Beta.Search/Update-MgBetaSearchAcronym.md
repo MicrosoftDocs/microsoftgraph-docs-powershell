@@ -48,7 +48,7 @@ Update the properties of an acronym object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{

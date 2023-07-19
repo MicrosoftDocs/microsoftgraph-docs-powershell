@@ -47,7 +47,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserEventInstance Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 # A UPN can also be used as -UserId.

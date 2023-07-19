@@ -49,7 +49,7 @@ A user may only have one email authentication method.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

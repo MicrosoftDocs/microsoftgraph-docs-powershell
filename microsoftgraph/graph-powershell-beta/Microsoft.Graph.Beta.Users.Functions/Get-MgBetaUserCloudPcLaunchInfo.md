@@ -30,7 +30,7 @@ Invoke function getCloudPcLaunchInfo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserCloudPcLaunchInfo Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.

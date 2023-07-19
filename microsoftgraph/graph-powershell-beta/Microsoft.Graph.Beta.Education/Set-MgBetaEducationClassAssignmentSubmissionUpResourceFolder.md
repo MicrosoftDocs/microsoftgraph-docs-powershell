@@ -38,7 +38,7 @@ Only a student in the class can determine what files to upload in a given submis
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 $params = @{
@@ -46,7 +46,7 @@ $params = @{
 Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 $params = @{
@@ -54,7 +54,7 @@ $params = @{
 Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 $params = @{

@@ -32,7 +32,7 @@ Create a new acronym object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{

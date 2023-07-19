@@ -50,7 +50,7 @@ This function is transitive.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgDirectoryObjectMemberObject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 $params = @{

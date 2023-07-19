@@ -48,7 +48,7 @@ Set the availability and activity status in a presence session of an application
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

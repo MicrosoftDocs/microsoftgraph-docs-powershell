@@ -32,7 +32,7 @@ Deletes a delegatedPermissionClassification which had previously been set for a 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

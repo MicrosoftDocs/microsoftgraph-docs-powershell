@@ -44,7 +44,7 @@ Create a new externalGroupMember object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add an Azure Active Directory user as a member
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -56,7 +56,7 @@ $params = @{
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Add an Azure Active Directory group as a member
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -68,7 +68,7 @@ $params = @{
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Add another external group as a member
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 

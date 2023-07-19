@@ -32,7 +32,7 @@ Delete the specified audioRoutingGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Remove-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId

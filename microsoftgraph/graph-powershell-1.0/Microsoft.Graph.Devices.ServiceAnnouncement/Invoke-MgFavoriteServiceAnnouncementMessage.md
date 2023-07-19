@@ -33,7 +33,7 @@ Change the status of a list of serviceUpdateMessages to favorite for the signed 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgFavoriteServiceAnnouncementMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 $params = @{

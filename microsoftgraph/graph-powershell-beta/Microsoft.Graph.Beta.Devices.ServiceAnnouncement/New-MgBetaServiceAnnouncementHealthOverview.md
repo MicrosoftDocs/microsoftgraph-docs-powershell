@@ -33,14 +33,14 @@ Create new navigation property to healthOverviews for admin
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get serviceHealth resources
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementHealthOverview
 
 ```
-### Example 2
+### Example 2: Include navigation property issues
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 

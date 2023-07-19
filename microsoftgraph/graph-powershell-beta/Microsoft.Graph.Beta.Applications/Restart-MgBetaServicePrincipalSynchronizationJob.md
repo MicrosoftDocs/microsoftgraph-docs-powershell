@@ -50,7 +50,7 @@ Optionally clears existing the synchronization state and previous errors.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restart-MgBetaServicePrincipalSynchronizationJob Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

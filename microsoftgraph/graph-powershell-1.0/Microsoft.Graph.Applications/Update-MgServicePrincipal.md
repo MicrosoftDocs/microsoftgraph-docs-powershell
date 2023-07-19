@@ -96,7 +96,7 @@ Update entity in servicePrincipals
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update the properties of a service principal
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"

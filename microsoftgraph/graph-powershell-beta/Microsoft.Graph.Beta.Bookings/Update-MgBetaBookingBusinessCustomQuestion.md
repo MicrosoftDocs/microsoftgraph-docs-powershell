@@ -46,7 +46,7 @@ Update the properties of a bookingCustomQuestion object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaBookingBusinessCustomQuestion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{

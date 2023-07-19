@@ -38,7 +38,7 @@ A team is unarchived once the async operation completes successfully, which may 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUnarchiveTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Invoke-MgBetaUnarchiveTeam -TeamId $teamId

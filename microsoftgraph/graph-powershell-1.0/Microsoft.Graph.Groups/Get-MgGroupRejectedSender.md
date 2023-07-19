@@ -27,7 +27,7 @@ Make sure you do not specify the same user or group in the rejected senders and 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgGroupRejectedSender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupRejectedSender -GroupId $groupId

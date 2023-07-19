@@ -58,7 +58,7 @@ In Azure AD entitlement management, retrieve the properties and relationships of
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get all access package policy assignment policies
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageAssignmentPolicy | Format-List

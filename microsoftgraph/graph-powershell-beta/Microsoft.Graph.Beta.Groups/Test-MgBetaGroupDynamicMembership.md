@@ -50,7 +50,7 @@ You can complete this operation in the following ways:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaGroupDynamicMembership Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{

@@ -31,7 +31,7 @@ Cancel a security operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaSecurityAction Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Stop-MgBetaSecurityAction -SecurityActionId $securityActionId

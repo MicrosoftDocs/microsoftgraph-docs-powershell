@@ -42,7 +42,7 @@ Add a member to an Office 365 group or security group through the members naviga
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add a member to a group.
 ```powershell
 New-MgBetaGroupMember -GroupId '872648e7-b23a-4328-bd46-f1bd431c2354' -DirectoryObjectId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 

@@ -34,7 +34,7 @@ You can delete only directory extensions that aren't synced from on-premises act
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

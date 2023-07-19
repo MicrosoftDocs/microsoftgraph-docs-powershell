@@ -47,7 +47,7 @@ If a user deletes one, it is recreated when written to again.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 

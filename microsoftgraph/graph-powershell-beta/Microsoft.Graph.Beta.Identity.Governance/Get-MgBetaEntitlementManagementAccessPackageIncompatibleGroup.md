@@ -26,7 +26,7 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId

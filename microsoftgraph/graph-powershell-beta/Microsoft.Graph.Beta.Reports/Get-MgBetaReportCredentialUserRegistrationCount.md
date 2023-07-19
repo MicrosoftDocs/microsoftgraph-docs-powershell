@@ -25,7 +25,7 @@ Report the current state of how many users in your organization are registered f
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaReportCredentialUserRegistrationCount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportCredentialUserRegistrationCount

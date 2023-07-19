@@ -48,7 +48,7 @@ Create a new custodian siteSource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseCustodianSiteSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

@@ -45,7 +45,7 @@ Repeated requests to this API might result in `429` HTTP errors.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 

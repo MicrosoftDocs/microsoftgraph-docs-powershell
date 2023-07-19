@@ -60,7 +60,7 @@ Update the properties of a sourceCollection object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

@@ -32,7 +32,7 @@ In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest object
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgEntitlementManagementAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId

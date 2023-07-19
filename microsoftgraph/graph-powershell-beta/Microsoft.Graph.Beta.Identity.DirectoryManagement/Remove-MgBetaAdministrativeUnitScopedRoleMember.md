@@ -32,7 +32,7 @@ Remove an Azure Active Directory (Azure AD) role assignment with administrative 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaAdministrativeUnitScopedRoleMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Remove-MgBetaAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId

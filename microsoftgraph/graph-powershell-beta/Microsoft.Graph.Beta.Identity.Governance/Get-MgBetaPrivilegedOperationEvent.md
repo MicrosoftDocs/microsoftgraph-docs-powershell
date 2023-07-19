@@ -39,25 +39,25 @@ Get entity from privilegedOperationEvents by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Assign'"
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Activate'"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedOperationEvent -Filter "requestType eq 'Deactivate'"
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgBetaPrivilegedOperationEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedOperationEvent -Filter "(creationDateTime ge 2017-06-25T07:00:00Z) and (creationDateTime le 2017-07-25T17:30:17Z)" -CountVariable CountVar -Sort "creationDateTime desc"

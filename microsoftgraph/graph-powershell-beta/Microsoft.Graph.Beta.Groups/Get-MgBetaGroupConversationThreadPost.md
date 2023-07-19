@@ -55,7 +55,7 @@ Since the **post** resource supports extensions, you can also use the `GET` oper
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

@@ -41,7 +41,7 @@ Automatically expanded on GET.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a permission grant policy exclude by ID
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
 Get-MgPolicyPermissionGrantPolicyExclude -PermissionGrantPolicyId "microsoft-application-admin" | fl

@@ -33,7 +33,7 @@ Update multiple threat intelligence (TI) indicators in one request instead of mu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityTiIndicatorMultiple Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

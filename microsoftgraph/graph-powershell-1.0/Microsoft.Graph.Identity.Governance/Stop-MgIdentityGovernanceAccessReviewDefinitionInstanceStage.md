@@ -39,7 +39,7 @@ The accessReviewInstanceDecisionItem objects will always reflect the last decisi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId

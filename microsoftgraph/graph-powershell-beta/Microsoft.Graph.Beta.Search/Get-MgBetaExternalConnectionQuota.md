@@ -32,13 +32,13 @@ Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaExternalConnectionQuota Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaExternalConnectionQuota Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId

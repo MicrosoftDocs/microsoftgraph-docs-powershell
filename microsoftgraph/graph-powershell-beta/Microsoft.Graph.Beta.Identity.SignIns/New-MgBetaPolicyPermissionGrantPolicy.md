@@ -38,7 +38,7 @@ After creating the permission grant policy, you can add include condition sets t
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a permission grant policy
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 New-MgBetaPolicyPermissionGrantPolicy -Id "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant" -DisplayName "Sample app permissions" | fl

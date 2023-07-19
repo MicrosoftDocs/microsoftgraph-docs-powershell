@@ -45,7 +45,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserContactFolderContact Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.PersonalContacts
 # A UPN can also be used as -UserId.

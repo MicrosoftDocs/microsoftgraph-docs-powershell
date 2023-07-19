@@ -43,7 +43,7 @@ Returns the plannerPlans that have been recently viewed by the user in apps that
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserPlannerRecentPlan Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.

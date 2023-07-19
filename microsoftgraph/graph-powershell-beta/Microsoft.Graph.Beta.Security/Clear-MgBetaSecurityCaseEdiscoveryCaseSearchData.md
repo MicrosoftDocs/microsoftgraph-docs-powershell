@@ -56,7 +56,7 @@ For more information about purging Teams messages, see:\n- eDiscovery solution s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId

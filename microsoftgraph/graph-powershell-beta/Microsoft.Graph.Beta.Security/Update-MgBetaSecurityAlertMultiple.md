@@ -33,7 +33,7 @@ Update multiple alerts in one request instead of multiple requests.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityAlertMultiple Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

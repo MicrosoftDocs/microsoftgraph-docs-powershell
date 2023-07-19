@@ -34,7 +34,7 @@ Invoke function run
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Start-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId

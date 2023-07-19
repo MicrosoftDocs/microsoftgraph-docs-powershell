@@ -62,7 +62,7 @@ The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgSecurityCaseEdiscoveryCaseCustodianHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Remove-MgSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId

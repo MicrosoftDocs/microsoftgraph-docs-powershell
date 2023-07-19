@@ -57,7 +57,7 @@ Retrieve the properties and relationships of an accessPackageCatalog object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of all access package catalogs
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog | Format-list
@@ -79,7 +79,7 @@ ModifiedBy                  : Azure AD
 ModifiedDateTime            : 9/15/2021 7:23:24 AM
 AdditionalProperties        : {}
 
-### EXAMPLE 2
+### Example 2: Filter the access package catalogs by the display name
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List

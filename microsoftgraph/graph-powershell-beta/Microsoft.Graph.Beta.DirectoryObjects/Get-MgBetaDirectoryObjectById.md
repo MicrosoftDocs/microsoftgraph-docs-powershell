@@ -35,7 +35,7 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDirectoryObjectById Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 $params = @{

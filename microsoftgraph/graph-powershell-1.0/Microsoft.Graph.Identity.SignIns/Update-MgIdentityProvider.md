@@ -48,7 +48,7 @@ In Azure AD B2C, this operation can currently update a socialIdentityProvider, o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update a specific <strong>social identity provider</strong> (Azure AD or Azure AD B2C)
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -60,7 +60,7 @@ $params = @{
 Update-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Update a specific <strong>Apple identity provider</strong> (only for Azure AD B2C)
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

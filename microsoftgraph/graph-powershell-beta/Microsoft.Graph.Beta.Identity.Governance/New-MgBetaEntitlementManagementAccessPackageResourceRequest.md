@@ -38,7 +38,7 @@ A resource must be included in an access package catalog before a role of that r
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a new access package resource request
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{

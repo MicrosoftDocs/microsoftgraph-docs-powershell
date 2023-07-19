@@ -36,7 +36,7 @@ The modified ID will be available in the response and in the location header.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -67,7 +67,7 @@ $params = @{
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

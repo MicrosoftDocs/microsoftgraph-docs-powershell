@@ -38,7 +38,7 @@ You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Complete-MgBetaTeamChannelMigration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId

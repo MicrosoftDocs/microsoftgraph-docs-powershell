@@ -64,7 +64,7 @@ Create a column for a [site][site] with a request that specifies a [columnDefini
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 

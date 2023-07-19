@@ -45,7 +45,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaServicePrincipalMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId

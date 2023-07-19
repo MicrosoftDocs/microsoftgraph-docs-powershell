@@ -41,13 +41,13 @@ For example, you can use this method to get the device type, hardware detail, ac
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamworkDevice Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaTeamworkDevice Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDevice

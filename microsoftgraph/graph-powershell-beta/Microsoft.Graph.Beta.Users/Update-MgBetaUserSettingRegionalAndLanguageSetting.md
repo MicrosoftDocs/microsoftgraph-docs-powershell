@@ -53,7 +53,7 @@ Update some or all of the properties of a regionalAndLanguageSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

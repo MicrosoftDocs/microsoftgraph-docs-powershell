@@ -26,7 +26,7 @@ Retrieve a list of the accessPackage objects that have been marked as incompatib
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId

@@ -33,7 +33,7 @@ Invoke function getCloudPcRemoteActionResults
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementManagedDeviceCloudPcRemoteActionResult -ManagedDeviceId $managedDeviceId

@@ -39,7 +39,7 @@ The list of previous versions of the list item.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 

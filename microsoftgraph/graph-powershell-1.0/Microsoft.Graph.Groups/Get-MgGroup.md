@@ -44,7 +44,7 @@ The **hasMembersWithLicenseErrors** and **isArchived** properties are an excepti
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of groups
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup |
@@ -61,7 +61,7 @@ Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
 ```
-### Example 2
+### Example 2: Get a group by the display name
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -Filter "DisplayName eq 'Business Development'" |
@@ -73,7 +73,7 @@ Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
 ```
-### Example 3
+### Example 3: Get a count of all groups
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount
@@ -91,7 +91,7 @@ Id                                   DisplayName          Description           
 {Unified}
 
 ```
-### Example 4
+### Example 4: Use -Search to get all the groups whose display name contains 'Market' including a count of the returned users
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
@@ -104,7 +104,7 @@ Id                                   DisplayName         Description            
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
 
 ```
-### Example 5
+### Example 5: Use -Filter to get all the applications with a display name that starts with 'A' including a count of the returned users, with the results ordered by display name
 ```powershell
 Connect-MgGraph -Scopes 'Group.Read.All'
 Get-MgGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName

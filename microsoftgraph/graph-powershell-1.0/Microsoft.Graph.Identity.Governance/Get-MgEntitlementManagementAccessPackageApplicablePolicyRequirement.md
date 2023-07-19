@@ -34,7 +34,7 @@ Each requirement object corresponds to an access package assignment policy that 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId

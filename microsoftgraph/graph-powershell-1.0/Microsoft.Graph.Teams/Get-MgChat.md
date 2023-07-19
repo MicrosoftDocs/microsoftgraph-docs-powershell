@@ -42,28 +42,28 @@ To access a chat, at least one chat member must belong to the tenant the request
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a group chat
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId
 
 ```
-### Example 2
+### Example 2: Get a chat and all its members
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId -ExpandProperty "members"
 
 ```
-### Example 3
+### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChat -ChatId $chatId
 
 ```
-### Example 4
+### Example 4: Get the chat along with the preview of the last message sent in the chat
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

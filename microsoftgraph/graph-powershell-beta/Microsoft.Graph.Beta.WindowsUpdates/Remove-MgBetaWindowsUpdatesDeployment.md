@@ -32,7 +32,7 @@ Delete a deployment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId

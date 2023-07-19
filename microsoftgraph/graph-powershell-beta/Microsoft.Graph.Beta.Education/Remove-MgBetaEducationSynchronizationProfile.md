@@ -32,7 +32,7 @@ Delete a school data synchronization profile in the tenant based on the identifi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Remove-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId

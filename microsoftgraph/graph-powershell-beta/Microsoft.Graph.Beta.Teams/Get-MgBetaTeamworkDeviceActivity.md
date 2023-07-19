@@ -32,7 +32,7 @@ Get the activity status of a Microsoft Teams-enabled device.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamworkDeviceActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceActivity -TeamworkDeviceId $teamworkDeviceId

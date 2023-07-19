@@ -40,19 +40,19 @@ Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"  -OutFile $outFileId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"

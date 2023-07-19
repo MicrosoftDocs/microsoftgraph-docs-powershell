@@ -39,7 +39,7 @@ Get followedSites from users
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserFollowedSite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 # A UPN can also be used as -UserId.

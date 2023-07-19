@@ -36,28 +36,28 @@ We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
 ```
-### Example 3
+### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
 
 ```
-### Example 4
+### Example 4: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 

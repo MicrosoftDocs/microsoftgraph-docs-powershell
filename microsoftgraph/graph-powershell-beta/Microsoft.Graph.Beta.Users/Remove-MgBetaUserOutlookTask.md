@@ -32,7 +32,7 @@ Delete the specified Outlook task in the user's mailbox.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserOutlookTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.

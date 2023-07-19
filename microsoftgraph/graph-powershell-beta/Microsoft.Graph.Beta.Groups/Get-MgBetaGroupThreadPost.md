@@ -55,7 +55,7 @@ Since the **post** resource supports extensions, you can also use the `GET` oper
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaGroupThreadPost Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId

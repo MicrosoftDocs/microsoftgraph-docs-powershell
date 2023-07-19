@@ -32,7 +32,7 @@ Reboot a specific Cloud PC.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restart-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Restart-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId

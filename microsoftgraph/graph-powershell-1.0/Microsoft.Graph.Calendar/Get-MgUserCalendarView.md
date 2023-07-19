@@ -38,7 +38,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserCalendarView Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Calendar
 # A UPN can also be used as -UserId.

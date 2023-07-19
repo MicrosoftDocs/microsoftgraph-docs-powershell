@@ -52,7 +52,7 @@ Given contentInfo as an input, which includes existing content metadata key-valu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaUserSecurityInformationProtectionSensitivityLabelRemoval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

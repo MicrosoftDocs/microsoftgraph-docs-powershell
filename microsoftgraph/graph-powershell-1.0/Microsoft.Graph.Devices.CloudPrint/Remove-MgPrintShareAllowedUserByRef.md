@@ -32,7 +32,7 @@ Revoke the specified user's access to submit print jobs to the associated printe
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 

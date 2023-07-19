@@ -46,7 +46,7 @@ Invoke action checkMemberObjects
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgUserMemberObject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

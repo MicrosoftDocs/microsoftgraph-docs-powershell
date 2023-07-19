@@ -54,7 +54,7 @@ Update the properties of a custodian object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

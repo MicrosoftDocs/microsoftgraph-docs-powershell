@@ -64,7 +64,7 @@ Update the navigation property accessPackageAssignmentPolicies in identityGovern
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -86,7 +86,7 @@ $params = @{
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

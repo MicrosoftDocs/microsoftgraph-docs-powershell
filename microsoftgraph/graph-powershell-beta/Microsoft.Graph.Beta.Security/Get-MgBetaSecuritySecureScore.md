@@ -39,7 +39,7 @@ Measurements of tenants' security posture to help protect them from threats.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 

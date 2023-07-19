@@ -55,7 +55,7 @@ Use this API to create a new personName object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfileName Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

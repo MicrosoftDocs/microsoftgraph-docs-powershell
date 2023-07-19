@@ -41,7 +41,7 @@ For descriptions of each of the endpoints, see printUsageByPrinter.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Reports
 

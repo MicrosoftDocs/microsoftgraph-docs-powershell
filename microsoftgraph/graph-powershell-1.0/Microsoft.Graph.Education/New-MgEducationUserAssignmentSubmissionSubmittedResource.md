@@ -48,7 +48,7 @@ Create new navigation property to submittedResources for education
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

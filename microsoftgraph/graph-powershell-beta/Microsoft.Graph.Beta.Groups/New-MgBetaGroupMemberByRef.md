@@ -46,7 +46,7 @@ The following table shows the types of members that can be added to either secur
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add a member to a group
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

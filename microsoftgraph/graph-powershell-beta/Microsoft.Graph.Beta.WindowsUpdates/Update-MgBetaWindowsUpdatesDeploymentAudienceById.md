@@ -56,7 +56,7 @@ You can also use the method updateAudience to update the **deploymentAudience**.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudienceById Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{

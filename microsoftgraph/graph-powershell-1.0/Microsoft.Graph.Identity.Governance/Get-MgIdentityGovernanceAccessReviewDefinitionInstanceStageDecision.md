@@ -42,7 +42,7 @@ Read the properties and relationships of an accessReviewInstanceDecisionItem obj
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

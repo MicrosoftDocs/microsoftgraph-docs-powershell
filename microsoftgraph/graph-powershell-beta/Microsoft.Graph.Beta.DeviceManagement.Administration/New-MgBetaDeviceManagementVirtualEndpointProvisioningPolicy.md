@@ -40,7 +40,7 @@ Create a new cloudPcProvisioningPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{

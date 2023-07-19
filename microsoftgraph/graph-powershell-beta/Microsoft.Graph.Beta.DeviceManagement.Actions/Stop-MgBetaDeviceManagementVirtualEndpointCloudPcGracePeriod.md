@@ -38,7 +38,7 @@ Ending the grace period immediately deprovisions the Cloud PC without waiting th
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId

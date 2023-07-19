@@ -32,7 +32,7 @@ Retrieve the properties of a user's regionalAndLanguageSettings.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.

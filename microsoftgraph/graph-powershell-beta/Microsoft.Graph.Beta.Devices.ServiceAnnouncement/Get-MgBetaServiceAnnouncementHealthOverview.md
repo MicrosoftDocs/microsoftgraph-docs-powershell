@@ -41,14 +41,14 @@ This operation provides the health information of a specified service for a tena
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the properties of a serviceHealth object
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
 
 ```
-### Example 2
+### Example 2: Include navigation property issues
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 

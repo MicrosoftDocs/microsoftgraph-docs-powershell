@@ -26,7 +26,7 @@ Retrieve a list of users at a school.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEducationSchoolUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSchoolUser -EducationSchoolId $educationSchoolId

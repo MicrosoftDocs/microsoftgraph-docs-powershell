@@ -32,7 +32,7 @@ Get [itemAnalytics][] about the views that took place under this resource.\nThe 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDriveItemAnalytic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId

@@ -48,7 +48,7 @@ Install a teamsApp to the specified chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

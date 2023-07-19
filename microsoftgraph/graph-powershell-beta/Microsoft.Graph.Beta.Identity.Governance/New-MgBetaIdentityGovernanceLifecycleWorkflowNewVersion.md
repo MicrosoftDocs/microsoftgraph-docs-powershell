@@ -48,7 +48,7 @@ Create a new version of the workflow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaIdentityGovernanceLifecycleWorkflowNewVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

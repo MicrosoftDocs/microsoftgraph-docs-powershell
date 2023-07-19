@@ -32,7 +32,7 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Undo-MgBetaUserChatMessageSoftDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Undo-MgBetaUserChatMessageSoftDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId

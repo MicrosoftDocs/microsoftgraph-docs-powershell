@@ -33,7 +33,7 @@ Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaGroupDynamicMembershipRule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{

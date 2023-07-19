@@ -45,7 +45,7 @@ Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a message in a chat
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

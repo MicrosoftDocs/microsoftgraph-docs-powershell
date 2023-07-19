@@ -51,7 +51,7 @@ The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 # A UPN can also be used as -UserId.

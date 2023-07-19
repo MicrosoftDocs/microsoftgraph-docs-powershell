@@ -55,7 +55,7 @@ Get the specified permissions object of a user or group calendar that has been s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 

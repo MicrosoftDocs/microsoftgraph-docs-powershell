@@ -32,7 +32,7 @@ Get the metadata for the location where the files of a channel are stored.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

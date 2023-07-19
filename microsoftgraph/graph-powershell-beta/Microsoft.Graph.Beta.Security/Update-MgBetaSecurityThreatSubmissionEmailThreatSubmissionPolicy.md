@@ -54,7 +54,7 @@ Update the navigation property emailThreatSubmissionPolicies in security
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

@@ -47,7 +47,7 @@ Update the navigation property taskGroups in users
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserOutlookTaskGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

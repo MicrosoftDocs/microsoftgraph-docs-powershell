@@ -41,7 +41,7 @@ Use the **id** property, which is the currency code, to specify the currency.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 

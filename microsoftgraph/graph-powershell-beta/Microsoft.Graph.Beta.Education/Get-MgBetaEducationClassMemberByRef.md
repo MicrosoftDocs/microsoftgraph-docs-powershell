@@ -28,7 +28,7 @@ Note that if the delegated token is used, members can only be seen by other memb
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

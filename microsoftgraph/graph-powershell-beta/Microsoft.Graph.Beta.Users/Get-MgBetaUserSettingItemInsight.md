@@ -32,7 +32,7 @@ Get the user-customizable privacy settings for itemInsights and meeting hours in
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserSettingItemInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.

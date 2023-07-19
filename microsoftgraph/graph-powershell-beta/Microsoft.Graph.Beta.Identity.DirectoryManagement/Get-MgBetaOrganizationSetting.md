@@ -40,7 +40,7 @@ To get microsoftApplicationDataAccessSettings, use list microsoftApplicationData
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSetting -OrganizationId $organizationId

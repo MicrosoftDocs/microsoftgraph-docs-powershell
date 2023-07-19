@@ -43,7 +43,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaServicePrincipalOauth2PermissionGrant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId

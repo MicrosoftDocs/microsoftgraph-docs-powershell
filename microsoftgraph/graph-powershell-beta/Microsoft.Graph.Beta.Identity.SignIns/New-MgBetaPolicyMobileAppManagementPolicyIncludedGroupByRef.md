@@ -44,7 +44,7 @@ Add groups to be included in a mobile app management policy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaPolicyMobileAppManagementPolicyIncludedGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

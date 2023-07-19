@@ -51,14 +51,14 @@ Create new navigation property to sessions for communications
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve an online meeting by videoTeleconferenceId
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId
 
 ```
-### Example 2
+### Example 2: Retrieve an online meeting by meeting ID
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 

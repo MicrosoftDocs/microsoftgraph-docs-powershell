@@ -39,13 +39,13 @@ Read the properties and relationships of a mobilityManagementPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaPolicyMobileAppManagementPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyMobileAppManagementPolicy

@@ -54,7 +54,7 @@ Update the properties of a webAccount object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileWebAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

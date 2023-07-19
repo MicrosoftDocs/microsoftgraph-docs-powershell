@@ -39,7 +39,7 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaAuditLogSignInCompromised Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{

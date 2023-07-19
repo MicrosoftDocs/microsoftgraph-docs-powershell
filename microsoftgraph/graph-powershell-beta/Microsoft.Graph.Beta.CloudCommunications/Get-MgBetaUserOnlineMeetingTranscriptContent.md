@@ -34,25 +34,25 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId -Format "text/vtt"
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgBetaUserOnlineMeetingTranscriptContent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscriptContent -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId

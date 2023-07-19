@@ -33,7 +33,7 @@ Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Reset-MgBetaGroupUnseenCount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Reset-MgBetaGroupUnseenCount -GroupId $groupId

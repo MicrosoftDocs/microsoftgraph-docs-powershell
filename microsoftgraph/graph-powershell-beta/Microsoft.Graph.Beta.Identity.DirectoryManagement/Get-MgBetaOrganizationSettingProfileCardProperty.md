@@ -41,13 +41,13 @@ The profileCardProperty is identified by its **directoryPropertyName** property.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSettingProfileCardProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaOrganizationSettingProfileCardProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId

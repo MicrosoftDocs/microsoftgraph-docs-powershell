@@ -54,7 +54,7 @@ Create a new personCertification object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfileCertification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

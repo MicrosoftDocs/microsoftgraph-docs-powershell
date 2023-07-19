@@ -34,14 +34,14 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 

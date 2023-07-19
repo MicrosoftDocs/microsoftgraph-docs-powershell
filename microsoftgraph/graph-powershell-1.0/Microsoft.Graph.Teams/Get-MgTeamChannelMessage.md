@@ -51,14 +51,14 @@ Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a message in a channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 
 ```
-### Example 2
+### Example 2: Get reply to a message in a channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

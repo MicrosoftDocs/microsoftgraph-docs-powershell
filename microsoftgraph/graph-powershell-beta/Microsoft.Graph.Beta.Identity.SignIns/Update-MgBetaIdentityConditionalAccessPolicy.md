@@ -52,7 +52,7 @@ Update the properties of a conditionalAccessPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add sign in risk levels to an existing conditional access policy
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
   

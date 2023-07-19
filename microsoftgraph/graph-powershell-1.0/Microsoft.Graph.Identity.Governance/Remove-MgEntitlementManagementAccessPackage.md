@@ -34,7 +34,7 @@ You cannot delete an access package if it has any **accessPackageAssignment**.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

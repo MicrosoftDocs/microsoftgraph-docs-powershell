@@ -54,7 +54,7 @@ Update the properties of an educationalActivity object within a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileEducationalActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

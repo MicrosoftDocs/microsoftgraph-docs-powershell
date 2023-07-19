@@ -61,7 +61,7 @@ To update a disposition review stage, include the **actionAfterRetentionPeriod**
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

@@ -32,7 +32,7 @@ Trigger an indexOperation
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId

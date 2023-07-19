@@ -46,7 +46,7 @@ Copy a message to a folder within the user's mailbox.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Copy-MgBetaUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

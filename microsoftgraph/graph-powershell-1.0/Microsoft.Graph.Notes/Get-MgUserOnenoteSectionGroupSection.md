@@ -26,7 +26,7 @@ Retrieve a list of onenoteSection objects from the specified section group.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserOnenoteSectionGroupSection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Notes
 # A UPN can also be used as -UserId.

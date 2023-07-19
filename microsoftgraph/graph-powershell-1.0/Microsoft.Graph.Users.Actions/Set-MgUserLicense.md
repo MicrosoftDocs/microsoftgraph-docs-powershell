@@ -48,7 +48,7 @@ You can also enable and disable specific plans associated with a subscription.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Assign a license to a user
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -61,7 +61,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### Example 2
+### Example 2: Assign more than one licenses to a user
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -79,7 +79,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### Example 3
+### Example 3: Assign a license to a user with some disabled plans
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -98,7 +98,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### Example 4
+### Example 4: Update a license assigned to a user to add more disabled plans leaving the user's existing disabled plans in their current state
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -128,7 +128,7 @@ Id                                   DisplayName   Mail UserPrincipalName       
 38955658-c844-4f59-9430-6519430ac89b Bianca Pisani      BiancaP@contoso.onmicrosoft.com       Member
 
 ```
-### Example 5
+### Example 5: Assign licenses to a user by copying the license assignment from another user
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 
@@ -142,7 +142,7 @@ Id                                   DisplayName    Mail UserPrincipalName      
 82f51c98-7221-442f-8329-3faf9fe022f1 Mallory Cortez      MalloryC@contoso.onmicrosoft.com       Member
 
 ```
-### Example 6
+### Example 6: Remove a license assigned to a user
 ```powershell
 Connect-Graph -Scopes User.ReadWrite.All, Organization.Read.All
 

@@ -48,7 +48,7 @@ The caller doesn't have to provide a secret.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaTrustFrameworkKeySetKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

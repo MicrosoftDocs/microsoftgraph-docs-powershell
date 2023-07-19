@@ -25,7 +25,7 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Functions
 Get-MgUserDelta

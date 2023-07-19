@@ -38,7 +38,7 @@ To prevent a recurring access review from starting future instances, update the 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Stop-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId

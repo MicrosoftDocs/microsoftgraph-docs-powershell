@@ -48,7 +48,7 @@ An **oAuth2PermissionGrant** can be updated to change which delegated permission
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

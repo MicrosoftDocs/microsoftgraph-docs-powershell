@@ -32,7 +32,7 @@ Trigger an indexOperation
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Update-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId

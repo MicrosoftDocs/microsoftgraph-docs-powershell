@@ -54,7 +54,7 @@ If the file doesn't exist or is not in that folder, the `POST` request will fail
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

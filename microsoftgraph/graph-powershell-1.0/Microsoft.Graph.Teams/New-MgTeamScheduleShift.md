@@ -50,7 +50,7 @@ The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

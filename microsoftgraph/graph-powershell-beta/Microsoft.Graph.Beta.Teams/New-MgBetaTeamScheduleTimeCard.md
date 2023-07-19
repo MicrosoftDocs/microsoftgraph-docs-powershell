@@ -52,7 +52,7 @@ Create a timeCard instance in a schedule.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaTeamScheduleTimeCard Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

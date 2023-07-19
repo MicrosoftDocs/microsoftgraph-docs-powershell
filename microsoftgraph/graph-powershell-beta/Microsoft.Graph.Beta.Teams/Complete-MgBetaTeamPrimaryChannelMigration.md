@@ -38,7 +38,7 @@ You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

@@ -37,7 +37,7 @@ We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 

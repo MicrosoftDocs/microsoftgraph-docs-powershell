@@ -35,7 +35,7 @@ This action sets the targeted user's risk level to high.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Confirm User sign in compormised 
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.ReadWrite.All"
 Select-MgBetaProfile beta

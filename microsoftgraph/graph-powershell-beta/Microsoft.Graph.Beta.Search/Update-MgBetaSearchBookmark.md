@@ -56,7 +56,7 @@ Update the properties of a bookmark object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{

@@ -39,13 +39,13 @@ Returns a list of case eDiscoveryHoldPolicy objects for this case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId

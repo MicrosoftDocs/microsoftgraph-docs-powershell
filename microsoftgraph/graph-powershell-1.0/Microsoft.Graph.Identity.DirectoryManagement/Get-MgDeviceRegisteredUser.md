@@ -34,7 +34,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgDeviceRegisteredUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Get-MgDeviceRegisteredUser -DeviceId $deviceId

@@ -34,7 +34,7 @@ This method does not delete the rubric itself and can only be performed by teach
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

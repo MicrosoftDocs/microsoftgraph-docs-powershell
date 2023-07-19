@@ -50,7 +50,7 @@ Use this API to create a new itemPhone object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfilePhone Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

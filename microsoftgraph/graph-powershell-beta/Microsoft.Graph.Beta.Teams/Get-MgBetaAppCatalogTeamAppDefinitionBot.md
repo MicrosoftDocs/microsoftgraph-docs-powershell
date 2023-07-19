@@ -32,7 +32,7 @@ Get the bot associated with a specific definition of the  TeamsApp.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

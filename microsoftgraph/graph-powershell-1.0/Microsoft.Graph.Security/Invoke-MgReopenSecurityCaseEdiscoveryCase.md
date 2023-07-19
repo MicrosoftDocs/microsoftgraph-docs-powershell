@@ -34,7 +34,7 @@ For details, see Reopen a closed case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgReopenSecurityCaseEdiscoveryCase Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Invoke-MgReopenSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId

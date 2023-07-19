@@ -48,7 +48,7 @@ Create a connectorGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -58,7 +58,7 @@ $params = @{
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

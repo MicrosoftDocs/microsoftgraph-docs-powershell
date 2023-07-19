@@ -46,7 +46,7 @@ Assign a connectorGroup to an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaApplicationConnectorGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

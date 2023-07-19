@@ -32,7 +32,7 @@ Delete a DriveItem by using its ID or path.\nNote that deleting items using this
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 

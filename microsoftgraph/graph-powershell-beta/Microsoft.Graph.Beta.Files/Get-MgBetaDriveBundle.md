@@ -39,7 +39,7 @@ Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a bundle
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 

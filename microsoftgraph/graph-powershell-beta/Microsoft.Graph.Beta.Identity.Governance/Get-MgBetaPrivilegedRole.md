@@ -39,13 +39,13 @@ Get entity from privilegedRoles by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrivilegedRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRole -PrivilegedRoleId $privilegedRoleId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaPrivilegedRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRole

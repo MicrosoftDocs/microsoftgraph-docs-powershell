@@ -35,7 +35,7 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgDirectoryObjectById Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 $params = @{

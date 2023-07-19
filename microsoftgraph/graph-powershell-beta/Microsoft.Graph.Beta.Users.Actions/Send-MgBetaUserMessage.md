@@ -38,7 +38,7 @@ Alternatively, send a new message in a single operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Send-MgBetaUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

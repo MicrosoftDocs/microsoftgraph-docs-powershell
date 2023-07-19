@@ -48,7 +48,7 @@ Set the order of identityUserFlowAttributeAssignments being collected within a u
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaIdentityB2CUserFlowUserAttributeAssignmentOrder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

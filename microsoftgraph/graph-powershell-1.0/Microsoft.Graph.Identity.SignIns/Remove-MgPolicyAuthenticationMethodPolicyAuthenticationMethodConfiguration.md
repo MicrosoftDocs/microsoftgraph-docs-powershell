@@ -34,25 +34,25 @@ Delete navigation property authenticationMethodConfigurations for policies
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Remove-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId

@@ -32,14 +32,14 @@ Retrieve the properties and relationships of a call object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Getting a Peer-to-Peer call
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCall -CallId $callId
 
 ```
-### Example 2
+### Example 2: Getting a group call
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 

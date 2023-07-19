@@ -24,7 +24,7 @@ Read the properties and relationships of the tenant-wide externalIdentitiesPolic
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPolicyExternalIdentityPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyExternalIdentityPolicy

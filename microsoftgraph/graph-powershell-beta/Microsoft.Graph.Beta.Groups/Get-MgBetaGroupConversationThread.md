@@ -45,7 +45,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaGroupConversationThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupConversationThread -GroupId $groupId -ConversationId $conversationId

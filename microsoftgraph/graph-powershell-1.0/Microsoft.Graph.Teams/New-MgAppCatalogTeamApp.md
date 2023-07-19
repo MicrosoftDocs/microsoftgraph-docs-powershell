@@ -36,7 +36,7 @@ Admins can approve or reject these apps via this API or the Microsoft Teams admi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

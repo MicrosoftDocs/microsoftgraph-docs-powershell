@@ -32,7 +32,7 @@ Invoke action cancel
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Stop-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId $privilegedRoleAssignmentRequestId

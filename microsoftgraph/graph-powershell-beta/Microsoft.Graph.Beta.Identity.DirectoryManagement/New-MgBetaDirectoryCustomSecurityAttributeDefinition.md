@@ -34,7 +34,7 @@ Create a new customSecurityAttributeDefinition object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -64,7 +64,7 @@ $params = @{
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -80,7 +80,7 @@ $params = @{
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

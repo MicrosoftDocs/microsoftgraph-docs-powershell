@@ -52,7 +52,7 @@ Create an Outlook task folder under a specified outlookTaskGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

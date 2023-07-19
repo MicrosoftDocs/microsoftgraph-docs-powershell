@@ -39,7 +39,7 @@ Get policies from trustFramework
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTrustFrameworkPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaTrustFrameworkPolicy

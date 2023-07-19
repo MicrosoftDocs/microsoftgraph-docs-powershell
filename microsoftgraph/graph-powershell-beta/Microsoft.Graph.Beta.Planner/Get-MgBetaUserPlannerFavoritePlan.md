@@ -43,7 +43,7 @@ Returns the plannerPlans that the user marked as favorites.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserPlannerFavoritePlan Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.

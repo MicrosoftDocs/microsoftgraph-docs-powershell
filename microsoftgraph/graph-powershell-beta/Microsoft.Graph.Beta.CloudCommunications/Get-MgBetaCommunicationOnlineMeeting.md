@@ -53,7 +53,7 @@ Get onlineMeetings from communications
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaCommunicationOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"

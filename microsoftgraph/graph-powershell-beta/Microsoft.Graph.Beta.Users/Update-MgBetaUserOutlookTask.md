@@ -70,7 +70,7 @@ You can use the `Prefer: outlook.timezone` header to have all the date-related p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserOutlookTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

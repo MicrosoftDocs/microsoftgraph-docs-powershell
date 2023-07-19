@@ -32,7 +32,7 @@ Deletes a personAnnotation object from a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId

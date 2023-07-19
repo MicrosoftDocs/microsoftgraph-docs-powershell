@@ -32,7 +32,7 @@ Delete an existing trustFrameworkPolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaTrustFrameworkPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaTrustFrameworkPolicy -TrustFrameworkPolicyId $trustFrameworkPolicyId

@@ -36,7 +36,7 @@ Also, please note that the built-in default program cannot be deleted.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaProgram Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgram -ProgramId $programId

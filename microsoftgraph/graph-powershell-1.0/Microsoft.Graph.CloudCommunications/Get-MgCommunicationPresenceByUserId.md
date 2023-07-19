@@ -33,7 +33,7 @@ Get the presence information for multiple users.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgCommunicationPresenceByUserId Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

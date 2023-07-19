@@ -50,7 +50,7 @@ Read more about presence sessions and their time-out and expiration.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Clear-MgBetaUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

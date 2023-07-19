@@ -45,7 +45,7 @@ For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /d
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDomainNameReference Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDomainNameReference -DomainId $domainId

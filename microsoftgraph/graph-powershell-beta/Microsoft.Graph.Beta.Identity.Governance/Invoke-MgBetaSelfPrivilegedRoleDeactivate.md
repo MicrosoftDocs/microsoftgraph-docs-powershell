@@ -31,7 +31,7 @@ Invoke action selfDeactivate
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaSelfPrivilegedRoleDeactivate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaSelfPrivilegedRoleDeactivate -PrivilegedRoleId $privilegedRoleId

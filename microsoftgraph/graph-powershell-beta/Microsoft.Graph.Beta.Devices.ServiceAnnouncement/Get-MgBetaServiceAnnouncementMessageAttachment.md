@@ -39,14 +39,14 @@ Read the properties and relationships of a serviceAnnouncementAttachment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get an attachment message ID
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId -ServiceAnnouncementAttachmentId $serviceAnnouncementAttachmentId
 
 ```
-### Example 2
+### Example 2: Return a file stream of an attachment content for a message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 

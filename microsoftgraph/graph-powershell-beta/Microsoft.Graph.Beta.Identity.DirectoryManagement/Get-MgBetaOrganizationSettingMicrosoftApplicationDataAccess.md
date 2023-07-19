@@ -32,7 +32,7 @@ Get the _settings_ in a microsoftApplicationDataAccessSettings object that speci
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId

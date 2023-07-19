@@ -45,7 +45,7 @@ The possible states of the long-running operation are `notStarted`, `running`, `
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

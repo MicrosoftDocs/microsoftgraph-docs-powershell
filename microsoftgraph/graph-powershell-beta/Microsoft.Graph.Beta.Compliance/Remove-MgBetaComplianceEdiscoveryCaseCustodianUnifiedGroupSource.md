@@ -32,7 +32,7 @@ Delete a unifiedGroupSource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -UnifiedGroupSourceId $unifiedGroupSourceId

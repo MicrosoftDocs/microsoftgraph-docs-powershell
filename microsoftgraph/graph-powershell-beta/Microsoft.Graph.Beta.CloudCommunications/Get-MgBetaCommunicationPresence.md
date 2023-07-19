@@ -39,7 +39,7 @@ Get a user's presence information.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the presence information of another user
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 

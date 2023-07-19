@@ -51,14 +51,14 @@ Create new navigation property to sessions for communications
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get session list
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallRecordSession -CallRecordId $callRecordId
 
 ```
-### Example 2
+### Example 2: Get session list with segments
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 

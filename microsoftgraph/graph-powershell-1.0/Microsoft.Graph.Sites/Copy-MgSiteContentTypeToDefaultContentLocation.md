@@ -50,7 +50,7 @@ The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 $params = @{

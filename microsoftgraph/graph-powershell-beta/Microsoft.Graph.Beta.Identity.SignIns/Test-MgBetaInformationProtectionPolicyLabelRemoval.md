@@ -36,7 +36,7 @@ Given contentInfo as an input, which includes existing content metadata key/valu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

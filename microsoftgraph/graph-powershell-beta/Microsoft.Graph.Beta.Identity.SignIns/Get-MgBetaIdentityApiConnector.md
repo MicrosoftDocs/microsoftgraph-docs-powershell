@@ -39,7 +39,7 @@ Read the properties of an identityApiConnector object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

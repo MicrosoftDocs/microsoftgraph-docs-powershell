@@ -44,7 +44,7 @@ Update the properties of a contactMergeSuggestions object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

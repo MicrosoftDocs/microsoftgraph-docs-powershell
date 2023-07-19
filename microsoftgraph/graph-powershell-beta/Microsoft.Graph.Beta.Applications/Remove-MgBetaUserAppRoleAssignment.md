@@ -32,7 +32,7 @@ Delete an appRoleAssignment that has been granted to a user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a user's application role assignment
 ```powershell
 Remove-MgBetaUserAppRoleAssignment ` 
 -AppRoleAssignmentID '01B8ir38J0eoiYqyMt_qAVDX9vgSB6xDur4zn5zOluM' ` 

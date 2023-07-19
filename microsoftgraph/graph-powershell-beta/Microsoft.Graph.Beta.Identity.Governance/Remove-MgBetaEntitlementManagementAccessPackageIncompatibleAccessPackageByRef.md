@@ -34,7 +34,7 @@ Remove an access package from the list of access packages that have been marked 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

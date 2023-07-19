@@ -41,42 +41,42 @@ Only teachers, students, and applications with application permissions can perfo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get an educationWordResource
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
 ```
-### Example 2
+### Example 2: Get an educationLinkResource
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
 ```
-### Example 3
+### Example 3: Get an educationExcelResource
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
 ```
-### Example 4
+### Example 4: Get an educationPowerPointResource
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
 ```
-### Example 5
+### Example 5: Get an educationFileResource
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
 
 ```
-### Example 6
+### Example 6: Get an educationMediaResource
 ```powershell
 Import-Module Microsoft.Graph.Education
 

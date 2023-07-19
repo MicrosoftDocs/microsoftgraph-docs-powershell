@@ -52,7 +52,7 @@ For more information, see getCompatibleHubContentTypes and the blog post Syntex 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Synchronous pull
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 ```
@@ -63,7 +63,7 @@ $params = @{
 
 Add-MgBetaSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
-### EXAMPLE 2
+### Example 2: Asynchronous pull
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 ```

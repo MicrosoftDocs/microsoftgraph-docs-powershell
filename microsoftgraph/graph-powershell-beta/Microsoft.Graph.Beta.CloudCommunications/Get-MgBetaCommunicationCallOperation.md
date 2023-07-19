@@ -39,7 +39,7 @@ Get the status of an operation that adds the large gallery view to a call.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 

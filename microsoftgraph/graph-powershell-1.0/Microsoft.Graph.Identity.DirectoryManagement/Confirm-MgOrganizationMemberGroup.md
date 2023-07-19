@@ -30,7 +30,7 @@ Validates the ownership of the domain.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Check group memberships for a directory object
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Confirm-MgDomain -DomainId $domainId

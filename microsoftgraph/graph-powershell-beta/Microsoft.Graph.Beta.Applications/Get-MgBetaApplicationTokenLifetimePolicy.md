@@ -26,7 +26,7 @@ List the tokenLifetimePolicy objects that are assigned to an application or serv
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaApplicationTokenLifetimePolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaApplicationTokenLifetimePolicy -ApplicationId $applicationId

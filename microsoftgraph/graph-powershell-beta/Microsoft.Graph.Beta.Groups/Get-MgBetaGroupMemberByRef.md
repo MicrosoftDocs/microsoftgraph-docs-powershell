@@ -34,14 +34,14 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupMember -GroupId $groupId
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

@@ -39,7 +39,7 @@ Get entity from programControlTypes by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaProgramControlType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaProgramControlType

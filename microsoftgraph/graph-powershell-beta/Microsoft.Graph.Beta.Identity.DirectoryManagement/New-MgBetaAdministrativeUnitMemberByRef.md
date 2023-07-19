@@ -44,7 +44,7 @@ Create new navigation property ref to members for administrativeUnits
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaAdministrativeUnitMemberByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

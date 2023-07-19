@@ -39,7 +39,7 @@ Get columns from sites
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSiteListColumn Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId

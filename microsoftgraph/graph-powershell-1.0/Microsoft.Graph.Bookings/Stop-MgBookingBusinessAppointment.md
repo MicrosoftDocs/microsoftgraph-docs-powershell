@@ -47,7 +47,7 @@ Cancel the specified bookingAppointment in the specified bookingBusiness and sen
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBookingBusinessAppointment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 $params = @{

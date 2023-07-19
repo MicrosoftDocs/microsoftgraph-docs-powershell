@@ -49,7 +49,7 @@ This requires the use of the Teams policy-based recording solution.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaCommunicationCallRecordingStatus Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

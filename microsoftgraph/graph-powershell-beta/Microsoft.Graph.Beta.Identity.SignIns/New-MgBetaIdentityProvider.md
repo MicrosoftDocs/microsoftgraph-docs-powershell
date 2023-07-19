@@ -36,7 +36,7 @@ In Azure AD B2C, this operation can currently create a socialIdentityProvider, o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a specific social identity provider (Azure AD and Azure AD B2C)
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -51,7 +51,7 @@ $params = @{
 New-MgBetaIdentityProvider -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Retrieves Apple identity provider (only for Azure AD B2C)
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

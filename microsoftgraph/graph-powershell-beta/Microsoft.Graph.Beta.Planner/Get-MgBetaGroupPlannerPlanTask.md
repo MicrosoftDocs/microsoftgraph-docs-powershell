@@ -26,7 +26,7 @@ Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 

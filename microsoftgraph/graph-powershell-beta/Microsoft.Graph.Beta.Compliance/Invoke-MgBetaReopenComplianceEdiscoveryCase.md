@@ -34,7 +34,7 @@ For details, see Reopen a closed case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaReopenComplianceEdiscoveryCase Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaReopenComplianceEdiscoveryCase -CaseId $caseId

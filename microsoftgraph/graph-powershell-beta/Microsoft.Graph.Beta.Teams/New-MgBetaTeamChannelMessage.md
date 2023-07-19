@@ -64,7 +64,7 @@ Send a new chatMessage in the specified channel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Send a Hello World message in a channel
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -77,7 +77,7 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: <span class="no-loc" dir="ltr" lang="en-us">@mentions</span> a user in a channel message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -104,7 +104,7 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Send message containing cards
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -144,7 +144,7 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Send a message with file attachment in it
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -167,7 +167,7 @@ $params = @{
 New-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Send a card with inline images
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

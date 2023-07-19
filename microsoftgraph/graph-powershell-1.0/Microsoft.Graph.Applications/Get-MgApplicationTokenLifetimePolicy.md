@@ -26,7 +26,7 @@ List the tokenLifetimePolicy objects that are assigned to an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgApplicationTokenLifetimePolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId

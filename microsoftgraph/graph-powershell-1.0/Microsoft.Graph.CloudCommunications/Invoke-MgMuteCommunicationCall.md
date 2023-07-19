@@ -50,7 +50,7 @@ For more details about how to handle mute operations, see muteParticipantOperati
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgMuteCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

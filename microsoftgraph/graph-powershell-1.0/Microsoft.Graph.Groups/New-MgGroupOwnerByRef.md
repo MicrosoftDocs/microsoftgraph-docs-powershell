@@ -46,7 +46,7 @@ The owners are a set of users or service principals who are allowed to modify th
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add an owner to a group
 ```powershell
 $newGroupOwner =@{
   "@odata.id"= "https://graph.microsoft.com/v1.0/users/{4de19c17-6a28-4a91-86d1-f717c3c8c229}"

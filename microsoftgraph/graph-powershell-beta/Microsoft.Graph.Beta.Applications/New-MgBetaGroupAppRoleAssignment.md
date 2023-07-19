@@ -54,7 +54,7 @@ To grant an app role assignment to a group, you need three identifiers: Addition
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Assign an app role to a group
 ```powershell
 $appRoleAssignment = @{
   "principalId"= "f07a8d78-f18c-4c02-b339-9ebace025122"

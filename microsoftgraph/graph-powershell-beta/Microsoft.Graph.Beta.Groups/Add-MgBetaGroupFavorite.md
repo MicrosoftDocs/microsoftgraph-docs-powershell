@@ -32,7 +32,7 @@ Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaGroupFavorite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Add-MgBetaGroupFavorite -GroupId $groupId

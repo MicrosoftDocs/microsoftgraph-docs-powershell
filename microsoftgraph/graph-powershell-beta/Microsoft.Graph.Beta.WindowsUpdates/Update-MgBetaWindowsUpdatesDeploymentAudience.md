@@ -60,7 +60,7 @@ If all **updatableAsset** objects are the same type, you can also use the method
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{

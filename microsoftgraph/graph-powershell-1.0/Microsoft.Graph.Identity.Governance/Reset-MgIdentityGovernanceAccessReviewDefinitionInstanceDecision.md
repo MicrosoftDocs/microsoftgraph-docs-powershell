@@ -32,7 +32,7 @@ Resets all accessReviewInstanceDecisionItem objects on an accessReviewInstance t
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Reset-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId

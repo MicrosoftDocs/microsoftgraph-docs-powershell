@@ -38,7 +38,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Send-MgBetaTeamworkActivityNotificationToRecipient Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -74,7 +74,7 @@ $params = @{
 Send-MgBetaTeamworkActivityNotificationToRecipient -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Send-MgBetaTeamworkActivityNotificationToRecipient Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

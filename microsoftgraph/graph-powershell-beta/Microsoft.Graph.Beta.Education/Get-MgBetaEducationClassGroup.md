@@ -32,7 +32,7 @@ Retrieve the Microsoft 365 **group** that corresponds to this **educationClass**
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEducationClassGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationClassGroup -EducationClassId $educationClassId

@@ -56,7 +56,7 @@ Update an editable **secureScoreControlProfile** object within any integrated so
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Request without Prefer header
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -75,7 +75,7 @@ $params = @{
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Request with Prefer header
 ```powershell
 Import-Module Microsoft.Graph.Security
 

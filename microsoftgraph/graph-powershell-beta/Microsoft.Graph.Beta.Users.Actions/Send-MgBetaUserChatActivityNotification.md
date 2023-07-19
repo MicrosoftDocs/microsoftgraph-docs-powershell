@@ -52,7 +52,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Notify a user about a task created in a chat
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -80,7 +80,7 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 2
+### Example 2: Notify a user about an approval needed in a chat message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -108,7 +108,7 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 3
+### Example 3: Notify a user about an approval needed in a chat message using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```
@@ -136,7 +136,7 @@ $params = @{
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 
-### EXAMPLE 4
+### Example 4: Notify a user about an event in relation to a chat
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 ```

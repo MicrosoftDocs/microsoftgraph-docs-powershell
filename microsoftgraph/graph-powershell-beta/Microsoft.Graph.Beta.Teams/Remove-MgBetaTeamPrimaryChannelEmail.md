@@ -33,7 +33,7 @@ You can remove an email address only if it was provisioned using the provisionEm
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

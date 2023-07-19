@@ -39,19 +39,19 @@ Read the properties and relationships of a workflow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflow -WorkflowId $workflowId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflow
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflow -Filter "category eq 'leaver'" -Property "id,category,displayName,isEnabled,isSchedulingEnabled"

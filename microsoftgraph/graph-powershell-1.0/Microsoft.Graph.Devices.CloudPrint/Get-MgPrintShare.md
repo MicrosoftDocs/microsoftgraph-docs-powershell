@@ -39,14 +39,14 @@ Retrieve the properties and relationships of a printer share.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a printerShare
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintShare -PrinterShareId $printerShareId
 
 ```
-### Example 2
+### Example 2: Get a printerShare and its capabilities
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 

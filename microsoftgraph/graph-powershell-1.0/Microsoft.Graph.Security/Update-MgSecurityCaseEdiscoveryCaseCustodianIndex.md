@@ -32,7 +32,7 @@ Trigger an indexOperation to make a custodian and associated sources searchable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId

@@ -46,14 +46,14 @@ Create new navigation property to attachments for admin
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get all attachments of a message in a collection
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementMessageAttachment -ServiceUpdateMessageId $serviceUpdateMessageId
 
 ```
-### Example 2
+### Example 2: Get a zip file of all attachments in stream for a message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 

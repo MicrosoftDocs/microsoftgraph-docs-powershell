@@ -52,7 +52,7 @@ Create new navigation property to stages for identityGovernance
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

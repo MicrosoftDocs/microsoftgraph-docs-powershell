@@ -46,7 +46,7 @@ See the table in the Permissions section for the list of resources that support 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

@@ -33,14 +33,14 @@ Create new navigation property to appConsentRequests for identityGovernance
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1:  List all appConsentRequests
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAppConsentRequest
 
 ```
-### Example 2
+### Example 2: List all appConsentRequests with at least one userConsentRequest whose status is InProgress
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

@@ -36,7 +36,7 @@ Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Require MFA to access Exchange Online outside of trusted locations
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -78,7 +78,7 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Block access to Exchange Online from non-trusted regions
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -116,7 +116,7 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Use all conditions and controls
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -223,7 +223,7 @@ $params = @{
 New-MgIdentityConditionalAccessPolicy -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Require MFA to Exchange Online from non-compliant devices
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

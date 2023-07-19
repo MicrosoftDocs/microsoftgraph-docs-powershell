@@ -35,7 +35,7 @@ Named locations can be either ipNamedLocation or countryNamedLocation objects.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a country named location
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
@@ -56,7 +56,7 @@ Id                                   CreatedDateTime      DisplayName           
 1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM Named location with unknown countries and regions 6/13/2022 8:27:35 AM
 
 ```
-### Example 2
+### Example 2: Create an ip named location
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 

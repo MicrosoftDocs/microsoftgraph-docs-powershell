@@ -50,7 +50,7 @@ To grant an app role assignment to a user, you need three identifiers:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Assign a user an application role
 ```powershell
 New-MgBetaUserAppRoleAssignment -Userid '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `
   -PrincipalId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' `

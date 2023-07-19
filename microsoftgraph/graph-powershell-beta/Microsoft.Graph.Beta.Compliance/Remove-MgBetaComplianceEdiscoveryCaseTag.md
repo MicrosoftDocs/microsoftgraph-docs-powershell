@@ -32,7 +32,7 @@ Delete a tag object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -Forcedelete true

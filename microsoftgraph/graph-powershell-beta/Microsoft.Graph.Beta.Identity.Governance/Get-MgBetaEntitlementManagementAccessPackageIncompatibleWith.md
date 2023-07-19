@@ -41,7 +41,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith -AccessPackageId $accessPackageId

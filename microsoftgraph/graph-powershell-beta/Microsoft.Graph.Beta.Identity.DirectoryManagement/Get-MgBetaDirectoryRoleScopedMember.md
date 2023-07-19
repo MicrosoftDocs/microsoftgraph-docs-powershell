@@ -43,13 +43,13 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDirectoryRoleScopedMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDirectoryRoleScopedMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId

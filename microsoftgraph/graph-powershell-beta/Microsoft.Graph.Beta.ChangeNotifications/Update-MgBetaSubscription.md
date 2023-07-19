@@ -62,7 +62,7 @@ See subscription for maximum length of a subscription for each resource type.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 

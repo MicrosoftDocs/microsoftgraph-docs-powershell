@@ -41,7 +41,7 @@ For more information about these resources, see Set up change notifications that
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
 

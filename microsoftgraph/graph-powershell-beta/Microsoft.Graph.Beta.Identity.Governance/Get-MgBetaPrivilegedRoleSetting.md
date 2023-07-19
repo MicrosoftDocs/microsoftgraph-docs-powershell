@@ -32,7 +32,7 @@ Get settings from privilegedRoles
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrivilegedRoleSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleSetting -PrivilegedRoleId $privilegedRoleId

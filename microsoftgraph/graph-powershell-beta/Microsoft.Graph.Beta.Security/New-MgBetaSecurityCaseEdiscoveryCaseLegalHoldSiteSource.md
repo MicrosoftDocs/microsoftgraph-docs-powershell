@@ -49,7 +49,7 @@ Create a new siteSource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -60,7 +60,7 @@ $params = @{
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldSiteSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

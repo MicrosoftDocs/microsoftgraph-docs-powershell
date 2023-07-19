@@ -45,13 +45,13 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaCommunicationCallRecordSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId -ExpandProperty "segments"
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaCommunicationCallRecordSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationCallRecordSession -CallRecordId $callRecordId

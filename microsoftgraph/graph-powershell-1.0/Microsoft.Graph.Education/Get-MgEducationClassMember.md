@@ -26,7 +26,7 @@ Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgEducationClassMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassMember -EducationClassId $educationClassId

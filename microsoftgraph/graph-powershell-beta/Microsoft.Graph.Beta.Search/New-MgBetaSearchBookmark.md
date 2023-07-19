@@ -38,7 +38,7 @@ Create a new bookmark object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{

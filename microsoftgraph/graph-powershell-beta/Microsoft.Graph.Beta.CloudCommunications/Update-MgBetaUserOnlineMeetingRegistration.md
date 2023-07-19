@@ -54,7 +54,7 @@ Update the details of a meetingRegistration object assciated with an onlineMeeti
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

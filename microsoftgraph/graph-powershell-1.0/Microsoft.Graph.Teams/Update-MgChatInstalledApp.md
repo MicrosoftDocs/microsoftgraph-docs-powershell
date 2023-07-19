@@ -48,7 +48,7 @@ Upgrade an app installation within a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgChatInstalledApp Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId

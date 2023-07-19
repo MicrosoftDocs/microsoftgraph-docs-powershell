@@ -46,7 +46,7 @@ Reincorporate a participant previously put on hold to the call.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

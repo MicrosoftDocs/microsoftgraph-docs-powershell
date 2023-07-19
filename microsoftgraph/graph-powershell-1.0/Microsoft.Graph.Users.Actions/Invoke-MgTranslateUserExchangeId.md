@@ -47,7 +47,7 @@ Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgTranslateUserExchangeId Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

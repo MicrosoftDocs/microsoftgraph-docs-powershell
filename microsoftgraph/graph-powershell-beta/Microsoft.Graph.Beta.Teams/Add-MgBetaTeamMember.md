@@ -48,7 +48,7 @@ The response provides details about which memberships could and couldn't be crea
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaTeamMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -71,7 +71,7 @@ $params = @{
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Add-MgBetaTeamMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -94,7 +94,7 @@ $params = @{
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Add-MgBetaTeamMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

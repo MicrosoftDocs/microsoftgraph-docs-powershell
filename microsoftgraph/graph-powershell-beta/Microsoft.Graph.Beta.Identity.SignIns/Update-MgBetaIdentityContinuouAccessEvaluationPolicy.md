@@ -33,7 +33,7 @@ Update the properties of a continuousAccessEvaluationPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

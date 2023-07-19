@@ -41,7 +41,7 @@ You can use the `Prefer: outlook.timezone` header to have all the date-related p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Complete-MgBetaUserOutlookTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

@@ -72,7 +72,7 @@ Only the user in the tenant who sent the message can perform data loss preventio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update policyViolation property using application permissions
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -93,7 +93,7 @@ $params = @{
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Update any property of a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -130,7 +130,7 @@ $params = @{
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Update the mentions of a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -200,7 +200,7 @@ $params = @{
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Update the content with attachments of a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -300,7 +300,7 @@ $params = @{
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Update the reactions in a message using delegated permissions
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

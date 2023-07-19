@@ -39,19 +39,19 @@ Read the properties and relationships of a workflowTemplate object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -WorkflowTemplateId $workflowTemplateId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate

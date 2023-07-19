@@ -50,7 +50,7 @@ Create a new staff member in the specified bookingBusiness.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{

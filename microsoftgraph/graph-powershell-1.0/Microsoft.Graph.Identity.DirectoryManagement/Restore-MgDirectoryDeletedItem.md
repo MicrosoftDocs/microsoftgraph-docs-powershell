@@ -39,7 +39,7 @@ After 30 days, the item is permanently deleted.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restore-MgDirectoryDeletedItem Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId

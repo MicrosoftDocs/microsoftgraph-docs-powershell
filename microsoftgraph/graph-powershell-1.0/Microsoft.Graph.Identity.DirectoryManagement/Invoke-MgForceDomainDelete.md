@@ -53,7 +53,7 @@ To verify deletion of a domain, you can perform a get domain operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgForceDomainDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 $params = @{

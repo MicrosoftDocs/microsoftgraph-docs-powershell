@@ -32,7 +32,7 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 ```

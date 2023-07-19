@@ -44,7 +44,7 @@ Retrieve properties and relationships for a [site][] resource.\nA **site** resou
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 

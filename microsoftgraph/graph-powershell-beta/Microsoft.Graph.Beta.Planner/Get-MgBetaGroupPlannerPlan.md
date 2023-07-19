@@ -43,7 +43,7 @@ Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaGroupPlannerPlan Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaGroupPlannerPlan -GroupId $groupId

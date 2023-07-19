@@ -52,7 +52,7 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 $params = @{

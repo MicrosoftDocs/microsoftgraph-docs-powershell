@@ -48,7 +48,7 @@ The location can be user notebooks on Microsoft 365, group notebooks, or SharePo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserOnenoteNotebookFromWebUrl Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

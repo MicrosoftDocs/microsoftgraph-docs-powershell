@@ -38,7 +38,7 @@ Get the properties and relationships of an organizational contact.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve contact objects in the directory 
 ```powershell
 Get-MgContact | Format-List Id, DisplayName, Mail, MailNickname
 ```

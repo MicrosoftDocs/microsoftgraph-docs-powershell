@@ -35,7 +35,7 @@ Search results are provided in the response.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaQuerySearch Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 $params = @{

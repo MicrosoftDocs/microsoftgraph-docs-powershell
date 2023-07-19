@@ -41,7 +41,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgGroupDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
 Get-MgGroupDrive -GroupId $groupId

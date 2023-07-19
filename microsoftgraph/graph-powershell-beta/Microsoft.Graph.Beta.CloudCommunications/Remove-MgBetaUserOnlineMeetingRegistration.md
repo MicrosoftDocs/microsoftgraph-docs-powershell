@@ -32,14 +32,14 @@ Disable and delete the meetingRegistration of an onlineMeeting on behalf of the 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserOnlineMeetingRegistration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Remove-MgBetaUserOnlineMeetingRegistration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.

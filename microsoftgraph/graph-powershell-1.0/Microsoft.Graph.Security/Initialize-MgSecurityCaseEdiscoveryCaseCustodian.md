@@ -34,7 +34,7 @@ For details, see Manage custodians in an eDiscovery (Premium) case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Initialize-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Initialize-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId

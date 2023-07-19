@@ -53,7 +53,7 @@ Create a new personAward object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfileAward Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

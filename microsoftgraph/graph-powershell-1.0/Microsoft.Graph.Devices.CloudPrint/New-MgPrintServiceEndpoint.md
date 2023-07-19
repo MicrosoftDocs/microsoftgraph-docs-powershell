@@ -44,7 +44,7 @@ Create new navigation property to endpoints for print
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 

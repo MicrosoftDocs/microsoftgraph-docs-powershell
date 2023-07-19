@@ -36,7 +36,7 @@ You can also use this API to remove a submitted app from the review process.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

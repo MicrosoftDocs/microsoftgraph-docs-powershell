@@ -40,7 +40,7 @@ See examples of how to define a schema extension that describes a training cours
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Creating a schema extension using a verified domain
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -69,7 +69,7 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Creating a schema extension using just a name
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -98,7 +98,7 @@ $params = @{
 New-MgSchemaExtension -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Creating a schema extension setting the owner
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 

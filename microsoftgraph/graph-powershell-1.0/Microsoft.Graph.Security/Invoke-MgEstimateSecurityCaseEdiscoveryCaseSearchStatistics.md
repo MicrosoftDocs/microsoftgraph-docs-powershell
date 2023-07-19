@@ -34,7 +34,7 @@ To learn more about searches in eDiscovery, see Collect data for a case in eDisc
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId

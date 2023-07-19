@@ -41,7 +41,7 @@ Create a new accessReviewScheduleDefinition object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create an access review on a group
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -84,7 +84,7 @@ $params = @{
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create an access review on all teams with inactive guest users
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -142,7 +142,7 @@ Review our access policy for more."
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Create an access review of all users to an application
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -208,7 +208,7 @@ $params = @{
 New-MgBetaIdentityGovernanceAccessReviewDefinition -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Create an access review on a group with multiple stages
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

@@ -32,7 +32,7 @@ Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaGraphGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Invoke-MgBetaGraphGroup -GroupId $groupId

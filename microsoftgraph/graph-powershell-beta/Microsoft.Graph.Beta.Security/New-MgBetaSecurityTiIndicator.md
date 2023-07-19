@@ -47,7 +47,7 @@ Create a new tiIndicator object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

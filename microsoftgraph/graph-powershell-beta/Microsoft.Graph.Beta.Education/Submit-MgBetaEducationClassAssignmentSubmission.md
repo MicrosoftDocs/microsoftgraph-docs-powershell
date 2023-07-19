@@ -42,7 +42,7 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Submit-MgBetaEducationClassAssignmentSubmission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Submit-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId

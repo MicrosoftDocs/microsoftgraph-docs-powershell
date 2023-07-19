@@ -26,7 +26,7 @@ List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipa
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

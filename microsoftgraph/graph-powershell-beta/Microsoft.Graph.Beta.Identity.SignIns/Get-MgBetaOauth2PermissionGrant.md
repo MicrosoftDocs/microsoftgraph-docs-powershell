@@ -41,7 +41,7 @@ An **oAuth2PermissionGrant** represents delegated permissions which have been gr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

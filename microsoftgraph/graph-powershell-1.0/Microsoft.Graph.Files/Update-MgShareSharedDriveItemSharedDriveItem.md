@@ -58,21 +58,21 @@ Update entity in shares
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
 
 ```
-### Example 3
+### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 

@@ -54,7 +54,7 @@ No user or group will be provisioned on-demand that would not have been provisio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -73,7 +73,7 @@ $params = @{
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -92,7 +92,7 @@ $params = @{
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -123,7 +123,7 @@ $params = @{
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

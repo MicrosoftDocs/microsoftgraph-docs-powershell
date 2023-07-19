@@ -56,7 +56,7 @@ Alternatively, create a draft to reply to an existing message and send it later.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgReplyUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

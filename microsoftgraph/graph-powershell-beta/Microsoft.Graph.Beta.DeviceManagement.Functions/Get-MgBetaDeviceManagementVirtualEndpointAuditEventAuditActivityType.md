@@ -25,7 +25,7 @@ Invoke function getAuditActivityTypes
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointAuditEventAuditActivityType

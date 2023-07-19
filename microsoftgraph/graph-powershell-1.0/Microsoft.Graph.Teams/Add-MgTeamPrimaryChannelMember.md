@@ -48,7 +48,7 @@ The response provides details about which memberships could and couldn't be crea
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add members in bulk to a team
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -73,7 +73,7 @@ $params = @{
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Add members in bulk and encounter partial failure
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -98,7 +98,7 @@ $params = @{
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Add members in bulk to a team using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

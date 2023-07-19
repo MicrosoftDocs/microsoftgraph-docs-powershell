@@ -50,7 +50,7 @@ Update the properties of an onPremisesAgentGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

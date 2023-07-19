@@ -40,7 +40,7 @@ The API returns an informationProtectionAction that contains one of more of the 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

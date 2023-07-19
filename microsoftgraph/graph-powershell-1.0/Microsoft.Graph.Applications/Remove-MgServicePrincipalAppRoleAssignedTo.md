@@ -32,7 +32,7 @@ Deletes an appRoleAssignment that a user, group, or client service principal has
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 

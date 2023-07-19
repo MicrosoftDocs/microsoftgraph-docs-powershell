@@ -50,7 +50,7 @@ Create a new noncustodialDataSource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -63,7 +63,7 @@ $params = @{
 New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

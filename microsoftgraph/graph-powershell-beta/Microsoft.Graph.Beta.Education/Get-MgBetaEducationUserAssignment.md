@@ -41,13 +41,13 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEducationUserAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId -ExpandProperty "submissions"
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaEducationUserAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId

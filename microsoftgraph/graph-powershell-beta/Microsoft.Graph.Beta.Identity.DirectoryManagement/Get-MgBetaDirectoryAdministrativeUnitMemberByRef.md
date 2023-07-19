@@ -28,14 +28,14 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: List member objects
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryAdministrativeUnitMember -AdministrativeUnitId $administrativeUnitId
 
 ```
-### Example 2
+### Example 2: List member references
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 

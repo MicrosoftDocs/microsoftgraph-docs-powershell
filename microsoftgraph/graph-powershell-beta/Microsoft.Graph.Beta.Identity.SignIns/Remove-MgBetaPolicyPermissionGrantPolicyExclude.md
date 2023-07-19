@@ -32,7 +32,7 @@ Deletes a permissionGrantConditionSet from the **excludes** collection of a perm
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a permission grant policy exclude
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Remove-MgBetaPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "60ba4fac-d39e-47b3-bd99-4394cb88a2f8" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"

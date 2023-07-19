@@ -58,7 +58,7 @@ The current timeout value is 15 seconds for regular scenarios, and 5 seconds for
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

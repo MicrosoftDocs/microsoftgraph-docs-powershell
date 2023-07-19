@@ -39,25 +39,25 @@ The templates associated with a team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"  -OutFile $outFileId
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"

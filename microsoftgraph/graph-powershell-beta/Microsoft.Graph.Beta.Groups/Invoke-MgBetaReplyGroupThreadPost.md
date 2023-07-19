@@ -49,7 +49,7 @@ You can specify both the parent conversation and thread in the request, or, you 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaReplyGroupThreadPost Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -76,7 +76,7 @@ $params = @{
 Invoke-MgBetaReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Invoke-MgBetaReplyGroupThreadPost Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{

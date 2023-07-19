@@ -39,14 +39,14 @@ Retrieve the properties and relationships of a languageProficiency object within
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserProfileLanguage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileLanguage -UserId $userId -LanguageProficiencyId $languageProficiencyId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserProfileLanguage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.

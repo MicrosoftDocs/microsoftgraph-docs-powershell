@@ -46,7 +46,7 @@ Get userFlowIdentityProviders from identity
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityB2CUserFlowIdentityProvider Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowIdentityProvider -B2cIdentityUserFlowId $b2cIdentityUserFlowId

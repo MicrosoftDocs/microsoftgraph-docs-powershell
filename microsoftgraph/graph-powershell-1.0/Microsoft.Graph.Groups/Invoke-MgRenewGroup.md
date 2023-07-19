@@ -32,7 +32,7 @@ When a group is renewed, the group expiration is extended by the number of days 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgRenewGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Invoke-MgRenewGroup -GroupId $groupId

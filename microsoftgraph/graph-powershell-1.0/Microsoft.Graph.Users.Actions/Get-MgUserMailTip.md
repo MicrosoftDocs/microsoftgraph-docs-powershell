@@ -50,7 +50,7 @@ The requested MailTips are returned in a mailTips collection.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserMailTip Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

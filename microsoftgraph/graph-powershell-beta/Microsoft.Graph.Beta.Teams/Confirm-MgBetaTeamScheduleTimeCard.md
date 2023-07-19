@@ -31,7 +31,7 @@ Confirm a specific timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaTeamScheduleTimeCard Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Confirm-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId

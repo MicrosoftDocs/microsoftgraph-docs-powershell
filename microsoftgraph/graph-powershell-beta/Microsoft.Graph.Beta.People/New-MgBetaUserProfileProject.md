@@ -57,7 +57,7 @@ Use this API to create a new projectParticipation object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfileProject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

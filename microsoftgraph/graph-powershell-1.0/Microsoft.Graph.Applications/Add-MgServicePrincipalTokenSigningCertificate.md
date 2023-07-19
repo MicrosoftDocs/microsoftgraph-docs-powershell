@@ -61,7 +61,7 @@ The **endDateTime** can be up to three years after the certificate is created.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgServicePrincipalTokenSigningCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{

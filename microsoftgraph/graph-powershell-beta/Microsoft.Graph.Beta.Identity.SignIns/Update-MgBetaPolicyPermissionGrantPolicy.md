@@ -48,7 +48,7 @@ Update properties of a  permissionGrantPolicy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update a permission grant policy
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Update-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions" -Description "Permissions for sample app in test tenant with new updates" -DisplayName "Sample app permissions with new updates"

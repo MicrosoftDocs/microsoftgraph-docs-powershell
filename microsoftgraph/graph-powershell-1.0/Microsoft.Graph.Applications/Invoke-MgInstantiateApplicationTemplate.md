@@ -50,7 +50,7 @@ Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgInstantiateApplicationTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{

@@ -39,7 +39,7 @@ Represents the self-service password reset (SSPR) usage for a given tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaReportUserCredentialUsageDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportUserCredentialUsageDetail

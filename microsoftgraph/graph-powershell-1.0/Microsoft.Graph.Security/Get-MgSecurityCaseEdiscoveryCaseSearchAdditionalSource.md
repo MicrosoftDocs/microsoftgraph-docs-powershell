@@ -39,7 +39,7 @@ Adds an additional source to the eDiscovery search.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Security
 

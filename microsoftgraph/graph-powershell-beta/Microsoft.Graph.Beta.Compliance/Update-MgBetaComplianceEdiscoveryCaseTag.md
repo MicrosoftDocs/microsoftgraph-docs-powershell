@@ -50,7 +50,7 @@ Update the properties of a tag object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

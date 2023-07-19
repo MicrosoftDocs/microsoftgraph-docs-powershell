@@ -26,7 +26,7 @@ Retrieve a list of users who have been granted access to submit print jobs to th
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrintShareAllowedUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintShareAllowedUser -PrinterShareId $printerShareId

@@ -33,7 +33,7 @@ For details, see Close a case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Close-MgBetaComplianceEdiscoveryCase Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Close-MgBetaComplianceEdiscoveryCase -CaseId $caseId

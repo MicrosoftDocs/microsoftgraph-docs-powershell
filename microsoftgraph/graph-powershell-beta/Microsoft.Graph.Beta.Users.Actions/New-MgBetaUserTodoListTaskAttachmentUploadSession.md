@@ -57,7 +57,7 @@ The following are the steps to attach a file to a Microsoft To Do task using an 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserTodoListTaskAttachmentUploadSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

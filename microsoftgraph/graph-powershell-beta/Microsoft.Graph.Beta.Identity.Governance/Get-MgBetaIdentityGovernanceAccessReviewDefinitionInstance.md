@@ -44,7 +44,7 @@ To retrieve the decisions on the instance, use List accessReviewInstanceDecision
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

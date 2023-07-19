@@ -32,7 +32,7 @@ Publishes a [contentType][] present in a content type hub site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Publish-MgBetaSiteContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Publish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId

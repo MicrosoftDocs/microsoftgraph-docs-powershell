@@ -39,7 +39,7 @@ Details of the usage of self-service password reset and multi-factor authenticat
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportCredentialUserRegistrationDetail

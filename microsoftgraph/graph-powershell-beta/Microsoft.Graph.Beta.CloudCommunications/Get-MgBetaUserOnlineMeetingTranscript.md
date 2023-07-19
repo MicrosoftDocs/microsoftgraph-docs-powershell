@@ -43,13 +43,13 @@ Retrieving the content of the transcript returns the stream of text associated w
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserOnlineMeetingTranscript Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscript -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserOnlineMeetingTranscript Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscript -UserId $userId -OnlineMeetingId $onlineMeetingId

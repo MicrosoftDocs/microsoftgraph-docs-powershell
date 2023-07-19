@@ -47,7 +47,7 @@ Clock out to end an open timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaClockTeamScheduleTimeCardOut Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

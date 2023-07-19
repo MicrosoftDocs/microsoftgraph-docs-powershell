@@ -47,7 +47,7 @@ Associate a [content type][contentType] with a list of hub sites.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Join-MgBetaSiteContentTypeWithHubSite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{

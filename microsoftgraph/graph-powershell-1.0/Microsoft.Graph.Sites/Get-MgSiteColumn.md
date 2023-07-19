@@ -39,7 +39,7 @@ The collection of column definitions reusable across lists under this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 

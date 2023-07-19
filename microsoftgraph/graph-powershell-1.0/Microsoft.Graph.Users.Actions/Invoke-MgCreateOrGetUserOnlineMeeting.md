@@ -52,7 +52,7 @@ If the external ID already exists, this API will return the onlineMeeting object
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgCreateOrGetUserOnlineMeeting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

@@ -52,7 +52,7 @@ For details, see Export documents from a review set in Advanced eDiscovery.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Export-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

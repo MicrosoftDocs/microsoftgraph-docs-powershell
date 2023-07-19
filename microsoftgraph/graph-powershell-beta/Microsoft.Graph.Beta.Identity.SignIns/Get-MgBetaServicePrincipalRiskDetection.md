@@ -39,7 +39,7 @@ Read the properties and relationships of a servicePrincipalRiskDetection object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example: Get a specific risk detection object
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

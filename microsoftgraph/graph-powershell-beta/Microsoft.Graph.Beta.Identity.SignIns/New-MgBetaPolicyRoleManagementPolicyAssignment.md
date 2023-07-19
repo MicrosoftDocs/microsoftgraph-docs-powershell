@@ -34,14 +34,14 @@ Create new navigation property to roleManagementPolicyAssignments for policies
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve the role management policy assignments
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyRoleManagementPolicyAssignment -Filter "scopeId eq '/' and scopeType eq 'Directory'"
 
 ```
-### Example 2
+### Example 2: Retrieve the role management policy assignments for an Azure AD role and expand the policy and its associated rules
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

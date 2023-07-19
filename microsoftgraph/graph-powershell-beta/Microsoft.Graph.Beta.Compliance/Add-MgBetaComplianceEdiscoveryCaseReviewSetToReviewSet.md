@@ -54,7 +54,7 @@ The location provides a URL that will return a caseExportOperation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

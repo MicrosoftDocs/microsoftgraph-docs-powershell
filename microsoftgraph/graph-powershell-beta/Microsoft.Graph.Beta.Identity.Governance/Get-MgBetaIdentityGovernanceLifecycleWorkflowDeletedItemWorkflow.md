@@ -39,13 +39,13 @@ Retrieve a deleted workflow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow

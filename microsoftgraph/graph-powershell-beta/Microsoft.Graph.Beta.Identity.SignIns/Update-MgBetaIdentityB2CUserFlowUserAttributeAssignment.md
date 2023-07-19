@@ -52,7 +52,7 @@ Update the properties of a identityUserFlowAttributeAssignment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

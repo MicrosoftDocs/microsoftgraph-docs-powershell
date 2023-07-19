@@ -52,7 +52,7 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

@@ -47,7 +47,7 @@ To get your application's activities, use the **nextLink** property to paginate.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgRecentUserActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.

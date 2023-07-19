@@ -48,7 +48,7 @@ This allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgSubscribeCommunicationCallToTone Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

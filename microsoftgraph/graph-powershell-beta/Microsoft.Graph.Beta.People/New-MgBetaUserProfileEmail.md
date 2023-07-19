@@ -51,7 +51,7 @@ Create a new itemEmail object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfileEmail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

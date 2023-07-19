@@ -32,7 +32,7 @@ Use this API to remove a member (user, group, or device) from an administrative 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 

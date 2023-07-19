@@ -32,7 +32,7 @@ Delete a permissionGrantPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a permission grant policy
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
 Remove-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"

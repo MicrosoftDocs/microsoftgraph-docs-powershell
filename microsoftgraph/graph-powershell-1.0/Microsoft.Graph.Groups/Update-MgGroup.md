@@ -96,7 +96,7 @@ Update the properties of a group object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update the properties of a group
 ```powershell
 $GroupUpdate= @{
   "Description"= "This is a test group"

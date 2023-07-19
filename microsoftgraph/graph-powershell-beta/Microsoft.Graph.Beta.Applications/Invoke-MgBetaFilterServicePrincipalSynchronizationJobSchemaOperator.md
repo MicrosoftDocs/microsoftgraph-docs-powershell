@@ -34,7 +34,7 @@ Invoke function filterOperators
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId

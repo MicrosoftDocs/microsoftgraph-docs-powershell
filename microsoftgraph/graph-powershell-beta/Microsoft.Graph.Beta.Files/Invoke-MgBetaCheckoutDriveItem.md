@@ -32,7 +32,7 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaCheckoutDriveItem Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId

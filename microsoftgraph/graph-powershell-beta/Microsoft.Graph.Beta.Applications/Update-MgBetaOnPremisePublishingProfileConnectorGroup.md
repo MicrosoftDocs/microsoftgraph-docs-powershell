@@ -50,7 +50,7 @@ Update the properties of a connectorGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

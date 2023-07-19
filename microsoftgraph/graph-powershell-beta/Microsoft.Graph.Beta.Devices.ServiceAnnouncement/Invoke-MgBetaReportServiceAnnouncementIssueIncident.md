@@ -32,7 +32,7 @@ Invoke function incidentReport
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaReportServiceAnnouncementIssueIncident Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 Invoke-MgBetaReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId

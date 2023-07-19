@@ -52,7 +52,7 @@ Update the properties of an itemAddress object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileAddress Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

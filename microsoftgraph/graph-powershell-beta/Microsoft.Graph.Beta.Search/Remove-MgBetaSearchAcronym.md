@@ -32,7 +32,7 @@ Deletes an acronym object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Remove-MgBetaSearchAcronym -AcronymId $acronymId

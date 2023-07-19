@@ -60,7 +60,7 @@ In scenarios like test environments where the input parameters and calendar data
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Find-MgBetaUserMeetingTime Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

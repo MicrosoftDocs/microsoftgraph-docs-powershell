@@ -52,7 +52,7 @@ To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgDirectoryObjectProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 $params = @{

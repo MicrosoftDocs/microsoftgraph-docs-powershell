@@ -41,13 +41,13 @@ This operation allows retrieval of the properties of the **directorySettingTempl
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySettingTemplate -DirectorySettingTemplateId $directorySettingTemplateId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySettingTemplate

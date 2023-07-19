@@ -34,7 +34,7 @@ For more information, see Publisher verification.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Check group memberships for a directory object
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Clear-MgApplicationVerifiedPublisher -ApplicationId $applicationId

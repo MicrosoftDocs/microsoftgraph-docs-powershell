@@ -39,7 +39,7 @@ App role assignments for this app or service, granted to users, groups, and othe
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

@@ -55,7 +55,7 @@ If the file doesn't exist or is not in that folder, the POST request will fail.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create an educationWordResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -70,7 +70,7 @@ $params = @{
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create an educationLinkResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -85,7 +85,7 @@ $params = @{
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Create an educationFileResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -100,7 +100,7 @@ $params = @{
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Create an educationExcelResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -115,7 +115,7 @@ $params = @{
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Create an educationPowerPointResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -130,7 +130,7 @@ $params = @{
 New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 
 ```
-### Example 6
+### Example 6: Create an educationMediaResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

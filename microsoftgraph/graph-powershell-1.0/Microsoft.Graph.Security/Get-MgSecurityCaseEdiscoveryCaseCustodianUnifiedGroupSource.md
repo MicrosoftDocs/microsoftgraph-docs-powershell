@@ -41,7 +41,7 @@ Data source entity for groups associated with the custodian.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Security
 

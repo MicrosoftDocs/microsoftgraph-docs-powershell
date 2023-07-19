@@ -46,7 +46,7 @@ Update the properties of an identityApiConnector object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Changing display name, targetUrl, and username &amp; password used for basic authentication
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -63,7 +63,7 @@ $params = @{
 Update-MgIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Changing API connector to use client certificate authentication
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

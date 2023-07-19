@@ -41,7 +41,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get appRoleAssignments granted to a group
 ```powershell
 Get-MgGroupAppRoleAssignment -GroupId '2692d278-8323-4094-b286-e0ffce5e54a5' |
   Format-List

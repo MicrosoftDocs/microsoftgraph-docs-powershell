@@ -39,7 +39,7 @@ Specifies the assets to include in the audience.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaWindowsUpdatesDeploymentAudienceMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeploymentAudienceMember -DeploymentId $deploymentId

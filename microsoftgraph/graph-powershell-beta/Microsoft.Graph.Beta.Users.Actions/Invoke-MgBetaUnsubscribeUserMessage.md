@@ -48,7 +48,7 @@ The actual exclusion of the user from future mail distribution is managed by the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUnsubscribeUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

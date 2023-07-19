@@ -37,7 +37,7 @@ However, teachers cannot remove resources marked as 'distributeToStudents', afte
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

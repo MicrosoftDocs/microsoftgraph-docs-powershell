@@ -46,7 +46,7 @@ Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Grant-MgBetaSharePermission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 $params = @{

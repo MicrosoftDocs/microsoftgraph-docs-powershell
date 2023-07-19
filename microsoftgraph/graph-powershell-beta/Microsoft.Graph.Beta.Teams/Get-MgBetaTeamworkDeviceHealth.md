@@ -34,7 +34,7 @@ Device health is calculated based on the device configuration and other device p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamworkDeviceHealth Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceHealth -TeamworkDeviceId $teamworkDeviceId

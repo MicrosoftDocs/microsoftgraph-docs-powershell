@@ -62,7 +62,7 @@ To get properties that are _not_ returned by default, do a GET operation and spe
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a new group
 ```powershell
 New-MgGroup -DisplayName 'Test Group' -MailEnabled:$False  -MailNickName 'testgroup' -SecurityEnabled
 

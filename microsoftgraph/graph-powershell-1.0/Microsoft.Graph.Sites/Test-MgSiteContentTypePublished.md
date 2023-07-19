@@ -30,7 +30,7 @@ Invoke function isPublished
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgSiteContentTypePublished Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Test-MgSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId

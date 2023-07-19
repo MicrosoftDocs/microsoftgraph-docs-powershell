@@ -43,7 +43,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserOutlookTaskAttachment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 Get-MgBetaUserOutlookTaskAttachment -UserId $userId -OutlookTaskId $outlookTaskId

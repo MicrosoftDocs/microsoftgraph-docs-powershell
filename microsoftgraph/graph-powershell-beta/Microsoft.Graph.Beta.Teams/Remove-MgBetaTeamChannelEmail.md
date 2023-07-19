@@ -34,7 +34,7 @@ You can remove an email address only if it was provisioned using the provisionEm
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaTeamChannelEmail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaTeamChannelEmail -TeamId $teamId -ChannelId $channelId

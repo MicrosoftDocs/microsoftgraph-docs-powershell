@@ -43,7 +43,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgServicePrincipalCreatedObject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Get-MgServicePrincipalCreatedObject -ServicePrincipalId $servicePrincipalId

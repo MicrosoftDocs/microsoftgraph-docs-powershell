@@ -39,13 +39,13 @@ Read the properties and relationships of a specific cloudPcGalleryImage object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointGalleryImage -CloudPcGalleryImageId $cloudPcGalleryImageId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointGalleryImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointGalleryImage

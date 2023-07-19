@@ -48,7 +48,7 @@ Create a new directory extension definition, represented by an extensionProperty
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

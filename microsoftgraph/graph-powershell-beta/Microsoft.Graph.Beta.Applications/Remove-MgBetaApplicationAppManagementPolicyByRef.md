@@ -34,7 +34,7 @@ When you remove the appManagementPolicy, the application or service principal ad
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

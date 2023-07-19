@@ -60,7 +60,7 @@ Alternatively, create a draft to forward a message, and send it later.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgForwardUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

@@ -49,7 +49,7 @@ Microsoft Teams provides a user interface for teachers to create teams for their
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

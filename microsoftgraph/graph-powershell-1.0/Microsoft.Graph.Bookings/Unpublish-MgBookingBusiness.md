@@ -33,7 +33,7 @@ Set the **isPublished** property to `false`, and the **publicUrl** property to `
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Unpublish-MgBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 Unpublish-MgBookingBusiness -BookingBusinessId $bookingBusinessId

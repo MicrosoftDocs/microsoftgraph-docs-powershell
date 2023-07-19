@@ -64,7 +64,7 @@ Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

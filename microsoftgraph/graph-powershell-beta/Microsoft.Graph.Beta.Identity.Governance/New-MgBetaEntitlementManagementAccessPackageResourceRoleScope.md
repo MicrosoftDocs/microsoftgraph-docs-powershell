@@ -54,7 +54,7 @@ Once you add the resource role scope to the access package, the user will receiv
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a new access package resource role scope
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{

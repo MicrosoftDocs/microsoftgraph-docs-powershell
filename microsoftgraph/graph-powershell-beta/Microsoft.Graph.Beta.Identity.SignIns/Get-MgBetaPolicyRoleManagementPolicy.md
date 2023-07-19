@@ -39,14 +39,14 @@ Represents the role management policies.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve the details of a role management policy
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 
 ```
-### Example 2
+### Example 2: Retrieve the details of a role management policy and expand the relationships
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

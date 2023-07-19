@@ -44,7 +44,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPolicyRoleManagementPolicyEffectiveRule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId

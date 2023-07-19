@@ -53,7 +53,7 @@ Create a new personInterest.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfileInterest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

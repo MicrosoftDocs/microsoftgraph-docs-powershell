@@ -32,7 +32,7 @@ Delete a timeCard instance in a schedule.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaTeamScheduleTimeCard Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId

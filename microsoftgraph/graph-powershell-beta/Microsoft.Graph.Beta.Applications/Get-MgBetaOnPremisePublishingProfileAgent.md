@@ -39,13 +39,13 @@ Retrieve the properties and relationships of an onPremisesAgent object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOnPremisePublishingProfileAgent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaOnPremisePublishingProfileAgent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileAgent -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentId $onPremisesAgentId -ExpandProperty "agentGroups"

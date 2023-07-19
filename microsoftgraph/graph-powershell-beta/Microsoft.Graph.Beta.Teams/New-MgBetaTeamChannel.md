@@ -62,7 +62,7 @@ You can add a maximum of 200 members when you create a private channel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a standard channel
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -75,7 +75,7 @@ $params = @{
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create private channel on behalf of user
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -98,7 +98,7 @@ $params = @{
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Create a channel in migration mode
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -112,7 +112,7 @@ $params = @{
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Create private channel on behalf of user using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -135,7 +135,7 @@ $params = @{
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Create a shared channel on behalf of a user
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

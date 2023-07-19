@@ -32,7 +32,7 @@ Delete a tiIndicator object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId

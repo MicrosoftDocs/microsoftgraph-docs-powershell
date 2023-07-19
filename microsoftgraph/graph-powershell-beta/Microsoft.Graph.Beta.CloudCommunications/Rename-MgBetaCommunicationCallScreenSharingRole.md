@@ -46,7 +46,7 @@ Allow applications to share screen content with the participants of a group call
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Rename-MgBetaCommunicationCallScreenSharingRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

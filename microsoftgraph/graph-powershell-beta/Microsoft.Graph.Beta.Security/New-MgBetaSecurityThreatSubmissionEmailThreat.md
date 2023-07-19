@@ -40,7 +40,7 @@ Create a new emailThreatSubmission object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

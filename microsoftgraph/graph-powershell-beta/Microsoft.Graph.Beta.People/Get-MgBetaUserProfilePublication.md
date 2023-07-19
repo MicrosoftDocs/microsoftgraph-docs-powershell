@@ -39,14 +39,14 @@ Read the properties and relationships of an itemPublication object in a user's p
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserProfilePublication Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePublication -UserId $userId -ItemPublicationId $itemPublicationId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserProfilePublication Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.

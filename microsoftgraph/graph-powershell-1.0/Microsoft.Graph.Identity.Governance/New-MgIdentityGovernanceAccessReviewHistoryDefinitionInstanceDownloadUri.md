@@ -37,7 +37,7 @@ Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId

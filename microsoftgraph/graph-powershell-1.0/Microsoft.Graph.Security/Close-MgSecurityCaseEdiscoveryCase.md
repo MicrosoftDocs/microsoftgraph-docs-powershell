@@ -34,7 +34,7 @@ For details, see Close a case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Close-MgSecurityCaseEdiscoveryCase Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Close-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId

@@ -31,7 +31,7 @@ Publishes a [contentType][] present in the content type hub site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Publish-MgSiteContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Publish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId

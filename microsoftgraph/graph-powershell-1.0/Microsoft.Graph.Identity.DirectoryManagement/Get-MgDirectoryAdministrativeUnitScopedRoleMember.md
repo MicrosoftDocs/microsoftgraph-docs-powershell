@@ -39,7 +39,7 @@ Get an Azure Active Directory (Azure AD) role assignment with administrative uni
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 

@@ -54,7 +54,7 @@ However, it will not cancel a **subscribeToTone** operation because it operates 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgCommunicationCallMediaProcessing Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

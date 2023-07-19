@@ -52,7 +52,7 @@ The location provides a URL that will return a Add to review set operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 $params = @{

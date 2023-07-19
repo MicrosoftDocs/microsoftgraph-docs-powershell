@@ -39,13 +39,13 @@ Read the properties and relationships of an urlThreatSubmission object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionUrlThreat -UrlThreatSubmissionId $urlThreatSubmissionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionUrlThreat

@@ -39,14 +39,14 @@ Assignments belonging to the user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get assignments of a user
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUserAssignment -EducationUserId $educationUserId
 
 ```
-### Example 2
+### Example 2: Get user assignments with expand submissions
 ```powershell
 Import-Module Microsoft.Graph.Education
 

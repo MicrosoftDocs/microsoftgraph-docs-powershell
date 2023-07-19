@@ -48,7 +48,7 @@ Any user can update their password without belonging to any administrator role.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

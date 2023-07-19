@@ -33,7 +33,7 @@ Archive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgArchiveServiceAnnouncementMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 $params = @{

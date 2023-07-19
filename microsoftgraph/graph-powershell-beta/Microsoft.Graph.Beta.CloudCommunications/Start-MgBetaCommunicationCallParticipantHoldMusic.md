@@ -48,7 +48,7 @@ Put a participant on hold and play music in the background.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Start-MgBetaCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

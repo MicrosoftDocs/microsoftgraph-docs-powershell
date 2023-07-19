@@ -50,7 +50,7 @@ For more guidance about exporting data while complying with regulations, see Dat
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Export-MgBetaUserPersonalData Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

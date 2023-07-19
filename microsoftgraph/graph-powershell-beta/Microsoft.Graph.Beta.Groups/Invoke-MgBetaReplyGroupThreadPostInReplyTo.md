@@ -49,7 +49,7 @@ You can specify both the parent conversation and thread in the request, or, you 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

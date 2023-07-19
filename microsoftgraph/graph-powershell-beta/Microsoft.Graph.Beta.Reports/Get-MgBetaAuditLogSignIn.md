@@ -41,7 +41,7 @@ This includes sign-ins where a user is asked to enter a username or password, an
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 

@@ -39,13 +39,13 @@ Get the details of an async, long-running operation on a Microsoft Teams-enabled
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamworkDeviceOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId -TeamworkDeviceOperationId $teamworkDeviceOperationId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaTeamworkDeviceOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId

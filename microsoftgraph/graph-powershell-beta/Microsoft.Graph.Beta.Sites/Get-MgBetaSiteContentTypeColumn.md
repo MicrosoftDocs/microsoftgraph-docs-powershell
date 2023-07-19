@@ -39,7 +39,7 @@ Retrieve the metadata for a [site][], [list][] or [contentType][] [column][colum
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 

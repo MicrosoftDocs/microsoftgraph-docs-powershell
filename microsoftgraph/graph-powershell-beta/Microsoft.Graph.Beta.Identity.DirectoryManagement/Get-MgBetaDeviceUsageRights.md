@@ -39,13 +39,13 @@ Represents the usage rights a device has been granted.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceUsageRights Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDeviceUsageRights -DeviceId $deviceId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDeviceUsageRights Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')"

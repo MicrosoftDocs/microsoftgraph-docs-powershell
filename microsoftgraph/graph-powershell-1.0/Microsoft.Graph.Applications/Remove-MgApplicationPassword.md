@@ -46,7 +46,7 @@ Remove a password from an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgApplicationPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{

@@ -32,7 +32,7 @@ Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Security
 

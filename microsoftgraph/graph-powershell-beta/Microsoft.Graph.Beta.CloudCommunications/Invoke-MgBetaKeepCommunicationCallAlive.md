@@ -43,7 +43,7 @@ The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId

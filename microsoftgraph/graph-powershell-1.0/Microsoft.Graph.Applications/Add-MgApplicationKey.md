@@ -56,7 +56,7 @@ You can use the Update application operation to perform an update instead.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
@@ -71,7 +71,7 @@ $params = @{
 Add-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Add-MgApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{

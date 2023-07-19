@@ -46,7 +46,7 @@ Associate a published [content type][contentType] present in a content type hub 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Join-MgSiteContentTypeWithHubSite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 $params = @{

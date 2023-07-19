@@ -32,13 +32,13 @@ Undo soft deletion of a single chatMessage or a chat message reply in a channel 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Undo-MgBetaTeamChannelMessageSoftDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Undo-MgBetaTeamChannelMessageSoftDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Undo-MgBetaTeamChannelMessageSoftDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId

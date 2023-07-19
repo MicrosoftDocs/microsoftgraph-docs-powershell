@@ -46,7 +46,7 @@ Start a break in a specific timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

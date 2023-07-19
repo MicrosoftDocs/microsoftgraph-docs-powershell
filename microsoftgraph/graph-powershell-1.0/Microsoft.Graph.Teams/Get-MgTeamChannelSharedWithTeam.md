@@ -53,7 +53,7 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

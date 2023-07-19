@@ -32,13 +32,13 @@ Delete a resourceConnection object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId

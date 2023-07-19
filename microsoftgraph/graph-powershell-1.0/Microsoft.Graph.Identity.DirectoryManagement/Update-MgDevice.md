@@ -66,7 +66,7 @@ Only certain properties of a device can be updated through approved Mobile Devic
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update the accountEnabled property of a device
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -77,7 +77,7 @@ $params = @{
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2:  Write extensionAttributes on a device
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 

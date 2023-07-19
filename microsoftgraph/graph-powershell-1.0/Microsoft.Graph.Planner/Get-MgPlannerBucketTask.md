@@ -26,7 +26,7 @@ Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgPlannerBucketTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlannerBucketTask -PlannerBucketId $plannerBucketId

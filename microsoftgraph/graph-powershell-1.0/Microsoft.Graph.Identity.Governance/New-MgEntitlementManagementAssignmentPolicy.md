@@ -43,7 +43,7 @@ The request will include a reference to the accessPackage that will contain this
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -83,7 +83,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -204,7 +204,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -230,7 +230,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

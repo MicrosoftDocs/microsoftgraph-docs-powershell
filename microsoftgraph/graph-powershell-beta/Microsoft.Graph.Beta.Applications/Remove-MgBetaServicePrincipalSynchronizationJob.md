@@ -34,7 +34,7 @@ Synchronized accounts are left as-is.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId

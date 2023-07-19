@@ -39,7 +39,7 @@ Represents the risk history of Azure AD service principals.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaRiskyServicePrincipalHistory Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaRiskyServicePrincipalHistory -RiskyServicePrincipalId $riskyServicePrincipalId

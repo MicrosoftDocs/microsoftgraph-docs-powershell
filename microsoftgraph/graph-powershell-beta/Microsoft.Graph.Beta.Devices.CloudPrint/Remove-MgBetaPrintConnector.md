@@ -32,7 +32,7 @@ Delete (unregister) a printConnector.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 

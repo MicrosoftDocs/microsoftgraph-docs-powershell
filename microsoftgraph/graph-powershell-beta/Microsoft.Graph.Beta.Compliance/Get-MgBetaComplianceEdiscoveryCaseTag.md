@@ -39,13 +39,13 @@ Read the properties and relationships of a tag object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaComplianceEdiscoveryCaseTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId

@@ -39,7 +39,7 @@ The collection of messages in the mailFolder.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserMailFolderMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 # A UPN can also be used as -UserId.

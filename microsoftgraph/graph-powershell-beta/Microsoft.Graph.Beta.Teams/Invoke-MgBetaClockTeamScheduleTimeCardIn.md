@@ -48,7 +48,7 @@ Clock in to start a timeCard.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaClockTeamScheduleTimeCardIn Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

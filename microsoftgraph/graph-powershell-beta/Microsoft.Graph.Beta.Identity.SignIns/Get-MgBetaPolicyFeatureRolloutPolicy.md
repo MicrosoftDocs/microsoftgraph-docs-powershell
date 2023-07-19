@@ -39,14 +39,14 @@ Retrieve the properties and relationships of a featureRolloutPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a feature rollout policy
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
 
 ```
-### Example 2
+### Example 2: Get a feature rollout policy and expand appliesTo
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

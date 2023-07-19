@@ -32,7 +32,7 @@ Delete a printer's task trigger to prevent related print events from triggering 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 

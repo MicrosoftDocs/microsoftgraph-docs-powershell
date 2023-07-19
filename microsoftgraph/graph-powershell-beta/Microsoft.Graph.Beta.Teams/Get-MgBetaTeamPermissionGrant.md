@@ -39,7 +39,7 @@ A collection of permissions granted to apps to access the team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamPermissionGrant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamPermissionGrant -TeamId $teamId

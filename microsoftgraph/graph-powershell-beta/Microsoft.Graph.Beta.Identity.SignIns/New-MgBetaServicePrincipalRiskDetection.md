@@ -37,14 +37,14 @@ Create new navigation property to servicePrincipalRiskDetections for identityPro
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: List risk detections
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaServicePrincipalRiskDetection
 
 ```
-### Example 2
+### Example 2: List risk detections and filter the results
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

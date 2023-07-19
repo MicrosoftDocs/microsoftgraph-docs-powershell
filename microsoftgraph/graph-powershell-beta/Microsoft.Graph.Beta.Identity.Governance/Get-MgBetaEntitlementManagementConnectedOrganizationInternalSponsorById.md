@@ -51,7 +51,7 @@ Some common uses for this function are to:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```

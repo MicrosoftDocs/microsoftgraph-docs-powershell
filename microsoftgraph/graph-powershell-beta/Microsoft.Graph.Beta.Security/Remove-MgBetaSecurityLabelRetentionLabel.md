@@ -32,7 +32,7 @@ Delete a retentionLabel object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId

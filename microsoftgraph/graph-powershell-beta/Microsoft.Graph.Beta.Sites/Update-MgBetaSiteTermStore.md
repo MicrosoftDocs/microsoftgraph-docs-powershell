@@ -46,7 +46,7 @@ Update the navigation property termStore in sites
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 

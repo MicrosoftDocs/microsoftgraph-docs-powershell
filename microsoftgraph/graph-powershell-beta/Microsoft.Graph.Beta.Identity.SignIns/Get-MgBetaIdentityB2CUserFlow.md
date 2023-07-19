@@ -39,19 +39,19 @@ Retrieve the properties and relationships of a b2cUserFlow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityB2CUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityB2CUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlow -ExpandProperty "identityProviders"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaIdentityB2CUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlow

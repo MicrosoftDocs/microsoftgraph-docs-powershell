@@ -66,7 +66,7 @@ This API cannot create a new chat; you must use the list chats method to retriev
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

@@ -34,7 +34,7 @@ As a recommended best practice, service principals should have at least two owne
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

@@ -54,7 +54,7 @@ Create a new application object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a new application
 ```powershell
 New-MgApplication -DisplayName 'New app' | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain

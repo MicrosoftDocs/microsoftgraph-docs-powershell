@@ -35,7 +35,7 @@ This action sets the targeted user's risk level to none.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{

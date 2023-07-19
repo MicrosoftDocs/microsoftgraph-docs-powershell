@@ -39,7 +39,7 @@ The collection of decisions for this access review.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaAccessReviewDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId

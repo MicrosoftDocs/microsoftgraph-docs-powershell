@@ -28,7 +28,7 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOrganizationId $connectedOrganizationId

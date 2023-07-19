@@ -24,7 +24,7 @@ Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

@@ -25,7 +25,7 @@ Invoke function getSubscriptions
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointSnapshotSubscription

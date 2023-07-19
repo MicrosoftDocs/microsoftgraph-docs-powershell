@@ -35,7 +35,7 @@ Use this action to provide real-time feedback on password strength while the use
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

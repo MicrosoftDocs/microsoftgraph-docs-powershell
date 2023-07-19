@@ -47,7 +47,7 @@ Upgrade or downgrade an existing Cloud PC to another configuration with a new vi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{

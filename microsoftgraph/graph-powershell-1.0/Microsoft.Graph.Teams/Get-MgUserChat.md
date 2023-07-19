@@ -43,7 +43,7 @@ To access a chat, at least one chat member must belong to the tenant the request
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a user's one on one chat
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

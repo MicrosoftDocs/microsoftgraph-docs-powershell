@@ -35,7 +35,7 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

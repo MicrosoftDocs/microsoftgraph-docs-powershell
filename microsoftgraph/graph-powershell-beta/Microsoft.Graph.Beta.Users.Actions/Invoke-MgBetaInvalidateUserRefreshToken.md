@@ -41,7 +41,7 @@ If this happens, the application will need to acquire a new refresh token by mak
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaInvalidateUserRefreshToken Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

@@ -38,14 +38,14 @@ Get the properties and relationships of a device object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a device
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDevice -DeviceId $deviceId
 
 ```
-### Example 2
+### Example 2: Get a device and return only its id and extensionAttributes properties
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 

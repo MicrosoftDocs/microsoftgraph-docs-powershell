@@ -41,7 +41,7 @@ Read the properties and relationships of an accessReviewInstanceDecisionItem obj
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve a decision on an accessReviewInstance
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

@@ -41,7 +41,7 @@ You can add Azure Active Directory users, Azure Active Directory groups, or an e
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Search
 

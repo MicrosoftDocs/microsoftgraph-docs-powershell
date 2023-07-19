@@ -36,7 +36,7 @@ If there is not a recommendation on an accessReviewInstanceDecisionItem object n
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

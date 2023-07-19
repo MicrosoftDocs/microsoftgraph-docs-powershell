@@ -39,13 +39,13 @@ Get the properties and relationships of a bookingCustomer object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId

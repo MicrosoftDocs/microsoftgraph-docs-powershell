@@ -26,7 +26,7 @@ Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEducationSchoolClass Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSchoolClass -EducationSchoolId $educationSchoolId

@@ -26,7 +26,7 @@ Retrieve a list of section objects from the specified notebook.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserOnenoteNotebookSection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Notes
 # A UPN can also be used as -UserId.

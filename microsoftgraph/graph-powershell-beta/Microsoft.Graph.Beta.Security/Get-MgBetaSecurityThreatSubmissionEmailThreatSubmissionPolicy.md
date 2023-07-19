@@ -39,13 +39,13 @@ Read the properties and relationships of an emailThreatSubmissionPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy

@@ -54,7 +54,7 @@ For details, see Tag documents in a review set in eDiscovery.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

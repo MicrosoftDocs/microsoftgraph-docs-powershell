@@ -48,7 +48,7 @@ Create new navigation property to additionalSources for compliance
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -57,7 +57,7 @@ $params = @{
 New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -67,7 +67,7 @@ $params = @{
 New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{

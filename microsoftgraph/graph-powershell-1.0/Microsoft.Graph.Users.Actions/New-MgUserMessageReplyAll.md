@@ -58,7 +58,7 @@ Alternatively, reply-all to a message in a single action.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgUserMessageReplyAll Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.

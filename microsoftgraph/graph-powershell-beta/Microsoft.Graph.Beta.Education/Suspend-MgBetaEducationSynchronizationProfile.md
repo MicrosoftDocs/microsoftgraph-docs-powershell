@@ -32,7 +32,7 @@ Pause the sync of a specific school data synchronization profile in the tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Suspend-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Suspend-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId

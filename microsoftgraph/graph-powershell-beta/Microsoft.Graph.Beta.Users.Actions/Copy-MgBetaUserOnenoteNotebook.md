@@ -52,7 +52,7 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Copy-MgBetaUserOnenoteNotebook Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

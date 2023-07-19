@@ -48,7 +48,7 @@ This creates a new copy of the message in the destination folder and removes the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Move-MgBetaUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

@@ -39,14 +39,14 @@ Retrieve the properties and relationships of an authenticationMethod object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserAuthenticationMethod Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
 Get-MgBetaUserAuthenticationMethod -UserId $userId -AuthenticationMethodId $authenticationMethodId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserAuthenticationMethod Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.

@@ -43,7 +43,7 @@ Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserPlannerRosterPlan Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaUserPlannerRosterPlan -UserId $userId

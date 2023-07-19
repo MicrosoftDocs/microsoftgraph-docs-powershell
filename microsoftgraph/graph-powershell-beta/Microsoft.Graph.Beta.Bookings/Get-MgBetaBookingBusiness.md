@@ -39,19 +39,19 @@ Get the properties and relationships of a bookingBusiness object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusiness -Query "Adventure"

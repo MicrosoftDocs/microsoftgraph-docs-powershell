@@ -41,7 +41,7 @@ If the resource was not copied from the assignment but was added from the studen
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

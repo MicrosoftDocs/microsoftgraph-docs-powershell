@@ -39,7 +39,7 @@ Retrieve a single permissionGrantPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1:  List all permission grant policies
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
 Get-MgPolicyPermissionGrantPolicy | fl
@@ -65,7 +65,7 @@ https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('mic
 https://graph.microsoft.com/beta/$metadata#policies/permissionGrantPolicies('microsoft-all-application-permissions-for-chat')/excludes]}
 
 ```
-### Example 2
+### Example 2: Get a permission grant policy by ID
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
 Get-MgPolicyPermissionGrantPolicy -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl

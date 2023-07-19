@@ -62,7 +62,7 @@ Update the properties of a partner-specific configuration.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Configure inbound trust settings
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -77,7 +77,7 @@ $params = @{
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Configure automaticUserConsent settings
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

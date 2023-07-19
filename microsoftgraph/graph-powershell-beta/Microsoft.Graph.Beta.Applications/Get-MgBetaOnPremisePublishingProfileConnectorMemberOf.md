@@ -29,7 +29,7 @@ Read-only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnectorMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnectorMemberOf -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId

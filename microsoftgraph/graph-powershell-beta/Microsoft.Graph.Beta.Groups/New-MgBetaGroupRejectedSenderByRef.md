@@ -50,7 +50,7 @@ Make sure you do not specify the same user or group in the rejected senders and 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

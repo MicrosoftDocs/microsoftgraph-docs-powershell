@@ -34,7 +34,7 @@ The status of the accessReviewInstance must be `Completed` to call this method.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Add-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId

@@ -40,13 +40,13 @@ Retrieve the properties and relationships of an accessPackageAssignmentResourceR
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -AccessPackageAssignmentResourceRoleId $accessPackageAssignmentResourceRoleId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole

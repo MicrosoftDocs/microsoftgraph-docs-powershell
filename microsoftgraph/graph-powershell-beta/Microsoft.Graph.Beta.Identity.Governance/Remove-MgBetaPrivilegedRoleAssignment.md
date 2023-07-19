@@ -32,7 +32,7 @@ Delete entity from privilegedRoleAssignments
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaPrivilegedRoleAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaPrivilegedRoleAssignment -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId

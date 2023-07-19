@@ -50,7 +50,7 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaOrganizationSettingContactInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

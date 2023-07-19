@@ -88,7 +88,7 @@ You can optionally specify any other writable properties.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a new user
 ```powershell
 $PasswordProfile = @{
   Password = 'xWwvJ]6NMw+bWH-d'

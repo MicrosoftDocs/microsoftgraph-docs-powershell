@@ -48,7 +48,7 @@ Use this API to update the **displayName** for the Cloud PC entity.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Rename-MgBetaUserCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

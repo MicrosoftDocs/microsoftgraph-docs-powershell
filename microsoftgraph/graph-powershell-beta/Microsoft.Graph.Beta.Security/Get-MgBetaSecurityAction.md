@@ -39,13 +39,13 @@ Retrieve the properties and relationships of a securityAction object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityAction Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityAction -SecurityActionId $securityActionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSecurityAction Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityAction

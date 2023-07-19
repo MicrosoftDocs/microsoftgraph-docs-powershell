@@ -32,7 +32,7 @@ Trigger an indexOperation to make a non-custodial data source and its associated
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Update-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId

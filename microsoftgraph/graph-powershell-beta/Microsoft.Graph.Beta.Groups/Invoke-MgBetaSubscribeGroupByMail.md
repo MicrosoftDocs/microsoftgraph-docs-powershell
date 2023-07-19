@@ -33,7 +33,7 @@ Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaSubscribeGroupByMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Invoke-MgBetaSubscribeGroupByMail -GroupId $groupId

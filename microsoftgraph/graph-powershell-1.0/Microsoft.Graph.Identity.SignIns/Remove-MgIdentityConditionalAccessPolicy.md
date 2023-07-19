@@ -32,7 +32,7 @@ Delete a conditionalAccessPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a conditional access policy
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 

@@ -48,7 +48,7 @@ Create new navigation property to attachments for groups
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create an upload session to add a large attachment to a draft message
 ```powershell
 Import-Module Microsoft.Graph.Groups
 

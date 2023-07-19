@@ -41,7 +41,7 @@ Automatically expanded on GET.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a permission grant policy include by ID 
 ```powershell
 Connect-MgGraph -Scopes "Policy.Read.PermissionGrant"
 Get-MgPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl

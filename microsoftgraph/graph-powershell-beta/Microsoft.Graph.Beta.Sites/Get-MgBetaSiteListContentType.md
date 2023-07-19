@@ -39,7 +39,7 @@ Get contentTypes from sites
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSiteListContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId

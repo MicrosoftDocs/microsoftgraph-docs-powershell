@@ -44,7 +44,7 @@ Add a group to the list of groups that have been marked as incompatible on an ac
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

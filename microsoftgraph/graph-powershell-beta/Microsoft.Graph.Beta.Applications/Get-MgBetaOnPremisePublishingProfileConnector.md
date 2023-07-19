@@ -39,13 +39,13 @@ Retrieve the properties and relationships of a connector object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId $onPremisesPublishingProfileId

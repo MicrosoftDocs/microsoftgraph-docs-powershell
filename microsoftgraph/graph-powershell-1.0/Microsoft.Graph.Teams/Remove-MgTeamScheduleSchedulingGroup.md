@@ -34,7 +34,7 @@ Existing shift instances assigned to the scheduling group remain part of the gro
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

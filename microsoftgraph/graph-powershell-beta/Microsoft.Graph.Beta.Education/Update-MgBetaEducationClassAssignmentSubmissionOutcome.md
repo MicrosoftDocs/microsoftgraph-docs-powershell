@@ -50,7 +50,7 @@ Only teachers can perform this operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update a feedback outcome
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -61,7 +61,7 @@ $params = @{
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Update a points outcome
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -76,7 +76,7 @@ $params = @{
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Update a rubric outcome
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

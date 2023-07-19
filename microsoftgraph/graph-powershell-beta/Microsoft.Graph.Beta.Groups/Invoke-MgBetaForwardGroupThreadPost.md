@@ -50,7 +50,7 @@ You can specify both the parent conversation and thread in the request, nor, you
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaForwardGroupThreadPost Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{

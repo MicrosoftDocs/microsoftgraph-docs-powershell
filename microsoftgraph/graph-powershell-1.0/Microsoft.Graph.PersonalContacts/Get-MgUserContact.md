@@ -41,7 +41,7 @@ There are two scenarios where an app can get a contact in another user's contact
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```
 Import-Module Microsoft.Graph.PersonalContacts
 

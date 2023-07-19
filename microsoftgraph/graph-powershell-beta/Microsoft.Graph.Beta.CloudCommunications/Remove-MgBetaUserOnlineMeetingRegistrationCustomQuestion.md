@@ -33,7 +33,7 @@ Delete a custom registration question from a meetingRegistration object on behal
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.

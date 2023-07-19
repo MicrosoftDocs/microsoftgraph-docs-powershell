@@ -50,7 +50,7 @@ For more information about how to handle unmute operations, see unmuteParticipan
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgUnmuteCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

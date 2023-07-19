@@ -38,7 +38,7 @@ For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayNa
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get an owner of a group
 ```powershell
 Get-MgGroupOwner -GroupId '4d5f57a1-85e0-41dd-8282-ff995ad5e1c3'
 

@@ -25,19 +25,19 @@ Invoke function availableProviderTypes
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Invoke-MgAvailableIdentityProviderType
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Invoke-MgAvailableIdentityProviderType
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Invoke-MgAvailableIdentityProviderType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Invoke-MgAvailableIdentityProviderType -OutFile $outFileId

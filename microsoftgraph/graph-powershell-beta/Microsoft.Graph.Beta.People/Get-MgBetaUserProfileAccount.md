@@ -39,14 +39,14 @@ Retrieve the properties and relationships of an userAccountInformation object in
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserProfileAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAccount -UserId $userId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserProfileAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.

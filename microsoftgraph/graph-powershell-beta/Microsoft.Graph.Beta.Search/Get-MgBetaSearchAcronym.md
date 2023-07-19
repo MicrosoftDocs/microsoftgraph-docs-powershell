@@ -39,13 +39,13 @@ Read the properties and relationships of an acronym object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchAcronym -AcronymId $acronymId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchAcronym

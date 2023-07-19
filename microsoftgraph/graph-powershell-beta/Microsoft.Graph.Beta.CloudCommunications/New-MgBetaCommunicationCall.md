@@ -45,7 +45,7 @@ You will need to register the calling bot and go through the list of permissions
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create peer-to-peer VoIP call with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -80,7 +80,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create peer-to-peer VoIP call with application hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -125,7 +125,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Create a group call with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -181,7 +181,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Create a group call with application hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -237,7 +237,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Join scheduled meeting with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -276,7 +276,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 6
+### Example 6: Join scheduled meeting with application hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -314,7 +314,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 7
+### Example 7: Join a scheduled meeting with joinMeetingId and passcode
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -340,7 +340,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 8
+### Example 8: Join a scheduled meeting with joinMeetingId
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -366,7 +366,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 9
+### Example 9: Create peer-to-peer PSTN call with service hosted media
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
@@ -412,7 +412,7 @@ $params = @{
 New-MgBetaCommunicationCall -BodyParameter $params
 
 ```
-### Example 10
+### Example 1: Create peer-to-peer VoIP call with service hosted media0
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 

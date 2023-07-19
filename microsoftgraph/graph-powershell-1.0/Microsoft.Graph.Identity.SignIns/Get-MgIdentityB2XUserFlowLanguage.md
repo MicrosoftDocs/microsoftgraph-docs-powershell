@@ -43,7 +43,7 @@ These objects represent a language available in a user flow.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

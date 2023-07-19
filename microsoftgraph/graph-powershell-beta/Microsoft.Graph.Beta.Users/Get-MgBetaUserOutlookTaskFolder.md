@@ -37,14 +37,14 @@ Get the properties and relationships of the specified Outlook task folder.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskFolder -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.

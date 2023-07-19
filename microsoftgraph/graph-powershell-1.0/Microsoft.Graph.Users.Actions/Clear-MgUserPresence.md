@@ -50,7 +50,7 @@ For details about presences sessions, see presence: setPresence.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Clear-MgUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

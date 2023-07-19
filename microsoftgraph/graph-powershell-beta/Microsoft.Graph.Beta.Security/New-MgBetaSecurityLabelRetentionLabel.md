@@ -41,7 +41,7 @@ To create a disposition review stage, include the **actionAfterRetentionPeriod**
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

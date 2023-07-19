@@ -39,13 +39,13 @@ Retrieve the properties and relationships of an applicationSignInDetailedSummary
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportApplicationSignInDetailedSummary -ApplicationSignInDetailedSummaryId $applicationSignInDetailedSummaryId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaReportApplicationSignInDetailedSummary Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportApplicationSignInDetailedSummary

@@ -50,7 +50,7 @@ Update the properties of a bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{

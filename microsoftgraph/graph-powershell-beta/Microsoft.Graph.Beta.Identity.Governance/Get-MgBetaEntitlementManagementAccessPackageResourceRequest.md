@@ -39,7 +39,7 @@ Represents a request to add or remove a resource to or from a catalog respective
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get all access package resource requests
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageResourceRequest
@@ -54,7 +54,7 @@ fcbf2d6a-3b33-412b-bb41-c91b27dff4b6 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False 
 52727043-09c1-412b-a3b4-7c4c4f4abfd0 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
 ec74bc22-8d36-44a2-b294-82c538a48c4c 54152ecb-c65d-47f2-8a4d-ba2732de0a7b False                                                                Delivered      Fulfilled     AdminAdd
 
-### EXAMPLE 2
+### Example 2: Get all access package resource requests
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementAccessPackageResourceRequest -AccessPackageResourceRequestId '88098a60-489a-4c28-bfe7-9fecd4713b81'

@@ -32,7 +32,7 @@ Dismiss a reminder that has been triggered for an event in a user calendar.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaDismissUserEventReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

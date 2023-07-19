@@ -31,7 +31,7 @@ Invoke function getOrder
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId

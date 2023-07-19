@@ -36,7 +36,7 @@ In this API, each meeting room and room list is represented by an emailAddress i
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Find-MgBetaUserRoomList Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.

@@ -36,7 +36,7 @@ If the printer is shared again in the future, any Windows users who had previous
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 

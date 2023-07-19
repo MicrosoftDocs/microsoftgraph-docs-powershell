@@ -39,7 +39,7 @@ Retrieve the properties and relationships of a namedLocation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of all named locations
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgIdentityConditionalAccessNamedLocation
@@ -51,7 +51,7 @@ Id                                   CreatedDateTime       DisplayName          
 0824dbaf-6277-4db0-8112-b29fd356f2c4 6/13/2022 8:41:38 AM  Untrusted IP named location 6/13/2022 8:41:38 AM
 
 ```
-### Example 2
+### Example 2: Get a named location by Id
 ```powershell
 Connect-MgGraph -Scopes 'Policy.Read.All'
 Get-MgIdentityConditionalAccessNamedLocation -NamedLocationId '1f0fd623-bf8f-4003-9627-32a68c3cdcc1'

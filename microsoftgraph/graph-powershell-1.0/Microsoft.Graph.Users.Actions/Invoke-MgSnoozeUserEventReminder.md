@@ -46,7 +46,7 @@ Postpone a reminder for an event in a user calendar until a new time.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgSnoozeUserEventReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

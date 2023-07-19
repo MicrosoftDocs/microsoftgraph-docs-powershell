@@ -34,14 +34,14 @@ There are two ways to get the **id** of a **callRecord**:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get basic details
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallRecord -CallRecordId $callRecordId
 
 ```
-### Example 2
+### Example 2: Get full details
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 

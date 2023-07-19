@@ -36,7 +36,7 @@ This action can only be done by the teacher.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

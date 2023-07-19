@@ -46,7 +46,7 @@ Service principal owners can be users, the service principal itself, or other se
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add an owner for a service principal
 ```powershell
 $newOwner = @{
   "@odata.id"= "https://graph.microsoft.com/v1.0/directoryObjects/8a7c50d3-fcbd-4727-a889-8ab232dfea01"

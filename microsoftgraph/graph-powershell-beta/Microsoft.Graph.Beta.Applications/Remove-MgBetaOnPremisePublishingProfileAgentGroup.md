@@ -33,7 +33,7 @@ Delete an onPremisesAgentGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId

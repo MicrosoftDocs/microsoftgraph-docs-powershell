@@ -32,7 +32,7 @@ Invoke action makeEligible
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentEligible Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 New-MgBetaPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId

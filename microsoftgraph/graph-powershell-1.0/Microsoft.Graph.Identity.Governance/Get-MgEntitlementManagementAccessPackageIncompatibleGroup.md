@@ -26,7 +26,7 @@ Retrieve a list of the group objects that have been marked as incompatible on an
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

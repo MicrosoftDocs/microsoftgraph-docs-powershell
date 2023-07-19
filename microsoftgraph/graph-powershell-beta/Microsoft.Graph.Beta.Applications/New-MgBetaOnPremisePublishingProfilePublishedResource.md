@@ -48,7 +48,7 @@ Create a new publishedResource object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

@@ -53,7 +53,7 @@ Update the properties of an itemPublication object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfilePublication Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

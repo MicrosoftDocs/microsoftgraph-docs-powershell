@@ -53,14 +53,14 @@ Create new navigation property to submissions for education
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get submissions
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
 
 ```
-### Example 2
+### Example 2: Get submissions with $expand options
 ```powershell
 Import-Module Microsoft.Graph.Education
 

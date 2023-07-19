@@ -54,7 +54,7 @@ Update the properties of governanceRoleSetting.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

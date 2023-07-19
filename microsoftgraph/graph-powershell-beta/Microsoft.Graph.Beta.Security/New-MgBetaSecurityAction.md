@@ -36,7 +36,7 @@ Create a new securityAction object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityAction Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

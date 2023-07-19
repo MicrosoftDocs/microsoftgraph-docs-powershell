@@ -56,7 +56,7 @@ Alternatively, create a draft to reply-all to a message and send it later.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Reply in JSON format to an existing message
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

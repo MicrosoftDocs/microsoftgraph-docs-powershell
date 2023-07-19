@@ -52,7 +52,7 @@ Create a new version of a document set item in a list.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 

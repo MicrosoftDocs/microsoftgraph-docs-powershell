@@ -24,7 +24,7 @@ Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the identity governance settings
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting

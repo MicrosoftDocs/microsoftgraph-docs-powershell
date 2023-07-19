@@ -54,7 +54,7 @@ If the user requires a new Temporary Access Pass while the current Temporary Acc
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

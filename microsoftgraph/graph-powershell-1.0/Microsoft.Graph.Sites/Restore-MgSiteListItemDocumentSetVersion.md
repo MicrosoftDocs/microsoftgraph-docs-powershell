@@ -32,7 +32,7 @@ Restore a document set version.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restore-MgSiteListItemDocumentSetVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId

@@ -32,13 +32,13 @@ Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIcon Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId

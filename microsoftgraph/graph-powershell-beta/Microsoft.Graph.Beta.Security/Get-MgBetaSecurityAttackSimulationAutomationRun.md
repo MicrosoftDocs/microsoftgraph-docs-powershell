@@ -39,7 +39,7 @@ A collection of simulation automation runs.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSecurityAttackSimulationAutomationRun Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId

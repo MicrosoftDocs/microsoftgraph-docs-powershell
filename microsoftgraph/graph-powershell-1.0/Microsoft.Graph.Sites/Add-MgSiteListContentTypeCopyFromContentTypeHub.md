@@ -52,7 +52,7 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 $params = @{
@@ -61,7 +61,7 @@ $params = @{
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 $params = @{
@@ -70,7 +70,7 @@ $params = @{
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Add-MgSiteListContentTypeCopyFromContentTypeHub Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 $params = @{

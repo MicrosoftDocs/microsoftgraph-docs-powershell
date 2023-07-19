@@ -34,7 +34,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 ```

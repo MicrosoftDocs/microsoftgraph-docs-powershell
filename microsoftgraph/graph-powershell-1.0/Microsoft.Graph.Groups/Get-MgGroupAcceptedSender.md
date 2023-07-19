@@ -25,7 +25,7 @@ Users in the accepted senders list can post to conversations of the group (ident
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgGroupAcceptedSender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupAcceptedSender -GroupId $groupId

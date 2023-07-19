@@ -48,7 +48,7 @@ This operation is allowed only for channels with a **membershipType** value of `
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add a member to a private channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -63,14 +63,14 @@ $params = @{
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Add a member with the owner role to a private channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId
 
 ```
-### Example 3
+### Example 3: Add an owner to a channel using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -85,7 +85,7 @@ $params = @{
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Add a user who is part of the same tenant as a member to a shared channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -99,7 +99,7 @@ $params = @{
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Add a user who is part of a different tenant as a member to a shared channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -114,7 +114,7 @@ $params = @{
 New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 
 ```
-### Example 6
+### Example 6: Add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

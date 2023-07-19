@@ -40,14 +40,14 @@ Read the properties and relationships of an identityUserFlowAttributeAssignment 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the details of an identityUserFlowAttributeAssignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 
 ```
-### Example 2
+### Example 2: Get the details of an identityUserFlowAttributeAssignment and expand userAttribute
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

@@ -37,7 +37,7 @@ A threat assessment request can be one of the following types:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a mail assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -52,7 +52,7 @@ $params = @{
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create an email assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -67,7 +67,7 @@ $params = @{
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Create a file assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -82,7 +82,7 @@ $params = @{
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Create an url assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

@@ -25,7 +25,7 @@ Reset any changes made to the default configuration in a cross-tenant access pol
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Reset-MgBetaPolicyCrossTenantAccessPolicyDefaultToSystemDefault

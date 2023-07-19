@@ -32,7 +32,7 @@ Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Reset-MgGroupUnseenCount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Reset-MgGroupUnseenCount -GroupId $groupId

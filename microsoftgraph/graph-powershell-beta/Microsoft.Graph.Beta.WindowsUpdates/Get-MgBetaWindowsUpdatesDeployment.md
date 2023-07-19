@@ -39,13 +39,13 @@ Read the properties and relationships of a deployment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeployment

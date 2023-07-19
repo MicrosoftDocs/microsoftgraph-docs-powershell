@@ -54,7 +54,7 @@ The **createLink** action creates a new sharing link if the specified link type 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSiteListItemLink Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -63,7 +63,7 @@ $params = @{
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the New-MgBetaSiteListItemLink Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -73,7 +73,7 @@ $params = @{
 New-MgBetaSiteListItemLink -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the New-MgBetaSiteListItemLink Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{

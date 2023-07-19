@@ -33,7 +33,7 @@ Delete a group from the list of groups included in a mobile app management polic
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManagementPolicyId $mobilityManagementPolicyId -GroupId $groupId

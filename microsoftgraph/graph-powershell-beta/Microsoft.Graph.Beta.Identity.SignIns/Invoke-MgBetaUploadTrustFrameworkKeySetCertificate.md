@@ -50,7 +50,7 @@ This method returns trustFrameworkKey.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

@@ -46,7 +46,7 @@ Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

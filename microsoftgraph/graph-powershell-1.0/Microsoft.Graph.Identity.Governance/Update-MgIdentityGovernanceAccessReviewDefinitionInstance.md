@@ -62,7 +62,7 @@ To update an **accessReviewInstance**, it's **status** must be `InProgress`.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

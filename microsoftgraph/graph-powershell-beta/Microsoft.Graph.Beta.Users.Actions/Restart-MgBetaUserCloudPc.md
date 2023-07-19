@@ -32,7 +32,7 @@ Reboot a specific Cloud PC.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restart-MgBetaUserCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.

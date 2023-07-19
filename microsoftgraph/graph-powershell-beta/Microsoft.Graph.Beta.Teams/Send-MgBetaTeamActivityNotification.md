@@ -52,7 +52,7 @@ For more details about sending notifications and the requirements for doing so, 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -78,7 +78,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -108,7 +108,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -135,7 +135,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -162,7 +162,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 5
+### Example 5: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -192,7 +192,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 6
+### Example 6: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -218,7 +218,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 7
+### Example 7: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -244,7 +244,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 8
+### Example 8: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -271,7 +271,7 @@ $params = @{
 Send-MgBetaTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
 
-### EXAMPLE 9
+### Example 9: Using the Send-MgBetaTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

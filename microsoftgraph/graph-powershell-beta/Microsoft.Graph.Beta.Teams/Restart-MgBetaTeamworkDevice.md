@@ -33,7 +33,7 @@ A device is restarted after the async operation completes successfully, which mi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restart-MgBetaTeamworkDevice Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Restart-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId

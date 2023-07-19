@@ -48,7 +48,7 @@ This function is transitive.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDirectoryObjectMemberGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 $params = @{

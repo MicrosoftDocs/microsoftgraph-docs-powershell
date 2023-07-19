@@ -39,14 +39,14 @@ Get provisioning from auditLogs
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Successful request
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
 
 ```
-### Example 2
+### Example 2: Error reponse
 ```powershell
 Import-Module Microsoft.Graph.Reports
 

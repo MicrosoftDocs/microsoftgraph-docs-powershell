@@ -65,7 +65,7 @@ The POST method always ignores the time portion of **startDateTime** and **dueDa
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserOutlookTaskFolderTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

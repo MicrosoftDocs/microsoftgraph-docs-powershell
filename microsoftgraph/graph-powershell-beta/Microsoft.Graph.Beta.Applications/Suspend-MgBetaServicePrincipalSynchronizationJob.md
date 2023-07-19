@@ -34,7 +34,7 @@ All the progress, including job state, is persisted, and the job will continue f
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Suspend-MgBetaServicePrincipalSynchronizationJob Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Suspend-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId

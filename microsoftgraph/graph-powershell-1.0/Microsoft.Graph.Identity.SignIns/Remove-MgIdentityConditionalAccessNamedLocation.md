@@ -32,7 +32,7 @@ Delete an ipNamedLocation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a named location
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 

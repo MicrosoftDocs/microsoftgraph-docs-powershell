@@ -55,21 +55,21 @@ Create new navigation property to chats for users
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChat -UserId $userId
 
 ```
-### Example 2
+### Example 2: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgUserChat -UserId $userId -ExpandProperty "members"
 
 ```
-### Example 3
+### Example 3: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

@@ -39,25 +39,25 @@ Read the properties and relationships of a customSecurityAttributeDefinition obj
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryCustomSecurityAttributeDefinition -Filter "attributeSet eq 'Engineering' and status eq 'Available' and type eq 'String'"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryCustomSecurityAttributeDefinition -Filter "name eq 'Project' and status eq 'Available'"
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectoryCustomSecurityAttributeDefinition

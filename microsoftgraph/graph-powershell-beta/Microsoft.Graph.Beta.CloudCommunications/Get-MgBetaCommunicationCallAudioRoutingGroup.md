@@ -39,13 +39,13 @@ Retrieve the properties and relationships of an audioRoutingGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId

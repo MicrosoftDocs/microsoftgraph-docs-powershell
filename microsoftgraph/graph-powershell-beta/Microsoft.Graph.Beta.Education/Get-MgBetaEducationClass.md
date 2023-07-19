@@ -45,7 +45,7 @@ If you're using the delegated token, the user will only see classes in which the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

@@ -36,7 +36,7 @@ The internal sponsors are a set of users who can approve requests on behalf of o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

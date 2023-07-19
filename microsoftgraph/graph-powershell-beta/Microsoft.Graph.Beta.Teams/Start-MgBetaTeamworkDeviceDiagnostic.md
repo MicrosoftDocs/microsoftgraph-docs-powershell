@@ -34,7 +34,7 @@ This API triggers a long-running operation used to generate logs for a device.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Start-MgBetaTeamworkDeviceDiagnostic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Start-MgBetaTeamworkDeviceDiagnostic -TeamworkDeviceId $teamworkDeviceId

@@ -66,7 +66,7 @@ Don't use a PATCH operation for this purpose.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

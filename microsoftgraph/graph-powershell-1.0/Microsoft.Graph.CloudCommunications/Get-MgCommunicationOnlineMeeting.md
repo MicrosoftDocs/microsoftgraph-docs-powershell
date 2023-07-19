@@ -53,7 +53,7 @@ Get onlineMeetings from communications
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve an online meeting by videoTeleconferenceId
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 

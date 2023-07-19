@@ -39,7 +39,7 @@ Specifies the assets to exclude from the audience.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion -DeploymentId $deploymentId

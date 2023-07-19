@@ -56,7 +56,7 @@ To learn more about the steps involved in the backend before a mail is delivered
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Send an existing draft message
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

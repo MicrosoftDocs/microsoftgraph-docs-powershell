@@ -48,7 +48,7 @@ Update the properties of the specified tab in a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update the name of a tab in a chat
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

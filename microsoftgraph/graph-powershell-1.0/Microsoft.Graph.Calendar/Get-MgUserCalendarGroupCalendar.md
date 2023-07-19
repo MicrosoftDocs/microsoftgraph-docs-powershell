@@ -26,7 +26,7 @@ Retrieve a list of calendars belonging to a calendar group.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgUserCalendarGroupCalendar Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Calendar
 # A UPN can also be used as -UserId.

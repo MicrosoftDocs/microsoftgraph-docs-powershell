@@ -32,7 +32,7 @@ Reset a caseSettings object to the default values.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId $caseId

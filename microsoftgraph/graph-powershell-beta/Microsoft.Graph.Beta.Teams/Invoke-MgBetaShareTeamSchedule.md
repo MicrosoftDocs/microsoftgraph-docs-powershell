@@ -53,7 +53,7 @@ The **notifyTeam** parameter further specifies which employees can view the item
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaShareTeamSchedule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

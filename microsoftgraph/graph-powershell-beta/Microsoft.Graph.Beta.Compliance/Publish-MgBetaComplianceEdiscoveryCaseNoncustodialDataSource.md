@@ -32,7 +32,7 @@ Releases the non-custodial data source from the case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Publish-MgBetaComplianceEdiscoveryCaseNoncustodialDataSource -CaseId $caseId -NoncustodialDataSourceId $noncustodialDataSourceId

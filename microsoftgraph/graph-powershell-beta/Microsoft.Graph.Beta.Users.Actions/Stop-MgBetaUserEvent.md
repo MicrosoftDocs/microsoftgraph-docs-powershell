@@ -54,7 +54,7 @@ You need to be an organizer to cancel a meeting.' This action differs from Delet
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaUserEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

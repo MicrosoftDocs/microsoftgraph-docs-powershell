@@ -48,7 +48,7 @@ Create new navigation property to tasks for print
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 

@@ -48,7 +48,7 @@ For details about how to use this API to add pull printing support to Universal 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 

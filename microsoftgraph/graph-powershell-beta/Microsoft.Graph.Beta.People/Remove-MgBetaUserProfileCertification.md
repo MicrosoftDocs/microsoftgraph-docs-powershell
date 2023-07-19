@@ -32,7 +32,7 @@ Deletes a personCertification object from a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserProfileCertification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId

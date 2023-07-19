@@ -80,7 +80,7 @@ This method updates any solution that has a record of the referenced alert ID.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Request without Prefer header
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -104,7 +104,7 @@ $params = @{
 Update-MgBetaSecurityAlert -AlertId $alertId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Request with Prefer header
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 

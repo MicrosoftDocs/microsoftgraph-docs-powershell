@@ -40,25 +40,25 @@ Read the properties and relationships of an identityUserFlowAttributeAssignment 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -ExpandProperty "userAttribute"
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowUserAttributeAssignment -B2cIdentityUserFlowId $b2cIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -ExpandProperty "userAttribute"

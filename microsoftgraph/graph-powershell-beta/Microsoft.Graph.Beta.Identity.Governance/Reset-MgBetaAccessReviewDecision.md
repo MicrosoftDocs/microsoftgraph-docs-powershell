@@ -35,7 +35,7 @@ Previous decisions are no longer recorded, but reviewers can continue to update 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Reset-MgBetaAccessReviewDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Reset-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId

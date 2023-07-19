@@ -62,7 +62,7 @@ The bot must download the recording promptly after the recording operation finis
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

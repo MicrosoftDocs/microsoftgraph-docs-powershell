@@ -52,7 +52,7 @@ This is opposed to transfering the call directly.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -69,7 +69,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -90,7 +90,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -110,7 +110,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{
@@ -133,7 +133,7 @@ $params = @{
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
 
-### EXAMPLE 5
+### Example 5: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

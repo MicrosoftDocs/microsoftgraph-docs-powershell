@@ -52,7 +52,7 @@ For more information, see contentType: getCompatibleHubContentTypes and the blog
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Synchronous pull
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -63,7 +63,7 @@ $params = @{
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Asynchronous pull
 ```powershell
 Import-Module Microsoft.Graph.Sites
 

@@ -58,7 +58,7 @@ This unlinks an access review from a program.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaProgramControl Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgramControl -ProgramControlId $programControlId

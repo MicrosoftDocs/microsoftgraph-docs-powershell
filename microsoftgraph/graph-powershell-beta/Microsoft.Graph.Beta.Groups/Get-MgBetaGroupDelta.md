@@ -25,13 +25,13 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaGroupDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupDelta
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaGroupDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"

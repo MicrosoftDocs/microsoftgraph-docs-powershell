@@ -40,7 +40,7 @@ Use the start job only when the job is currently paused or in quarantine.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Start-MgBetaServicePrincipalSynchronizationJob Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Start-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId

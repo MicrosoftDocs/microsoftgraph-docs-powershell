@@ -48,7 +48,7 @@ Currently, only **one** task trigger can be specified per printer, but this limi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 

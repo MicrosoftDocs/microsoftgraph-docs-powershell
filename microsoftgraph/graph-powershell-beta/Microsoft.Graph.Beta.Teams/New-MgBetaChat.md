@@ -39,7 +39,7 @@ Create a new chat object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create a one-on-one chat
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -66,7 +66,7 @@ $params = @{
 New-MgBetaChat -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create a group chat
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -101,7 +101,7 @@ $params = @{
 New-MgBetaChat -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Create a one-on-one chat using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -128,7 +128,7 @@ $params = @{
 New-MgBetaChat -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Create a group chat with tenant guest user
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -163,7 +163,7 @@ $params = @{
 New-MgBetaChat -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Create a one-on-one chat with a federated user (outside of own organization)
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

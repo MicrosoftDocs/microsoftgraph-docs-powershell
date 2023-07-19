@@ -54,7 +54,7 @@ Update the properties of a personInterest object in a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileInterest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

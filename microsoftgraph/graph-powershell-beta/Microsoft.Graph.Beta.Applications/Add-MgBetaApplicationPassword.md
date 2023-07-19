@@ -46,7 +46,7 @@ Adds a strong password to an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add a password credential to an application with a six month expiry
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.ReadWrite.All'
 
@@ -71,7 +71,7 @@ AdditionalProperties : {[@odata.context,
 https://graph.microsoft.com/v1.0/$metadata#microsoft.graph.passwordCredential]}
 
 ```
-### Example 2
+### Example 2: Add a password credential to an application with a start date
 ```powershell
 Connect-MgBetaGraph -Scopes 'Application.ReadWrite.All'
 

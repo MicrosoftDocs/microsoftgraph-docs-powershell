@@ -32,7 +32,7 @@ Create new navigation property to federationConfigurations for directory
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDirectoryFederationConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

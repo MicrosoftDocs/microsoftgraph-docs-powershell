@@ -38,7 +38,7 @@ When creating a new invitation you have several options available:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Invite a user and send default invitation email
 ```powershell
 New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -SendInvitationMessage:$true
 
@@ -47,7 +47,7 @@ Id                                   InviteRedeemUrl
 e4247160-a778-428a-8218-bcaf717870dd https://login.microsoftonline.com/redeem?rd=https%3a%2f%2finvitations.microsoft.com%2fredeem%2f%3ftenant%3d094a...
 
 ```
-### Example 2
+### Example 2: Invite a user and set usertype to member
 ```powershell
 New-MgInvitation -InvitedUserDisplayName "John Doe" -InvitedUserEmailAddress John@contoso.com -InviteRedirectUrl "https://myapplications.microsoft.com" -InvitedUserType Member
 

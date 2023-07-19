@@ -43,7 +43,7 @@ If the definition is 30 days or older, a `404 Not Found` error is returned.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

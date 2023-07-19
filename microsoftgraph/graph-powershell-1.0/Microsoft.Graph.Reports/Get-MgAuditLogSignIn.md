@@ -41,7 +41,7 @@ Sign-ins that are interactive in nature (where a username/password is passed as 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Reports
 

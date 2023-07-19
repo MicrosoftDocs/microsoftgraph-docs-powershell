@@ -39,7 +39,7 @@ Get a riskyUserHistoryItem object of a riskyUser.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: List history of a specific user
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
@@ -54,7 +54,7 @@ adminDismissedAllRiskForUser       5/27/2022 11:28:07 PM   dismissed            
 none                               4/20/2022 3:33:58 PM    atRisk               Jason Mayer
 none                               4/21/2022 9:58:21 PM    atRisk               Jason Mayer
 
-### EXAMPLE 2
+### Example 2: List history of a specific user with detailed risk detection
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta

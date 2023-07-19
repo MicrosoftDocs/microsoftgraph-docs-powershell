@@ -42,7 +42,7 @@ A teacher can also submit a student's assignment on their behalf.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

@@ -34,7 +34,7 @@ To learn how to customize the privacy of item insights in an organization, see C
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSettingItemInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingItemInsight -OrganizationId $organizationId

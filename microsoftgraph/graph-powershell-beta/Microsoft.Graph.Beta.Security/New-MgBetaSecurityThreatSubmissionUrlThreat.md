@@ -36,7 +36,7 @@ Create a new urlThreatSubmission object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

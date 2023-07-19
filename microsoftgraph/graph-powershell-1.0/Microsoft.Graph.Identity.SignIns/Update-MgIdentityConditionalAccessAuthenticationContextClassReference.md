@@ -49,7 +49,7 @@ If ID has been used, this call updates the authenticationContextClassReference o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

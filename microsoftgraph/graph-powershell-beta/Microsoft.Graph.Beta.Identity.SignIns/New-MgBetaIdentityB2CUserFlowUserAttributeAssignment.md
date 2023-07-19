@@ -50,7 +50,7 @@ Create a new identityUserFlowAttributeAssignment object in a b2cIdentityUserFlow
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaIdentityB2CUserFlowUserAttributeAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

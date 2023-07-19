@@ -45,7 +45,7 @@ You can use the `Prefer` header in your request to get the `inactive` status in 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

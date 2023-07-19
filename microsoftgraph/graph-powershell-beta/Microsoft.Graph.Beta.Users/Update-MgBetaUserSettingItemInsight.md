@@ -44,7 +44,7 @@ Update the privacy settings for itemInsights and meeting hours insights of a use
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserSettingItemInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

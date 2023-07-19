@@ -52,7 +52,7 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaAcceptUserEventTentatively Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

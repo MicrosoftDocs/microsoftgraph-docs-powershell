@@ -34,7 +34,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: List the owners of a service principal
 ```powershell
 Get-MgServicePrincipalOwner -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e'
 

@@ -54,7 +54,7 @@ Update the properties of a personAward object from a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileAward Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

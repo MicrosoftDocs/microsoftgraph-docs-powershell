@@ -39,13 +39,13 @@ Read the properties and relationships of a plannerRosterMember object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPlannerRosterMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaPlannerRosterMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId

@@ -27,7 +27,7 @@ Represents deviceRegistrationPolicy quota restrictions, additional authenticatio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPolicyDeviceRegistrationPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyDeviceRegistrationPolicy

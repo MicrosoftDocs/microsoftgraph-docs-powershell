@@ -39,14 +39,14 @@ Get the details of a role management policy assignment including the policy and 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve a role management policy assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId $unifiedRoleManagementPolicyAssignmentId
 
 ```
-### Example 2
+### Example 2: Retrieve a role management policy assignment and expand the policy and its associated rules
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

@@ -46,7 +46,7 @@ Create an Outlook task group in the user's mailbox.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserOutlookTaskGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

@@ -38,7 +38,7 @@ Get entity from drives by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
 Get-MgDrive -DriveId $driveId

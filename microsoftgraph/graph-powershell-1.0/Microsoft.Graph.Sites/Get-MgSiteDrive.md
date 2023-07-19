@@ -39,7 +39,7 @@ The collection of drives (document libraries) under this site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgSiteDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteDrive -SiteId $siteId

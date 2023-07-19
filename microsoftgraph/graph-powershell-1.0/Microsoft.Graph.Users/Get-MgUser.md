@@ -2900,7 +2900,7 @@ Retrieve the properties and relationships of user object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the list of all the users
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -All | Format-List  ID, DisplayName, Mail, UserPrincipalName
@@ -2916,7 +2916,7 @@ Mail              : AdeleV@contoso.com
 UserPrincipalName : AdeleV@contoso.com
 
 ```
-### Example 2
+### Example 2: Get a user by Id
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -UserId 'e4e2b110-8d4f-434f-a990-7cd63e23aed6' |
@@ -2928,7 +2928,7 @@ Mail              : Adams@contoso.com
 UserPrincipalName : Adams@contoso.com
 
 ```
-### Example 3
+### Example 3: Get a count of all users
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -Count userCount -ConsistencyLevel eventual
@@ -2944,7 +2944,7 @@ Id                                   DisplayName              Mail              
 185190a7-54f0-4892-add3-211c21327570 Debra Berger             DebraB@Contoso.com             DebraB@Contoso.com
 
 ```
-### Example 4
+### Example 4: Use -Filter and -Top to get one user with a display name that starts with 'a' including a count of returned objects
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'a')" -Top 1
@@ -2954,7 +2954,7 @@ Id                                   DisplayName   Mail                         
 577a8b8a-ab84-4f90-a6cc-a62cd56010be Allan Deyoung AllanD@M365x814237.OnMicrosoft.com AllanD@M365x814237.OnMicrosoft.com Member
 
 ```
-### Example 5
+### Example 5: Use -Search to get all the users whose display name contains 'Conf' including a count of the returned users
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Search '"DisplayName:Conf"'
@@ -2968,7 +2968,7 @@ Id                                   DisplayName       Mail                UserP
 a7afe08d-55b9-4c44-be94-05d17c6513f3 Conf Room Rainier Rainier@Contoso.com Rainier@Contoso.com
 
 ```
-### Example 6
+### Example 6: Use -Filter to get all the users with a display name that starts with 'Conf' including a count of the returned users, with the results ordered by UserPrincipalName
 ```powershell
 Connect-MgGraph -Scopes 'User.Read.All'
 Get-MgUser -ConsistencyLevel eventual -Count userCount -Filter "startsWith(DisplayName, 'Conf')" -OrderBy UserPrincipalName

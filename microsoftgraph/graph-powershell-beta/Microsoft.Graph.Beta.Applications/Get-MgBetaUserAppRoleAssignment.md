@@ -41,7 +41,7 @@ Supports $expand.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get assigned app roles
 ```powershell
 Get-MgBetaUserAppRoleAssignment -UserId "529827aa-d058-4821-a012-4de3ce093955" | 
  Format-List Id, AppRoleID, CreationTimeStamp, PrincipalDisplayName,PrincipalId, PrincipalType, ResourceDisplayName

@@ -34,7 +34,7 @@ To learn more about source collections (also known as searches in eDiscovery), s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaEstimateComplianceEdiscoveryCaseSourceCollectionStatistics -CaseId $caseId -SourceCollectionId $sourceCollectionId

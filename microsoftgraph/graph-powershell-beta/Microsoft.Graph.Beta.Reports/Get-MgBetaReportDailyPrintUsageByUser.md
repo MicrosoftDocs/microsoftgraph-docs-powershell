@@ -39,7 +39,7 @@ Retrieve a list of daily print usage summaries, grouped by user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 

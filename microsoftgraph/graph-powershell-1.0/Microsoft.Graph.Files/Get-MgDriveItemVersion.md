@@ -39,14 +39,14 @@ Retrieve the metadata for a specific version of a DriveItem.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get specified version of a file
 ```powershell
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
 
 ```
-### Example 2
+### Example 2: Get current version of a file
 ```powershell
 Import-Module Microsoft.Graph.Files
 

@@ -50,7 +50,7 @@ Update the properties of a deployment object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -63,7 +63,7 @@ $params = @{
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Update-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{

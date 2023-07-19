@@ -58,7 +58,7 @@ For more details, see presence sessions and time-out and expiration.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

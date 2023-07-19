@@ -36,7 +36,7 @@ You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Complete-MgTeamMigration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 Complete-MgTeamMigration -TeamId $teamId

@@ -39,19 +39,19 @@ Read the details of a built-in workflow task.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -TaskDefinitionId $taskDefinitionId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition -Filter "category eq 'joiner,leaver' OR category eq 'joiner'"
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTaskDefinition

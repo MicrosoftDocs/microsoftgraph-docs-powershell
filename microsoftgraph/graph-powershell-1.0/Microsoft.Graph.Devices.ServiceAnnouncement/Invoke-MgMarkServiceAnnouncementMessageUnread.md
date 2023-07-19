@@ -33,7 +33,7 @@ Mark a list of serviceUpdateMessages as **unread** for the signed in user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgMarkServiceAnnouncementMessageUnread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 $params = @{

@@ -41,7 +41,7 @@ This is the container for a custodian's mailbox and OneDrive for Business site.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Security
 

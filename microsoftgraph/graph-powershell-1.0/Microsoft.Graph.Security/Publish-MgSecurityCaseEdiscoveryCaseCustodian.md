@@ -34,7 +34,7 @@ For details, see Release a custodian from a case.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Publish-MgSecurityCaseEdiscoveryCaseCustodian Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Publish-MgSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId

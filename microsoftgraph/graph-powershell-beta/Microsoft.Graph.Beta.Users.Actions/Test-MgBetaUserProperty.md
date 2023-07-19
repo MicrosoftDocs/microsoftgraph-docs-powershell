@@ -49,7 +49,7 @@ However, you can validate both the mail nickname and the display name and receiv
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 ```

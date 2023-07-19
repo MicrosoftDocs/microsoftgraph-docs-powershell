@@ -58,7 +58,7 @@ To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgGroupProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{

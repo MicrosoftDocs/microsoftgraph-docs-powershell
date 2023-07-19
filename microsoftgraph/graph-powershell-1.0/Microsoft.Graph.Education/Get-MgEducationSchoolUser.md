@@ -26,7 +26,7 @@ Get the educationUser resources associated with an educationSchool.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgEducationSchoolUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId

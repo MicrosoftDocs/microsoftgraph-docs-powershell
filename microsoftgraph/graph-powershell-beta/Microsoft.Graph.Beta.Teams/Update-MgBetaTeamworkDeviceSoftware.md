@@ -48,7 +48,7 @@ This API triggers a long-running operation.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaTeamworkDeviceSoftware Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{

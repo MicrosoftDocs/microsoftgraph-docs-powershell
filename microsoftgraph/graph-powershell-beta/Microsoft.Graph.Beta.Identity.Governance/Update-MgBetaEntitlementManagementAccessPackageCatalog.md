@@ -60,7 +60,7 @@ Update an existing accessPackageCatalog object to change one or more of its prop
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

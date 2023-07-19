@@ -46,7 +46,7 @@ Add a new conversation member to a team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add a member to a team
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -61,7 +61,7 @@ $params = @{
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Add a member to a team using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

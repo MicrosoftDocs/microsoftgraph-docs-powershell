@@ -30,7 +30,7 @@ Invoke function getCapabilities
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrintPrinterCapability Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintPrinterCapability -PrinterId $printerId

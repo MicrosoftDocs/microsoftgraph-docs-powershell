@@ -25,7 +25,7 @@ Read the properties and relationships of a continuousAccessEvaluationPolicy obje
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityContinuouAccessEvaluationPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityContinuouAccessEvaluationPolicy

@@ -24,7 +24,7 @@ Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

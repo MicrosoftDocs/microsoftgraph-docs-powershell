@@ -52,7 +52,7 @@ For more information on how to propose a time, and how to receive and accept a n
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

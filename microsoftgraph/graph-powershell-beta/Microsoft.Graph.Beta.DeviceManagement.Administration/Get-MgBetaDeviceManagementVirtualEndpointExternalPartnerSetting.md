@@ -40,25 +40,25 @@ Read the properties and relationships of a cloudPcExternalPartnerSetting object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -CloudPcExternalPartnerSettingId $cloudPcExternalPartnerSettingId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting
 ```
 
-### EXAMPLE 3
+### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"  -OutFile $outFileId
 ```
 
-### EXAMPLE 4
+### Example 4: Using the Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointExternalPartnerSetting -Property "id,partnerId,enableConnection"

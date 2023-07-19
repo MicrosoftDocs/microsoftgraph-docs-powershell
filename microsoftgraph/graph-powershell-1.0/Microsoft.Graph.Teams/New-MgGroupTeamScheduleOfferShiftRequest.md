@@ -50,7 +50,7 @@ Create an instance of an offerShiftRequest.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

@@ -54,7 +54,7 @@ You cannot change the **name** property value of the default task folder, 'Tasks
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

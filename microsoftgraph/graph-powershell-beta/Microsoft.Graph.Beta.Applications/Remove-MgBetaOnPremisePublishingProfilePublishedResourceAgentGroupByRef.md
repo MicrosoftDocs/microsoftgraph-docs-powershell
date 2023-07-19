@@ -33,13 +33,13 @@ Delete ref of navigation property agentGroups for onPremisesPublishingProfiles
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -PublishedResourceId $publishedResourceId -OnPremisesAgentGroupId $onPremisesAgentGroupId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaOnPremisePublishingProfilePublishedResourceAgentGroupByRef -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -PublishedResourceId $publishedResourceId -OnPremisesAgentGroupId $onPremisesAgentGroupId

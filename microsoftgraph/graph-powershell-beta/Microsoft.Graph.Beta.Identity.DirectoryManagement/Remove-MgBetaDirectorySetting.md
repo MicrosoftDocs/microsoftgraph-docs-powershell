@@ -32,7 +32,7 @@ Delete a directory setting.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaDirectorySetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Remove-MgBetaDirectorySetting -DirectorySettingId $directorySettingId

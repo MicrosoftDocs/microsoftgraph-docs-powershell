@@ -32,7 +32,7 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaSoftUserChatMessageDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Invoke-MgBetaSoftUserChatMessageDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId

@@ -33,7 +33,7 @@ This will create a new version with the contents of the previous version, but pr
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restore-MgDriveItemVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
 Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId

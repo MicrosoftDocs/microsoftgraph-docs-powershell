@@ -64,7 +64,7 @@ Assignments start in the Draft state, which means that students will not see the
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Education
 

@@ -39,13 +39,13 @@ Read the properties and relationships of a userRegistrationDetails object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaReportAuthenticationMethodUserRegistrationDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAuthenticationMethodUserRegistrationDetail -UserRegistrationDetailsId $userRegistrationDetailsId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaReportAuthenticationMethodUserRegistrationDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAuthenticationMethodUserRegistrationDetail

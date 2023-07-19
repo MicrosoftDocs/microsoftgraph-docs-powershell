@@ -39,13 +39,13 @@ Get the properties and relationships of a bookingStaffMember in the specified bo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId

@@ -32,7 +32,7 @@ Get the properties of an insightsSettings object for displaying or returning con
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaOrganizationSettingContactInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingContactInsight -OrganizationId $organizationId

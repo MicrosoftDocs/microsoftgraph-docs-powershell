@@ -43,7 +43,7 @@ The operation returns an error if the issue does not exist for the tenant.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 

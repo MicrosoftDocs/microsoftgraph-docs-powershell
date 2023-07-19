@@ -32,7 +32,7 @@ Create a new identityApiConnector object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Create an API connector with basic authentication
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -49,7 +49,7 @@ $params = @{
 New-MgBetaIdentityApiConnector -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Create an API connector with client certificate authentication
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

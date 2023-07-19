@@ -37,12 +37,12 @@ To learn more, see deletedItems.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Remove a user
 ```powershell
 Remove-MgBetaUser -UserId '5c442efb-5e66-484a-936a-91b6810bed14'
 
 ```
-### Example 2
+### Example 2: Remove a user with a confirmation
 ```powershell
 Remove-MgBetaUser -UserId '3f80a75e-750b-49aa-a6b0-d9bf6df7b4c6' -Confirm
 

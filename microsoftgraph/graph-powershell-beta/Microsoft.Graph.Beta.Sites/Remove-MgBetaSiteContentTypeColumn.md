@@ -32,7 +32,7 @@ Remove a [column][columndefinition] from a [site][], [list][] or [content type][
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 

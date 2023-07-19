@@ -60,21 +60,21 @@ Create new navigation property to assignments for education
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the assignments of the logged in user
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationMeAssignment
 
 ```
-### Example 2
+### Example 2: Get assignments of a user
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationUserAssignment -EducationUserId $educationUserId
 
 ```
-### Example 3
+### Example 3: Get user assignments with expand submissions
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 

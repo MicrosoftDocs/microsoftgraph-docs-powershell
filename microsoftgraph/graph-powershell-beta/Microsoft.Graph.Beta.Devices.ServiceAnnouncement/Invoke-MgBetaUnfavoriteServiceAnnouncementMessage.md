@@ -33,7 +33,7 @@ Remove the favorite status of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUnfavoriteServiceAnnouncementMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 $params = @{

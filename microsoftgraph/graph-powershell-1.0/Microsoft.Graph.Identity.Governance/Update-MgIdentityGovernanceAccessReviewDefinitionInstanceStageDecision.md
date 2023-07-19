@@ -60,7 +60,7 @@ Update access decisions, known as accessReviewInstanceDecisionItems, for which t
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Update a decision on an accessReviewInstance
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -72,7 +72,7 @@ $params = @{
 Update-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Update a decision on an stage in a multi-stage access review
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

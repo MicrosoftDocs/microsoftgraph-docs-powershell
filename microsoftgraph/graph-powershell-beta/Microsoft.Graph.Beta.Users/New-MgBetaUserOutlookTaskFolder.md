@@ -52,7 +52,7 @@ Create a task folder in the default task group (`My Tasks`) of the user's mailbo
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{

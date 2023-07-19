@@ -54,7 +54,7 @@ You can also use the method addMembersById to add members.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{

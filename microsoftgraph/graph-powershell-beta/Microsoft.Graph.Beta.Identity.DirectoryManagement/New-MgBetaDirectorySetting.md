@@ -38,7 +38,7 @@ The template named `Group.Unified` can be used to configure tenant-wide Microsof
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDirectorySetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

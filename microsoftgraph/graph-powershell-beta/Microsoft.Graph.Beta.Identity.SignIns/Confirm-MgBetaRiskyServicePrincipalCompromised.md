@@ -35,7 +35,7 @@ This action sets the targeted service principal account's risk level to `high`.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaRiskyServicePrincipalCompromised Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

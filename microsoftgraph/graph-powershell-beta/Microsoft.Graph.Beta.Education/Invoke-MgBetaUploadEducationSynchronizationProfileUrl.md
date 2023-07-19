@@ -31,7 +31,7 @@ Invoke function uploadUrl
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUploadEducationSynchronizationProfileUrl Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId

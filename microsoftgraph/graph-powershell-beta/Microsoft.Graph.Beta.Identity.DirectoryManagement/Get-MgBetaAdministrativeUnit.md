@@ -41,7 +41,7 @@ Since the **administrativeUnit** resource supports extensions, you can also use 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of administrative units
 ```powershell
 Get-MgBetaDirectoryAdministrativeUnit
 

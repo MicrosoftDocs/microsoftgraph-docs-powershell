@@ -39,14 +39,14 @@ Read the properties and relationships of an itemPatent object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserProfilePatent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaUserProfilePatent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.

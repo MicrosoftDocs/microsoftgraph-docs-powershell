@@ -34,7 +34,7 @@ You can't remove a member from groups with dynamic memberships.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 

@@ -40,14 +40,14 @@ The user attribute assignments included in the user flow.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the details of an identityUserFlowAttributeAssignment
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
 
 ```
-### Example 2
+### Example 2: Get the details of an identityUserFlowAttributeAssignment and expand userAttribute
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

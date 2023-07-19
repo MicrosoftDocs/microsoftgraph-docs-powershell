@@ -48,7 +48,7 @@ For more information, including prerequisites to setting a verified publisher, s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaApplicationVerifiedPublisher Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{

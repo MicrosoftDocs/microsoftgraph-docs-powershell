@@ -48,7 +48,7 @@ Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restore-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{

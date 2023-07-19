@@ -41,7 +41,7 @@ The **startDateTime** and **endDateTime** properties are always returned in UTC.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 

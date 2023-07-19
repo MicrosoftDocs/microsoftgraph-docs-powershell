@@ -35,7 +35,7 @@ A delegated permission grant authorizes a client service principal (representing
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

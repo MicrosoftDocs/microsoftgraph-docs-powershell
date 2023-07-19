@@ -39,13 +39,13 @@ Retrieve the properties and associations for an userFlow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaIdentityUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityUserFlow -IdentityUserFlowId $identityUserFlowId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaIdentityUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityUserFlow

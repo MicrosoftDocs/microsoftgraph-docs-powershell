@@ -33,7 +33,7 @@ Delete multiple threat intelligence (TI) indicators in one request instead of mu
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaSecurityTiIndicatorByExternalId Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

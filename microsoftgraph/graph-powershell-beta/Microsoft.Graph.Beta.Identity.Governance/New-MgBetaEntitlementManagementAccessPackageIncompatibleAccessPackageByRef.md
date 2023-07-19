@@ -46,7 +46,7 @@ Add an accessPackage to the list of access packages that have been marked as inc
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

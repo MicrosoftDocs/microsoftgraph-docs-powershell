@@ -34,7 +34,7 @@ Also see Identify and resolve license assignment problems for a group in Azure A
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgLicenseUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 Invoke-MgLicenseUser -UserId $userId

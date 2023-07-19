@@ -54,7 +54,7 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgDirectoryObjectMemberGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 $params = @{

@@ -33,7 +33,7 @@ Mark a list of serviceUpdateMessages as **read** for the signed in user.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaMarkServiceAnnouncementMessageRead Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 $params = @{

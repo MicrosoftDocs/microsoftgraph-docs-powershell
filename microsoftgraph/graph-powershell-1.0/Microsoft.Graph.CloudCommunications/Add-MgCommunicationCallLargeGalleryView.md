@@ -48,7 +48,7 @@ For details about how to identify a large gallery view participant in a roster s
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgCommunicationCallLargeGalleryView Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 $params = @{

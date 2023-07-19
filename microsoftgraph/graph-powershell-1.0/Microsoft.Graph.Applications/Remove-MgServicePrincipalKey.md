@@ -50,7 +50,7 @@ As part of the request validation for this method, a proof of possession of an e
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgServicePrincipalKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{

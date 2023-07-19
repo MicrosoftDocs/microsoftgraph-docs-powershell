@@ -46,7 +46,7 @@ Because the **group** resource supports extensions, you can also use the `GET` o
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of groups
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup | 
@@ -63,7 +63,7 @@ DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
-### EXAMPLE 2
+### Example 2: Get a group by the display name
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -Filter "DisplayName eq 'Business Development'" | 
@@ -75,7 +75,7 @@ DisplayName : Business Development
 Description : Welcome to the BizDev team.
 GroupTypes  : {Unified}
 
-### EXAMPLE 3
+### Example 3: Get a count of all groups
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount
@@ -93,7 +93,7 @@ Id                                   DisplayName          Description           
 4d5f57a1-85e0-41dd-8282-ff995ad5e1c3 Business Development Welcome to the BizDev team.
                                           {Unified}
 
-### EXAMPLE 4
+### Example 4: Use -Search to get all the groups whose display name contains 'Market' including a count of the returned users
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Search '"DisplayName:Market"'
@@ -106,7 +106,7 @@ Id                                   DisplayName         Description            
 300a5486-9c58-422f-97a0-d2453977bcec Marketing resources Marketing resources                                                    {}
 74a7bfca-7fbc-4a67-b4bb-3ef115b114f1 Sales & Marketing   This is the sales and marketing team                                   {}
 
-### EXAMPLE 5
+### Example 5: Use -Filter to get all the applications with a display name that starts with 'A' including a count of the returned users, with the results ordered by display name
 ```powershell
 Connect-MgBetaGraph -Scopes 'Group.Read.All'
 Get-MgBetaGroup -ConsistencyLevel eventual -Count groupCount -Filter "startsWith(DisplayName, 'A')" -OrderBy DisplayName

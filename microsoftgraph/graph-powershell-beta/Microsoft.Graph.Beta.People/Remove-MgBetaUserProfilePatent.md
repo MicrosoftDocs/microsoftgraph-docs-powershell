@@ -32,7 +32,7 @@ Deletes an itemPatent object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaUserProfilePatent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfilePatent -UserId $userId -ItemPatentId $itemPatentId

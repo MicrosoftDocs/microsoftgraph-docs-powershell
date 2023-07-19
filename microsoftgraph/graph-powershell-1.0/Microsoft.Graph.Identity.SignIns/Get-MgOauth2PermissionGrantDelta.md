@@ -25,7 +25,7 @@ Invoke function delta
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgOauth2PermissionGrantDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgOauth2PermissionGrantDelta

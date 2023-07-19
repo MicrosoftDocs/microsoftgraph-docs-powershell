@@ -48,7 +48,7 @@ Get the free/busy availability information for a collection of users, distributi
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserDefaultCalendarSchedule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{

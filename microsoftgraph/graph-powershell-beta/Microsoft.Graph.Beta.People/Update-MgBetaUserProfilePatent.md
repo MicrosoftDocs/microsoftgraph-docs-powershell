@@ -52,7 +52,7 @@ Update the properties of an itemPatent object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfilePatent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

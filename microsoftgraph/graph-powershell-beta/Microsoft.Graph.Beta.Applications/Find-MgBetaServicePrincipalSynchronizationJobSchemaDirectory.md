@@ -32,7 +32,7 @@ Discover the latest schema definition for provisioning to an application.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Find-MgBetaServicePrincipalSynchronizationJobSchemaDirectory -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -DirectoryDefinitionId $directoryDefinitionId

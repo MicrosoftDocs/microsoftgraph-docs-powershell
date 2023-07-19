@@ -52,7 +52,7 @@ This method returns an apiConnector.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{

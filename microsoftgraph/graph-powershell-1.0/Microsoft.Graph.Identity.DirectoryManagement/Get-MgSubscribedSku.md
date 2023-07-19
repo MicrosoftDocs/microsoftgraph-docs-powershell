@@ -37,7 +37,7 @@ Get a specific commercial subscription that an organization has acquired.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get subscribed SKUs
 ```powershell
 Get-MgSubscribedSKU | Format-List
 ```

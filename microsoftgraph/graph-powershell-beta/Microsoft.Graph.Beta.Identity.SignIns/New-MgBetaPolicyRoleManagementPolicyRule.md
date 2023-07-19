@@ -46,7 +46,7 @@ Create new navigation property to rules for policies
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

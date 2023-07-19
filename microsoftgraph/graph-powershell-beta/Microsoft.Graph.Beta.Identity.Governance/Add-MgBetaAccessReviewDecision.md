@@ -49,7 +49,7 @@ If you want to change a group that originates on-premises, download the results 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaAccessReviewDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Add-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId

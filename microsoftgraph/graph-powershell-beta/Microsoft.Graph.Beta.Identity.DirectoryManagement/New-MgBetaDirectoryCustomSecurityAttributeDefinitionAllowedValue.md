@@ -46,7 +46,7 @@ Create a new allowedValue object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

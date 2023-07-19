@@ -36,7 +36,7 @@ Create new navigation property to assignments for identityGovernance
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example scenarios for using query parameters
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

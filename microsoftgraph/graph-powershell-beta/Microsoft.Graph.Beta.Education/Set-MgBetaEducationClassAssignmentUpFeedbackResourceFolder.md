@@ -36,7 +36,7 @@ The teacher determines the resources to upload in the feedback resources folder 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaEducationClassAssignmentUpFeedbackResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 $params = @{

@@ -39,7 +39,7 @@ To access and assign members to other directory roles, you must first activate i
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 

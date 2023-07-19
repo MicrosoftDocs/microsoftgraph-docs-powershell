@@ -33,7 +33,7 @@ Set the **isPublished** property to true, and **publicUrl** property to the URL 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Publish-MgBetaBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Publish-MgBetaBookingBusiness -BookingBusinessId $bookingBusinessId

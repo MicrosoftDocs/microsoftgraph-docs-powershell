@@ -52,7 +52,7 @@ This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgForwardUserEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{

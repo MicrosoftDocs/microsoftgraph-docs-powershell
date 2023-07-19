@@ -41,35 +41,35 @@ A threat assessment request can be one of the following types:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the properties of a mail assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
 ```
-### Example 2
+### Example 2: Get the properties of an email file assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
 ```
-### Example 3
+### Example 3: Get the properties of a file assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
 ```
-### Example 4
+### Example 4: Get the properties of an url assessment request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaInformationProtectionThreatAssessmentRequest -ThreatAssessmentRequestId $threatAssessmentRequestId
 
 ```
-### Example 5
+### Example 5: Expand threat assessment results for a request
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

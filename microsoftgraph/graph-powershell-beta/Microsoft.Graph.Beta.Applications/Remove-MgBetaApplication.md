@@ -36,7 +36,7 @@ After that time, they are permanently deleted.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Delete an application
 ```powershell
 Remove-MgBetaApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 

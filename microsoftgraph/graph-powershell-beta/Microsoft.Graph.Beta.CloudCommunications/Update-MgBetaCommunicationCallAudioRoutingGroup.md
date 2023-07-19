@@ -46,7 +46,7 @@ Modify sources and receivers of an audioRoutingGroup.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{

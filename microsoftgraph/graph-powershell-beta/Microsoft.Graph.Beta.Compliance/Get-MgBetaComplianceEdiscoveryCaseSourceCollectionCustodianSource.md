@@ -39,7 +39,7 @@ Custodian sources that are included in the sourceCollection.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -CaseId $caseId -SourceCollectionId $sourceCollectionId

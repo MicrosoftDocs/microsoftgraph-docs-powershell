@@ -55,7 +55,7 @@ If the domain was successfully deleted, a 404 HTTP response code will be returne
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaForceDomainDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{

@@ -33,7 +33,7 @@ The target object can be either a one-time access review, or an instance of a re
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Send-MgBetaAccessReviewReminder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Send-MgBetaAccessReviewReminder -AccessReviewId $accessReviewId

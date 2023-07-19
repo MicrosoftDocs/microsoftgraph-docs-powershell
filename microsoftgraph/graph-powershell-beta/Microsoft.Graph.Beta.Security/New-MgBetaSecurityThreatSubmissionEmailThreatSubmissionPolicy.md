@@ -37,7 +37,7 @@ Create new navigation property to emailThreatSubmissionPolicies for security
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

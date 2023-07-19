@@ -34,7 +34,7 @@ As a recommended best practice, apps should have at least two owners.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 

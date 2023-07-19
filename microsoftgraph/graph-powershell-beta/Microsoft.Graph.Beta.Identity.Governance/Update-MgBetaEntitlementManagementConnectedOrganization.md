@@ -52,7 +52,7 @@ Update a connectedOrganization object to change one or more of its properties.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 

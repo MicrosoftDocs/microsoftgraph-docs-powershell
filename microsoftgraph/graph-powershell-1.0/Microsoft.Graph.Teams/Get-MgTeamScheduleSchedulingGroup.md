@@ -38,7 +38,7 @@ Retrieve the properties and relationships of a schedulingGroup by ID.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

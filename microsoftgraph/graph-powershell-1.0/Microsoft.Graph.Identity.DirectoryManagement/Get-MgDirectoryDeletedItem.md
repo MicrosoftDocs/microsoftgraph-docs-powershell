@@ -32,7 +32,7 @@ Retrieve the properties of a recently deleted application, group, servicePrincip
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Retrieve a list of recently deleted items
 ```powershell
 Get-MgDirectoryDeletedItem -DirectoryObjectId 'd4142c52-179b-4d31-b5b9-08940873507b'
 

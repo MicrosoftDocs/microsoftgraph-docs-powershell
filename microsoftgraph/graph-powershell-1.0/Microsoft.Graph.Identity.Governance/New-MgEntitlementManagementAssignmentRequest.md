@@ -40,7 +40,7 @@ This operation is used to assign a user to an access package, update the assignm
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Admin requests a direct assignment for a user already in the directory
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -56,7 +56,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Remove an assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -70,7 +70,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Request an assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -84,7 +84,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Request an assignment by providing answers to questions
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -119,7 +119,7 @@ $params = @{
 New-MgEntitlementManagementAssignmentRequest -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Request an update to answers for an assignment
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 

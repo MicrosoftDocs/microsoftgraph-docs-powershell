@@ -26,7 +26,7 @@ Retrieves a list of groupLifecyclePolicy objects to which a group belongs.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgGroupLifecyclePolicyByGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Get-MgGroupLifecyclePolicyByGroup -GroupId $groupId

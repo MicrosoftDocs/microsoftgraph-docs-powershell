@@ -37,7 +37,7 @@ After the access review stops, reviewers can no longer give input, and the acces
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Stop-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Stop-MgBetaAccessReview -AccessReviewId $accessReviewId

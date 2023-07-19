@@ -39,7 +39,7 @@ Returns the tags that are a child of a tag.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseTagChildTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseTagChildTag -CaseId $caseId -TagId $tagId

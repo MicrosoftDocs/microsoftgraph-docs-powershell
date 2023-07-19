@@ -44,7 +44,7 @@ Create new navigation property ref to members for directory
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 

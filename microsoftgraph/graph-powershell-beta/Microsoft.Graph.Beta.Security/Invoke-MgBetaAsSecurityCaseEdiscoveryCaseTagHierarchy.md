@@ -34,7 +34,7 @@ Invoke function asHierarchy
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Invoke-MgBetaAsSecurityCaseEdiscoveryCaseTagHierarchy -EdiscoveryCaseId $ediscoveryCaseId

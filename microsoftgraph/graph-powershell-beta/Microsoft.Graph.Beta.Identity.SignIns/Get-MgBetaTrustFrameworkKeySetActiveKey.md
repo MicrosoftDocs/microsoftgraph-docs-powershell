@@ -30,7 +30,7 @@ Invoke function getActiveKey
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTrustFrameworkKeySetActiveKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaTrustFrameworkKeySetActiveKey -TrustFrameworkKeySetId $trustFrameworkKeySetId

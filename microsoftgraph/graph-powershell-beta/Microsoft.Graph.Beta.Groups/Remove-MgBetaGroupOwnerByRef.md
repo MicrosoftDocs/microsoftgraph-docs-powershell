@@ -34,7 +34,7 @@ When owners are assigned to a group, the last owner (a user object) of the group
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 

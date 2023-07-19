@@ -46,7 +46,7 @@ Add a conversationMember to a chat.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Add a single member to a chat and specify the timespan for the conversation history
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -62,7 +62,7 @@ $params = @{
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
 ```
-### Example 2
+### Example 2: Add a single member to a Microsoft Teams chat, sharing no chat history
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -77,7 +77,7 @@ $params = @{
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
 ```
-### Example 3
+### Example 3: Add a single member to a Microsoft Teams chat, sharing the whole history of the chat
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -93,7 +93,7 @@ $params = @{
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
 ```
-### Example 4
+### Example 4: Add a single member to a chat using user principal name
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -109,7 +109,7 @@ $params = @{
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
 ```
-### Example 5
+### Example 5: Add an in-tenant guest user to a chat, sharing no chat history
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -124,7 +124,7 @@ $params = @{
 New-MgBetaChatMember -ChatId $chatId -BodyParameter $params
 
 ```
-### Example 6
+### Example 6: Add a out-of-tenant external user to a chat, sharing no chat history
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 

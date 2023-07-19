@@ -39,14 +39,14 @@ Read the properties and relationships of a conditionalAccessTemplate object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get the properties a template by ID
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityConditionalAccessTemplate -ConditionalAccessTemplateId $conditionalAccessTemplateId
 
 ```
-### Example 2
+### Example 2: Select details of a template
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 

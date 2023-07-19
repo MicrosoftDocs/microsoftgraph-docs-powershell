@@ -34,7 +34,7 @@ For more information, see Publisher verification.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Clear-MgBetaApplicationVerifiedPublisher Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Clear-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId

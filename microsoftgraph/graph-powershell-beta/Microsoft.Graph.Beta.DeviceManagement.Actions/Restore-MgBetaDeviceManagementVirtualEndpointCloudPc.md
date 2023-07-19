@@ -49,7 +49,7 @@ Use this API to trigger a remote action that restores a Cloud PC device to a pre
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Restore-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{

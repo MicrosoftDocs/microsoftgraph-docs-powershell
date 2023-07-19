@@ -32,7 +32,7 @@ Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count 
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgApplicationOwner Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Get-MgApplicationOwner -ApplicationId $applicationId

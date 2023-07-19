@@ -39,13 +39,13 @@ Read the properties and relationships of an accessPackageResourceEnvironment obj
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -AccessPackageResourceEnvironmentId $accessPackageResourceEnvironmentId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageResourceEnvironment -Filter "originSystem eq 'SharePointOnline'"

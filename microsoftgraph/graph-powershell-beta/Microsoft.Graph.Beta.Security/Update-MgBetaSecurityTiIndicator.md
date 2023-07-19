@@ -75,7 +75,7 @@ Update the properties of a tiIndicator object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -84,7 +84,7 @@ $params = @{
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Update-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{

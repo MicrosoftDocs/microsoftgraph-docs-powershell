@@ -38,7 +38,7 @@ Given contentInfo, which includes existing content metadata key/value pairs, and
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelApplication Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{

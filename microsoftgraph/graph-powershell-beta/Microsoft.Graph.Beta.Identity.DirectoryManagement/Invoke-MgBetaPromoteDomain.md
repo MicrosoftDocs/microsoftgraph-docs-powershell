@@ -33,7 +33,7 @@ A verified domain has its **isVerified** property set to `true`.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaPromoteDomain Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Invoke-MgBetaPromoteDomain -DomainId $domainId

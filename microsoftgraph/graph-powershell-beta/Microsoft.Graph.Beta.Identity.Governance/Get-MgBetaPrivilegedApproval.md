@@ -39,13 +39,13 @@ Get entity from privilegedApproval by key
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaPrivilegedApproval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedApproval -PrivilegedApprovalId $privilegedApprovalId
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Get-MgBetaPrivilegedApproval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedApproval

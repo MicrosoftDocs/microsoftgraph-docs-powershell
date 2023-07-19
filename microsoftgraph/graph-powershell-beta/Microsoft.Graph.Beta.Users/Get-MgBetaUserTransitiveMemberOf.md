@@ -41,7 +41,7 @@ Nullable.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserTransitiveMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 Get-MgBetaUserTransitiveMemberOf -UserId $userId

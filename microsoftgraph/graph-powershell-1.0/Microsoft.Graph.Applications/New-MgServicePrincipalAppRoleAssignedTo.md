@@ -55,7 +55,7 @@ To grant an app role assignment, you need three identifiers:
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 

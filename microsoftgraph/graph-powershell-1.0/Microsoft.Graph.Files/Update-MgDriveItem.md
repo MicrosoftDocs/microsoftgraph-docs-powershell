@@ -80,7 +80,7 @@ You can also use update to move an item to another parent by updating the item's
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Files
 

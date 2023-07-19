@@ -52,7 +52,7 @@ The returned properties include the user's favorite plans and recently viewed pl
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserPlanner Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 # A UPN can also be used as -UserId.

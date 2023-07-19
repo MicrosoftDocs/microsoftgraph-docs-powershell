@@ -33,7 +33,7 @@ Delete an authenticationContextClassReference object that's not published or use
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 

@@ -32,7 +32,7 @@ Delete an existing userFlow object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaIdentityUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityUserFlow -IdentityUserFlowId $identityUserFlowId

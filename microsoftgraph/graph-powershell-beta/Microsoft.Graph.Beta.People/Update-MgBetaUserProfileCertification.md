@@ -55,7 +55,7 @@ Update the properties of a personCertification object from a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserProfileCertification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

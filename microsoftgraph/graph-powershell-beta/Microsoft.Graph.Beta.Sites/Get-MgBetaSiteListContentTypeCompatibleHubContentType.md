@@ -34,7 +34,7 @@ Invoke function getCompatibleHubContentTypes
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaSiteListContentTypeCompatibleHubContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId

@@ -32,7 +32,7 @@ Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId

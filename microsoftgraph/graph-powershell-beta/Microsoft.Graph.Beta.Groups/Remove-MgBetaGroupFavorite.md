@@ -32,7 +32,7 @@ Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Remove-MgBetaGroupFavorite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Remove-MgBetaGroupFavorite -GroupId $groupId

@@ -39,7 +39,7 @@ Retrieve the properties and relationships of a servicePrincipal object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get all service principals from the directory
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal
@@ -55,7 +55,7 @@ AppId          : 67c93110-694e-4a54-b1af-d6cd2e3b12d7
 SignInAudience : AzureADMultipleOrgs
 
 ```
-### Example 2
+### Example 2: Get the service principal by display name
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -Filter "DisplayName eq 'Power BI Service'" |
@@ -67,7 +67,7 @@ AppId          : 60dbf324-9702-41cc-a5fa-f8d19804b014
 SignInAudience : AzureADMultipleOrgs
 
 ```
-### Example 3
+### Example 3: Get a count of the service principals
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -ConsistencyLevel eventual -Count spCount
@@ -80,7 +80,7 @@ Id                                   DisplayName                                
 020ada9b-60b7-436f-8f00-22b198c2996a O365SBRM Service                                               9d06afd9-66c9-49a6-b385-ea7509332b0b AzureADMultipleOrgs                Microsoft Service
 
 ```
-### Example 4
+### Example 4: Use -Filter and -Top to get five service principals with a display name that starts with 'a' including a count of returned objects
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -ConsistencyLevel eventual -Count spCount -Filter "startsWith(DisplayName, 'a')" -Top 5
@@ -94,7 +94,7 @@ Id                                   DisplayName                       AppId    
 1d322ee1-7cf7-442a-b480-d6d4bbe6ec54 App Protection                    c6e44401-4d0a-4542-ab22-ecd4c90d28d7 AzureADMultipleOrgs Microsoft Services
 
 ```
-### Example 5
+### Example 5: Use -Search to get service principals with display names that contain the letters 'Team' including a count of returned objects
 ```powershell
 Connect-MgGraph -Scopes 'Application.Read.All'
 Get-MgServicePrincipal -ConsistencyLevel eventual -Count spCount -Search '"DisplayName:Team"'

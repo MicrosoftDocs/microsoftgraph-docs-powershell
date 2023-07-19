@@ -39,7 +39,7 @@ Retrieve the properties and relationships of an ipNamedLocation object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of all named locations
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessNamedLocation
@@ -51,7 +51,7 @@ Id                                   CreatedDateTime       DisplayName          
 1f0fd623-bf8f-4003-9627-32a68c3cdcc1 6/13/2022 8:27:35 AM  Updated named location      6/13/2022 8:54:24 AM
 0824dbaf-6277-4db0-8112-b29fd356f2c4 6/13/2022 8:41:38 AM  Untrusted IP named location 6/13/2022 8:41:38 AM
 
-### EXAMPLE 2
+### Example 2: Get a named location by Id
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId '1f0fd623-bf8f-4003-9627-32a68c3cdcc1'

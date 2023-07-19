@@ -25,7 +25,7 @@ Invoke function my
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaMyPrivilegedRoleAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Invoke-MgBetaMyPrivilegedRoleAssignment

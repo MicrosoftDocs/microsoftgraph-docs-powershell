@@ -39,7 +39,7 @@ Retrieve the properties and relationships of a conditionalAccessPolicy object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Get a list of all conditional access policies in Azure AD.
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessPolicy |Format-List
@@ -67,7 +67,7 @@ SessionControls      : Microsoft.Graph.PowerShell.Models.MicrosoftGraphCondition
 State                : enabled
 AdditionalProperties : {}
 
-### EXAMPLE 2
+### Example 2: Get a conditional access policy by Id
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.Read.All'
 Get-MgBetaIdentityConditionalAccessPolicy -ConditionalAccessPolicyId '5e7615b8-dbe4-4cc1-810c-26adb77a3518' | 

@@ -43,7 +43,7 @@ The following table lists the three scenarios where you can get an open extensio
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Code snippet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 

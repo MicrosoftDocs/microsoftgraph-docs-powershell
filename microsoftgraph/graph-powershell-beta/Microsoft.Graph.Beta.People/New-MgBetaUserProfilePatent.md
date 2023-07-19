@@ -52,7 +52,7 @@ Create a new itemPatent object within a user's profile.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaUserProfilePatent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{

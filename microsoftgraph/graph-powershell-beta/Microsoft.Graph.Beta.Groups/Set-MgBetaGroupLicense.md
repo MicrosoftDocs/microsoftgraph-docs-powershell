@@ -52,7 +52,7 @@ To get the subscriptions available in the directory, perform a GET subscribedSku
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Set-MgBetaGroupLicense Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -77,7 +77,7 @@ $params = @{
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 ```
 
-### EXAMPLE 2
+### Example 2: Using the Set-MgBetaGroupLicense Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{

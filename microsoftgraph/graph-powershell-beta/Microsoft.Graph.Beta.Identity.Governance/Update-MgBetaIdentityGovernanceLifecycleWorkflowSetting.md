@@ -34,7 +34,7 @@ Update the properties of a lifecycleManagementSettings object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaIdentityGovernanceLifecycleWorkflowSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{

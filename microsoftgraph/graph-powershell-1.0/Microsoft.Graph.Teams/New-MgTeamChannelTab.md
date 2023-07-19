@@ -48,14 +48,14 @@ Adds (pins) a tab to the specified channel within a team.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: List all the tabs in the channel along with associated Teams app
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
 
 ```
-### Example 2
+### Example 2: List all the tabs belonging to a specific app in a channel
 ```powershell
 Import-Module Microsoft.Graph.Teams
 

@@ -48,7 +48,7 @@ Create a new onPremisesAgentGroup object.
 
 ## EXAMPLES
 
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 New-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId
