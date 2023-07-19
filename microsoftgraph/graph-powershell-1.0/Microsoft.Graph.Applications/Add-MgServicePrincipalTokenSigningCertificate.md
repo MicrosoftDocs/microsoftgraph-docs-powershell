@@ -60,7 +60,6 @@ The **startDateTime** is set to the same time the certificate is created using t
 The **endDateTime** can be up to three years after the certificate is created.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgServicePrincipalTokenSigningCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
@@ -70,7 +69,6 @@ $params = @{
 }
 Add-MgServicePrincipalTokenSigningCertificate -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgServicePrincipalTokenSigningCertificate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -247,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaServicePrincipalTokenSigningCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalTokenSigningCertificate?view=graph-powershell-beta)
+

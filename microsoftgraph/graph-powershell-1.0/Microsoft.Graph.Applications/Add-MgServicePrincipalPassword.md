@@ -45,7 +45,6 @@ Add-MgServicePrincipalPassword -InputObject <IApplicationsIdentity>
 Add a strong password or secret to a servicePrincipal object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgServicePrincipalPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
@@ -56,7 +55,6 @@ $params = @{
 }
 Add-MgServicePrincipalPassword -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgServicePrincipalPassword Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -236,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaServicePrincipalPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaServicePrincipalPassword?view=graph-powershell-beta)
+

@@ -38,13 +38,12 @@ Get-MgBetaSecurityAttackSimulationAutomation -InputObject <ISecurityIdentity> [-
 Get an attack simulation automation for a tenant.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityAttackSimulationAutomation -SimulationAutomationId $simulationAutomationId
-
 ```
 This example shows how to use the Get-MgBetaSecurityAttackSimulationAutomation Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomation?view=graph-powershell-v1.0)
+
 

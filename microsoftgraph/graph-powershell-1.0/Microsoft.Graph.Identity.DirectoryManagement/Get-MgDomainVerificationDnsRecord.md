@@ -42,13 +42,12 @@ Read-only, Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDomainVerificationDnsRecord -DomainId $domainId
-
 ```
 This example shows how to use the Get-MgDomainVerificationDnsRecord Cmdlet.
 
@@ -297,4 +296,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+
 

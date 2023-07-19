@@ -31,13 +31,12 @@ Remove-MgBetaPlannerBucket -InputObject <IPlannerIdentity> [-IfMatch <String>] [
 Delete **plannerBucket**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Remove-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Remove-MgBetaPlannerBucket Cmdlet.
 
@@ -168,4 +167,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerBucket?view=graph-powershell-v1.0)
+
 

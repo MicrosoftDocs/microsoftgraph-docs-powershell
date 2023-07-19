@@ -37,13 +37,12 @@ Administrative units **cannot** be permanently deleted by using the **deletedIte
 Soft-deleted administrative units will be permanently deleted 30 days after initial deletion unless they are restored.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Remove-MgDirectoryDeletedItem Cmdlet.
 
@@ -187,4 +186,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+
 

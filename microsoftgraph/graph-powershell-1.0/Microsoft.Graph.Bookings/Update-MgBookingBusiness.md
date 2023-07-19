@@ -59,8 +59,8 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 Update the properties of a bookingBusiness object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
@@ -76,7 +76,6 @@ $params = @{
 }
 
 Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBookingBusiness Cmdlet.
 
@@ -793,4 +792,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 

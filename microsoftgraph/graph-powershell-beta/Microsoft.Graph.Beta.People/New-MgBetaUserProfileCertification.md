@@ -53,7 +53,6 @@ New-MgBetaUserProfileCertification -InputObject <IPeopleIdentity>
 Create a new personCertification object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileCertification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -67,7 +66,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileCertification -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileCertification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -562,3 +560,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileCertification](/powershell/module/Microsoft.Graph.People/New-MgUserProfileCertification?view=graph-powershell-v1.0)
+

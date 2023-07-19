@@ -38,13 +38,12 @@ Get-MgOrganizationCertificateBasedAuthConfiguration -InputObject <IIdentitySignI
 Get the properties of a certificateBasedAuthConfiguration object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgOrganizationCertificateBasedAuthConfiguration -OrganizationId $organizationId -CertificateBasedAuthConfigurationId $certificateBasedAuthConfigurationId
-
 ```
 This example shows how to use the Get-MgOrganizationCertificateBasedAuthConfiguration Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaOrganizationCertificateBasedAuthConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationCertificateBasedAuthConfiguration?view=graph-powershell-beta)
+
 

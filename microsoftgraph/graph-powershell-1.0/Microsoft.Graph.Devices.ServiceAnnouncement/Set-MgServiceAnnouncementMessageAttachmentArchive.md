@@ -31,13 +31,12 @@ Set-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 The zip file that contains all attachments for a message.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessage
-
 ```
 This example shows how to use the Set-MgServiceAnnouncementMessageAttachmentArchive Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaServiceAnnouncementMessageAttachmentArchive](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaServiceAnnouncementMessageAttachmentArchive?view=graph-powershell-beta)
+
 

@@ -47,7 +47,6 @@ Retrieve the properties and relationships of a notebook object by using its URL 
 The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOnenoteNotebookFromWebUrl Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -57,7 +56,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgBetaUserOnenoteNotebookFromWebUrl Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -238,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserOnenoteNotebookFromWebUrl?view=graph-powershell-v1.0)
+

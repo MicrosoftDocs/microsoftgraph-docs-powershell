@@ -37,34 +37,10 @@ Get-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPro
 Retrieve the properties and relationships of domain object.
 
 ## EXAMPLES
-
 ### Example 1: Get a list of domain objects
+
 ```powershell
-Get-MgBetaDomain | Format-List
-```
-
-AuthenticationType               : Managed
-AvailabilityStatus               :
-DomainNameReferences             :
-Id                               : contoso.com
-IsAdminManaged                   : True
-IsDefault                        : True
-IsInitial                        : True
-IsRoot                           : True
-IsVerified                       : True
-Manufacturer                     :
-Model                            :
-PasswordNotificationWindowInDays : 14
-PasswordValidityPeriodInDays     : 2147483647
-ServiceConfigurationRecords      :
-State                            : Microsoft.Graph.PowerShell.Models.MicrosoftGraphDomainState
-SupportedServices                : {Email, OfficeCommunicationsOnline}
-VerificationDnsRecords           :
-AdditionalProperties             : {[@odata.context, https://graph.microsoft.com/v1.0/$metadata#domains/$entity]}
-
-
-This example retrieves a list of the domain objects.
-
+Get-MgBetaDomain ### Example 1: Get a list of domain objects
 ## PARAMETERS
 
 ### -All
@@ -312,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomain?view=graph-powershell-v1.0)
+

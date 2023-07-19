@@ -42,13 +42,12 @@ Read-only, Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDomainServiceConfigurationRecord -DomainId $domainId
-
 ```
 This example shows how to use the Get-MgDomainServiceConfigurationRecord Cmdlet.
 
@@ -297,4 +296,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
+
 

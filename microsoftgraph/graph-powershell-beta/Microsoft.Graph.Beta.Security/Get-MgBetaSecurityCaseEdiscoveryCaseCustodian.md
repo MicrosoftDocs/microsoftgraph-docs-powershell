@@ -38,13 +38,12 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodian -InputObject <ISecurityIdentity> [
 Read the properties and relationships of an ediscoveryCustodian object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityCaseEdiscoveryCaseCustodian -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
 ```
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseCustodian Cmdlet.
 
@@ -342,4 +341,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+
 

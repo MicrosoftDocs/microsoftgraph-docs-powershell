@@ -31,13 +31,12 @@ Remove-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-IfMatch <String>] [-P
 Delete a plannerPlan object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Remove-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Remove-MgBetaPlannerPlan Cmdlet.
 
@@ -168,4 +167,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerPlan?view=graph-powershell-v1.0)
+
 

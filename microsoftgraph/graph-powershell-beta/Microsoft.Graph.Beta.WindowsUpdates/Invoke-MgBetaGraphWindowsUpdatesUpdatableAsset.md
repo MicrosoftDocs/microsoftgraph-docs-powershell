@@ -32,7 +32,6 @@ Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset
 Invoke action unenrollAssetsById
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -47,7 +46,6 @@ $params = @{
 }
 Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaGraphWindowsUpdatesUpdatableAsset Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -203,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgGraphWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgGraphWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
+

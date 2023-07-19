@@ -31,13 +31,12 @@ Remove-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdent
 Delete a federatedIdentityCredential object from an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
-
 ```
 This example shows how to use the Remove-MgApplicationFederatedIdentityCredential Cmdlet.
 
@@ -195,4 +194,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
+
 

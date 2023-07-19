@@ -34,7 +34,6 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgDirectoryObjectById Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
@@ -53,7 +52,6 @@ $params = @{
 }
 Get-MgDirectoryObjectById -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgDirectoryObjectById Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -176,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryObjectById](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryObjectById?view=graph-powershell-beta)
+

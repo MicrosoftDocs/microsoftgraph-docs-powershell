@@ -38,13 +38,12 @@ Get-MgExternalConnectionItem -InputObject <ISearchIdentity> [-ExpandProperty <St
 Read the properties and relationships of an externalItem object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
-
 ```
 This example shows how to use the Get-MgExternalConnectionItem Cmdlet.
 
@@ -278,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionItem](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionItem?view=graph-powershell-beta)
+
 

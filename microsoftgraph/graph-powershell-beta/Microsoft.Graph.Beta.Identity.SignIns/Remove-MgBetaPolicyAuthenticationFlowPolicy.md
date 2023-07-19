@@ -24,8 +24,8 @@ Remove-MgBetaPolicyAuthenticationFlowPolicy [-IfMatch <String>] [-PassThru] [-Wh
 Delete navigation property authenticationFlowsPolicy for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -36,7 +36,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaPolicyAuthenticationFlowPolicy Cmdlet.
 
@@ -120,4 +119,5 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-v1.0)
+
 

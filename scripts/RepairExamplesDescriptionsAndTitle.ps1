@@ -9,7 +9,7 @@ Param(
 function Get-GraphMapping {
     $graphMapping = @{}
     $graphMapping.Add("v1.0", "v1.0")
-    #$graphMapping.Add("beta", "beta")
+    $graphMapping.Add("beta", "beta")
     return $graphMapping
 }
 
@@ -28,10 +28,10 @@ function Start-Copy {
 		}
         Get-FilesByProfile -GraphProfile $graphProfile -GraphProfilePath $profilePath -ModulePrefix $ModulePrefix -ModulesToGenerate $ModulesToGenerate 
     }
-    # git config --global user.email "timwamalwa@gmail.com"
-    # git config --global user.name "Timothy Wamalwa"
-    # git add .
-    # git commit -m "Corrected titles" 
+    git config --global user.email "timwamalwa@gmail.com"
+    git config --global user.name "Timothy Wamalwa"
+    git add .
+    git commit -m "Corrected titles" 
 }
 function Get-FilesByProfile{
  Param(
@@ -177,16 +177,16 @@ function Get-ExistingDescriptions {
     }
    
 }
-# Set-Location microsoftgraph-docs-powershell
-# $proposedBranch = "weekly_v2_docs_update_$date"
-# $proposedBranch = "File_copy_test1"
-# $exists = git branch -l $proposedBranch
-# if ([string]::IsNullOrEmpty($exists)) {
-#     git checkout -b $proposedBranch
-# }else{
-# 	Write-Host "Branch already exists"
-#      git checkout $proposedBranch
-# }
+Set-Location microsoftgraph-docs-powershell
+$proposedBranch = "weekly_v2_docs_update_$date"
+$proposedBranch = "File_copy_test1"
+$exists = git branch -l $proposedBranch
+if ([string]::IsNullOrEmpty($exists)) {
+    git checkout -b $proposedBranch
+}else{
+	Write-Host "Branch already exists"
+     git checkout $proposedBranch
+}
 if (-not (Test-Path $ModuleMappingConfigPath)) {
     Write-Error "Module mapping file not be found: $ModuleMappingConfigPath."
 }
@@ -194,7 +194,7 @@ if ($ModulesToGenerate.Count -eq 0) {
     [HashTable] $ModuleMapping = Get-Content $ModuleMappingConfigPath | ConvertFrom-Json -AsHashTable
     $ModulesToGenerate = $ModuleMapping.Keys
 }
-# Set-Location ..\microsoftgraph-docs-powershell
+Set-Location ..\microsoftgraph-docs-powershell
 Write-Host -ForegroundColor Green "-------------finished checking out to today's branch-------------"
 Start-Copy -ModulesToGenerate $ModulesToGenerate
 Write-Host -ForegroundColor Green "-------------Done-------------"

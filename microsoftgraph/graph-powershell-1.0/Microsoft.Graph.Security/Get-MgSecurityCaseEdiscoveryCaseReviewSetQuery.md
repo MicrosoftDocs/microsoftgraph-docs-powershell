@@ -38,13 +38,12 @@ Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIdentity> 
 Read the properties and relationships of an ediscoveryReviewSetQuery object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId
-
 ```
 This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseReviewSetQuery Cmdlet.
 
@@ -320,4 +319,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-beta)
+
 

@@ -39,13 +39,11 @@ If the response contains errors, the synchronization will not start.
 If the response contains only warnings, synchronization will start.
 
 ## EXAMPLES
-
 ### Example 1: Using the Start-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-
 This example shows how to use the Start-MgBetaEducationSynchronizationProfile Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -148,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

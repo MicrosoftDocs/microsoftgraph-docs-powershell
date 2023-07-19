@@ -30,22 +30,13 @@ Remove-MgPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] 
 Delete entity from places
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Calendar
 
-$params = @{
-	"@odata.type" = "microsoft.graph.room"
-	nickname = "Conf Room"
-	building = "1"
-	label = "100"
-	capacity = 
-	isWheelChairAccessible = $false
-}
-
-Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
+# A UPN can also be used as -UserId.
+Remove-MgUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
 ```
 This example shows how to use the Remove-MgUserCalendarGroup Cmdlet.
 
@@ -178,4 +169,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserCalendarGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserCalendarGroup?view=graph-powershell-beta)
+
 

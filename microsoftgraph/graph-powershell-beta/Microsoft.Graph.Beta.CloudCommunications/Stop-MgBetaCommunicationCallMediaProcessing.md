@@ -53,7 +53,6 @@ For example, this API can be used to clean up the IVR operation queue for a new 
 However, it will not cancel a **ubscribeToTone** operation because it operates independent of any operation queue.
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -62,7 +61,6 @@ $params = @{
 }
 Stop-MgBetaCommunicationCallMediaProcessing -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Stop-MgBetaCommunicationCallMediaProcessing Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -221,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgCommunicationCallMediaProcessing](/powershell/module/Microsoft.Graph.CloudCommunications/Stop-MgCommunicationCallMediaProcessing?view=graph-powershell-v1.0)
+

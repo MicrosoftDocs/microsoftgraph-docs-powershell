@@ -55,8 +55,8 @@ Update-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicro
 Update the permission object on a site.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 Update-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaSitePermission Cmdlet.
 
@@ -614,4 +613,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePermission?view=graph-powershell-v1.0)
+
 

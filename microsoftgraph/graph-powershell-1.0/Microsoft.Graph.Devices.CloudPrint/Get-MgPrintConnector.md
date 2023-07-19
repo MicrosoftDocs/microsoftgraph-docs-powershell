@@ -38,13 +38,12 @@ Get-MgPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a **printConnector** object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintConnector -PrintConnectorId $printConnectorId
-
 ```
 This example shows how to use the Get-MgPrintConnector Cmdlet.
 
@@ -270,4 +269,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintConnector?view=graph-powershell-beta)
+
 

@@ -34,8 +34,8 @@ New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Co
 Create a new **plannerPlan**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -47,7 +47,6 @@ $params = @{
 }
 
 New-MgBetaPlannerPlan -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaPlannerPlan Cmdlet.
 
@@ -764,4 +763,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-v1.0)
+
 

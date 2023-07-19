@@ -35,13 +35,12 @@ New-MgServiceAnnouncementMessage -BodyParameter <IMicrosoftGraphServiceUpdateMes
 Create new navigation property to messages for admin
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessage
-
 ```
 This example shows how to use the New-MgServiceAnnouncementMessage Cmdlet.
 
@@ -452,4 +451,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
+
 

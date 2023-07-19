@@ -56,13 +56,12 @@ Get-MgBetaEntitlementManagementConnectedOrganization [-ExpandProperty <String[]>
 Retrieve the properties and relationships of a connectedOrganization object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId
-
 ```
 This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
 
@@ -401,4 +400,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
+
 

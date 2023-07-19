@@ -37,8 +37,8 @@ New-MgExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsExtern
 Create a new externalConnection object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
@@ -49,7 +49,6 @@ $params = @{
 }
 
 New-MgExternalConnection -BodyParameter $params
-
 ```
 This example shows how to use the New-MgExternalConnection Cmdlet.
 
@@ -484,4 +483,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaExternalConnection](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaExternalConnection?view=graph-powershell-beta)
+
 

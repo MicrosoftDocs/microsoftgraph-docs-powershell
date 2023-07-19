@@ -31,13 +31,12 @@ Remove-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-IfMatch <String>
 Delete a conversation object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Remove-MgBetaGroupConversation -GroupId $groupId -ConversationId $conversationId
-
 ```
 This example shows how to use the Remove-MgBetaGroupConversation Cmdlet.
 
@@ -219,4 +218,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupConversation?view=graph-powershell-v1.0)
+
 

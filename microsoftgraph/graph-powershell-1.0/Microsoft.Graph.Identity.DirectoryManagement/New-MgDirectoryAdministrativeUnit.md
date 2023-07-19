@@ -33,8 +33,8 @@ New-MgDirectoryAdministrativeUnit -BodyParameter <IMicrosoftGraphAdministrativeU
 Use this API to create a new administrativeUnit.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -45,7 +45,6 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnit -BodyParameter $params
-
 ```
 This example shows how to use the New-MgDirectoryAdministrativeUnit Cmdlet.
 
@@ -305,4 +304,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+
 

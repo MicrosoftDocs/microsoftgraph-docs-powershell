@@ -59,7 +59,6 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to forward a message, and send it later.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaForwardUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -80,7 +79,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaForwardUserMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -494,3 +492,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgForwardUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMessage?view=graph-powershell-v1.0)
+

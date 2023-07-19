@@ -47,8 +47,8 @@ Among the types of providers derived from identityProviderBase, you can currentl
 In Azure AD B2C, this operation can currently update a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
-
 ### Example 1: Update a specific <strong>social identity provider</strong> (Azure AD or Azure AD B2C)
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -58,9 +58,13 @@ $params = @{
 }
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgBetaIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Update a specific <strong>Apple identity provider</strong> (only for Azure AD B2C)
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -70,7 +74,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaIdentityProvider Cmdlet.
 
@@ -305,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityProvider?view=graph-powershell-v1.0)
+
 

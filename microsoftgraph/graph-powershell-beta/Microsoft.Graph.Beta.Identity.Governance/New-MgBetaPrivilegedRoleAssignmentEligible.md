@@ -31,13 +31,11 @@ New-MgBetaPrivilegedRoleAssignmentEligible -InputObject <IIdentityGovernanceIden
 Invoke action makeEligible
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentEligible Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 New-MgBetaPrivilegedRoleAssignmentEligible -PrivilegedRoleAssignmentId $privilegedRoleAssignmentId
 ```
-
 This example shows how to use the New-MgBetaPrivilegedRoleAssignmentEligible Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -223,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrivilegedRoleAssignmentEligible](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentEligible?view=graph-powershell-v1.0)
+

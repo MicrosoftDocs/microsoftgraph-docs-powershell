@@ -33,13 +33,12 @@ Delete an existing assignment.
 Only teachers within a class can delete assignments.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
 ```
 This example shows how to use the Remove-MgEducationClassAssignment Cmdlet.
 
@@ -187,4 +186,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 

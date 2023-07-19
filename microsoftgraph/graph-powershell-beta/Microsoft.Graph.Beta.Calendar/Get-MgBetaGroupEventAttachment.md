@@ -35,13 +35,13 @@ Get-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<C
 Get an event object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
-Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
-
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserEventAttachment -UserId $userId -EventId $eventId -AttachmentId $attachmentId
 ```
 This example shows how to use the Get-MgBetaBetaGroupEventAttachment Cmdlet.
 
@@ -250,4 +250,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventAttachment?view=graph-powershell-v1.0)
+
 

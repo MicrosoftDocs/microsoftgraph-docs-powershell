@@ -31,13 +31,12 @@ Remove-MgServicePrincipalAppRoleAssignedTo -InputObject <IApplicationsIdentity> 
 Deletes an appRoleAssignment that a user, group, or client service principal has been granted for a resource service principal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -AppRoleAssignmentId $appRoleAssignmentId
-
 ```
 This example shows how to use the Remove-MgServicePrincipalAppRoleAssignedTo Cmdlet.
 
@@ -195,4 +194,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
 

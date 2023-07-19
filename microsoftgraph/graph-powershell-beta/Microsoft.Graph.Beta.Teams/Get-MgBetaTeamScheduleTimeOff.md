@@ -36,13 +36,12 @@ Get-MgBetaTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-Property <String[]
 Retrieve the properties and relationships of a timeOff object by ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
-
 ```
 This example shows how to use the Get-MgBetaTeamScheduleTimeOff Cmdlet.
 
@@ -293,4 +292,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOff?view=graph-powershell-v1.0)
+
 

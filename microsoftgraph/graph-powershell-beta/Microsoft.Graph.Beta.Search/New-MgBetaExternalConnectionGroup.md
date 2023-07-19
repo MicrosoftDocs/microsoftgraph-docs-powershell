@@ -45,8 +45,8 @@ New-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity>
 Create a new externalGroup object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaExternalConnectionGroup Cmdlet.
 
@@ -278,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/New-MgExternalConnectionGroup?view=graph-powershell-v1.0)
+
 

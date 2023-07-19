@@ -59,8 +59,8 @@ New-MgBetaSiteListItem -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftG
 Create a new [listItem][] in a [list][].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -73,7 +73,6 @@ $params = @{
 }
 
 New-MgBetaSiteListItem -SiteId $siteId -ListId $listId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSiteListItem Cmdlet.
 
@@ -28877,4 +28876,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteListItem](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItem?view=graph-powershell-v1.0)
+
 

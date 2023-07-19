@@ -31,13 +31,12 @@ Remove-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pas
 Delete the channel.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
-
 ```
 This example shows how to use the Remove-MgBetaTeamChannel Cmdlet.
 
@@ -213,4 +212,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamChannel?view=graph-powershell-v1.0)
+
 

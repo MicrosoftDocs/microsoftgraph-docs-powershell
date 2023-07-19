@@ -35,13 +35,11 @@ Do not delete a program which still has `programControl` linked to it, those acc
 Also, please note that the built-in default program cannot be deleted.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaProgram Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaProgram -ProgramId $programId
 ```
-
 This example shows how to use the Remove-MgBetaProgram Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -257,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgram?view=graph-powershell-v1.0)
+

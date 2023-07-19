@@ -38,13 +38,11 @@ Get-MgBetaProgramControlType -InputObject <IIdentityGovernanceIdentity> [-Expand
 Get entity from programControlTypes by key
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaProgramControlType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaProgramControlType
 ```
-
 This example shows how to use the Get-MgBetaProgramControlType Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -350,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgProgramControlType](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgProgramControlType?view=graph-powershell-v1.0)
+

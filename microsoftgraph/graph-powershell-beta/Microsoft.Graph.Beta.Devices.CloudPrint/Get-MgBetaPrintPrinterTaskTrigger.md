@@ -40,13 +40,12 @@ Get a task trigger from a printer.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintPrinterTaskTrigger -PrinterId $printerId -PrintTaskTriggerId $printTaskTriggerId
-
 ```
 This example shows how to use the Get-MgBetaPrintPrinterTaskTrigger Cmdlet.
 
@@ -287,4 +286,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterTaskTrigger?view=graph-powershell-v1.0)
+
 

@@ -44,8 +44,8 @@ New-MgEducationUser -BodyParameter <IMicrosoftGraphEducationUser> [-WhatIf] [-Co
 Create a new educationUser object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -113,7 +113,6 @@ $params = @{
 }
 
 New-MgEducationUser -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEducationUser Cmdlet.
 
@@ -16049,4 +16048,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationUser?view=graph-powershell-beta)
+
 

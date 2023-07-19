@@ -25,13 +25,12 @@ Get-MgBetaGroupPlannerPlanBucket -GroupId <String> -PlannerPlanId <String> [-Exp
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerPlanBucket -PlannerPlanId $plannerPlanId
-
 ```
 This example shows how to use the Get-MgBetaGroupPlannerPlanBucket Cmdlet.
 
@@ -235,4 +234,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-v1.0)
+
 

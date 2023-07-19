@@ -52,7 +52,6 @@ Update-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity>
 Update some or all of the properties of a regionalAndLanguageSettings object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
@@ -72,7 +71,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -414,3 +412,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)
+

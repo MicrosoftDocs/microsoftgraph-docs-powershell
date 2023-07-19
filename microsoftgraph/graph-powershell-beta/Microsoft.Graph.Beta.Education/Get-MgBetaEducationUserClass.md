@@ -40,13 +40,12 @@ Classes to which the user belongs.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationMeClass
-
 ```
 This example shows how to use the Get-MgBetaEducationUserClass Cmdlet.
 
@@ -287,4 +286,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserClass?view=graph-powershell-v1.0)
+
 

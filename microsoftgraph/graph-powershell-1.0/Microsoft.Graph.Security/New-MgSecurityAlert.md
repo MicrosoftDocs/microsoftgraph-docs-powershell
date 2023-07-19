@@ -47,13 +47,12 @@ New-MgSecurityAlert -BodyParameter <IMicrosoftGraphAlert> [-WhatIf] [-Confirm] [
 Create new navigation property to alerts for security
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAlert
-
 ```
 This example shows how to use the New-MgSecurityAlert Cmdlet.
 
@@ -1100,4 +1099,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityAlert?view=graph-powershell-beta)
+
 

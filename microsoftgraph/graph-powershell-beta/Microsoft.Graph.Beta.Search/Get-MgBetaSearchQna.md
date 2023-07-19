@@ -37,22 +37,18 @@ Get-MgBetaSearchQna -InputObject <ISearchIdentity> [-ExpandProperty <String[]>] 
 Read the properties and relationships of a qna object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSearchQna Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchQna -QnaId $qnaId
 ```
-
 This example shows how to use the Get-MgBetaSearchQna Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaSearchQna Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchQna
 ```
-
 This example shows how to use the Get-MgBetaSearchQna Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -280,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSearchQna](/powershell/module/Microsoft.Graph.Search/Get-MgSearchQna?view=graph-powershell-v1.0)
+

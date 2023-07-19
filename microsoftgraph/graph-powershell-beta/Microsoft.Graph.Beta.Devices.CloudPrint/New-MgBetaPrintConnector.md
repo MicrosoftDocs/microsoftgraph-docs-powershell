@@ -33,13 +33,12 @@ New-MgBetaPrintConnector -BodyParameter <IMicrosoftGraphPrintConnector> [-WhatIf
 Create new navigation property to connectors for print
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintConnector
-
 ```
 This example shows how to use the New-MgBetaBetaPrintConnector Cmdlet.
 
@@ -328,4 +327,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintConnector?view=graph-powershell-v1.0)
+
 

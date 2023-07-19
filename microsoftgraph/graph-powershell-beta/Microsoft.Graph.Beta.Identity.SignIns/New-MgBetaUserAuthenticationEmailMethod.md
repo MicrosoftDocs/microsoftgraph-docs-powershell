@@ -48,8 +48,8 @@ Email authentication is a self-service password reset method.
 A user may only have one email authentication method.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -58,7 +58,6 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationEmailMethod -UserId $userId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaUserAuthenticationEmailMethod Cmdlet.
 
@@ -293,4 +292,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationEmailMethod?view=graph-powershell-v1.0)
+
 

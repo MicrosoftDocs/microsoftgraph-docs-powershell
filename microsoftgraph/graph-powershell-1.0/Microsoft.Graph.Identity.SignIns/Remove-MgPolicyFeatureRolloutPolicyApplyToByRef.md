@@ -31,13 +31,12 @@ Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -InputObject <IIdentitySignInsId
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Remove-MgPolicyFeatureRolloutPolicyApplyToByRef Cmdlet.
 
@@ -245,4 +244,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyFeatureRolloutPolicyApplyToByRef?view=graph-powershell-beta)
+
 

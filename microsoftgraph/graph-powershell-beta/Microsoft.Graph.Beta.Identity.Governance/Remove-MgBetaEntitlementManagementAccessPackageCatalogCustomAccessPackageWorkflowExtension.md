@@ -47,13 +47,11 @@ Call the Update accessPackageAssignmentPolicy operation to remove the custom wor
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension -AccessPackageCatalogId $accessPackageCatalogId -CustomAccessPackageWorkflowExtensionId $customAccessPackageWorkflowExtensionId
 ```
-
 This example shows how to use the Remove-MgBetaEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -284,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension?view=graph-powershell-v1.0)
+

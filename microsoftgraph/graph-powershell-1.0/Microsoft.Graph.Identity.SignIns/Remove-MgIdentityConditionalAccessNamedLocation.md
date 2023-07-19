@@ -31,13 +31,12 @@ Remove-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 Delete an ipNamedLocation object.
 
 ## EXAMPLES
-
 ### Example 1: Remove a named location
+
 ```powershell
 Connect-MgGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 Remove-MgIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
-
 ```
 
 This example removes the named location specified by `$namedLocationId`.
@@ -214,4 +213,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
+
 

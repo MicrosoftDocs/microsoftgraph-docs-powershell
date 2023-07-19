@@ -47,7 +47,6 @@ Update the software for a Microsoft Teams-enabled device.
 This API triggers a long-running operation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaTeamworkDeviceSoftware Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -57,7 +56,6 @@ $params = @{
 }
 Update-MgBetaTeamworkDeviceSoftware -TeamworkDeviceId $teamworkDeviceId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaTeamworkDeviceSoftware Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -267,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamworkDeviceSoftware](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkDeviceSoftware?view=graph-powershell-v1.0)
+

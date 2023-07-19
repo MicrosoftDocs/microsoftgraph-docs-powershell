@@ -40,13 +40,12 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 ## EXAMPLES
-
 ### Example 1: Retrieve a decision on an accessReviewInstance
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId
-
 ```
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
 
@@ -343,4 +342,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+
 

@@ -34,7 +34,6 @@ Dismiss the risk of one or more riskyUser objects.
 This action sets the targeted user's risk level to none.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgDismissRiskyUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -46,7 +45,6 @@ $params = @{
 }
 Invoke-MgDismissRiskyUser -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgDismissRiskyUser Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -168,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaDismissRiskyUser](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaDismissRiskyUser?view=graph-powershell-beta)
+

@@ -36,13 +36,12 @@ In general, only teachers in the class can remove a resource.
 However, teachers cannot remove resources marked as 'distributeToStudents', after the assignment has been published to students.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationAssignmentResourceId $educationAssignmentResourceId
-
 ```
 This example shows how to use the Remove-MgEducationClassAssignmentResource Cmdlet.
 
@@ -205,4 +204,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignmentResource?view=graph-powershell-beta)
+
 

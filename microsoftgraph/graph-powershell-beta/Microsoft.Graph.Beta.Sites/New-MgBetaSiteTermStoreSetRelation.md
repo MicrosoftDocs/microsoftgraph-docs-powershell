@@ -47,13 +47,12 @@ New-MgBetaSiteTermStoreSetRelation -InputObject <ISitesIdentity>
 Create new navigation property to relations for sites
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteTermStoreSetRelation -SiteId $siteId -SetId $setId
-
 ```
 This example shows how to use the New-MgBetaBetaSiteTermStoreSetRelation Cmdlet.
 
@@ -501,4 +500,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteTermStoreSetRelation](/powershell/module/Microsoft.Graph.Sites/New-MgSiteTermStoreSetRelation?view=graph-powershell-v1.0)
+
 

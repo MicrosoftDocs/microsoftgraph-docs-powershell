@@ -38,40 +38,32 @@ Get-MgBetaTeamworkTeamTemplate -InputObject <ITeamsIdentity> [-ExpandProperty <S
 The templates associated with a team.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
+Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')" 
 ```
-
 This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate
 ```
-
 This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"  -OutFile $outFileId
 ```
-
 This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Get-MgBetaTeamworkTeamTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')"
+Get-MgBetaTeamworkTeamTemplate -ExpandProperty "definitions" -Filter "definitions/any(a:a/languageTag eq 'en-US')" 
 ```
-
 This example shows how to use the Get-MgBetaTeamworkTeamTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -319,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamTemplate?view=graph-powershell-v1.0)
+

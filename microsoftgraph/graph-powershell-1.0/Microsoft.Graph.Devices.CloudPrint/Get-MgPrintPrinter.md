@@ -37,25 +37,23 @@ Get-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-ExpandProperty <S
 Retrieve the properties and relationships of a printer object.
 
 ## EXAMPLES
-
 ### Example 1: Get a printer
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinter -PrinterId $printerId
-
 ```
 This example shows how to use the Get-MgPrintPrinter Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Get a printer and its capabilities
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinter -PrinterId $printerId -Property "id,displayName,capabilities"
-
 ```
 This example shows how to use the Get-MgPrintPrinter Cmdlet.
 
@@ -281,4 +279,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 

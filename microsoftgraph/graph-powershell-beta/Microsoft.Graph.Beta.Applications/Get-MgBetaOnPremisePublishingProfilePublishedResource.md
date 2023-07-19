@@ -38,22 +38,18 @@ Get-MgBetaOnPremisePublishingProfilePublishedResource -InputObject <IApplication
 Retrieve the properties and relationships of publishedResource object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -PublishedResourceId $publishedResourceId -ExpandProperty "agentGroups"
+Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -PublishedResourceId $publishedResourceId -ExpandProperty "agentGroups" 
 ```
-
 This example shows how to use the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups"
+Get-MgBetaOnPremisePublishingProfilePublishedResource -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "agentGroups" 
 ```
-
 This example shows how to use the Get-MgBetaOnPremisePublishingProfilePublishedResource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -306,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfilePublishedResource](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfilePublishedResource?view=graph-powershell-v1.0)
+

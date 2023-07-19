@@ -33,13 +33,11 @@ Stop the synchronization job, and permanently delete all the state associated wi
 Synchronized accounts are left as-is.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-
 This example shows how to use the Remove-MgBetaServicePrincipalSynchronizationJob Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -202,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
+

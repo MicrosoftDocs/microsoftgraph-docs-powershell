@@ -58,8 +58,8 @@ This is the name that appears to the user in Microsoft Teams.
 If you're creating a private channel, you can add a maximum of 200 members.
 
 ## EXAMPLES
-
 ### Example 1: Create a standard channel
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -70,14 +70,13 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Create private channel on behalf of user
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -98,14 +97,13 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Create a channel in migration mode
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -117,14 +115,13 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Create private channel on behalf of user using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -145,14 +142,13 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 5: Create a shared channel on behalf of a user
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -172,7 +168,6 @@ $params = @{
 }
 
 New-MgTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamChannel Cmdlet.
 
@@ -9237,4 +9232,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannel](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamChannel?view=graph-powershell-beta)
+
 

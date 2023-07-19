@@ -56,58 +56,15 @@ Get-MgBetaEntitlementManagementAccessPackageCatalog [-ExpandProperty <String[]>]
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
 ## EXAMPLES
-
 ### Example 1: Get a list of all access package catalogs
+
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgBetaEntitlementManagementAccessPackageCatalog | Format-list
-```
+Get-MgBetaEntitlementManagementAccessPackageCatalog ### Example 1: Get a list of all access package catalogs### Example 2: Filter the access package catalogs by the display name
 
-AccessPackageResourceRoles  :
-AccessPackageResourceScopes :
-AccessPackageResources      :
-AccessPackages              :
-CatalogStatus               : Published
-CatalogType                 : ServiceDefault
-CreatedBy                   : Azure AD
-CreatedDateTime             : 9/15/2021 7:23:24 AM
-Description                 : Built-in catalog.
-DisplayName                 : General
-Id                          : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
-IsExternallyVisible         : True
-ModifiedBy                  : Azure AD
-ModifiedDateTime            : 9/15/2021 7:23:24 AM
-AdditionalProperties        : {}
-
-
-This command returns a list of all the access package catalogs.
-
-
-### Example 2: Filter the access package catalogs by the display name
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
-Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" | Format-List
-```
-
-AccessPackageResourceRoles  :
-AccessPackageResourceScopes :
-AccessPackageResources      :
-AccessPackages              :
-CatalogStatus               : Published
-CatalogType                 : ServiceDefault
-CreatedBy                   : Azure AD
-CreatedDateTime             : 9/15/2021 7:23:24 AM
-Description                 : Built-in catalog.
-DisplayName                 : General
-Id                          : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
-IsExternallyVisible         : True
-ModifiedBy                  : Azure AD
-ModifiedDateTime            : 9/15/2021 7:23:24 AM
-AdditionalProperties        : {}
-
-
-This command returns the access package catalogs that meet the defined filter.
-
+Get-MgBetaEntitlementManagementAccessPackageCatalog -Filter "DisplayName eq 'General'" ### Example 2: Filter the access package catalogs by the display name
 ## PARAMETERS
 
 ### -AccessPackageCatalogId
@@ -440,3 +397,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalog?view=graph-powershell-v1.0)
+

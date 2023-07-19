@@ -37,13 +37,12 @@ Callers can continue to specify custom values on each **assignment** creation if
 Only teachers can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentDefault -EducationClassId $educationClassId
-
 ```
 This example shows how to use the Get-MgEducationClassAssignmentDefault Cmdlet.
 
@@ -145,4 +144,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignmentDefault?view=graph-powershell-beta)
+
 

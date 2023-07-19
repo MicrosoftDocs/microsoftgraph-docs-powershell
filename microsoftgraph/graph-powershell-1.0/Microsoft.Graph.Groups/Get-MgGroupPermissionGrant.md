@@ -40,13 +40,12 @@ The permission that has been granted for a group to a specific application.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupPermissionGrant -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgGroupPermissionGrant Cmdlet.
 
@@ -309,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupPermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupPermissionGrant?view=graph-powershell-beta)
+
 

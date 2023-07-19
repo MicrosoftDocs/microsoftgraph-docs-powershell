@@ -33,13 +33,12 @@ Delete an existing category.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
-
 ```
 This example shows how to use the Remove-MgEducationClassAssignmentCategory Cmdlet.
 
@@ -187,4 +186,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignmentCategory?view=graph-powershell-beta)
+
 

@@ -45,8 +45,8 @@ Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
 Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Users
 
@@ -76,7 +76,6 @@ $params = @{
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
 
@@ -330,4 +329,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
+
 

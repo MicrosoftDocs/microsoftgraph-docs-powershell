@@ -30,7 +30,6 @@ New-MgBetaProgram -BodyParameter <IMicrosoftGraphProgram> [-WhatIf] [-Confirm] [
 In the Azure AD access reviews feature, create a new program object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaProgram Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -40,7 +39,6 @@ $params = @{
 }
 New-MgBetaProgram -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaProgram Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -243,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgram?view=graph-powershell-v1.0)
+

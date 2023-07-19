@@ -42,13 +42,12 @@ The table in the Permissions section lists the resources that support open exten
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaGroupEventExtension -GroupId $groupId -EventId $eventId -ExtensionId $extensionId
-
 ```
 This example shows how to use the Get-MgBetaGroupEventExtension Cmdlet.
 
@@ -288,4 +287,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupEventExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventExtension?view=graph-powershell-v1.0)
+
 

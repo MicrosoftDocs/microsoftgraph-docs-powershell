@@ -47,7 +47,6 @@ Reply to a thread in a group conversation and add a new post to it.
 You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -61,10 +60,8 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -85,10 +82,8 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -112,10 +107,8 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Invoke-MgReplyGroupThread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
@@ -139,7 +132,6 @@ $params = @{
 }
 Invoke-MgReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgReplyGroupThread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -427,3 +419,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyGroupThread?view=graph-powershell-beta)
+

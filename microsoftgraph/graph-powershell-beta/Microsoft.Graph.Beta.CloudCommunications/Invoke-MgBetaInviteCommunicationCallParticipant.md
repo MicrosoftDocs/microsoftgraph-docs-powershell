@@ -55,7 +55,6 @@ When an active caller is removed, they are immediately dropped from the call wit
 When an invited participant is removed, any outstanding add participant request is canceled.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -78,10 +77,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -104,10 +101,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -130,10 +125,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -154,10 +147,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 5: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -180,10 +171,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 6: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -207,10 +196,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 7: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -245,7 +232,6 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -449,3 +435,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgInviteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgInviteCommunicationCallParticipant?view=graph-powershell-v1.0)
+

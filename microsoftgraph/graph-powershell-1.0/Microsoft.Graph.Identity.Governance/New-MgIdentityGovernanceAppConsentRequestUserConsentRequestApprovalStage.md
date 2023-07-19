@@ -50,13 +50,12 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage
 Create new navigation property to stages for identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
-
 ```
 This example shows how to use the New-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage Cmdlet.
 
@@ -399,4 +398,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStage?view=graph-powershell-beta)
+
 

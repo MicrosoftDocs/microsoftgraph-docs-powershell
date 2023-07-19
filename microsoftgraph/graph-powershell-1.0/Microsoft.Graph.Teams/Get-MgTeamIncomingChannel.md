@@ -38,13 +38,12 @@ Get-MgTeamIncomingChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String
 List of channels shared with the team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamIncomingChannel -TeamId $teamId
-
 ```
 This example shows how to use the Get-MgTeamIncomingChannel Cmdlet.
 
@@ -303,4 +302,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamIncomingChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamIncomingChannel?view=graph-powershell-beta)
+
 

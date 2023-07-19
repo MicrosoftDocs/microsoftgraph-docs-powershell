@@ -55,7 +55,6 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply to a message, and send it later.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaReplyUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -81,7 +80,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaReplyUserMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -472,3 +470,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReplyUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMessage?view=graph-powershell-v1.0)
+

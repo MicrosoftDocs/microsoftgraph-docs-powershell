@@ -40,13 +40,12 @@ Get-MgTeamChannelSharedWithTeamAllowedMember -InputObject <ITeamsIdentity> [-Exp
 A collection of team members who have access to the shared channel.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelSharedWithTeamAllowedMember -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
-
 ```
 This example shows how to use the Get-MgTeamChannelSharedWithTeamAllowedMember Cmdlet.
 
@@ -335,4 +334,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamChannelSharedWithTeamAllowedMember?view=graph-powershell-beta)
+
 

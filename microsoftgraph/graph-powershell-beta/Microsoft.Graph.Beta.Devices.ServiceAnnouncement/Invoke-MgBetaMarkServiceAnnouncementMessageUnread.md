@@ -32,7 +32,6 @@ Invoke-MgBetaMarkServiceAnnouncementMessageUnread
 Mark a list of serviceUpdateMessages as **unread** for the signed in user.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaMarkServiceAnnouncementMessageUnread Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
@@ -44,7 +43,6 @@ $params = @{
 }
 Invoke-MgBetaMarkServiceAnnouncementMessageUnread -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaMarkServiceAnnouncementMessageUnread Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -151,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMarkServiceAnnouncementMessageUnread](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageUnread?view=graph-powershell-v1.0)
+

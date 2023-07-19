@@ -33,13 +33,12 @@ Use this API to remove an owner from a Microsoft 365 group or a security group t
 When owners are assigned to a group, the last owner (a user object) of the group cannot be removed.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Remove-MgBetaGroupOwnerByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Remove-MgBetaGroupOwnerByRef Cmdlet.
 
@@ -236,4 +235,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+
 

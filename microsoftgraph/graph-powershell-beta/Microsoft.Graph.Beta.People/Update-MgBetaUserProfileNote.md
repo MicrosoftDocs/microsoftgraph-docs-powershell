@@ -51,7 +51,6 @@ Update-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Update the properties of a personAnnotation object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -60,7 +59,6 @@ $params = @{
 }
 Update-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileNote Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -467,3 +465,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileNote](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileNote?view=graph-powershell-v1.0)
+

@@ -34,13 +34,12 @@ Remove an educationCategory from an educationAssignment.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationCategoryId $educationCategoryId
-
 ```
 This example shows how to use the Remove-MgEducationClassAssignmentCategoryByRef Cmdlet.
 
@@ -218,4 +217,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignmentCategoryByRef?view=graph-powershell-beta)
+
 

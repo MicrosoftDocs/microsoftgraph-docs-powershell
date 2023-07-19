@@ -45,13 +45,12 @@ New-MgIdentityB2XUserFlowLanguage -InputObject <IIdentitySignInsIdentity>
 Create new navigation property to languages for identity
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId
-
 ```
 This example shows how to use the New-MgIdentityB2XUserFlowLanguage Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+
 

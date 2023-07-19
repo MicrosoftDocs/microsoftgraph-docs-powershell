@@ -29,13 +29,11 @@ Test-MgBetaSiteContentTypePublished -InputObject <ISitesIdentity> [<CommonParame
 Invoke function isPublished
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaSiteContentTypePublished Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Test-MgBetaSiteContentTypePublished -SiteId $siteId -ContentTypeId $contentTypeId
 ```
-
 This example shows how to use the Test-MgBetaSiteContentTypePublished Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -159,3 +157,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-v1.0)
+

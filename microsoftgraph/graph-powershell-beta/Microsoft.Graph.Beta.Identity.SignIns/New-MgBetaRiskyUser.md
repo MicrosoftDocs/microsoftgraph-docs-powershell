@@ -32,13 +32,12 @@ New-MgBetaRiskyUser -BodyParameter <IMicrosoftGraphRiskyUser> [-WhatIf] [-Confir
 Create new navigation property to riskyUsers for identityProtection
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaRiskyUser
-
 ```
 This example shows how to use the New-MgBetaBetaRiskyUser Cmdlet.
 
@@ -333,4 +332,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyUser?view=graph-powershell-v1.0)
+
 

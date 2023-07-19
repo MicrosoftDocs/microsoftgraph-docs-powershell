@@ -32,13 +32,12 @@ Remove-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-IfMa
 Delete a version of a document set in a list.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
-
 ```
 This example shows how to use the Remove-MgBetaSiteListItemDocumentSetVersion Cmdlet.
 
@@ -256,4 +255,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+
 

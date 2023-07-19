@@ -31,13 +31,11 @@ Get-MgBetaOrganizationSettingContactInsight -InputObject <IIdentityDirectoryMana
 Get the properties of an insightsSettings object for displaying or returning contact insights in an organization.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaOrganizationSettingContactInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingContactInsight -OrganizationId $organizationId
 ```
-
 This example shows how to use the Get-MgBetaOrganizationSettingContactInsight Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -167,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationSettingContactInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingContactInsight?view=graph-powershell-v1.0)
+

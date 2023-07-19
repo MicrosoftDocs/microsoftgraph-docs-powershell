@@ -42,13 +42,12 @@ This operation retrieves a specified service update message for the tenant.
 The operation returns an error if the message does not exist for the tenant.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementMessage -ServiceUpdateMessageId $serviceUpdateMessageId
-
 ```
 This example shows how to use the Get-MgServiceAnnouncementMessage Cmdlet.
 
@@ -265,4 +264,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementMessage?view=graph-powershell-beta)
+
 

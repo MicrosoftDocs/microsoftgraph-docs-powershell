@@ -47,7 +47,6 @@ Invoke-MgBetaMarkChatUnreadForUser -InputObject <ITeamsIdentity>
 Mark a chat as unread for a user.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaMarkChatUnreadForUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -60,7 +59,6 @@ $params = @{
 }
 Invoke-MgBetaMarkChatUnreadForUser -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaMarkChatUnreadForUser Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -297,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMarkChatUnreadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatUnreadForUser?view=graph-powershell-v1.0)
+

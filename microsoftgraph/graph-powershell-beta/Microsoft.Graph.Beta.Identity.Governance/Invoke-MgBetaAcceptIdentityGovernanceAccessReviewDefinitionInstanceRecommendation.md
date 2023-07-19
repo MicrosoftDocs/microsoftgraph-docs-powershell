@@ -36,13 +36,12 @@ Recommendations are generated if **recommendationsEnabled** is `true` on the acc
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
-
 ```
 This example shows how to use the Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation Cmdlet.
 
@@ -261,4 +260,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-v1.0)
+
 

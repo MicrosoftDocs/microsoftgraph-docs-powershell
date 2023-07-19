@@ -31,13 +31,12 @@ Remove-MgEducationUser -InputObject <IEducationIdentity> [-IfMatch <String>] [-P
 Delete a user.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationUser -EducationUserId $educationUserId
-
 ```
 This example shows how to use the Remove-MgEducationUser Cmdlet.
 
@@ -170,4 +169,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationUser?view=graph-powershell-beta)
+
 

@@ -46,13 +46,11 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaGroupMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupMemberOf -GroupId $groupId
 ```
-
 This example shows how to use the Get-MgBetaGroupMemberOf Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -337,3 +335,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupMemberOf?view=graph-powershell-v1.0)
+

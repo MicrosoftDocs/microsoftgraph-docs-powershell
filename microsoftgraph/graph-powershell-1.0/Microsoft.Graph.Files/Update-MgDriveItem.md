@@ -79,8 +79,8 @@ Update the metadata for a driveItem by ID or path.
 You can also use update to move an item to another parent by updating the item's **parentReference** property.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
 
@@ -89,7 +89,6 @@ $params = @{
 }
 
 Update-MgDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgDriveItem Cmdlet.
 
@@ -18666,4 +18665,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDriveItem?view=graph-powershell-beta)
+
 

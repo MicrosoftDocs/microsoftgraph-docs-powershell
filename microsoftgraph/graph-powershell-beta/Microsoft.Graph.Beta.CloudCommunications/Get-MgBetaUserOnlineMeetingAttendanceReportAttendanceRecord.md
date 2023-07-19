@@ -62,14 +62,12 @@ List of attendance records of an attendance report.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingAttendanceReportId $meetingAttendanceReportId
 ```
-
 This example shows how to use the Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -342,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-v1.0)
+

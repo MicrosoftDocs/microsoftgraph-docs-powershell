@@ -34,7 +34,6 @@ Check a user's password against the organization's password validation policy an
 Use this action to provide real-time feedback on password strength while the user types their password.
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -43,7 +42,6 @@ $params = @{
 }
 Test-MgBetaUserPassword -BodyParameter $params
 ```
-
 This example shows how to use the Test-MgBetaUserPassword Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -150,3 +148,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgUserPassword](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserPassword?view=graph-powershell-v1.0)
+

@@ -45,13 +45,12 @@ Update-MgContract -InputObject <IIdentityDirectoryManagementIdentity> -BodyParam
 Update entity in contracts
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContract -ContractId $contractId
-
 ```
 This example shows how to use the Update-MgContract Cmdlet.
 
@@ -305,4 +304,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaContract?view=graph-powershell-beta)
+
 

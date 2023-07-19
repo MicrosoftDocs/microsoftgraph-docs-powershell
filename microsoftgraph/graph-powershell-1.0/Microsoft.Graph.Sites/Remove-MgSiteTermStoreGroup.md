@@ -43,13 +43,12 @@ Remove-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-IfMatch <String>] [-
 Delete a group object in a term [store].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Remove-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
-
 ```
 This example shows how to use the Remove-MgSiteTermStoreGroup Cmdlet.
 
@@ -240,4 +239,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteTermStoreGroup?view=graph-powershell-beta)
+
 

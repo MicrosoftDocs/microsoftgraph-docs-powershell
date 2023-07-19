@@ -43,13 +43,12 @@ New-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 Create new navigation property to endpoints for print
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintServiceEndpoint -PrintServiceId $printServiceId
-
 ```
 This example shows how to use the New-MgPrintServiceEndpoint Cmdlet.
 
@@ -239,4 +238,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+
 

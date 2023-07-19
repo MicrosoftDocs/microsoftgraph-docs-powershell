@@ -33,14 +33,12 @@ Troubleshoot a specific Cloud PC.
 Use this API to check the health status of the Cloud PC and the session host.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaTroubleshootUserCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaTroubleshootUserCloudPc -UserId $userId -CloudPCId $cloudPCId
 ```
-
 This example shows how to use the Invoke-MgBetaTroubleshootUserCloudPc Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -200,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgTroubleshootUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgTroubleshootUserCloudPc?view=graph-powershell-v1.0)
+

@@ -74,7 +74,6 @@ Update-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> -BodyParameter
 Update the properties of a tiIndicator object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -83,10 +82,8 @@ $params = @{
 }
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaSecurityTiIndicator Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Update-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -97,7 +94,6 @@ $params = @{
 }
 Update-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaSecurityTiIndicator Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -1268,3 +1264,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+

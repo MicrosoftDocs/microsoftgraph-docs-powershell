@@ -35,7 +35,6 @@ New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter <IMicrosoftGraphSecur
 Create a new urlThreatSubmission object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -46,7 +45,6 @@ $params = @{
 }
 New-MgBetaSecurityThreatSubmissionUrlThreat -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaSecurityThreatSubmissionUrlThreat Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -374,3 +372,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityThreatSubmissionUrlThreat](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionUrlThreat?view=graph-powershell-v1.0)
+

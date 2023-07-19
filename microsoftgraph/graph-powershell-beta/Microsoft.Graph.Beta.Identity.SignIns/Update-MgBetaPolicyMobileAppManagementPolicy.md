@@ -47,7 +47,6 @@ Update-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdent
 Update the properties of a mobilityManagementPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaPolicyMobileAppManagementPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -59,10 +58,8 @@ $params = @{
 }
 Update-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Update-MgBetaPolicyMobileAppManagementPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -74,7 +71,6 @@ $params = @{
 }
 Update-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -9809,3 +9805,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyMobileAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyMobileAppManagementPolicy?view=graph-powershell-v1.0)
+

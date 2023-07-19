@@ -35,13 +35,12 @@ This action cannot be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and reinstall it.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Remove-MgBetaPrintShare -PrinterShareId $printerShareId
-
 ```
 This example shows how to use the Remove-MgBetaPrintShare Cmdlet.
 
@@ -177,4 +176,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintShare?view=graph-powershell-v1.0)
+
 

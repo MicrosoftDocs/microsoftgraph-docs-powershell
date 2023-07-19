@@ -46,7 +46,6 @@ Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity>
 Mark a chat as read for a user.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaMarkChatReadForUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -58,7 +57,6 @@ $params = @{
 }
 Invoke-MgBetaMarkChatReadForUser -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaMarkChatReadForUser Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -279,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-v1.0)
+

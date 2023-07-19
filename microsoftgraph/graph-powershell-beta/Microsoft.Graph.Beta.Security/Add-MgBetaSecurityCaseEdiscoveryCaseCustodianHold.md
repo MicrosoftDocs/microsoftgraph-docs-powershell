@@ -61,22 +61,18 @@ After the operation is created, you can get the status by retrieving the `Locati
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
 This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
 This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseCustodianHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -317,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgSecurityCaseEdiscoveryCaseCustodianHold](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseCustodianHold?view=graph-powershell-v1.0)
+

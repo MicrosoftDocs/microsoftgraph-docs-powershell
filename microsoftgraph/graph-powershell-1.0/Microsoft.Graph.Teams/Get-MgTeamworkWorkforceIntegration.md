@@ -38,13 +38,12 @@ Get-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-ExpandPropert
 Retrieve the properties and relationships of a workforceIntegration object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
-
 ```
 This example shows how to use the Get-MgTeamworkWorkforceIntegration Cmdlet.
 
@@ -288,4 +287,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 

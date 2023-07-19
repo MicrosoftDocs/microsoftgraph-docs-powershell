@@ -36,7 +36,6 @@ New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
 Create new navigation property to emailThreatSubmissionPolicies for security
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -45,7 +44,6 @@ $params = @{
 }
 New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -387,3 +385,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy?view=graph-powershell-v1.0)
+

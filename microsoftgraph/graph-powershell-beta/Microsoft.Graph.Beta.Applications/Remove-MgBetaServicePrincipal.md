@@ -31,13 +31,12 @@ Remove-MgBetaServicePrincipal -InputObject <IApplicationsIdentity> [-IfMatch <St
 Delete a servicePrincipal object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipal -ServicePrincipalId $servicePrincipalId
-
 ```
 This example shows how to use the Remove-MgBetaServicePrincipal Cmdlet.
 
@@ -188,4 +187,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipal?view=graph-powershell-v1.0)
+
 

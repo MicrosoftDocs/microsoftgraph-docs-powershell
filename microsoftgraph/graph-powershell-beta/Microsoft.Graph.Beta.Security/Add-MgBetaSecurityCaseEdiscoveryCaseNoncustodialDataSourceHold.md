@@ -61,22 +61,18 @@ After the operation is created, you can get the status by retrieving the `Locati
 The location provides a URL that will return an eDiscoveryHoldOperation object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
 ```
-
 This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId
 ```
-
 This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -317,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseNoncustodialDataSourceHold?view=graph-powershell-v1.0)
+

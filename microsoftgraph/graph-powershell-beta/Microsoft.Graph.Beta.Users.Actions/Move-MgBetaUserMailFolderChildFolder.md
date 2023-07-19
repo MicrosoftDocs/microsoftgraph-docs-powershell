@@ -45,17 +45,18 @@ Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity>
 Move a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
 	DestinationId = "destinationId-value"
 }
+
 # A UPN can also be used as -UserId.
 Move-MgBetaUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgBetaUserMailFolderChildFolder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -253,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Move-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)
+

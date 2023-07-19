@@ -36,13 +36,11 @@ The target object can be either a one-time access review, or an instance of a re
 After the access review stops, reviewers can no longer give input, and the access review decisions can be applied.
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Stop-MgBetaAccessReview -AccessReviewId $accessReviewId
 ```
-
 This example shows how to use the Stop-MgBetaAccessReview Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -243,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgAccessReview?view=graph-powershell-v1.0)
+

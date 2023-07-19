@@ -38,13 +38,12 @@ Get-MgBetaPrintOperation -InputObject <IDevicesCloudPrintIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a printOperation object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintOperation -PrintOperationId $printOperationId
-
 ```
 This example shows how to use the Get-MgBetaPrintOperation Cmdlet.
 
@@ -270,4 +269,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintOperation?view=graph-powershell-v1.0)
+
 

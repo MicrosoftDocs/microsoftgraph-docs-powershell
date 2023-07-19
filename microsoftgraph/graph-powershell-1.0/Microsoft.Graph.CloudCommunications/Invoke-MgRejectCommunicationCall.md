@@ -58,7 +58,6 @@ This API does not end existing calls that have already been answered.
 Use delete call to end a call.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgRejectCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -67,10 +66,8 @@ $params = @{
 }
 Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgRejectCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Invoke-MgRejectCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -79,7 +76,6 @@ $params = @{
 }
 Invoke-MgRejectCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgRejectCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -263,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaRejectCommunicationCall](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRejectCommunicationCall?view=graph-powershell-beta)
+

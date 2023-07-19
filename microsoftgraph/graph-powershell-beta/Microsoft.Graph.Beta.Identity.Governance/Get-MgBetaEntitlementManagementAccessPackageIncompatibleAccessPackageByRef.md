@@ -25,13 +25,12 @@ Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -Acce
 Retrieve a list of the accessPackage objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackage -AccessPackageId $accessPackageId
-
 ```
 This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef Cmdlet.
 
@@ -190,4 +189,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-v1.0)
+
 

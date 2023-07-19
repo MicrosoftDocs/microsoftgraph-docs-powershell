@@ -50,13 +50,12 @@ Get-MgEducationUser -InputObject <IEducationIdentity> [-ExpandProperty <String[]
 Read the properties and relationships of an educationUser object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationUser -EducationUserId $educationUserId
-
 ```
 This example shows how to use the Get-MgEducationUser Cmdlet.
 
@@ -280,4 +279,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationUser?view=graph-powershell-beta)
+
 

@@ -45,8 +45,8 @@ Update-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Update the properties of a bookingCustomQuestion object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 Update-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBookingBusinessCustomQuestion Cmdlet.
 
@@ -274,4 +273,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 

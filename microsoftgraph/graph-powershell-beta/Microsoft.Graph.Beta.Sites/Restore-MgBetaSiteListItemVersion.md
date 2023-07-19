@@ -31,13 +31,12 @@ Restore-MgBetaSiteListItemVersion -InputObject <ISitesIdentity> [-PassThru] [-Wh
 Invoke action restoreVersion
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Restore-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-
 ```
 This example shows how to use the Restore-MgBetaSiteListItemVersion Cmdlet.
 
@@ -240,4 +239,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 

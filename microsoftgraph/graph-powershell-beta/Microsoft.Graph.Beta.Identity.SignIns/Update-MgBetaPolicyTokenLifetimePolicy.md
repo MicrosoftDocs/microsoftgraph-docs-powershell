@@ -47,8 +47,8 @@ Update-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> -
 Update the properties of a tokenLifetimePolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPolicyTokenLifetimePolicy Cmdlet.
 
@@ -377,4 +376,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenLifetimePolicy?view=graph-powershell-v1.0)
+
 

@@ -40,13 +40,12 @@ Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeRubric -EducationRubricId $educationRubricId
-
 ```
 This example shows how to use the Get-MgEducationMeRubric Cmdlet.
 
@@ -269,4 +268,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeRubric?view=graph-powershell-beta)
+
 

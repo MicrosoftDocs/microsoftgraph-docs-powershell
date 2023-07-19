@@ -51,7 +51,6 @@ New-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> -BodyParameter <IM
 Create a task folder in the default task group (`My Tasks`) of the user's mailbox.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
@@ -61,7 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskFolder -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserOutlookTaskFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -471,3 +469,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
+

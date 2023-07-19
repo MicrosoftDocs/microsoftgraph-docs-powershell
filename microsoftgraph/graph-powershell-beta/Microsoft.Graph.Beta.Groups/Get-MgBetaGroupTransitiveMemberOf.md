@@ -40,13 +40,11 @@ The groups that a group is a member of, either directly and through nested membe
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaGroupTransitiveMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupTransitiveMemberOf -GroupId $groupId
 ```
-
 This example shows how to use the Get-MgBetaGroupTransitiveMemberOf Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -331,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTransitiveMemberOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOf?view=graph-powershell-v1.0)
+

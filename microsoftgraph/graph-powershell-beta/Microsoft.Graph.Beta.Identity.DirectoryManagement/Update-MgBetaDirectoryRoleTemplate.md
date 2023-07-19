@@ -45,13 +45,12 @@ Update-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIde
 Update entity in directoryRoleTemplates
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryRoleTemplate -DirectoryRoleTemplateId $directoryRoleTemplateId
-
 ```
 This example shows how to use the Update-MgBetaBetaDirectoryRoleTemplate Cmdlet.
 
@@ -288,4 +287,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleTemplate?view=graph-powershell-v1.0)
+
 

@@ -47,11 +47,10 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 ## EXAMPLES
-
 ### Example 1: Add members in bulk to a team
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Values = @(
@@ -72,16 +71,15 @@ $params = @{
 }
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
+```
 This example shows how to use the Add-MgBetaUserChatMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ### Example 2: Add members in bulk and encounter partial failure
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Values = @(
@@ -102,16 +100,15 @@ $params = @{
 }
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
+```
 This example shows how to use the Add-MgBetaUserChatMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Add members in bulk to a team using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Values = @(
@@ -132,7 +129,7 @@ $params = @{
 }
 
 Add-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
+```
 This example shows how to use the Add-MgBetaUserChatMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -341,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgUserChatMember](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserChatMember?view=graph-powershell-v1.0)
+

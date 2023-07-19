@@ -49,13 +49,12 @@ New-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity>
 Create an instance of an offerShiftRequest.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId
-
 ```
 This example shows how to use the New-MgBetaBetaTeamScheduleOfferShiftRequest Cmdlet.
 
@@ -409,4 +408,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)
+
 

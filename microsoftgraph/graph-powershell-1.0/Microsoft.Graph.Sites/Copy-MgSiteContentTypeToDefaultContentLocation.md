@@ -49,7 +49,6 @@ Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
@@ -64,7 +63,6 @@ $params = @{
 }
 Copy-MgSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgSiteContentTypeToDefaultContentLocation Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -326,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
+

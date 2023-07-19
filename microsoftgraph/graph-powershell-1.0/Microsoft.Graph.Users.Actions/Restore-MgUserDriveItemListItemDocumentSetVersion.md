@@ -31,14 +31,13 @@ Restore-MgUserDriveItemListItemDocumentSetVersion -InputObject <IUsersActionsIde
 Restore a document set version.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
-
+```
 This example shows how to use the Restore-MgUserDriveItemListItemDocumentSetVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -219,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaUserDriveItemListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaUserDriveItemListItemDocumentSetVersion?view=graph-powershell-beta)
+

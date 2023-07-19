@@ -38,22 +38,18 @@ Get-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity> [-ExpandPr
 Get the properties and relationships of a bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId
 ```
-
 This example shows how to use the Get-MgBetaBookingBusinessStaffMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId
 ```
-
 This example shows how to use the Get-MgBetaBookingBusinessStaffMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -298,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessStaffMember?view=graph-powershell-v1.0)
+

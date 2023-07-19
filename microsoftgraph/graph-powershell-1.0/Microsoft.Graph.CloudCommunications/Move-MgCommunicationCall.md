@@ -51,7 +51,6 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
-
 ### Example 1: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -68,10 +67,8 @@ $params = @{
 }
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -92,10 +89,8 @@ $params = @{
 }
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -115,10 +110,8 @@ $params = @{
 }
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -141,10 +134,8 @@ $params = @{
 }
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 5: Using the Move-MgCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -170,7 +161,6 @@ $params = @{
 }
 Move-MgCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Move-MgCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -407,3 +397,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Move-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.Applications/Move-MgBetaCommunicationCall?view=graph-powershell-beta)
+

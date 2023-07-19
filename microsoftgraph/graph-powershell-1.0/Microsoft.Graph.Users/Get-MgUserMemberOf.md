@@ -44,13 +44,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserMemberOf -UserId $userId
-
 ```
 This example shows how to use the Get-MgUserMemberOf Cmdlet.
 
@@ -307,4 +306,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMemberOf?view=graph-powershell-beta)
+
 

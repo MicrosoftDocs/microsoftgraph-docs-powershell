@@ -47,13 +47,12 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer
 Create new navigation property to contactedReviewers for identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
-
 ```
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer Cmdlet.
 
@@ -315,4 +314,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-beta)
+
 

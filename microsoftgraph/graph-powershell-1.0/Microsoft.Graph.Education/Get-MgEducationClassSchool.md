@@ -40,13 +40,12 @@ All schools that this class is associated with.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassSchool -EducationClassId $educationClassId
-
 ```
 This example shows how to use the Get-MgEducationClassSchool Cmdlet.
 
@@ -284,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassSchool?view=graph-powershell-beta)
+
 

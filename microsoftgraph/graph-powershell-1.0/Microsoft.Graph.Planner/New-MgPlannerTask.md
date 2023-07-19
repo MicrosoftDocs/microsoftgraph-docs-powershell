@@ -40,8 +40,8 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confir
 Create a new **plannerTask**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -58,7 +58,6 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
-
 ```
 This example shows how to use the New-MgPlannerTask Cmdlet.
 
@@ -672,4 +671,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPlannerTask?view=graph-powershell-beta)
+
 

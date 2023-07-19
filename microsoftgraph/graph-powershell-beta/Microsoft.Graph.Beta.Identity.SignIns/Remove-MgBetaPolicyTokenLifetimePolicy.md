@@ -31,13 +31,12 @@ Remove-MgBetaPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [
 Delete a tokenLifetimePolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId
-
 ```
 This example shows how to use the Remove-MgBetaPolicyTokenLifetimePolicy Cmdlet.
 
@@ -234,4 +233,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenLifetimePolicy?view=graph-powershell-v1.0)
+
 

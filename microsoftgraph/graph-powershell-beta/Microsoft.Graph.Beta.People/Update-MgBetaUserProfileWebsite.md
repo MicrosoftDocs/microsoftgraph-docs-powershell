@@ -51,7 +51,6 @@ Update-MgBetaUserProfileWebsite -InputObject <IPeopleIdentity> -BodyParameter <I
 Update the properties of personWebsite object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileWebsite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -61,7 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebsite -UserId $userId -PersonWebsiteId $personWebsiteId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileWebsite Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -491,3 +489,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileWebsite](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileWebsite?view=graph-powershell-v1.0)
+

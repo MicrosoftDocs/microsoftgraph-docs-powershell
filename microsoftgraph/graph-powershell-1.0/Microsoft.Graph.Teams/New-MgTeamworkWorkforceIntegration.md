@@ -33,8 +33,8 @@ New-MgTeamworkWorkforceIntegration -BodyParameter <IMicrosoftGraphWorkforceInteg
 Create a new workforceIntegration object.\nYou can set up which entities you want to receive Shifts synchronous change notifications on and set entities to configure filtering by WFM rules eligibility for, including swap requests.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -51,7 +51,6 @@ $params = @{
 }
 
 New-MgTeamworkWorkforceIntegration -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamworkWorkforceIntegration Cmdlet.
 
@@ -301,4 +300,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 

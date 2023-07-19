@@ -41,13 +41,12 @@ If the accessReviewHistoryDefinition is a recurring definition, instances repres
 A definition that does not recur will have exactly one instance.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
-
 ```
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance Cmdlet.
 
@@ -329,4 +328,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-beta)
+
 

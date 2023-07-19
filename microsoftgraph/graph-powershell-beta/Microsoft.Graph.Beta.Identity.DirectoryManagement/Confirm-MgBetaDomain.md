@@ -30,13 +30,11 @@ Confirm-MgBetaDomain -InputObject <IIdentityDirectoryManagementIdentity> [-WhatI
 Validates the ownership of the domain.
 
 ## EXAMPLES
-
 ### Example 1: Using the Confirm-MgBetaDomain Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Confirm-MgBetaDomain -DomainId $domainId
 ```
-
 This example shows how to use the Confirm-MgBetaDomain Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -167,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Confirm-MgDomain?view=graph-powershell-v1.0)
+

@@ -30,13 +30,11 @@ Invoke-MgBetaUploadEducationSynchronizationProfileUrl -InputObject <IEducationId
 Invoke function uploadUrl
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaUploadEducationSynchronizationProfileUrl Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaUploadEducationSynchronizationProfileUrl -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-
 This example shows how to use the Invoke-MgBetaUploadEducationSynchronizationProfileUrl Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -108,3 +106,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUploadEducationSynchronizationProfileUrl](/powershell/module/Microsoft.Graph.Education/Invoke-MgUploadEducationSynchronizationProfileUrl?view=graph-powershell-v1.0)
+

@@ -38,13 +38,11 @@ Get-MgBetaTeamworkDeletedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <St
 A collection of deleted teams.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaTeamworkDeletedTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeletedTeam
 ```
-
 This example shows how to use the Get-MgBetaTeamworkDeletedTeam Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -292,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeletedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeam?view=graph-powershell-v1.0)
+

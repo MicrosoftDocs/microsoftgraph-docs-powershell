@@ -38,13 +38,12 @@ Get-MgBetaSecurityTriggerRetentionEvent -InputObject <ISecurityIdentity> [-Expan
 Read the properties and relationships of a retentionEvent object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityTriggerRetentionEvent -RetentionEventId $retentionEventId
-
 ```
 This example shows how to use the Get-MgBetaSecurityTriggerRetentionEvent Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityTriggerRetentionEvent?view=graph-powershell-v1.0)
+
 

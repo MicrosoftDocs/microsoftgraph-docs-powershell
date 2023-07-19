@@ -31,13 +31,11 @@ Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaGroupFavorite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Add-MgBetaGroupFavorite -GroupId $groupId
 ```
-
 This example shows how to use the Add-MgBetaGroupFavorite Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgGroupFavorite](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupFavorite?view=graph-powershell-v1.0)
+

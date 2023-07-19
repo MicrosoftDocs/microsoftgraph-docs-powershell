@@ -31,13 +31,12 @@ Remove-MgBetaDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManageme
 Remove a user as a registered owner of the device.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Remove-MgBetaDeviceRegisteredOwnerByRef Cmdlet.
 
@@ -231,4 +230,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)
+
 

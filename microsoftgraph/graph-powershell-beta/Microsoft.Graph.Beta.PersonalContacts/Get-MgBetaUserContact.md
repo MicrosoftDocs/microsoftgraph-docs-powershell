@@ -40,14 +40,13 @@ Retrieve the properties and relationships of contact object.
 There are two scenarios where an app can get a contact in another user's contact folder:
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
-```
+
+```powershell
 Import-Module Microsoft.Graph.Beta.PersonalContacts
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserContact -UserId $userId -ContactId $contactId
-
 ```
 This example shows how to use the Get-MgBetaUserContact Cmdlet.
 
@@ -279,5 +278,6 @@ INPUTOBJECT \<IPersonalContactsIdentity\>: Identity Parameter
 [Get-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContact?view=graph-powershell-v1.0)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.personalcontacts/get-mgbetausercontact)
+
 
 

@@ -37,13 +37,12 @@ Get-MgContract -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandPrope
 Retrieve the properties and relationships of contract object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContract -ContractId $contractId
-
 ```
 This example shows how to use the Get-MgContract Cmdlet.
 
@@ -277,4 +276,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContract](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaContract?view=graph-powershell-beta)
+
 

@@ -48,8 +48,8 @@ Create an authenticationContextClassReference object, if the ID has not been use
 If ID has been used, this call updates the authenticationContextClassReference object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -60,7 +60,6 @@ $params = @{
 }
 
 Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
 
@@ -316,4 +315,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 

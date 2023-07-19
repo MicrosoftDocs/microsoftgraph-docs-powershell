@@ -31,13 +31,12 @@ Remove-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [
 Delete a tokenIssuancePolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId
-
 ```
 This example shows how to use the Remove-MgBetaPolicyTokenIssuancePolicy Cmdlet.
 
@@ -234,4 +233,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyTokenIssuancePolicy?view=graph-powershell-v1.0)
+
 

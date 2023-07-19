@@ -31,13 +31,11 @@ Restore-MgSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-PassThr
 Restore a document set version.
 
 ## EXAMPLES
-
 ### Example 1: Using the Restore-MgSiteListItemDocumentSetVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Restore-MgSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
 ```
-
 This example shows how to use the Restore-MgSiteListItemDocumentSetVersion Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -225,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaSiteListItemDocumentSetVersion?view=graph-powershell-beta)
+

@@ -30,13 +30,12 @@ Get-MgBetaDriveRoot -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 Retrieve the metadata for a driveItem in a drive by file system path or ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveRoot -DriveId $driveId
-
 ```
 This example shows how to use the Get-MgBetaDriveRoot Cmdlet.
 
@@ -152,4 +151,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRoot?view=graph-powershell-v1.0)
+
 

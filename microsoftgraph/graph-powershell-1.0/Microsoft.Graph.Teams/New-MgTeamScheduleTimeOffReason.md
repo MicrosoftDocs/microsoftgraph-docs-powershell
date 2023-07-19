@@ -45,8 +45,8 @@ New-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> -BodyParameter <IM
 Create a new timeOffReason.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOffReason -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamScheduleTimeOffReason Cmdlet.
 
@@ -316,4 +315,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 

@@ -31,14 +31,12 @@ Remove-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-IfMatch <Stri
 Delete the specified Outlook task folder.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOutlookTaskFolder -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
 ```
-
 This example shows how to use the Remove-MgBetaUserOutlookTaskFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -195,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
+

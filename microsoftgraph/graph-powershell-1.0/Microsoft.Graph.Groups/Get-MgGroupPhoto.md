@@ -45,13 +45,12 @@ Get-MgGroupPhoto -InputObject <IGroupsIdentity> [-Property <String[]>] [<CommonP
 The group's profile photo
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupPhoto -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgGroupPhoto Cmdlet.
 
@@ -284,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupPhoto](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupPhoto?view=graph-powershell-beta)
+
 

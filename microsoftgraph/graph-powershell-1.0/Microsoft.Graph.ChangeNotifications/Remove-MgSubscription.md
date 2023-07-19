@@ -33,13 +33,12 @@ Delete a subscription.
 For the list of resources that support subscribing to change notifications, see the table in the Permissions section.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
 
 Remove-MgSubscription -SubscriptionId $subscriptionId
-
 ```
 This example shows how to use the Remove-MgSubscription Cmdlet.
 
@@ -163,4 +162,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSubscription?view=graph-powershell-beta)
+
 

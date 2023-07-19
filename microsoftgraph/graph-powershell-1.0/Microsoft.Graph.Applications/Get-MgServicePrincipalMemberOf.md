@@ -44,13 +44,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId
-
 ```
 This example shows how to use the Get-MgServicePrincipalMemberOf Cmdlet.
 
@@ -314,4 +313,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalMemberOf?view=graph-powershell-beta)
+
 

@@ -31,8 +31,8 @@ Remove-MgBetaSiteListItemField -InputObject <ISitesIdentity> [-IfMatch <String>]
 Delete navigation property fields for sites
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -42,7 +42,6 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaSiteListItemField Cmdlet.
 
@@ -245,4 +244,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemField?view=graph-powershell-v1.0)
+
 

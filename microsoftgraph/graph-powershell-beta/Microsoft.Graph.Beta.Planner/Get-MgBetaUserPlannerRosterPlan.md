@@ -42,13 +42,11 @@ Nullable.
 Returns the plannerPlans contained by the plannerRosters the user is a member.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserPlannerRosterPlan Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaUserPlannerRosterPlan -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserPlannerRosterPlan Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -281,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPlannerRosterPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRosterPlan?view=graph-powershell-v1.0)
+

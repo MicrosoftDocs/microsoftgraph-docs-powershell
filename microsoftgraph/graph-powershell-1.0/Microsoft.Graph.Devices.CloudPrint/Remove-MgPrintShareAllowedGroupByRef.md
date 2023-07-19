@@ -31,13 +31,12 @@ Remove-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> [
 Revoke the specified group's access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Remove-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -GroupId $groupId
-
 ```
 This example shows how to use the Remove-MgPrintShareAllowedGroupByRef Cmdlet.
 
@@ -203,4 +202,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+
 

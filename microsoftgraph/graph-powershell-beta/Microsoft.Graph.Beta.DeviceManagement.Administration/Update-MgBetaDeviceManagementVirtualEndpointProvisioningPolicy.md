@@ -62,7 +62,6 @@ Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 Update the properties of a cloudPcProvisioningPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
@@ -80,7 +79,6 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -10039,3 +10037,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-v1.0)
+

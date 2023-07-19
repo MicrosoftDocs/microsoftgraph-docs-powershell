@@ -45,8 +45,8 @@ New-MgBetaTeamTagMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoft
 Create a new teamworkTagMember object in a team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 New-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamTagMember Cmdlet.
 
@@ -301,4 +300,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamTagMember?view=graph-powershell-v1.0)
+
 

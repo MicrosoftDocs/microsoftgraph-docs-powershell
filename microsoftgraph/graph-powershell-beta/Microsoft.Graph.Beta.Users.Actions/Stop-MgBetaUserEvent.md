@@ -53,7 +53,6 @@ An attendee calling this action gets an error (HTTP 400 Bad Request), with the f
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgBetaUserEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -63,7 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Stop-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Stop-MgBetaUserEvent Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -274,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserEvent?view=graph-powershell-v1.0)
+

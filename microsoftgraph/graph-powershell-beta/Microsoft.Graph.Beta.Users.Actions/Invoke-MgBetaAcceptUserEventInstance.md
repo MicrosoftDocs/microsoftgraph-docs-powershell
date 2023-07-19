@@ -45,18 +45,19 @@ Invoke-MgBetaAcceptUserEvent -InputObject <IUsersActionsIdentity>
 Accept the specified event in a user calendar.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
 	Comment = "comment-value"
 	SendResponse = $true
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaAcceptUserEventInstance Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -285,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstance?view=graph-powershell-v1.0)
+

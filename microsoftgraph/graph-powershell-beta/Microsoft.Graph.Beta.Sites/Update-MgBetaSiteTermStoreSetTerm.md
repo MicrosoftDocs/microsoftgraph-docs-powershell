@@ -51,8 +51,8 @@ Update-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> -BodyParameter <
 Update the properties of a term object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 Update-MgBetaSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaSiteTermStoreSetTerm Cmdlet.
 
@@ -606,4 +605,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetTerm?view=graph-powershell-v1.0)
+
 

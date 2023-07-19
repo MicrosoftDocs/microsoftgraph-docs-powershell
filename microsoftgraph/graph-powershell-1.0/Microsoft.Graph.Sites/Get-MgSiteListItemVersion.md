@@ -38,13 +38,12 @@ Get-MgSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <String
 Retrieve the metadata for a specific version of a ListItem.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId -ExpandProperty "fields"
-
 ```
 This example shows how to use the Get-MgSiteListItemVersion Cmdlet.
 
@@ -340,4 +339,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteListItemVersion?view=graph-powershell-beta)
+
 

@@ -40,13 +40,12 @@ Retrieve a specific Azure AD user sign-in event for your tenant.
 Sign-ins that are interactive in nature (where a username/password is passed as part of auth token) and successful federated sign-ins are currently included in the sign-in logs.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogSignIn -SignInId $signInId
-
 ```
 This example shows how to use the Get-MgAuditLogSignIn Cmdlet.
 
@@ -279,4 +278,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAuditLogSignIn](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAuditLogSignIn?view=graph-powershell-beta)
+
 

@@ -31,13 +31,11 @@ Get-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-ExpandProperty 
 Get the activity status of a Microsoft Teams-enabled device.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaTeamworkDeviceActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceActivity -TeamworkDeviceId $teamworkDeviceId
 ```
-
 This example shows how to use the Get-MgBetaTeamworkDeviceActivity Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -164,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeviceActivity](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceActivity?view=graph-powershell-v1.0)
+

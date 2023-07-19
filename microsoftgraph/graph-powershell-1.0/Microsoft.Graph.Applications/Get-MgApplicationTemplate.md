@@ -38,13 +38,12 @@ Get-MgApplicationTemplate -InputObject <IApplicationsIdentity> [-ExpandProperty 
 Retrieve the properties of an applicationTemplate object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTemplate -ApplicationTemplateId $applicationTemplateId
-
 ```
 This example shows how to use the Get-MgApplicationTemplate Cmdlet.
 
@@ -277,4 +276,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTemplate?view=graph-powershell-beta)
+
 

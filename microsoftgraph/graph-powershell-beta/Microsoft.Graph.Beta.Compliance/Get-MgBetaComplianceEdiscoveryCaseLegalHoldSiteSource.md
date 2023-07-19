@@ -38,13 +38,11 @@ Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplianceI
 Data source entity for SharePoint sites associated with the legal hold.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -CaseId $caseId -LegalHoldId $legalHoldId
 ```
-
 This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -301,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+

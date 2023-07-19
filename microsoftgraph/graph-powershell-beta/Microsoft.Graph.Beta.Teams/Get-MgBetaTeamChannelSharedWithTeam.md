@@ -52,13 +52,12 @@ Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId -SharedWithChannelTeamInfoId $sharedWithChannelTeamInfoId
-
 ```
 This example shows how to use the Get-MgBetaTeamChannelSharedWithTeam Cmdlet.
 
@@ -340,4 +339,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+
 

@@ -47,8 +47,8 @@ Update-MgTeamworkWorkforceIntegration -InputObject <ITeamsIdentity>
 Update the properties of a workforceIntegration object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -65,7 +65,6 @@ $params = @{
 }
 
 Update-MgTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgTeamworkWorkforceIntegration Cmdlet.
 
@@ -380,4 +379,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamworkWorkforceIntegration?view=graph-powershell-beta)
+
 

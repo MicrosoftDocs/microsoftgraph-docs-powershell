@@ -43,8 +43,8 @@ New-MgEducationSchoolUserByRef -InputObject <IEducationIdentity> -BodyParameter 
 Add a user to a school.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgEducationSchoolUserByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEducationSchoolUserByRef Cmdlet.
 
@@ -223,4 +222,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationSchoolUserByRef?view=graph-powershell-beta)
+
 

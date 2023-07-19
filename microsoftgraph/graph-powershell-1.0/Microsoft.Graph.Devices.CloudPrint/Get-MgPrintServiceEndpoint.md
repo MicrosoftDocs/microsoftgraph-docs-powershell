@@ -38,13 +38,12 @@ Get-MgPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-ExpandPro
 Retrieve the properties and relationships of a print service endpoint.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintServiceEndpoint -PrintServiceId $printServiceId -PrintServiceEndpointId $printServiceEndpointId
-
 ```
 This example shows how to use the Get-MgPrintServiceEndpoint Cmdlet.
 
@@ -285,4 +284,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintServiceEndpoint](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintServiceEndpoint?view=graph-powershell-beta)
+
 

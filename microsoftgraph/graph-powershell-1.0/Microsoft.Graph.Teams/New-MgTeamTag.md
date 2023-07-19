@@ -45,8 +45,8 @@ New-MgTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeamw
 Create a standard tag for members in a team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -63,7 +63,6 @@ $params = @{
 }
 
 New-MgTeamTag -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamTag Cmdlet.
 
@@ -359,4 +358,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamTag](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamTag?view=graph-powershell-beta)
+
 

@@ -25,14 +25,14 @@ Get-MgUserOnenoteNotebookSectionGroup -NotebookId <String> -UserId <String> [-Ex
 Retrieve a list of section groups from the specified notebook.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Notes
-# A UPN can also be used as -UserId.
-Get-MgUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId
-```
 
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteOperation -UserId $userId -OnenoteOperationId $onenoteOperationId
+```
 This example shows how to use the Get-MgUserOnenoteOperation Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -235,3 +235,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
+

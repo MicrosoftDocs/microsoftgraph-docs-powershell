@@ -47,8 +47,8 @@ Update the properties of a identityUserFlowAttribute object.
 Only custom user flow attributes can be updated.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 Update-MgIdentityUserFlowAttribute -IdentityUserFlowAttributeId $identityUserFlowAttributeId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgIdentityUserFlowAttribute Cmdlet.
 
@@ -321,4 +320,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityUserFlowAttribute?view=graph-powershell-beta)
+
 

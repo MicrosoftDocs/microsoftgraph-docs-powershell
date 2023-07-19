@@ -32,8 +32,8 @@ Update-MgEntitlementManagementSetting -BodyParameter <IMicrosoftGraphEntitlement
 Update an existing entitlementManagementSettings object to change one or more of its properties.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -42,7 +42,6 @@ $params = @{
 }
 
 Update-MgEntitlementManagementSetting -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgEntitlementManagementSetting Cmdlet.
 
@@ -185,4 +184,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
+
 

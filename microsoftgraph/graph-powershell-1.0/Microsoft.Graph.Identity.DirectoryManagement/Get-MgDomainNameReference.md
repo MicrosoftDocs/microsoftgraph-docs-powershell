@@ -44,13 +44,12 @@ Supports $expand and $filter by the OData type of objects returned.
 For example /domains/{domainId}/domainNameReferences/microsoft.graph.user and /domains/{domainId}/domainNameReferences/microsoft.graph.group.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDomainNameReference -DomainId $domainId
-
 ```
 This example shows how to use the Get-MgDomainNameReference Cmdlet.
 
@@ -299,4 +298,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDomainNameReference](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDomainNameReference?view=graph-powershell-beta)
+
 

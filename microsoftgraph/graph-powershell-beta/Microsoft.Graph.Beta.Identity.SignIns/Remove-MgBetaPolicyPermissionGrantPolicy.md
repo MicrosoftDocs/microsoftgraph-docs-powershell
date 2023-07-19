@@ -31,13 +31,12 @@ Remove-MgBetaPolicyPermissionGrantPolicy -InputObject <IIdentitySignInsIdentity>
 Delete a permissionGrantPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Remove a permission grant policy
+
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
 Remove-MgBetaPolicyPermissionGrantPolicy -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
 ```
-
 
 This command deletes the specified permission grant policy in Azure AD.
 
@@ -231,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyPermissionGrantPolicy?view=graph-powershell-v1.0)
+

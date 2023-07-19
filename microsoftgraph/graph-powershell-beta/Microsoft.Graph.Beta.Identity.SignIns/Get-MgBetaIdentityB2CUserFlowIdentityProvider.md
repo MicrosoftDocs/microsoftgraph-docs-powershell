@@ -45,13 +45,11 @@ Get-MgBetaIdentityB2CUserFlowIdentityProvider -InputObject <IIdentitySignInsIden
 Get userFlowIdentityProviders from identity
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlowIdentityProvider Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowIdentityProvider -B2cIdentityUserFlowId $b2cIdentityUserFlowId
 ```
-
 This example shows how to use the Get-MgBetaIdentityB2CUserFlowIdentityProvider Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -351,3 +349,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2CUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowIdentityProvider?view=graph-powershell-v1.0)
+

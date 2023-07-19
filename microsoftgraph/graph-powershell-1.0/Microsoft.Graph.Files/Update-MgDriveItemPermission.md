@@ -57,8 +57,8 @@ Update the properties of a sharing permission by patching the permission resourc
 Only the **roles** property can be modified this way.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
 
@@ -69,7 +69,6 @@ $params = @{
 }
 
 Update-MgDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgDriveItemPermission Cmdlet.
 
@@ -603,4 +602,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDriveItemPermission?view=graph-powershell-beta)
+
 

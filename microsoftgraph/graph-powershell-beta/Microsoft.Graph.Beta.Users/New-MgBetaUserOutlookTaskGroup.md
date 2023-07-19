@@ -45,7 +45,6 @@ New-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> -BodyParameter <IMi
 Create an Outlook task group in the user's mailbox.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
@@ -55,7 +54,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskGroup -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserOutlookTaskGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -435,3 +433,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
+

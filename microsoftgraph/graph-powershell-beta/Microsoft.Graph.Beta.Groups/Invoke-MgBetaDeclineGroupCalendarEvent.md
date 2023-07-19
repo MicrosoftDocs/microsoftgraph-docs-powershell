@@ -31,14 +31,29 @@ Invoke-MgBetaCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
-Import-Module Microsoft.Graph.Beta.Files
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	Comment = "I won't be able to make this week. How about next week?"
+	SendResponse = $true
+	ProposedNewTime = @{
+		Start = @{
+			DateTime = "2019-12-02T18:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+		End = @{
+			DateTime = "2019-12-02T19:00:00"
+			TimeZone = "Pacific Standard Time"
+		}
+	}
+}
+
+# A UPN can also be used as -UserId.
+Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
-Invoke-MgBetaCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
-
 This example shows how to use the Invoke-MgBetaDeclineGroupCalendarEvent Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -204,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgDeclineGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupCalendarEvent?view=graph-powershell-v1.0)
+

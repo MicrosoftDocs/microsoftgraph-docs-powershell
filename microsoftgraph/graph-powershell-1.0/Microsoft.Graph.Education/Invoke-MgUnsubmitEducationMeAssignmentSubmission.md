@@ -41,13 +41,12 @@ The teacher will be looking at the working resources list for grading.
 A teacher can also unsubmit a student's assignment on their behalf.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Invoke-MgUnsubmitEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
 This example shows how to use the Invoke-MgUnsubmitEducationMeAssignmentSubmission Cmdlet.
 
@@ -165,4 +164,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUnsubmitEducationMeAssignmentSubmission?view=graph-powershell-beta)
+
 

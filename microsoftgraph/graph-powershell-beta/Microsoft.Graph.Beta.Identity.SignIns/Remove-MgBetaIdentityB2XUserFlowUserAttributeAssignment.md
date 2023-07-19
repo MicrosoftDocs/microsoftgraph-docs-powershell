@@ -32,13 +32,12 @@ Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentityS
 Delete navigation property userAttributeAssignments for identity
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
-
 ```
 This example shows how to use the Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
 
@@ -250,4 +249,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
+
 

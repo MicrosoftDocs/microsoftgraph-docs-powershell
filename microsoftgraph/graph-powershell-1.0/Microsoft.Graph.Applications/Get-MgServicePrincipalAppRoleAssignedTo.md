@@ -40,13 +40,12 @@ App role assignments for this app or service, granted to users, groups, and othe
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
-
 ```
 This example shows how to use the Get-MgServicePrincipalAppRoleAssignedTo Cmdlet.
 
@@ -294,4 +293,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
 

@@ -31,13 +31,12 @@ New-MgDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate
 Add new entity to directoryRoleTemplates
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRoleTemplate
-
 ```
 This example shows how to use the New-MgDirectoryRoleTemplate Cmdlet.
 
@@ -199,4 +198,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDirectoryRoleTemplate?view=graph-powershell-beta)
+
 

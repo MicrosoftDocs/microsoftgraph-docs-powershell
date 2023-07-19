@@ -31,8 +31,8 @@ Get-MgBetaSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 The values of the columns set on this list item.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -42,7 +42,6 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-
 ```
 This example shows how to use the Get-MgBetaBetaSiteListItemField Cmdlet.
 
@@ -214,4 +213,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-v1.0)
+
 

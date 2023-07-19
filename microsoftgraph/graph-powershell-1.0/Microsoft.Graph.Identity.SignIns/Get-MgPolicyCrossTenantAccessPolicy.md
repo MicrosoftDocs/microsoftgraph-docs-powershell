@@ -23,13 +23,12 @@ Get-MgPolicyCrossTenantAccessPolicy [-ExpandProperty <String[]>] [-Property <Str
 Read the properties and relationships of a crossTenantAccessPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyCrossTenantAccessPolicy
-
 ```
 This example shows how to use the Get-MgPolicyCrossTenantAccessPolicy Cmdlet.
 
@@ -82,4 +81,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
+
 

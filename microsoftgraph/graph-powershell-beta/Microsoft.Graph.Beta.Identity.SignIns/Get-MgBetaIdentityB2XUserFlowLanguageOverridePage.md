@@ -42,13 +42,12 @@ Collection of pages with the overrides messages to display in a user flow for a 
 This collection only allows to modify the content of the page, any other modification is not allowed (creation or deletion of pages).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-
 ```
 This example shows how to use the Get-MgBetaIdentityB2XUserFlowLanguageOverridePage Cmdlet.
 
@@ -366,4 +365,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-v1.0)
+
 

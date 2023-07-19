@@ -34,13 +34,12 @@ Delete a feedback resource from a submission.
 This can only be done by a teacher.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId
-
 ```
 This example shows how to use the Remove-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
 
@@ -218,4 +217,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 

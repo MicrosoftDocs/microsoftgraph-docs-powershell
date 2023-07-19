@@ -47,13 +47,12 @@ New-MgTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> -BodyParameter <I
 Create new navigation property to timeOffRequests for teams
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleTimeOffRequest -TeamId $teamId
-
 ```
 This example shows how to use the New-MgTeamScheduleTimeOffRequest Cmdlet.
 
@@ -376,4 +375,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamScheduleTimeOffRequest?view=graph-powershell-beta)
+
 

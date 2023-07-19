@@ -38,13 +38,11 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceMember -InputObject <IWindowsUpdatesId
 Specifies the assets to include in the audience.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaWindowsUpdatesDeploymentAudienceMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeploymentAudienceMember -DeploymentId $deploymentId
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesDeploymentAudienceMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -278,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesDeploymentAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceMember?view=graph-powershell-v1.0)
+

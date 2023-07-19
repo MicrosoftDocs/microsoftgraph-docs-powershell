@@ -47,7 +47,6 @@ Copy-MgUserOnenoteNotebook -InputObject <IUsersActionsIdentity>
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
-
 ### Example 1: Using the Copy-MgUserOnenoteNotebook Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -58,7 +57,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgUserOnenoteNotebook Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -307,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
+

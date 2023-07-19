@@ -35,8 +35,8 @@ New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter <IMicrosoftGraphAuth
 Create a new custom authenticationStrengthPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -51,7 +51,6 @@ $params = @{
 }
 
 New-MgBetaPolicyAuthenticationStrengthPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaPolicyAuthenticationStrengthPolicy Cmdlet.
 
@@ -298,4 +297,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPolicyAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthenticationStrengthPolicy?view=graph-powershell-v1.0)
+
 

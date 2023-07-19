@@ -40,8 +40,8 @@ New-MgDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<Commo
 Create and register a new device in the organization.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -60,7 +60,6 @@ $params = @{
 }
 
 New-MgDevice -BodyParameter $params
-
 ```
 This example shows how to use the New-MgDevice Cmdlet.
 
@@ -734,4 +733,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDevice?view=graph-powershell-beta)
+
 

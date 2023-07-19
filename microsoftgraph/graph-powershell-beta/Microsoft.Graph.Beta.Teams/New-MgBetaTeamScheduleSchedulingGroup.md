@@ -45,8 +45,8 @@ New-MgBetaTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
 Create a new schedulingGroup.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -60,7 +60,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleSchedulingGroup -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamScheduleSchedulingGroup Cmdlet.
 
@@ -336,4 +335,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+
 

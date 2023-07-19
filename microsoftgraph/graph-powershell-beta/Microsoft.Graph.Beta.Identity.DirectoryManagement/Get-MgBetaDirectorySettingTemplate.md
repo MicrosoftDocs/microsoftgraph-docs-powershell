@@ -40,22 +40,18 @@ A directory setting template represents a template of settings from which settin
 This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySettingTemplate -DirectorySettingTemplateId $directorySettingTemplateId
 ```
-
 This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySettingTemplate
 ```
-
 This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -306,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySettingTemplate?view=graph-powershell-v1.0)
+

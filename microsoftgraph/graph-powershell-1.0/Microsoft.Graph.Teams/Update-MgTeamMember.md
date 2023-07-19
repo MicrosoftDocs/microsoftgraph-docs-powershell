@@ -45,8 +45,8 @@ Update-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGrap
 Update the role of a conversationMember in a team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -58,7 +58,6 @@ $params = @{
 }
 
 Update-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgTeamMember Cmdlet.
 
@@ -302,4 +301,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeamMember?view=graph-powershell-beta)
+
 

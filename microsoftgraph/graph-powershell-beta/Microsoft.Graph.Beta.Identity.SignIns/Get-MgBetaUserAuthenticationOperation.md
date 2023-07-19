@@ -44,13 +44,12 @@ An operation object tells the caller about the current state of that password re
 Possible states include: `Succeeded` and `Failed` are terminal states.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
-
 ```
 This example shows how to use the Get-MgBetaUserAuthenticationOperation Cmdlet.
 
@@ -352,4 +351,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationOperation?view=graph-powershell-v1.0)
+
 

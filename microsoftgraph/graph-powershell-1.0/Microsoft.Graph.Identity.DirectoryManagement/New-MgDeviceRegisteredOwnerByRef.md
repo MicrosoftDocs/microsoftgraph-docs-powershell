@@ -43,8 +43,8 @@ New-MgDeviceRegisteredOwnerByRef -InputObject <IIdentityDirectoryManagementIdent
 Add a user as a registered owner of the device.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgDeviceRegisteredOwnerByRef Cmdlet.
 
@@ -234,4 +233,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
+
 

@@ -38,13 +38,12 @@ Get-MgBetaPlannerBucket -InputObject <IPlannerIdentity> [-ExpandProperty <String
 Retrieve the properties and relationships of a plannerBucket object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerBucket -PlannerBucketId $plannerBucketId
-
 ```
 This example shows how to use the Get-MgBetaPlannerBucket Cmdlet.
 
@@ -265,4 +264,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucket?view=graph-powershell-v1.0)
+
 

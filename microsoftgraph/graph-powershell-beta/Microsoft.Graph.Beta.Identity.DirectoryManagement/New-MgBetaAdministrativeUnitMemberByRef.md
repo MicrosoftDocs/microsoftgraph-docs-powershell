@@ -43,7 +43,6 @@ New-MgBetaAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryManageme
 Create new navigation property ref to members for administrativeUnits
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaAdministrativeUnitMemberByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -52,7 +51,6 @@ $params = @{
 }
 New-MgBetaAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaAdministrativeUnitMemberByRef Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -250,3 +248,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdministrativeUnitMemberByRef?view=graph-powershell-v1.0)
+

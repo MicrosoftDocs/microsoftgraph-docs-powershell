@@ -44,13 +44,12 @@ Students can only see assignments assigned to them; teachers and applications wi
 You can use the `Prefer` header in your request to get the `inactive` status in case the assignment is deactivated; otherwise, you will get an `unknownFutureValue` value in the response.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
 ```
 This example shows how to use the Get-MgBetaEducationClassAssignment Cmdlet.
 
@@ -291,4 +290,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignment?view=graph-powershell-v1.0)
+
 

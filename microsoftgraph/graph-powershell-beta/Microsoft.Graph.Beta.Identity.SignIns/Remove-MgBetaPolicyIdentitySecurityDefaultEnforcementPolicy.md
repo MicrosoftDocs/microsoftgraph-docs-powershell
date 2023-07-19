@@ -24,8 +24,8 @@ Remove-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-IfMatch <String>] 
 Delete navigation property identitySecurityDefaultsEnforcementPolicy for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -34,7 +34,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
 
@@ -118,4 +117,5 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+
 

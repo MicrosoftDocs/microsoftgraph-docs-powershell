@@ -49,8 +49,8 @@ Users in the accepted senders list can post to conversations of the group .
 Make sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 New-MgBetaGroupAcceptedSenderByRef -GroupId $groupId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaGroupAcceptedSenderByRef Cmdlet.
 
@@ -263,4 +262,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)
+
 

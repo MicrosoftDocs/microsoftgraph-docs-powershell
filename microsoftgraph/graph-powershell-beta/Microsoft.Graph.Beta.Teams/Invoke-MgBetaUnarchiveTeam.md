@@ -37,13 +37,11 @@ Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaUnarchiveTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Invoke-MgBetaUnarchiveTeam -TeamId $teamId
 ```
-
 This example shows how to use the Invoke-MgBetaUnarchiveTeam Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnarchiveTeam](/powershell/module/Microsoft.Graph.Teams/Invoke-MgUnarchiveTeam?view=graph-powershell-v1.0)
+

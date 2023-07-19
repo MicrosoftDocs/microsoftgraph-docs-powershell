@@ -38,13 +38,12 @@ Get-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdentity>
 Retrieve the properties and relationships of a homeRealmDiscoveryPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyHomeRealmDiscoveryPolicy -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
-
 ```
 This example shows how to use the Get-MgBetaPolicyHomeRealmDiscoveryPolicy Cmdlet.
 
@@ -331,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-v1.0)
+
 

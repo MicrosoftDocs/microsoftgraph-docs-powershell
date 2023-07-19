@@ -63,8 +63,8 @@ New-MgBetaSiteColumn -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 Create a column for a [site][site] by specifying a [columnDefinition][columnDefinition].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -83,7 +83,6 @@ $params = @{
 }
 
 New-MgBetaSiteColumn -SiteId $siteId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSiteColumn Cmdlet.
 
@@ -1165,4 +1164,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteColumn?view=graph-powershell-v1.0)
+
 

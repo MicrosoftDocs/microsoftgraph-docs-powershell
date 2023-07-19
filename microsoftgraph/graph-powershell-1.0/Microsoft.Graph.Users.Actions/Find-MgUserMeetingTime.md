@@ -59,7 +59,6 @@ The algorithm used to suggest meeting times and locations undergoes fine-tuning 
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
 ## EXAMPLES
-
 ### Example 1: Using the Find-MgUserMeetingTime Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -106,7 +105,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Find-MgUserMeetingTime -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Find-MgUserMeetingTime Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -476,3 +474,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgBetaUserMeetingTime](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaUserMeetingTime?view=graph-powershell-beta)
+

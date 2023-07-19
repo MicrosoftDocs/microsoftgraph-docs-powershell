@@ -55,14 +55,12 @@ Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgUserMessageReply Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.
 New-MgUserMessageReply -UserId $userId -MessageId $messageId
 ```
-
 This example shows how to use the New-MgUserMessageReply Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -397,3 +395,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageReply?view=graph-powershell-beta)
+

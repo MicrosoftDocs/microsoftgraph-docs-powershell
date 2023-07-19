@@ -55,7 +55,6 @@ Update-MgBetaSearchBookmark -InputObject <ISearchIdentity> -BodyParameter <IMicr
 Update the properties of a bookmark object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
@@ -64,7 +63,6 @@ $params = @{
 }
 Update-MgBetaSearchBookmark -BookmarkId $bookmarkId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaSearchBookmark Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -534,3 +532,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Update-MgSearchBookmark?view=graph-powershell-v1.0)
+

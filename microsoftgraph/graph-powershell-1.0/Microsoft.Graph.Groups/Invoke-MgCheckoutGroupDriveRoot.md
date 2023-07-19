@@ -31,14 +31,13 @@ Invoke-MgCheckoutGroupDriveRoot -InputObject <IGroupsIdentity> [-PassThru] [-Wha
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
-
+```
 This example shows how to use the Invoke-MgCheckoutGroupDriveRoot Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -195,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaCheckoutGroupDriveRoot](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaCheckoutGroupDriveRoot?view=graph-powershell-beta)
+

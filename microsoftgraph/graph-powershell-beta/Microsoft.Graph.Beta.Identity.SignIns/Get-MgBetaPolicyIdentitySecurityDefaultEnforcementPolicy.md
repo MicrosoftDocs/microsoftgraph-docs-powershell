@@ -24,13 +24,12 @@ Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy [-ExpandProperty <Strin
 Retrieve the properties of an identitySecurityDefaultsEnforcementPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy
-
 ```
 This example shows how to use the Get-MgBetaPolicyIdentitySecurityDefaultEnforcementPolicy Cmdlet.
 
@@ -83,4 +82,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyIdentitySecurityDefaultEnforcementPolicy?view=graph-powershell-v1.0)
+
 

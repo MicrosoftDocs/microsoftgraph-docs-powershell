@@ -57,13 +57,12 @@ Get-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 All sets under the group in a term [store].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgSiteTermStoreGroupSet Cmdlet.
 
@@ -359,4 +358,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
+
 

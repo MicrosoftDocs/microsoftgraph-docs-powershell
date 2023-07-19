@@ -52,7 +52,6 @@ New-MgBetaUserProfileAccount -InputObject <IPeopleIdentity>
 Create a new userAccountInformation object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -63,7 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAccount -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileAccount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -472,3 +470,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAccount?view=graph-powershell-v1.0)
+

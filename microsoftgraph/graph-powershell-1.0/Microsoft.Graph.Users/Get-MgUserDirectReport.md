@@ -44,8 +44,8 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's direct reports
+
 ```powershell
 Get-MgUserDirectReport -UserId '075b32dd-edb7-47cf-89ef-f3f733683a3f'
 
@@ -56,7 +56,6 @@ f890ceed-822a-4647-8748-73d88013ae9d
 58fcff93-a667-4c5f-bd43-372a43f446bc
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
 68906e46-27f9-4c5e-914b-b931696088fe
-
 ```
 
 This example gets the direct reports for the specified user.
@@ -312,4 +311,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserDirectReport](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserDirectReport?view=graph-powershell-beta)
+
 

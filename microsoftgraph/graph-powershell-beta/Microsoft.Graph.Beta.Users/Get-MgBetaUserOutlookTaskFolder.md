@@ -36,24 +36,20 @@ Get-MgBetaUserOutlookTaskFolder -InputObject <IUsersIdentity> [-Property <String
 Get the properties and relationships of the specified Outlook task folder.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskFolder -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
 ```
-
 This example shows how to use the Get-MgBetaUserOutlookTaskFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserOutlookTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskFolder -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserOutlookTaskFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -270,3 +266,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
+

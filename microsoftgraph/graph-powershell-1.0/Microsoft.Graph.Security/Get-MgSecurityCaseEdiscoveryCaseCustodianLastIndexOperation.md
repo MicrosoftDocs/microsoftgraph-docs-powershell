@@ -31,13 +31,12 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -InputObject <ISecur
 Get a list of the ediscoveryIndexOperations associated with an ediscoveryCustodian.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
 ```
 This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianLastIndexOperation Cmdlet.
 
@@ -177,4 +176,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-beta)
+
 

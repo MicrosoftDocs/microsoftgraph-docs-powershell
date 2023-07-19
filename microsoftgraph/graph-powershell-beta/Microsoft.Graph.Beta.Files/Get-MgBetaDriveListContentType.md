@@ -38,14 +38,13 @@ Get-MgBetaDriveListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 Get contentTypes from drives
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
-
+```
 This example shows how to use the Get-MgBetaDriveListContentType Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -296,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListContentType?view=graph-powershell-v1.0)
+

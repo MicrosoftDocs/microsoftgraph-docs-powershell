@@ -55,8 +55,8 @@ Update-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity>
 Update an editable **secureScoreControlProfile** object within any integrated solution to change various properties, such as **assignedTo** or **tenantNote**.
 
 ## EXAMPLES
-
 ### Example 1: Request without Prefer header
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -73,14 +73,13 @@ $params = @{
 }
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Request with Prefer header
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -97,7 +96,6 @@ $params = @{
 }
 
 Update-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSecuritySecureScoreControlProfile Cmdlet.
 
@@ -617,4 +615,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 

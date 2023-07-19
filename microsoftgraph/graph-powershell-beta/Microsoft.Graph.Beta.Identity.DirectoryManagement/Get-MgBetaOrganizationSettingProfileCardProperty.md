@@ -40,22 +40,18 @@ Retrieve the properties and relationships of a profileCardProperty entity, which
 The profileCardProperty is identified by its **directoryPropertyName** property.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaOrganizationSettingProfileCardProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId
 ```
-
 This example shows how to use the Get-MgBetaOrganizationSettingProfileCardProperty Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaOrganizationSettingProfileCardProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId
 ```
-
 This example shows how to use the Get-MgBetaOrganizationSettingProfileCardProperty Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -321,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)
+

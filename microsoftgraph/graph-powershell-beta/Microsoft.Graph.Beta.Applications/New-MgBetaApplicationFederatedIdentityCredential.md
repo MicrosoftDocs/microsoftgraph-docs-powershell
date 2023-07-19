@@ -49,8 +49,8 @@ By configuring a trust relationship between your Azure AD application registrati
 Maximum of 20 objects can be added to an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -64,7 +64,6 @@ $params = @{
 }
 
 New-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaApplicationFederatedIdentityCredential Cmdlet.
 
@@ -337,4 +336,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationFederatedIdentityCredential?view=graph-powershell-v1.0)
+
 

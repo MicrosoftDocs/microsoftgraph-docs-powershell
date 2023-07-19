@@ -40,13 +40,12 @@ Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducat
 Get submittedResources from education
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
 This example shows how to use the Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource Cmdlet.
 
@@ -302,4 +301,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)
+
 

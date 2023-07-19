@@ -31,13 +31,11 @@ Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceMan
 Delete a cloudPcDeviceImage object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
 ```
-
 This example shows how to use the Remove-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -213,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)
+

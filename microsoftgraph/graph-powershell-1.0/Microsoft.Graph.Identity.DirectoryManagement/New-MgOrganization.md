@@ -40,13 +40,12 @@ New-MgOrganization -BodyParameter <IMicrosoftGraphOrganization> [-WhatIf] [-Conf
 Add new entity to organization
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganization
-
 ```
 This example shows how to use the New-MgOrganization Cmdlet.
 
@@ -847,4 +846,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaOrganization?view=graph-powershell-beta)
+
 

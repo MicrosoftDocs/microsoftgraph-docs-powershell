@@ -47,7 +47,6 @@ Set the the verifiedPublisher on an application.
 For more information, including prerequisites to setting a verified publisher, see Publisher verification.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaApplicationVerifiedPublisher Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -56,7 +55,6 @@ $params = @{
 }
 Set-MgBetaApplicationVerifiedPublisher -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaApplicationVerifiedPublisher Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -240,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationVerifiedPublisher?view=graph-powershell-v1.0)
+

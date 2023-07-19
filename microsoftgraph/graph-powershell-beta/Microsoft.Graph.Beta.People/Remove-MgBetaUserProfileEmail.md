@@ -31,14 +31,12 @@ Remove-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete an itemEmail object from a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserProfileEmail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId
 ```
-
 This example shows how to use the Remove-MgBetaUserProfileEmail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -195,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileEmail?view=graph-powershell-v1.0)
+

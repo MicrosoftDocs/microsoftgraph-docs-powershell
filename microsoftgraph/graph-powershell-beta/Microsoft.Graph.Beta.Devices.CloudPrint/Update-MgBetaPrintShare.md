@@ -59,8 +59,8 @@ This method can be used to swap printers.
 For example, if a physical printer device breaks, an administrator can register a new printer device and update this printerShare to point to the new printer without requiring users to take any action.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -71,7 +71,6 @@ $params = @{
 }
 
 Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPrintShare Cmdlet.
 
@@ -19474,4 +19473,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-v1.0)
+
 

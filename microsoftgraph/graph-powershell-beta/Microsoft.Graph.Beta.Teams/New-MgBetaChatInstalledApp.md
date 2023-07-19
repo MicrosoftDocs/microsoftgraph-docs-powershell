@@ -47,8 +47,8 @@ New-MgBetaChatInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 Install a teamsApp to the specified chat.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgBetaChatInstalledApp -ChatId $chatId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaChatInstalledApp Cmdlet.
 
@@ -431,4 +430,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgChatInstalledApp?view=graph-powershell-v1.0)
+
 

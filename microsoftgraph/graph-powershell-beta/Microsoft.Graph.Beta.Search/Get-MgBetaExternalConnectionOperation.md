@@ -38,13 +38,12 @@ Get-MgBetaExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPro
 Get operations from external
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
-
 ```
 This example shows how to use the Get-MgBetaExternalConnectionOperation Cmdlet.
 
@@ -290,4 +289,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-v1.0)
+
 

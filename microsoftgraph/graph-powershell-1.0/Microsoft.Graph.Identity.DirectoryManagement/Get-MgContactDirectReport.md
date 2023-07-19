@@ -44,13 +44,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContactDirectReport -OrgContactId $orgContactId
-
 ```
 This example shows how to use the Get-MgContactDirectReport Cmdlet.
 
@@ -315,4 +314,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContactDirectReport](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaContactDirectReport?view=graph-powershell-beta)
+
 

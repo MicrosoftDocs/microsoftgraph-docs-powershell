@@ -31,13 +31,12 @@ Remove-MgBetaPrintConnector -InputObject <IDevicesCloudPrintIdentity> [-IfMatch 
 Delete (unregister) a printConnector.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Remove-MgBetaPrintConnector -PrintConnectorId $printConnectorId
-
 ```
 This example shows how to use the Remove-MgBetaPrintConnector Cmdlet.
 
@@ -173,4 +172,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintConnector?view=graph-powershell-v1.0)
+
 

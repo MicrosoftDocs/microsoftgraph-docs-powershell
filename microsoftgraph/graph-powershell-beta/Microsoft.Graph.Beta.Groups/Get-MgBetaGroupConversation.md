@@ -37,13 +37,12 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>
 Get a conversation object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupConversation -GroupId $groupId -ConversationId $conversationId
-
 ```
 This example shows how to use the Get-MgBetaGroupConversation Cmdlet.
 
@@ -300,4 +299,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-v1.0)
+
 

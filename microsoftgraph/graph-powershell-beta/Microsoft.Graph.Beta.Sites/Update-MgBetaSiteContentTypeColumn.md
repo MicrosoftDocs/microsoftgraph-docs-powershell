@@ -64,13 +64,12 @@ Update-MgBetaSiteContentTypeColumn -InputObject <ISitesIdentity>
 Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
-
 ```
 This example shows how to use the Update-MgBetaBetaSiteContentTypeColumn Cmdlet.
 
@@ -1182,4 +1181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentTypeColumn?view=graph-powershell-v1.0)
+
 

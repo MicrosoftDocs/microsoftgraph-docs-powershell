@@ -38,13 +38,12 @@ Get-MgBetaApplicationExtensionProperty -InputObject <IApplicationsIdentity> [-Ex
 Read a directory extension definition represented by an extensionProperty object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
-
 ```
 This example shows how to use the Get-MgBetaApplicationExtensionProperty Cmdlet.
 
@@ -300,4 +299,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationExtensionProperty?view=graph-powershell-v1.0)
+
 

@@ -38,13 +38,12 @@ Get-MgPrintPrinterConnector -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 The connectors that are associated with the printer.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinterConnector -PrinterId $printerId
-
 ```
 This example shows how to use the Get-MgPrintPrinterConnector Cmdlet.
 
@@ -285,4 +284,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintPrinterConnector](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintPrinterConnector?view=graph-powershell-beta)
+
 

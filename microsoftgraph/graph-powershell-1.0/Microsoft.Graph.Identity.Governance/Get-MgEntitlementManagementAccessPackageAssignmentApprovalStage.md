@@ -40,13 +40,12 @@ In Azure AD entitlement management, retrieve the properties of an approvalStage 
 An approval stage is contained within an approval object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId -ApprovalStageId $approvalStageId
-
 ```
 This example shows how to use the Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
 
@@ -328,4 +327,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStage?view=graph-powershell-beta)
+
 

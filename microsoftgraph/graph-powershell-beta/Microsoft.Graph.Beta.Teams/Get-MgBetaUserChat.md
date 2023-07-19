@@ -42,13 +42,12 @@ This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's one on one chat
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserChat -UserId $userId -ChatId $chatId
-
 ```
 This example shows how to use the Get-MgBetaUserChat Cmdlet.
 
@@ -314,4 +313,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-v1.0)
+
 

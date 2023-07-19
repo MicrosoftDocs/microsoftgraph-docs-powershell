@@ -59,8 +59,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity>
 Create a new ediscoverySearch object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -79,7 +79,6 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseSearch Cmdlet.
 
@@ -15089,4 +15088,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-v1.0)
+
 

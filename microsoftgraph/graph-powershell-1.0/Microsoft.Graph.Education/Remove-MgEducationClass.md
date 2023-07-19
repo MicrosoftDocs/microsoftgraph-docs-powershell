@@ -33,13 +33,12 @@ Delete an educationClass.
 Because a class is also a universal group, deleting a class deletes the group.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationClass -EducationClassId $educationClassId
-
 ```
 This example shows how to use the Remove-MgEducationClass Cmdlet.
 
@@ -172,4 +171,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationClass?view=graph-powershell-beta)
+
 

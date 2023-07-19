@@ -38,13 +38,12 @@ Get-MgBetaDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManag
 Configure domain federation with organizations whose identity provider (IdP) supports either the SAML or WS-Fed protocol.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Remove-MgBetaDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
-
 ```
 This example shows how to use the Get-MgBetaBetaDirectoryFederationConfiguration Cmdlet.
 
@@ -298,4 +297,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryFederationConfiguration?view=graph-powershell-v1.0)
+
 

@@ -47,7 +47,6 @@ New-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplicationsId
 Create a connectorGroup object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -57,10 +56,8 @@ $params = @{
 }
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -69,7 +66,6 @@ $params = @{
 }
 New-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -1600,3 +1596,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+

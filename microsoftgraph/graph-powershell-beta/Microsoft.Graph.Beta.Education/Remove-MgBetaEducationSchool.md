@@ -31,13 +31,12 @@ Remove-MgBetaEducationSchool -InputObject <IEducationIdentity> [-IfMatch <String
 Delete a school.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Remove-MgBetaEducationSchool -EducationSchoolId $educationSchoolId
-
 ```
 This example shows how to use the Remove-MgBetaEducationSchool Cmdlet.
 
@@ -173,4 +172,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationSchool](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSchool?view=graph-powershell-v1.0)
+
 

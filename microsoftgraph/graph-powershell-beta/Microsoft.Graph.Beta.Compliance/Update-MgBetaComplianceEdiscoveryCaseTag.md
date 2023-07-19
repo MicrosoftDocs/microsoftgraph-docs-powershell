@@ -49,7 +49,6 @@ Update-MgBetaComplianceEdiscoveryCaseTag -InputObject <IComplianceIdentity>
 Update the properties of a tag object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -58,7 +57,6 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseTag -CaseId $caseId -TagId $tagId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseTag Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -398,3 +396,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)
+

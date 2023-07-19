@@ -51,25 +51,26 @@ If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to an
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
+	Comment = "comment-value"
 	ToRecipients = @(
 		@{
 			EmailAddress = @{
-				Address = "danas@contoso.onmicrosoft.com"
-				Name = "Dana Swope"
+				Name = "name-value"
+				Address = "address-value"
 			}
 		}
 	)
-	Comment = "Dana, hope you can make this meeting."
 }
-# A UPN can also be used as -UserId.
-Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
 
+# A UPN can also be used as -UserId.
+Invoke-MgBetaForwardUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
 This example shows how to use the Invoke-MgBetaForwardUserMailFolderChildFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -309,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgForwardUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+

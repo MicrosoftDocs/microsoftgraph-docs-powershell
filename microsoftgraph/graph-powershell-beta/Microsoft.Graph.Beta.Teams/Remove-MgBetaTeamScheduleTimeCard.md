@@ -31,13 +31,11 @@ Remove-MgBetaTeamScheduleTimeCard -InputObject <ITeamsIdentity> [-IfMatch <Strin
 Delete a timeCard instance in a schedule.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaTeamScheduleTimeCard Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Remove-MgBetaTeamScheduleTimeCard -TeamId $teamId -TimeCardId $timeCardId
 ```
-
 This example shows how to use the Remove-MgBetaTeamScheduleTimeCard Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -210,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
+

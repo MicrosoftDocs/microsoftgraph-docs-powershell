@@ -38,22 +38,18 @@ Get-MgBetaPrivilegedRole -InputObject <IIdentityGovernanceIdentity> [-ExpandProp
 Get entity from privilegedRoles by key
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPrivilegedRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRole -PrivilegedRoleId $privilegedRoleId
 ```
-
 This example shows how to use the Get-MgBetaPrivilegedRole Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaPrivilegedRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRole
 ```
-
 This example shows how to use the Get-MgBetaPrivilegedRole Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -359,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedRole](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRole?view=graph-powershell-v1.0)
+

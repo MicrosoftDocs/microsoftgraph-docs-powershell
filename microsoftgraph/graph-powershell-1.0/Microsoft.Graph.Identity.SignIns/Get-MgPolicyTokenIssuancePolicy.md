@@ -38,13 +38,12 @@ Get-MgPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 The policy that specifies the characteristics of SAML tokens issued by Azure AD.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyTokenIssuancePolicy
-
 ```
 This example shows how to use the Get-MgPolicyTokenIssuancePolicy Cmdlet.
 
@@ -312,4 +311,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 

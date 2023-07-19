@@ -45,8 +45,8 @@ New-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 New-MgTeamScheduleTimeOff -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamScheduleTimeOff Cmdlet.
 
@@ -346,4 +345,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
+
 

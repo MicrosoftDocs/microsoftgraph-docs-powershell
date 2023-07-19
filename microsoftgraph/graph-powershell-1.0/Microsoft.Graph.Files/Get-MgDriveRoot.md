@@ -32,13 +32,12 @@ Retrieve the metadata for a driveItem in a drive by file system path or ID.\n`it
 It may also be the unique ID of a SharePoint list item.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveRoot -DriveId $driveId
-
 ```
 This example shows how to use the Get-MgDriveRoot Cmdlet.
 
@@ -154,4 +153,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveRoot](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveRoot?view=graph-powershell-beta)
+
 

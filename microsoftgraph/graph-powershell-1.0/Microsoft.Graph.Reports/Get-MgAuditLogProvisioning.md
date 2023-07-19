@@ -38,25 +38,23 @@ Get-MgAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty <Str
 Get provisioning from auditLogs
 
 ## EXAMPLES
-
 ### Example 1: Successful request
+
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
-
 ```
 This example shows how to use the Get-MgAuditLogProvisioning Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Error reponse
+
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgAuditLogProvisioning
-
 ```
 This example shows how to use the Get-MgAuditLogProvisioning Cmdlet.
 
@@ -289,4 +287,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAuditLogProvisioning](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaAuditLogProvisioning?view=graph-powershell-beta)
+
 

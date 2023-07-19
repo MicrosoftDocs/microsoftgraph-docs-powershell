@@ -43,13 +43,12 @@ This returns all properties of the instance except for the associated accessRevi
 To retrieve the decisions on the instance, use List accessReviewInstanceDecisionItem.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
-
 ```
 This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
 
@@ -373,4 +372,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+
 

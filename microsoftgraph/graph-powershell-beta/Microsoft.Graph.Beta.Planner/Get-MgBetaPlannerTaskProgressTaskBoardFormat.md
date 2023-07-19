@@ -31,13 +31,12 @@ Get-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-E
 Retrieve the properties and relationships of **plannerProgressTaskBoardTaskFormat** object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId
-
 ```
 This example shows how to use the Get-MgBetaPlannerTaskProgressTaskBoardFormat Cmdlet.
 
@@ -137,4 +136,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-v1.0)
+
 

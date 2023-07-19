@@ -31,7 +31,6 @@ New-MgBetaIdentityUserFlow -BodyParameter <IMicrosoftGraphIdentityUserFlow> [-Wh
 Create a new userFlow object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaIdentityUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -42,7 +41,6 @@ $params = @{
 }
 New-MgBetaIdentityUserFlow -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaIdentityUserFlow Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -182,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlow?view=graph-powershell-v1.0)
+

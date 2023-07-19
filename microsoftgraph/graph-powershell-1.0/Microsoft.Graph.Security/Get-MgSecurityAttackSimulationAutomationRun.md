@@ -38,13 +38,12 @@ Get-MgSecurityAttackSimulationAutomationRun -InputObject <ISecurityIdentity> [-E
 A collection of simulation automation runs.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAttackSimulationAutomationRun -SimulationAutomationId $simulationAutomationId
-
 ```
 This example shows how to use the Get-MgSecurityAttackSimulationAutomationRun Cmdlet.
 
@@ -305,4 +304,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityAttackSimulationAutomationRun?view=graph-powershell-beta)
+
 

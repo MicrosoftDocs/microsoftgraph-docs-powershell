@@ -47,13 +47,11 @@ Supports $select.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
 ```
-
 This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -389,3 +387,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceContactedReviewer?view=graph-powershell-v1.0)
+

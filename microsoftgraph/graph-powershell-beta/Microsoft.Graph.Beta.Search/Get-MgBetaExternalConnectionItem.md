@@ -44,13 +44,12 @@ It is not intended to be used for any other purpose.
 Repeated requests to this API might result in `429` HTTP errors.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
-
 ```
 This example shows how to use the Get-MgBetaExternalConnectionItem Cmdlet.
 
@@ -296,4 +295,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-v1.0)
+
 

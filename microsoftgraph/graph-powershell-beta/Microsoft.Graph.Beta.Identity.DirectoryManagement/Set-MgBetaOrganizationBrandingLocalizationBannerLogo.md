@@ -36,13 +36,12 @@ The allowed types are PNG or JPEG not larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBrandingLocalization -OrganizationId $organizationId
-
 ```
 This example shows how to use the Set-MgBetaBetaOrganizationBrandingLocalizationBannerLogo Cmdlet.
 
@@ -239,4 +238,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgOrganizationBrandingLocalizationBannerLogo](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgOrganizationBrandingLocalizationBannerLogo?view=graph-powershell-v1.0)
+
 

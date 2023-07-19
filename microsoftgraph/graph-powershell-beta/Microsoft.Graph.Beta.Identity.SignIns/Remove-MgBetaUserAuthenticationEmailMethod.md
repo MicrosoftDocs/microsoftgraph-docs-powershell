@@ -31,13 +31,12 @@ Remove-MgBetaUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentit
 Deletes a user's email Authentication Method object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId
-
 ```
 This example shows how to use the Remove-MgBetaUserAuthenticationEmailMethod Cmdlet.
 
@@ -249,4 +248,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationEmailMethod?view=graph-powershell-v1.0)
+
 

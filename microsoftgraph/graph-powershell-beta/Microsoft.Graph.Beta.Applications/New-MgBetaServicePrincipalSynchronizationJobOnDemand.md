@@ -53,7 +53,6 @@ The rate limit for this API is 5 requests per 10 seconds.
 No user or group will be provisioned on-demand that would not have been provisioned through the regular provisioning cycles.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -72,10 +71,8 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -94,10 +91,8 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -128,10 +123,8 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -150,7 +143,6 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJobOnDemand -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaServicePrincipalSynchronizationJobOnDemand Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -355,3 +347,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgServicePrincipalSynchronizationJobOnDemand](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJobOnDemand?view=graph-powershell-v1.0)
+

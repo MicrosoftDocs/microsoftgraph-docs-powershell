@@ -33,13 +33,11 @@ Close an eDiscovery case.
 For details, see Close a case.
 
 ## EXAMPLES
-
 ### Example 1: Using the Close-MgBetaSecurityCaseEdiscoveryCase Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Close-MgBetaSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
 ```
-
 This example shows how to use the Close-MgBetaSecurityCaseEdiscoveryCase Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -214,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Close-MgSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Close-MgSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
+

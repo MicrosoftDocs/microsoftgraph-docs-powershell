@@ -38,13 +38,12 @@ Get-MgBetaIdentityGovernanceAppConsentRequest -InputObject <IIdentityGovernanceI
 Read the properties and relationships of an appConsentRequest object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceAppConsentRequest -AppConsentRequestId $appConsentRequestId
-
 ```
 This example shows how to use the Get-MgBetaIdentityGovernanceAppConsentRequest Cmdlet.
 
@@ -353,4 +352,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-v1.0)
+
 

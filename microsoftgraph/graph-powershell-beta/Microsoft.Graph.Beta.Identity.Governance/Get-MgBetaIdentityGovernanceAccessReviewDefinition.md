@@ -46,13 +46,12 @@ An instance represents a review for a specific resource (such as a particular gr
 To retrieve the instances of the access review series, use the list accessReviewInstance API.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceAccessReviewDefinition -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId
-
 ```
 This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinition Cmdlet.
 
@@ -361,4 +360,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-v1.0)
+
 

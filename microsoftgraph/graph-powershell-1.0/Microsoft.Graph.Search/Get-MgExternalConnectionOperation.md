@@ -38,13 +38,12 @@ Get-MgExternalConnectionOperation -InputObject <ISearchIdentity> [-ExpandPropert
 Read the properties and relationships of a connectionOperation object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionOperation -ExternalConnectionId $externalConnectionId -ConnectionOperationId $connectionOperationId
-
 ```
 This example shows how to use the Get-MgExternalConnectionOperation Cmdlet.
 
@@ -278,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionOperation?view=graph-powershell-beta)
+
 

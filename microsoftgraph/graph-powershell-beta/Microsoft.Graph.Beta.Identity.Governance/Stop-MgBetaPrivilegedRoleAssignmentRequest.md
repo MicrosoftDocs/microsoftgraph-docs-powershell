@@ -31,13 +31,11 @@ Stop-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIden
 Invoke action cancel
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Stop-MgBetaPrivilegedRoleAssignmentRequest -PrivilegedRoleAssignmentRequestId $privilegedRoleAssignmentRequestId
 ```
-
 This example shows how to use the Stop-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -223,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+

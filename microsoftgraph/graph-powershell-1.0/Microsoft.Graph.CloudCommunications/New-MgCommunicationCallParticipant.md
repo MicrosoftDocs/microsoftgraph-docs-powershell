@@ -49,13 +49,12 @@ New-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
 Create new navigation property to participants for communications
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallParticipant -CallId $callId
-
 ```
 This example shows how to use the New-MgCommunicationCallParticipant Cmdlet.
 
@@ -393,4 +392,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaCommunicationCallParticipant](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaCommunicationCallParticipant?view=graph-powershell-beta)
+
 

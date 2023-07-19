@@ -43,8 +43,8 @@ New-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIdentit
 Assign a tokenIssuancePolicy to an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaApplicationTokenIssuancePolicyByRef Cmdlet.
 
@@ -241,4 +240,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-v1.0)
+
 

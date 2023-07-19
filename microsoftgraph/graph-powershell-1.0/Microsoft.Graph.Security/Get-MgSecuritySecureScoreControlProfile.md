@@ -38,13 +38,12 @@ Get-MgSecuritySecureScoreControlProfile -InputObject <ISecurityIdentity> [-Expan
 Retrieve the properties and relationships of an securescorecontrolprofile object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecuritySecureScoreControlProfile -SecureScoreControlProfileId $secureScoreControlProfileId
-
 ```
 This example shows how to use the Get-MgSecuritySecureScoreControlProfile Cmdlet.
 
@@ -290,4 +289,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 

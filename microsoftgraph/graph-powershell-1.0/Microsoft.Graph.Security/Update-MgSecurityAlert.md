@@ -79,8 +79,8 @@ Update an editable **alert** property within any integrated solution to keep ale
 This method updates any solution that has a record of the referenced alert ID.
 
 ## EXAMPLES
-
 ### Example 1: Request without Prefer header
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -102,14 +102,13 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSecurityAlert Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Request with Prefer header
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -131,7 +130,6 @@ $params = @{
 }
 
 Update-MgSecurityAlert -AlertId $alertId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSecurityAlert Cmdlet.
 
@@ -1245,4 +1243,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityAlert?view=graph-powershell-beta)
+
 

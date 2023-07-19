@@ -69,8 +69,8 @@ Update-MgBetaOrganizationBranding -InputObject <IIdentityDirectoryManagementIden
 Update the properties of the default branding object specified by the organizationalBranding resource.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -80,7 +80,6 @@ $params = @{
 }
 
 Update-MgBetaOrganizationBranding -OrganizationId $organizationId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaOrganizationBranding Cmdlet.
 
@@ -942,4 +941,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBranding?view=graph-powershell-v1.0)
+
 

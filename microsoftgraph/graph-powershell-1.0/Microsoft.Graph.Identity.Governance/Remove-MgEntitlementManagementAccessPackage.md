@@ -33,13 +33,12 @@ Delete an accessPackage object.
 You cannot delete an access package if it has any **accessPackageAssignment**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId
-
 ```
 This example shows how to use the Remove-MgEntitlementManagementAccessPackage Cmdlet.
 
@@ -216,4 +215,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 

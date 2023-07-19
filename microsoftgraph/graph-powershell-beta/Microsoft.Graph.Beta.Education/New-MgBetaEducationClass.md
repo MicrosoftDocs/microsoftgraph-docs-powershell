@@ -48,8 +48,8 @@ Please note that this API only creates the universal group and does not create a
 Microsoft Teams provides a user interface for teachers to create teams for their own classes using the groups created by this API.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -73,7 +73,6 @@ $params = @{
 }
 
 New-MgBetaEducationClass -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClass Cmdlet.
 
@@ -24914,4 +24913,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClass](/powershell/module/Microsoft.Graph.Education/New-MgEducationClass?view=graph-powershell-v1.0)
+
 

@@ -47,7 +47,6 @@ New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -InputObject <IComplianceI
 Adds a siteSource to a legalHold object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -58,7 +57,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseLegalHoldSiteSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -9719,3 +9717,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+

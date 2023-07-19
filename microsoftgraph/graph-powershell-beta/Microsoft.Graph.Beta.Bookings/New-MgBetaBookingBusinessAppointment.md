@@ -65,7 +65,6 @@ New-MgBetaBookingBusinessAppointment -InputObject <IBookingsIdentity>
 Create a new bookingAppointment for the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaBookingBusinessAppointment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
@@ -215,7 +214,6 @@ $params = @{
 }
 New-MgBetaBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaBookingBusinessAppointment Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -1046,3 +1044,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusinessAppointment?view=graph-powershell-v1.0)
+

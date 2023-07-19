@@ -40,25 +40,23 @@ A collection of all the tabs in the channel.
 A navigation property.
 
 ## EXAMPLES
-
 ### Example 1: List all the tabs in the channel along with associated Teams app
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
-
 ```
 This example shows how to use the Get-MgBetaGroupTeamPrimaryChannelTab Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: List all the tabs belonging to a specific app in a channel
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
-
 ```
 This example shows how to use the Get-MgBetaGroupTeamPrimaryChannelTab Cmdlet.
 
@@ -324,4 +322,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+
 

@@ -48,7 +48,6 @@ Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaWindowsUpdatesUpdatableAssetMemberById Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -62,7 +61,6 @@ $params = @{
 }
 Add-MgBetaWindowsUpdatesUpdatableAssetMemberById -UpdatableAssetId $updatableAssetId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgBetaWindowsUpdatesUpdatableAssetMemberById Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -242,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgWindowsUpdatesUpdatableAssetMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesUpdatableAssetMemberById?view=graph-powershell-v1.0)
+

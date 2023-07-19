@@ -33,13 +33,11 @@ Get the status of a specific school data synchronization profile in the tenant.
 The response will indicate the status of the sync.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaEducationSynchronizationProfileStatus Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfileStatus -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-
 This example shows how to use the Get-MgBetaEducationSynchronizationProfileStatus Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -141,3 +139,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationSynchronizationProfileStatus](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfileStatus?view=graph-powershell-v1.0)
+

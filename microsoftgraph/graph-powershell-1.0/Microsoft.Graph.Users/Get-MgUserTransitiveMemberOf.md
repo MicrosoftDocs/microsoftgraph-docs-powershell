@@ -40,13 +40,12 @@ The groups, including nested groups, and directory roles that a user is a member
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserTransitiveMemberOf -UserId $userId
-
 ```
 This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
 
@@ -303,4 +302,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTransitiveMemberOf?view=graph-powershell-beta)
+
 

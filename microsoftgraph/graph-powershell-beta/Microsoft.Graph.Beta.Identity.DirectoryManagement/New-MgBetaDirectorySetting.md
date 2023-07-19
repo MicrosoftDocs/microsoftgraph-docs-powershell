@@ -37,7 +37,6 @@ Group settings apply to only Microsoft 365 groups.
 The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaDirectorySetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -64,7 +63,6 @@ $params = @{
 }
 New-MgBetaDirectorySetting -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaDirectorySetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -229,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySetting?view=graph-powershell-v1.0)
+

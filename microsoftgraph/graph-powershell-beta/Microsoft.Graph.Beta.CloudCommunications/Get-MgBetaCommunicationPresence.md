@@ -38,13 +38,12 @@ Get-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [-Ex
 Get a user's presence information.
 
 ## EXAMPLES
-
 ### Example 1: Get the presence information of another user
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationPresence -PresenceId $presenceId
-
 ```
 This example shows how to use the Get-MgBetaCommunicationPresence Cmdlet.
 
@@ -275,4 +274,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationPresence?view=graph-powershell-v1.0)
+
 

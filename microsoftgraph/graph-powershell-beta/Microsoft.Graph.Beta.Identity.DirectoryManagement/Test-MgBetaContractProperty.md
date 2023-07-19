@@ -48,11 +48,10 @@ If one or more properties fail multiple validations, only the property with the 
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
-```
 
 $params = @{
 	EntityType = "Group"
@@ -62,7 +61,7 @@ $params = @{
 }
 
 Test-MgBetaDirectoryObjectProperty -BodyParameter $params
-
+```
 This example shows how to use the Test-MgBetaContractProperty Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -234,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgContractProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgContractProperty?view=graph-powershell-v1.0)
+

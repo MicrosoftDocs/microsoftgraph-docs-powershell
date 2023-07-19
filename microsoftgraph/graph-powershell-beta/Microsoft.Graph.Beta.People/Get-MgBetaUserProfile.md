@@ -36,24 +36,20 @@ To get one of these navigation properties, use the corresponding GET method on t
 See the methods exposed by **profile**.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfile -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserProfile Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
-Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)"
+Get-MgBetaUserProfile -UserId $userId -ExpandProperty "names(`$select=first,last),skills(`$select=displayName)" 
 ```
-
 This example shows how to use the Get-MgBetaUserProfile Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -164,3 +160,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserProfile](/powershell/module/Microsoft.Graph.People/Get-MgUserProfile?view=graph-powershell-v1.0)
+

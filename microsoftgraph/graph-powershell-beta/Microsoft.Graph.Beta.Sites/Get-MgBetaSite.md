@@ -43,13 +43,12 @@ Get-MgBetaSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <Str
 Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSite -SiteId $siteId
-
 ```
 This example shows how to use the Get-MgBetaSite Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSite?view=graph-powershell-v1.0)
+
 

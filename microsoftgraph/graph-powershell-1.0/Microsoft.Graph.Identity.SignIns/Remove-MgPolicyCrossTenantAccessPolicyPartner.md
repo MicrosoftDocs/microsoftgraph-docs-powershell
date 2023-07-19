@@ -33,13 +33,12 @@ Delete a partner-specific configuration in a cross-tenant access policy.
 If a configuration includes a user synchronization policy, you must first delete the user synchronization policy before you can delete the partner-specific configuration.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
-
 ```
 This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
 
@@ -217,4 +216,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyCrossTenantAccessPolicyPartner](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyCrossTenantAccessPolicyPartner?view=graph-powershell-beta)
+
 

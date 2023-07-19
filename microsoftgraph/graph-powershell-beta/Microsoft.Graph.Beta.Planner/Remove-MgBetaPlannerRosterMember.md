@@ -31,13 +31,11 @@ Remove-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-IfMatch <Stri
 Delete a plannerRosterMember object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaPlannerRosterMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Remove-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
 ```
-
 This example shows how to use the Remove-MgBetaPlannerRosterMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -180,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerRosterMember?view=graph-powershell-v1.0)
+

@@ -37,7 +37,6 @@ New-MgBetaSearchBookmark -BodyParameter <IMicrosoftGraphSearchBookmark> [-WhatIf
 Create a new bookmark object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
@@ -71,7 +70,6 @@ $params = @{
 }
 New-MgBetaSearchBookmark -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaSearchBookmark Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -489,3 +487,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/New-MgSearchBookmark?view=graph-powershell-v1.0)
+

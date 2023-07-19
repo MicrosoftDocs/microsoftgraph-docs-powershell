@@ -52,13 +52,12 @@ Get-MgCommunicationOnlineMeeting
 Get onlineMeetings from communications
 
 ## EXAMPLES
-
 ### Example 1: Retrieve an online meeting by videoTeleconferenceId
+
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationOnlineMeeting -Filter "VideoTeleconferenceId eq '123456789'"
-
 ```
 This example shows how to use the Get-MgCommunicationOnlineMeeting Cmdlet.
 
@@ -485,4 +484,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationOnlineMeeting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationOnlineMeeting?view=graph-powershell-beta)
+
 

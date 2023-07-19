@@ -32,15 +32,14 @@ Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
 ## EXAMPLES
-
 ### Example 1: Get a user's manager
+
 ```powershell
 Get-MgBetaUserManager -UserId '0ec3a5e8-b4b6-4678-90ff-ce786055065f'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 e1428c8c-4219-4beb-b5cb-765c2590278b
-
 ```
 
 The commands gets the manager of the specified user.
@@ -153,4 +152,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManager](/powershell/module/Microsoft.Graph.Users/Get-MgUserManager?view=graph-powershell-v1.0)
+
 

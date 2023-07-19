@@ -38,13 +38,12 @@ Get-MgDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 Retrieve the properties of a **dataPolicyOperation** object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-
 ```
 This example shows how to use the Get-MgDataPolicyOperation Cmdlet.
 
@@ -312,4 +311,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDataPolicyOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDataPolicyOperation?view=graph-powershell-beta)
+
 

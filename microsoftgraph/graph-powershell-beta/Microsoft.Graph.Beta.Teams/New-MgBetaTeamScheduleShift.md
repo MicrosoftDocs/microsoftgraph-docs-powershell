@@ -49,8 +49,8 @@ Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -93,7 +93,6 @@ $params = @{
 }
 
 New-MgBetaTeamScheduleShift -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamScheduleShift Cmdlet.
 
@@ -463,4 +462,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleShift?view=graph-powershell-v1.0)
+
 

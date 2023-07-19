@@ -31,13 +31,12 @@ Remove-MgBetaGroupThread -InputObject <IGroupsIdentity> [-IfMatch <String>] [-Pa
 Delete conversationThread.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Remove-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
-
 ```
 This example shows how to use the Remove-MgBetaGroupThread Cmdlet.
 
@@ -219,4 +218,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupThread?view=graph-powershell-v1.0)
+
 

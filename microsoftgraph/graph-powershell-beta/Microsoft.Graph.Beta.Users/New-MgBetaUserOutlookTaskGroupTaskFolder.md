@@ -51,7 +51,6 @@ New-MgBetaUserOutlookTaskGroupTaskFolder -InputObject <IUsersIdentity>
 Create an Outlook task folder under a specified outlookTaskGroup.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
@@ -61,7 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserOutlookTaskGroupTaskFolder -UserId $userId -OutlookTaskGroupId $outlookTaskGroupId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserOutlookTaskGroupTaskFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -486,3 +484,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)
+

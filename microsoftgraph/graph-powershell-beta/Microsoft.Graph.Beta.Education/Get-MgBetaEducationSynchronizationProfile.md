@@ -38,22 +38,18 @@ Get-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Ex
 Retrieve a school data synchronization profile in the tenant based on the identifier.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-
 This example shows how to use the Get-MgBetaEducationSynchronizationProfile Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaEducationSynchronizationProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfile
 ```
-
 This example shows how to use the Get-MgBetaEducationSynchronizationProfile Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -276,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

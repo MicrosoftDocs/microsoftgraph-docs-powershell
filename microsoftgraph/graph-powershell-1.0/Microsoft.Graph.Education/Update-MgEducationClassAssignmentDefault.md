@@ -47,8 +47,8 @@ Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -58,7 +58,6 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgEducationClassAssignmentDefault Cmdlet.
 
@@ -279,4 +278,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignmentDefault?view=graph-powershell-beta)
+
 

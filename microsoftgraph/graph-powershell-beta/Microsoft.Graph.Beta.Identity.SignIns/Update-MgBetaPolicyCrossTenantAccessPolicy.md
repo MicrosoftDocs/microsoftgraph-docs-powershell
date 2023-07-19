@@ -34,8 +34,8 @@ Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter <IMicrosoftGraphCrossT
 Update the properties of a cross-tenant access policy.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -46,7 +46,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPolicyCrossTenantAccessPolicy Cmdlet.
 
@@ -401,4 +400,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-v1.0)
+
 

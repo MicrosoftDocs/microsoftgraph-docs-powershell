@@ -51,8 +51,8 @@ Update-MgBetaPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicros
 Update the properties of a **plannerPlan** object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 Update-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPlannerPlan Cmdlet.
 
@@ -820,4 +819,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlan?view=graph-powershell-v1.0)
+
 

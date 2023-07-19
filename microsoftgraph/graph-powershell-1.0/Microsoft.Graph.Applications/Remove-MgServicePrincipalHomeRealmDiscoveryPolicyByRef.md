@@ -32,13 +32,12 @@ Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicatio
 Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
-
 ```
 This example shows how to use the Remove-MgServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
 
@@ -211,4 +210,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-beta)
+
 

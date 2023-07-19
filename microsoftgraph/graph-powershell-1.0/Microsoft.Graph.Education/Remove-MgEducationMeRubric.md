@@ -33,13 +33,12 @@ Delete an educationRubric object.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Remove-MgEducationMeRubric -EducationRubricId $educationRubricId
-
 ```
 This example shows how to use the Remove-MgEducationMeRubric Cmdlet.
 
@@ -172,4 +171,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationMeRubric](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEducationMeRubric?view=graph-powershell-beta)
+
 

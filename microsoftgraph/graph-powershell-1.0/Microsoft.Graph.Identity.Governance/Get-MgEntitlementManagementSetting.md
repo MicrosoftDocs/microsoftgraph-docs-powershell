@@ -23,13 +23,12 @@ Get-MgEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <Stri
 Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementSetting
-
 ```
 This example shows how to use the Get-MgEntitlementManagementSetting Cmdlet.
 
@@ -82,4 +81,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementSetting?view=graph-powershell-beta)
+
 

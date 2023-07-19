@@ -32,13 +32,12 @@ Set-MgIdentityB2XUserFlowLanguageOverridePageContent -InputObject <IIdentitySign
 Update media content for the navigation property overridesPages in identity
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-
 ```
 This example shows how to use the Set-MgIdentityB2XUserFlowLanguageOverridePageContent Cmdlet.
 
@@ -264,4 +263,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaIdentityB2XUserFlowLanguageOverridePageContent](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaIdentityB2XUserFlowLanguageOverridePageContent?view=graph-powershell-beta)
+
 

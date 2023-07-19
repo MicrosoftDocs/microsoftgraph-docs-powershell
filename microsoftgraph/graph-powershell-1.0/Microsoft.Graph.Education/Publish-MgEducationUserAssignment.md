@@ -44,13 +44,12 @@ The state of the assignment goes back to `draft` if there is any backend failure
 To update the properties of a published **assignment**, see update an assignment.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
 ```
 This example shows how to use the Publish-MgEducationUserAssignment Cmdlet.
 
@@ -168,4 +167,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Publish-MgBetaEducationUserAssignment?view=graph-powershell-beta)
+
 

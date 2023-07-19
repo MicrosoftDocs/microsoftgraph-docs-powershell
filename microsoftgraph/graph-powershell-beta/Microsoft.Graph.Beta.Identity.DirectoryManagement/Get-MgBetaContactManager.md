@@ -31,13 +31,12 @@ Get-MgBetaContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-E
 Get the contact's manager
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaContactManager -OrgContactId $orgContactId
-
 ```
 This example shows how to use the Get-MgBetaContactManager Cmdlet.
 
@@ -170,4 +169,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContactManager](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactManager?view=graph-powershell-v1.0)
+
 

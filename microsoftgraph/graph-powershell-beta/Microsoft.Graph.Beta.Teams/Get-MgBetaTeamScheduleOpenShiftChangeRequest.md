@@ -38,13 +38,12 @@ Get-MgBetaTeamScheduleOpenShiftChangeRequest -InputObject <ITeamsIdentity> [-Exp
 Retrieve the properties and relationships of an openShiftChangeRequest object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamScheduleOpenShiftChangeRequest -TeamId $teamId -OpenShiftChangeRequestId $openShiftChangeRequestId
-
 ```
 This example shows how to use the Get-MgBetaTeamScheduleOpenShiftChangeRequest Cmdlet.
 
@@ -310,4 +309,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOpenShiftChangeRequest?view=graph-powershell-v1.0)
+
 

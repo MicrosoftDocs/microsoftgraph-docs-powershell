@@ -42,8 +42,8 @@ In Azure AD entitlement management, create a new accessPackageAssignmentPolicy o
 The request will include a reference to the accessPackage that will contain this policy, which must already exist.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -81,14 +81,13 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -207,14 +206,13 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -238,14 +236,13 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -333,7 +330,7 @@ $params = @{
 				}
 			)
 			isSingleLineQuestion = "false"
-			regexPattern = "[a-zA-Z]+[a-zA-Zs]*"
+			regexPattern = "[a-zA-Z]+[a-zA-Z\s]*"
 		}
 	)
 	accessPackage = @{
@@ -342,7 +339,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
@@ -9635,4 +9631,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+
 

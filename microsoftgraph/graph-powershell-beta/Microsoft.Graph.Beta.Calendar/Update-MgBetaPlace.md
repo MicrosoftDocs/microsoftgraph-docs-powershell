@@ -49,8 +49,8 @@ Update the properties of place object, which can be a room, workspace, or roomLi
 You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -64,7 +64,6 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPlace Cmdlet.
 
@@ -318,4 +317,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Update-MgPlace?view=graph-powershell-v1.0)
+
 

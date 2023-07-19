@@ -36,13 +36,12 @@ After a **completeMigration** request is made, you cannot import additional mess
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-
 ```
 This example shows how to use the Complete-MgTeamPrimaryChannelMigration Cmdlet.
 
@@ -181,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgBetaTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Beta.Applications/Complete-MgBetaTeamPrimaryChannelMigration?view=graph-powershell-beta)
+
 

@@ -38,22 +38,18 @@ Get-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity> [-ExpandProperty <
 Read the properties and relationships of a plannerRosterMember object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPlannerRosterMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -PlannerRosterMemberId $plannerRosterMemberId
 ```
-
 This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaPlannerRosterMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId
 ```
-
 This example shows how to use the Get-MgBetaPlannerRosterMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -286,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterMember?view=graph-powershell-v1.0)
+

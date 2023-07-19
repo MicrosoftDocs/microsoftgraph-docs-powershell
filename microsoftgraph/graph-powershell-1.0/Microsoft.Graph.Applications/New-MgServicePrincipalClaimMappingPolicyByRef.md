@@ -43,8 +43,8 @@ New-MgServicePrincipalClaimMappingPolicyByRef -InputObject <IApplicationsIdentit
 Assign a claimsMappingPolicy to a servicePrincipal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgServicePrincipalClaimMappingPolicyByRef Cmdlet.
 
@@ -233,4 +232,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
+
 

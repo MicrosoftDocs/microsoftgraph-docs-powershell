@@ -39,14 +39,12 @@ Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommun
 Get a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrationQuestionId $meetingRegistrationQuestionId
 ```
-
 This example shows how to use the Get-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -304,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
+

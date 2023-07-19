@@ -37,13 +37,12 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
 Get-MgBetaSubscription -SubscriptionId $subscriptionId
-
 ```
 This example shows how to use the Get-MgBetaSubscription Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/Get-MgSubscription?view=graph-powershell-v1.0)
+
 

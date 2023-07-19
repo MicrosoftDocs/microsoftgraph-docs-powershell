@@ -31,13 +31,11 @@ Reset the unseenCount of all the posts that the current user has not seen since 
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Reset-MgGroupUnseenCount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 Reset-MgGroupUnseenCount -GroupId $groupId
 ```
-
 This example shows how to use the Reset-MgGroupUnseenCount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -177,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgBetaGroupUnseenCount](/powershell/module/Microsoft.Graph.Beta.Applications/Reset-MgBetaGroupUnseenCount?view=graph-powershell-beta)
+

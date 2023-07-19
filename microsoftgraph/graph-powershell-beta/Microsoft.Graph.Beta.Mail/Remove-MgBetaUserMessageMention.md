@@ -33,14 +33,12 @@ Delete a message in the specified user's mailbox, or delete a relationship of th
 For example, you can delete a specific @-mention of the specified user in the message.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserMessageMention Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserMessageMention -UserId $userId -MessageId $messageId -MentionId $mentionId
 ```
-
 This example shows how to use the Remove-MgBetaUserMessageMention Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -200,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserMessageMention](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMessageMention?view=graph-powershell-v1.0)
+

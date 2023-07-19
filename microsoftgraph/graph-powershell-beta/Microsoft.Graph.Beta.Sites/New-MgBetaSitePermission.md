@@ -54,8 +54,8 @@ New-MgBetaSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 Create a new permission object on a site.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -74,7 +74,6 @@ $params = @{
 }
 
 New-MgBetaSitePermission -SiteId $siteId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSitePermission Cmdlet.
 
@@ -606,4 +605,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/New-MgSitePermission?view=graph-powershell-v1.0)
+
 

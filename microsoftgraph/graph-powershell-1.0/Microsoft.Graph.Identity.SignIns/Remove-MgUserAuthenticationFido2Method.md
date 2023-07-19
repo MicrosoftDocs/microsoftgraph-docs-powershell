@@ -31,13 +31,12 @@ Remove-MgUserAuthenticationFido2Method -InputObject <IIdentitySignInsIdentity> [
 Deletes a user's FIDO2 Security Key Authentication Method object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgUserAuthenticationFido2Method -UserId $userId -Fido2AuthenticationMethodId $fido2AuthenticationMethodId
-
 ```
 This example shows how to use the Remove-MgUserAuthenticationFido2Method Cmdlet.
 
@@ -230,4 +229,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserAuthenticationFido2Method](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationFido2Method?view=graph-powershell-beta)
+
 

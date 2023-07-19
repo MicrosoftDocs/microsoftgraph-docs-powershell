@@ -32,7 +32,6 @@ New-MgBetaPrivilegedRoleAssignment -BodyParameter <IMicrosoftGraphPrivilegedRole
 Add new entity to privilegedRoleAssignments
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaPrivilegedRoleAssignment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -42,7 +41,6 @@ $params = @{
 }
 New-MgBetaPrivilegedRoleAssignment -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaPrivilegedRoleAssignment Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -306,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrivilegedRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignment?view=graph-powershell-v1.0)
+

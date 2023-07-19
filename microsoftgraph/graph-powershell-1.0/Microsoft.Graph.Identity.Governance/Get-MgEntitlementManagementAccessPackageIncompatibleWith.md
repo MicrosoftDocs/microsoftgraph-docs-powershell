@@ -40,13 +40,12 @@ The access packages that are incompatible with this package.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageIncompatibleWith -AccessPackageId $accessPackageId
-
 ```
 This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleWith Cmdlet.
 
@@ -328,4 +327,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackageIncompatibleWith?view=graph-powershell-beta)
+
 

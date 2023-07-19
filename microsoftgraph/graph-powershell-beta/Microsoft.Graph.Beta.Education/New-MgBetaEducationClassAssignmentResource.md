@@ -49,30 +49,16 @@ Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
 ## EXAMPLES
-
 ### Example 1: Create an educationLinkResource
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
 	distributeForStudentWork = $false
 	resource = @{
-		displayName = "Where the Wonders of Learning Never Cease | Wonderopolis"
-		link = "https://wonderopolis.org/"
-		thumbnailPreviewUrl = $null
-		"@odata.type" = "#microsoft.graph.educationLinkResource"
-	}
-}
+		displayName = "Where the Wonders of Learning Never Cease ### Example 1: Create an educationLinkResource### Example 2: Create an educationWordResource
 
-New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
-```
-This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-
-### Example 2: Create an educationWordResource
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -86,14 +72,13 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Create an educationFileResource
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -106,14 +91,13 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Create an educationExcelResource
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -127,14 +111,13 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 5: Create an educationPowerPointResource
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -148,14 +131,13 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 6: Create an educationMediaResource
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -169,14 +151,13 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 7: Create an educationTeamsAppResource
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -193,7 +174,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentResource Cmdlet.
 
@@ -424,4 +404,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentResource?view=graph-powershell-v1.0)
+
 

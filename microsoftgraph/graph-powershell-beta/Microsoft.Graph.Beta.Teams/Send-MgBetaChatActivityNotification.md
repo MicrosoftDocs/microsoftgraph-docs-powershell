@@ -51,7 +51,6 @@ Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
-
 ### Example 1: Using the Send-MgBetaChatActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -77,10 +76,8 @@ $params = @{
 }
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaChatActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Send-MgBetaChatActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -106,10 +103,8 @@ $params = @{
 }
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaChatActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Send-MgBetaChatActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -136,10 +131,8 @@ $params = @{
 }
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaChatActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Send-MgBetaChatActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -165,10 +158,8 @@ $params = @{
 }
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaChatActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 5: Using the Send-MgBetaChatActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -194,7 +185,6 @@ $params = @{
 }
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaChatActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -496,3 +486,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgChatActivityNotification](/powershell/module/Microsoft.Graph.Teams/Send-MgChatActivityNotification?view=graph-powershell-v1.0)
+

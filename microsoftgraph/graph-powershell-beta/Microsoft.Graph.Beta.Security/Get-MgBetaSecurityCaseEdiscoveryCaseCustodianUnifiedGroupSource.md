@@ -40,13 +40,11 @@ Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IS
 Data source entity for groups associated with the custodian.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -356,3 +354,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+

@@ -35,7 +35,6 @@ The ID of the **trustFrameworkKeySet** is expected in the create request; howeve
 The modified ID will be available in the response and in the location header.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -66,10 +65,8 @@ $params = @{
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaTrustFrameworkKeySet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -78,7 +75,6 @@ $params = @{
 }
 New-MgBetaTrustFrameworkKeySet -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaTrustFrameworkKeySet Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -237,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
+

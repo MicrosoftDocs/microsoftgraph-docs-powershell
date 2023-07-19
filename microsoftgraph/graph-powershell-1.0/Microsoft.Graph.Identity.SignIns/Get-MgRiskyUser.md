@@ -37,13 +37,12 @@ Get-MgRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String
 Read the properties and relationships of a riskyUser object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskyUser -RiskyUserId $riskyUserId
-
 ```
 This example shows how to use the Get-MgRiskyUser Cmdlet.
 
@@ -311,4 +310,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRiskyUser?view=graph-powershell-beta)
+
 

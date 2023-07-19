@@ -31,13 +31,12 @@ Remove-MgBetaTeamTagMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 Delete a member from a standard tag in a team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamTagMember -TeamId $teamId -TeamworkTagId $teamworkTagId -TeamworkTagMemberId $teamworkTagMemberId
-
 ```
 This example shows how to use the Remove-MgBetaTeamTagMember Cmdlet.
 
@@ -228,4 +227,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamTagMember?view=graph-powershell-v1.0)
+
 

@@ -46,14 +46,12 @@ This server-side filtering might result in empty pages if the user is particular
 To get your application's activities, use the **nextLink** property to paginate.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgRecentUserActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.
 Invoke-MgRecentUserActivity -UserId $userId
 ```
-
 This example shows how to use the Invoke-MgRecentUserActivity Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -243,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaRecentUserActivity](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaRecentUserActivity?view=graph-powershell-beta)
+

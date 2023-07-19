@@ -43,13 +43,13 @@ Remove-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <
 Delete calendarPermission.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
-Remove-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId
-
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserEvent -UserId $userId -EventId $eventId
 ```
 This example shows how to use the Remove-MgBetaUserEvent Cmdlet.
 
@@ -213,4 +213,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgUserEvent?view=graph-powershell-v1.0)
+
 

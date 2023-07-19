@@ -45,7 +45,6 @@ Grant-MgSharePermission -InputObject <IFilesIdentity>
 Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
-
 ### Example 1: Using the Grant-MgSharePermission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Files
@@ -64,7 +63,6 @@ $params = @{
 }
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
 ```
-
 This example shows how to use the Grant-MgSharePermission Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -254,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Grant-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Grant-MgBetaSharePermission?view=graph-powershell-beta)
+

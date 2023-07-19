@@ -51,7 +51,6 @@ Update-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <I
 Update the properties of an itemAddress object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileAddress Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -61,7 +60,6 @@ $params = @{
 }
 Update-MgBetaUserProfileAddress -UserId $userId -ItemAddressId $itemAddressId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileAddress Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -489,3 +487,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileAddress?view=graph-powershell-v1.0)
+

@@ -31,13 +31,11 @@ Remove-MgBetaPolicyMobileAppManagementPolicy -InputObject <IIdentitySignInsIdent
 Delete a mobilityManagementPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaPolicyMobileAppManagementPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaPolicyMobileAppManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId
 ```
-
 This example shows how to use the Remove-MgBetaPolicyMobileAppManagementPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -231,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyMobileAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyMobileAppManagementPolicy?view=graph-powershell-v1.0)
+

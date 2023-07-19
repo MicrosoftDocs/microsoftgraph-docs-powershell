@@ -25,13 +25,11 @@ Get-MgEducationSchoolUser -EducationSchoolId <String> [-ExpandProperty <String[]
 Get the educationUser resources associated with an educationSchool.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgEducationSchoolUser Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationSchoolUser -EducationSchoolId $educationSchoolId
 ```
-
 This example shows how to use the Get-MgEducationSchoolUser Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -217,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
+

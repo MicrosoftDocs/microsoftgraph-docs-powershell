@@ -49,13 +49,12 @@ New-MgIdentityGovernanceAppConsentRequestUserConsentRequest -InputObject <IIdent
 Create new navigation property to userConsentRequests for identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAppConsentRequestUserConsentRequest -AppConsentRequestId $appConsentRequestId
-
 ```
 This example shows how to use the New-MgIdentityGovernanceAppConsentRequestUserConsentRequest Cmdlet.
 
@@ -435,4 +434,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequest?view=graph-powershell-beta)
+
 

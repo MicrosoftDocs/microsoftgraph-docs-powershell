@@ -49,8 +49,8 @@ Update-MgGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGr
 Update conversation thread
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -63,7 +63,6 @@ $params = @{
 }
 
 Update-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgGroupThread Cmdlet.
 
@@ -504,4 +503,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThread?view=graph-powershell-beta)
+
 

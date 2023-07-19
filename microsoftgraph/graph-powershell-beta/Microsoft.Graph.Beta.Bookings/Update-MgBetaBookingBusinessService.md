@@ -59,7 +59,6 @@ Update the properties of a bookingService object in the specified bookingBusines
 The following are some examples you can customize for a service:n- Pricen- Typical length of an appointmentn- Remindersn- Any time buffer to set up before or finish up after the servicen- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaBookingBusinessService Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
@@ -69,7 +68,6 @@ $params = @{
 }
 Update-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaBookingBusinessService Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -655,3 +653,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-v1.0)
+

@@ -83,13 +83,12 @@ New-MgSiteTermStoreGroupSet -InputObject <ISitesIdentity> -BodyParameter <IMicro
 Create new navigation property to sets for sites
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreGroupSet -SiteId $siteId -GroupId $groupId
-
 ```
 This example shows how to use the New-MgSiteTermStoreGroupSet Cmdlet.
 
@@ -651,4 +650,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteTermStoreGroupSet?view=graph-powershell-beta)
+
 

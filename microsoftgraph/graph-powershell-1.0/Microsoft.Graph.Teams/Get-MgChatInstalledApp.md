@@ -38,13 +38,12 @@ Get-MgChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 Get an app installed in a chat.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
-
 ```
 This example shows how to use the Get-MgChatInstalledApp Cmdlet.
 
@@ -303,4 +302,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaChatInstalledApp?view=graph-powershell-beta)
+
 

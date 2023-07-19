@@ -49,7 +49,6 @@ Note that by making a `POST` call to the `getMailTips` action, you can request s
 The requested MailTips are returned in a mailTips collection.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgUserMailTip Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -63,7 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgUserMailTip -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgUserMailTip Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -249,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMailTip](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMailTip?view=graph-powershell-beta)
+

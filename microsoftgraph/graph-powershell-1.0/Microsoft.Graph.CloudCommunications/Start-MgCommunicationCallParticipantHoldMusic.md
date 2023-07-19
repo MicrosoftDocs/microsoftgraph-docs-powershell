@@ -47,7 +47,6 @@ Start-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunications
 Put a participant on hold and play music in the background.
 
 ## EXAMPLES
-
 ### Example 1: Using the Start-MgCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -63,7 +62,6 @@ $params = @{
 }
 Start-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
-
 This example shows how to use the Start-MgCommunicationCallParticipantHoldMusic Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -248,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.Applications/Start-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+

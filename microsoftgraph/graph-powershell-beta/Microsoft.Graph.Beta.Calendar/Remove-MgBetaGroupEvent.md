@@ -31,13 +31,12 @@ Remove-MgBetaGroupEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-P
 Delete an event object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Remove-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
-
 ```
 This example shows how to use the Remove-MgBetaGroupEvent Cmdlet.
 
@@ -186,4 +185,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Remove-MgGroupEvent?view=graph-powershell-v1.0)
+
 

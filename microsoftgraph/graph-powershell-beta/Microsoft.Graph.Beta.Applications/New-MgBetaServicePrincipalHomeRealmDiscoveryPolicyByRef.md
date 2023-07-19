@@ -43,8 +43,8 @@ New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicati
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
 
@@ -241,4 +240,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-v1.0)
+
 

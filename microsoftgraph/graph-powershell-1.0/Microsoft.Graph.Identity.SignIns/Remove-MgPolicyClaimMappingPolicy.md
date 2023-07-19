@@ -31,13 +31,12 @@ Remove-MgPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-IfMa
 Delete a claimsMappingPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId
-
 ```
 This example shows how to use the Remove-MgPolicyClaimMappingPolicy Cmdlet.
 
@@ -215,4 +214,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyClaimMappingPolicy?view=graph-powershell-beta)
+
 

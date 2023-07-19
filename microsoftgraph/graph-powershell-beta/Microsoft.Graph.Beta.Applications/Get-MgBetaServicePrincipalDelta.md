@@ -24,13 +24,11 @@ Get-MgBetaServicePrincipalDelta [-Filter <String>] [-Property <String[]>] [-Sear
 Invoke function delta
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaServicePrincipalDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalDelta
 ```
-
 This example shows how to use the Get-MgBetaServicePrincipalDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalDelta?view=graph-powershell-v1.0)
+

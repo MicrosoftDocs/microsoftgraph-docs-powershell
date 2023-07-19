@@ -40,13 +40,11 @@ Lists the content that you can approve for deployment.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaWindowsUpdatesCatalogEntry Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesCatalogEntry
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesCatalogEntry Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -264,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesCatalogEntry](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesCatalogEntry?view=graph-powershell-v1.0)
+

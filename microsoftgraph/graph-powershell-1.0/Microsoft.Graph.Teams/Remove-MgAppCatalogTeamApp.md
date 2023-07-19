@@ -31,13 +31,12 @@ Remove-MgAppCatalogTeamApp -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 Delete teamsApp
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgAppCatalogTeamApp -TeamsAppId $teamsAppId
-
 ```
 This example shows how to use the Remove-MgAppCatalogTeamApp Cmdlet.
 
@@ -191,4 +190,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
+
 

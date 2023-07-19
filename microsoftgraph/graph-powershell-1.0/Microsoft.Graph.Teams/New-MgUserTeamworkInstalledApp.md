@@ -47,8 +47,8 @@ New-MgUserTeamworkInstalledApp -InputObject <ITeamsIdentity>
 Install an app in the personal scope of the specified user.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgUserTeamworkInstalledApp -UserId $userId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgUserTeamworkInstalledApp Cmdlet.
 
@@ -707,4 +706,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserTeamworkInstalledApp?view=graph-powershell-beta)
+
 

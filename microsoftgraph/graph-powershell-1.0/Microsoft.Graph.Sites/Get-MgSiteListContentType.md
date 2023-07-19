@@ -38,13 +38,12 @@ Get-MgSiteListContentType -InputObject <ISitesIdentity> [-ExpandProperty <String
 The collection of content types present in this list.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteListContentType -SiteId $siteId -ListId $listId
-
 ```
 This example shows how to use the Get-MgSiteListContentType Cmdlet.
 
@@ -325,4 +324,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteListContentType?view=graph-powershell-beta)
+
 

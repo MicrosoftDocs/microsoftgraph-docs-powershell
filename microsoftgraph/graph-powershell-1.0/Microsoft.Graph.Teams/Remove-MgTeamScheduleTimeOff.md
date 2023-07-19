@@ -31,13 +31,12 @@ Remove-MgTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-IfMatch <String>] [
 Delete a timeOff instance from a schedule.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamScheduleTimeOff -TeamId $teamId -TimeOffId $timeOffId
-
 ```
 This example shows how to use the Remove-MgTeamScheduleTimeOff Cmdlet.
 
@@ -206,4 +205,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
+
 

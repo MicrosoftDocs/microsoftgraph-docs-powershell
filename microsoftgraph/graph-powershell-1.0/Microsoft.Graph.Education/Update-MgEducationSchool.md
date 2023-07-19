@@ -53,19 +53,17 @@ Update-MgEducationSchool -InputObject <IEducationIdentity> -BodyParameter <IMicr
 Update the properties of an educationSchool object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 $params = @{
 	displayName = "Fabrikam Arts High School"
-	description = "Magnate school for the arts.
-Los Angeles School District"
+	description = "Magnate school for the arts. Los Angeles School District"
 }
 
 Update-MgEducationSchool -EducationSchoolId $educationSchoolId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgEducationSchool Cmdlet.
 
@@ -9664,4 +9662,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationSchool?view=graph-powershell-beta)
+
 

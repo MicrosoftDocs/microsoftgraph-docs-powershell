@@ -47,7 +47,6 @@ New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject 
 Create new navigation property to additionalSources for compliance
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -56,10 +55,8 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -69,10 +66,8 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -81,7 +76,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -337,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource?view=graph-powershell-v1.0)
+

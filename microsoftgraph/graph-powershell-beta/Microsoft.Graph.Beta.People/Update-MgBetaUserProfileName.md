@@ -55,7 +55,6 @@ Update-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMic
 Update the properties of a personName object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileName Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -65,7 +64,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileName -UserId $userId -PersonNameId $personNameId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileName Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -606,3 +604,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileName](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileName?view=graph-powershell-v1.0)
+

@@ -39,13 +39,11 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -InputObject 
 Adds an additional source to the sourceCollection.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-
 This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAdditionalSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -302,3 +300,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionAdditionalSource?view=graph-powershell-v1.0)
+

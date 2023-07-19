@@ -39,31 +39,25 @@ Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecuri
 Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"  -OutFile $outFileId
 ```
-
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource"
+Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource" 
 ```
-
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
-Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"
+Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource" 
 ```
-
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -358,3 +352,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-v1.0)
+

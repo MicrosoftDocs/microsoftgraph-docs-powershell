@@ -51,7 +51,6 @@ Update-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Update the properties of an itemEmail object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileEmail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -61,7 +60,6 @@ $params = @{
 }
 Update-MgBetaUserProfileEmail -UserId $userId -ItemEmailId $itemEmailId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileEmail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -459,3 +457,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileEmail?view=graph-powershell-v1.0)
+

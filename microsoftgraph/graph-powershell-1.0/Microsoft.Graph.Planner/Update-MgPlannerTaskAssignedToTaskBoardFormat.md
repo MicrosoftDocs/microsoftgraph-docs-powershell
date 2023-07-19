@@ -45,8 +45,8 @@ Update-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> -I
 Update the navigation property assignedToTaskBoardFormat in planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Update-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
 
@@ -256,4 +255,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+
 

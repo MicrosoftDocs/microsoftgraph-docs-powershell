@@ -49,13 +49,12 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in subscribedSkus
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgSubscribedSku -SubscribedSkuId $subscribedSkuId
-
 ```
 This example shows how to use the Update-MgSubscribedSku Cmdlet.
 
@@ -408,4 +407,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSubscribedSku?view=graph-powershell-beta)
+
 

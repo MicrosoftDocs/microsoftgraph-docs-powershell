@@ -41,40 +41,32 @@ Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
-
 This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
-
 This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
-
 This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId
 ```
-
 This example shows how to use the Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -339,3 +331,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-beta)
+

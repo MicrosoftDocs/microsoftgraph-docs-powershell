@@ -52,13 +52,12 @@ A collection of all the pinned messages in the chat.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaChatPinnedMessage -ChatId $chatId -PinnedChatMessageInfoId $pinnedChatMessageInfoId
-
 ```
 This example shows how to use the Get-MgBetaBetaChatPinnedMessage Cmdlet.
 
@@ -325,4 +324,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatPinnedMessage](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPinnedMessage?view=graph-powershell-v1.0)
+
 

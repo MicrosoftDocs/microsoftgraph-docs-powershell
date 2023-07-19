@@ -43,13 +43,12 @@ Update-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> -BodyP
 Update the navigation property bot in appCatalogs
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
 ```
 This example shows how to use the Update-MgBetaBetaAppCatalogTeamAppDefinitionBot Cmdlet.
 
@@ -242,4 +241,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Update-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-v1.0)
+
 

@@ -33,13 +33,12 @@ Delete or hang up an active call.
 For group calls, this will only delete your call leg and the underlying group call will still continue.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
 Remove-MgCommunicationCall -CallId $callId
-
 ```
 This example shows how to use the Remove-MgCommunicationCall Cmdlet.
 
@@ -174,4 +173,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaCommunicationCall](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaCommunicationCall?view=graph-powershell-beta)
+
 

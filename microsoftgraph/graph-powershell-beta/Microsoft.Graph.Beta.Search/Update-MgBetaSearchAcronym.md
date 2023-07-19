@@ -47,7 +47,6 @@ Update-MgBetaSearchAcronym -InputObject <ISearchIdentity> -BodyParameter <IMicro
 Update the properties of an acronym object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaSearchAcronym Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
@@ -56,7 +55,6 @@ $params = @{
 }
 Update-MgBetaSearchAcronym -AcronymId $acronymId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaSearchAcronym Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -347,3 +345,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Update-MgSearchAcronym?view=graph-powershell-v1.0)
+

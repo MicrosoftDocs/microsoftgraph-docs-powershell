@@ -65,8 +65,8 @@ When using Graph Explorer to update a **schemaExtension** resource, include the 
 For more information, see the Extensions section in Known issues with Microsoft Graph.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -93,7 +93,6 @@ $params = @{
 }
 
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSchemaExtension Cmdlet.
 
@@ -339,4 +338,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 

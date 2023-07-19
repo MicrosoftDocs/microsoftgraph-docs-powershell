@@ -24,13 +24,11 @@ Get-MgBetaApplicationDelta [-Filter <String>] [-Property <String[]>] [-Search <S
 Invoke function delta
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaApplicationDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaApplicationDelta
 ```
-
 This example shows how to use the Get-MgBetaApplicationDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgApplicationDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationDelta?view=graph-powershell-v1.0)
+

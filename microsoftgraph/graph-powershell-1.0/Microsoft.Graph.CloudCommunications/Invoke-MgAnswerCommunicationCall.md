@@ -57,7 +57,6 @@ The bot is expected to answer, reject, or redirect the call before the call time
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -73,10 +72,8 @@ $params = @{
 }
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Invoke-MgAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -93,10 +90,8 @@ $params = @{
 }
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Invoke-MgAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -113,7 +108,6 @@ $params = @{
 }
 Invoke-MgAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgAnswerCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -349,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaAnswerCommunicationCall](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaAnswerCommunicationCall?view=graph-powershell-beta)
+

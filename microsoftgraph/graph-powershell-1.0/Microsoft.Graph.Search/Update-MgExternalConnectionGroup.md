@@ -45,8 +45,8 @@ Update-MgExternalConnectionGroup -InputObject <ISearchIdentity>
 Update the properties of an externalGroup object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
@@ -56,7 +56,6 @@ $params = @{
 }
 
 Update-MgExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgExternalConnectionGroup Cmdlet.
 
@@ -280,4 +279,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaExternalConnectionGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaExternalConnectionGroup?view=graph-powershell-beta)
+
 

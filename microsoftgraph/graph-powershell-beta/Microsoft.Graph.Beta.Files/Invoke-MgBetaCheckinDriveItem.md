@@ -45,7 +45,6 @@ Invoke-MgBetaCheckinDriveItem -InputObject <IFilesIdentity>
 Check in a checked out **driveItem** resource, which makes the version of the document available to others.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaCheckinDriveItem Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
@@ -54,7 +53,6 @@ $params = @{
 }
 Invoke-MgBetaCheckinDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaCheckinDriveItem Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -286,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgCheckinDriveItem](/powershell/module/Microsoft.Graph.Files/Invoke-MgCheckinDriveItem?view=graph-powershell-v1.0)
+

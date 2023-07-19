@@ -25,13 +25,12 @@ Get-MgBetaEducationSchoolUserByRef -EducationSchoolId <String> [-Filter <String>
 Retrieve a list of users at a school.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationSchoolUser -EducationSchoolId $educationSchoolId
-
 ```
 This example shows how to use the Get-MgBetaEducationSchoolUserByRef Cmdlet.
 
@@ -190,4 +189,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-v1.0)
+
 

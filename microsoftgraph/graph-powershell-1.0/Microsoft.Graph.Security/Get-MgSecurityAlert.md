@@ -37,13 +37,12 @@ Get-MgSecurityAlert -InputObject <ISecurityIdentity> [-ExpandProperty <String[]>
 Retrieve the properties and relationships of an alert object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAlert -AlertId $alertId
-
 ```
 This example shows how to use the Get-MgSecurityAlert Cmdlet.
 
@@ -289,4 +288,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAlert](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityAlert?view=graph-powershell-beta)
+
 

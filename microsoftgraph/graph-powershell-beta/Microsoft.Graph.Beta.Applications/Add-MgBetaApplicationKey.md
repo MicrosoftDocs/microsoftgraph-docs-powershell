@@ -55,7 +55,6 @@ Applications that don't have any existing valid certificates (no certificates ha
 You can use the Update application operation to perform an update instead.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -70,10 +69,8 @@ $params = @{
 }
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgBetaApplicationKey Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Add-MgBetaApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -90,7 +87,6 @@ $params = @{
 }
 Add-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgBetaApplicationKey Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -331,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationKey?view=graph-powershell-v1.0)
+

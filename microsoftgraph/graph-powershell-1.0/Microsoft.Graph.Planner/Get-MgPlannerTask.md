@@ -38,13 +38,12 @@ Get-MgPlannerTask -InputObject <IPlannerIdentity> [-ExpandProperty <String[]>] [
 Retrieve the properties and relationships of plannerTask object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
 Get-MgPlannerTask -PlannerTaskId $plannerTaskId
-
 ```
 This example shows how to use the Get-MgPlannerTask Cmdlet.
 
@@ -262,4 +261,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPlannerTask?view=graph-powershell-beta)
+
 

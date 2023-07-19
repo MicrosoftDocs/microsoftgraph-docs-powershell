@@ -44,13 +44,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDeviceMemberOf -DeviceId $deviceId
-
 ```
 This example shows how to use the Get-MgDeviceMemberOf Cmdlet.
 
@@ -315,4 +314,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceMemberOf](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceMemberOf?view=graph-powershell-beta)
+
 

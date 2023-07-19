@@ -31,13 +31,12 @@ Remove-MgBetaGroupTeamSchedule -InputObject <ITeamsIdentity> [-IfMatch <String>]
 Delete navigation property schedule for groups
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamSchedule -TeamId $teamId
-
 ```
 This example shows how to use the Remove-MgBetaBetaGroupTeamSchedule Cmdlet.
 
@@ -198,4 +197,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamSchedule?view=graph-powershell-v1.0)
+
 

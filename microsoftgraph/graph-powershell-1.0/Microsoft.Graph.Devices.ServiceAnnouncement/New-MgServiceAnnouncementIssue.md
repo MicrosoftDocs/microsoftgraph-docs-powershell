@@ -35,13 +35,12 @@ New-MgServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthIssue
 Create new navigation property to issues for admin
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementIssue
-
 ```
 This example shows how to use the New-MgServiceAnnouncementIssue Cmdlet.
 
@@ -399,4 +398,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+
 

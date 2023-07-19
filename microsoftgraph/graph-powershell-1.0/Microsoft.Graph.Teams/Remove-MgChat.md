@@ -30,8 +30,8 @@ Remove-MgChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] [-Wh
 Delete entity from chats
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -40,7 +40,6 @@ $params = @{
 }
 
 Update-MgChat -ChatId $chatId -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgChat Cmdlet.
 
@@ -194,4 +193,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaChat?view=graph-powershell-beta)
+
 

@@ -47,8 +47,8 @@ New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityIdent
 Create a new siteSource object associated with an eDiscovery custodian.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
 
@@ -6043,4 +6042,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-beta)
+
 

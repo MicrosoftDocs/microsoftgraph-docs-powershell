@@ -31,13 +31,11 @@ Get-MgBetaDriveItemAnalytic -InputObject <IFilesIdentity> [-ExpandProperty <Stri
 Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaDriveItemAnalytic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaDriveItemAnalytic -DriveId $driveId -DriveItemId $driveItemId
 ```
-
 This example shows how to use the Get-MgBetaDriveItemAnalytic Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -165,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemAnalytic](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemAnalytic?view=graph-powershell-v1.0)
+

@@ -31,13 +31,12 @@ Remove-MgDirectoryFederationConfiguration -InputObject <IIdentityDirectoryManage
 Delete a samlOrWsFedExternalDomainFederation object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryFederationConfiguration -IdentityProviderBaseId $identityProviderBaseId
-
 ```
 This example shows how to use the Remove-MgDirectoryFederationConfiguration Cmdlet.
 
@@ -181,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryFederationConfiguration](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDirectoryFederationConfiguration?view=graph-powershell-beta)
+
 

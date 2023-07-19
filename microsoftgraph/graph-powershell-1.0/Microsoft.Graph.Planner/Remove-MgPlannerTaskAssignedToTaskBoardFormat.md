@@ -31,8 +31,8 @@ Remove-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-
 Delete navigation property assignedToTaskBoardFormat for planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -43,7 +43,6 @@ $params = @{
 }
 
 Update-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Remove-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
 
@@ -171,4 +170,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+
 

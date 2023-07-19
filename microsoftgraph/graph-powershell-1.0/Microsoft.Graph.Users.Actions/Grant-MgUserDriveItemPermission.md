@@ -46,11 +46,10 @@ Grant-MgUserDriveItemPermission -InputObject <IUsersActionsIdentity>
 Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	Recipients = @(
@@ -67,7 +66,7 @@ $params = @{
 }
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
-
+```
 This example shows how to use the Grant-MgUserDriveItemPermission Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -309,3 +308,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Grant-MgBetaUserDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Applications/Grant-MgBetaUserDriveItemPermission?view=graph-powershell-beta)
+

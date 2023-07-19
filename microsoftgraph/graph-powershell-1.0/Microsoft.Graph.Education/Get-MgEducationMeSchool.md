@@ -40,13 +40,12 @@ Schools to which the user belongs.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeSchool
-
 ```
 This example shows how to use the Get-MgEducationMeSchool Cmdlet.
 
@@ -269,4 +268,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeSchool?view=graph-powershell-beta)
+
 

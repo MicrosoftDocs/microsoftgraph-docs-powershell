@@ -45,7 +45,6 @@ Stop-MgCommunicationCallParticipantHoldMusic -InputObject <ICloudCommunicationsI
 Reincorporate a participant previously put on hold to the call.
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -54,7 +53,6 @@ $params = @{
 }
 Stop-MgCommunicationCallParticipantHoldMusic -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
-
 This example shows how to use the Stop-MgCommunicationCallParticipantHoldMusic Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -222,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgBetaCommunicationCallParticipantHoldMusic](/powershell/module/Microsoft.Graph.Beta.Applications/Stop-MgBetaCommunicationCallParticipantHoldMusic?view=graph-powershell-beta)
+

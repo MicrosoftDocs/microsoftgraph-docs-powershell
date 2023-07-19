@@ -38,22 +38,18 @@ Get-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentit
 Retrieve the properties and relationships of a connector object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorId $connectorId
 ```
-
 This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId $onPremisesPublishingProfileId
 ```
-
 This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnector Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -306,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfileConnector](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnector?view=graph-powershell-v1.0)
+

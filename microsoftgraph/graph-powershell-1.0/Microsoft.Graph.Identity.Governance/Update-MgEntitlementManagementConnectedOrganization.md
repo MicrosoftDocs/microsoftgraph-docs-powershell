@@ -49,8 +49,8 @@ Update-MgEntitlementManagementConnectedOrganization -InputObject <IIdentityGover
 Update a connectedOrganization object to change one or more of its properties.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 Update-MgEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgEntitlementManagementConnectedOrganization Cmdlet.
 
@@ -406,4 +405,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEntitlementManagementConnectedOrganization?view=graph-powershell-beta)
+
 

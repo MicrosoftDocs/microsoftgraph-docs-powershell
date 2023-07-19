@@ -27,13 +27,11 @@ Retrieve a list teachers for a class.
 Delegated tokens must be members of the class to get the teacher list.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgEducationClassTeacher Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
 Get-MgEducationClassTeacher -EducationClassId $educationClassId
 ```
-
 This example shows how to use the Get-MgEducationClassTeacher Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -219,3 +217,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassTeacher](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassTeacher?view=graph-powershell-beta)
+

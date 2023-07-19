@@ -38,13 +38,11 @@ A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
 ## EXAMPLES
-
 ### Example 1: Using the Restore-MgDirectoryDeletedItem Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 Restore-MgDirectoryDeletedItem -DirectoryObjectId $directoryObjectId
 ```
-
 This example shows how to use the Restore-MgDirectoryDeletedItem Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -155,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+

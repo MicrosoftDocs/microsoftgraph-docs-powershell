@@ -30,8 +30,8 @@ Remove-MgBetaPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassTh
 Delete entity from places
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -45,7 +45,6 @@ $params = @{
 }
 
 Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaPlace Cmdlet.
 
@@ -179,4 +178,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlace](/powershell/module/Microsoft.Graph.Calendar/Remove-MgPlace?view=graph-powershell-v1.0)
+
 

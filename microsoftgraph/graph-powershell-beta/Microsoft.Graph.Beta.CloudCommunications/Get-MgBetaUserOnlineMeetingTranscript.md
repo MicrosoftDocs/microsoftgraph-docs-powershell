@@ -42,22 +42,18 @@ Retrieving the transcript returns the metadata of the single transcript associat
 Retrieving the content of the transcript returns the stream of text associated with the transcript.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingTranscript Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscript -UserId $userId -OnlineMeetingId $onlineMeetingId -CallTranscriptId $callTranscriptId
 ```
-
 This example shows how to use the Get-MgBetaUserOnlineMeetingTranscript Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserOnlineMeetingTranscript Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Get-MgBetaUserOnlineMeetingTranscript -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
-
 This example shows how to use the Get-MgBetaUserOnlineMeetingTranscript Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -315,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingTranscript](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingTranscript?view=graph-powershell-v1.0)
+

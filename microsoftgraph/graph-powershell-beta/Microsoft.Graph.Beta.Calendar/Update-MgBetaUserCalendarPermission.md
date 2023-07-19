@@ -73,8 +73,8 @@ Update-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity>
 Update the permissions assigned to an existing sharee or delegate, through the corresponding calendarPermission object for a calendar.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -83,7 +83,6 @@ $params = @{
 }
 
 Update-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaUserCalendarPermission Cmdlet.
 
@@ -361,4 +360,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserCalendarPermission](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarPermission?view=graph-powershell-v1.0)
+
 

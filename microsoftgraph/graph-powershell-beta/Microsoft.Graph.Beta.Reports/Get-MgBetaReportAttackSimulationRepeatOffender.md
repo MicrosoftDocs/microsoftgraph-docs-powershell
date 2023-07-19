@@ -24,13 +24,11 @@ Get-MgBetaReportAttackSimulationRepeatOffender [-Count] [-Filter <String>] [-Sea
 Invoke function getAttackSimulationRepeatOffenders
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaReportAttackSimulationRepeatOffender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportAttackSimulationRepeatOffender
 ```
-
 This example shows how to use the Get-MgBetaReportAttackSimulationRepeatOffender Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -125,3 +123,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationRepeatOffender?view=graph-powershell-v1.0)
+

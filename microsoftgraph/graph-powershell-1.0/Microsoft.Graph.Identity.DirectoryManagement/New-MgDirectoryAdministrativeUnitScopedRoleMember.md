@@ -47,8 +47,8 @@ Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -60,7 +60,6 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
 
@@ -295,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
+
 

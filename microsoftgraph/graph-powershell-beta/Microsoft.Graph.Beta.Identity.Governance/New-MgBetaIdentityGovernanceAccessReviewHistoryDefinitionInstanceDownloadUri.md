@@ -36,13 +36,11 @@ Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
 ```
-
 This example shows how to use the New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -243,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-v1.0)
+

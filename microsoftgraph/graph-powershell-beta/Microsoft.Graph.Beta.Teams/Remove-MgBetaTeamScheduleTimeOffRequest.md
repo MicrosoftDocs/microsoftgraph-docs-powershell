@@ -31,13 +31,12 @@ Remove-MgBetaTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-IfMatch 
 Delete a timeOffRequest object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamScheduleTimeOffRequest -TeamId $teamId -TimeOffRequestId $timeOffRequestId
-
 ```
 This example shows how to use the Remove-MgBetaTeamScheduleTimeOffRequest Cmdlet.
 
@@ -213,4 +212,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffRequest?view=graph-powershell-v1.0)
+
 

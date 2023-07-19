@@ -51,7 +51,6 @@ New-MgBetaUserProfileNote -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 Create a new personAnnotation object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -65,7 +64,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileNote -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileNote Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -457,3 +455,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileNote](/powershell/module/Microsoft.Graph.People/New-MgUserProfileNote?view=graph-powershell-v1.0)
+

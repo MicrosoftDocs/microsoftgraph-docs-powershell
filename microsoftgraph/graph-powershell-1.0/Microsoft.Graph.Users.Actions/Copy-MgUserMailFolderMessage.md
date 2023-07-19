@@ -45,17 +45,18 @@ Copy-MgUserMailFolder -InputObject <IUsersActionsIdentity>
 Copy a mailfolder and its contents to another mailfolder.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
+
 $params = @{
 	DestinationId = "destinationId-value"
 }
-# A UPN can also be used as -UserId.
-Copy-MgUserMailFolder -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
-```
 
+# A UPN can also be used as -UserId.
+Copy-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
 This example shows how to use the Copy-MgUserMailFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -242,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Copy-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
+

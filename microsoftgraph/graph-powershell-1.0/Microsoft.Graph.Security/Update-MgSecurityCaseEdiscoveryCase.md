@@ -61,8 +61,8 @@ Update-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity>
 Update the properties of an ediscoveryCase object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -72,7 +72,6 @@ $params = @{
 }
 
 Update-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSecurityCaseEdiscoveryCase Cmdlet.
 
@@ -6641,4 +6640,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCase?view=graph-powershell-beta)
+
 

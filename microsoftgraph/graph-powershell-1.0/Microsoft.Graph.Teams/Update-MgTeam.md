@@ -61,8 +61,8 @@ Update-MgTeam -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTeam>
 Update the properties of the specified team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -81,7 +81,6 @@ $params = @{
 }
 
 Update-MgTeam -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgTeam Cmdlet.
 
@@ -17998,4 +17997,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaTeam?view=graph-powershell-beta)
+
 

@@ -35,7 +35,6 @@ New-MgBetaSearchQna -BodyParameter <IMicrosoftGraphSearchQna> [-WhatIf] [-Confir
 Create a new qna object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaSearchQna Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
@@ -72,7 +71,6 @@ $params = @{
 }
 New-MgBetaSearchQna -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaSearchQna Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -456,3 +454,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSearchQna](/powershell/module/Microsoft.Graph.Search/New-MgSearchQna?view=graph-powershell-v1.0)
+

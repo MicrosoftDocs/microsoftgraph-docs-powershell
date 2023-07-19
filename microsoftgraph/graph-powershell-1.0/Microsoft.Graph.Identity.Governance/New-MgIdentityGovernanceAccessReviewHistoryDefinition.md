@@ -35,8 +35,8 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinition
 Create a new accessReviewHistoryDefinition object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -68,7 +68,6 @@ $params = @{
 }
 
 New-MgIdentityGovernanceAccessReviewHistoryDefinition -BodyParameter $params
-
 ```
 This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
 
@@ -428,4 +427,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinition?view=graph-powershell-beta)
+
 

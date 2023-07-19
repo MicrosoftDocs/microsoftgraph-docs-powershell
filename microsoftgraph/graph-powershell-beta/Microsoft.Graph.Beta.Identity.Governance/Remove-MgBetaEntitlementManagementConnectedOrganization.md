@@ -31,13 +31,12 @@ Remove-MgBetaEntitlementManagementConnectedOrganization -InputObject <IIdentityG
 Delete a connectedOrganization object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Remove-MgBetaEntitlementManagementConnectedOrganization -ConnectedOrganizationId $connectedOrganizationId
-
 ```
 This example shows how to use the Remove-MgBetaEntitlementManagementConnectedOrganization Cmdlet.
 
@@ -256,4 +255,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
+
 

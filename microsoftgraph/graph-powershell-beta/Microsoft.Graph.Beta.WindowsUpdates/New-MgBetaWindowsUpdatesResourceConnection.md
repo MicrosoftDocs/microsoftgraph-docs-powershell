@@ -31,7 +31,6 @@ New-MgBetaWindowsUpdatesResourceConnection -BodyParameter <IMicrosoftGraphWindow
 Create a new operationalInsightsConnection object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -43,7 +42,6 @@ $params = @{
 }
 New-MgBetaWindowsUpdatesResourceConnection -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaWindowsUpdatesResourceConnection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -169,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgWindowsUpdatesResourceConnection](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0)
+

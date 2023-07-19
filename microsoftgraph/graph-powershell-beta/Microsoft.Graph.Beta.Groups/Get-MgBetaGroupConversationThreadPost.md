@@ -54,13 +54,12 @@ You can specify both the parent \nconversation and the thread, or, you can speci
 Since the **post** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **post** instance.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
-
 ```
 This example shows how to use the Get-MgBetaGroupConversationThreadPost Cmdlet.
 
@@ -347,4 +346,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPost?view=graph-powershell-v1.0)
+
 

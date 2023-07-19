@@ -53,7 +53,6 @@ Adding an Azure AD device as a member of an updatable asset group automatically 
 You can also use the method addMembersById to add members.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -67,7 +66,6 @@ $params = @{
 }
 Add-MgBetaWindowsUpdatesUpdatableAssetMember -UpdatableAssetId $updatableAssetId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -236,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgWindowsUpdatesUpdatableAssetMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesUpdatableAssetMember?view=graph-powershell-v1.0)
+

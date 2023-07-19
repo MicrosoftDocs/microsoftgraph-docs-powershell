@@ -43,7 +43,6 @@ New-MgBetaIdentityB2CUserFlowIdentityProviderByRef -InputObject <IIdentitySignIn
 Add identity providers in a b2cIdentityUserFlow object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -52,7 +51,6 @@ $params = @{
 }
 New-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -283,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
+

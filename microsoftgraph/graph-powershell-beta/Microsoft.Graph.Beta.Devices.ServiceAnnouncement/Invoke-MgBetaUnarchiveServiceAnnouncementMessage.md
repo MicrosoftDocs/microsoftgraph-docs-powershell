@@ -32,7 +32,6 @@ Invoke-MgBetaUnarchiveServiceAnnouncementMessage
 Unarchive a list of serviceUpdateMessages for the signed in user.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaUnarchiveServiceAnnouncementMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
@@ -44,7 +43,6 @@ $params = @{
 }
 Invoke-MgBetaUnarchiveServiceAnnouncementMessage -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaUnarchiveServiceAnnouncementMessage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -151,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnarchiveServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgUnarchiveServiceAnnouncementMessage?view=graph-powershell-v1.0)
+

@@ -31,13 +31,11 @@ Get-MgBetaPrivilegedRoleSummary -InputObject <IIdentityGovernanceIdentity> [-Exp
 Get summary from privilegedRoles
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPrivilegedRoleSummary Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleSummary -PrivilegedRoleId $privilegedRoleId
 ```
-
 This example shows how to use the Get-MgBetaPrivilegedRoleSummary Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -222,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedRoleSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleSummary?view=graph-powershell-v1.0)
+

@@ -52,7 +52,6 @@ For each shift, openshift and timeOff instance in the specified time range, the 
 The **notifyTeam** parameter further specifies which employees can view the item.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgShareTeamSchedule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -63,7 +62,6 @@ $params = @{
 }
 Invoke-MgShareTeamSchedule -TeamId $teamId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgShareTeamSchedule Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -282,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaShareTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaShareTeamSchedule?view=graph-powershell-beta)
+

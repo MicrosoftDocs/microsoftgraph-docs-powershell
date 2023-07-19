@@ -38,13 +38,12 @@ Get-MgBetaCommunicationCallContentSharingSession -InputObject <ICloudCommunicati
 Retrieve the properties of a contentSharingSession object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallContentSharingSession -CallId $callId -ContentSharingSessionId $contentSharingSessionId
-
 ```
 This example shows how to use the Get-MgBetaCommunicationCallContentSharingSession Cmdlet.
 
@@ -291,4 +290,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationCallContentSharingSession](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationCallContentSharingSession?view=graph-powershell-v1.0)
+
 

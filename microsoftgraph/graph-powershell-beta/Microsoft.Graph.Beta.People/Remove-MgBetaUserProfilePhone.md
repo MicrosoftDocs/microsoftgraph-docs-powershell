@@ -31,13 +31,11 @@ Remove-MgBetaUserProfilePhone -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete an itemPhone object from the user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserProfilePhone Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfilePhone -UserId $userId -ItemPhoneId $itemPhoneId
 ```
-
 This example shows how to use the Remove-MgBetaUserProfilePhone Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -194,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePhone?view=graph-powershell-v1.0)
+

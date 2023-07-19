@@ -61,13 +61,12 @@ Update-MgBetaContact -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in contacts
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaContact -OrgContactId $orgContactId
-
 ```
 This example shows how to use the Update-MgBetaBetaContact Cmdlet.
 
@@ -690,4 +689,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContact?view=graph-powershell-v1.0)
+
 

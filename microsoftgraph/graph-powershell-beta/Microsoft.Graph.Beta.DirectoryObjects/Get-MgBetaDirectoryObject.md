@@ -38,13 +38,12 @@ Get-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a directoryObject object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Get-MgBetaDirectoryObject Cmdlet.
 
@@ -274,4 +273,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-v1.0)
+
 

@@ -58,8 +58,8 @@ New-MgGroupLifecyclePolicy -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> 
 Creates a new groupLifecyclePolicy.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -70,7 +70,6 @@ $params = @{
 }
 
 New-MgGroupLifecyclePolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgGroupLifecyclePolicy Cmdlet.
 
@@ -301,4 +300,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
+
 

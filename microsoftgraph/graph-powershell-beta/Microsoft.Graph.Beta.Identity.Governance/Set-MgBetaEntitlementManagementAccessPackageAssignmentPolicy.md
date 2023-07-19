@@ -63,7 +63,6 @@ Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -InputObject <IIden
 Update the navigation property accessPackageAssignmentPolicies in identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -85,10 +84,8 @@ $params = @{
 }
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -167,7 +164,6 @@ $params = @{
 }
 Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaEntitlementManagementAccessPackageAssignmentPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -15403,3 +15399,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Set-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+

@@ -53,7 +53,6 @@ After the operation is created, you can get the status of the operation by retri
 The location provides a URL that will return a caseExportOperation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -65,7 +64,6 @@ $params = @{
 }
 Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet -CaseId $caseId -ReviewSetId $reviewSetId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgBetaComplianceEdiscoveryCaseReviewSetToReviewSet Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -455,3 +453,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-v1.0)
+

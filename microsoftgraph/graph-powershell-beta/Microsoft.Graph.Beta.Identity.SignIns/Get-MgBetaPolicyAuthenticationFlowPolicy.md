@@ -24,13 +24,12 @@ Get-MgBetaPolicyAuthenticationFlowPolicy [-ExpandProperty <String[]>] [-Property
 Read the properties and relationships of an authenticationFlowsPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyAuthenticationFlowPolicy
-
 ```
 This example shows how to use the Get-MgBetaPolicyAuthenticationFlowPolicy Cmdlet.
 
@@ -83,4 +82,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-v1.0)
+
 

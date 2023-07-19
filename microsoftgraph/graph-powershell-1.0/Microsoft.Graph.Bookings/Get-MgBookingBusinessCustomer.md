@@ -38,13 +38,12 @@ Get-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> [-ExpandProperty 
 Get the properties and relationships of a bookingCustomer object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerBaseId $bookingCustomerBaseId
-
 ```
 This example shows how to use the Get-MgBookingBusinessCustomer Cmdlet.
 
@@ -280,4 +279,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+
 

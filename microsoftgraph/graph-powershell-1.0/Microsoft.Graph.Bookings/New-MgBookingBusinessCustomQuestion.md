@@ -45,8 +45,8 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 Create a new bookingCustomQuestion object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBookingBusinessCustomQuestion Cmdlet.
 
@@ -259,4 +258,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 

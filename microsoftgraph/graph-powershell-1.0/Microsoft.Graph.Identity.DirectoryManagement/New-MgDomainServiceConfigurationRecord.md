@@ -45,13 +45,12 @@ New-MgDomainServiceConfigurationRecord -InputObject <IIdentityDirectoryManagemen
 Create new navigation property to serviceConfigurationRecords for domains
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDomainServiceConfigurationRecord -DomainId $domainId
-
 ```
 This example shows how to use the New-MgDomainServiceConfigurationRecord Cmdlet.
 
@@ -298,4 +297,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDomainServiceConfigurationRecord](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDomainServiceConfigurationRecord?view=graph-powershell-beta)
+
 

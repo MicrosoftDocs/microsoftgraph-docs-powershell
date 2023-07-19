@@ -38,13 +38,11 @@ Get-MgBetaSubSite -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-P
 The collection of the sub-sites under this site.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSubSite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSubSite -SiteId $siteId
 ```
-
 This example shows how to use the Get-MgBetaSubSite Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -319,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgSubSite?view=graph-powershell-v1.0)
+

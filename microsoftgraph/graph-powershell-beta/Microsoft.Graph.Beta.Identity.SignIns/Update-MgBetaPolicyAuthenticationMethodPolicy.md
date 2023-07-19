@@ -37,8 +37,8 @@ Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAut
 Update the properties of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
 
@@ -403,4 +402,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+
 

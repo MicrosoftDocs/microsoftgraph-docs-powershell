@@ -31,13 +31,12 @@ Remove-MgBetaTeamworkWorkforceIntegration -InputObject <ITeamsIdentity> [-IfMatc
 Delete an instance of a workforceIntegration.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId
-
 ```
 This example shows how to use the Remove-MgBetaTeamworkWorkforceIntegration Cmdlet.
 
@@ -198,4 +197,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkWorkforceIntegration?view=graph-powershell-v1.0)
+
 

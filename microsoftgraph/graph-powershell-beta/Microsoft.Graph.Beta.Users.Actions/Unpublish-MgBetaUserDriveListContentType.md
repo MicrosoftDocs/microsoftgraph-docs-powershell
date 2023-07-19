@@ -31,14 +31,13 @@ Unpublish-MgBetaUserDriveListContentType -InputObject <IUsersActionsIdentity> [-
 Unpublish a [contentType][] from a content type hub site.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-
+```
 This example shows how to use the Unpublish-MgBetaUserDriveListContentType Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -215,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Unpublish-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Users.Actions/Unpublish-MgUserDriveListContentType?view=graph-powershell-v1.0)
+

@@ -49,8 +49,8 @@ Update a print task.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -62,7 +62,6 @@ $params = @{
 }
 
 Update-MgBetaPrintTaskDefinitionTask -PrintTaskDefinitionId $printTaskDefinitionId -PrintTaskId $printTaskId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPrintTaskDefinitionTask Cmdlet.
 
@@ -374,4 +373,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrintTaskDefinitionTask](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintTaskDefinitionTask?view=graph-powershell-v1.0)
+
 

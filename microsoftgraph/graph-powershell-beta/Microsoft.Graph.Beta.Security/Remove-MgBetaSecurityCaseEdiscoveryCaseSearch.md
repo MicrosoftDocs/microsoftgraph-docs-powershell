@@ -31,13 +31,12 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseSearch -InputObject <ISecurityIdentity> [
 Delete an ediscoverySearch object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Remove-MgBetaSecurityCaseEdiscoveryCaseSearch -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
 ```
 This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseSearch Cmdlet.
 
@@ -245,4 +244,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityCaseEdiscoveryCaseSearch](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseSearch?view=graph-powershell-v1.0)
+
 

@@ -31,13 +31,12 @@ Get-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-ExpandP
 Get the bot associated with a specific definition of the  TeamsApp.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
 ```
 This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionBot Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-v1.0)
+
 

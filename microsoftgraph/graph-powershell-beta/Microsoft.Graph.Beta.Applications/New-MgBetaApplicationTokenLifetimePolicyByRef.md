@@ -43,8 +43,8 @@ New-MgBetaApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentit
 Assign a tokenLifetimePolicy to an application or servicePrincipal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaApplicationTokenLifetimePolicyByRef Cmdlet.
 
@@ -241,4 +240,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-v1.0)
+
 

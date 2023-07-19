@@ -86,29 +86,13 @@ jobs:
       filePath: microsoftgraph-docs-powershell\scripts\UpdateLinks.ps1
   
   - task: PowerShell@2
-    displayName: 'Repair examples'
+    displayName: 'Repair Examples and Descriptions and Title'
     continueOnError: false
     inputs:
       targetType: 'filePath'
       pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RepairExamples.ps1
-  
-  - task: PowerShell@2
-    displayName: 'Repair titles'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RepairTitles.ps1
-
-  - task: PowerShell@2
-    displayName: 'Repair descriptions'
-    continueOnError: false
-    inputs:
-      targetType: 'filePath'
-      pwsh: true
-      filePath: microsoftgraph-docs-powershell\scripts\RepairDescriptions.ps1
-
+      filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+      
   - task: PowerShell@2
     displayName: Pushing to github
     env:

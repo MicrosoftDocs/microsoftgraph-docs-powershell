@@ -30,8 +30,8 @@ Remove-MgBetaTeam -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] 
 Delete entity from teams
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -50,7 +50,6 @@ $params = @{
 }
 
 Update-MgBetaTeam -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaTeam Cmdlet.
 
@@ -211,4 +210,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeam](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeam?view=graph-powershell-v1.0)
+
 

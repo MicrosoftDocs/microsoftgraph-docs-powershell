@@ -49,7 +49,6 @@ Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -63,7 +62,6 @@ $params = @{
 }
 Remove-MgBetaWindowsUpdatesUpdatableAssetMember -UpdatableAssetId $updatableAssetId -BodyParameter $params
 ```
-
 This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAssetMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -232,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesUpdatableAssetMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAssetMember?view=graph-powershell-v1.0)
+

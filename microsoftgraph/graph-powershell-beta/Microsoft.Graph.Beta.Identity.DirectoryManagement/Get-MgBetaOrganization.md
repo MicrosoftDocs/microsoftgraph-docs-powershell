@@ -40,13 +40,12 @@ Get the properties and relationships of the currently authenticated organization
 Since the **organization** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **organization** instance.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganization -OrganizationId $organizationId
-
 ```
 This example shows how to use the Get-MgBetaOrganization Cmdlet.
 
@@ -300,4 +299,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganization?view=graph-powershell-v1.0)
+
 

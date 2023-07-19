@@ -31,13 +31,12 @@ New-MgBetaContract -BodyParameter <IMicrosoftGraphContract> [-WhatIf] [-Confirm]
 Add new entity to contracts
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaContract
-
 ```
 This example shows how to use the New-MgBetaBetaContract Cmdlet.
 
@@ -236,4 +235,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContract?view=graph-powershell-v1.0)
+
 

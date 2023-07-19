@@ -50,23 +50,18 @@ Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
-Import-Module Microsoft.Graph.Beta.Sites
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
 $params = @{
-	SourceFile = @{
-		SharepointIds = @{
-			ListId = "e2ecf63b-b0fd-48f7-a54a-d8c15479e3b0"
-			ListItemId = "2"
-		}
-	}
-	DestinationFileName = "newname.txt"
+	GroupId = "groupId-value"
+	RenameAs = "renameAs-value"
 }
 
-Copy-MgBetaSiteContentTypeToDefaultContentLocation -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
+# A UPN can also be used as -UserId.
+Copy-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId -BodyParameter $params
 ```
 This example shows how to use the Copy-MgBetaSiteOnenoteNotebook Cmdlet.
 
@@ -358,4 +353,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteNotebook?view=graph-powershell-v1.0)
+
 

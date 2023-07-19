@@ -47,7 +47,6 @@ New-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity
 Create new navigation property to templates for applications
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaApplicationSynchronizationTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -58,7 +57,6 @@ $params = @{
 }
 New-MgBetaApplicationSynchronizationTemplate -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaApplicationSynchronizationTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -537,3 +535,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationSynchronizationTemplate?view=graph-powershell-v1.0)
+

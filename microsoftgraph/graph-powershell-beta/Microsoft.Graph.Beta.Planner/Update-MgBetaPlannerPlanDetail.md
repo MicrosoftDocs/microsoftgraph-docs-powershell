@@ -46,8 +46,8 @@ Update-MgBetaPlannerPlanDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the navigation property details in planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -63,7 +63,6 @@ $params = @{
 }
 
 Update-MgBetaPlannerPlanDetail -PlannerPlanId $plannerPlanId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Update-MgBetaPlannerPlanDetail Cmdlet.
 
@@ -336,4 +335,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPlannerPlanDetail](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerPlanDetail?view=graph-powershell-v1.0)
+
 

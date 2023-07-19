@@ -37,7 +37,6 @@ Note that files must be located in this folder in order to be added as resources
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
@@ -45,10 +44,8 @@ $params = @{
 }
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
@@ -56,10 +53,8 @@ $params = @{
 }
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
@@ -67,7 +62,6 @@ $params = @{
 }
 Set-MgEducationClassAssignmentSubmissionUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgEducationClassAssignmentSubmissionUpResourceFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -197,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaEducationClassAssignmentSubmissionUpResourceFolder?view=graph-powershell-beta)
+

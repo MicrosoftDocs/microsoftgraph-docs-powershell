@@ -49,7 +49,6 @@ You can also use this API to instantiate non-gallery apps.
 Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgInstantiateApplicationTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
@@ -58,7 +57,6 @@ $params = @{
 }
 Invoke-MgInstantiateApplicationTemplate -ApplicationTemplateId $applicationTemplateId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgInstantiateApplicationTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -219,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaInstantiateApplicationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaInstantiateApplicationTemplate?view=graph-powershell-beta)
+

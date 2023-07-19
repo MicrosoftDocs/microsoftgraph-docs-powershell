@@ -47,13 +47,12 @@ Retrieve an educationCategory object.
 Only teachers, students, and applications with application permissions can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -EducationCategoryId $educationCategoryId
-
 ```
 This example shows how to use the Get-MgBetaEducationClassAssignmentCategory Cmdlet.
 
@@ -309,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentCategory?view=graph-powershell-v1.0)
+
 

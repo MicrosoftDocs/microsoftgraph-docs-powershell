@@ -53,7 +53,6 @@ Update-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter
 Update the properties of a webAccount object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileWebAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -63,7 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileWebAccount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -530,3 +528,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileWebAccount](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileWebAccount?view=graph-powershell-v1.0)
+

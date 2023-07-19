@@ -55,13 +55,12 @@ Update-MgBetaTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Update the properties of the specified channel.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
-
 ```
 This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
 
@@ -14758,4 +14757,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-v1.0)
+
 

@@ -32,7 +32,6 @@ Create a new updatableAssetGroup object.
 The **updatableAssetGroup** resource inherits from updatableAsset.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -41,7 +40,6 @@ $params = @{
 }
 New-MgBetaWindowsUpdatesUpdatableAsset -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -141,3 +139,4 @@ New-MgBetaWuUpdatableAsset
 
 ## RELATED LINKS
 [New-MgWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
+

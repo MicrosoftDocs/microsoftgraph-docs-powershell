@@ -42,13 +42,12 @@ These objects represent a language available in a user flow.
 **Note:** Language customization is enabled by default in Azure Active Directory user flows.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlowLanguage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-
 ```
 This example shows how to use the Get-MgIdentityB2XUserFlowLanguage Cmdlet.
 
@@ -331,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityB2XUserFlowLanguage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityB2XUserFlowLanguage?view=graph-powershell-beta)
+
 

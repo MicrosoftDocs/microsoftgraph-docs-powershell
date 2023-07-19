@@ -33,13 +33,12 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalOwner -ServicePrincipalId $servicePrincipalId
-
 ```
 This example shows how to use the Get-MgServicePrincipalOwnerByRef Cmdlet.
 
@@ -214,4 +213,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
+
 

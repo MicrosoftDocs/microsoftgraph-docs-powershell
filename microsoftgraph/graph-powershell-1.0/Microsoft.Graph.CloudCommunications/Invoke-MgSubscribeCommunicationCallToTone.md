@@ -47,7 +47,6 @@ Subscribe to DTMF (dual-tone multi-frequency signaling).
 This allows you to be notified when the user presses keys on a 'dialpad'.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgSubscribeCommunicationCallToTone Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -56,7 +55,6 @@ $params = @{
 }
 Invoke-MgSubscribeCommunicationCallToTone -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgSubscribeCommunicationCallToTone Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -209,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaSubscribeCommunicationCallToTone](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaSubscribeCommunicationCallToTone?view=graph-powershell-beta)
+

@@ -33,13 +33,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRoleMember -DirectoryRoleId $directoryRoleId
-
 ```
 This example shows how to use the Get-MgDirectoryRoleMemberByRef Cmdlet.
 
@@ -214,4 +213,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
+
 

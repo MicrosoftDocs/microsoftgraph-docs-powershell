@@ -46,13 +46,12 @@ Resources are available to a teacher or an application with application permissi
 Note that teachers can leave notes in some resources.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
 This example shows how to use the Get-MgEducationClassAssignmentSubmissionSubmittedResource Cmdlet.
 
@@ -320,4 +319,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
+
 

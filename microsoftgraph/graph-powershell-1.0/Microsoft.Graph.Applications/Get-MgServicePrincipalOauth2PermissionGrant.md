@@ -42,13 +42,12 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalOauth2PermissionGrant -ServicePrincipalId $servicePrincipalId
-
 ```
 This example shows how to use the Get-MgServicePrincipalOauth2PermissionGrant Cmdlet.
 
@@ -296,4 +295,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOauth2PermissionGrant?view=graph-powershell-beta)
+
 

@@ -44,7 +44,6 @@ New-MgBetaPlannerRosterMember -InputObject <IPlannerIdentity>
 Add a member to the plannerRoster object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaPlannerRosterMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
@@ -54,7 +53,6 @@ $params = @{
 }
 New-MgBetaPlannerRosterMember -PlannerRosterId $plannerRosterId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaPlannerRosterMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -254,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRosterMember?view=graph-powershell-v1.0)
+

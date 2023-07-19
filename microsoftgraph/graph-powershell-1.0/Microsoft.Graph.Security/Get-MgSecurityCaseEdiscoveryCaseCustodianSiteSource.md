@@ -38,13 +38,12 @@ Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -InputObject <ISecurityIdent
 Data source entity for SharePoint sites associated with the custodian.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
-
 ```
 This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseCustodianSiteSource Cmdlet.
 
@@ -320,4 +319,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseCustodianSiteSource?view=graph-powershell-beta)
+
 

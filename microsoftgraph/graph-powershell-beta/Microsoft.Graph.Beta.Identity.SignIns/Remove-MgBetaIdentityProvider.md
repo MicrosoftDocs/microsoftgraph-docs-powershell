@@ -35,13 +35,12 @@ Among the types of providers derived from identityProviderBase, you can currentl
 In Azure AD B2C, this operation can currently delete a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-
 ```
 This example shows how to use the Remove-MgBetaIdentityProvider Cmdlet.
 
@@ -238,4 +237,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityProvider?view=graph-powershell-v1.0)
+
 

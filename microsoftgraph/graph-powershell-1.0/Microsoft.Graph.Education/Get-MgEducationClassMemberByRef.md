@@ -25,13 +25,12 @@ Get-MgEducationClassMemberByRef -EducationClassId <String> [-Filter <String>] [-
 Retrieves the educationUser members of an educationClass.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassMember -EducationClassId $educationClassId
-
 ```
 This example shows how to use the Get-MgEducationClassMemberByRef Cmdlet.
 
@@ -190,4 +189,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+
 

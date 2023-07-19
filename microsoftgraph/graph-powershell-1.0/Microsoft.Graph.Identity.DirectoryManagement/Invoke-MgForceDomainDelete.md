@@ -52,7 +52,6 @@ The following actions are performed as part of this operation: After the domain 
 To verify deletion of a domain, you can perform a get domain operation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgForceDomainDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
@@ -61,7 +60,6 @@ $params = @{
 }
 Invoke-MgForceDomainDelete -DomainId $domainId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgForceDomainDelete Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -238,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaForceDomainDelete](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaForceDomainDelete?view=graph-powershell-beta)
+

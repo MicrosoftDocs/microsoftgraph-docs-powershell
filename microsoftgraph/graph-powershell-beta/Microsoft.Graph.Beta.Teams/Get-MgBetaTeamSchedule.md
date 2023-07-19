@@ -39,13 +39,12 @@ If the provisioning failed, clients can get additional information from the `pro
 Clients can also inspect the configuration of the schedule.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamSchedule -TeamId $teamId
-
 ```
 This example shows how to use the Get-MgBetaTeamSchedule Cmdlet.
 
@@ -175,4 +174,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamSchedule](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamSchedule?view=graph-powershell-v1.0)
+
 

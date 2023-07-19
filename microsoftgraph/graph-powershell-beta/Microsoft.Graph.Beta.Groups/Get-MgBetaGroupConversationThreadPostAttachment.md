@@ -46,13 +46,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
-
 ```
 This example shows how to use the Get-MgBetaGroupConversationThreadPostAttachment Cmdlet.
 
@@ -354,4 +353,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversationThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostAttachment?view=graph-powershell-v1.0)
+
 

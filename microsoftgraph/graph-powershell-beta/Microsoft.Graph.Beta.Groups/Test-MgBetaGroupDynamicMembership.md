@@ -49,7 +49,6 @@ The membership rule is returned along with other details that were used in the e
 You can complete this operation in the following ways:
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaGroupDynamicMembership Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -58,7 +57,6 @@ $params = @{
 }
 Test-MgBetaGroupDynamicMembership -GroupId $groupId -BodyParameter $params
 ```
-
 This example shows how to use the Test-MgBetaGroupDynamicMembership Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -243,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgGroupDynamicMembership](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembership?view=graph-powershell-v1.0)
+

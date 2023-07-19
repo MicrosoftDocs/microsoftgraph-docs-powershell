@@ -24,8 +24,8 @@ Remove-MgPolicyCrossTenantAccessPolicyDefault [-IfMatch <String>] [-PassThru] [-
 Delete navigation property default for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyDefault -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgPolicyCrossTenantAccessPolicyDefault Cmdlet.
 
@@ -137,4 +136,5 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-beta)
+
 

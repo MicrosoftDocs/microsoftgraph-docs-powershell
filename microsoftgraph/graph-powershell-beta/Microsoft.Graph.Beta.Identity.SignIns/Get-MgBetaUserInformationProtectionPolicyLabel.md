@@ -38,24 +38,20 @@ Get-MgBetaUserInformationProtectionPolicyLabel -InputObject <IIdentitySignInsIde
 Retrieve the properties and relationships of an informationProtectionLabel object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserInformationProtectionPolicyLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
 Get-MgBetaUserInformationProtectionPolicyLabel -UserId $userId -InformationProtectionLabelId $informationProtectionLabelId
 ```
-
 This example shows how to use the Get-MgBetaUserInformationProtectionPolicyLabel Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserInformationProtectionPolicyLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 # A UPN can also be used as -UserId.
 Get-MgBetaUserInformationProtectionPolicyLabel -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserInformationProtectionPolicyLabel Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -354,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+

@@ -24,13 +24,11 @@ Get-MgServicePrincipalDelta [-Filter <String>] [-Property <String[]>] [-Search <
 Invoke function delta
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgServicePrincipalDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Get-MgServicePrincipalDelta
 ```
-
 This example shows how to use the Get-MgServicePrincipalDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalDelta?view=graph-powershell-beta)
+

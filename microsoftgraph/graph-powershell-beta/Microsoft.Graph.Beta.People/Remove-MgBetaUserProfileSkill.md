@@ -31,14 +31,12 @@ Remove-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> [-IfMatch <String>]
 Delete a skillProficiency object from a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserProfileSkill Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileSkill -UserId $userId -SkillProficiencyId $skillProficiencyId
 ```
-
 This example shows how to use the Remove-MgBetaUserProfileSkill Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -195,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfileSkill](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileSkill?view=graph-powershell-v1.0)
+

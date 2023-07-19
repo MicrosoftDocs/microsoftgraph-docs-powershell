@@ -31,13 +31,12 @@ Remove-MgBetaSiteTermStoreSet -InputObject <ISitesIdentity> [-IfMatch <String>] 
 Delete a set object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSiteTermStoreSet -SiteId $siteId -SetId $setId
-
 ```
 This example shows how to use the Remove-MgBetaSiteTermStoreSet Cmdlet.
 
@@ -225,4 +224,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+
 

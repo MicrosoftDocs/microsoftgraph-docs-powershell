@@ -44,13 +44,12 @@ New-MgIdentityB2XUserFlowLanguageOverridePage -InputObject <IIdentitySignInsIden
 Create new navigation property to overridesPages for identity
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlowLanguageOverridePage -B2xIdentityUserFlowId $b2xIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
-
 ```
 This example shows how to use the New-MgIdentityB2XUserFlowLanguageOverridePage Cmdlet.
 
@@ -260,4 +259,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityB2XUserFlowLanguageOverridePage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityB2XUserFlowLanguageOverridePage?view=graph-powershell-beta)
+
 

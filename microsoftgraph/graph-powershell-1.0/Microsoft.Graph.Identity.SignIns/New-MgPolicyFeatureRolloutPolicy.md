@@ -33,8 +33,8 @@ New-MgPolicyFeatureRolloutPolicy -BodyParameter <IMicrosoftGraphFeatureRolloutPo
 Create a new featureRolloutPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -47,7 +47,6 @@ $params = @{
 }
 
 New-MgPolicyFeatureRolloutPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgPolicyFeatureRolloutPolicy Cmdlet.
 
@@ -262,4 +261,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
+
 

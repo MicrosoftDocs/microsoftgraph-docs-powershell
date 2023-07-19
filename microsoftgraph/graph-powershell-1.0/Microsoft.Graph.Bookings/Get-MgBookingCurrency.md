@@ -40,13 +40,12 @@ Get the properties of a bookingCurrency object that is available to a Microsoft 
 Use the **id** property, which is the currency code, to specify the currency.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingCurrency -BookingCurrencyId $bookingCurrencyId
-
 ```
 This example shows how to use the Get-MgBookingCurrency Cmdlet.
 
@@ -266,4 +265,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingCurrency](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingCurrency?view=graph-powershell-beta)
+
 

@@ -59,7 +59,6 @@ New-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceIden
 Create a new sourceCollection object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -72,7 +71,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -794,3 +792,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
+

@@ -49,8 +49,8 @@ Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Update a feedback outcome
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -59,14 +59,13 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Update a points outcome
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -79,14 +78,13 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Update a rubric outcome
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -99,7 +97,6 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationOutcomeId $educationOutcomeId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
 
@@ -353,4 +350,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+
 

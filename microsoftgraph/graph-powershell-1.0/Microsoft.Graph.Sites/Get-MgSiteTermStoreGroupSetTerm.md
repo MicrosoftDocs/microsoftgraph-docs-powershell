@@ -57,13 +57,12 @@ Get-MgSiteTermStoreGroupSetTerm -InputObject <ISitesIdentity> [-ExpandProperty <
 Read the properties and relationships of a term object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreGroupSetTerm -SiteId $siteId -GroupId $groupId -SetId $setId -TermId $termId
-
 ```
 This example shows how to use the Get-MgSiteTermStoreGroupSetTerm Cmdlet.
 
@@ -374,4 +373,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreGroupSetTerm](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStoreGroupSetTerm?view=graph-powershell-beta)
+
 

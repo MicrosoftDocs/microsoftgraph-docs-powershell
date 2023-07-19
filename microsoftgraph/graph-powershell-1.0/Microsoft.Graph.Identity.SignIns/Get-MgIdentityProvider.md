@@ -42,27 +42,34 @@ Among the types of providers derived from identityProviderBase, you can currentl
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, or an appleManagedIdentityProvider resource.
 
 ## EXAMPLES
-
 ### Example 1: Retrieve a specific social identity provider (Azure AD or Azure AD B2C)
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-
 ```
+This example shows how to use the Get-MgIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Retrieve a specific built-in identity provider (only for Azure AD)
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-
 ```
+This example shows how to use the Get-MgIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 3: Retrieves Apple identity provider(only for Azure AD B2C)
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityProvider -IdentityProviderBaseId $identityProviderBaseId
-
 ```
 This example shows how to use the Get-MgIdentityProvider Cmdlet.
 
@@ -330,4 +337,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityProvider](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityProvider?view=graph-powershell-beta)
+
 

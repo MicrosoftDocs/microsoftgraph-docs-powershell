@@ -47,8 +47,8 @@ Update-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsI
 Update the properties of a federatedIdentityCredential object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -63,7 +63,6 @@ $params = @{
 }
 
 Update-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaApplicationFederatedIdentityCredential Cmdlet.
 
@@ -351,4 +350,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationFederatedIdentityCredential?view=graph-powershell-v1.0)
+
 

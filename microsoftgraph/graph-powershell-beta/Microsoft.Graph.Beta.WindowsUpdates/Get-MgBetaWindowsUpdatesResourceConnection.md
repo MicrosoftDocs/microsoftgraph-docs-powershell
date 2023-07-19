@@ -38,40 +38,32 @@ Get-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdentity
 Read the properties and relationships of an operationalInsightsConnection object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesResourceConnection -ResourceConnectionId $resourceConnectionId
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesResourceConnection
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesResourceConnection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -289,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesResourceConnection](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0)
+

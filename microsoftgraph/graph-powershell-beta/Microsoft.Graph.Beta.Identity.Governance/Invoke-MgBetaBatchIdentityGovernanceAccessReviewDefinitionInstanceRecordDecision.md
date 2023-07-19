@@ -51,8 +51,8 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -63,7 +63,6 @@ $params = @{
 }
 
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
-
 ```
 This example shows how to use the Invoke-MgBetaBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision Cmdlet.
 
@@ -381,4 +380,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgBatchIdentityGovernanceAccessReviewDefinitionInstanceRecordDecision?view=graph-powershell-v1.0)
+
 

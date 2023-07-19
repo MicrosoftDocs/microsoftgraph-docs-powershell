@@ -38,13 +38,11 @@ Get-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity> [-Expa
 Get entity from businessFlowTemplates by key
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaBusinessFlowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaBusinessFlowTemplate
 ```
-
 This example shows how to use the Get-MgBetaBusinessFlowTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -350,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBusinessFlowTemplate](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgBusinessFlowTemplate?view=graph-powershell-v1.0)
+

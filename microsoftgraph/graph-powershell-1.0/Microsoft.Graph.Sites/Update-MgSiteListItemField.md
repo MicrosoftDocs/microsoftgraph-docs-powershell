@@ -43,8 +43,8 @@ Update-MgSiteListItemField -InputObject <ISitesIdentity> -BodyParameter <Hashtab
 Update the properties on a **[listItem][]**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -54,7 +54,6 @@ $params = @{
 }
 
 Update-MgSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgSiteListItemField Cmdlet.
 
@@ -262,4 +261,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSiteListItemField](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSiteListItemField?view=graph-powershell-beta)
+
 

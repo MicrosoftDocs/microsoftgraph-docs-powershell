@@ -38,13 +38,12 @@ Get-MgTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-ExpandP
 Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleSwapShiftChangeRequest -TeamId $teamId -SwapShiftsChangeRequestId $swapShiftsChangeRequestId
-
 ```
 This example shows how to use the Get-MgTeamScheduleSwapShiftChangeRequest Cmdlet.
 
@@ -303,4 +302,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleSwapShiftChangeRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamScheduleSwapShiftChangeRequest?view=graph-powershell-beta)
+
 

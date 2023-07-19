@@ -51,8 +51,8 @@ The method allows users to pull content types directly from the content type hub
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
-
 ### Example 1: Synchronous pull
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -61,14 +61,13 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
-
 ```
 This example shows how to use the Add-MgSiteContentTypeCopyFromContentTypeHub Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Asynchronous pull
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -77,7 +76,6 @@ $params = @{
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
-
 ```
 This example shows how to use the Add-MgSiteContentTypeCopyFromContentTypeHub Cmdlet.
 
@@ -259,4 +257,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-beta)
+
 

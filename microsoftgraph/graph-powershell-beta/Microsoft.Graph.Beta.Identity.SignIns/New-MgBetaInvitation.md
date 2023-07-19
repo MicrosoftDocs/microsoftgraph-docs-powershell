@@ -37,8 +37,8 @@ Invitation adds an external user to the organization.
 When creating a new invitation you have several options available:
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -48,7 +48,6 @@ $params = @{
 }
 
 New-MgBetaInvitation -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaInvitation Cmdlet.
 
@@ -9739,4 +9738,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-v1.0)
+
 

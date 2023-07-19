@@ -56,8 +56,8 @@ Update-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> -BodyParamet
 Update the properties of domain object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -70,7 +70,6 @@ $params = @{
 }
 
 Update-MgDomain -DomainId $domainId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgDomain Cmdlet.
 
@@ -618,4 +617,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDomain?view=graph-powershell-beta)
+
 

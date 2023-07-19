@@ -31,13 +31,12 @@ Remove-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-IfMatc
 Delete a bookingCustomQuestion object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
 Remove-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
-
 ```
 This example shows how to use the Remove-MgBookingBusinessCustomQuestion Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 

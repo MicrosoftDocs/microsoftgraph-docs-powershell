@@ -43,13 +43,12 @@ Get-MgBetaSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <Stri
 Provides tenants capability to launch a simulated and realistic phishing attack and learn from it.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityAttackSimulation
-
 ```
 This example shows how to use the Get-MgBetaBetaSecurityAttackSimulation Cmdlet.
 
@@ -333,4 +332,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulation?view=graph-powershell-v1.0)
+
 

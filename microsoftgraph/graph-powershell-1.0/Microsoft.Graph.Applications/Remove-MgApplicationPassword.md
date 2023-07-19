@@ -45,7 +45,6 @@ Remove-MgApplicationPassword -InputObject <IApplicationsIdentity>
 Remove a password from an application.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgApplicationPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
@@ -54,7 +53,6 @@ $params = @{
 }
 Remove-MgApplicationPassword -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the Remove-MgApplicationPassword Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -230,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationPassword?view=graph-powershell-beta)
+

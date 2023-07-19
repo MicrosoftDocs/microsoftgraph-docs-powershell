@@ -45,7 +45,6 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 Create a new allowedValue object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -55,7 +54,6 @@ $params = @{
 }
 New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -255,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-v1.0)
+

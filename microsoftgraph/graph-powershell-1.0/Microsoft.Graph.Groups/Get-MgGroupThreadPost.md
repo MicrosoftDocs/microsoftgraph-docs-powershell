@@ -50,13 +50,12 @@ Get-MgGroupThreadPost -InputObject <IGroupsIdentity> [-ExpandProperty <String[]>
 Get posts from groups
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId
-
 ```
 This example shows how to use the Get-MgGroupThreadPost Cmdlet.
 
@@ -319,4 +318,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupThreadPost](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupThreadPost?view=graph-powershell-beta)
+
 

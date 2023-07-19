@@ -38,13 +38,12 @@ Get-MgBetaDriveItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
 
 ## EXAMPLES
-
 ### Example 1: Get a bundle and its children in a single call
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -ExpandProperty "children"
-
 ```
 This example shows how to use the Get-MgBetaDriveItem Cmdlet.
 
@@ -296,4 +295,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItem?view=graph-powershell-v1.0)
+
 

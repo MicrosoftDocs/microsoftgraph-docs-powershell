@@ -42,13 +42,12 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRoleScopedMember -DirectoryRoleId $directoryRoleId
-
 ```
 This example shows how to use the Get-MgDirectoryRoleScopedMember Cmdlet.
 
@@ -297,4 +296,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryRoleScopedMember?view=graph-powershell-beta)
+
 

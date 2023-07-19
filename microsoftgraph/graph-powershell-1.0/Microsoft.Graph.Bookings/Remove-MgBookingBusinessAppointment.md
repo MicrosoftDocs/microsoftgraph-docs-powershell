@@ -31,13 +31,12 @@ Remove-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-IfMatch <
 Delete a bookingAppointment in the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
 Remove-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
-
 ```
 This example shows how to use the Remove-MgBookingBusinessAppointment Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
+
 

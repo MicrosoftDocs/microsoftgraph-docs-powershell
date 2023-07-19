@@ -35,13 +35,12 @@ This request can be made to remove a denied or completed request.
 You cannot delete an access package assignment request if it has any **accessPackageAssignment** objects.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
-
 ```
 This example shows how to use the Remove-MgEntitlementManagementAssignmentRequest Cmdlet.
 
@@ -218,4 +217,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+
 

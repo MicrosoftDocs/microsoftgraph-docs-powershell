@@ -31,13 +31,12 @@ Get-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandPrope
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 
 Get-MgBetaUserSettingShiftPreference -UserId $userId
-
 ```
 This example shows how to use the Get-MgBetaUserSettingShiftPreference Cmdlet.
 
@@ -151,4 +150,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingShiftPreference?view=graph-powershell-v1.0)
+
 

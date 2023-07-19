@@ -40,13 +40,11 @@ Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication -InputObject <IApp
 Get applications from onPremisesPublishingProfiles
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId
 ```
-
 This example shows how to use the Get-MgBetaOnPremisePublishingProfileConnectorGroupApplication Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -314,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfileConnectorGroupApplication](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupApplication?view=graph-powershell-v1.0)
+

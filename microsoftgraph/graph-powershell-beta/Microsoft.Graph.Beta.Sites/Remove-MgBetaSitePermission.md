@@ -31,13 +31,12 @@ Remove-MgBetaSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [-
 Delete navigation property permissions for sites
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSitePermission -SiteId $siteId -PermissionId $permissionId
-
 ```
 This example shows how to use the Remove-MgBetaSitePermission Cmdlet.
 
@@ -225,4 +224,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Remove-MgSitePermission?view=graph-powershell-v1.0)
+
 

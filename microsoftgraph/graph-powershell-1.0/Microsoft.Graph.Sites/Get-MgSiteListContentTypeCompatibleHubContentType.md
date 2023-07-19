@@ -33,13 +33,11 @@ Get-MgSiteListContentTypeCompatibleHubContentType -InputObject <ISitesIdentity> 
 Invoke function getCompatibleHubContentTypes
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgSiteListContentTypeCompatibleHubContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Get-MgSiteListContentTypeCompatibleHubContentType -SiteId $siteId -ListId $listId
 ```
-
 This example shows how to use the Get-MgSiteListContentTypeCompatibleHubContentType Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -256,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteListContentTypeCompatibleHubContentType](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteListContentTypeCompatibleHubContentType?view=graph-powershell-beta)
+

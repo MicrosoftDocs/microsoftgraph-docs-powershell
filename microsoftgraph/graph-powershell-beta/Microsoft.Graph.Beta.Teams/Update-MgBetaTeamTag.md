@@ -46,8 +46,8 @@ Update-MgBetaTeamTag -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 Update the properties of a teamworkTag object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -56,7 +56,6 @@ $params = @{
 }
 
 Update-MgBetaTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamTag Cmdlet.
 
@@ -374,4 +373,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamTag?view=graph-powershell-v1.0)
+
 

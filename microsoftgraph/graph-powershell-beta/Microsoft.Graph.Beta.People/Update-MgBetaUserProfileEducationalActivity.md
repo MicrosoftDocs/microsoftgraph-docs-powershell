@@ -53,7 +53,6 @@ Update-MgBetaUserProfileEducationalActivity -InputObject <IPeopleIdentity>
 Update the properties of an educationalActivity object within a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileEducationalActivity Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -73,7 +72,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileEducationalActivity -UserId $userId -EducationalActivityId $educationalActivityId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileEducationalActivity Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -555,3 +553,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileEducationalActivity](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileEducationalActivity?view=graph-powershell-v1.0)
+

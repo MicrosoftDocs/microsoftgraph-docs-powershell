@@ -31,14 +31,12 @@ Remove-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> [-IfMatch <Str
 Delete a webAccount object from a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserProfileWebAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserProfileWebAccount -UserId $userId -WebAccountId $webAccountId
 ```
-
 This example shows how to use the Remove-MgBetaUserProfileWebAccount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -195,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfileWebAccount](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileWebAccount?view=graph-powershell-v1.0)
+

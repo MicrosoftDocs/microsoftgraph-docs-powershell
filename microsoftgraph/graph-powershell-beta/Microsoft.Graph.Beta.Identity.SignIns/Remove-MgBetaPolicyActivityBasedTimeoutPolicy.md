@@ -31,13 +31,12 @@ Remove-MgBetaPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIden
 Delete an activityBasedTimeoutPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId
-
 ```
 This example shows how to use the Remove-MgBetaPolicyActivityBasedTimeoutPolicy Cmdlet.
 
@@ -234,4 +233,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyActivityBasedTimeoutPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyActivityBasedTimeoutPolicy?view=graph-powershell-v1.0)
+
 

@@ -32,13 +32,11 @@ Make the scheduling page of this business not available to external customers.
 Set the **isPublished** property to `false`, and the **publicUrl** property to `null`.
 
 ## EXAMPLES
-
 ### Example 1: Using the Unpublish-MgBookingBusiness Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 Unpublish-MgBookingBusiness -BookingBusinessId $bookingBusinessId
 ```
-
 This example shows how to use the Unpublish-MgBookingBusiness Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -150,3 +148,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Unpublish-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/Unpublish-MgBetaBookingBusiness?view=graph-powershell-beta)
+

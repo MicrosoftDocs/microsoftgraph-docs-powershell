@@ -31,13 +31,11 @@ Stop-MgEntitlementManagementAssignmentRequest -InputObject <IIdentityGovernanceI
 In Azure AD Entitlement Management, cancel accessPackageAssignmentRequest objects that are in a cancellable state: `accepted`, `pendingApproval`, `pendingNotBefore`, `pendingApprovalEscalated`.
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgEntitlementManagementAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Stop-MgEntitlementManagementAssignmentRequest -AccessPackageAssignmentRequestId $accessPackageAssignmentRequestId
 ```
-
 This example shows how to use the Stop-MgEntitlementManagementAssignmentRequest Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -196,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Applications/Stop-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
+

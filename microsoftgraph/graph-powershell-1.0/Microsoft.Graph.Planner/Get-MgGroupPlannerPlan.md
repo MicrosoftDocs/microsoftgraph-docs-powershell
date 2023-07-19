@@ -42,13 +42,12 @@ Nullable.
 Returns the plannerPlans owned by the group.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
 Get-MgGroupPlannerPlan -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgGroupPlannerPlan Cmdlet.
 
@@ -281,4 +280,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupPlannerPlan?view=graph-powershell-beta)
+
 

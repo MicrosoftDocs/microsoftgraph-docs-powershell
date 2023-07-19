@@ -47,13 +47,11 @@ Update-MgChatInstalledApp -InputObject <ITeamsIdentity>
 Upgrade an app installation within a chat.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgChatInstalledApp Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
 ```
-
 This example shows how to use the Update-MgChatInstalledApp Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -266,3 +264,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
+

@@ -51,7 +51,6 @@ If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to an
 This convenience is not available when forwarding from an Outlook.com account.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgForwardUserEvent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -69,7 +68,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgForwardUserEvent Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -296,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaForwardUserEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaForwardUserEvent?view=graph-powershell-beta)
+

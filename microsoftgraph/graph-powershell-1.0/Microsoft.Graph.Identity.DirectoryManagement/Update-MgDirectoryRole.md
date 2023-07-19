@@ -47,13 +47,12 @@ Update-MgDirectoryRole -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in directoryRoles
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryRole -DirectoryRoleId $directoryRoleId
-
 ```
 This example shows how to use the Update-MgDirectoryRole Cmdlet.
 
@@ -353,4 +352,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDirectoryRole](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDirectoryRole?view=graph-powershell-beta)
+
 

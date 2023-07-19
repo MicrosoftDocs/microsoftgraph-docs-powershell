@@ -38,13 +38,12 @@ Get-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-ExpandProperty <
 Retrieve the properties and relationships of an openshift object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId
-
 ```
 This example shows how to use the Get-MgBetaTeamScheduleOpenShift Cmdlet.
 
@@ -310,4 +309,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOpenShift?view=graph-powershell-v1.0)
+
 

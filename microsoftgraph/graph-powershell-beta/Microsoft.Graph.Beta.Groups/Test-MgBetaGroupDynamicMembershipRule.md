@@ -32,7 +32,6 @@ Test-MgBetaGroupDynamicMembershipRule
 Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaGroupDynamicMembershipRule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -42,7 +41,6 @@ $params = @{
 }
 Test-MgBetaGroupDynamicMembershipRule -BodyParameter $params
 ```
-
 This example shows how to use the Test-MgBetaGroupDynamicMembershipRule Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -165,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgGroupDynamicMembershipRule](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembershipRule?view=graph-powershell-v1.0)
+

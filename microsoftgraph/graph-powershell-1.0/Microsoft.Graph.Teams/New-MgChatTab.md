@@ -47,8 +47,8 @@ Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -64,7 +64,6 @@ $params = @{
 }
 
 New-MgChatTab -ChatId $chatId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgChatTab Cmdlet.
 
@@ -385,4 +384,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatTab](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaChatTab?view=graph-powershell-beta)
+
 

@@ -38,13 +38,12 @@ Get-MgBetaPolicyAppManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Ex
 Read the properties of an appManagementPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyAppManagementPolicy -AppManagementPolicyId $appManagementPolicyId
-
 ```
 This example shows how to use the Get-MgBetaPolicyAppManagementPolicy Cmdlet.
 
@@ -331,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAppManagementPolicy?view=graph-powershell-v1.0)
+
 

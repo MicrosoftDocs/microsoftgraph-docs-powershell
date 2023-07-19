@@ -33,13 +33,12 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDeviceRegisteredOwner -DeviceId $deviceId
-
 ```
 This example shows how to use the Get-MgDeviceRegisteredOwnerByRef Cmdlet.
 
@@ -214,4 +213,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDeviceRegisteredOwnerByRef?view=graph-powershell-beta)
+
 

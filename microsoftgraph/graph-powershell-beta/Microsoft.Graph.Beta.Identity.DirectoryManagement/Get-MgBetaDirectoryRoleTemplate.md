@@ -38,13 +38,12 @@ Get-MgBetaDirectoryRoleTemplate -InputObject <IIdentityDirectoryManagementIdenti
 Retrieve the properties and relationships of a directoryroletemplate object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaDirectoryRoleTemplate -DirectoryRoleTemplateId $directoryRoleTemplateId
-
 ```
 This example shows how to use the Get-MgBetaDirectoryRoleTemplate Cmdlet.
 
@@ -283,4 +282,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleTemplate?view=graph-powershell-v1.0)
+
 

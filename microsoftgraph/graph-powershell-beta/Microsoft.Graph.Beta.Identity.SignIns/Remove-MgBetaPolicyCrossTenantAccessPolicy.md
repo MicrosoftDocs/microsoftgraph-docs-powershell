@@ -24,8 +24,8 @@ Remove-MgBetaPolicyCrossTenantAccessPolicy [-IfMatch <String>] [-PassThru] [-Wha
 Delete navigation property crossTenantAccessPolicy for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -36,7 +36,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyCrossTenantAccessPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaPolicyCrossTenantAccessPolicy Cmdlet.
 
@@ -120,4 +119,5 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyCrossTenantAccessPolicy?view=graph-powershell-v1.0)
+
 

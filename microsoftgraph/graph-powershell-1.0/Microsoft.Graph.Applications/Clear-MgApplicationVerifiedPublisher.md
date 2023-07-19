@@ -33,13 +33,11 @@ Unset the verifiedPublisher previously set on an application, removing all verif
 For more information, see Publisher verification.
 
 ## EXAMPLES
-
 ### Example 1: Using the Clear-MgApplicationVerifiedPublisher Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Clear-MgApplicationVerifiedPublisher -ApplicationId $applicationId
 ```
-
 This example shows how to use the Clear-MgApplicationVerifiedPublisher Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -164,3 +162,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgBetaApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Beta.Applications/Clear-MgBetaApplicationVerifiedPublisher?view=graph-powershell-beta)
+

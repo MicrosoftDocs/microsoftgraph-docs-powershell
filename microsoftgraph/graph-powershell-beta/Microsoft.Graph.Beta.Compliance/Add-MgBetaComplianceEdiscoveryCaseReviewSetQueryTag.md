@@ -48,7 +48,6 @@ Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -InputObject <IComplianceIde
 Apply tags to documents that match the specified reviewSetQuery.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -61,7 +60,6 @@ $params = @{
 }
 Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgBetaComplianceEdiscoveryCaseReviewSetQueryTag Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -331,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgComplianceEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-v1.0)
+

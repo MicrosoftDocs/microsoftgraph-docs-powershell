@@ -57,7 +57,6 @@ Update-MgBetaUserProfileProject -InputObject <IPeopleIdentity>
 Update the properties of a projectParticipation object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileProject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -71,7 +70,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileProject -UserId $userId -ProjectParticipationId $projectParticipationId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileProject Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -635,3 +633,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)
+

@@ -40,8 +40,8 @@ Some resources support rich notifications, that is, notifications that include r
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 New-MgBetaSubscription -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSubscription Cmdlet.
 
@@ -454,4 +453,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSubscription](/powershell/module/Microsoft.Graph.ChangeNotifications/New-MgSubscription?view=graph-powershell-v1.0)
+
 

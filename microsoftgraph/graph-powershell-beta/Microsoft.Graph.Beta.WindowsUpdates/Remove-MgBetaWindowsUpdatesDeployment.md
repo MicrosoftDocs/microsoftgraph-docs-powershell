@@ -31,13 +31,11 @@ Remove-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity> [-I
 Delete a deployment object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId
 ```
-
 This example shows how to use the Remove-MgBetaWindowsUpdatesDeployment Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -165,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
+

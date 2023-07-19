@@ -31,13 +31,12 @@ Remove-MgBetaPlannerTask -InputObject <IPlannerIdentity> [-IfMatch <String>] [-P
 Delete a plannerTask object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Remove-MgBetaPlannerTask -PlannerTaskId $plannerTaskId-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Remove-MgBetaPlannerTask Cmdlet.
 
@@ -168,4 +167,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTask?view=graph-powershell-v1.0)
+
 

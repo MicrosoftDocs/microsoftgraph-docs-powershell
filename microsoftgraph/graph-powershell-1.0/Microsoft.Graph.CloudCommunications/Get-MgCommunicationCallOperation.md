@@ -38,13 +38,12 @@ Get-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity> [-E
 Get the status of an operation that adds the large gallery view to a call.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
 
 Get-MgCommunicationCallOperation -CallId $callId -CommsOperationId $commsOperationId
-
 ```
 This example shows how to use the Get-MgCommunicationCallOperation Cmdlet.
 
@@ -284,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationCallOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationCallOperation?view=graph-powershell-beta)
+
 

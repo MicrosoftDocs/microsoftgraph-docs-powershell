@@ -49,7 +49,6 @@ Update-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 Update the properties of an onPremisesAgentGroup object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -58,7 +57,6 @@ $params = @{
 }
 Update-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -379,3 +377,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOnPremisePublishingProfileAgentGroup](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileAgentGroup?view=graph-powershell-v1.0)
+

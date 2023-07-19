@@ -34,7 +34,6 @@ Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
 ## EXAMPLES
-
 ### Example 1: Using the Confirm-MgRiskyUserCompromised Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -46,7 +45,6 @@ $params = @{
 }
 Confirm-MgRiskyUserCompromised -BodyParameter $params
 ```
-
 This example shows how to use the Confirm-MgRiskyUserCompromised Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -168,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgBetaRiskyUserCompromised](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaRiskyUserCompromised?view=graph-powershell-beta)
+

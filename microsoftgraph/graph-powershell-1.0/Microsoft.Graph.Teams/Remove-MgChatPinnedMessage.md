@@ -31,13 +31,12 @@ Remove-MgChatPinnedMessage -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 Unpin a message from a chat.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgChatPinnedMessage -ChatId $chatId -PinnedChatMessageInfoId $pinnedChatMessageInfoId
-
 ```
 This example shows how to use the Remove-MgChatPinnedMessage Cmdlet.
 
@@ -206,4 +205,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaChatPinnedMessage](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaChatPinnedMessage?view=graph-powershell-beta)
+
 

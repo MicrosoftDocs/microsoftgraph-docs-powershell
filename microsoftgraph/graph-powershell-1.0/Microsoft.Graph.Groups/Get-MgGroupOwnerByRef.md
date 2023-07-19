@@ -37,13 +37,12 @@ Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupOwner -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgGroupOwnerByRef Cmdlet.
 
@@ -218,4 +217,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
+
 

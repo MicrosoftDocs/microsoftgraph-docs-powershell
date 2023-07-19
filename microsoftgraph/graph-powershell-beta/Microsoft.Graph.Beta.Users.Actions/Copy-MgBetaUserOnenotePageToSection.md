@@ -49,7 +49,6 @@ Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
-
 ### Example 1: Using the Copy-MgBetaUserOnenotePageToSection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -60,7 +59,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgBetaUserOnenotePageToSection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -304,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgUserOnenotePageToSection](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenotePageToSection?view=graph-powershell-v1.0)
+

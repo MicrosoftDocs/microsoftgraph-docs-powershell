@@ -39,7 +39,6 @@ To evaluate based on classification results, provide contentInfo, which includes
 The API returns an informationProtectionAction that contains one of more of the following:
 
 ## EXAMPLES
-
 ### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -62,7 +61,6 @@ $params = @{
 }
 Test-MgBetaInformationProtectionPolicyLabelClassificationResult -BodyParameter $params
 ```
-
 This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelClassificationResult Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -211,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgInformationProtectionPolicyLabelClassificationResult](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgInformationProtectionPolicyLabelClassificationResult?view=graph-powershell-v1.0)
+

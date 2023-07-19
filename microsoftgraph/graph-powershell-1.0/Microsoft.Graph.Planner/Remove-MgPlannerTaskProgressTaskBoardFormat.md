@@ -31,8 +31,8 @@ Remove-MgPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> [-If
 Delete navigation property progressTaskBoardFormat for planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -41,7 +41,6 @@ $params = @{
 }
 
 Update-MgPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Remove-MgPlannerTaskProgressTaskBoardFormat Cmdlet.
 
@@ -169,4 +168,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPlannerTaskProgressTaskBoardFormat?view=graph-powershell-beta)
+
 

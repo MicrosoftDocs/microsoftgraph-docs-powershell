@@ -39,13 +39,12 @@ Get-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject 
 Retrieve the properties and relationships of a authenticationContextClassReference object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId
-
 ```
 This example shows how to use the Get-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
 
@@ -313,4 +312,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 

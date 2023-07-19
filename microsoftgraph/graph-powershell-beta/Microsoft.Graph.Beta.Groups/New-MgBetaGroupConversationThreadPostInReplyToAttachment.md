@@ -47,13 +47,12 @@ New-MgBetaGroupConversationThreadPostInReplyToAttachment -InputObject <IGroupsId
 Create new navigation property to attachments for groups
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupThreadPostAttachment -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId
-
 ```
 This example shows how to use the New-MgBetaBetaGroupConversationThreadPostInReplyToAttachment Cmdlet.
 
@@ -369,4 +368,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-v1.0)
+
 

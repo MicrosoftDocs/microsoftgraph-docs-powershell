@@ -31,13 +31,12 @@ Remove-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> [-IfMatch <Stri
 Delete an openShift object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId
-
 ```
 This example shows how to use the Remove-MgBetaTeamScheduleOpenShift Cmdlet.
 
@@ -213,4 +212,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleOpenShift?view=graph-powershell-v1.0)
+
 

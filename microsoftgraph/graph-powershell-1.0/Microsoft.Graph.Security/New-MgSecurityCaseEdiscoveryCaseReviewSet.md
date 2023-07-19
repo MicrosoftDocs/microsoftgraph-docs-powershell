@@ -45,8 +45,8 @@ New-MgSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
 Create a new ediscoveryReviewSet object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 New-MgSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
 
@@ -340,4 +339,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-beta)
+
 

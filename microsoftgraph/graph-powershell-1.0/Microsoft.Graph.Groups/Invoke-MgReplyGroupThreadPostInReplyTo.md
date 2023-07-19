@@ -48,8 +48,8 @@ Reply to a post and add a new post to the specified thread in a group conversati
 You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -107,7 +107,6 @@ $params = @{
 }
 
 Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-
 ```
 This example shows how to use the Invoke-MgReplyGroupThreadPostInReplyTo Cmdlet.
 
@@ -413,4 +412,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyGroupThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaReplyGroupThreadPostInReplyTo?view=graph-powershell-beta)
+
 

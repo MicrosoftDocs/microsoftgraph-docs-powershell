@@ -31,8 +31,8 @@ Get-MgEducationClassAssignmentSetting -InputObject <IEducationIdentity> [-Expand
 Specifies class-level assignments settings.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -41,7 +41,6 @@ $params = @{
 }
 
 Update-MgEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
-
 ```
 This example shows how to use the Get-MgEducationClassAssignmentSetting Cmdlet.
 
@@ -143,4 +142,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignmentSetting?view=graph-powershell-beta)
+
 

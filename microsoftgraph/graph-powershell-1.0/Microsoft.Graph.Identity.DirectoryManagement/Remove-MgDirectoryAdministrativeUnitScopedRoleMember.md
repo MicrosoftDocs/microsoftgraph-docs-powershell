@@ -31,13 +31,12 @@ Remove-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDire
 Remove an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
-
 ```
 This example shows how to use the Remove-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
 
@@ -196,4 +195,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
+
 

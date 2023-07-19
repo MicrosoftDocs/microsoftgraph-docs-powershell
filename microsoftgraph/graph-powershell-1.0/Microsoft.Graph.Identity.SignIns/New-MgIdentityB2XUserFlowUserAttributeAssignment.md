@@ -49,8 +49,8 @@ New-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignInsI
 Create a new identityUserFlowAttributeAssignment object in a b2xIdentityUserFlow.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 New-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
 
@@ -391,4 +390,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
+
 

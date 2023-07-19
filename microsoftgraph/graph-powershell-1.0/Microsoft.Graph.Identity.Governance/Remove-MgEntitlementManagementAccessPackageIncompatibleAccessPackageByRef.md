@@ -33,13 +33,12 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 Remove an access package from the list of access packages that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId $accessPackageId -AccessPackageId1 $accessPackageId1
-
 ```
 This example shows how to use the Remove-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef Cmdlet.
 
@@ -246,4 +245,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-beta)
+
 

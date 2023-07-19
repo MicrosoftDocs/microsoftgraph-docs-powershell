@@ -38,13 +38,12 @@ Get-MgTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Pr
 Get a conversationMember from a team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId
-
 ```
 This example shows how to use the Get-MgTeamMember Cmdlet.
 
@@ -303,4 +302,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamMember?view=graph-powershell-beta)
+
 

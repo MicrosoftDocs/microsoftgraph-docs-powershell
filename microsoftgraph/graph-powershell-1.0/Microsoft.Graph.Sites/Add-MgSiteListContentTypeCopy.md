@@ -45,7 +45,6 @@ Add-MgSiteListContentTypeCopy -InputObject <ISitesIdentity>
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgSiteListContentTypeCopy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
@@ -54,7 +53,6 @@ $params = @{
 }
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgSiteListContentTypeCopy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -248,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaSiteListContentTypeCopy](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaSiteListContentTypeCopy?view=graph-powershell-beta)
+

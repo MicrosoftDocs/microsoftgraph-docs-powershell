@@ -59,7 +59,6 @@ If the same updatableAsset gets included in the **exclusions** and **members** c
 If all **updatableAsset** objects are the same type, you can also use the method updateAudienceById to update the **deploymentAudience**.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
@@ -91,7 +90,6 @@ $params = @{
 }
 Update-MgBetaWindowsUpdatesDeploymentAudience -DeploymentId $deploymentId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaWindowsUpdatesDeploymentAudience Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -320,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgWindowsUpdatesDeploymentAudience](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeploymentAudience?view=graph-powershell-v1.0)
+

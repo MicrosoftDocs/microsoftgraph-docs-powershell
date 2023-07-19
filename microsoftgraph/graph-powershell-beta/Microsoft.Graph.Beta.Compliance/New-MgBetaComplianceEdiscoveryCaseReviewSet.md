@@ -48,7 +48,6 @@ Create a new reviewSet object.
 The request body contains the display name of the review set, which is the only writable property.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -57,7 +56,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -325,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+

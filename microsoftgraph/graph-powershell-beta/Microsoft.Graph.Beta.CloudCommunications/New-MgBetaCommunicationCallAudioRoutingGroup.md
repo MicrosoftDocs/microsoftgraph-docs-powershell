@@ -45,7 +45,6 @@ New-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicationsI
 Create a new **audioRoutingGroup**.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -61,7 +60,6 @@ $params = @{
 }
 New-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -269,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-v1.0)
+

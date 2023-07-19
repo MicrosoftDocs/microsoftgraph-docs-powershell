@@ -51,7 +51,6 @@ Send an activity feed notification to a user.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
-
 ### Example 1: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -74,10 +73,8 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -100,10 +97,8 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -125,7 +120,6 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -412,3 +406,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-v1.0)
+

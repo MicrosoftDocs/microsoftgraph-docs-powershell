@@ -31,13 +31,12 @@ Remove-MgBetaUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] 
 Remove a user's manager.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 
 Remove-MgBetaUserManagerByRef -UserId $userId
-
 ```
 This example shows how to use the Remove-MgBetaUserManagerByRef Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserManagerByRef](/powershell/module/Microsoft.Graph.Users/Remove-MgUserManagerByRef?view=graph-powershell-v1.0)
+
 

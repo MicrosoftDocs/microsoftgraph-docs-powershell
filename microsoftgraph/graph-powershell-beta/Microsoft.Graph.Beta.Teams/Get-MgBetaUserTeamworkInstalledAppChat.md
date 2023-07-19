@@ -31,13 +31,12 @@ Get-MgBetaUserTeamworkInstalledAppChat -InputObject <ITeamsIdentity> [-ExpandPro
 Retrieve the chat of the specified user and Teams app.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserTeamworkInstalledAppChat -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
-
 ```
 This example shows how to use the Get-MgBetaUserTeamworkInstalledAppChat Cmdlet.
 
@@ -182,4 +181,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTeamworkInstalledAppChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppChat?view=graph-powershell-v1.0)
+
 

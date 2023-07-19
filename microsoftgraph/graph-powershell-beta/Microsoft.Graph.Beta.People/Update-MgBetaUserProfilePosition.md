@@ -53,7 +53,6 @@ Update-MgBetaUserProfilePosition -InputObject <IPeopleIdentity> -BodyParameter <
 Update the properties of a workPosition object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfilePosition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -63,7 +62,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfilePosition -UserId $userId -WorkPositionId $workPositionId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfilePosition Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -561,3 +559,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePosition?view=graph-powershell-v1.0)
+

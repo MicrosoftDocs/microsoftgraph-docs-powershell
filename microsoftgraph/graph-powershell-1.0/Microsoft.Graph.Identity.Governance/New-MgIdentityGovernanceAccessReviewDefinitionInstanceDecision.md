@@ -56,13 +56,12 @@ New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -InputObject <IId
 Create new navigation property to decisions for identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId
-
 ```
 This example shows how to use the New-MgIdentityGovernanceAccessReviewDefinitionInstanceDecision Cmdlet.
 
@@ -576,4 +575,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceDecision?view=graph-powershell-beta)
+
 

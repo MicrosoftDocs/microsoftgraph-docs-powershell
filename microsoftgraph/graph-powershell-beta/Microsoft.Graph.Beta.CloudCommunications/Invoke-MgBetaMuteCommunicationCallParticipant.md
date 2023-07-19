@@ -49,7 +49,6 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more information about how to handle mute operations, see muteParticipantOperation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaMuteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -58,7 +57,6 @@ $params = @{
 }
 Invoke-MgBetaMuteCommunicationCallParticipant -CallId $callId -ParticipantId $participantId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaMuteCommunicationCallParticipant Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -232,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMuteCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCallParticipant?view=graph-powershell-v1.0)
+

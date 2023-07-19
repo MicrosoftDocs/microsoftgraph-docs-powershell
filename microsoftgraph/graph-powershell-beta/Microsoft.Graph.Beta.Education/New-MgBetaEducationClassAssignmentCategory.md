@@ -72,8 +72,8 @@ Creates a new educationCategory on an educationClass.
 Only teachers can perform this operation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -82,7 +82,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentCategory -EducationClassId $educationClassId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentCategory Cmdlet.
 
@@ -271,4 +270,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignmentCategory](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentCategory?view=graph-powershell-v1.0)
+
 

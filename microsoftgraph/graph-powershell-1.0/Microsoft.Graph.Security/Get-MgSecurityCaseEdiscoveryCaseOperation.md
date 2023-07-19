@@ -38,13 +38,12 @@ Get-MgSecurityCaseEdiscoveryCaseOperation -InputObject <ISecurityIdentity> [-Exp
 Read the properties and relationships of a caseOperation object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseOperation -EdiscoveryCaseId $ediscoveryCaseId -CaseOperationId $caseOperationId
-
 ```
 This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseOperation Cmdlet.
 
@@ -305,4 +304,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-beta)
+
 

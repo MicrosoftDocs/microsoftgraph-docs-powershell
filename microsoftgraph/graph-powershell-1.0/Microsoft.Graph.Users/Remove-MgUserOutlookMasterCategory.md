@@ -31,11 +31,13 @@ Remove-MgUserManagerByRef -InputObject <IUsersIdentity> [-IfMatch <String>] [-Pa
 Remove a user's manager.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
-```powershell
-Remove-MgUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 
+```powershell
+Import-Module Microsoft.Graph.Users
+
+# A UPN can also be used as -UserId.
+Remove-MgUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
 ```
 This example shows how to use the Remove-MgUserOutlookMasterCategory Cmdlet.
 
@@ -172,4 +174,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
+
 

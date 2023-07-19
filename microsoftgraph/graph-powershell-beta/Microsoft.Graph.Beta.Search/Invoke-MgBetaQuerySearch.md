@@ -34,7 +34,6 @@ Run a specified search query.
 Search results are provided in the response.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaQuerySearch Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
@@ -61,7 +60,6 @@ $params = @{
 }
 Invoke-MgBetaQuerySearch -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaQuerySearch Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -258,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgQuerySearch](/powershell/module/Microsoft.Graph.Search/Invoke-MgQuerySearch?view=graph-powershell-v1.0)
+

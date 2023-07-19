@@ -43,13 +43,12 @@ Remove-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-IfMatch <String>]
 Delete a groupLifecyclePolicy.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Remove-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
-
 ```
 This example shows how to use the Remove-MgGroupLifecyclePolicy Cmdlet.
 
@@ -222,4 +221,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupLifecyclePolicy?view=graph-powershell-beta)
+
 

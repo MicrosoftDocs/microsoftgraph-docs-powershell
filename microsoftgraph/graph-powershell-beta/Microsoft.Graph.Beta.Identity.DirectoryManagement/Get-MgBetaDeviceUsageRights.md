@@ -38,22 +38,18 @@ Get-MgBetaDeviceUsageRights -InputObject <IIdentityDirectoryManagementIdentity> 
 Represents the usage rights a device has been granted.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaDeviceUsageRights Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDeviceUsageRights -DeviceId $deviceId
 ```
-
 This example shows how to use the Get-MgBetaDeviceUsageRights Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaDeviceUsageRights Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')"
+Get-MgBetaDeviceUsageRights -DeviceId $deviceId -Filter "state in ('active', 'suspended') and serviceIdentifier in ('ABCD')" 
 ```
-
 This example shows how to use the Get-MgBetaDeviceUsageRights Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -319,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceUsageRights](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceUsageRights?view=graph-powershell-v1.0)
+

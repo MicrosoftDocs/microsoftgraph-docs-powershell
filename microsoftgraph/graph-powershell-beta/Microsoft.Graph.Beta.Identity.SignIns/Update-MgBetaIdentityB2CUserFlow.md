@@ -53,7 +53,6 @@ Update-MgBetaIdentityB2CUserFlow -InputObject <IIdentitySignInsIdentity>
 Update the properties of a b2cIdentityUserFlow object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaIdentityB2CUserFlow Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -63,7 +62,6 @@ $params = @{
 }
 Update-MgBetaIdentityB2CUserFlow -B2cIdentityUserFlowId $b2cIdentityUserFlowId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaIdentityB2CUserFlow Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -522,3 +520,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityB2CUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlow?view=graph-powershell-v1.0)
+

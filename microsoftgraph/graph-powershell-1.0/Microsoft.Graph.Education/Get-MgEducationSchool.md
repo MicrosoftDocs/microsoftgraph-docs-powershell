@@ -38,13 +38,12 @@ Get-MgEducationSchool -InputObject <IEducationIdentity> [-ExpandProperty <String
 Read the properties and relationships of an educationSchool object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationSchool -EducationSchoolId $educationSchoolId
-
 ```
 This example shows how to use the Get-MgEducationSchool Cmdlet.
 
@@ -267,4 +266,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchool?view=graph-powershell-beta)
+
 

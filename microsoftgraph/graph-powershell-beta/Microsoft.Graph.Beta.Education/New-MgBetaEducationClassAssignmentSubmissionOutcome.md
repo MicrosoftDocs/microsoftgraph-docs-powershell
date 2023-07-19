@@ -53,8 +53,8 @@ To create a new file-based resource, upload the file to the feedback resources f
 If the file doesn't exist or is not in that folder, the `POST` request will fail.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionOutcome Cmdlet.
 
@@ -306,4 +305,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+
 

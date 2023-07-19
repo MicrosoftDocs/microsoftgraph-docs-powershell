@@ -31,13 +31,12 @@ Remove-MgContact -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <
 Delete entity from contacts
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContact -OrgContactId $orgContactId
-
 ```
 This example shows how to use the Remove-MgContact Cmdlet.
 
@@ -181,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaContact](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaContact?view=graph-powershell-beta)
+
 

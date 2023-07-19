@@ -32,8 +32,8 @@ New-MgBetaPolicyClaimMappingPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confir
 Create a new claimsMappingPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -45,7 +45,6 @@ $params = @{
 }
 
 New-MgBetaPolicyClaimMappingPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaPolicyClaimMappingPolicy Cmdlet.
 
@@ -253,4 +252,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyClaimMappingPolicy?view=graph-powershell-v1.0)
+
 

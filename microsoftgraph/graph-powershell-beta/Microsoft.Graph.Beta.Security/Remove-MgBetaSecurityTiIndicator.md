@@ -31,13 +31,11 @@ Remove-MgBetaSecurityTiIndicator -InputObject <ISecurityIdentity> [-IfMatch <Str
 Delete a tiIndicator object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityTiIndicator -TiIndicatorId $tiIndicatorId
 ```
-
 This example shows how to use the Remove-MgBetaSecurityTiIndicator Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -227,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+

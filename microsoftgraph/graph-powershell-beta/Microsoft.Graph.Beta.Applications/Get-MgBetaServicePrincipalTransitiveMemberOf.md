@@ -38,13 +38,11 @@ Get-MgBetaServicePrincipalTransitiveMemberOf -InputObject <IApplicationsIdentity
 Get transitiveMemberOf from servicePrincipals
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalTransitiveMemberOf -ServicePrincipalId $servicePrincipalId
 ```
-
 This example shows how to use the Get-MgBetaServicePrincipalTransitiveMemberOf Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -313,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-v1.0)
+

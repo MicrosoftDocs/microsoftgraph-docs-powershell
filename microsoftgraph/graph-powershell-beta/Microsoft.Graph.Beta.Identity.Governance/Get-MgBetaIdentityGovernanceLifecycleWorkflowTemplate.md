@@ -38,31 +38,25 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGov
 Read the properties and relationships of a workflowTemplate object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -WorkflowTemplateId $workflowTemplateId
 ```
-
 This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'"
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
 ```
-
 This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
 ```
-
 This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -368,3 +362,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceLifecycleWorkflowTemplate](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowTemplate?view=graph-powershell-v1.0)
+

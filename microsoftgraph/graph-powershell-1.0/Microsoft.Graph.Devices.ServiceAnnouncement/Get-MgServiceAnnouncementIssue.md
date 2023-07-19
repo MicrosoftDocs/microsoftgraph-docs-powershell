@@ -42,13 +42,12 @@ This operation retrieves a specified service health issue for tenant.
 The operation returns an error if the issue does not exist for the tenant.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementIssue -ServiceHealthIssueId $serviceHealthIssueId
-
 ```
 This example shows how to use the Get-MgServiceAnnouncementIssue Cmdlet.
 
@@ -265,4 +264,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementIssue?view=graph-powershell-beta)
+
 

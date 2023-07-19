@@ -38,13 +38,11 @@ Get-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdentity>
 Retrieve the properties and relationships of a governanceRoleSetting.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPrivilegedAccessRoleSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId
 ```
-
 This example shows how to use the Get-MgBetaPrivilegedAccessRoleSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -365,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSetting?view=graph-powershell-v1.0)
+

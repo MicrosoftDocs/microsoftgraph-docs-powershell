@@ -38,14 +38,13 @@ Get-MgBetaShareListContentType -InputObject <IFilesIdentity> [-ExpandProperty <S
 Get contentTypes from shares
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListContentType -SiteId $siteId -ListId $listId
-
+```
 This example shows how to use the Get-MgBetaShareListContentType Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -296,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Get-MgShareListContentType?view=graph-powershell-v1.0)
+

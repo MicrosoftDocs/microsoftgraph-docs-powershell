@@ -38,13 +38,12 @@ Get-MgDirectoryAdministrativeUnitScopedRoleMember -InputObject <IIdentityDirecto
 Get an Azure Active Directory (Azure AD) role assignment with administrative unit scope.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAdministrativeUnitScopedRoleMember -AdministrativeUnitId $administrativeUnitId -ScopedRoleMembershipId $scopedRoleMembershipId
-
 ```
 This example shows how to use the Get-MgDirectoryAdministrativeUnitScopedRoleMember Cmdlet.
 
@@ -293,4 +292,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryAdministrativeUnitScopedRoleMember?view=graph-powershell-beta)
+
 

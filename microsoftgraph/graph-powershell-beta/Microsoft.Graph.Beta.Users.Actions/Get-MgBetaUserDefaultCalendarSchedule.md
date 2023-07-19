@@ -47,7 +47,6 @@ Get-MgBetaUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserDefaultCalendarSchedule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -69,7 +68,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgBetaUserDefaultCalendarSchedule Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -313,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDefaultCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserDefaultCalendarSchedule?view=graph-powershell-v1.0)
+

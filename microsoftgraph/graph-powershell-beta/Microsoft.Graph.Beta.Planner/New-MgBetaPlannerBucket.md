@@ -31,8 +31,8 @@ New-MgBetaPlannerBucket -BodyParameter <IMicrosoftGraphPlannerBucket> [-WhatIf] 
 Create a new plannerBucket object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -43,7 +43,6 @@ $params = @{
 }
 
 New-MgBetaPlannerBucket -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaPlannerBucket Cmdlet.
 
@@ -442,4 +441,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-v1.0)
+
 

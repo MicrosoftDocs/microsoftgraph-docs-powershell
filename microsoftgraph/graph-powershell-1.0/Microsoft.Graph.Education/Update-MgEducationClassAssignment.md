@@ -65,8 +65,8 @@ Alternatively, request to change the status of an **assignment** with publish ac
 Don't use a PATCH operation for this purpose.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -81,7 +81,6 @@ $params = @{
 }
 
 Update-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgEducationClassAssignment Cmdlet.
 
@@ -743,4 +742,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 

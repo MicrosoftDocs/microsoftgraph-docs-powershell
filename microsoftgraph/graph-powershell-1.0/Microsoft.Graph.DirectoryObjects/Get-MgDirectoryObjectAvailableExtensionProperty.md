@@ -34,13 +34,11 @@ Return all directory extension definitions that have been registered in a direct
 The following entities support extension properties:\n+ user\n+ group\n+ administrativeUnit\n+ application\n+ device\n+ organization
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
 Get-MgDirectoryObjectAvailableExtensionProperty
 ```
-
 This example shows how to use the Get-MgDirectoryObjectAvailableExtensionProperty Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -147,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryObjectAvailableExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryObjectAvailableExtensionProperty?view=graph-powershell-beta)
+

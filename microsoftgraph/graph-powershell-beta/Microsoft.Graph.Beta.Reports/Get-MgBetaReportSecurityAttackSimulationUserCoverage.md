@@ -24,13 +24,11 @@ Get-MgBetaReportSecurityAttackSimulationUserCoverage [-Count] [-Filter <String>]
 Invoke function getAttackSimulationSimulationUserCoverage
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaReportSecurityAttackSimulationUserCoverage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportSecurityAttackSimulationUserCoverage
 ```
-
 This example shows how to use the Get-MgBetaReportSecurityAttackSimulationUserCoverage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -125,3 +123,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportSecurityAttackSimulationUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationUserCoverage?view=graph-powershell-v1.0)
+

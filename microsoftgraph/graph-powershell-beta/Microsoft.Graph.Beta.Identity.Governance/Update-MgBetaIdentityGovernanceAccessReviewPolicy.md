@@ -32,7 +32,6 @@ Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter <IMicrosoftGrap
 Update the properties of an accessReviewPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -41,7 +40,6 @@ $params = @{
 }
 Update-MgBetaIdentityGovernanceAccessReviewPolicy -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -199,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityGovernanceAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewPolicy?view=graph-powershell-v1.0)
+

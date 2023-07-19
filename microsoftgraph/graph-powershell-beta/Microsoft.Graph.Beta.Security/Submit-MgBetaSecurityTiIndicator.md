@@ -32,7 +32,6 @@ Submit-MgBetaSecurityTiIndicator
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
 ## EXAMPLES
-
 ### Example 1: Using the Submit-MgBetaSecurityTiIndicator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -82,7 +81,6 @@ $params = @{
 }
 Submit-MgBetaSecurityTiIndicator -BodyParameter $params
 ```
-
 This example shows how to use the Submit-MgBetaSecurityTiIndicator Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -313,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)
+

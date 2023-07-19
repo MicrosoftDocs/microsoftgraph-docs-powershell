@@ -59,7 +59,6 @@ The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -75,10 +74,8 @@ $params = @{
 }
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Invoke-MgBetaAnswerCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
@@ -99,7 +96,6 @@ $params = @{
 }
 Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaAnswerCommunicationCall Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -347,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAnswerCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgAnswerCommunicationCall?view=graph-powershell-v1.0)
+

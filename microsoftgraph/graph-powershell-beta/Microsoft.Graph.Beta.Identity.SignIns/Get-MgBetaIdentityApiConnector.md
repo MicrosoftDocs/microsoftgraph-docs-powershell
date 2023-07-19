@@ -38,13 +38,12 @@ Get-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-ExpandP
 Read the properties of an identityApiConnector object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId
-
 ```
 This example shows how to use the Get-MgBetaIdentityApiConnector Cmdlet.
 
@@ -331,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityApiConnector?view=graph-powershell-v1.0)
+
 

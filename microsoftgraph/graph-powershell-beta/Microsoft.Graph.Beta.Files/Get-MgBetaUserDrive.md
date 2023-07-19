@@ -40,23 +40,19 @@ A collection of drives available for this user.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 # A UPN can also be used as -UserId.
 Get-MgBetaUserDrive -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserDrive Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaUserDrive -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserDrive Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -305,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDrive](/powershell/module/Microsoft.Graph.Files/Get-MgUserDrive?view=graph-powershell-v1.0)
+

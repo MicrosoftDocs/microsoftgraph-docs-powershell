@@ -38,13 +38,11 @@ Get-MgBetaAccessReviewReviewer -InputObject <IIdentityGovernanceIdentity> [-Expa
 The collection of reviewers for an access review, if access review reviewerType is of type delegated.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaAccessReviewReviewer Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId
 ```
-
 This example shows how to use the Get-MgBetaAccessReviewReviewer Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -365,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAccessReviewReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewReviewer?view=graph-powershell-v1.0)
+

@@ -29,13 +29,11 @@ Get-MgBetaTrustFrameworkKeySetActiveKey -InputObject <IIdentitySignInsIdentity> 
 Invoke function getActiveKey
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaTrustFrameworkKeySetActiveKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaTrustFrameworkKeySetActiveKey -TrustFrameworkKeySetId $trustFrameworkKeySetId
 ```
-
 This example shows how to use the Get-MgBetaTrustFrameworkKeySetActiveKey Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -168,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTrustFrameworkKeySetActiveKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySetActiveKey?view=graph-powershell-v1.0)
+

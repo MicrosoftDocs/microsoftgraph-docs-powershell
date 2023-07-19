@@ -44,13 +44,12 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintPrinterShare -PrinterId $printerId
-
 ```
 This example shows how to use the Get-MgPrintPrinterShare Cmdlet.
 
@@ -291,4 +290,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintPrinterShare](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintPrinterShare?view=graph-powershell-beta)
+
 

@@ -31,13 +31,12 @@ Remove-MgPrintPrinter -InputObject <IDevicesCloudPrintIdentity> [-IfMatch <Strin
 Delete (unregister) a printer.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Remove-MgPrintPrinter -PrinterId $printerId
-
 ```
 This example shows how to use the Remove-MgPrintPrinter Cmdlet.
 
@@ -173,4 +172,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPrintPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPrintPrinter?view=graph-powershell-beta)
+
 

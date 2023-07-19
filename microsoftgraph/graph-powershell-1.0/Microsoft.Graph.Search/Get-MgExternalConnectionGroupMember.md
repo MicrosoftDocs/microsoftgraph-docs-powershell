@@ -40,13 +40,12 @@ A member added to an externalGroup.
 You can add Azure Active Directory users, Azure Active Directory groups, or an externalGroup as members.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
 Remove-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -IdentityId $identityId
-
 ```
 This example shows how to use the Get-MgExternalConnectionGroupMember Cmdlet.
 
@@ -295,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+
 

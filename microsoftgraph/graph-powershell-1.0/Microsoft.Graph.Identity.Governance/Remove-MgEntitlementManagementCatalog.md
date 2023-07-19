@@ -31,13 +31,12 @@ Remove-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
 Delete an accessPackageCatalog.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
-
 ```
 This example shows how to use the Remove-MgEntitlementManagementCatalog Cmdlet.
 
@@ -214,4 +213,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
+
 

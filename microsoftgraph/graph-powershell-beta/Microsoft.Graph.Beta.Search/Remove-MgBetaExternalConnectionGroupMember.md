@@ -31,13 +31,12 @@ Remove-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMa
 Delete an externalGroupMember object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Remove-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -IdentityId $identityId
-
 ```
 This example shows how to use the Remove-MgBetaExternalConnectionGroupMember Cmdlet.
 
@@ -208,4 +207,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionGroupMember?view=graph-powershell-v1.0)
+
 

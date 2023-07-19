@@ -27,13 +27,12 @@ Retrieves the teachers and students for a class.
 Note that if the delegated token is used, members can only be seen by other members of the class.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassMember -EducationClassId $educationClassId
-
 ```
 This example shows how to use the Get-MgBetaEducationClassMemberByRef Cmdlet.
 
@@ -192,4 +191,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
+
 

@@ -42,13 +42,11 @@ Collection of pages with the default content to display in a user flow for a spe
 This collection does not allow any kind of modification.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 ```
-
 This example shows how to use the Get-MgBetaIdentityB2CUserFlowLanguageDefaultPage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -363,3 +361,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityB2CUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowLanguageDefaultPage?view=graph-powershell-v1.0)
+

@@ -49,7 +49,6 @@ Copies a section to a specific notebook.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
-
 ### Example 1: Using the Copy-MgBetaUserOnenoteSectionToNotebook Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -61,7 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenoteSectionToNotebook -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgBetaUserOnenoteSectionToNotebook Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -321,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgUserOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteSectionToNotebook?view=graph-powershell-v1.0)
+

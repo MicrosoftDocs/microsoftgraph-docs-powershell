@@ -49,8 +49,8 @@ Update-MgBetaGroupThread -InputObject <IGroupsIdentity> -BodyParameter <IMicroso
 Update a thread object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -63,7 +63,6 @@ $params = @{
 }
 
 Update-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaGroupThread Cmdlet.
 
@@ -536,4 +535,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThread?view=graph-powershell-v1.0)
+
 

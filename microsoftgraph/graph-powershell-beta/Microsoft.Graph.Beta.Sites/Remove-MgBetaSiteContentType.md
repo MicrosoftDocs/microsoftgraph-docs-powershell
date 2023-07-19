@@ -31,13 +31,12 @@ Remove-MgBetaSiteContentType -InputObject <ISitesIdentity> [-IfMatch <String>] [
 Remove a [content type][contentType] from a [list][] or a [site][].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-
 ```
 This example shows how to use the Remove-MgBetaSiteContentType Cmdlet.
 
@@ -225,4 +224,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteContentType?view=graph-powershell-v1.0)
+
 

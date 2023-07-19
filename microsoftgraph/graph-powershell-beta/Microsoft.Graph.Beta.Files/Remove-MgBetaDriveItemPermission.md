@@ -33,13 +33,12 @@ Remove access to a DriveItem.
 Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Remove-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
-
 ```
 This example shows how to use the Remove-MgBetaDriveItemPermission Cmdlet.
 
@@ -216,4 +215,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveItemPermission?view=graph-powershell-v1.0)
+
 

@@ -38,13 +38,12 @@ Get-MgBetaSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty 
 Measurements of tenants' security posture to help protect them from threats.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecuritySecureScore -SecureScoreId $secureScoreId
-
 ```
 This example shows how to use the Get-MgBetaSecuritySecureScore Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecuritySecureScore](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySecureScore?view=graph-powershell-v1.0)
+
 

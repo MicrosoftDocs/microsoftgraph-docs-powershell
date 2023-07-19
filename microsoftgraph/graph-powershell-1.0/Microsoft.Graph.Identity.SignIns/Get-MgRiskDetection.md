@@ -38,13 +38,12 @@ Get-MgRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <St
 Read the properties and relationships of a riskDetection object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskDetection -RiskDetectionId $riskDetectionId
-
 ```
 This example shows how to use the Get-MgRiskDetection Cmdlet.
 
@@ -312,4 +311,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRiskDetection](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRiskDetection?view=graph-powershell-beta)
+
 

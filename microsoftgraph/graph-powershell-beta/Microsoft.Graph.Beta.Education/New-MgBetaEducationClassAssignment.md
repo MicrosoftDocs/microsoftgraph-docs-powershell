@@ -63,8 +63,8 @@ Only teachers in a class can create an assignment.
 Assignments start in the Draft state, which means that students will not see the assignment until publication.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -87,7 +87,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignment -EducationClassId $educationClassId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignment Cmdlet.
 
@@ -764,4 +763,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignment?view=graph-powershell-v1.0)
+
 

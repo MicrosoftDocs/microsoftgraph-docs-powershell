@@ -65,8 +65,8 @@ Send a new chatMessage in the specified chat.
 This API cannot create a new chat; you must use the list chats method to retrieve the ID of an existing chat before creating a chat message.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -77,7 +77,6 @@ $params = @{
 }
 
 New-MgBetaChatMessage -ChatId $chatId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaChatMessage Cmdlet.
 
@@ -932,4 +931,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgChatMessage](/powershell/module/Microsoft.Graph.Teams/New-MgChatMessage?view=graph-powershell-v1.0)
+
 

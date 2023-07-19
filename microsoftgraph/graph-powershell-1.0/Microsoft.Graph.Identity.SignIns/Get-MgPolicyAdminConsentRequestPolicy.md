@@ -23,13 +23,12 @@ Get-MgPolicyAdminConsentRequestPolicy [-ExpandProperty <String[]>] [-Property <S
 Read the properties and relationships of an adminConsentRequestPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyAdminConsentRequestPolicy
-
 ```
 This example shows how to use the Get-MgPolicyAdminConsentRequestPolicy Cmdlet.
 
@@ -82,4 +81,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAdminConsentRequestPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyAdminConsentRequestPolicy?view=graph-powershell-beta)
+
 

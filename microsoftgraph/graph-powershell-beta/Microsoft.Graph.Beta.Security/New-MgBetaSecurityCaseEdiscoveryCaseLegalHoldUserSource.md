@@ -48,7 +48,6 @@ New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -InputObject <ISecurityI
 Create a new userSource object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -58,10 +57,8 @@ $params = @{
 }
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -71,7 +68,6 @@ $params = @{
 }
 New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseLegalHoldUserSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -429,3 +425,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseLegalHoldUserSource?view=graph-powershell-v1.0)
+

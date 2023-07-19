@@ -35,7 +35,6 @@ Only teachers can perform this operation.
 The teacher determines the resources to upload in the assignment's folder.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgEducationClassAssignmentUpResourceFolder Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Education
@@ -43,7 +42,6 @@ $params = @{
 }
 Set-MgEducationClassAssignmentUpResourceFolder -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgEducationClassAssignmentUpResourceFolder Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -158,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaEducationClassAssignmentUpResourceFolder](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaEducationClassAssignmentUpResourceFolder?view=graph-powershell-beta)
+

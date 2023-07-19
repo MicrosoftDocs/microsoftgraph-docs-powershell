@@ -45,8 +45,8 @@ New-MgBetaPolicyFeatureRolloutPolicyApplyTo -InputObject <IIdentitySignInsIdenti
 Add an appliesTo on a featureRolloutPolicy object to specify the directoryObject to which the featureRolloutPolicy should be applied.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 New-MgBetaPolicyFeatureRolloutPolicyApplyToByRef -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaPolicyFeatureRolloutPolicyApplyTo Cmdlet.
 
@@ -291,4 +290,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-v1.0)
+
 

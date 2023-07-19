@@ -31,13 +31,11 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHold -InputObject <ISecurityIdentity
 Delete navigation property legalHolds for security
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHold -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryHoldPolicyId $ediscoveryHoldPolicyId
 ```
-
 This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseLegalHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -242,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityCaseEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)
+

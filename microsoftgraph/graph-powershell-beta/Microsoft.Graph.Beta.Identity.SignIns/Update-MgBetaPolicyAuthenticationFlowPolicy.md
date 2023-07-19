@@ -35,8 +35,8 @@ Update the Boolean **selfServiceSignUp** property of an authenticationFlowsPolic
 The properties **id**, **type**, and **description** cannot be modified.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -47,7 +47,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationFlowPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPolicyAuthenticationFlowPolicy Cmdlet.
 
@@ -221,4 +220,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationFlowPolicy?view=graph-powershell-v1.0)
+
 

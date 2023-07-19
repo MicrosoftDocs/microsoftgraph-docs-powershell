@@ -47,8 +47,8 @@ Update-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity>
 Update the properties of featureRolloutPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -60,7 +60,6 @@ $params = @{
 }
 
 Update-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgPolicyFeatureRolloutPolicy Cmdlet.
 
@@ -364,4 +363,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
+
 

@@ -69,8 +69,8 @@ In this case, `organization` is defined as a collection of exactly one record, a
 The **ID** is also known as the **tenantId** of the organization.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -94,7 +94,6 @@ $params = @{
 }
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgOrganization Cmdlet.
 
@@ -950,4 +949,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaOrganization?view=graph-powershell-beta)
+
 

@@ -38,13 +38,12 @@ Get-MgBetaExternalConnectionGroup -InputObject <ISearchIdentity> [-ExpandPropert
 Get groups from external
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnectionGroup -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId
-
 ```
 This example shows how to use the Get-MgBetaExternalConnectionGroup Cmdlet.
 
@@ -290,4 +289,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionGroup](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionGroup?view=graph-powershell-v1.0)
+
 

@@ -38,13 +38,12 @@ Get-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIdenti
 Retrieve the properties and relationships of an accessPackage object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId
-
 ```
 This example shows how to use the Get-MgEntitlementManagementAccessPackage Cmdlet.
 
@@ -311,4 +310,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 

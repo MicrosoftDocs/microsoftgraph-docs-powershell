@@ -33,13 +33,11 @@ In Azure AD entitlement management, this action retrieves a list of accessPackag
 Each requirement object corresponds to an access package assignment policy that the currently signed-in user is allowed to request an assignment for.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement -AccessPackageId $accessPackageId
 ```
-
 This example shows how to use the Get-MgEntitlementManagementAccessPackageApplicablePolicyRequirement Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -183,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackageApplicablePolicyRequirement?view=graph-powershell-beta)
+

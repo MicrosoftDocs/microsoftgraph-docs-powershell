@@ -31,22 +31,18 @@ Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -InputObject <ISecurityId
 Reset a caseSettings object to the default values.
 
 ## EXAMPLES
-
 ### Example 1: Using the Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
 ```
-
 This example shows how to use the Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault -EdiscoveryCaseId $ediscoveryCaseId
 ```
-
 This example shows how to use the Reset-MgBetaSecurityCaseEdiscoveryCaseSettingToDefault Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -221,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Security/Reset-MgSecurityCaseEdiscoveryCaseSettingToDefault?view=graph-powershell-v1.0)
+

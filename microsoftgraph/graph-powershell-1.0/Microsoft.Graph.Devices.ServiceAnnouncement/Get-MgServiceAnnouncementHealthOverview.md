@@ -40,25 +40,23 @@ Retrieve the properties and relationships of a serviceHealth object.
 This operation provides the health information of a specified service for a tenant.
 
 ## EXAMPLES
-
 ### Example 1: Get the properties of a serviceHealth object
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId
-
 ```
 This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Include navigation property issues
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.ServiceAnnouncement
 
 Get-MgServiceAnnouncementHealthOverview -ServiceHealthId $serviceHealthId -ExpandProperty "issues"
-
 ```
 This example shows how to use the Get-MgServiceAnnouncementHealthOverview Cmdlet.
 
@@ -275,4 +273,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaServiceAnnouncementHealthOverview](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServiceAnnouncementHealthOverview?view=graph-powershell-beta)
+
 

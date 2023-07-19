@@ -26,13 +26,12 @@ Read the default configuration of a cross-tenant access policy.
 This default configuration may be the service default assigned by Azure AD (**isServiceDefault** is `true`) or may be customized in your tenant (**isServiceDefault** is `false`).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyCrossTenantAccessPolicyDefault
-
 ```
 This example shows how to use the Get-MgBetaPolicyCrossTenantAccessPolicyDefault Cmdlet.
 
@@ -85,4 +84,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyCrossTenantAccessPolicyDefault](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyCrossTenantAccessPolicyDefault?view=graph-powershell-v1.0)
+
 

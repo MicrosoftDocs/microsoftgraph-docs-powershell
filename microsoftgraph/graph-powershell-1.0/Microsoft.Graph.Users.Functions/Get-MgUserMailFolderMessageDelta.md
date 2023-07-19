@@ -37,14 +37,12 @@ A **delta** function call for messages in a folder is similar to a GET request, 
 This allows you to maintain and synchronize a local store of a user's messages without \nhaving to fetch the entire set of messages from the server every time.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgUserMailFolderMessageDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Functions
 # A UPN can also be used as -UserId.
 Get-MgUserMailFolderMessageDelta -UserId $userId -MailFolderId $mailFolderId
 ```
-
 This example shows how to use the Get-MgUserMailFolderMessageDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -295,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMailFolderMessageDelta](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserMailFolderMessageDelta?view=graph-powershell-beta)
+

@@ -35,13 +35,12 @@ When a delegated permission grant is deleted, the access it granted is revoked.
 Existing access tokens will continue to be valid for their lifetime, but new access tokens will not be granted for the delegated permissions identified in the deleted **oAuth2PermissionGrant**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
-
 ```
 This example shows how to use the Remove-MgBetaOauth2PermissionGrant Cmdlet.
 
@@ -238,4 +237,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
+
 

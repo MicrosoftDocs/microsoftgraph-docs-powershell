@@ -38,13 +38,12 @@ Get-MgApplicationFederatedIdentityCredential -InputObject <IApplicationsIdentity
 Read the properties and relationships of a federatedIdentityCredential object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
-
 ```
 This example shows how to use the Get-MgApplicationFederatedIdentityCredential Cmdlet.
 
@@ -292,4 +291,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationFederatedIdentityCredential?view=graph-powershell-beta)
+
 

@@ -43,13 +43,12 @@ Update-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity>
 Update entity in directoryObjects
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Update-MgBetaBetaDirectoryObject Cmdlet.
 
@@ -212,4 +211,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Update-MgDirectoryObject?view=graph-powershell-v1.0)
+
 

@@ -49,7 +49,6 @@ Update-MgBetaBookingBusinessStaffMember -InputObject <IBookingsIdentity>
 Update the properties of a bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaBookingBusinessStaffMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
@@ -119,7 +118,6 @@ $params = @{
 }
 Update-MgBetaBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BookingStaffMemberId $bookingStaffMemberId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaBookingBusinessStaffMember Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -471,3 +469,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessStaffMember?view=graph-powershell-v1.0)
+

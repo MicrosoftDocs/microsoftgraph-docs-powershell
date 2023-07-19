@@ -31,13 +31,13 @@ Get-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty 
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Users
 
-Get-MgUserSettingShiftPreference -UserId $userId
-
+# A UPN can also be used as -UserId.
+Get-MgUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
 ```
 This example shows how to use the Get-MgUserTodoList Cmdlet.
 
@@ -142,4 +142,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTodoList](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserTodoList?view=graph-powershell-beta)
+
 

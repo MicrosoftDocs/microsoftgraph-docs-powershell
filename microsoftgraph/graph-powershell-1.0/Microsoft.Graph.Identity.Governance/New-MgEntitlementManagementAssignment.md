@@ -35,13 +35,12 @@ New-MgEntitlementManagementAssignment -BodyParameter <IMicrosoftGraphAccessPacka
 Create new navigation property to assignments for identityGovernance
 
 ## EXAMPLES
-
 ### Example scenarios for using query parameters
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAssignment
-
 ```
 This example shows how to use the New-MgEntitlementManagementAssignment Cmdlet.
 
@@ -9219,4 +9218,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAssignment?view=graph-powershell-beta)
+
 

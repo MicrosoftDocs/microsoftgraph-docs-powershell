@@ -37,13 +37,12 @@ Get a specific thread that belongs to a group.
 You can specify both the parent conversation and the thread, or, \nyou can specify the thread without referencing the parent conversation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
-
 ```
 This example shows how to use the Get-MgGroupThread Cmdlet.
 
@@ -276,4 +275,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupThread](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupThread?view=graph-powershell-beta)
+
 

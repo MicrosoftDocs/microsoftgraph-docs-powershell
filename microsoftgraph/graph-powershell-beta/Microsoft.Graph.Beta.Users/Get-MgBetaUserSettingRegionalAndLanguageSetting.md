@@ -31,14 +31,12 @@ Get-MgBetaUserSettingRegionalAndLanguageSetting -InputObject <IUsersIdentity> [-
 Retrieve the properties of a user's regionalAndLanguageSettings.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingRegionalAndLanguageSetting -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserSettingRegionalAndLanguageSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -149,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)
+

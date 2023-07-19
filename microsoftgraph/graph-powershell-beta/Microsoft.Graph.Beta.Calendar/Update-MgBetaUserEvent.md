@@ -73,17 +73,31 @@ Update-MgBetaUserCalendarPermission -InputObject <ICalendarIdentity>
 Update the permissions assigned to an existing sharee or delegate, through the corresponding calendarPermission object for a calendar.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
-	role = "write"
+	originalStartTimeZone = "originalStartTimeZone-value"
+	originalEndTimeZone = "originalEndTimeZone-value"
+	responseStatus = @{
+		response = ""
+		time = [System.DateTime]::Parse("datetime-value")
+	}
+	recurrence = $null
+	reminderMinutesBeforeStart = 99
+	isOnlineMeeting = $true
+	onlineMeetingProvider = "teamsForBusiness"
+	isReminderOn = $true
+	hideAttendees = $false
+	categories = @(
+		"Red category"
+	)
 }
 
-Update-MgBetaUserCalendarPermission -UserId $userId -CalendarPermissionId $calendarPermissionId -BodyParameter $params
-
+# A UPN can also be used as -UserId.
+Update-MgBetaUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
 This example shows how to use the Update-MgBetaUserEvent Cmdlet.
 
@@ -361,4 +375,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEvent?view=graph-powershell-v1.0)
+
 

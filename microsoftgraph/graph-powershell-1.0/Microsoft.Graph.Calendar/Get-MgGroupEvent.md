@@ -35,13 +35,12 @@ Get-MgGroupEvent -InputObject <ICalendarIdentity> [-Property <String[]>] [<Commo
 Get an event object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Calendar
 
 Get-MgGroupEvent -GroupId $groupId -EventId $eventId
-
 ```
 This example shows how to use the Get-MgGroupEvent Cmdlet.
 
@@ -249,4 +248,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupEvent](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupEvent?view=graph-powershell-beta)
+
 

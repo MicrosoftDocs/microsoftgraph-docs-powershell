@@ -47,8 +47,8 @@ Update-MgBetaPolicyTokenIssuancePolicy -InputObject <IIdentitySignInsIdentity> -
 Update the properties of a tokenIssuancePolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyTokenIssuancePolicy -TokenIssuancePolicyId $tokenIssuancePolicyId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPolicyTokenIssuancePolicy Cmdlet.
 
@@ -377,4 +376,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyTokenIssuancePolicy?view=graph-powershell-v1.0)
+
 

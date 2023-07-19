@@ -46,7 +46,6 @@ Invoke-MgTranslateUserExchangeId -InputObject <IUsersActionsIdentity>
 Translate identifiers of Outlook-related resources between formats.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgTranslateUserExchangeId Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -61,7 +60,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgTranslateUserExchangeId -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgTranslateUserExchangeId Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -263,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaTranslateUserExchangeId](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaTranslateUserExchangeId?view=graph-powershell-beta)
+

@@ -31,13 +31,11 @@ Remove-MgBetaOrganizationSettingProfileCardProperty -InputObject <IIdentityDirec
 Delete navigation property profileCardProperties for organization
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaOrganizationSettingProfileCardProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Remove-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -ProfileCardPropertyId $profileCardPropertyId
 ```
-
 This example shows how to use the Remove-MgBetaOrganizationSettingProfileCardProperty Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -213,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)
+

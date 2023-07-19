@@ -24,8 +24,8 @@ Remove-MgBetaPolicyAuthenticationMethodPolicy [-IfMatch <String>] [-PassThru] [-
 Delete navigation property authenticationMethodsPolicy for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -48,7 +48,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgBetaBetaPolicyAuthenticationMethodPolicy Cmdlet.
 
@@ -132,4 +131,5 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+
 

@@ -31,13 +31,12 @@ Remove-MgBetaExternalConnection -InputObject <ISearchIdentity> [-IfMatch <String
 Delete an externalConnection.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Remove-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId
-
 ```
 This example shows how to use the Remove-MgBetaExternalConnection Cmdlet.
 
@@ -178,4 +177,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnection?view=graph-powershell-v1.0)
+
 

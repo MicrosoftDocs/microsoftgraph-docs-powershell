@@ -32,13 +32,11 @@ Remove-MgBetaOnPremisePublishingProfileAgentGroup -InputObject <IApplicationsIde
 Delete an onPremisesAgentGroup object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Remove-MgBetaOnPremisePublishingProfileAgentGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -OnPremisesAgentGroupId $onPremisesAgentGroupId
 ```
-
 This example shows how to use the Remove-MgBetaOnPremisePublishingProfileAgentGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -201,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOnPremisePublishingProfileAgentGroup](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroup?view=graph-powershell-v1.0)
+

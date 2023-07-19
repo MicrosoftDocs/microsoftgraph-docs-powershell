@@ -24,13 +24,12 @@ Get-MgBetaPolicyAuthenticationMethodPolicy [-ExpandProperty <String[]>] [-Proper
 Read the properties and relationships of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyAuthenticationMethodPolicy
-
 ```
 This example shows how to use the Get-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
 
@@ -83,4 +82,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
+
 

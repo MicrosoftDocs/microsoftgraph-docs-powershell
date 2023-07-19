@@ -38,22 +38,18 @@ Get-MgBetaDeviceManagementVirtualEndpointDeviceImage -InputObject <IDeviceManage
 Read the properties and relationships of a specific cloudPcDeviceImage object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointDeviceImage -CloudPcDeviceImageId $cloudPcDeviceImageId
 ```
-
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointDeviceImage
 ```
-
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -319,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)
+

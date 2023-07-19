@@ -61,8 +61,8 @@ Update-MgEducationClass -InputObject <IEducationIdentity> -BodyParameter <IMicro
 Update the properties of an educationClass object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -72,7 +72,6 @@ $params = @{
 }
 
 Update-MgEducationClass -EducationClassId $educationClassId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgEducationClass Cmdlet.
 
@@ -15683,4 +15682,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationClass](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaEducationClass?view=graph-powershell-beta)
+
 

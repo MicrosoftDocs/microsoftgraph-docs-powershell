@@ -33,8 +33,8 @@ New-MgBetaEducationMeRubric -BodyParameter <IMicrosoftGraphEducationRubric> [-Wh
 Create a new educationRubric object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -105,7 +105,6 @@ $params = @{
 }
 
 New-MgBetaEducationMeRubric -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationMeRubric Cmdlet.
 
@@ -398,4 +397,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeRubric?view=graph-powershell-v1.0)
+
 

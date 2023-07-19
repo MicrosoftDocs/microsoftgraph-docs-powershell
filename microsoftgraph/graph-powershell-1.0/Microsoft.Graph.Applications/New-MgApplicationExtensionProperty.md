@@ -47,8 +47,8 @@ New-MgApplicationExtensionProperty -InputObject <IApplicationsIdentity>
 Create a new directory extension definition, represented by an extensionProperty object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 New-MgApplicationExtensionProperty -ApplicationId $applicationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgApplicationExtensionProperty Cmdlet.
 
@@ -333,4 +332,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 

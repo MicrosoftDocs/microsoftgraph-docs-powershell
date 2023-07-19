@@ -31,13 +31,11 @@ Invoke-MgBetaReportServiceAnnouncementIssueIncident -InputObject <IDevicesServic
 Invoke function incidentReport
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaReportServiceAnnouncementIssueIncident Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 Invoke-MgBetaReportServiceAnnouncementIssueIncident -ServiceHealthIssueId $serviceHealthIssueId
 ```
-
 This example shows how to use the Invoke-MgBetaReportServiceAnnouncementIssueIncident Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -130,3 +128,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReportServiceAnnouncementIssueIncident](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgReportServiceAnnouncementIssueIncident?view=graph-powershell-v1.0)
+

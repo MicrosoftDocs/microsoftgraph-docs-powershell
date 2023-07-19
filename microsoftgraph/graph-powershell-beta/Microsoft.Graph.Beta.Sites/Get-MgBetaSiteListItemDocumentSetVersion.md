@@ -38,13 +38,12 @@ Get-MgBetaSiteListItemDocumentSetVersion -InputObject <ISitesIdentity> [-ExpandP
 Read the properties and relationships of a documentSetVersion object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteListItemDocumentSetVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -DocumentSetVersionId $documentSetVersionId
-
 ```
 This example shows how to use the Get-MgBetaSiteListItemDocumentSetVersion Cmdlet.
 
@@ -352,4 +351,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+
 

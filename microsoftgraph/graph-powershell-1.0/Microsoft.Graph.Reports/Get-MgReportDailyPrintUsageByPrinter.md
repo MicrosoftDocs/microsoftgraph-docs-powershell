@@ -40,13 +40,12 @@ Retrieve a usage summary for a printer for a particular time period.
 For descriptions of each of the endpoints, see printUsageByPrinter.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportDailyPrintUsageByPrinter -PrintUsageByPrinterId $printUsageByPrinterId
-
 ```
 This example shows how to use the Get-MgReportDailyPrintUsageByPrinter Cmdlet.
 
@@ -279,4 +278,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportDailyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportDailyPrintUsageByPrinter?view=graph-powershell-beta)
+
 

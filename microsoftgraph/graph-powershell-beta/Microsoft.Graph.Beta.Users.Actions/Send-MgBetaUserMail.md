@@ -55,7 +55,6 @@ Alternatively, create a draft message to send later.
 To learn more about the steps involved in the backend before a mail is delivered to recipients, see here.
 
 ## EXAMPLES
-
 ### Example 1: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -86,10 +85,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserMail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -120,10 +117,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserMail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -156,10 +151,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserMail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Send-MgBetaUserMail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -187,7 +180,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Send-MgBetaUserMail -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgBetaUserMail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -563,3 +555,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgUserMail](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMail?view=graph-powershell-v1.0)
+

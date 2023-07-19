@@ -45,8 +45,8 @@ Update-MgPlannerTaskBucketTaskBoardFormat -InputObject <IPlannerIdentity> -IfMat
 Update the navigation property bucketTaskBoardFormat in planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 Update-MgPlannerTaskBucketTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Update-MgPlannerTaskBucketTaskBoardFormat Cmdlet.
 
@@ -237,4 +236,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlannerTaskBucketTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPlannerTaskBucketTaskBoardFormat?view=graph-powershell-beta)
+
 

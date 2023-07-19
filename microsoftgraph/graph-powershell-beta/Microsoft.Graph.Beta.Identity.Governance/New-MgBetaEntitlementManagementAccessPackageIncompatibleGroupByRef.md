@@ -43,8 +43,8 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject 
 Add a group to the list of groups that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
 
@@ -309,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-v1.0)
+
 

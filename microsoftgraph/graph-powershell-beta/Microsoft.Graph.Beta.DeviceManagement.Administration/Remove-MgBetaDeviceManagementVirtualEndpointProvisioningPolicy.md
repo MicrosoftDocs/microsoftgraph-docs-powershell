@@ -34,13 +34,11 @@ Delete a cloudPcProvisioningPolicy object.
 You can't delete a policy that's in use.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId
 ```
-
 This example shows how to use the Remove-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -216,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-v1.0)
+

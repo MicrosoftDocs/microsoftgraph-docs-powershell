@@ -23,13 +23,11 @@ Get-MgBetaTeamworkTeamAppSetting [-ExpandProperty <String[]>] [-Property <String
 Read the properties and relationships of a teamsAppSettings object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaTeamworkTeamAppSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkTeamAppSetting
 ```
-
 This example shows how to use the Get-MgBetaTeamworkTeamAppSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -79,3 +77,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkTeamAppSetting?view=graph-powershell-v1.0)
+

@@ -49,7 +49,6 @@ This operation is only permitted for an access review that is not yet completed,
 This operation is not permitted for an access review in which users review their own access, and not intended for an access review in which the group owners are assigned as the reviewers.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaAccessReviewReviewer Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -58,7 +57,6 @@ $params = @{
 }
 New-MgBetaAccessReviewReviewer -AccessReviewId $accessReviewId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaAccessReviewReviewer Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -344,3 +342,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAccessReviewReviewer](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReviewReviewer?view=graph-powershell-v1.0)
+

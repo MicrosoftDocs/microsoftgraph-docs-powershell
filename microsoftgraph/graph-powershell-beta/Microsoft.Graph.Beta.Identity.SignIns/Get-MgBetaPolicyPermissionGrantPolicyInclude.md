@@ -40,28 +40,11 @@ Condition sets which are included in this permission grant policy.
 Automatically expanded on GET.
 
 ## EXAMPLES
-
 ### Example 1: Get a permission grant policy include by ID 
+
 ```powershell
 Connect-MgBetaGraph -Scopes "Policy.Read.PermissionGrant" 
-Get-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "microsoft-all-application-permissions" | fl
-```
-
-CertifiedClientApplicationsOnly             : False
-ClientApplicationIds                        : {all}
-ClientApplicationPublisherIds               : {all}
-ClientApplicationTenantIds                  : {all}
-ClientApplicationsFromVerifiedPublisherOnly : False
-Id                                          : bddda1ec-0174-44d5-84e2-47fb0ac01595
-PermissionClassification                    : all
-PermissionType                              : application
-Permissions                                 : {all}
-ResourceApplication                         : any
-AdditionalProperties                        : {[scopeSensitivityLabels, System.Collections.Generic.Dictionary`2[System.String,System.Object]]}
-
-
-This command retrieves a specified permission grant policy include configuration in Azure AD.
-
+Get-MgBetaPolicyPermissionGrantPolicyInclude -PermissionGrantPolicyId "microsoft-all-application-permissions" ### Example 1: Get a permission grant policy include by ID 
 ## PARAMETERS
 
 ### -All
@@ -357,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyPermissionGrantPolicyInclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyInclude?view=graph-powershell-v1.0)
+

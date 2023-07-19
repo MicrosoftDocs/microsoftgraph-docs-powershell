@@ -45,8 +45,8 @@ Update-MgUserAuthenticationEmailMethod -InputObject <IIdentitySignInsIdentity>
 Update a user's email address represented by an emailAuthenticationMethod object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 Update-MgUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgUserAuthenticationEmailMethod Cmdlet.
 
@@ -286,4 +285,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserAuthenticationEmailMethod?view=graph-powershell-beta)
+
 

@@ -33,13 +33,12 @@ New-MgSecuritySecureScore -BodyParameter <IMicrosoftGraphSecureScore> [-WhatIf] 
 Create new navigation property to secureScores for security
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecuritySecureScore -Top 1
-
 ```
 This example shows how to use the New-MgSecuritySecureScore Cmdlet.
 
@@ -341,4 +340,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecuritySecureScore](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecuritySecureScore?view=graph-powershell-beta)
+
 

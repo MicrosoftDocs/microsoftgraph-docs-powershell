@@ -37,8 +37,8 @@ Create a new accessPackage object.
 The access package will be added to an existing accessPackageCatalog.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
@@ -52,7 +52,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementAccessPackage -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEntitlementManagementAccessPackage Cmdlet.
 
@@ -17913,4 +17912,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAccessPackage?view=graph-powershell-beta)
+
 

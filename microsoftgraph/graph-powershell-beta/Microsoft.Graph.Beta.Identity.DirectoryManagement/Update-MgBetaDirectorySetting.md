@@ -45,7 +45,6 @@ Update-MgBetaDirectorySetting -InputObject <IIdentityDirectoryManagementIdentity
 Update the properties of a specific directory setting object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaDirectorySetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -59,7 +58,6 @@ $params = @{
 }
 Update-MgBetaDirectorySetting -DirectorySettingId $directorySettingId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaDirectorySetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -299,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySetting?view=graph-powershell-v1.0)
+

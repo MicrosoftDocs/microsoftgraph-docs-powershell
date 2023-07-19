@@ -43,8 +43,8 @@ New-MgBetaEducationClassAssignmentCategoryByRef -InputObject <IEducationIdentity
 Create new navigation property ref to categories for education
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgBetaEducationClassAssignmentCategoryByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEducationClassAssignmentCategoryByRef Cmdlet.
 
@@ -241,4 +240,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-v1.0)
+
 

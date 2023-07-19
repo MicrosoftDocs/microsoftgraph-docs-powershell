@@ -65,8 +65,8 @@ You can only add reviewers to the **fallbackReviewers** property but can't remov
 To update an **accessReviewInstance**, it's **status** must be `InProgress`.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -112,7 +112,6 @@ $params = @{
 }
 
 Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstance Cmdlet.
 
@@ -1092,4 +1091,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityGovernanceAccessReviewDefinitionInstance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceAccessReviewDefinitionInstance?view=graph-powershell-v1.0)
+
 

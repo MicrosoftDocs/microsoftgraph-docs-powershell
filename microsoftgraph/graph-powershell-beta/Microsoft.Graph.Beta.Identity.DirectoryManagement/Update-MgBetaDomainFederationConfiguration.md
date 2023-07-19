@@ -55,11 +55,10 @@ Update-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManag
 Update the properties of an internalDomainFederation object.
 
 ## EXAMPLES
-
 ### Example 1: Update the federation settings for a federated domain
-```powershell
-Update-MgBetaDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change"
 
+```powershell
+Update-MgBetaDomainFederationConfiguration -DomainId 'contoso.com' -InternalDomainFederationId '2a8ce608-bb34-473f-9e0f-f373ee4cbc5a' -DisplayName "Contoso name change" 
 ```
 
 This example updates the DisplayName setting.
@@ -486,4 +485,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-v1.0)
+
 

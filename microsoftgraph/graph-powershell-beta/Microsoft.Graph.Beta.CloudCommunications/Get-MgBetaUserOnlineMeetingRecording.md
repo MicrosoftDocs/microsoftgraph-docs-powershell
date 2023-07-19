@@ -52,14 +52,12 @@ The content stream of the recording of a Teams live event.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRecording Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOnlineMeetingRecording -UserId $userId -OnlineMeetingId $onlineMeetingId
 ```
-
 This example shows how to use the Get-MgBetaUserOnlineMeetingRecording Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -348,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecording?view=graph-powershell-v1.0)
+

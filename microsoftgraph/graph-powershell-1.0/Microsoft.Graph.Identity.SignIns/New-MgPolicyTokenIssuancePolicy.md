@@ -32,8 +32,8 @@ New-MgPolicyTokenIssuancePolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] 
 Create a new tokenIssuancePolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -46,7 +46,6 @@ $params = @{
 }
 
 New-MgPolicyTokenIssuancePolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgPolicyTokenIssuancePolicy Cmdlet.
 
@@ -254,4 +253,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyTokenIssuancePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyTokenIssuancePolicy?view=graph-powershell-beta)
+
 

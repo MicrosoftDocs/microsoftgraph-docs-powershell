@@ -37,13 +37,12 @@ Get-MgTeamScheduleTimeOffReason -InputObject <ITeamsIdentity> [-Property <String
 Retrieve the properties and relationships of a timeOffReason object by ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleTimeOffReason -TeamId $teamId -TimeOffReasonId $timeOffReasonId
-
 ```
 This example shows how to use the Get-MgTeamScheduleTimeOffReason Cmdlet.
 
@@ -287,4 +286,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamScheduleTimeOffReason?view=graph-powershell-beta)
+
 

@@ -38,22 +38,18 @@ Get-MgBetaSitePage -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 Returns the metadata for a [sitePage][] in the site pages [list][] in a [site][].
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSitePage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSitePage -SiteId $siteId -SitePageId $sitePageId
 ```
-
 This example shows how to use the Get-MgBetaSitePage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaSitePage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSitePage -SiteId $siteId
 ```
-
 This example shows how to use the Get-MgBetaSitePage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -328,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePage?view=graph-powershell-v1.0)
+

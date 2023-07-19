@@ -42,13 +42,11 @@ Attempting to send a request to a call that has already ended will result in a `
 The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
 ```
-
 This example shows how to use the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -171,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-v1.0)
+

@@ -37,7 +37,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension
 Create a new customTaskExtension object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -66,7 +65,6 @@ $params = @{
 }
 New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -14432,3 +14430,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-v1.0)
+

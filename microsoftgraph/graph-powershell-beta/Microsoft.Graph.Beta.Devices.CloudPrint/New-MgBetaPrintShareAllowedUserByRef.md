@@ -43,8 +43,8 @@ New-MgBetaPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity>
 Grant the specified user access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgBetaPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaPrintShareAllowedUserByRef Cmdlet.
 
@@ -226,4 +225,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareAllowedUserByRef?view=graph-powershell-v1.0)
+
 

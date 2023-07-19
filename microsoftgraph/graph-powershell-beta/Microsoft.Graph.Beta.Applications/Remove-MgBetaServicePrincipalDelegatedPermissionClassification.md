@@ -31,13 +31,12 @@ Remove-MgBetaServicePrincipalDelegatedPermissionClassification -InputObject <IAp
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
-
 ```
 This example shows how to use the Remove-MgBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
 
@@ -203,4 +202,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-v1.0)
+
 

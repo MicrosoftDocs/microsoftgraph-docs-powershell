@@ -45,8 +45,8 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -64,7 +64,6 @@ $params = @{
 }
 
 Update-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgGroupThreadPostExtension Cmdlet.
 
@@ -284,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
+
 

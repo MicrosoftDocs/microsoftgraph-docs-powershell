@@ -57,8 +57,8 @@ Update-MgBetaSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicr
 Update a [content type][contentType].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -106,7 +106,6 @@ $params = @{
 }
 
 Update-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaSiteContentType Cmdlet.
 
@@ -1625,4 +1624,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentType?view=graph-powershell-v1.0)
+
 

@@ -47,7 +47,6 @@ Set-MgBetaUserPresence -InputObject <IUsersActionsIdentity>
 Set the availability and activity status in a presence session of an application for a user.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -59,7 +58,6 @@ $params = @{
 }
 Set-MgBetaUserPresence -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaUserPresence Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -303,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-v1.0)
+

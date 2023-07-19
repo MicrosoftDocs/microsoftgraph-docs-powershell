@@ -40,13 +40,12 @@ Retrieve a user's usage summary for a particular time period.
 For descriptions of each endpoint, see printUsageByUser.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportDailyPrintUsageByUser -PrintUsageByUserId $printUsageByUserId
-
 ```
 This example shows how to use the Get-MgReportDailyPrintUsageByUser Cmdlet.
 
@@ -279,4 +278,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportDailyPrintUsageByUser](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportDailyPrintUsageByUser?view=graph-powershell-beta)
+
 

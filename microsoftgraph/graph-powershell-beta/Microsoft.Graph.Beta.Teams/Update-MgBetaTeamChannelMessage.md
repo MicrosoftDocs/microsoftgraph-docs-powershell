@@ -75,8 +75,8 @@ This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
-
 ### Example 1: Update policyViolation property using application permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -95,14 +95,13 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Update any property of a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -137,14 +136,13 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Update the mentions of a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -212,14 +210,13 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Update the content with attachments of a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -266,8 +263,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&amp;i am back&amp; &lt;&gt;= "",
-      "value": "&amp;i am back&amp; &lt;&gt;= ""
+      "title": "&amp;i am back&amp; &lt;&gt;= \"",
+      "value": "&amp;i am back&amp; &lt;&gt;= \""
     },
     {
       "type": "openUrl",
@@ -295,9 +292,9 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&amp;message back&amp; &lt;&gt;= "",
-      "text": "text = &amp;message back&amp; &lt;&gt;= "",
-      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= "",
+      "title": "&amp;message back&amp; &lt;&gt;= \"",
+      "text": "text = &amp;message back&amp; &lt;&gt;= \"",
+      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= \"",
       "value": {
         "text": "some text 2"
       }
@@ -317,14 +314,13 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 5: Update the reactions in a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -371,8 +367,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&amp;i am back&amp; &lt;&gt;= "",
-      "value": "&amp;i am back&amp; &lt;&gt;= ""
+      "title": "&amp;i am back&amp; &lt;&gt;= \"",
+      "value": "&amp;i am back&amp; &lt;&gt;= \""
     },
     {
       "type": "openUrl",
@@ -400,9 +396,9 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&amp;message back&amp; &lt;&gt;= "",
-      "text": "text = &amp;message back&amp; &lt;&gt;= "",
-      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= "",
+      "title": "&amp;message back&amp; &lt;&gt;= \"",
+      "text": "text = &amp;message back&amp; &lt;&gt;= \"",
+      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= \"",
       "value": {
         "text": "some text 2"
       }
@@ -654,7 +650,6 @@ $params = @{
 }
 
 Update-MgBetaTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamChannelMessage Cmdlet.
 
@@ -1527,4 +1522,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannelMessage?view=graph-powershell-v1.0)
+
 

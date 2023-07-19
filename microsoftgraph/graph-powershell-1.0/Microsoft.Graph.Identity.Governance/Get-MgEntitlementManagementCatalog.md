@@ -56,13 +56,12 @@ Get-MgEntitlementManagementCatalog [-ExpandProperty <String[]>] [-Property <Stri
 Retrieve the properties and relationships of an accessPackageCatalog object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementCatalog -AccessPackageCatalogId $accessPackageCatalogId
-
 ```
 This example shows how to use the Get-MgEntitlementManagementCatalog Cmdlet.
 
@@ -359,4 +358,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementCatalog](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementCatalog?view=graph-powershell-beta)
+
 

@@ -49,7 +49,6 @@ Update-MgBetaPrivilegedApproval -InputObject <IIdentityGovernanceIdentity>
 Update entity in privilegedApproval
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaPrivilegedApproval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -59,7 +58,6 @@ $params = @{
 }
 Update-MgBetaPrivilegedApproval -PrivilegedApprovalId $privilegedApprovalId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaPrivilegedApproval Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -616,3 +614,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrivilegedApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedApproval?view=graph-powershell-v1.0)
+

@@ -38,13 +38,11 @@ Get-MgBetaReportCredentialUserRegistrationDetail -InputObject <IReportsIdentity>
 Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportCredentialUserRegistrationDetail
 ```
-
 This example shows how to use the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -282,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportCredentialUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportCredentialUserRegistrationDetail?view=graph-powershell-v1.0)
+

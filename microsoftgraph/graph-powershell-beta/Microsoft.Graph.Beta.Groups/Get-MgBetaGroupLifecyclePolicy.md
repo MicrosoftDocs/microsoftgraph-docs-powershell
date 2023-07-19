@@ -50,13 +50,12 @@ Get-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-ExpandProperty <
 Retrieve the properties and relationships of a groupLifecyclePolicies object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId
-
 ```
 This example shows how to use the Get-MgBetaGroupLifecyclePolicy Cmdlet.
 
@@ -328,4 +327,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
+
 

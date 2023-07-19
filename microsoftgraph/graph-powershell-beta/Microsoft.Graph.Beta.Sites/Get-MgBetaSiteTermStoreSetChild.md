@@ -57,13 +57,12 @@ Get-MgBetaSiteTermStoreSetChild -InputObject <ISitesIdentity> [-ExpandProperty <
 Children terms of set in term [store].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteTermStoreSetChild -SiteId $siteId -SetId $setId
-
 ```
 This example shows how to use the Get-MgBetaSiteTermStoreSetChild Cmdlet.
 
@@ -371,4 +370,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetChild?view=graph-powershell-v1.0)
+
 

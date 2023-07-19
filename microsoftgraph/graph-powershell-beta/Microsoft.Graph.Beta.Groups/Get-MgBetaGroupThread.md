@@ -36,13 +36,12 @@ Get-MgBetaGroupThread -InputObject <IGroupsIdentity> [-Property <String[]>] [<Co
 Get a thread object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId
-
 ```
 This example shows how to use the Get-MgBetaGroupThread Cmdlet.
 
@@ -284,4 +283,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThread?view=graph-powershell-v1.0)
+
 

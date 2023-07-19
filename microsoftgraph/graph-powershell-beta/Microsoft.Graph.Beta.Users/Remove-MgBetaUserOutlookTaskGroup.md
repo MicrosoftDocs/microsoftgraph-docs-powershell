@@ -31,14 +31,12 @@ Remove-MgBetaUserOutlookTaskGroup -InputObject <IUsersIdentity> [-IfMatch <Strin
 Delete navigation property taskGroups for users
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserOutlookTaskGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Remove-MgBetaUserOutlookTaskGroup -UserId $userId -OutlookTaskGroupId $outlookTaskGroupId
 ```
-
 This example shows how to use the Remove-MgBetaUserOutlookTaskGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -195,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
+

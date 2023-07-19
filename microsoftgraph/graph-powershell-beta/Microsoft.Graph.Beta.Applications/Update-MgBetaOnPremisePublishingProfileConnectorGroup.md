@@ -49,7 +49,6 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
 Update the properties of a connectorGroup object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -59,7 +58,6 @@ $params = @{
 }
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -1605,3 +1603,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+

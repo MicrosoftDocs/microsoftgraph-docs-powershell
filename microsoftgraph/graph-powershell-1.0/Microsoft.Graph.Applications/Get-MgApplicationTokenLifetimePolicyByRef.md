@@ -25,13 +25,12 @@ Get-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-Filter <Stri
 List the tokenLifetimePolicy objects that are assigned to an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
-
 ```
 This example shows how to use the Get-MgApplicationTokenLifetimePolicyByRef Cmdlet.
 
@@ -190,4 +189,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
+
 

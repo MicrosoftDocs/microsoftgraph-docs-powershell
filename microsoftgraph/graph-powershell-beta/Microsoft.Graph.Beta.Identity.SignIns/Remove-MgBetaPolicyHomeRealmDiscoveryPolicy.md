@@ -31,13 +31,12 @@ Remove-MgBetaPolicyHomeRealmDiscoveryPolicy -InputObject <IIdentitySignInsIdenti
 Delete a homeRealmDiscoveryPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyHomeRealmDiscoveryPolicy -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
-
 ```
 This example shows how to use the Remove-MgBetaPolicyHomeRealmDiscoveryPolicy Cmdlet.
 
@@ -234,4 +233,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyHomeRealmDiscoveryPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyHomeRealmDiscoveryPolicy?view=graph-powershell-v1.0)
+
 

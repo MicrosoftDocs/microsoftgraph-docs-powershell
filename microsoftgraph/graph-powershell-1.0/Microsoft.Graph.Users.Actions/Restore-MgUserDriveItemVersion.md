@@ -33,14 +33,13 @@ Restore a previous version of a DriveItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the file.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Restore-MgDriveItemVersion -DriveId $driveId -DriveItemId $driveItemId -DriveItemVersionId $driveItemVersionId
-
+```
 This example shows how to use the Restore-MgUserDriveItemVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -221,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaUserDriveItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaUserDriveItemVersion?view=graph-powershell-beta)
+

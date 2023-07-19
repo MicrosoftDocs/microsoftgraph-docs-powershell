@@ -50,7 +50,6 @@ Update-MgBetaUserProfileAnniversary -InputObject <IPeopleIdentity>
 Update the properties of a personAnniversary object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileAnniversary Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -60,7 +59,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileAnniversary -UserId $userId -PersonAnnualEventId $personAnnualEventId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileAnniversary Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -458,3 +456,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileAnniversary](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileAnniversary?view=graph-powershell-v1.0)
+

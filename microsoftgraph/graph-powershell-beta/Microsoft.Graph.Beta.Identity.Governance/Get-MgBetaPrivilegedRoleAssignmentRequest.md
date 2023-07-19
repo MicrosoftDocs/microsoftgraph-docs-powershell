@@ -38,13 +38,11 @@ Get-MgBetaPrivilegedRoleAssignmentRequest -InputObject <IIdentityGovernanceIdent
 Get entity from privilegedRoleAssignmentRequests by key
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaPrivilegedRoleAssignmentRequest
 ```
-
 This example shows how to use the Get-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -350,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+

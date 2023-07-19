@@ -52,7 +52,6 @@ New-MgBetaUserProfileAward -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Create a new personAward object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileAward Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -67,7 +66,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAward -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileAward Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -498,3 +496,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileAward](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAward?view=graph-powershell-v1.0)
+

@@ -61,8 +61,8 @@ This is the name that appears to the user in Microsoft Teams.
 You can add a maximum of 200 members when you create a private channel.
 
 ## EXAMPLES
-
 ### Example 1: Create a standard channel
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -73,14 +73,13 @@ $params = @{
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Create private channel on behalf of user
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -101,14 +100,13 @@ $params = @{
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Create a channel in migration mode
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -120,14 +118,13 @@ $params = @{
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Create private channel on behalf of user using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -148,14 +145,13 @@ $params = @{
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 5: Create a shared channel on behalf of a user
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -175,7 +171,6 @@ $params = @{
 }
 
 New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
@@ -14857,4 +14852,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannel?view=graph-powershell-v1.0)
+
 

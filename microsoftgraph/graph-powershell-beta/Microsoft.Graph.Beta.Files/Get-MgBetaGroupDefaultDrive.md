@@ -33,13 +33,11 @@ The group's default drive.
 Read-only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaGroupDefaultDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaGroupDefaultDrive -GroupId $groupId
 ```
-
 This example shows how to use the Get-MgBetaGroupDefaultDrive Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -152,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDefaultDrive?view=graph-powershell-v1.0)
+

@@ -57,14 +57,12 @@ Send the draft message in a subsequent operation.
 Alternatively, reply-all to a message in a single action.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgUserMessageReplyAll Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 # A UPN can also be used as -UserId.
 New-MgUserMessageReplyAll -UserId $userId -MessageId $messageId
 ```
-
 This example shows how to use the New-MgUserMessageReplyAll Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -399,3 +397,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMessageReplyAll](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaUserMessageReplyAll?view=graph-powershell-beta)
+

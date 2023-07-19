@@ -38,13 +38,12 @@ Get-MgBetaPlannerPlan -InputObject <IPlannerIdentity> [-ExpandProperty <String[]
 Retrieve the properties and relationships of a plannerplan object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerPlan -PlannerPlanId $plannerPlanId
-
 ```
 This example shows how to use the Get-MgBetaPlannerPlan Cmdlet.
 
@@ -265,4 +264,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlan?view=graph-powershell-v1.0)
+
 

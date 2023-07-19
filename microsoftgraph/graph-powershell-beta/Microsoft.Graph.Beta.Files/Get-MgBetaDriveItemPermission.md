@@ -42,13 +42,12 @@ Effective permissions of an item can come from two sources: permissions set dire
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
 Get-MgBetaDriveItemPermission -DriveId $driveId -DriveItemId $driveItemId -PermissionId $permissionId
-
 ```
 This example shows how to use the Get-MgBetaDriveItemPermission Cmdlet.
 
@@ -315,4 +314,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemPermission?view=graph-powershell-v1.0)
+
 

@@ -38,13 +38,12 @@ Get-MgBetaPolicyClaimMappingPolicy -InputObject <IIdentitySignInsIdentity> [-Exp
 Retrieve the properties and relationships of a claimsMappingPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyClaimMappingPolicy -ClaimsMappingPolicyId $claimsMappingPolicyId
-
 ```
 This example shows how to use the Get-MgBetaPolicyClaimMappingPolicy Cmdlet.
 
@@ -331,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyClaimMappingPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyClaimMappingPolicy?view=graph-powershell-v1.0)
+
 

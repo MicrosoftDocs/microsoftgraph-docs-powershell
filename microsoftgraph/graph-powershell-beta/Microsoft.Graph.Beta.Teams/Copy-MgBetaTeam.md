@@ -55,7 +55,6 @@ This operation also creates a copy of the corresponding group.\nYou can specify 
 \nThe recommended delay between GETs is 5 seconds.
 
 ## EXAMPLES
-
 ### Example 1: Using the Copy-MgBetaTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -68,7 +67,6 @@ $params = @{
 }
 Copy-MgBetaTeam -TeamId $teamId -BodyParameter $params
 ```
-
 This example shows how to use the Copy-MgBetaTeam Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -342,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgTeam](/powershell/module/Microsoft.Graph.Teams/Copy-MgTeam?view=graph-powershell-v1.0)
+

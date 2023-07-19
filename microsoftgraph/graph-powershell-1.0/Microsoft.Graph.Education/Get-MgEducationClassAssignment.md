@@ -42,13 +42,12 @@ Only teachers, students, and applications with application permissions can perfo
 Students can only see assignments assigned to them; teachers and applications with application permissions can see all assignments in a class.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
 ```
 This example shows how to use the Get-MgEducationClassAssignment Cmdlet.
 
@@ -286,4 +285,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignment?view=graph-powershell-beta)
+
 

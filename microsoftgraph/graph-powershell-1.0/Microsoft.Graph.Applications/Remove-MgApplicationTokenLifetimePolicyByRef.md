@@ -31,13 +31,12 @@ Remove-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity
 Remove a tokenLifetimePolicy from an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -TokenLifetimePolicyId $tokenLifetimePolicyId
-
 ```
 This example shows how to use the Remove-MgApplicationTokenLifetimePolicyByRef Cmdlet.
 
@@ -210,4 +209,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
+
 

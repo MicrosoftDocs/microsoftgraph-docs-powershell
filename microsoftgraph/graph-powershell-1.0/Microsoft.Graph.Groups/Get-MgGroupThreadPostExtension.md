@@ -42,13 +42,12 @@ The table in the Permissions section lists the resources that support open exten
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupThreadPostExtension -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -ExtensionId $extensionId
-
 ```
 This example shows how to use the Get-MgGroupThreadPostExtension Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupThreadPostExtension?view=graph-powershell-beta)
+
 

@@ -31,13 +31,12 @@ Get-MgExternalConnectionSchema -InputObject <ISearchIdentity> [-ExpandProperty <
 Read the properties and relationships of a schema object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
 Get-MgExternalConnectionSchema -ExternalConnectionId $externalConnectionId
-
 ```
 This example shows how to use the Get-MgExternalConnectionSchema Cmdlet.
 
@@ -135,4 +134,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaExternalConnectionSchema?view=graph-powershell-beta)
+
 

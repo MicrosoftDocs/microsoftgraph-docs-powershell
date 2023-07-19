@@ -31,13 +31,11 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <I
 Delete a unifiedGroupSource object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -UnifiedGroupSourceId $unifiedGroupSourceId
 ```
-
 This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -204,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+

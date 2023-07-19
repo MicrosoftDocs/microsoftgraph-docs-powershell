@@ -47,7 +47,6 @@ Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
@@ -58,7 +57,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserPassword -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgUserPassword Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -259,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaUserPassword?view=graph-powershell-beta)
+

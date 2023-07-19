@@ -33,31 +33,25 @@ Delete an updatableAssetGroup object.
 When an updatableAssetGroup object, its member updatableAsset objects are not deleted.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-
 This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-
 This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Remove-MgBetaWindowsUpdatesUpdatableAsset -UpdatableAssetId $updatableAssetId
 ```
-
 This example shows how to use the Remove-MgBetaWindowsUpdatesUpdatableAsset Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -185,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
+

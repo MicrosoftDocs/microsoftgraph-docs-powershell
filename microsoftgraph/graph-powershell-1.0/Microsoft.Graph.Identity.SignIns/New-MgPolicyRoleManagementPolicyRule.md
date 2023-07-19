@@ -45,13 +45,12 @@ New-MgPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 Create new navigation property to rules for policies
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
-
 ```
 This example shows how to use the New-MgPolicyRoleManagementPolicyRule Cmdlet.
 
@@ -288,4 +287,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPolicyRoleManagementPolicyRule?view=graph-powershell-beta)
+
 

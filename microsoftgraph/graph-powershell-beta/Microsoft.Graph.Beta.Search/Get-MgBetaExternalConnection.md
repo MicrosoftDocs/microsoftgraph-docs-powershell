@@ -38,13 +38,12 @@ Get-MgBetaExternalConnection -InputObject <ISearchIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of an externalConnection.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnection -ExternalConnectionId $externalConnectionId
-
 ```
 This example shows how to use the Get-MgBetaExternalConnection Cmdlet.
 
@@ -275,4 +274,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnection](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnection?view=graph-powershell-v1.0)
+
 

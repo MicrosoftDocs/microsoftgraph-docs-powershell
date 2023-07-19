@@ -31,13 +31,12 @@ Get-MgBetaPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [
 Retrieve the properties and relationships of **plannerAssignedToTaskBoardTaskFormat** object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId
-
 ```
 This example shows how to use the Get-MgBetaPlannerTaskAssignedToTaskBoardFormat Cmdlet.
 
@@ -137,4 +136,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-v1.0)
+
 

@@ -51,28 +51,14 @@ If the event allows proposals for new times, on declining the event, an invitee 
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
-$params = @{
-	Comment = "I won't be able to make this week. How about next week?"
-	SendResponse = $true
-	ProposedNewTime = @{
-		Start = @{
-			DateTime = "2019-12-02T18:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-		End = @{
-			DateTime = "2019-12-02T19:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-	}
-}
-# A UPN can also be used as -UserId.
-Invoke-MgDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
-```
 
+# A UPN can also be used as -UserId.
+Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
+```
 This example shows how to use the Invoke-MgDismissUserEventInstanceReminder Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -321,3 +307,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaDismissUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaDismissUserEventInstanceReminder?view=graph-powershell-beta)
+

@@ -24,13 +24,12 @@ Get-MgBetaPolicyDefaultAppManagementPolicy [-ExpandProperty <String[]>] [-Proper
 Read the properties of a tenantAppManagementPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyDefaultAppManagementPolicy
-
 ```
 This example shows how to use the Get-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
 
@@ -83,4 +82,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-v1.0)
+
 

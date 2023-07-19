@@ -85,8 +85,8 @@ This is a special case of the Update method.nYour app can combine moving an item
 Items cannot be moved between Drives using this request.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 
@@ -95,7 +95,6 @@ $params = @{
 }
 
 Update-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaDriveItem Cmdlet.
 
@@ -34555,4 +34554,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
+
 

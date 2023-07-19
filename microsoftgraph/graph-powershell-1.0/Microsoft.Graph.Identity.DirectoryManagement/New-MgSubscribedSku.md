@@ -33,13 +33,12 @@ New-MgSubscribedSku -BodyParameter <IMicrosoftGraphSubscribedSku> [-WhatIf] [-Co
 Add new entity to subscribedSkus
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgSubscribedSku
-
 ```
 This example shows how to use the New-MgSubscribedSku Cmdlet.
 
@@ -337,4 +336,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSubscribedSku?view=graph-powershell-beta)
+
 

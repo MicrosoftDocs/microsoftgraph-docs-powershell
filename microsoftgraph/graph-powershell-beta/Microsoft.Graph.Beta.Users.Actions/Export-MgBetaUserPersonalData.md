@@ -49,7 +49,6 @@ This data includes the user's data stored in OneDrive and their activity reports
 For more guidance about exporting data while complying with regulations, see Data Subject Requests and the GDPR and CCPA.
 
 ## EXAMPLES
-
 ### Example 1: Using the Export-MgBetaUserPersonalData Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -58,7 +57,6 @@ $params = @{
 }
 Export-MgBetaUserPersonalData -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Export-MgBetaUserPersonalData Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -254,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Export-MgUserPersonalData](/powershell/module/Microsoft.Graph.Users.Actions/Export-MgUserPersonalData?view=graph-powershell-v1.0)
+

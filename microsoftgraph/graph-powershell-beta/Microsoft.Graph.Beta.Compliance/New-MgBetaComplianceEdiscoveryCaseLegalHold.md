@@ -53,7 +53,6 @@ New-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity>
 Create new navigation property to legalHolds for compliance
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -73,7 +72,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -14607,3 +14605,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)
+

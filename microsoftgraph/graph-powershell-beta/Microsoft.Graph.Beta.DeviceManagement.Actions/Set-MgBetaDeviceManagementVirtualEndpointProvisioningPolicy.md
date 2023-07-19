@@ -47,7 +47,6 @@ Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDevic
 Assign cloudPcProvisioningPolicy to user groups.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
@@ -65,7 +64,6 @@ $params = @{
 }
 Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId $cloudPcProvisioningPolicyId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -9672,3 +9670,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-v1.0)
+

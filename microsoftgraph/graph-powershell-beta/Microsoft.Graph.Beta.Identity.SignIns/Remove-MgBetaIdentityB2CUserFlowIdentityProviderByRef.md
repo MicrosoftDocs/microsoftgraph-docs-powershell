@@ -34,13 +34,11 @@ Delete an identity provider from a b2cIdentityUserFlow object.
 For more information about identity providers available for user flows, see the identityProviders API reference.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef -B2cIdentityUserFlowId $b2cIdentityUserFlowId -IdentityProviderId $identityProviderId
 ```
-
 This example shows how to use the Remove-MgBetaIdentityB2CUserFlowIdentityProviderByRef Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -264,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
+

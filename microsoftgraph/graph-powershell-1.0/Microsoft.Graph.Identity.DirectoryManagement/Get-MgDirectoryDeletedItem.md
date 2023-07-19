@@ -31,15 +31,14 @@ Get-MgDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentity> [
 Retrieve the properties of a recently deleted application, group, servicePrincipal, administrative unit, or user object from deleted items.
 
 ## EXAMPLES
-
 ### Example 1: Retrieve a list of recently deleted items
+
 ```powershell
 Get-MgDirectoryDeletedItem -DirectoryObjectId 'd4142c52-179b-4d31-b5b9-08940873507b'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 d4142c52-179b-4d31-b5b9-08940873507b 8/30/2021 7:37:37 AM
-
 ```
 
 This command returns the details of the specified directory object. The DirectoryObjectId can be an application, group or user resource.
@@ -151,4 +150,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryDeletedItem?view=graph-powershell-beta)
+
 

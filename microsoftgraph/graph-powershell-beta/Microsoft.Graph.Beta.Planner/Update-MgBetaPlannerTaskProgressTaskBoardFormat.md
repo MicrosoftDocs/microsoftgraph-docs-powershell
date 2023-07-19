@@ -45,8 +45,8 @@ Update-MgBetaPlannerTaskProgressTaskBoardFormat -InputObject <IPlannerIdentity> 
 Update the navigation property progressTaskBoardFormat in planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 Update-MgBetaPlannerTaskProgressTaskBoardFormat -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Update-MgBetaPlannerTaskProgressTaskBoardFormat Cmdlet.
 
@@ -240,4 +239,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Update-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-v1.0)
+
 

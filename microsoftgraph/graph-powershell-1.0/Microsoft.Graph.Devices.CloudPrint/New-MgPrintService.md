@@ -30,13 +30,12 @@ New-MgPrintService -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf] [-Conf
 Create new navigation property to services for print
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintService
-
 ```
 This example shows how to use the New-MgPrintService Cmdlet.
 
@@ -174,4 +173,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPrintService](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintService?view=graph-powershell-beta)
+
 

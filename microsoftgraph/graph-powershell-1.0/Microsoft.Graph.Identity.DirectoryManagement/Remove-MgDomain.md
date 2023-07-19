@@ -30,13 +30,12 @@ Remove-MgDomain -InputObject <IIdentityDirectoryManagementIdentity> [-IfMatch <S
 Deletes a domain from a tenant.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgDomain -DomainId $domainId
-
 ```
 This example shows how to use the Remove-MgDomain Cmdlet.
 
@@ -180,4 +179,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDomain](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaDomain?view=graph-powershell-beta)
+
 

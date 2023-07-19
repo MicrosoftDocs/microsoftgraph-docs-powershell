@@ -38,13 +38,11 @@ Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion -InputObject <IWindowsUpdate
 Specifies the assets to exclude from the audience.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion -DeploymentId $deploymentId
 ```
-
 This example shows how to use the Get-MgBetaWindowsUpdatesDeploymentAudienceExclusion Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -278,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesDeploymentAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceExclusion?view=graph-powershell-v1.0)
+

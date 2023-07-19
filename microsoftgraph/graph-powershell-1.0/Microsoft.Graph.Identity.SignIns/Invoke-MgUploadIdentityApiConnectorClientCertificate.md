@@ -51,7 +51,6 @@ The input is a base-64 encoded value of the PKCS 12 certificate contents.
 This method returns an apiConnector.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -61,7 +60,6 @@ $params = @{
 }
 Invoke-MgUploadIdentityApiConnectorClientCertificate -IdentityApiConnectorId $identityApiConnectorId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgUploadIdentityApiConnectorClientCertificate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -273,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Beta.Applications/Invoke-MgBetaUploadIdentityApiConnectorClientCertificate?view=graph-powershell-beta)
+

@@ -31,13 +31,11 @@ Remove-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity
 Delete a legalHold object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -LegalHoldId $legalHoldId
 ```
-
 This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -189,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)
+

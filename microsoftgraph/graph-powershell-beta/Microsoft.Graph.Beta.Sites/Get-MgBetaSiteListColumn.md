@@ -38,13 +38,11 @@ Get-MgBetaSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[
 Get columns from sites
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSiteListColumn Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId
 ```
-
 This example shows how to use the Get-MgBetaSiteListColumn Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -334,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListColumn?view=graph-powershell-v1.0)
+

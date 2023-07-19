@@ -50,14 +50,12 @@ Get-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandPrope
 The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -321,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkAssociatedTeam?view=graph-powershell-v1.0)
+

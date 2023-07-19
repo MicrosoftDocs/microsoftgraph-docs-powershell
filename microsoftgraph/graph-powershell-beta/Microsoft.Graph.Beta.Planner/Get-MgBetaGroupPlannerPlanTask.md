@@ -25,13 +25,12 @@ Get-MgBetaGroupPlannerPlanTask -GroupId <String> -PlannerPlanId <String> [-Expan
 Retrieve a list of plannerTask objects associated with a plannerPlan object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 
 Get-MgBetaPlannerPlanTask -PlannerPlanId $plannerPlanId
-
 ```
 This example shows how to use the Get-MgBetaGroupPlannerPlanTask Cmdlet.
 
@@ -235,4 +234,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanTask?view=graph-powershell-v1.0)
+
 

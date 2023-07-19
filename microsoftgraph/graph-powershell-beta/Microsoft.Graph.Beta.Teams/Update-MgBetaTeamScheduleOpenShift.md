@@ -47,8 +47,8 @@ Update-MgBetaTeamScheduleOpenShift -InputObject <ITeamsIdentity> -BodyParameter 
 Update the properties of an openShift object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -75,7 +75,6 @@ $params = @{
 }
 
 Update-MgBetaTeamScheduleOpenShift -TeamId $teamId -OpenShiftId $openShiftId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaTeamScheduleOpenShift Cmdlet.
 
@@ -447,4 +446,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleOpenShift?view=graph-powershell-v1.0)
+
 

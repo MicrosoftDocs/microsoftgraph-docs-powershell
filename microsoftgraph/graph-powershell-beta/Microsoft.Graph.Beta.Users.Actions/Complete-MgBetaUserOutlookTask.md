@@ -40,14 +40,12 @@ By default, this operation (and the POST, GET, and PATCH task operations) return
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ## EXAMPLES
-
 ### Example 1: Using the Complete-MgBetaUserOutlookTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Complete-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId
 ```
-
 This example shows how to use the Complete-MgBetaUserOutlookTask Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -192,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users.Actions/Complete-MgUserOutlookTask?view=graph-powershell-v1.0)
+

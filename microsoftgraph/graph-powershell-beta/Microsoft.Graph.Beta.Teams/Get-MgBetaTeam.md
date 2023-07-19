@@ -37,13 +37,12 @@ Get-MgBetaTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-Prop
 Retrieve the properties and relationships of the specified team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeam -TeamId $teamId
-
 ```
 This example shows how to use the Get-MgBetaTeam Cmdlet.
 
@@ -294,4 +293,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeam?view=graph-powershell-v1.0)
+
 

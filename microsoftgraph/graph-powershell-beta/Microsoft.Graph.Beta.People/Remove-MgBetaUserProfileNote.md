@@ -31,13 +31,11 @@ Remove-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-IfMatch <String>] 
 Deletes a personAnnotation object from a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 Remove-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId
 ```
-
 This example shows how to use the Remove-MgBetaUserProfileNote Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -194,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfileNote](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileNote?view=graph-powershell-v1.0)
+

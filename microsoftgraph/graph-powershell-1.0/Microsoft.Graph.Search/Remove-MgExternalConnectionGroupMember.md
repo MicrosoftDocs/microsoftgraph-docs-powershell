@@ -31,13 +31,12 @@ Remove-MgExternalConnectionGroupMember -InputObject <ISearchIdentity> [-IfMatch 
 Delete an identity resource to remove the corresponding member from an externalGroup.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Search
 
 Remove-MgExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -IdentityId $identityId
-
 ```
 This example shows how to use the Remove-MgExternalConnectionGroupMember Cmdlet.
 
@@ -196,4 +195,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
+
 

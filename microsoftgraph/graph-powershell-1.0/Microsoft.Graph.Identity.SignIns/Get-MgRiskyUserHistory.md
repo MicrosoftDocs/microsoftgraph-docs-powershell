@@ -38,13 +38,12 @@ Get-MgRiskyUserHistory -InputObject <IIdentitySignInsIdentity> [-ExpandProperty 
 The activity related to user risk level change
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgRiskyUserHistory -RiskyUserId $riskyUserId
-
 ```
 This example shows how to use the Get-MgRiskyUserHistory Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaRiskyUserHistory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaRiskyUserHistory?view=graph-powershell-beta)
+
 

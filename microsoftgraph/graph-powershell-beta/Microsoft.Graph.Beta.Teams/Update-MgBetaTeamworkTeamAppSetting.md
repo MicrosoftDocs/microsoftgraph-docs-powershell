@@ -32,7 +32,6 @@ Update-MgBetaTeamworkTeamAppSetting -BodyParameter <IMicrosoftGraphTeamsAppSetti
 Update the properties of a teamsAppSettings object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaTeamworkTeamAppSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -42,7 +41,6 @@ $params = @{
 }
 Update-MgBetaTeamworkTeamAppSetting -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaTeamworkTeamAppSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -200,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamworkTeamAppSetting](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkTeamAppSetting?view=graph-powershell-v1.0)
+

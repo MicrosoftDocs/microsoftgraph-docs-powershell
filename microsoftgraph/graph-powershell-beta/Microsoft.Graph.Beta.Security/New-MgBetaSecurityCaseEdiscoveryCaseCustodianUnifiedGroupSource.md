@@ -48,8 +48,8 @@ New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <IS
 Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 
 ## EXAMPLES
-
 ### Example 1: Create unifiedGroupSource with group SMTP address
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -61,14 +61,13 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Create unifiedGroupSource with group@odata.bind
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -78,7 +77,6 @@ $params = @{
 }
 
 New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
 
@@ -9801,4 +9799,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+
 

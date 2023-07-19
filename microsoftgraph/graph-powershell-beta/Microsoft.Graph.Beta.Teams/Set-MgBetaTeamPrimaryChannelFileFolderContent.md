@@ -31,13 +31,12 @@ Set-MgBetaTeamPrimaryChannelFileFolderContent -InputObject <ITeamsIdentity> [-Da
 The content stream, if the item represents a file.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelFileFolder -TeamId $teamId -ChannelId $channelId
-
 ```
 This example shows how to use the Set-MgBetaBetaTeamPrimaryChannelFileFolderContent Cmdlet.
 
@@ -201,4 +200,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamPrimaryChannelFileFolderContent?view=graph-powershell-v1.0)
+
 

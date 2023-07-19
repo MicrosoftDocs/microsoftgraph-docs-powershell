@@ -47,7 +47,6 @@ Return all the group IDs for the groups that the specified user, group, service 
 This function is transitive.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgDirectoryObjectMemberGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
@@ -56,7 +55,6 @@ $params = @{
 }
 Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgDirectoryObjectMemberGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -198,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryObjectMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryObjectMemberGroup?view=graph-powershell-beta)
+

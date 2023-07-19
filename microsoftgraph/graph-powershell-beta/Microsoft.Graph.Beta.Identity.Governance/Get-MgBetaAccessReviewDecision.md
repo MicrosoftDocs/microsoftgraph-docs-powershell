@@ -38,13 +38,11 @@ Get-MgBetaAccessReviewDecision -InputObject <IIdentityGovernanceIdentity> [-Expa
 The collection of decisions for this access review.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaAccessReviewDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaAccessReviewDecision -AccessReviewId $accessReviewId
 ```
-
 This example shows how to use the Get-MgBetaAccessReviewDecision Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -365,3 +363,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewDecision?view=graph-powershell-v1.0)
+

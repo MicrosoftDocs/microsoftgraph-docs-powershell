@@ -57,8 +57,8 @@ Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -75,7 +75,6 @@ $params = @{
 }
 
 New-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgGroupConversationThread Cmdlet.
 
@@ -516,4 +515,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaGroupConversationThread?view=graph-powershell-beta)
+
 

@@ -25,13 +25,11 @@ Get-MgApplicationTokenLifetimePolicy -ApplicationId <String> [-ExpandProperty <S
 List the tokenLifetimePolicy objects that are assigned to an application.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgApplicationTokenLifetimePolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 Get-MgApplicationTokenLifetimePolicy -ApplicationId $applicationId
 ```
-
 This example shows how to use the Get-MgApplicationTokenLifetimePolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -217,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicy?view=graph-powershell-beta)
+

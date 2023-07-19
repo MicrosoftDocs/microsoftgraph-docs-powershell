@@ -43,8 +43,8 @@ New-MgBookingBusinessCustomer -InputObject <IBookingsIdentity> -BodyParameter <H
 Create a new bookingCustomer object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 New-MgBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBookingBusinessCustomer Cmdlet.
 
@@ -206,4 +205,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessCustomer?view=graph-powershell-beta)
+
 

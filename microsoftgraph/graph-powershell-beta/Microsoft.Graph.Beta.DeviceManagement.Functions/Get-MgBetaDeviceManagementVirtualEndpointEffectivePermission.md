@@ -24,13 +24,11 @@ Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission [-Count] [-Filter <
 Invoke function getEffectivePermissions
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission
 ```
-
 This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointEffectivePermission Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -125,3 +123,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointEffectivePermission](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointEffectivePermission?view=graph-powershell-v1.0)
+

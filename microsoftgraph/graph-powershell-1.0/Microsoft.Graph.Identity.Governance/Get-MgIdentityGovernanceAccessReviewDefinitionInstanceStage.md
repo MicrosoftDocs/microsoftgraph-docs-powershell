@@ -40,13 +40,12 @@ Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <IIdent
 Retrieve the properties and relationships of an accessReviewStage object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
-
 ```
 This example shows how to use the Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
 
@@ -343,4 +342,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage?view=graph-powershell-beta)
+
 

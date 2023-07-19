@@ -51,7 +51,6 @@ Send an activity feed notification in the scope of a team.
 For more details about sending notifications and the requirements for doing so, seensending Teams activity notifications.
 
 ## EXAMPLES
-
 ### Example 1: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -78,10 +77,8 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -107,10 +104,8 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -140,10 +135,8 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 4: Using the Send-MgTeamActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
@@ -173,7 +166,6 @@ $params = @{
 }
 Send-MgTeamActivityNotification -TeamId $teamId -BodyParameter $params
 ```
-
 This example shows how to use the Send-MgTeamActivityNotification Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -468,3 +460,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgBetaTeamActivityNotification](/powershell/module/Microsoft.Graph.Beta.Applications/Send-MgBetaTeamActivityNotification?view=graph-powershell-beta)
+

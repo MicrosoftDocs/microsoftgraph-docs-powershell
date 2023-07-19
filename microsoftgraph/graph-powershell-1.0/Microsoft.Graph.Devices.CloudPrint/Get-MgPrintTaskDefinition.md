@@ -52,13 +52,12 @@ Get details about a task definition.
 For details about how to use this API to add pull printing support to Universal Print, see Extending Universal Print to support pull printing.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
 Get-MgPrintTaskDefinition -PrintTaskDefinitionId $printTaskDefinitionId
-
 ```
 This example shows how to use the Get-MgPrintTaskDefinition Cmdlet.
 
@@ -299,4 +298,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintTaskDefinition](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPrintTaskDefinition?view=graph-powershell-beta)
+
 

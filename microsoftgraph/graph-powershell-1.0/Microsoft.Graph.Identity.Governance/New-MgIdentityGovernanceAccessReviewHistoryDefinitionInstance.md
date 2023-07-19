@@ -49,13 +49,12 @@ New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -InputObject <IIde
 Create new navigation property to instances for identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
-
 ```
 This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstance Cmdlet.
 
@@ -371,4 +370,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstance?view=graph-powershell-beta)
+
 

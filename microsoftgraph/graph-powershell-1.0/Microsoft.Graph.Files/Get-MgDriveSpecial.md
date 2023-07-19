@@ -46,13 +46,12 @@ Special folders are automatically created the first time an application attempts
 If a user deletes one, it is recreated when written to again.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
 
 Get-MgDriveSpecial -DriveId $driveId -DriveItemId $driveItemId
-
 ```
 This example shows how to use the Get-MgDriveSpecial Cmdlet.
 
@@ -304,4 +303,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDriveSpecial?view=graph-powershell-beta)
+
 

@@ -33,14 +33,13 @@ Restore a previous version of a ListItem to be the current version.
 This will create a new version with the contents of the previous version, but preserves all existing versions of the item.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 Restore-MgSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId
-
+```
 This example shows how to use the Restore-MgDriveListItemVersion Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -201,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaDriveListItemVersion](/powershell/module/Microsoft.Graph.Beta.Applications/Restore-MgBetaDriveListItemVersion?view=graph-powershell-beta)
+

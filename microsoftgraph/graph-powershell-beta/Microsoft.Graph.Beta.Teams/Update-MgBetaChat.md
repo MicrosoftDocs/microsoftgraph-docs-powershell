@@ -59,8 +59,8 @@ Update-MgBetaChat -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 Update the properties of a chat object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -69,7 +69,6 @@ $params = @{
 }
 
 Update-MgBetaChat -ChatId $chatId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaChat Cmdlet.
 
@@ -1077,4 +1076,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgChat](/powershell/module/Microsoft.Graph.Teams/Update-MgChat?view=graph-powershell-v1.0)
+
 

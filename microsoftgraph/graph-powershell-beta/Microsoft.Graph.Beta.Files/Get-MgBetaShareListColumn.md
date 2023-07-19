@@ -38,14 +38,13 @@ Get-MgBetaShareListColumn -InputObject <IFilesIdentity> [-ExpandProperty <String
 Get columns from shares
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Get-MgBetaSiteListColumn -SiteId $siteId -ListId $listId
-
+```
 This example shows how to use the Get-MgBetaShareListColumn Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -296,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareListColumn](/powershell/module/Microsoft.Graph.Files/Get-MgShareListColumn?view=graph-powershell-v1.0)
+

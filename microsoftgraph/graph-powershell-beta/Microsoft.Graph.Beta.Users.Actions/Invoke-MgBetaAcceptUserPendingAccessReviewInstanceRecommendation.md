@@ -35,14 +35,12 @@ Recommendations are generated if **recommendationsEnabled** is `true` on the acc
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId
 ```
-
 This example shows how to use the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -202,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation?view=graph-powershell-v1.0)
+

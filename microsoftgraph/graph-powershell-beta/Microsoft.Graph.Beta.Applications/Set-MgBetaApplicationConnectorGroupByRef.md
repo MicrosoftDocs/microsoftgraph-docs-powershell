@@ -45,7 +45,6 @@ Set-MgBetaApplicationConnectorGroupByRef -InputObject <IApplicationsIdentity> -B
 Assign a connectorGroup to an application.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaApplicationConnectorGroupByRef Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -54,7 +53,6 @@ $params = @{
 }
 Set-MgBetaApplicationConnectorGroupByRef -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaApplicationConnectorGroupByRef Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -255,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
+

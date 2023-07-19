@@ -54,8 +54,8 @@ Application permissions can be granted directly with app role assignments, or th
 To grant an app role assignment, you need three identifiers:
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -66,7 +66,6 @@ $params = @{
 }
 
 New-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgServicePrincipalAppRoleAssignedTo Cmdlet.
 
@@ -374,4 +373,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalAppRoleAssignedTo](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalAppRoleAssignedTo?view=graph-powershell-beta)
+
 

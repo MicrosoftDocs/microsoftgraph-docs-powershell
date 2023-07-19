@@ -39,22 +39,18 @@ Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -InputObject 
 Retrieve the properties and relationships of an accessPackageAssignmentResourceRole object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole -AccessPackageAssignmentResourceRoleId $accessPackageAssignmentResourceRoleId
 ```
-
 This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole
 ```
-
 This example shows how to use the Get-MgBetaEntitlementManagementAccessPackageAssignmentResourceRole Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -360,3 +356,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageAssignmentResourceRole](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentResourceRole?view=graph-powershell-v1.0)
+

@@ -31,13 +31,12 @@ Remove-MgPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> [-If
 Delete a featureRolloutPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
-
 ```
 This example shows how to use the Remove-MgPolicyFeatureRolloutPolicy Cmdlet.
 
@@ -215,4 +214,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyFeatureRolloutPolicy?view=graph-powershell-beta)
+
 

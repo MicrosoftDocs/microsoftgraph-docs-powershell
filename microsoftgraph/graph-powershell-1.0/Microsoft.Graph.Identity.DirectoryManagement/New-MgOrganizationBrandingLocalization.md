@@ -74,8 +74,8 @@ It's loaded when a localized branding isn't configured for the user's browser la
 To retrieve the default branding, see Get branding.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -86,7 +86,6 @@ $params = @{
 }
 
 New-MgOrganizationBrandingLocalization -OrganizationId $organizationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgOrganizationBrandingLocalization Cmdlet.
 
@@ -730,4 +729,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
 

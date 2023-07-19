@@ -51,7 +51,6 @@ New-MgBetaUserProfilePatent -InputObject <IPeopleIdentity> -BodyParameter <IMicr
 Create a new itemPatent object within a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfilePatent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -65,7 +64,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfilePatent -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfilePatent Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -512,3 +510,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfilePatent](/powershell/module/Microsoft.Graph.People/New-MgUserProfilePatent?view=graph-powershell-v1.0)
+

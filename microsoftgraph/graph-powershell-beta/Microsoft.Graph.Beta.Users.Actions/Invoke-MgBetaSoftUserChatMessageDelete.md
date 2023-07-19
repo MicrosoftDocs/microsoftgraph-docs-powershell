@@ -31,13 +31,11 @@ Invoke-MgBetaSoftUserChatMessageDelete -InputObject <IUsersActionsIdentity> [-Pa
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaSoftUserChatMessageDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 Invoke-MgBetaSoftUserChatMessageDelete -UserId $userId -ChatId $chatId -ChatMessageId $chatMessageId
 ```
-
 This example shows how to use the Invoke-MgBetaSoftUserChatMessageDelete Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -212,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSoftUserChatMessageDelete](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSoftUserChatMessageDelete?view=graph-powershell-v1.0)
+

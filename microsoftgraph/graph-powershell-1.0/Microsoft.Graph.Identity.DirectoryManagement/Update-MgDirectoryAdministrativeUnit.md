@@ -49,8 +49,8 @@ Update-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementI
 Update the properties of an administrativeUnit object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 Update-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgDirectoryAdministrativeUnit Cmdlet.
 
@@ -374,4 +373,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+
 

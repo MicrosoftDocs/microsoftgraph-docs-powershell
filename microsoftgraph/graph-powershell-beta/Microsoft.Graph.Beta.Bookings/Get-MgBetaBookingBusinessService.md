@@ -38,22 +38,18 @@ Get-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-ExpandProper
 Get the properties and relationships of a bookingService object in the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaBookingBusinessService Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId
 ```
-
 This example shows how to use the Get-MgBetaBookingBusinessService Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaBookingBusinessService Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Get-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId
 ```
-
 This example shows how to use the Get-MgBetaBookingBusinessService Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -298,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessService?view=graph-powershell-v1.0)
+

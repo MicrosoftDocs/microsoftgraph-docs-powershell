@@ -50,7 +50,6 @@ New-MgBetaUserProfileEmail -InputObject <IPeopleIdentity> -BodyParameter <IMicro
 Create a new itemEmail object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileEmail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -60,7 +59,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileEmail -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileEmail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -443,3 +441,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileEmail](/powershell/module/Microsoft.Graph.People/New-MgUserProfileEmail?view=graph-powershell-v1.0)
+

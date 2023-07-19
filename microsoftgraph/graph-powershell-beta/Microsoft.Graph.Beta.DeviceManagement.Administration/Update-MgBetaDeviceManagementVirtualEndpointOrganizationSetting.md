@@ -32,7 +32,6 @@ Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting
 Update the properties of the cloudPcOrganizationSettings object in a tenant.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
@@ -47,7 +46,6 @@ $params = @{
 }
 Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaDeviceManagementVirtualEndpointOrganizationSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -247,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementVirtualEndpointOrganizationSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointOrganizationSetting?view=graph-powershell-v1.0)
+

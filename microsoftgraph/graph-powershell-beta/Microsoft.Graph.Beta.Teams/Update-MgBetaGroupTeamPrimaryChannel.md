@@ -55,13 +55,12 @@ Update-MgBetaGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> -BodyParamete
 Update the navigation property primaryChannel in groups
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamPrimaryChannel -TeamId $teamId
-
 ```
 This example shows how to use the Update-MgBetaBetaGroupTeamPrimaryChannel Cmdlet.
 
@@ -14743,4 +14742,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPrimaryChannel?view=graph-powershell-v1.0)
+
 

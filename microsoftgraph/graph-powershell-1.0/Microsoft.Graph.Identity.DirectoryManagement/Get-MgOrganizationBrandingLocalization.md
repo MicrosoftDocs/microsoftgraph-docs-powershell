@@ -40,25 +40,23 @@ Read the properties and relationships of an organizationalBrandingLocalization o
 To retrieve a localization branding object, specify the value of **id** in the URL.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
-
 ```
 This example shows how to use the Get-MgOrganizationBrandingLocalization Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
-
 ```
 This example shows how to use the Get-MgOrganizationBrandingLocalization Cmdlet.
 
@@ -307,4 +305,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
 

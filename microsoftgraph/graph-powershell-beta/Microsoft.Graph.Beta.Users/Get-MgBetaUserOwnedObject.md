@@ -44,14 +44,12 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserOwnedObject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOwnedObject -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserOwnedObject Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -314,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOwnedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserOwnedObject?view=graph-powershell-v1.0)
+

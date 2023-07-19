@@ -51,7 +51,6 @@ Update-MgBetaUserProfileSkill -InputObject <IPeopleIdentity> -BodyParameter <IMi
 Update the properties of a skillProficiency object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaUserProfileSkill Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -64,7 +63,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserProfileSkill -UserId $userId -SkillProficiencyId $skillProficiencyId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaUserProfileSkill Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -511,3 +509,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileSkill](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileSkill?view=graph-powershell-v1.0)
+

@@ -34,13 +34,11 @@ Deletes a userFlowLanguageConfiguration object from a Azure AD B2C user flow.
 **Note:** You cannot delete languages from an Azure Active Directory user flow.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaIdentityB2CUserFlowLanguage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Remove-MgBetaIdentityB2CUserFlowLanguage -B2cIdentityUserFlowId $b2cIdentityUserFlowId -UserFlowLanguageConfigurationId $userFlowLanguageConfigurationId
 ```
-
 This example shows how to use the Remove-MgBetaIdentityB2CUserFlowLanguage Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -249,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityB2CUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowLanguage?view=graph-powershell-v1.0)
+

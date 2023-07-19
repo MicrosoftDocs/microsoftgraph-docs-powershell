@@ -39,7 +39,6 @@ Before making this request, the caller must have previously retrieved the list o
 After making this request, the caller should create a programControl, to link the access review to a program.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaAccessReview Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -82,7 +81,6 @@ $params = @{
 }
 New-MgBetaAccessReview -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaAccessReview Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -599,3 +597,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAccessReview?view=graph-powershell-v1.0)
+

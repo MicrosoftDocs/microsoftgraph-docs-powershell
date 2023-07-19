@@ -54,7 +54,6 @@ New-MgBetaUserProfileName -InputObject <IPeopleIdentity> -BodyParameter <IMicros
 Use this API to create a new personName object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileName Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -69,7 +68,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileName -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileName Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -595,3 +593,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileName](/powershell/module/Microsoft.Graph.People/New-MgUserProfileName?view=graph-powershell-v1.0)
+

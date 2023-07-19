@@ -49,7 +49,6 @@ This method along with addKey can be used by an application to automate rolling 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -59,7 +58,6 @@ $params = @{
 }
 Remove-MgBetaApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
-
 This example shows how to use the Remove-MgBetaApplicationKey Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -259,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationKey](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationKey?view=graph-powershell-v1.0)
+

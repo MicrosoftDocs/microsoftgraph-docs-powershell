@@ -53,7 +53,6 @@ Update-MgBetaComplianceEdiscoveryCaseLegalHold -InputObject <IComplianceIdentity
 Update the properties of a legalHold object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -62,7 +61,6 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseLegalHold -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseLegalHold Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -14611,3 +14609,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)
+

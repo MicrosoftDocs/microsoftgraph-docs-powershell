@@ -50,13 +50,12 @@ Get-MgEntitlementManagementAssignmentPolicy -InputObject <IIdentityGovernanceIde
 In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAssignmentPolicy -AccessPackageAssignmentPolicyId $accessPackageAssignmentPolicyId
-
 ```
 This example shows how to use the Get-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
@@ -338,4 +337,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAssignmentPolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAssignmentPolicy?view=graph-powershell-beta)
+
 

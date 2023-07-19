@@ -24,13 +24,11 @@ Get-MgBetaEducationClassDelta [-Filter <String>] [-Property <String[]>] [-Search
 Invoke function delta
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaEducationClassDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationClassDelta
 ```
-
 This example shows how to use the Get-MgBetaEducationClassDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationClassDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassDelta?view=graph-powershell-v1.0)
+

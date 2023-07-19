@@ -47,13 +47,12 @@ Update-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity>
 Update entity in dataPolicyOperations
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-
 ```
 This example shows how to use the Update-MgBetaBetaDataPolicyOperation Cmdlet.
 
@@ -371,4 +370,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgDataPolicyOperation?view=graph-powershell-v1.0)
+
 

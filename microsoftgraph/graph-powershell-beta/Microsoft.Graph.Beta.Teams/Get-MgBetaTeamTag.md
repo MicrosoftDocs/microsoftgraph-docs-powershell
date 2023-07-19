@@ -38,13 +38,12 @@ Get-MgBetaTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Read the properties and relationships of a tag object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamTag -TeamId $teamId -TeamworkTagId $teamworkTagId
-
 ```
 This example shows how to use the Get-MgBetaTeamTag Cmdlet.
 
@@ -310,4 +309,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamTag](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamTag?view=graph-powershell-v1.0)
+
 

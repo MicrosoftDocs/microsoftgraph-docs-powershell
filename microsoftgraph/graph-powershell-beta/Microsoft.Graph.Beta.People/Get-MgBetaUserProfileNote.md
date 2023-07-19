@@ -38,24 +38,20 @@ Get-MgBetaUserProfileNote -InputObject <IPeopleIdentity> [-ExpandProperty <Strin
 Read the properties and relationships of a personAnnotation object from a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileNote -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserProfileNote Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserProfileNote Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileNote -UserId $userId -PersonAnnotationId $personAnnotationId
 ```
-
 This example shows how to use the Get-MgBetaUserProfileNote Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -302,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserProfileNote](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileNote?view=graph-powershell-v1.0)
+

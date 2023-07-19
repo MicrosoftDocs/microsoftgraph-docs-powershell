@@ -31,13 +31,11 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -Input
 Get the last addToReviewSetOperation object associated with a source collection.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-
 This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -158,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionAddToReviewSetOperation?view=graph-powershell-v1.0)
+

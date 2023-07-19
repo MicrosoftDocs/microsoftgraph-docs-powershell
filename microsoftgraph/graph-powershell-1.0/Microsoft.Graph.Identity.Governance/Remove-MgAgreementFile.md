@@ -31,13 +31,12 @@ Remove-MgAgreementFile -InputObject <IIdentityGovernanceIdentity> [-IfMatch <Str
 Delete navigation property file for agreements
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgIdentityGovernanceTermOfUseAgreementFile -AgreementId $agreementId
-
 ```
 This example shows how to use the Remove-MgAgreementFile Cmdlet.
 
@@ -214,4 +213,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaAgreementFile](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaAgreementFile?view=graph-powershell-beta)
+
 

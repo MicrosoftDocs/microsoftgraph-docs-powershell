@@ -39,49 +39,45 @@ This method retrieves only non-Stream properties, for example, **usernameHintTex
 To retrieve Stream types of the default branding, for example, **bannerLogo** and **backgroundImage**, use the GET organizationalBrandingLocalization method.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
-
 ```
 This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
-
 ```
 This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ### Example 3: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBranding -OrganizationId $organizationId
-
 ```
 This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
-
 ```
 This example shows how to use the Get-MgBetaOrganizationBranding Cmdlet.
 
@@ -214,4 +210,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationBranding](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBranding?view=graph-powershell-v1.0)
+
 

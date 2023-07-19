@@ -31,13 +31,12 @@ Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod -InputObject <IIdentityS
 Deletes a microsoftAuthenticatorAuthenticationMethod object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod -UserId $userId -MicrosoftAuthenticatorAuthenticationMethodId $microsoftAuthenticatorAuthenticationMethodId
-
 ```
 This example shows how to use the Remove-MgUserAuthenticationMicrosoftAuthenticatorMethod Cmdlet.
 
@@ -230,4 +229,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-beta)
+
 

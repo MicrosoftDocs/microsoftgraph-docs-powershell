@@ -31,13 +31,12 @@ Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -InputObje
 Get the last  ediscoveryEstimateOperation objects and their properties.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
 ```
 This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation Cmdlet.
 
@@ -177,4 +176,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityCaseEdiscoveryCaseSearchLastEstimateStatisticsOperation?view=graph-powershell-beta)
+
 

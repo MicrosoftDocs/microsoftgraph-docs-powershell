@@ -31,13 +31,11 @@ Remove-MgBetaCommunicationCallAudioRoutingGroup -InputObject <ICloudCommunicatio
 Delete the specified audioRoutingGroup.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaCommunicationCallAudioRoutingGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Remove-MgBetaCommunicationCallAudioRoutingGroup -CallId $callId -AudioRoutingGroupId $audioRoutingGroupId
 ```
-
 This example shows how to use the Remove-MgBetaCommunicationCallAudioRoutingGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -190,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgCommunicationCallAudioRoutingGroup](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationCallAudioRoutingGroup?view=graph-powershell-v1.0)
+

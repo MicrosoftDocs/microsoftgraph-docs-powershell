@@ -49,8 +49,8 @@ Update the properties of the specified tab in a chat.
 \nThis can be used to configure the content of the tab.
 
 ## EXAMPLES
-
 ### Example 1: Update the name of a tab in a chat
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -59,7 +59,6 @@ $params = @{
 }
 
 Update-MgBetaChatTab -ChatId $chatId -TeamsTabId $teamsTabId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaChatTab Cmdlet.
 
@@ -477,4 +476,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgChatTab](/powershell/module/Microsoft.Graph.Teams/Update-MgChatTab?view=graph-powershell-v1.0)
+
 

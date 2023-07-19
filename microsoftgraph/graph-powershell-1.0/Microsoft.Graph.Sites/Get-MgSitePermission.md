@@ -38,13 +38,12 @@ Get-MgSitePermission -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] 
 Retrieve the properties and relationships of a permission object on a site.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSitePermission -SiteId $siteId -PermissionId $permissionId
-
 ```
 This example shows how to use the Get-MgSitePermission Cmdlet.
 
@@ -310,4 +309,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSitePermission?view=graph-powershell-beta)
+
 

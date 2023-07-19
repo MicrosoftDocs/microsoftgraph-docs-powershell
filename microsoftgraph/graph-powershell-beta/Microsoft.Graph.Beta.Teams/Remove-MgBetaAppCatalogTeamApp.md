@@ -35,13 +35,12 @@ To delete an app, the **distributionMethod** property for the app must be set to
 You can also use this API to remove a submitted app from the review process.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaAppCatalogTeamApp -TeamsAppId $teamsAppId
-
 ```
 This example shows how to use the Remove-MgBetaAppCatalogTeamApp Cmdlet.
 
@@ -202,4 +201,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamApp?view=graph-powershell-v1.0)
+
 

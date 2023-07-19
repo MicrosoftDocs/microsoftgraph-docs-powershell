@@ -47,8 +47,8 @@ New-MgTeamInstalledApp -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftG
 Install an app to the specified team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgTeamInstalledApp -TeamId $teamId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgTeamInstalledApp Cmdlet.
 
@@ -388,4 +387,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamInstalledApp](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaTeamInstalledApp?view=graph-powershell-beta)
+
 

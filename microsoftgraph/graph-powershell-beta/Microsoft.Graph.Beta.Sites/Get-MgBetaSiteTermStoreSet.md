@@ -38,13 +38,12 @@ Get-MgBetaSiteTermStoreSet -InputObject <ISitesIdentity> [-ExpandProperty <Strin
 Read the properties and relationships of a set object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteTermStoreSet -SiteId $siteId -SetId $setId
-
 ```
 This example shows how to use the Get-MgBetaSiteTermStoreSet Cmdlet.
 
@@ -322,4 +321,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+
 

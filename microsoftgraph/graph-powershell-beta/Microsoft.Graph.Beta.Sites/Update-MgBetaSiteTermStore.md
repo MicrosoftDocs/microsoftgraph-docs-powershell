@@ -45,8 +45,8 @@ Update-MgBetaSiteTermStore -InputObject <ISitesIdentity> -BodyParameter <IMicros
 Update the navigation property termStore in sites
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 Update-MgBetaSiteTermStore -SiteId $siteId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaSiteTermStore Cmdlet.
 
@@ -441,4 +440,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStore?view=graph-powershell-v1.0)
+
 

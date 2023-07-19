@@ -37,8 +37,8 @@ New-MgBetaSecurityTriggerRetentionEvent -BodyParameter <IMicrosoftGraphSecurityR
 Create a new retentionEvent object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 New-MgBetaSecurityTriggerRetentionEvent -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaSecurityTriggerRetentionEvent Cmdlet.
 
@@ -478,4 +477,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTriggerRetentionEvent?view=graph-powershell-v1.0)
+
 

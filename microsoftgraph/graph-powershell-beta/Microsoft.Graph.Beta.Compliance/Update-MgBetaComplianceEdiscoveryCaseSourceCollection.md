@@ -59,7 +59,6 @@ Update-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 Update the properties of a sourceCollection object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -68,7 +67,6 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -805,3 +803,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
+

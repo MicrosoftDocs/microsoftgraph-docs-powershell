@@ -25,13 +25,12 @@ Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId <Stri
 Retrieve a list of the group objects that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageIncompatibleGroup -AccessPackageId $accessPackageId
-
 ```
 This example shows how to use the Get-MgEntitlementManagementAccessPackageIncompatibleGroup Cmdlet.
 
@@ -220,4 +219,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEntitlementManagementAccessPackageIncompatibleGroup?view=graph-powershell-beta)
+
 

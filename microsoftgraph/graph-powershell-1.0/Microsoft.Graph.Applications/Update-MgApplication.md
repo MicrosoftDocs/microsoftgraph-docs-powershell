@@ -89,12 +89,10 @@ Update-MgApplication -InputObject <IApplicationsIdentity> -BodyParameter <IMicro
 Update the properties of an application object.
 
 ## EXAMPLES
-
 ### Example 1: Update an application
+
 ```powershell
 Update-MgApplication `
-  -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
-  -DisplayName 'Testing App'
   -ApplicationId 'f6b30057-7095-4e2c-89f8-224149f591b7' `
   -DisplayName 'Testing App'
 ```
@@ -1732,3 +1730,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaApplication](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplication?view=graph-powershell-beta)
+

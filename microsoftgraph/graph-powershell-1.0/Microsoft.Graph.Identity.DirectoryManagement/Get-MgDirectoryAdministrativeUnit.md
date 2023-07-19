@@ -38,13 +38,12 @@ Get-MgDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagementIden
 Retrieve the properties and relationships of an administrativeUnit object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId
-
 ```
 This example shows how to use the Get-MgDirectoryAdministrativeUnit Cmdlet.
 
@@ -278,4 +277,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaDirectoryAdministrativeUnit?view=graph-powershell-beta)
+
 

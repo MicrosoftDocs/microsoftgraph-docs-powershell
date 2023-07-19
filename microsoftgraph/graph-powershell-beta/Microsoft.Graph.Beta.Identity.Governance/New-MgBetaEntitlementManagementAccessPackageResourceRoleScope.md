@@ -53,8 +53,8 @@ The access package resource, for a group, an app, or a SharePoint Online site, m
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## EXAMPLES
-
 ### Example 1: Create a new access package resource role scope
+
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{
@@ -77,9 +77,9 @@ $accessPackageResourceScope = @{
   }
 
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
+```
 
-
-Output
+```Output
 AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
 AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
 CreatedBy                  : admin@M365x814237.onmicrosoft.com
@@ -600,3 +600,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageResourceRoleScope](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageResourceRoleScope?view=graph-powershell-v1.0)
+

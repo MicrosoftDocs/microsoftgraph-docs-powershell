@@ -31,13 +31,12 @@ Remove-MgBetaApplicationTokenIssuancePolicyByRef -InputObject <IApplicationsIden
 Remove a tokenIssuancePolicy from an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaApplicationTokenIssuancePolicyByRef -ApplicationId $applicationId -TokenIssuancePolicyId $tokenIssuancePolicyId
-
 ```
 This example shows how to use the Remove-MgBetaApplicationTokenIssuancePolicyByRef Cmdlet.
 
@@ -218,4 +217,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationTokenIssuancePolicyByRef?view=graph-powershell-v1.0)
+
 

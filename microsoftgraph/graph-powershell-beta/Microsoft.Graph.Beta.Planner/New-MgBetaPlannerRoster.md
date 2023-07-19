@@ -31,7 +31,6 @@ New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-WhatIf] 
 Create a new plannerRoster object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaPlannerRoster Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
@@ -40,7 +39,6 @@ $params = @{
 }
 New-MgBetaPlannerRoster -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaPlannerRoster Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -517,3 +515,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRoster?view=graph-powershell-v1.0)
+

@@ -31,13 +31,12 @@ Remove-MgBetaAppCatalogTeamAppDefinitionBot -InputObject <ITeamsIdentity> [-IfMa
 Delete navigation property bot for appCatalogs
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaAppCatalogTeamAppDefinitionBot -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
-
 ```
 This example shows how to use the Remove-MgBetaBetaAppCatalogTeamAppDefinitionBot Cmdlet.
 
@@ -213,4 +212,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAppCatalogTeamAppDefinitionBot](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamAppDefinitionBot?view=graph-powershell-v1.0)
+
 

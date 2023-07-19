@@ -33,13 +33,12 @@ Delete a directory extension definition represented by an extensionProperty obje
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgApplicationExtensionProperty -ApplicationId $applicationId -ExtensionPropertyId $extensionPropertyId
-
 ```
 This example shows how to use the Remove-MgApplicationExtensionProperty Cmdlet.
 
@@ -197,4 +196,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationExtensionProperty?view=graph-powershell-beta)
+
 

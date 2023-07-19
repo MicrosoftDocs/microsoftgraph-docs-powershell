@@ -55,8 +55,8 @@ Update-MgBetaSecurityIncident -InputObject <ISecurityIdentity> -BodyParameter <I
 Update the properties of an incident object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
@@ -69,7 +69,6 @@ $params = @{
 }
 
 Update-MgBetaSecurityIncident -IncidentId $incidentId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaSecurityIncident Cmdlet.
 
@@ -672,4 +671,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIncident?view=graph-powershell-v1.0)
+
 

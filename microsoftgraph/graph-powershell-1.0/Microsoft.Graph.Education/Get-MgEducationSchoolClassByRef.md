@@ -25,13 +25,12 @@ Get-MgEducationSchoolClassByRef -EducationSchoolId <String> [-Filter <String>] [
 Get the educationClass resources owned by an educationSchool.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationSchoolClass -EducationSchoolId $educationSchoolId
-
 ```
 This example shows how to use the Get-MgEducationSchoolClassByRef Cmdlet.
 
@@ -190,4 +189,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolClassByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationSchoolClassByRef?view=graph-powershell-beta)
+
 

@@ -41,22 +41,18 @@ If the header `Prefer: include-unknown-enum-members` is provided, a reassigned s
 For details, see the examples section.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
-
 This example shows how to use the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Invoke-MgBetaReassignEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
 ```
-
 This example shows how to use the Invoke-MgBetaReassignEducationClassAssignmentSubmission Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -189,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
+

@@ -31,13 +31,12 @@ Remove-MgBetaSecurityTriggerTypeRetentionEventType -InputObject <ISecurityIdenti
 Delete a retentionEventType object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Remove-MgBetaSecurityTriggerTypeRetentionEventType -RetentionEventTypeId $retentionEventTypeId
-
 ```
 This example shows how to use the Remove-MgBetaSecurityTriggerTypeRetentionEventType Cmdlet.
 
@@ -230,4 +229,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityTriggerTypeRetentionEventType](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerTypeRetentionEventType?view=graph-powershell-v1.0)
+
 

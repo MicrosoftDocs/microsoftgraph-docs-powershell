@@ -42,14 +42,13 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
-```
+
+```powershell
 Import-Module Microsoft.Graph.Calendar
 
 # A UPN can also be used as -UserId.
 Get-MgUserCalendar -UserId $userId
-
 ```
 This example shows how to use the Get-MgUserCalendar Cmdlet.
 
@@ -271,5 +270,6 @@ INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
 [Get-MgBetaUserCalendar](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaUserCalendar?view=graph-powershell-beta)
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendar](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/get-mgusercalendar)
+
 
 

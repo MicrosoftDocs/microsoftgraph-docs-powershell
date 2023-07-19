@@ -31,13 +31,11 @@ Remove-MgBetaSecurityLabelRetentionLabel -InputObject <ISecurityIdentity> [-IfMa
 Delete a retentionLabel object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaSecurityLabelRetentionLabel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Remove-MgBetaSecurityLabelRetentionLabel -RetentionLabelId $retentionLabelId
 ```
-
 This example shows how to use the Remove-MgBetaSecurityLabelRetentionLabel Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -227,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
+

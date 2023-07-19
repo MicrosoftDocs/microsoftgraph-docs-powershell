@@ -56,8 +56,8 @@ New-MgSiteContentType -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGr
 Create a new [contentType][] in a [site][].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -72,7 +72,6 @@ $params = @{
 }
 
 New-MgSiteContentType -SiteId $siteId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSiteContentType Cmdlet.
 
@@ -1564,4 +1563,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteContentType](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteContentType?view=graph-powershell-beta)
+
 

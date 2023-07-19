@@ -34,8 +34,8 @@ Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter <IMicrosoftGraphTen
 Update the properties of a tenantAppManagementPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -80,7 +80,6 @@ $params = @{
 }
 
 Update-MgBetaPolicyDefaultAppManagementPolicy -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaPolicyDefaultAppManagementPolicy Cmdlet.
 
@@ -327,4 +326,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyDefaultAppManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDefaultAppManagementPolicy?view=graph-powershell-v1.0)
+
 

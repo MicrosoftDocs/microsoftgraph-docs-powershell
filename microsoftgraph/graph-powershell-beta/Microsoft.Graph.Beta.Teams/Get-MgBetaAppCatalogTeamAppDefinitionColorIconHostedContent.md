@@ -43,13 +43,11 @@ Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -InputObject <ITeams
 Retrieve the hosted content in an app's icon.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-
 This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionColorIconHostedContent Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -222,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionColorIconHostedContent?view=graph-powershell-v1.0)
+

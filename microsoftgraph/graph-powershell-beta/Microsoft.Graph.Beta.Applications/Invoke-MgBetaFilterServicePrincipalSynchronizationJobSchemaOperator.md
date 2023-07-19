@@ -33,13 +33,11 @@ Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator -InputObject
 Invoke function filterOperators
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator -ServicePrincipalId $servicePrincipalId -SynchronizationJobId $synchronizationJobId
 ```
-
 This example shows how to use the Invoke-MgBetaFilterServicePrincipalSynchronizationJobSchemaOperator Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -246,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator](/powershell/module/Microsoft.Graph.Applications/Invoke-MgFilterServicePrincipalSynchronizationJobSchemaOperator?view=graph-powershell-v1.0)
+

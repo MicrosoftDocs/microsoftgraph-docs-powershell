@@ -33,8 +33,8 @@ Remove an owner from a servicePrincipal object.
 As a recommended best practice, service principals should have at least two owners.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -43,7 +43,6 @@ $params = @{
 }
 
 Remove-MgServicePrincipalOwnerByRef -ServicePrincipalId $servicePrincipalId -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgServicePrincipalOwnerByRef Cmdlet.
 
@@ -216,4 +215,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalOwnerByRef?view=graph-powershell-beta)
+
 

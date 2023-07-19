@@ -63,8 +63,8 @@ New-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <
 Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -76,7 +76,6 @@ $params = @{
 }
 
 New-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaTeamChannelMessageReply Cmdlet.
 
@@ -949,4 +948,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReply?view=graph-powershell-v1.0)
+
 

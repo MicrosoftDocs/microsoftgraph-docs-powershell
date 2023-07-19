@@ -49,13 +49,12 @@ Get-MgSiteTermStore -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 Read the properties and relationships of a store object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStore -SiteId $siteId
-
 ```
 This example shows how to use the Get-MgSiteTermStore Cmdlet.
 
@@ -321,4 +320,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSiteTermStore?view=graph-powershell-beta)
+
 

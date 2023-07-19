@@ -36,13 +36,12 @@ Get-MgGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>] [<
 The group's conversations.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupConversation -GroupId $groupId -ConversationId $conversationId
-
 ```
 This example shows how to use the Get-MgGroupConversation Cmdlet.
 
@@ -290,4 +289,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupConversation?view=graph-powershell-beta)
+
 

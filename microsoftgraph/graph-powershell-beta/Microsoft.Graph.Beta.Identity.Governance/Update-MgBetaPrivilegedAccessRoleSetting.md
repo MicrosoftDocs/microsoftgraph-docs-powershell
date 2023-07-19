@@ -53,7 +53,6 @@ Update-MgBetaPrivilegedAccessRoleSetting -InputObject <IIdentityGovernanceIdenti
 Update the properties of governanceRoleSetting.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -67,7 +66,6 @@ $params = @{
 }
 Update-MgBetaPrivilegedAccessRoleSetting -PrivilegedAccessId $privilegedAccessId -GovernanceRoleSettingId $governanceRoleSettingId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaPrivilegedAccessRoleSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -765,3 +763,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedAccessRoleSetting?view=graph-powershell-v1.0)
+

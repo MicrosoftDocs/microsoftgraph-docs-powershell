@@ -33,25 +33,23 @@ Supports $expand including nested $select.
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=members($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupMember -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgGroupMemberByRef Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupMember -GroupId $groupId -CountVariable CountVar -Filter "startswith(displayName, 'a')" -ConsistencyLevel eventual
-
 ```
 This example shows how to use the Get-MgGroupMemberByRef Cmdlet.
 
@@ -226,4 +224,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupMemberByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupMemberByRef?view=graph-powershell-beta)
+
 

@@ -45,13 +45,12 @@ New-MgDomainVerificationDnsRecord -InputObject <IIdentityDirectoryManagementIden
 Create new navigation property to verificationDnsRecords for domains
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgDomainVerificationDnsRecord -DomainId $domainId
-
 ```
 This example shows how to use the New-MgDomainVerificationDnsRecord Cmdlet.
 
@@ -298,4 +297,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaDomainVerificationDnsRecord](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaDomainVerificationDnsRecord?view=graph-powershell-beta)
+
 

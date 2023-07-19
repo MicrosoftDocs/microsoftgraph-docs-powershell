@@ -38,24 +38,20 @@ Get-MgBetaUserProfileAccount -InputObject <IPeopleIdentity> [-ExpandProperty <St
 Retrieve the properties and relationships of an userAccountInformation object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserProfileAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAccount -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserProfileAccount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaUserProfileAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAccount -UserId $userId -UserAccountInformationId $userAccountInformationId
 ```
-
 This example shows how to use the Get-MgBetaUserProfileAccount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -302,3 +298,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserProfileAccount](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileAccount?view=graph-powershell-v1.0)
+

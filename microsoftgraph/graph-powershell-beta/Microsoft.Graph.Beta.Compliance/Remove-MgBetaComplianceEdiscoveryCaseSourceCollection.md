@@ -31,13 +31,11 @@ Remove-MgBetaComplianceEdiscoveryCaseSourceCollection -InputObject <IComplianceI
 Delete a sourceCollection object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Remove-MgBetaComplianceEdiscoveryCaseSourceCollection -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-
 This example shows how to use the Remove-MgBetaComplianceEdiscoveryCaseSourceCollection Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -189,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
+

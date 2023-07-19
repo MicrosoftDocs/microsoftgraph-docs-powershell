@@ -41,16 +41,15 @@ This is the first step in setting up a Bookings business where you must specify 
 You can include other information such as business address, web site address, and scheduling policy, or set that information later by updating the **bookingBusiness**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
 $params = @{
 	displayName = "Fourth Coffee"
 	address = @{
-		postOfficeBox = "P.O.
-Box 123"
+		postOfficeBox = "P.O. Box 123"
 		street = "4567 Main Street"
 		city = "Buffalo"
 		state = "NY"
@@ -64,7 +63,6 @@ Box 123"
 }
 
 New-MgBookingBusiness -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBookingBusiness Cmdlet.
 
@@ -740,4 +738,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 

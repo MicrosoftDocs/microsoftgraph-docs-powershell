@@ -36,13 +36,12 @@ Get-MgTeamScheduleShift -InputObject <ITeamsIdentity> [-Property <String[]>] [<C
 Retrieve the properties and relationships of a shift object by ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamScheduleShift -TeamId $teamId -ShiftId $shiftId
-
 ```
 This example shows how to use the Get-MgTeamScheduleShift Cmdlet.
 
@@ -286,4 +285,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamScheduleShift](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamScheduleShift?view=graph-powershell-beta)
+
 

@@ -32,7 +32,6 @@ Invoke-MgBetaMarkServiceAnnouncementMessageRead
 Mark a list of serviceUpdateMessages as **read** for the signed in user.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaMarkServiceAnnouncementMessageRead Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
@@ -44,7 +43,6 @@ $params = @{
 }
 Invoke-MgBetaMarkServiceAnnouncementMessageRead -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaMarkServiceAnnouncementMessageRead Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -151,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMarkServiceAnnouncementMessageRead](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgMarkServiceAnnouncementMessageRead?view=graph-powershell-v1.0)
+

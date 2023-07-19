@@ -55,26 +55,34 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 
 ## EXAMPLES
-
 ### Example 1: Reply in JSON format to an existing message
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
 	Message = @{
-		Attachments = @(
+		ToRecipients = @(
 			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				Name = "guidelines.txt"
-				ContentBytes = "bWFjIGFuZCBjaGVlc2UgdG9kYXk="
+				EmailAddress = @{
+					Address = "samanthab@contoso.onmicrosoft.com"
+					Name = "Samantha Booth"
+				}
+			}
+			@{
+				EmailAddress = @{
+					Address = "randiw@contoso.onmicrosoft.com"
+					Name = "Randi Welch"
+				}
 			}
 		)
 	}
-	Comment = "Please take a look at the attached guidelines before you decide on the name."
+	Comment = "Samantha, Randi, would you name the group please?"
 }
-# A UPN can also be used as -UserId.
-Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
 
+# A UPN can also be used as -UserId.
+Invoke-MgBetaReplyUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
 This example shows how to use the Invoke-MgBetaReplyUserMailFolderMessage Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -467,3 +475,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReplyUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyUserMailFolderMessage?view=graph-powershell-v1.0)
+

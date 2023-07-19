@@ -30,13 +30,11 @@ Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -InputObject <IDevice
 Invoke function getCloudPcReviewStatus
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId
 ```
-
 This example shows how to use the Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -123,3 +121,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
+

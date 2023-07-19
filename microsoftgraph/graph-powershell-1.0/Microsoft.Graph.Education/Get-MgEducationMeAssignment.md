@@ -38,13 +38,12 @@ Get-MgEducationMeAssignment -InputObject <IEducationIdentity> [-ExpandProperty <
 Assignments belonging to the user.
 
 ## EXAMPLES
-
 ### Example 1: Get the assignments of the logged in user
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeAssignment
-
 ```
 This example shows how to use the Get-MgEducationMeAssignment Cmdlet.
 
@@ -267,4 +266,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationMeAssignment?view=graph-powershell-beta)
+
 

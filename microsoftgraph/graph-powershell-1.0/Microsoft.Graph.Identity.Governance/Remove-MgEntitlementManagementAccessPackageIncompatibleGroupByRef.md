@@ -31,13 +31,12 @@ Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -InputObject <
 Remove a group from the list of groups that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef -AccessPackageId $accessPackageId -GroupId $groupId
-
 ```
 This example shows how to use the Remove-MgEntitlementManagementAccessPackageIncompatibleGroupByRef Cmdlet.
 
@@ -244,4 +243,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaEntitlementManagementAccessPackageIncompatibleGroupByRef?view=graph-powershell-beta)
+
 

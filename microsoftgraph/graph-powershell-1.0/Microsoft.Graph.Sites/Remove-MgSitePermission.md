@@ -31,13 +31,12 @@ Remove-MgSitePermission -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pass
 Delete a permission object on a site.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Remove-MgSitePermission -SiteId $siteId -PermissionId $permissionId
-
 ```
 This example shows how to use the Remove-MgSitePermission Cmdlet.
 
@@ -213,4 +212,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSitePermission](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSitePermission?view=graph-powershell-beta)
+
 

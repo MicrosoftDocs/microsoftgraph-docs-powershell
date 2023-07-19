@@ -42,14 +42,12 @@ The collection is ordered by their relevance to the user, which is determined by
 A person is an aggregation of information from across mail, contacts and social networks.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserPerson Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserPerson -UserId $userId
 ```
-
 This example shows how to use the Get-MgBetaUserPerson Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -281,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-v1.0)
+

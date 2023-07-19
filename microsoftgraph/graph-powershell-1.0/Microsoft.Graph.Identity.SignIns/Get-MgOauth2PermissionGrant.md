@@ -40,13 +40,12 @@ Retrieve the properties of a single delegated permission grant represented by an
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId
-
 ```
 This example shows how to use the Get-MgOauth2PermissionGrant Cmdlet.
 
@@ -314,4 +313,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 

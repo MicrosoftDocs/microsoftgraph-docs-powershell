@@ -31,13 +31,12 @@ Get-MgTeamPrimaryChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 Get the default channel, **General**, of a team.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
-
 ```
 This example shows how to use the Get-MgTeamPrimaryChannel Cmdlet.
 
@@ -160,4 +159,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaTeamPrimaryChannel?view=graph-powershell-beta)
+
 

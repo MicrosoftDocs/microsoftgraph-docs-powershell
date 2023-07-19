@@ -36,8 +36,8 @@ Create a new threat assessment request.
 A threat assessment request can be one of the following types:
 
 ## EXAMPLES
-
 ### Example 1: Create a mail assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -50,14 +50,13 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Create an email assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -70,14 +69,13 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Create a file assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -90,14 +88,13 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Create an url assessment request
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -109,7 +106,6 @@ $params = @{
 }
 
 New-MgBetaInformationProtectionThreatAssessmentRequest -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaInformationProtectionThreatAssessmentRequest Cmdlet.
 
@@ -379,4 +375,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgInformationProtectionThreatAssessmentRequest](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInformationProtectionThreatAssessmentRequest?view=graph-powershell-v1.0)
+
 

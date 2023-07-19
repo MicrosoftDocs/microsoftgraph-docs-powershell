@@ -50,8 +50,8 @@ Update-MgBetaDirectoryAdministrativeUnit -InputObject <IIdentityDirectoryManagem
 Update the navigation property administrativeUnits in directory
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -60,7 +60,6 @@ $params = @{
 }
 
 Update-MgBetaDirectoryAdministrativeUnit -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgBetaDirectoryAdministrativeUnit Cmdlet.
 
@@ -415,4 +414,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDirectoryAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryAdministrativeUnit?view=graph-powershell-v1.0)
+
 

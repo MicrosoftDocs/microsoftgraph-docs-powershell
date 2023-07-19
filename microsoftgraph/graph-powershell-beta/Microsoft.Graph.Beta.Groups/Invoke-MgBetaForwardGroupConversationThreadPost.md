@@ -50,8 +50,8 @@ Forward a post to a recipient.
 You can specify both the parent conversation and thread in the request, nor, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -68,7 +68,6 @@ $params = @{
 }
 
 Invoke-MgBetaForwardGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-
 ```
 This example shows how to use the Invoke-MgBetaForwardGroupConversationThreadPost Cmdlet.
 
@@ -343,4 +342,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgForwardGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupConversationThreadPost?view=graph-powershell-v1.0)
+
 

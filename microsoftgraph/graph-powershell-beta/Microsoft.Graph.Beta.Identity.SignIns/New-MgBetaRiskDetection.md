@@ -35,13 +35,12 @@ New-MgBetaRiskDetection -BodyParameter <IMicrosoftGraphRiskDetection> [-WhatIf] 
 Create new navigation property to riskDetections for identityProtection
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaRiskDetection
-
 ```
 This example shows how to use the New-MgBetaBetaRiskDetection Cmdlet.
 
@@ -504,4 +503,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskDetection?view=graph-powershell-v1.0)
+
 

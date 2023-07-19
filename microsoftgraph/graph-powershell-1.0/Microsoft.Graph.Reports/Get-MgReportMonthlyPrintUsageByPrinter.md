@@ -38,13 +38,12 @@ Get-MgReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-ExpandP
 Get monthlyPrintUsageByPrinter from reports
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Reports
 
 Get-MgReportMonthlyPrintUsageByPrinter
-
 ```
 This example shows how to use the Get-MgReportMonthlyPrintUsageByPrinter Cmdlet.
 
@@ -277,4 +276,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
+
 

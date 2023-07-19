@@ -31,13 +31,12 @@ Remove-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity> [-IfMatch 
 Delete a directory object, for example, a group, user, application, or service principal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
 Remove-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
-
 ```
 This example shows how to use the Remove-MgBetaDirectoryObject Cmdlet.
 
@@ -161,4 +160,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Remove-MgDirectoryObject?view=graph-powershell-v1.0)
+
 

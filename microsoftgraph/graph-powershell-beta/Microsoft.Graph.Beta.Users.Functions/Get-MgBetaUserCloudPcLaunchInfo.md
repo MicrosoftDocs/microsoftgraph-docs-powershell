@@ -29,14 +29,12 @@ Get-MgBetaUserCloudPcLaunchInfo -InputObject <IUsersFunctionsIdentity> [<CommonP
 Invoke function getCloudPcLaunchInfo
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserCloudPcLaunchInfo Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Get-MgBetaUserCloudPcLaunchInfo -UserId $userId -CloudPCId $cloudPCId
 ```
-
 This example shows how to use the Get-MgBetaUserCloudPcLaunchInfo Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -147,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCloudPcLaunchInfo](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCloudPcLaunchInfo?view=graph-powershell-v1.0)
+

@@ -23,17 +23,16 @@ Get-MgBetaEntitlementManagementSetting [-ExpandProperty <String[]>] [-Property <
 Retrieve the properties of an entitlementManagementSettings object.
 
 ## EXAMPLES
-
 ### Example 1: Get the identity governance settings
+
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Get-MgBetaEntitlementManagementSetting
-```
 
 Id        DaysUntilExternalUserDeletedAfterBlocked ExternalUserLifecycleAction
 --        ---------------------------------------- ---------------------------
 singleton 30                                       BlockSignInAndDelete
-
+```
 
 This example returns the identity governance settings.
 
@@ -83,3 +82,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSetting?view=graph-powershell-v1.0)
+

@@ -38,13 +38,12 @@ Get-MgPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [-Expand
 Retrieve the properties and relationships of a tokenLifetimePolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId
-
 ```
 This example shows how to use the Get-MgPolicyTokenLifetimePolicy Cmdlet.
 
@@ -312,4 +311,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaPolicyTokenLifetimePolicy?view=graph-powershell-beta)
+
 

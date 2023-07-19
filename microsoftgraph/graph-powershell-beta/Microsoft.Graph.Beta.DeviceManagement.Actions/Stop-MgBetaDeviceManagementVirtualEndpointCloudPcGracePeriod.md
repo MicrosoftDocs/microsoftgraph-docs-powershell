@@ -37,13 +37,11 @@ It allows users to access Cloud PCs for up to seven days before de-provisioning 
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
 ## EXAMPLES
-
 ### Example 1: Using the Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod -CloudPCId $cloudPCId
 ```
-
 This example shows how to use the Stop-MgBetaDeviceManagementVirtualEndpointCloudPcGracePeriod Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -199,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-v1.0)
+

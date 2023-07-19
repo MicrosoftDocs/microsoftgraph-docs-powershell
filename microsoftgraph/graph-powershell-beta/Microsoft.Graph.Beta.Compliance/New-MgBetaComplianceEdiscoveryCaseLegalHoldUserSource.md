@@ -47,7 +47,6 @@ New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -InputObject <IComplianceI
 Adds a userSource to a legalHold object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -57,7 +56,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -362,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseLegalHoldUserSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHoldUserSource?view=graph-powershell-v1.0)
+

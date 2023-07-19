@@ -44,13 +44,11 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaServicePrincipalOwnedObject Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaServicePrincipalOwnedObject -ServicePrincipalId $servicePrincipalId
 ```
-
 This example shows how to use the Get-MgBetaServicePrincipalOwnedObject Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -303,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalOwnedObject](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnedObject?view=graph-powershell-v1.0)
+

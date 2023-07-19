@@ -38,13 +38,12 @@ Get-MgBetaUserAuthenticationTemporaryAccessPassMethod -InputObject <IIdentitySig
 Retrieve a user's single temporaryAccessPassAuthenticationMethod object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId -TemporaryAccessPassAuthenticationMethodId $temporaryAccessPassAuthenticationMethodId
-
 ```
 This example shows how to use the Get-MgBetaUserAuthenticationTemporaryAccessPassMethod Cmdlet.
 
@@ -346,4 +345,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-v1.0)
+
 

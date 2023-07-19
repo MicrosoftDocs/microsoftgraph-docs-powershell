@@ -37,13 +37,12 @@ New-MgSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureSco
 Create new navigation property to secureScoreControlProfiles for security
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecuritySecureScoreControlProfile
-
 ```
 This example shows how to use the New-MgSecuritySecureScoreControlProfile Cmdlet.
 
@@ -496,4 +495,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSecuritySecureScoreControlProfile?view=graph-powershell-beta)
+
 

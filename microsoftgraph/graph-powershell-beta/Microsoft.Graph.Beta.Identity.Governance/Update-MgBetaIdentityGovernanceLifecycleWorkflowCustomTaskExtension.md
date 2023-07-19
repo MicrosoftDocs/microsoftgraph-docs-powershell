@@ -55,7 +55,6 @@ Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject
 Update the properties of a customTaskExtension object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
@@ -84,7 +83,6 @@ $params = @{
 }
 Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -14580,3 +14578,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtension?view=graph-powershell-v1.0)
+

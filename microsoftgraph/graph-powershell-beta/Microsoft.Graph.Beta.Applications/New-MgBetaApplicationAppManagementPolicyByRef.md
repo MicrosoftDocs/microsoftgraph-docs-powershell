@@ -47,8 +47,8 @@ The application or service principal adopts this policy over the tenant-wide ten
 Only one policy object can be assigned to an application or service principal.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaApplicationAppManagementPolicyByRef Cmdlet.
 
@@ -245,4 +244,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-v1.0)
+
 

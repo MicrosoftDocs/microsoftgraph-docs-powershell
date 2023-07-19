@@ -44,13 +44,12 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupConversationThread -GroupId $groupId -ConversationId $conversationId
-
 ```
 This example shows how to use the Get-MgGroupConversationThread Cmdlet.
 
@@ -313,4 +312,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupConversationThread](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupConversationThread?view=graph-powershell-beta)
+
 

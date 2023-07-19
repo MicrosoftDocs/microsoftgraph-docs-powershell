@@ -51,7 +51,6 @@ Use this API to set the review status of a Cloud PC to in review if you consider
 After the review is completed, use this API again to set the Cloud PC back to a normal state.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
@@ -64,7 +63,6 @@ $params = @{
 }
 Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -294,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
+

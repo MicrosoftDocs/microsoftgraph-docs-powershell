@@ -49,18 +49,17 @@ This function is transitive.
 **Note:** Only users and role-enabled groups can be members of directory roles.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	SecurityEnabledOnly = $true
 }
 
 Get-MgDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
+```
 This example shows how to use the Get-MgContractMemberObject Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -224,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaContractMemberObject](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaContractMemberObject?view=graph-powershell-beta)
+

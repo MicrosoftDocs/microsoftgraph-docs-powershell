@@ -47,7 +47,6 @@ Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -InputObject <IDe
 Reprovision a specific Cloud PC.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
@@ -57,7 +56,6 @@ $params = @{
 }
 Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaReprovisionDeviceManagementVirtualEndpointCloudPc Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -280,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReprovisionDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-v1.0)
+

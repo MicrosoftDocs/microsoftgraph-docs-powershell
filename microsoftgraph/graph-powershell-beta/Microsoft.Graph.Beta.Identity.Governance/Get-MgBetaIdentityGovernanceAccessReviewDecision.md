@@ -38,13 +38,11 @@ Get-MgBetaIdentityGovernanceAccessReviewDecision -InputObject <IIdentityGovernan
 Represents an Azure AD access review decision on an instance of a review.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaIdentityGovernanceAccessReviewDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceAccessReviewDecision -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -ExpandProperty "instance(`$expand=definition)"
+Get-MgBetaIdentityGovernanceAccessReviewDecision -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -ExpandProperty "instance(`$expand=definition)" 
 ```
-
 This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDecision Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -350,3 +348,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDecision?view=graph-powershell-v1.0)
+

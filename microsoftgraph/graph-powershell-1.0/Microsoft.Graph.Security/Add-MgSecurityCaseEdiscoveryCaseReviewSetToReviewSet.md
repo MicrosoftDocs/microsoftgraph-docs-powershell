@@ -51,7 +51,6 @@ After the operation is created, you can get the status of the operation by retri
 The location provides a URL that will return a Add to review set operation.
 
 ## EXAMPLES
-
 ### Example 1: Using the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
@@ -63,7 +62,6 @@ $params = @{
 }
 Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
-
 This example shows how to use the Add-MgSecurityCaseEdiscoveryCaseReviewSetToReviewSet Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -469,3 +467,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet](/powershell/module/Microsoft.Graph.Beta.Applications/Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetToReviewSet?view=graph-powershell-beta)
+

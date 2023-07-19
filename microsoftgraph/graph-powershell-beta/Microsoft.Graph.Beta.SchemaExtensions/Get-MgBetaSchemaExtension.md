@@ -38,13 +38,12 @@ Get-MgBetaSchemaExtension -InputObject <ISchemaExtensionsIdentity> [-ExpandPrope
 Get the properties of the specified schemaExtension definition.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.SchemaExtensions
 
 Get-MgBetaSchemaExtension -SchemaExtensionId $schemaExtensionId
-
 ```
 This example shows how to use the Get-MgBetaSchemaExtension Cmdlet.
 
@@ -258,4 +257,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSchemaExtension](/powershell/module/Microsoft.Graph.SchemaExtensions/Get-MgSchemaExtension?view=graph-powershell-v1.0)
+
 

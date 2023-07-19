@@ -65,8 +65,8 @@ Update the properties of a registered device.
 Only certain properties of a device can be updated through approved Mobile Device Managment (MDM) apps.
 
 ## EXAMPLES
-
 ### Example 1: Update the accountEnabled property of a device
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -75,14 +75,13 @@ $params = @{
 }
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgDevice Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2:  Write extensionAttributes on a device
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -90,7 +89,6 @@ $params = @{
 }
 
 Update-MgDevice -DeviceId $deviceId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgDevice Cmdlet.
 
@@ -834,4 +832,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaDevice](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaDevice?view=graph-powershell-beta)
+
 

@@ -45,13 +45,12 @@ New-MgBetaTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity>
 Create new navigation property to sharedWithTeams for teams
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelSharedWithTeam -TeamId $teamId -ChannelId $channelId
-
 ```
 This example shows how to use the New-MgBetaBetaTeamPrimaryChannelSharedWithTeam Cmdlet.
 
@@ -9709,4 +9708,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelSharedWithTeam?view=graph-powershell-v1.0)
+
 

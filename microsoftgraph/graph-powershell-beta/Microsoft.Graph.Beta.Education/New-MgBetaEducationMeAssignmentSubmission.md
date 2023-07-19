@@ -51,20 +51,23 @@ New-MgBetaEducationMeAssignmentSubmission -InputObject <IEducationIdentity>
 Create new navigation property to submissions for education
 
 ## EXAMPLES
-
 ### Example 1: Get submissions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
 ```
+This example shows how to use the New-MgBetaBetaEducationMeAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 ### Example 2: Get submissions with $expand options
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -ExpandProperty "outcomes"
-
 ```
 This example shows how to use the New-MgBetaBetaEducationMeAssignmentSubmission Cmdlet.
 
@@ -474,4 +477,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+
 

@@ -38,13 +38,12 @@ Get-MgBetaTeamScheduleOfferShiftRequest -InputObject <ITeamsIdentity> [-ExpandPr
 Retrieve the properties and relationships of an offerShiftRequest object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamScheduleOfferShiftRequest -TeamId $teamId -OfferShiftRequestId $offerShiftRequestId
-
 ```
 This example shows how to use the Get-MgBetaTeamScheduleOfferShiftRequest Cmdlet.
 
@@ -310,4 +309,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleOfferShiftRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOfferShiftRequest?view=graph-powershell-v1.0)
+
 

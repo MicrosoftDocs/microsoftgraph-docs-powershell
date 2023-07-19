@@ -47,7 +47,6 @@ Set-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManage
 Assign a cloudPcUserSetting to user groups.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
@@ -64,7 +63,6 @@ $params = @{
 }
 Set-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -282,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-v1.0)
+

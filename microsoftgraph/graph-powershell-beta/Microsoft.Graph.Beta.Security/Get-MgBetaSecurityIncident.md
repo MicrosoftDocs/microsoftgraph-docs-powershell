@@ -42,13 +42,12 @@ Attacks are typically inflicted on different types of entities, such as devices,
 Microsoft 365 Defender correlates alerts with the same attack techniques or the same attacker into an **incident**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Get-MgBetaSecurityIncident -IncidentId $incidentId
-
 ```
 This example shows how to use the Get-MgBetaSecurityIncident Cmdlet.
 
@@ -331,4 +330,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityIncident](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityIncident?view=graph-powershell-v1.0)
+
 

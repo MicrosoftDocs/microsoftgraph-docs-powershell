@@ -31,13 +31,12 @@ Remove-MgGroupTeamPrimaryChannel -InputObject <ITeamsIdentity> [-IfMatch <String
 Delete navigation property primaryChannel for groups
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamPrimaryChannel -TeamId $teamId
-
 ```
 This example shows how to use the Remove-MgGroupTeamPrimaryChannel Cmdlet.
 
@@ -191,4 +190,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaGroupTeamPrimaryChannel?view=graph-powershell-beta)
+
 

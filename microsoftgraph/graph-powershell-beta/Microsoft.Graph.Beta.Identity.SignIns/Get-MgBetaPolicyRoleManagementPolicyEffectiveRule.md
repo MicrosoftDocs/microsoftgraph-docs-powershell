@@ -43,13 +43,11 @@ For example, if there is a tenant-wide policy to enforce enabling an approval ru
 Supports $expand.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPolicyRoleManagementPolicyEffectiveRule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyRoleManagementPolicyEffectiveRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
 ```
-
 This example shows how to use the Get-MgBetaPolicyRoleManagementPolicyEffectiveRule Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -348,3 +346,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-v1.0)
+

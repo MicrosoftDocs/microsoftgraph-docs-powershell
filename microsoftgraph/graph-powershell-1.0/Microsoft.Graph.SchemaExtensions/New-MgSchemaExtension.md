@@ -39,8 +39,8 @@ Depending on the nstate of the extension, the owner app, and only the owner app,
 See examples of how to define a schema extension that describes a training course, nuse the schema extension definition to create a new group with training course data, and nadd training course data to an existing group.
 
 ## EXAMPLES
-
 ### Example 1: Creating a schema extension using a verified domain
+
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -67,14 +67,13 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSchemaExtension Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Creating a schema extension using just a name
+
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -101,14 +100,13 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSchemaExtension Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Creating a schema extension setting the owner
+
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -136,7 +134,6 @@ $params = @{
 }
 
 New-MgSchemaExtension -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSchemaExtension Cmdlet.
 
@@ -347,4 +344,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSchemaExtension](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSchemaExtension?view=graph-powershell-beta)
+
 

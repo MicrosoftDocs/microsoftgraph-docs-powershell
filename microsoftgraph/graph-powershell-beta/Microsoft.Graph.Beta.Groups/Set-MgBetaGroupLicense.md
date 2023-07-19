@@ -51,7 +51,6 @@ To learn more about group-based licensing, see What is group-based licensing in 
 To get the subscriptions available in the directory, perform a GET subscribedSkus request.
 
 ## EXAMPLES
-
 ### Example 1: Using the Set-MgBetaGroupLicense Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -76,10 +75,8 @@ $params = @{
 }
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaGroupLicense Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Set-MgBetaGroupLicense Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -93,7 +90,6 @@ $params = @{
 }
 Set-MgBetaGroupLicense -GroupId $groupId -BodyParameter $params
 ```
-
 This example shows how to use the Set-MgBetaGroupLicense Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -301,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgGroupLicense](/powershell/module/Microsoft.Graph.Groups/Set-MgGroupLicense?view=graph-powershell-v1.0)
+

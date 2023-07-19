@@ -53,7 +53,6 @@ New-MgBetaUserProfileWebAccount -InputObject <IPeopleIdentity> -BodyParameter <I
 Create a new webAccount object in a user's profile.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserProfileWebAccount Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
@@ -68,7 +67,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileWebAccount -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserProfileWebAccount Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -520,3 +518,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileWebAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileWebAccount?view=graph-powershell-v1.0)
+

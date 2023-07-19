@@ -45,8 +45,8 @@ New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef
 Add an accessPackage to the list of access packages that have been marked as incompatible on an accessPackage.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef -AccessPackageId $accessPackageId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEntitlementManagementAccessPackageIncompatibleAccessPackageByRef Cmdlet.
 
@@ -311,4 +310,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageIncompatibleAccessPackageByRef?view=graph-powershell-v1.0)
+
 

@@ -47,7 +47,6 @@ New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ICom
 Create a new unifiedGroupSource object.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -59,10 +58,8 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -72,7 +69,6 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource -CaseId $caseId -CustodianId $custodianId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaComplianceEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -9745,3 +9741,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-v1.0)
+

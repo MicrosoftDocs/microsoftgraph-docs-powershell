@@ -55,8 +55,8 @@ Use reply thread or reply post to further post to that thread.
 Note: You can also start a new thread in an existing conversation.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -81,7 +81,6 @@ $params = @{
 }
 
 New-MgBetaGroupThread -GroupId $groupId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaGroupThread Cmdlet.
 
@@ -539,4 +538,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThread?view=graph-powershell-v1.0)
+
 

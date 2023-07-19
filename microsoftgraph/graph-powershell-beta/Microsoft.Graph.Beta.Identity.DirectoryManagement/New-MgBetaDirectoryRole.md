@@ -38,8 +38,8 @@ The Company Administrators and the implicit user directory roles (**User**, **Gu
 To access and assign members to other directory roles, you must first activate it with its corresponding directory role template ID.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -48,7 +48,6 @@ $params = @{
 }
 
 New-MgBetaDirectoryRole -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaDirectoryRole Cmdlet.
 
@@ -293,4 +292,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRole?view=graph-powershell-v1.0)
+
 

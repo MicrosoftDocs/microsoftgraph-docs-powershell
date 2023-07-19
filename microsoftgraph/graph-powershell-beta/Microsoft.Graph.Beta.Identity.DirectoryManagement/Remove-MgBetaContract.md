@@ -31,13 +31,12 @@ Remove-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 Delete entity from contracts
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 Get-MgBetaContract -ContractId $contractId
-
 ```
 This example shows how to use the Remove-MgBetaBetaContract Cmdlet.
 
@@ -201,4 +200,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgContract?view=graph-powershell-v1.0)
+
 

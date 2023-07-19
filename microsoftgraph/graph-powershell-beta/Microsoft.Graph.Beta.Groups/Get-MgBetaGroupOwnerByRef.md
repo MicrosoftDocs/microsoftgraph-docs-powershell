@@ -33,13 +33,12 @@ Supports $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1); Suppo
 For example, /groups?$filter=startsWith(displayName,'Role')&$select=id,displayName&$expand=owners($select=id,userPrincipalName,displayName).
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
 Get-MgBetaGroupOwner -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgBetaGroupOwnerByRef Cmdlet.
 
@@ -214,4 +213,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+
 

@@ -38,13 +38,11 @@ Get-MgBetaPlannerRosterPlan -InputObject <IPlannerIdentity> [-ExpandProperty <St
 Retrieves the plans contained by the plannerRoster.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPlannerRosterPlan Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerRosterPlan -PlannerRosterId $plannerRosterId
 ```
-
 This example shows how to use the Get-MgBetaPlannerRosterPlan Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -277,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerRosterPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterPlan?view=graph-powershell-v1.0)
+

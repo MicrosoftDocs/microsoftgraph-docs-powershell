@@ -47,8 +47,8 @@ Add a user or a group to the connected organization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaEntitlementManagementConnectedOrganizationInternalSponsorByRef Cmdlet.
 
@@ -313,4 +312,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationInternalSponsorByRef?view=graph-powershell-v1.0)
+
 

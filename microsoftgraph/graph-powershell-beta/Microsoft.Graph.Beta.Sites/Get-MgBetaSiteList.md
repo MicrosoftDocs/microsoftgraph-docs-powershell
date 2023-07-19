@@ -38,13 +38,12 @@ Get-MgBetaSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-
 Get the list of richLongRunningOperations associated with a list.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteList -SiteId $siteId -ListId $listId
-
 ```
 This example shows how to use the Get-MgBetaSiteList Cmdlet.
 
@@ -322,4 +321,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteList?view=graph-powershell-v1.0)
+
 

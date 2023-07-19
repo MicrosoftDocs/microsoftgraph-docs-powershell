@@ -33,15 +33,14 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
-
 ### Example 1: List the owners of a service principal
+
 ```powershell
 Get-MgServicePrincipalOwner -ServicePrincipalId '1c48f923-4fbb-4d37-b772-4d577eefec9e'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 8a7c50d3-fcbd-4727-a889-8ab232dfea01
-
 ```
 
 This command lists the owners of the specified service principal.
@@ -245,4 +244,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwner?view=graph-powershell-beta)
+
 

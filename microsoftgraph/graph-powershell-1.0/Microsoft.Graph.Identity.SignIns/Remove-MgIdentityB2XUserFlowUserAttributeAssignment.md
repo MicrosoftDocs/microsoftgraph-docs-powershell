@@ -32,13 +32,12 @@ Remove-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 Delete an identityUserFlowAttributeAssignment object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId
-
 ```
 This example shows how to use the Remove-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
 
@@ -231,4 +230,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
+
 

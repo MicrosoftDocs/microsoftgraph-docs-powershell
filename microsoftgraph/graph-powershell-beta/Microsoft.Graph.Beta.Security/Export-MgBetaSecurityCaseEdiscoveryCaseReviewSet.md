@@ -51,7 +51,6 @@ Initiate an export from a **reviewSet**.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## EXAMPLES
-
 ### Example 1: Using the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
@@ -63,7 +62,6 @@ $params = @{
 }
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
-
 This example shows how to use the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -384,3 +382,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Export-MgSecurityCaseEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+

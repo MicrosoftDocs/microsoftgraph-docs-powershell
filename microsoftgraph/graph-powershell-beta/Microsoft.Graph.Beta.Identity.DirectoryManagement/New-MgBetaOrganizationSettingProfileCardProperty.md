@@ -49,7 +49,6 @@ The new property is identified by its **directoryPropertyName** property.
 For more information on adding properties to the profile card for an organization, see customize the profile card.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaOrganizationSettingProfileCardProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -69,7 +68,6 @@ $params = @{
 }
 New-MgBetaOrganizationSettingProfileCardProperty -OrganizationId $organizationId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaOrganizationSettingProfileCardProperty Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -298,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)
+

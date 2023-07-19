@@ -47,8 +47,8 @@ Update the properties of oAuth2PermissionGrant object, representing a delegated 
 An **oAuth2PermissionGrant** can be updated to change which delegated permissions are granted, by adding or removing items from the list in **scopes**.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 Update-MgOauth2PermissionGrant -OAuth2PermissionGrantId $oAuth2PermissionGrantId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgOauth2PermissionGrant Cmdlet.
 
@@ -353,4 +352,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
+
 

@@ -31,13 +31,11 @@ Calling this method will disable the current user to receive email notifications
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaGraphGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Invoke-MgBetaGraphGroup -GroupId $groupId
 ```
-
 This example shows how to use the Invoke-MgBetaGraphGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -186,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgGraphGroup](/powershell/module/Microsoft.Graph.Groups/Invoke-MgGraphGroup?view=graph-powershell-v1.0)
+

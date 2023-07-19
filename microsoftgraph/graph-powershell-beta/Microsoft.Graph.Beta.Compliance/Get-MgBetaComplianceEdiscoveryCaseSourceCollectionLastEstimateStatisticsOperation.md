@@ -31,13 +31,11 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperatio
 Get the last estimateStatisticsOperation object associated with a source collection.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-
 This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -158,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionLastEstimateStatisticsOperation?view=graph-powershell-v1.0)
+

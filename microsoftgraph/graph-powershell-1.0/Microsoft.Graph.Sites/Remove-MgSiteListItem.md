@@ -31,13 +31,12 @@ Remove-MgSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassTh
 Removes an item from a [list][].
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Remove-MgSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
-
 ```
 This example shows how to use the Remove-MgSiteListItem Cmdlet.
 
@@ -228,4 +227,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSiteListItem?view=graph-powershell-beta)
+
 

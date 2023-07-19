@@ -63,8 +63,8 @@ Update-MgPlannerTask -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the navigation property tasks in planner
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -82,7 +82,6 @@ $params = @{
 }
 
 Update-MgPlannerTask -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
 This example shows how to use the Update-MgPlannerTask Cmdlet.
 
@@ -750,4 +749,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaPlannerTask](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaPlannerTask?view=graph-powershell-beta)
+
 

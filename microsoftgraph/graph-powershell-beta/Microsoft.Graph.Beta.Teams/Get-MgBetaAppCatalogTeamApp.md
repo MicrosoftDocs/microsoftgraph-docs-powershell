@@ -38,13 +38,12 @@ Get-MgBetaAppCatalogTeamApp -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 Get teamsApps from appCatalogs
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaAppCatalogTeamApp -TeamsAppId $teamsAppId
-
 ```
 This example shows how to use the Get-MgBetaBetaAppCatalogTeamApp Cmdlet.
 
@@ -295,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamApp?view=graph-powershell-v1.0)
+
 

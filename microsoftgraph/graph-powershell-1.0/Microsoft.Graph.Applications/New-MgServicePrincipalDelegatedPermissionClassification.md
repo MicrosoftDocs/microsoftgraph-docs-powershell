@@ -45,8 +45,8 @@ New-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplicati
 Classify a delegated permission by adding a delegatedPermissionClassification to the servicePrincipal representing the API.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -57,7 +57,6 @@ $params = @{
 }
 
 New-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgServicePrincipalDelegatedPermissionClassification Cmdlet.
 
@@ -273,4 +272,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalDelegatedPermissionClassification?view=graph-powershell-beta)
+
 

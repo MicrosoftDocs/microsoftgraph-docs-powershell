@@ -31,31 +31,25 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -InputObject <ITeamsIdentity> [
 Retrieve a Teams app icon associated with a specific definition of an app.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-
 This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId
 ```
-
 This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 3: Using the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon -TeamsAppId $teamsAppId -TeamsAppDefinitionId $teamsAppDefinitionId -OutFile $outFileId
 ```
-
 This example shows how to use the Get-MgBetaAppCatalogTeamAppDefinitionOutlineIcon Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -197,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamAppDefinitionOutlineIcon](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionOutlineIcon?view=graph-powershell-v1.0)
+

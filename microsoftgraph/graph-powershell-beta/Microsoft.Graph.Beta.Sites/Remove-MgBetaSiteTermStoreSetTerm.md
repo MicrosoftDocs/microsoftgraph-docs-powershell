@@ -31,13 +31,12 @@ Remove-MgBetaSiteTermStoreSetTerm -InputObject <ISitesIdentity> [-IfMatch <Strin
 Delete a term object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Remove-MgBetaSiteTermStoreSetTerm -SiteId $siteId -SetId $setId -TermId $termId
-
 ```
 This example shows how to use the Remove-MgBetaSiteTermStoreSetTerm Cmdlet.
 
@@ -240,4 +239,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreSetTerm?view=graph-powershell-v1.0)
+
 

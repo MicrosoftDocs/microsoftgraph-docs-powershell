@@ -32,13 +32,11 @@ Promote a verified subdomain to the root domain.
 A verified domain has its **isVerified** property set to `true`.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaPromoteDomain Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Invoke-MgBetaPromoteDomain -DomainId $domainId
 ```
-
 This example shows how to use the Invoke-MgBetaPromoteDomain Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -169,3 +167,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgPromoteDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgPromoteDomain?view=graph-powershell-v1.0)
+

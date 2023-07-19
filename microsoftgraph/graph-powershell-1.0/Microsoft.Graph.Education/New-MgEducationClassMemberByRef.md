@@ -43,8 +43,8 @@ New-MgEducationClassMemberByRef -InputObject <IEducationIdentity> -BodyParameter
 Add an educationUser member to an educationClass.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgEducationClassMemberByRef -EducationClassId $educationClassId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEducationClassMemberByRef Cmdlet.
 
@@ -223,4 +222,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationClassMemberByRef?view=graph-powershell-beta)
+
 

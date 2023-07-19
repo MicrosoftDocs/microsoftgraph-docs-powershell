@@ -38,13 +38,12 @@ Get-MgBetaEducationUserTaughtClass -InputObject <IEducationIdentity> [-ExpandPro
 Classes for which the user is a teacher.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationUserTaughtClass -EducationUserId $educationUserId
-
 ```
 This example shows how to use the Get-MgBetaEducationUserTaughtClass Cmdlet.
 
@@ -285,4 +284,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserTaughtClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserTaughtClass?view=graph-powershell-v1.0)
+
 

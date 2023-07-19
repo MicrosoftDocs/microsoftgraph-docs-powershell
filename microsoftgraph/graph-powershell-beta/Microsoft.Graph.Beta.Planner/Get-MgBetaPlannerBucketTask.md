@@ -25,13 +25,11 @@ Get-MgBetaPlannerBucketTask -PlannerBucketId <String> [-ExpandProperty <String[]
 Retrieve a list of plannerTask objects associated to a plannerBucket object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaPlannerBucketTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 Get-MgBetaPlannerBucketTask -PlannerBucketId $plannerBucketId
 ```
-
 This example shows how to use the Get-MgBetaPlannerBucketTask Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -217,3 +215,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPlannerBucketTask](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerBucketTask?view=graph-powershell-v1.0)
+

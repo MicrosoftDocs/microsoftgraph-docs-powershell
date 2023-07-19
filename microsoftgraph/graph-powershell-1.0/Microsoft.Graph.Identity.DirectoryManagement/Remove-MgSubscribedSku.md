@@ -31,13 +31,12 @@ Remove-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity> [-IfM
 Delete entity from subscribedSkus
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgSubscribedSku -SubscribedSkuId $subscribedSkuId
-
 ```
 This example shows how to use the Remove-MgSubscribedSku Cmdlet.
 
@@ -181,4 +180,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSubscribedSku](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaSubscribedSku?view=graph-powershell-beta)
+
 

@@ -31,8 +31,8 @@ Remove-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity> [-IfMa
 Delete entity from organization
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -56,7 +56,6 @@ $params = @{
 }
 
 Update-MgOrganization -OrganizationId $organizationId -BodyParameter $params
-
 ```
 This example shows how to use the Remove-MgOrganization Cmdlet.
 
@@ -200,4 +199,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaOrganization?view=graph-powershell-beta)
+
 

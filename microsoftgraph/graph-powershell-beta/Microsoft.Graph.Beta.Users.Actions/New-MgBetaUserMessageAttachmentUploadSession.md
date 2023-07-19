@@ -61,7 +61,6 @@ This allows transfer to be resumed, in case the network connection is dropped du
 The following are the steps to attach a file to an Outlook item using an upload session: See attach large files to Outlook messages or events for an example.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaUserMessageAttachmentUploadSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -77,10 +76,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserMessageAttachmentUploadSession Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the New-MgBetaUserMessageAttachmentUploadSession Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -94,7 +91,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaUserMessageAttachmentUploadSession Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -307,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMessageAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageAttachmentUploadSession?view=graph-powershell-v1.0)
+

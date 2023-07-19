@@ -33,13 +33,11 @@ Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -InputObject <IComplianceIde
 Invoke function asHierarchy
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy -CaseId $caseId
 ```
-
 This example shows how to use the Invoke-MgBetaAsComplianceEdiscoveryCaseTagHierarchy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -220,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAsComplianceEdiscoveryCaseTagHierarchy](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgAsComplianceEdiscoveryCaseTagHierarchy?view=graph-powershell-v1.0)
+

@@ -51,7 +51,6 @@ The input is a base-64 encoded value of the Pfx certificate contents.
 This method returns trustFrameworkKey.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetPkcs12 Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -61,7 +60,6 @@ $params = @{
 }
 Invoke-MgBetaUploadTrustFrameworkKeySetPkcs12 -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetPkcs12 Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -292,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUploadTrustFrameworkKeySetPkcs12](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetPkcs12?view=graph-powershell-v1.0)
+

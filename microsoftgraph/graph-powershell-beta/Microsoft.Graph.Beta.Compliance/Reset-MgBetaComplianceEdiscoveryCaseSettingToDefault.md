@@ -31,13 +31,11 @@ Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -InputObject <IComplianceId
 Reset a caseSettings object to the default values.
 
 ## EXAMPLES
-
 ### Example 1: Using the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault -CaseId $caseId
 ```
-
 This example shows how to use the Reset-MgBetaComplianceEdiscoveryCaseSettingToDefault Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -159,3 +157,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgComplianceEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Compliance/Reset-MgComplianceEdiscoveryCaseSettingToDefault?view=graph-powershell-v1.0)
+

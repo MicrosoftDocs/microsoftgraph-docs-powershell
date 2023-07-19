@@ -25,13 +25,12 @@ Get-MgApplicationTokenIssuancePolicyByRef -ApplicationId <String> [-Filter <Stri
 List the tokenIssuancePolicy objects that are assigned to an application.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgApplicationTokenIssuancePolicy -ApplicationId $applicationId
-
 ```
 This example shows how to use the Get-MgApplicationTokenIssuancePolicyByRef Cmdlet.
 
@@ -190,4 +189,5 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
+
 

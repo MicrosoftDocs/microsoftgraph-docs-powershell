@@ -53,7 +53,6 @@ The job is created in a disabled state.
 Call Start job to start synchronization.
 
 ## EXAMPLES
-
 ### Example 1: Using the New-MgBetaServicePrincipalSynchronizationJob Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
@@ -62,7 +61,6 @@ $params = @{
 }
 New-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-
 This example shows how to use the New-MgBetaServicePrincipalSynchronizationJob Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -600,3 +598,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
+

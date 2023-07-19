@@ -43,8 +43,8 @@ New-MgPrintShareAllowedGroupByRef -InputObject <IDevicesCloudPrintIdentity> -Bod
 Grant the specified group access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -53,7 +53,6 @@ $params = @{
 }
 
 New-MgPrintShareAllowedGroupByRef -PrinterShareId $printerShareId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgPrintShareAllowedGroupByRef Cmdlet.
 
@@ -226,4 +225,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPrintShareAllowedGroupByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaPrintShareAllowedGroupByRef?view=graph-powershell-beta)
+
 

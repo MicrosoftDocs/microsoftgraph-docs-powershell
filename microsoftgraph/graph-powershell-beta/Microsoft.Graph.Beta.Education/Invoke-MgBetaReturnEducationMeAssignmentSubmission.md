@@ -35,13 +35,12 @@ This will change the status of the submission from 'submitted' to 'returned' and
 This action can only be done by the teacher.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Invoke-MgBetaReturnEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
 This example shows how to use the Invoke-MgBetaReturnEducationMeAssignmentSubmission Cmdlet.
 
@@ -162,4 +161,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReturnEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+
 

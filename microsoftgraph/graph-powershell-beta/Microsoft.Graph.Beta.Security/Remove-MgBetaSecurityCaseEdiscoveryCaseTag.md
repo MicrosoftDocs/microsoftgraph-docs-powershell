@@ -31,13 +31,12 @@ Remove-MgBetaSecurityCaseEdiscoveryCaseTag -InputObject <ISecurityIdentity> [-If
 Remove an ediscoveryReviewTag object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 
 Remove-MgBetaSecurityCaseEdiscoveryCaseTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewTagId $ediscoveryReviewTagId
-
 ```
 This example shows how to use the Remove-MgBetaSecurityCaseEdiscoveryCaseTag Cmdlet.
 
@@ -245,4 +244,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityCaseEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityCaseEdiscoveryCaseTag?view=graph-powershell-v1.0)
+
 

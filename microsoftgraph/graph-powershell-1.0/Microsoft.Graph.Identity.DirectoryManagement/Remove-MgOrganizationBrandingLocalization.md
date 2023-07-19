@@ -34,13 +34,12 @@ Delete a localized branding object.
 To delete the organizationalBrandingLocalization object, all images (Stream types) must first be removed from the object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Remove-MgOrganizationBrandingLocalization -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
-
 ```
 This example shows how to use the Remove-MgOrganizationBrandingLocalization Cmdlet.
 
@@ -199,4 +198,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
+
 

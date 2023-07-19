@@ -40,14 +40,12 @@ For developers, if the application attempts to redeem a delegated access token f
 If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint, which will force the user to sign in.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaInvalidateUserRefreshToken Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaInvalidateUserRefreshToken -UserId $userId
 ```
-
 This example shows how to use the Invoke-MgBetaInvalidateUserRefreshToken Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -177,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgInvalidateUserRefreshToken](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInvalidateUserRefreshToken?view=graph-powershell-v1.0)
+

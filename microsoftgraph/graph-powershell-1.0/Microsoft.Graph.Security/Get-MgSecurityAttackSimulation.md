@@ -43,13 +43,12 @@ Get-MgSecurityAttackSimulation [-ExpandProperty <String[]>] [-Property <String[]
 Get attackSimulation from security
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityAttackSimulation
-
 ```
 This example shows how to use the Get-MgSecurityAttackSimulation Cmdlet.
 
@@ -296,4 +295,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSecurityAttackSimulation](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaSecurityAttackSimulation?view=graph-powershell-beta)
+
 

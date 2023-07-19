@@ -46,7 +46,6 @@ Update-MgBetaBookingBusinessCustomer -InputObject <IBookingsIdentity>
 Update the properties of a bookingCustomer object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaBookingBusinessCustomer Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
@@ -56,7 +55,6 @@ $params = @{
 }
 Update-MgBetaBookingBusinessCustomer -BookingBusinessId $bookingBusinessId -BookingCustomerId $bookingCustomerId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaBookingBusinessCustomer Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -321,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCustomer?view=graph-powershell-v1.0)
+

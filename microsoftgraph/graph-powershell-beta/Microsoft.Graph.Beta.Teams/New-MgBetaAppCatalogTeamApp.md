@@ -35,13 +35,12 @@ The **requiresReview** property allows any user to submit an app for review by a
 Admins can approve or reject these apps via this API or the Microsoft Teams admin center.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 New-MgBetaAppCatalogTeamApp -Requiresreview true
-
 ```
 This example shows how to use the New-MgBetaAppCatalogTeamApp Cmdlet.
 
@@ -295,4 +294,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamApp?view=graph-powershell-v1.0)
+
 

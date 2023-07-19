@@ -99,17 +99,16 @@ Update-MgBetaServicePrincipal -InputObject <IApplicationsIdentity>
 Update the properties of servicePrincipal object.
 
 ## EXAMPLES
-
 ### Example 1: Update the properties of a service principal
+
 ```powershell
 $ServicePrincipalUpdate =@{
   "accountEnabled" = "true"
   "appRoleAssignmentRequired" = "true"
   }
-```
 
 Update-MgBetaServicePrincipal -ServicePrincipalId '000e4269-1923-4c8c-9c27-1206e114d421' -BodyParameter $ServicePrincipalUpdate
-
+```
 
 This is example, the first command defines the properties and their values in a hashtable under the variable $ServicePrincipalUpdate. The second command updates the specified service principal.
 
@@ -1979,3 +1978,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipal?view=graph-powershell-v1.0)
+

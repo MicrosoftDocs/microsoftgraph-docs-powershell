@@ -31,13 +31,12 @@ Unpublish-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-PassThru] [-
 Unpublish a [contentType][] from a content type hub site.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Unpublish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-
 ```
 This example shows how to use the Unpublish-MgBetaSiteListContentType Cmdlet.
 
@@ -225,4 +224,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Unpublish-MgSiteListContentType](/powershell/module/Microsoft.Graph.Sites/Unpublish-MgSiteListContentType?view=graph-powershell-v1.0)
+
 

@@ -31,12 +31,11 @@ Remove-MgPolicyPermissionGrantPolicyExclude -InputObject <IIdentitySignInsIdenti
 Deletes a permissionGrantConditionSet from the **excludes** collection of a permissionGrantPolicy.
 
 ## EXAMPLES
-
 ### Example 1: Remove a permission grant policy exclude
-```powershell
-Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"
-Remove-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "60ba4fac-d39e-47b3-bd99-4394cb88a2f8" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"
 
+```powershell
+Connect-MgGraph -Scopes "Policy.Read.PermissionGrant,Policy.ReadWrite.PermissionGrant"  
+Remove-MgPolicyPermissionGrantPolicyExclude -PermissionGrantConditionSetId "60ba4fac-d39e-47b3-bd99-4394cb88a2f8" -PermissionGrantPolicyId "testtenant-sampleapp-permissions"  
 ```
 
 This command deletes the specified exclude configuration from the specific permission grant policy in Azure AD.
@@ -229,4 +228,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
+
 

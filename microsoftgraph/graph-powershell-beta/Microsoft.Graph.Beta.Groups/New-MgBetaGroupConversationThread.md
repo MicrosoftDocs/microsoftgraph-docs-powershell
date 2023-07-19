@@ -49,8 +49,8 @@ New-MgBetaGroupConversationThread -InputObject <IGroupsIdentity>
 Create new navigation property to threads for groups
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -67,7 +67,6 @@ $params = @{
 }
 
 New-MgBetaGroupConversationThread -GroupId $groupId -ConversationId $conversationId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaGroupConversationThread Cmdlet.
 
@@ -540,4 +539,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)
+
 

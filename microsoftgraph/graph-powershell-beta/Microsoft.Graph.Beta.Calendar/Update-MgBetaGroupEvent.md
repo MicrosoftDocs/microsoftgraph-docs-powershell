@@ -75,13 +75,12 @@ Update-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicros
 Update an event object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
 Get-MgBetaGroupEvent -GroupId $groupId -EventId $eventId
-
 ```
 This example shows how to use the Update-MgBetaBetaGroupEvent Cmdlet.
 
@@ -1814,4 +1813,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgGroupEvent?view=graph-powershell-v1.0)
+
 

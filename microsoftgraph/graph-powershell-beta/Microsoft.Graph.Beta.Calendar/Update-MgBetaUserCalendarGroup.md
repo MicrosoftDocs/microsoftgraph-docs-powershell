@@ -49,22 +49,17 @@ Update the properties of place object, which can be a room, workspace, or roomLi
 You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
 $params = @{
-	"@odata.type" = "microsoft.graph.room"
-	nickname = "Conf Room"
-	building = "1"
-	label = "100"
-	capacity = 
-	isWheelChairAccessible = $false
+	name = "name-value"
 }
 
-Update-MgBetaPlace -PlaceId $placeId -BodyParameter $params
-
+# A UPN can also be used as -UserId.
+Update-MgBetaUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId -BodyParameter $params
 ```
 This example shows how to use the Update-MgBetaUserCalendarGroup Cmdlet.
 
@@ -318,4 +313,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserCalendarGroup?view=graph-powershell-v1.0)
+
 

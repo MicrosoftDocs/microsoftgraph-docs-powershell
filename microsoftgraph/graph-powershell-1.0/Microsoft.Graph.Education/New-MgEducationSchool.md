@@ -35,8 +35,8 @@ New-MgEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-WhatIf] 
 Create a new educationSchool object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -64,7 +64,6 @@ $params = @{
 }
 
 New-MgEducationSchool -BodyParameter $params
-
 ```
 This example shows how to use the New-MgEducationSchool Cmdlet.
 
@@ -9619,4 +9618,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationSchool](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEducationSchool?view=graph-powershell-beta)
+
 

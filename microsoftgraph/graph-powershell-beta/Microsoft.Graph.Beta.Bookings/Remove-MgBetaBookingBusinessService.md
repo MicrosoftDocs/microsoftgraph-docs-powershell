@@ -31,13 +31,11 @@ Remove-MgBetaBookingBusinessService -InputObject <IBookingsIdentity> [-IfMatch <
 Delete a bookingService object in the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Using the Remove-MgBetaBookingBusinessService Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 Remove-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BookingServiceId $bookingServiceId
 ```
-
 This example shows how to use the Remove-MgBetaBookingBusinessService Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -192,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessService?view=graph-powershell-v1.0)
+

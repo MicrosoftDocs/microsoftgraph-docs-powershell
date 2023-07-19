@@ -75,8 +75,8 @@ New-MgBetaGroupEvent -InputObject <ICalendarIdentity> -BodyParameter <IMicrosoft
 Use this API to create a new event.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
 
@@ -109,7 +109,6 @@ $params = @{
 }
 
 New-MgBetaGroupEvent -GroupId $groupId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaGroupEvent Cmdlet.
 
@@ -1827,4 +1826,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-v1.0)
+
 

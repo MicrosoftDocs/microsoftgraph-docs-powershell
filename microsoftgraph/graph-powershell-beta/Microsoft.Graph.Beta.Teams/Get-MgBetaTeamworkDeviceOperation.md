@@ -38,22 +38,18 @@ Get-MgBetaTeamworkDeviceOperation -InputObject <ITeamsIdentity> [-ExpandProperty
 Get the details of an async, long-running operation on a Microsoft Teams-enabled device.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaTeamworkDeviceOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId -TeamworkDeviceOperationId $teamworkDeviceOperationId
 ```
-
 This example shows how to use the Get-MgBetaTeamworkDeviceOperation Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaTeamworkDeviceOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDeviceOperation -TeamworkDeviceId $teamworkDeviceId
 ```
-
 This example shows how to use the Get-MgBetaTeamworkDeviceOperation Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -316,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeviceOperation](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceOperation?view=graph-powershell-v1.0)
+

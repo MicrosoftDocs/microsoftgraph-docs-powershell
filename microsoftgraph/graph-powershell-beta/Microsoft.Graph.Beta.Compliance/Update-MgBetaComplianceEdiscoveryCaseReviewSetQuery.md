@@ -49,7 +49,6 @@ Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery -InputObject <IComplianceIde
 Update the properties of an eDiscovery reviewSetQuery.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
@@ -58,7 +57,6 @@ $params = @{
 }
 Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery -CaseId $caseId -ReviewSetId $reviewSetId -ReviewSetQueryId $reviewSetQueryId -BodyParameter $params
 ```
-
 This example shows how to use the Update-MgBetaComplianceEdiscoveryCaseReviewSetQuery Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -377,3 +375,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
+

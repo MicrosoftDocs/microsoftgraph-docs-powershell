@@ -40,25 +40,23 @@ Get-MgEducationClassAssignmentSubmissionOutcome -InputObject <IEducationIdentity
 Get outcomes from education
 
 ## EXAMPLES
-
 ### Example 1: Get all outcomes
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
 This example shows how to use the Get-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Get outcomes filtered by outcome type
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionOutcome -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -Filter "isof('microsoft.graph.educationFeedbackResourceOutcome')"
-
 ```
 This example shows how to use the Get-MgEducationClassAssignmentSubmissionOutcome Cmdlet.
 
@@ -326,4 +324,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaEducationClassAssignmentSubmissionOutcome?view=graph-powershell-beta)
+
 

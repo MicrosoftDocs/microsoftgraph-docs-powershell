@@ -43,8 +43,8 @@ New-MgBookingBusinessStaffMember -InputObject <IBookingsIdentity> -BodyParameter
 Create a new bookingStaffMember in the specified bookingBusiness.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
@@ -128,7 +128,6 @@ $params = @{
 }
 
 New-MgBookingBusinessStaffMember -BookingBusinessId $bookingBusinessId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBookingBusinessStaffMember Cmdlet.
 
@@ -275,4 +274,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessStaffMember](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaBookingBusinessStaffMember?view=graph-powershell-beta)
+
 

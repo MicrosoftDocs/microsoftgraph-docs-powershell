@@ -38,13 +38,12 @@ Get-MgBetaSiteListItemVersion -InputObject <ISitesIdentity> [-ExpandProperty <St
 The list of previous versions of the list item.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteListItemVersion -SiteId $siteId -ListId $listId -ListItemId $listItemId -ListItemVersionId $listItemVersionId -ExpandProperty "fields"
-
 ```
 This example shows how to use the Get-MgBetaSiteListItemVersion Cmdlet.
 
@@ -352,4 +351,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 

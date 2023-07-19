@@ -38,13 +38,11 @@ Get-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity> [-Expa
 Get entity from onPremisesPublishingProfiles by key
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaOnPremisePublishingProfile Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
-Get-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "publishedResources,agents,agentGroups"
+Get-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ExpandProperty "publishedResources,agents,agentGroups" 
 ```
-
 This example shows how to use the Get-MgBetaOnPremisePublishingProfile Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -282,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
+

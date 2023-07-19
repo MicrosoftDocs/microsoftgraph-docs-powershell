@@ -24,22 +24,18 @@ Get-MgBetaGroupDelta [-Filter <String>] [-Property <String[]>] [-Search <String>
 Invoke function delta
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaGroupDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupDelta
 ```
-
 This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaGroupDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
-Get-MgBetaGroupDelta -Property "displayName,description,mailNickname"
+Get-MgBetaGroupDelta -Property "displayName,description,mailNickname" 
 ```
-
 This example shows how to use the Get-MgBetaGroupDelta Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -195,3 +191,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupDelta](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupDelta?view=graph-powershell-v1.0)
+

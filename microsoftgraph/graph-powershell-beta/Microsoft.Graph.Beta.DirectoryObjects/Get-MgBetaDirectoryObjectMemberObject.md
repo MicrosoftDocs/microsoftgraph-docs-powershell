@@ -45,8 +45,8 @@ Get-MgBetaDirectoryObjectMemberObject -InputObject <IDirectoryObjectsIdentity>
 Invoke action getMemberObjects
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
@@ -55,7 +55,6 @@ $params = @{
 }
 
 Get-MgBetaDirectoryObjectMemberObject -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
 ```
 This example shows how to use the Get-MgBetaDirectoryObjectMemberObject Cmdlet.
 
@@ -200,4 +199,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryObjectMemberObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObjectMemberObject?view=graph-powershell-v1.0)
+
 

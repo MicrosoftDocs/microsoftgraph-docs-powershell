@@ -55,13 +55,11 @@ Also called *1:N* chats or *group conversations*.\n- **Teams channels** - Chat m
 For more information about purging Teams messages, see:\n- eDiscovery solution series: Data spillage scenario - Search and purge\n- eDiscovery (Premium) workflow for content in Microsoft Teams
 
 ## EXAMPLES
-
 ### Example 1: Using the Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 ```
-
 This example shows how to use the Clear-MgBetaSecurityCaseEdiscoveryCaseSearchData Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -318,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgSecurityCaseEdiscoveryCaseSearchData](/powershell/module/Microsoft.Graph.Security/Clear-MgSecurityCaseEdiscoveryCaseSearchData?view=graph-powershell-v1.0)
+

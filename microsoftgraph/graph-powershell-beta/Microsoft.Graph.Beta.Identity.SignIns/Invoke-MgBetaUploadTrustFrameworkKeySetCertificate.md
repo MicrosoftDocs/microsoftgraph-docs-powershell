@@ -49,7 +49,6 @@ The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
 
 ## EXAMPLES
-
 ### Example 1: Using the Invoke-MgBetaUploadTrustFrameworkKeySetCertificate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
@@ -58,7 +57,6 @@ $params = @{
 }
 Invoke-MgBetaUploadTrustFrameworkKeySetCertificate -TrustFrameworkKeySetId $trustFrameworkKeySetId -BodyParameter $params
 ```
-
 This example shows how to use the Invoke-MgBetaUploadTrustFrameworkKeySetCertificate Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -273,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUploadTrustFrameworkKeySetCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetCertificate?view=graph-powershell-v1.0)
+

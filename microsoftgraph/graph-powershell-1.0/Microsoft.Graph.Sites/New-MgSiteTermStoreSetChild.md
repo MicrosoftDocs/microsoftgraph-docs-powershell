@@ -147,8 +147,8 @@ New-MgSiteTermStoreSetChild -InputObject <ISitesIdentity> -BodyParameter <IMicro
 Create a new term object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -163,7 +163,6 @@ $params = @{
 }
 
 New-MgSiteTermStoreSetChild -SiteId $siteId -SetId $setId -BodyParameter $params
-
 ```
 This example shows how to use the New-MgSiteTermStoreSetChild Cmdlet.
 
@@ -705,4 +704,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaSiteTermStoreSetChild?view=graph-powershell-beta)
+
 

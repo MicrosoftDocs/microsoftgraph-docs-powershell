@@ -47,13 +47,12 @@ New-MgEntitlementManagementAccessPackageAssignmentApprovalStage -InputObject <II
 Create new navigation property to stages for identityGovernance
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 
 Get-MgEntitlementManagementAccessPackageAssignmentApprovalStage -ApprovalId $approvalId
-
 ```
 This example shows how to use the New-MgEntitlementManagementAccessPackageAssignmentApprovalStage Cmdlet.
 
@@ -381,4 +380,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStage](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaEntitlementManagementAccessPackageAssignmentApprovalStage?view=graph-powershell-beta)
+
 

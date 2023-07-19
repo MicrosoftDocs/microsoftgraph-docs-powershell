@@ -34,13 +34,12 @@ New-MgBetaRiskyServicePrincipal -BodyParameter <IMicrosoftGraphRiskyServicePrinc
 Create new navigation property to riskyServicePrincipals for identityProtection
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaRiskyServicePrincipal
-
 ```
 This example shows how to use the New-MgBetaBetaRiskyServicePrincipal Cmdlet.
 
@@ -370,4 +369,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgRiskyServicePrincipal?view=graph-powershell-v1.0)
+
 

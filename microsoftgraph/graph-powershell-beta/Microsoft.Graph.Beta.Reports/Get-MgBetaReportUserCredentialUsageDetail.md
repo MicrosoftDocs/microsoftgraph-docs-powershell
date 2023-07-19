@@ -38,13 +38,11 @@ Get-MgBetaReportUserCredentialUsageDetail -InputObject <IReportsIdentity> [-Expa
 Represents the self-service password reset (SSPR) usage for a given tenant.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaReportUserCredentialUsageDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportUserCredentialUsageDetail
 ```
-
 This example shows how to use the Get-MgBetaReportUserCredentialUsageDetail Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -282,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportUserCredentialUsageDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportUserCredentialUsageDetail?view=graph-powershell-v1.0)
+

@@ -51,11 +51,10 @@ Send an activity feed notification in scope of a chat.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
-
 ### Example 1: Notify a user about a task created in a chat
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -79,16 +78,15 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-
+```
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Notify a user about an approval needed in a chat message
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -112,16 +110,15 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-
+```
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Notify a user about an approval needed in a chat message using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -145,16 +142,15 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-
+```
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Notify a user about an event in relation to a chat
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	Topic = @{
@@ -179,7 +175,7 @@ $params = @{
 }
 
 Send-MgBetaChatActivityNotification -ChatId $chatId -BodyParameter $params
-
+```
 This example shows how to use the Send-MgBetaUserChatActivityNotification Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -500,3 +496,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgUserChatActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserChatActivityNotification?view=graph-powershell-v1.0)
+

@@ -40,13 +40,12 @@ The direct and transitive members of a group.
 Nullable.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupTransitiveMember -GroupId $groupId
-
 ```
 This example shows how to use the Get-MgGroupTransitiveMember Cmdlet.
 
@@ -325,4 +324,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTransitiveMember](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaGroupTransitiveMember?view=graph-powershell-beta)
+
 

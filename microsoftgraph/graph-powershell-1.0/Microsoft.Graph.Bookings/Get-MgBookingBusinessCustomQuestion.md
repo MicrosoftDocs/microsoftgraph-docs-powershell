@@ -38,13 +38,12 @@ Get-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity> [-ExpandPro
 Read the properties and relationships of a bookingCustomQuestion object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 
 Get-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BookingCustomQuestionId $bookingCustomQuestionId
-
 ```
 This example shows how to use the Get-MgBookingBusinessCustomQuestion Cmdlet.
 
@@ -279,4 +278,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 

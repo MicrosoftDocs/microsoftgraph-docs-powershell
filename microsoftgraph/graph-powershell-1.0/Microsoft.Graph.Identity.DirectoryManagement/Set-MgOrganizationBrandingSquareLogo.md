@@ -35,49 +35,45 @@ Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 1
 We recommend using a transparent image with no padding around the logo.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBranding -OrganizationId $organizationId
-
 ```
 This example shows how to use the Set-MgOrganizationBrandingSquareLogo Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBranding -OrganizationId $organizationId
-
 ```
 This example shows how to use the Set-MgOrganizationBrandingSquareLogo Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ### Example 3: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBranding -OrganizationId $organizationId
-
 ```
 This example shows how to use the Set-MgOrganizationBrandingSquareLogo Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgOrganizationBrandingLocalizationBannerLogo -OrganizationId $organizationId -OrganizationalBrandingLocalizationId $organizationalBrandingLocalizationId
-
 ```
 This example shows how to use the Set-MgOrganizationBrandingSquareLogo Cmdlet.
 
@@ -239,4 +235,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaOrganizationBrandingSquareLogo](/powershell/module/Microsoft.Graph.Beta.Applications/Set-MgBetaOrganizationBrandingSquareLogo?view=graph-powershell-beta)
+
 

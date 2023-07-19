@@ -47,7 +47,6 @@ Return all the group IDs for the groups that the specified user, group, service 
 This function is transitive.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaUserMemberGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
@@ -57,7 +56,6 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgBetaUserMemberGroup Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -238,3 +236,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMemberGroup](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserMemberGroup?view=graph-powershell-v1.0)
+

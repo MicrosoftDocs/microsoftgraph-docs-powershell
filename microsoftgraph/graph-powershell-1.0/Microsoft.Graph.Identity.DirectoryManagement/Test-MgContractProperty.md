@@ -50,11 +50,10 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	EntityType = "Group"
@@ -64,7 +63,7 @@ $params = @{
 }
 
 Test-MgDirectoryObjectProperty -BodyParameter $params
-
+```
 This example shows how to use the Test-MgContractProperty Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
@@ -236,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgBetaContractProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaContractProperty?view=graph-powershell-beta)
+

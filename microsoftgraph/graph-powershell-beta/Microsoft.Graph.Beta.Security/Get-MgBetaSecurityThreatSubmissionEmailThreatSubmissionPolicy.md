@@ -38,22 +38,18 @@ Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <ISec
 Read the properties and relationships of an emailThreatSubmissionPolicy object.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId
 ```
-
 This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy
 ```
-
 This example shows how to use the Get-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -333,3 +329,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy?view=graph-powershell-v1.0)
+

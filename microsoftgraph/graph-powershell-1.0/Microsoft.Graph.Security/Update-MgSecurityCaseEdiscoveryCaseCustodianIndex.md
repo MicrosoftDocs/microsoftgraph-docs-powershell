@@ -31,13 +31,11 @@ Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -InputObject <ISecurityIdentit
 Trigger an indexOperation to make a custodian and associated sources searchable.
 
 ## EXAMPLES
-
 ### Example 1: Using the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Update-MgSecurityCaseEdiscoveryCaseCustodianIndex -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId
 ```
-
 This example shows how to use the Update-MgSecurityCaseEdiscoveryCaseCustodianIndex Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -190,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaSecurityCaseEdiscoveryCaseCustodianIndex?view=graph-powershell-beta)
+

@@ -32,7 +32,6 @@ Get-MgCommunicationPresenceByUserId
 Get the presence information for multiple users.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgCommunicationPresenceByUserId Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
@@ -44,7 +43,6 @@ $params = @{
 }
 Get-MgCommunicationPresenceByUserId -BodyParameter $params
 ```
-
 This example shows how to use the Get-MgCommunicationPresenceByUserId Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -151,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaCommunicationPresenceByUserId](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaCommunicationPresenceByUserId?view=graph-powershell-beta)
+

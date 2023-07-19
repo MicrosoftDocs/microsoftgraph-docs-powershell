@@ -51,8 +51,8 @@ Update-MgIdentityB2XUserFlowUserAttributeAssignment -InputObject <IIdentitySignI
 Update the properties of a identityUserFlowAttributeAssignment object.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -61,7 +61,6 @@ $params = @{
 }
 
 Update-MgIdentityB2XUserFlowUserAttributeAssignment -B2xIdentityUserFlowId $b2xIdentityUserFlowId -IdentityUserFlowAttributeAssignmentId $identityUserFlowAttributeAssignmentId -BodyParameter $params
-
 ```
 This example shows how to use the Update-MgIdentityB2XUserFlowUserAttributeAssignment Cmdlet.
 
@@ -400,4 +399,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaIdentityB2XUserFlowUserAttributeAssignment?view=graph-powershell-beta)
+
 

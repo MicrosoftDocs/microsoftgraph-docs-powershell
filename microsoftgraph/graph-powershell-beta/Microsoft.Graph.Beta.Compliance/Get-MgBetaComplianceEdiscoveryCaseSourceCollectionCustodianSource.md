@@ -38,13 +38,11 @@ Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -InputObject <
 Custodian sources that are included in the sourceCollection.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource -CaseId $caseId -SourceCollectionId $sourceCollectionId
 ```
-
 This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseSourceCollectionCustodianSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -301,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource?view=graph-powershell-v1.0)
+

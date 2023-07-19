@@ -39,22 +39,18 @@ Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -InputObject <ISecuri
 Adds an additional source to the eDiscovery search.
 
 ## EXAMPLES
-
 ### Example 1: Using the Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId -OutFile $outFileId
 ```
-
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 ### Example 2: Using the Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
 ```
-
 This example shows how to use the Get-MgBetaSecurityCaseEdiscoveryCaseSearchAdditionalSource Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -364,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseSearchAdditionalSource?view=graph-powershell-v1.0)
+

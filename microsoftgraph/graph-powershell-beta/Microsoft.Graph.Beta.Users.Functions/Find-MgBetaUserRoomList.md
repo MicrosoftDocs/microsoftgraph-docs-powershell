@@ -35,14 +35,12 @@ Tenants can organize meeting rooms into room lists.
 In this API, each meeting room and room list is represented by an emailAddress instance.\nYou can get all the room lists in the tenant, get all the rooms in the tenant, or get all the rooms in a specific room list.
 
 ## EXAMPLES
-
 ### Example 1: Using the Find-MgBetaUserRoomList Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Functions
 # A UPN can also be used as -UserId.
 Find-MgBetaUserRoomList -UserId $userId
 ```
-
 This example shows how to use the Find-MgBetaUserRoomList Cmdlet.
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -213,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgUserRoomList](/powershell/module/Microsoft.Graph.Users.Functions/Find-MgUserRoomList?view=graph-powershell-v1.0)
+

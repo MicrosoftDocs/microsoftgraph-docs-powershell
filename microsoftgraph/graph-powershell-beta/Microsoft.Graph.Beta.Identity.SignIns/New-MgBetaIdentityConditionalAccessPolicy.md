@@ -35,8 +35,8 @@ New-MgBetaIdentityConditionalAccessPolicy -BodyParameter <IMicrosoftGraphConditi
 Create a new conditionalAccessPolicy.
 
 ## EXAMPLES
-
 ### Example 1: Require MFA to access Exchange Online outside of trusted locations
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -76,14 +76,13 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 2: Block access to Exchange Online from non-trusted regions
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -119,14 +118,13 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 3: Use all conditions and controls
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -231,14 +229,13 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-
 ### Example 4: Require MFA to Exchange Online from non-compliant devices
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -266,7 +263,6 @@ $params = @{
 }
 
 New-MgBetaIdentityConditionalAccessPolicy -BodyParameter $params
-
 ```
 This example shows how to use the New-MgBetaIdentityConditionalAccessPolicy Cmdlet.
 
@@ -717,4 +713,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+
 

@@ -47,8 +47,8 @@ Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -InputObject <IIdentit
 Set the order of identityUserFlowAttributeAssignments being collected within a user flow.
 
 ## EXAMPLES
-
 ### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -62,7 +62,6 @@ $params = @{
 }
 
 Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder -B2xIdentityUserFlowId $b2xIdentityUserFlowId -BodyParameter $params
-
 ```
 This example shows how to use the Set-MgBetaIdentityB2XUserFlowUserAttributeAssignmentOrder Cmdlet.
 
@@ -302,4 +301,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Identity.SignIns/Set-MgIdentityB2XUserFlowUserAttributeAssignmentOrder?view=graph-powershell-v1.0)
+
 
