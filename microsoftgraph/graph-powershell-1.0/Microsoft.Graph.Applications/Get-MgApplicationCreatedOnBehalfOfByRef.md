@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getByIds
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -151,4 +148,3 @@ BODYPARAMETER `<IPaths1Hl8AmeApplicationsMicrosoftGraphGetbyidsPostRequestbodyCo
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
