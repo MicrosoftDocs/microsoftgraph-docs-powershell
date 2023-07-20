@@ -23,11 +23,11 @@ Microsoft PowerShell SDK cmdlets may support one or more of the following OData 
 |Name|Description|Example|
 |--------|----|-----|
 | [-Count](#count-parameter) |Retrieves the total count of matching resources|`Get-MgUser -ConsistencyLevel eventual -Count count`<br>`$count`|
-| [-Expand](#expand-parameter)| Retrieves related resources|`Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members \| Select -ExpandProperty members`|
+| [-Expand](#expand-parameter)| Retrieves related resources|<code>Get-MgGroup -GroupId '0e06b38f-931a-47db-9a9a-60ab5f492005' -Expand members &#124; Select -ExpandProperty members</code>|
 | [-Filter](#filter-parameter)| Filters results (rows)|`Get-MgUser -Filter "startsWith(DisplayName, 'Conf')"`|
 | [-OrderBy](#orderby-parameter)| Orders results|`Get-MgUser -OrderBy DisplayName`|
 | [-Search](#search-parameter)| Returns results based on search criteria|`Get-MgUser -ConsistencyLevel eventual -Search '"DisplayName:Conf"'`|
-| [-Select](#select-parameter)| Filters properties (columns)|`Get-MgUser \| Select DisplayName, Id`|
+| [-Select](#select-parameter)| Filters properties (columns)|<code>Get-MgUser &#124; Select DisplayName, Id</code>|
 | [-Top](#top-parameter)| Sets the page size of results. |`Get-MgUser -Top 10`|
 
 ## Count parameter
