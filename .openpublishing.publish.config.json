@@ -9,7 +9,7 @@
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
-        "ZonePivotGroups":"Toc",
+        "ZonePivotGroups": "Toc",
         "Conceptual": "Content",
         "ManagedReference": "Content",
         "RestApi": "Content",
