@@ -34,11 +34,10 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.DirectoryObjects
-```
 
 $params = @{
 	Ids = @(
@@ -55,6 +54,11 @@ $params = @{
 }
 
 Get-MgDirectoryObjectById -BodyParameter $params
+```
+This example shows how to use the Get-MgContractById Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

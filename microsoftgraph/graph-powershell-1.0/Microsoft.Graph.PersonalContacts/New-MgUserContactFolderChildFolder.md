@@ -42,6 +42,11 @@ New-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

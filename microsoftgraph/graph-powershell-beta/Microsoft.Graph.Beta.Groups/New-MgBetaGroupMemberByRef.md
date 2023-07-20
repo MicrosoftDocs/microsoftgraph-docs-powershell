@@ -45,8 +45,8 @@ Add a member to a security or Microsoft 365 group through the **members** naviga
 The following table shows the types of members that can be added to either security groups or Microsoft 365 groups.
 
 ## EXAMPLES
+### Example 1: Add a member to a group
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -55,8 +55,12 @@ $params = @{
 }
 
 New-MgBetaGroupMemberByRef -GroupId $groupId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaGroupMemberByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

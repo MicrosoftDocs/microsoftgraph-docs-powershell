@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection
 
 ## SYNOPSIS
-Update the navigation property horizontalSections in groups
+Update the properties of a horizontalSection object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgGroupSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSitePageCanvaLayoutHorizontalSection?view=graph-powershell-v1.0)
@@ -44,7 +44,7 @@ Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdent
 ```
 
 ## DESCRIPTION
-Update the navigation property horizontalSections in groups
+Update the properties of a horizontalSection object.
 
 ## PARAMETERS
 

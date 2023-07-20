@@ -34,8 +34,8 @@ Create a delegated permission grant, represented by an oAuth2PermissionGrant obj
 A delegated permission grant authorizes a client service principal (representing a client application) to access a resource service principal (representing an API), on behalf of a signed-in user, for the level of access limited by the delegated permissions which were granted.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -47,8 +47,12 @@ $params = @{
 }
 
 New-MgBetaOauth2PermissionGrant -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaOauth2PermissionGrant Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

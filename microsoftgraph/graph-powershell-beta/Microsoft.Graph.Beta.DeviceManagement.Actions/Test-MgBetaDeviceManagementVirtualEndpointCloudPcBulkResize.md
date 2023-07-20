@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 
 ## SYNOPSIS
-Invoke action validateBulkResize
+Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize?view=graph-powershell-v1.0)
@@ -29,7 +29,7 @@ Test-MgBetaDeviceManagementVirtualEndpointCloudPcBulkResize
 ```
 
 ## DESCRIPTION
-Invoke action validateBulkResize
+Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 ## PARAMETERS
 

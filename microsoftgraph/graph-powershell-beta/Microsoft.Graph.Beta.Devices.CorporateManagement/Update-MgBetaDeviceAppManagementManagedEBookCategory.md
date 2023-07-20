@@ -199,7 +199,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-MgDeviceAppMgtManagedEBookCategory
+Update-BetaDeviceAppMgtManagedEBookCategory
 
 COMPLEX PARAMETER PROPERTIES
 

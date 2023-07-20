@@ -22,6 +22,11 @@ Get-MgBetaTrustFrameworkPolicyCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

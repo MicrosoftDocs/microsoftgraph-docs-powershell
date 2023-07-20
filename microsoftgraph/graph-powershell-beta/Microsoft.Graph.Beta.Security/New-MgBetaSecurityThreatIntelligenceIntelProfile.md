@@ -18,9 +18,9 @@ Create new navigation property to intelProfiles for security
 ### CreateExpanded (Default)
 ```
 New-MgBetaSecurityThreatIntelligenceIntelProfile [-AdditionalProperties <Hashtable>] [-Aliases <String[]>]
+ [-CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]
  [-Description <IMicrosoftGraphSecurityFormattedContent>] [-FirstActiveDateTime <DateTime>] [-Id <String>]
  [-Indicators <IMicrosoftGraphSecurityIntelligenceProfileIndicator[]>] [-Kind <String>]
- [-SponsorStates <IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]>]
  [-Summary <IMicrosoftGraphSecurityFormattedContent>] [-Targets <String[]>] [-Title <String>]
  [-Tradecraft <IMicrosoftGraphSecurityFormattedContent>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -79,6 +79,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CountriesOrRegionsOfOrigin
+.
+To construct, see NOTES section for COUNTRIESORREGIONSOFORIGIN properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -152,23 +168,6 @@ intelligenceProfileKind
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SponsorStates
-Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile.
-This is also known as the country/region of origin for the given actor or threat.
-To construct, see NOTES section for SPONSORSTATES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -294,6 +293,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[Aliases <String[]>]`: A list of commonly-known aliases for the threat intelligence included in the intelligenceProfile.
+  - `[CountriesOrRegionsOfOrigin <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>]`: 
+    - `[Code <String>]`: 
+    - `[Label <String>]`: 
   - `[Description <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Content <String>]`: The content of this formattedContent.
@@ -308,13 +310,14 @@ To create the parameters described below, construct a hash table containing the 
     - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
     - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[Kind <String>]`: intelligenceProfileKind
-  - `[SponsorStates <IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]>]`: Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile. This is also known as the country/region of origin for the given actor or threat.
-    - `[Code <String>]`: A codified representation for this sponsor state.
-    - `[Label <String>]`: A display label for this sponsor state.
   - `[Summary <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
   - `[Targets <String[]>]`: Known targets related to this intelligenceProfile.
   - `[Title <String>]`: The title of this intelligenceProfile.
   - `[Tradecraft <IMicrosoftGraphSecurityFormattedContent>]`: formattedContent
+
+`COUNTRIESORREGIONSOFORIGIN <IMicrosoftGraphSecurityIntelligenceProfileCountryOrRegionOfOrigin[]>`: .
+  - `[Code <String>]`: 
+  - `[Label <String>]`: 
 
 `DESCRIPTION <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -329,10 +332,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[FirstSeenDateTime <DateTime?>]`: Designate when an artifact was first used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
   - `[LastSeenDateTime <DateTime?>]`: Designate when an artifact was most recently used actively in an attack, when a particular sample was compiled, or if neither of those could be ascertained when the file was first seen in public repositories (for example, VirusTotal, ANY.RUN, Hybrid Analysis) or reported publicly.
-
-`SPONSORSTATES <IMicrosoftGraphSecurityIntelligenceProfileSponsorState[]>`: Known states (such as a country or government) who have sponsored threat actors associated with this intelligenceProfile. This is also known as the country/region of origin for the given actor or threat.
-  - `[Code <String>]`: A codified representation for this sponsor state.
-  - `[Label <String>]`: A display label for this sponsor state.
 
 `SUMMARY <IMicrosoftGraphSecurityFormattedContent>`: formattedContent
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

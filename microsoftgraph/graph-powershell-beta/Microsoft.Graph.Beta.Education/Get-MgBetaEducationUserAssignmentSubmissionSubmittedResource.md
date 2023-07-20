@@ -40,14 +40,18 @@ Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource -InputObject <IEduc
 Get submittedResources from education
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
+This example shows how to use the Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

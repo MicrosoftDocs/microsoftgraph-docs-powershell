@@ -38,12 +38,13 @@ Get-MgBetaReportCredentialUserRegistrationDetail -InputObject <IReportsIdentity>
 Details of the usage of self-service password reset and multi-factor authentication (MFA) for all registered users.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaReportCredentialUserRegistrationDetail
 ```
+This example shows how to use the Get-MgBetaReportCredentialUserRegistrationDetail Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -248,8 +249,10 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IReportsIdentity>`: Identity Parameter
+  - `[AppCredentialSignInActivityId <String>]`: The unique identifier of appCredentialSignInActivity
   - `[ApplicationSignInDetailedSummaryId <String>]`: The unique identifier of applicationSignInDetailedSummary
   - `[CredentialUserRegistrationDetailsId <String>]`: The unique identifier of credentialUserRegistrationDetails
+  - `[CustomSecurityAttributeAuditId <String>]`: The unique identifier of customSecurityAttributeAudit
   - `[Date <DateTime?>]`: Usage: date={date}
   - `[DeviceManagementCachedReportConfigurationId <String>]`: The unique identifier of deviceManagementCachedReportConfiguration
   - `[DeviceManagementExportJobId <String>]`: The unique identifier of deviceManagementExportJob
@@ -265,6 +268,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PrintUsageId <String>]`: The unique identifier of printUsage
   - `[PrinterId <String>]`: Usage: printerId='{printerId}'
   - `[ProvisioningObjectSummaryId <String>]`: The unique identifier of provisioningObjectSummary
+  - `[ServicePrincipalSignInActivityId <String>]`: The unique identifier of servicePrincipalSignInActivity
   - `[SignInId <String>]`: The unique identifier of signIn
   - `[Skip <Int32?>]`: Usage: skip={skip}
   - `[SkipToken <String>]`: Usage: skipToken='{skipToken}'

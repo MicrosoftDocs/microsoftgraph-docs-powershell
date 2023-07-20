@@ -44,6 +44,11 @@ Confirm-MgDeviceMemberObject -InputObject <IIdentityDirectoryManagementIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

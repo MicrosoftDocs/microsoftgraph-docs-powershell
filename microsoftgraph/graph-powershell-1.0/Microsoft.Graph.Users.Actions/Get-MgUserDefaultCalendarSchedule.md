@@ -47,8 +47,7 @@ Get-MgUserDefaultCalendarSchedule -InputObject <IUsersActionsIdentity>
 Get the free/busy availability information for a collection of users, distributions lists, or resources (rooms or equipment) for a specified time period.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgUserDefaultCalendarSchedule Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -69,6 +68,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Get-MgUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgUserDefaultCalendarSchedule Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -268,6 +269,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtIoLobAppProvisioningConfigurationCount
+Get-BetaDeviceAppMgtIoLobAppProvisioningConfigurationCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount?view=graph-powershell-v1.0)

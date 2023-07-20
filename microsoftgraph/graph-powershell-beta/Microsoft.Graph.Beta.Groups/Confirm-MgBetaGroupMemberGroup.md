@@ -29,6 +29,11 @@ Confirm-MgBetaGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-What
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -GroupId

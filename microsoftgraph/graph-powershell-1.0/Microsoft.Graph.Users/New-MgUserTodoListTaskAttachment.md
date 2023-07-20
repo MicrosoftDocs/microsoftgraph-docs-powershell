@@ -42,6 +42,11 @@ New-MgUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Hashta
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

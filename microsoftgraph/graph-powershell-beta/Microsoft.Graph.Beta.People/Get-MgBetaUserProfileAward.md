@@ -38,20 +38,22 @@ Get-MgBetaUserProfileAward -InputObject <IPeopleIdentity> [-ExpandProperty <Stri
 Read the properties and relationships of a personAward object from a user's profile.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaUserProfileAward Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAward -UserId $userId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaUserProfileAward Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaUserProfileAward Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileAward -UserId $userId -PersonAwardId $personAwardId
 ```
+This example shows how to use the Get-MgBetaUserProfileAward Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -49,8 +49,7 @@ Update-MgBetaWindowsUpdatesDeployment -InputObject <IWindowsUpdatesIdentity>
 Update the properties of a deployment object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Update-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -62,8 +61,9 @@ $params = @{
 }
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Update-MgBetaWindowsUpdatesDeployment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Update-MgBetaWindowsUpdatesDeployment Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.WindowsUpdates
 $params = @{
@@ -83,6 +83,8 @@ $params = @{
 }
 Update-MgBetaWindowsUpdatesDeployment -DeploymentId $deploymentId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaWindowsUpdatesDeployment Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

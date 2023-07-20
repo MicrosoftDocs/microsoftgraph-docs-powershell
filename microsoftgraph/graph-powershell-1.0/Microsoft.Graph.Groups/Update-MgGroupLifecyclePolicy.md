@@ -71,8 +71,8 @@ Update-MgGroupLifecyclePolicy -InputObject <IGroupsIdentity>
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
@@ -83,8 +83,12 @@ $params = @{
 }
 
 Update-MgGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgGroupLifecyclePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -57,21 +57,29 @@ Get-MgSiteTermStoreGroup -InputObject <ISitesIdentity> [-ExpandProperty <String[
 Read the properties and relationships of a term store group object.
 
 ## EXAMPLES
+### Example 1: Get a termStore group
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId
-
 ```
-### Example 2
+This example shows how to use the Get-MgSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get a site collection termStore group and its parent site ID
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteTermStoreGroup -SiteId $siteId -GroupId $groupId -Property "*,parentSiteId"
-
 ```
+This example shows how to use the Get-MgSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

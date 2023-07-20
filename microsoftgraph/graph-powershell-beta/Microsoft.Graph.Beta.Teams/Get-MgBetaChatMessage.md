@@ -17,8 +17,8 @@ Retrieve a single message or a message reply in a channel or a chat.
 
 ### Get1 (Default)
 ```
-Get-MgBetaChatMessage [-Property <String[]>] [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgBetaChatMessage [-Property <String[]>] [-Count] [-Filter <String>] [-Model <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### List
@@ -44,14 +44,18 @@ Get-MgBetaChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Get a message in a chat
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
-
 ```
+This example shows how to use the Get-MgBetaChatMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -176,6 +180,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -Model
+The payment model for the API
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -PageSize
 Sets the page size of results.
 
@@ -292,6 +311,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteTermStoreSet
 
 ## SYNOPSIS
-Create new navigation property to sets for groups
+Create a new set object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteTermStoreSet?view=graph-powershell-beta)
@@ -80,7 +80,7 @@ New-MgGroupSiteTermStoreSet -InputObject <ISitesIdentity> -BodyParameter <IMicro
 ```
 
 ## DESCRIPTION
-Create new navigation property to sets for groups
+Create a new set object.
 
 ## PARAMETERS
 

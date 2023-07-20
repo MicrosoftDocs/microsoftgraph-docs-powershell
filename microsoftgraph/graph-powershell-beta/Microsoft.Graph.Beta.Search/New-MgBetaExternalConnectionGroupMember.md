@@ -43,8 +43,8 @@ New-MgBetaExternalConnectionGroupMember -InputObject <ISearchIdentity>
 Create a new externalGroupMember object.
 
 ## EXAMPLES
+### Example 1: Add an Azure Active Directory user as a member
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -54,9 +54,13 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
 ```
-### Example 2
+This example shows how to use the New-MgBetaExternalConnectionGroupMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Add an Azure Active Directory group as a member
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -66,9 +70,13 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
 ```
-### Example 3
+This example shows how to use the New-MgBetaExternalConnectionGroupMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Add another external group as a member
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -78,8 +86,12 @@ $params = @{
 }
 
 New-MgBetaExternalConnectionGroupMember -ExternalConnectionId $externalConnectionId -ExternalGroupId $externalGroupId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaExternalConnectionGroupMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

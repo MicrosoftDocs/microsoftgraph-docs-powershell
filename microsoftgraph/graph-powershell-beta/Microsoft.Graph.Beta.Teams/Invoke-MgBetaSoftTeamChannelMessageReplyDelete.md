@@ -31,12 +31,13 @@ Invoke-MgBetaSoftTeamChannelMessageReplyDelete -InputObject <ITeamsIdentity> [-P
 Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Invoke-MgBetaSoftTeamChannelMessageReplyDelete Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Invoke-MgBetaSoftTeamChannelMessageReplyDelete -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
 ```
+This example shows how to use the Invoke-MgBetaSoftTeamChannelMessageReplyDelete Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -188,6 +189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

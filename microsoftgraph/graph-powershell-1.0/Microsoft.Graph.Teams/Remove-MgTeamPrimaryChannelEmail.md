@@ -32,14 +32,18 @@ Remove the email address of a channel.
 You can remove an email address only if it was provisioned using the provisionEmail method or through the Microsoft Teams client.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
-
 ```
+This example shows how to use the Remove-MgTeamPrimaryChannelEmail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -InputObject

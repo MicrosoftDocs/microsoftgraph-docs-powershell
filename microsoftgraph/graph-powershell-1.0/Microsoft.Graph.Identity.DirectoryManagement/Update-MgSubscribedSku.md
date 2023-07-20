@@ -49,14 +49,18 @@ Update-MgSubscribedSku -InputObject <IIdentityDirectoryManagementIdentity>
 Update entity in subscribedSkus
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgSubscribedSku -SubscribedSkuId $subscribedSkuId
-
 ```
+This example shows how to use the Update-MgSubscribedSku Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AccountId
@@ -353,6 +357,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[PrepaidUnits <IMicrosoftGraphLicenseUnitsDetail>]`: licenseUnitsDetail
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
+    - `[LockedOut <Int32?>]`: 
     - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been cancelled. The units cannot be assigned but can still be reactivated before they are deleted.
     - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
   - `[ServicePlans <IMicrosoftGraphServicePlanInfo[]>]`: Information about the service plans that are available with the SKU. Not nullable
@@ -390,6 +395,7 @@ To create the parameters described below, construct a hash table containing the 
 `PREPAIDUNITS <IMicrosoftGraphLicenseUnitsDetail>`: licenseUnitsDetail
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Enabled <Int32?>]`: The number of units that are enabled for the active subscription of the service SKU.
+  - `[LockedOut <Int32?>]`: 
   - `[Suspended <Int32?>]`: The number of units that are suspended because the subscription of the service SKU has been cancelled. The units cannot be assigned but can still be reactivated before they are deleted.
   - `[Warning <Int32?>]`: The number of units that are in warning status. When the subscription of the service SKU has expired, the customer has a grace period to renew their subscription before it is cancelled (moved to a suspended state).
 

@@ -30,6 +30,11 @@ Get-MgBetaUserContactExtensionCount -InputObject <IPersonalContactsIdentity> [-F
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ContactId

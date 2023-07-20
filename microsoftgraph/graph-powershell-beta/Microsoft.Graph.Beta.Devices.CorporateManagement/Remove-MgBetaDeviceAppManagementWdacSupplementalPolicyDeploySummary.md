@@ -139,7 +139,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Remove-MgDeviceAppMgtWdacSupplementalPolicyDeploySummary
+Remove-BetaDeviceAppMgtWdacSupplementalPolicyDeploySummary
 
 COMPLEX PARAMETER PROPERTIES
 

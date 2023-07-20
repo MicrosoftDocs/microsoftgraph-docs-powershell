@@ -30,6 +30,11 @@ Unpublish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-Wha
 ## DESCRIPTION
 Unpublish a [contentType][] from a content type hub site.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ContentTypeId

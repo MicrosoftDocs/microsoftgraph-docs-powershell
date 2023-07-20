@@ -54,8 +54,8 @@ New-MgSitePermission -InputObject <ISitesIdentity> -BodyParameter <IMicrosoftGra
 Create a new permission object on a site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
@@ -74,8 +74,12 @@ $params = @{
 }
 
 New-MgSitePermission -SiteId $siteId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgSitePermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

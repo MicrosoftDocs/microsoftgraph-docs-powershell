@@ -15,15 +15,31 @@ Invoke action apply
 
 ## SYNTAX
 
-### Apply (Default)
+### ApplyExpanded (Default)
 ```
-Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-PolicySettings <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### Apply
+```
+Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -CloudPcProvisioningPolicyId <String>
+ -BodyParameter <IPaths112TijaDevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphApplyPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### ApplyViaIdentityExpanded
+```
+Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-PolicySettings <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDeviceManagementActionsIdentity>
+ -BodyParameter <IPaths112TijaDevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphApplyPostRequestbodyContentApplicationJsonSchema>
  [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -32,12 +48,43 @@ Invoke action apply
 
 ## PARAMETERS
 
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPaths112TijaDevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphApplyPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Apply, ApplyViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
 ### -CloudPcProvisioningPolicyId
 The unique identifier of cloudPcProvisioningPolicy
 
 ```yaml
 Type: String
-Parameter Sets: Apply
+Parameter Sets: ApplyExpanded, Apply
 Aliases:
 
 Required: True
@@ -53,7 +100,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IDeviceManagementActionsIdentity
-Parameter Sets: ApplyViaIdentity
+Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity
 Aliases:
 
 Required: True
@@ -69,6 +116,21 @@ Returns true when the command succeeds
 ```yaml
 Type: SwitchParameter
 Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PolicySettings
+cloudPcPolicySettingType
+
+```yaml
+Type: String
+Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -115,6 +177,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths112TijaDevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphApplyPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
 ### System.Boolean
@@ -126,6 +189,10 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
+
+`BODYPARAMETER <IPaths112TijaDevicemanagementVirtualendpointProvisioningpoliciesCloudpcprovisioningpolicyIdMicrosoftGraphApplyPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[PolicySettings <String>]`: cloudPcPolicySettingType
 
 `INPUTOBJECT <IDeviceManagementActionsIdentity>`: Identity Parameter
   - `[AlertRecordId <String>]`: The unique identifier of alertRecord

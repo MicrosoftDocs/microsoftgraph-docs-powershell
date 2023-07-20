@@ -11,6 +11,9 @@ schema: 2.0.0
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -207,3 +210,4 @@ INPUTOBJECT `<ISitesIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[Remove-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaGroupSite?view=graph-powershell-beta)

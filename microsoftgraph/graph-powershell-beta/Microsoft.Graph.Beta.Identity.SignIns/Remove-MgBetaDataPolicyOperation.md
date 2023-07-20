@@ -31,14 +31,18 @@ Remove-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-IfMat
 Delete entity from dataPolicyOperations
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-
 ```
+This example shows how to use the Remove-MgBetaBetaDataPolicyOperation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -DataPolicyOperationId

@@ -8,10 +8,8 @@ schema: 2.0.0
 # Invoke-MgReplyGroupThreadPostInReplyTo
 
 ## SYNOPSIS
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Invoke-MgBetaSnoozeGroupCalendarEventReminder](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaSnoozeGroupCalendarEventReminder?view=graph-powershell-beta)
@@ -46,73 +44,30 @@ Invoke-MgReplyGroupThreadPostInReplyTo -InputObject <IGroupsIdentity>
 ```
 
 ## DESCRIPTION
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
-Import-Module Microsoft.Graph.Groups
+Import-Module Microsoft.Graph.Users.Actions
 
 $params = @{
-	Post = @{
-		Body = @{
-			ContentType = ""
-			Content = "content-value"
-		}
-		ReceivedDateTime = [System.DateTime]::Parse("datetime-value")
-		HasAttachments = $true
-		From = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		Sender = @{
-			EmailAddress = @{
-				Name = "name-value"
-				Address = "address-value"
-			}
-		}
-		ConversationThreadId = "conversationThreadId-value"
-		NewParticipants = @(
-			@{
-				EmailAddress = @{
-					Name = "name-value"
-					Address = "address-value"
-				}
-			}
-		)
-		ConversationId = "conversationId-value"
-		CreatedDateTime = [System.DateTime]::Parse("datetime-value")
-		LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-		ChangeKey = "changeKey-value"
-		Categories = @(
-			"categories-value"
-		)
-		Id = "id-value"
-		InReplyTo = @{
-		}
-		Attachments = @(
-			@{
-				"@odata.type" = "#microsoft.graph.fileAttachment"
-				LastModifiedDateTime = [System.DateTime]::Parse("datetime-value")
-				Name = "name-value"
-				ContentType = "contentType-value"
-				Size = 99
-				IsInline = $true
-				Id = "id-value"
-			}
-		)
+	NewReminderTime = @{
+		DateTime = "dateTime-value"
+		TimeZone = "timeZone-value"
 	}
 }
 
-Invoke-MgReplyGroupThreadPost -GroupId $groupId -ConversationThreadId $conversationThreadId -PostId $postId -BodyParameter $params
-
+# A UPN can also be used as -UserId.
+Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgSnoozeGroupCalendarEventReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgSiteOnenoteSectionPage
 
 ## SYNOPSIS
-Create new navigation property to pages for sites
+Create a new page in the specified section.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserOnenoteNotebookSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteNotebookSection?view=graph-powershell-beta)
@@ -46,7 +46,12 @@ New-MgSiteOnenoteSectionPage -InputObject <INotesIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create new navigation property to pages for sites
+Create a new page in the specified section.
+
+
+
+
+
 
 ## PARAMETERS
 

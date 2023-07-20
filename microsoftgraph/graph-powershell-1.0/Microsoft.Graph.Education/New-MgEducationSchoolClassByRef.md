@@ -43,8 +43,8 @@ New-MgEducationSchoolClassByRef -InputObject <IEducationIdentity> -BodyParameter
 Add a class to a school.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -53,8 +53,12 @@ $params = @{
 }
 
 New-MgEducationSchoolClassByRef -EducationSchoolId $educationSchoolId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgEducationSchoolClassByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

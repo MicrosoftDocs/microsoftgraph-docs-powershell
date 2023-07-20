@@ -43,14 +43,18 @@ Get-MgSite [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>
 Retrieve properties and relationships for a [site][] resource.\nA **site** resource represents a team site in SharePoint.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSite -SiteId $siteId
-
 ```
+This example shows how to use the Get-MgSite Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

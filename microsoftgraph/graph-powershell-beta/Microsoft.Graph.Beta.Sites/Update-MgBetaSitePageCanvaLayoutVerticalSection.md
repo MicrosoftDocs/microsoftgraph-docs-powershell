@@ -8,7 +8,9 @@ schema: 2.0.0
 # Update-MgBetaSitePageCanvaLayoutVerticalSection
 
 ## SYNOPSIS
-Update the navigation property verticalSection in sites
+Create a verticalSection object in a given sitePage.
+A sitePage can only have one vertical section.
+If a vertical section already exists, this method returns a `409 Conflict` response code.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageCanvaLayoutVerticalSection?view=graph-powershell-v1.0)
@@ -42,7 +44,9 @@ Update-MgBetaSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdentity>
 ```
 
 ## DESCRIPTION
-Update the navigation property verticalSection in sites
+Create a verticalSection object in a given sitePage.
+A sitePage can only have one vertical section.
+If a vertical section already exists, this method returns a `409 Conflict` response code.
 
 ## PARAMETERS
 

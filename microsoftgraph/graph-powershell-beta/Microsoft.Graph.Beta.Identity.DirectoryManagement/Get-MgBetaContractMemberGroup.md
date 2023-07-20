@@ -23,6 +23,11 @@ Get-MgBetaContractDelta [-Filter <String>] [-Property <String[]>] [-Search <Stri
 ## DESCRIPTION
 Invoke function delta
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -All

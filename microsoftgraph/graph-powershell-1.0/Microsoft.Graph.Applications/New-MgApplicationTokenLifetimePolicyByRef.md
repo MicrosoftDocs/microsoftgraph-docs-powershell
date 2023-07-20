@@ -43,8 +43,8 @@ New-MgApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentity>
 Assign a tokenLifetimePolicy to an application.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -53,21 +53,12 @@ $params = @{
 }
 
 New-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -BodyParameter $params
-
 ```
-## PARAMETERS
+This example shows how to use the New-MgApplicationTokenLifetimePolicyByRef Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-$params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
-}
 
-New-MgApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -BodyParameter $params
-
-```
 ## PARAMETERS
 
 ### -AdditionalProperties

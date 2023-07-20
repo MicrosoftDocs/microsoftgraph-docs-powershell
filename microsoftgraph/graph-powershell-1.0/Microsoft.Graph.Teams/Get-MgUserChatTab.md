@@ -37,6 +37,7 @@ Get-MgUserChatTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a chat.
 
+
 ## PARAMETERS
 
 ### -All

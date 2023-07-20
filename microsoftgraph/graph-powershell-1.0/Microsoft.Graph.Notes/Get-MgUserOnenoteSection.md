@@ -29,6 +29,11 @@ Get-MgUserOnenoteResourceCount -InputObject <INotesIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

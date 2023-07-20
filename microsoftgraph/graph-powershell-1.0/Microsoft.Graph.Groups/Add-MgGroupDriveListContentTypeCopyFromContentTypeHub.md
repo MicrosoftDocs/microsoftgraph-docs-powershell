@@ -51,28 +51,36 @@ The method allows users to pull content types directly from the content type hub
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
+### Example 1: Synchronous pull
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentTypeId = "0x0101"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+```
+This example shows how to use the Add-MgGroupDriveListContentTypeCopyFromContentTypeHub Cmdlet.
 
-### Example 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Asynchronous pull
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentTypeId = "0x0101"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+```
+This example shows how to use the Add-MgGroupDriveListContentTypeCopyFromContentTypeHub Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

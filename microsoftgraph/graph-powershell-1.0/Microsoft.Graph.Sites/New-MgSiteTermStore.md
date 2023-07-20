@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to termStores for sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStore?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -405,6 +408,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Terms <IMicrosoftGraphTermStoreTerm[]>]`: All the terms under the set.
 
 ## RELATED LINKS
+[New-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStore?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaSiteTermStore](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteTermStore?view=graph-powershell-beta)
 

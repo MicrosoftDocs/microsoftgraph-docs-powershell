@@ -30,6 +30,11 @@ Get-MgBetaGroupMemberWithLicenseErrorCountAsUser -InputObject <IGroupsIdentity> 
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

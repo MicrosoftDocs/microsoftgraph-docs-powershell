@@ -30,6 +30,11 @@ Publish-MgShareListContentType -InputObject <IFilesIdentity> [-PassThru] [-WhatI
 ## DESCRIPTION
 Publishes a [contentType][] present in the content type hub site.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ContentTypeId

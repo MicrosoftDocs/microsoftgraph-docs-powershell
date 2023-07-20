@@ -458,7 +458,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Requestor <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AltSecId <String>]`: 
+    - `[AltSecId <String>]`: Not Supported.
     - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -477,7 +477,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ConnectedOrganizationId <String>]`: The identifier of the connected organization of the subject.
     - `[DisplayName <String>]`: The display name of the subject.
     - `[Email <String>]`: The email address of the subject.
-    - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
+    - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant. Alternate key.
     - `[OnPremisesSecurityIdentifier <String>]`: 
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
@@ -584,7 +584,7 @@ To create the parameters described below, construct a hash table containing the 
 `REQUESTOR <IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AltSecId <String>]`: 
+  - `[AltSecId <String>]`: Not Supported.
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -603,7 +603,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ConnectedOrganizationId <String>]`: The identifier of the connected organization of the subject.
   - `[DisplayName <String>]`: The display name of the subject.
   - `[Email <String>]`: The email address of the subject.
-  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
+  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant. Alternate key.
   - `[OnPremisesSecurityIdentifier <String>]`: 
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle

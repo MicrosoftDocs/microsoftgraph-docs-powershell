@@ -47,8 +47,7 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Add-MgTeamMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -70,8 +69,9 @@ $params = @{
 }
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Add-MgTeamMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Add-MgTeamMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -93,8 +93,9 @@ $params = @{
 }
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 ```
-
-### Example 3
+This example shows how to use the Add-MgTeamMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Add-MgTeamMember Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Teams
 $params = @{
@@ -116,6 +117,8 @@ $params = @{
 }
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
 ```
+This example shows how to use the Add-MgTeamMember Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

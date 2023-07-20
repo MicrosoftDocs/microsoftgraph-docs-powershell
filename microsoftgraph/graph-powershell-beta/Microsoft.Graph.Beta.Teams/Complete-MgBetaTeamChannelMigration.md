@@ -37,12 +37,13 @@ After a **completeMigration** request is made, you cannot import additional mess
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Complete-MgBetaTeamChannelMigration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Complete-MgBetaTeamChannelMigration -TeamId $teamId -ChannelId $channelId
 ```
+This example shows how to use the Complete-MgBetaTeamChannelMigration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -164,6 +165,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

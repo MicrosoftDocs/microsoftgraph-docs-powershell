@@ -30,6 +30,11 @@ Remove-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [
 ## DESCRIPTION
 Delete navigation property presences for communications
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -IfMatch

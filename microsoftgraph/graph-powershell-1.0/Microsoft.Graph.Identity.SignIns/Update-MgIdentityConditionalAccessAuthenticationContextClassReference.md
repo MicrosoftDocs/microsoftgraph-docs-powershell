@@ -8,7 +8,8 @@ schema: 2.0.0
 # Update-MgIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Update the navigation property authenticationContextClassReferences in identity
+Create an authenticationContextClassReference object, if the ID has not been used.
+If ID has been used, this call updates the authenticationContextClassReference object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
@@ -43,7 +44,27 @@ Update-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObje
 ```
 
 ## DESCRIPTION
-Update the navigation property authenticationContextClassReferences in identity
+Create an authenticationContextClassReference object, if the ID has not been used.
+If ID has been used, this call updates the authenticationContextClassReference object.
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
+
+$params = @{
+	displayName = "Contoso medium"
+	description = "Medium protection level defined for Contoso policy"
+	isAvailable = $true
+}
+
+Update-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
+```
+This example shows how to use the Update-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -294,4 +315,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
+
 

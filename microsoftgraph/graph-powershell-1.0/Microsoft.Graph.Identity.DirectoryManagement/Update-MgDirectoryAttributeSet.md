@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryAttributeSet
 
 ## SYNOPSIS
-Update the navigation property attributeSets in directory
+Update the properties of an attributeSet object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryAttributeSet?view=graph-powershell-beta)
@@ -42,7 +42,7 @@ Update-MgDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdentit
 ```
 
 ## DESCRIPTION
-Update the navigation property attributeSets in directory
+Update the properties of an attributeSet object.
 
 ## PARAMETERS
 
@@ -93,7 +93,9 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+Description of the attribute set.
+Can be up to 128 characters long and include Unicode characters.
+Can be changed later.
 
 ```yaml
 Type: String
@@ -140,7 +142,10 @@ Accept wildcard characters: False
 ```
 
 ### -MaxAttributesPerSet
-.
+Maximum number of custom security attributes that can be defined in this attribute set.
+Default value is null.
+If not specified, the administrator can add up to the maximum of 500 active attributes per tenant.
+Can be changed later.
 
 ```yaml
 Type: Int32
@@ -207,8 +212,8 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAttributeSet>`: attributeSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Description <String>]`: 
-  - `[MaxAttributesPerSet <Int32?>]`: 
+  - `[Description <String>]`: Description of the attribute set. Can be up to 128 characters long and include Unicode characters. Can be changed later.
+  - `[MaxAttributesPerSet <Int32?>]`: Maximum number of custom security attributes that can be defined in this attribute set. Default value is null. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit

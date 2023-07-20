@@ -57,36 +57,41 @@ Get-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannel -TeamId $teamId
 ```
-
-### Example 3
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
 ```
-
-### Example 4
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannel -TeamId $teamId
 ```
-
-### Example 5
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 5: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'"
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'" 
 ```
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -313,6 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

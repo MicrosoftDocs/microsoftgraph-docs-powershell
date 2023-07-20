@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/get-mgbetadevicemanagementdeponboardingsettingdefaultioenrollmentprofile
 schema: 2.0.0
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Default iOS Enrollment Profile
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -28,29 +31,13 @@ Get-MgBetaDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile
 ## DESCRIPTION
 Default iOS Enrollment Profile
 
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
 The unique identifier of depOnboardingSetting
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get
 Aliases:
 
@@ -65,7 +52,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -81,7 +68,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+Type: IDeviceManagementEnrollmentIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -96,7 +83,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -113,11 +100,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepIosEnrollmentProfile
-
 ## NOTES
 
 ALIASES
@@ -155,4 +140,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingDefaultIoEnrollmentProfile?view=graph-powershell-v1.0)
 

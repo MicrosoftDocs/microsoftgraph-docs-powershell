@@ -44,6 +44,11 @@ Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdent
 ## DESCRIPTION
 Invoke action signDigest
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

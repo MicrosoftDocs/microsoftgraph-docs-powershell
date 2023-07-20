@@ -28,12 +28,13 @@ Users in the rejected senders list cannot post to conversations of the group (id
 Make sure you do not specify the same user or group in the rejected senders and accepted senders lists, otherwise you will get an error.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaGroupRejectedSender Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Get-MgBetaGroupRejectedSender -GroupId $groupId
 ```
+This example shows how to use the Get-MgBetaGroupRejectedSender Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -35,8 +35,7 @@ New-MgBetaSecurityAction -BodyParameter <IMicrosoftGraphSecurityAction> [-WhatIf
 Create a new securityAction object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the New-MgBetaSecurityAction Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -55,6 +54,8 @@ $params = @{
 }
 New-MgBetaSecurityAction -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSecurityAction Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

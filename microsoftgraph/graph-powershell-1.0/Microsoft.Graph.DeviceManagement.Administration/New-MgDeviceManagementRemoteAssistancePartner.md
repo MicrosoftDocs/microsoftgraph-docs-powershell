@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-Create new navigation property to remoteAssistancePartners for deviceManagement
+Create a new remoteAssistancePartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgDeviceManagementRemoteAssistancePartner -BodyParameter <IMicrosoftGraphRem
 ```
 
 ## DESCRIPTION
-Create new navigation property to remoteAssistancePartners for deviceManagement
+Create a new remoteAssistancePartner object.
 
 ## PARAMETERS
 

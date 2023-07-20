@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaCommunicationOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
-Update the navigation property virtualAppointment in communications
+Update the properties of a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingVirtualAppointment](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingVirtualAppointment?view=graph-powershell-v1.0)
@@ -46,7 +46,7 @@ Update-MgBetaCommunicationOnlineMeetingVirtualAppointment -InputObject <ICloudCo
 ```
 
 ## DESCRIPTION
-Update the navigation property virtualAppointment in communications
+Update the properties of a virtualAppointment object.
 
 ## PARAMETERS
 

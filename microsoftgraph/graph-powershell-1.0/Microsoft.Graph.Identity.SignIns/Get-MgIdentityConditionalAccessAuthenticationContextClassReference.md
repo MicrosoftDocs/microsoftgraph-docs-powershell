@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgIdentityConditionalAccessAuthenticationContextClassReference
 
 ## SYNOPSIS
-Read-only.
-Nullable.
-Returns a collection of the specified authentication context class references.
+Retrieve the properties and relationships of a authenticationContextClassReference object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-beta)
@@ -38,19 +36,21 @@ Get-MgIdentityConditionalAccessAuthenticationContextClassReference -InputObject 
 ```
 
 ## DESCRIPTION
-Read-only.
-Nullable.
-Returns a collection of the specified authentication context class references.
+Retrieve the properties and relationships of a authenticationContextClassReference object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
-Get-MgIdentityConditionalAccessAuthenticationContextClassReference
-
+Get-MgIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId
 ```
+This example shows how to use the Get-MgIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

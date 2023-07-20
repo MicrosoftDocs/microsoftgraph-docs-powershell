@@ -48,6 +48,7 @@ New-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new educationRubric object.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

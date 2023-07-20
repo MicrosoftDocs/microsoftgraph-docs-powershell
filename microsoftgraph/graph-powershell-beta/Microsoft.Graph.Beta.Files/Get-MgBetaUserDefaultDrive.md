@@ -30,6 +30,11 @@ Get-MgBetaShareSite -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [
 ## DESCRIPTION
 Used to access the underlying site
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

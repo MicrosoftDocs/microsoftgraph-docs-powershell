@@ -31,6 +31,11 @@ New-MgBetaCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatI
 ## DESCRIPTION
 Create new navigation property to presences for communications
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Activity

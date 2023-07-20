@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgTeamChannelTab
 
 ## SYNOPSIS
-Delete navigation property tabs for teams
+Removes (unpins) a tab from the specified channel within a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaTeamChannelTab?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgTeamChannelTab -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pass
 ```
 
 ## DESCRIPTION
-Delete navigation property tabs for teams
+Removes (unpins) a tab from the specified channel within a team.
 
 ## PARAMETERS
 

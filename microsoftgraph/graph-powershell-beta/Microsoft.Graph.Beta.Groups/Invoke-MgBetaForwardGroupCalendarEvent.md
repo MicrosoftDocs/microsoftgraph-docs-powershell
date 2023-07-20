@@ -28,6 +28,11 @@ Invoke-MgBetaFollowGroupDriveRoot -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 ## DESCRIPTION
 Follow a driveItem.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -DriveId

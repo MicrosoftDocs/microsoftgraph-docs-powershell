@@ -45,39 +45,23 @@ Update-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity>
 Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 
 $params = @{
-	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
-	"@odata.etag" = "1a371e53-f0a6-4327-a1ee-e3c56e4b38aa"
-	availability = @(
-		@{
-			recurrence = @{
-				pattern = @{
-					type = "Weekly"
-					daysOfWeek = @(
-						"Monday"
-						"Wednesday"
-						"Friday"
-					)
-					interval = 1
-				}
-				range = @{
-					type = "noEnd"
-				}
-			}
-			timeZone = "Pacific Standard Time"
-			timeSlots = $null
-		}
-	)
+	displayName = "Vacation Plan"
 }
 
-Update-MgBetaUserSettingShiftPreference -UserId $userId -BodyParameter $params
-
+# A UPN can also be used as -UserId.
+Update-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserTodoList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -341,8 +325,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 `LASTMODIFIEDBY <IMicrosoftGraphIdentitySet>`: identitySet

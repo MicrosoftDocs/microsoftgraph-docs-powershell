@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Update the properties of an industryDataConnector object.
+Update the properties of an azureDataLakeConnector object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
@@ -42,7 +42,7 @@ Update-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of an industryDataConnector object.
+Update the properties of an azureDataLakeConnector object.
 
 ## PARAMETERS
 

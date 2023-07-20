@@ -28,6 +28,11 @@ Get-MgUserMailFolderCount -InputObject <IMailIdentity> [-Filter <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

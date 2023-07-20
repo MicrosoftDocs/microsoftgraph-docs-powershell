@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 462e5c72-547e-4888-bf89-2ea88728dad8
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Applications
+Module Guid: 7f985d6e-0cbd-46ef-aead-89aed0d1fb4b
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -333,6 +333,9 @@ Supports $expand.
 ### [Get-MgServicePrincipalMemberOfAsAdministrativeUnit](Get-MgServicePrincipalMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgServicePrincipalMemberOfAsDirectoryRole](Get-MgServicePrincipalMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgServicePrincipalMemberOfAsGroup](Get-MgServicePrincipalMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
@@ -343,6 +346,9 @@ Invoke action getMemberObjects
 Get the number of the resource
 
 ### [Get-MgServicePrincipalMemberOfCountAsAdministrativeUnit](Get-MgServicePrincipalMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalMemberOfCountAsDirectoryRole](Get-MgServicePrincipalMemberOfCountAsDirectoryRole.md)
 Get the number of the resource
 
 ### [Get-MgServicePrincipalMemberOfCountAsGroup](Get-MgServicePrincipalMemberOfCountAsGroup.md)
@@ -493,6 +499,9 @@ Get transitiveMemberOf from servicePrincipals
 ### [Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgServicePrincipalTransitiveMemberOfAsGroup](Get-MgServicePrincipalTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
@@ -500,6 +509,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 Get the number of the resource
 
 ### [Get-MgServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit](Get-MgServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgServicePrincipalTransitiveMemberOfCountAsDirectoryRole](Get-MgServicePrincipalTransitiveMemberOfCountAsDirectoryRole.md)
 Get the number of the resource
 
 ### [Get-MgServicePrincipalTransitiveMemberOfCountAsGroup](Get-MgServicePrincipalTransitiveMemberOfCountAsGroup.md)

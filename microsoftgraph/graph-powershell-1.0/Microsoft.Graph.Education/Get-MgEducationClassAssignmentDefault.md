@@ -37,14 +37,18 @@ Callers can continue to specify custom values on each **assignment** creation if
 Only teachers can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentDefault -EducationClassId $educationClassId
-
 ```
+This example shows how to use the Get-MgEducationClassAssignmentDefault Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -EducationClassId

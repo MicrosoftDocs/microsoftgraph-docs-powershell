@@ -38,18 +38,20 @@ Get-MgBetaSearchBookmark -InputObject <ISearchIdentity> [-ExpandProperty <String
 Read the properties and relationships of a bookmark object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark -BookmarkId $bookmarkId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSearchBookmark Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaSearchBookmark
 ```
+This example shows how to use the Get-MgBetaSearchBookmark Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

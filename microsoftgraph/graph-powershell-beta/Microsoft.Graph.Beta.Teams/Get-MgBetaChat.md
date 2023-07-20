@@ -41,35 +41,51 @@ This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 ## EXAMPLES
+### Example 1: Get a group chat
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChat -ChatId $chatId
-
 ```
-### Example 2
+This example shows how to use the Get-MgBetaChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get a chat and all its members
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChat -ChatId $chatId -ExpandProperty "members"
-
 ```
-### Example 3
+This example shows how to use the Get-MgBetaChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the meeting details of a chat associated with a Microsoft Teams meeting
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChat -ChatId $chatId
-
 ```
-### Example 4
+This example shows how to use the Get-MgBetaChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Get the chat along with the preview of the last message sent in the chat
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaChat -ChatId $chatId -ExpandProperty "lastMessagePreview"
-
 ```
+This example shows how to use the Get-MgBetaChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -280,6 +296,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

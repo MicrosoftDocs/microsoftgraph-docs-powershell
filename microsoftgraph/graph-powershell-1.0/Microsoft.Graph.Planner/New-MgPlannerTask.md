@@ -40,8 +40,8 @@ New-MgPlannerTask -BodyParameter <IMicrosoftGraphPlannerTask> [-WhatIf] [-Confir
 Create a new **plannerTask**.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -58,8 +58,12 @@ $params = @{
 }
 
 New-MgPlannerTask -BodyParameter $params
-
 ```
+This example shows how to use the New-MgPlannerTask Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount

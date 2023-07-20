@@ -40,14 +40,18 @@ The groups, including nested groups, and directory roles that a user is a member
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Users
 
 Get-MgUserTransitiveMemberOf -UserId $userId
-
 ```
+This example shows how to use the Get-MgUserTransitiveMemberOf Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

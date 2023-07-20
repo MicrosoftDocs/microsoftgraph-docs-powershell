@@ -45,14 +45,18 @@ To update the properties of a published **assignment**, see update an assignment
 To update the properties of a published assignment, see update an assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
 Publish-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
-
 ```
+This example shows how to use the Publish-MgBetaEducationUserAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -EducationAssignmentId

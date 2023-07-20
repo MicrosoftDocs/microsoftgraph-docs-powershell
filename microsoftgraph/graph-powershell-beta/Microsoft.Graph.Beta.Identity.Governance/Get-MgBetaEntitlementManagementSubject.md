@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementSubject
 
 ## SYNOPSIS
-Get subjects from identityGovernance
+Represents the subjects within entitlement management.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdentity
 ```
 
 ## DESCRIPTION
-Get subjects from identityGovernance
+Represents the subjects within entitlement management.
 
 ## PARAMETERS
 

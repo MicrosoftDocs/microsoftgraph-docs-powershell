@@ -47,8 +47,8 @@ Update the properties of an educationAssignmentSettings object.
 Only Teachers can update these settings.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 
@@ -57,8 +57,12 @@ $params = @{
 }
 
 Update-MgBetaEducationClassAssignmentSetting -EducationClassId $educationClassId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgBetaEducationClassAssignmentSetting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

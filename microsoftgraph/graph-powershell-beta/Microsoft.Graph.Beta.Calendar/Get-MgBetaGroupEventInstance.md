@@ -28,6 +28,11 @@ Get-MgBetaGroupEventExtensionCount -InputObject <ICalendarIdentity> [-Filter <St
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -EventId

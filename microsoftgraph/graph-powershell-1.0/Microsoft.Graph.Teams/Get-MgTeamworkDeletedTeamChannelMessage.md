@@ -18,7 +18,8 @@ Retrieve a single message or a message reply in a channel or a chat.
 ### Get1 (Default)
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -DeletedTeamId <String> [-Property <String[]>] [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+ [-Filter <String>] [-Model <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### List
@@ -37,7 +38,8 @@ Get-MgTeamworkDeletedTeamChannelMessage -ChannelId <String> -ChatMessageId <Stri
 ### GetViaIdentity1
 ```
 Get-MgTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity> [-Property <String[]>] [-Count]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+ [-Filter <String>] [-Model <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -185,6 +187,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Model
+The payment model for the API
+
+```yaml
+Type: String
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

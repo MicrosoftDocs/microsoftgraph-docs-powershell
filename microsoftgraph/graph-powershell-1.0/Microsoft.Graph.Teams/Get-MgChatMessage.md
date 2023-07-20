@@ -17,8 +17,8 @@ Retrieve a single message or a message reply in a channel or a chat.
 
 ### Get1 (Default)
 ```
-Get-MgChatMessage [-Property <String[]>] [-Count] [-Filter <String>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgChatMessage [-Property <String[]>] [-Count] [-Filter <String>] [-Model <String>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### List
@@ -44,14 +44,18 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Get a message in a chat
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
-
 ```
+This example shows how to use the Get-MgChatMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -173,6 +177,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Model
+The payment model for the API
+
+```yaml
+Type: String
+Parameter Sets: Get1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

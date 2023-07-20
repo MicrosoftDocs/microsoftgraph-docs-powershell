@@ -37,28 +37,40 @@ New-MgContact -BodyParameter <IMicrosoftGraphOrgContact> [-WhatIf] [-Confirm] [<
 Add new entity to contacts
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContact
-
 ```
-### Example 2
+This example shows how to use the New-MgContact Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContact -Filter "startswith(displayName,'A')" -CountVariable CountVar -Top 1 -Sort "displayName" -ConsistencyLevel eventual
-
 ```
-### Example 3
+This example shows how to use the New-MgContact Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
 Get-MgContact -Search '"displayName:wa"' -CountVariable CountVar -ConsistencyLevel eventual
-
 ```
+This example shows how to use the New-MgContact Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

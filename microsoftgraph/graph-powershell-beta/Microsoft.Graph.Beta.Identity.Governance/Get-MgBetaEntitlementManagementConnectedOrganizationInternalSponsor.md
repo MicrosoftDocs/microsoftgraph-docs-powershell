@@ -27,12 +27,13 @@ Retrieve a list of a connectedOrganization's internal sponsors.
 The internal sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor -ConnectedOrganizationId $connectedOrganizationId
 ```
+This example shows how to use the Get-MgBetaEntitlementManagementConnectedOrganizationInternalSponsor Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

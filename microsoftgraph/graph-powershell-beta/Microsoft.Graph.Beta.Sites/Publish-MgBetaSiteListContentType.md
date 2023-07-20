@@ -31,14 +31,18 @@ Publish-MgBetaSiteListContentType -InputObject <ISitesIdentity> [-PassThru] [-Wh
 Publishes a [contentType][] present in a content type hub site.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Publish-MgBetaSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
-
 ```
+This example shows how to use the Publish-MgBetaSiteListContentType Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ContentTypeId

@@ -45,30 +45,34 @@ Get-MgBetaSiteListItemDelta -InputObject <ISitesIdentity> [-Filter <String>] [-P
 Invoke function delta
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaSiteListItemDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest" 
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaSiteListItemDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "latest"  -OutFile $outFileId
 ```
-
-### Example 3
+This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaSiteListItemDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId
 ```
-
-### Example 4
+This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Get-MgBetaSiteListItemDelta Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka"
+Get-MgBetaSiteListItemDelta -SiteId $siteId -ListId $listId -Token "1230919asd190410jlka" 
 ```
+This example shows how to use the Get-MgBetaSiteListItemDelta Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

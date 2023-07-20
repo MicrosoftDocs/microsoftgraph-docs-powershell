@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgBetaUserActivity
 
 ## SYNOPSIS
-Get activities from users
+The user's activities across devices.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Get-MgUserActivity?view=graph-powershell-v1.0)
@@ -35,7 +37,9 @@ Get-MgBetaUserActivity -InputObject <ICrossDeviceExperiencesIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get activities from users
+The user's activities across devices.
+Read-only.
+Nullable.
 
 ## PARAMETERS
 

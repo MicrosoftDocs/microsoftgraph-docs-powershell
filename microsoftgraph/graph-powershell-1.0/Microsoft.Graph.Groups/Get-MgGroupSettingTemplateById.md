@@ -11,6 +11,9 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSettingTemplateById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSettingTemplateById?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -148,4 +151,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgBetaGroupSettingTemplateById](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSettingTemplateById?view=graph-powershell-beta)
 

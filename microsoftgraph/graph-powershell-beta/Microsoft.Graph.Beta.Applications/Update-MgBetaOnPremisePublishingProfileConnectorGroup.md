@@ -49,8 +49,7 @@ Update-MgBetaOnPremisePublishingProfileConnectorGroup -InputObject <IApplication
 Update the properties of a connectorGroup object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 Update-MgBetaOnPremisePublishingProfileConnectorGroup -OnPremisesPublishingProfileId $onPremisesPublishingProfileId -ConnectorGroupId $connectorGroupId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaOnPremisePublishingProfileConnectorGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -351,7 +352,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
   - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+    - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
     - `[RequireClientServicePrincipal <Boolean?>]`: 
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -777,7 +778,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
     - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+      - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
       - `[RequireClientServicePrincipal <Boolean?>]`: 
     - `[Certification <IMicrosoftGraphCertification>]`: certification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1233,7 +1234,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
       - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+        - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
         - `[RequireClientServicePrincipal <Boolean?>]`: 
       - `[Certification <IMicrosoftGraphCertification>]`: certification
         - `[(Any) <Object>]`: This indicates any property can be added to this object.

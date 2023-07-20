@@ -39,6 +39,19 @@ Get-MgDriveFollowing -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] 
 The list of items the user is following.
 Only in OneDrive for Business.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Files
+
+Get-MgDriveFollowing -DriveId $driveId
+```
+This example shows how to use the Get-MgDriveFollowing Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -284,4 +297,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveFollowing?view=graph-powershell-beta)
+
 

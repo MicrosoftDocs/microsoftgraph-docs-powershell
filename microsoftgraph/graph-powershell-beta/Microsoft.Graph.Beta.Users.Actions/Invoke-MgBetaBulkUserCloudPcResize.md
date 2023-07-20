@@ -8,7 +8,9 @@ schema: 2.0.0
 # Invoke-MgBetaBulkUserCloudPcResize
 
 ## SYNOPSIS
-Invoke action bulkResize
+Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
+If any devices cannot be resized, those devices will indicate 'resize failed'.
+The remaining devices will be `provisioned` for the resize process.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgBulkUserCloudPcResize](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBulkUserCloudPcResize?view=graph-powershell-v1.0)
@@ -42,7 +44,9 @@ Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action bulkResize
+Perform a bulk resize action to resize a group of cloudPCs that have successfully passed validation.
+If any devices cannot be resized, those devices will indicate 'resize failed'.
+The remaining devices will be `provisioned` for the resize process.
 
 ## PARAMETERS
 

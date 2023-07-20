@@ -28,6 +28,11 @@ Get-MgUserEventExtensionCount -InputObject <ICalendarIdentity> [-Filter <String>
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -EventId

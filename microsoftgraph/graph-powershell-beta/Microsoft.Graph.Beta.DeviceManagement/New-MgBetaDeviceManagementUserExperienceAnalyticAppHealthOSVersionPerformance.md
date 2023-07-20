@@ -19,8 +19,8 @@ Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerfo
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance [-ActiveDeviceCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
- [-OSBuildNumber <String>] [-OSVersion <String>] [-OSVersionAppHealthScore <Double>]
- [-OSVersionAppHealthStatus <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OSBuildNumber <String>] [-OSVersion <String>] [-OSVersionAppHealthScore <Double>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -37,6 +37,9 @@ Create new navigation property to userExperienceAnalyticsAppHealthOSVersionPerfo
 
 ### -ActiveDeviceCount
 The number of active devices for the OS version.
+Valid values 0 to 2147483647.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 Valid values -2147483648 to 2147483647
 
 ```yaml
@@ -99,7 +102,10 @@ Accept wildcard characters: False
 ```
 
 ### -MeanTimeToFailureInMinutes
-The mean time to failure for the OS version in minutes.
+The mean time to failure for the application in minutes.
+Valid values 0 to 2147483647.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 Valid values -2147483648 to 2147483647
 
 ```yaml
@@ -116,6 +122,8 @@ Accept wildcard characters: False
 
 ### -OSBuildNumber
 The OS build number installed on the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -131,6 +139,8 @@ Accept wildcard characters: False
 
 ### -OSVersion
 The OS version installed on the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -145,26 +155,14 @@ Accept wildcard characters: False
 ```
 
 ### -OSVersionAppHealthScore
-The app health score of the OS version.
+The application health score of the OS version.
+Valid values 0 to 100.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
 Type: Double
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -OSVersionAppHealthStatus
-The overall app health status of the OS version.
-
-```yaml
-Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,11 +225,11 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance>`: The user experience analytics device OS version performance entity contains OS version performance details.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the OS version. Valid values -2147483648 to 2147483647
-  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the OS version in minutes. Valid values -2147483648 to 2147483647
-  - `[OSBuildNumber <String>]`: The OS build number installed on the device.
-  - `[OSVersion <String>]`: The OS version installed on the device.
-  - `[OSVersionAppHealthScore <Double?>]`: The app health score of the OS version. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[ActiveDeviceCount <Int32?>]`: The number of active devices for the OS version. Valid values 0 to 2147483647. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
+  - `[MeanTimeToFailureInMinutes <Int32?>]`: The mean time to failure for the application in minutes. Valid values 0 to 2147483647. Supports: $filter, $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
+  - `[OSBuildNumber <String>]`: The OS build number installed on the device. Supports: $select, $OrderBy. Read-only.
+  - `[OSVersion <String>]`: The OS version installed on the device. Supports: $select, $OrderBy. Read-only.
+  - `[OSVersionAppHealthScore <Double?>]`: The application health score of the OS version. Valid values 0 to 100. Supports: $filter, $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance?view=graph-powershell-v1.0)

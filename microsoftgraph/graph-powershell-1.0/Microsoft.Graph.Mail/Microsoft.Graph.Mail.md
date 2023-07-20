@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Mail
-Module Guid: 50f142f8-46d7-45cc-b5fa-fe4ea0081f30
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Mail
+Module Guid: 41183679-1897-4ebd-9bb9-058ad7be282d
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.mail
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -86,6 +86,15 @@ The following table lists the three scenarios where you can get an open extensio
 ### [Get-MgUserMailFolderMessageExtensionCount](Get-MgUserMailFolderMessageExtensionCount.md)
 Get the number of the resource
 
+### [Get-MgUserMailFolderMessageExtensionCount](Get-MgUserMailFolderMessageExtensionCount.md)
+Get the number of the resource
+
+### [Get-MgUserMailFolderMessageRuleCount](Get-MgUserMailFolderMessageRuleCount.md)
+Get the number of the resource
+
+### [Get-MgUserMailFolderMessageRuleCount](Get-MgUserMailFolderMessageRuleCount.md)
+Get the number of the resource
+
 ### [Get-MgUserMailFolderMessageRuleCount](Get-MgUserMailFolderMessageRuleCount.md)
 Get the number of the resource
 
@@ -99,6 +108,15 @@ Get media content for the navigation property messages from users
 Get the number of the resource
 
 ### [Get-MgUserMessageCount](Get-MgUserMessageCount.md)
+Get the number of the resource
+
+### [Get-MgUserMessageExtensionCount](Get-MgUserMessageExtensionCount.md)
+Get the number of the resource
+
+### [Get-MgUserMessageExtensionCount](Get-MgUserMessageExtensionCount.md)
+Get the number of the resource
+
+### [Get-MgUserMessageExtensionCount](Get-MgUserMessageExtensionCount.md)
 Get the number of the resource
 
 ### [Get-MgUserMessageExtensionCount](Get-MgUserMessageExtensionCount.md)
@@ -121,11 +139,45 @@ The table in the Permissions section lists the resources that support open exten
 Create a messageRule object by specifying a set of conditions and actions.
 Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
 
+### [New-MgUserMailFolderChildFolderMessageRule](New-MgUserMailFolderChildFolderMessageRule.md)
+Create a messageRule object by specifying a set of conditions and actions.
+Outlook carries out those actions if an incoming message in the user's Inbox meets the specified conditions.
+
 ### [New-MgUserMailFolderMessageAttachment](New-MgUserMailFolderMessageAttachment.md)
 Use this API to create a new Attachment.
 An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
 
 ### [New-MgUserMailFolderMessageExtension](New-MgUserMailFolderMessageExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgUserMailFolderMessageExtension](New-MgUserMailFolderMessageExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgUserMailFolderMessageExtension](New-MgUserMailFolderMessageExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgUserMailFolderMessageExtension](New-MgUserMailFolderMessageExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgUserMessageExtension](New-MgUserMessageExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgUserMessageExtension](New-MgUserMessageExtension.md)
 Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
 You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
 See known limitations of open extensions for more information.
@@ -158,6 +210,14 @@ Delete navigation property messages for users
 
 ### [Remove-MgUserMailFolderMessageAttachment](Remove-MgUserMailFolderMessageAttachment.md)
 Delete navigation property attachments for users
+
+### [Remove-MgUserMailFolderMessageExtension](Remove-MgUserMailFolderMessageExtension.md)
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
+
+### [Remove-MgUserMailFolderMessageExtension](Remove-MgUserMailFolderMessageExtension.md)
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ### [Remove-MgUserMailFolderMessageExtension](Remove-MgUserMailFolderMessageExtension.md)
 Delete an open extension (openTypeExtension object) from the specified instance of a resource.
@@ -201,6 +261,12 @@ Change writable properties on a messageRule object and save the changes.
 
 ### [Update-MgUserMailFolderMessage](Update-MgUserMailFolderMessage.md)
 Update the navigation property messages in users
+
+### [Update-MgUserMailFolderMessageExtension](Update-MgUserMailFolderMessageExtension.md)
+Update the navigation property extensions in users
+
+### [Update-MgUserMailFolderMessageExtension](Update-MgUserMailFolderMessageExtension.md)
+Update the navigation property extensions in users
 
 ### [Update-MgUserMailFolderMessageExtension](Update-MgUserMailFolderMessageExtension.md)
 Update the navigation property extensions in users

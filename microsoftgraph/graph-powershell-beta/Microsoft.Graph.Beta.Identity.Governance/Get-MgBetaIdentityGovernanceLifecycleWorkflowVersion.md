@@ -38,18 +38,20 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -InputObject <IIdentityGove
 Read the properties and relationships of a workflowVersion object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId -WorkflowVersionVersionNumber $workflowVersionVersionNumber
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion -WorkflowId $workflowId
 ```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowVersion Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

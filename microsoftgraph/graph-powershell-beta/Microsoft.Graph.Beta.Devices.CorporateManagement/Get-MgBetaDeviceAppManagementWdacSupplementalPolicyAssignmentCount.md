@@ -107,7 +107,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtWdacSupplementalPolicyAssignmentCount
+Get-BetaDeviceAppMgtWdacSupplementalPolicyAssignmentCount
 
 COMPLEX PARAMETER PROPERTIES
 

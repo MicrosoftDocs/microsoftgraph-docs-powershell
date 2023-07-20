@@ -30,14 +30,18 @@ New-MgBetaPrintService -BodyParameter <IMicrosoftGraphPrintService> [-WhatIf] [-
 Create new navigation property to services for print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintService
-
 ```
+This example shows how to use the New-MgBetaBetaPrintService Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -160,11 +164,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[Endpoints <IMicrosoftGraphPrintServiceEndpoint[]>]`: Endpoints that can be used to access the service. Read-only. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DisplayName <String>]`: A human-readable display name for the endpoint.
+    - `[Name <String>]`: 
     - `[Uri <String>]`: The URI that can be used to access the service.
 
 `ENDPOINTS <IMicrosoftGraphPrintServiceEndpoint[]>`: Endpoints that can be used to access the service. Read-only. Nullable.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
+  - `[Name <String>]`: 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 ## RELATED LINKS

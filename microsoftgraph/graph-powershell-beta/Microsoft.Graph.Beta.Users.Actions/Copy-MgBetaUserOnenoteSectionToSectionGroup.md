@@ -49,8 +49,7 @@ Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Copy-MgBetaUserOnenoteSectionToSectionGroup Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -61,6 +60,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Copy-MgBetaUserOnenoteSectionToSectionGroup -UserId $userId -OnenoteSectionId $onenoteSectionId -BodyParameter $params
 ```
+This example shows how to use the Copy-MgBetaUserOnenoteSectionToSectionGroup Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

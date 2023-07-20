@@ -35,14 +35,18 @@ New-MgBetaServiceAnnouncementIssue -BodyParameter <IMicrosoftGraphServiceHealthI
 Create new navigation property to issues for admin
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.ServiceAnnouncement
 
 Get-MgBetaServiceAnnouncementIssue
-
 ```
+This example shows how to use the New-MgBetaBetaServiceAnnouncementIssue Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

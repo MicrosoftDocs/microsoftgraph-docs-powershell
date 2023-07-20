@@ -15,41 +15,108 @@ Upgrade an app installation within a chat.
 
 ## SYNTAX
 
-### Upgrade (Default)
+### UpgradeExpanded (Default)
 ```
-Update-MgUserChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> -UserId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Upgrade
+```
+Update-MgUserChatInstalledApp -ChatId <String> -TeamsAppInstallationId <String> -UserId <String>
+ -BodyParameter <IPathsMmynopUsersUserIdChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpgradeViaIdentityExpanded
+```
+Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpgradeViaIdentity
 ```
-Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgUserChatInstalledApp -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsMmynopUsersUserIdChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Upgrade an app installation within a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Update-MgChatInstalledApp -ChatId $chatId -TeamsAppInstallationId $teamsAppInstallationId
+```
+This example shows how to use the Update-MgUserChatInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
+
+### -AdditionalProperties
+Additional Parameters
+
+```yaml
+Type: Hashtable
+Parameter Sets: UpgradeExpanded, UpgradeViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+
+```yaml
+Type: IPathsMmynopUsersUserIdChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Upgrade, UpgradeViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
 
 ### -ChatId
 The unique identifier of chat
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: UpgradeExpanded, Upgrade
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ConsentedPermissionSet
+teamsAppPermissionSet
+To construct, see NOTES section for CONSENTEDPERMISSIONSET properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphTeamsAppPermissionSet
+Parameter Sets: UpgradeExpanded, UpgradeViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -62,7 +129,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: IUsersActionsIdentity
-Parameter Sets: UpgradeViaIdentity
+Parameter Sets: UpgradeViaIdentityExpanded, UpgradeViaIdentity
 Aliases:
 
 Required: True
@@ -92,7 +159,7 @@ The unique identifier of teamsAppInstallation
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: UpgradeExpanded, Upgrade
 Aliases:
 
 Required: True
@@ -107,7 +174,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Upgrade
+Parameter Sets: UpgradeExpanded, Upgrade
 Aliases:
 
 Required: True
@@ -153,6 +220,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
+### Microsoft.Graph.PowerShell.Models.IPathsMmynopUsersUserIdChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
 ## OUTPUTS
 
@@ -166,6 +234,20 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
+`BODYPARAMETER <IPathsMmynopUsersUserIdChatsChatIdInstalledappsTeamsappinstallationIdMicrosoftGraphUpgradePostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+      - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
+      - `[PermissionValue <String>]`: 
+
+`CONSENTEDPERMISSIONSET <IMicrosoftGraphTeamsAppPermissionSet>`: teamsAppPermissionSet
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+    - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
+    - `[PermissionValue <String>]`: 
+
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
   - `[CalendarId <String>]`: The unique identifier of calendar
@@ -173,6 +255,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

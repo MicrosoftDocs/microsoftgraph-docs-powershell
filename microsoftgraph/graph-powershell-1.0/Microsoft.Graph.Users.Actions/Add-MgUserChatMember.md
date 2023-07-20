@@ -47,11 +47,10 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 ## EXAMPLES
+### Example 1: Add members in bulk to a team
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -72,11 +71,15 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserChatMember Cmdlet.
 
-### Example 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Add members in bulk and encounter partial failure
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -97,11 +100,15 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserChatMember Cmdlet.
 
-### Example 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Add members in bulk to a team using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -122,6 +129,11 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserChatMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -283,6 +295,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

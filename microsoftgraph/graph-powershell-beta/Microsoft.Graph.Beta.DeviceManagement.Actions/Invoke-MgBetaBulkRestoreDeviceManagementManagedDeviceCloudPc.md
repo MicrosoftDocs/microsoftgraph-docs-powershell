@@ -33,8 +33,7 @@ Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc
 Restore multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices and a restore point date and time.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -47,6 +46,8 @@ $params = @{
 }
 Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaBulkRestoreDeviceManagementManagedDeviceCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

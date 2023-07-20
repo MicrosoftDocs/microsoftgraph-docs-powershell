@@ -30,6 +30,11 @@ Get-MgBetaServicePrincipalLicenseDetailCount -InputObject <IApplicationsIdentity
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter
@@ -143,4 +148,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberGroup?view=graph-powershell-v1.0)
-

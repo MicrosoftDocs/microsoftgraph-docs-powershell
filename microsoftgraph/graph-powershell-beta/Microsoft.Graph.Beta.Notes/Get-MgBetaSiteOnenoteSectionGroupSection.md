@@ -42,6 +42,11 @@ Get-MgBetaSiteOnenoteSectionGroupCount -InputObject <INotesIdentity> [-Filter <S
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

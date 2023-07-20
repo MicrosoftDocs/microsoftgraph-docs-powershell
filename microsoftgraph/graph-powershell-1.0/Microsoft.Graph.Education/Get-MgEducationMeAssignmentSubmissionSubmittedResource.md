@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgEducationMeAssignmentSubmissionSubmittedResource
 
 ## SYNOPSIS
-Get submittedResources from education
+Retrieve a submitted resource.
+Only teachers, students, and applications with application permissions can perform this operation.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
+Note that teachers can leave notes in some resources.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
@@ -37,7 +40,11 @@ Get-MgEducationMeAssignmentSubmissionSubmittedResource -InputObject <IEducationI
 ```
 
 ## DESCRIPTION
-Get submittedResources from education
+Retrieve a submitted resource.
+Only teachers, students, and applications with application permissions can perform this operation.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
+Note that teachers can leave notes in some resources.
+
 
 ## PARAMETERS
 

@@ -11,6 +11,9 @@ schema: 2.0.0
 Enable SMS sign-in for an existing `mobile` phone number registered to a user.
 To be successfully enabled:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Enable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Enable-MgBetaUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Enable (Default)
@@ -148,6 +151,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem
@@ -172,4 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Enable-MgBetaUserAuthenticationPhoneMethodSmsSignIn](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Enable-MgBetaUserAuthenticationPhoneMethodSmsSignIn?view=graph-powershell-beta)
 

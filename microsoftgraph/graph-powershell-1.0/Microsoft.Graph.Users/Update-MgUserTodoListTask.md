@@ -42,6 +42,11 @@ Update-MgUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Has
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

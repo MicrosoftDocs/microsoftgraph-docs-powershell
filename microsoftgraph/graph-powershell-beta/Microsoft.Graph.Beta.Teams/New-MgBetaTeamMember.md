@@ -45,8 +45,8 @@ New-MgBetaTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGra
 Add a new conversation member to a team.
 
 ## EXAMPLES
+### Example 1: Add a member to a team
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -59,9 +59,13 @@ $params = @{
 }
 
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
 ```
-### Example 2
+This example shows how to use the New-MgBetaTeamMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Add a member to a team using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
@@ -74,8 +78,12 @@ $params = @{
 }
 
 New-MgBetaTeamMember -TeamId $teamId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaTeamMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -271,6 +279,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest
