@@ -3,7 +3,7 @@ title: "Using Microsoft Graph PowerShell authentication commands"
 description: "Learn how to use the authentication cmdlets in Microsoft Graph PowerShell"
 
 ms.topic: how-to
-ms.date: 08/02/2022
+ms.date: 07/10/2023
 author: msewaweru
 manager: CelesteDG
 ms.author: eunicewaweru
@@ -39,11 +39,35 @@ There are three ways to allow delegated access using `Connect-MgGraph`:
     Connect-MgGraph -AccessToken $AccessToken
     ```
 
+#### Use delegated access with a custom application for Microsoft Graph PowerShell
+
+Follow the steps below to create custom applications that you can use to connect to Microsoft Graph PowerShell. Use this approach if you need to isolate and limit the consent permissions granted for Microsoft Graph PowerShell usage.
+
+1. Go to the <a href="https://entra.microsoft.com/#view/Microsoft_AAD_RegisteredApps/ApplicationsListBlade" target="_blank">Azure portal - App registrations</a> > **New Registration**.
+    1. Enter a **Name** for your application, for example *Microsoft Graph PowerShell - High Privilege admin use only*.
+    1. For **Supported account types**, select **Accounts in this organization directory**.
+    1. For **Redirect URI**:
+        - Select **Public client/native** from the drop down
+        - **URI value**: *http://localhost*
+    1. Select **Register**.
+    1. Go to **Enterprise applications** and select the application you just created.
+    1. Under **Manage**, select **Properties** and set **Assignment required?** to **Yes**.
+    1. Select **Save**.
+    1. Under **Manage**, select **Users and groups**.
+    1. Select **Add user/group** and add the users and groups permitted to use this application.
+    1. Once you've added all the users and groups, select **Assign**.
+
+You can now use this app instead of the default one by connecting with:
+
+```powershell
+Connect-MgGraph -ClientId <YOUR_NEW_APP_ID> -TenantId <YOUR_TENANT_ID>
+```
+
 ### App-only access
 
 #### Using client credential with a certificate
 
-To use app-only access, the certificate is loaded from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\* when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
+To use app-only access, you can load the certificate from either *Cert:\CurrentUser\My\\* or *Cert:\LocalMachine\My\\*, when `-CertificateThumbprint` or `-CertificateName` is specified. Make sure that the certificate you're using is present in either certificate store before calling `Connect-MgGraph`. For more info, see [Use app-only authentication with the Microsoft Graph PowerShell SDK](app-only.md).
 
 - Using Certificate Thumbprint:
 
@@ -230,7 +254,7 @@ User.ReadWrite.All
 
 ## Using Invoke-MgGraphRequest
 
-`Invoke-MgGraphRequest` issues REST API requests to the Graph API. It works for any Graph API if you know the REST URI, method and optional body parameter. This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
+`Invoke-MgGraphRequest` issues REST API requests to the Graph API. It works for any Graph API if you know the REST URI, method, and optional body parameter. This command is especially useful for accessing APIs for which there isn't an equivalent cmdlet yet.
 
 To retrieve the details of the signed-in user, run:
 
