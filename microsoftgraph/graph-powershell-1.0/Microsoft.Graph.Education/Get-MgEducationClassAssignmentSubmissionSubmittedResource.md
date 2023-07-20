@@ -8,7 +8,10 @@ schema: 2.0.0
 # Get-MgEducationClassAssignmentSubmissionSubmittedResource
 
 ## SYNOPSIS
-Get submittedResources from education
+Retrieve a submitted resource.
+Only teachers, students, and applications with application permissions can perform this operation.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
+Note that teachers can leave notes in some resources.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
@@ -37,17 +40,24 @@ Get-MgEducationClassAssignmentSubmissionSubmittedResource -InputObject <IEducati
 ```
 
 ## DESCRIPTION
-Get submittedResources from education
+Retrieve a submitted resource.
+Only teachers, students, and applications with application permissions can perform this operation.
+Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
+Note that teachers can leave notes in some resources.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
+This example shows how to use the Get-MgEducationClassAssignmentSubmissionSubmittedResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

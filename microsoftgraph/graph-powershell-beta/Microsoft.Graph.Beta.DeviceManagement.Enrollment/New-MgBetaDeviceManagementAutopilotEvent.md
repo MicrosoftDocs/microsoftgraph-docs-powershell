@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopilotevent
 schema: 2.0.0
@@ -9,6 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to autopilotEvents for deviceManagement
+
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAutopilotEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -27,33 +30,17 @@ New-MgBetaDeviceManagementAutopilotEvent [-AccountSetupDuration <TimeSpan>]
  [-TargetedAppCount <Int32>] [-TargetedPolicyCount <Int32>] [-UserPrincipalName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationDisplayName <String>]
  [-Windows10EnrollmentCompletionPageConfigurationId <String>]
- [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WindowsAutopilotDeploymentProfileDisplayName <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotEvent>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to autopilotEvents for deviceManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -61,7 +48,7 @@ Create new navigation property to autopilotEvents for deviceManagement
 Time spent in user ESP.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -76,7 +63,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsAutopilotDeploymentState
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +78,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -107,7 +94,7 @@ Represents an Autopilot flow event.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
+Type: IMicrosoftGraphDeviceManagementAutopilotEvent
 Parameter Sets: Create
 Aliases:
 
@@ -122,7 +109,7 @@ Accept wildcard characters: False
 Autopilot deployment duration including enrollment.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +124,7 @@ Accept wildcard characters: False
 Deployment end time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +139,7 @@ Accept wildcard characters: False
 Deployment start time.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +154,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsAutopilotDeploymentState
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -182,7 +169,7 @@ Accept wildcard characters: False
 Total deployment duration from enrollment to Desktop screen.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -197,7 +184,7 @@ Accept wildcard characters: False
 Device id associated with the object
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +199,7 @@ Accept wildcard characters: False
 Time spent in device enrollment.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +214,7 @@ Accept wildcard characters: False
 Device registration date.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -242,7 +229,7 @@ Accept wildcard characters: False
 Device serial number.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -257,7 +244,7 @@ Accept wildcard characters: False
 Time spent in device ESP.
 
 ```yaml
-Type: System.TimeSpan
+Type: TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -272,7 +259,7 @@ Accept wildcard characters: False
 Deployment states for Autopilot devices
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsAutopilotDeploymentState
+Type: WindowsAutopilotDeploymentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -287,7 +274,7 @@ Accept wildcard characters: False
 Enrollment failure details.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -302,7 +289,7 @@ Accept wildcard characters: False
 Device enrollment start date.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -317,7 +304,7 @@ Accept wildcard characters: False
 enrollmentState
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.EnrollmentState
+Type: EnrollmentState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -332,7 +319,7 @@ Accept wildcard characters: False
 windowsAutopilotEnrollmentType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +334,7 @@ Accept wildcard characters: False
 Time when the event occurred .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -363,7 +350,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -378,7 +365,7 @@ Accept wildcard characters: False
 Managed device name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -393,7 +380,7 @@ Accept wildcard characters: False
 Device operating system version.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -409,7 +396,7 @@ Policy and application status details for this device.
 To construct, see NOTES section for POLICYSTATUSDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]
+Type: IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -424,7 +411,7 @@ Accept wildcard characters: False
 Count of applications targeted.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -439,7 +426,7 @@ Accept wildcard characters: False
 Count of policies targeted.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -454,7 +441,7 @@ Accept wildcard characters: False
 User principal name used to enroll the device.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -469,7 +456,7 @@ Accept wildcard characters: False
 Enrollment Status Page profile name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -484,7 +471,7 @@ Accept wildcard characters: False
 Enrollment Status Page profile ID
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -499,7 +486,7 @@ Accept wildcard characters: False
 Autopilot profile name.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -514,7 +501,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -530,7 +517,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -547,11 +534,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotEvent
-
 ## NOTES
 
 ALIASES
@@ -609,4 +594,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TrackedOnEnrollmentStatus <Boolean?>]`: Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ## RELATED LINKS
+[New-MgDeviceManagementAutopilotEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0)
 

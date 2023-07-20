@@ -42,6 +42,11 @@ New-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyPar
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

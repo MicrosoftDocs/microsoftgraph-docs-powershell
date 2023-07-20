@@ -71,8 +71,8 @@ This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
 ## EXAMPLES
+### Example 1: Update policyViolation property using application permissions
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -91,9 +91,13 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
-### Example 2
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Update any property of a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -128,9 +132,13 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
-### Example 3
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Update the mentions of a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -198,9 +206,13 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
-### Example 4
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Update the content with attachments of a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -229,7 +241,7 @@ $params = @{
 			id = "e8f78756199240b88448ae0fc6db112d"
 			contentType = "application/vnd.microsoft.card.hero"
 			contentUrl = $null
-			content = "{
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
   "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
@@ -247,8 +259,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&amp;i am back&amp; &lt;&gt;= "",
-      "value": "&amp;i am back&amp; &lt;&gt;= ""
+      "title": "&amp;i am back&amp; &lt;&gt;= \"",
+      "value": "&amp;i am back&amp; &lt;&gt;= \""
     },
     {
       "type": "openUrl",
@@ -256,7 +268,7 @@ $params = @{
       "value": "http://google.com"
     }
   ]
-}"
+}'
 			name = $null
 			thumbnailUrl = $null
 		}
@@ -264,7 +276,7 @@ $params = @{
 			id = "638464e32834471ea202007da60a5ae6"
 			contentType = "application/vnd.microsoft.card.hero"
 			contentUrl = $null
-			content = "{
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
   "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
@@ -276,15 +288,15 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&amp;message back&amp; &lt;&gt;= "",
-      "text": "text = &amp;message back&amp; &lt;&gt;= "",
-      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= "",
+      "title": "&amp;message back&amp; &lt;&gt;= \"",
+      "text": "text = &amp;message back&amp; &lt;&gt;= \"",
+      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= \"",
       "value": {
         "text": "some text 2"
       }
     }
   ]
-}"
+}'
 			name = $null
 			thumbnailUrl = $null
 		}
@@ -298,9 +310,13 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
-### Example 5
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Update the reactions in a message using delegated permissions
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -329,7 +345,7 @@ $params = @{
 			id = "e8f78756199240b88448ae0fc6db112d"
 			contentType = "application/vnd.microsoft.card.hero"
 			contentUrl = $null
-			content = "{
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
   "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
@@ -347,8 +363,8 @@ $params = @{
     },
     {
       "type": "imback",
-      "title": "&amp;i am back&amp; &lt;&gt;= "",
-      "value": "&amp;i am back&amp; &lt;&gt;= ""
+      "title": "&amp;i am back&amp; &lt;&gt;= \"",
+      "value": "&amp;i am back&amp; &lt;&gt;= \""
     },
     {
       "type": "openUrl",
@@ -356,7 +372,7 @@ $params = @{
       "value": "http://google.com"
     }
   ]
-}"
+}'
 			name = $null
 			thumbnailUrl = $null
 		}
@@ -364,7 +380,7 @@ $params = @{
 			id = "638464e32834471ea202007da60a5ae6"
 			contentType = "application/vnd.microsoft.card.hero"
 			contentUrl = $null
-			content = "{
+			content = '{
   "title": "*title*",
   "subtitle": "*subtitle*",
   "text": "Have you found yourself scratching your head trying to figure these questions out? Frustrated trying to access some of the goodies unique to the Microsoft Teams platform?  Well, fear not, Bot Builder SDK Extension for Teams in .NET and Node flavors is here!  Just head on over to Nuget or NPM to download our tasty helpers, sure to speed up your prep time so you can spend more time maximizing the flavor of the bots you're cooking up.Here???s a small sample of some recipes to whet your appetite.",
@@ -376,15 +392,15 @@ $params = @{
   "buttons": [
     {
       "type": "messageBack",
-      "title": "&amp;message back&amp; &lt;&gt;= "",
-      "text": "text = &amp;message back&amp; &lt;&gt;= "",
-      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= "",
+      "title": "&amp;message back&amp; &lt;&gt;= \"",
+      "text": "text = &amp;message back&amp; &lt;&gt;= \"",
+      "displayText": "displayText = &amp;message back&amp; &lt;&gt;= \"",
       "value": {
         "text": "some text 2"
       }
     }
   ]
-}"
+}'
 			name = $null
 			thumbnailUrl = $null
 		}
@@ -630,8 +646,12 @@ $params = @{
 }
 
 Update-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

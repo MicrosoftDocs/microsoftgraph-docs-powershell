@@ -30,6 +30,11 @@ Remove-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property shiftPreferences for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -IfMatch

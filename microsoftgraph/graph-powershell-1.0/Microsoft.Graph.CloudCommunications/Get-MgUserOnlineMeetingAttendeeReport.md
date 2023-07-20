@@ -30,6 +30,11 @@ Get-MgUserOnlineMeetingAttendanceReportCount -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

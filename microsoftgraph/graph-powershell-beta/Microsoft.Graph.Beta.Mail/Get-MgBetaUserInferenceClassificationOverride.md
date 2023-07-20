@@ -28,6 +28,11 @@ Get-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-Property <S
 ## DESCRIPTION
 Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
+This example shows how to use the Get-MgBetaBetaUserInferenceClassificationOverride Cmdlet.
+
+
+
+
 ## PARAMETERS
 
 ### -InputObject

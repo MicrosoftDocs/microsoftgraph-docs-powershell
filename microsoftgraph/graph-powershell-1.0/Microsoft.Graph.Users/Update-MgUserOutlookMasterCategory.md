@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Users-help.xml
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mguserlicensedetail
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusermailboxsetting
 schema: 2.0.0
 ---
 
-# Update-MgUserLicenseDetail
+# Update-MgUserMailboxSetting
 
 ## SYNOPSIS
-Update the navigation property licenseDetails in users
+Update property mailboxSettings value.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
@@ -17,32 +17,41 @@ Update the navigation property licenseDetails in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgUserLicenseDetail -LicenseDetailsId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserMailboxSetting -UserId <String> [-AdditionalProperties <Hashtable>] [-ArchiveFolder <String>]
+ [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>] [-DateFormat <String>]
+ [-DelegateMeetingMessageDeliveryOptions <String>] [-Language <IMicrosoftGraphLocaleInfo>]
+ [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserLicenseDetail -LicenseDetailsId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphLicenseDetails> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgUserMailboxSetting -UserId <String> -BodyParameter <IMicrosoftGraphMailboxSettings> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgUserLicenseDetail -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-ServicePlans <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserMailboxSetting -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-ArchiveFolder <String>] [-AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]
+ [-DateFormat <String>] [-DelegateMeetingMessageDeliveryOptions <String>]
+ [-Language <IMicrosoftGraphLocaleInfo>] [-TimeFormat <String>] [-TimeZone <String>] [-UserPurpose <String>]
+ [-WorkingHours <IMicrosoftGraphWorkingHours>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgUserLicenseDetail -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphLicenseDetails>
+Update-MgUserMailboxSetting -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphMailboxSettings>
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property licenseDetails in users
+Update property mailboxSettings value.
+
+
+
+
+
 
 ## PARAMETERS
 
@@ -61,12 +70,43 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ArchiveFolder
+Folder ID of an archive folder for the user.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AutomaticRepliesSetting
+automaticRepliesSetting
+To construct, see NOTES section for AUTOMATICREPLIESSETTING properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAutomaticRepliesSetting
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -BodyParameter
-licenseDetails
+mailboxSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLicenseDetails
+Type: IMicrosoftGraphMailboxSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -77,9 +117,23 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Id
-The unique idenfier for an entity.
-Read-only.
+### -DateFormat
+The date format for the user's mailbox.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DelegateMeetingMessageDeliveryOptions
+delegateMeetingMessageDeliveryOptions
 
 ```yaml
 Type: String
@@ -109,28 +163,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LicenseDetailsId
-The unique identifier of licenseDetails
+### -Language
+localeInfo
+To construct, see NOTES section for LANGUAGE properties and create a hash table.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ServicePlans
-Information about the service plans assigned with the license.
-Read-only, Not nullable
-To construct, see NOTES section for SERVICEPLANS properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphServicePlanInfo[]
+Type: IMicrosoftGraphLocaleInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,10 +179,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SkuId
-Unique identifier (GUID) for the service SKU.
-Equal to the skuId property on the related SubscribedSku object.
-Read-only
+### -TimeFormat
+The time format for the user's mailbox.
 
 ```yaml
 Type: String
@@ -158,10 +194,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SkuPartNumber
-Unique SKU display name.
-Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'.
-Read-only
+### -TimeZone
+The default time zone for the user's mailbox.
 
 ```yaml
 Type: String
@@ -184,6 +218,37 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -UserPurpose
+userPurpose
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -WorkingHours
+workingHours
+To construct, see NOTES section for WORKINGHOURS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphWorkingHours
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -226,11 +291,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphLicenseDetails
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMailboxSettings
 ## NOTES
 
 ALIASES
@@ -240,16 +305,49 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphLicenseDetails>`: licenseDetails
+`AUTOMATICREPLIESSETTING <IMicrosoftGraphAutomaticRepliesSetting>`: automaticRepliesSetting
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[ServicePlans <IMicrosoftGraphServicePlanInfo[]>]`: Information about the service plans assigned with the license. Read-only, Not nullable
-    - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-    - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: Unique identifier (GUID) for the service SKU. Equal to the skuId property on the related SubscribedSku object. Read-only
-  - `[SkuPartNumber <String>]`: Unique SKU display name. Equal to the skuPartNumber on the related SubscribedSku object; for example: 'AAD_Premium'. Read-only
+  - `[ExternalAudience <String>]`: externalAudienceScope
+  - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+  - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+  - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+  - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+  - `[Status <String>]`: automaticRepliesStatus
+
+`BODYPARAMETER <IMicrosoftGraphMailboxSettings>`: mailboxSettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[ArchiveFolder <String>]`: Folder ID of an archive folder for the user.
+  - `[AutomaticRepliesSetting <IMicrosoftGraphAutomaticRepliesSetting>]`: automaticRepliesSetting
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[ExternalAudience <String>]`: externalAudienceScope
+    - `[ExternalReplyMessage <String>]`: The automatic reply to send to the specified external audience, if Status is AlwaysEnabled or Scheduled.
+    - `[InternalReplyMessage <String>]`: The automatic reply to send to the audience internal to the signed-in user's organization, if Status is AlwaysEnabled or Scheduled.
+    - `[ScheduledEndDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
+      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
+    - `[ScheduledStartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
+    - `[Status <String>]`: automaticRepliesStatus
+  - `[DateFormat <String>]`: The date format for the user's mailbox.
+  - `[DelegateMeetingMessageDeliveryOptions <String>]`: delegateMeetingMessageDeliveryOptions
+  - `[Language <IMicrosoftGraphLocaleInfo>]`: localeInfo
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+    - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
+  - `[TimeFormat <String>]`: The time format for the user's mailbox.
+  - `[TimeZone <String>]`: The default time zone for the user's mailbox.
+  - `[UserPurpose <String>]`: userPurpose
+  - `[WorkingHours <IMicrosoftGraphWorkingHours>]`: workingHours
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
+    - `[EndTime <String>]`: The time of the day that the user stops working.
+    - `[StartTime <String>]`: The time of the day that the user starts working.
+    - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 `INPUTOBJECT <IUsersIdentity>`: Identity Parameter
   - `[AttachmentBaseId <String>]`: The unique identifier of attachmentBase
@@ -266,11 +364,19 @@ To create the parameters described below, construct a hash table containing the 
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-`SERVICEPLANS <IMicrosoftGraphServicePlanInfo[]>`: Information about the service plans assigned with the license. Read-only, Not nullable
-  - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
-  - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
-  - `[ServicePlanId <String>]`: The unique identifier of the service plan.
-  - `[ServicePlanName <String>]`: The name of the service plan.
+`LANGUAGE <IMicrosoftGraphLocaleInfo>`: localeInfo
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DisplayName <String>]`: A name representing the user's locale in natural language, for example, 'English (United States)'.
+  - `[Locale <String>]`: A locale representation for the user, which includes the user's preferred language and country/region. For example, 'en-us'. The language component follows 2-letter codes as defined in ISO 639-1, and the country component follows 2-letter codes as defined in ISO 3166-1 alpha-2.
+
+`WORKINGHOURS <IMicrosoftGraphWorkingHours>`: workingHours
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[DaysOfWeek <String[]>]`: The days of the week on which the user works.
+  - `[EndTime <String>]`: The time of the day that the user stops working.
+  - `[StartTime <String>]`: The time of the day that the user starts working.
+  - `[TimeZone <IMicrosoftGraphTimeZoneBase>]`: timeZoneBase
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Name <String>]`: The name of a time zone. It can be a standard time zone name such as 'Hawaii-Aleutian Standard Time', or 'Customized Time Zone' for a custom time zone.
 
 ## RELATED LINKS
 [Update-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)

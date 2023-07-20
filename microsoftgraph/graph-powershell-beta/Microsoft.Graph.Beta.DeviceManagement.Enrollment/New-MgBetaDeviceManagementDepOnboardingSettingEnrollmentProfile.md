@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsettingenrollmentprofile
 schema: 2.0.0
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to enrollmentProfiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSettingEnrollmentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -17,21 +20,14 @@ Create new navigation property to enrollmentProfiles for deviceManagement
 New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile -DepOnboardingSettingId <String>
  [-AdditionalProperties <Hashtable>] [-ConfigurationEndpointUrl <String>] [-Description <String>]
  [-DisplayName <String>] [-EnableAuthenticationViaCompanyPortal] [-Id <String>]
- [-RequireCompanyPortalOnSetupAssistantEnrolledDevices] [-RequiresUserAuthentication] [-Confirm] [-WhatIf]
+ [-RequireCompanyPortalOnSetupAssistantEnrolledDevices] [-RequiresUserAuthentication] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile -DepOnboardingSettingId <String>
- -BodyParameter <IMicrosoftGraphEnrollmentProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile
- -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphEnrollmentProfile>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,27 +36,18 @@ New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile
  -InputObject <IDeviceManagementEnrollmentIdentity> [-AdditionalProperties <Hashtable>]
  [-ConfigurationEndpointUrl <String>] [-Description <String>] [-DisplayName <String>]
  [-EnableAuthenticationViaCompanyPortal] [-Id <String>] [-RequireCompanyPortalOnSetupAssistantEnrolledDevices]
- [-RequiresUserAuthentication] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RequiresUserAuthentication] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementDepOnboardingSettingEnrollmentProfile
+ -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphEnrollmentProfile> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to enrollmentProfiles for deviceManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -68,7 +55,7 @@ Create new navigation property to enrollmentProfiles for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +72,7 @@ Pre-staged device identities are assigned to this type of profile to apply the p
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentProfile
+Type: IMicrosoftGraphEnrollmentProfile
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -100,7 +87,7 @@ Accept wildcard characters: False
 Configuration endpoint url to use for Enrollment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of depOnboardingSetting
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -130,7 +117,7 @@ Accept wildcard characters: False
 Description of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +132,7 @@ Accept wildcard characters: False
 Name of the profile
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +147,7 @@ Accept wildcard characters: False
 Indicates to authenticate with Apple Setup Assistant instead of Company Portal.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +163,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -192,8 +179,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementEnrollmentIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -207,7 +194,7 @@ Accept wildcard characters: False
 Indicates that Company Portal is required on setup assistant enrolled devices
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +209,7 @@ Accept wildcard characters: False
 Indicates if the profile requires user authentication
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +224,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +240,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,13 +257,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentProfile
-
 ## NOTES
 
 ALIASES
@@ -324,4 +308,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[New-MgDeviceManagementDepOnboardingSettingEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSettingEnrollmentProfile?view=graph-powershell-v1.0)
 

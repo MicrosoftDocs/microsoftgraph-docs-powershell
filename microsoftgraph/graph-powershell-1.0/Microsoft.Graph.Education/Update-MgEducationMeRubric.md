@@ -57,8 +57,8 @@ After the assignment is published, an immutable copy of the rubric is made that 
 That rubric can be retrieved using GET /education/classes/acdefc6b-2dc6-4e71-b1e9-6d9810ab1793/assignments/cf6005fc-9e13-44a2-a6ac-a53322006454/rubric, but it cannot be updated.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -67,8 +67,12 @@ $params = @{
 }
 
 Update-MgEducationMeRubric -EducationRubricId $educationRubricId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgEducationMeRubric Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

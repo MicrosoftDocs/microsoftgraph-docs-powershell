@@ -17,13 +17,13 @@ Invoke function getAllMessages
 
 ### Get (Default)
 ```
-Get-MgAllUserChatMessage -UserId <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgAllUserChatMessage -UserId <String> [-Count] [-Filter <String>] [-Model <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgAllUserChatMessage -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>]
+Get-MgAllUserChatMessage -InputObject <IUsersFunctionsIdentity> [-Count] [-Filter <String>] [-Model <String>]
  [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
  [<CommonParameters>]
 ```
@@ -76,6 +76,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Model
+The payment model for the API
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

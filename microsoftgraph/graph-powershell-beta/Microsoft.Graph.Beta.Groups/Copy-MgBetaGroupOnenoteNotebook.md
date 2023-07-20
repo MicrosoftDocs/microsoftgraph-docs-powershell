@@ -44,6 +44,11 @@ Copy-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -39,19 +39,19 @@ Read the properties and relationships of a specific cloudPC object.
 
 ## EXAMPLES
 
-### Example 1
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId
 ```
 
-### Example 2
+### EXAMPLE 2
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC -CloudPCId $cloudPCId -Property "id,displayName,imageDisplayName,lastModifiedDateTime,lastRemoteActionResult,lastLoginResult,connectivityResult"
 ```
 
-### Example 3
+### EXAMPLE 3
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointCloudPC
@@ -319,4 +319,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointCloudPc?view=graph-powershell-v1.0)
-

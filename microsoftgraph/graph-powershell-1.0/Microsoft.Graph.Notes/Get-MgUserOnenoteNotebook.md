@@ -8,9 +8,7 @@ schema: 2.0.0
 # Get-MgSiteOnenoteSectionPage
 
 ## SYNOPSIS
-The collection of pages in the section.
-Read-only.
-Nullable.
+Retrieve a list of page objects from the specified section.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteNotebook?view=graph-powershell-beta)
@@ -24,9 +22,12 @@ Get-MgSiteOnenoteSectionPage -OnenoteSectionId <String> -SiteId <String> [-Expan
 ```
 
 ## DESCRIPTION
-The collection of pages in the section.
-Read-only.
-Nullable.
+Retrieve a list of page objects from the specified section.
+
+
+
+
+
 
 ## PARAMETERS
 

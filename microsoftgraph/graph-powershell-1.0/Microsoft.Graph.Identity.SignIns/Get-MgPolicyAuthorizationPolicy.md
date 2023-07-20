@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgPolicyAuthorizationPolicy
 
 ## SYNOPSIS
-The policy that controls Azure AD authorization settings.
+Retrieve the properties of an authorizationPolicy object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthorizationPolicy?view=graph-powershell-beta)
@@ -20,7 +20,7 @@ Get-MgPolicyAuthorizationPolicy [-ExpandProperty <String[]>] [-Property <String[
 ```
 
 ## DESCRIPTION
-The policy that controls Azure AD authorization settings.
+Retrieve the properties of an authorizationPolicy object.
 
 ## PARAMETERS
 

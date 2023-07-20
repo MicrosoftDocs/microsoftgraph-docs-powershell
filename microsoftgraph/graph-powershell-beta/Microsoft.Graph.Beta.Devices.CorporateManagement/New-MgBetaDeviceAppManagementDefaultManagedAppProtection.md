@@ -1819,7 +1819,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-MgDeviceAppMgtDefaultManagedAppProtection
+New-BetaDeviceAppMgtDefaultManagedAppProtection
 
 COMPLEX PARAMETER PROPERTIES
 

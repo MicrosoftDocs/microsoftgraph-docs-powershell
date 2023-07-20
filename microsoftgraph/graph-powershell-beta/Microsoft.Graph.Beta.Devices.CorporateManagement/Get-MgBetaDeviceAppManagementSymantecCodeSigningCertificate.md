@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtSymantecCodeSigningCertificate
+Get-BetaDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)

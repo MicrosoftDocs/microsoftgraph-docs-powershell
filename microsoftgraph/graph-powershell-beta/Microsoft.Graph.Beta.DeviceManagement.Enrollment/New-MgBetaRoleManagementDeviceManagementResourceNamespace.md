@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementdevicemanagementresourcenamespace
 schema: 2.0.0
@@ -10,39 +10,26 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceNamespaces for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaRoleManagementDeviceManagementResourceNamespace [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Name <String>] [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-Confirm] [-WhatIf]
+ [-Name <String>] [-ResourceActions <IMicrosoftGraphUnifiedRbacResourceAction[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementDeviceManagementResourceNamespace
- -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRbacResourceNamespace> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to resourceNamespaces for roleManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +37,7 @@ Create new navigation property to resourceNamespaces for roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +53,7 @@ unifiedRbacResourceNamespace
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
+Type: IMicrosoftGraphUnifiedRbacResourceNamespace
 Parameter Sets: Create
 Aliases:
 
@@ -82,7 +69,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +87,7 @@ Required.
 Supports $filter (eq, startsWith).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +103,7 @@ Operations that an authorized principal are allowed to perform.
 To construct, see NOTES section for RESOURCEACTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction[]
+Type: IMicrosoftGraphUnifiedRbacResourceAction[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +118,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +134,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,11 +151,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
-
 ## NOTES
 
 ALIASES
@@ -194,6 +179,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AuthenticationContextId <String>]`: 
     - `[Description <String>]`: Description for the action. Supports $filter (eq).
     - `[IsAuthenticationContextSettable <Boolean?>]`: 
+    - `[IsPrivileged <Boolean?>]`: 
     - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
     - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -215,6 +201,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AuthenticationContextId <String>]`: 
   - `[Description <String>]`: Description for the action. Supports $filter (eq).
   - `[IsAuthenticationContextSettable <Boolean?>]`: 
+  - `[IsPrivileged <Boolean?>]`: 
   - `[Name <String>]`: Name for the action within the resource namespace, such as microsoft.insights/programs/update. Can include slash character (/). Case insensitive. Required. Supports $filter (eq).
   - `[ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]`: unifiedRbacResourceScope
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -225,4 +212,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
+[New-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)
 

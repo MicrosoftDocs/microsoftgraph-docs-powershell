@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgTeamPrimaryChannelTab
 
 ## SYNOPSIS
-A collection of all the tabs in the channel.
-A navigation property.
+Retrieve the properties and relationships of the specified tab in a channel within a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -36,8 +35,8 @@ Get-MgTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <Stri
 ```
 
 ## DESCRIPTION
-A collection of all the tabs in the channel.
-A navigation property.
+Retrieve the properties and relationships of the specified tab in a channel within a team.
+
 
 ## PARAMETERS
 

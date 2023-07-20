@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Sites
-Module Guid: eba98241-563a-47bc-a2aa-da1f45846576
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Sites
+Module Guid: e45ab622-7f7c-48c5-88eb-8356fd60875a
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.sites
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -88,6 +88,12 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 ### [Copy-MgSiteOnenoteSectionPageToSection](Copy-MgSiteOnenoteSectionPageToSection.md)
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+### [Get-MgAdminSharepoint](Get-MgAdminSharepoint.md)
+Get sharepoint from admin
+
+### [Get-MgAdminSharepointSetting](Get-MgAdminSharepointSetting.md)
+Get the tenant-level settings for SharePoint and OneDrive.
 
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 The list of SharePoint sites in this group.
@@ -432,9 +438,8 @@ If the status is `failed`, the error and `@api.diagnostics` properties provide e
 Get the number of the resource
 
 ### [Get-MgGroupSiteOnenotePage](Get-MgGroupSiteOnenotePage.md)
-The pages in all OneNote notebooks that are owned by the user or group.
-Read-only.
-Nullable.
+Retrieve the properties and relationships of a page object.
+**Getting page information** Access a page's metadata by page identifier: **Getting page content** You can use the page's `content` endpoint to get the HTML content of a page: The `includeIDs=true` query option is used to update pages.
 
 ### [Get-MgGroupSiteOnenotePageContent](Get-MgGroupSiteOnenotePageContent.md)
 The page's HTML content.
@@ -1136,6 +1141,12 @@ Get the number of the resource
 ### [Get-MgSiteListSubscriptionCount](Get-MgSiteListSubscriptionCount.md)
 Get the number of the resource
 
+### [Get-MgSiteOperation](Get-MgSiteOperation.md)
+Get the status of a rich long-running operation on a site or a list.
+
+### [Get-MgSiteOperationCount](Get-MgSiteOperationCount.md)
+Get the number of the resource
+
 ### [Get-MgSitePermission](Get-MgSitePermission.md)
 Retrieve the properties and relationships of a permission object on a site.
 
@@ -1578,16 +1589,19 @@ Create a new section group in the specified notebook.
 Create a new onenoteSection in the specified section group.
 
 ### [New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage](New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOnenoteNotebookSectionPage](New-MgGroupSiteOnenoteNotebookSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOnenoteOperation](New-MgGroupSiteOnenoteOperation.md)
 Create new navigation property to operations for groups
 
 ### [New-MgGroupSiteOnenotePage](New-MgGroupSiteOnenotePage.md)
-Create new navigation property to pages for groups
+Create a new OneNote page in the default section of the default notebook.
+To create a page in a different section in the default notebook, you can use the `sectionName` query parameter.
+Example: `../onenote/pages?sectionName=My%20section` The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.
+If you're targeting other notebooks, you can create pages in a specified section.
 
 ### [New-MgGroupSiteOnenoteResource](New-MgGroupSiteOnenoteResource.md)
 Create new navigation property to resources for groups
@@ -1602,10 +1616,10 @@ Create new navigation property to sectionGroups for groups
 Create a new onenoteSection in the specified section group.
 
 ### [New-MgGroupSiteOnenoteSectionGroupSectionPage](New-MgGroupSiteOnenoteSectionGroupSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOnenoteSectionPage](New-MgGroupSiteOnenoteSectionPage.md)
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ### [New-MgGroupSiteOperation](New-MgGroupSiteOperation.md)
 Create new navigation property to operations for groups
@@ -1644,7 +1658,7 @@ Create new navigation property to relations for groups
 Create new navigation property to relations for groups
 
 ### [New-MgGroupSiteTermStoreSet](New-MgGroupSiteTermStoreSet.md)
-Create new navigation property to sets for groups
+Create a new set object.
 
 ### [New-MgGroupSiteTermStoreSetChild](New-MgGroupSiteTermStoreSetChild.md)
 Create a new term object.
@@ -1739,6 +1753,9 @@ Create new navigation property to operations for sites
 ### [New-MgSiteListSubscription](New-MgSiteListSubscription.md)
 Create new navigation property to subscriptions for sites
 
+### [New-MgSiteOperation](New-MgSiteOperation.md)
+Create new navigation property to operations for sites
+
 ### [New-MgSitePermission](New-MgSitePermission.md)
 Create a new permission object on a site.
 
@@ -1773,7 +1790,7 @@ Create new navigation property to relations for sites
 Create new navigation property to relations for sites
 
 ### [New-MgSiteTermStoreSet](New-MgSiteTermStoreSet.md)
-Create new navigation property to sets for sites
+Create a new set object.
 
 ### [New-MgSiteTermStoreSetChild](New-MgSiteTermStoreSetChild.md)
 Create a new term object.
@@ -1825,6 +1842,12 @@ Publishes a [contentType][] present in the content type hub site.
 
 ### [Publish-MgSiteListContentType](Publish-MgSiteListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
+
+### [Remove-MgAdminSharepoint](Remove-MgAdminSharepoint.md)
+Delete navigation property sharepoint for admin
+
+### [Remove-MgAdminSharepointSetting](Remove-MgAdminSharepointSetting.md)
+Delete navigation property settings for admin
 
 ### [Remove-MgGroupSite](Remove-MgGroupSite.md)
 The list of SharePoint sites in this group.
@@ -2085,6 +2108,9 @@ Delete navigation property operations for sites
 ### [Remove-MgSiteListSubscription](Remove-MgSiteListSubscription.md)
 Delete navigation property subscriptions for sites
 
+### [Remove-MgSiteOperation](Remove-MgSiteOperation.md)
+Delete navigation property operations for sites
+
 ### [Remove-MgSitePermission](Remove-MgSitePermission.md)
 Delete a permission object on a site.
 
@@ -2221,6 +2247,12 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgSiteListContentType](Unpublish-MgSiteListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
+### [Update-MgAdminSharepoint](Update-MgAdminSharepoint.md)
+Update the navigation property sharepoint in admin
+
+### [Update-MgAdminSharepointSetting](Update-MgAdminSharepointSetting.md)
+Update one or more tenant-level settings for SharePoint and OneDrive.
+
 ### [Update-MgGroupSite](Update-MgGroupSite.md)
 Update the navigation property sites in groups
 
@@ -2240,7 +2272,7 @@ Update the navigation property columns in groups
 Update a [content type][contentType].
 
 ### [Update-MgGroupSiteContentTypeColumn](Update-MgGroupSiteContentTypeColumn.md)
-Update the navigation property columns in groups
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgGroupSiteContentTypeColumnLink](Update-MgGroupSiteContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
@@ -2261,7 +2293,7 @@ Update the navigation property columns in groups
 Update the navigation property contentTypes in groups
 
 ### [Update-MgGroupSiteListContentTypeColumn](Update-MgGroupSiteListContentTypeColumn.md)
-Update the navigation property columns in groups
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgGroupSiteListContentTypeColumnLink](Update-MgGroupSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
@@ -2456,7 +2488,7 @@ Update the navigation property columns in sites
 Update a [content type][contentType].
 
 ### [Update-MgSiteContentTypeColumn](Update-MgSiteContentTypeColumn.md)
-Update the navigation property columns in sites
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgSiteContentTypeColumnLink](Update-MgSiteContentTypeColumnLink.md)
 Update the navigation property columnLinks in sites
@@ -2471,7 +2503,7 @@ Update the navigation property columns in sites
 Update the navigation property contentTypes in sites
 
 ### [Update-MgSiteListContentTypeColumn](Update-MgSiteListContentTypeColumn.md)
-Update the navigation property columns in sites
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgSiteListContentTypeColumnLink](Update-MgSiteListContentTypeColumnLink.md)
 Update the navigation property columnLinks in sites
@@ -2526,6 +2558,9 @@ Invoke action onenotePatchContent
 
 ### [Update-MgSiteOnenoteSectionPageContent](Update-MgSiteOnenoteSectionPageContent.md)
 Invoke action onenotePatchContent
+
+### [Update-MgSiteOperation](Update-MgSiteOperation.md)
+Update the navigation property operations in sites
 
 ### [Update-MgSitePermission](Update-MgSitePermission.md)
 Update an application permission object on a site.

@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: fa554c0e-0e97-439c-8b46-4d2ce929e823
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Files
+Module Guid: 2e514bd9-3e2b-47e4-9df6-cd15c180bc5a
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -1652,6 +1652,12 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 ### [Invoke-MgCheckoutDriveRoot](Invoke-MgCheckoutDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+### [Invoke-MgExtractDriveItemSensitivityLabel](Invoke-MgExtractDriveItemSensitivityLabel.md)
+Invoke action extractSensitivityLabels
+
+### [Invoke-MgExtractDriveRootSensitivityLabel](Invoke-MgExtractDriveRootSensitivityLabel.md)
+Invoke action extractSensitivityLabels
+
 ### [Invoke-MgFollowDriveItem](Invoke-MgFollowDriveItem.md)
 Follow a driveItem.
 
@@ -2503,6 +2509,9 @@ The content stream, if the item represents a file.
 ### [Set-MgDriveItemListItemDriveItemContent](Set-MgDriveItemListItemDriveItemContent.md)
 The content stream, if the item represents a file.
 
+### [Set-MgDriveItemSensitivityLabel](Set-MgDriveItemSensitivityLabel.md)
+Invoke action assignSensitivityLabel
+
 ### [Set-MgDriveItemVersionContent](Set-MgDriveItemVersionContent.md)
 The content stream for this version of the item.
 
@@ -2517,6 +2526,9 @@ The content stream, if the item represents a file.
 
 ### [Set-MgDriveRootListItemDriveItemContent](Set-MgDriveRootListItemDriveItemContent.md)
 The content stream, if the item represents a file.
+
+### [Set-MgDriveRootSensitivityLabel](Set-MgDriveRootSensitivityLabel.md)
+Invoke action assignSensitivityLabel
 
 ### [Set-MgDriveRootVersionContent](Set-MgDriveRootVersionContent.md)
 The content stream for this version of the item.
@@ -2633,9 +2645,8 @@ Unpublish a [contentType][] from a content type hub site.
 Update property mailboxSettings value.
 
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a driveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's **parentReference** property.
 
 ### [Update-MgDriveItemAnalytic](Update-MgDriveItemAnalytic.md)
 Update the navigation property analytics in drives
@@ -2699,7 +2710,7 @@ Update the navigation property columns in drives
 Update the navigation property contentTypes in drives
 
 ### [Update-MgDriveListContentTypeColumn](Update-MgDriveListContentTypeColumn.md)
-Update the navigation property columns in drives
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgDriveListContentTypeColumnLink](Update-MgDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in drives
@@ -2799,9 +2810,8 @@ Update the navigation property drives in groups
 Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveItem](Update-MgGroupDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a driveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's **parentReference** property.
 
 ### [Update-MgGroupDriveItemAnalytic](Update-MgGroupDriveItemAnalytic.md)
 Update the navigation property analytics in groups
@@ -2865,7 +2875,7 @@ Update the navigation property columns in groups
 Update the navigation property contentTypes in groups
 
 ### [Update-MgGroupDriveListContentTypeColumn](Update-MgGroupDriveListContentTypeColumn.md)
-Update the navigation property columns in groups
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgGroupDriveListContentTypeColumnLink](Update-MgGroupDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in groups
@@ -2974,7 +2984,7 @@ Update the navigation property columns in shares
 Update the navigation property contentTypes in shares
 
 ### [Update-MgShareListContentTypeColumn](Update-MgShareListContentTypeColumn.md)
-Update the navigation property columns in shares
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgShareListContentTypeColumnLink](Update-MgShareListContentTypeColumnLink.md)
 Update the navigation property columnLinks in shares
@@ -3028,9 +3038,8 @@ Update the navigation property drives in users
 Update property mailboxSettings value.
 
 ### [Update-MgUserDriveItem](Update-MgUserDriveItem.md)
-To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
-This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
-Items cannot be moved between Drives using this request.
+Update the metadata for a driveItem by ID or path.
+You can also use update to move an item to another parent by updating the item's **parentReference** property.
 
 ### [Update-MgUserDriveItemAnalytic](Update-MgUserDriveItemAnalytic.md)
 Update the navigation property analytics in users
@@ -3094,7 +3103,7 @@ Update the navigation property columns in users
 Update the navigation property contentTypes in users
 
 ### [Update-MgUserDriveListContentTypeColumn](Update-MgUserDriveListContentTypeColumn.md)
-Update the navigation property columns in users
+Update a [site][], a [list][], or a [content type][contentType] [column][columnDefinition].
 
 ### [Update-MgUserDriveListContentTypeColumnLink](Update-MgUserDriveListContentTypeColumnLink.md)
 Update the navigation property columnLinks in users

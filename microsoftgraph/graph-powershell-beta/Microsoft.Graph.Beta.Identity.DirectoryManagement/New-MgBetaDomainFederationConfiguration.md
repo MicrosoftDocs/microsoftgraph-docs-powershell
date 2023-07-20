@@ -54,28 +54,30 @@ New-MgBetaDomainFederationConfiguration -InputObject <IIdentityDirectoryManageme
 Create a new internalDomainFederation object.
 
 ## EXAMPLES
+### Example 1: Configure federation settings for a federated domain
 
-### Example 1
 ```powershell
-New-MgBetaDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List
+New-MgBetaDomainFederationConfiguration -DomainId "contoso.com" -ActiveSignInUri "https://sts.contoso.com/adfs/services/trust/2005/usernamemixed" -DisplayName "Contoso" -IssuerUri "http://contoso.com/adfs/services/trust/" -MetadataExchangeUri "https://sts.contoso.com/adfs/services/trust/mex" -NextSigningCertificate "MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9" -PassiveSignInUri "https://sts.contoso.com/adfs/ls/" -SignOutUri "https://sts.contoso.com/adfs/ls/" -SigningCertificate "MIIC3jCCAcagAwIBAgIQFsO0R8deG4h" -FederatedIdpMfaBehavior "rejectMfaByFederatedIdp" | Format-List 
 
-ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed
-DisplayName                           : Contoso
-FederatedIdpMfaBehavior               : rejectMfaByFederatedIdp
-Id                                    : 2a8ce608-bb34-473f-9e0f-f373ee4cbc5a
-IsSignedAuthenticationRequestRequired :
-IssuerUri                             : http://contoso.com/adfs/services/trust/
-MetadataExchangeUri                   : https://sts.contoso.com/adfs/services/trust/mex
-NextSigningCertificate                : MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9
-PassiveSignInUri                      : https://sts.contoso.com/adfs/ls/
-PreferredAuthenticationProtocol       : wsFed
-PromptLoginBehavior                   :
-SignOutUri                            : https://sts.deverett.info/adfs/ls/
-SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h
-SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus
-AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#domains('contoso.com')/federationConfiguration/$entity]}
-
+ActiveSignInUri                       : https://sts.deverett.info/adfs/services/trust/2005/usernamemixed 
+DisplayName                           : Contoso 
+FederatedIdpMfaBehavior               : rejectMfaByFederatedIdp 
+Id                                    : 2a8ce608-bb34-473f-9e0f-f373ee4cbc5a 
+IsSignedAuthenticationRequestRequired : 
+IssuerUri                             : http://contoso.com/adfs/services/trust/ 
+MetadataExchangeUri                   : https://sts.contoso.com/adfs/services/trust/mex 
+NextSigningCertificate                : MIIC3jCCAcagAwIBAgIQEt0T0G5GPZ9 
+PassiveSignInUri                      : https://sts.contoso.com/adfs/ls/ 
+PreferredAuthenticationProtocol       : wsFed 
+PromptLoginBehavior                   :  
+SignOutUri                            : https://sts.deverett.info/adfs/ls/ 
+SigningCertificate                    : MIIC3jCCAcagAwIBAgIQFsO0R8deG4h 
+SigningCertificateUpdateStatus        : Microsoft.Graph.PowerShell.Models.MicrosoftGraphSigningCertificateUpdateStatus 
+AdditionalProperties                  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#domains('contoso.com')/federationConfiguration/$entity]} 
 ```
+
+This examples creates new federation settings for the specified domain.
+
 ## PARAMETERS
 
 
@@ -440,6 +442,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
   - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
   - `[CommandId <String>]`: The unique identifier of command
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -456,6 +459,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -467,7 +472,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 

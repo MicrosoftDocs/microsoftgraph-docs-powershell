@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage
 
 ## SYNOPSIS
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPage?view=graph-powershell-beta)
@@ -49,7 +49,7 @@ New-MgGroupSiteOnenoteNotebookSectionGroupSectionPage -InputObject <ISitesIdenti
 ```
 
 ## DESCRIPTION
-Create new navigation property to pages for groups
+Create a new page in the specified section.
 
 ## PARAMETERS
 

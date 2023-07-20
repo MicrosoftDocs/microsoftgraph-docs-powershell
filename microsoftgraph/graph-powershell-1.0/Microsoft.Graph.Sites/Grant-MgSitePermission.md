@@ -45,11 +45,10 @@ Grant-MgSitePermission -InputObject <ISitesIdentity>
 Grant users access to a link represented by a [permission][].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 $params = @{
 	Recipients = @(
@@ -66,6 +65,11 @@ $params = @{
 }
 
 Grant-MgSharePermission -SharedDriveItemId $sharedDriveItemId -BodyParameter $params
+```
+This example shows how to use the Grant-MgSitePermission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

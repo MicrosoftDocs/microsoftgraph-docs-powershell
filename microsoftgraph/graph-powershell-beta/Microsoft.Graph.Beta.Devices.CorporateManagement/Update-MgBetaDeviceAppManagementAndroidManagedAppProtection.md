@@ -36,6 +36,7 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -AndroidManagedAppPr
  [-AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction>]
  [-AppActionIfDevicePasscodeComplexityLessThanMedium <ManagedAppRemediationAction>]
  [-AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction>]
+ [-AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
  [-AppGroupType <TargetedManagedAppGroupType>] [-ApprovedKeyboards <IMicrosoftGraphKeyValuePair[]>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>]
@@ -103,6 +104,7 @@ Update-MgBetaDeviceAppManagementAndroidManagedAppProtection -InputObject <IDevic
  [-AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction>]
  [-AppActionIfDevicePasscodeComplexityLessThanMedium <ManagedAppRemediationAction>]
  [-AppActionIfMaximumPinRetriesExceeded <ManagedAppRemediationAction>]
+ [-AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction>]
  [-AppActionIfUnableToAuthenticateUser <ManagedAppRemediationAction>]
  [-AppGroupType <TargetedManagedAppGroupType>] [-ApprovedKeyboards <IMicrosoftGraphKeyValuePair[]>]
  [-Apps <IMicrosoftGraphManagedMobileApp[]>]
@@ -457,6 +459,21 @@ Accept wildcard characters: False
 ```
 
 ### -AppActionIfMaximumPinRetriesExceeded
+An admin initiated action to be applied on a managed app.
+
+```yaml
+Type: ManagedAppRemediationAction
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppActionIfSamsungKnoxAttestationRequired
 An admin initiated action to be applied on a managed app.
 
 ```yaml
@@ -1758,7 +1775,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-MgDeviceAppMgtAndroidManagedAppProtection
+Update-BetaDeviceAppMgtAndroidManagedAppProtection
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -1861,6 +1878,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AppActionIfDevicePasscodeComplexityLessThanHigh <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfDevicePasscodeComplexityLessThanLow <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[AppActionIfDevicePasscodeComplexityLessThanMedium <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
+  - `[AppActionIfSamsungKnoxAttestationRequired <ManagedAppRemediationAction?>]`: An admin initiated action to be applied on a managed app.
   - `[ApprovedKeyboards <IMicrosoftGraphKeyValuePair[]>]`: If Keyboard Restriction is enabled, only keyboards in this approved list will be allowed. A key should be Android package id for a keyboard and value should be a friendly name
     - `[Name <String>]`: Name for this key-value pair
     - `[Value <String>]`: Value for this key-value pair

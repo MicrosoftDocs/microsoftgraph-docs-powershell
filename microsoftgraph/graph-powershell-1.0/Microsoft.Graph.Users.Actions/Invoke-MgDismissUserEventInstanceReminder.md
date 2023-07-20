@@ -51,27 +51,18 @@ If the event allows proposals for new times, on declining the event, an invitee 
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
-$params = @{
-	Comment = "I won't be able to make this week. How about next week?"
-	SendResponse = $true
-	ProposedNewTime = @{
-		Start = @{
-			DateTime = "2019-12-02T18:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-		End = @{
-			DateTime = "2019-12-02T19:00:00"
-			TimeZone = "Pacific Standard Time"
-		}
-	}
-}
+
 # A UPN can also be used as -UserId.
-Invoke-MgDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+Invoke-MgDismissUserEventReminder -UserId $userId -EventId $eventId
 ```
+This example shows how to use the Invoke-MgDismissUserEventInstanceReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -282,6 +273,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

@@ -66,7 +66,7 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-.
+The description of the alert.
 
 ```yaml
 Type: String
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-.
+The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Azure portal.
 
 ```yaml
 Type: String
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -HowToPrevent
-.
+Long-form text that indicates the ways to prevent the alert from being triggered in your tenant.
 
 ```yaml
 Type: String
@@ -127,7 +127,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsConfigurable
-.
+true if the alert configuration can be customized in the tenant, and false otherwise.
+For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.
 
 ```yaml
 Type: SwitchParameter
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsRemediatable
-.
+true if the alert can be remediated, and false otherwise.
 
 ```yaml
 Type: SwitchParameter
@@ -157,7 +158,8 @@ Accept wildcard characters: False
 ```
 
 ### -MitigationSteps
-.
+The methods to mitigate the alert when it's triggered in the tenant.
+For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments.
 
 ```yaml
 Type: String
@@ -172,7 +174,9 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeId
-.
+The identifier of the scope where the alert is related.
+/ is the only supported one for the tenant.
+Supports $filter (eq, ne).
 
 ```yaml
 Type: String
@@ -187,7 +191,8 @@ Accept wildcard characters: False
 ```
 
 ### -ScopeType
-.
+The type of scope where the alert is created.
+DirectoryRole is the only currently supported scope type for Azure AD Roles.
 
 ```yaml
 Type: String
@@ -202,7 +207,8 @@ Accept wildcard characters: False
 ```
 
 ### -SecurityImpact
-.
+Security impact of the alert.
+For example, it could be information leaks or unauthorized access.
 
 ```yaml
 Type: String
@@ -283,15 +289,15 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>`: unifiedRoleManagementAlertDefinition
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Description <String>]`: 
-  - `[DisplayName <String>]`: 
-  - `[HowToPrevent <String>]`: 
-  - `[IsConfigurable <Boolean?>]`: 
-  - `[IsRemediatable <Boolean?>]`: 
-  - `[MitigationSteps <String>]`: 
-  - `[ScopeId <String>]`: 
-  - `[ScopeType <String>]`: 
-  - `[SecurityImpact <String>]`: 
+  - `[Description <String>]`: The description of the alert.
+  - `[DisplayName <String>]`: The friendly display name that renders in Privileged Identity Management (PIM) alerts in the Azure portal.
+  - `[HowToPrevent <String>]`: Long-form text that indicates the ways to prevent the alert from being triggered in your tenant.
+  - `[IsConfigurable <Boolean?>]`: true if the alert configuration can be customized in the tenant, and false otherwise. For example, the number and percentage thresholds of the 'There are too many global administrators' alert can be configured by users, while the 'This organization does not have Azure AD Premium P2' cannot be configured, because the criteria is restricted.
+  - `[IsRemediatable <Boolean?>]`: true if the alert can be remediated, and false otherwise.
+  - `[MitigationSteps <String>]`: The methods to mitigate the alert when it's triggered in the tenant. For example, to mitigate the 'There are too many global administrators', you could remove redundant privileged role assignments.
+  - `[ScopeId <String>]`: The identifier of the scope where the alert is related. / is the only supported one for the tenant. Supports $filter (eq, ne).
+  - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD Roles.
+  - `[SecurityImpact <String>]`: Security impact of the alert. For example, it could be information leaks or unauthorized access.
   - `[SeverityLevel <String>]`: alertSeverity
 
 ## RELATED LINKS

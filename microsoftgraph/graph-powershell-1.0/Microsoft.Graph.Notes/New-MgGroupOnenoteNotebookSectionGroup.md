@@ -52,6 +52,7 @@ New-MgGroupOnenoteNotebookSectionGroup -InputObject <INotesIdentity>
 ## DESCRIPTION
 Create a new section group in the specified notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

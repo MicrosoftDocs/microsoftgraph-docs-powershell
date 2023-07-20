@@ -38,14 +38,18 @@ Get-MgSiteContentTypeColumn -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 Retrieve the metadata for a [site][], a [list][], or a [contentType][] [column][columnDefinition].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteContentTypeColumn -SiteId $siteId -ContentTypeId $contentTypeId -ColumnDefinitionId $columnDefinitionId
-
 ```
+This example shows how to use the Get-MgSiteContentTypeColumn Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

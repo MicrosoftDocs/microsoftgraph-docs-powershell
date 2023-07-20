@@ -31,3 +31,5 @@ beta, Get-MgBetaDirectoryObjectUserOwnedObject, /directoryObjects/getUserOwnedOb
 beta, New-MgBetaDirectoryObject, /directoryObjects
 beta, Test-MgBetaDirectoryObjectProperty, /directoryObjects/validateProperties
 beta, Update-MgBetaDirectoryObject, /directoryObjects/{directoryObject-id}
+beta, Get-MgBetaDirectoryObjectCount, /directoryObjects/$count
+v1.0, Get-MgDirectoryObjectCount, /directoryObjects/$count

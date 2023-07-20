@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDeviceAppManagement
 
 ## SYNOPSIS
-Update deviceAppManagement
+Update the properties of a deviceAppManagement object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagement?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgDeviceAppManagement -BodyParameter <IMicrosoftGraphDeviceAppManagement>
 ```
 
 ## DESCRIPTION
-Update deviceAppManagement
+Update the properties of a deviceAppManagement object.
 
 ## PARAMETERS
 
@@ -427,7 +427,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-MgDeviceAppMgt
+Update-DeviceAppMgt
 
 COMPLEX PARAMETER PROPERTIES
 

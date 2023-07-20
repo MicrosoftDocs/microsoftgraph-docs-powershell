@@ -139,7 +139,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Remove-MgDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary
+Remove-BetaDeviceAppMgtAndroidManagedAppProtectionDeploymentSummary
 
 COMPLEX PARAMETER PROPERTIES
 

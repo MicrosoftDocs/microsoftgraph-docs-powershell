@@ -30,6 +30,11 @@ Get-MgUserLastSharedMethodInsight -InputObject <IPeopleIdentity> [-ExpandPropert
 ## DESCRIPTION
 Get lastSharedMethod from users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

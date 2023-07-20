@@ -52,8 +52,7 @@ ServicePrincipals that don't have any existing valid certificates (i.e.: no cert
 Update servicePrincipal can be used to perform an update instead.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Add-MgServicePrincipalKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
@@ -67,8 +66,9 @@ $params = @{
 }
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Add-MgServicePrincipalKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Add-MgServicePrincipalKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
@@ -84,6 +84,8 @@ $params = @{
 }
 Add-MgServicePrincipalKey -ServicePrincipalId $servicePrincipalId -BodyParameter $params
 ```
+This example shows how to use the Add-MgServicePrincipalKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -313,4 +315,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The date and time at which the password becomes valid. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Optional.
 
 ## RELATED LINKS
-

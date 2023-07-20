@@ -44,14 +44,18 @@ This resource type is also the base type for the richLongRunningOperation object
 The possible states of the long-running operation are `notStarted`, `running`, `succeeded`, `failed`, `unknownFutureValue` where `succeeded` and `failed` are terminal states.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgUserAuthenticationOperation -UserId $userId -LongRunningOperationId $longRunningOperationId
-
 ```
+This example shows how to use the Get-MgUserAuthenticationOperation Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

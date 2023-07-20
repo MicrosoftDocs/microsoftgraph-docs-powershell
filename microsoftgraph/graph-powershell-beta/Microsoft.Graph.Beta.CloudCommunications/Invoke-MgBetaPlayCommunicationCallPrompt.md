@@ -49,8 +49,7 @@ Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Invoke-MgBetaPlayCommunicationCallPrompt Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -69,6 +68,8 @@ $params = @{
 }
 Invoke-MgBetaPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaPlayCommunicationCallPrompt Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

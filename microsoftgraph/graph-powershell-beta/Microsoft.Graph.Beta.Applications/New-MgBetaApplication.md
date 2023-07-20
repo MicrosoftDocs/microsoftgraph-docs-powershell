@@ -55,18 +55,20 @@ New-MgBetaApplication -BodyParameter <IMicrosoftGraphApplication> [-WhatIf] [-Co
 Create a new application object.
 
 ## EXAMPLES
+### Example 1: Create a new application
 
-### Example 1
 ```powershell
 New-MgBetaApplication -DisplayName 'New app' | 
   Format-List Id, DisplayName, AppId, SignInAudience, PublisherDomain
-```
 
 Id              : 0f0aec7b-ac5b-4f89-9fac-e9044ba5a309
 DisplayName     : New app
 AppId           : c678b75d-1012-4466-8655-1672192232b4
 SignInAudience  : AzureADandPersonalMicrosoftAccount
 PublisherDomain : M365B977454.onmicrosoft.com
+```
+
+This example creates a new application.
 
 ## PARAMETERS
 
@@ -1031,7 +1033,7 @@ To create the parameters described below, construct a hash table containing the 
 
 `AUTHENTICATIONBEHAVIORS <IMicrosoftGraphAuthenticationBehaviors>`: authenticationBehaviors
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+  - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
   - `[RequireClientServicePrincipal <Boolean?>]`: 
 
 `BODYPARAMETER <IMicrosoftGraphApplication>`: application
@@ -1087,7 +1089,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
   - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+    - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
     - `[RequireClientServicePrincipal <Boolean?>]`: 
   - `[Certification <IMicrosoftGraphCertification>]`: certification
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1519,7 +1521,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
     - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+      - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
       - `[RequireClientServicePrincipal <Boolean?>]`: 
     - `[Certification <IMicrosoftGraphCertification>]`: certification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

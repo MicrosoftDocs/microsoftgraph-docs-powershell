@@ -41,14 +41,18 @@ New-MgBetaEntitlementManagementConnectedOrganization [-AdditionalProperties <Has
 Create a new connectedOrganization object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaEntitlementManagementConnectedOrganization
-
 ```
+This example shows how to use the New-MgBetaBetaEntitlementManagementConnectedOrganization Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -48,8 +48,7 @@ Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Restore-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -57,6 +56,8 @@ $params = @{
 }
 Restore-MgBetaDeviceManagementVirtualEndpointCloudPc -CloudPCId $cloudPCId -BodyParameter $params
 ```
+This example shows how to use the Restore-MgBetaDeviceManagementVirtualEndpointCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -37,8 +37,8 @@ Create a new accessPackageResourceRequest object to request the addition of a re
 A resource must be included in an access package catalog before a role of that resource can be added to an access package.
 
 ## EXAMPLES
+### Example 1: Create a new access package resource request
 
-### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All', 'Group.ReadWrite.All'
 $accessPackageResource = @{
@@ -46,7 +46,6 @@ $accessPackageResource = @{
   OriginId= "b5cd9d19-91c0-4622-93e2-537ad8a0b3ad"
   }
 New-MgBetaEntitlementManagementAccessPackageResourceRequest -CatalogId '54152ecb-c65d-47f2-8a4d-ba2732de0a7b' -RequestType "AdminAdd" -AccessPackageResource $accessPackageResource
-```
 
 AccessPackageResource : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResource
 CatalogId             : 54152ecb-c65d-47f2-8a4d-ba2732de0a7b
@@ -59,7 +58,10 @@ RequestState          : Delivered
 RequestStatus         : Fulfilled
 RequestType           : AdminAdd
 Requestor             : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageSubject
-AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}
+AdditionalProperties  : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackageResourceRequests/$entity]}                                                            
+```
+
+This example creates a new resource request for addition of a resource to an access package catalog.
 
 ## PARAMETERS
 
@@ -437,7 +439,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Requestor <IMicrosoftGraphAccessPackageSubject>]`: accessPackageSubject
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[AltSecId <String>]`: 
+    - `[AltSecId <String>]`: Not Supported.
     - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -456,7 +458,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ConnectedOrganizationId <String>]`: The identifier of the connected organization of the subject.
     - `[DisplayName <String>]`: The display name of the subject.
     - `[Email <String>]`: The email address of the subject.
-    - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
+    - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant. Alternate key.
     - `[OnPremisesSecurityIdentifier <String>]`: 
     - `[PrincipalName <String>]`: The principal name, if known, of the subject.
     - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle
@@ -465,7 +467,7 @@ To create the parameters described below, construct a hash table containing the 
 `REQUESTOR <IMicrosoftGraphAccessPackageSubject>`: accessPackageSubject
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[AltSecId <String>]`: 
+  - `[AltSecId <String>]`: Not Supported.
   - `[ConnectedOrganization <IMicrosoftGraphConnectedOrganization>]`: connectedOrganization
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -484,7 +486,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ConnectedOrganizationId <String>]`: The identifier of the connected organization of the subject.
   - `[DisplayName <String>]`: The display name of the subject.
   - `[Email <String>]`: The email address of the subject.
-  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant.
+  - `[ObjectId <String>]`: The object identifier of the subject. null if the subject is not yet a user in the tenant. Alternate key.
   - `[OnPremisesSecurityIdentifier <String>]`: 
   - `[PrincipalName <String>]`: The principal name, if known, of the subject.
   - `[SubjectLifecycle <String>]`: accessPackageSubjectLifecycle

@@ -49,8 +49,8 @@ Reply to a thread in a group conversation and add a new post to it.
 You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ## EXAMPLES
+### Example 1: Include a file attachment
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -71,9 +71,13 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ```
-### Example 2
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Include an item attachment
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -97,9 +101,13 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ```
-### Example 3
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Include a reference attachment
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 
@@ -123,8 +131,12 @@ $params = @{
 }
 
 Invoke-MgBetaReplyGroupThread -GroupId $groupId -ConversationThreadId $conversationThreadId -BodyParameter $params
-
 ```
+This example shows how to use the Invoke-MgBetaReplyGroupConversationThread Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

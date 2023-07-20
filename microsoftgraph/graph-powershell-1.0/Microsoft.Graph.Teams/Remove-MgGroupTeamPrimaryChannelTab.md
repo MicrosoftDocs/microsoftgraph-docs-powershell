@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgGroupTeamPrimaryChannelTab
 
 ## SYNOPSIS
-Delete navigation property tabs for groups
+Removes (unpins) a tab from the specified channel within a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-IfMatch <Str
 ```
 
 ## DESCRIPTION
-Delete navigation property tabs for groups
+Removes (unpins) a tab from the specified channel within a team.
 
 ## PARAMETERS
 

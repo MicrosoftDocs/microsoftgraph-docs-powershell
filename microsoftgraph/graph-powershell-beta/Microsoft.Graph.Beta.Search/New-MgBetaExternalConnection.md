@@ -41,8 +41,8 @@ New-MgBetaExternalConnection -BodyParameter <IMicrosoftGraphExternalConnectorsEx
 Create a new externalConnection.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
@@ -53,8 +53,12 @@ $params = @{
 }
 
 New-MgBetaExternalConnection -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaExternalConnection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ActivitySettings

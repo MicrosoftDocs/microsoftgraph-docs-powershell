@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment
 
 ## SYNOPSIS
-The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+The associated group assignments for the Windows Defender Application Control Supplemental Policy.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWdacSupplementalPolicyAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWdacSupplementalPolicyAssignment?view=graph-powershell-v1.0)
@@ -39,7 +39,7 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicyAssignment
 ```
 
 ## DESCRIPTION
-The associated group assignments for this WindowsDefenderApplicationControl supplemental policy.
+The associated group assignments for the Windows Defender Application Control Supplemental Policy.
 
 ## PARAMETERS
 
@@ -253,7 +253,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtWdacSupplementalPolicyAssignment
+Get-BetaDeviceAppMgtWdacSupplementalPolicyAssignment
 
 COMPLEX PARAMETER PROPERTIES
 

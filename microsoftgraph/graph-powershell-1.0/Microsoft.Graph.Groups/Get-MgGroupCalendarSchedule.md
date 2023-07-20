@@ -20,15 +20,16 @@ This allows you to maintain and synchronize a local store of events in the speci
 
 ### Delta (Default)
 ```
-Get-MgGroupCalendarEventDelta -GroupId <String> [-Filter <String>] [-Property <String[]>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
- [<CommonParameters>]
+Get-MgGroupCalendarEventDelta -GroupId <String> -EndDateTime <String> -StartDateTime <String>
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### DeltaViaIdentity
 ```
-Get-MgGroupCalendarEventDelta -InputObject <IGroupsIdentity> [-Filter <String>] [-Property <String[]>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-Count] [<CommonParameters>]
+Get-MgGroupCalendarEventDelta -InputObject <IGroupsIdentity> -EndDateTime <String> -StartDateTime <String>
+ [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
+ [-Count] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,6 +37,11 @@ Get a set of event resources that have been added, deleted, or updated in a **ca
 Typically, synchronizing events in a **calendarView** in a local store entails a round of multiple **delta** function calls.
 The initial call is a full synchronization, and every subsequent **delta** call in the same round gets the incremental changes (additions, deletions, or updates).
 This allows you to maintain and synchronize a local store of events in the specified **calendarView**, without having to fetch all the events of that calendar from the server every time.
+
+
+
+
+
 
 ## PARAMETERS
 
@@ -79,6 +85,22 @@ Parameter Sets: Delta
 Aliases: CV
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -EndDateTime
+The end date and time of the time range in the function, represented in ISO 8601 format.
+For example, 2019-11-08T20:00:00-08:00
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -185,6 +207,22 @@ Parameter Sets: (All)
 Aliases: OrderBy
 
 Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -StartDateTime
+The start date and time of the time range in the function, represented in ISO 8601 format.
+For example, 2019-11-08T20:00:00-08:00
+
+```yaml
+Type: String
+Parameter Sets: (All)
+Aliases:
+
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
-Get virtualAppointment from users
+Read the properties and relationships of a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-v1.0)
@@ -28,7 +28,12 @@ Get-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunications
 ```
 
 ## DESCRIPTION
-Get virtualAppointment from users
+Read the properties and relationships of a virtualAppointment object.
+
+
+
+
+
 
 ## PARAMETERS
 

@@ -47,8 +47,7 @@ Get-MgBetaApplicationSynchronizationAccessToken -InputObject <IApplicationsIdent
 Acquire an OAuth Access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaApplicationSynchronizationAccessToken Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
@@ -60,6 +59,8 @@ $params = @{
 }
 Get-MgBetaApplicationSynchronizationAccessToken -ApplicationId $applicationId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaApplicationSynchronizationAccessToken Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

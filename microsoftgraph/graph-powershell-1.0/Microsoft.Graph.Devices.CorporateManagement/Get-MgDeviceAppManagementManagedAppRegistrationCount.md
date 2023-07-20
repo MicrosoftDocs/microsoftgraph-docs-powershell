@@ -66,7 +66,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtManagedAppRegistrationCount
+Get-DeviceAppMgtManagedAppRegistrationCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedAppRegistrationCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedAppRegistrationCount?view=graph-powershell-beta)

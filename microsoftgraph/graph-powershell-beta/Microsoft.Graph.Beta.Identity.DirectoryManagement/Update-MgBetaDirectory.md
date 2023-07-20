@@ -29,7 +29,8 @@ Update-MgBetaDirectory [-AdditionalProperties <Hashtable>]
  [-OnPremisesSynchronization <IMicrosoftGraphOnPremisesDirectorySynchronization[]>]
  [-OutboundSharedUserProfiles <IMicrosoftGraphOutboundSharedUserProfile[]>]
  [-Recommendations <IMicrosoftGraphRecommendation[]>]
- [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]
+ [-Subscriptions <IMicrosoftGraphCompanySubscription[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -298,6 +299,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Subscriptions
+.
+To construct, see NOTES section for SUBSCRIPTIONS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphCompanySubscription[]
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -354,7 +371,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
   - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is false. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so cannot be changed later.
+  - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is false. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so cannot be changed later.  For more information about working with restricted management administrative units, see Restricted management administrative units in Azure Active Directory.
   - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -383,7 +400,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DisplayName <String>]`: Display name for the administrative unit. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values), $search, and $orderBy.
     - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for this administrative unit. Nullable.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
-    - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is false. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so cannot be changed later.
+    - `[IsMemberManagementRestricted <Boolean?>]`: true if members of this administrative unit should be treated as sensitive, which requires specific permissions to manage. Default value is false. Use this property to define administrative units whose roles don't inherit from tenant-level administrators, and management of individual member objects is limited to administrators scoped to a restricted management administrative unit. Immutable, so cannot be changed later.  For more information about working with restricted management administrative units, see Restricted management administrative units in Azure Active Directory.
     - `[Members <IMicrosoftGraphDirectoryObject[]>]`: Users and groups that are members of this administrative unit. Supports $expand.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
@@ -443,8 +460,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
     - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-      - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
     - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
     - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -545,6 +562,21 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharedEmailDomains <IMicrosoftGraphSharedEmailDomain[]>]`: 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[ProvisioningStatus <String>]`: 
+  - `[Subscriptions <IMicrosoftGraphCompanySubscription[]>]`: 
+    - `[Id <String>]`: The unique identifier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[IsTrial <Boolean?>]`: 
+    - `[NextLifecycleDateTime <DateTime?>]`: 
+    - `[OcpSubscriptionId <String>]`: 
+    - `[ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]`: 
+      - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+      - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+      - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+      - `[ServicePlanName <String>]`: The name of the service plan.
+    - `[SkuId <String>]`: 
+    - `[SkuPartNumber <String>]`: 
+    - `[Status <String>]`: 
+    - `[TotalLicenses <Int32?>]`: 
 
 `CERTIFICATEAUTHORITIES <IMicrosoftGraphCertificateAuthorityPath>`: certificateAuthorityPath
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -598,8 +630,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
   - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-    - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-    - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
   - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
   - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
   - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -693,8 +725,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AddedDateTime <DateTime?>]`: The date and time when the impactedResource object was initially associated with the recommendation.
     - `[AdditionalDetails <IMicrosoftGraphKeyValue[]>]`: Additional information unique to the impactedResource to help contextualize the recommendation.
-      - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-      - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+      - `[Key <String>]`: Key.
+      - `[Value <String>]`: Value.
     - `[ApiUrl <String>]`: The URL link to the corresponding Azure AD resource.
     - `[DisplayName <String>]`: Friendly name of the Azure AD resource.
     - `[LastModifiedBy <String>]`: Name of the user or service that last updated the status.
@@ -722,6 +754,22 @@ To create the parameters described below, construct a hash table containing the 
 `SHAREDEMAILDOMAINS <IMicrosoftGraphSharedEmailDomain[]>`: .
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[ProvisioningStatus <String>]`: 
+
+`SUBSCRIPTIONS <IMicrosoftGraphCompanySubscription[]>`: .
+  - `[Id <String>]`: The unique identifier for an entity. Read-only.
+  - `[CreatedDateTime <DateTime?>]`: 
+  - `[IsTrial <Boolean?>]`: 
+  - `[NextLifecycleDateTime <DateTime?>]`: 
+  - `[OcpSubscriptionId <String>]`: 
+  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]`: 
+    - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
+    - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
+    - `[ServicePlanId <String>]`: The unique identifier of the service plan.
+    - `[ServicePlanName <String>]`: The name of the service plan.
+  - `[SkuId <String>]`: 
+  - `[SkuPartNumber <String>]`: 
+  - `[Status <String>]`: 
+  - `[TotalLicenses <Int32?>]`: 
 
 ## RELATED LINKS
 [Update-MgDirectory](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectory?view=graph-powershell-v1.0)

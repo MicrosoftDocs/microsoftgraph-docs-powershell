@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+Create a new telecomExpenseManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
@@ -29,7 +29,7 @@ New-MgDeviceManagementTelecomExpenseManagementPartner
 ```
 
 ## DESCRIPTION
-Create new navigation property to telecomExpenseManagementPartners for deviceManagement
+Create a new telecomExpenseManagementPartner object.
 
 ## PARAMETERS
 

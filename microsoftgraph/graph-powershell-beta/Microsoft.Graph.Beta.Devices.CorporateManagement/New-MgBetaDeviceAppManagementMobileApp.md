@@ -20,14 +20,12 @@ Create new navigation property to mobileApps for deviceAppManagement
 New-MgBetaDeviceAppManagementMobileApp [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphMobileAppAssignment[]>] [-Categories <IMicrosoftGraphMobileAppCategory[]>]
  [-CreatedDateTime <DateTime>] [-DependentAppCount <Int32>] [-Description <String>] [-Developer <String>]
- [-DeviceStatuses <IMicrosoftGraphMobileAppInstallStatus[]>] [-DisplayName <String>] [-Id <String>]
- [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphMobileAppInstallSummary>] [-IsAssigned]
- [-IsFeatured] [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
+ [-DisplayName <String>] [-Id <String>] [-InformationUrl <String>] [-IsAssigned] [-IsFeatured]
+ [-LargeIcon <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>] [-Notes <String>]
  [-Owner <String>] [-PrivacyInformationUrl <String>] [-Publisher <String>]
  [-PublishingState <MobileAppPublishingState>] [-Relationships <IMicrosoftGraphMobileAppRelationship[]>]
  [-RoleScopeTagIds <String[]>] [-SupersededAppCount <Int32>] [-SupersedingAppCount <Int32>]
- [-UploadState <Int32>] [-UserStatuses <IMicrosoftGraphUserAppInstallStatus[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-UploadState <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -167,22 +165,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -DeviceStatuses
-The list of installation states for this mobile app.
-To construct, see NOTES section for DEVICESTATUSES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMobileAppInstallStatus[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -DisplayName
 The admin provided or imported title of the app.
 
@@ -219,23 +201,6 @@ The more information Url.
 
 ```yaml
 Type: String
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -InstallSummary
-Contains properties for the installation summary of a mobile app.
-This will be deprecated starting May, 2023 (Intune Release 2305).
-To construct, see NOTES section for INSTALLSUMMARY properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphMobileAppInstallSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -458,22 +423,6 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -UserStatuses
-The list of installation states for this mobile app.
-To construct, see NOTES section for USERSTATUSES properties and create a hash table.
-
-```yaml
-Type: IMicrosoftGraphUserAppInstallStatus[]
-Parameter Sets: CreateExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -518,7 +467,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-MgDeviceAppMgtMobileApp
+New-BetaDeviceAppMgtMobileApp
 
 COMPLEX PARAMETER PROPERTIES
 

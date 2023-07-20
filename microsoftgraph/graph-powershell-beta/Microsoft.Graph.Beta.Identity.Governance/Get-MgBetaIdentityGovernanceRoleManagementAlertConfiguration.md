@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration
 
 ## SYNOPSIS
-Get alertConfigurations from identityGovernance
+The various configurations of an alert for Azure AD roles.
+The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)
@@ -48,7 +49,8 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIden
 ```
 
 ## DESCRIPTION
-Get alertConfigurations from identityGovernance
+The various configurations of an alert for Azure AD roles.
+The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.
 
 ## PARAMETERS
 

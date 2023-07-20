@@ -38,18 +38,20 @@ Get-MgBetaChatOperation -InputObject <ITeamsIdentity> [-ExpandProperty <String[]
 Get the specified Teams async operation that ran or is running on a specific resource.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaChatOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaChatOperation -ChatId $chatId -TeamsAsyncOperationId $teamsAsyncOperationId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaChatOperation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaChatOperation Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaChatOperation -ChatId $chatId
 ```
+This example shows how to use the Get-MgBetaChatOperation Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -276,6 +278,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

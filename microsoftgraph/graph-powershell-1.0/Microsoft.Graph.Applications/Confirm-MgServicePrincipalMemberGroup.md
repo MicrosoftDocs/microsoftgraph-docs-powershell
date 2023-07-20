@@ -44,6 +44,11 @@ Confirm-MgApplicationMemberObject -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -201,4 +206,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgBetaServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Confirm-MgBetaServicePrincipalMemberGroup?view=graph-powershell-beta)
-

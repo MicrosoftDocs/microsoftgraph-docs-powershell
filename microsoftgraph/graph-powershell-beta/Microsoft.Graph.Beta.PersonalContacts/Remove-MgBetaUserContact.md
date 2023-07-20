@@ -42,6 +42,11 @@ New-MgBetaUserContactFolderContactExtension -InputObject <IPersonalContactsIdent
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -42,6 +42,11 @@ Update-MgBetaUserContactExtension -InputObject <IPersonalContactsIdentity> -Body
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

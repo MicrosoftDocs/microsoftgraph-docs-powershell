@@ -31,23 +31,18 @@ Nullable.
 Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaApplicationOwner -ApplicationId $applicationId
-
 ```
-## PARAMETERS
+This example shows how to use the Get-MgBetaApplicationOwnerByRef Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Get-MgBetaApplicationOwner -ApplicationId $applicationId
 
-```
 ## PARAMETERS
 
 ### -All

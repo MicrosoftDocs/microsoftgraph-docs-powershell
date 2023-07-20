@@ -38,14 +38,18 @@ Get-MgBetaSiteListItem -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 Returns the metadata for an [item][] in a [list][].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
 Get-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId -ExpandProperty "fields"
-
 ```
+This example shows how to use the Get-MgBetaSiteListItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

@@ -40,18 +40,20 @@ Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaTeamworkDevice Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaTeamworkDevice Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamworkDevice
 ```
+This example shows how to use the Get-MgBetaTeamworkDevice Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -263,6 +265,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

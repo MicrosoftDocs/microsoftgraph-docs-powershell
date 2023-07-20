@@ -37,6 +37,7 @@ Get-MgEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
+
 ## PARAMETERS
 
 ### -All

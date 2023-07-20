@@ -8,7 +8,7 @@ schema: 2.0.0
 # Test-MgBetaUserCloudPcBulkResize
 
 ## SYNOPSIS
-Invoke action validateBulkResize
+Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Test-MgUserCloudPcBulkResize](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserCloudPcBulkResize?view=graph-powershell-v1.0)
@@ -42,7 +42,7 @@ Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action validateBulkResize
+Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
 ## PARAMETERS
 

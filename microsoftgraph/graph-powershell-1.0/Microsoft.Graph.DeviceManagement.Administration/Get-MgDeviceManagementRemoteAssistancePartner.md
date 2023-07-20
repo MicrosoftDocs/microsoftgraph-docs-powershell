@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementRemoteAssistancePartner
 
 ## SYNOPSIS
-The remote assist partners.
+Read properties and relationships of the remoteAssistancePartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementRemoteAssistancePartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementRemoteAssistancePartner?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgDeviceManagementRemoteAssistancePartner -InputObject <IDeviceManagementAdm
 ```
 
 ## DESCRIPTION
-The remote assist partners.
+Read properties and relationships of the remoteAssistancePartner object.
 
 ## PARAMETERS
 

@@ -237,6 +237,13 @@ To create the parameters described below, construct a hash table containing the 
 
 `APPDEFINITIONS <IMicrosoftGraphTeamsAppDefinition[]>`: The details for each version of the app.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+  - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
+        - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
+        - `[PermissionValue <String>]`: The name of the resource-specific permission.
   - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -261,6 +268,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[AppDefinitions <IMicrosoftGraphTeamsAppDefinition[]>]`: The details for each version of the app.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[Authorization <IMicrosoftGraphTeamsAppAuthorization>]`: teamsAppAuthorization
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[RequiredPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
+        - `[(Any) <Object>]`: This indicates any property can be added to this object.
+        - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
+          - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
+          - `[PermissionValue <String>]`: The name of the resource-specific permission.
     - `[Bot <IMicrosoftGraphTeamworkBot>]`: teamworkBot
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.

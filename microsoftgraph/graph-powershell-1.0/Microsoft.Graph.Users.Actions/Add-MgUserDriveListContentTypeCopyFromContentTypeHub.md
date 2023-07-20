@@ -51,28 +51,36 @@ The method allows users to pull content types directly from the content type hub
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
+### Example 1: Synchronous pull
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentTypeId = "0x0101"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserDriveListContentTypeCopyFromContentTypeHub Cmdlet.
 
-### Example 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Asynchronous pull
+
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentTypeId = "0x0101"
 }
 
 Add-MgSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserDriveListContentTypeCopyFromContentTypeHub Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -229,6 +237,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

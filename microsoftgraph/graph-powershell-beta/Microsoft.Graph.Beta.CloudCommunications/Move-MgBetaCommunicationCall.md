@@ -51,8 +51,7 @@ A consultative transfer means that the transferor can inform the person they wan
 This is opposed to transfering the call directly.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -71,8 +70,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -95,8 +95,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
-### Example 3
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -114,8 +115,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
-### Example 4
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -136,8 +138,9 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
-
-### Example 5
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 5: Using the Move-MgBetaCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -165,6 +168,8 @@ $params = @{
 }
 Move-MgBetaCommunicationCall -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Move-MgBetaCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

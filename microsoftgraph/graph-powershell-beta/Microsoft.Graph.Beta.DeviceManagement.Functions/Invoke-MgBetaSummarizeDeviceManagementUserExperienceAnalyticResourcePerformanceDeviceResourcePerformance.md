@@ -18,8 +18,8 @@ Invoke function summarizeDeviceResourcePerformance
 ### Summarize (Default)
 ```
 Invoke-MgBetaSummarizeDeviceManagementUserExperienceAnalyticResourcePerformanceDeviceResourcePerformance
- -SummarizeBy <String> [-Count] [-Filter <String>] [-Property <String[]>] [-Search <String>] [-Skip <Int32>]
- [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+ -SummarizeBy <UserExperienceAnalyticsSummarizedBy> [-Count] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### SummarizeViaIdentity
@@ -129,7 +129,7 @@ Accept wildcard characters: False
 Usage: summarizeBy='{summarizeBy}'
 
 ```yaml
-Type: String
+Type: UserExperienceAnalyticsSummarizedBy
 Parameter Sets: Summarize
 Aliases:
 

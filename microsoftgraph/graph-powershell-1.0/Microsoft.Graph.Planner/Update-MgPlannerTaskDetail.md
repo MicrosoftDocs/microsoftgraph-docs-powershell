@@ -45,8 +45,8 @@ Update-MgPlannerTaskDetail -InputObject <IPlannerIdentity> -IfMatch <String>
 Update the navigation property details in planner
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
 
@@ -80,8 +80,12 @@ $params = @{
 }
 
 Update-MgPlannerTaskDetail -PlannerTaskId $plannerTaskId -BodyParameter $params-If-Match W/"JzEtVGFzayAgQEBAQEBAQEBAQEBAQEBAWCc="
-
 ```
+This example shows how to use the Update-MgPlannerTaskDetail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

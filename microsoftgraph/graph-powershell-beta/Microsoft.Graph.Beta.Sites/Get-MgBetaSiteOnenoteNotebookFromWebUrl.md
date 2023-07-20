@@ -30,6 +30,11 @@ Get-MgBetaSiteListSubscriptionCount -InputObject <ISitesIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

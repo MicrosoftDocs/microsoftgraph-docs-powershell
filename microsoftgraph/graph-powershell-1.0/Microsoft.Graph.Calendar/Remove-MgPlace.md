@@ -30,8 +30,8 @@ Remove-MgPlace -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] 
 Delete entity from places
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Calendar
 
@@ -45,8 +45,12 @@ $params = @{
 }
 
 Update-MgPlace -PlaceId $placeId -BodyParameter $params
-
 ```
+This example shows how to use the Remove-MgPlace Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

@@ -51,39 +51,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-## EXAMPLES
-
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Groups
-
-$params = @{
-	topic = "Take your wellness days and rest"
-	threads = @(
-		@{
-			posts = @(
-				@{
-					body = @{
-						contentType = "html"
-						content = "Contoso cares about you: Rest and Recharge"
-					}
-					newParticipants = @(
-						@{
-							emailAddress = @{
-								name = "Adele Vance"
-								address = "AdeleV@contoso.onmicrosoft.com"
-							}
-						}
-					)
-				}
-			)
-		}
-	)
-}
-
-New-MgGroupConversation -GroupId $groupId -BodyParameter $params
-
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -458,5 +425,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupConversation?view=graph-powershell-beta)
-
 

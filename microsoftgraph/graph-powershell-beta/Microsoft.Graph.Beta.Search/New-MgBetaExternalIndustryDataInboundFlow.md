@@ -8,8 +8,8 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Create a new inboundFileFlow object.
-The following prerequisite resources are required when you create an **inboundFileFlow**:
+Create a new inboundFlow object.
+The following prerequisite resources are required when you create an **inboundFlow**:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
@@ -31,8 +31,8 @@ New-MgBetaExternalIndustryDataInboundFlow -BodyParameter <IMicrosoftGraphIndustr
 ```
 
 ## DESCRIPTION
-Create a new inboundFileFlow object.
-The following prerequisite resources are required when you create an **inboundFileFlow**:
+Create a new inboundFlow object.
+The following prerequisite resources are required when you create an **inboundFlow**:
 
 ## PARAMETERS
 

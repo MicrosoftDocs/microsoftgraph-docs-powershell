@@ -50,6 +50,7 @@ New-MgGroupOnenoteNotebookSection -InputObject <INotesIdentity> -BodyParameter <
 ## DESCRIPTION
 Create a new onenoteSection in the specified notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

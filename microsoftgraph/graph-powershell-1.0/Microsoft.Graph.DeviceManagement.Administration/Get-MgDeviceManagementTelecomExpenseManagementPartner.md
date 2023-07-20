@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceManagementTelecomExpenseManagementPartner
 
 ## SYNOPSIS
-The telecom expense management partners.
+Read properties and relationships of the telecomExpenseManagementPartner object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgDeviceManagementTelecomExpenseManagementPartner -InputObject <IDeviceManag
 ```
 
 ## DESCRIPTION
-The telecom expense management partners.
+Read properties and relationships of the telecomExpenseManagementPartner object.
 
 ## PARAMETERS
 

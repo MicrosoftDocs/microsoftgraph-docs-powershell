@@ -31,23 +31,18 @@ Remove-MgServicePrincipalDelegatedPermissionClassification -InputObject <IApplic
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Remove-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
-
 ```
-## PARAMETERS
+This example shows how to use the Remove-MgServicePrincipalDelegatedPermissionClassification Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Remove-MgServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
 
-```
 ## PARAMETERS
 
 ### -DelegatedPermissionClassificationId

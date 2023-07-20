@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtWindowManagementApp
+Get-BetaDeviceAppMgtWindowManagementApp
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWindowsManagementApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsManagementApp?view=graph-powershell-v1.0)

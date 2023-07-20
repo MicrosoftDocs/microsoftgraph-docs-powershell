@@ -189,7 +189,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Set-MgDeviceAppMgtWdacSupplementalPolicy
+Set-BetaDeviceAppMgtWdacSupplementalPolicy
 
 COMPLEX PARAMETER PROPERTIES
 

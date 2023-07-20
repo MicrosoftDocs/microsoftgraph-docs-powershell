@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-v1.0)
@@ -42,11 +42,11 @@ Update-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Update the properties of an ipNamedLocation object.
+Update the properties of a countryNamedLocation object.
 
 ## EXAMPLES
+### Example 1: Update a country named location by adding to the list of countries
 
-### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
@@ -54,17 +54,19 @@ $params = @{
 "@odata.type" = "#microsoft.graph.countryNamedLocation"
 DisplayName = "Named location with unknown countries and regions"
 CountriesAndRegions = @(
-"US"
-"XK"
-"ID"
-"CA"
+    "US"
+    "XK"
+    "ID"
+    "CA"
 )
 IncludeUnknownCountriesAndRegions = $true
 }
 
 Update-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId '1f0fd623-bf8f-4003-9627-32a68c3cdcc1' -BodyParameter $params
-
 ```
+
+This example updates the details of an existing named location. Supply the values of the relevant fields that should be updated. In this example, `ID` and `CA` are added in the list of countries.
+
 ## PARAMETERS
 
 

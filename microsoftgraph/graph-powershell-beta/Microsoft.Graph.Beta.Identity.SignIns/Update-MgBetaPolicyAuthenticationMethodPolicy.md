@@ -22,6 +22,7 @@ Update-MgBetaPolicyAuthenticationMethodPolicy [-AdditionalProperties <Hashtable>
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-PolicyMigrationState <String>] [-PolicyVersion <String>] [-ReconfirmationInDays <Int32>]
  [-RegistrationEnforcement <IMicrosoftGraphRegistrationEnforcement>]
+ [-ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]
  [-SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
@@ -36,8 +37,8 @@ Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraphAut
 Update the properties of an authenticationMethodsPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -60,8 +61,12 @@ $params = @{
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgBetaPolicyAuthenticationMethodPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -234,6 +239,22 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -ReportSuspiciousActivitySettings
+reportSuspiciousActivitySettings
+To construct, see NOTES section for REPORTSUSPICIOUSACTIVITYSETTINGS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphReportSuspiciousActivitySettings
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -SystemCredentialPreferences
 systemCredentialPreferences
 To construct, see NOTES section for SYSTEMCREDENTIALPREFERENCES properties and create a hash table.
@@ -332,12 +353,18 @@ To create the parameters described below, construct a hash table containing the 
         - `[TargetedAuthenticationMethod <String>]`: The authentication method that the user is prompted to register. The value must be microsoftAuthenticator.
       - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0' - The user is prompted during every MFA attempt.
       - `[State <String>]`: advancedConfigState
+  - `[ReportSuspiciousActivitySettings <IMicrosoftGraphReportSuspiciousActivitySettings>]`: reportSuspiciousActivitySettings
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
+      - `[(Any) <Object>]`: This indicates any property can be added to this object.
+      - `[Id <String>]`: The ID of the entity targeted.
+      - `[TargetType <String>]`: authenticationMethodTargetType
+    - `[State <String>]`: advancedConfigState
+    - `[VoiceReportingCode <Int32?>]`: Specifies the number the user will enter on their phone to report the MFA prompt as suspicious.
   - `[SystemCredentialPreferences <IMicrosoftGraphSystemCredentialPreferences>]`: systemCredentialPreferences
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[ExcludeTargets <IMicrosoftGraphExcludeTarget[]>]`: Users and groups excluded from the preferred authentication method experience of the system.
     - `[IncludeTargets <IMicrosoftGraphIncludeTarget[]>]`: Users and groups included in the preferred authentication method experience of the system.
-      - `[Id <String>]`: The ID of the entity targeted.
-      - `[TargetType <String>]`: authenticationMethodTargetType
     - `[State <String>]`: advancedConfigState
 
 `REGISTRATIONENFORCEMENT <IMicrosoftGraphRegistrationEnforcement>`: registrationEnforcement
@@ -353,6 +380,15 @@ To create the parameters described below, construct a hash table containing the 
       - `[TargetedAuthenticationMethod <String>]`: The authentication method that the user is prompted to register. The value must be microsoftAuthenticator.
     - `[SnoozeDurationInDays <Int32?>]`: Specifies the number of days that the user sees a prompt again if they select 'Not now' and snoozes the prompt. Minimum 0 days. Maximum: 14 days. If the value is '0' - The user is prompted during every MFA attempt.
     - `[State <String>]`: advancedConfigState
+
+`REPORTSUSPICIOUSACTIVITYSETTINGS <IMicrosoftGraphReportSuspiciousActivitySettings>`: reportSuspiciousActivitySettings
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[IncludeTarget <IMicrosoftGraphIncludeTarget>]`: includeTarget
+    - `[(Any) <Object>]`: This indicates any property can be added to this object.
+    - `[Id <String>]`: The ID of the entity targeted.
+    - `[TargetType <String>]`: authenticationMethodTargetType
+  - `[State <String>]`: advancedConfigState
+  - `[VoiceReportingCode <Int32?>]`: Specifies the number the user will enter on their phone to report the MFA prompt as suspicious.
 
 `SYSTEMCREDENTIALPREFERENCES <IMicrosoftGraphSystemCredentialPreferences>`: systemCredentialPreferences
   - `[(Any) <Object>]`: This indicates any property can be added to this object.

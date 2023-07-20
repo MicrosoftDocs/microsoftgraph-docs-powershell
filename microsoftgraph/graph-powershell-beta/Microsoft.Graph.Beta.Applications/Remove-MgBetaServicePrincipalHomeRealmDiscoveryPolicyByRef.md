@@ -32,23 +32,18 @@ Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplic
 Remove a homeRealmDiscoveryPolicy from a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
-
 ```
-## PARAMETERS
+This example shows how to use the Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Remove-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -HomeRealmDiscoveryPolicyId $homeRealmDiscoveryPolicyId
 
-```
 ## PARAMETERS
 
 ### -HomeRealmDiscoveryPolicyId

@@ -24,6 +24,11 @@ Get-MgBetaDirectoryRoleTemplateDelta [-Filter <String>] [-Property <String[]>] [
 ## DESCRIPTION
 Invoke function delta
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -All

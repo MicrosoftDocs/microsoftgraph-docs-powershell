@@ -60,6 +60,7 @@ New-MgUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new reply to a chatMessage in a specified channel.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceRoleManagementAlert
 
 ## SYNOPSIS
-Get alerts from identityGovernance
+Represents the alert entity.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceRoleManagementAlert](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlert?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaIdentityGovernanceRoleManagementAlert -InputObject <IIdentityGovernanc
 ```
 
 ## DESCRIPTION
-Get alerts from identityGovernance
+Represents the alert entity.
 
 ## PARAMETERS
 

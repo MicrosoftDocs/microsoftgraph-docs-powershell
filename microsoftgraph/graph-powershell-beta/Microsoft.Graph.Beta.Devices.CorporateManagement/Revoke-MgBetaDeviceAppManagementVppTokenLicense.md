@@ -199,7 +199,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Revoke-MgDeviceAppMgtVppTokenLicense
+Revoke-BetaDeviceAppMgtVppTokenLicense
 
 COMPLEX PARAMETER PROPERTIES
 

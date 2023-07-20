@@ -30,6 +30,11 @@ Get-MgGroupMemberWithLicenseErrorCountAsUser -InputObject <IGroupsIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

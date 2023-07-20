@@ -31,6 +31,11 @@ Get-MgBetaGroupPermissionGrantDelta -InputObject <IGroupsIdentity> [-Filter <Str
 ## DESCRIPTION
 Invoke function delta
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -All

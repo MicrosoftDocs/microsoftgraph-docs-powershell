@@ -69,14 +69,18 @@ Get-MgBetaPrintPrinterShare -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 Get printerShares from print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintPrinterShare -PrinterId $printerId
-
 ```
+This example shows how to use the Get-MgBetaPrintPrinterShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

@@ -49,8 +49,7 @@ This method along with addKey can be used by an application to automate rolling 
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Remove-MgApplicationKey Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Applications
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 Remove-MgApplicationKey -ApplicationId $applicationId -BodyParameter $params
 ```
+This example shows how to use the Remove-MgApplicationKey Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

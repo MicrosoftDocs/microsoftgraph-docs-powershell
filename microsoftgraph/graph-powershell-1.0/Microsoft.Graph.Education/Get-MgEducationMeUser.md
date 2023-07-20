@@ -23,14 +23,18 @@ Get-MgEducationMeUser [-ExpandProperty <String[]>] [-Property <String[]>] [<Comm
 Retrieve the simple directory **user** that corresponds to this **educationUser**.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationMeUser
-
 ```
+This example shows how to use the Get-MgEducationMeUser Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

@@ -18,8 +18,8 @@ Update the navigation property endpoints in print
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaPrintServiceEndpoint -PrintServiceEndpointId <String> -PrintServiceId <String>
- [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Uri <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-Name <String>] [-Uri <String>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -31,7 +31,8 @@ Update-MgBetaPrintServiceEndpoint -PrintServiceEndpointId <String> -PrintService
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Uri <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Name <String>] [-Uri <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -120,6 +121,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Name
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -222,6 +238,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
+  - `[Name <String>]`: 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter

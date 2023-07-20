@@ -22,6 +22,11 @@ Get-MgServicePrincipalRiskDetectionCount [-Filter <String>] [-Search <String>] [
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

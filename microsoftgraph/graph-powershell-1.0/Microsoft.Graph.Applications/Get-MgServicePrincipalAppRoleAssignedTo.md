@@ -40,23 +40,18 @@ App role assignments for this app or service, granted to users, groups, and othe
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
-
 ```
-## PARAMETERS
+This example shows how to use the Get-MgServicePrincipalAppRoleAssignedTo Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Get-MgServicePrincipalAppRoleAssignedTo -ServicePrincipalId $servicePrincipalId
 
-```
 ## PARAMETERS
 
 ### -All

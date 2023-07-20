@@ -44,14 +44,18 @@ It is not intended to be used for any other purpose.
 Repeated requests to this API might result in `429` HTTP errors.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 
 Get-MgBetaExternalConnectionItem -ExternalConnectionId $externalConnectionId -ExternalItemId $externalItemId
-
 ```
+This example shows how to use the Get-MgBetaExternalConnectionItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

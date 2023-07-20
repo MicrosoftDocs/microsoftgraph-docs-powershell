@@ -76,6 +76,11 @@ New-MgUserDefaultCalendarEvent -InputObject <ICalendarIdentity> -BodyParameter <
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

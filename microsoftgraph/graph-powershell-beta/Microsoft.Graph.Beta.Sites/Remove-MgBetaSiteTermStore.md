@@ -31,8 +31,8 @@ Remove-MgBetaSiteTermStore -InputObject <ISitesIdentity> [-IfMatch <String>] [-P
 Delete navigation property termStore for sites
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 
@@ -41,8 +41,12 @@ $params = @{
 }
 
 Update-MgBetaSiteTermStore -SiteId $siteId -BodyParameter $params
-
 ```
+This example shows how to use the Remove-MgBetaBetaSiteTermStore Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

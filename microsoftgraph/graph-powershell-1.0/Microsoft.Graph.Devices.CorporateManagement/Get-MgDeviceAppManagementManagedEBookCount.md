@@ -66,7 +66,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtManagedEBookCount
+Get-DeviceAppMgtManagedEBookCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedEBookCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookCount?view=graph-powershell-beta)

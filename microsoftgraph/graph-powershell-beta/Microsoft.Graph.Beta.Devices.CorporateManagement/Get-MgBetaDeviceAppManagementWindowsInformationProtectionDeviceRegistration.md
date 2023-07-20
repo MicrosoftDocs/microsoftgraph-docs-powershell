@@ -236,7 +236,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtWindowInformationProtectionDeviceRegistration
+Get-BetaDeviceAppMgtWindowInformationProtectionDeviceRegistration
 
 COMPLEX PARAMETER PROPERTIES
 

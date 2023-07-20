@@ -44,6 +44,27 @@ New-MgBookingBusinessCustomQuestion -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new bookingCustomQuestion object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.bookingCustomQuestion"
+	displayName = "What is your age?"
+	answerInputType = "text"
+	answerOptions = @(
+	)
+}
+
+New-MgBookingBusinessCustomQuestion -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+This example shows how to use the New-MgBookingBusinessCustomQuestion Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -237,4 +258,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaBookingBusinessCustomQuestion](/powershell/module/Microsoft.Graph.Beta.Bookings/New-MgBetaBookingBusinessCustomQuestion?view=graph-powershell-beta)
+
 

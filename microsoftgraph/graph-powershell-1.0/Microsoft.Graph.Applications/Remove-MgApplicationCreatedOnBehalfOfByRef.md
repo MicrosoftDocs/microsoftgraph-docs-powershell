@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -34,10 +37,9 @@ Delete entity from applications
 Remove-MgApplication -ApplicationId '1bc44759-ef10-46de-b199-40c077768fff'
 
 This example deletes the specified application.
-
 ```
-## PARAMETERS
 
+## PARAMETERS
 
 ### -ApplicationId
 key: id of application
@@ -175,5 +177,4 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
-
-
+[Remove-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)

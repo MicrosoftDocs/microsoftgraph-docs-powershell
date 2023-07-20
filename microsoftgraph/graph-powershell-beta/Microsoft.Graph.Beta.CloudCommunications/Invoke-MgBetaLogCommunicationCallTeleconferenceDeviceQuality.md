@@ -44,8 +44,7 @@ The third-party partners own the VTC media leg and the Teams infrastructure cann
 This method is only for the CVI partners to provide their media quality data.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -134,6 +133,8 @@ $params = @{
 }
 Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaLogCommunicationCallTeleconferenceDeviceQuality Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

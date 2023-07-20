@@ -38,21 +38,29 @@ Get-MgTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 Retrieve the app installed in the specified team.
 
 ## EXAMPLES
+### Example 1: Get the installed app
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
-
 ```
-### Example 2
+This example shows how to use the Get-MgTeamInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the names and other details of the installed app
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -ExpandProperty "teamsAppDefinition"
-
 ```
+This example shows how to use the Get-MgTeamInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

@@ -47,8 +47,8 @@ Update-MgPolicyActivityBasedTimeoutPolicy -InputObject <IIdentitySignInsIdentity
 Update the properties of an activityBasedTimeoutPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -61,8 +61,12 @@ $params = @{
 }
 
 Update-MgPolicyActivityBasedTimeoutPolicy -ActivityBasedTimeoutPolicyId $activityBasedTimeoutPolicyId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgPolicyActivityBasedTimeoutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ActivityBasedTimeoutPolicyId

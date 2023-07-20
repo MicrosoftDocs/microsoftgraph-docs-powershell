@@ -50,6 +50,7 @@ New-MgGroupOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicros
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

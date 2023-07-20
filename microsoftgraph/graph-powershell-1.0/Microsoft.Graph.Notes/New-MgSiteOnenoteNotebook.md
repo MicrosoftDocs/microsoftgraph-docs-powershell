@@ -50,6 +50,7 @@ New-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

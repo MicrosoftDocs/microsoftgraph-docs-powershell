@@ -9,7 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Delete a conversationMember from a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamPrimaryChannelMember?view=graph-powershell-beta)
@@ -30,7 +29,6 @@ Remove-MgGroupTeamPrimaryChannelMember -InputObject <ITeamsIdentity> [-IfMatch <
 
 ## DESCRIPTION
 Delete a conversationMember from a channel.
-This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ## PARAMETERS
 

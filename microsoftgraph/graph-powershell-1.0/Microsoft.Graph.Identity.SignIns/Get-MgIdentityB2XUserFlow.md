@@ -38,14 +38,18 @@ Get-MgIdentityB2XUserFlow -InputObject <IIdentitySignInsIdentity> [-ExpandProper
 Retrieve the properties and relationships of a b2xIdentityUserFlow object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgIdentityB2XUserFlow -B2xIdentityUserFlowId $b2xIdentityUserFlowId
-
 ```
+This example shows how to use the Get-MgIdentityB2XUserFlow Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

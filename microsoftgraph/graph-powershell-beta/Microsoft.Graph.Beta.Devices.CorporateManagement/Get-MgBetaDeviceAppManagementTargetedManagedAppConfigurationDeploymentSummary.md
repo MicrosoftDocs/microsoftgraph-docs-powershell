@@ -108,7 +108,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary
+Get-BetaDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary
 
 COMPLEX PARAMETER PROPERTIES
 

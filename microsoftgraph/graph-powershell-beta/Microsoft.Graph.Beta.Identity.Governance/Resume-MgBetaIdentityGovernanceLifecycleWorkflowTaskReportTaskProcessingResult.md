@@ -10,7 +10,7 @@ schema: 2.0.0
 ## SYNOPSIS
 Resume a task processing result that's `inProgress`.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+For more information, see: Lifecycle Workflows extensibility approach.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult](/powershell/module/Microsoft.Graph.Identity.Governance/Resume-MgIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult?view=graph-powershell-v1.0)
@@ -52,7 +52,7 @@ Resume-MgBetaIdentityGovernanceLifecycleWorkflowTaskReportTaskProcessingResult
 ## DESCRIPTION
 Resume a task processing result that's `inProgress`.
 In the default case an Azure Logic Apps system-assigned managed identity calls this API.
-For more information read about Lifecycle Workflows extensibility approach.
+For more information, see: Lifecycle Workflows extensibility approach.
 
 ## PARAMETERS
 

@@ -18,7 +18,8 @@ Create new navigation property to endpoints for print
 ### CreateExpanded (Default)
 ```
 New-MgBetaPrintServiceEndpoint -PrintServiceId <String> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Uri <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Name <String>] [-Uri <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -30,7 +31,8 @@ New-MgBetaPrintServiceEndpoint -PrintServiceId <String> -BodyParameter <IMicroso
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity> [-AdditionalProperties <Hashtable>]
- [-DisplayName <String>] [-Id <String>] [-Uri <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Name <String>] [-Uri <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -43,14 +45,18 @@ New-MgBetaPrintServiceEndpoint -InputObject <IDevicesCloudPrintIdentity>
 Create new navigation property to endpoints for print
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 Get-MgBetaPrintServiceEndpoint -PrintServiceId $printServiceId
-
 ```
+This example shows how to use the New-MgBetaBetaPrintServiceEndpoint Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -128,6 +134,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Name
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -215,6 +236,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[DisplayName <String>]`: A human-readable display name for the endpoint.
+  - `[Name <String>]`: 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 `INPUTOBJECT <IDevicesCloudPrintIdentity>`: Identity Parameter

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Reports
-Module Guid: 4000e22b-ab53-4fc0-bb40-39fd2f9fc528
+Module Guid: ca2a6b51-3958-4ff5-b428-f90e96dd8f22
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports
 Help Version: 1.0.0.0
 Locale: en-US
@@ -24,6 +24,12 @@ For details about investigating Identity Protection risks, see How to investigat
 
 ### [Get-MgBetaAdminReportSetting](Get-MgBetaAdminReportSetting.md)
 Get the tenant-level settings for Microsoft 365 reports.
+
+### [Get-MgBetaAuditLogCustomSecurityAttributeAudit](Get-MgBetaAuditLogCustomSecurityAttributeAudit.md)
+Get customSecurityAttributeAudits from auditLogs
+
+### [Get-MgBetaAuditLogCustomSecurityAttributeAuditCount](Get-MgBetaAuditLogCustomSecurityAttributeAuditCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaAuditLogDirectoryAudit](Get-MgBetaAuditLogDirectoryAudit.md)
 Get a specific Azure Active Directory audit log item.
@@ -64,6 +70,12 @@ Get the number of the resource
 Entity representing a job to export a report
 
 ### [Get-MgBetaDeviceManagementReportExportJobCount](Get-MgBetaDeviceManagementReportExportJobCount.md)
+Get the number of the resource
+
+### [Get-MgBetaReportAppCredentialSignInActivity](Get-MgBetaReportAppCredentialSignInActivity.md)
+Get an appCredentialSignInActivity object that contains recent activity of an application credential.
+
+### [Get-MgBetaReportAppCredentialSignInActivityCount](Get-MgBetaReportAppCredentialSignInActivityCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaReportApplicationSignInDetailedSummary](Get-MgBetaReportApplicationSignInDetailedSummary.md)
@@ -118,13 +130,13 @@ Get the number of the resource
 Get dailyPrintUsage from reports
 
 ### [Get-MgBetaReportDailyPrintUsageByPrinter](Get-MgBetaReportDailyPrintUsageByPrinter.md)
-Get dailyPrintUsageByPrinter from reports
+Retrieve a list of daily print usage summaries, grouped by printer.
 
 ### [Get-MgBetaReportDailyPrintUsageByPrinterCount](Get-MgBetaReportDailyPrintUsageByPrinterCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaReportDailyPrintUsageByUser](Get-MgBetaReportDailyPrintUsageByUser.md)
-Get dailyPrintUsageByUser from reports
+Retrieve a list of daily print usage summaries, grouped by user.
 
 ### [Get-MgBetaReportDailyPrintUsageByUserCount](Get-MgBetaReportDailyPrintUsageByUserCount.md)
 Get the number of the resource
@@ -220,13 +232,13 @@ Metadata for the enrollment failure trends report
 Invoke function managedDeviceEnrollmentTopFailures
 
 ### [Get-MgBetaReportMonthlyPrintUsageByPrinter](Get-MgBetaReportMonthlyPrintUsageByPrinter.md)
-Get monthlyPrintUsageByPrinter from reports
+Retrieve a list of monthly print usage summaries, grouped by printer.
 
 ### [Get-MgBetaReportMonthlyPrintUsageByPrinterCount](Get-MgBetaReportMonthlyPrintUsageByPrinterCount.md)
 Get the number of the resource
 
 ### [Get-MgBetaReportMonthlyPrintUsageByUser](Get-MgBetaReportMonthlyPrintUsageByUser.md)
-Get monthlyPrintUsageByUser from reports
+Retrieve a list of monthly print usage summaries, grouped by user.
 
 ### [Get-MgBetaReportMonthlyPrintUsageByUserCount](Get-MgBetaReportMonthlyPrintUsageByUserCount.md)
 Get the number of the resource
@@ -315,6 +327,14 @@ Invoke function getAttackSimulationTrainingUserCoverage
 ### [Get-MgBetaReportSecurityAttackSimulationUserCoverage](Get-MgBetaReportSecurityAttackSimulationUserCoverage.md)
 Invoke function getAttackSimulationSimulationUserCoverage
 
+### [Get-MgBetaReportServicePrincipalSignInActivity](Get-MgBetaReportServicePrincipalSignInActivity.md)
+Get a servicePrincipalSignInActivity object that contains sign-in activity information for a service principal in an Azure Active Directory tenant.
+You can use a service principal as a client or resource.
+A service principal supports delegated or app-only authentication context.
+
+### [Get-MgBetaReportServicePrincipalSignInActivityCount](Get-MgBetaReportServicePrincipalSignInActivityCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaReportSharePointActivityFileCount](Get-MgBetaReportSharePointActivityFileCount.md)
 Invoke function getSharePointActivityFileCounts
 
@@ -386,6 +406,14 @@ Invoke function getSkypeForBusinessPeerToPeerActivityMinuteCounts
 
 ### [Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount](Get-MgBetaReportSkypeForBusinessPeerToPeerActivityUserCount.md)
 Invoke function getSkypeForBusinessPeerToPeerActivityUserCounts
+
+### [Get-MgBetaReportSla](Get-MgBetaReportSla.md)
+A placeholder to allow for the desired URL path for SLA.
+
+### [Get-MgBetaReportSlaAzureAdAuthentication](Get-MgBetaReportSlaAzureAdAuthentication.md)
+Read the properties and relationships of an azureADAuthentication object to find the level of Azure AD authentication availability for your tenant.
+The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
+This object provides you with your tenant's actual performance against this commitment.
 
 ### [Get-MgBetaReportTeamActivityCount](Get-MgBetaReportTeamActivityCount.md)
 Invoke function getTeamsTeamActivityCounts
@@ -489,6 +517,9 @@ Delete navigation property reports for deviceManagement
 ### [Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail](Remove-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
 Delete navigation property userRegistrationDetails for reports
 
+### [Remove-MgBetaReportSlaAzureAdAuthentication](Remove-MgBetaReportSlaAzureAdAuthentication.md)
+Delete navigation property azureADAuthentication for reports
+
 ### [Update-MgBetaAdminReportSetting](Update-MgBetaAdminReportSetting.md)
 Update tenant-level settings for Microsoft 365 reports.
 
@@ -497,4 +528,7 @@ Update the navigation property reports in deviceManagement
 
 ### [Update-MgBetaReportAuthenticationMethodUserRegistrationDetail](Update-MgBetaReportAuthenticationMethodUserRegistrationDetail.md)
 Update the navigation property userRegistrationDetails in reports
+
+### [Update-MgBetaReportSlaAzureAdAuthentication](Update-MgBetaReportSlaAzureAdAuthentication.md)
+Update the navigation property azureADAuthentication in reports
 

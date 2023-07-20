@@ -640,7 +640,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-MgDeviceAppMgtMdmWindowInformationProtectionPolicy
+New-BetaDeviceAppMgtMdmWindowInformationProtectionPolicy
 
 COMPLEX PARAMETER PROPERTIES
 

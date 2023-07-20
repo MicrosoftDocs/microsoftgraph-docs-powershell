@@ -44,6 +44,11 @@ Confirm-MgContractMemberObject -InputObject <IIdentityDirectoryManagementIdentit
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

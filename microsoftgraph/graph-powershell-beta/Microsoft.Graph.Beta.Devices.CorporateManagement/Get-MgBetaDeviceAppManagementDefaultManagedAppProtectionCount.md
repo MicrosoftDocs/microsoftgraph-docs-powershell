@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtDefaultManagedAppProtectionCount
+Get-BetaDeviceAppMgtDefaultManagedAppProtectionCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementDefaultManagedAppProtectionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementDefaultManagedAppProtectionCount?view=graph-powershell-v1.0)

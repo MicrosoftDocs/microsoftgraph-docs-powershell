@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A collection of resources linked to the task.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTransitiveMemberOfByRef?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -288,3 +291,4 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+[New-MgBetaUserTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTransitiveMemberOfByRef?view=graph-powershell-beta)

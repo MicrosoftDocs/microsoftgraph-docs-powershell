@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Search
-Module Guid: e0c8db64-e37c-43d7-a279-bc5b882ac1a5
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Search
+Module Guid: fc7d5e83-9dde-4f75-b650-b350b81d775b
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.search
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -65,7 +65,8 @@ Read the properties and relationships of a schema object.
 Get search
 
 ### [Invoke-MgQuerySearch](Invoke-MgQuerySearch.md)
-Invoke action query
+Runs the query specified in the request body.
+Search results are provided in the response.
 
 ### [New-MgExternalConnection](New-MgExternalConnection.md)
 Create a new externalConnection object.

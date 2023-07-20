@@ -36,14 +36,18 @@ After a **completeMigration** request is made, you cannot import additional mess
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Complete-MgTeamChannelMigration -TeamId $teamId -ChannelId $channelId
-
 ```
+This example shows how to use the Complete-MgTeamPrimaryChannelMigration Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -InputObject

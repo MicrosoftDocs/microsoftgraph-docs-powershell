@@ -253,7 +253,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-MgDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary
+Update-BetaDeviceAppMgtDefaultManagedAppProtectionDeploymentSummary
 
 COMPLEX PARAMETER PROPERTIES
 

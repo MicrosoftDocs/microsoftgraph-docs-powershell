@@ -1,15 +1,14 @@
 ---
 external help file: Microsoft.Graph.Calendar-help.xml
 Module Name: Microsoft.Graph.Calendar
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mgusercalendarpermission
 schema: 2.0.0
 ---
 
-# Remove-MgUserEvent
+# Remove-MgUserCalendarPermission
 
 ## SYNOPSIS
-Removes the specified event from the containing calendar.
-If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+Delete calendarPermission.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEvent?view=graph-powershell-beta)
@@ -18,36 +17,68 @@ If the event is a meeting, deleting the event on the organizer's calendar sends 
 
 ### Delete (Default)
 ```
-Remove-MgUserEvent -EventId <String> -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> [-IfMatch <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### Delete1
+```
+Remove-MgUserCalendarPermission -CalendarPermissionId <String> -UserId <String> -CalendarId <String>
+ [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserEvent -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Remove-MgUserCalendarPermission -InputObject <ICalendarIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Removes the specified event from the containing calendar.
-If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+Delete calendarPermission.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
-```
+```powershell
 Import-Module Microsoft.Graph.Calendar
+
 # A UPN can also be used as -UserId.
 Remove-MgUserEvent -UserId $userId -EventId $eventId
 ```
+This example shows how to use the Remove-MgUserEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
-### -EventId
-The unique identifier of event
+### -CalendarId
+The unique identifier of calendar
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete1
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CalendarPermissionId
+The unique identifier of calendarPermission
+
+```yaml
+Type: String
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -78,7 +109,7 @@ To construct, see NOTES section for INPUTOBJECT properties and create a hash tab
 
 ```yaml
 Type: ICalendarIdentity
-Parameter Sets: DeleteViaIdentity
+Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
 Aliases:
 
 Required: True
@@ -98,7 +129,7 @@ Aliases:
 
 Required: False
 Position: Named
-Default value: False
+Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -108,7 +139,7 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: Delete
+Parameter Sets: Delete, Delete1
 Aliases:
 
 Required: True
@@ -159,26 +190,27 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ### System.Boolean
 ## NOTES
+
+ALIASES
+
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<ICalendarIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[CalendarGroupId \<String\>\]: The unique identifier of calendarGroup
-  \[CalendarId \<String\>\]: The unique identifier of calendar
-  \[CalendarPermissionId \<String\>\]: The unique identifier of calendarPermission
-  \[EventId \<String\>\]: The unique identifier of event
-  \[EventId1 \<String\>\]: The unique identifier of event
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[GroupId \<String\>\]: The unique identifier of group
-  \[PlaceId \<String\>\]: The unique identifier of place
-  \[UserId \<String\>\]: The unique identifier of user
+
+`INPUTOBJECT <ICalendarIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[CalendarGroupId <String>]`: The unique identifier of calendarGroup
+  - `[CalendarId <String>]`: The unique identifier of calendar
+  - `[CalendarPermissionId <String>]`: The unique identifier of calendarPermission
+  - `[EventId <String>]`: The unique identifier of event
+  - `[EventId1 <String>]`: The unique identifier of event
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[GroupId <String>]`: The unique identifier of group
+  - `[PlaceId <String>]`: The unique identifier of place
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Remove-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Calendar/Remove-MgBetaUserEvent?view=graph-powershell-beta)
-
-[https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent](https://learn.microsoft.com/powershell/module/microsoft.graph.calendar/remove-mguserevent)
 
 

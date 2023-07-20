@@ -24,14 +24,18 @@ Get-MgGroupAcceptedSenderByRef -GroupId <String> [-Filter <String>] [-Skip <Int3
 Users in the accepted senders list can post to conversations of the group (identified in the GET request URL).\nMake sure you do not specify the same user or group in the accepted senders and rejected senders lists, otherwise you will get an error.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
 
 Get-MgGroupAcceptedSender -GroupId $groupId
-
 ```
+This example shows how to use the Get-MgGroupAcceptedSenderByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation property to deployment summary of the configuration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION
@@ -39,6 +42,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationDeploymentSummary?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationdeploymentsummary](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationdeploymentsummary)
 
