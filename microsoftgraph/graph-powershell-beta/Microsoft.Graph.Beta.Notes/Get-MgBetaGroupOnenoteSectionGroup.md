@@ -44,6 +44,7 @@ Get-MgBetaGroupOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of a sectionGroup object.
 
+
 ## PARAMETERS
 
 ### -All

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementautopiloteventpolicystatusdetail
 schema: 2.0.0
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to policyStatusDetails for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAutopilotEventPolicyStatusDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAutopilotEventPolicyStatusDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -17,20 +20,13 @@ Create new navigation property to policyStatusDetails for deviceManagement
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -DeviceManagementAutopilotEventId <String>
  [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-DisplayName <String>] [-ErrorCode <Int32>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-PolicyType <String>] [-TrackedOnEnrollmentStatus]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -DeviceManagementAutopilotEventId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceManagementEnrollmentIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -39,27 +35,18 @@ New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDevice
 New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceManagementEnrollmentIdentity>
  [-AdditionalProperties <Hashtable>] [-ComplianceStatus <String>] [-DisplayName <String>] [-ErrorCode <Int32>]
  [-Id <String>] [-LastReportedDateTime <DateTime>] [-PolicyType <String>] [-TrackedOnEnrollmentStatus]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementAutopilotEventPolicyStatusDetail -InputObject <IDeviceManagementEnrollmentIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail> [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to policyStatusDetails for deviceManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -67,7 +54,7 @@ Create new navigation property to policyStatusDetails for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,7 +70,7 @@ Policy status detail item contained by an autopilot event.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail
+Type: IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -98,7 +85,7 @@ Accept wildcard characters: False
 deviceManagementAutopilotPolicyComplianceStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -113,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementAutopilotEvent
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -128,7 +115,7 @@ Accept wildcard characters: False
 The friendly name of the policy.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +131,7 @@ The errorode associated with the compliance or enforcement status of the policy.
 Error code for enforcement status takes precedence if it exists.
 
 ```yaml
-Type: System.Int32
+Type: Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +147,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -176,8 +163,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementEnrollmentIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -191,7 +178,7 @@ Accept wildcard characters: False
 Timestamp of the reported policy status
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +193,7 @@ Accept wildcard characters: False
 deviceManagementAutopilotPolicyType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +208,7 @@ Accept wildcard characters: False
 Indicates if this prolicy was tracked as part of the autopilot bootstrap enrollment sync session
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +223,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +239,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,13 +256,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAutopilotPolicyStatusDetail
-
 ## NOTES
 
 ALIASES
@@ -323,4 +307,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[New-MgDeviceManagementAutopilotEventPolicyStatusDetail](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAutopilotEventPolicyStatusDetail?view=graph-powershell-v1.0)
 

@@ -37,12 +37,14 @@ To delete the access package, first query if there are any assignments with a fi
 For more information on how to remove assignments that are still in the delivered state, see Remove an assignment.
 
 ## EXAMPLES
+### Example 1: Remove an access package
 
-### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 Remove-MgBetaEntitlementManagementAccessPackage -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656'
 ```
+
+This example removes the specified access package.
 
 ## PARAMETERS
 

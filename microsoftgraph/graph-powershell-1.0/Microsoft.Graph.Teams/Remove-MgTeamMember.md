@@ -31,14 +31,18 @@ Remove-MgTeamMember -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru
 Remove a conversationMember from a team.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamMember -TeamId $teamId -ConversationMemberId $conversationMemberId
-
 ```
+This example shows how to use the Remove-MgTeamMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ConversationMemberId

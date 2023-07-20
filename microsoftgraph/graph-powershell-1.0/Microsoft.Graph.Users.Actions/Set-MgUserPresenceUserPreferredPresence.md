@@ -57,8 +57,7 @@ A presence session is created as a result of a successful setPresence operation,
 For more details, see presence sessions and time-out and expiration.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Set-MgUserPresenceUserPreferredPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -68,6 +67,8 @@ $params = @{
 }
 Set-MgUserPresenceUserPreferredPresence -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Set-MgUserPresenceUserPreferredPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -256,6 +257,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventSessionRegistration
 
 ## SYNOPSIS
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionRegistration?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Get-MgBetaVirtualEventSessionRegistration -InputObject <IBookingsIdentity> [-Exp
 ```
 
 ## DESCRIPTION
-Get the externalMeetingRegistration details associated with an onlineMeeting.
+Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
 
 ## PARAMETERS
 

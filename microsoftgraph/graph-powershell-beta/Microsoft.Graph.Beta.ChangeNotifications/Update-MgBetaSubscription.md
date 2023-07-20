@@ -61,8 +61,8 @@ In order to avoid missing change notifications, an app should renew its subscrip
 See subscription for maximum length of a subscription for each resource type.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.ChangeNotifications
 
@@ -71,8 +71,12 @@ $params = @{
 }
 
 Update-MgBetaSubscription -SubscriptionId $subscriptionId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgBetaSubscription Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

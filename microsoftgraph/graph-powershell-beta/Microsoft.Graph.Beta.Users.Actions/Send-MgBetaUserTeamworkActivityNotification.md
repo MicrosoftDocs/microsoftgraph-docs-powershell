@@ -51,8 +51,7 @@ Send an activity feed notification to a user.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -74,8 +73,9 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -97,8 +97,9 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### Example 3
+This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Send-MgBetaUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -119,6 +120,8 @@ $params = @{
 }
 Send-MgBetaUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Send-MgBetaUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

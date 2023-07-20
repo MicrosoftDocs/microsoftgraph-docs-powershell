@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceRoleManagementAlertIncident
 
 ## SYNOPSIS
-Get alertIncidents from identityGovernance
+Read the properties and relationships of an alert incident.
+The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceRoleManagementAlertIncident](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertIncident?view=graph-powershell-v1.0)
@@ -36,7 +37,8 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdentityG
 ```
 
 ## DESCRIPTION
-Get alertIncidents from identityGovernance
+Read the properties and relationships of an alert incident.
+The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
 
 ## PARAMETERS
 

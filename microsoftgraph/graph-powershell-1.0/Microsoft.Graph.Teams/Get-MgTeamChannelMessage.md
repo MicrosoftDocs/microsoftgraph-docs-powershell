@@ -17,8 +17,8 @@ Retrieve a single message or a message reply in a channel or a chat.
 
 ### Get1 (Default)
 ```
-Get-MgTeamChannelMessage -TeamId <String> [-Property <String[]>] [-Count] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+Get-MgTeamChannelMessage -TeamId <String> [-Property <String[]>] [-Count] [-Filter <String>] [-Model <String>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### List
@@ -37,7 +37,7 @@ Get-MgTeamChannelMessage -ChannelId <String> -ChatMessageId <String> -TeamId <St
 ### GetViaIdentity1
 ```
 Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-Property <String[]>] [-Count] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
+ [-Model <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -50,21 +50,29 @@ Get-MgTeamChannelMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Get a message in a channel
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId
-
 ```
-### Example 2
+This example shows how to use the Get-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get reply to a message in a channel
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
-
 ```
+This example shows how to use the Get-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -186,6 +194,21 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -Model
+The payment model for the API
+
+```yaml
+Type: String
+Parameter Sets: Get1, GetViaIdentity1
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 

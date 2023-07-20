@@ -32,6 +32,11 @@ Get-MgBetaUserOnlineMeetingAlternativeRecording -InputObject <ICloudCommunicatio
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -InputObject

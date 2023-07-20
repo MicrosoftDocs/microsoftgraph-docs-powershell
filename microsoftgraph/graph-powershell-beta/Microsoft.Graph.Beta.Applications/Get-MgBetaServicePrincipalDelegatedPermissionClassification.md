@@ -40,23 +40,18 @@ The permission classifications for delegated permissions exposed by the app that
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Remove-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
-
 ```
-## PARAMETERS
+This example shows how to use the Get-MgBetaBetaServicePrincipalDelegatedPermissionClassification Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Remove-MgBetaServicePrincipalDelegatedPermissionClassification -ServicePrincipalId $servicePrincipalId -DelegatedPermissionClassificationId $delegatedPermissionClassificationId
 
-```
 ## PARAMETERS
 
 ### -All

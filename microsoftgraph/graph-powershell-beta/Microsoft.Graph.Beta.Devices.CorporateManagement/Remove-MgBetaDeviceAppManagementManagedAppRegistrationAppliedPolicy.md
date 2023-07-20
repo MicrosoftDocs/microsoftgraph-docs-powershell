@@ -153,7 +153,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Remove-MgDeviceAppMgtManagedAppRegistrationAppliedPolicy
+Remove-BetaDeviceAppMgtManagedAppRegistrationAppliedPolicy
 
 COMPLEX PARAMETER PROPERTIES
 

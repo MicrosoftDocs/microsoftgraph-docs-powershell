@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaCommunicationOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
-Get virtualAppointment from communications
+Read the properties and relationships of a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgCommunicationOnlineMeetingVirtualAppointment](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingVirtualAppointment?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Get-MgBetaCommunicationOnlineMeetingVirtualAppointment -InputObject <ICloudCommu
 ```
 
 ## DESCRIPTION
-Get virtualAppointment from communications
+Read the properties and relationships of a virtualAppointment object.
 
 ## PARAMETERS
 

@@ -40,21 +40,29 @@ A collection of all the tabs in the channel.
 A navigation property.
 
 ## EXAMPLES
+### Example 1: List all the tabs in the channel along with associated Teams app
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
-
 ```
-### Example 2
+This example shows how to use the Get-MgBetaGroupTeamChannelTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List all the tabs belonging to a specific app in a channel
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
-
 ```
+This example shows how to use the Get-MgBetaGroupTeamChannelTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -295,6 +303,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

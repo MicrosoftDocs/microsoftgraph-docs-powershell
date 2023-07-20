@@ -46,6 +46,7 @@ New-MgGroupTeamChannelMember -InputObject <ITeamsIdentity> -BodyParameter <IMicr
 Add a conversationMember to a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties

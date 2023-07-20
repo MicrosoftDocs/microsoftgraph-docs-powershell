@@ -38,24 +38,27 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -InputObject <IIdentityGov
 Read the properties and relationships of a workflowTemplate object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -WorkflowTemplateId $workflowTemplateId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'"
+Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate -Filter "category eq 'leaver'" 
 ```
-
-### Example 3
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate
 ```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

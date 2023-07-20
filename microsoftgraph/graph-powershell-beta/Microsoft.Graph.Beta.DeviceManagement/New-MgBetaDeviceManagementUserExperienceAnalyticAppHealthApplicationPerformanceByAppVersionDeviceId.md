@@ -144,6 +144,8 @@ Accept wildcard characters: False
 
 ### -DeviceDisplayName
 The name of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -158,7 +160,9 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceId
-The id of the device.
+The Intune device id of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -190,6 +194,11 @@ Accept wildcard characters: False
 
 ### -ProcessedDateTime
 The date and time when the statistics were last computed.
+The value cannot be modified and is automatically populated when the statistics are computed.
+The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'.
+Returned by default.
+Read-only.
 
 ```yaml
 Type: DateTime
@@ -260,9 +269,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[AppName <String>]`: The name of the application.
   - `[AppPublisher <String>]`: The publisher of the application.
   - `[AppVersion <String>]`: The version of the application.
-  - `[DeviceDisplayName <String>]`: The name of the device.
-  - `[DeviceId <String>]`: The id of the device.
-  - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed.
+  - `[DeviceDisplayName <String>]`: The name of the device. Supports: $select, $OrderBy. Read-only.
+  - `[DeviceId <String>]`: The Intune device id of the device. Supports: $select, $OrderBy. Read-only.
+  - `[ProcessedDateTime <DateTime?>]`: The date and time when the statistics were last computed. The value cannot be modified and is automatically populated when the statistics are computed. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2022 would look like this: '2022-01-01T00:00:00Z'. Returned by default. Read-only.
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAppHealthApplicationPerformanceByAppVersionDeviceId?view=graph-powershell-v1.0)

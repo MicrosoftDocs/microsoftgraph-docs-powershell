@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: cdb65024-1f54-4019-83cb-e7329acc6317
+Module Guid: 000e9d71-02ad-44bd-8ec6-ecafda2953bd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -738,7 +738,7 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroup](New-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Create a new connectorGroup.
+Create a connectorGroup object.
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
 Create new navigation property ref to members for onPremisesPublishingProfiles

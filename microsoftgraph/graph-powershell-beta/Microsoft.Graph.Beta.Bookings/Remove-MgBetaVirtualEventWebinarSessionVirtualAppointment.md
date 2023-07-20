@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaVirtualEventWebinarSessionVirtualAppointment
 
 ## SYNOPSIS
-Delete navigation property virtualAppointment for solutions
+Delete a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventWebinarSessionVirtualAppointment](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionVirtualAppointment?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaVirtualEventWebinarSessionVirtualAppointment -InputObject <IBooking
 ```
 
 ## DESCRIPTION
-Delete navigation property virtualAppointment for solutions
+Delete a virtualAppointment object.
 
 ## PARAMETERS
 

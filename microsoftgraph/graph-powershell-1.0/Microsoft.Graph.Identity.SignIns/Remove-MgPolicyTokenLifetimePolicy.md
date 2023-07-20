@@ -31,14 +31,18 @@ Remove-MgPolicyTokenLifetimePolicy -InputObject <IIdentitySignInsIdentity> [-IfM
 Delete a tokenLifetimePolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Remove-MgPolicyTokenLifetimePolicy -TokenLifetimePolicyId $tokenLifetimePolicyId
-
 ```
+This example shows how to use the Remove-MgPolicyTokenLifetimePolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

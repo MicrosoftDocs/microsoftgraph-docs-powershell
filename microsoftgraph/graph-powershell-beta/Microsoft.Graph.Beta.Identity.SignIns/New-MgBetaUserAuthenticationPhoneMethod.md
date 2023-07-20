@@ -45,6 +45,11 @@ New-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
 ## DESCRIPTION
 Create new navigation property to operations for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

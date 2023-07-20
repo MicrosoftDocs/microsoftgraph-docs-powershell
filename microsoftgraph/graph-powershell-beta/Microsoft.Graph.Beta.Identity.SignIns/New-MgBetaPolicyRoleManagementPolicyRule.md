@@ -45,14 +45,18 @@ New-MgBetaPolicyRoleManagementPolicyRule -InputObject <IIdentitySignInsIdentity>
 Create new navigation property to rules for policies
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Get-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
-
 ```
+This example shows how to use the New-MgBetaBetaPolicyRoleManagementPolicyRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -30,6 +30,11 @@ Get-MgApplicationLogo -InputObject <IApplicationsIdentity> -OutFile <String> [-P
 The main logo for the application.
 Not nullable.
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ApplicationId
@@ -135,4 +140,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationMemberGroup](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationMemberGroup?view=graph-powershell-beta)
-

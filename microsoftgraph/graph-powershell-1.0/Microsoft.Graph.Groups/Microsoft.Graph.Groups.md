@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Groups
-Module Guid: bd0c0780-3986-4017-8537-50fba9a35db5
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Groups
+Module Guid: e331b01a-1ac2-4ba6-be82-5d73a86ddfb5
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.groups
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -46,7 +46,8 @@ The method allows users to pull content types directly from the content type hub
 For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ### [Add-MgGroupToLifecyclePolicy](Add-MgGroupToLifecyclePolicy.md)
-Invoke action addGroup
+Adds specific groups to a lifecycle policy.
+This action limits the group lifecycle policy to a set of groups only if the **managedGroupTypes** property of groupLifecyclePolicy is set to `Selected`.
 
 ### [Confirm-MgGroupGrantedPermissionForApp](Confirm-MgGroupGrantedPermissionForApp.md)
 Invoke action checkGrantedPermissionsForApp
@@ -102,6 +103,9 @@ The file can then be added as a default file or template via a POST operation.
 ### [Copy-MgGroupSiteListContentTypeToDefaultContentLocation](Copy-MgGroupSiteListContentTypeToDefaultContentLocation.md)
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
+
+### [Get-MgAllGroupSite](Get-MgAllGroupSite.md)
+Invoke function getAllSites
 
 ### [Get-MgGroup](Get-MgGroup.md)
 Get the properties and relationships of a group object.
@@ -509,6 +513,9 @@ This function is transitive.
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 Invoke function getAllSites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupSite](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupSite?view=graph-powershell-beta)
+
 ### [Get-MgGroupSiteActivityByInterval](Get-MgGroupSiteActivityByInterval.md)
 Invoke function getActivitiesByInterval
 
@@ -682,6 +689,12 @@ Check out a **driveItem** resource to prevent others from editing the document, 
 ### [Invoke-MgCheckoutGroupDriveRoot](Invoke-MgCheckoutGroupDriveRoot.md)
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+### [Invoke-MgExtractGroupDriveItemSensitivityLabel](Invoke-MgExtractGroupDriveItemSensitivityLabel.md)
+Invoke action extractSensitivityLabels
+
+### [Invoke-MgExtractGroupDriveRootSensitivityLabel](Invoke-MgExtractGroupDriveRootSensitivityLabel.md)
+Invoke action extractSensitivityLabels
+
 ### [Invoke-MgFollowGroupDriveItem](Invoke-MgFollowGroupDriveItem.md)
 Follow a driveItem.
 
@@ -753,50 +766,36 @@ Renews a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ### [Invoke-MgReplyGroupConversationThread](Invoke-MgReplyGroupConversationThread.md)
-Add an attachment when creating a group post.
-This operation limits the size of the attachment you can add to under 3 MB.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+Reply to a thread in a group conversation and add a new post to it.
+You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupConversationThreadPost](Invoke-MgReplyGroupConversationThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupConversationThreadPostInReplyTo](Invoke-MgReplyGroupConversationThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThread](Invoke-MgReplyGroupThread.md)
-Add an attachment when creating a group post.
-This operation limits the size of the attachment you can add to under 3 MB.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+Reply to a thread in a group conversation and add a new post to it.
+You can specify the parent conversation \nin the request, or, you can specify just the thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThreadPost](Invoke-MgReplyGroupThreadPost.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgReplyGroupThreadPostInReplyTo](Invoke-MgReplyGroupThreadPostInReplyTo.md)
-Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
-You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
-See known limitations of open extensions for more information.
-The table in the Permissions section lists the resources that support open extensions.
+Reply to a post and add a new post to the specified thread in a group conversation.
+You can specify both the parent conversation and thread in the request, or, you can specify just the parent thread without the parent conversation.
 
 ### [Invoke-MgSubscribeGroupByMail](Invoke-MgSubscribeGroupByMail.md)
 Calling this method will enable the current user to receive email notifications for this group, about new posts, events, and files in that group.
@@ -996,7 +995,7 @@ Remove the group from the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ### [Remove-MgGroupFromLifecyclePolicy](Remove-MgGroupFromLifecyclePolicy.md)
-Invoke action removeGroup
+Removes a group from a lifecycle policy.
 
 ### [Remove-MgGroupLifecyclePolicy](Remove-MgGroupLifecyclePolicy.md)
 Delete a groupLifecyclePolicy.
@@ -1105,6 +1104,12 @@ Invoke function search
 
 ### [Search-MgGroupDriveRoot](Search-MgGroupDriveRoot.md)
 Invoke function search
+
+### [Set-MgGroupDriveItemSensitivityLabel](Set-MgGroupDriveItemSensitivityLabel.md)
+Invoke action assignSensitivityLabel
+
+### [Set-MgGroupDriveRootSensitivityLabel](Set-MgGroupDriveRootSensitivityLabel.md)
+Invoke action assignSensitivityLabel
 
 ### [Set-MgGroupLicense](Set-MgGroupLicense.md)
 Add or remove licenses on the group.

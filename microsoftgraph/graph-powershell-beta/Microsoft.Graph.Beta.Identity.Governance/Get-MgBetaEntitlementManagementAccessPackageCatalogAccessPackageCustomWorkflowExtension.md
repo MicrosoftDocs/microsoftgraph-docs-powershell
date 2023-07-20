@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension
 
 ## SYNOPSIS
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowExtension?view=graph-powershell-v1.0)
@@ -38,7 +38,7 @@ Get-MgBetaEntitlementManagementAccessPackageCatalogAccessPackageCustomWorkflowEx
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an accessPackageAssignmentWorkflowExtension object.
+Read the properties and relationships of an accessPackageAssignmentRequestWorkflowExtension object.
 
 ## PARAMETERS
 

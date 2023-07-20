@@ -44,23 +44,18 @@ Nullable.
 Supports $expand.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
 Get-MgServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId
-
 ```
-## PARAMETERS
+This example shows how to use the Get-MgServicePrincipalMemberOf Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Get-MgServicePrincipalMemberOf -ServicePrincipalId $servicePrincipalId
 
-```
 ## PARAMETERS
 
 ### -All

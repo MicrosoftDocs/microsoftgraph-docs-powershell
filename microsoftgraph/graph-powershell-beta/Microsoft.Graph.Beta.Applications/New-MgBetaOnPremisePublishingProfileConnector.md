@@ -19,7 +19,8 @@ Create new navigation property to connectors for onPremisesPublishingProfiles
 ```
 New-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId <String>
  [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>] [-MachineName <String>]
- [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -32,7 +33,8 @@ New-MgBetaOnPremisePublishingProfileConnector -OnPremisesPublishingProfileId <St
 ```
 New-MgBetaOnPremisePublishingProfileConnector -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ExternalIP <String>] [-Id <String>] [-MachineName <String>]
- [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MemberOf <IMicrosoftGraphConnectorGroup[]>] [-Status <String>] [-Version <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
@@ -187,6 +189,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Version
+.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -296,7 +313,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
       - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+        - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
         - `[RequireClientServicePrincipal <Boolean?>]`: 
       - `[Certification <IMicrosoftGraphCertification>]`: certification
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -744,7 +761,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <String>]`: Specifies the value to include in the roles claim in ID tokens and access tokens authenticating an assigned user or service principal. Must not exceed 120 characters in length. Allowed characters are : ! # $ % & ' ( ) * + , - . / : ;  =  ? @ [ ] ^ + _  {  } ~, as well as characters in the ranges 0-9, A-Z and a-z. Any other character, including the space character, are not allowed. May not begin with ..
     - `[AuthenticationBehaviors <IMicrosoftGraphAuthenticationBehaviors>]`: authenticationBehaviors
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[RemoveUnverifiedEmailClaim <Boolean?>]`: 
+      - `[RemoveUnverifiedEmailClaim <Boolean?>]`: Removes the email claim from tokens sent to an application when the email address's domain cannot be verified.
       - `[RequireClientServicePrincipal <Boolean?>]`: 
     - `[Certification <IMicrosoftGraphCertification>]`: certification
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

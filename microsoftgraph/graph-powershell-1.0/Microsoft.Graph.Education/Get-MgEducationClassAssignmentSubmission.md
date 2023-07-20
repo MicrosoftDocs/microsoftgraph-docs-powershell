@@ -54,21 +54,29 @@ Only teachers or applications with application permissions can add or change gra
 Students will not see the grade or feedback until the **assignment** has been released.
 
 ## EXAMPLES
+### Example 1: Get submission
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
-
 ```
-### Example 2
+This example shows how to use the Get-MgEducationClassAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get submission with $expand options
+
 ```powershell
 Import-Module Microsoft.Graph.Education
 
 Get-MgEducationClassAssignmentSubmission -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -ExpandProperty "*"
-
 ```
+This example shows how to use the Get-MgEducationClassAssignmentSubmission Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

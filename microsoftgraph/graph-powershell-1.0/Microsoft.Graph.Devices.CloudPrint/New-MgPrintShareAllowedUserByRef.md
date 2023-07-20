@@ -43,8 +43,8 @@ New-MgPrintShareAllowedUserByRef -InputObject <IDevicesCloudPrintIdentity> -Body
 Grant the specified user access to submit print jobs to the associated printerShare.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Devices.CloudPrint
 
@@ -53,8 +53,12 @@ $params = @{
 }
 
 New-MgPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgPrintShareAllowedUserByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

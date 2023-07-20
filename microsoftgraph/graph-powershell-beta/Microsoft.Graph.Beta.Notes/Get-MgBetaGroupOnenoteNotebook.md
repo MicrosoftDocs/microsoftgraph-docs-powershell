@@ -37,6 +37,7 @@ Get-MgBetaGroupOnenoteNotebook -InputObject <INotesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the properties and relationships of a notebook object.
 
+
 ## PARAMETERS
 
 ### -All

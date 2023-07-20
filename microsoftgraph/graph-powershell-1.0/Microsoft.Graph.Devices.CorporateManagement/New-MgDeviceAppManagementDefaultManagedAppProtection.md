@@ -812,7 +812,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-MgDeviceAppMgtDefaultManagedAppProtection
+New-DeviceAppMgtDefaultManagedAppProtection
 
 COMPLEX PARAMETER PROPERTIES
 

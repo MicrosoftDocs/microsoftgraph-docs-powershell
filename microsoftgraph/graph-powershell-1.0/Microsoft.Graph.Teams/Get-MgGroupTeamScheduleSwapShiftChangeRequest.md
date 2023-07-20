@@ -37,6 +37,7 @@ Get-MgGroupTeamScheduleSwapShiftChangeRequest -InputObject <ITeamsIdentity> [-Ex
 ## DESCRIPTION
 Retrieve the properties and relationships of a swapShiftsChangeRequest object.
 
+
 ## PARAMETERS
 
 ### -All

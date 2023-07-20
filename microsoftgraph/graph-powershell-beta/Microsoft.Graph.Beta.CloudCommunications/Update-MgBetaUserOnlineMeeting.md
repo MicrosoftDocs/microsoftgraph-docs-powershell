@@ -46,6 +46,11 @@ Update-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity>
 ## DESCRIPTION
 Update the navigation property presences in communications
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Activity

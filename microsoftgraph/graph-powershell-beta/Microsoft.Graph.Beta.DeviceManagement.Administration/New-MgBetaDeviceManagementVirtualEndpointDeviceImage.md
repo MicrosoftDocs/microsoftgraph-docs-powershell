@@ -35,8 +35,7 @@ Create a new cloudPcDeviceImage object.
 Upload a custom OS image that you can later provision on Cloud PCs.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -49,6 +48,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointDeviceImage -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointDeviceImage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

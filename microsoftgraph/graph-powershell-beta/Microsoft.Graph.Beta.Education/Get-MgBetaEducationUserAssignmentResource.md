@@ -40,6 +40,7 @@ Get-MgBetaEducationUserAssignmentResource -InputObject <IEducationIdentity> [-Ex
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+
 ## PARAMETERS
 
 ### -All

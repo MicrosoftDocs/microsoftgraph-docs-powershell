@@ -61,8 +61,8 @@ Update-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIden
 Update the properties of a partner-specific configuration.
 
 ## EXAMPLES
+### Example 1: Configure inbound trust settings
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -75,9 +75,13 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
-
 ```
-### Example 2
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Configure automaticUserConsent settings
+
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
@@ -89,8 +93,12 @@ $params = @{
 }
 
 Update-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

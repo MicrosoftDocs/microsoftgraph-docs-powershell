@@ -48,8 +48,7 @@ Create a new reviewSet object.
 The request body contains the display name of the review set, which is the only writable property.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 $params = @{
@@ -57,6 +56,8 @@ $params = @{
 }
 New-MgBetaComplianceEdiscoveryCaseReviewSet -CaseId $caseId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaComplianceEdiscoveryCaseReviewSet Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -261,8 +262,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The datetime when the review set was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
@@ -280,12 +281,13 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -296,9 +298,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TagId <String>]`: The unique identifier of tag
   - `[TagId1 <String>]`: The unique identifier of tag
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 `QUERIES <IMicrosoftGraphEdiscoveryReviewSetQuery[]>`: .
@@ -307,8 +311,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The time and date when the query was created. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z

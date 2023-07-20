@@ -234,7 +234,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgtTask
+Get-BetaDeviceAppMgtTask
 
 COMPLEX PARAMETER PROPERTIES
 

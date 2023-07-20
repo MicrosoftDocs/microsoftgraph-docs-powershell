@@ -51,8 +51,7 @@ Send an activity feed notification to a user.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Send-MgUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -74,8 +73,9 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Send-MgUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -97,8 +97,9 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
-
-### Example 3
+This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Send-MgUserTeamworkActivityNotification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -119,6 +120,8 @@ $params = @{
 }
 Send-MgUserTeamworkActivityNotification -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Send-MgUserTeamworkActivityNotification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -351,6 +354,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

@@ -31,13 +31,17 @@ Invoke-MgCheckoutUserDriveItem -InputObject <IUsersActionsIdentity> [-PassThru] 
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Invoke-MgCheckoutDriveItem -DriveId $driveId -DriveItemId $driveItemId
+```
+This example shows how to use the Invoke-MgCheckoutUserDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -173,6 +177,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

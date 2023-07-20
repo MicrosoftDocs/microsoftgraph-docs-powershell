@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaUserOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
-Delete navigation property virtualAppointment for users
+Delete a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgUserOnlineMeetingVirtualAppointment](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeetingVirtualAppointment?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Delete navigation property virtualAppointment for users
+Delete a virtualAppointment object.
 
 ## PARAMETERS
 

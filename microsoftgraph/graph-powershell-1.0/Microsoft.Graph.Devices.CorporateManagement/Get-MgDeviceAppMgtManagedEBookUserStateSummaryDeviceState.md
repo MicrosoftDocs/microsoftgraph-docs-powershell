@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The install state of the eBook.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedEBookUserStateSummaryDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedEBookUserStateSummaryDeviceState?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ## DESCRIPTION
@@ -39,6 +42,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 Please use Get-Help -Online.
 
 ## RELATED LINKS
+[Get-MgBetaDeviceAppMgtManagedEBookUserStateSummaryDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedEBookUserStateSummaryDeviceState?view=graph-powershell-beta)
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebookuserstatesummarydevicestate)
 

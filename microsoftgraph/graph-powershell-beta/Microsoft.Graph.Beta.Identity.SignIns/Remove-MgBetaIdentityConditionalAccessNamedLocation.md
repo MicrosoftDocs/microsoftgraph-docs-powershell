@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete an ipNamedLocation object.
+Delete a namedLocation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-v1.0)
@@ -28,17 +28,19 @@ Remove-MgBetaIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignI
 ```
 
 ## DESCRIPTION
-Delete an ipNamedLocation object.
+Delete a namedLocation object.
 
 ## EXAMPLES
+### Example 1: Remove a named location
 
-### Example 1
 ```powershell
 Connect-MgBetaGraph -Scopes 'Policy.ReadWrite.ConditionalAccess'
 
 Remove-MgBetaIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationId
-
 ```
+
+This example removed the named location specified by `$namedLocationId`.
+
 ## PARAMETERS
 
 

@@ -37,6 +37,7 @@ Get-MgBetaSiteOnenoteSection -InputObject <INotesIdentity> [-ExpandProperty <Str
 ## DESCRIPTION
 Retrieve the properties and relationships of a section object.
 
+
 ## PARAMETERS
 
 ### -All

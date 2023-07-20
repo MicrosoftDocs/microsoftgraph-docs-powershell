@@ -33,12 +33,13 @@ Activate a custodian that has been released from a case to make them part of the
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Initialize-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
 ```
+This example shows how to use the Initialize-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -153,6 +154,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IComplianceIdentity>`: Identity Parameter
+  - `[AuthoredNoteId <String>]`: The unique identifier of authoredNote
   - `[CaseId <String>]`: The unique identifier of case
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[CustodianId <String>]`: The unique identifier of custodian
@@ -163,9 +165,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReviewSetQueryId <String>]`: The unique identifier of reviewSetQuery
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[SourceCollectionId <String>]`: The unique identifier of sourceCollection
+  - `[SubjectRightsRequestId <String>]`: The unique identifier of subjectRightsRequest
   - `[TagId <String>]`: The unique identifier of tag
   - `[TagId1 <String>]`: The unique identifier of tag
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
+  - `[UserId <String>]`: The unique identifier of user
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS

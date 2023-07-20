@@ -18,9 +18,9 @@ Create new navigation property to userExperienceAnalyticsDeviceStartupProcessPer
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance
- [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int32>]
+ [-AdditionalProperties <Hashtable>] [-DeviceCount <Int64>] [-Id <String>] [-MedianImpactInMS <Int64>]
  [-MedianImpactInMs2 <Int64>] [-ProcessName <String>] [-ProductName <String>] [-Publisher <String>]
- [-TotalImpactInMS <Int32>] [-TotalImpactInMs2 <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalImpactInMS <Int64>] [-TotalImpactInMs2 <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -67,7 +67,9 @@ Accept wildcard characters: False
 ```
 
 ### -DeviceCount
-User experience analytics device startup process summarized count.
+The count of devices which initiated this process on startup.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: Int64
@@ -98,10 +100,12 @@ Accept wildcard characters: False
 ```
 
 ### -MedianImpactInMS
-User experience analytics device startup process median impact in milliseconds.
+The median impact of startup process on device boot time in milliseconds.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: Int32
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +117,9 @@ Accept wildcard characters: False
 ```
 
 ### -MedianImpactInMs2
-User experience analytics device startup process median impact in milliseconds.
+The median impact of startup process on device boot time in milliseconds.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: Int64
@@ -128,7 +134,10 @@ Accept wildcard characters: False
 ```
 
 ### -ProcessName
-User experience analytics device startup process name.
+The name of the startup process.
+Examples: outlook, excel.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -143,7 +152,10 @@ Accept wildcard characters: False
 ```
 
 ### -ProductName
-The user experience analytics device startup process product name.
+The product name of the startup process.
+Examples: Microsoft Outlook, Microsoft Excel.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -158,7 +170,10 @@ Accept wildcard characters: False
 ```
 
 ### -Publisher
-The User experience analytics device startup process publisher.
+The publisher of the startup process.
+Examples: Microsoft Corporation, Contoso Corp.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -173,10 +188,12 @@ Accept wildcard characters: False
 ```
 
 ### -TotalImpactInMS
-User experience analytics device startup process total impact in milliseconds.
+The total impact of startup process on device boot time in milliseconds.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 
 ```yaml
-Type: Int32
+Type: Int64
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +205,9 @@ Accept wildcard characters: False
 ```
 
 ### -TotalImpactInMs2
-User experience analytics device startup process total impact in milliseconds.
+The total impact of startup process on device boot time in milliseconds.
+Supports: $filter, $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: Int64
@@ -254,14 +273,14 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcessPerformance>`: The user experience analytics device startup process performance.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[DeviceCount <Int64?>]`: User experience analytics device startup process summarized count.
-  - `[MedianImpactInMS <Int64?>]`: User experience analytics device startup process median impact in milliseconds.
-  - `[MedianImpactInMs2 <Int64?>]`: User experience analytics device startup process median impact in milliseconds.
-  - `[ProcessName <String>]`: User experience analytics device startup process name.
-  - `[ProductName <String>]`: The user experience analytics device startup process product name.
-  - `[Publisher <String>]`: The User experience analytics device startup process publisher.
-  - `[TotalImpactInMS <Int64?>]`: User experience analytics device startup process total impact in milliseconds.
-  - `[TotalImpactInMs2 <Int64?>]`: User experience analytics device startup process total impact in milliseconds.
+  - `[DeviceCount <Int64?>]`: The count of devices which initiated this process on startup. Supports: $filter, $select, $OrderBy. Read-only.
+  - `[MedianImpactInMS <Int64?>]`: The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
+  - `[MedianImpactInMs2 <Int64?>]`: The median impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
+  - `[ProcessName <String>]`: The name of the startup process. Examples: outlook, excel. Supports: $select, $OrderBy. Read-only.
+  - `[ProductName <String>]`: The product name of the startup process. Examples: Microsoft Outlook, Microsoft Excel. Supports: $select, $OrderBy. Read-only.
+  - `[Publisher <String>]`: The publisher of the startup process. Examples: Microsoft Corporation, Contoso Corp. Supports: $select, $OrderBy. Read-only.
+  - `[TotalImpactInMS <Int64?>]`: The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
+  - `[TotalImpactInMs2 <Int64?>]`: The total impact of startup process on device boot time in milliseconds. Supports: $filter, $select, $OrderBy. Read-only.
 
 ## RELATED LINKS
 [New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceStartupProcessPerformance?view=graph-powershell-v1.0)

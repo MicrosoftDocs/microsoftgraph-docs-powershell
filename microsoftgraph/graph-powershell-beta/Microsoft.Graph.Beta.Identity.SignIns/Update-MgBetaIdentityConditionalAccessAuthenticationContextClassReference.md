@@ -47,16 +47,23 @@ Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference
 Update the properties of an authenticationContextClassReference object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
 $params = @{
-	Value = @(
-	)
+	displayName = "Contoso medium"
+	description = "Medium protection level defined for Contoso policy"
+	isAvailable = $true
 }
+
 Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference -AuthenticationContextClassReferenceId $authenticationContextClassReferenceId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaIdentityConditionalAccessAuthenticationContextClassReference Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -324,4 +331,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityConditionalAccessAuthenticationContextClassReference](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationContextClassReference?view=graph-powershell-v1.0)
+
 

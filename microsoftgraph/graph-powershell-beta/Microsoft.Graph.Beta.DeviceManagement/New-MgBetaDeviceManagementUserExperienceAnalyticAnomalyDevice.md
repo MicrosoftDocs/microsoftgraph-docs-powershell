@@ -19,8 +19,9 @@ Create new navigation property to userExperienceAnalyticsAnomalyDevice for devic
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice [-AdditionalProperties <Hashtable>]
  [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
- [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-DeviceId <String>] [-DeviceManufacturer <String>]
- [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
+ [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-CorrelationGroupId <String>] [-DeviceId <String>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
+ [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -111,6 +112,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CorrelationGroupId
+The unique identifier of the correlation group.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceId
 The unique identifier of the device.
 
@@ -161,6 +177,22 @@ The name of the device.
 
 ```yaml
 Type: String
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceStatus
+Indicates the status of the device in the correlation group.
+Eg: Device status can be anomalous, affected, at risk.
+
+```yaml
+Type: UserExperienceAnalyticsDeviceStatus
 Parameter Sets: CreateExpanded
 Aliases:
 

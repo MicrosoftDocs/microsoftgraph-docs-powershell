@@ -310,8 +310,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
@@ -333,8 +333,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Email <String>]`: Email address of the presenter.
     - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
       - `[TenantId <String>]`: The user's tenant ID.
     - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -357,7 +357,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
     - `[AllowedPresenters <String>]`: onlineMeetingPresenters
     - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-    - `[AnonymizeIdentityForRoles <String[]>]`: 
+    - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
     - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
       - `[Id <String>]`: The unique identifier for an entity. Read-only.
       - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -495,8 +495,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ApplicationInstance <IMicrosoftGraphIdentity>]`: identity
@@ -540,8 +540,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
     - `[TenantId <String>]`: The user's tenant ID.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -565,7 +565,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
   - `[AllowedPresenters <String>]`: onlineMeetingPresenters
   - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-  - `[AnonymizeIdentityForRoles <String[]>]`: 
+  - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
   - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
     - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -577,8 +577,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[EmailAddress <String>]`: Email address of the user associated with this attendance record.
       - `[Identity <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[RegistrantId <String>]`: Unique identifier of a meetingRegistrant. Presents when the participant has registered for the meeting.
       - `[Role <String>]`: Role of the attendee. Possible values are: None, Attendee, Presenter, and Organizer.
       - `[TotalAttendanceInSeconds <Int32?>]`: Total duration of the attendances in seconds.

@@ -1,14 +1,14 @@
 ---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingshiftpreference
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersponsorcount
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserSettingShiftPreference
+# Get-MgBetaUserSponsorCount
 
 ## SYNOPSIS
-Retrieve the properties and relationships of a shiftPreferences object by ID.
+Get the number of the resource
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoList?view=graph-powershell-v1.0)
@@ -17,37 +17,32 @@ Retrieve the properties and relationships of a shiftPreferences object by ID.
 
 ### Get (Default)
 ```
-Get-MgBetaUserSettingShiftPreference -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaUserSponsorCount -UserId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserSponsorCount -InputObject <IUsersIdentity> [-Filter <String>] [-Search <String>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Retrieve the properties and relationships of a shiftPreferences object by ID.
+Get the number of the resource
 
-## EXAMPLES
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Users
 
-Get-MgBetaUserSettingShiftPreference -UserId $userId
 
-```
+
+
 ## PARAMETERS
 
-### -ExpandProperty
-Expand related entities
+### -Filter
+Filter items by property values
 
 ```yaml
-Type: String[]
+Type: String
 Parameter Sets: (All)
-Aliases: Expand
+Aliases:
 
 Required: False
 Position: Named
@@ -72,13 +67,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Property
-Select properties to be returned
+### -Search
+Search items by search phrases
 
 ```yaml
-Type: String[]
+Type: String
 Parameter Sets: (All)
-Aliases: Select
+Aliases:
 
 Required: False
 Position: Named
@@ -110,7 +105,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShiftPreferences
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -136,11 +131,14 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgUserTodoList](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoList?view=graph-powershell-v1.0)
-
 

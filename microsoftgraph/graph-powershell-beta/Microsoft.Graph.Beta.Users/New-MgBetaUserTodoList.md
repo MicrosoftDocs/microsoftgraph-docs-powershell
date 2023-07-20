@@ -48,6 +48,11 @@ New-MgBetaUserOutlookTaskGroupTaskFolderTaskAttachment -InputObject <IUsersIdent
 Use this API to add an attachment to an outlookTask.
 The attachment can be a file (of fileAttachment type) or Outlook item (itemAttachment type).
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -325,8 +330,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

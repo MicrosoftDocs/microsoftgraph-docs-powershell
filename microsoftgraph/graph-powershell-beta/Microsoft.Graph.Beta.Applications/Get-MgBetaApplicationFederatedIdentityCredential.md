@@ -39,23 +39,18 @@ Get-MgBetaApplicationFederatedIdentityCredential -InputObject <IApplicationsIden
 Read the properties and relationships of a federatedIdentityCredential object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
-
 ```
-## PARAMETERS
+This example shows how to use the Get-MgBetaApplicationFederatedIdentityCredential Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Get-MgBetaApplicationFederatedIdentityCredential -ApplicationId $applicationId -FederatedIdentityCredentialId $federatedIdentityCredentialId
 
-```
 ## PARAMETERS
 
 ### -All

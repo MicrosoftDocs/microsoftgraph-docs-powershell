@@ -57,8 +57,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Test-MgGroupProperty Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Groups
 $params = @{
@@ -68,6 +67,8 @@ $params = @{
 }
 Test-MgGroupProperty -GroupId $groupId -BodyParameter $params
 ```
+This example shows how to use the Test-MgGroupProperty Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

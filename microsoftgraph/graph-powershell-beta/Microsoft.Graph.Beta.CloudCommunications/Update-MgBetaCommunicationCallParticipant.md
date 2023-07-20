@@ -20,7 +20,7 @@ Update the navigation property participants in communications
 Update-MgBetaCommunicationCallParticipant -CallId <String> -ParticipantId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>]
  [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
+ [-Metadata <String>] [-PreferredDisplayName <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
  [-RemovedState <IMicrosoftGraphRemovedState>] [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]
  [-RosterSequenceNumber <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -36,7 +36,7 @@ Update-MgBetaCommunicationCallParticipant -CallId <String> -ParticipantId <Strin
 Update-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>]
  [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
+ [-Metadata <String>] [-PreferredDisplayName <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
  [-RemovedState <IMicrosoftGraphRemovedState>] [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]
  [-RosterSequenceNumber <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -231,6 +231,21 @@ Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PreferredDisplayName
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False

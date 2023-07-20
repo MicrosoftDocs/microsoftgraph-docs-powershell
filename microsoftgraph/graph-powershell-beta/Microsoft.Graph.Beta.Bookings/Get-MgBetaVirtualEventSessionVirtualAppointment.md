@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventSessionVirtualAppointment
 
 ## SYNOPSIS
-Get virtualAppointment from solutions
+Read the properties and relationships of a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionVirtualAppointment](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionVirtualAppointment?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Get-MgBetaVirtualEventSessionVirtualAppointment -InputObject <IBookingsIdentity>
 ```
 
 ## DESCRIPTION
-Get virtualAppointment from solutions
+Read the properties and relationships of a virtualAppointment object.
 
 ## PARAMETERS
 

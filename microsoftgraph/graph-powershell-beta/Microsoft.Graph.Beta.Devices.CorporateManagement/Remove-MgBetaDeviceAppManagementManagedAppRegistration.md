@@ -137,7 +137,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Remove-MgDeviceAppMgtManagedAppRegistration
+Remove-BetaDeviceAppMgtManagedAppRegistration
 
 COMPLEX PARAMETER PROPERTIES
 

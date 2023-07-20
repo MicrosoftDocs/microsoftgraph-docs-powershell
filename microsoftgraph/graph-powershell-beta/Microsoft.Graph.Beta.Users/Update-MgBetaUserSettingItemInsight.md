@@ -43,8 +43,7 @@ Update-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity>
 Update the privacy settings for itemInsights and meeting hours insights of a user.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Update-MgBetaUserSettingItemInsight Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -52,6 +51,8 @@ $params = @{
 }
 Update-MgBetaUserSettingItemInsight -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserSettingItemInsight Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -221,8 +222,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

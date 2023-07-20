@@ -44,6 +44,11 @@ Confirm-MgContactMemberObject -InputObject <IIdentityDirectoryManagementIdentity
 ## DESCRIPTION
 Invoke action checkMemberObjects
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

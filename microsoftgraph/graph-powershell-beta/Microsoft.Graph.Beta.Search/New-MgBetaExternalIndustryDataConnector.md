@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
@@ -29,7 +29,7 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ```
 
 ## DESCRIPTION
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
 
 ## PARAMETERS
 

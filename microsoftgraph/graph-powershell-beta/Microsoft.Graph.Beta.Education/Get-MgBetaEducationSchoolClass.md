@@ -25,12 +25,13 @@ Get-MgBetaEducationSchoolClass -EducationSchoolId <String> [-ExpandProperty <Str
 Retrieve a list of classes owned by a school.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaEducationSchoolClass Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSchoolClass -EducationSchoolId $educationSchoolId
 ```
+This example shows how to use the Get-MgBetaEducationSchoolClass Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

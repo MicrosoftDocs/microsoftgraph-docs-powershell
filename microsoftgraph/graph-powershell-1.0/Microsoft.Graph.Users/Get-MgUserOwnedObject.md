@@ -30,6 +30,11 @@ Get-MgUserOwnedDeviceCountAsEndpoint -InputObject <IUsersIdentity> [-Filter <Str
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ConsistencyLevel

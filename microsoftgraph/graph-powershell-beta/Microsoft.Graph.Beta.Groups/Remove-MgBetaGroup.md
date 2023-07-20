@@ -38,12 +38,14 @@ This isn't applicable to Security groups and Distribution groups which are perma
 To learn more, see deletedItems.
 
 ## EXAMPLES
+### Example 1: Remove a group
 
-### Example 1
 ```powershell
 Remove-MgBetaGroup -GroupId 'f6b9791b-dfc1-40d6-9ab6-7b29126c534a'
-
 ```
+
+This example deletes the specified group.
+
 ## PARAMETERS
 
 

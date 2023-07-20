@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaVirtualEventWebinarSessionVirtualAppointment
 
 ## SYNOPSIS
-Update the navigation property virtualAppointment in solutions
+Update the properties of a virtualAppointment object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventWebinarSessionVirtualAppointment](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarSessionVirtualAppointment?view=graph-powershell-v1.0)
@@ -47,7 +47,7 @@ Update-MgBetaVirtualEventWebinarSessionVirtualAppointment -InputObject <IBooking
 ```
 
 ## DESCRIPTION
-Update the navigation property virtualAppointment in solutions
+Update the properties of a virtualAppointment object.
 
 ## PARAMETERS
 

@@ -41,13 +41,14 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaUserOutlookTaskFolderTask Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserOutlookTaskFolderTask -UserId $userId -OutlookTaskFolderId $outlookTaskFolderId
 ```
+This example shows how to use the Get-MgBetaUserOutlookTaskFolderTask Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -267,8 +268,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

@@ -55,8 +55,7 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply-all to a message and send it later.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Invoke-MgReplyAllUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -65,6 +64,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgReplyAllUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -317,6 +318,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

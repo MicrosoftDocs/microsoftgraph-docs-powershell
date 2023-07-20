@@ -1,155 +1,47 @@
 ---
 external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermailfoldermessagerulecount
 schema: 2.0.0
 ---
 
-# Get-MgUserMessageAttachment
+# Get-MgUserMailFolderMessageRuleCount
 
 ## SYNOPSIS
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+Get the number of the resource
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachment?view=graph-powershell-beta)
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 ```
-Get-MgUserMessageAttachment -MessageId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserMessageAttachment -AttachmentId <String> -MessageId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgUserMailFolderMessageRuleCount -MailFolderId <String> -UserId <String> [-Filter <String>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMessageAttachment -InputObject <IMailIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgUserMailFolderMessageRuleCount -InputObject <IMailIdentity> [-Filter <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+Get the number of the resource
 
-## EXAMPLES
 
-### Example 1
-```
-Import-Module Microsoft.Graph.Mail
 
-# A UPN can also be used as -UserId.
-Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
 
-```
-### Example 2
-```
-Import-Module Microsoft.Graph.Mail
 
-# A UPN can also be used as -UserId.
-Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
 
-```
-### Example 3
-```
-Import-Module Microsoft.Graph.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
-
-```
-### Example 4
-```
-Import-Module Microsoft.Graph.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId -ExpandProperty "microsoft.graph.itemattachment/item"
-
-```
-### Example 5
-```
-Import-Module Microsoft.Graph.Mail
-
-# A UPN can also be used as -UserId.
-Get-MgUserMessageAttachment -UserId $userId -MessageId $messageId -AttachmentId $attachmentId
-
-```
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: False
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -AttachmentId
-The unique identifier of attachment
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -175,77 +67,17 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MessageId
-The unique identifier of message
+### -MailFolderId
+The unique identifier of mailFolder
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -255,27 +87,12 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
 Position: Named
 Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: 0
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
@@ -288,27 +105,26 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAttachment
+### System.Int32
 ## NOTES
+
+ALIASES
+
 COMPLEX PARAMETER PROPERTIES
 
-To create the parameters described below, construct a hash table containing the appropriate properties.
-For information on hash tables, run Get-Help about_Hash_Tables.
+To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-INPUTOBJECT \<IMailIdentity\>: Identity Parameter
-  \[AttachmentId \<String\>\]: The unique identifier of attachment
-  \[ExtensionId \<String\>\]: The unique identifier of extension
-  \[InferenceClassificationOverrideId \<String\>\]: The unique identifier of inferenceClassificationOverride
-  \[MailFolderId \<String\>\]: The unique identifier of mailFolder
-  \[MailFolderId1 \<String\>\]: The unique identifier of mailFolder
-  \[MessageId \<String\>\]: The unique identifier of message
-  \[MessageRuleId \<String\>\]: The unique identifier of messageRule
-  \[UserId \<String\>\]: The unique identifier of user
+
+`INPUTOBJECT <IMailIdentity>`: Identity Parameter
+  - `[AttachmentId <String>]`: The unique identifier of attachment
+  - `[ExtensionId <String>]`: The unique identifier of extension
+  - `[InferenceClassificationOverrideId <String>]`: The unique identifier of inferenceClassificationOverride
+  - `[MailFolderId <String>]`: The unique identifier of mailFolder
+  - `[MailFolderId1 <String>]`: The unique identifier of mailFolder
+  - `[MessageId <String>]`: The unique identifier of message
+  - `[MessageRuleId <String>]`: The unique identifier of messageRule
+  - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
 [Get-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageAttachment?view=graph-powershell-beta)
-
-[https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment](https://learn.microsoft.com/powershell/module/microsoft.graph.mail/get-mgusermessageattachment)
-
-
 

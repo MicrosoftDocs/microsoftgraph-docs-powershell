@@ -33,14 +33,18 @@ Mark a schedulingGroup as inactive by setting its **isActive** property.\nThis m
 Existing shift instances assigned to the scheduling group remain part of the group.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamScheduleSchedulingGroup -TeamId $teamId -SchedulingGroupId $schedulingGroupId
-
 ```
+This example shows how to use the Remove-MgTeamScheduleSchedulingGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch

@@ -8,8 +8,10 @@ schema: 2.0.0
 # New-MgBetaGroupConversation
 
 ## SYNOPSIS
-Create a new conversation by including a thread and a post.
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-v1.0)
@@ -45,42 +47,11 @@ New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicr
 ```
 
 ## DESCRIPTION
-Create a new conversation by including a thread and a post.
-Use reply thread or reply post to further post to that conversation.
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
-## EXAMPLES
-
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Groups
-
-$params = @{
-	topic = "Take your wellness days and rest"
-	threads = @(
-		@{
-			posts = @(
-				@{
-					body = @{
-						contentType = "html"
-						content = "Contoso cares about you: Rest and Recharge"
-					}
-					newParticipants = @(
-						@{
-							emailAddress = @{
-								name = "Adele Vance"
-								address = "AdeleV@contoso.onmicrosoft.com"
-							}
-						}
-					)
-				}
-			)
-		}
-	)
-}
-
-New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
-
-```
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -486,5 +457,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-v1.0)
-
 

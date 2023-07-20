@@ -47,8 +47,7 @@ Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue
 Update the properties of an allowedValue object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -56,6 +55,8 @@ $params = @{
 }
 Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId -AllowedValueId $allowedValueId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -230,6 +231,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
   - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
   - `[CommandId <String>]`: The unique identifier of command
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -246,6 +248,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -257,7 +261,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 

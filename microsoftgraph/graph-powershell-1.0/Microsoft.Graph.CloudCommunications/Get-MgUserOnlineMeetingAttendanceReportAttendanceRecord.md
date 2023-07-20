@@ -22,6 +22,11 @@ Get-MgCommunicationPresenceCount [-Filter <String>] [-Search <String>] [<CommonP
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

@@ -31,14 +31,18 @@ Remove-MgTeamChannel -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThr
 Delete the channel.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Remove-MgTeamChannel -TeamId $teamId -ChannelId $channelId
-
 ```
+This example shows how to use the Remove-MgTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ChannelId

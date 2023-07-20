@@ -43,15 +43,19 @@ Set-MgBetaUserManagerByRef -InputObject <IUsersIdentity> -BodyParameter <IRefere
 Assign a user's manager.
 
 ## EXAMPLES
+### Example 1: Update a user's manager
 
-### Example 1
 ```powershell
 $NewManager = @{
   "@odata.id"="https://graph.microsoft.com/v1.0/users/075b32dd-edb7-47cf-89ef-f3f733683a3f"
   }
-```
 
 Set-MgBetaUserManagerByRef -UserId '8a7c50d3-fcbd-4727-a889-8ab232dfea01' -BodyParameter $NewManager
+```
+
+In this example, the first command defines the new manager using the $NewManager variable with id `075b32dd-edb7-47cf-89ef-f3f733683a3f`.
+The second command sets the manager for user defined by the UserId as the value provided on the $NewManager variable.
+
 
 ## PARAMETERS
 
@@ -234,8 +238,12 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutlookTaskGroupId <String>]`: The unique identifier of outlookTaskGroup
   - `[OutlookTaskId <String>]`: The unique identifier of outlookTask
   - `[ProfilePhotoId <String>]`: The unique identifier of profilePhoto
+  - `[ServicePrincipalId <String>]`: The unique identifier of servicePrincipal
+  - `[SharedInsightId <String>]`: The unique identifier of sharedInsight
   - `[TodoTaskId <String>]`: The unique identifier of todoTask
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
+  - `[TrendingId <String>]`: The unique identifier of trending
+  - `[UsedInsightId <String>]`: The unique identifier of usedInsight
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS

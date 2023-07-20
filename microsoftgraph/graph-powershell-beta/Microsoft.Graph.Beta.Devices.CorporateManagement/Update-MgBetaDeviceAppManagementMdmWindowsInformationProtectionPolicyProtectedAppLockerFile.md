@@ -250,7 +250,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicyProtectedAppLockerFile
+Update-BetaDeviceAppMgtMdmWindowInformationProtectionPolicyProtectedAppLockerFile
 
 COMPLEX PARAMETER PROPERTIES
 

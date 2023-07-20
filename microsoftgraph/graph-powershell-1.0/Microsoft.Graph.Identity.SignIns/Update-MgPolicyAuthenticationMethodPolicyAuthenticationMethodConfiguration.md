@@ -49,8 +49,7 @@ Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration
 Update the navigation property authenticationMethodConfigurations in policies
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
@@ -59,8 +58,9 @@ $params = @{
 }
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
 ```
-
-### Example 2
+This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
@@ -70,8 +70,9 @@ $params = @{
 }
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
 ```
-
-### Example 3
+This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
@@ -80,8 +81,9 @@ $params = @{
 }
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
 ```
-
-### Example 4
+This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 $params = @{
@@ -90,6 +92,8 @@ $params = @{
 }
 Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration -AuthenticationMethodConfigurationId $authenticationMethodConfigurationId -BodyParameter $params
 ```
+This example shows how to use the Update-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

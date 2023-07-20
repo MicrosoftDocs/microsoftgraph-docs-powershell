@@ -383,7 +383,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-MgDeviceAppMgtIoLobAppProvisioningConfiguration
+Update-BetaDeviceAppMgtIoLobAppProvisioningConfiguration
 
 COMPLEX PARAMETER PROPERTIES
 

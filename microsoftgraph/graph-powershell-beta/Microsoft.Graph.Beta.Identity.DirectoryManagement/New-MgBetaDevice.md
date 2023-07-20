@@ -44,8 +44,8 @@ New-MgBetaDevice -BodyParameter <IMicrosoftGraphDevice> [-WhatIf] [-Confirm] [<C
 Create a new device.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
@@ -64,8 +64,12 @@ $params = @{
 }
 
 New-MgBetaDevice -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaDevice Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -454,6 +458,8 @@ Accept wildcard characters: False
 true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage.
 Default value is false.
 Read-only.
+To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission.
+For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
 
 ```yaml
 Type: SwitchParameter
@@ -911,9 +917,9 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `ALTERNATIVESECURITYIDS <IMicrosoftGraphAlternativeSecurityId[]>`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-  - `[IdentityProvider <String>]`: For internal use only
-  - `[Key <Byte[]>]`: For internal use only
-  - `[Type <Int32?>]`: For internal use only
+  - `[IdentityProvider <String>]`: For internal use only.
+  - `[Key <Byte[]>]`: For internal use only.
+  - `[Type <Int32?>]`: For internal use only.
 
 `BODYPARAMETER <IMicrosoftGraphDevice>`: device
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -921,9 +927,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
   - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-    - `[IdentityProvider <String>]`: For internal use only
-    - `[Key <Byte[]>]`: For internal use only
-    - `[Type <Int32?>]`: For internal use only
+    - `[IdentityProvider <String>]`: For internal use only.
+    - `[Key <Byte[]>]`: For internal use only.
+    - `[Type <Int32?>]`: For internal use only.
   - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
   - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -971,7 +977,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Hostnames <String[]>]`: List of hostNames for the device.
   - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-  - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+  - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
   - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
   - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
   - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.

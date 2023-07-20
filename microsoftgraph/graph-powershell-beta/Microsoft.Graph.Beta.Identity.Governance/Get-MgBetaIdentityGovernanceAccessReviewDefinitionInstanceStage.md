@@ -40,14 +40,18 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -InputObject <II
 Retrieve the properties and relationships of an accessReviewStage object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId
-
 ```
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId

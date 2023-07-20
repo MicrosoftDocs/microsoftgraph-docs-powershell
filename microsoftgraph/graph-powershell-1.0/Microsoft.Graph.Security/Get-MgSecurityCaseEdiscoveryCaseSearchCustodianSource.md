@@ -38,14 +38,18 @@ Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -InputObject <ISecurityIde
 Custodian sources that are included in the eDiscovery search.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Security
 
 Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoverySearchId $ediscoverySearchId
-
 ```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseSearchCustodianSource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -280,6 +284,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -290,7 +296,14 @@ To create the parameters described below, construct a hash table containing the 
   - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
   - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
@@ -301,6 +314,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseSearchCustodianSource?view=graph-powershell-beta)

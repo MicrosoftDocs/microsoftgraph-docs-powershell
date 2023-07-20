@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: ec63a769-dc6e-4601-941a-bf469ae8a90b
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Calendar
+Module Guid: a2ce3d24-4415-4ab2-a8f6-cb34efe474f2
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -22,6 +22,9 @@ Read-only.
 
 ### [Get-MgGroupCalendarPermission](Get-MgGroupCalendarPermission.md)
 Get the specified permissions object of a user or group calendar that has been shared.
+
+### [Get-MgGroupCalendarPermissionCount](Get-MgGroupCalendarPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgGroupCalendarPermissionCount](Get-MgGroupCalendarPermissionCount.md)
 Get the number of the resource
@@ -89,13 +92,16 @@ Get the number of the resource
 ### [Get-MgPlaceAsRoom](Get-MgPlaceAsRoom.md)
 Get the item of type microsoft.graph.place as microsoft.graph.room
 
+### [Get-MgPlaceAsRoomList](Get-MgPlaceAsRoomList.md)
+Get the item of type microsoft.graph.place as microsoft.graph.roomList
+
 ### [Get-MgPlaceCount](Get-MgPlaceCount.md)
 Get the number of the resource
 
-### [Get-MgPlacePlaceCountAsRoom](Get-MgPlacePlaceCountAsRoom.md)
+### [Get-MgPlaceCountAsRoom](Get-MgPlaceCountAsRoom.md)
 Get the number of the resource
 
-### [Get-MgPlacePlaceCountAsRoom](Get-MgPlacePlaceCountAsRoom.md)
+### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
 Get the number of the resource
 
 ### [Get-MgUserCalendarCount](Get-MgUserCalendarCount.md)
@@ -226,6 +232,30 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
+### [New-MgGroupEventInstanceExtension](New-MgGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
+
 ### [New-MgUserCalendarPermission](New-MgUserCalendarPermission.md)
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
 
@@ -282,6 +312,15 @@ Delete navigation property extensions for groups
 ### [Remove-MgPlace](Remove-MgPlace.md)
 Delete entity from places
 
+### [Remove-MgPlace](Remove-MgPlace.md)
+Delete entity from places
+
+### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
+Delete calendarPermission.
+
+### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
+Delete calendarPermission.
+
 ### [Remove-MgUserCalendarPermission](Remove-MgUserCalendarPermission.md)
 Delete calendarPermission.
 
@@ -312,6 +351,13 @@ Update the navigation property extensions in groups
 ### [Update-MgPlace](Update-MgPlace.md)
 Update the properties of place object, which can be a room or roomList.
 You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
+
+### [Update-MgPlace](Update-MgPlace.md)
+Update the properties of place object, which can be a room or roomList.
+You can identify the **room** or **roomList** by specifying the **id** or **emailAddress** property.
+
+### [Update-MgUserCalendarPermission](Update-MgUserCalendarPermission.md)
+Update the permissions assigned to an existing sharee or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.
 
 ### [Update-MgUserCalendarPermission](Update-MgUserCalendarPermission.md)
 Update the permissions assigned to an existing sharee or delegate, through the corresponding \<b\>calendarPermission\</b\> object for a calendar.

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetarolemanagementcloudpcroledefinitioninheritpermissionfrom
 schema: 2.0.0
@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -17,22 +20,15 @@ Create new navigation property to inheritsPermissionsFrom for roleManagement
 New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom -UnifiedRoleDefinitionId <String>
  [-AdditionalProperties <Hashtable>] [-AllowedPrincipalTypes <String>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]
- [-IsBuiltIn] [-IsEnabled] [-ResourceScopes <String[]>]
+ [-IsBuiltIn] [-IsEnabled] [-IsPrivileged] [-ResourceScopes <String[]>]
  [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>] [-TemplateId <String>] [-Version <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom -UnifiedRoleDefinitionId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom
- -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -40,29 +36,20 @@ New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom
 New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom
  -InputObject <IDeviceManagementEnrollmentIdentity> [-AdditionalProperties <Hashtable>]
  [-AllowedPrincipalTypes <String>] [-Description <String>] [-DisplayName <String>] [-Id <String>]
- [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>] [-IsBuiltIn] [-IsEnabled]
+ [-InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>] [-IsBuiltIn] [-IsEnabled] [-IsPrivileged]
  [-ResourceScopes <String[]>] [-RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]
- [-TemplateId <String>] [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-TemplateId <String>] [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaRoleManagementCloudPcRoleDefinitionInheritPermissionFrom
+ -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRoleDefinition>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to inheritsPermissionsFrom for roleManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -70,7 +57,7 @@ Create new navigation property to inheritsPermissionsFrom for roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +72,7 @@ Accept wildcard characters: False
 allowedRolePrincipalTypes
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +88,7 @@ unifiedRoleDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
+Type: IMicrosoftGraphUnifiedRoleDefinition
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -117,7 +104,7 @@ The description for the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -135,7 +122,7 @@ Required.
 Supports $filter (eq and startsWith operators only).
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +138,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +155,7 @@ Only Azure AD built-in roles support this attribute.
 To construct, see NOTES section for INHERITSPERMISSIONSFROM properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition[]
+Type: IMicrosoftGraphUnifiedRoleDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -184,8 +171,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
+Type: IDeviceManagementEnrollmentIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -201,7 +188,7 @@ Read-only.
 Supports $filter (eq operator only).
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +205,22 @@ If false the role is not available for assignment.
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IsPrivileged
+.
+
+```yaml
+Type: SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +240,7 @@ This will be deprecated soon.
 Attach scope to role assignment
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +258,7 @@ Required.
 To construct, see NOTES section for ROLEPERMISSIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRolePermission[]
+Type: IMicrosoftGraphUnifiedRolePermission[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -273,7 +275,7 @@ This identifier is typically used if one needs an identifier to be the same acro
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -288,8 +290,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleDefinition
 
 ```yaml
-Type: System.String
-Parameter Sets: Create, CreateExpanded
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -304,7 +306,7 @@ Indicates version of the unifiedRoleDefinition.
 Read-only when isBuiltIn is true.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +321,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -335,7 +337,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -352,13 +354,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition
-
 ## NOTES
 
 ALIASES
@@ -377,6 +376,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
   - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
   - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+  - `[IsPrivileged <Boolean?>]`: 
   - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -393,6 +393,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[InheritsPermissionsFrom <IMicrosoftGraphUnifiedRoleDefinition[]>]`: Read-only collection of role definitions that the given role definition inherits from. Only Azure AD built-in roles support this attribute.
   - `[IsBuiltIn <Boolean?>]`: Flag indicating if the unifiedRoleDefinition is part of the default set included with the product or custom. Read-only.  Supports $filter (eq operator only).
   - `[IsEnabled <Boolean?>]`: Flag indicating if the role is enabled for assignment. If false the role is not available for assignment. Read-only when isBuiltIn is true.
+  - `[IsPrivileged <Boolean?>]`: 
   - `[ResourceScopes <String[]>]`: List of scopes permissions granted by the role definition apply to. Currently only / is supported. Read-only when isBuiltIn is true. DO NOT USE. This will be deprecated soon. Attach scope to role assignment
   - `[RolePermissions <IMicrosoftGraphUnifiedRolePermission[]>]`: List of permissions included in the role. Read-only when isBuiltIn is true. Required.
     - `[AllowedResourceActions <String[]>]`: Set of tasks that can be performed on a resource.
@@ -434,4 +435,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementCloudPcRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
 

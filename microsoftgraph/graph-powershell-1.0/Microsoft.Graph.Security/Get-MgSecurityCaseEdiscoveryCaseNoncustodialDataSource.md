@@ -39,24 +39,27 @@ Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -InputObject <ISecurityId
 Returns a list of case ediscoveryNoncustodialDataSource objects for this case.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"
+Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource" 
 ```
-
-### Example 2
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
 Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -ExpandProperty "dataSource"  -OutFile $outFileId
 ```
-
-### Example 3
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Security
-Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource"
+Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryNoncustodialDataSourceId $ediscoveryNoncustodialDataSourceId -ExpandProperty "dataSource" 
 ```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCaseNoncustodialDataSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -277,6 +280,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <ISecurityIdentity>`: Identity Parameter
   - `[AlertId <String>]`: The unique identifier of alert
+  - `[ArticleId <String>]`: The unique identifier of article
+  - `[ArticleIndicatorId <String>]`: The unique identifier of articleIndicator
   - `[CaseOperationId <String>]`: The unique identifier of caseOperation
   - `[DataSourceId <String>]`: The unique identifier of dataSource
   - `[EdiscoveryCaseId <String>]`: The unique identifier of ediscoveryCase
@@ -287,7 +292,14 @@ To create the parameters described below, construct a hash table containing the 
   - `[EdiscoveryReviewTagId <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoveryReviewTagId1 <String>]`: The unique identifier of ediscoveryReviewTag
   - `[EdiscoverySearchId <String>]`: The unique identifier of ediscoverySearch
+  - `[HostComponentId <String>]`: The unique identifier of hostComponent
+  - `[HostCookieId <String>]`: The unique identifier of hostCookie
+  - `[HostId <String>]`: The unique identifier of host
+  - `[HostTrackerId <String>]`: The unique identifier of hostTracker
   - `[IncidentId <String>]`: The unique identifier of incident
+  - `[IntelligenceProfileId <String>]`: The unique identifier of intelligenceProfile
+  - `[IntelligenceProfileIndicatorId <String>]`: The unique identifier of intelligenceProfileIndicator
+  - `[PassiveDnsRecordId <String>]`: The unique identifier of passiveDnsRecord
   - `[RetentionEventId <String>]`: The unique identifier of retentionEvent
   - `[RetentionEventTypeId <String>]`: The unique identifier of retentionEventType
   - `[SecureScoreControlProfileId <String>]`: The unique identifier of secureScoreControlProfile
@@ -298,6 +310,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteSourceId <String>]`: The unique identifier of siteSource
   - `[UnifiedGroupSourceId <String>]`: The unique identifier of unifiedGroupSource
   - `[UserSourceId <String>]`: The unique identifier of userSource
+  - `[VulnerabilityComponentId <String>]`: The unique identifier of vulnerabilityComponent
+  - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
 [Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-beta)

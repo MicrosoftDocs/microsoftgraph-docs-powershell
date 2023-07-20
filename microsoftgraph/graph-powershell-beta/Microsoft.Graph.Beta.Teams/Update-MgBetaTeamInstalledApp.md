@@ -47,12 +47,13 @@ Update-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity>
 Upgrade an app installation within a chat.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Update-MgBetaTeamInstalledApp Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Update-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
 ```
+This example shows how to use the Update-MgBetaTeamInstalledApp Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -236,6 +237,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

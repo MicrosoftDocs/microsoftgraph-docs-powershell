@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.PersonalContacts
-Module Guid: 348e0558-c10c-4a0d-aed0-033852aa5b15
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.PersonalContacts
+Module Guid: abfca319-343a-4c19-9a6d-f664778ca841
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -55,6 +55,9 @@ Get media content for the navigation property photo from users
 ### [Get-MgUserContactFolderChildFolderCount](Get-MgUserContactFolderChildFolderCount.md)
 Get the number of the resource
 
+### [Get-MgUserContactFolderChildFolderCount](Get-MgUserContactFolderChildFolderCount.md)
+Get the number of the resource
+
 ### [Get-MgUserContactFolderContactCount](Get-MgUserContactFolderContactCount.md)
 Get the number of the resource
 
@@ -83,6 +86,9 @@ You can get or set a photo for a contact.
 ### [Get-MgUserContactPhotoContent](Get-MgUserContactPhotoContent.md)
 Get media content for the navigation property photo from users
 
+### [Get-MgUserContactPhotoContent](Get-MgUserContactPhotoContent.md)
+Get media content for the navigation property photo from users
+
 ### [New-MgUserContactExtension](New-MgUserContactExtension.md)
 Create new navigation property to extensions for users
 
@@ -96,6 +102,12 @@ Create new navigation property to extensions for users
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
 ### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserContactFolderChildFolderContactExtension](New-MgUserContactFolderChildFolderContactExtension.md)
+Create new navigation property to extensions for users
+
+### [New-MgUserContactFolderContactExtension](New-MgUserContactFolderContactExtension.md)
 Create new navigation property to extensions for users
 
 ### [New-MgUserContactFolderContactExtension](New-MgUserContactFolderContactExtension.md)

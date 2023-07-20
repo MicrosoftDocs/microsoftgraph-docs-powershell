@@ -45,8 +45,7 @@ Start-MgBetaTeamScheduleTimeCardBreak -InputObject <ITeamsIdentity>
 Start a break in a specific timeCard.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -58,6 +57,8 @@ $params = @{
 }
 Start-MgBetaTeamScheduleTimeCardBreak -TeamId $teamId -TimeCardId $timeCardId -BodyParameter $params
 ```
+This example shows how to use the Start-MgBetaTeamScheduleTimeCardBreak Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -235,6 +236,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

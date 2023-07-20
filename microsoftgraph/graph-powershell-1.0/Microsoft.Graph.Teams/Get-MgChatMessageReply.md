@@ -37,6 +37,7 @@ Get-MgChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 
+
 ## PARAMETERS
 
 ### -All

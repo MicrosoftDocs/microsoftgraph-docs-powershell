@@ -44,8 +44,8 @@ New-MgTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphCo
 Add a new conversationMember to a team.
 
 ## EXAMPLES
+### Example 1: Add a member to a team
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -58,9 +58,13 @@ $params = @{
 }
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
-
 ```
-### Example 2
+This example shows how to use the New-MgTeamMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Add a member to a team using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
@@ -73,8 +77,12 @@ $params = @{
 }
 
 New-MgTeamMember -TeamId $teamId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgTeamMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -8,7 +8,9 @@ schema: 2.0.0
 # Get-MgUserTeamwork
 
 ## SYNOPSIS
-Get teamwork from users
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
@@ -27,7 +29,14 @@ Get-MgUserTeamwork -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ```
 
 ## DESCRIPTION
-Get teamwork from users
+A container for Microsoft Teams features available for the user.
+Read-only.
+Nullable.
+
+
+
+
+
 
 ## PARAMETERS
 

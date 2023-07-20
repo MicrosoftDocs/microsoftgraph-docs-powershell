@@ -38,14 +38,18 @@ Get-MgBetaTeamChannelMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Get reply to a message in a channel
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannelMessageReply -TeamId $teamId -ChannelId $channelId -ChatMessageId $chatMessageId -ChatMessageId1 $chatMessageId1
-
 ```
+This example shows how to use the Get-MgBetaTeamChannelMessageReply Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -301,6 +305,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

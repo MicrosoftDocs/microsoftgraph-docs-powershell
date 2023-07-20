@@ -57,28 +57,40 @@ Get-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
+### Example 1: List all channels
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannel -TeamId $teamId
-
 ```
-### Example 2
+This example shows how to use the Get-MgBetaGroupTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List all private channels
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'"
-
 ```
-### Example 3
+This example shows how to use the Get-MgBetaGroupTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: List all shared channels
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
-
 ```
+This example shows how to use the Get-MgBetaGroupTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -304,6 +316,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

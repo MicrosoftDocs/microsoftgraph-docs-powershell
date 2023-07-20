@@ -37,12 +37,13 @@ Get-MgBetaDrive -InputObject <IFilesIdentity> [-ExpandProperty <String[]>] [-Pro
 Get entity from drives by key
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaDrive Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Files
 Get-MgBetaDrive -DriveId $driveId
 ```
+This example shows how to use the Get-MgBetaDrive Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

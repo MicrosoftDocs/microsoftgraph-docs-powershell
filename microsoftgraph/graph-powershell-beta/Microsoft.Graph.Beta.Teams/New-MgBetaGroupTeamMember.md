@@ -44,6 +44,7 @@ New-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Add a new conversation member to a team.
 
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -239,6 +240,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

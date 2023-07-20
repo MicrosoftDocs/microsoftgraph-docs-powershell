@@ -51,10 +51,11 @@ If the event allows proposals for new times, on declining the event, an invitee 
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+
 $params = @{
 	Comment = "I won't be able to make this week. How about next week?"
 	SendResponse = $true
@@ -69,9 +70,14 @@ $params = @{
 		}
 	}
 }
+
 # A UPN can also be used as -UserId.
 Invoke-MgBetaDeclineUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaDeclineUserEventInstance Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

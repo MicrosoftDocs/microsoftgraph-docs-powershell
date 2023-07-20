@@ -30,6 +30,11 @@ Set-MgUserContactPhotoContent -InputObject <IPersonalContactsIdentity> [-Data <S
 ## DESCRIPTION
 Update media content for the navigation property photo in users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ContactId

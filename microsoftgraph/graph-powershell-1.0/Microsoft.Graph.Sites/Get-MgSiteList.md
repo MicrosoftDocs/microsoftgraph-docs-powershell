@@ -38,14 +38,18 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 Returns the metadata for a [list][].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteList -SiteId $siteId -ListId $listId
-
 ```
+This example shows how to use the Get-MgSiteList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

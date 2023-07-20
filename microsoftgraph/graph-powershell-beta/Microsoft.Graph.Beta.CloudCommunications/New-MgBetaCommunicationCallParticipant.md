@@ -19,7 +19,7 @@ Create new navigation property to participants for communications
 ```
 New-MgBetaCommunicationCallParticipant -CallId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-Info <IMicrosoftGraphParticipantInfo>] [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted]
- [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>]
+ [-MediaStreams <IMicrosoftGraphMediaStream[]>] [-Metadata <String>] [-PreferredDisplayName <String>]
  [-RecordingInfo <IMicrosoftGraphRecordingInfo>] [-RemovedState <IMicrosoftGraphRemovedState>]
  [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>] [-RosterSequenceNumber <Int64>] [-WhatIf]
  [-Confirm] [<CommonParameters>]
@@ -36,7 +36,7 @@ New-MgBetaCommunicationCallParticipant -CallId <String> -BodyParameter <IMicroso
 New-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Info <IMicrosoftGraphParticipantInfo>]
  [-IsIdentityAnonymized] [-IsInLobby] [-IsMuted] [-MediaStreams <IMicrosoftGraphMediaStream[]>]
- [-Metadata <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
+ [-Metadata <String>] [-PreferredDisplayName <String>] [-RecordingInfo <IMicrosoftGraphRecordingInfo>]
  [-RemovedState <IMicrosoftGraphRemovedState>] [-RestrictedExperience <IMicrosoftGraphOnlineMeetingRestricted>]
  [-RosterSequenceNumber <Int64>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -51,14 +51,18 @@ New-MgBetaCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentit
 Create new navigation property to participants for communications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 
 Get-MgBetaCommunicationCallParticipant -CallId $callId
-
 ```
+This example shows how to use the New-MgBetaBetaCommunicationCallParticipant Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -218,6 +222,21 @@ Accept wildcard characters: False
 
 ### -Metadata
 A blob of data provided by the participant in the roster.
+
+```yaml
+Type: String
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -PreferredDisplayName
+.
 
 ```yaml
 Type: String

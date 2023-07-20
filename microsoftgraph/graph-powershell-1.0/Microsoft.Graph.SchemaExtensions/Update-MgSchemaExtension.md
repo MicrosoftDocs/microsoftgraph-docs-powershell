@@ -65,8 +65,8 @@ When using Graph Explorer to update a **schemaExtension** resource, include the 
 For more information, see the Extensions section in Known issues with Microsoft Graph.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.SchemaExtensions
 
@@ -93,8 +93,12 @@ $params = @{
 }
 
 Update-MgSchemaExtension -SchemaExtensionId $schemaExtensionId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgSchemaExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

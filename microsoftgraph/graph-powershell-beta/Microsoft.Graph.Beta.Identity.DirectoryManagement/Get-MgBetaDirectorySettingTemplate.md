@@ -40,18 +40,20 @@ A directory setting template represents a template of settings from which settin
 This operation allows retrieval of the properties of the **directorySettingTemplate** object, including the available settings and their defaults.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySettingTemplate -DirectorySettingTemplateId $directorySettingTemplateId
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaDirectorySettingTemplate Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaDirectorySettingTemplate
 ```
+This example shows how to use the Get-MgBetaDirectorySettingTemplate Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -262,6 +264,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
   - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
   - `[CommandId <String>]`: The unique identifier of command
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -278,6 +281,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -289,7 +294,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 

@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDeviceAppManagement
 
 ## SYNOPSIS
-Get deviceAppManagement
+Read properties and relationships of the deviceAppManagement object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)
@@ -20,7 +20,7 @@ Get-MgDeviceAppManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<
 ```
 
 ## DESCRIPTION
-Get deviceAppManagement
+Read properties and relationships of the deviceAppManagement object.
 
 ## PARAMETERS
 
@@ -66,7 +66,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-MgDeviceAppMgt
+Get-DeviceAppMgt
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagement](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagement?view=graph-powershell-beta)

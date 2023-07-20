@@ -17,8 +17,8 @@ Update financials
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaFinancial [-AdditionalProperties <Hashtable>] [-Companies <IMicrosoftGraphCompany[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancial [-AdditionalProperties <Hashtable>] [-Companies <IMicrosoftGraphCompany[]>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -78,6 +78,21 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
+### -Id
+.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
@@ -117,7 +132,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompany
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphFinancials
 ## NOTES
 
 ALIASES

@@ -45,17 +45,21 @@ Add-MgUserDriveListContentTypeCopy -InputObject <IUsersActionsIdentity>
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	ContentType = "https://graph.microsoft.com/v1.0/sites/{site-id}/contentTypes/0x0101"
 }
 
 Add-MgSiteListContentTypeCopy -SiteId $siteId -ListId $listId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserDriveListContentTypeCopy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -212,6 +216,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

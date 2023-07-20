@@ -28,6 +28,11 @@ Get-MgUserPhotoCount -InputObject <IUsersIdentity> [-Filter <String>] [<CommonPa
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

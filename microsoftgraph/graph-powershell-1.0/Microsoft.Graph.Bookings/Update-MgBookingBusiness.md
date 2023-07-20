@@ -58,6 +58,30 @@ Update-MgBookingBusiness -InputObject <IBookingsIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of a bookingBusiness object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Bookings
+
+$params = @{
+	email = "admin@fabrikam.com"
+	schedulingPolicy = @{
+		timeSlotInterval = "PT60M"
+		minimumLeadTime = "P1D"
+		maximumAdvance = "P30D"
+		sendConfirmationsToOwner = $true
+		allowStaffSelection = $true
+	}
+}
+
+Update-MgBookingBusiness -BookingBusinessId $bookingBusinessId -BodyParameter $params
+```
+This example shows how to use the Update-MgBookingBusiness Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -768,4 +792,5 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaBookingBusiness](/powershell/module/Microsoft.Graph.Beta.Bookings/Update-MgBetaBookingBusiness?view=graph-powershell-beta)
+
 

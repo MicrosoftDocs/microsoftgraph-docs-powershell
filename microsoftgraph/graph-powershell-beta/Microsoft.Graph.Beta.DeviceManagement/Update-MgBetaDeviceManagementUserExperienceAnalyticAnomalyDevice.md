@@ -20,8 +20,9 @@ Update the navigation property userExperienceAnalyticsAnomalyDevice in deviceMan
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
  -UserExperienceAnalyticsAnomalyDeviceId <String> [-AdditionalProperties <Hashtable>] [-AnomalyId <String>]
  [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>] [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>]
- [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
- [-Id <String>] [-OSName <String>] [-OSVersion <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CorrelationGroupId <String>] [-DeviceId <String>] [-DeviceManufacturer <String>] [-DeviceModel <String>]
+ [-DeviceName <String>] [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>] [-OSName <String>]
+ [-OSVersion <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,8 +36,9 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAnomalyDevice -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-AnomalyId <String>] [-AnomalyOnDeviceFirstOccurrenceDateTime <DateTime>]
- [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-DeviceId <String>] [-DeviceManufacturer <String>]
- [-DeviceModel <String>] [-DeviceName <String>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
+ [-AnomalyOnDeviceLatestOccurrenceDateTime <DateTime>] [-CorrelationGroupId <String>] [-DeviceId <String>]
+ [-DeviceManufacturer <String>] [-DeviceModel <String>] [-DeviceName <String>]
+ [-DeviceStatus <UserExperienceAnalyticsDeviceStatus>] [-Id <String>] [-OSName <String>] [-OSVersion <String>]
  [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
@@ -127,6 +129,21 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CorrelationGroupId
+The unique identifier of the correlation group.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -DeviceId
 The unique identifier of the device.
 
@@ -177,6 +194,22 @@ The name of the device.
 
 ```yaml
 Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -DeviceStatus
+Indicates the status of the device in the correlation group.
+Eg: Device status can be anomalous, affected, at risk.
+
+```yaml
+Type: UserExperienceAnalyticsDeviceStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -331,10 +364,15 @@ To create the parameters described below, construct a hash table containing the 
 
 `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AlertRuleId <String>]`: The unique identifier of alertRule
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
+  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
   - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
@@ -462,8 +500,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
-  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 [Update-MgDeviceManagementUserExperienceAnalyticAnomalyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAnomalyDevice?view=graph-powershell-v1.0)

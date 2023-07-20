@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
 
 ## SYNOPSIS
-Get alertDefinition from identityGovernance
+The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
+Supports $expand.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition?view=graph-powershell-v1.0)
@@ -30,7 +31,8 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfigurationAlertDefinition
 ```
 
 ## DESCRIPTION
-Get alertDefinition from identityGovernance
+The definition of the alert that contains its description, impact, and measures to mitigate or prevent it.
+Supports $expand.
 
 ## PARAMETERS
 

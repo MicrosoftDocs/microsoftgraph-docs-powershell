@@ -1,7 +1,7 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 8638c2aa-343e-4c6a-8cc7-7ae49900e3df
-Download Help Link: https://learn.microsoft.com/powershell/module/Microsoft.Graph.Identity.DirectoryManagement
+Module Guid: 9b80e8cb-70ee-4294-bd4e-e51868760423
+Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
 ---
@@ -394,16 +394,16 @@ Get an Azure Active Directory (Azure AD) role assignment with administrative uni
 Get the number of the resource
 
 ### [Get-MgDirectoryAttributeSet](Get-MgDirectoryAttributeSet.md)
-Get attributeSets from directory
+Read the properties and relationships of an attributeSet object.
 
 ### [Get-MgDirectoryAttributeSetCount](Get-MgDirectoryAttributeSetCount.md)
 Get the number of the resource
 
 ### [Get-MgDirectoryCustomSecurityAttributeDefinition](Get-MgDirectoryCustomSecurityAttributeDefinition.md)
-Get customSecurityAttributeDefinitions from directory
+Read the properties and relationships of a customSecurityAttributeDefinition object.
 
 ### [Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
-Get allowedValues from directory
+Read the properties and relationships of an allowedValue object.
 
 ### [Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValueCount](Get-MgDirectoryCustomSecurityAttributeDefinitionAllowedValueCount.md)
 Get the number of the resource
@@ -449,6 +449,9 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgDirectoryDeletedItemCountAsServicePrincipal](Get-MgDirectoryDeletedItemCountAsServicePrincipal.md)
+Get the number of the resource
+
+### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
 ### [Get-MgDirectoryDeletedItemCountAsUser](Get-MgDirectoryDeletedItemCountAsUser.md)
@@ -636,6 +639,15 @@ A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+### [Get-MgOrganizationBrandingCustomCss](Get-MgOrganizationBrandingCustomCss.md)
+Get customCSS for the navigation property branding from organization
+
+### [Get-MgOrganizationBrandingFavicon](Get-MgOrganizationBrandingFavicon.md)
+Get favicon for the navigation property branding from organization
+
+### [Get-MgOrganizationBrandingHeaderLogo](Get-MgOrganizationBrandingHeaderLogo.md)
+Get headerLogo for the navigation property branding from organization
+
 ### [Get-MgOrganizationBrandingLocalization](Get-MgOrganizationBrandingLocalization.md)
 Read the properties and relationships of an organizationalBrandingLocalization object.
 To retrieve a localization branding object, specify the value of **id** in the URL.
@@ -653,15 +665,30 @@ We recommend using a transparent image with no padding around the logo.
 ### [Get-MgOrganizationBrandingLocalizationCount](Get-MgOrganizationBrandingLocalizationCount.md)
 Get the number of the resource
 
+### [Get-MgOrganizationBrandingLocalizationCustomCss](Get-MgOrganizationBrandingLocalizationCustomCss.md)
+Get customCSS for the navigation property localizations from organization
+
+### [Get-MgOrganizationBrandingLocalizationFavicon](Get-MgOrganizationBrandingLocalizationFavicon.md)
+Get favicon for the navigation property localizations from organization
+
+### [Get-MgOrganizationBrandingLocalizationHeaderLogo](Get-MgOrganizationBrandingLocalizationHeaderLogo.md)
+Get headerLogo for the navigation property localizations from organization
+
 ### [Get-MgOrganizationBrandingLocalizationSquareLogo](Get-MgOrganizationBrandingLocalizationSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
+### [Get-MgOrganizationBrandingLocalizationSquareLogoDark](Get-MgOrganizationBrandingLocalizationSquareLogoDark.md)
+Get squareLogoDark for the navigation property localizations from organization
+
 ### [Get-MgOrganizationBrandingSquareLogo](Get-MgOrganizationBrandingSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
+
+### [Get-MgOrganizationBrandingSquareLogoDark](Get-MgOrganizationBrandingSquareLogoDark.md)
+Get squareLogoDark for the navigation property branding from organization
 
 ### [Get-MgOrganizationById](Get-MgOrganizationById.md)
 Return the directory objects specified in a list of IDs.
@@ -737,22 +764,24 @@ Use this API to create a new administrativeUnit.
 ### [New-MgDirectoryAdministrativeUnitExtension](New-MgDirectoryAdministrativeUnitExtension.md)
 Create new navigation property to extensions for directory
 
+### [New-MgDirectoryAdministrativeUnitMember](New-MgDirectoryAdministrativeUnitMember.md)
+Create new navigation property to members for directory
+
 ### [New-MgDirectoryAdministrativeUnitMemberByRef](New-MgDirectoryAdministrativeUnitMemberByRef.md)
-Use this API to add a member (user, group, or device) to an administrative unit.
-Currently it's only possible to add one member at a time to an administrative unit.
+Create new navigation property ref to members for directory
 
 ### [New-MgDirectoryAdministrativeUnitScopedRoleMember](New-MgDirectoryAdministrativeUnitScopedRoleMember.md)
 Assign an Azure Active Directory (Azure AD) role with administrative unit scope.
 For a list of roles that can be assigned with administrative unit scope, see Assign Azure AD roles with administrative unit scope.
 
 ### [New-MgDirectoryAttributeSet](New-MgDirectoryAttributeSet.md)
-Create new navigation property to attributeSets for directory
+Create a new attributeSet object.
 
 ### [New-MgDirectoryCustomSecurityAttributeDefinition](New-MgDirectoryCustomSecurityAttributeDefinition.md)
-Create new navigation property to customSecurityAttributeDefinitions for directory
+Create a new customSecurityAttributeDefinition object.
 
 ### [New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](New-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
-Create new navigation property to allowedValues for directory
+Create a new allowedValue object.
 
 ### [New-MgDirectoryDeletedItem](New-MgDirectoryDeletedItem.md)
 Create new navigation property to deletedItems for directory
@@ -933,6 +962,15 @@ A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+### [Set-MgOrganizationBrandingCustomCss](Set-MgOrganizationBrandingCustomCss.md)
+Update customCSS for the navigation property branding in organization
+
+### [Set-MgOrganizationBrandingFavicon](Set-MgOrganizationBrandingFavicon.md)
+Update favicon for the navigation property branding in organization
+
+### [Set-MgOrganizationBrandingHeaderLogo](Set-MgOrganizationBrandingHeaderLogo.md)
+Update headerLogo for the navigation property branding in organization
+
 ### [Set-MgOrganizationBrandingLocalizationBackgroundImage](Set-MgOrganizationBrandingLocalizationBackgroundImage.md)
 Image that appears as the background of the sign-in page.
 The allowed types are PNG or JPEG not smaller than 300 KB and not larger than 1920 × 1080 pixels.
@@ -943,15 +981,30 @@ A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+### [Set-MgOrganizationBrandingLocalizationCustomCss](Set-MgOrganizationBrandingLocalizationCustomCss.md)
+Update customCSS for the navigation property localizations in organization
+
+### [Set-MgOrganizationBrandingLocalizationFavicon](Set-MgOrganizationBrandingLocalizationFavicon.md)
+Update favicon for the navigation property localizations in organization
+
+### [Set-MgOrganizationBrandingLocalizationHeaderLogo](Set-MgOrganizationBrandingLocalizationHeaderLogo.md)
+Update headerLogo for the navigation property localizations in organization
+
 ### [Set-MgOrganizationBrandingLocalizationSquareLogo](Set-MgOrganizationBrandingLocalizationSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
 
+### [Set-MgOrganizationBrandingLocalizationSquareLogoDark](Set-MgOrganizationBrandingLocalizationSquareLogoDark.md)
+Update squareLogoDark for the navigation property localizations in organization
+
 ### [Set-MgOrganizationBrandingSquareLogo](Set-MgOrganizationBrandingSquareLogo.md)
 A square version of your company logo that appears in Windows 10 out-of-box experiences (OOBE) and when Windows Autopilot is enabled for deployment.
 Allowed types are PNG or JPEG no larger than 240 x 240 pixels and no more than 10 KB in size.
 We recommend using a transparent image with no padding around the logo.
+
+### [Set-MgOrganizationBrandingSquareLogoDark](Set-MgOrganizationBrandingSquareLogoDark.md)
+Update squareLogoDark for the navigation property branding in organization
 
 ### [Set-MgOrganizationMobileDeviceManagementAuthority](Set-MgOrganizationMobileDeviceManagementAuthority.md)
 Set mobile device management authority
@@ -1066,13 +1119,13 @@ Update the navigation property extensions in directory
 Update the navigation property scopedRoleMembers in directory
 
 ### [Update-MgDirectoryAttributeSet](Update-MgDirectoryAttributeSet.md)
-Update the navigation property attributeSets in directory
+Update the properties of an attributeSet object.
 
 ### [Update-MgDirectoryCustomSecurityAttributeDefinition](Update-MgDirectoryCustomSecurityAttributeDefinition.md)
-Update the navigation property customSecurityAttributeDefinitions in directory
+Update the properties of a customSecurityAttributeDefinition object.
 
 ### [Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue](Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue.md)
-Update the navigation property allowedValues in directory
+Update the properties of an allowedValue object.
 
 ### [Update-MgDirectoryDeletedItem](Update-MgDirectoryDeletedItem.md)
 Update the navigation property deletedItems in directory

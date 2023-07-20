@@ -32,6 +32,11 @@ Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice
 ## DESCRIPTION
 Get device from users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty

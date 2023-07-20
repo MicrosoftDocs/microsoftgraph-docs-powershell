@@ -57,8 +57,8 @@ Update-MgExternalConnection -InputObject <ISearchIdentity>
 Update the properties of an externalConnection object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Search
 
@@ -68,8 +68,12 @@ $params = @{
 }
 
 Update-MgExternalConnection -ExternalConnectionId $externalConnectionId -BodyParameter $params
-
 ```
+This example shows how to use the Update-MgExternalConnection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ActivitySettings

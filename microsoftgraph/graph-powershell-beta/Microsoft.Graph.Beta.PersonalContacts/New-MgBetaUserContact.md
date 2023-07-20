@@ -30,6 +30,11 @@ Get-MgBetaUserContactPhotoContent -InputObject <IPersonalContactsIdentity> -OutF
 ## DESCRIPTION
 Get media content for the navigation property photo from users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ContactId

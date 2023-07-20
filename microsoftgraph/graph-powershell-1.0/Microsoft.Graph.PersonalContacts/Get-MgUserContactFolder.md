@@ -29,6 +29,11 @@ Get-MgUserContactExtensionCount -InputObject <IPersonalContactsIdentity> [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ContactId

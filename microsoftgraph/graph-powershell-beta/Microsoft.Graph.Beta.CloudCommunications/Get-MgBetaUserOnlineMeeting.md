@@ -22,6 +22,11 @@ Get-MgBetaCommunicationPresenceCount [-Filter <String>] [-Search <String>] [<Com
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -Filter

@@ -31,14 +31,18 @@ Remove-MgBetaIdentityApiConnector -InputObject <IIdentitySignInsIdentity> [-IfMa
 Deletes an identityApiConnector object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaIdentityApiConnector -IdentityApiConnectorId $identityApiConnectorId
-
 ```
+This example shows how to use the Remove-MgBetaIdentityApiConnector Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IdentityApiConnectorId

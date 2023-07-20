@@ -88,7 +88,11 @@ Accept wildcard characters: False
 ```
 
 ### -CloudIdentityScore
-The user experience work from anywhere's cloud identity score for the model.
+The cloud identity score of the device model.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
@@ -104,7 +108,11 @@ Accept wildcard characters: False
 ```
 
 ### -CloudManagementScore
-The user experience work from anywhere's cloud management score for the model.
+The cloud management score of the device model.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
@@ -120,7 +128,11 @@ Accept wildcard characters: False
 ```
 
 ### -CloudProvisioningScore
-The user experience work from anywhere's cloud provisioning score for the model.
+The cloud provisioning score of the device model.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
@@ -183,7 +195,9 @@ Accept wildcard characters: False
 ```
 
 ### -Manufacturer
-The user experience work from anywhere's manufacturer name of the devices.
+The manufacturer name of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -198,7 +212,9 @@ Accept wildcard characters: False
 ```
 
 ### -Model
-The user experience work from anywhere's model name of the devices.
+The model name of the device.
+Supports: $select, $OrderBy.
+Read-only.
 
 ```yaml
 Type: String
@@ -213,7 +229,9 @@ Accept wildcard characters: False
 ```
 
 ### -ModelDeviceCount
-The user experience work from anywhere's devices count for the model.
+The devices count for the model.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -2147483648 to 2147483647
 
 ```yaml
@@ -244,7 +262,11 @@ Accept wildcard characters: False
 ```
 
 ### -WindowsScore
-The user experience work from anywhere windows score for the model.
+The window score of the device model.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
@@ -260,7 +282,11 @@ Accept wildcard characters: False
 ```
 
 ### -WorkFromAnywhereScore
-The user experience work from anywhere overall score for the model.
+The work from anywhere score of the device model.
+Valid values 0 to 100.
+Value -1 means associated score is unavailable.
+Supports: $select, $OrderBy.
+Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
@@ -328,22 +354,27 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance>`: The user experience analytics work from anywhere model performance.
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CloudIdentityScore <Double?>]`: The user experience work from anywhere's cloud identity score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CloudManagementScore <Double?>]`: The user experience work from anywhere's cloud management score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[CloudProvisioningScore <Double?>]`: The user experience work from anywhere's cloud provisioning score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudIdentityScore <Double?>]`: The cloud identity score of the device model. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudManagementScore <Double?>]`: The cloud management score of the device model. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[CloudProvisioningScore <Double?>]`: The cloud provisioning score of the device model.  Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
   - `[HealthStatus <UserExperienceAnalyticsHealthState?>]`: userExperienceAnalyticsHealthState
-  - `[Manufacturer <String>]`: The user experience work from anywhere's manufacturer name of the devices.
-  - `[Model <String>]`: The user experience work from anywhere's model name of the devices.
-  - `[ModelDeviceCount <Int32?>]`: The user experience work from anywhere's devices count for the model. Valid values -2147483648 to 2147483647
-  - `[WindowsScore <Double?>]`: The user experience work from anywhere windows score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
-  - `[WorkFromAnywhereScore <Double?>]`: The user experience work from anywhere overall score for the model. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[Manufacturer <String>]`: The manufacturer name of the device. Supports: $select, $OrderBy. Read-only.
+  - `[Model <String>]`: The model name of the device. Supports: $select, $OrderBy. Read-only.
+  - `[ModelDeviceCount <Int32?>]`: The devices count for the model. Supports: $select, $OrderBy. Read-only. Valid values -2147483648 to 2147483647
+  - `[WindowsScore <Double?>]`: The window score of the device model. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
+  - `[WorkFromAnywhereScore <Double?>]`: The work from anywhere score of the device model. Valid values 0 to 100. Value -1 means associated score is unavailable. Supports: $select, $OrderBy. Read-only. Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 `INPUTOBJECT <IDeviceManagementIdentity>`: Identity Parameter
   - `[AdvancedThreatProtectionOnboardingDeviceSettingStateId <String>]`: The unique identifier of advancedThreatProtectionOnboardingDeviceSettingState
+  - `[AlertRecordId <String>]`: The unique identifier of alertRecord
+  - `[AlertRuleId <String>]`: The unique identifier of alertRule
   - `[AndroidForWorkAppConfigurationSchemaId <String>]`: The unique identifier of androidForWorkAppConfigurationSchema
   - `[AndroidManagedStoreAppConfigurationSchemaId <String>]`: The unique identifier of androidManagedStoreAppConfigurationSchema
   - `[AppLogCollectionRequestId <String>]`: The unique identifier of appLogCollectionRequest
   - `[AssignmentFilterEvaluationStatusDetailsId <String>]`: The unique identifier of assignmentFilterEvaluationStatusDetails
+  - `[BrowserSharedCookieId <String>]`: The unique identifier of browserSharedCookie
+  - `[BrowserSiteId <String>]`: The unique identifier of browserSite
+  - `[BrowserSiteListId <String>]`: The unique identifier of browserSiteList
   - `[DataSharingConsentId <String>]`: The unique identifier of dataSharingConsent
   - `[DetectedAppId <String>]`: The unique identifier of detectedApp
   - `[DeviceAndAppManagementAssignmentFilterId <String>]`: The unique identifier of deviceAndAppManagementAssignmentFilter
@@ -471,8 +502,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-  - `[WindowsQualityUpdateProfileAssignmentId <String>]`: The unique identifier of windowsQualityUpdateProfileAssignment
-  - `[WindowsQualityUpdateProfileId <String>]`: The unique identifier of windowsQualityUpdateProfile
 
 ## RELATED LINKS
 [Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticWorkFromAnywhereModelPerformance?view=graph-powershell-v1.0)

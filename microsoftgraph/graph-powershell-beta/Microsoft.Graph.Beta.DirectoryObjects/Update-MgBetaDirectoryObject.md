@@ -43,14 +43,18 @@ Update-MgBetaDirectoryObject -InputObject <IDirectoryObjectsIdentity>
 Update entity in directoryObjects
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 
 Get-MgBetaDirectoryObject -DirectoryObjectId $directoryObjectId
-
 ```
+This example shows how to use the Update-MgBetaBetaDirectoryObject Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

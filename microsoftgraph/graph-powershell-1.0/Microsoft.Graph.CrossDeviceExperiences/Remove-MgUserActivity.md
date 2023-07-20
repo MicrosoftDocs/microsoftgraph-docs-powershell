@@ -48,6 +48,11 @@ New-MgUserActivityHistoryItem -InputObject <ICrossDeviceExperiencesIdentity>
 ## DESCRIPTION
 Create new navigation property to historyItems for users
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -ActiveDurationSeconds

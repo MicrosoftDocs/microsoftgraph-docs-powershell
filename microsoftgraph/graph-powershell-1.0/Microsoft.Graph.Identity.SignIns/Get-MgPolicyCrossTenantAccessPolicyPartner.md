@@ -38,14 +38,18 @@ Get-MgPolicyCrossTenantAccessPolicyPartner -InputObject <IIdentitySignInsIdentit
 Read the properties and relationships of a partner-specific configuration.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
 
 Get-MgPolicyCrossTenantAccessPolicyPartner -CrossTenantAccessPolicyConfigurationPartnerTenantId $crossTenantAccessPolicyConfigurationPartnerTenantId
-
 ```
+This example shows how to use the Get-MgPolicyCrossTenantAccessPolicyPartner Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

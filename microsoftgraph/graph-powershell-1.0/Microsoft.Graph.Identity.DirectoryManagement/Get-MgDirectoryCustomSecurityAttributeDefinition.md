@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgDirectoryCustomSecurityAttributeDefinition
 
 ## SYNOPSIS
-Get customSecurityAttributeDefinitions from directory
+Read the properties and relationships of a customSecurityAttributeDefinition object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaDirectoryCustomSecurityAttributeDefinition](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryCustomSecurityAttributeDefinition?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDirector
 ```
 
 ## DESCRIPTION
-Get customSecurityAttributeDefinitions from directory
+Read the properties and relationships of a customSecurityAttributeDefinition object.
 
 ## PARAMETERS
 

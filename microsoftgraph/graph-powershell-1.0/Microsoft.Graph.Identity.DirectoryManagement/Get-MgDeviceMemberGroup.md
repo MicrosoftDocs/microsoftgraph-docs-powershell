@@ -29,6 +29,11 @@ Get-MgDeviceExtensionCount -InputObject <IIdentityDirectoryManagementIdentity> [
 ## DESCRIPTION
 Get the number of the resource
 
+
+
+
+
+
 ## PARAMETERS
 
 ### -DeviceId

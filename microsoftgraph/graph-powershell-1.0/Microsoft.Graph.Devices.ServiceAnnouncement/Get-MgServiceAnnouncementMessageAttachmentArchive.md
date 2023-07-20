@@ -30,6 +30,7 @@ Get-MgServiceAnnouncementMessageAttachmentArchive -InputObject <IDevicesServiceA
 ## DESCRIPTION
 The zip file that contains all attachments for a message.
 
+
 ## PARAMETERS
 
 ### -InputObject

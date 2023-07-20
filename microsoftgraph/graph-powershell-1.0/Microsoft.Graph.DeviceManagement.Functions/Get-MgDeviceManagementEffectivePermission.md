@@ -162,6 +162,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DomainName <String>]`: Usage: domainName='{domainName}'
   - `[Scope <String>]`: Usage: scope='{scope}'
   - `[SecretReferenceValueId <String>]`: Usage: secretReferenceValueId='{secretReferenceValueId}'
+  - `[SummarizeBy <UserExperienceAnalyticsSummarizedBy?>]`: Usage: summarizeBy='{summarizeBy}'
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementEffectivePermission](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Functions/Get-MgBetaDeviceManagementEffectivePermission?view=graph-powershell-beta)

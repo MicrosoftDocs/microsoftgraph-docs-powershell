@@ -43,8 +43,8 @@ New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -InputObject <IApplicationsI
 Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
@@ -53,21 +53,12 @@ $params = @{
 }
 
 New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ```
-## PARAMETERS
+This example shows how to use the New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-$params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/homeRealmDiscoveryPolicies/cd3d9b57-0aee-4f25-8ee3-ac74ef5986a9"
-}
 
-New-MgServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
 ## PARAMETERS
 
 ### -AdditionalProperties

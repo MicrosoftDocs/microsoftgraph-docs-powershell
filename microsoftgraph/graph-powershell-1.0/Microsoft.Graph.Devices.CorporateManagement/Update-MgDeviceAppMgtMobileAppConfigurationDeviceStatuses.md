@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device configuration states for this device.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -239,3 +242,4 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
+[Update-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppMgtMobileAppConfigurationDeviceStatuses?view=graph-powershell-beta)

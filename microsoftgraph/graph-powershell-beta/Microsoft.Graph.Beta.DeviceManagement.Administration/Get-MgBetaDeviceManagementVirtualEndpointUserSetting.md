@@ -38,24 +38,27 @@ Get-MgBetaDeviceManagementVirtualEndpointUserSetting -InputObject <IDeviceManage
 Read the properties and relationships of a cloudPcUserSetting object.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
-Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments"
+Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId -ExpandProperty "assignments" 
 ```
-
-### Example 2
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointUserSetting -CloudPcUserSettingId $cloudPcUserSettingId
 ```
-
-### Example 3
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 Get-MgBetaDeviceManagementVirtualEndpointUserSetting
 ```
+This example shows how to use the Get-MgBetaDeviceManagementVirtualEndpointUserSetting Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

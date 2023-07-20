@@ -31,16 +31,18 @@ Get-MgBetaDirectoryDeletedItem -InputObject <IIdentityDirectoryManagementIdentit
 Get deletedItems from directory
 
 ## EXAMPLES
+### Example 1: Retrieve a list of recently deleted items
 
-### Example 1
 ```powershell
 Get-MgBetaDirectoryDeletedItem -DirectoryObjectId 'd4142c52-179b-4d31-b5b9-08940873507b'
 
 Id                                   DeletedDateTime
 --                                   ---------------
 d4142c52-179b-4d31-b5b9-08940873507b 8/30/2021 7:37:37 AM
-
 ```
+
+This command returns the details of the specified directory object. The DirectoryObjectId can be an application, group or user resource.
+
 ## PARAMETERS
 
 
@@ -130,6 +132,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[CertificateAuthorityAsEntityId <String>]`: The unique identifier of certificateAuthorityAsEntity
   - `[CertificateBasedApplicationConfigurationId <String>]`: The unique identifier of certificateBasedApplicationConfiguration
   - `[CommandId <String>]`: The unique identifier of command
+  - `[CompanySubscriptionId <String>]`: The unique identifier of companySubscription
   - `[ContractId <String>]`: The unique identifier of contract
   - `[CustomSecurityAttributeDefinitionId <String>]`: The unique identifier of customSecurityAttributeDefinition
   - `[DeviceId <String>]`: The unique identifier of device
@@ -146,6 +149,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ImpactedResourceId <String>]`: The unique identifier of impactedResource
   - `[InboundSharedUserProfileUserId <String>]`: The unique identifier of inboundSharedUserProfile
   - `[InternalDomainFederationId <String>]`: The unique identifier of internalDomainFederation
+  - `[ManagedTenantAlertId <String>]`: The unique identifier of managedTenantAlert
+  - `[ManagementActionId <String>]`: The unique identifier of managementAction
   - `[OnPremisesDirectorySynchronizationId <String>]`: The unique identifier of onPremisesDirectorySynchronization
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
@@ -157,7 +162,9 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
+  - `[TenantId <String>]`: The unique identifier of tenant
   - `[TenantReferenceTenantId <String>]`: The unique identifier of tenantReference
+  - `[TenantTagId <String>]`: The unique identifier of tenantTag
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 

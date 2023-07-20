@@ -52,8 +52,8 @@ A user can only have one Temporary Access Pass that's usable within its specifie
 If the user requires a new Temporary Access Pass while the current Temporary Access Pass is valid, the admin can create a new Temporary Access Pass for the user, the previous Temporary Access Pass will be deleted, and a new Temporary Access Pass will be created.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
@@ -64,8 +64,12 @@ $params = @{
 }
 
 New-MgBetaUserAuthenticationTemporaryAccessPassMethod -UserId $userId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgBetaUserAuthenticationTemporaryAccessPassMethod Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

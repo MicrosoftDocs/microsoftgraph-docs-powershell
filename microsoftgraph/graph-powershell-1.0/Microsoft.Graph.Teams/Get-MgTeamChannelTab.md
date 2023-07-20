@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgTeamChannelTab
 
 ## SYNOPSIS
-A collection of all the tabs in the channel.
-A navigation property.
+Retrieve the properties and relationships of the specified tab in a channel within a team.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelTab?view=graph-powershell-beta)
@@ -36,25 +35,32 @@ Get-MgTeamChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] 
 ```
 
 ## DESCRIPTION
-A collection of all the tabs in the channel.
-A navigation property.
+Retrieve the properties and relationships of the specified tab in a channel within a team.
 
 ## EXAMPLES
+### Example 1: List all the tabs in the channel along with associated Teams app
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp"
-
 ```
-### Example 2
+This example shows how to use the Get-MgTeamChannelTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: List all the tabs belonging to a specific app in a channel
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
 
 Get-MgTeamChannelTab -TeamId $teamId -ChannelId $channelId -ExpandProperty "teamsApp" -Filter "teamsApp/id eq 'com.microsoft.teamspace.tab.planner'"
-
 ```
+This example shows how to use the Get-MgTeamChannelTab Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All

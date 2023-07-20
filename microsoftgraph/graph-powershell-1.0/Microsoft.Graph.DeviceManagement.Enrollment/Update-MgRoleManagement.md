@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.enrollment/update-mgrolemanagement
 schema: 2.0.0
@@ -10,38 +10,25 @@ schema: 2.0.0
 ## SYNOPSIS
 Update roleManagement
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgRoleManagement [-AdditionalProperties <Hashtable>] [-Directory <IMicrosoftGraphRbacApplication>]
- [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-EntitlementManagement <IMicrosoftGraphRbacApplication>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-Confirm] [-WhatIf]
+Update-MgRoleManagement -BodyParameter <IMicrosoftGraphRoleManagement> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update roleManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -49,7 +36,7 @@ Update roleManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -65,7 +52,7 @@ roleManagement
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement
+Type: IMicrosoftGraphRoleManagement
 Parameter Sets: Update
 Aliases:
 
@@ -81,7 +68,7 @@ rbacApplication
 To construct, see NOTES section for DIRECTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
+Type: IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +84,7 @@ rbacApplication
 To construct, see NOTES section for ENTITLEMENTMANAGEMENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRbacApplication
+Type: IMicrosoftGraphRbacApplication
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -112,7 +99,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +115,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,11 +132,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleManagement
-
 ## NOTES
 
 ALIASES
@@ -757,4 +742,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleEligibilitySchedules <IMicrosoftGraphUnifiedRoleEligibilitySchedule[]>]`: Schedules for role eligibility operations.
 
 ## RELATED LINKS
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
+
+## RELATED LINKS
+[Update-MgBetaRoleManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Update-MgBetaRoleManagement?view=graph-powershell-beta)
 

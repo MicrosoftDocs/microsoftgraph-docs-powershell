@@ -37,14 +37,18 @@ This method does not remove the specified **timeOffReason** instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Remove-MgBetaTeamScheduleTimeOffReason -TeamId $teamId -TimeOffReasonId $timeOffReasonId
-
 ```
+This example shows how to use the Remove-MgBetaTeamScheduleTimeOffReason Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -IfMatch
@@ -180,6 +184,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

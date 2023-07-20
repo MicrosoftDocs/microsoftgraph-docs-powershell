@@ -51,6 +51,7 @@ Get-MgTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-ExpandPro
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
+
 ## PARAMETERS
 
 ### -All

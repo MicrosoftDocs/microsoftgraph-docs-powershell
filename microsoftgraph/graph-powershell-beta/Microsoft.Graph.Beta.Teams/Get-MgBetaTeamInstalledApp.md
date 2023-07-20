@@ -38,21 +38,29 @@ Get-MgBetaTeamInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <Strin
 Retrieve the app installed in the specified team.
 
 ## EXAMPLES
+### Example 1: Get the installed app
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId
-
 ```
-### Example 2
+This example shows how to use the Get-MgBetaTeamInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the names and other details of the installed app
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaTeamInstalledApp -TeamId $teamId -TeamsAppInstallationId $teamsAppInstallationId -ExpandProperty "teamsAppDefinition"
-
 ```
+This example shows how to use the Get-MgBetaTeamInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -All
@@ -278,6 +286,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ConversationMemberId <String>]`: The unique identifier of conversationMember
+  - `[DeletedChatId <String>]`: The unique identifier of deletedChat
   - `[DeletedTeamId <String>]`: The unique identifier of deletedTeam
   - `[GroupId <String>]`: The unique identifier of group
   - `[OfferShiftRequestId <String>]`: The unique identifier of offerShiftRequest

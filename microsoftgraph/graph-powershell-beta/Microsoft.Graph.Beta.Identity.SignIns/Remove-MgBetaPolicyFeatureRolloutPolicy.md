@@ -31,14 +31,18 @@ Remove-MgBetaPolicyFeatureRolloutPolicy -InputObject <IIdentitySignInsIdentity> 
 Delete a featureRolloutPolicy object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
 Remove-MgBetaPolicyFeatureRolloutPolicy -FeatureRolloutPolicyId $featureRolloutPolicyId
-
 ```
+This example shows how to use the Remove-MgBetaPolicyFeatureRolloutPolicy Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -FeatureRolloutPolicyId

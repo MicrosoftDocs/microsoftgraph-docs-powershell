@@ -530,19 +530,19 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
           - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-          - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+          - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
-            - `[ActivationUrl <String>]`: 
-            - `[ActivitySourceHost <String>]`: 
-            - `[AppActivityId <String>]`: 
-            - `[AppDisplayName <String>]`: 
+            - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+            - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+            - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
             - `[ContentInfo <IMicrosoftGraphJson>]`: Json
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ContentUrl <String>]`: 
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[ExpirationDateTime <DateTime?>]`: 
-            - `[FallbackUrl <String>]`: 
-            - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+            - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+            - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+            - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+            - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+            - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[ActiveDurationSeconds <Int32?>]`: 
               - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -553,9 +553,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[StartedDateTime <DateTime?>]`: 
               - `[Status <String>]`: status
               - `[UserTimezone <String>]`: 
-            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
             - `[Status <String>]`: status
-            - `[UserTimezone <String>]`: 
+            - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
             - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -634,8 +634,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
               - `[Id <String>]`: 
               - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-                - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-                - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: 
             - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
             - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -1012,9 +1012,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
                 - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
                 - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                  - `[IdentityProvider <String>]`: For internal use only
-                  - `[Key <Byte[]>]`: For internal use only
-                  - `[Type <Int32?>]`: For internal use only
+                  - `[IdentityProvider <String>]`: For internal use only.
+                  - `[Key <Byte[]>]`: For internal use only.
+                  - `[Type <Int32?>]`: For internal use only.
                 - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
                 - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -1061,7 +1061,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Hostnames <String[]>]`: List of hostNames for the device.
                 - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-                - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+                - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
                 - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
                 - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
                 - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -1659,7 +1659,7 @@ To create the parameters described below, construct a hash table containing the 
                         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                         - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                          - `[Id <String>]`: The id of the content type.
+                          - `[Id <String>]`: The ID of the content type.
                           - `[Name <String>]`: The name of the content type.
                         - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2177,9 +2177,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+                - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
                 - `[Formula <String>]`: The formula used to compute the value for this column.
-                - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+                - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
               - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -2197,8 +2197,8 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
               - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Formula <String>]`: The formula used to compute the default value for this column.
-                - `[Value <String>]`: The direct value to use as the default value for this column.
+                - `[Formula <String>]`: The formula used to compute the default value for the column.
+                - `[Value <String>]`: The direct value to use as the default value for the column.
               - `[Description <String>]`: The user-facing description of the column.
               - `[DisplayName <String>]`: The user-facing name of the column.
               - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -2330,8 +2330,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name of the content type.
               - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Default <Boolean?>]`: Whether this is the default Content Type
-                - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+                - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+                - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
               - `[ParentId <String>]`: The unique identifier of the content type.
               - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
               - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -2733,7 +2733,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
           - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
           - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -2765,10 +2765,10 @@ To create the parameters described below, construct a hash table containing the 
                 - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
               - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[GuestsCount <Int32?>]`: 
-                - `[HasMembersFromOtherTenants <Boolean?>]`: 
-                - `[MembersCount <Int32?>]`: 
-                - `[OwnersCount <Int32?>]`: 
+                - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+                - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+                - `[MembersCount <Int32?>]`: Count of members in a channel.
+                - `[OwnersCount <Int32?>]`: Count of owners in a channel.
               - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
               - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
               - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -2821,7 +2821,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-              - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+              - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
                 - `[ManagerActionMessage <String>]`: 
                 - `[SenderMessage <String>]`: 
@@ -3480,23 +3480,23 @@ To create the parameters described below, construct a hash table containing the 
                 - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
               - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
               - `[EngineVersion <String>]`: Current endpoint protection engine's version
-              - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-              - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-              - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+              - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+              - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+              - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
               - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
               - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
               - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
               - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
               - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-              - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-              - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+              - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+              - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
               - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-              - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-              - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-              - `[RebootRequired <Boolean?>]`: Reboot required or not?
-              - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+              - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+              - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+              - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+              - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
               - `[SignatureVersion <String>]`: Current malware definitions version
-              - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+              - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
           - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
           - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
           - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -3570,7 +3570,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
           - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
           - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-          - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+          - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -3581,7 +3581,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
             - `[AllowedPresenters <String>]`: onlineMeetingPresenters
             - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-            - `[AnonymizeIdentityForRoles <String[]>]`: 
+            - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
             - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -3895,6 +3895,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
             - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+          - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
           - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -4766,6 +4767,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
           - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
           - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+          - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
           - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -4897,7 +4899,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
       - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: 
-      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5265,19 +5267,19 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
           - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-          - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+          - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
-            - `[ActivationUrl <String>]`: 
-            - `[ActivitySourceHost <String>]`: 
-            - `[AppActivityId <String>]`: 
-            - `[AppDisplayName <String>]`: 
+            - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+            - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+            - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
             - `[ContentInfo <IMicrosoftGraphJson>]`: Json
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ContentUrl <String>]`: 
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[ExpirationDateTime <DateTime?>]`: 
-            - `[FallbackUrl <String>]`: 
-            - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+            - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+            - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+            - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+            - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+            - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[ActiveDurationSeconds <Int32?>]`: 
               - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -5288,9 +5290,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[StartedDateTime <DateTime?>]`: 
               - `[Status <String>]`: status
               - `[UserTimezone <String>]`: 
-            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
             - `[Status <String>]`: status
-            - `[UserTimezone <String>]`: 
+            - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
             - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -5369,8 +5371,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
               - `[Id <String>]`: 
               - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-                - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-                - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: 
             - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
             - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -5747,9 +5749,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
                 - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
                 - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                  - `[IdentityProvider <String>]`: For internal use only
-                  - `[Key <Byte[]>]`: For internal use only
-                  - `[Type <Int32?>]`: For internal use only
+                  - `[IdentityProvider <String>]`: For internal use only.
+                  - `[Key <Byte[]>]`: For internal use only.
+                  - `[Type <Int32?>]`: For internal use only.
                 - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
                 - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -5796,7 +5798,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Hostnames <String[]>]`: List of hostNames for the device.
                 - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-                - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+                - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
                 - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
                 - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
                 - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -6394,7 +6396,7 @@ To create the parameters described below, construct a hash table containing the 
                         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                         - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                          - `[Id <String>]`: The id of the content type.
+                          - `[Id <String>]`: The ID of the content type.
                           - `[Name <String>]`: The name of the content type.
                         - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -6912,9 +6914,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+                - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
                 - `[Formula <String>]`: The formula used to compute the value for this column.
-                - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+                - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
               - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -6932,8 +6934,8 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
               - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Formula <String>]`: The formula used to compute the default value for this column.
-                - `[Value <String>]`: The direct value to use as the default value for this column.
+                - `[Formula <String>]`: The formula used to compute the default value for the column.
+                - `[Value <String>]`: The direct value to use as the default value for the column.
               - `[Description <String>]`: The user-facing description of the column.
               - `[DisplayName <String>]`: The user-facing name of the column.
               - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -7065,8 +7067,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name of the content type.
               - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Default <Boolean?>]`: Whether this is the default Content Type
-                - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+                - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+                - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
               - `[ParentId <String>]`: The unique identifier of the content type.
               - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
               - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -7468,7 +7470,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
           - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
           - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -7500,10 +7502,10 @@ To create the parameters described below, construct a hash table containing the 
                 - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
               - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[GuestsCount <Int32?>]`: 
-                - `[HasMembersFromOtherTenants <Boolean?>]`: 
-                - `[MembersCount <Int32?>]`: 
-                - `[OwnersCount <Int32?>]`: 
+                - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+                - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+                - `[MembersCount <Int32?>]`: Count of members in a channel.
+                - `[OwnersCount <Int32?>]`: Count of owners in a channel.
               - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
               - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
               - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -7556,7 +7558,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-              - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+              - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
                 - `[ManagerActionMessage <String>]`: 
                 - `[SenderMessage <String>]`: 
@@ -8215,23 +8217,23 @@ To create the parameters described below, construct a hash table containing the 
                 - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
               - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
               - `[EngineVersion <String>]`: Current endpoint protection engine's version
-              - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-              - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-              - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+              - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+              - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+              - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
               - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
               - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
               - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
               - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
               - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-              - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-              - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+              - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+              - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
               - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-              - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-              - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-              - `[RebootRequired <Boolean?>]`: Reboot required or not?
-              - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+              - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+              - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+              - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+              - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
               - `[SignatureVersion <String>]`: Current malware definitions version
-              - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+              - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
           - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
           - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
           - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -8305,7 +8307,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
           - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
           - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-          - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+          - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -8316,7 +8318,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
             - `[AllowedPresenters <String>]`: onlineMeetingPresenters
             - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-            - `[AnonymizeIdentityForRoles <String[]>]`: 
+            - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
             - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -8630,6 +8632,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
             - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+          - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
           - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -9501,6 +9504,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
           - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
           - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+          - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
           - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -9632,7 +9636,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
       - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: 
-      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -9990,19 +9994,19 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
           - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-          - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+          - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
-            - `[ActivationUrl <String>]`: 
-            - `[ActivitySourceHost <String>]`: 
-            - `[AppActivityId <String>]`: 
-            - `[AppDisplayName <String>]`: 
+            - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+            - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+            - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
             - `[ContentInfo <IMicrosoftGraphJson>]`: Json
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ContentUrl <String>]`: 
-            - `[CreatedDateTime <DateTime?>]`: 
-            - `[ExpirationDateTime <DateTime?>]`: 
-            - `[FallbackUrl <String>]`: 
-            - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+            - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+            - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+            - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+            - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+            - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[ActiveDurationSeconds <Int32?>]`: 
               - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -10013,9 +10017,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[StartedDateTime <DateTime?>]`: 
               - `[Status <String>]`: status
               - `[UserTimezone <String>]`: 
-            - `[LastModifiedDateTime <DateTime?>]`: 
+            - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
             - `[Status <String>]`: status
-            - `[UserTimezone <String>]`: 
+            - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
             - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -10094,8 +10098,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
               - `[Id <String>]`: 
               - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-                - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-                - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+                - `[Key <String>]`: Key.
+                - `[Value <String>]`: Value.
               - `[Type <String>]`: 
             - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
             - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -10472,9 +10476,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
                 - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
                 - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                  - `[IdentityProvider <String>]`: For internal use only
-                  - `[Key <Byte[]>]`: For internal use only
-                  - `[Type <Int32?>]`: For internal use only
+                  - `[IdentityProvider <String>]`: For internal use only.
+                  - `[Key <Byte[]>]`: For internal use only.
+                  - `[Type <Int32?>]`: For internal use only.
                 - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
                 - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                   - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -10521,7 +10525,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Hostnames <String[]>]`: List of hostNames for the device.
                 - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
                 - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-                - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+                - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
                 - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
                 - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
                 - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -11119,7 +11123,7 @@ To create the parameters described below, construct a hash table containing the 
                         - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                         - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                          - `[Id <String>]`: The id of the content type.
+                          - `[Id <String>]`: The ID of the content type.
                           - `[Name <String>]`: The name of the content type.
                         - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -11637,9 +11641,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+                - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
                 - `[Formula <String>]`: The formula used to compute the value for this column.
-                - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+                - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
               - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -11657,8 +11661,8 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
               - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Formula <String>]`: The formula used to compute the default value for this column.
-                - `[Value <String>]`: The direct value to use as the default value for this column.
+                - `[Formula <String>]`: The formula used to compute the default value for the column.
+                - `[Value <String>]`: The direct value to use as the default value for the column.
               - `[Description <String>]`: The user-facing description of the column.
               - `[DisplayName <String>]`: The user-facing name of the column.
               - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -11790,8 +11794,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Name <String>]`: The name of the content type.
               - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[Default <Boolean?>]`: Whether this is the default Content Type
-                - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+                - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+                - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
               - `[ParentId <String>]`: The unique identifier of the content type.
               - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
               - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -12193,7 +12197,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
           - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+          - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
           - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
           - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -12225,10 +12229,10 @@ To create the parameters described below, construct a hash table containing the 
                 - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
               - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[GuestsCount <Int32?>]`: 
-                - `[HasMembersFromOtherTenants <Boolean?>]`: 
-                - `[MembersCount <Int32?>]`: 
-                - `[OwnersCount <Int32?>]`: 
+                - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+                - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+                - `[MembersCount <Int32?>]`: Count of members in a channel.
+                - `[OwnersCount <Int32?>]`: Count of owners in a channel.
               - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
               - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
               - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -12281,7 +12285,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-              - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+              - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
                 - `[AssignedTo <String>]`: scheduleChangeRequestActor
                 - `[ManagerActionMessage <String>]`: 
                 - `[SenderMessage <String>]`: 
@@ -12940,23 +12944,23 @@ To create the parameters described below, construct a hash table containing the 
                 - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
               - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
               - `[EngineVersion <String>]`: Current endpoint protection engine's version
-              - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-              - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-              - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+              - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+              - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+              - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
               - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
               - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
               - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
               - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
               - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-              - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-              - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+              - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+              - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
               - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-              - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-              - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-              - `[RebootRequired <Boolean?>]`: Reboot required or not?
-              - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+              - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+              - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+              - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+              - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
               - `[SignatureVersion <String>]`: Current malware definitions version
-              - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+              - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
           - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
           - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
           - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -13030,7 +13034,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
           - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
           - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-          - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+          - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
             - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -13041,7 +13045,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
             - `[AllowedPresenters <String>]`: onlineMeetingPresenters
             - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-            - `[AnonymizeIdentityForRoles <String[]>]`: 
+            - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
             - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -13355,6 +13359,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
             - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
             - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+          - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
           - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
           - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
           - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -14226,6 +14231,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
           - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
           - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+          - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
           - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
           - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -14357,7 +14363,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
       - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
       - `[IsFavorite <Boolean?>]`: 
-      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+      - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
       - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
       - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -14716,19 +14722,19 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
             - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-            - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+            - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
-              - `[ActivationUrl <String>]`: 
-              - `[ActivitySourceHost <String>]`: 
-              - `[AppActivityId <String>]`: 
-              - `[AppDisplayName <String>]`: 
+              - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+              - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+              - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+              - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
               - `[ContentInfo <IMicrosoftGraphJson>]`: Json
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[ContentUrl <String>]`: 
-              - `[CreatedDateTime <DateTime?>]`: 
-              - `[ExpirationDateTime <DateTime?>]`: 
-              - `[FallbackUrl <String>]`: 
-              - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+              - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+              - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+              - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+              - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+              - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
                 - `[ActiveDurationSeconds <Int32?>]`: 
                 - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -14739,9 +14745,9 @@ To create the parameters described below, construct a hash table containing the 
                 - `[StartedDateTime <DateTime?>]`: 
                 - `[Status <String>]`: status
                 - `[UserTimezone <String>]`: 
-              - `[LastModifiedDateTime <DateTime?>]`: 
+              - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
               - `[Status <String>]`: status
-              - `[UserTimezone <String>]`: 
+              - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
               - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -14809,8 +14815,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
                 - `[Id <String>]`: 
                 - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-                  - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-                  - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+                  - `[Key <String>]`: Key.
+                  - `[Value <String>]`: Value.
                 - `[Type <String>]`: 
               - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
               - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -15187,9 +15193,9 @@ To create the parameters described below, construct a hash table containing the 
                   - `[Id <String>]`: The unique identifier for an entity. Read-only.
                   - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
                   - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                    - `[IdentityProvider <String>]`: For internal use only
-                    - `[Key <Byte[]>]`: For internal use only
-                    - `[Type <Int32?>]`: For internal use only
+                    - `[IdentityProvider <String>]`: For internal use only.
+                    - `[Key <Byte[]>]`: For internal use only.
+                    - `[Type <Int32?>]`: For internal use only.
                   - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
                   - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                     - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -15236,7 +15242,7 @@ To create the parameters described below, construct a hash table containing the 
                   - `[Hostnames <String[]>]`: List of hostNames for the device.
                   - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
                   - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-                  - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+                  - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
                   - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
                   - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
                   - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -15834,7 +15840,7 @@ To create the parameters described below, construct a hash table containing the 
                           - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                           - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                            - `[Id <String>]`: The id of the content type.
+                            - `[Id <String>]`: The ID of the content type.
                             - `[Name <String>]`: The name of the content type.
                           - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                             - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -16352,9 +16358,9 @@ To create the parameters described below, construct a hash table containing the 
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+                  - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
                   - `[Formula <String>]`: The formula used to compute the value for this column.
-                  - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+                  - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
                 - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
                   - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -16372,8 +16378,8 @@ To create the parameters described below, construct a hash table containing the 
                   - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
                 - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Formula <String>]`: The formula used to compute the default value for this column.
-                  - `[Value <String>]`: The direct value to use as the default value for this column.
+                  - `[Formula <String>]`: The formula used to compute the default value for the column.
+                  - `[Value <String>]`: The direct value to use as the default value for the column.
                 - `[Description <String>]`: The user-facing description of the column.
                 - `[DisplayName <String>]`: The user-facing name of the column.
                 - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -16505,8 +16511,8 @@ To create the parameters described below, construct a hash table containing the 
                 - `[Name <String>]`: The name of the content type.
                 - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[Default <Boolean?>]`: Whether this is the default Content Type
-                  - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+                  - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+                  - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
                 - `[ParentId <String>]`: The unique identifier of the content type.
                 - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
                 - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -16908,7 +16914,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
             - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-            - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+            - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
             - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
             - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
             - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -16940,10 +16946,10 @@ To create the parameters described below, construct a hash table containing the 
                   - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
                 - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                  - `[GuestsCount <Int32?>]`: 
-                  - `[HasMembersFromOtherTenants <Boolean?>]`: 
-                  - `[MembersCount <Int32?>]`: 
-                  - `[OwnersCount <Int32?>]`: 
+                  - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+                  - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+                  - `[MembersCount <Int32?>]`: Count of members in a channel.
+                  - `[OwnersCount <Int32?>]`: Count of owners in a channel.
                 - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
                 - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
                 - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -16996,7 +17002,7 @@ To create the parameters described below, construct a hash table containing the 
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
                 - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-                - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+                - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
                   - `[AssignedTo <String>]`: scheduleChangeRequestActor
                   - `[ManagerActionMessage <String>]`: 
                   - `[SenderMessage <String>]`: 
@@ -17655,23 +17661,23 @@ To create the parameters described below, construct a hash table containing the 
                   - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
                 - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
                 - `[EngineVersion <String>]`: Current endpoint protection engine's version
-                - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-                - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-                - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+                - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+                - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+                - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
                 - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
                 - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
                 - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
                 - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
                 - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-                - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-                - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+                - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+                - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
                 - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-                - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-                - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-                - `[RebootRequired <Boolean?>]`: Reboot required or not?
-                - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+                - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+                - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+                - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+                - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
                 - `[SignatureVersion <String>]`: Current malware definitions version
-                - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+                - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
             - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
             - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
             - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -17745,7 +17751,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
             - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
             - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-            - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+            - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
               - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -17756,7 +17762,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
               - `[AllowedPresenters <String>]`: onlineMeetingPresenters
               - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-              - `[AnonymizeIdentityForRoles <String[]>]`: 
+              - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
               - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
                 - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -18070,6 +18076,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
               - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
               - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+            - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
             - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
             - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
             - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -18941,6 +18948,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
             - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
             - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+            - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
             - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
             - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
             - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -19072,7 +19080,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
         - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
         - `[IsFavorite <Boolean?>]`: 
-        - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+        - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
         - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
         - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -19494,19 +19502,19 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
         - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-        - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+        - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
-          - `[ActivationUrl <String>]`: 
-          - `[ActivitySourceHost <String>]`: 
-          - `[AppActivityId <String>]`: 
-          - `[AppDisplayName <String>]`: 
+          - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+          - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+          - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ContentUrl <String>]`: 
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[ExpirationDateTime <DateTime?>]`: 
-          - `[FallbackUrl <String>]`: 
-          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+          - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+          - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+          - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+          - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[ActiveDurationSeconds <Int32?>]`: 
             - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -19517,9 +19525,9 @@ To create the parameters described below, construct a hash table containing the 
             - `[StartedDateTime <DateTime?>]`: 
             - `[Status <String>]`: status
             - `[UserTimezone <String>]`: 
-          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
           - `[Status <String>]`: status
-          - `[UserTimezone <String>]`: 
+          - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
           - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -19598,8 +19606,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
             - `[Id <String>]`: 
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-              - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-              - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: 
           - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
           - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -19976,9 +19984,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
               - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                - `[IdentityProvider <String>]`: For internal use only
-                - `[Key <Byte[]>]`: For internal use only
-                - `[Type <Int32?>]`: For internal use only
+                - `[IdentityProvider <String>]`: For internal use only.
+                - `[Key <Byte[]>]`: For internal use only.
+                - `[Type <Int32?>]`: For internal use only.
               - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
               - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -20025,7 +20033,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Hostnames <String[]>]`: List of hostNames for the device.
               - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-              - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+              - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
               - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
               - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
               - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -20623,7 +20631,7 @@ To create the parameters described below, construct a hash table containing the 
                       - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                       - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[Id <String>]`: The id of the content type.
+                        - `[Id <String>]`: The ID of the content type.
                         - `[Name <String>]`: The name of the content type.
                       - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -21141,9 +21149,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+              - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
               - `[Formula <String>]`: The formula used to compute the value for this column.
-              - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+              - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
             - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -21161,8 +21169,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
             - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Formula <String>]`: The formula used to compute the default value for this column.
-              - `[Value <String>]`: The direct value to use as the default value for this column.
+              - `[Formula <String>]`: The formula used to compute the default value for the column.
+              - `[Value <String>]`: The direct value to use as the default value for the column.
             - `[Description <String>]`: The user-facing description of the column.
             - `[DisplayName <String>]`: The user-facing name of the column.
             - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -21294,8 +21302,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[Name <String>]`: The name of the content type.
             - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Default <Boolean?>]`: Whether this is the default Content Type
-              - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+              - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+              - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
             - `[ParentId <String>]`: The unique identifier of the content type.
             - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
             - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -21697,7 +21705,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
         - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
         - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -21729,10 +21737,10 @@ To create the parameters described below, construct a hash table containing the 
               - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
             - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[GuestsCount <Int32?>]`: 
-              - `[HasMembersFromOtherTenants <Boolean?>]`: 
-              - `[MembersCount <Int32?>]`: 
-              - `[OwnersCount <Int32?>]`: 
+              - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+              - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+              - `[MembersCount <Int32?>]`: Count of members in a channel.
+              - `[OwnersCount <Int32?>]`: Count of owners in a channel.
             - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
             - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
             - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -21785,7 +21793,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-            - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+            - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
               - `[ManagerActionMessage <String>]`: 
               - `[SenderMessage <String>]`: 
@@ -22444,23 +22452,23 @@ To create the parameters described below, construct a hash table containing the 
               - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
             - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
             - `[EngineVersion <String>]`: Current endpoint protection engine's version
-            - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-            - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-            - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+            - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+            - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+            - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
             - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
             - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
             - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
             - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
             - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-            - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-            - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+            - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+            - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
             - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-            - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-            - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-            - `[RebootRequired <Boolean?>]`: Reboot required or not?
-            - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+            - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+            - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+            - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+            - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
             - `[SignatureVersion <String>]`: Current malware definitions version
-            - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+            - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
         - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
         - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
         - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -22534,7 +22542,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
         - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
         - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-        - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+        - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -22545,7 +22553,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-          - `[AnonymizeIdentityForRoles <String[]>]`: 
+          - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
           - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -22859,6 +22867,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
           - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
           - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
         - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -23730,6 +23739,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
         - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
         - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+        - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -23861,7 +23871,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
     - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: 
-    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -24213,19 +24223,19 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
         - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-        - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+        - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
-          - `[ActivationUrl <String>]`: 
-          - `[ActivitySourceHost <String>]`: 
-          - `[AppActivityId <String>]`: 
-          - `[AppDisplayName <String>]`: 
+          - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+          - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+          - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ContentUrl <String>]`: 
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[ExpirationDateTime <DateTime?>]`: 
-          - `[FallbackUrl <String>]`: 
-          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+          - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+          - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+          - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+          - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[ActiveDurationSeconds <Int32?>]`: 
             - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -24236,9 +24246,9 @@ To create the parameters described below, construct a hash table containing the 
             - `[StartedDateTime <DateTime?>]`: 
             - `[Status <String>]`: status
             - `[UserTimezone <String>]`: 
-          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
           - `[Status <String>]`: status
-          - `[UserTimezone <String>]`: 
+          - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
           - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -24317,8 +24327,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
             - `[Id <String>]`: 
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-              - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-              - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: 
           - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
           - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -24695,9 +24705,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
               - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                - `[IdentityProvider <String>]`: For internal use only
-                - `[Key <Byte[]>]`: For internal use only
-                - `[Type <Int32?>]`: For internal use only
+                - `[IdentityProvider <String>]`: For internal use only.
+                - `[Key <Byte[]>]`: For internal use only.
+                - `[Type <Int32?>]`: For internal use only.
               - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
               - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -24744,7 +24754,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Hostnames <String[]>]`: List of hostNames for the device.
               - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-              - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+              - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
               - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
               - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
               - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -25342,7 +25352,7 @@ To create the parameters described below, construct a hash table containing the 
                       - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                       - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[Id <String>]`: The id of the content type.
+                        - `[Id <String>]`: The ID of the content type.
                         - `[Name <String>]`: The name of the content type.
                       - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -25860,9 +25870,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+              - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
               - `[Formula <String>]`: The formula used to compute the value for this column.
-              - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+              - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
             - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -25880,8 +25890,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
             - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Formula <String>]`: The formula used to compute the default value for this column.
-              - `[Value <String>]`: The direct value to use as the default value for this column.
+              - `[Formula <String>]`: The formula used to compute the default value for the column.
+              - `[Value <String>]`: The direct value to use as the default value for the column.
             - `[Description <String>]`: The user-facing description of the column.
             - `[DisplayName <String>]`: The user-facing name of the column.
             - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -26013,8 +26023,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[Name <String>]`: The name of the content type.
             - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Default <Boolean?>]`: Whether this is the default Content Type
-              - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+              - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+              - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
             - `[ParentId <String>]`: The unique identifier of the content type.
             - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
             - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -26416,7 +26426,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
         - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
         - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -26448,10 +26458,10 @@ To create the parameters described below, construct a hash table containing the 
               - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
             - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[GuestsCount <Int32?>]`: 
-              - `[HasMembersFromOtherTenants <Boolean?>]`: 
-              - `[MembersCount <Int32?>]`: 
-              - `[OwnersCount <Int32?>]`: 
+              - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+              - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+              - `[MembersCount <Int32?>]`: Count of members in a channel.
+              - `[OwnersCount <Int32?>]`: Count of owners in a channel.
             - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
             - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
             - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -26504,7 +26514,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-            - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+            - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
               - `[ManagerActionMessage <String>]`: 
               - `[SenderMessage <String>]`: 
@@ -27163,23 +27173,23 @@ To create the parameters described below, construct a hash table containing the 
               - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
             - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
             - `[EngineVersion <String>]`: Current endpoint protection engine's version
-            - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-            - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-            - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+            - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+            - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+            - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
             - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
             - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
             - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
             - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
             - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-            - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-            - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+            - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+            - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
             - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-            - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-            - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-            - `[RebootRequired <Boolean?>]`: Reboot required or not?
-            - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+            - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+            - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+            - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+            - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
             - `[SignatureVersion <String>]`: Current malware definitions version
-            - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+            - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
         - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
         - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
         - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -27253,7 +27263,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
         - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
         - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-        - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+        - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -27264,7 +27274,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-          - `[AnonymizeIdentityForRoles <String[]>]`: 
+          - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
           - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -27578,6 +27588,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
           - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
           - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
         - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -28449,6 +28460,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
         - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
         - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+        - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -28580,7 +28592,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
     - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: 
-    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -28937,19 +28949,19 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[AboutMe <String>]`: A freeform text entry field for the user to describe themselves. Returned only on $select.
         - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. This property is required when a user is created. Supports $filter (eq, ne, not, and in).
-        - `[Activities <IMicrosoftGraphUserActivity[]>]`: 
+        - `[Activities <IMicrosoftGraphUserActivity[]>]`: The user's activities across devices. Read-only. Nullable.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
-          - `[ActivationUrl <String>]`: 
-          - `[ActivitySourceHost <String>]`: 
-          - `[AppActivityId <String>]`: 
-          - `[AppDisplayName <String>]`: 
+          - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
+          - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
+          - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ContentUrl <String>]`: 
-          - `[CreatedDateTime <DateTime?>]`: 
-          - `[ExpirationDateTime <DateTime?>]`: 
-          - `[FallbackUrl <String>]`: 
-          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: 
+          - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
+          - `[CreatedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was created on the server.
+          - `[ExpirationDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object expired on the server.
+          - `[FallbackUrl <String>]`: Optional. URL used to launch the activity in a web-based app, if available.
+          - `[HistoryItems <IMicrosoftGraphActivityHistoryItem[]>]`: Optional. NavigationProperty/Containment; navigation property to the activity's historyItems.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[ActiveDurationSeconds <Int32?>]`: 
             - `[Activity <IMicrosoftGraphUserActivity>]`: userActivity
@@ -28960,9 +28972,9 @@ To create the parameters described below, construct a hash table containing the 
             - `[StartedDateTime <DateTime?>]`: 
             - `[Status <String>]`: status
             - `[UserTimezone <String>]`: 
-          - `[LastModifiedDateTime <DateTime?>]`: 
+          - `[LastModifiedDateTime <DateTime?>]`: Set by the server. DateTime in UTC when the object was modified on the server.
           - `[Status <String>]`: status
-          - `[UserTimezone <String>]`: 
+          - `[UserTimezone <String>]`: Optional. The timezone in which the user's device used to generate the activity was located at activity creation time; values supplied as Olson IDs in order to support cross-platform representation.
           - `[VisualElements <IMicrosoftGraphVisualInfo>]`: visualInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
@@ -29041,8 +29053,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[AddIns <IMicrosoftGraphAddIn[]>]`: Defines custom behavior that a consuming service can use to call an app in specific contexts. For example, applications that can render file streams may set the addIns property for its 'FileHandler' functionality. This will let services like Microsoft 365 call the application in the context of a document the user is working on.
             - `[Id <String>]`: 
             - `[Properties <IMicrosoftGraphKeyValue[]>]`: 
-              - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-              - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+              - `[Key <String>]`: Key.
+              - `[Value <String>]`: Value.
             - `[Type <String>]`: 
           - `[AlternativeNames <String[]>]`: Used to retrieve service principals by subscription, identify resource group and full resource ids for managed identities. Supports $filter (eq, not, ge, le, startsWith).
           - `[AppDescription <String>]`: The description exposed by the associated application.
@@ -29419,9 +29431,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[Id <String>]`: The unique identifier for an entity. Read-only.
               - `[AccountEnabled <Boolean?>]`: true if the account is enabled; otherwise, false. Default is true.  Supports $filter (eq, ne, not, in). Only callers in Global Administrator and Cloud Device Administrator roles can set this property.
               - `[AlternativeSecurityIds <IMicrosoftGraphAlternativeSecurityId[]>]`: For internal use only. Not nullable. Supports $filter (eq, not, ge, le).
-                - `[IdentityProvider <String>]`: For internal use only
-                - `[Key <Byte[]>]`: For internal use only
-                - `[Type <Int32?>]`: For internal use only
+                - `[IdentityProvider <String>]`: For internal use only.
+                - `[Key <Byte[]>]`: For internal use only.
+                - `[Type <Int32?>]`: For internal use only.
               - `[ApproximateLastSignInDateTime <DateTime?>]`: The timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only. Supports $filter (eq, ne, not, ge, le, and eq on null values) and $orderBy.
               - `[Commands <IMicrosoftGraphCommand[]>]`: Set of commands sent to this device.
                 - `[Id <String>]`: The unique identifier for an entity. Read-only.
@@ -29468,7 +29480,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[Hostnames <String[]>]`: List of hostNames for the device.
               - `[IsCompliant <Boolean?>]`: true if the device complies with Mobile Device Management (MDM) policies; otherwise, false. Read-only. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
               - `[IsManaged <Boolean?>]`: true if the device is managed by a Mobile Device Management (MDM) app; otherwise, false. This can only be updated by Intune for any device OS type or by an approved MDM app for Windows OS devices. Supports $filter (eq, ne, not).
-              - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+              - `[IsManagementRestricted <Boolean?>]`: true if the device is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a device that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
               - `[IsRooted <Boolean?>]`: true if device is rooted; false if device is jail-broken. This can only be updated by Intune.
               - `[Kind <String>]`: Form factor of device. Only returned if user signs in with a Microsoft account as part of Project Rome.
               - `[ManagementType <String>]`: Management channel of the device.  This property is set by Intune. Possible values are: eas, mdm, easMdm, intuneClient, easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown, jamf, googleCloudDevicePolicyController.
@@ -30066,7 +30078,7 @@ To create the parameters described below, construct a hash table containing the 
                       - `[Analytics <IMicrosoftGraphItemAnalytics>]`: itemAnalytics
                       - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                        - `[Id <String>]`: The id of the content type.
+                        - `[Id <String>]`: The ID of the content type.
                         - `[Name <String>]`: The name of the content type.
                       - `[Deleted <IMicrosoftGraphDeleted>]`: deleted
                         - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -30584,9 +30596,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+              - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
               - `[Formula <String>]`: The formula used to compute the value for this column.
-              - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+              - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
             - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -30604,8 +30616,8 @@ To create the parameters described below, construct a hash table containing the 
               - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
             - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Formula <String>]`: The formula used to compute the default value for this column.
-              - `[Value <String>]`: The direct value to use as the default value for this column.
+              - `[Formula <String>]`: The formula used to compute the default value for the column.
+              - `[Value <String>]`: The direct value to use as the default value for the column.
             - `[Description <String>]`: The user-facing description of the column.
             - `[DisplayName <String>]`: The user-facing name of the column.
             - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -30737,8 +30749,8 @@ To create the parameters described below, construct a hash table containing the 
             - `[Name <String>]`: The name of the content type.
             - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Default <Boolean?>]`: Whether this is the default Content Type
-              - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+              - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+              - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
             - `[ParentId <String>]`: The unique identifier of the content type.
             - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
             - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -31140,7 +31152,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
         - `[IsLicenseReconciliationNeeded <Boolean?>]`: Indicates whether the user is pending an exchange mailbox license assignment.  Read-only.  Supports $filter (eq where true only).
-        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+        - `[IsManagementRestricted <Boolean?>]`: true if the user is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a user who is a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
         - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedGroups <IMicrosoftGraphGroup[]>]`: 
@@ -31172,10 +31184,10 @@ To create the parameters described below, construct a hash table containing the 
               - `[IsHostTeam <Boolean?>]`: Indicates whether the team is the host of the channel.
             - `[Summary <IMicrosoftGraphChannelSummary>]`: channelSummary
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[GuestsCount <Int32?>]`: 
-              - `[HasMembersFromOtherTenants <Boolean?>]`: 
-              - `[MembersCount <Int32?>]`: 
-              - `[OwnersCount <Int32?>]`: 
+              - `[GuestsCount <Int32?>]`: Count of guests in a channel.
+              - `[HasMembersFromOtherTenants <Boolean?>]`: Indicates whether external members are included on the channel.
+              - `[MembersCount <Int32?>]`: Count of members in a channel.
+              - `[OwnersCount <Int32?>]`: Count of owners in a channel.
             - `[Tabs <IMicrosoftGraphTeamsTab[]>]`: A collection of all the tabs in the channel. A navigation property.
             - `[TenantId <String>]`: The ID of the Azure Active Directory tenant.
             - `[WebUrl <String>]`: A hyperlink that will go to the channel in Microsoft Teams. This is the URL that you get when you right-click a channel in Microsoft Teams and select Get link to channel. This URL should be treated as an opaque blob, and not parsed. Read-only.
@@ -31228,7 +31240,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[Enabled <Boolean?>]`: Indicates whether the schedule is enabled for the team. Required.
-            - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: 
+            - `[OfferShiftRequests <IMicrosoftGraphOfferShiftRequest[]>]`: The offer requests for shifts in the schedule.
               - `[AssignedTo <String>]`: scheduleChangeRequestActor
               - `[ManagerActionMessage <String>]`: 
               - `[SenderMessage <String>]`: 
@@ -31887,23 +31899,23 @@ To create the parameters described below, construct a hash table containing the 
               - `[ThreatState <WindowsMalwareThreatState?>]`: Malware threat status
             - `[DeviceState <WindowsDeviceHealthState?>]`: Computer endpoint protection state
             - `[EngineVersion <String>]`: Current endpoint protection engine's version
-            - `[FullScanOverdue <Boolean?>]`: Full scan overdue or not?
-            - `[FullScanRequired <Boolean?>]`: Full scan required or not?
-            - `[IsVirtualMachine <Boolean?>]`: Indicates whether the device is a virtual machine.
+            - `[FullScanOverdue <Boolean?>]`: When TRUE indicates full scan is overdue, when FALSE indicates full scan is not overdue. Defaults to setting on client device.
+            - `[FullScanRequired <Boolean?>]`: When TRUE indicates full scan is required, when FALSE indicates full scan is not required. Defaults to setting on client device.
+            - `[IsVirtualMachine <Boolean?>]`: When TRUE indicates the device is a virtual machine, when FALSE indicates the device is not a virtual machine. Defaults to setting on client device.
             - `[LastFullScanDateTime <DateTime?>]`: Last quick scan datetime
             - `[LastFullScanSignatureVersion <String>]`: Last full scan signature version
             - `[LastQuickScanDateTime <DateTime?>]`: Last quick scan datetime
             - `[LastQuickScanSignatureVersion <String>]`: Last quick scan signature version
             - `[LastReportedDateTime <DateTime?>]`: Last device health status reported time
-            - `[MalwareProtectionEnabled <Boolean?>]`: Anti malware is enabled or not
-            - `[NetworkInspectionSystemEnabled <Boolean?>]`: Network inspection system enabled or not?
+            - `[MalwareProtectionEnabled <Boolean?>]`: When TRUE indicates anti malware is enabled when FALSE indicates anti malware is not enabled.
+            - `[NetworkInspectionSystemEnabled <Boolean?>]`: When TRUE indicates network inspection system enabled, when FALSE indicates network inspection system is not enabled. Defaults to setting on client device.
             - `[ProductStatus <WindowsDefenderProductStatus?>]`: Product Status of Windows Defender
-            - `[QuickScanOverdue <Boolean?>]`: Quick scan overdue or not?
-            - `[RealTimeProtectionEnabled <Boolean?>]`: Real time protection is enabled or not?
-            - `[RebootRequired <Boolean?>]`: Reboot required or not?
-            - `[SignatureUpdateOverdue <Boolean?>]`: Signature out of date or not?
+            - `[QuickScanOverdue <Boolean?>]`: When TRUE indicates quick scan is overdue, when FALSE indicates quick scan is not overdue. Defaults to setting on client device.
+            - `[RealTimeProtectionEnabled <Boolean?>]`: When TRUE indicates real time protection is enabled, when FALSE indicates real time protection is not enabled. Defaults to setting on client device.
+            - `[RebootRequired <Boolean?>]`: When TRUE indicates reboot is required, when FALSE indicates when TRUE indicates reboot is not required. Defaults to setting on client device.
+            - `[SignatureUpdateOverdue <Boolean?>]`: When TRUE indicates signature is out of date, when FALSE indicates signature is not out of date. Defaults to setting on client device.
             - `[SignatureVersion <String>]`: Current malware definitions version
-            - `[TamperProtectionEnabled <Boolean?>]`: Indicates whether the Windows Defender tamper protection feature is enabled.
+            - `[TamperProtectionEnabled <Boolean?>]`: When TRUE indicates the Windows Defender tamper protection feature is enabled, when FALSE indicates the Windows Defender tamper protection feature is not enabled. Defaults to setting on client device.
         - `[Manager <IMicrosoftGraphDirectoryObject>]`: directoryObject
         - `[MemberOf <IMicrosoftGraphDirectoryObject[]>]`: The groups, directory roles and administrative units that the user is a member of. Read-only. Nullable. Supports $expand.
         - `[Messages <IMicrosoftGraphMessage[]>]`: The messages in a mailbox or folder. Read-only. Nullable.
@@ -31977,7 +31989,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[OnPremisesSyncEnabled <Boolean?>]`: true if this user object is currently being synced from an on-premises Active Directory (AD); otherwise the user isn't being synced and can be managed in Azure Active Directory (Azure AD). Read-only. Supports $filter (eq, ne, not, in, and eq on null values).
         - `[OnPremisesUserPrincipalName <String>]`: Contains the on-premises userPrincipalName synchronized from the on-premises directory. The property is only populated for customers who are synchronizing their on-premises directory to Azure Active Directory via Azure AD Connect. Read-only. Supports $filter (eq, ne, not, ge, le, in, startsWith).
         - `[Onenote <IMicrosoftGraphOnenote>]`: onenote
-        - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: 
+        - `[OnlineMeetings <IMicrosoftGraphOnlineMeeting[]>]`: Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[AllowAttendeeToEnableCamera <Boolean?>]`: Indicates whether attendees can turn on their camera.
           - `[AllowAttendeeToEnableMic <Boolean?>]`: Indicates whether attendees can turn on their microphone.
@@ -31988,7 +32000,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[AllowTranscription <Boolean?>]`: Indicates whether transcription is enabled for the meeting.
           - `[AllowedPresenters <String>]`: onlineMeetingPresenters
           - `[AlternativeRecording <Byte[]>]`: The content stream of the alternative recording of a Microsoft Teams live event. Read-only.
-          - `[AnonymizeIdentityForRoles <String[]>]`: 
+          - `[AnonymizeIdentityForRoles <String[]>]`: Specifies whose identity will be anonymized in the meeting. Possible values are: attendee. The attendee value cannot be removed through a PATCH operation once added.
           - `[AttendanceReports <IMicrosoftGraphMeetingAttendanceReport[]>]`: The attendance reports of an online meeting. Read-only.
             - `[Id <String>]`: The unique identifier for an entity. Read-only.
             - `[AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>]`: List of attendance records of an attendance report. Read-only.
@@ -32302,6 +32314,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
           - `[Websites <IMicrosoftGraphWebsite[]>]`: The person's websites.
           - `[YomiCompany <String>]`: The phonetic Japanese name of the person's company.
+        - `[PermissionGrants <IMicrosoftGraphResourceSpecificPermissionGrant[]>]`: 
         - `[Photo <IMicrosoftGraphProfilePhoto>]`: profilePhoto
         - `[Photos <IMicrosoftGraphProfilePhoto[]>]`: 
         - `[Planner <IMicrosoftGraphPlannerUser>]`: plannerUser
@@ -33173,6 +33186,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[LastSignInRequestId <String>]`: Request identifier of the last interactive sign-in performed by this user.
         - `[SignInSessionsValidFromDateTime <DateTime?>]`: Any refresh tokens or sessions tokens (session cookies) issued before this time are invalid, and applications will get an error when using an invalid refresh or sessions token to acquire a delegated access token (to access APIs such as Microsoft Graph).  If this happens, the application will need to acquire a new refresh token by making a request to the authorize endpoint. Read-only. Use revokeSignInSessions to reset.
         - `[Skills <String[]>]`: A list for the user to enumerate their skills. Returned only on $select.
+        - `[Sponsors <IMicrosoftGraphDirectoryObject[]>]`: 
         - `[State <String>]`: The state or province in the user's address. Maximum length is 128 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[StreetAddress <String>]`: The street address of the user's place of business. Maximum length is 1024 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
         - `[Surname <String>]`: The user's surname (family name or last name). Maximum length is 64 characters. Supports $filter (eq, ne, not, ge, le, in, startsWith, and eq on null values).
@@ -33304,7 +33318,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[IsArchived <Boolean?>]`: When a group is associated with a team, this property determines whether the team is in read-only mode. To read this property, use the /group/{groupId}/team endpoint or the Get team API. To update this property, use the archiveTeam and unarchiveTeam APIs.
     - `[IsAssignableToRole <Boolean?>]`: Indicates whether this group can be assigned to an Azure Active Directory role. Optional. This property can only be set while creating the group and is immutable. If set to true, the securityEnabled property must also be set to true,  visibility must be Hidden, and the group cannot be a dynamic group (that is, groupTypes cannot contain DynamicMembership). Only callers in Global Administrator and Privileged Role Administrator roles can set this property. The caller must also be assigned the RoleManagement.ReadWrite.Directory permission to set this property or update the membership of such groups. For more, see Using a group to manage Azure AD role assignmentsUsing this feature requires a Azure AD Premium P1 license. Returned by default. Supports $filter (eq, ne, not).
     - `[IsFavorite <Boolean?>]`: 
-    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.
+    - `[IsManagementRestricted <Boolean?>]`: Indicates whether the group is a member of a restricted management administrative unit, in which case it requires a role scoped to the restricted administrative unit to manage. Default value is false. Read-only.  To manage a group that's a member of a restricted administrative unit, the calling app must be assigned the Directory.Write.Restricted permission. For delegated scenarios, the administrators must also be explicitly assigned supported roles at the restricted administrative unit scope.
     - `[IsSubscribedByMail <Boolean?>]`: Indicates whether the signed-in user is subscribed to receive email conversations. Default value is true. Returned only on $select. Supported only on the Get group API (GET /groups/{ID}).
     - `[LicenseProcessingState <IMicrosoftGraphLicenseProcessingState>]`: licenseProcessingState
       - `[(Any) <Object>]`: This indicates any property can be added to this object.

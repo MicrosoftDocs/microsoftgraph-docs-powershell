@@ -759,7 +759,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-MgDeviceAppMgtIoManagedAppProtection
+New-DeviceAppMgtIoManagedAppProtection
 
 COMPLEX PARAMETER PROPERTIES
 

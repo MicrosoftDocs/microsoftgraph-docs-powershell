@@ -47,8 +47,7 @@ Move a message to another folder within the specified user's mailbox.
 This creates a new copy of the message in the destination folder and removes the original message.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Move-MgUserMessage Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -57,6 +56,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Move-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the Move-MgUserMessage Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 
@@ -213,6 +214,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ChatMessageId <String>]`: The unique identifier of chatMessage
   - `[ChatMessageId1 <String>]`: The unique identifier of chatMessage
   - `[ContentTypeId <String>]`: The unique identifier of contentType
+  - `[DeviceLogCollectionResponseId <String>]`: The unique identifier of deviceLogCollectionResponse
   - `[DocumentSetVersionId <String>]`: The unique identifier of documentSetVersion
   - `[DriveId <String>]`: The unique identifier of drive
   - `[DriveItemId <String>]`: The unique identifier of driveItem

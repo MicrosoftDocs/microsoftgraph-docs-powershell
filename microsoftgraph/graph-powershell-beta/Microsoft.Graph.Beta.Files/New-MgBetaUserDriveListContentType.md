@@ -514,9 +514,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+      - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
       - `[Formula <String>]`: The formula used to compute the value for this column.
-      - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+      - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
     - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -534,8 +534,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Formula <String>]`: The formula used to compute the default value for this column.
-      - `[Value <String>]`: The direct value to use as the default value for this column.
+      - `[Formula <String>]`: The formula used to compute the default value for the column.
+      - `[Value <String>]`: The direct value to use as the default value for the column.
     - `[Description <String>]`: The user-facing description of the column.
     - `[DisplayName <String>]`: The user-facing name of the column.
     - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -574,7 +574,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The id of the content type.
+      - `[Id <String>]`: The ID of the content type.
       - `[Name <String>]`: The name of the content type.
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -593,8 +593,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[Name <String>]`: The name of the label.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -680,8 +680,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the content type.
   - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Default <Boolean?>]`: Whether this is the default Content Type
-    - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+    - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+    - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
   - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -701,9 +701,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+      - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
       - `[Formula <String>]`: The formula used to compute the value for this column.
-      - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+      - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
     - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -721,8 +721,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Formula <String>]`: The formula used to compute the default value for this column.
-      - `[Value <String>]`: The direct value to use as the default value for this column.
+      - `[Formula <String>]`: The formula used to compute the default value for the column.
+      - `[Value <String>]`: The direct value to use as the default value for the column.
     - `[Description <String>]`: The user-facing description of the column.
     - `[DisplayName <String>]`: The user-facing name of the column.
     - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -761,7 +761,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The id of the content type.
+      - `[Id <String>]`: The ID of the content type.
       - `[Name <String>]`: The name of the content type.
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -780,8 +780,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[Name <String>]`: The name of the label.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -867,8 +867,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the content type.
   - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Default <Boolean?>]`: Whether this is the default Content Type
-    - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+    - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+    - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
   - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -889,9 +889,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+      - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
       - `[Formula <String>]`: The formula used to compute the value for this column.
-      - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+      - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
     - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -909,8 +909,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Formula <String>]`: The formula used to compute the default value for this column.
-      - `[Value <String>]`: The direct value to use as the default value for this column.
+      - `[Formula <String>]`: The formula used to compute the default value for the column.
+      - `[Value <String>]`: The direct value to use as the default value for the column.
     - `[Description <String>]`: The user-facing description of the column.
     - `[DisplayName <String>]`: The user-facing name of the column.
     - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -949,7 +949,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
     - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Id <String>]`: The id of the content type.
+      - `[Id <String>]`: The ID of the content type.
       - `[Name <String>]`: The name of the content type.
     - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -968,8 +968,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[Name <String>]`: The name of the label.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1055,8 +1055,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the content type.
   - `[Order <IMicrosoftGraphContentTypeOrder>]`: contentTypeOrder
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Default <Boolean?>]`: Whether this is the default Content Type
-    - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+    - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+    - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
   - `[ParentId <String>]`: The unique identifier of the content type.
   - `[PropagateChanges <Boolean?>]`: If true, any changes made to the content type will be pushed to inherited content types and lists that implement the content type.
   - `[ReadOnly <Boolean?>]`: If true, the content type cannot be modified unless this value is first set to false.
@@ -1072,9 +1072,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+    - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
     - `[Formula <String>]`: The formula used to compute the value for this column.
-    - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+    - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
   - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -1092,8 +1092,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
   - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Formula <String>]`: The formula used to compute the default value for this column.
-    - `[Value <String>]`: The direct value to use as the default value for this column.
+    - `[Formula <String>]`: The formula used to compute the default value for the column.
+    - `[Value <String>]`: The direct value to use as the default value for the column.
   - `[Description <String>]`: The user-facing description of the column.
   - `[DisplayName <String>]`: The user-facing name of the column.
   - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -1132,7 +1132,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The id of the content type.
+    - `[Id <String>]`: The ID of the content type.
     - `[Name <String>]`: The name of the content type.
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1151,8 +1151,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[Name <String>]`: The name of the label.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-        - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1206,9 +1206,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+    - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
     - `[Formula <String>]`: The formula used to compute the value for this column.
-    - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+    - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
   - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -1226,8 +1226,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
   - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Formula <String>]`: The formula used to compute the default value for this column.
-    - `[Value <String>]`: The direct value to use as the default value for this column.
+    - `[Formula <String>]`: The formula used to compute the default value for the column.
+    - `[Value <String>]`: The direct value to use as the default value for the column.
   - `[Description <String>]`: The user-facing description of the column.
   - `[DisplayName <String>]`: The user-facing name of the column.
   - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -1266,7 +1266,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceColumn <IMicrosoftGraphColumnDefinition>]`: columnDefinition
   - `[SourceContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The id of the content type.
+    - `[Id <String>]`: The ID of the content type.
     - `[Name <String>]`: The name of the content type.
   - `[Term <IMicrosoftGraphTermColumn>]`: termColumn
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -1285,8 +1285,8 @@ To create the parameters described below, construct a hash table containing the 
         - `[Name <String>]`: The name of the label.
       - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
       - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-        - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-        - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+        - `[Key <String>]`: Contains the name of the field that a value is associated with.
+        - `[Value <String>]`: Contains the corresponding value for the specified key.
       - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
         - `[Id <String>]`: The unique identifier for an entity. Read-only.
         - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1337,7 +1337,7 @@ To create the parameters described below, construct a hash table containing the 
 `DOCUMENTSET <IMicrosoftGraphDocumentSet>`: documentSet
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AllowedContentTypes <IMicrosoftGraphContentTypeInfo[]>]`: Content types allowed in document set.
-    - `[Id <String>]`: The id of the content type.
+    - `[Id <String>]`: The ID of the content type.
     - `[Name <String>]`: The name of the content type.
   - `[DefaultContents <IMicrosoftGraphDocumentSetContent[]>]`: Default contents of document set.
     - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
@@ -1350,9 +1350,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Calculated <IMicrosoftGraphCalculatedColumn>]`: calculatedColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Format <String>]`: For dateTime output types, the format of the value. Must be one of dateOnly or dateTime.
+      - `[Format <String>]`: For dateTime output types, the format of the value. Possible values are: dateOnly or dateTime.
       - `[Formula <String>]`: The formula used to compute the value for this column.
-      - `[OutputType <String>]`: The output type used to format values in this column. Must be one of boolean, currency, dateTime, number, or text.
+      - `[OutputType <String>]`: The output type used to format values in this column. Possible values are: boolean, currency, dateTime, number, or text.
     - `[Choice <IMicrosoftGraphChoiceColumn>]`: choiceColumn
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[AllowTextEntry <Boolean?>]`: If true, allows custom values that aren't in the configured choices.
@@ -1370,8 +1370,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Format <String>]`: Indicates whether the value should be presented as a date only or a date and time. Must be one of dateOnly or dateTime
     - `[DefaultValue <IMicrosoftGraphDefaultColumnValue>]`: defaultColumnValue
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Formula <String>]`: The formula used to compute the default value for this column.
-      - `[Value <String>]`: The direct value to use as the default value for this column.
+      - `[Formula <String>]`: The formula used to compute the default value for the column.
+      - `[Value <String>]`: The direct value to use as the default value for the column.
     - `[Description <String>]`: The user-facing description of the column.
     - `[DisplayName <String>]`: The user-facing name of the column.
     - `[EnforceUniqueValues <Boolean?>]`: If true, no two list items may have the same value for this column.
@@ -1426,8 +1426,8 @@ To create the parameters described below, construct a hash table containing the 
           - `[Name <String>]`: The name of the label.
         - `[LastModifiedDateTime <DateTime?>]`: Last date and time of term modification. Read-only.
         - `[Properties <IMicrosoftGraphKeyValue[]>]`: Collection of properties on the term.
-          - `[Key <String>]`: Contains the name of the field that a value is associated with. When a sign in or domain hint is included in the sign-in request, corresponding fields are included as key-value pairs. Possible keys: Login hint present, Domain hint present.
-          - `[Value <String>]`: Contains the corresponding value for the specified key. The value is true if a sign in hint was included in the sign-in request; otherwise false. The value is true if a domain hint was included in the sign-in request; otherwise false.
+          - `[Key <String>]`: Contains the name of the field that a value is associated with.
+          - `[Value <String>]`: Contains the corresponding value for the specified key.
         - `[Relations <IMicrosoftGraphTermStoreRelation[]>]`: To indicate which terms are related to the current term as either pinned or reused.
           - `[Id <String>]`: The unique identifier for an entity. Read-only.
           - `[FromTerm <IMicrosoftGraphTermStoreTerm>]`: term
@@ -1482,7 +1482,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[ContentType <IMicrosoftGraphContentTypeInfo>]`: contentTypeInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Id <String>]`: The id of the content type.
+    - `[Id <String>]`: The ID of the content type.
     - `[Name <String>]`: The name of the content type.
   - `[FileName <String>]`: Name of the file in resource folder that should be added as a default content or a template in the document set
   - `[FolderName <String>]`: Folder name in which the file will be placed when a new document set is created in the library.
@@ -1534,8 +1534,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `ORDER <IMicrosoftGraphContentTypeOrder>`: contentTypeOrder
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Default <Boolean?>]`: Whether this is the default Content Type
-  - `[Position <Int32?>]`: Specifies the position in which the Content Type appears in the selection UI.
+  - `[Default <Boolean?>]`: Indicates whether this is the default content type.
+  - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
 [New-MgUserDriveListContentType](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveListContentType?view=graph-powershell-v1.0)

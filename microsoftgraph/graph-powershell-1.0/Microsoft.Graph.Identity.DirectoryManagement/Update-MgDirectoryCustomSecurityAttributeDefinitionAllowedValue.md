@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 
 ## SYNOPSIS
-Update the navigation property allowedValues in directory
+Update the properties of an allowedValue object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaDirectoryCustomSecurityAttributeDefinitionAllowedValue?view=graph-powershell-beta)
@@ -44,7 +44,7 @@ Update-MgDirectoryCustomSecurityAttributeDefinitionAllowedValue
 ```
 
 ## DESCRIPTION
-Update the navigation property allowedValues in directory
+Update the properties of an allowedValue object.
 
 ## PARAMETERS
 
@@ -142,7 +142,8 @@ Accept wildcard characters: False
 ```
 
 ### -IsActive
-.
+Indicates whether the predefined value is active or deactivated.
+If set to false, this predefined value cannot be assigned to any additional supported directory objects.
 
 ```yaml
 Type: SwitchParameter
@@ -209,7 +210,7 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphAllowedValue>`: allowedValue
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[IsActive <Boolean?>]`: 
+  - `[IsActive <Boolean?>]`: Indicates whether the predefined value is active or deactivated. If set to false, this predefined value cannot be assigned to any additional supported directory objects.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit

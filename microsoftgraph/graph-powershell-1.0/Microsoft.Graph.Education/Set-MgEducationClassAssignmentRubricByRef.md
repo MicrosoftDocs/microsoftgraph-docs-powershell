@@ -47,8 +47,8 @@ Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Education
 
@@ -57,8 +57,12 @@ $params = @{
 }
 
 Set-MgEducationClassAssignmentRubricByRef -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
-
 ```
+This example shows how to use the Set-MgEducationClassAssignmentRubricByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -1,5 +1,5 @@
 ---
-external help file:
+external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetadevicemanagementwindowsautopilotsetting
 schema: 2.0.0
@@ -10,39 +10,26 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property windowsAutopilotSettings in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotSetting [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-LastManualSyncTriggerDateTime <DateTime>] [-LastSyncDateTime <DateTime>]
- [-SyncStatus <WindowsAutopilotSyncStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-SyncStatus <WindowsAutopilotSyncStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementWindowsAutopilotSetting -BodyParameter <IMicrosoftGraphWindowsAutopilotSettings>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property windowsAutopilotSettings in deviceManagement
-
-## EXAMPLES
-
-### -------------------------- EXAMPLE 1 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-{{ Add code here }}
-```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +37,7 @@ Update the navigation property windowsAutopilotSettings in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -66,7 +53,7 @@ The windowsAutopilotSettings resource represents a Windows Autopilot Account to 
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
+Type: IMicrosoftGraphWindowsAutopilotSettings
 Parameter Sets: Update
 Aliases:
 
@@ -82,7 +69,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -97,7 +84,7 @@ Accept wildcard characters: False
 Last data sync date time with DDS service.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -112,7 +99,7 @@ Accept wildcard characters: False
 Last data sync date time with DDS service.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -127,7 +114,7 @@ Accept wildcard characters: False
 windowsAutopilotSyncStatus
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.WindowsAutopilotSyncStatus
+Type: WindowsAutopilotSyncStatus
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -142,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,11 +162,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsAutopilotSettings
-
 ## NOTES
 
 ALIASES
@@ -197,4 +182,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SyncStatus <WindowsAutopilotSyncStatus?>]`: windowsAutopilotSyncStatus
 
 ## RELATED LINKS
+[Update-MgDeviceManagementWindowsAutopilotSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementWindowsAutopilotSetting?view=graph-powershell-v1.0)
 

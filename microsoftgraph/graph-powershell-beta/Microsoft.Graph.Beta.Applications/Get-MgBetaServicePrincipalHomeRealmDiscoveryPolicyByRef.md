@@ -25,23 +25,18 @@ Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef -ServicePrincipalId <Str
 List the homeRealmDiscoveryPolicy objects that are assigned to a servicePrincipal.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
 Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
-
 ```
-## PARAMETERS
+This example shows how to use the Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicyByRef Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-Get-MgBetaServicePrincipalHomeRealmDiscoveryPolicy -ServicePrincipalId $servicePrincipalId
 
-```
 ## PARAMETERS
 
 ### -All

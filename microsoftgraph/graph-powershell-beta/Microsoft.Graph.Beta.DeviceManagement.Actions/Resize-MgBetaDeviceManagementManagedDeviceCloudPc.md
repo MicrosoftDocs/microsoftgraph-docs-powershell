@@ -46,8 +46,7 @@ Resize-MgBetaDeviceManagementManagedDeviceCloudPc -InputObject <IDeviceManagemen
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
 ## EXAMPLES
-
-### Example 1
+### Example 1: Using the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Actions
 $params = @{
@@ -55,6 +54,8 @@ $params = @{
 }
 Resize-MgBetaDeviceManagementManagedDeviceCloudPc -ManagedDeviceId $managedDeviceId -BodyParameter $params
 ```
+This example shows how to use the Resize-MgBetaDeviceManagementManagedDeviceCloudPc Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

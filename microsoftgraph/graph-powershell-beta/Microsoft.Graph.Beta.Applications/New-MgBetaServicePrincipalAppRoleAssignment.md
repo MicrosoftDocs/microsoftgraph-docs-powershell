@@ -53,8 +53,8 @@ Application permissions can be granted directly with app role assignments, or th
 To grant an app role assignment to a client service principal, you need three identifiers:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 
@@ -65,23 +65,12 @@ $params = @{
 }
 
 New-MgBetaServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
 ```
-## PARAMETERS
+This example shows how to use the New-MgBetaServicePrincipalAppRoleAssignment Cmdlet.
 
-### Example 1
-```powershell
-Import-Module Microsoft.Graph.Beta.Applications
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-$params = @{
-	principalId = "9028d19c-26a9-4809-8e3f-20ff73e2d75e"
-	resourceId = "8fce32da-1246-437b-99cd-76d1d4677bd5"
-	appRoleId = "498476ce-e0fe-48b0-b801-37ba7e2685c6"
-}
 
-New-MgBetaServicePrincipalAppRoleAssignment -ServicePrincipalId $servicePrincipalId -BodyParameter $params
-
-```
 ## PARAMETERS
 
 ### -AdditionalProperties

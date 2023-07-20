@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgDirectoryAdministrativeUnitMemberByRef
 
 ## SYNOPSIS
-Use this API to add a member (user, group, or device) to an administrative unit.
-Currently it's only possible to add one member at a time to an administrative unit.
+Create new navigation property ref to members for directory
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaDirectoryAdministrativeUnitMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDirectoryAdministrativeUnitMemberByRef?view=graph-powershell-beta)
@@ -41,12 +40,11 @@ New-MgDirectoryAdministrativeUnitMemberByRef -InputObject <IIdentityDirectoryMan
 ```
 
 ## DESCRIPTION
-Use this API to add a member (user, group, or device) to an administrative unit.
-Currently it's only possible to add one member at a time to an administrative unit.
+Create new navigation property ref to members for directory
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### Example 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
 
@@ -55,8 +53,12 @@ $params = @{
 }
 
 New-MgDirectoryAdministrativeUnitMemberByRef -AdministrativeUnitId $administrativeUnitId -BodyParameter $params
-
 ```
+This example shows how to use the New-MgDirectoryAdministrativeUnitMemberByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
