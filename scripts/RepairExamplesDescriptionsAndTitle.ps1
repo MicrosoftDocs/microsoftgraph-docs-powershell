@@ -111,9 +111,9 @@ function Import-Descriptions {
     $DestinationContentNonRaw = Get-Content $File
     $RetainedContent = $null
     foreach ($Ex in $RetainedExamples) {
-            $ContentBody = $Ex.Split("**")[0]
-            $ContentTitle = $Ex.Split("**")[1]
-            $ContentDescription = $Ex.Split("**")[2]
+            $ContentBody = $Ex.Split("****")[0]
+            $ContentTitle = $Ex.Split("****")[1]
+            $ContentDescription = $Ex.Split("****")[2]
             $RetainedContent += "$ContentBody$ContentDescription"  
             $TitleCount++ 
                         
@@ -198,7 +198,7 @@ function Get-ExistingDescriptions {
         $DescVal = $Content[$j]
         $RetainedDescription += "$DescVal`n"
     }
-    $RetainedExamples.Add("$ContentBlock**$Title**$RetainedDescription")
+    $RetainedExamples.Add("$ContentBlock****$Title****$RetainedDescription")
     if ($NoOfExamples -gt 1) {
         $NoOfExamples--
         for ($k = $Start; $k -lt $End; $k++) {
