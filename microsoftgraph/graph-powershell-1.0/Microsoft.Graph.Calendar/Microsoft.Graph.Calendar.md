@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Calendar
 Module Guid: 6f8929da-d9a1-4e79-b958-140d229cf122
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
