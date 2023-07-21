@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Sites-help.xml
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetagroupsitepagecanvalayouthorizontalsection
 schema: 2.0.0
@@ -17,27 +17,27 @@ Update the properties of a horizontalSection object.
 Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection -GroupId <String> -HorizontalSectionId <String>
  -SiteId <String> -SitePageId <String> [-AdditionalProperties <Hashtable>]
  [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <String>] [-Id <String>] [-Layout <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection -GroupId <String> -HorizontalSectionId <String>
- -SiteId <String> -SitePageId <String> -BodyParameter <IMicrosoftGraphHorizontalSection> [-Confirm] [-WhatIf]
+ -SiteId <String> -SitePageId <String> -BodyParameter <IMicrosoftGraphHorizontalSection> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphHorizontalSection> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>]
- [-Emphasis <String>] [-Id <String>] [-Layout <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Columns <IMicrosoftGraphHorizontalSectionColumn[]>] [-Emphasis <String>]
+ [-Id <String>] [-Layout <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaGroupSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity>
+ -BodyParameter <IMicrosoftGraphHorizontalSection> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,19 +45,15 @@ Update the properties of a horizontalSection object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -65,7 +61,7 @@ Update the properties of a horizontalSection object.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +77,7 @@ horizontalSection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSection
+Type: IMicrosoftGraphHorizontalSection
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -97,7 +93,7 @@ The set of vertical columns in this section.
 To construct, see NOTES section for COLUMNS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSectionColumn[]
+Type: IMicrosoftGraphHorizontalSectionColumn[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +108,7 @@ Accept wildcard characters: False
 sectionEmphasisType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,8 +123,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -142,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of horizontalSection
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -158,7 +154,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -174,8 +170,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ISitesIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -189,7 +185,7 @@ Accept wildcard characters: False
 horizontalSectionLayoutType
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -204,8 +200,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -219,8 +215,8 @@ Accept wildcard characters: False
 The unique identifier of sitePage
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -234,7 +230,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -250,7 +246,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -267,13 +263,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSection
-
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHorizontalSection
-
 ## NOTES
 
 ALIASES
@@ -353,4 +346,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-

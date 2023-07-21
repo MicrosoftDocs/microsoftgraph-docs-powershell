@@ -1,82 +1,50 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmembergroup
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement/get-mgcontactmanager
 schema: 2.0.0
 ---
 
-# Get-MgContactMemberGroup
+# Get-MgContactManager
 
 ## SYNOPSIS
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+Get this organizational contact's manager.
 
 ## SYNTAX
 
-### GetExpanded (Default)
+### Get (Default)
 ```
-Get-MgContactMemberGroup -OrgContactId <String> [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly]
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgContactMemberGroup -OrgContactId <String>
- -BodyParameter <IPaths3Y2P0KContactsOrgcontactIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-MgContactManager -OrgContactId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IPaths3Y2P0KContactsOrgcontactIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgContactMemberGroup -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-SecurityEnabledOnly] [-Confirm] [-WhatIf] [<CommonParameters>]
+Get-MgContactManager -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
-This function is transitive.
+Get this organizational contact's manager.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.DirectoryObjects
+Import-Module Microsoft.Graph.Identity.DirectoryManagement
 ```
 
-$params = @{
-	SecurityEnabledOnly = $false
-}
-
-Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
-
-### -------------------------- EXAMPLE 2 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Users.Actions
-```
-
-$params = @{
-	SecurityEnabledOnly = $true
-}
-
-# A UPN can also be used as -UserId.
-Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
+Get-MgContactManager -OrgContactId $orgContactId
 
 ## PARAMETERS
 
-### -AdditionalProperties
-Additional Parameters
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
-Aliases:
+Type: String[]
+Parameter Sets: (All)
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -85,29 +53,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
-.
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths3Y2P0KContactsOrgcontactIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Get, GetViaIdentity
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
 ### -InputObject
 Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: GetViaIdentity
 Aliases:
 
 Required: True
@@ -121,8 +73,8 @@ Accept wildcard characters: False
 The unique identifier of orgContact
 
 ```yaml
-Type: System.String
-Parameter Sets: Get, GetExpanded
+Type: String
+Parameter Sets: Get
 Aliases:
 
 Required: True
@@ -132,44 +84,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -SecurityEnabledOnly
-.
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: GetExpanded, GetViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Confirm
-Prompts you for confirmation before running the cmdlet.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: String[]
 Parameter Sets: (All)
-Aliases: cf
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -WhatIf
-Shows what would happen if the cmdlet runs.
-The cmdlet is not run.
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases: wi
+Aliases: Select
 
 Required: False
 Position: Named
@@ -184,13 +105,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
-### Microsoft.Graph.PowerShell.Models.IPaths3Y2P0KContactsOrgcontactIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
-### System.String
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
 ## NOTES
 
 ALIASES
@@ -199,10 +116,6 @@ COMPLEX PARAMETER PROPERTIES
 
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
-
-`BODYPARAMETER <IPaths3Y2P0KContactsOrgcontactIdMicrosoftGraphGetmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[SecurityEnabledOnly <Boolean?>]`: 
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
@@ -229,4 +142,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

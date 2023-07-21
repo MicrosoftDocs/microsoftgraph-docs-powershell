@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Sites-help.xml
 Module Name: Microsoft.Graph.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.sites/set-mggroupsiteanalyticitemactivitystatactivitydriveitemcontent
 schema: 2.0.0
@@ -15,14 +15,14 @@ The content stream, if the item represents a file.
 ### Set (Default)
 ```
 Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent -GroupId <String> -ItemActivityId <String>
- -ItemActivityStatId <String> -SiteId <String> -InFile <String> [-Data <Stream>] [-Confirm] [-WhatIf]
+ -ItemActivityStatId <String> -SiteId <String> [-Data <Stream>] -InFile <String> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISitesIdentity> -InFile <String>
- [-Data <Stream>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgGroupSiteAnalyticItemActivityStatActivityDriveItemContent -InputObject <ISitesIdentity> [-Data <Stream>]
+ -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -30,19 +30,15 @@ The content stream, if the item represents a file.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -50,7 +46,7 @@ The content stream, if the item represents a file.
 .
 
 ```yaml
-Type: System.IO.Stream
+Type: Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -65,7 +61,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -82,7 +78,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +94,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ISitesIdentity
+Type: ISitesIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -113,7 +109,7 @@ Accept wildcard characters: False
 The unique identifier of itemActivity
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -128,7 +124,7 @@ Accept wildcard characters: False
 The unique identifier of itemActivityStat
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -143,7 +139,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Set
 Aliases:
 
@@ -158,7 +154,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +170,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,13 +187,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ISitesIdentity
-
 ### System.IO.Stream
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
-
 ## NOTES
 
 ALIASES
@@ -248,4 +241,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

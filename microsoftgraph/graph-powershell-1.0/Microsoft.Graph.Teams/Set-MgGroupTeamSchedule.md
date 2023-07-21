@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Teams-help.xml
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/set-mggroupteamschedule
 schema: 2.0.0
@@ -21,21 +21,15 @@ Set-MgGroupTeamSchedule -GroupId <String> [-AdditionalProperties <Hashtable>] [-
  [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
  [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>] [-SwapShiftsRequestsEnabled]
  [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled]
- [-TimesOff <IMicrosoftGraphTimeOff[]>] [-TimeZone <String>] [-WorkforceIntegrationIds <String[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Set
 ```
-Set-MgGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule> [-Confirm] [-WhatIf]
+Set-MgGroupTeamSchedule -GroupId <String> -BodyParameter <IMicrosoftGraphSchedule> [-WhatIf] [-Confirm]
  [<CommonParameters>]
-```
-
-### SetViaIdentity
-```
-Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule> [-Confirm]
- [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentityExpanded
@@ -47,9 +41,15 @@ Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> [-AdditionalProperties <Ha
  [-SchedulingGroups <IMicrosoftGraphSchedulingGroup[]>] [-Shifts <IMicrosoftGraphShift[]>]
  [-SwapShiftsChangeRequests <IMicrosoftGraphSwapShiftsChangeRequest[]>] [-SwapShiftsRequestsEnabled]
  [-TimeClockEnabled] [-TimeOffReasons <IMicrosoftGraphTimeOffReason[]>]
- [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled]
- [-TimesOff <IMicrosoftGraphTimeOff[]>] [-TimeZone <String>] [-WorkforceIntegrationIds <String[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-TimeOffRequests <IMicrosoftGraphTimeOffRequest[]>] [-TimeOffRequestsEnabled] [-TimeZone <String>]
+ [-TimesOff <IMicrosoftGraphTimeOff[]>] [-WorkforceIntegrationIds <String[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### SetViaIdentity
+```
+Set-MgGroupTeamSchedule -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphSchedule> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -57,19 +57,15 @@ Update the navigation property schedule in groups
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -77,7 +73,7 @@ Update the navigation property schedule in groups
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -93,7 +89,7 @@ schedule
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
+Type: IMicrosoftGraphSchedule
 Parameter Sets: Set, SetViaIdentity
 Aliases:
 
@@ -109,7 +105,7 @@ Indicates whether the schedule is enabled for the team.
 Required.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -124,8 +120,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Set, SetExpanded
+Type: String
+Parameter Sets: SetExpanded, Set
 Aliases:
 
 Required: True
@@ -140,7 +136,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -156,8 +152,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-Parameter Sets: SetViaIdentity, SetViaIdentityExpanded
+Type: ITeamsIdentity
+Parameter Sets: SetViaIdentityExpanded, SetViaIdentity
 Aliases:
 
 Required: True
@@ -172,7 +168,7 @@ The offer requests for shifts in the schedule.
 To construct, see NOTES section for OFFERSHIFTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOfferShiftRequest[]
+Type: IMicrosoftGraphOfferShiftRequest[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -187,7 +183,7 @@ Accept wildcard characters: False
 Indicates whether offer shift requests are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -203,7 +199,7 @@ The open shift requests in the schedule.
 To construct, see NOTES section for OPENSHIFTCHANGEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShiftChangeRequest[]
+Type: IMicrosoftGraphOpenShiftChangeRequest[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -219,7 +215,7 @@ The set of open shifts in a scheduling group in the schedule.
 To construct, see NOTES section for OPENSHIFTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOpenShift[]
+Type: IMicrosoftGraphOpenShift[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -234,7 +230,7 @@ Accept wildcard characters: False
 Indicates whether open shifts are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -249,7 +245,7 @@ Accept wildcard characters: False
 operationStatus
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -265,7 +261,7 @@ The logical grouping of users in the schedule (usually by role).
 To construct, see NOTES section for SCHEDULINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedulingGroup[]
+Type: IMicrosoftGraphSchedulingGroup[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -281,7 +277,7 @@ The shifts in the schedule.
 To construct, see NOTES section for SHIFTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShift[]
+Type: IMicrosoftGraphShift[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -297,7 +293,7 @@ The swap requests for shifts in the schedule.
 To construct, see NOTES section for SWAPSHIFTSCHANGEREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSwapShiftsChangeRequest[]
+Type: IMicrosoftGraphSwapShiftsChangeRequest[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -312,7 +308,7 @@ Accept wildcard characters: False
 Indicates whether swap shifts requests are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -327,7 +323,7 @@ Accept wildcard characters: False
 Indicates whether time clock is enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -343,7 +339,7 @@ The set of reasons for a time off in the schedule.
 To construct, see NOTES section for TIMEOFFREASONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffReason[]
+Type: IMicrosoftGraphTimeOffReason[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -359,7 +355,7 @@ The time off requests in the schedule.
 To construct, see NOTES section for TIMEOFFREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOffRequest[]
+Type: IMicrosoftGraphTimeOffRequest[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -374,7 +370,7 @@ Accept wildcard characters: False
 Indicates whether time off requests are enabled for the schedule.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -390,7 +386,7 @@ The instances of times off in the schedule.
 To construct, see NOTES section for TIMESOFF properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTimeOff[]
+Type: IMicrosoftGraphTimeOff[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -406,7 +402,7 @@ Indicates the time zone of the schedule team using tz database format.
 Required.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -421,7 +417,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: SetExpanded, SetViaIdentityExpanded
 Aliases:
 
@@ -436,7 +432,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -452,7 +448,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -469,13 +465,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
-
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSchedule
-
 ## NOTES
 
 ALIASES
@@ -808,3 +801,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

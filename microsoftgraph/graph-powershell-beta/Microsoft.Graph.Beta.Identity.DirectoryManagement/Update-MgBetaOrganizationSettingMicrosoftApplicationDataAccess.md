@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsettingmicrosoftapplicationdataaccess
 schema: 2.0.0
@@ -16,21 +16,13 @@ Update the settings in a microsoftApplicationDataAccessSettings object that spec
 ```
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <String>
  [-AdditionalProperties <Hashtable>] [-DisabledForGroup <String>] [-Id <String>]
- [-IsEnabledForAllMicrosoftApplications] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-IsEnabledForAllMicrosoftApplications] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <String>
- -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
- -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -38,7 +30,15 @@ Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
 ```
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
  -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
- [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledForAllMicrosoftApplications] [-Confirm] [-WhatIf]
+ [-DisabledForGroup <String>] [-Id <String>] [-IsEnabledForAllMicrosoftApplications] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
+ -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMicrosoftApplicationDataAccessSettings> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -47,7 +47,7 @@ Update the settings in a microsoftApplicationDataAccessSettings object that spec
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -56,15 +56,13 @@ $params = @{
 Update-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +78,7 @@ microsoftApplicationDataAccessSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
+Type: IMicrosoftGraphMicrosoftApplicationDataAccessSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -96,7 +94,7 @@ The ID of an Azure Active Directory (Azure AD) security group for which the memb
 This is only applicable if isEnabledForAllMicrosoftApplications is set to true.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +110,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -147,7 +145,7 @@ It is possible to disable this access for a subset of users in an Azure AD secur
 When set to false, all users can access authorized Microsoft 365 data only in a Microsoft 365 app.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -177,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -193,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -210,13 +208,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
-
 ## NOTES
 
 ALIASES
@@ -276,4 +271,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

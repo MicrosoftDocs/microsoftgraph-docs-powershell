@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/enable-mgbetadevicemanagementmanageddevicelostmode
 schema: 2.0.0
@@ -15,29 +15,29 @@ Enable lost mode
 ### EnableExpanded (Default)
 ```
 Enable-MgBetaDeviceManagementManagedDeviceLostMode -ManagedDeviceId <String>
- [-AdditionalProperties <Hashtable>] [-Footer <String>] [-Message <String>] [-PhoneNumber <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Footer <String>] [-Message <String>] [-PhoneNumber <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Enable
 ```
 Enable-MgBetaDeviceManagementManagedDeviceLostMode -ManagedDeviceId <String>
  -BodyParameter <IPathsK312EdDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EnableViaIdentityExpanded
+```
+Enable-MgBetaDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagementActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Footer <String>] [-Message <String>] [-PhoneNumber <String>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EnableViaIdentity
 ```
 Enable-MgBetaDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPathsK312EdDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### EnableViaIdentityExpanded
-```
-Enable-MgBetaDeviceManagementManagedDeviceLostMode -InputObject <IDeviceManagementActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Footer <String>] [-Message <String>] [-PhoneNumber <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Enable lost mode
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Enable lost mode
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EnableExpanded, EnableViaIdentityExpanded
 Aliases:
 
@@ -81,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsK312EdDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
+Type: IPathsK312EdDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Enable, EnableViaIdentity
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: EnableExpanded, EnableViaIdentityExpanded
 Aliases:
 
@@ -112,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-Parameter Sets: EnableViaIdentity, EnableViaIdentityExpanded
+Type: IDeviceManagementActionsIdentity
+Parameter Sets: EnableViaIdentityExpanded, EnableViaIdentity
 Aliases:
 
 Required: True
@@ -127,8 +127,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: System.String
-Parameter Sets: Enable, EnableExpanded
+Type: String
+Parameter Sets: EnableExpanded, Enable
 Aliases:
 
 Required: True
@@ -142,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: EnableExpanded, EnableViaIdentityExpanded
 Aliases:
 
@@ -157,7 +157,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -172,7 +172,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: EnableExpanded, EnableViaIdentityExpanded
 Aliases:
 
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -203,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -220,13 +220,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsK312EdDevicemanagementManageddevicesManageddeviceIdMicrosoftGraphEnablelostmodePostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -296,4 +293,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-

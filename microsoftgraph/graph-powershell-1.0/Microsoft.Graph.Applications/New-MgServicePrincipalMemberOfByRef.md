@@ -1,4 +1,4 @@
----
+﻿---
 external help file: Microsoft.Graph.Applications-help.xml
 Module Name: Microsoft.Graph.Applications
 online version: https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.applications/new-mgserviceprincipalhomerealmdiscoverypolicybyref
@@ -215,4 +215,5 @@ INPUTOBJECT `<IApplicationsIdentity>`: Identity Parameter
   - `[UserId <String>]`: key: id of user
 
 ## RELATED LINKS
+
 [New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)
