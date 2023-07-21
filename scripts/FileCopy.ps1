@@ -99,7 +99,6 @@ function Copy-Files{
 
 Set-Location microsoftgraph-docs-powershell
 $proposedBranch = "weekly_v2_docs_update_$date"
-$proposedBranch = "File_copy_test1"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch
