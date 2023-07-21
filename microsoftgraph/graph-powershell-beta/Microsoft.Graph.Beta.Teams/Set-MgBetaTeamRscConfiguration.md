@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamrscconfiguration
 schema: 2.0.0
@@ -10,18 +10,31 @@ schema: 2.0.0
 ## SYNOPSIS
 Update Team RSC configuration for tenant.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamRscConfiguration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
-Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-AdditionalProperties <Hashtable>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState>
+ [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update Team RSC configuration for tenant.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -29,7 +42,7 @@ Update Team RSC configuration for tenant.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: (All)
 Aliases:
 
@@ -44,10 +57,9 @@ Accept wildcard characters: False
 Rsc Configuration State.
 
 ```yaml
-Type: MicrosoftGraphRscConfigurationState
+Type: Microsoft.Graph.Beta.PowerShell.Models.MicrosoftGraphRscConfigurationState
 Parameter Sets: (All)
 Aliases:
-Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps
 
 Required: True
 Position: Named
@@ -60,7 +72,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -76,7 +88,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -95,10 +107,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Set-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamRscConfiguration?view=graph-powershell-v1.0)
 

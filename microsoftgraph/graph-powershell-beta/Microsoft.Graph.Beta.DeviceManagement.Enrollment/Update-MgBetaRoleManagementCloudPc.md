@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpc
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property cloudPC in roleManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,17 +17,33 @@ Update the navigation property cloudPC in roleManagement
 Update-MgBetaRoleManagementCloudPc [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-ResourceNamespaces <IMicrosoftGraphUnifiedRbacResourceNamespace[]>]
  [-RoleAssignments <IMicrosoftGraphUnifiedRoleAssignmentMultiple[]>]
- [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RoleDefinitions <IMicrosoftGraphUnifiedRoleDefinition[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaRoleManagementCloudPc -BodyParameter <IMicrosoftGraphRbacApplicationMultiple> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaRoleManagementCloudPc -BodyParameter <IMicrosoftGraphRbacApplicationMultiple> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property cloudPC in roleManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Update the navigation property cloudPC in roleManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ rbacApplicationMultiple
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphRbacApplicationMultiple
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
 Parameter Sets: Update
 Aliases:
 
@@ -70,7 +83,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +99,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RESOURCENAMESPACES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacResourceNamespace[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -102,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleAssignmentMultiple[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleAssignmentMultiple[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRoleDefinition[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -133,7 +146,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -149,7 +162,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -166,9 +179,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRbacApplicationMultiple
+
 ## NOTES
 
 ALIASES
@@ -319,8 +334,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
-[Update-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
 

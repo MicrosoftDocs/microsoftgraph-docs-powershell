@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/ping-mgbetaapplicationsynchronization
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function Ping
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Ping-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgApplicationSynchronization?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -28,13 +25,29 @@ Ping-MgBetaApplicationSynchronization -InputObject <IApplicationsIdentity> [<Com
 ## DESCRIPTION
 Invoke function Ping
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ApplicationId
 The unique identifier of application
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Ping
 Aliases:
 
@@ -50,7 +63,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 Parameter Sets: PingViaIdentity
 Aliases:
 
@@ -67,9 +80,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -110,5 +125,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Ping-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgApplicationSynchronization?view=graph-powershell-v1.0)
 

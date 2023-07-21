@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Compliance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Compliance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.compliance/initialize-mgbetacomplianceediscoverycasecustodian
 schema: 2.0.0
@@ -11,21 +11,18 @@ schema: 2.0.0
 Activate a custodian that has been released from a case to make them part of the case again.
 For details, see Manage custodians in an Advanced eDiscovery case.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Initialize-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/Initialize-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Activate (Default)
 ```
-Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId <String> -CustodianId <String> [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ActivateViaIdentity
 ```
-Initialize-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Initialize-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,13 +30,14 @@ Activate a custodian that has been released from a case to make them part of the
 For details, see Manage custodians in an Advanced eDiscovery case.
 
 ## EXAMPLES
-### Example 1: Using the Initialize-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Initialize-MgBetaComplianceEdiscoveryCaseCustodian -CaseId $caseId -CustodianId $custodianId
 ```
-This example shows how to use the Initialize-MgBetaComplianceEdiscoveryCaseCustodian Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -47,7 +45,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of case
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -62,7 +60,7 @@ Accept wildcard characters: False
 The unique identifier of custodian
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Activate
 Aliases:
 
@@ -78,7 +76,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IComplianceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
 Parameter Sets: ActivateViaIdentity
 Aliases:
 
@@ -93,7 +91,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -108,7 +106,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -124,7 +122,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -141,9 +139,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComplianceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -173,5 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Initialize-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/Initialize-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
 
