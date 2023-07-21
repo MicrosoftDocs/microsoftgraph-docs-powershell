@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to policies for trustFramework
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -135,3 +138,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[New-MgTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkPolicy?view=graph-powershell-v1.0)

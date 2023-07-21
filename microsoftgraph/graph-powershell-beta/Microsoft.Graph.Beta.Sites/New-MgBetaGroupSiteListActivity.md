@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to activities for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListActivity](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -14494,5 +14497,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RecordedDateTime <DateTime?>]`: When the observation was recorded on the service.
 
 ## RELATED LINKS
+[New-MgGroupSiteListActivity](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListActivity?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteListActivity](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListActivity?view=graph-powershell-v1.0)

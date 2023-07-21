@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action refreshDeviceComplianceReportSummarization
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -97,3 +100,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementDeviceCompliancePolicyDeviceComplianceReportSummarization?view=graph-powershell-v1.0)

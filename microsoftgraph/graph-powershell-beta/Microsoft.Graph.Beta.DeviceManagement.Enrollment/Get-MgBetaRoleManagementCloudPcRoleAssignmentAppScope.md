@@ -12,6 +12,9 @@ Read-only collection with details of the app specific scopes when the assignment
 Containment entity.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementCloudPcRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentAppScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -296,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementCloudPcRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentAppScope?view=graph-powershell-v1.0)

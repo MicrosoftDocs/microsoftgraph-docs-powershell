@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new subCategoryTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCategorySubCategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategorySubCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[New-MgSecurityLabelCategorySubCategory](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCategorySubCategory?view=graph-powershell-v1.0)

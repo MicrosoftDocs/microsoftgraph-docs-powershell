@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The [set] in which the relation is relevant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreGroupSetTermChildRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTermChildRelationSet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreGroupSetTermChildRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreGroupSetTermChildRelationSet?view=graph-powershell-v1.0)

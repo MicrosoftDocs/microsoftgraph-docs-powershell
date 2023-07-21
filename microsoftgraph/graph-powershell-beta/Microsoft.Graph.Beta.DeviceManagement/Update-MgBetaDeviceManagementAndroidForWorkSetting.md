@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property androidForWorkSettings in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -292,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetGroupIds <String[]>]`: Specifies which AAD groups can enroll devices in Android for Work device management if enrollmentTarget is set to 'Targeted'
 
 ## RELATED LINKS
+[Update-MgDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)

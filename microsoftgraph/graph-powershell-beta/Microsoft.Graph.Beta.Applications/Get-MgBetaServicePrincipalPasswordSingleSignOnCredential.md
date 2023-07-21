@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get a list of single sign-on credentials using a password for a user or group.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -217,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalPasswordSingleSignOnCredential](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalPasswordSingleSignOnCredential?view=graph-powershell-v1.0)

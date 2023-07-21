@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getStatistics
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataRunStatistics](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRunStatistics?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get1 (Default)
@@ -114,3 +117,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataRunStatistics](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRunStatistics?view=graph-powershell-v1.0)

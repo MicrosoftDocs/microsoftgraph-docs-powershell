@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get content for the navigation property recordings from solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionRecordingContent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionRecordingContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -173,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEventWebinarSessionRecordingContent](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionRecordingContent?view=graph-powershell-v1.0)

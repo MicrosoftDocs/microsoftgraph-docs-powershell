@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sublabels for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -541,3 +544,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ToolTip <String>]`: 
 
 ## RELATED LINKS
+[New-MgUserInformationProtectionSensitivityLabelSublabel](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserInformationProtectionSensitivityLabelSublabel?view=graph-powershell-v1.0)

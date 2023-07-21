@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deletes an itemAddress object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileAddress?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Remove-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileAddress?view=graph-powershell-v1.0)

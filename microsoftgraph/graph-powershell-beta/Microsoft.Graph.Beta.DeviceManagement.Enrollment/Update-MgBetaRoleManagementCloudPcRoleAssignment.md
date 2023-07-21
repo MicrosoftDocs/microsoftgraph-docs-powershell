@@ -11,6 +11,9 @@ schema: 2.0.0
 Update an existing unifiedRoleAssignmentMultiple object of an RBAC provider.
 The following RBAC providers are currently supported:n- Cloud PC n- device management (Intune) In contrast, unifiedRoleAssignment does not support update.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -474,5 +477,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementCloudPcRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPcRoleAssignment?view=graph-powershell-v1.0)

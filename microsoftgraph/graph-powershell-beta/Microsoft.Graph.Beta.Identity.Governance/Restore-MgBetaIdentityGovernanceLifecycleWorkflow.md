@@ -11,6 +11,9 @@ schema: 2.0.0
 Restore a workflow that has been deleted.
 You can only restore a workflow that was deleted within the last 30 days before Azure AD automatically permanently deletes it.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Restore-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -226,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Restore-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Restore-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-v1.0)

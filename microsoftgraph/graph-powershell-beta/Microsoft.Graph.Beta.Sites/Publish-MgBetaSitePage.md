@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action publish
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Publish-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Publish-MgSitePage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Publish (Default)
@@ -207,3 +210,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Publish-MgSitePage](/powershell/module/Microsoft.Graph.Sites/Publish-MgSitePage?view=graph-powershell-v1.0)

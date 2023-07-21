@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createInstance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTemplateMigratableToInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementTemplateMigratableToInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -321,3 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueJson <String>]`: JSON representation of the value
 
 ## RELATED LINKS
+[New-MgDeviceManagementTemplateMigratableToInstance](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementTemplateMigratableToInstance?view=graph-powershell-v1.0)

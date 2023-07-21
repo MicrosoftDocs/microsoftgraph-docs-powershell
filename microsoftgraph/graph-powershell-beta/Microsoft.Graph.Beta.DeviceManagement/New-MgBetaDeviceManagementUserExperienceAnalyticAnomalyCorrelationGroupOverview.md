@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAnomalyCorrelationGroupOverview for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -327,3 +330,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Values <String[]>]`: Specific metric values that describe the features of the given device feature type.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomalyCorrelationGroupOverview?view=graph-powershell-v1.0)

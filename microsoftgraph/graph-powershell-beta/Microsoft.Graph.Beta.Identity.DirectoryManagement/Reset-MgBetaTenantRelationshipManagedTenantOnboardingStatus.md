@@ -11,6 +11,9 @@ schema: 2.0.0
 Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action.
 By invoking this action the platform will attempt to onboard the managed tenant for management.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgTenantRelationshipManagedTenantOnboardingStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Reset-MgTenantRelationshipManagedTenantOnboardingStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reset (Default)
@@ -167,3 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Reset-MgTenantRelationshipManagedTenantOnboardingStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Reset-MgTenantRelationshipManagedTenantOnboardingStatus?view=graph-powershell-v1.0)

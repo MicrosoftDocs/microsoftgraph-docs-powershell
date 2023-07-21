@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a roleGroup object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -269,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)

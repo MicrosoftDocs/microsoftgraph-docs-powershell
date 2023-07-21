@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validateComplianceScript
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -156,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RulesContent <Byte[]>]`: Json of the rules.
 
 ## RELATED LINKS
+[Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property labelPolicySettings for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Remove-MgUserSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -224,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Remove-MgUserSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Remove-MgUserSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)

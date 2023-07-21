@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new team.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -18120,5 +18123,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TeamId <String>]`: ID of the team in which the tag is defined.
 
 ## RELATED LINKS
+[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeam?view=graph-powershell-beta)

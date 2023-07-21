@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property horizontalSections for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageCanvaLayoutHorizontalSection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSitePageCanvaLayoutHorizontalSection](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSitePageCanvaLayoutHorizontalSection?view=graph-powershell-v1.0)

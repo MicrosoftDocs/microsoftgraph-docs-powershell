@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Change the account type of the user on a specific Cloud PC.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)
@@ -257,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new updatePolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -391,5 +394,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[DaysUntilForcedReboot <Int32?>]`: Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/New-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Function to get the number of remediations by a device health scripts
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceHealthScriptRemediationHistory](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceHealthScriptRemediationHistory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -125,3 +128,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceHealthScriptRemediationHistory](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDeviceHealthScriptRemediationHistory?view=graph-powershell-v1.0)

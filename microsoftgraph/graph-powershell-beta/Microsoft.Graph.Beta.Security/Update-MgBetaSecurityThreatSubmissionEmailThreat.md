@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property emailThreats in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -663,5 +666,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
 ## RELATED LINKS
+[Update-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)

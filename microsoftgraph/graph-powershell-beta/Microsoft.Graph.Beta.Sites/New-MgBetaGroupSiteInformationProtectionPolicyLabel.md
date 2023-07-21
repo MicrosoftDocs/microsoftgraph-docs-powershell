@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to labels for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -391,3 +394,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a user interface.
 
 ## RELATED LINKS
+[New-MgGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)

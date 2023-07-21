@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property myDecisions in accessReviews
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAccessReviewMyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReviewMyDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -486,5 +489,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: The userPrincipalName attribute of the user.
 
 ## RELATED LINKS
+[Update-MgAccessReviewMyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReviewMyDecision?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgAccessReviewMyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReviewMyDecision?view=graph-powershell-v1.0)

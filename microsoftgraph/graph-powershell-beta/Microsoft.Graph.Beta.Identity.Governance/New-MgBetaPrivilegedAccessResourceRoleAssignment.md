@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleAssignments for privilegedAccess
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -881,5 +884,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The type of the subject. The value can be User, Group, and ServicePrincipal.
 
 ## RELATED LINKS
+[New-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)

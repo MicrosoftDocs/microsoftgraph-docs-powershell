@@ -12,6 +12,9 @@ Create an upload session to allow your app to upload files up to the maximum fil
 An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 To upload a file using an upload session:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageForward?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -273,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+[New-MgUserMailFolderMessageForward](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMailFolderMessageForward?view=graph-powershell-v1.0)

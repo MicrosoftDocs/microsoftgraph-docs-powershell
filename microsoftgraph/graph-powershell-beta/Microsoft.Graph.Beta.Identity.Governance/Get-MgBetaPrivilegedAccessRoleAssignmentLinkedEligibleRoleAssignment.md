@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 If this is an active assignment and created due to activation on an eligible assignment, it represents the object of that eligible assignment; Otherwise, the value is null.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -240,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleAssignmentLinkedEligibleRoleAssignment?view=graph-powershell-v1.0)

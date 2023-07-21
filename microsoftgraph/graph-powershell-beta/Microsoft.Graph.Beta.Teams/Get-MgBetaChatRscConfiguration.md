@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get chat RSC configuration for tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgChatRscConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -46,3 +49,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgChatRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgChatRscConfiguration?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new case object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -15008,5 +15011,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)

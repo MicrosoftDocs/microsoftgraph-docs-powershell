@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new administrativeUnit.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdministrativeUnit?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -317,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: Unique identifier for the identity.
 
 ## RELATED LINKS
+[New-MgAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgAdministrativeUnit?view=graph-powershell-v1.0)

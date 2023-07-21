@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action changeSettings
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Rename-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Rename-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ChangeExpanded (Default)
@@ -351,5 +354,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
+[Rename-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Rename-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Rename-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Rename-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)

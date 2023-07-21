@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reprovision a Cloud PC with an Intune managed device ID.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReprovisionUserManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReprovisionUserManagedDeviceCloudPc?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cloud (Default)
@@ -198,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgReprovisionUserManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReprovisionUserManagedDeviceCloudPc?view=graph-powershell-v1.0)

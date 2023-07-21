@@ -13,6 +13,9 @@ Adding an azureADDevice to the members or exclusions collections of a deployment
 If the same updatableAsset gets included in the **exclusions** and **members** collections of a **deploymentAudience**, deployment will not apply to that asset.
 You can also use the method updateAudience to update the **deploymentAudience**.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgWindowsUpdatesPolicyAudienceById](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicyAudienceById?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -286,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Update-MgWindowsUpdatesPolicyAudienceById](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicyAudienceById?view=graph-powershell-v1.0)

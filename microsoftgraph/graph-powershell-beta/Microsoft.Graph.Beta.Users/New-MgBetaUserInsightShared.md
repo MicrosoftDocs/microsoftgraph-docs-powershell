@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to shared for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightShared?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -399,3 +402,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharingType <String>]`: Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
 
 ## RELATED LINKS
+[New-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightShared?view=graph-powershell-v1.0)

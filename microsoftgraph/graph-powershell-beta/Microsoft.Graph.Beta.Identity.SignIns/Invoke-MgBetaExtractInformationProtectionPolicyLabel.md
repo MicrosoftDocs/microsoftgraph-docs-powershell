@@ -11,6 +11,9 @@ schema: 2.0.0
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgExtractInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ExtractExpanded (Default)
@@ -205,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
+[Invoke-MgExtractInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgExtractInformationProtectionPolicyLabel?view=graph-powershell-v1.0)

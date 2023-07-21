@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A summary of device states and counts of devices that belong to corresponding state for all devices that the intent is applied to
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceStateSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -264,5 +267,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceStateSummary?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentDeviceStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceStateSummary?view=graph-powershell-v1.0)

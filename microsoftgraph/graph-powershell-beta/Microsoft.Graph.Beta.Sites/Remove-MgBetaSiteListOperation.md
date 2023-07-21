@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -238,3 +241,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgSiteListOperation](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListOperation?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an Outlook task folder under a specified outlookTaskGroup.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -476,5 +479,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subject <String>]`: 
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserOutlookTaskGroupTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroupTaskFolder?view=graph-powershell-v1.0)

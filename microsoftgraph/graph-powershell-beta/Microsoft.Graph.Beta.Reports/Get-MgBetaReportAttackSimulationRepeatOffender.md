@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getAttackSimulationRepeatOffenders
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgReportAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationRepeatOffender?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -118,3 +121,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgReportAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAttackSimulationRepeatOffender?view=graph-powershell-v1.0)

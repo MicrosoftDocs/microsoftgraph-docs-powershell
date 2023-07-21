@@ -12,6 +12,9 @@ The from [term] of the relation.
 The term from which the relationship is defined.
 A null value would indicate the relation is directly with the [set].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetTermChildRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetTermChildRelationFromTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -268,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreGroupSetTermChildRelationFromTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetTermChildRelationFromTerm?view=graph-powershell-v1.0)

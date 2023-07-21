@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property parent in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSecurityInformationProtectionSensitivityLabelParent](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtectionSensitivityLabelParent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -457,3 +460,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
+[Update-MgUserSecurityInformationProtectionSensitivityLabelParent](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtectionSensitivityLabelParent?view=graph-powershell-v1.0)

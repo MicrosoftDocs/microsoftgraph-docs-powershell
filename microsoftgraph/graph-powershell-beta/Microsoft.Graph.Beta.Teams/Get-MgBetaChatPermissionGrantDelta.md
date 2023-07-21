@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgChatPermissionGrantDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantDelta?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delta (Default)
@@ -283,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgChatPermissionGrantDelta](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrantDelta?view=graph-powershell-v1.0)

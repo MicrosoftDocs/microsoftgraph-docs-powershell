@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new yearTimePeriodDefinition object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataYear](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataYear?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -217,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
+[New-MgExternalIndustryDataYear](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataYear?view=graph-powershell-v1.0)

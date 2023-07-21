@@ -11,6 +11,9 @@ schema: 2.0.0
 The user's profile photo.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -266,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-v1.0)

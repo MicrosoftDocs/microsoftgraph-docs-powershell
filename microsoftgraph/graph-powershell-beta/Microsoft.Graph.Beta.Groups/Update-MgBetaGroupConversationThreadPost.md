@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property posts in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThreadPost?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -793,5 +796,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Update-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThreadPost?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupConversationThreadPost](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupConversationThreadPost?view=graph-powershell-v1.0)

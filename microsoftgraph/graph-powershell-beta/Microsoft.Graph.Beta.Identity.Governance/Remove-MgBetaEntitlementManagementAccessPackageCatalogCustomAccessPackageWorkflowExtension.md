@@ -17,6 +17,9 @@ Use the access package catalog ID and retrieve the ID of the **accessPackageCust
 Call the Update accessPackageAssignmentPolicy operation to remove the custom workflow extension object from the policy.
 For an example, see Example 3: Remove the customExtensionStageSettings from a policy.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -277,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property photo in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamPhotoContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -214,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgGroupTeamPhotoContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamPhotoContent?view=graph-powershell-v1.0)

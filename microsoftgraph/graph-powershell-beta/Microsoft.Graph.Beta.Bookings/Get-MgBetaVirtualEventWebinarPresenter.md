@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Presenters' information of the virtual event.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarPresenter?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -286,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarPresenter?view=graph-powershell-v1.0)

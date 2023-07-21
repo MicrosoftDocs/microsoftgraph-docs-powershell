@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign the tenant tag to the specified managed tenants.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTenantRelationshipManagedTenantTag](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgTenantRelationshipManagedTenantTag?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -230,3 +233,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgTenantRelationshipManagedTenantTag](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Set-MgTenantRelationshipManagedTenantTag?view=graph-powershell-v1.0)

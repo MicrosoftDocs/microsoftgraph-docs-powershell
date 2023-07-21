@@ -12,6 +12,9 @@ Update the properties of the userSettings object.
 \nUsers in the same organization can have different settings based on their preference or on the organization policies.
 \nTo get the user current settings, see current user settings.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -334,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
+[Update-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSetting?view=graph-powershell-beta)

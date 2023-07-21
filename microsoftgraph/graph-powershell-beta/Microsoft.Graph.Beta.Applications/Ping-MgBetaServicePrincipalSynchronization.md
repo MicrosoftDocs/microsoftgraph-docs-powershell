@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function Ping
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Ping-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Ping (Default)
@@ -119,3 +122,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Ping-MgServicePrincipalSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgServicePrincipalSynchronization?view=graph-powershell-v1.0)

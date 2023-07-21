@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property mobileAppTroubleshootingEvents in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -526,5 +529,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Text <String>]`: Not yet documented
 
 ## RELATED LINKS
+[Update-MgUserMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)

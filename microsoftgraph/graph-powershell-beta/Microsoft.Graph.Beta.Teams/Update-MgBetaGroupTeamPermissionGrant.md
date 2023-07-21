@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property permissionGrants in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPermissionGrant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -352,3 +355,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgGroupTeamPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamPermissionGrant?view=graph-powershell-v1.0)

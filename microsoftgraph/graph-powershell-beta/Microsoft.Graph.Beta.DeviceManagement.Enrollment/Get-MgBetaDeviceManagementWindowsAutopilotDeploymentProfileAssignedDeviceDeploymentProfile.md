@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Deployment profile currently assigned to the Windows autopilot device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -165,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignedDeviceDeploymentProfile?view=graph-powershell-v1.0)

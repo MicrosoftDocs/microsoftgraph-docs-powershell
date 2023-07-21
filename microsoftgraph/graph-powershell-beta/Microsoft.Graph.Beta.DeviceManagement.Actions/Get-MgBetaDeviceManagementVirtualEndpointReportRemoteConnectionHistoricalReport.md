@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the remote connection history records of a Cloud PC during a given period.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -270,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
+[Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport?view=graph-powershell-v1.0)

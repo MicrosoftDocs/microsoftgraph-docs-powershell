@@ -13,6 +13,9 @@ Provided so that callers can get the directory objects using $expand at the same
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -298,3 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentDirectoryScope?view=graph-powershell-v1.0)

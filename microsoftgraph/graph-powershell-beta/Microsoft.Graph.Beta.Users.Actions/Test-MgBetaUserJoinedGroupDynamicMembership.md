@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action evaluateDynamicMembership
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgUserJoinedGroupDynamicMembership](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserJoinedGroupDynamicMembership?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Test-MgUserJoinedGroupDynamicMembership](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserJoinedGroupDynamicMembership?view=graph-powershell-v1.0)

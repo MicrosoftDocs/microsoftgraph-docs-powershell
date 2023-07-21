@@ -11,6 +11,9 @@ schema: 2.0.0
 Using the metadata that exists on an already-labeled piece of information, resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ExtractExpanded (Default)
@@ -269,3 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Groups/Invoke-MgExtractGroupSiteInformationProtectionPolicyLabel?view=graph-powershell-v1.0)

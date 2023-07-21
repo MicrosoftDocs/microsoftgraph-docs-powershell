@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property currency for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanyCustomerCurrency](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyCustomerCurrency?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -209,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Remove-MgFinancialCompanyCustomerCurrency](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyCustomerCurrency?view=graph-powershell-v1.0)

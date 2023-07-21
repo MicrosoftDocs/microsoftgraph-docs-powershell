@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property filePlanReferences in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelFilePlanReference?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -310,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Update-MgSecurityLabelFilePlanReference](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityLabelFilePlanReference?view=graph-powershell-v1.0)

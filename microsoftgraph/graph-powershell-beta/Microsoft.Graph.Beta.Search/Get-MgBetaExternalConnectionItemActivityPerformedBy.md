@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents an identity used to identify who is responsible for the activity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivityPerformedBy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -175,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalConnectionItemActivityPerformedBy](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItemActivityPerformedBy?view=graph-powershell-v1.0)

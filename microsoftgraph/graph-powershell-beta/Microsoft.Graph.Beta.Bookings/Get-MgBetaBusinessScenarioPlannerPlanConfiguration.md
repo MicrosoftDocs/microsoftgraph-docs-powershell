@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a plannerPlanConfiguration object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgBusinessScenarioPlannerPlanConfiguration](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlannerPlanConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -143,3 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Get-MgBusinessScenarioPlannerPlanConfiguration](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlannerPlanConfiguration?view=graph-powershell-v1.0)

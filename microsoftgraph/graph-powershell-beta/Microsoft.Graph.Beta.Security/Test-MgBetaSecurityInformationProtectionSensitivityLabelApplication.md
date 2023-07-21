@@ -12,6 +12,9 @@ Compute the sensitivity label that should be applied and return the set of actio
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key-value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgSecurityInformationProtectionSensitivityLabelApplication](/powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelApplication?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
@@ -205,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
+[Test-MgSecurityInformationProtectionSensitivityLabelApplication](/powershell/module/Microsoft.Graph.Security/Test-MgSecurityInformationProtectionSensitivityLabelApplication?view=graph-powershell-v1.0)

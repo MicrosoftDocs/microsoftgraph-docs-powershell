@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action evaluate
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Test-MgSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
@@ -309,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Author <String>]`: 
 
 ## RELATED LINKS
+[Test-MgSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)

@@ -13,6 +13,9 @@ The draft message can be a new message draft, reply draft, reply-all draft, or a
 This method saves the message in the **Sent Items** folder.
 Alternatively, send a new message in a single operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMessage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Send (Default)
@@ -197,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMessage?view=graph-powershell-v1.0)

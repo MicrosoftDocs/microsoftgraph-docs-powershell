@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action downloadAppDiagnostics
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### DownloadExpanded (Default)
@@ -186,3 +189,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PowerliftId <String>]`: The unique id for the request
 
 ## RELATED LINKS
+[Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgDownloadDeviceManagementManagedDeviceAppDiagnostic?view=graph-powershell-v1.0)

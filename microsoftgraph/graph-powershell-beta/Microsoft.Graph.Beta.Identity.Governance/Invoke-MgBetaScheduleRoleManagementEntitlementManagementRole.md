@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function roleSchedules
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgScheduleRoleManagementEntitlementManagementRole](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementEntitlementManagementRole?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -214,3 +217,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Invoke-MgScheduleRoleManagementEntitlementManagementRole](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementEntitlementManagementRole?view=graph-powershell-v1.0)

@@ -12,6 +12,9 @@ Create a new trustFrameworkKeySet.
 The ID of the **trustFrameworkKeySet** is expected in the create request; however, it can be modified by the service.
 The modified ID will be available in the response and in the location header.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -227,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
 ## RELATED LINKS
+[New-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)

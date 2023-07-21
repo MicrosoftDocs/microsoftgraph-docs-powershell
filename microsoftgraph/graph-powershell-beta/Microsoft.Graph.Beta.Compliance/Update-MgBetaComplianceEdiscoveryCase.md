@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a case object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15081,5 +15084,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)

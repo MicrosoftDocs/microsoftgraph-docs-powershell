@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unenrollAssets
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UnenrollExpanded (Default)
@@ -257,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgUnenrollWindowsUpdatesPolicyAudienceExclusionAsset?view=graph-powershell-v1.0)

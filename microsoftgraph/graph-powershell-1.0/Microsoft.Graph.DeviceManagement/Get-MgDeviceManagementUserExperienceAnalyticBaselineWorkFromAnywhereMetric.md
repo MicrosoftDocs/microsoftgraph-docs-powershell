@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The scores and insights for the work from anywhere metrics.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -178,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineWorkFromAnywhereMetric?view=graph-powershell-beta)

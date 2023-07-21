@@ -13,6 +13,9 @@ You can add azureADDevice resources as members, but may not add **updatableAsset
 Adding an Azure AD device as a member of an updatable asset group automatically creates an **azureADDevice** object, if it does not already exist.
 You can also use the method addMembersById to add members.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgWindowsUpdatesDeploymentAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesDeploymentAudienceMember?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -244,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Add-MgWindowsUpdatesDeploymentAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesDeploymentAudienceMember?view=graph-powershell-v1.0)

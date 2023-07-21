@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assign
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgUserDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -284,3 +287,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgUserDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)

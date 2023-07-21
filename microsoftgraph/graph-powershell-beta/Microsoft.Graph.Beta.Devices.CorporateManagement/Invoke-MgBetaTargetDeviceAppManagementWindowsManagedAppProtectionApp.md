@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action targetApps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTargetDeviceAppManagementWindowsManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgTargetDeviceAppManagementWindowsManagedAppProtectionApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### TargetExpanded (Default)
@@ -282,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Invoke-MgTargetDeviceAppManagementWindowsManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgTargetDeviceAppManagementWindowsManagedAppProtectionApp?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function allMessages
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMessageTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageTeamChannel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Message (Default)
@@ -241,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Invoke-MgMessageTeamChannel](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageTeamChannel?view=graph-powershell-v1.0)

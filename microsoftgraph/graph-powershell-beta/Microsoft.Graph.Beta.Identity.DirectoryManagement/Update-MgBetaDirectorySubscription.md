@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property subscriptions in directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -390,3 +393,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[Update-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySubscription?view=graph-powershell-v1.0)

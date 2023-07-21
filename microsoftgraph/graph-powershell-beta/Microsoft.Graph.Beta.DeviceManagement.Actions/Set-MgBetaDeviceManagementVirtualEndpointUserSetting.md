@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Assign a cloudPcUserSetting to user groups.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -275,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Set-MgDeviceManagementVirtualEndpointUserSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementVirtualEndpointUserSetting?view=graph-powershell-v1.0)

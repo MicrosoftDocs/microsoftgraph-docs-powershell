@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to picture for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanySaleQuoteCustomerPicture](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanySaleQuoteCustomerPicture?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -308,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[New-MgFinancialCompanySaleQuoteCustomerPicture](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanySaleQuoteCustomerPicture?view=graph-powershell-v1.0)

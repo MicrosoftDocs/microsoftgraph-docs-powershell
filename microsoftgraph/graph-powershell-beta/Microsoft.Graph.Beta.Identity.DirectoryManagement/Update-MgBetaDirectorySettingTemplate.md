@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in directorySettingTemplates
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySettingTemplate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -315,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: Type of the setting. Read-only.
 
 ## RELATED LINKS
+[Update-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySettingTemplate?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property siteSources in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9781,5 +9784,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)

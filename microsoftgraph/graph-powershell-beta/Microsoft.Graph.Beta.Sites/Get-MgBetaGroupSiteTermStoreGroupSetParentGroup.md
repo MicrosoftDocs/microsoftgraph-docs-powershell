@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The parent [group] that contains the set.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetParentGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -218,3 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStoreGroupSetParentGroup](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreGroupSetParentGroup?view=graph-powershell-v1.0)

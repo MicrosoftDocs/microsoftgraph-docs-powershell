@@ -11,6 +11,9 @@ schema: 2.0.0
 Nullable.
 Specifies a list of directoryObjects that feature is enabled for.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -220,3 +223,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPolicyFeatureRolloutPolicyApplyTo](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFeatureRolloutPolicyApplyTo?view=graph-powershell-v1.0)

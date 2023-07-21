@@ -11,6 +11,9 @@ schema: 2.0.0
 In the Azure AD access reviews feature, delete a programControl object.
 This unlinks an access review from a program.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControl?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -302,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControl?view=graph-powershell-v1.0)

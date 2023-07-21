@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleEligibilityScheduleRequests in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -900,5 +903,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequest?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The Managed eBook.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBook?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -317,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementManagedEBook](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedEBook?view=graph-powershell-v1.0)

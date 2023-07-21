@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an alertRule object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Target <Int32?>]`: The target threshold value.
 
 ## RELATED LINKS
+[New-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)

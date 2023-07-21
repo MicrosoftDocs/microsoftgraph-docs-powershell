@@ -11,6 +11,9 @@ schema: 2.0.0
 Mark a message as junk.
 This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### MarkExpanded (Default)
@@ -278,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMailFolderChildFolderMessageAsJunk?view=graph-powershell-v1.0)

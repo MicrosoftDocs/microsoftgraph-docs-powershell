@@ -11,6 +11,9 @@ schema: 2.0.0
 Run an estimate of the number of emails and documents in the source collection.
 To learn more about source collections (also known as searches in eDiscovery), see Collect data for a case in Advanced eDiscovery.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Estimate (Default)
@@ -169,3 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics](/powershell/module/Microsoft.Graph.Compliance/Invoke-MgEstimateComplianceEdiscoveryCaseSourceCollectionStatistics?view=graph-powershell-v1.0)
