@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Security
 Module Guid: 6c429512-7e16-4323-aaa4-5fa237d32f67
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
@@ -425,7 +425,7 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 Specifies the  department or business unit of an organization to which a label belongs.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate.md)
-Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
+Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
 ### [Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage](Get-MgBetaSecurityLabelRetentionLabelDispositionReviewStage.md)
 When action at the end of retention is chosen as 'dispositionReview', dispositionReviewStages specifies a sequential set of stages with at least one reviewer in each stage.
@@ -440,7 +440,7 @@ Get providerTenantSettings from security
 Get the number of the resource
 
 ### [Get-MgBetaSecuritySecureScore](Get-MgBetaSecuritySecureScore.md)
-Measurements of tenants’ security posture to help protect them from threats.
+Measurements of tenants' security posture to help protect them from threats.
 
 ### [Get-MgBetaSecuritySecureScoreControlProfile](Get-MgBetaSecuritySecureScoreControlProfile.md)
 Get secureScoreControlProfiles from security

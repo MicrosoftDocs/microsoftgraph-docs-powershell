@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetasoftteamprimarychannelmessagedelete
 schema: 2.0.0
@@ -14,14 +14,14 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ### Soft (Default)
 ```
-Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete -ChatMessageId <String> -TeamId <String> [-PassThru]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete -ChatMessageId <String> -TeamId <String> [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### SoftViaIdentity
 ```
-Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete -InputObject <ITeamsIdentity> [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSoftTeamPrimaryChannelMessageDelete -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -29,14 +29,14 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -49,7 +49,7 @@ Delete a single chatMessage or a chat message reply in a channel or a chat.
 The unique identifier of chatMessage
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Soft
 Aliases:
 
@@ -65,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Type: ITeamsIdentity
 Parameter Sets: SoftViaIdentity
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Soft
 Aliases:
 
@@ -110,7 +110,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +126,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -143,11 +143,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -198,4 +196,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-

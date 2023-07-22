@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Calendar
 Module Guid: afb4ddb5-baca-4a19-950d-171c413caa32
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar
@@ -26,17 +26,14 @@ Get the specified permissions object of a user or group calendar that has been s
 ### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupCalendarView](Get-MgBetaGroupCalendarView.md)
-The calendar view for the calendar.
-Navigation property.
-Read-only.
+### [Get-MgBetaGroupCalendarPermissionCount](Get-MgBetaGroupCalendarPermissionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
 Get an event object.
 
-### [Get-MgBetaGroupEventAttachment](Get-MgBetaGroupEventAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+### [Get-MgBetaGroupEvent](Get-MgBetaGroupEvent.md)
+Get an event object.
 
 ### [Get-MgBetaGroupEventAttachmentCount](Get-MgBetaGroupEventAttachmentCount.md)
 Get the number of the resource
@@ -113,12 +110,8 @@ The following table lists the three scenarios where you can get an open extensio
 ### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaGroupEventInstance](Get-MgBetaGroupEventInstance.md)
-The occurrences of a recurring series, if the event is a series master.
-This property includes occurrences that are part of the recurrence pattern, and exceptions that have been modified, but does not include occurrences that have been cancelled from the series.
-Navigation property.
-Read-only.
-Nullable.
+### [Get-MgBetaGroupEventExtensionCount](Get-MgBetaGroupEventExtensionCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaGroupEventInstanceAttachment](Get-MgBetaGroupEventInstanceAttachment.md)
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
@@ -192,14 +185,11 @@ Nullable.
 ### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserCalendarEvent](Get-MgBetaUserCalendarEvent.md)
-Retrieve a list of events in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
-The list of events contains single instance meetings and series masters.
-To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
+### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
+Get the number of the resource
 
-### [Get-MgBetaUserCalendarGroup](Get-MgBetaUserCalendarGroup.md)
-Retrieve the properties and relationships of a calendar group object.
+### [Get-MgBetaUserCalendarCount](Get-MgBetaUserCalendarCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserCalendarGroupCalendar](Get-MgBetaUserCalendarGroupCalendar.md)
 Retrieve a list of calendars belonging to a calendar group.
@@ -218,10 +208,10 @@ The calendar view for the calendar.
 Navigation property.
 Read-only.
 
-### [Get-MgBetaUserDefaultCalendar](Get-MgBetaUserDefaultCalendar.md)
-Get the properties and relationships of a calendar object.
-The calendar can be one for a user, \nor the default calendar of a Microsoft 365 group.
-There are two scenarios where an app can get another user's calendar:
+### [Get-MgBetaUserCalendarView](Get-MgBetaUserCalendarView.md)
+The calendar view for the calendar.
+Navigation property.
+Read-only.
 
 ### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
 Retrieve a list of events in a calendar.
@@ -229,13 +219,17 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
 
-### [Get-MgBetaUserEvent](Get-MgBetaUserEvent.md)
-Get the properties and relationships of the specified event object.
-An app can get an event in another user's calendar if: Because the **event** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in an **event** instance.
+### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
 
-### [Get-MgBetaUserEventAttachment](Get-MgBetaUserEventAttachment.md)
-Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
-An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
+### [Get-MgBetaUserDefaultCalendarEvent](Get-MgBetaUserDefaultCalendarEvent.md)
+Retrieve a list of events in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+The list of events contains single instance meetings and series masters.
+To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
 
 ### [Get-MgBetaUserEventAttachmentCount](Get-MgBetaUserEventAttachmentCount.md)
 Get the number of the resource
@@ -428,18 +422,29 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgBetaUserCalendar](New-MgBetaUserCalendar.md)
-Create a new calendar for a user.
+### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgBetaUserCalendarEvent](New-MgBetaUserCalendarEvent.md)
-Use this API to create a new event in a calendar.
-The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
+### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgBetaUserCalendarGroup](New-MgBetaUserCalendarGroup.md)
-Use this API to create a new CalendarGroup.
+### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
-### [New-MgBetaUserCalendarGroupCalendar](New-MgBetaUserCalendarGroupCalendar.md)
-Use this API to create a new calendar in a calendar group for a user.
+### [New-MgBetaGroupEventInstanceExtension](New-MgBetaGroupEventInstanceExtension.md)
+Create an open extension (openTypeExtension object) and add custom properties in a new or existing instance of a resource.
+You can create an open extension in a resource instance and store custom data to it all in the same operation, except for specific resources.
+See known limitations of open extensions for more information.
+The table in the Permissions section lists the resources that support open extensions.
 
 ### [New-MgBetaUserCalendarPermission](New-MgBetaUserCalendarPermission.md)
 Create a calendarPermission resource to specify the identity and role of the user with whom the specified calendar is being shared or delegated.
@@ -448,23 +453,13 @@ Create a calendarPermission resource to specify the identity and role of the use
 Use this API to create a new event in a calendar.
 The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
-### [New-MgBetaUserEvent](New-MgBetaUserEvent.md)
-Create an event in the user's default calendar or specified calendar.
-By default, the **allowNewTimeProposals** property is set to true when an event is created, which means invitees can propose a different date/time for the event.
-See Propose new meeting times for more information on how to propose a time, and how to receive and accept a new time proposal.
-You can specify the time zone for each of the start and end times of the event as part of their values, because the \n**start** and **end** properties are of dateTimeTimeZone type.
-First find the supported time zones to make sure you set only time zones that have been configured for the user's mailbox server.
-When an event is sent, the server sends invitations to all the attendees.
-**Setting the location in an event** An Exchange administrator can set up a mailbox and an email address for a resource such as a meeting room, or equipment\nlike a projector.
-Users can then invite the resource as an attendee to a meeting.
-On behalf of the resource, the server accepts or rejects\nthe meeting request based on the free/busy schedule of the resource.\nIf the server accepts a meeting for the resource, it creates an event for the meeting in the resource's calendar.
-If the meeting is rescheduled,\nthe server automatically updates the event in the resource's calendar.
-Another advantage of setting up a mailbox for a resource is to control scheduling of the resource, for example, only executives\nor their delegates can book a private meeting room.
-If you're organizing an event that involves a meeting location: Additionally, if the meeting location has been set up as a resource, or if the event involves some equipment that has been set up as a resource:
+### [New-MgBetaUserDefaultCalendarEvent](New-MgBetaUserDefaultCalendarEvent.md)
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
-### [New-MgBetaUserEventAttachment](New-MgBetaUserEventAttachment.md)
-Use this API to create a new Attachment.
-An attachment can be one of the following types: All these types of attachment resources are derived from the attachment\nresource.
+### [New-MgBetaUserDefaultCalendarEvent](New-MgBetaUserDefaultCalendarEvent.md)
+Use this API to create a new event in a calendar.
+The calendar can be one for a user, or the default calendar of a Microsoft 365 group.
 
 ### [New-MgBetaUserEventExceptionOccurrenceAttachment](New-MgBetaUserEventExceptionOccurrenceAttachment.md)
 Use this API to create a new Attachment.
@@ -554,18 +549,17 @@ Delete navigation property extensions for groups
 ### [Remove-MgBetaPlace](Remove-MgBetaPlace.md)
 Delete entity from places
 
-### [Remove-MgBetaUserCalendarGroup](Remove-MgBetaUserCalendarGroup.md)
-Delete a calendar group other than the default calendar group.
+### [Remove-MgBetaPlace](Remove-MgBetaPlace.md)
+Delete entity from places
 
 ### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
 Delete calendarPermission.
 
-### [Remove-MgBetaUserEvent](Remove-MgBetaUserEvent.md)
-Removes the specified event from the containing calendar.
-If the event is a meeting, deleting the event on the organizer's calendar sends a cancellation message to the meeting attendees.
+### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
+Delete calendarPermission.
 
-### [Remove-MgBetaUserEventAttachment](Remove-MgBetaUserEventAttachment.md)
-Delete an attachment from a user calendar event, message, Outlook task, or post.
+### [Remove-MgBetaUserCalendarPermission](Remove-MgBetaUserCalendarPermission.md)
+Delete calendarPermission.
 
 ### [Remove-MgBetaUserEventExceptionOccurrenceAttachment](Remove-MgBetaUserEventExceptionOccurrenceAttachment.md)
 Delete an attachment from a user calendar event, message, Outlook task, or post.
@@ -622,14 +616,15 @@ Update the navigation property extensions in groups
 Update the properties of place object, which can be a room, workspace, or roomList.
 You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
-### [Update-MgBetaUserCalendarGroup](Update-MgBetaUserCalendarGroup.md)
-Update the properties of calendargroup object.
+### [Update-MgBetaPlace](Update-MgBetaPlace.md)
+Update the properties of place object, which can be a room, workspace, or roomList.
+You can identify the **room**, **workspace**, or **roomList** by specifying the **id** or **emailAddress** property.
 
 ### [Update-MgBetaUserCalendarPermission](Update-MgBetaUserCalendarPermission.md)
 Update the permissions assigned to an existing sharee or delegate, through the corresponding calendarPermission object for a calendar.
 
-### [Update-MgBetaUserEvent](Update-MgBetaUserEvent.md)
-Update the properties of the event object.
+### [Update-MgBetaUserCalendarPermission](Update-MgBetaUserCalendarPermission.md)
+Update the permissions assigned to an existing sharee or delegate, through the corresponding calendarPermission object for a calendar.
 
 ### [Update-MgBetaUserEventExceptionOccurrenceExtension](Update-MgBetaUserEventExceptionOccurrenceExtension.md)
 Update the navigation property extensions in users

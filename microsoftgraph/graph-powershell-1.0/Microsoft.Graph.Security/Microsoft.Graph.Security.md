@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Security
 Module Guid: 9038e189-7e22-4f78-a197-16da64356b1e
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.security
@@ -40,14 +40,6 @@ For more information about purging Teams messages, see:\n- eDiscovery solution s
 ### [Close-MgSecurityCaseEdiscoveryCase](Close-MgSecurityCaseEdiscoveryCase.md)
 Close an eDiscovery case.
 For details, see Close a case.
-
-### [Export-MgSecurityCaseEdiscoveryCaseReviewSet](Export-MgSecurityCaseEdiscoveryCaseReviewSet.md)
-Initiate an export from a ediscoveryReviewSet.
-For details, see Export documents from a review set in eDiscovery (Premium).
-
-### [Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery](Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery.md)
-Initiate an export from a microsoft.graph.security.ediscoveryReviewSetQuery.
-For details, see Export documents from a review set in eDiscovery (Premium).
 
 ### [Get-MgSecurityAlert](Get-MgSecurityAlert.md)
 Retrieve the properties and relationships of an alert object.
