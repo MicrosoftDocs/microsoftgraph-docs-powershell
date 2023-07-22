@@ -1,4 +1,4 @@
-﻿---
+---
 Module Name: Microsoft.Graph.Beta.Groups
 Module Guid: 08eb82d4-04fc-40d2-b508-45bdb490e609
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups
