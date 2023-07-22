@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/suspend-mgbetaapplicationsynchronizationjob
 schema: 2.0.0
@@ -11,26 +11,39 @@ schema: 2.0.0
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Suspend-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Pause (Default)
 ```
 Suspend-MgBetaApplicationSynchronizationJob -ApplicationId <String> -SynchronizationJobId <String> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### PauseViaIdentity
 ```
-Suspend-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Suspend-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Temporarily stop a running synchronization job.
 All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ All the progress, including job state, is persisted, and the job will continue f
 The unique identifier of application
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Pause
 Aliases:
 
@@ -54,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
 Parameter Sets: PauseViaIdentity
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -84,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Pause
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,9 +145,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -175,5 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Suspend-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementandroidforworkenrollmentprofile
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to androidForWorkEnrollmentProfiles for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAndroidForWorkEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAndroidForWorkEnrollmentProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -21,17 +18,33 @@ New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile [-AccountId <String>]
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Description <String>]
  [-DisplayName <String>] [-EnrolledDeviceCount <Int32>] [-Id <String>] [-LastModifiedDateTime <DateTime>]
  [-QrCodeContent <String>] [-QrCodeImage <IMicrosoftGraphMimeContent>] [-TokenExpirationDateTime <DateTime>]
- [-TokenValue <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenValue <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile
- -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkEnrollmentProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to androidForWorkEnrollmentProfiles for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Create new navigation property to androidForWorkEnrollmentProfiles for deviceMan
 Tenant GUID the enrollment profile belongs to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Enrollment Profile used to enroll COSU devices using Google's Cloud Management.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidForWorkEnrollmentProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 Date time the enrollment profile was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Description for the enrollment profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 Display name for the enrollment profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Total number of Android devices that have enrolled using this enrollment profile.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +159,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +174,7 @@ Accept wildcard characters: False
 Date time the enrollment profile was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +189,7 @@ Accept wildcard characters: False
 String used to generate a QR code for the token.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for QRCODEIMAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMimeContent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 Date time the most recently created token will expire.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ Accept wildcard characters: False
 Value of the most recently created token for this enrollment profile.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +250,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -253,7 +266,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -270,9 +283,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkEnrollmentProfile
+
 ## NOTES
 
 ALIASES
@@ -305,5 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <Byte[]>]`: The byte array that contains the actual content.
 
 ## RELATED LINKS
-[New-MgDeviceManagementAndroidForWorkEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAndroidForWorkEnrollmentProfile?view=graph-powershell-v1.0)
 

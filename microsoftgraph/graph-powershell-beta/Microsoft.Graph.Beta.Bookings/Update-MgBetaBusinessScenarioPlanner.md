@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplanner
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property planner in solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,13 +17,19 @@ Update the navigation property planner in solutions
 Update-MgBetaBusinessScenarioPlanner -BusinessScenarioId <String> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]
  [-TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]
- [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlanner -BusinessScenarioId <String>
- -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaBusinessScenarioPlanner -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -34,17 +37,27 @@ Update-MgBetaBusinessScenarioPlanner -BusinessScenarioId <String>
 Update-MgBetaBusinessScenarioPlanner -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-PlanConfiguration <IMicrosoftGraphPlannerPlanConfiguration>]
  [-TaskConfiguration <IMicrosoftGraphPlannerTaskConfiguration>]
- [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaBusinessScenarioPlanner -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphBusinessScenarioPlanner> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphBusinessScenarioTask[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property planner in solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Update the navigation property planner in solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ businessScenarioPlanner
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBusinessScenarioPlanner
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanner
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenario
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -99,7 +112,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +144,7 @@ plannerPlanConfiguration
 To construct, see NOTES section for PLANCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ plannerTaskConfiguration
 To construct, see NOTES section for TASKCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTaskConfiguration
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTaskConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +176,7 @@ The Planner tasks for the scenario.
 To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphBusinessScenarioTask[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioTask[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,10 +224,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanner
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBusinessScenarioPlanner
+
 ## NOTES
 
 ALIASES
@@ -575,8 +591,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
-[Update-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgBusinessScenarioPlanner](/powershell/module/Microsoft.Graph.Bookings/Update-MgBusinessScenarioPlanner?view=graph-powershell-v1.0)
 

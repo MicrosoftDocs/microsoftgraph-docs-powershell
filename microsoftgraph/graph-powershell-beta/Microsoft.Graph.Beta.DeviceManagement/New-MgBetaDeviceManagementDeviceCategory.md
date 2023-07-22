@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementdevicecategory
 schema: 2.0.0
@@ -10,25 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceCategories for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementDeviceCategory [-AdditionalProperties <Hashtable>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-RoleScopeTagIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-RoleScopeTagIds <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCategory> [-WhatIf] [-Confirm]
+New-MgBetaDeviceManagementDeviceCategory -BodyParameter <IMicrosoftGraphDeviceCategory> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceCategories for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +50,7 @@ Create new navigation property to deviceCategories for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -55,7 +69,7 @@ You can filter reports and create dynamic Azure Active Directory device groups b
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCategory
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
 Parameter Sets: Create
 Aliases:
 
@@ -70,7 +84,7 @@ Accept wildcard characters: False
 Optional description for the device category.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +99,7 @@ Accept wildcard characters: False
 Display name for the device category.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +115,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 Optional role scope tags for the device category.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -131,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,9 +178,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCategory
+
 ## NOTES
 
 ALIASES
@@ -184,5 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleScopeTagIds <String[]>]`: Optional role scope tags for the device category.
 
 ## RELATED LINKS
-[New-MgDeviceManagementDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCategory?view=graph-powershell-v1.0)
 

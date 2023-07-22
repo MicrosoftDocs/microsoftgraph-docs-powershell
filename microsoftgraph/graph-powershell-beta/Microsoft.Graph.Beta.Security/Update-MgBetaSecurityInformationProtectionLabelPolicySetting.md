@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityinformationprotectionlabelpolicysetting
 schema: 2.0.0
@@ -10,27 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property labelPolicySettings in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityInformationProtectionLabelPolicySetting [-AdditionalProperties <Hashtable>]
  [-DefaultLabelId <String>] [-Id <String>] [-IsDowngradeJustificationRequired] [-IsMandatory]
- [-MoreInfoUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MoreInfoUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityInformationProtectionLabelPolicySetting
- -BodyParameter <IMicrosoftGraphSecurityInformationProtectionPolicySetting> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphSecurityInformationProtectionPolicySetting> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property labelPolicySettings in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Update the navigation property labelPolicySettings in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ informationProtectionPolicySetting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityInformationProtectionPolicySetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionPolicySetting
 Parameter Sets: Update
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Exposes whether justification input is required on label downgrade.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ Accept wildcard characters: False
 Exposes whether mandatory labeling is enabled.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Exposes the more information URL that can be configured by the administrator.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,9 +191,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionPolicySetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionPolicySetting
+
 ## NOTES
 
 ALIASES
@@ -199,5 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
 ## RELATED LINKS
-[Update-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
 

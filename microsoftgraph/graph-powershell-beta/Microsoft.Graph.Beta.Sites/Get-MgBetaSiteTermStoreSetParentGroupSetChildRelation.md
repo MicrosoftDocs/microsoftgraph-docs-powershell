@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitetermstoresetparentgroupsetchildrelation
 schema: 2.0.0
@@ -10,23 +10,14 @@ schema: 2.0.0
 ## SYNOPSIS
 To indicate which terms are related to the current term as either pinned or reused.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetParentGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetChildRelation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List1 (Default)
 ```
 Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -SetId <String> -SetId1 <String> -SiteId <String>
- -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+ -TermId <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
  [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -RelationId <String> -SetId <String> -SetId1 <String>
- -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### Get
@@ -36,18 +27,10 @@ Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -RelationId <String> -SetI
  [<CommonParameters>]
 ```
 
-### List
+### Get1
 ```
-Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -SetId <String> -SetId1 <String> -SiteId <String>
- -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All]
- [-CountVariable <String>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -RelationId <String> -SetId <String> -SetId1 <String>
+ -SiteId <String> -TermId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -56,8 +39,38 @@ Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesIdenti
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -InputObject <ISitesIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### List
+```
+Get-MgBetaSiteTermStoreSetParentGroupSetChildRelation -SetId <String> -SetId1 <String> -SiteId <String>
+ -TermId <String> -TermId1 <String> [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 To indicate which terms are related to the current term as either pinned or reused.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -65,8 +78,8 @@ To indicate which terms are related to the current term as either pinned or reus
 List all pages.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: List1, List
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -81,8 +94,8 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
-Parameter Sets: List1, List
+Type: System.String
+Parameter Sets: List, List1
 Aliases: CV
 
 Required: False
@@ -96,7 +109,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -111,8 +124,8 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: List1, List
+Type: System.String
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -127,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -142,8 +155,8 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
-Parameter Sets: List1, List
+Type: System.Int32
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -157,7 +170,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -172,8 +185,8 @@ Accept wildcard characters: False
 The unique identifier of relation
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -187,8 +200,8 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
-Parameter Sets: List1, List
+Type: System.String
+Parameter Sets: List, List1
 Aliases:
 
 Required: False
@@ -202,8 +215,8 @@ Accept wildcard characters: False
 The unique identifier of set
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1, Get, List
+Type: System.String
+Parameter Sets: Get, Get1, List, List1
 Aliases:
 
 Required: True
@@ -217,8 +230,8 @@ Accept wildcard characters: False
 The unique identifier of set
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1, Get, List
+Type: System.String
+Parameter Sets: Get, Get1, List, List1
 Aliases:
 
 Required: True
@@ -232,11 +245,26 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1, Get, List
+Type: System.String
+Parameter Sets: Get, Get1, List, List1
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List, List1
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -247,8 +275,8 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
-Parameter Sets: List1, List
+Type: System.String[]
+Parameter Sets: List, List1
 Aliases: OrderBy
 
 Required: False
@@ -262,8 +290,8 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: String
-Parameter Sets: List1, Get1, Get, List
+Type: System.String
+Parameter Sets: Get, Get1, List, List1
 Aliases:
 
 Required: True
@@ -277,7 +305,7 @@ Accept wildcard characters: False
 The unique identifier of term
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, List
 Aliases:
 
@@ -292,24 +320,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
-Parameter Sets: List1, List
+Type: System.Int32
+Parameter Sets: List, List1
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List1, List
-Aliases:
 
 Required: False
 Position: Named
@@ -324,9 +337,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTermStoreRelation
+
 ## NOTES
 
 ALIASES
@@ -389,5 +404,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetParentGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetChildRelation?view=graph-powershell-v1.0)
 

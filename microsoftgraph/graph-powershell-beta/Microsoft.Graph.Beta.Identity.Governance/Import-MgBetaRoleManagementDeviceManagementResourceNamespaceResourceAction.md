@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/import-mgbetarolemanagementdevicemanagementresourcenamespaceresourceaction
 schema: 2.0.0
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action importResourceActions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ImportExpanded (Default)
 ```
 Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceNamespaceId <String> [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-OverwriteResourceNamespace] [-Value <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Import
@@ -27,14 +24,7 @@ Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
  -UnifiedRbacResourceNamespaceId <String>
  -BodyParameter <IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ImportViaIdentityExpanded
-```
-Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Format <String>]
- [-OverwriteResourceNamespace] [-Value <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ImportViaIdentity
@@ -42,11 +32,34 @@ Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ImportViaIdentityExpanded
+```
+Import-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Format <String>]
+ [-OverwriteResourceNamespace] [-Value <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action importResourceActions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Invoke action importResourceActions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Import, ImportViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -101,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: ImportViaIdentityExpanded, ImportViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: ImportViaIdentity, ImportViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -131,8 +144,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRbacResourceNamespace
 
 ```yaml
-Type: String
-Parameter Sets: ImportExpanded, Import
+Type: System.String
+Parameter Sets: Import, ImportExpanded
 Aliases:
 
 Required: True
@@ -146,7 +159,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ImportExpanded, ImportViaIdentityExpanded
 Aliases:
 
@@ -161,7 +174,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -177,7 +190,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -194,10 +207,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1A0X10XRolemanagementDevicemanagementResourcenamespacesUnifiedrbacresourcenamespaceIdMicrosoftGraphImportresourceactionsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceNamespace
+
 ## NOTES
 
 ALIASES
@@ -312,5 +328,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-v1.0)
 

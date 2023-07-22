@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: 000e9d71-02ad-44bd-8ec6-ecafda2953bd
+Module Guid: d83c3680-305f-404b-92ae-8c85503c2b9d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -15,7 +15,7 @@ Microsoft Graph PowerShell Cmdlets
 Add a key credential to an application.
 This method, along with removeKey, can be used by an application to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
-Applications that don't have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won't be able to use this service action.
+Applications that don’t have any existing valid certificates (no certificates have been added yet, or all certificates have expired), won’t be able to use this service action.
 You can use the Update application operation to perform an update instead.
 
 ### [Add-MgBetaApplicationPassword](Add-MgBetaApplicationPassword.md)
@@ -35,15 +35,22 @@ The **endDateTime** can be up to three years after the certificate is created.
 Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
 For more information, see Publisher verification.
 
-### [Clear-MgBetaApplicationVerifiedPublisher](Clear-MgBetaApplicationVerifiedPublisher.md)
-Unset the the verifiedPublisher previously set on an application, removing all verified publisher properties.
-For more information, see Publisher verification.
+### [Confirm-MgBetaApplicationMemberGroup](Confirm-MgBetaApplicationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaApplicationMemberObject](Confirm-MgBetaApplicationMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaApplicationMemberObject](Confirm-MgBetaApplicationMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaServicePrincipalMemberGroup](Confirm-MgBetaServicePrincipalMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaServicePrincipalMemberObject](Confirm-MgBetaServicePrincipalMemberObject.md)
 Invoke action checkMemberObjects
@@ -116,9 +123,9 @@ Get the number of the resource
 The main logo for the application.
 Not nullable.
 
-### [Get-MgBetaApplicationLogo](Get-MgBetaApplicationLogo.md)
-The main logo for the application.
-Not nullable.
+### [Get-MgBetaApplicationMemberGroup](Get-MgBetaApplicationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaApplicationMemberObject](Get-MgBetaApplicationMemberObject.md)
 Invoke action getMemberObjects
@@ -164,6 +171,12 @@ Acquire an OAuth Access token to authorize the Azure AD provisioning service to 
 
 ### [Get-MgBetaApplicationSynchronizationJob](Get-MgBetaApplicationSynchronizationJob.md)
 Retrieve the existing synchronization job and its properties.
+
+### [Get-MgBetaApplicationSynchronizationJobBulkUpload](Get-MgBetaApplicationSynchronizationJobBulkUpload.md)
+The bulk upload operation for the job.
+
+### [Get-MgBetaApplicationSynchronizationJobBulkUploadContent](Get-MgBetaApplicationSynchronizationJobBulkUploadContent.md)
+Get media content for the navigation property bulkUpload from applications
 
 ### [Get-MgBetaApplicationSynchronizationJobCount](Get-MgBetaApplicationSynchronizationJobCount.md)
 Get the number of the resource
@@ -427,8 +440,9 @@ Get licenseDetails from servicePrincipals
 ### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
 Get the number of the resource
 
-### [Get-MgBetaServicePrincipalLicenseDetailCount](Get-MgBetaServicePrincipalLicenseDetailCount.md)
-Get the number of the resource
+### [Get-MgBetaServicePrincipalMemberGroup](Get-MgBetaServicePrincipalMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaServicePrincipalMemberObject](Get-MgBetaServicePrincipalMemberObject.md)
 Invoke action getMemberObjects
@@ -442,6 +456,9 @@ Supports $expand.
 ### [Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgBetaServicePrincipalMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgBetaServicePrincipalMemberOfAsGroup](Get-MgBetaServicePrincipalMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
@@ -449,6 +466,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 Get the number of the resource
 
 ### [Get-MgBetaServicePrincipalMemberOfCountAsAdministrativeUnit](Get-MgBetaServicePrincipalMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaServicePrincipalMemberOfCountAsDirectoryRole](Get-MgBetaServicePrincipalMemberOfCountAsDirectoryRole.md)
 Get the number of the resource
 
 ### [Get-MgBetaServicePrincipalMemberOfCountAsGroup](Get-MgBetaServicePrincipalMemberOfCountAsGroup.md)
@@ -542,6 +562,12 @@ Acquire an OAuth Access token to authorize the Azure AD provisioning service to 
 ### [Get-MgBetaServicePrincipalSynchronizationJob](Get-MgBetaServicePrincipalSynchronizationJob.md)
 Retrieve the existing synchronization job and its properties.
 
+### [Get-MgBetaServicePrincipalSynchronizationJobBulkUpload](Get-MgBetaServicePrincipalSynchronizationJobBulkUpload.md)
+The bulk upload operation for the job.
+
+### [Get-MgBetaServicePrincipalSynchronizationJobBulkUploadContent](Get-MgBetaServicePrincipalSynchronizationJobBulkUploadContent.md)
+Get media content for the navigation property bulkUpload from servicePrincipals
+
 ### [Get-MgBetaServicePrincipalSynchronizationJobCount](Get-MgBetaServicePrincipalSynchronizationJobCount.md)
 Get the number of the resource
 
@@ -592,6 +618,9 @@ Get transitiveMemberOf from servicePrincipals
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaServicePrincipalTransitiveMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole](Get-MgBetaServicePrincipalTransitiveMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup](Get-MgBetaServicePrincipalTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
@@ -599,6 +628,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 Get the number of the resource
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaServicePrincipalTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsDirectoryRole](Get-MgBetaServicePrincipalTransitiveMemberOfCountAsDirectoryRole.md)
 Get the number of the resource
 
 ### [Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup](Get-MgBetaServicePrincipalTransitiveMemberOfCountAsGroup.md)
@@ -738,7 +770,7 @@ Create new navigation property ref to agentGroups for onPremisesPublishingProfil
 Create new navigation property to connectors for onPremisesPublishingProfiles
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroup](New-MgBetaOnPremisePublishingProfileConnectorGroup.md)
-Create a connectorGroup object.
+Create a new connectorGroup.
 
 ### [New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef](New-MgBetaOnPremisePublishingProfileConnectorGroupMemberByRef.md)
 Create new navigation property ref to members for onPremisesPublishingProfiles
@@ -859,6 +891,9 @@ Delete navigation property synchronization for applications
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
+### [Remove-MgBetaApplicationSynchronizationJobBulkUpload](Remove-MgBetaApplicationSynchronizationJobBulkUpload.md)
+Delete navigation property bulkUpload for applications
+
 ### [Remove-MgBetaApplicationSynchronizationJobSchema](Remove-MgBetaApplicationSynchronizationJobSchema.md)
 Delete navigation property schema for applications
 
@@ -967,6 +1002,9 @@ Delete navigation property synchronization for servicePrincipals
 Stop the synchronization job, and permanently delete all the state associated with it.
 Synchronized accounts are left as-is.
 
+### [Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload](Remove-MgBetaServicePrincipalSynchronizationJobBulkUpload.md)
+Delete navigation property bulkUpload for servicePrincipals
+
 ### [Remove-MgBetaServicePrincipalSynchronizationJobSchema](Remove-MgBetaServicePrincipalSynchronizationJobSchema.md)
 Delete navigation property schema for servicePrincipals
 
@@ -1003,6 +1041,9 @@ Not nullable.
 ### [Set-MgBetaApplicationSynchronization](Set-MgBetaApplicationSynchronization.md)
 Update the navigation property synchronization in applications
 
+### [Set-MgBetaApplicationSynchronizationJobBulkUploadContent](Set-MgBetaApplicationSynchronizationJobBulkUploadContent.md)
+Update media content for the navigation property bulkUpload in applications
+
 ### [Set-MgBetaApplicationSynchronizationSecret](Set-MgBetaApplicationSynchronizationSecret.md)
 Update property secrets value.
 
@@ -1016,6 +1057,9 @@ Not nullable.
 
 ### [Set-MgBetaServicePrincipalSynchronization](Set-MgBetaServicePrincipalSynchronization.md)
 Update the navigation property synchronization in servicePrincipals
+
+### [Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent](Set-MgBetaServicePrincipalSynchronizationJobBulkUploadContent.md)
+Update media content for the navigation property bulkUpload in servicePrincipals
 
 ### [Set-MgBetaServicePrincipalSynchronizationSecret](Set-MgBetaServicePrincipalSynchronizationSecret.md)
 Update property secrets value.
@@ -1081,6 +1125,9 @@ Update the properties of a federatedIdentityCredential object.
 
 ### [Update-MgBetaApplicationSynchronizationJob](Update-MgBetaApplicationSynchronizationJob.md)
 Update the navigation property jobs in applications
+
+### [Update-MgBetaApplicationSynchronizationJobBulkUpload](Update-MgBetaApplicationSynchronizationJobBulkUpload.md)
+Update the navigation property bulkUpload in applications
 
 ### [Update-MgBetaApplicationSynchronizationJobSchema](Update-MgBetaApplicationSynchronizationJobSchema.md)
 Update the synchronization schema for a given job or template.
@@ -1150,6 +1197,9 @@ Update single sign-on credentials using a password for a user or group.
 
 ### [Update-MgBetaServicePrincipalSynchronizationJob](Update-MgBetaServicePrincipalSynchronizationJob.md)
 Update the navigation property jobs in servicePrincipals
+
+### [Update-MgBetaServicePrincipalSynchronizationJobBulkUpload](Update-MgBetaServicePrincipalSynchronizationJobBulkUpload.md)
+Update the navigation property bulkUpload in servicePrincipals
 
 ### [Update-MgBetaServicePrincipalSynchronizationJobSchema](Update-MgBetaServicePrincipalSynchronizationJobSchema.md)
 Update the synchronization schema for a given job or template.

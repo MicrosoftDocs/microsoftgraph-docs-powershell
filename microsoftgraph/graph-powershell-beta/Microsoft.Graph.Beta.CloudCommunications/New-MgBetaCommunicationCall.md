@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetacommunicationcall
 schema: 2.0.0
@@ -11,32 +11,29 @@ schema: 2.0.0
 Create call enables your bot to create a new outgoing peer-to-peer or group call, or join an existing meeting.
 You will need to register the calling bot and go through the list of permissions needed.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaCommunicationCall [-ActiveModalities <String[]>] [-AdditionalProperties <Hashtable>]
  [-AnsweredBy <IMicrosoftGraphParticipantInfo>] [-AudioRoutingGroups <IMicrosoftGraphAudioRoutingGroup[]>]
- [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions>] [-CallRoutes <IMicrosoftGraphCallRoute[]>]
- [-CallbackUri <String>] [-ChatInfo <IMicrosoftGraphChatInfo>]
+ [-CallbackUri <String>] [-CallChainId <String>] [-CallOptions <IMicrosoftGraphCallOptions>]
+ [-CallRoutes <IMicrosoftGraphCallRoute[]>] [-ChatInfo <IMicrosoftGraphChatInfo>]
  [-ContentSharingSessions <IMicrosoftGraphContentSharingSession[]>] [-Direction <String>] [-Id <String>]
  [-IncomingContext <IMicrosoftGraphIncomingContext>] [-MediaConfig <IMicrosoftGraphMediaConfig>]
  [-MediaState <IMicrosoftGraphCallMediaState>] [-MeetingCapability <IMicrosoftGraphMeetingCapability>]
  [-MeetingInfo <IMicrosoftGraphMeetingInfo>] [-MyParticipantId <String>]
  [-Operations <IMicrosoftGraphCommsOperation[]>] [-Participants <IMicrosoftGraphParticipant[]>]
- [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>] [-RingingTimeoutInSeconds <Int32>]
- [-RoutingPolicies <String[]>] [-Source <IMicrosoftGraphParticipantInfo>] [-State <String>] [-Subject <String>]
- [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-TenantId <String>] [-TerminationReason <String>]
- [-ToneInfo <IMicrosoftGraphToneInfo>] [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-RequestedModalities <String[]>] [-ResultInfo <IMicrosoftGraphResultInfo>]
+ [-RingingTimeoutInSeconds <Int32>] [-RoutingPolicies <String[]>] [-Source <IMicrosoftGraphParticipantInfo>]
+ [-State <String>] [-Subject <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>]
+ [-TenantId <String>] [-TerminationReason <String>] [-ToneInfo <IMicrosoftGraphToneInfo>]
+ [-Transcription <IMicrosoftGraphCallTranscriptionInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaCommunicationCall -BodyParameter <IMicrosoftGraphCall> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,10 +41,11 @@ Create call enables your bot to create a new outgoing peer-to-peer or group call
 You will need to register the calling bot and go through the list of permissions needed.
 
 ## EXAMPLES
-### Example 1: Create peer-to-peer VoIP call with service hosted media
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -78,15 +76,11 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create peer-to-peer VoIP call with application hosted media
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -127,15 +121,11 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Create a group call with service hosted media
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -166,7 +156,7 @@ $params = @{
 			}
 		}
 		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			"@odata.type" = "#microsoft.graph.participantInfo"
 			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
 				user = @{
@@ -184,23 +174,20 @@ $params = @{
 		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
 		removeFromDefaultAudioGroup = $false
 	}
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Create a group call with application hosted media
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	direction = "outgoing"
-	subject = "Create a group call with application hosted media"
+	subject = "Create a group call with app hosted media"
 	callbackUri = "https://bot.contoso.com/callback"
 	source = @{
 		"@odata.type" = "#microsoft.graph.participantInfo"
@@ -226,7 +213,7 @@ $params = @{
 			}
 		}
 		@{
-			"@odata.type" = "#microsoft.graph.invitationParticipantInfo"
+			"@odata.type" = "#microsoft.graph.participantInfo"
 			identity = @{
 				"@odata.type" = "#microsoft.graph.identitySet"
 				user = @{
@@ -242,20 +229,18 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		blob = "&lt;Media Session Configuration&gt;"
 		removeFromDefaultAudioGroup = $false
 	}
+	tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 5: Join scheduled meeting with service hosted media
-
+### -------------------------- EXAMPLE 5 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -280,8 +265,8 @@ $params = @{
 			user = @{
 				"@odata.type" = "#microsoft.graph.identity"
 				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				tenantId = "9f386a15-f9cc-445b-8106-ac85e314a07b"
 				displayName = "Bob"
-				tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
 			}
 		}
 		allowConversationWithoutHost = $true
@@ -290,15 +275,63 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Join scheduled meeting with application hosted media
-
+### -------------------------- EXAMPLE 6 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		preFetchMedia = @(
+		)
+	}
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
+		joinMeetingId = "1234567"
+		passcode = "psw123"
+	}
+	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+
+New-MgBetaCommunicationCall -BodyParameter $params
+
+### -------------------------- EXAMPLE 7 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.call"
+	callbackUri = "https://bot.contoso.com/callback"
+	requestedModalities = @(
+		"audio"
+	)
+	mediaConfig = @{
+		"@odata.type" = "#microsoft.graph.serviceHostedMediaConfig"
+		preFetchMedia = @(
+		)
+	}
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
+		joinMeetingId = "1234567"
+		passcode = $null
+	}
+	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+}
+
+New-MgBetaCommunicationCall -BodyParameter $params
+
+### -------------------------- EXAMPLE 8 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -309,6 +342,7 @@ $params = @{
 	)
 	mediaConfig = @{
 		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		blob = "&lt;Media Session Configuration&gt;"
 	}
 	chatInfo = @{
 		"@odata.type" = "#microsoft.graph.chatInfo"
@@ -332,15 +366,11 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 7: Join a scheduled meeting with joinMeetingId and passcode
-
+### -------------------------- EXAMPLE 9 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -353,28 +383,47 @@ $params = @{
 		preFetchMedia = @(
 		)
 	}
-	meetingInfo = @{
-		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
-		joinMeetingId = "1234567"
-		passcode = "psw123"
+	chatInfo = @{
+		"@odata.type" = "#microsoft.graph.chatInfo"
+		threadId = "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype"
+		messageId = "1533758867081"
 	}
-	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.organizerMeetingInfo"
+		organizer = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			user = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+				displayName = "Bob"
+			}
+		}
+		allowConversationWithoutHost = $true
+	}
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 8: Join a scheduled meeting with joinMeetingId
-
+### -------------------------- EXAMPLE 10 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
 	callbackUri = "https://bot.contoso.com/callback"
+	source = @{
+		"@odata.type" = "#microsoft.graph.participantInfo"
+		identity = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			guest = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				displayName = "Guest User"
+				id = "d7a3b999-17ac-4bca-9e77-e6a730d2ec2e"
+			}
+		}
+	}
 	requestedModalities = @(
 		"audio"
 	)
@@ -383,24 +432,32 @@ $params = @{
 		preFetchMedia = @(
 		)
 	}
-	meetingInfo = @{
-		"@odata.type" = "#microsoft.graph.joinMeetingIdMeetingInfo"
-		joinMeetingId = "1234567"
-		passcode = $null
+	chatInfo = @{
+		"@odata.type" = "#microsoft.graph.chatInfo"
+		threadId = "19:cbee7c1c860e465f8258e3cebf7bee0d@thread.skype"
+		messageId = "1533758867081"
 	}
-	tenantId = "86dc81db-c112-4228-9222-63f3esaa1edb"
+	meetingInfo = @{
+		"@odata.type" = "#microsoft.graph.organizerMeetingInfo"
+		organizer = @{
+			"@odata.type" = "#microsoft.graph.identitySet"
+			user = @{
+				"@odata.type" = "#microsoft.graph.identity"
+				id = "5810cede-f3cc-42eb-b2c1-e9bd5d53ec96"
+				tenantId = "aa67bd4c-8475-432d-bd41-39f255720e0a"
+				displayName = "Bob"
+			}
+		}
+		allowConversationWithoutHost = $true
+	}
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 9: Create peer-to-peer PSTN call with service hosted media
-
+### -------------------------- EXAMPLE 11 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -442,15 +499,11 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 10: Create peer-to-peer PSTN call with application hosted media
-
+### -------------------------- EXAMPLE 12 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
+```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.call"
@@ -493,11 +546,6 @@ $params = @{
 }
 
 New-MgBetaCommunicationCall -BodyParameter $params
-```
-This example shows how to use the New-MgBetaCommunicationCall Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -507,7 +555,7 @@ Possible values are: unknown, audio, video, videoBasedScreenSharing, data.
 Read-only.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -522,7 +570,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -538,7 +586,7 @@ participantInfo
 To construct, see NOTES section for ANSWEREDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipantInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -554,7 +602,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for AUDIOROUTINGGROUPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAudioRoutingGroup[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAudioRoutingGroup[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -570,7 +618,7 @@ call
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCall
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCall
 Parameter Sets: Create
 Aliases:
 
@@ -586,7 +634,7 @@ The callback URL on which callbacks will be delivered.
 Must be https.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -602,7 +650,7 @@ A unique identifier for all the participant calls in a conference or a unique id
 This needs to be copied over from Microsoft.Graph.Call.CallChainId.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -618,7 +666,7 @@ callOptions
 To construct, see NOTES section for CALLOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallOptions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallOptions
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -635,7 +683,7 @@ Read-only.
 To construct, see NOTES section for CALLROUTES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallRoute[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallRoute[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -651,7 +699,7 @@ chatInfo
 To construct, see NOTES section for CHATINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphChatInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -667,7 +715,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CONTENTSHARINGSESSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentSharingSession[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentSharingSession[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -682,7 +730,7 @@ Accept wildcard characters: False
 callDirection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -698,7 +746,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -714,7 +762,7 @@ incomingContext
 To construct, see NOTES section for INCOMINGCONTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIncomingContext
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIncomingContext
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -730,7 +778,7 @@ mediaConfig
 To construct, see NOTES section for MEDIACONFIG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMediaConfig
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMediaConfig
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -746,7 +794,7 @@ callMediaState
 To construct, see NOTES section for MEDIASTATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallMediaState
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallMediaState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -762,7 +810,7 @@ meetingCapability
 To construct, see NOTES section for MEETINGCAPABILITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingCapability
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingCapability
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -778,7 +826,7 @@ meetingInfo
 To construct, see NOTES section for MEETINGINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -793,7 +841,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -809,7 +857,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for OPERATIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommsOperation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCommsOperation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -825,7 +873,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipant[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipant[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -840,7 +888,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -856,7 +904,7 @@ resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResultInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResultInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -871,7 +919,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -886,7 +934,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -902,7 +950,7 @@ participantInfo
 To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphParticipantInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphParticipantInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -917,7 +965,7 @@ Accept wildcard characters: False
 callState
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -932,7 +980,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -948,7 +996,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -963,7 +1011,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -978,7 +1026,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -994,7 +1042,7 @@ toneInfo
 To construct, see NOTES section for TONEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphToneInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphToneInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1010,7 +1058,7 @@ callTranscriptionInfo
 To construct, see NOTES section for TRANSCRIPTION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallTranscriptionInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscriptionInfo
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1025,7 +1073,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1041,7 +1089,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1058,9 +1106,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCall
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCall
+
 ## NOTES
 
 ALIASES
@@ -1078,8 +1128,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1106,8 +1156,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1230,8 +1280,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[Original <IMicrosoftGraphIdentitySet>]`: identitySet
@@ -1253,8 +1303,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[SourceParticipantId <String>]`: The id of the participant that triggered the incoming call. Read-only.
@@ -1298,8 +1348,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1346,8 +1396,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[LanguageId <String>]`: The language culture string. Read-only.
@@ -1363,8 +1413,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[ParticipantId <String>]`: Optional. The ID of the target participant.
@@ -1382,9 +1432,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: callTranscriptionState
 
 ## RELATED LINKS
-[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationCall?view=graph-powershell-v1.0)
-
 

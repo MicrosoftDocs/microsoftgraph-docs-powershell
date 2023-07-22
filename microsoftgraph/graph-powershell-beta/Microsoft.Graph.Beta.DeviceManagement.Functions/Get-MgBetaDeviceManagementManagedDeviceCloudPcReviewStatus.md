@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Functions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Functions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.functions/get-mgbetadevicemanagementmanageddevicecloudpcreviewstatus
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getCloudPcReviewStatus
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -30,13 +27,14 @@ Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -InputObject <IDevice
 Invoke function getCloudPcReviewStatus
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Functions
 Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus -ManagedDeviceId $managedDeviceId
 ```
-This example shows how to use the Get-MgBetaDeviceManagementManagedDeviceCloudPcReviewStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -45,7 +43,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementFunctionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -60,7 +58,7 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -77,9 +75,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementFunctionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcReviewStatus
+
 ## NOTES
 
 ALIASES
@@ -120,5 +120,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
 

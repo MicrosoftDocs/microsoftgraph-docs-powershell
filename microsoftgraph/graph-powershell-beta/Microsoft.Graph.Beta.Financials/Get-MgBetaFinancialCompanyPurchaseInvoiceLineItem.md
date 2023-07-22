@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanypurchaseinvoicelineitem
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get item from financials
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyPurchaseInvoiceLineItem](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyPurchaseInvoiceLineItem?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -23,14 +20,8 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -CompanyId <String> -PurchaseI
 
 ### Get1
 ```
-Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -CompanyId <String> -PurchaseInvoiceLineId <String>
- -PurchaseInvoiceId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
-```
-
-### GetViaIdentity1
-```
-Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -InputObject <IFinancialsIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -CompanyId <String> -PurchaseInvoiceId <String>
+ -PurchaseInvoiceLineId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -39,8 +30,30 @@ Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -InputObject <IFinancialsIdent
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
+### GetViaIdentity1
+```
+Get-MgBetaFinancialCompanyPurchaseInvoiceLineItem -InputObject <IFinancialsIdentity>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
 ## DESCRIPTION
 Get item from financials
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +61,7 @@ Get item from financials
 The unique identifier of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -63,7 +76,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -79,8 +92,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -94,7 +107,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -109,7 +122,7 @@ Accept wildcard characters: False
 The unique identifier of purchaseInvoice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get1
 Aliases:
 
@@ -124,7 +137,7 @@ Accept wildcard characters: False
 The unique identifier of purchaseInvoiceLine
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -141,9 +154,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItem
+
 ## NOTES
 
 ALIASES
@@ -192,5 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Get-MgFinancialCompanyPurchaseInvoiceLineItem](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyPurchaseInvoiceLineItem?view=graph-powershell-v1.0)
 

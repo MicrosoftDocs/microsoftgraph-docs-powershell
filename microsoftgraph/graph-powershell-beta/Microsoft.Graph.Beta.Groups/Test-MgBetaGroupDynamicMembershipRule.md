@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembershiprule
 schema: 2.0.0
@@ -10,29 +10,27 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action evaluateDynamicMembership
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupDynamicMembershipRule](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembershipRule?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EvaluateExpanded1 (Default)
 ```
 Test-MgBetaGroupDynamicMembershipRule [-AdditionalProperties <Hashtable>] [-MemberId <String>]
- [-MembershipRule <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MembershipRule <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Evaluate1
 ```
 Test-MgBetaGroupDynamicMembershipRule
  -BodyParameter <IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action evaluateDynamicMembership
 
 ## EXAMPLES
-### Example 1: Using the Test-MgBetaGroupDynamicMembershipRule Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -41,8 +39,8 @@ $params = @{
 }
 Test-MgBetaGroupDynamicMembershipRule -BodyParameter $params
 ```
-This example shows how to use the Test-MgBetaGroupDynamicMembershipRule Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -50,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded1
 Aliases:
 
@@ -66,7 +64,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate1
 Aliases:
 
@@ -81,7 +79,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: EvaluateExpanded1
 Aliases:
 
@@ -96,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: EvaluateExpanded1
 Aliases:
 
@@ -111,7 +109,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +125,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -144,9 +142,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1R12J7LGroupsMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
+
 ## NOTES
 
 ALIASES
@@ -162,5 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MembershipRule <String>]`: 
 
 ## RELATED LINKS
-[Test-MgGroupDynamicMembershipRule](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembershipRule?view=graph-powershell-v1.0)
 

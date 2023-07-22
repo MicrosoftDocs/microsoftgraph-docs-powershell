@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabatchuserpendingaccessreviewinstancerecorddecision
 schema: 2.0.0
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BatchExpanded (Default)
 ```
 Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String>
  -UserId <String> [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>]
- [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Batch
@@ -27,28 +24,29 @@ Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewIns
 Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -AccessReviewInstanceId <String>
  -UserId <String>
  -BodyParameter <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BatchViaIdentityExpanded
-```
-Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
- [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BatchViaIdentity
 ```
 Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BatchViaIdentityExpanded
+```
+Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Decision <String>] [-Justification <String>] [-PrincipalId <String>]
+ [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -59,8 +57,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -68,8 +66,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: String
-Parameter Sets: BatchExpanded, Batch
+Type: System.String
+Parameter Sets: Batch, BatchExpanded
 Aliases:
 
 Required: True
@@ -83,7 +81,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -99,7 +97,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Batch, BatchViaIdentity
 Aliases:
 
@@ -114,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -130,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: BatchViaIdentityExpanded, BatchViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: BatchViaIdentity, BatchViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -145,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -160,7 +158,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -175,7 +173,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -190,7 +188,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -205,8 +203,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: BatchExpanded, Batch
+Type: System.String
+Parameter Sets: Batch, BatchExpanded
 Aliases:
 
 Required: True
@@ -220,7 +218,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -236,7 +234,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -253,10 +251,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths16Y92DkUsersUserIdPendingaccessreviewinstancesAccessreviewinstanceIdMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -316,5 +317,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision?view=graph-powershell-v1.0)
 

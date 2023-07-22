@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceshellscriptgroupassignment
 schema: 2.0.0
@@ -10,41 +10,56 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property groupAssignments in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceShellScriptGroupAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceShellScriptGroupAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -DeviceManagementScriptGroupAssignmentId <String>
- -DeviceShellScriptId <String> [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment
+ -DeviceManagementScriptGroupAssignmentId <String> -DeviceShellScriptId <String>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -DeviceManagementScriptGroupAssignmentId <String>
- -DeviceShellScriptId <String> -BodyParameter <IMicrosoftGraphDeviceManagementScriptGroupAssignment> [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -InputObject <IDeviceManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>] [-WhatIf] [-Confirm]
+Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment
+ -DeviceManagementScriptGroupAssignmentId <String> -DeviceShellScriptId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementScriptGroupAssignment> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementScriptGroupAssignment> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementScriptGroupAssignment> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDeviceManagementDeviceShellScriptGroupAssignment -InputObject <IDeviceManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-TargetGroupId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property groupAssignments in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +67,7 @@ Update the navigation property groupAssignments in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +83,7 @@ Contains properties used to assign a device management script to a group.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementScriptGroupAssignment
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptGroupAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementScriptGroupAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -98,8 +113,8 @@ Accept wildcard characters: False
 The unique identifier of deviceShellScript
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -114,7 +129,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -145,7 +160,7 @@ Accept wildcard characters: False
 The Id of the Azure Active Directory group we are targeting the script to.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +175,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +191,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -193,10 +208,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptGroupAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementScriptGroupAssignment
+
 ## NOTES
 
 ALIASES
@@ -351,8 +369,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDeviceShellScriptGroupAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceShellScriptGroupAssignment?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementDeviceShellScriptGroupAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceShellScriptGroupAssignment?view=graph-powershell-v1.0)
 

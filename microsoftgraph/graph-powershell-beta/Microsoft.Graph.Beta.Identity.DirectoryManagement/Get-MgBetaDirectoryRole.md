@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetadirectoryrole
 schema: 2.0.0
@@ -13,15 +13,12 @@ You can use both the object ID and template ID of the **directoryRole** with thi
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRole?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaDirectoryRole [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>]
- [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgBetaDirectoryRole [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>]
+ [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
  [<CommonParameters>]
 ```
 
@@ -44,10 +41,11 @@ The template ID of a built-in role is immutable and can be seen in the role desc
 For details, see Role template IDs.
 
 ## EXAMPLES
-### Example 1: Get all directory roles
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Get-MgBetaDirectoryRole | Format-List
+```
 
 DeletedDateTime      :
 Description          : Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
@@ -57,15 +55,12 @@ Members              :
 RoleTemplateId       : 1f12db9c-dbb3-410d-a893-4c0bc322bf85
 ScopedMembers        :
 AdditionalProperties : {}
-```
 
-This examples gets all the available directory roles.
-
-### Example 2: Get a directory role by Id
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Get-MgBetaDirectoryRole -DirectoryRoleId 'a2d10e79-df32-47fc-86ef-64d199860810' |
   Format-List
+```
 
 DeletedDateTime      :
 Description          : Can manage all aspects of Azure AD and Microsoft services that use Azure AD identities.
@@ -75,9 +70,6 @@ Members              :
 RoleTemplateId       : 1f12db9c-dbb3-410d-a893-4c0bc322bf85
 ScopedMembers        :
 AdditionalProperties : {}
-```
-
-This example gets the directory role based on the specified Id.
 
 ## PARAMETERS
 
@@ -85,7 +77,7 @@ This example gets the directory role based on the specified Id.
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -101,7 +93,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -116,7 +108,7 @@ Accept wildcard characters: False
 The unique identifier of directoryRole
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -131,7 +123,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -146,7 +138,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -162,7 +154,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -177,7 +169,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -192,7 +184,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -207,7 +199,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -222,24 +229,9 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -254,9 +246,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRole
+
 ## NOTES
 
 ALIASES
@@ -310,5 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRole?view=graph-powershell-v1.0)
 

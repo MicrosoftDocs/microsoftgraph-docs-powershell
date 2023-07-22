@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementmobileapptroubleshootingeventapplogcollectionrequestdownloadurl
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDownloadUrl
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Create (Default)
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
- -AppLogCollectionRequestId <String> -MobileAppTroubleshootingEventId <String> [-WhatIf] [-Confirm]
+ -AppLogCollectionRequestId <String> -MobileAppTroubleshootingEventId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl
- -InputObject <IDeviceManagementActionsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementActionsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createDownloadUrl
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Invoke action createDownloadUrl
 The unique identifier of appLogCollectionRequest
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Create
 Aliases:
 
@@ -53,7 +66,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
 Parameter Sets: CreateViaIdentity
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 The unique identifier of mobileAppTroubleshootingEvent
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +96,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +112,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +129,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionDownloadDetails
+
 ## NOTES
 
 ALIASES
@@ -182,5 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/New-MgDeviceManagementMobileAppTroubleshootingEventAppLogCollectionRequestDownloadUrl?view=graph-powershell-v1.0)
 
