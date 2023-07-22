@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Children of current term.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -350,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to settings for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementCompliancePolicySetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementCompliancePolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -440,5 +443,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
+[New-MgDeviceManagementCompliancePolicySetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementCompliancePolicySetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementCompliancePolicySetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementCompliancePolicySetting?view=graph-powershell-v1.0)

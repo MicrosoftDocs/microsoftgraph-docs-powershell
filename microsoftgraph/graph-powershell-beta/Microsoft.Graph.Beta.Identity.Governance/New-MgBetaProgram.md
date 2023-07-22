@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In the Azure AD access reviews feature, create a new program object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgram?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -236,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The life cycle status of the control.
 
 ## RELATED LINKS
+[New-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgProgram?view=graph-powershell-v1.0)

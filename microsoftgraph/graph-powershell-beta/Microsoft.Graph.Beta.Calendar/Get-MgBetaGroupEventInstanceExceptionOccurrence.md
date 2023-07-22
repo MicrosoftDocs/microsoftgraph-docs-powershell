@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get exceptionOccurrences from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceExceptionOccurrence](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrence?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -296,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupEventInstanceExceptionOccurrence](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrence?view=graph-powershell-v1.0)

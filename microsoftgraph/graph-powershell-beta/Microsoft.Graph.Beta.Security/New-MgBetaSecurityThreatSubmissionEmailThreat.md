@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new emailThreatSubmission object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -537,3 +540,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Specifies the value of the created tenant allow block list entry.
 
 ## RELATED LINKS
+[New-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)

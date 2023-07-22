@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Apply tags to documents that match the specified reviewSetQuery.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgComplianceEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ApplyExpanded (Default)
@@ -324,3 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
+[Add-MgComplianceEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Compliance/Add-MgComplianceEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-v1.0)

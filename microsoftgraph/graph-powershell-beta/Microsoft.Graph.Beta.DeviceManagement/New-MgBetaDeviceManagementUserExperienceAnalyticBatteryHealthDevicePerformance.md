@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBatteryHealthDevicePerformance for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -302,3 +305,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Model <String>]`: The model name of the device.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDevicePerformance?view=graph-powershell-v1.0)

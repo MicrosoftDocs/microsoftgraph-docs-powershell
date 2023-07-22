@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an existing customAccessPackageWorkflowExtension object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -438,5 +441,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageCatalogCustomAccessPackageWorkflowExtension?view=graph-powershell-v1.0)

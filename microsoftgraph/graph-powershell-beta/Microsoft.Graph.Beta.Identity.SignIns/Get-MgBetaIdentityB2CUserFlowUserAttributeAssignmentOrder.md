@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getOrder
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowUserAttributeAssignmentOrder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -162,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityB2CUserFlowUserAttributeAssignmentOrder](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowUserAttributeAssignmentOrder?view=graph-powershell-v1.0)

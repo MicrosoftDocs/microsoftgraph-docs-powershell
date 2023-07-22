@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action extractSensitivityLabels
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserDriveRootSensitivityLabel?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Extract (Default)
@@ -183,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgExtractUserDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserDriveRootSensitivityLabel?view=graph-powershell-v1.0)

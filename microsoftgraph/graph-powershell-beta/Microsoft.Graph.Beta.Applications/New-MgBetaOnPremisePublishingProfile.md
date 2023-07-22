@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to onPremisesPublishingProfiles
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1657,5 +1660,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)

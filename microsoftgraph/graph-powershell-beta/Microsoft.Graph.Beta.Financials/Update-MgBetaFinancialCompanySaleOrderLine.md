@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property salesOrderLines in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleOrderLine](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleOrderLine?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -843,3 +846,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnitPrice <Decimal?>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancialCompanySaleOrderLine](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleOrderLine?view=graph-powershell-v1.0)

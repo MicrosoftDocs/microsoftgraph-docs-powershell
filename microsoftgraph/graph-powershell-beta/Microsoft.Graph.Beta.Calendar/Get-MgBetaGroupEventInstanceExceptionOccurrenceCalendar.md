@@ -12,6 +12,9 @@ The calendar that contains the event.
 Navigation property.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceExceptionOccurrenceCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrenceCalendar?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -172,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupEventInstanceExceptionOccurrenceCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExceptionOccurrenceCalendar?view=graph-powershell-v1.0)

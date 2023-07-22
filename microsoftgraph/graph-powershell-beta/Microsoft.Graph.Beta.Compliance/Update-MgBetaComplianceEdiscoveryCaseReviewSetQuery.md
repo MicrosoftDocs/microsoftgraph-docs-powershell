@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an eDiscovery reviewSetQuery.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -370,3 +373,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deletedChats for teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedChat?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -131,3 +134,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[New-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedChat?view=graph-powershell-v1.0)

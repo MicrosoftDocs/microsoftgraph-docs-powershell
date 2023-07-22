@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceNamespaces for roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEnterpriseAppResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespace?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -364,5 +367,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespace?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppResourceNamespace?view=graph-powershell-v1.0)

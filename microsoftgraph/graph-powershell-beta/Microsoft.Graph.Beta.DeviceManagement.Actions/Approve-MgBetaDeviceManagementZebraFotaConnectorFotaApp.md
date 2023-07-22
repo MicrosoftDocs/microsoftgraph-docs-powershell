@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action approveFotaApps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Approve-MgDeviceManagementZebraFotaConnectorFotaApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Approve-MgDeviceManagementZebraFotaConnectorFotaApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -81,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Approve-MgDeviceManagementZebraFotaConnectorFotaApp](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Approve-MgDeviceManagementZebraFotaConnectorFotaApp?view=graph-powershell-v1.0)

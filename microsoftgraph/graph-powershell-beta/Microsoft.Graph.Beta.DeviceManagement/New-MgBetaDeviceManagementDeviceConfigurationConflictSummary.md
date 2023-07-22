@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceConfigurationConflictSummary for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceConfigurationConflictSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfigurationConflictSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
+[New-MgDeviceManagementDeviceConfigurationConflictSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceConfigurationConflictSummary?view=graph-powershell-v1.0)

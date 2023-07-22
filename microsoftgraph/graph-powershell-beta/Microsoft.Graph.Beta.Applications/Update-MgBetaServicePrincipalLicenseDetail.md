@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property licenseDetails in servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalLicenseDetail](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalLicenseDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -301,3 +304,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[Update-MgServicePrincipalLicenseDetail](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalLicenseDetail?view=graph-powershell-v1.0)

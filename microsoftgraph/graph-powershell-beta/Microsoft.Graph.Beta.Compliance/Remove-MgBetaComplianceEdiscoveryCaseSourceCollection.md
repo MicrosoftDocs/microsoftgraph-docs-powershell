@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a sourceCollection object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -182,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Remove-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)

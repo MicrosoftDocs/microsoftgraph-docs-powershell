@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property subscriptions in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListSubscription?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -570,3 +573,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Update-MgSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListSubscription?view=graph-powershell-v1.0)

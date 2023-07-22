@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action stopApplyDecisions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Stop (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinitionInstanceApplyDecision?view=graph-powershell-v1.0)

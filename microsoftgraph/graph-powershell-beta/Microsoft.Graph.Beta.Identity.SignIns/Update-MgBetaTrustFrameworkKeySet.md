@@ -12,6 +12,9 @@ Update the properties of a trustFrameworkKeyset.
 This operation will replace the content of an existing keyset.
 Specifying the ID in the request payload is optional.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -321,5 +324,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[X5T <String>]`: The x5t (X.509 certificate SHA-1 thumbprint) parameter is a base64url-encoded SHA-1 thumbprint (a.k.a. digest) of the DER encoding of an X.509 certificate RFC 5280.
 
 ## RELATED LINKS
+[Update-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)

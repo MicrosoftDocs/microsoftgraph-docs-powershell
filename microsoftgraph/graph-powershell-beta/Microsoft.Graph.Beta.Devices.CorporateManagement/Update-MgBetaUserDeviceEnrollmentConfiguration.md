@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceEnrollmentConfigurations in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -441,3 +444,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Update-MgUserDeviceEnrollmentConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserDeviceEnrollmentConfiguration?view=graph-powershell-v1.0)

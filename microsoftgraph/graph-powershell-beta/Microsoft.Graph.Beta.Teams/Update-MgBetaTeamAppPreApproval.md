@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update Preapproval policy associated with a Teams App.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamAppPreApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -171,3 +174,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Update-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamAppPreApproval?view=graph-powershell-v1.0)

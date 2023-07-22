@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get deletedItems from directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -163,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItem?view=graph-powershell-v1.0)

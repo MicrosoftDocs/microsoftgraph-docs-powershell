@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property exchangeOnPremisesPolicies in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementExchangeOnPremisePolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementExchangeOnPremisePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -386,3 +389,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <DeviceManagementExchangeAccessRuleType?>]`: Criteria which defines the type of device this access rule will apply to
 
 ## RELATED LINKS
+[Update-MgDeviceManagementExchangeOnPremisePolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementExchangeOnPremisePolicy?view=graph-powershell-v1.0)

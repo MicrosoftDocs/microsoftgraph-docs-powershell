@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -210,3 +213,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgServicePrincipalClaimMappingPolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicy?view=graph-powershell-v1.0)

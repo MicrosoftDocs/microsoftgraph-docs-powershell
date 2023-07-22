@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Custodian sources that are included in the sourceCollection.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -294,3 +297,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseSourceCollectionCustodianSource?view=graph-powershell-v1.0)

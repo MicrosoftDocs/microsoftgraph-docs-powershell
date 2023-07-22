@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an accessReviewPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAccessReviewPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -72,3 +75,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgPolicyAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAccessReviewPolicy?view=graph-powershell-v1.0)

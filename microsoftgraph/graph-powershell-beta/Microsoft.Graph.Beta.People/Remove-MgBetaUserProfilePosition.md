@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a specific workPosition object from a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePosition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -188,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Remove-MgUserProfilePosition](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePosition?view=graph-powershell-v1.0)

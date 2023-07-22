@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to authorizationPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthorizationPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -417,3 +420,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowedToReadOtherUsers <Boolean?>]`: Indicates whether the default user role can read other users.
 
 ## RELATED LINKS
+[New-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthorizationPolicy?view=graph-powershell-v1.0)

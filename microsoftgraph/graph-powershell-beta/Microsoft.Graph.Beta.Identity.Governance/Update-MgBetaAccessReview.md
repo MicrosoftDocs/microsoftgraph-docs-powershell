@@ -14,6 +14,9 @@ To change the reviewers, use the addReviewer or removeReviewer APIs.
 To stop an already-started one-time review, or an already-started instance of a recurring review, early, use the stop API.
 To apply the decisions to the target group or app access rights, use the apply API.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -709,5 +712,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RemindersEnabled <Boolean?>]`: Indicates whether sending reminder emails to reviewers is enabled.
 
 ## RELATED LINKS
+[Update-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReview?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgAccessReview](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReview?view=graph-powershell-v1.0)

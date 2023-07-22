@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Add-MgGroupSiteContentTypeCopy](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopy?view=graph-powershell-v1.0)

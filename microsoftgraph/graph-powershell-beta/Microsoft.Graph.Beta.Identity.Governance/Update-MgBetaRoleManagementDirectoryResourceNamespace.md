@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resourceNamespaces in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -364,5 +367,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementDirectoryResourceNamespace](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementDirectoryResourceNamespace?view=graph-powershell-v1.0)

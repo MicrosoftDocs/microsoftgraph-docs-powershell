@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to defaultUserRoleOverrides for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -309,3 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
+[New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyAuthorizationPolicyDefaultUserRoleOverride?view=graph-powershell-v1.0)

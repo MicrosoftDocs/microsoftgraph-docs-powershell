@@ -13,6 +13,9 @@ The POST method always ignores the time portion of **startDateTime** and **dueDa
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
 nYou can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone ndifferent than UTC.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTask?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -705,5 +708,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
+[New-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTask?view=graph-powershell-v1.0)

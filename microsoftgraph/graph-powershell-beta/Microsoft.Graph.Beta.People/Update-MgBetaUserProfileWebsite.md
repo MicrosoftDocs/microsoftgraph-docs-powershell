@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of personWebsite object in a user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserProfileWebsite](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileWebsite?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -484,3 +487,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
+[Update-MgUserProfileWebsite](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileWebsite?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an itemPhone object from the user's profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePhone?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
+[Remove-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfilePhone?view=graph-powershell-v1.0)

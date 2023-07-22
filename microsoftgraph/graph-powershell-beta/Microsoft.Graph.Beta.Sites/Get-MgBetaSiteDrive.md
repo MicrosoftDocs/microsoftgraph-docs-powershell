@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The collection of drives (document libraries) under this site.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDrive?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -312,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDrive?view=graph-powershell-v1.0)

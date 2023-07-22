@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in privilegedRoleAssignments
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrivilegedRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -447,5 +450,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UsersCount <Int32?>]`: 
 
 ## RELATED LINKS
+[Update-MgPrivilegedRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPrivilegedRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignment?view=graph-powershell-v1.0)

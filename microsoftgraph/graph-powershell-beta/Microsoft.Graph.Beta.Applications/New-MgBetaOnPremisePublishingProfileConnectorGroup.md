@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new connectorGroup.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1596,5 +1599,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: 
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgOnPremisePublishingProfileConnectorGroup](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileConnectorGroup?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getPositionOfWebPart
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart](/powershell/module/Microsoft.Graph.Sites/Get-MgSitePageCanvaLayoutVerticalSectionWebpartPositionOfWebPart?view=graph-powershell-v1.0)

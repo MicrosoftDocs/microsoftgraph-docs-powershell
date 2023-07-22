@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property item in financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItem](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -565,3 +568,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: 
 
 ## RELATED LINKS
+[Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItem](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItem?view=graph-powershell-v1.0)

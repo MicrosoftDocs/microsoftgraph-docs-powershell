@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to impactedResources for directory
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryImpactedResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -384,3 +387,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SubjectId <String>]`: The related unique identifier, depending on the resourceType. For example, this property is set to the applicationId if the resourceType is an application.
 
 ## RELATED LINKS
+[New-MgDirectoryImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryImpactedResource?view=graph-powershell-v1.0)

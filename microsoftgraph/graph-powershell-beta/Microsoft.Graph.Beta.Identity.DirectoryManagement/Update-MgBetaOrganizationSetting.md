@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property settings in organization
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -402,5 +405,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization, false otherwise. The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
+[Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)

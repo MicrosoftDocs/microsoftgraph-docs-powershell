@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update squareLogoDark for the navigation property branding in organization
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingSquareLogoDark?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaOrganizationBrandingSquareLogoDark](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingSquareLogoDark?view=graph-powershell-beta)

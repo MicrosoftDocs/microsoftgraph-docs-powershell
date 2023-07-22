@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update some or all of the properties of a regionalAndLanguageSettings object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -407,3 +410,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UntranslatedLanguages <String[]>]`: The list of languages the user does not need translated. This is computed from the authoringLanguages collection in regionalAndLanguageSettings, and the languageOverrides collection in translationPreferences. The list specifies neutral culture values that include the language code without any country or region association. For example, it would specify 'fr' for the neutral French culture, but not 'fr-FR' for the French culture in France. Returned by default. Read only.
 
 ## RELATED LINKS
+[Update-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Used to access the underlying site
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDrive?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -151,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaUserDrive](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaUserDrive?view=graph-powershell-beta)

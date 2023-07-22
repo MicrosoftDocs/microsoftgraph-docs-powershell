@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property siteSources in compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -9728,5 +9731,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)

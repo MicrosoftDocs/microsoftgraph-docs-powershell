@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action restoreVersion
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveListItemVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -232,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Restore-MgGroupDriveListItemVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupDriveListItemVersion?view=graph-powershell-v1.0)

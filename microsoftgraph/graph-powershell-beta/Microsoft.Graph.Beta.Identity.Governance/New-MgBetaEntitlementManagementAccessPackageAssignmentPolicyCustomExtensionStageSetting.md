@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to customExtensionStageSettings for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -347,5 +350,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicyCustomExtensionStageSetting?view=graph-powershell-v1.0)

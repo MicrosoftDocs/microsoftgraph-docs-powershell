@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in privilegedRoleAssignmentRequests
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -568,5 +571,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
 
 ## RELATED LINKS
+[Update-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)

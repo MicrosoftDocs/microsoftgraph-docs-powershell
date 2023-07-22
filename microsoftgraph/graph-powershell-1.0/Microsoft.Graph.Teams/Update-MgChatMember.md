@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property members in chats
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMember?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Update-MgBetaChatMember](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatMember?view=graph-powershell-beta)

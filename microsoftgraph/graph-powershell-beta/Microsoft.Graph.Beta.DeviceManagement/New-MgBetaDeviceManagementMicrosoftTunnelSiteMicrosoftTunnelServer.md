@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to microsoftTunnelServers for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -414,5 +417,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMicrosoftTunnelSiteMicrosoftTunnelServer?view=graph-powershell-v1.0)

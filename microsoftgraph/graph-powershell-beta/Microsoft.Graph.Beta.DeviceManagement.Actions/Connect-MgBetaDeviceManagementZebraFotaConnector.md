@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action connect
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Connect-MgDeviceManagementZebraFotaConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementZebraFotaConnector?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -81,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Connect-MgDeviceManagementZebraFotaConnector](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementZebraFotaConnector?view=graph-powershell-v1.0)

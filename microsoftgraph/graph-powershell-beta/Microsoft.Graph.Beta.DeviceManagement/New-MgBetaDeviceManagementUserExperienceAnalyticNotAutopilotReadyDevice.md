@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SerialNumber <String>]`: The intune device's serial number.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice?view=graph-powershell-v1.0)

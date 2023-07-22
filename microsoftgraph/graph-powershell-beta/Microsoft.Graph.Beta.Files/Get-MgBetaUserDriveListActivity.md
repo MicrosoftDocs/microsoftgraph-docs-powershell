@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The recent activities that took place within this list.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserDriveListActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -233,3 +236,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgUserDriveListActivity](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveListActivity?view=graph-powershell-v1.0)

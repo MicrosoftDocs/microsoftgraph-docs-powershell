@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get accessPackageResourceScopes from identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -218,3 +221,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceScope?view=graph-powershell-v1.0)

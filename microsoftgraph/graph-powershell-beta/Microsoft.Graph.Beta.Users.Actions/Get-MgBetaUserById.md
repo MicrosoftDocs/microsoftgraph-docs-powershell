@@ -11,6 +11,9 @@ schema: 2.0.0
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserById?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -171,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
+[Get-MgUserById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserById?view=graph-powershell-v1.0)

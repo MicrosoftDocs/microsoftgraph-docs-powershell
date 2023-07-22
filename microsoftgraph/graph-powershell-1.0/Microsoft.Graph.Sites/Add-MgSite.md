@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a user's site or multiple sites.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -5836,5 +5839,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermStores <IMicrosoftGraphTermStore[]>]`: The collection of termStores under this site.
 
 ## RELATED LINKS
+[Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Add-MgBetaSite](/powershell/module/Microsoft.Graph.Beta.Sites/Add-MgBetaSite?view=graph-powershell-beta)

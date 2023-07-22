@@ -14,6 +14,9 @@ This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgUserPermissionGrant](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserPermissionGrant?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgUserPermissionGrant](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserPermissionGrant?view=graph-powershell-v1.0)

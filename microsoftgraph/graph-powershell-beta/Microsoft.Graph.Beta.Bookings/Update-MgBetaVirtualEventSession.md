@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sessions in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSession?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1031,5 +1034,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledForVideo <Boolean?>]`: Indicates whether to apply a watermark to everyone's video feed.
 
 ## RELATED LINKS
+[Update-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSession?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgVirtualEventSession](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSession?view=graph-powershell-v1.0)

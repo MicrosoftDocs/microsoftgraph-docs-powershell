@@ -11,6 +11,9 @@ schema: 2.0.0
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaPrintPrinterJobTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobTaskTrigger?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -168,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaPrintPrinterJobTaskTrigger](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintPrinterJobTaskTrigger?view=graph-powershell-beta)

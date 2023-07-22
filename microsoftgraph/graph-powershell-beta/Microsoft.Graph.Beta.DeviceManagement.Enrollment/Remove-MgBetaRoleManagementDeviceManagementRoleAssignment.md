@@ -12,6 +12,9 @@ Delete a unifiedRoleAssignmentMultiple object of an RBAC provider.
 This is applicable for a RBAC application that supports multiple principals and scopes.
 The following RBAC providers are currently supported:\n- Cloud PC \n- device management (Intune)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementDeviceManagementRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -183,3 +186,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgRoleManagementDeviceManagementRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementDeviceManagementRoleAssignment?view=graph-powershell-v1.0)

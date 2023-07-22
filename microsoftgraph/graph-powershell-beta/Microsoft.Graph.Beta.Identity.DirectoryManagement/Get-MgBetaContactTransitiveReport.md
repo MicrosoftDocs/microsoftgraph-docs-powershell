@@ -11,6 +11,9 @@ schema: 2.0.0
 The transitive reports for a contact.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgContactTransitiveReport](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactTransitiveReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -313,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgContactTransitiveReport](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactTransitiveReport?view=graph-powershell-v1.0)

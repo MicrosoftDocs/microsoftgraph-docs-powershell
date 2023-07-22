@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of an alertRule object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -486,5 +489,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Target <Int32?>]`: The target threshold value.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementMonitoringAlertRule](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMonitoringAlertRule?view=graph-powershell-v1.0)

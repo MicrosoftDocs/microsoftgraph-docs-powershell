@@ -12,6 +12,9 @@ Perform a bulk resize action to resize a group of cloudPCs that have successfull
 If any devices cannot be resized, those devices will indicate 'resize failed'.
 The remaining devices will be `provisioned` for the resize process.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBulkUserCloudPcResize](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBulkUserCloudPcResize?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### BulkExpanded (Default)
@@ -249,3 +252,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgBulkUserCloudPcResize](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBulkUserCloudPcResize?view=graph-powershell-v1.0)

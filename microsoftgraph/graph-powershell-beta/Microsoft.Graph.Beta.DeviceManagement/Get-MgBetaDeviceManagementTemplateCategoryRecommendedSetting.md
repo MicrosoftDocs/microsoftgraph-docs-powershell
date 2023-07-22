@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The settings this category contains
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTemplateCategoryRecommendedSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateCategoryRecommendedSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -424,5 +427,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementTemplateCategoryRecommendedSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateCategoryRecommendedSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementTemplateCategoryRecommendedSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateCategoryRecommendedSetting?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property exchangeOnPremisesPolicies for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementExchangeOnPremisePolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementExchangeOnPremisePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete1 (Default)
@@ -216,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementExchangeOnPremisePolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementExchangeOnPremisePolicy?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property ediscovery for compliance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscovery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -111,3 +114,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscovery?view=graph-powershell-v1.0)

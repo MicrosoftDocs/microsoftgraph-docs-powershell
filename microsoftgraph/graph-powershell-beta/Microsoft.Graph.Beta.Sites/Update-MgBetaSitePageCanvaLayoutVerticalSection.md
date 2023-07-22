@@ -12,6 +12,9 @@ Create a verticalSection object in a given sitePage.
 A sitePage can only have one vertical section.
 If a vertical section already exists, this method returns a `409 Conflict` response code.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageCanvaLayoutVerticalSection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -296,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Update-MgSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageCanvaLayoutVerticalSection?view=graph-powershell-v1.0)

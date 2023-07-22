@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from invitations by key
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -325,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitation?view=graph-powershell-v1.0)

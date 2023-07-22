@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to taxAreas for financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyTaxArea](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyTaxArea?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[New-MgFinancialCompanyTaxArea](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyTaxArea?view=graph-powershell-v1.0)

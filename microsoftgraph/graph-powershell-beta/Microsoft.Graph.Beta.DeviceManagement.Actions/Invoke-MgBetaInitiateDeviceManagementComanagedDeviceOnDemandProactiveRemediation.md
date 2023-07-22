@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Perform On Demand Proactive Remediation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### InitiateExpanded (Default)
@@ -278,3 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgInitiateDeviceManagementComanagedDeviceOnDemandProactiveRemediation?view=graph-powershell-v1.0)

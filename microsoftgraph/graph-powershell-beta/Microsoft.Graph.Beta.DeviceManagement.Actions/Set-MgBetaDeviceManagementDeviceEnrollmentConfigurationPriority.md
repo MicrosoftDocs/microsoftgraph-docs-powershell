@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setPriority
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -259,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementDeviceEnrollmentConfigurationPriority?view=graph-powershell-v1.0)

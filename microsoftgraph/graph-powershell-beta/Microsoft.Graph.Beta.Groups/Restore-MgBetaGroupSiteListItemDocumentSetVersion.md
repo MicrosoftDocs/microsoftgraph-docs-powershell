@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -247,3 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Restore-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Groups/Restore-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)

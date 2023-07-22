@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new localized agreement file.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -455,5 +458,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreementFile?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Select matching entitlement management accessPackage
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Select-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Select-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -4990,5 +4993,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
+[Select-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Select-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Select-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Select-MgEntitlementManagementAccessPackage?view=graph-powershell-v1.0)

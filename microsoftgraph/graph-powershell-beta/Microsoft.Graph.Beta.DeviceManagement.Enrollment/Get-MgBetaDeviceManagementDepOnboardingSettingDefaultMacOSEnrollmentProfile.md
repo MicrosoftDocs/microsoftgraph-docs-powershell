@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Default MacOs Enrollment Profile
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -149,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile?view=graph-powershell-v1.0)

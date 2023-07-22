@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property activities for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteListItemActivity](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -265,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Remove-MgGroupSiteListItemActivity](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemActivity?view=graph-powershell-v1.0)

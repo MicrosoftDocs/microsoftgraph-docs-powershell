@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action verifySignature
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgSiteInformationProtectionSignature](/powershell/module/Microsoft.Graph.Sites/Confirm-MgSiteInformationProtectionSignature?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### VerifyExpanded (Default)
@@ -273,3 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Confirm-MgSiteInformationProtectionSignature](/powershell/module/Microsoft.Graph.Sites/Confirm-MgSiteInformationProtectionSignature?view=graph-powershell-v1.0)

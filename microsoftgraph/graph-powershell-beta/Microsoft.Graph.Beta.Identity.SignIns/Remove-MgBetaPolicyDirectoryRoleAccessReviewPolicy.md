@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property directoryRoleAccessReviewPolicy for policies
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -112,3 +115,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Remove-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The imported Apple device identities.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingImportedAppleDeviceIdentity?view=graph-powershell-v1.0)
