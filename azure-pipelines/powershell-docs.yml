@@ -116,7 +116,6 @@ jobs:
       
   - template: common-templates/create-pr.yml
     parameters:
-      BaseBranch: $(proposedBranch)
-      TargetBranch: $(proposedBranch)
+      BaseBranch: main
       Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
       Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."
