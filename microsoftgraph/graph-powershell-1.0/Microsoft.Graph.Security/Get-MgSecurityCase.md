@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/get-mgsecuritycase
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get cases from security
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCase?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ```
@@ -22,13 +19,29 @@ Get-MgSecurityCase [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonP
 ## DESCRIPTION
 Get cases from security
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -62,10 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityCasesRoot
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgBetaSecurityCase](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCase?view=graph-powershell-beta)
 

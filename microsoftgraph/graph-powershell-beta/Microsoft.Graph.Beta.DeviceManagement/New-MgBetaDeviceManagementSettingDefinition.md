@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementsettingdefinition
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to settingDefinitions for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementSettingDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,17 +19,33 @@ New-MgBetaDeviceManagementSettingDefinition [-AdditionalProperties <Hashtable>]
  [-Dependencies <IMicrosoftGraphDeviceManagementSettingDependency[]>] [-Description <String>]
  [-DisplayName <String>] [-DocumentationUrl <String>] [-HeaderSubtitle <String>] [-HeaderTitle <String>]
  [-Id <String>] [-IsTopLevel] [-Keywords <String[]>] [-PlaceholderText <String>]
- [-ValueType <DeviceManangementIntentValueType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ValueType <DeviceManangementIntentValueType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementSettingDefinition -BodyParameter <IMicrosoftGraphDeviceManagementSettingDefinition>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to settingDefinitions for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -40,7 +53,7 @@ Create new navigation property to settingDefinitions for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +69,7 @@ Entity representing the defintion for a given setting
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
 Parameter Sets: Create
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 Collection of constraints for the setting value
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConstraint[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConstraint[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +100,7 @@ Collection of dependencies on other settings
 To construct, see NOTES section for DEPENDENCIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementSettingDependency[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDependency[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +115,7 @@ Accept wildcard characters: False
 The setting's description
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ Accept wildcard characters: False
 The setting's display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 Url to setting documentation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +160,7 @@ Accept wildcard characters: False
 subtitle of the setting header for more details about the category/section
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -162,7 +175,7 @@ Accept wildcard characters: False
 title of the setting header represents a category/section of a setting/settings
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -193,7 +206,7 @@ Accept wildcard characters: False
 If the setting is top level, it can be configured without the need to be wrapped in a collection or complex setting
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -208,7 +221,7 @@ Accept wildcard characters: False
 Keywords associated with the setting
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +236,7 @@ Accept wildcard characters: False
 Placeholder text as an example of valid input
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +251,7 @@ Accept wildcard characters: False
 deviceManangementIntentValueType
 
 ```yaml
-Type: DeviceManangementIntentValueType
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManangementIntentValueType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -253,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,9 +299,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition
+
 ## NOTES
 
 ALIASES
@@ -320,5 +335,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DefinitionId <String>]`: The setting definition ID of the setting depended on
 
 ## RELATED LINKS
-[New-MgDeviceManagementSettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementSettingDefinition?view=graph-powershell-v1.0)
 

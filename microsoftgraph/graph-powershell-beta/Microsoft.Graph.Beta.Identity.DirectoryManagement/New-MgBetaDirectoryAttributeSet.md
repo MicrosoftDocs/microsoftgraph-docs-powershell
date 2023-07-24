@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryattributeset
 schema: 2.0.0
@@ -10,20 +10,17 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new attributeSet object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDirectoryAttributeSet [-AdditionalProperties <Hashtable>] [-Description <String>] [-Id <String>]
- [-MaxAttributesPerSet <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MaxAttributesPerSet <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-WhatIf] [-Confirm]
+New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -31,7 +28,8 @@ New-MgBetaDirectoryAttributeSet -BodyParameter <IMicrosoftGraphAttributeSet> [-W
 Create a new attributeSet object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaDirectoryAttributeSet Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -41,8 +39,8 @@ $params = @{
 }
 New-MgBetaDirectoryAttributeSet -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -50,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +64,7 @@ attributeSet
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttributeSet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeSet
 Parameter Sets: Create
 Aliases:
 
@@ -83,7 +81,7 @@ Can be up to 128 characters long and include Unicode characters.
 Can be changed later.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +97,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -117,7 +115,7 @@ If not specified, the administrator can add up to the maximum of 500 active attr
 Can be changed later.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,9 +163,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeSet
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttributeSet
+
 ## NOTES
 
 ALIASES
@@ -184,5 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MaxAttributesPerSet <Int32?>]`: Maximum number of custom security attributes that can be defined in this attribute set. Default value is null. If not specified, the administrator can add up to the maximum of 500 active attributes per tenant. Can be changed later.
 
 ## RELATED LINKS
-[New-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryAttributeSet?view=graph-powershell-v1.0)
 

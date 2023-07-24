@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/new-mgbetadevicemanagementdeponboardingsetting
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to depOnboardingSettings for deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -25,17 +22,33 @@ New-MgBetaDeviceManagementDepOnboardingSetting [-AdditionalProperties <Hashtable
  [-LastModifiedDateTime <DateTime>] [-LastSuccessfulSyncDateTime <DateTime>] [-LastSyncErrorCode <Int32>]
  [-LastSyncTriggeredDateTime <DateTime>] [-RoleScopeTagIds <String[]>] [-ShareTokenWithSchoolDataSyncService]
  [-SyncedDeviceCount <Int32>] [-TokenExpirationDateTime <DateTime>] [-TokenName <String>]
- [-TokenType <DepTokenType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TokenType <DepTokenType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementDepOnboardingSetting -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaDeviceManagementDepOnboardingSetting -BodyParameter <IMicrosoftGraphDepOnboardingSetting> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to depOnboardingSettings for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -43,7 +56,7 @@ Create new navigation property to depOnboardingSettings for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -58,7 +71,7 @@ Accept wildcard characters: False
 The Apple ID used to obtain the current token.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,7 +88,7 @@ The onboarded service instance manages an Apple Token used to synchronize data b
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepOnboardingSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
 Parameter Sets: Create
 Aliases:
 
@@ -90,7 +103,7 @@ Accept wildcard characters: False
 Consent granted for data sharing with Apple Dep Service
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -107,7 +120,7 @@ This type of profile must be assigned to Apple DEP serial numbers before the cor
 To construct, see NOTES section for DEFAULTIOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepIosEnrollmentProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepIosEnrollmentProfile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +137,7 @@ This type of profile must be assigned to Apple DEP serial numbers before the cor
 To construct, see NOTES section for DEFAULTMACOSENROLLMENTPROFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDepMacOSEnrollmentProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepMacOSEnrollmentProfile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +153,7 @@ The enrollment profiles.
 To construct, see NOTES section for ENROLLMENTPROFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEnrollmentProfile[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEnrollmentProfile[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -156,7 +169,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -172,7 +185,7 @@ The imported Apple device identities.
 To construct, see NOTES section for IMPORTEDAPPLEDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphImportedAppleDeviceIdentity[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphImportedAppleDeviceIdentity[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +200,7 @@ Accept wildcard characters: False
 When the service was onboarded.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -202,7 +215,7 @@ Accept wildcard characters: False
 When the service last syned with Intune
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -217,7 +230,7 @@ Accept wildcard characters: False
 Error code reported by Apple during last dep sync.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +245,7 @@ Accept wildcard characters: False
 When Intune last requested a sync.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -247,7 +260,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -262,7 +275,7 @@ Accept wildcard characters: False
 Whether or not the Dep token sharing is enabled with the School Data Sync service.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -277,7 +290,7 @@ Accept wildcard characters: False
 Gets synced device count
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -292,7 +305,7 @@ Accept wildcard characters: False
 When the token will expire.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -307,7 +320,7 @@ Accept wildcard characters: False
 Friendly Name for Dep Token
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -322,7 +335,7 @@ Accept wildcard characters: False
 depTokenType
 
 ```yaml
-Type: DepTokenType
+Type: Microsoft.Graph.Beta.PowerShell.Support.DepTokenType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -337,7 +350,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -353,7 +366,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -370,9 +383,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDepOnboardingSetting
+
 ## NOTES
 
 ALIASES
@@ -669,8 +684,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SerialNumber <String>]`: Device serial number
 
 ## RELATED LINKS
-[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
 

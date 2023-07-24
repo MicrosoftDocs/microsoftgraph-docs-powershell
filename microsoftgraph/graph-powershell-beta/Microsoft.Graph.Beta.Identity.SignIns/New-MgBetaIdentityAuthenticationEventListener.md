@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetaidentityauthenticationeventlistener
 schema: 2.0.0
@@ -11,27 +11,40 @@ schema: 2.0.0
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from **authenticationEventListener**.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventListener?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaIdentityAuthenticationEventListener [-AdditionalProperties <Hashtable>]
  [-AuthenticationEventsFlowId <String>] [-Conditions <IMicrosoftGraphAuthenticationConditions>] [-Id <String>]
- [-Priority <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Priority <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaIdentityAuthenticationEventListener -BodyParameter <IMicrosoftGraphAuthenticationEventListener>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new authenticationEventListener object.
 You can create one of the following subtypes that are derived from **authenticationEventListener**.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ You can create one of the following subtypes that are derived from **authenticat
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 The identifier of the authenticationEventsFlow object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ authenticationEventListener
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationEventListener
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationEventListener
 Parameter Sets: Create
 Aliases:
 
@@ -86,7 +99,7 @@ authenticationConditions
 To construct, see NOTES section for CONDITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationConditions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationConditions
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +115,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +131,7 @@ The priority of this handler.
 Between 0 (lower priority) and 1000 (higher priority).
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -133,7 +146,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -149,7 +162,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -166,9 +179,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationEventListener
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationEventListener
+
 ## NOTES
 
 ALIASES
@@ -200,5 +215,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[AppId <String>]`: The identifier for an application corresponding to a condition which will trigger an authenticationEventListener.
 
 ## RELATED LINKS
-[New-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityAuthenticationEventListener?view=graph-powershell-v1.0)
 

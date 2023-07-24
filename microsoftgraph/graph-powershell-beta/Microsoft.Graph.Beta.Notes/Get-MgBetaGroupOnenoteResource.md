@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Notes-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetagrouponenoteresource
 schema: 2.0.0
@@ -12,9 +12,6 @@ The image and other file resources in OneNote pages.
 Getting a resources collection is not supported, but you can get the binary content of a specific resource.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -36,13 +33,29 @@ Getting a resources collection is not supported, but you can get the binary cont
 Read-only.
 Nullable.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -57,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -73,7 +86,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -88,7 +101,7 @@ Accept wildcard characters: False
 The unique identifier of onenoteResource
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -103,7 +116,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -120,9 +133,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteResource
+
 ## NOTES
 
 ALIASES
@@ -144,5 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupOnenoteResource](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteResource?view=graph-powershell-v1.0)
 

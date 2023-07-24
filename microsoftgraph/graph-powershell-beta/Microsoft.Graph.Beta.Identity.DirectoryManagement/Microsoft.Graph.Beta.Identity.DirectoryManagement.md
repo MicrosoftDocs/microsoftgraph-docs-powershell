@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 87d212a0-6ce5-4a57-b167-a31e8bf8bbaa
+Module Guid: 4fc5ed7a-63d1-4fb9-9e79-2820b8e089fb
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -38,20 +38,32 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### [Confirm-MgBetaAdministrativeUnitMemberObject](Confirm-MgBetaAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaAdministrativeUnitMemberObject](Confirm-MgBetaAdministrativeUnitMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaContactMemberGroup](Confirm-MgBetaContactMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaContactMemberObject](Confirm-MgBetaContactMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaContactMemberObject](Confirm-MgBetaContactMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaContractMemberGroup](Confirm-MgBetaContractMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaContractMemberObject](Confirm-MgBetaContractMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaContractMemberObject](Confirm-MgBetaContractMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDeviceMemberGroup](Confirm-MgBetaDeviceMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDeviceMemberObject](Confirm-MgBetaDeviceMemberObject.md)
 Invoke action checkMemberObjects
@@ -66,20 +78,32 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryAdministrativeUnitMemberObject](Confirm-MgBetaDirectoryAdministrativeUnitMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryDeletedItemMemberGroup](Confirm-MgBetaDirectoryDeletedItemMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryDeletedItemMemberObject](Confirm-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryDeletedItemMemberObject](Confirm-MgBetaDirectoryDeletedItemMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryRoleMemberGroup](Confirm-MgBetaDirectoryRoleMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryRoleMemberObject](Confirm-MgBetaDirectoryRoleMemberObject.md)
 Invoke action checkMemberObjects
 
-### [Confirm-MgBetaDirectoryRoleMemberObject](Confirm-MgBetaDirectoryRoleMemberObject.md)
-Invoke action checkMemberObjects
+### [Confirm-MgBetaDirectoryRoleTemplateMemberGroup](Confirm-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaDirectoryRoleTemplateMemberObject](Confirm-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action checkMemberObjects
@@ -97,8 +121,12 @@ Invoke action checkMemberObjects
 ### [Confirm-MgBetaDomain](Confirm-MgBetaDomain.md)
 Validates the ownership of the domain.
 
-### [Confirm-MgBetaDomain](Confirm-MgBetaDomain.md)
-Validates the ownership of the domain.
+### [Confirm-MgBetaOrganizationMemberGroup](Confirm-MgBetaOrganizationMemberGroup.md)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ### [Confirm-MgBetaOrganizationMemberObject](Confirm-MgBetaOrganizationMemberObject.md)
 Invoke action checkMemberObjects
@@ -228,8 +256,9 @@ Get the number of the resource
 ### [Get-MgBetaContactManager](Get-MgBetaContactManager.md)
 Get the contact's manager
 
-### [Get-MgBetaContactManager](Get-MgBetaContactManager.md)
-Get the contact's manager
+### [Get-MgBetaContactMemberGroup](Get-MgBetaContactMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContactMemberObject](Get-MgBetaContactMemberObject.md)
 Invoke action getMemberObjects
@@ -297,8 +326,9 @@ Get the number of the resource
 ### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
 Invoke function delta
 
-### [Get-MgBetaContractDelta](Get-MgBetaContractDelta.md)
-Invoke function delta
+### [Get-MgBetaContractMemberGroup](Get-MgBetaContractMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaContractMemberObject](Get-MgBetaContractMemberObject.md)
 Invoke action getMemberObjects
@@ -338,8 +368,9 @@ Nullable.
 ### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaDeviceExtensionCount](Get-MgBetaDeviceExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaDeviceMemberGroup](Get-MgBetaDeviceMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDeviceMemberObject](Get-MgBetaDeviceMemberObject.md)
 Invoke action getMemberObjects
@@ -628,8 +659,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryDeletedItemCountAsUser](Get-MgBetaDirectoryDeletedItemCountAsUser.md)
-Get the number of the resource
+### [Get-MgBetaDirectoryDeletedItemMemberGroup](Get-MgBetaDirectoryDeletedItemMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryDeletedItemMemberObject](Get-MgBetaDirectoryDeletedItemMemberObject.md)
 Invoke action getMemberObjects
@@ -784,8 +816,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
 Get the number of the resource
 
-### [Get-MgBetaDirectoryRoleMemberCountAsUser](Get-MgBetaDirectoryRoleMemberCountAsUser.md)
-Get the number of the resource
+### [Get-MgBetaDirectoryRoleMemberGroup](Get-MgBetaDirectoryRoleMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleMemberObject](Get-MgBetaDirectoryRoleMemberObject.md)
 Invoke action getMemberObjects
@@ -811,8 +844,9 @@ Get the number of the resource
 ### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
 Invoke function delta
 
-### [Get-MgBetaDirectoryRoleTemplateDelta](Get-MgBetaDirectoryRoleTemplateDelta.md)
-Invoke function delta
+### [Get-MgBetaDirectoryRoleTemplateMemberGroup](Get-MgBetaDirectoryRoleTemplateMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaDirectoryRoleTemplateMemberObject](Get-MgBetaDirectoryRoleTemplateMemberObject.md)
 Invoke action getMemberObjects
@@ -1004,8 +1038,9 @@ Nullable.
 ### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaOrganizationExtensionCount](Get-MgBetaOrganizationExtensionCount.md)
-Get the number of the resource
+### [Get-MgBetaOrganizationMemberGroup](Get-MgBetaOrganizationMemberGroup.md)
+Return all the group IDs for the groups that the specified user, group, service principal, organizational contact, device, or directory object is a member of.
+This function is transitive.
 
 ### [Get-MgBetaOrganizationMemberObject](Get-MgBetaOrganizationMemberObject.md)
 Invoke action getMemberObjects
@@ -1039,8 +1074,7 @@ The profileCardProperty is identified by its **directoryPropertyName** property.
 Get the number of the resource
 
 ### [Get-MgBetaOrganizationSettingPronoun](Get-MgBetaOrganizationSettingPronoun.md)
-Get the properties of the pronounsSettings resource for an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Get pronouns from organization
 
 ### [Get-MgBetaOrganizationUserOwnedObject](Get-MgBetaOrganizationUserOwnedObject.md)
 Retrieve a list of recently deleted application and group objects owned by the specified user.
@@ -1865,8 +1899,7 @@ To learn more about customizing insights privacy for your organization, see:\n- 
 Update the navigation property profileCardProperties in organization
 
 ### [Update-MgBetaOrganizationSettingPronoun](Update-MgBetaOrganizationSettingPronoun.md)
-Update the properties of a pronounsSettings in an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Update the navigation property pronouns in organization
 
 ### [Update-MgBetaSubscribedSku](Update-MgBetaSubscribedSku.md)
 Update entity in subscribedSkus

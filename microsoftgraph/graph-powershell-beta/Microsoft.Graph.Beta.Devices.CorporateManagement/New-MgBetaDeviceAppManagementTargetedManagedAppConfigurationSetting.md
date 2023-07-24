@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementtargetedmanagedappconfigurationsetting
 schema: 2.0.0
@@ -10,32 +10,22 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to settings for deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting -TargetedManagedAppConfigurationId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>]
+New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
+ -TargetedManagedAppConfigurationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-WhatIf] [-Confirm]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting -TargetedManagedAppConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
 New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
- -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
- [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-WhatIf] [-Confirm]
+ -TargetedManagedAppConfigurationId <String>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -43,11 +33,37 @@ New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 ```
 New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
  -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSetting> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
+ -InputObject <IDevicesCorporateManagementIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-SettingDefinitions <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]>]
+ [-SettingInstance <IMicrosoftGraphDeviceManagementConfigurationSettingInstance>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to settings for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +71,7 @@ Create new navigation property to settings for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +87,7 @@ Setting instance within policy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSetting
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -87,7 +103,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -103,8 +119,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -120,7 +136,7 @@ This property is read-only.
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +152,7 @@ Setting instance within policy
 To construct, see NOTES section for SETTINGINSTANCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingInstance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingInstance
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -151,8 +167,8 @@ Accept wildcard characters: False
 The unique identifier of targetedManagedAppConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -166,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -182,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -199,15 +215,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSetting
+
 ## NOTES
 
 ALIASES
 
-New-BetaDeviceAppMgtTargetedManagedAppConfigurationSetting
+New-MgBetaDeviceAppMgtTargetedManagedAppConfigurationSetting
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -227,11 +246,11 @@ To create the parameters described below, construct a hash table containing the 
       - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
       - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
     - `[BaseUri <String>]`: Base CSP Path
-    - `[CategoryId <String>]`: Specify category in which the setting is under. Support $filters.
-    - `[Description <String>]`: Description of the setting.
-    - `[DisplayName <String>]`: Name of the setting. For example: Allow Toast.
-    - `[HelpText <String>]`: Help text of the setting. Give more details of the setting.
-    - `[InfoUrls <String[]>]`: List of links more info for the setting can be found at.
+    - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+    - `[Description <String>]`: Description of the item
+    - `[DisplayName <String>]`: Display name of the item
+    - `[HelpText <String>]`: Help text of the item
+    - `[InfoUrls <String[]>]`: List of links more info for the setting can be found at
     - `[Keywords <String[]>]`: Tokens which to search settings on
     - `[Name <String>]`: Name of the item
     - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -241,7 +260,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[OffsetUri <String>]`: Offset CSP Path from Base
     - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]`: List of referred setting information.
       - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
-    - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+    - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
     - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
     - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
     - `[Version <String>]`: Item Version
@@ -329,11 +348,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
     - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[BaseUri <String>]`: Base CSP Path
-  - `[CategoryId <String>]`: Specify category in which the setting is under. Support $filters.
-  - `[Description <String>]`: Description of the setting.
-  - `[DisplayName <String>]`: Name of the setting. For example: Allow Toast.
-  - `[HelpText <String>]`: Help text of the setting. Give more details of the setting.
-  - `[InfoUrls <String[]>]`: List of links more info for the setting can be found at.
+  - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+  - `[Description <String>]`: Description of the item
+  - `[DisplayName <String>]`: Display name of the item
+  - `[HelpText <String>]`: Help text of the item
+  - `[InfoUrls <String[]>]`: List of links more info for the setting can be found at
   - `[Keywords <String[]>]`: Tokens which to search settings on
   - `[Name <String>]`: Name of the item
   - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -343,7 +362,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OffsetUri <String>]`: Offset CSP Path from Base
   - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]`: List of referred setting information.
     - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
-  - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
+  - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
   - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
   - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
   - `[Version <String>]`: Item Version
@@ -357,8 +376,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[SettingInstanceTemplateId <String>]`: Setting instance template id
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
 

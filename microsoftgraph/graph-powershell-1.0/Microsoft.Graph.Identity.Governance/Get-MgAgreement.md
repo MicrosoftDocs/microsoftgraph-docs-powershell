@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/get-mgagreement
 schema: 2.0.0
@@ -10,14 +10,11 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from agreements by key
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreement?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgAgreement [-Property <String[]>] [-Search <String>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgAgreement [-Property <String[]>] [-Search <String>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
  [<CommonParameters>]
 ```
 
@@ -34,13 +31,29 @@ Get-MgAgreement -InputObject <IIdentityGovernanceIdentity> [-Property <String[]>
 ## DESCRIPTION
 Get entity from agreements by key
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AgreementId
 The unique identifier of agreement
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -55,7 +68,7 @@ Accept wildcard characters: False
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -71,7 +84,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -87,7 +100,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -102,7 +115,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -117,7 +130,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -149,9 +162,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAgreement
+
 ## NOTES
 
 ALIASES
@@ -169,6 +184,14 @@ To create the parameters described below, construct a hash table containing the 
   - `[AccessPackageId <String>]`: The unique identifier of accessPackage
   - `[AccessPackageId1 <String>]`: The unique identifier of accessPackage
   - `[AccessPackageQuestionId <String>]`: The unique identifier of accessPackageQuestion
+  - `[AccessPackageResourceEnvironmentId <String>]`: The unique identifier of accessPackageResourceEnvironment
+  - `[AccessPackageResourceId <String>]`: The unique identifier of accessPackageResource
+  - `[AccessPackageResourceRequestId <String>]`: The unique identifier of accessPackageResourceRequest
+  - `[AccessPackageResourceRoleId <String>]`: The unique identifier of accessPackageResourceRole
+  - `[AccessPackageResourceRoleId1 <String>]`: The unique identifier of accessPackageResourceRole
+  - `[AccessPackageResourceRoleScopeId <String>]`: The unique identifier of accessPackageResourceRoleScope
+  - `[AccessPackageResourceScopeId <String>]`: The unique identifier of accessPackageResourceScope
+  - `[AccessPackageResourceScopeId1 <String>]`: The unique identifier of accessPackageResourceScope
   - `[AccessReviewHistoryDefinitionId <String>]`: The unique identifier of accessReviewHistoryDefinition
   - `[AccessReviewHistoryInstanceId <String>]`: The unique identifier of accessReviewHistoryInstance
   - `[AccessReviewInstanceDecisionItemId <String>]`: The unique identifier of accessReviewInstanceDecisionItem
@@ -218,5 +241,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBetaAgreement](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Get-MgBetaAgreement?view=graph-powershell-beta)
 

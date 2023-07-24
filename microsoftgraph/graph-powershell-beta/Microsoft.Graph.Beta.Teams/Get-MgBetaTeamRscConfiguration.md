@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamrscconfiguration
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get team RSC configuration for tenant.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamRscConfiguration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -21,6 +18,22 @@ Get-MgBetaTeamRscConfiguration [<CommonParameters>]
 
 ## DESCRIPTION
 Get team RSC configuration for tenant.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -32,10 +45,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRscConfiguration
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgTeamRscConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamRscConfiguration?view=graph-powershell-v1.0)
 

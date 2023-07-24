@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.applications/update-mgapplicationsynchronizationtemplateschema
 schema: 2.0.0
@@ -10,41 +10,54 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property schema in applications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgApplicationSynchronizationTemplateSchema -ApplicationId <String> -SynchronizationTemplateId <String>
  [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-WhatIf] [-Confirm]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgApplicationSynchronizationTemplateSchema -ApplicationId <String> -SynchronizationTemplateId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-Directories <IMicrosoftGraphDirectoryDefinition[]>] [-Id <String>]
- [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-WhatIf] [-Confirm]
+ [-SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>] [-Version <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgApplicationSynchronizationTemplateSchema -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property schema in applications
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Update the navigation property schema in applications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,8 +80,8 @@ Accept wildcard characters: False
 The unique identifier of application
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -83,7 +96,7 @@ synchronizationSchema
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -95,11 +108,11 @@ Accept wildcard characters: False
 ```
 
 ### -Directories
-.
+Contains the collection of directories and all of their objects.
 To construct, see NOTES section for DIRECTORIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryDefinition[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -131,8 +144,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,11 +156,11 @@ Accept wildcard characters: False
 ```
 
 ### -SynchronizationRules
-.
+A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
 To construct, see NOTES section for SYNCHRONIZATIONRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationRule[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationRule[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationTemplate
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -174,10 +187,10 @@ Accept wildcard characters: False
 ```
 
 ### -Version
-.
+The version of the schema, updated automatically with every schema change.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -192,7 +205,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -208,7 +221,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,10 +238,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
+
 ## NOTES
 
 ALIASES
@@ -241,124 +257,125 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphSynchronizationSchema>`: synchronizationSchema
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: 
+  - `[Directories <IMicrosoftGraphDirectoryDefinition[]>]`: Contains the collection of directories and all of their objects.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
-    - `[DiscoveryDateTime <DateTime?>]`: 
-    - `[Name <String>]`: 
-    - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: 
-      - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
-        - `[Anchor <Boolean?>]`: 
+    - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+    - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
+    - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: Collection of objects supported by the directory.
+      - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: Defines attributes of the object.
+        - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
         - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
-          - `[Key <String>]`: 
-          - `[Value <String>]`: 
-        - `[CaseExact <Boolean?>]`: 
+          - `[Key <String>]`: Key.
+          - `[Value <String>]`: Value.
+        - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
         - `[DefaultValue <String>]`: 
-        - `[FlowNullValues <Boolean?>]`: 
-        - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: 
+        - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
+        - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
           - `[Key <String>]`: attributeDefinitionMetadata
-          - `[Value <String>]`: 
-        - `[Multivalued <Boolean?>]`: 
+          - `[Value <String>]`: Value of the metadata property.
+        - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
         - `[Mutability <String>]`: mutability
-        - `[Name <String>]`: 
-        - `[ReferencedObjects <IMicrosoftGraphReferencedObject[]>]`: 
-          - `[ReferencedObjectName <String>]`: 
-          - `[ReferencedProperty <String>]`: 
-        - `[Required <Boolean?>]`: 
+        - `[Name <String>]`: Name of the attribute. Must be unique within the object definition. Not nullable.
+        - `[ReferencedObjects <IMicrosoftGraphReferencedObject[]>]`: For attributes with reference type, lists referenced objects (for example, the manager attribute would list User as the referenced object).
+          - `[ReferencedObjectName <String>]`: Name of the referenced object. Must match one of the objects in the directory definition.
+          - `[ReferencedProperty <String>]`: Currently not supported. Name of the property in the referenced object, the value for which is used as the reference.
+        - `[Required <Boolean?>]`: true if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.
         - `[Type <String>]`: attributeType
-      - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: 
+      - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: Metadata for the given object.
         - `[Key <String>]`: objectDefinitionMetadata
-        - `[Value <String>]`: 
-      - `[Name <String>]`: 
-      - `[SupportedApis <String[]>]`: 
-    - `[ReadOnly <Boolean?>]`: 
-    - `[Version <String>]`: 
-  - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: 
+        - `[Value <String>]`: Value of the metadata property.
+      - `[Name <String>]`: Name of the object. Must be unique within a directory definition. Not nullable.
+      - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
+    - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
+    - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
+  - `[SynchronizationRules <IMicrosoftGraphSynchronizationRule[]>]`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
     - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IncludedContainers <String[]>]`: 
-    - `[Editable <Boolean?>]`: 
+    - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
     - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[IncludedGroups <String[]>]`: 
-    - `[Id <String>]`: 
-    - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
-    - `[Name <String>]`: 
-    - `[ObjectMappings <IMicrosoftGraphObjectMapping[]>]`: 
-      - `[AttributeMappings <IMicrosoftGraphAttributeMapping[]>]`: 
-        - `[DefaultValue <String>]`: 
-        - `[ExportMissingReferences <Boolean?>]`: 
+    - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
+    - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
+    - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.
+    - `[ObjectMappings <IMicrosoftGraphObjectMapping[]>]`: Collection of object mappings supported by the rule. Tells the synchronization engine which objects should be synchronized.
+      - `[AttributeMappings <IMicrosoftGraphAttributeMapping[]>]`: Attribute mappings define which attributes to map from the source object into the target object and how they should flow. A number of functions are available to support the transformation of the original source values.
+        - `[DefaultValue <String>]`: Default value to be used in case the source property was evaluated to null. Optional.
+        - `[ExportMissingReferences <Boolean?>]`: For internal use only.
         - `[FlowBehavior <String>]`: attributeFlowBehavior
         - `[FlowType <String>]`: attributeFlowType
-        - `[MatchingPriority <Int32?>]`: 
+        - `[MatchingPriority <Int32?>]`: If higher than 0, this attribute will be used to perform an initial match of the objects between source and target directories. The synchronization engine will try to find the matching object using attribute with lowest value of matching priority first. If not found, the attribute with the next matching priority will be used, and so on a until match is found or no more matching attributes are left. Only attributes that are expected to have unique values, such as email, should be used as matching attributes.
         - `[Source <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[Expression <String>]`: 
-          - `[Name <String>]`: 
-          - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: 
-            - `[Key <String>]`: 
+          - `[Expression <String>]`: Equivalent expression representation of this attributeMappingSource object.
+          - `[Name <String>]`: Name parameter of the mapping source. Depending on the type property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.
+          - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: If this object represents a function, lists function parameters. Parameters consist of attributeMappingSource objects themselves, allowing for complex expressions. If type is not Function, this property will be null/empty array.
+            - `[Key <String>]`: The name of the parameter.
             - `[Value <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
           - `[Type <String>]`: attributeMappingSourceType
-        - `[TargetAttributeName <String>]`: 
-      - `[Enabled <Boolean?>]`: 
+        - `[TargetAttributeName <String>]`: Name of the attribute on the target object.
+      - `[Enabled <Boolean?>]`: When true, this object mapping will be processed during synchronization. When false, this object mapping will be skipped.
       - `[FlowTypes <String>]`: objectFlowTypes
-      - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: 
+      - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
         - `[Key <String>]`: objectMappingMetadata
-        - `[Value <String>]`: 
-      - `[Name <String>]`: 
+        - `[Value <String>]`: Value of the metadata property.
+      - `[Name <String>]`: Human-friendly name of the object mapping.
       - `[Scope <IMicrosoftGraphFilter>]`: filter
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[CategoryFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
-          - `[Clauses <IMicrosoftGraphFilterClause[]>]`: 
-            - `[OperatorName <String>]`: 
-            - `[SourceOperandName <String>]`: 
+        - `[CategoryFilterGroups <IMicrosoftGraphFilterGroup[]>]`: *Experimental* Filter group set used to decide whether given object belongs and should be processed as part of this object mapping. An object is considered in scope if ANY of the groups in the collection is evaluated to true.
+          - `[Clauses <IMicrosoftGraphFilterClause[]>]`: Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to true.
+            - `[OperatorName <String>]`: Name of the operator to be applied to the source and target operands. Must be one of the supported operators. Supported operators can be discovered.
+            - `[SourceOperandName <String>]`: Name of source operand (the operand being tested). The source operand name must match one of the attribute names on the source object.
             - `[TargetOperand <IMicrosoftGraphFilterOperand>]`: filterOperand
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[Values <String[]>]`: 
-          - `[Name <String>]`: 
-        - `[Groups <IMicrosoftGraphFilterGroup[]>]`: 
-        - `[InputFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
-      - `[SourceObjectName <String>]`: 
-      - `[TargetObjectName <String>]`: 
-    - `[Priority <Int32?>]`: 
-    - `[SourceDirectoryName <String>]`: 
-    - `[TargetDirectoryName <String>]`: 
-  - `[Version <String>]`: 
+              - `[Values <String[]>]`: Collection of values.
+          - `[Name <String>]`: Human-readable name of the filter group.
+        - `[Groups <IMicrosoftGraphFilterGroup[]>]`: Filter group set used to decide whether given object is in scope for provisioning. This is the filter which should be used in most cases. If an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter is not satisfied any longer, such object will get de-provisioned'. An object is considered in scope if ANY of the groups in the collection is evaluated to true.
+        - `[InputFilterGroups <IMicrosoftGraphFilterGroup[]>]`: *Experimental* Filter group set used to filter out objects at the early stage of reading them from the directory. If an object doesn't satisfy this filter it will not be processed further. Important to understand is that if an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter is no longer satisfied, such object will NOT get de-provisioned. An object is considered in scope if ANY of the groups in the collection is evaluated to true.
+      - `[SourceObjectName <String>]`: Name of the object in the source directory. Must match the object name from the source directory definition.
+      - `[TargetObjectName <String>]`: Name of the object in target directory. Must match the object name from the target directory definition.
+    - `[Priority <Int32?>]`: Priority relative to other rules in the synchronizationSchema. Rules with the lowest priority number will be processed first.
+    - `[SourceDirectoryName <String>]`: Name of the source directory. Must match one of the directory definitions in synchronizationSchema.
+    - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
+  - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
-`DIRECTORIES <IMicrosoftGraphDirectoryDefinition[]>`: .
+`DIRECTORIES <IMicrosoftGraphDirectoryDefinition[]>`: Contains the collection of directories and all of their objects.
   - `[Id <String>]`: The unique idenfier for an entity. Read-only.
   - `[Discoverabilities <String>]`: directoryDefinitionDiscoverabilities
-  - `[DiscoveryDateTime <DateTime?>]`: 
-  - `[Name <String>]`: 
-  - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: 
-    - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: 
-      - `[Anchor <Boolean?>]`: 
+  - `[DiscoveryDateTime <DateTime?>]`: Represents the discovery date and time using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[Name <String>]`: Name of the directory. Must be unique within the synchronization schema. Not nullable.
+  - `[Objects <IMicrosoftGraphObjectDefinition[]>]`: Collection of objects supported by the directory.
+    - `[Attributes <IMicrosoftGraphAttributeDefinition[]>]`: Defines attributes of the object.
+      - `[Anchor <Boolean?>]`: true if the attribute should be used as the anchor for the object. Anchor attributes must have a unique value identifying an object, and must be immutable. Default is false. One, and only one, of the object's attributes must be designated as the anchor to support synchronization.
       - `[ApiExpressions <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
-        - `[Key <String>]`: 
-        - `[Value <String>]`: 
-      - `[CaseExact <Boolean?>]`: 
+        - `[Key <String>]`: Key.
+        - `[Value <String>]`: Value.
+      - `[CaseExact <Boolean?>]`: true if value of this attribute should be treated as case-sensitive. This setting affects how the synchronization engine detects changes for the attribute.
       - `[DefaultValue <String>]`: 
-      - `[FlowNullValues <Boolean?>]`: 
-      - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: 
+      - `[FlowNullValues <Boolean?>]`: 'true' to allow null values for attributes.
+      - `[Metadata <IMicrosoftGraphAttributeDefinitionMetadataEntry[]>]`: Metadata for the given object.
         - `[Key <String>]`: attributeDefinitionMetadata
-        - `[Value <String>]`: 
-      - `[Multivalued <Boolean?>]`: 
+        - `[Value <String>]`: Value of the metadata property.
+      - `[Multivalued <Boolean?>]`: true if an attribute can have multiple values. Default is false.
       - `[Mutability <String>]`: mutability
-      - `[Name <String>]`: 
-      - `[ReferencedObjects <IMicrosoftGraphReferencedObject[]>]`: 
-        - `[ReferencedObjectName <String>]`: 
-        - `[ReferencedProperty <String>]`: 
-      - `[Required <Boolean?>]`: 
+      - `[Name <String>]`: Name of the attribute. Must be unique within the object definition. Not nullable.
+      - `[ReferencedObjects <IMicrosoftGraphReferencedObject[]>]`: For attributes with reference type, lists referenced objects (for example, the manager attribute would list User as the referenced object).
+        - `[ReferencedObjectName <String>]`: Name of the referenced object. Must match one of the objects in the directory definition.
+        - `[ReferencedProperty <String>]`: Currently not supported. Name of the property in the referenced object, the value for which is used as the reference.
+      - `[Required <Boolean?>]`: true if attribute is required. Object can not be created if any of the required attributes are missing. If during synchronization, the required attribute has no value, the default value will be used. If default the value was not set, synchronization will record an error.
       - `[Type <String>]`: attributeType
-    - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: 
+    - `[Metadata <IMicrosoftGraphObjectDefinitionMetadataEntry[]>]`: Metadata for the given object.
       - `[Key <String>]`: objectDefinitionMetadata
-      - `[Value <String>]`: 
-    - `[Name <String>]`: 
-    - `[SupportedApis <String[]>]`: 
-  - `[ReadOnly <Boolean?>]`: 
-  - `[Version <String>]`: 
+      - `[Value <String>]`: Value of the metadata property.
+    - `[Name <String>]`: Name of the object. Must be unique within a directory definition. Not nullable.
+    - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
+  - `[ReadOnly <Boolean?>]`: Whether this object is read-only.
+  - `[Version <String>]`: Read only value that indicates version discovered. null if discovery has not yet occurred.
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -380,62 +397,58 @@ To create the parameters described below, construct a hash table containing the 
   - `[TokenLifetimePolicyId <String>]`: The unique identifier of tokenLifetimePolicy
   - `[UserId <String>]`: The unique identifier of user
 
-`SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule[]>`: .
+`SYNCHRONIZATIONRULES <IMicrosoftGraphSynchronizationRule[]>`: A collection of synchronization rules configured for the synchronizationJob or synchronizationTemplate.
   - `[ContainerFilter <IMicrosoftGraphContainerFilter>]`: containerFilter
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IncludedContainers <String[]>]`: 
-  - `[Editable <Boolean?>]`: 
+  - `[Editable <Boolean?>]`: true if the synchronization rule can be customized; false if this rule is read-only and should not be changed.
   - `[GroupFilter <IMicrosoftGraphGroupFilter>]`: groupFilter
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[IncludedGroups <String[]>]`: 
-  - `[Id <String>]`: 
-  - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: 
-    - `[Key <String>]`: 
-    - `[Value <String>]`: 
-  - `[Name <String>]`: 
-  - `[ObjectMappings <IMicrosoftGraphObjectMapping[]>]`: 
-    - `[AttributeMappings <IMicrosoftGraphAttributeMapping[]>]`: 
-      - `[DefaultValue <String>]`: 
-      - `[ExportMissingReferences <Boolean?>]`: 
+  - `[Id <String>]`: Synchronization rule identifier. Must be one of the identifiers recognized by the synchronization engine. Supported rule identifiers can be found in the synchronization template returned by the API.
+  - `[Metadata <IMicrosoftGraphStringKeyStringValuePair[]>]`: Additional extension properties. Unless instructed explicitly by the support team, metadata values should not be changed.
+    - `[Key <String>]`: Key.
+    - `[Value <String>]`: Value.
+  - `[Name <String>]`: Human-readable name of the synchronization rule. Not nullable.
+  - `[ObjectMappings <IMicrosoftGraphObjectMapping[]>]`: Collection of object mappings supported by the rule. Tells the synchronization engine which objects should be synchronized.
+    - `[AttributeMappings <IMicrosoftGraphAttributeMapping[]>]`: Attribute mappings define which attributes to map from the source object into the target object and how they should flow. A number of functions are available to support the transformation of the original source values.
+      - `[DefaultValue <String>]`: Default value to be used in case the source property was evaluated to null. Optional.
+      - `[ExportMissingReferences <Boolean?>]`: For internal use only.
       - `[FlowBehavior <String>]`: attributeFlowBehavior
       - `[FlowType <String>]`: attributeFlowType
-      - `[MatchingPriority <Int32?>]`: 
+      - `[MatchingPriority <Int32?>]`: If higher than 0, this attribute will be used to perform an initial match of the objects between source and target directories. The synchronization engine will try to find the matching object using attribute with lowest value of matching priority first. If not found, the attribute with the next matching priority will be used, and so on a until match is found or no more matching attributes are left. Only attributes that are expected to have unique values, such as email, should be used as matching attributes.
       - `[Source <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Expression <String>]`: 
-        - `[Name <String>]`: 
-        - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: 
-          - `[Key <String>]`: 
+        - `[Expression <String>]`: Equivalent expression representation of this attributeMappingSource object.
+        - `[Name <String>]`: Name parameter of the mapping source. Depending on the type property value, this can be the name of the function, the name of the source attribute, or a constant value to be used.
+        - `[Parameters <IMicrosoftGraphStringKeyAttributeMappingSourceValuePair[]>]`: If this object represents a function, lists function parameters. Parameters consist of attributeMappingSource objects themselves, allowing for complex expressions. If type is not Function, this property will be null/empty array.
+          - `[Key <String>]`: The name of the parameter.
           - `[Value <IMicrosoftGraphAttributeMappingSource>]`: attributeMappingSource
         - `[Type <String>]`: attributeMappingSourceType
-      - `[TargetAttributeName <String>]`: 
-    - `[Enabled <Boolean?>]`: 
+      - `[TargetAttributeName <String>]`: Name of the attribute on the target object.
+    - `[Enabled <Boolean?>]`: When true, this object mapping will be processed during synchronization. When false, this object mapping will be skipped.
     - `[FlowTypes <String>]`: objectFlowTypes
-    - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: 
+    - `[Metadata <IMicrosoftGraphObjectMappingMetadataEntry[]>]`: Additional extension properties. Unless mentioned explicitly, metadata values should not be changed.
       - `[Key <String>]`: objectMappingMetadata
-      - `[Value <String>]`: 
-    - `[Name <String>]`: 
+      - `[Value <String>]`: Value of the metadata property.
+    - `[Name <String>]`: Human-friendly name of the object mapping.
     - `[Scope <IMicrosoftGraphFilter>]`: filter
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CategoryFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
-        - `[Clauses <IMicrosoftGraphFilterClause[]>]`: 
-          - `[OperatorName <String>]`: 
-          - `[SourceOperandName <String>]`: 
+      - `[CategoryFilterGroups <IMicrosoftGraphFilterGroup[]>]`: *Experimental* Filter group set used to decide whether given object belongs and should be processed as part of this object mapping. An object is considered in scope if ANY of the groups in the collection is evaluated to true.
+        - `[Clauses <IMicrosoftGraphFilterClause[]>]`: Filter clauses (conditions) of this group. All clauses in a group must be satisfied in order for the filter group to evaluate to true.
+          - `[OperatorName <String>]`: Name of the operator to be applied to the source and target operands. Must be one of the supported operators. Supported operators can be discovered.
+          - `[SourceOperandName <String>]`: Name of source operand (the operand being tested). The source operand name must match one of the attribute names on the source object.
           - `[TargetOperand <IMicrosoftGraphFilterOperand>]`: filterOperand
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[Values <String[]>]`: 
-        - `[Name <String>]`: 
-      - `[Groups <IMicrosoftGraphFilterGroup[]>]`: 
-      - `[InputFilterGroups <IMicrosoftGraphFilterGroup[]>]`: 
-    - `[SourceObjectName <String>]`: 
-    - `[TargetObjectName <String>]`: 
-  - `[Priority <Int32?>]`: 
-  - `[SourceDirectoryName <String>]`: 
-  - `[TargetDirectoryName <String>]`: 
+            - `[Values <String[]>]`: Collection of values.
+        - `[Name <String>]`: Human-readable name of the filter group.
+      - `[Groups <IMicrosoftGraphFilterGroup[]>]`: Filter group set used to decide whether given object is in scope for provisioning. This is the filter which should be used in most cases. If an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter is not satisfied any longer, such object will get de-provisioned'. An object is considered in scope if ANY of the groups in the collection is evaluated to true.
+      - `[InputFilterGroups <IMicrosoftGraphFilterGroup[]>]`: *Experimental* Filter group set used to filter out objects at the early stage of reading them from the directory. If an object doesn't satisfy this filter it will not be processed further. Important to understand is that if an object used to satisfy this filter at a given moment, and then the object or the filter was changed so that filter is no longer satisfied, such object will NOT get de-provisioned. An object is considered in scope if ANY of the groups in the collection is evaluated to true.
+    - `[SourceObjectName <String>]`: Name of the object in the source directory. Must match the object name from the source directory definition.
+    - `[TargetObjectName <String>]`: Name of the object in target directory. Must match the object name from the target directory definition.
+  - `[Priority <Int32?>]`: Priority relative to other rules in the synchronizationSchema. Rules with the lowest priority number will be processed first.
+  - `[SourceDirectoryName <String>]`: Name of the source directory. Must match one of the directory definitions in synchronizationSchema.
+  - `[TargetDirectoryName <String>]`: Name of the target directory. Must match one of the directory definitions in synchronizationSchema.
 
 ## RELATED LINKS
-[Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaApplicationSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Beta.Applications/Update-MgBetaApplicationSynchronizationTemplateSchema?view=graph-powershell-beta)
 

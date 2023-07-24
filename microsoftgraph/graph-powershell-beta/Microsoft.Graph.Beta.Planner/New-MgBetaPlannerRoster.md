@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerroster
 schema: 2.0.0
@@ -10,28 +10,27 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new plannerRoster object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRoster?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaPlannerRoster [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Members <IMicrosoftGraphPlannerRosterMember[]>] [-Plans <IMicrosoftGraphPlannerPlan[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlannerRoster -BodyParameter <IMicrosoftGraphPlannerRoster> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new plannerRoster object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPlannerRoster Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
 $params = @{
@@ -39,8 +38,8 @@ $params = @{
 }
 New-MgBetaPlannerRoster -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPlannerRoster Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -48,7 +47,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -64,7 +63,7 @@ plannerRoster
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerRoster
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
 Parameter Sets: Create
 Aliases:
 
@@ -80,7 +79,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +95,7 @@ Retrieves the members of the plannerRoster.
 To construct, see NOTES section for MEMBERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerRosterMember[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRosterMember[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +111,7 @@ Retrieves the plans contained by the plannerRoster.
 To construct, see NOTES section for PLANS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -127,7 +126,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -143,7 +142,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -160,9 +159,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerRoster
+
 ## NOTES
 
 ALIASES
@@ -511,8 +512,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Required. Title of the plan.
 
 ## RELATED LINKS
-[New-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRoster?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgPlannerRoster](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerRoster?view=graph-powershell-v1.0)
 

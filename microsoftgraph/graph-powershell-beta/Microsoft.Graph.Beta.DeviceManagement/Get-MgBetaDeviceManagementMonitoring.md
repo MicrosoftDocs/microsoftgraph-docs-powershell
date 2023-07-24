@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/get-mgbetadevicemanagementmonitoring
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get monitoring from deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -22,13 +19,29 @@ Get-MgBetaDeviceManagementMonitoring [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get monitoring from deviceManagement
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -43,7 +56,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -62,10 +75,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
 

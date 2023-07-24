@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritysecurescorecontrolprofile
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to secureScoreControlProfiles for security
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -24,30 +21,26 @@ New-MgBetaSecuritySecureScoreControlProfile [-ActionType <String>] [-ActionUrl <
  [-ImplementationCost <String>] [-LastModifiedDateTime <DateTime>] [-MaxScore <Double>] [-Rank <Int32>]
  [-Remediation <String>] [-RemediationImpact <String>] [-Service <String>] [-Threats <String[]>]
  [-Tier <String>] [-Title <String>] [-UserImpact <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureScoreControlProfile> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSecuritySecureScoreControlProfile -BodyParameter <IMicrosoftGraphSecureScoreControlProfile>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to secureScoreControlProfiles for security
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
+```
 
 Get-MgBetaSecuritySecureScoreControlProfile
-```
-This example shows how to use the New-MgBetaBetaSecuritySecureScoreControlProfile Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -55,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Control action type (Config, Review, Behavior).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +63,7 @@ Accept wildcard characters: False
 URL to where the control can be actioned.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +78,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +93,7 @@ Accept wildcard characters: False
 GUID string for tenant ID.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +109,7 @@ secureScoreControlProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecureScoreControlProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
 Parameter Sets: Create
 Aliases:
 
@@ -132,7 +125,7 @@ The collection of compliance information associated with secure score control
 To construct, see NOTES section for COMPLIANCEINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceInformation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphComplianceInformation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +140,7 @@ Accept wildcard characters: False
 Control action category (Account, Data, Device, Apps, Infrastructure).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +156,7 @@ Flag to indicate where the tenant has marked a control (ignore, thirdParty, revi
 To construct, see NOTES section for CONTROLSTATEUPDATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecureScoreControlStateUpdate[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlStateUpdate[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +171,7 @@ Accept wildcard characters: False
 Flag to indicate if a control is depreciated.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +187,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -209,7 +202,7 @@ Accept wildcard characters: False
 Resource cost of implemmentating control (low, moderate, high).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -224,7 +217,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -239,7 +232,7 @@ Accept wildcard characters: False
 Current obtained max score on specified date.
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -254,7 +247,7 @@ Accept wildcard characters: False
 Microsoft's stack ranking of control.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -269,7 +262,7 @@ Accept wildcard characters: False
 Description of what the control will help remediate.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -284,7 +277,7 @@ Accept wildcard characters: False
 Description of the impact on users of the remediation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -299,7 +292,7 @@ Accept wildcard characters: False
 Service that owns the control (Exchange, Sharepoint, Azure AD).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -314,7 +307,7 @@ Accept wildcard characters: False
 List of threats the control mitigates (accountBreach,dataDeletion,dataExfiltration,dataSpillage,elevationOfPrivilege,maliciousInsider,passwordCracking,phishingOrWhaling,spoofing).
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -329,7 +322,7 @@ Accept wildcard characters: False
 Control tier (Core, Defense in Depth, Advanced.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -344,7 +337,7 @@ Accept wildcard characters: False
 Title of the control.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -359,7 +352,7 @@ Accept wildcard characters: False
 User impact of implementing control (low, moderate, high).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -375,7 +368,7 @@ securityVendorInformation
 To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -390,7 +383,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -406,7 +399,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -423,9 +416,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecureScoreControlProfile
+
 ## NOTES
 
 ALIASES
@@ -493,6 +488,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
-[New-MgSecuritySecureScoreControlProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecuritySecureScoreControlProfile?view=graph-powershell-v1.0)
-
 

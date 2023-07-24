@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsetting
 schema: 2.0.0
@@ -13,9 +13,6 @@ This operation does not return insightsSettings.
 Depending on the type of insights, you can get their settings by using list itemInsights or list peopleInsights.
 This operation does not return microsoftApplicationDataAccessSettings.
 To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -39,13 +36,14 @@ This operation does not return microsoftApplicationDataAccessSettings.
 To get microsoftApplicationDataAccessSettings, use list microsoftApplicationDataAccessSettings.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOrganizationSetting Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSetting -OrganizationId $organizationId
 ```
-This example shows how to use the Get-MgBetaOrganizationSetting Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -53,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -69,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -84,7 +82,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -99,7 +97,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -116,9 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationSettings
+
 ## NOTES
 
 ALIASES
@@ -172,5 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSetting?view=graph-powershell-v1.0)
 
