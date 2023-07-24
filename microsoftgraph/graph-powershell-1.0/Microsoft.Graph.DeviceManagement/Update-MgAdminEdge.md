@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgadminedge
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property edge in admin
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgAdminEdge [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InternetExplorerMode <IMicrosoftGraphInternetExplorerMode>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property edge in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Update the navigation property edge in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -51,7 +64,7 @@ edge
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEdge
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
 Parameter Sets: Update
 Aliases:
 
@@ -67,7 +80,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -83,7 +96,7 @@ internetExplorerMode
 To construct, see NOTES section for INTERNETEXPLORERMODE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInternetExplorerMode
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInternetExplorerMode
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -114,7 +127,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -131,9 +144,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEdge
+
 ## NOTES
 
 ALIASES
@@ -275,8 +290,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Status <BrowserSiteListStatus?>]`: browserSiteListStatus
 
 ## RELATED LINKS
-[Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaAdminEdge](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Update-MgBetaAdminEdge?view=graph-powershell-beta)
 

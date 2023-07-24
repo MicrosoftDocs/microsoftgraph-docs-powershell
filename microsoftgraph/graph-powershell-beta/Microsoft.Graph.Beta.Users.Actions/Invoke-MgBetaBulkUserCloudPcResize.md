@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusercloudpcresize
 schema: 2.0.0
@@ -12,35 +12,32 @@ Perform a bulk resize action to resize a group of cloudPCs that have successfull
 If any devices cannot be resized, those devices will indicate 'resize failed'.
 The remaining devices will be `provisioned` for the resize process.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBulkUserCloudPcResize](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBulkUserCloudPcResize?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BulkExpanded (Default)
 ```
 Invoke-MgBetaBulkUserCloudPcResize -UserId <String> [-AdditionalProperties <Hashtable>]
- [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Bulk
 ```
 Invoke-MgBetaBulkUserCloudPcResize -UserId <String>
  -BodyParameter <IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BulkViaIdentityExpanded
-```
-Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BulkViaIdentity
 ```
 Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BulkViaIdentityExpanded
+```
+Invoke-MgBetaBulkUserCloudPcResize -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-CloudPcIds <String[]>] [-TargetServicePlanId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,13 +45,29 @@ Perform a bulk resize action to resize a group of cloudPCs that have successfull
 If any devices cannot be resized, those devices will indicate 'resize failed'.
 The remaining devices will be `provisioned` for the resize process.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Bulk, BulkViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -101,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: BulkViaIdentityExpanded, BulkViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: BulkViaIdentity, BulkViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -131,8 +144,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: BulkExpanded, Bulk
+Type: System.String
+Parameter Sets: Bulk, BulkExpanded
 Aliases:
 
 Required: True
@@ -146,7 +159,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -162,7 +175,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -179,10 +192,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gsl0O2UsersUserIdCloudpcsMicrosoftGraphBulkresizePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcRemoteActionResult
+
 ## NOTES
 
 ALIASES
@@ -240,5 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgBulkUserCloudPcResize](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBulkUserCloudPcResize?view=graph-powershell-v1.0)
 

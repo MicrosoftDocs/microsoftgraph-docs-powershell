@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementvpptoken
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to vppTokens for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -23,17 +20,33 @@ New-MgBetaDeviceAppManagementVppToken [-AdditionalProperties <Hashtable>] [-Appl
  [-LastModifiedDateTime <DateTime>] [-LastSyncDateTime <DateTime>] [-LastSyncStatus <VppTokenSyncStatus>]
  [-LocationName <String>] [-OrganizationName <String>] [-RoleScopeTagIds <String[]>] [-State <VppTokenState>]
  [-Token <String>] [-TokenActionResults <IMicrosoftGraphVppTokenActionResult[]>]
- [-VppTokenAccountType <VppTokenAccountType>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-VppTokenAccountType <VppTokenAccountType>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-WhatIf] [-Confirm]
+New-MgBetaDeviceAppManagementVppToken -BodyParameter <IMicrosoftGraphVppToken> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to vppTokens for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -41,7 +54,7 @@ Create new navigation property to vppTokens for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -56,7 +69,7 @@ Accept wildcard characters: False
 The apple Id associated with the given Apple Volume Purchase Program Token.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 Whether or not apps for the VPP token will be automatically updated.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -90,7 +103,7 @@ You can upload multiple Apple VPP Business or Education tokens.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVppToken
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken
 Parameter Sets: Create
 Aliases:
 
@@ -105,7 +118,7 @@ Accept wildcard characters: False
 Admin consent to allow claiming token management from external MDM.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -120,7 +133,7 @@ Accept wildcard characters: False
 Whether or not apps for the VPP token will be automatically updated.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +148,7 @@ Accept wildcard characters: False
 Consent granted for data sharing with the Apple Volume Purchase Program.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +163,7 @@ Accept wildcard characters: False
 An admin specified token friendly name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +178,7 @@ Accept wildcard characters: False
 The expiration date time of the Apple Volume Purchase Program Token.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +194,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ Accept wildcard characters: False
 Last modification date time associated with the Apple Volume Purchase Program Token.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +224,7 @@ Accept wildcard characters: False
 The last time when an application sync was done with the Apple volume purchase program service using the the Apple Volume Purchase Program Token.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +239,7 @@ Accept wildcard characters: False
 Possible sync statuses associated with an Apple Volume Purchase Program token.
 
 ```yaml
-Type: VppTokenSyncStatus
+Type: Microsoft.Graph.Beta.PowerShell.Support.VppTokenSyncStatus
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -241,7 +254,7 @@ Accept wildcard characters: False
 Token location returned from Apple VPP.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -256,7 +269,7 @@ Accept wildcard characters: False
 The organization associated with the Apple Volume Purchase Program Token
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +284,7 @@ Accept wildcard characters: False
 Role Scope Tags IDs assigned to this entity.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +299,7 @@ Accept wildcard characters: False
 Possible states associated with an Apple Volume Purchase Program token.
 
 ```yaml
-Type: VppTokenState
+Type: Microsoft.Graph.Beta.PowerShell.Support.VppTokenState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +314,7 @@ Accept wildcard characters: False
 The Apple Volume Purchase Program Token string downloaded from the Apple Volume Purchase Program.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -317,7 +330,7 @@ The collection of statuses of the actions performed on the Apple Volume Purchase
 To construct, see NOTES section for TOKENACTIONRESULTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVppTokenActionResult[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppTokenActionResult[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -332,7 +345,7 @@ Accept wildcard characters: False
 Possible types of an Apple Volume Purchase Program token.
 
 ```yaml
-Type: VppTokenAccountType
+Type: Microsoft.Graph.Beta.PowerShell.Support.VppTokenAccountType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -347,7 +360,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -363,7 +376,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -380,14 +393,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVppToken
+
 ## NOTES
 
 ALIASES
 
-New-BetaDeviceAppMgtVppToken
+New-MgBetaDeviceAppMgtVppToken
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -426,5 +441,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: Time the action was initiated
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementVppToken](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementVppToken?view=graph-powershell-v1.0)
 

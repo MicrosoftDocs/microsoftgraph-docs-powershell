@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetasitepagecanvalayoutverticalsection
 schema: 2.0.0
@@ -12,35 +12,32 @@ Create a verticalSection object in a given sitePage.
 A sitePage can only have one vertical section.
 If a vertical section already exists, this method returns a `409 Conflict` response code.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageCanvaLayoutVerticalSection?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSitePageCanvaLayoutVerticalSection -SiteId <String> -SitePageId <String>
- [-AdditionalProperties <Hashtable>] [-Emphasis <String>] [-Id <String>] [-Webparts <IMicrosoftGraphWebPart[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Emphasis <String>] [-Id <String>]
+ [-Webparts <IMicrosoftGraphWebPart[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSitePageCanvaLayoutVerticalSection -SiteId <String> -SitePageId <String>
- -BodyParameter <IMicrosoftGraphVerticalSection> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-Emphasis <String>] [-Id <String>] [-Webparts <IMicrosoftGraphWebPart[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVerticalSection> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdentity>
- -BodyParameter <IMicrosoftGraphVerticalSection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphVerticalSection> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSitePageCanvaLayoutVerticalSection -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-Emphasis <String>] [-Id <String>]
+ [-Webparts <IMicrosoftGraphWebPart[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,13 +45,29 @@ Create a verticalSection object in a given sitePage.
 A sitePage can only have one vertical section.
 If a vertical section already exists, this method returns a `409 Conflict` response code.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ verticalSection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphVerticalSection
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVerticalSection
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 sectionEmphasisType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -117,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -147,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of sitePage
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -163,7 +176,7 @@ The set of web parts in this section.
 To construct, see NOTES section for WEBPARTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWebPart[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWebPart[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -194,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -211,10 +224,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVerticalSection
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVerticalSection
+
 ## NOTES
 
 ALIASES
@@ -287,5 +303,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgSitePageCanvaLayoutVerticalSection](/powershell/module/Microsoft.Graph.Sites/Update-MgSitePageCanvaLayoutVerticalSection?view=graph-powershell-v1.0)
 

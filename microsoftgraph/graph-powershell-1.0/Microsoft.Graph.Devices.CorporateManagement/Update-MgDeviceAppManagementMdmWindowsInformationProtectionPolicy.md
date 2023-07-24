@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/update-mgdeviceappmanagementmdmwindowsinformationprotectionpolicy
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -24,9 +21,9 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
+ [-EnterpriseInternalProxyServers <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseIPRanges <IMicrosoftGraphWindowsInformationProtectionIPRangeCollection[]>]
  [-EnterpriseIPRangesAreAuthoritative]
- [-EnterpriseInternalProxyServers <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseNetworkDomainNames <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseProtectedDomainNames <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseProxiedDomains <IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection[]>]
@@ -40,13 +37,20 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
  [-ProtectedApps <IMicrosoftGraphWindowsInformationProtectionApp[]>] [-ProtectionUnderLockConfigRequired]
  [-RevokeOnUnenrollDisabled] [-RightsManagementServicesTemplateId <String>]
  [-SmbAutoEncryptedFileExtensions <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
- -MdmWindowsInformationProtectionPolicyId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+ -MdmWindowsInformationProtectionPolicyId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
+ -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -59,9 +63,9 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
  [-DataRecoveryCertificate <IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate>]
  [-Description <String>] [-DisplayName <String>]
  [-EnforcementLevel <WindowsInformationProtectionEnforcementLevel>] [-EnterpriseDomain <String>]
+ [-EnterpriseInternalProxyServers <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseIPRanges <IMicrosoftGraphWindowsInformationProtectionIPRangeCollection[]>]
  [-EnterpriseIPRangesAreAuthoritative]
- [-EnterpriseInternalProxyServers <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseNetworkDomainNames <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseProtectedDomainNames <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
  [-EnterpriseProxiedDomains <IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection[]>]
@@ -75,18 +79,27 @@ Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
  [-ProtectedApps <IMicrosoftGraphWindowsInformationProtectionApp[]>] [-ProtectionUnderLockConfigRequired]
  [-RevokeOnUnenrollDisabled] [-RightsManagementServicesTemplateId <String>]
  [-SmbAutoEncryptedFileExtensions <IMicrosoftGraphWindowsInformationProtectionResourceCollection[]>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy
- -InputObject <IDevicesCorporateManagementIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property mdmWindowsInformationProtectionPolicies in deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -94,7 +107,7 @@ Update the navigation property mdmWindowsInformationProtectionPolicies in device
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -110,7 +123,7 @@ Navigation property to list of security groups targeted for policy.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -125,7 +138,7 @@ Accept wildcard characters: False
 Specifies whether to allow Azure RMS encryption for WIP
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +153,7 @@ Accept wildcard characters: False
 Policy for Windows information protection with MDM
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -155,7 +168,7 @@ Accept wildcard characters: False
 The date and time the policy was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +184,7 @@ Windows Information Protection DataRecoveryCertificate
 To construct, see NOTES section for DATARECOVERYCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionDataRecoveryCertificate
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -186,7 +199,7 @@ Accept wildcard characters: False
 The policy's description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +214,7 @@ Accept wildcard characters: False
 Policy display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +229,7 @@ Accept wildcard characters: False
 Possible values for WIP Protection enforcement levels
 
 ```yaml
-Type: WindowsInformationProtectionEnforcementLevel
+Type: Microsoft.Graph.PowerShell.Support.WindowsInformationProtectionEnforcementLevel
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +244,7 @@ Accept wildcard characters: False
 Primary enterprise domain
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +264,7 @@ The proxies are only leveraged in configuring the EnterpriseProxiedDomains polic
 To construct, see NOTES section for ENTERPRISEINTERNALPROXYSERVERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -269,7 +282,7 @@ These locations will be considered a safe destination for enterprise data to be 
 To construct, see NOTES section for ENTERPRISEIPRANGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionIPRangeCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionIPRangeCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +298,7 @@ Boolean value that tells the client to accept the configured list and not to use
 Default is false
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -302,7 +315,7 @@ Data from one of these domains that is sent to a device will be considered enter
 To construct, see NOTES section for ENTERPRISENETWORKDOMAINNAMES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -318,7 +331,7 @@ List of enterprise domains to be protected
 To construct, see NOTES section for ENTERPRISEPROTECTEDDOMAINNAMES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -337,7 +350,7 @@ A proxy server used for this purpose must also be configured using the Enterpris
 To construct, see NOTES section for ENTERPRISEPROXIEDDOMAINS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionProxiedDomainCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -354,7 +367,7 @@ Any server not on this list is considered non-enterprise
 To construct, see NOTES section for ENTERPRISEPROXYSERVERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -370,7 +383,7 @@ Boolean value that tells the client to accept the configured list of proxies and
 Default is false
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -386,7 +399,7 @@ Another way to input exempt apps through xml files
 To construct, see NOTES section for EXEMPTAPPLOCKERFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionAppLockerFile[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLockerFile[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -403,7 +416,7 @@ This is because some critical enterprise applications may have compatibility pro
 To construct, see NOTES section for EXEMPTAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionApp[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionApp[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -419,7 +432,7 @@ Determines whether overlays are added to icons for WIP protected files in Explor
 Starting in Windows 10, version 1703 this setting also configures the visibility of the WIP icon in the title bar of a WIP-protected app
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -435,7 +448,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -450,7 +463,7 @@ Accept wildcard characters: False
 This switch is for the Windows Search Indexer, to allow or disallow indexing of items
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -466,8 +479,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -481,7 +494,7 @@ Accept wildcard characters: False
 Indicates if the policy is deployed to any inclusion groups or not.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -496,7 +509,7 @@ Accept wildcard characters: False
 Last time the policy was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -511,8 +524,8 @@ Accept wildcard characters: False
 The unique identifier of mdmWindowsInformationProtectionPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -527,7 +540,7 @@ List of domain names that can used for work or personal resource
 To construct, see NOTES section for NEUTRALDOMAINRESOURCES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -543,7 +556,7 @@ Another way to input protected apps through xml files
 To construct, see NOTES section for PROTECTEDAPPLOCKERFILES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionAppLockerFile[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLockerFile[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -559,7 +572,7 @@ Protected applications can access enterprise data and the data handled by those 
 To construct, see NOTES section for PROTECTEDAPPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionApp[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionApp[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -574,7 +587,7 @@ Accept wildcard characters: False
 Specifies whether the protection under lock feature (also known as encrypt under pin) should be configured
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -591,7 +604,7 @@ If set to 1 (Don't revoke keys), the keys will not be revoked and the user will 
 If the keys are not revoked, there will be no revoked file cleanup subsequently.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -607,7 +620,7 @@ TemplateID GUID to use for RMS encryption.
 The RMS template allows the IT admin to configure the details about who has access to RMS-protected file and how long they have access
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -623,7 +636,7 @@ Specifies a list of file extensions, so that files with these extensions are enc
 To construct, see NOTES section for SMBAUTOENCRYPTEDFILEEXTENSIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionResourceCollection[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -638,7 +651,7 @@ Accept wildcard characters: False
 Version of the entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -653,7 +666,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -669,7 +682,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -686,15 +699,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMdmWindowsInformationProtectionPolicy
+
 ## NOTES
 
 ALIASES
 
-Update-DeviceAppMgtMdmWindowInformationProtectionPolicy
+Update-MgDeviceAppMgtMdmWindowInformationProtectionPolicy
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -810,5 +826,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resources <String[]>]`: Collection of resources
 
 ## RELATED LINKS
-[Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Update-MgBetaDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-beta)
 

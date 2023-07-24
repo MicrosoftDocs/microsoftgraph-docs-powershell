@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetausersettingiteminsight
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingItemInsight?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -31,14 +28,15 @@ Get-MgBetaUserSettingItemInsight -InputObject <IUsersIdentity> [-ExpandProperty 
 Get the user-customizable privacy settings for itemInsights and meeting hours insights.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserSettingItemInsight Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 # A UPN can also be used as -UserId.
 Get-MgBetaUserSettingItemInsight -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserSettingItemInsight Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -46,7 +44,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -62,7 +60,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -77,7 +75,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -92,7 +90,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -109,9 +107,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserInsightsSettings
+
 ## NOTES
 
 ALIASES
@@ -146,5 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingItemInsight?view=graph-powershell-v1.0)
 

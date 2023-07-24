@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/invoke-mgbetabuffersiteinformationprotectionencrypt
 schema: 2.0.0
@@ -10,40 +10,53 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action encryptBuffer
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBufferSiteInformationProtectionEncrypt](/powershell/module/Microsoft.Graph.Sites/Invoke-MgBufferSiteInformationProtectionEncrypt?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BufferExpanded (Default)
 ```
 Invoke-MgBetaBufferSiteInformationProtectionEncrypt -SiteId <String> [-AdditionalProperties <Hashtable>]
- [-BufferInputFile <String>] [-LabelId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-BufferInputFile <String>] [-LabelId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Buffer
 ```
 Invoke-MgBetaBufferSiteInformationProtectionEncrypt -SiteId <String>
  -Body <IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BufferViaIdentityExpanded
-```
-Invoke-MgBetaBufferSiteInformationProtectionEncrypt -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>] [-LabelId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BufferViaIdentity
 ```
 Invoke-MgBetaBufferSiteInformationProtectionEncrypt -InputObject <ISitesIdentity>
  -BodyParameter <IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BufferViaIdentityExpanded
+```
+Invoke-MgBetaBufferSiteInformationProtectionEncrypt -InputObject <ISitesIdentity>
+ [-AdditionalProperties <Hashtable>] [-BufferInputFile <String>] [-LabelId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action encryptBuffer
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +64,7 @@ Invoke action encryptBuffer
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Buffer
 Aliases:
 
@@ -83,7 +96,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: BufferViaIdentity
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 Input File for Buffer (.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -114,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: BufferViaIdentityExpanded, BufferViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: BufferViaIdentity, BufferViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: BufferExpanded, BufferViaIdentityExpanded
 Aliases:
 
@@ -144,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: BufferExpanded, Buffer
+Type: System.String
+Parameter Sets: Buffer, BufferExpanded
 Aliases:
 
 Required: True
@@ -159,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -175,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsZgwg6SSitesSiteIdInformationprotectionMicrosoftGraphEncryptbufferPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphBufferEncryptionResult
+
 ## NOTES
 
 ALIASES
@@ -268,5 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Invoke-MgBufferSiteInformationProtectionEncrypt](/powershell/module/Microsoft.Graph.Sites/Invoke-MgBufferSiteInformationProtectionEncrypt?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/get-mgbetaexternalconnectionquota
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a connectionQuota object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionQuota](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionQuota?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -31,20 +28,22 @@ Get-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-ExpandPropert
 Retrieve the properties and relationships of a connectionQuota object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaExternalConnectionQuota Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId
 ```
-This example shows how to use the Get-MgBetaExternalConnectionQuota Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaExternalConnectionQuota Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Search
 Get-MgBetaExternalConnectionQuota -ExternalConnectionId $externalConnectionId -OutFile $outFileId
 ```
-This example shows how to use the Get-MgBetaExternalConnectionQuota Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -52,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -67,7 +66,7 @@ Accept wildcard characters: False
 The unique identifier of externalConnection
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -83,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISearchIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -98,7 +97,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -115,9 +114,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISearchIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphExternalConnectorsConnectionQuota
+
 ## NOTES
 
 ALIASES
@@ -148,5 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalConnectionQuota](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionQuota?view=graph-powershell-v1.0)
 
