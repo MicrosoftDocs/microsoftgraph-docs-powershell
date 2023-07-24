@@ -30,4 +30,4 @@ steps:
         $Title = "${{ parameters.Title }}"
         $Body = "${{ parameters.Body }}"
         git push "https://$(GITHUB_TOKEN)@github.com/microsoftgraph/msgraph-sdk-powershell.git"
-        gh pr create -t $Title -b $Body -B $main -H $Head
+        gh pr create -t $Title -b $Body -B main -H $Head
