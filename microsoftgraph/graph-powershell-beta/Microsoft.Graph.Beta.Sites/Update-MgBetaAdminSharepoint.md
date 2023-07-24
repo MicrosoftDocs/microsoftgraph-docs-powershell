@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/update-mgbetaadminsharepoint
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sharepoint in admin
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepoint?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaAdminSharepoint [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-Settings <IMicrosoftGraphSharepointSettings>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Settings <IMicrosoftGraphSharepointSettings>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-WhatIf] [-Confirm]
+Update-MgBetaAdminSharepoint -BodyParameter <IMicrosoftGraphSharepoint> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property sharepoint in admin
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Update the navigation property sharepoint in admin
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +65,7 @@ sharepoint
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharepoint
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharepoint
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +81,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -84,7 +97,7 @@ sharepointSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharepointSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharepointSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +128,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,9 +145,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharepoint
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharepoint
+
 ## NOTES
 
 ALIASES
@@ -222,5 +237,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantDefaultTimezone <String>]`: The default timezone of a tenant for newly created sites. For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
-[Update-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepoint?view=graph-powershell-v1.0)
 

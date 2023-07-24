@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementwindowsinformationprotectionapplearningsummary
 schema: 2.0.0
@@ -10,27 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary [-AdditionalProperties <Hashtable>]
  [-ApplicationName <String>] [-ApplicationType <ApplicationType>] [-DeviceCount <Int32>] [-Id <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary
- -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to windowsInformationProtectionAppLearningSummaries for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Create new navigation property to windowsInformationProtectionAppLearningSummari
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 Application Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 Possible types of Application
 
 ```yaml
-Type: ApplicationType
+Type: Microsoft.Graph.Beta.PowerShell.Support.ApplicationType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -84,7 +97,7 @@ Windows Information Protection AppLearning Summary entity.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
 Parameter Sets: Create
 Aliases:
 
@@ -99,7 +112,7 @@ Accept wildcard characters: False
 Device Count
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -115,7 +128,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -146,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -163,9 +176,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary
+
 ## NOTES
 
 ALIASES
@@ -183,5 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceCount <Int32?>]`: Device Count
 
 ## RELATED LINKS
-[New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-v1.0)
 

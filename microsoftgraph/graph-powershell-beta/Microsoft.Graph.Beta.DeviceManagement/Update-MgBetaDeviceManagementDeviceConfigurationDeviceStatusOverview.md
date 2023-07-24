@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementdeviceconfigurationdevicestatusoverview
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceStatusOverview in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,13 +18,19 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -DeviceConf
  [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>] [-ConflictCount <Int32>]
  [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>] [-LastUpdateDateTime <DateTime>]
  [-NotApplicableCount <Int32>] [-NotApplicablePlatformCount <Int32>] [-PendingCount <Int32>]
- [-SuccessCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SuccessCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -DeviceConfigurationId <String>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceOverview> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceOverview> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceOverview> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,17 +39,27 @@ Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObjec
  [-AdditionalProperties <Hashtable>] [-ConfigurationVersion <Int32>] [-ConflictCount <Int32>]
  [-ErrorCount <Int32>] [-FailedCount <Int32>] [-Id <String>] [-LastUpdateDateTime <DateTime>]
  [-NotApplicableCount <Int32>] [-NotApplicablePlatformCount <Int32>] [-PendingCount <Int32>]
- [-SuccessCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceConfigurationDeviceOverview> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SuccessCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property deviceStatusOverview in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Update the navigation property deviceStatusOverview in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ deviceConfigurationDeviceOverview
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceConfigurationDeviceOverview
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceOverview
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 Version of the policy for that overview
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Number of devices in conflict
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of deviceConfiguration
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 Number of error devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Number of failed devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,7 +174,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,8 +190,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -192,7 +205,7 @@ Accept wildcard characters: False
 Last update time
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 Number of not applicable devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -222,7 +235,7 @@ Accept wildcard characters: False
 Number of not applicable devices due to mismatch platform and policy
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +250,7 @@ Accept wildcard characters: False
 Number of pending devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,7 +265,7 @@ Accept wildcard characters: False
 Number of succeeded devices
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -267,7 +280,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -283,7 +296,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -300,10 +313,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceOverview
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceOverview
+
 ## NOTES
 
 ALIASES
@@ -466,8 +482,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-v1.0)
 

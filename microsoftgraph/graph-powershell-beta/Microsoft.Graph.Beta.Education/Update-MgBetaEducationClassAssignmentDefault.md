@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/update-mgbetaeducationclassassignmentdefault
 schema: 2.0.0
@@ -11,35 +11,32 @@ schema: 2.0.0
 Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaEducationClassAssignmentDefault -EducationClassId <String> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>]
- [-NotificationChannelUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaEducationClassAssignmentDefault -EducationClassId <String> [-AddedStudentAction <String>]
+ [-AdditionalProperties <Hashtable>] [-AddToCalendarAction <String>] [-DueTime <String>] [-Id <String>]
+ [-NotificationChannelUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId <String>
- -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-AddToCalendarAction <String>]
- [-AddedStudentAction <String>] [-AdditionalProperties <Hashtable>] [-DueTime <String>] [-Id <String>]
- [-NotificationChannelUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphEducationAssignmentDefaults> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaEducationClassAssignmentDefault -InputObject <IEducationIdentity> [-AddedStudentAction <String>]
+ [-AdditionalProperties <Hashtable>] [-AddToCalendarAction <String>] [-DueTime <String>] [-Id <String>]
+ [-NotificationChannelUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,22 +44,19 @@ Update the properties of an educationAssignmentDefaults object.
 Only teachers can update these settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
+```
 
 $params = @{
 	addedStudentAction = "assignIfOpen"
-	notificationChannelUrl = "https://graph.microsoft.com/beta/teams('acdefc6b-2dc6-4e71-b1e9-6d9810ab1793')/channels('3da03fc4-8eac-4459-84fb-1422dc01f65e')"
+	addToCalendarAction = "studentsAndTeamOwners"
+	notificationChannelUrl = "https://graph.microsoft.com/beta/teams('id')/channels('id')"
 }
 
 Update-MgBetaEducationClassAssignmentDefault -EducationClassId $educationClassId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaEducationClassAssignmentDefault Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -70,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 educationAddedStudentAction
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -85,7 +79,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +94,7 @@ Accept wildcard characters: False
 educationAddToCalendarOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +110,7 @@ educationAssignmentDefaults
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationAssignmentDefaults
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentDefaults
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -132,7 +126,7 @@ Class-level default value for due time field.
 Default value is 23:59:00.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of educationClass
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -163,7 +157,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -179,8 +173,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -195,7 +189,7 @@ Default Teams channel to which notifications will be sent.
 Default value is null.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -226,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -243,10 +237,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentDefaults
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationAssignmentDefaults
+
 ## NOTES
 
 ALIASES
@@ -280,6 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Update-MgEducationClassAssignmentDefault](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentDefault?view=graph-powershell-v1.0)
-
 

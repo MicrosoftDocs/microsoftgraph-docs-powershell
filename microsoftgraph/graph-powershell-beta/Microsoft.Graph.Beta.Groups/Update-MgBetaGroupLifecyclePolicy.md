@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/update-mgbetagrouplifecyclepolicy
 schema: 2.0.0
@@ -10,71 +10,69 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId <String> [-AdditionalProperties <Hashtable>]
  [-AlternateNotificationEmails <String>] [-GroupLifetimeInDays <Int32>] [-Id <String>]
- [-ManagedGroupTypes <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId <String> -GroupId <String>
- [-AdditionalProperties <Hashtable>] [-AlternateNotificationEmails <String>] [-GroupLifetimeInDays <Int32>]
- [-Id <String>] [-ManagedGroupTypes <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId <String> -GroupId <String>
- -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ManagedGroupTypes <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId <String>
- -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update1
 ```
-Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-AlternateNotificationEmails <String>] [-GroupLifetimeInDays <Int32>] [-Id <String>]
- [-ManagedGroupTypes <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupLifecyclePolicy -GroupId <String> -GroupLifecyclePolicyId <String>
+ -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateExpanded1
+```
+Update-MgBetaGroupLifecyclePolicy -GroupId <String> -GroupLifecyclePolicyId <String>
+ [-AdditionalProperties <Hashtable>] [-AlternateNotificationEmails <String>] [-GroupLifetimeInDays <Int32>]
+ [-Id <String>] [-ManagedGroupTypes <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
+ -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
+ -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-AlternateNotificationEmails <String>] [-GroupLifetimeInDays <Int32>] [-Id <String>]
- [-ManagedGroupTypes <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ManagedGroupTypes <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded1
 ```
-Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
- -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity>
- -BodyParameter <IMicrosoftGraphGroupLifecyclePolicy> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaGroupLifecyclePolicy -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AlternateNotificationEmails <String>] [-GroupLifetimeInDays <Int32>] [-Id <String>]
+ [-ManagedGroupTypes <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a groupLifecyclePolicygroupLifecyclePolicy resource type object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	groupLifetimeInDays = 180
@@ -83,11 +81,6 @@ $params = @{
 }
 
 Update-MgBetaGroupLifecyclePolicy -GroupLifecyclePolicyId $groupLifecyclePolicyId -BodyParameter $params
-```
-This example shows how to use the Update-MgBetaGroupLifecyclePolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -95,8 +88,8 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -111,8 +104,8 @@ List of email address to send notifications for groups without owners.
 Multiple email address can be defined by separating email address with a semicolon.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -127,8 +120,8 @@ groupLifecyclePolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupLifecyclePolicy
-Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -142,8 +135,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -157,8 +150,8 @@ Accept wildcard characters: False
 The unique identifier of groupLifecyclePolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -173,8 +166,8 @@ Number of days before a group expires and needs to be renewed.
 Once renewed, the group expiration is extended by the number of days defined.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -189,8 +182,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -205,8 +198,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -221,8 +214,8 @@ The group type for which the expiration policy applies.
 Possible values are All, Selected or None.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -236,7 +229,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +245,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,10 +262,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupLifecyclePolicy
+
 ## NOTES
 
 ALIASES
@@ -336,6 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Update-MgGroupLifecyclePolicy](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupLifecyclePolicy?view=graph-powershell-v1.0)
-
 

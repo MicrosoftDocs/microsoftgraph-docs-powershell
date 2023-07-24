@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/update-mgsecuritythreatintelligencehost
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property hosts in security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,13 +20,19 @@ Update-MgSecurityThreatIntelligenceHost -HostId <String> [-AdditionalProperties 
  [-PassiveDns <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-Reputation <IMicrosoftGraphSecurityHostReputation>] [-Trackers <IMicrosoftGraphSecurityHostTracker[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgSecurityThreatIntelligenceHost -HostId <String> -BodyParameter <IMicrosoftGraphSecurityHost> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgSecurityThreatIntelligenceHost -HostId <String> -BodyParameter <IMicrosoftGraphSecurityHost>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityHost> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,17 +43,27 @@ Update-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity> [-Addit
  [-PassiveDns <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-Reputation <IMicrosoftGraphSecurityHostReputation>] [-Trackers <IMicrosoftGraphSecurityHostTracker[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgSecurityThreatIntelligenceHost -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphSecurityHost> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property hosts in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -58,7 +71,7 @@ Update the navigation property hosts in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +87,7 @@ host
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +103,7 @@ The hostComponents that are associated with this host.
 To construct, see NOTES section for COMPONENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostComponent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostComponent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ The hostCookies that are associated with this host.
 To construct, see NOTES section for COOKIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostCookie[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostCookie[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +136,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -138,8 +151,8 @@ Accept wildcard characters: False
 The unique identifier of host
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -154,7 +167,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -170,8 +183,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -187,7 +200,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +216,7 @@ Passive DNS retrieval about this host.
 To construct, see NOTES section for PASSIVEDNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +232,7 @@ Reverse passive DNS retrieval about this host.
 To construct, see NOTES section for PASSIVEDNSREVERSE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +248,7 @@ hostReputation
 To construct, see NOTES section for REPUTATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostReputation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -251,7 +264,7 @@ The hostTrackers that are associated with this host.
 To construct, see NOTES section for TRACKERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostTracker[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostTracker[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +279,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -282,7 +295,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -299,10 +312,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
+
 ### Microsoft.Graph.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
+
 ## NOTES
 
 ALIASES
@@ -653,8 +669,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 

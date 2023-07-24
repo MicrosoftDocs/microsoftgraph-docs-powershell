@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupsiteinformationprotectionpolicylabelapplication
 schema: 2.0.0
@@ -12,37 +12,34 @@ Compute the information protection label that should be applied and return the s
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteInformationProtectionPolicyLabelApplication](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionPolicyLabelApplication?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
 ```
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelApplication -GroupId <String> -SiteId <String>
  [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-LabelingOptions <IMicrosoftGraphLabelingOptions>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LabelingOptions <IMicrosoftGraphLabelingOptions>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelApplication -GroupId <String> -SiteId <String>
  -BodyParameter <IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### EvaluateViaIdentityExpanded
-```
-Test-MgBetaGroupSiteInformationProtectionPolicyLabelApplication -InputObject <IGroupsIdentity>
- [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
- [-LabelingOptions <IMicrosoftGraphLabelingOptions>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
 Test-MgBetaGroupSiteInformationProtectionPolicyLabelApplication -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### EvaluateViaIdentityExpanded
+```
+Test-MgBetaGroupSiteInformationProtectionPolicyLabelApplication -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ContentInfo <IMicrosoftGraphContentInfo>]
+ [-LabelingOptions <IMicrosoftGraphLabelingOptions>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,13 +47,29 @@ Compute the information protection label that should be applied and return the s
 This API is useful when a label should be set manually or explicitly by a user or service, rather than automatically based on file contents.
 Given contentInfo, which includes existing content metadata key/value pairs, and labelingOptions as an input, the API returns an informationProtectionAction object that contains one of more of the following:
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -88,7 +101,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -103,8 +116,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -119,8 +132,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -135,7 +148,7 @@ labelingOptions
 To construct, see NOTES section for LABELINGOPTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLabelingOptions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLabelingOptions
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -150,8 +163,8 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: EvaluateExpanded, Evaluate
+Type: System.String
+Parameter Sets: Evaluate, EvaluateExpanded
 Aliases:
 
 Required: True
@@ -165,7 +178,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -181,7 +194,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -198,10 +211,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths17Shy4YGroupsGroupIdSitesSiteIdInformationprotectionPolicyLabelsMicrosoftGraphEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionAction
+
 ## NOTES
 
 ALIASES
@@ -299,5 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
-[Test-MgGroupSiteInformationProtectionPolicyLabelApplication](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionPolicyLabelApplication?view=graph-powershell-v1.0)
 

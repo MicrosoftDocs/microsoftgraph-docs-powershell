@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetagraphchat
 schema: 2.0.0
@@ -10,42 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Unhide a chat for a user.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphChat](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphChat?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### GraphExpanded (Default)
 ```
 Invoke-MgBetaGraphChat -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Graph
 ```
 Invoke-MgBetaGraphChat -ChatId <String>
  -Body <IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GraphViaIdentityExpanded
-```
-Invoke-MgBetaGraphChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GraphViaIdentity
 ```
 Invoke-MgBetaGraphChat -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GraphViaIdentityExpanded
+```
+Invoke-MgBetaGraphChat -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Unhide a chat for a user.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaGraphChat Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -56,8 +54,8 @@ $params = @{
 }
 Invoke-MgBetaGraphChat -ChatId $chatId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaGraphChat Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -65,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
 Aliases:
 
@@ -81,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Graph
 Aliases:
 
@@ -97,7 +95,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: GraphViaIdentity
 Aliases:
 
@@ -112,8 +110,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: GraphExpanded, Graph
+Type: System.String
+Parameter Sets: Graph, GraphExpanded
 Aliases:
 
 Required: True
@@ -128,8 +126,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GraphViaIdentityExpanded, GraphViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GraphViaIdentity, GraphViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +141,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -158,7 +156,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
 Aliases:
 
@@ -174,7 +172,7 @@ teamworkUserIdentity
 To construct, see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkUserIdentity
 Parameter Sets: GraphExpanded, GraphViaIdentityExpanded
 Aliases:
 
@@ -189,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -205,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,10 +220,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Rz6UwqChatsChatIdMicrosoftGraphUnhideforuserPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -300,5 +301,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Invoke-MgGraphChat](/powershell/module/Microsoft.Graph.Teams/Invoke-MgGraphChat?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/remove-mgbetafinancialcompanyjournalline
 schema: 2.0.0
@@ -10,37 +10,50 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property journalLines for financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanyJournalLine](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyJournalLine?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
 Remove-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> [-IfMatch <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Delete1
 ```
-Remove-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> -JournalId <String>
- [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### DeleteViaIdentity1
-```
-Remove-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Remove-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String> -JournalLineId <String>
+ [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### DeleteViaIdentity1
+```
+Remove-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-IfMatch <String>] [-PassThru]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property journalLines for financials
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -48,7 +61,7 @@ Delete navigation property journalLines for financials
 The unique identifier of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete, Delete1
 Aliases:
 
@@ -63,7 +76,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -79,8 +92,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: DeleteViaIdentity1, DeleteViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: DeleteViaIdentity, DeleteViaIdentity1
 Aliases:
 
 Required: True
@@ -94,7 +107,7 @@ Accept wildcard characters: False
 The unique identifier of journal
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete1
 Aliases:
 
@@ -109,7 +122,7 @@ Accept wildcard characters: False
 The unique identifier of journalLine
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete, Delete1
 Aliases:
 
@@ -124,7 +137,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -139,7 +152,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -155,7 +168,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -172,9 +185,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -223,5 +238,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Remove-MgFinancialCompanyJournalLine](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyJournalLine?view=graph-powershell-v1.0)
 

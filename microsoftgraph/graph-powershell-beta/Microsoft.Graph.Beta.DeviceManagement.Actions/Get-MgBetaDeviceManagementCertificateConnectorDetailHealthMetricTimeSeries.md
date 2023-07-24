@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/get-mgbetadevicemanagementcertificateconnectordetailhealthmetrictimeseries
 schema: 2.0.0
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getHealthMetricTimeSeries
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
 ```
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
  -CertificateConnectorDetailsId <String> [-AdditionalProperties <Hashtable>]
- [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
@@ -27,14 +24,7 @@ Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
  -CertificateConnectorDetailsId <String>
  -BodyParameter <IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
- -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -42,11 +32,34 @@ Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
 Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
  -InputObject <IDeviceManagementActionsIdentity>
  -BodyParameter <IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries
+ -InputObject <IDeviceManagementActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TimeSeries <IMicrosoftGraphTimeSeriesParameter>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action getHealthMetricTimeSeries
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Invoke action getHealthMetricTimeSeries
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -85,8 +98,8 @@ Accept wildcard characters: False
 The unique identifier of certificateConnectorDetails
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -101,8 +114,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementActionsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -117,7 +130,7 @@ Parameter passed to GetHealthMetricTimeSeries when requesting snapshot time seri
 To construct, see NOTES section for TIMESERIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeSeriesParameter
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeSeriesParameter
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -132,7 +145,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +161,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,10 +178,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementActionsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Fv96BpDevicemanagementCertificateconnectordetailsIdMicrosoftGraphGethealthmetrictimeseriesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCertificateConnectorHealthMetricValue
+
 ## NOTES
 
 ALIASES
@@ -246,5 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: Start time of the series being requested.
 
 ## RELATED LINKS
-[Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementCertificateConnectorDetailHealthMetricTimeSeries?view=graph-powershell-v1.0)
 

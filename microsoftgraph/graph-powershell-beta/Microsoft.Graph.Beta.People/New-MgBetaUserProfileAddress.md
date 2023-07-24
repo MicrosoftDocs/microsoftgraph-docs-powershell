@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.People-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.People
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.people/new-mgbetauserprofileaddress
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new itemAddress object in a user's profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAddress?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,13 +19,19 @@ New-MgBetaUserProfileAddress -UserId <String> [-AdditionalProperties <Hashtable>
  [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphGeoCoordinates>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserProfileAddress -UserId <String> -BodyParameter <IMicrosoftGraphItemAddress> [-WhatIf] [-Confirm]
+New-MgBetaUserProfileAddress -UserId <String> -BodyParameter <IMicrosoftGraphItemAddress> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemAddress>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -38,20 +41,15 @@ New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> [-AdditionalProperti
  [-Detail <IMicrosoftGraphPhysicalAddress>] [-DisplayName <String>]
  [-GeoCoordinates <IMicrosoftGraphGeoCoordinates>] [-Id <String>] [-Inference <IMicrosoftGraphInferenceData>]
  [-IsSearchable] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-Source <IMicrosoftGraphPersonDataSources>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserProfileAddress -InputObject <IPeopleIdentity> -BodyParameter <IMicrosoftGraphItemAddress>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Source <IMicrosoftGraphPersonDataSources>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new itemAddress object in a user's profile.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaUserProfileAddress Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 $params = @{
@@ -69,8 +67,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 New-MgBetaUserProfileAddress -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaUserProfileAddress Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -78,7 +76,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +91,7 @@ Accept wildcard characters: False
 allowedAudiences
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -109,7 +107,7 @@ itemAddress
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemAddress
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAddress
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -125,7 +123,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -140,7 +138,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -156,7 +154,7 @@ physicalAddress
 To construct, see NOTES section for DETAIL properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPhysicalAddress
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhysicalAddress
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +169,7 @@ Accept wildcard characters: False
 Friendly name the user has assigned to this address.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -187,7 +185,7 @@ geoCoordinates
 To construct, see NOTES section for GEOCOORDINATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGeoCoordinates
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGeoCoordinates
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -203,7 +201,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +217,7 @@ inferenceData
 To construct, see NOTES section for INFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInferenceData
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInferenceData
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -235,8 +233,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPeopleIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -250,7 +248,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -266,7 +264,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +279,7 @@ Accept wildcard characters: False
 Provides the dateTimeOffset for when the entity was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -297,7 +295,7 @@ personDataSources
 To construct, see NOTES section for SOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPersonDataSources
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPersonDataSources
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -312,8 +310,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -327,7 +325,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -343,7 +341,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -360,10 +358,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAddress
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPeopleIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemAddress
+
 ## NOTES
 
 ALIASES
@@ -480,5 +481,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/New-MgUserProfileAddress?view=graph-powershell-v1.0)
 

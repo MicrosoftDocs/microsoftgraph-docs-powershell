@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.cloudcommunications/update-mgcommunicationcalloperation
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in communications
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaCommunicationCallOperation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallOperation?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgCommunicationCallOperation -CallId <String> -CommsOperationId <String>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Id <String>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgCommunicationCallOperation -CallId <String> -CommsOperationId <String>
- -BodyParameter <IMicrosoftGraphCommsOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCommsOperation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphCommsOperation> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Id <String>]
- [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgCommunicationCallOperation -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphCommsOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResultInfo <IMicrosoftGraphResultInfo>] [-Status <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in communications
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ Update the navigation property operations in communications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -66,7 +79,7 @@ commsOperation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCommsOperation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,8 +94,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -97,7 +110,7 @@ Unique Client Context string.
 Max limit is 256 chars.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,8 +125,8 @@ Accept wildcard characters: False
 The unique identifier of commsOperation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -128,7 +141,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,8 +157,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -160,7 +173,7 @@ resultInfo
 To construct, see NOTES section for RESULTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResultInfo
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResultInfo
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +188,7 @@ Accept wildcard characters: False
 operationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +203,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +219,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -223,10 +236,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCommsOperation
+
 ## NOTES
 
 ALIASES
@@ -268,5 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
-[Update-MgBetaCommunicationCallOperation](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Update-MgBetaCommunicationCallOperation?view=graph-powershell-beta)
 

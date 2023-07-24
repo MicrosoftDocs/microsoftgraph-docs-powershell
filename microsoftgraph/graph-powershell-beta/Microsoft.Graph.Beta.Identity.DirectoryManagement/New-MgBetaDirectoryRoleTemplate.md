@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/new-mgbetadirectoryroletemplate
 schema: 2.0.0
@@ -10,20 +10,17 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to directoryRoleTemplates
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleTemplate?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDirectoryRoleTemplate [-AdditionalProperties <Hashtable>] [-DeletedDateTime <DateTime>]
- [-Description <String>] [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Description <String>] [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate> [-WhatIf] [-Confirm]
+New-MgBetaDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemplate> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -31,17 +28,13 @@ New-MgBetaDirectoryRoleTemplate -BodyParameter <IMicrosoftGraphDirectoryRoleTemp
 Add new entity to directoryRoleTemplates
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaDirectoryRoleTemplate
-```
-This example shows how to use the New-MgBetaBetaDirectoryRoleTemplate Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -49,7 +42,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -65,7 +58,7 @@ directoryRoleTemplate
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDirectoryRoleTemplate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
 Parameter Sets: Create
 Aliases:
 
@@ -81,7 +74,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -97,7 +90,7 @@ The description to set for the directory role.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -113,7 +106,7 @@ The display name to set for the directory role.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -129,7 +122,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -144,7 +137,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -160,7 +153,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -177,9 +170,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryRoleTemplate
+
 ## NOTES
 
 ALIASES
@@ -197,6 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name to set for the directory role. Read-only.
 
 ## RELATED LINKS
-[New-MgDirectoryRoleTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryRoleTemplate?view=graph-powershell-v1.0)
-
 

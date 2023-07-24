@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/new-mgbetasecuritylabelretentionlabel
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 Create a new retentionLabel object.
 To create a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -24,15 +21,16 @@ New-MgBetaSecurityLabelRetentionLabel [-ActionAfterRetentionPeriod <String>]
  [-DescriptionForAdmins <String>] [-DescriptionForUsers <String>]
  [-Descriptors <IMicrosoftGraphSecurityFilePlanDescriptor>] [-DisplayName <String>]
  [-DispositionReviewStages <IMicrosoftGraphSecurityDispositionReviewStage[]>] [-Id <String>] [-IsInUse]
- [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>]
- [-RetentionDuration <Hashtable>] [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>]
- [-RetentionTrigger <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LabelToBeApplied <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
+ [-LastModifiedDateTime <DateTime>] [-RetentionDuration <Hashtable>]
+ [-RetentionEventType <IMicrosoftGraphSecurityRetentionEventType>] [-RetentionTrigger <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaSecurityLabelRetentionLabel -BodyParameter <IMicrosoftGraphSecurityRetentionLabel> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -40,7 +38,8 @@ Create a new retentionLabel object.
 To create a disposition review stage, include the **actionAfterRetentionPeriod** property in the request body with one of the possible values specified.
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaSecurityLabelRetentionLabel Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -63,8 +62,8 @@ $params = @{
 }
 New-MgBetaSecurityLabelRetentionLabel -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaSecurityLabelRetentionLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -72,7 +71,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 actionAfterRetentionPeriod
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -87,7 +86,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -102,7 +101,7 @@ Accept wildcard characters: False
 behaviorDuringRetentionPeriod
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -118,7 +117,7 @@ retentionLabel
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionLabel
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel
 Parameter Sets: Create
 Aliases:
 
@@ -134,7 +133,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -149,7 +148,7 @@ Accept wildcard characters: False
 Represents the date and time in which the retentionLabel is created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -164,7 +163,7 @@ Accept wildcard characters: False
 defaultRecordBehavior
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -180,7 +179,7 @@ Provides label information for the admin.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +195,7 @@ Provides the label information for the user.
 Optional.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -212,7 +211,7 @@ filePlanDescriptor
 To construct, see NOTES section for DESCRIPTORS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityFilePlanDescriptor
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFilePlanDescriptor
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -227,7 +226,7 @@ Accept wildcard characters: False
 Unique string that defines a label name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -243,7 +242,7 @@ When action at the end of retention is chosen as 'dispositionReview', dispositio
 To construct, see NOTES section for DISPOSITIONREVIEWSTAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityDispositionReviewStage[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDispositionReviewStage[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +258,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +273,7 @@ Accept wildcard characters: False
 Specifies whether the label is currently being used.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +288,7 @@ Accept wildcard characters: False
 Specifies the replacement label to be applied automatically after the retention period of the current label ends.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -305,7 +304,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -320,7 +319,7 @@ Accept wildcard characters: False
 The latest date time when the retentionLabel was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -335,7 +334,7 @@ Accept wildcard characters: False
 retentionDuration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -351,7 +350,7 @@ retentionEventType
 To construct, see NOTES section for RETENTIONEVENTTYPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEventType
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -366,7 +365,7 @@ Accept wildcard characters: False
 retentionTrigger
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -381,7 +380,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -397,7 +396,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -414,9 +413,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel
+
 ## NOTES
 
 ALIASES
@@ -435,8 +436,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the retentionLabel is created.
@@ -530,8 +531,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -547,8 +548,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Application <IMicrosoftGraphIdentity>]`: identity
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-        - `[Id <String>]`: The identifier of the identity. This property is read-only.
+        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+        - `[Id <String>]`: Unique identifier for the identity.
       - `[Device <IMicrosoftGraphIdentity>]`: identity
       - `[User <IMicrosoftGraphIdentity>]`: identity
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
@@ -613,8 +614,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-    - `[Id <String>]`: The identifier of the identity. This property is read-only.
+    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+    - `[Id <String>]`: Unique identifier for the identity.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -625,8 +626,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
-      - `[Id <String>]`: The identifier of the identity. This property is read-only.
+      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
+      - `[Id <String>]`: Unique identifier for the identity.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The date time when the retentionEventType was created.
@@ -636,8 +637,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
 

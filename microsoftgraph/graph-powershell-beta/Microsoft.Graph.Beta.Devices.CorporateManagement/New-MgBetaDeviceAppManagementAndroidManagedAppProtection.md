@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/new-mgbetadeviceappmanagementandroidmanagedappprotection
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to androidManagedAppProtections for deviceAppManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -43,10 +40,10 @@ New-MgBetaDeviceAppManagementAndroidManagedAppProtection [-AdditionalProperties 
  [-Assignments <IMicrosoftGraphTargetedManagedAppPolicyAssignment[]>] [-BiometricAuthenticationBlocked]
  [-BlockAfterCompanyPortalUpdateDeferralInDays <Int32>] [-BlockDataIngestionIntoOrganizationDocuments]
  [-ConnectToVpnOnLaunch] [-ContactSyncBlocked] [-CreatedDateTime <DateTime>]
- [-CustomBrowserDisplayName <String>] [-CustomBrowserPackageId <String>] [-CustomDialerAppDisplayName <String>]
- [-CustomDialerAppPackageId <String>] [-DataBackupBlocked] [-DeployedAppCount <Int32>]
- [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>] [-Description <String>]
- [-DeviceComplianceRequired] [-DeviceLockRequired]
+ [-CustomBrowserDisplayName <String>] [-CustomBrowserPackageId <String>]
+ [-CustomDialerAppDisplayName <String>] [-CustomDialerAppPackageId <String>] [-DataBackupBlocked]
+ [-DeployedAppCount <Int32>] [-DeploymentSummary <IMicrosoftGraphManagedAppPolicyDeploymentSummary>]
+ [-Description <String>] [-DeviceComplianceRequired] [-DeviceLockRequired]
  [-DialerRestrictionLevel <ManagedAppPhoneNumberRedirectLevel>]
  [-DisableAppEncryptionIfDeviceEncryptionIsEnabled] [-DisableAppPinIfDevicePinIsSet] [-DisplayName <String>]
  [-EncryptAppData] [-ExemptedAppPackages <IMicrosoftGraphKeyValuePair[]>] [-FingerprintAndBiometricEnabled]
@@ -60,31 +57,48 @@ New-MgBetaDeviceAppManagementAndroidManagedAppProtection [-AdditionalProperties 
  [-MinimumWarningCompanyPortalVersion <String>] [-MinimumWarningOSVersion <String>]
  [-MinimumWarningPatchVersion <String>] [-MinimumWipeAppVersion <String>]
  [-MinimumWipeCompanyPortalVersion <String>] [-MinimumWipeOSVersion <String>]
- [-MinimumWipePatchVersion <String>] [-MobileThreatDefensePartnerPriority <MobileThreatDefensePartnerPriority>]
+ [-MinimumWipePatchVersion <String>]
+ [-MobileThreatDefensePartnerPriority <MobileThreatDefensePartnerPriority>]
  [-MobileThreatDefenseRemediationAction <ManagedAppRemediationAction>]
  [-NotificationRestriction <ManagedAppNotificationRestriction>] [-OrganizationalCredentialsRequired]
  [-PeriodBeforePinReset <TimeSpan>] [-PeriodOfflineBeforeAccessCheck <TimeSpan>]
  [-PeriodOfflineBeforeWipeIsEnforced <TimeSpan>] [-PeriodOnlineBeforeAccessCheck <TimeSpan>]
  [-PinCharacterSet <ManagedAppPinCharacterSet>] [-PinRequired]
  [-PinRequiredInsteadOfBiometricTimeout <TimeSpan>] [-PreviousPinBlockCount <Int32>] [-PrintBlocked]
- [-RequireClass3Biometrics] [-RequirePinAfterBiometricChange]
+ [-RequireClass3Biometrics]
  [-RequiredAndroidSafetyNetAppsVerificationType <AndroidManagedAppSafetyNetAppsVerificationType>]
  [-RequiredAndroidSafetyNetDeviceAttestationType <AndroidManagedAppSafetyNetDeviceAttestationType>]
  [-RequiredAndroidSafetyNetEvaluationType <AndroidManagedAppSafetyNetEvaluationType>]
- [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked] [-SimplePinBlocked]
- [-TargetedAppManagementLevels <AppManagementLevel>] [-Version <String>]
+ [-RequirePinAfterBiometricChange] [-RoleScopeTagIds <String[]>] [-SaveAsBlocked] [-ScreenCaptureBlocked]
+ [-SimplePinBlocked] [-TargetedAppManagementLevels <AppManagementLevel>] [-Version <String>]
  [-WarnAfterCompanyPortalUpdateDeferralInDays <Int32>] [-WipeAfterCompanyPortalUpdateDeferralInDays <Int32>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceAppManagementAndroidManagedAppProtection
- -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidManagedAppProtection> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to androidManagedAppProtections for deviceAppManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -92,7 +106,7 @@ Create new navigation property to androidManagedAppProtections for deviceAppMana
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -107,7 +121,7 @@ Accept wildcard characters: False
 Semicolon seperated list of device manufacturers allowed, as a string, for the managed app to work.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -122,7 +136,7 @@ Accept wildcard characters: False
 List of device models allowed, as a string, for the managed app to work.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +151,7 @@ Accept wildcard characters: False
 Data storage locations where a user may store managed data.
 
 ```yaml
-Type: ManagedAppDataIngestionLocation[]
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppDataIngestionLocation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +166,7 @@ Accept wildcard characters: False
 Data storage locations where a user may store managed data.
 
 ```yaml
-Type: ManagedAppDataStorageLocation[]
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppDataStorageLocation[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +181,7 @@ Accept wildcard characters: False
 Data can be transferred from/to these classes of apps
 
 ```yaml
-Type: ManagedAppDataTransferLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppDataTransferLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -184,7 +198,7 @@ This setting overrides the AllowedOutboundClipboardSharingLevel restriction.
 Default value of '0' means no exception is allowed.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +213,7 @@ Accept wildcard characters: False
 Represents the level to which the device's clipboard may be shared between apps
 
 ```yaml
-Type: ManagedAppClipboardSharingLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppClipboardSharingLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,7 +228,7 @@ Accept wildcard characters: False
 Data can be transferred from/to these classes of apps
 
 ```yaml
-Type: ManagedAppDataTransferLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppDataTransferLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +243,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -244,7 +258,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +273,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +288,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +303,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -304,7 +318,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -319,7 +333,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -334,7 +348,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -349,7 +363,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -364,7 +378,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -379,7 +393,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -394,7 +408,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -409,7 +423,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -424,7 +438,7 @@ Accept wildcard characters: False
 Indicates a collection of apps to target which can be one of several pre-defined lists of apps or a manually selected list of apps
 
 ```yaml
-Type: TargetedManagedAppGroupType
+Type: Microsoft.Graph.Beta.PowerShell.Support.TargetedManagedAppGroupType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -441,7 +455,7 @@ A key should be Android package id for a keyboard and value should be a friendly
 To construct, see NOTES section for APPROVEDKEYBOARDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -457,7 +471,7 @@ List of apps to which the policy is deployed.
 To construct, see NOTES section for APPS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedMobileApp[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedMobileApp[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -473,7 +487,7 @@ Navigation property to list of inclusion and exclusion groups to which the polic
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTargetedManagedAppPolicyAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -488,7 +502,7 @@ Accept wildcard characters: False
 Indicates whether use of the biometric authentication is allowed in place of a pin if PinRequired is set to True.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -503,7 +517,7 @@ Accept wildcard characters: False
 Maximum number of days Company Portal update can be deferred on the device or app access will be blocked.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -518,7 +532,7 @@ Accept wildcard characters: False
 Indicates whether a user can bring data into org documents.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -534,7 +548,7 @@ Policy used to configure detailed management settings targeted to specific secur
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidManagedAppProtection
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
 Parameter Sets: Create
 Aliases:
 
@@ -549,7 +563,7 @@ Accept wildcard characters: False
 Whether the app should connect to the configured VPN on launch.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -564,7 +578,7 @@ Accept wildcard characters: False
 Indicates whether contacts can be synced to the user's device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -579,7 +593,7 @@ Accept wildcard characters: False
 The date and time the policy was created.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -594,7 +608,7 @@ Accept wildcard characters: False
 Friendly name of the preferred custom browser to open weblink on Android.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -609,7 +623,7 @@ Accept wildcard characters: False
 Unique identifier of a custom browser to open weblink on Android.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -624,7 +638,7 @@ Accept wildcard characters: False
 Friendly name of a custom dialer app to click-to-open a phone number on Android.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -639,7 +653,7 @@ Accept wildcard characters: False
 PackageId of a custom dialer app to click-to-open a phone number on Android.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -654,7 +668,7 @@ Accept wildcard characters: False
 Indicates whether the backup of a managed app's data is blocked.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -669,7 +683,7 @@ Accept wildcard characters: False
 Count of apps to which the current policy is deployed.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -685,7 +699,7 @@ The ManagedAppEntity is the base entity type for all other entity types under ap
 To construct, see NOTES section for DEPLOYMENTSUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphManagedAppPolicyDeploymentSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedAppPolicyDeploymentSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -700,7 +714,7 @@ Accept wildcard characters: False
 The policy's description.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -715,7 +729,7 @@ Accept wildcard characters: False
 Indicates whether device compliance is required.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -730,7 +744,7 @@ Accept wildcard characters: False
 Defines if any kind of lock must be required on android device
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -745,7 +759,7 @@ Accept wildcard characters: False
 The classes of apps that are allowed to click-to-open a phone number, for making phone calls or sending text messages.
 
 ```yaml
-Type: ManagedAppPhoneNumberRedirectLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppPhoneNumberRedirectLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -760,7 +774,7 @@ Accept wildcard characters: False
 When this setting is enabled, app level encryption is disabled if device level encryption is enabled
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -775,7 +789,7 @@ Accept wildcard characters: False
 Indicates whether use of the app pin is required if the device pin is set.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -790,7 +804,7 @@ Accept wildcard characters: False
 Policy display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -805,7 +819,7 @@ Accept wildcard characters: False
 Indicates whether application data for managed apps should be encrypted
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -821,7 +835,7 @@ App packages in this list will be exempt from the policy and will be able to rec
 To construct, see NOTES section for EXEMPTEDAPPPACKAGES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -838,7 +852,7 @@ If false both fingerprints and biometrics will not be enabled.
 If true, both fingerprints and biometrics will be enabled.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -853,7 +867,7 @@ Accept wildcard characters: False
 Indicates whether use of the fingerprint reader is allowed in place of a pin if PinRequired is set to True.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -868,7 +882,7 @@ Accept wildcard characters: False
 A grace period before blocking app access during off clock hours.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -884,7 +898,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -899,7 +913,7 @@ Accept wildcard characters: False
 Indicates if the policy is deployed to any inclusion groups or not.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -915,7 +929,7 @@ Indicates if keyboard restriction is enabled.
 If enabled list of approved keyboards must be provided as well.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -930,7 +944,7 @@ Accept wildcard characters: False
 Last time the policy was modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -945,7 +959,7 @@ Accept wildcard characters: False
 Type of managed browser
 
 ```yaml
-Type: ManagedBrowserType
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedBrowserType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -960,7 +974,7 @@ Accept wildcard characters: False
 Indicates whether internet links should be opened in the managed browser app, or any custom browser specified by CustomBrowserProtocol (for iOS) or CustomBrowserPackageId/CustomBrowserDisplayName (for Android)
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -975,7 +989,7 @@ Accept wildcard characters: False
 The maxium threat level allowed for an app to be compliant.
 
 ```yaml
-Type: ManagedAppDeviceThreatLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppDeviceThreatLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -990,7 +1004,7 @@ Accept wildcard characters: False
 Maximum number of incorrect pin retry attempts before the managed app is either blocked or wiped.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1005,7 +1019,7 @@ Accept wildcard characters: False
 Versions bigger than the specified version will block the managed app from accessing company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1020,7 +1034,7 @@ Accept wildcard characters: False
 Versions bigger than the specified version will block the managed app from accessing company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1035,7 +1049,7 @@ Accept wildcard characters: False
 Versions bigger than the specified version will block the managed app from accessing company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1050,7 +1064,7 @@ Accept wildcard characters: False
 Minimum pin length required for an app-level pin if PinRequired is set to True
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1065,7 +1079,7 @@ Accept wildcard characters: False
 Versions less than the specified version will block the managed app from accessing company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1080,7 +1094,7 @@ Accept wildcard characters: False
 Minimum version of the Company portal that must be installed on the device or app access will be blocked
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1095,7 +1109,7 @@ Accept wildcard characters: False
 Versions less than the specified version will block the managed app from accessing company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1110,7 +1124,7 @@ Accept wildcard characters: False
 Define the oldest required Android security patch level a user can have to gain secure access to the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1125,7 +1139,7 @@ Accept wildcard characters: False
 Versions less than the specified version will result in warning message on the managed app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1140,7 +1154,7 @@ Accept wildcard characters: False
 Minimum version of the Company portal that must be installed on the device or the user will receive a warning
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1155,7 +1169,7 @@ Accept wildcard characters: False
 Versions less than the specified version will result in warning message on the managed app from accessing company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1170,7 +1184,7 @@ Accept wildcard characters: False
 Define the oldest recommended Android security patch level a user can have for secure access to the app.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1185,7 +1199,7 @@ Accept wildcard characters: False
 Versions less than or equal to the specified version will wipe the managed app and the associated company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1200,7 +1214,7 @@ Accept wildcard characters: False
 Minimum version of the Company portal that must be installed on the device or the company data on the app will be wiped
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1215,7 +1229,7 @@ Accept wildcard characters: False
 Versions less than or equal to the specified version will wipe the managed app and the associated company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1230,7 +1244,7 @@ Accept wildcard characters: False
 Android security patch level less than or equal to the specified value will wipe the managed app and the associated company data.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1245,7 +1259,7 @@ Accept wildcard characters: False
 Determines the conflict resolution strategy, when more than one Mobile Threat Defense provider is enabled.
 
 ```yaml
-Type: MobileThreatDefensePartnerPriority
+Type: Microsoft.Graph.Beta.PowerShell.Support.MobileThreatDefensePartnerPriority
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1260,7 +1274,7 @@ Accept wildcard characters: False
 An admin initiated action to be applied on a managed app.
 
 ```yaml
-Type: ManagedAppRemediationAction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppRemediationAction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1275,7 +1289,7 @@ Accept wildcard characters: False
 Restrict managed app notification
 
 ```yaml
-Type: ManagedAppNotificationRestriction
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppNotificationRestriction
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1290,7 +1304,7 @@ Accept wildcard characters: False
 Indicates whether organizational credentials are required for app use.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1305,7 +1319,7 @@ Accept wildcard characters: False
 TimePeriod before the all-level pin must be reset if PinRequired is set to True.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1320,7 +1334,7 @@ Accept wildcard characters: False
 The period after which access is checked when the device is not connected to the internet.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1335,7 +1349,7 @@ Accept wildcard characters: False
 The amount of time an app is allowed to remain disconnected from the internet before all managed data it is wiped.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1350,7 +1364,7 @@ Accept wildcard characters: False
 The period after which access is checked when the device is connected to the internet.
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1365,7 +1379,7 @@ Accept wildcard characters: False
 Character set which is to be used for a user's app PIN
 
 ```yaml
-Type: ManagedAppPinCharacterSet
+Type: Microsoft.Graph.Beta.PowerShell.Support.ManagedAppPinCharacterSet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1380,7 +1394,7 @@ Accept wildcard characters: False
 Indicates whether an app-level pin is required.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1395,7 +1409,7 @@ Accept wildcard characters: False
 Timeout in minutes for an app pin instead of non biometrics passcode
 
 ```yaml
-Type: TimeSpan
+Type: System.TimeSpan
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1410,7 +1424,7 @@ Accept wildcard characters: False
 Requires a pin to be unique from the number specified in this property.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1425,7 +1439,7 @@ Accept wildcard characters: False
 Indicates whether printing is allowed from managed apps.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1440,7 +1454,7 @@ Accept wildcard characters: False
 Require user to apply Class 3 Biometrics on their Android device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1455,7 +1469,7 @@ Accept wildcard characters: False
 An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
 
 ```yaml
-Type: AndroidManagedAppSafetyNetAppsVerificationType
+Type: Microsoft.Graph.Beta.PowerShell.Support.AndroidManagedAppSafetyNetAppsVerificationType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1470,7 +1484,7 @@ Accept wildcard characters: False
 An admin enforced Android SafetyNet Device Attestation requirement on a managed app.
 
 ```yaml
-Type: AndroidManagedAppSafetyNetDeviceAttestationType
+Type: Microsoft.Graph.Beta.PowerShell.Support.AndroidManagedAppSafetyNetDeviceAttestationType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1485,7 +1499,7 @@ Accept wildcard characters: False
 An admin enforced Android SafetyNet evaluation type requirement on a managed app.
 
 ```yaml
-Type: AndroidManagedAppSafetyNetEvaluationType
+Type: Microsoft.Graph.Beta.PowerShell.Support.AndroidManagedAppSafetyNetEvaluationType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1500,7 +1514,7 @@ Accept wildcard characters: False
 A PIN prompt will override biometric prompts if class 3 biometrics are updated on the device.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1515,7 +1529,7 @@ Accept wildcard characters: False
 List of Scope Tags for this Entity instance.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1530,7 +1544,7 @@ Accept wildcard characters: False
 Indicates whether users may use the 'Save As' menu item to save a copy of protected files.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1545,7 +1559,7 @@ Accept wildcard characters: False
 Indicates whether a managed user can take screen captures of managed apps
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1560,7 +1574,7 @@ Accept wildcard characters: False
 Indicates whether simplePin is blocked.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1575,7 +1589,7 @@ Accept wildcard characters: False
 Management levels for apps
 
 ```yaml
-Type: AppManagementLevel
+Type: Microsoft.Graph.Beta.PowerShell.Support.AppManagementLevel
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1590,7 +1604,7 @@ Accept wildcard characters: False
 Version of the entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1605,7 +1619,7 @@ Accept wildcard characters: False
 Maximum number of days Company Portal update can be deferred on the device or the user will receive the warning
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1620,7 +1634,7 @@ Accept wildcard characters: False
 Maximum number of days Company Portal update can be deferred on the device or the company data on the app will be wiped
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -1635,7 +1649,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1651,7 +1665,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1668,14 +1682,16 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidManagedAppProtection
+
 ## NOTES
 
 ALIASES
 
-New-BetaDeviceAppMgtAndroidManagedAppProtection
+New-MgBetaDeviceAppMgtAndroidManagedAppProtection
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -1843,8 +1859,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgDeviceAppManagementAndroidManagedAppProtection](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementAndroidManagedAppProtection?view=graph-powershell-v1.0)
 

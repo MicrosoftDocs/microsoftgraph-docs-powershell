@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityattacksimulationoperation
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationOperation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,14 +17,20 @@ Update the navigation property operations in security
 Update-MgBetaSecurityAttackSimulationOperation -AttackSimulationOperationId <String>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
- [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityAttackSimulationOperation -AttackSimulationOperationId <String>
- -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity>
+ -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -35,18 +38,28 @@ Update-MgBetaSecurityAttackSimulationOperation -AttackSimulationOperationId <Str
 Update-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
  [-LastActionDateTime <DateTime>] [-PercentageCompleted <Int32>] [-ResourceLocation <String>]
- [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-WhatIf] [-Confirm]
+ [-Status <String>] [-StatusDetail <String>] [-TenantId <String>] [-Type <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphAttackSimulationOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property operations in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Update the navigation property operations in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -69,8 +82,8 @@ Accept wildcard characters: False
 The unique identifier of attackSimulationOperation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -85,7 +98,7 @@ attackSimulationOperation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttackSimulationOperation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -102,7 +115,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +131,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,8 +147,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -151,7 +164,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +179,7 @@ Accept wildcard characters: False
 Percentage of completion of the respective operation.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -181,7 +194,7 @@ Accept wildcard characters: False
 URI of the resource that the operation is performed on.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ Accept wildcard characters: False
 longRunningOperationStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,7 +224,7 @@ Accept wildcard characters: False
 Details about the status of the operation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +239,7 @@ Accept wildcard characters: False
 Tenant identifier.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +254,7 @@ Accept wildcard characters: False
 attackSimulationOperationType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -256,7 +269,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -272,7 +285,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -289,10 +302,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttackSimulationOperation
+
 ## NOTES
 
 ALIASES
@@ -387,5 +403,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Update-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationOperation?view=graph-powershell-v1.0)
 

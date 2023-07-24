@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.planner/new-mgbetaplannerplan
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new **plannerPlan**.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -22,22 +19,23 @@ New-MgBetaPlannerPlan [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftG
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-CreatedDateTime <DateTime>]
  [-CreationSource <IMicrosoftGraphPlannerPlanCreation>] [-Details <IMicrosoftGraphPlannerPlanDetails>]
  [-Id <String>] [-Owner <String>] [-SharedWithContainers <IMicrosoftGraphPlannerSharedWithContainer[]>]
- [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Tasks <IMicrosoftGraphPlannerTask[]>] [-Title <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a new **plannerPlan**.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Planner
+```
 
 $params = @{
 	container = @{
@@ -47,11 +45,6 @@ $params = @{
 }
 
 New-MgBetaPlannerPlan -BodyParameter $params
-```
-This example shows how to use the New-MgBetaPlannerPlan Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -59,7 +52,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,7 +68,7 @@ plannerPlan
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlan
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
 Parameter Sets: Create
 Aliases:
 
@@ -93,7 +86,7 @@ Nullable.
 To construct, see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerBucket[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerBucket[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -109,7 +102,7 @@ plannerPlanContainer
 To construct, see NOTES section for CONTAINER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanContainer
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanContainer
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -124,7 +117,7 @@ Accept wildcard characters: False
 plannerPlanContextCollection
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -140,7 +133,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +151,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -174,7 +167,7 @@ plannerPlanCreation
 To construct, see NOTES section for CREATIONSOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanCreation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanCreation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -190,7 +183,7 @@ plannerPlanDetails
 To construct, see NOTES section for DETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanDetails
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -206,7 +199,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -221,7 +214,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -237,7 +230,7 @@ List of containers the plan is shared with.
 To construct, see NOTES section for SHAREDWITHCONTAINERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerSharedWithContainer[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerSharedWithContainer[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +248,7 @@ Nullable.
 To construct, see NOTES section for TASKS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerTask[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerTask[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -271,7 +264,7 @@ Required.
 Title of the plan.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +279,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -302,7 +295,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -319,9 +312,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlan
+
 ## NOTES
 
 ALIASES
@@ -759,9 +754,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[New-MgPlannerPlan](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerPlan?view=graph-powershell-v1.0)
-
 

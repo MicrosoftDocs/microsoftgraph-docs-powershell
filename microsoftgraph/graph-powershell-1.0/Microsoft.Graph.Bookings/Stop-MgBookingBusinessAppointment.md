@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.bookings/stop-mgbookingbusinessappointment
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Stop-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CancelExpanded (Default)
 ```
 Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
- [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-CancellationMessage <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -26,27 +23,28 @@ Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusines
 ```
 Stop-MgBookingBusinessAppointment -BookingAppointmentId <String> -BookingBusinessId <String>
  -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CancelViaIdentityExpanded
-```
-Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
- [-CancellationMessage <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CancelViaIdentity
 ```
 Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity>
  -BodyParameter <IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CancelViaIdentityExpanded
+```
+Stop-MgBookingBusinessAppointment -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-CancellationMessage <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Cancel the specified bookingAppointment in the specified bookingBusiness and send a message to the involved customer and staff members.
 
 ## EXAMPLES
-### Example 1: Using the Stop-MgBookingBusinessAppointment Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Bookings
 $params = @{
@@ -54,8 +52,8 @@ $params = @{
 }
 Stop-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId -BodyParameter $params
 ```
-This example shows how to use the Stop-MgBookingBusinessAppointment Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -63,7 +61,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CancelExpanded, CancelViaIdentityExpanded
 Aliases:
 
@@ -79,7 +77,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Cancel, CancelViaIdentity
 Aliases:
 
@@ -94,8 +92,8 @@ Accept wildcard characters: False
 The unique identifier of bookingAppointment
 
 ```yaml
-Type: String
-Parameter Sets: CancelExpanded, Cancel
+Type: System.String
+Parameter Sets: Cancel, CancelExpanded
 Aliases:
 
 Required: True
@@ -109,8 +107,8 @@ Accept wildcard characters: False
 The unique identifier of bookingBusiness
 
 ```yaml
-Type: String
-Parameter Sets: CancelExpanded, Cancel
+Type: System.String
+Parameter Sets: Cancel, CancelExpanded
 Aliases:
 
 Required: True
@@ -124,7 +122,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CancelExpanded, CancelViaIdentityExpanded
 Aliases:
 
@@ -140,8 +138,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: CancelViaIdentityExpanded, CancelViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+Parameter Sets: CancelViaIdentity, CancelViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -170,7 +168,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -186,7 +184,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -203,10 +201,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IPaths17354LzSolutionsBookingbusinessesBookingbusinessIdAppointmentsBookingappointmentIdMicrosoftGraphCancelPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -230,5 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[BookingStaffMemberBaseId <String>]`: The unique identifier of bookingStaffMemberBase
 
 ## RELATED LINKS
-[Stop-MgBetaBookingBusinessAppointment](/powershell/module/Microsoft.Graph.Beta.Bookings/Stop-MgBetaBookingBusinessAppointment?view=graph-powershell-beta)
 

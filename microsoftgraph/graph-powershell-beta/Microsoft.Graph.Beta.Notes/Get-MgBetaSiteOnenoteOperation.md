@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Notes-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Notes
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.notes/get-mgbetasiteonenoteoperation
 schema: 2.0.0
@@ -13,9 +13,6 @@ This applies to operations that return the **Operation-Location** header in the 
   You can poll the Operation-Location endpoint until the `status` property returns `completed` or `failed`.
 If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteOperation?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -38,13 +35,29 @@ This applies to operations that return the **Operation-Location** header in the 
 If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -60,7 +73,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: INotesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -75,7 +88,7 @@ Accept wildcard characters: False
 The unique identifier of onenoteOperation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -90,7 +103,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -105,7 +118,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -122,9 +135,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.INotesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+
 ## NOTES
 
 ALIASES
@@ -146,5 +161,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteOperation?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightsharedlastsharedmethod
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Get lastSharedMethod from users
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserInsightSharedLastSharedMethod](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightSharedLastSharedMethod?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -30,13 +27,29 @@ Get-MgBetaUserInsightSharedLastSharedMethod -InputObject <IUsersIdentity> [-Expa
 ## DESCRIPTION
 Get lastSharedMethod from users
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -52,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of sharedInsight
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -114,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -151,5 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserInsightSharedLastSharedMethod](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightSharedLastSharedMethod?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/new-mgbetausermanageddevicelogcollectionrequest
 schema: 2.0.0
@@ -10,41 +10,54 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createDeviceLogCollectionRequest
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionRequest?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaUserManagedDeviceLogCollectionRequest -ManagedDeviceId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserManagedDeviceLogCollectionRequest -ManagedDeviceId <String> -UserId <String>
  -BodyParameter <IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaUserManagedDeviceLogCollectionRequest -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaUserManagedDeviceLogCollectionRequest -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaUserManagedDeviceLogCollectionRequest -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-TemplateType <IMicrosoftGraphDeviceLogCollectionRequest>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createDeviceLogCollectionRequest
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +65,7 @@ Invoke action createDeviceLogCollectionRequest
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -99,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -115,7 +128,7 @@ Windows Log Collection request entity.
 To construct, see NOTES section for TEMPLATETYPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceLogCollectionRequest
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionRequest
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -145,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -161,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -178,10 +191,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsN6Sp2AUsersUserIdManageddevicesManageddeviceIdMicrosoftGraphCreatedevicelogcollectionrequestPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceLogCollectionResponse
+
 ## NOTES
 
 ALIASES
@@ -246,5 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TemplateType <DeviceLogCollectionTemplateType?>]`: Enum for the template type used for collecting logs
 
 ## RELATED LINKS
-[New-MgUserManagedDeviceLogCollectionRequest](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserManagedDeviceLogCollectionRequest?view=graph-powershell-v1.0)
 

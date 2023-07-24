@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanysaleinvoice
 schema: 2.0.0
@@ -10,16 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property salesInvoices in financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleInvoice](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoice?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <String>
- [-AdditionalProperties <Hashtable>] [-BillToCustomerId <String>] [-BillToCustomerNumber <String>]
- [-BillToName <String>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
+ [-AdditionalProperties <Hashtable>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
+ [-BillToCustomerId <String>] [-BillToCustomerNumber <String>] [-BillToName <String>]
  [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
  [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerName <String>]
  [-CustomerNumber <String>] [-CustomerPurchaseOrderReference <String>] [-DiscountAmount <Decimal>]
@@ -28,46 +25,61 @@ Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <St
  [-OrderId <String>] [-OrderNumber <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
  [-PaymentTermsId <String>] [-PhoneNumber <String>] [-PricesIncludeTax]
  [-SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>] [-Salesperson <String>]
- [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>] [-ShipToName <String>]
- [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>]
- [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
- [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
+ [-ShipmentMethodId <String>] [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>]
+ [-ShipToContact <String>] [-ShipToName <String>] [-Status <String>] [-TotalAmountExcludingTax <Decimal>]
+ [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanySaleInvoice -CompanyId <String> -SalesInvoiceId <String>
- -BodyParameter <IMicrosoftGraphSalesInvoice> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaFinancialCompanySaleInvoice -InputObject <IFinancialsIdentity> [-AdditionalProperties <Hashtable>]
- [-BillToCustomerId <String>] [-BillToCustomerNumber <String>] [-BillToName <String>]
- [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Currency <IMicrosoftGraphCurrency>]
- [-CurrencyCode <String>] [-CurrencyId <String>] [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>]
- [-CustomerName <String>] [-CustomerNumber <String>] [-CustomerPurchaseOrderReference <String>]
- [-DiscountAmount <Decimal>] [-DiscountAppliedBeforeTax] [-DueDate <DateTime>] [-Email <String>]
- [-ExternalDocumentNumber <String>] [-Id <String>] [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>]
- [-Number <String>] [-OrderId <String>] [-OrderNumber <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
- [-PaymentTermsId <String>] [-PhoneNumber <String>] [-PricesIncludeTax]
- [-SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>] [-Salesperson <String>]
- [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipToContact <String>] [-ShipToName <String>]
- [-ShipmentMethod <IMicrosoftGraphShipmentMethod>] [-ShipmentMethodId <String>]
- [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>] [-Status <String>]
- [-TotalAmountExcludingTax <Decimal>] [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesInvoice> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanySaleInvoice -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphSalesInvoice> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSalesInvoice> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaFinancialCompanySaleInvoice -InputObject <IFinancialsIdentity>
+ [-AdditionalProperties <Hashtable>] [-BillingPostalAddress <IMicrosoftGraphPostalAddressType>]
+ [-BillToCustomerId <String>] [-BillToCustomerNumber <String>] [-BillToName <String>]
+ [-Currency <IMicrosoftGraphCurrency>] [-CurrencyCode <String>] [-CurrencyId <String>]
+ [-Customer <IMicrosoftGraphCustomer>] [-CustomerId <String>] [-CustomerName <String>]
+ [-CustomerNumber <String>] [-CustomerPurchaseOrderReference <String>] [-DiscountAmount <Decimal>]
+ [-DiscountAppliedBeforeTax] [-DueDate <DateTime>] [-Email <String>] [-ExternalDocumentNumber <String>]
+ [-Id <String>] [-InvoiceDate <DateTime>] [-LastModifiedDateTime <DateTime>] [-Number <String>]
+ [-OrderId <String>] [-OrderNumber <String>] [-PaymentTerm <IMicrosoftGraphPaymentTerm>]
+ [-PaymentTermsId <String>] [-PhoneNumber <String>] [-PricesIncludeTax]
+ [-SalesInvoiceLines <IMicrosoftGraphSalesInvoiceLine[]>] [-Salesperson <String>]
+ [-SellingPostalAddress <IMicrosoftGraphPostalAddressType>] [-ShipmentMethod <IMicrosoftGraphShipmentMethod>]
+ [-ShipmentMethodId <String>] [-ShippingPostalAddress <IMicrosoftGraphPostalAddressType>]
+ [-ShipToContact <String>] [-ShipToName <String>] [-Status <String>] [-TotalAmountExcludingTax <Decimal>]
+ [-TotalAmountIncludingTax <Decimal>] [-TotalTaxAmount <Decimal>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property salesInvoices in financials
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -75,7 +87,7 @@ Update the navigation property salesInvoices in financials
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +103,7 @@ postalAddressType
 To construct, see NOTES section for BILLINGPOSTALADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPostalAddressType
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPostalAddressType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +133,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -136,7 +148,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,7 +164,7 @@ salesInvoice
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesInvoice
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesInvoice
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -167,8 +179,8 @@ Accept wildcard characters: False
 The unique identifier of company
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -183,7 +195,7 @@ currency
 To construct, see NOTES section for CURRENCY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCurrency
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCurrency
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -198,7 +210,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -213,7 +225,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -229,7 +241,7 @@ customer
 To construct, see NOTES section for CUSTOMER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomer
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCustomer
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -244,7 +256,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -259,7 +271,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -274,7 +286,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -289,7 +301,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -304,7 +316,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
+Type: System.Decimal
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -319,7 +331,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -334,7 +346,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -349,7 +361,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -364,7 +376,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -379,7 +391,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -395,8 +407,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -410,7 +422,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -425,7 +437,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -440,7 +452,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -455,7 +467,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -470,7 +482,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -486,7 +498,7 @@ paymentTerm
 To construct, see NOTES section for PAYMENTTERM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPaymentTerm
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPaymentTerm
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -501,7 +513,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -516,7 +528,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -531,7 +543,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -546,8 +558,8 @@ Accept wildcard characters: False
 The unique identifier of salesInvoice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -562,7 +574,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SALESINVOICELINES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSalesInvoiceLine[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesInvoiceLine[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -577,7 +589,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -593,7 +605,7 @@ postalAddressType
 To construct, see NOTES section for SELLINGPOSTALADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPostalAddressType
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPostalAddressType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -609,7 +621,7 @@ shipmentMethod
 To construct, see NOTES section for SHIPMENTMETHOD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShipmentMethod
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShipmentMethod
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -624,7 +636,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -640,7 +652,7 @@ postalAddressType
 To construct, see NOTES section for SHIPPINGPOSTALADDRESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPostalAddressType
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPostalAddressType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -655,7 +667,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -670,7 +682,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -685,7 +697,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -700,7 +712,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
+Type: System.Decimal
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -715,7 +727,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
+Type: System.Decimal
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -730,7 +742,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
+Type: System.Decimal
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -745,7 +757,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -761,7 +773,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -778,10 +790,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesInvoice
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSalesInvoice
+
 ## NOTES
 
 ALIASES
@@ -1173,8 +1188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Street <String>]`: 
 
 ## RELATED LINKS
-[Update-MgFinancialCompanySaleInvoice](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoice?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgFinancialCompanySaleInvoice](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoice?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/get-mgbetauserinsightusedresource
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 Used for navigating to the item that was used.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserInsightUsedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightUsedResource?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -34,13 +31,29 @@ Used for navigating to the item that was used.
 For file attachments, the type is fileAttachment.
 For linked attachments, the type is driveItem.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -56,7 +69,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -86,7 +99,7 @@ Accept wildcard characters: False
 The unique identifier of usedInsight
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -118,9 +131,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -155,5 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserInsightUsedResource](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightUsedResource?view=graph-powershell-v1.0)
 

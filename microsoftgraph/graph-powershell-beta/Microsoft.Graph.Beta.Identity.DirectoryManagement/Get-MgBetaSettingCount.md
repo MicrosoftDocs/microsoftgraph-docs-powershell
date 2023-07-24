@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetasettingcount
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSettingCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSettingCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -22,13 +19,29 @@ Get-MgBetaSettingCount [-Search <String>] [<CommonParameters>]
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -Search
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -47,10 +60,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgSettingCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgSettingCount?view=graph-powershell-v1.0)
 

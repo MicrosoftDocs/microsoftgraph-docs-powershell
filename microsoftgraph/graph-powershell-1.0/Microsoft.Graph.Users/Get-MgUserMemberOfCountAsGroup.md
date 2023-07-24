@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusermemberofcountasgroup
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfCountAsGroup?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserMemberOfCountAsGroup -UserId <String> [-Filter <String>] [-Search <String>]
- -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgUserMemberOfCountAsGroup -UserId <String> -ConsistencyLevel <String> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserMemberOfCountAsGroup -InputObject <IUsersIdentity> [-Filter <String>] [-Search <String>]
- -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgUserMemberOfCountAsGroup -InputObject <IUsersIdentity> -ConsistencyLevel <String> [-Filter <String>]
+ [-Search <String>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the number of the resource
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Indicates the requested consistency level.
 Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -52,7 +65,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -68,7 +81,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -83,7 +96,7 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -115,9 +128,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### System.Int32
+
 ## NOTES
 
 ALIASES
@@ -143,5 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserMemberOfCountAsGroup](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfCountAsGroup?view=graph-powershell-beta)
 

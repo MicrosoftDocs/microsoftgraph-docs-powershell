@@ -1,53 +1,87 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupmemberobject
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagrouppermissiongrantmembergroup
 schema: 2.0.0
 ---
 
-# Confirm-MgBetaGroupMemberObject
+# Confirm-MgBetaGroupPermissionGrantMemberGroup
 
 ## SYNOPSIS
-Invoke action checkMemberObjects
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupPermissionGrantMemberGroup?view=graph-powershell-v1.0)
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
 ## SYNTAX
 
 ### CheckExpanded (Default)
 ```
-Confirm-MgBetaGroupMemberObject -GroupId <String> [-AdditionalProperties <Hashtable>] [-Ids <String[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaGroupPermissionGrantMemberGroup -GroupId <String> -ResourceSpecificPermissionGrantId <String>
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Check
 ```
-Confirm-MgBetaGroupMemberObject -GroupId <String>
- -BodyParameter <IPathsV0V4JhGroupsGroupIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentityExpanded
-```
-Confirm-MgBetaGroupMemberObject -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaGroupPermissionGrantMemberGroup -GroupId <String> -ResourceSpecificPermissionGrantId <String>
+ -BodyParameter <IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
-Confirm-MgBetaGroupMemberObject -InputObject <IGroupsIdentity>
- -BodyParameter <IPathsV0V4JhGroupsGroupIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgBetaGroupPermissionGrantMemberGroup -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Invoke action checkMemberObjects
+Check for membership in a specified list of group IDs, and return from that list those groups (identified by IDs) of which the specified user, group, service principal, organizational contact, device, or directory object is a member.
+This function is transitive.
+You can check up to a maximum of 20 groups per request.
+This function supports all groups provisioned in Azure AD.
+Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.DirectoryObjects
+```
 
+$params = @{
+	GroupIds = @(
+		"f448435d-3ca7-4073-8152-a1fd73c0fd09"
+		"bd7c6263-4dd5-4ae8-8c96-556e1c0bece6"
+		"93670da6-d731-4366-94b5-abed40b6016b"
+		"f5484ab1-4d4d-41ec-a9b8-754b3957bfc7"
+		"c9103f26-f3cf-4004-a611-2a14e81b8f79"
+	)
+}
 
+Confirm-MgBetaDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
+```
+
+$params = @{
+	GroupIds = @(
+		"fee2c45b-915a-4a64b130f4eb9e75525e"
+		"4fe90ae065a-478b9400e0a0e1cbd540"
+	)
+}
+
+# A UPN can also be used as -UserId.
+Confirm-MgBetaUserMemberGroup -UserId $userId -BodyParameter $params
 
 ## PARAMETERS
 
@@ -55,7 +89,7 @@ Invoke action checkMemberObjects
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -71,7 +105,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsV0V4JhGroupsGroupIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
@@ -86,8 +120,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -97,11 +131,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Ids
+### -GroupIds
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -117,8 +151,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,11 +162,26 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ResourceSpecificPermissionGrantId
+The unique identifier of resourceSpecificPermissionGrant
+
+```yaml
+Type: System.String
+Parameter Sets: Check, CheckExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Confirm
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -148,7 +197,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -165,10 +214,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IPathsV0V4JhGroupsGroupIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -178,9 +230,9 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPathsV0V4JhGroupsGroupIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths1Dr4KhqGroupsGroupIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Ids <String[]>]`: 
+  - `[GroupIds <String[]>]`: 
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -229,5 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-[Confirm-MgGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupPermissionGrantMemberGroup?view=graph-powershell-v1.0)
 

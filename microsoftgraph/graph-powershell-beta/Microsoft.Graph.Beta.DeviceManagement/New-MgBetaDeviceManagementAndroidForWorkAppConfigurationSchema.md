@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementandroidforworkappconfigurationschema
 schema: 2.0.0
@@ -10,27 +10,41 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to androidForWorkAppConfigurationSchemas for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAndroidForWorkAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementAndroidForWorkAppConfigurationSchema?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema [-AdditionalProperties <Hashtable>]
  [-ExampleJsonInputFile <String>] [-Id <String>]
- [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-WhatIf] [-Confirm]
+ [-SchemaItems <IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementAndroidForWorkAppConfigurationSchema
- -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAndroidForWorkAppConfigurationSchema> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to androidForWorkAppConfigurationSchemas for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +52,7 @@ Create new navigation property to androidForWorkAppConfigurationSchemas for devi
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -54,7 +68,7 @@ Schema describing an Android for Work application's custom configurations.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +83,7 @@ Accept wildcard characters: False
 Input File for ExampleJson (UTF8 encoded byte array containing example JSON string conforming to this schema that demonstrates how to set the configuration for this app)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +99,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +115,7 @@ Collection of items each representing a named configuration option in the schema
 To construct, see NOTES section for SCHEMAITEMS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchemaItem[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -132,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -149,9 +163,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAndroidForWorkAppConfigurationSchema
+
 ## NOTES
 
 ALIASES
@@ -192,5 +208,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[New-MgDeviceManagementAndroidForWorkAppConfigurationSchema](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementAndroidForWorkAppConfigurationSchema?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/update-mgusersettingshiftpreference
 schema: 2.0.0
@@ -10,45 +10,43 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties and relationships of a shiftPreferences object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgUserSettingShiftPreference -UserId <String> [-AdditionalProperties <Hashtable>]
  [-Availability <IMicrosoftGraphShiftAvailability[]>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgUserSettingShiftPreference -UserId <String> -BodyParameter <IMicrosoftGraphShiftPreferences> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgUserSettingShiftPreference -UserId <String> -BodyParameter <IMicrosoftGraphShiftPreferences>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
+ -BodyParameter <IMicrosoftGraphShiftPreferences> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
  [-Availability <IMicrosoftGraphShiftAvailability[]>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserSettingShiftPreference -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphShiftPreferences> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties and relationships of a shiftPreferences object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users
+```
 
 $params = @{
 	id = "SHPR_eeab4fb1-20e5-48ca-ad9b-98119d94bee7"
@@ -76,11 +74,6 @@ $params = @{
 }
 
 Update-MgUserSettingShiftPreference -UserId $userId -BodyParameter $params
-```
-This example shows how to use the Update-MgUserSettingShiftPreference Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -88,7 +81,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -104,7 +97,7 @@ Availability of the user to be scheduled for work and its recurrence pattern.
 To construct, see NOTES section for AVAILABILITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShiftAvailability[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftAvailability[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -120,7 +113,7 @@ shiftPreferences
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphShiftPreferences
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -136,7 +129,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,8 +145,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -168,7 +161,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,8 +176,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -198,7 +191,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -214,7 +207,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -231,10 +224,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
+
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphShiftPreferences
+
 ## NOTES
 
 ALIASES
@@ -328,6 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgBetaUserSettingShiftPreference](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUserSettingShiftPreference?view=graph-powershell-beta)
-
 
