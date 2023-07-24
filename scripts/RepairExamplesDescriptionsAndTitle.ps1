@@ -108,11 +108,9 @@ function Import-Descriptions {
     if(Test-Path $File){
     $TitleCount = 1
     $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
-    $DestinationContentNonRaw = Get-Content $File
     $RetainedContent = $null
     foreach ($Ex in $RetainedExamples) {
             $ContentBody = $Ex.Split("****")[0]
-            $ContentTitle = $Ex.Split("****")[1]
             $ContentDescription = $Ex.Split("****")[2]
             $RetainedContent += "$ContentBody$ContentDescription"  
             $TitleCount++ 
