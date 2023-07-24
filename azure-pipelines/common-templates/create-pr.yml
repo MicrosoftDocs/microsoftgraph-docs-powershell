@@ -26,7 +26,5 @@ steps:
         $Head = "MicrosoftDocs:$proposedBranch"
         $Title = "${{ parameters.Title }}"
         $Body = "${{ parameters.Body }}"
-        git status
-        gh auth login
         git push "https://$(GITHUB_TOKEN)@github.com/microsoftgraph/msgraph-sdk-powershell.git"
         gh pr create -t $Title -b $Body -B $proposedBranch -H $Head
