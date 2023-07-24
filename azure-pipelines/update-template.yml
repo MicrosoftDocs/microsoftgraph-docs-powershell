@@ -2,35 +2,35 @@ parameters:
   projectFileName: PowerShellDocsUpdate
   testType: 'Execution'
 steps:
-- task: PowerShell@2
-  displayName: Install Required Modules
-  inputs:
-    targetType: 'inline'
-    pwsh: true
-    script: |
-          git config --global user.email "timwamalwa@gmail.com"
-          git config --global user.name "Timothy Wamalwa"
-          git config --system core.longpaths true
-          try{
-              # Try to update the V1 module first.
-              Install-Module Microsoft.Graph.Beta -Repository PSGallery -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
-          }catch{
-                # If the module is not installed, install it.
-                echo "Error when installing Beta"
-          }
-          try{
-              # Try to update the beta module first.
-              Install-Module Microsoft.Graph -Repository PSGallery -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
-          }catch{
-                # If the module is not installed, install it.
-                echo "Error when installing V1"
-          }
-          $modules = Get-Module -Name Microsoft.Graph -ListAvailable
+# - task: PowerShell@2
+#   displayName: Install Required Modules
+#   inputs:
+#     targetType: 'inline'
+#     pwsh: true
+#     script: |
+#           git config --global user.email "timwamalwa@gmail.com"
+#           git config --global user.name "Timothy Wamalwa"
+#           git config --system core.longpaths true
+#           try{
+#               # Try to update the V1 module first.
+#               Install-Module Microsoft.Graph.Beta -Repository PSGallery -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
+#           }catch{
+#                 # If the module is not installed, install it.
+#                 echo "Error when installing Beta"
+#           }
+#           try{
+#               # Try to update the beta module first.
+#               Install-Module Microsoft.Graph -Repository PSGallery -Scope AllUsers -AcceptLicense -SkipPublisherCheck -Force -AllowClobber
+#           }catch{
+#                 # If the module is not installed, install it.
+#                 echo "Error when installing V1"
+#           }
+#           $modules = Get-Module -Name Microsoft.Graph -ListAvailable
 
-          foreach($r in $modules)
-          {
-            echo $r.Version
-          }
+#           foreach($r in $modules)
+#           {
+#             echo $r.Version
+#           }
 
 - template: checkout.yml
   parameters:
