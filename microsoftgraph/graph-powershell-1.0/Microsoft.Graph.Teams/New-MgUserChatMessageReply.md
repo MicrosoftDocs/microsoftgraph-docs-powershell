@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send a new reply to a chatMessage in a specified channel.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessageReply?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -907,5 +910,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
+[New-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessageReply?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaUserChatMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaUserChatMessageReply?view=graph-powershell-beta)

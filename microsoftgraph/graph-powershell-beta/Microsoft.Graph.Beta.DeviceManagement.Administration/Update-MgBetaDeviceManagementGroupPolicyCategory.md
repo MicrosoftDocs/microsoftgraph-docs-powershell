@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property groupPolicyCategories in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementGroupPolicyCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -607,5 +610,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphGroupPolicyCategory>]`: The category entity stores the category of a group policy definition
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyCategory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyCategory](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyCategory?view=graph-powershell-v1.0)

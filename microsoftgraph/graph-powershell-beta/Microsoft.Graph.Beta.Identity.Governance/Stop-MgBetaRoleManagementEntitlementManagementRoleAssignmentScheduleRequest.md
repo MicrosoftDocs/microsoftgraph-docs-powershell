@@ -11,6 +11,9 @@ schema: 2.0.0
 Immediately cancel a unifiedRoleAssignmentScheduleRequest object that is in a `Granted` status, and have the system automatically delete the canceled request after 30 days.
 After calling this action, the **status** of the canceled **unifiedRoleAssignmentScheduleRequest** changes to `Canceled`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Cancel (Default)
@@ -237,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgRoleManagementEntitlementManagementRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)

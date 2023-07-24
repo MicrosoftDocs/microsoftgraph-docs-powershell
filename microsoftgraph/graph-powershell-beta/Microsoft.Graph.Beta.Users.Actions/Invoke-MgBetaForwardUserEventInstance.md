@@ -12,6 +12,9 @@ This action allows the organizer or attendee of a meeting event to forward the n
 If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to another recipient, this action nalso sends a message to notify the organizer of the forwarding, and adds the recipient to the organizer's ncopy of the meeting event.
 This convenience is not available when forwarding from an Outlook.com account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserEventInstance?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ForwardExpanded (Default)
@@ -300,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[Invoke-MgForwardUserEventInstance](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserEventInstance?view=graph-powershell-v1.0)

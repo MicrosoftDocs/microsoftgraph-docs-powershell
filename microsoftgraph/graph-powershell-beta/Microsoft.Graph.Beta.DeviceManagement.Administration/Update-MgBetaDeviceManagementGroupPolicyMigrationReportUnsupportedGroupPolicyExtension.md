@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property unsupportedGroupPolicyExtensions in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -333,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReportUnsupportedGroupPolicyExtension?view=graph-powershell-v1.0)

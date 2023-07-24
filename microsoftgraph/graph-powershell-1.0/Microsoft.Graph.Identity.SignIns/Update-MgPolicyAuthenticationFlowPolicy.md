@@ -11,6 +11,9 @@ schema: 2.0.0
 Update the **selfServiceSignUp** property of an authenticationFlowsPolicy object.
 The properties **id**, **type**, and **description** cannot be modified.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -210,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: Indicates whether self-service sign-up flow is enabled or disabled. The default value is false. This property is not a key. Required.
 
 ## RELATED LINKS
+[Update-MgBetaPolicyAuthenticationFlowPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyAuthenticationFlowPolicy?view=graph-powershell-beta)

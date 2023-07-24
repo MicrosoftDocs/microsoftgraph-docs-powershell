@@ -13,6 +13,9 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ReplyExpanded (Default)
@@ -453,5 +456,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
+[Invoke-MgReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Invoke-MgReplyGroupConversationThreadPostInReplyTo](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReplyGroupConversationThreadPostInReplyTo?view=graph-powershell-v1.0)

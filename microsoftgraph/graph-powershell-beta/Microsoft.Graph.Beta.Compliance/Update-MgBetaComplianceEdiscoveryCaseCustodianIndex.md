@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action updateIndex
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgComplianceEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseCustodianIndex?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Update (Default)
@@ -175,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Update-MgComplianceEdiscoveryCaseCustodianIndex](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseCustodianIndex?view=graph-powershell-v1.0)

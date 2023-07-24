@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancial?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -80,3 +83,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancial?view=graph-powershell-v1.0)

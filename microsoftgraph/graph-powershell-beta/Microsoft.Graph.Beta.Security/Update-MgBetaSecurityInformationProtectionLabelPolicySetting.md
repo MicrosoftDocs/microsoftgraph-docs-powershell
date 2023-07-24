@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property labelPolicySettings in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -212,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MoreInfoUrl <String>]`: Exposes the more information URL that can be configured by the administrator.
 
 ## RELATED LINKS
+[Update-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)

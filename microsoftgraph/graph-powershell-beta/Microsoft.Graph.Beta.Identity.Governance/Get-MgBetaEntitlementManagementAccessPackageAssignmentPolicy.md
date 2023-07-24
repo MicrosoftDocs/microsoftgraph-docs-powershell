@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 In Azure AD entitlement management, retrieve the properties and relationships of an\n accessPackageAssignmentPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### ListAll (Default)
@@ -411,3 +414,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)

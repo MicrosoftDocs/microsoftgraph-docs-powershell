@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Exposes the driveItem that was the target of this activity.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -219,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalyticItemActivityStatActivityDriveItem?view=graph-powershell-v1.0)

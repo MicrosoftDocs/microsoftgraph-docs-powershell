@@ -12,6 +12,9 @@ Upload a plain text secret to a trustFrameworkKeyset.
 Examples of secrets are application secrets in Azure Active Directory, Google, Facebook, or any other identity provider.
 his method returns trustFrameworkKey.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadTrustFrameworkKeySetSecret](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetSecret?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UploadExpanded (Default)
@@ -319,3 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Invoke-MgUploadTrustFrameworkKeySetSecret](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetSecret?view=graph-powershell-v1.0)

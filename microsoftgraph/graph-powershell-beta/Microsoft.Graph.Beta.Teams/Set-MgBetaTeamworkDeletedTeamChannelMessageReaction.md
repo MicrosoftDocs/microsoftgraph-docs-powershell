@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setReaction
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -279,3 +282,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgTeamworkDeletedTeamChannelMessageReaction](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelMessageReaction?view=graph-powershell-v1.0)

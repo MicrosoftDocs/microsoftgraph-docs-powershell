@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get monitoring from deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -76,3 +79,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)

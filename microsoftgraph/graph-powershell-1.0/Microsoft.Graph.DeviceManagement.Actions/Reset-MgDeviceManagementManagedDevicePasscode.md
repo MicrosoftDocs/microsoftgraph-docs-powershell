@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset passcode
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Reset (Default)
@@ -155,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Reset-MgBetaDeviceManagementManagedDevicePasscode](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Reset-MgBetaDeviceManagementManagedDevicePasscode?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action tenantSearch
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgTenantRelationshipManagedTenantGroupSearch](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgTenantRelationshipManagedTenantGroupSearch?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### TenantExpanded (Default)
@@ -142,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgTenantRelationshipManagedTenantGroupSearch](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgTenantRelationshipManagedTenantGroupSearch?view=graph-powershell-v1.0)

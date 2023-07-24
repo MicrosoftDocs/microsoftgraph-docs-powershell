@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get paymentTerms from financials
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyPaymentTerm](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyPaymentTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -306,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
+[Get-MgFinancialCompanyPaymentTerm](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyPaymentTerm?view=graph-powershell-v1.0)

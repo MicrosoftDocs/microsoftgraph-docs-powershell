@@ -13,6 +13,9 @@ Provided so that callers can get the principals using $expand at the same time a
 Read-only.
 Supports $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementRoleAssignmentPrincipal?view=graph-powershell-v1.0)

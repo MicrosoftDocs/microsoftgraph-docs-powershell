@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action queryByPlatformType
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### QueryExpanded (Default)
@@ -146,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlatformType <PolicyPlatformType?>]`: Supported platform types for policies.
 
 ## RELATED LINKS
+[Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgQueryDeviceManagementResourceAccessProfileByPlatformType?view=graph-powershell-v1.0)

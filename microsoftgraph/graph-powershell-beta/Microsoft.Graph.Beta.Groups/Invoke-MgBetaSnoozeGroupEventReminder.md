@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action signDigest
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SignExpanded (Default)
@@ -268,3 +271,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Invoke-MgSnoozeGroupEventReminder](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSnoozeGroupEventReminder?view=graph-powershell-v1.0)

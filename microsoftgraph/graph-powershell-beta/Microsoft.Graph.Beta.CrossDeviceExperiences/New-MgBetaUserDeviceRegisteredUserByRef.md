@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add a registered user for the device.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDeviceRegisteredUserByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -226,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgUserDeviceRegisteredUserByRef](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserDeviceRegisteredUserByRef?view=graph-powershell-v1.0)

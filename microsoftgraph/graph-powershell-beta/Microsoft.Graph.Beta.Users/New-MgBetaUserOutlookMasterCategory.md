@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to notifications for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -357,3 +360,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PlatformTypes <String[]>]`: Use to filter the notification distribution to a specific platform or platforms. Valid values are Windows, iOS, Android and WebPush. By default, all push endpoint types (Windows, iOS, Android and WebPush) are enabled.
 
 ## RELATED LINKS
+[New-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookMasterCategory?view=graph-powershell-v1.0)

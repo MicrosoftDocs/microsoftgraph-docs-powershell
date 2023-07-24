@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function appDiagnostics
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### App (Default)
@@ -200,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgAppDeviceManagementComanagedDeviceDiagnostic?view=graph-powershell-v1.0)

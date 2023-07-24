@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property exclusions for admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgWindowsUpdatesPolicyAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicyAudienceExclusion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -177,3 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+[Remove-MgWindowsUpdatesPolicyAudienceExclusion](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicyAudienceExclusion?view=graph-powershell-v1.0)

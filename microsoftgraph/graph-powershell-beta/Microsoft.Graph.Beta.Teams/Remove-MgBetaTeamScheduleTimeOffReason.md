@@ -13,6 +13,9 @@ Every team must include at least one **timeOffReason**.
 This method does not remove the specified **timeOffReason** instance.
 timeOffItem instances that have been assigned this reason remain assigned to this reason.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -210,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)

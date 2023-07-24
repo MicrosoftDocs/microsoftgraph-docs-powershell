@@ -13,6 +13,9 @@ After the access review stage stops, the stage **status** will be `Completed` an
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Stop-MgUserPendingAccessReviewInstanceStage](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserPendingAccessReviewInstanceStage?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Stop (Default)
@@ -219,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Stop-MgUserPendingAccessReviewInstanceStage](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserPendingAccessReviewInstanceStage?view=graph-powershell-v1.0)

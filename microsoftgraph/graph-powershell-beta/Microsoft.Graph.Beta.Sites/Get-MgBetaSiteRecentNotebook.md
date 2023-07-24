@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getRecentNotebooks
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteRecentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteRecentNotebook?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -237,3 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteRecentNotebook](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteRecentNotebook?view=graph-powershell-v1.0)

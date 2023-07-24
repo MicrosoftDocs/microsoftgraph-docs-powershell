@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function search
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Search-MgGroupDriveRoot?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Search (Default)
@@ -277,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Search-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Search-MgGroupDriveRoot?view=graph-powershell-v1.0)

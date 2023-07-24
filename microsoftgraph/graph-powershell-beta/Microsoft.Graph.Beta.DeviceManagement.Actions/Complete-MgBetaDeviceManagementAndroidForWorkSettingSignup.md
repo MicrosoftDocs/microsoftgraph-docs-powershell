@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action completeSignup
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Complete-MgDeviceManagementAndroidForWorkSettingSignup](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Complete-MgDeviceManagementAndroidForWorkSettingSignup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CompleteExpanded (Default)
@@ -161,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EnterpriseToken <String>]`: 
 
 ## RELATED LINKS
+[Complete-MgDeviceManagementAndroidForWorkSettingSignup](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Complete-MgDeviceManagementAndroidForWorkSettingSignup?view=graph-powershell-v1.0)

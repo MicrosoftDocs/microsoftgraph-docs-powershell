@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property resourceScope in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -281,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementDeviceManagementResourceNamespaceResourceActionResourceScope?view=graph-powershell-v1.0)

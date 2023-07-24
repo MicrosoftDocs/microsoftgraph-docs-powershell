@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Information about the Microsoft Teams team that was created for the request.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestTeam?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -140,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
+[Get-MgPrivacySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Compliance/Get-MgPrivacySubjectRightsRequestTeam?view=graph-powershell-v1.0)

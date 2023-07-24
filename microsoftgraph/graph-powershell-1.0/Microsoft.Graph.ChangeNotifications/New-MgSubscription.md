@@ -13,6 +13,9 @@ To identify the resources for which you can create subscriptions and the limitat
 Some resources support rich notifications, that is, notifications that include resource data.
 For more information about these resources, see Set up change notifications that include resource data: Supported resources.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -426,3 +429,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[New-MgBetaSubscription](/powershell/module/Microsoft.Graph.Beta.ChangeNotifications/New-MgBetaSubscription?view=graph-powershell-beta)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for external
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataOperation](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -227,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusDetail <String>]`: Details about the status of the operation.
 
 ## RELATED LINKS
+[New-MgExternalIndustryDataOperation](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataOperation?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to categorySummaries for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -500,5 +503,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdateVersion <String>]`: Version of the software update
 
 ## RELATED LINKS
+[New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)

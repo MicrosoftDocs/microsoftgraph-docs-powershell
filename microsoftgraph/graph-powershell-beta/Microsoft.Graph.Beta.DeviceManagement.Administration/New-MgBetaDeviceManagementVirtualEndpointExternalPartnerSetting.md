@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new cloudPcExternalPartnerSetting object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointExternalPartnerSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointExternalPartnerSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -229,3 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusDetails <String>]`: Status details message.
 
 ## RELATED LINKS
+[New-MgDeviceManagementVirtualEndpointExternalPartnerSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointExternalPartnerSetting?view=graph-powershell-v1.0)

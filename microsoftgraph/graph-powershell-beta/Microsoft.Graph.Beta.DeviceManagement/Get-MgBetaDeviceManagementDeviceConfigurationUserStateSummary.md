@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The device configuration user state summary for this account.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDeviceConfigurationUserStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStateSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -81,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementDeviceConfigurationUserStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationUserStateSummary?view=graph-powershell-v1.0)

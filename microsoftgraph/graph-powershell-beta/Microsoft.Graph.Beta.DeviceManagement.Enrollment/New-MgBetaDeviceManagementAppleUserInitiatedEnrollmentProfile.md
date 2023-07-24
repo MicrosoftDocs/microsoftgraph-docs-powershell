@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to appleUserInitiatedEnrollmentProfiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -311,3 +314,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Priority <Int32?>]`: Priority, 0 is highest
 
 ## RELATED LINKS
+[New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAppleUserInitiatedEnrollmentProfile?view=graph-powershell-v1.0)

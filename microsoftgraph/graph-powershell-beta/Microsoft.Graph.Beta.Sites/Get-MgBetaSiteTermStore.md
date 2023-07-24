@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a store object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStore?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -170,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStore?view=graph-powershell-v1.0)

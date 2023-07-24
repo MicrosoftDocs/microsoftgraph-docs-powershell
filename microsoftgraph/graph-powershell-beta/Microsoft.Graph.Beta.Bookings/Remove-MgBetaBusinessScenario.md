@@ -11,6 +11,9 @@ schema: 2.0.0
 Delete a businessScenario object.
 The deletion of a scenario causes all data associated with the scenario to be deleted.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgBusinessScenario](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenario?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -176,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+[Remove-MgBusinessScenario](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenario?view=graph-powershell-v1.0)

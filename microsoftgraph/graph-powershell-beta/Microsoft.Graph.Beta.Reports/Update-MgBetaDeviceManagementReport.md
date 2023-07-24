@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property reports in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -226,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Temporary location of the exported report
 
 ## RELATED LINKS
+[Update-MgDeviceManagementReport](/powershell/module/Microsoft.Graph.Reports/Update-MgDeviceManagementReport?view=graph-powershell-v1.0)

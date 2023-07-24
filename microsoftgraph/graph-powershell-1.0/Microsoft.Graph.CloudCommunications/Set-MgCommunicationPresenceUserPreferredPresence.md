@@ -15,6 +15,9 @@ Otherwise, the user's presence shows as `Offline`.
 A presence session is created as a result of a successful setPresence operation, or if the user is signed in on a Microsoft Teams client.
 For more details, see presence sessions and time-out and expiration.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -264,3 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaCommunicationPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Set-MgBetaCommunicationPresenceUserPreferredPresence?view=graph-powershell-beta)

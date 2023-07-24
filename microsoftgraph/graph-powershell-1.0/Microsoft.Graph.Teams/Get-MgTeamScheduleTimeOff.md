@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a timeOff object by ID.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -277,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgBetaTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamScheduleTimeOff?view=graph-powershell-beta)

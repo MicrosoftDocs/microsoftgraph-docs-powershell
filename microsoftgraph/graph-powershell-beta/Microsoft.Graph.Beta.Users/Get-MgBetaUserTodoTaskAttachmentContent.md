@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property attachments from users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -190,3 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserTodoTaskAttachmentContent](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskAttachmentContent?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Uninstall an app installed within a chat.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatInstalledApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -204,3 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Remove-MgChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatInstalledApp?view=graph-powershell-v1.0)

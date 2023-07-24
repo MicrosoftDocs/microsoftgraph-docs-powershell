@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new citationTemplate object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCitation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -240,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelCitation?view=graph-powershell-v1.0)

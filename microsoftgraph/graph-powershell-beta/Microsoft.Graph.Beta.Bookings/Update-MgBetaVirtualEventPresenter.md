@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property presenters in solutions
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventPresenter](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventPresenter?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -308,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
+[Update-MgVirtualEventPresenter](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventPresenter?view=graph-powershell-v1.0)

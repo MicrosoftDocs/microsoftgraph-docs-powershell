@@ -12,6 +12,9 @@ Assign an appManagementPolicy policy object to an application or service princip
 The application or service principal adopts this policy over the tenant-wide tenantAppManagementPolicy setting.
 Only one policy object can be assigned to an application or service principal.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -236,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-v1.0)

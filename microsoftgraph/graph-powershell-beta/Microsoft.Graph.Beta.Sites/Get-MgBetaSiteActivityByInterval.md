@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getActivitiesByInterval
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteActivityByInterval](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteActivityByInterval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteActivityByInterval](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteActivityByInterval?view=graph-powershell-v1.0)

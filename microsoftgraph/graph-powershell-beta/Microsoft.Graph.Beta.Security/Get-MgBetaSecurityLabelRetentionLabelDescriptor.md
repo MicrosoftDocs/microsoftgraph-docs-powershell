@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Represents out-of-the-box values that provide more options to improve the manageability and organization of the content you need to label.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -193,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityLabelRetentionLabelDescriptor](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptor?view=graph-powershell-v1.0)

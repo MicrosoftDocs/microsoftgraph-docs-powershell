@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Reset passcode
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Reset-MgDeviceManagementComanagedDevicePasscode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Reset-MgDeviceManagementComanagedDevicePasscode?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reset (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Reset-MgDeviceManagementComanagedDevicePasscode](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Reset-MgDeviceManagementComanagedDevicePasscode?view=graph-powershell-v1.0)

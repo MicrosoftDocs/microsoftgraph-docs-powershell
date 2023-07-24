@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the _settings_ in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -160,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)

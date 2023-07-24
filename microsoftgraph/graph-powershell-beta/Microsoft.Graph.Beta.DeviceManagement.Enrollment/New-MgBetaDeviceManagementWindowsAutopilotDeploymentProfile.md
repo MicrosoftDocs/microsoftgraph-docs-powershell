@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to windowsAutopilotDeploymentProfiles for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementWindowsAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeploymentProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -542,5 +545,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserType <String>]`: windowsUserType
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowsAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeploymentProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementWindowsAutopilotDeploymentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementWindowsAutopilotDeploymentProfile?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The WinPhone Symantec Code Signing Certificate.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -79,3 +82,4 @@ ALIASES
 Get-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)

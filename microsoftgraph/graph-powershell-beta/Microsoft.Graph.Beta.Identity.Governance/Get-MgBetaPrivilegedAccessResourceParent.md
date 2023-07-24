@@ -12,6 +12,9 @@ Read-only.
 The parent resource.
 for pimforazurerbac scenario, it can represent the subscription the resource belongs to.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceParent](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceParent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -242,3 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgPrivilegedAccessResourceParent](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceParent?view=graph-powershell-v1.0)

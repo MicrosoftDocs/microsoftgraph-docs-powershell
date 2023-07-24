@@ -14,6 +14,9 @@ This applies to operations that return the **Operation-Location** header in the 
 If the status is `completed`, the `resourceLocation` property contains the resource endpoint URI.
 If the status is `failed`, the error and `@api.diagnostics` properties provide error information.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -155,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgBetaGroupOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteOperation?view=graph-powershell-beta)

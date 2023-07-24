@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The unique identifier of the Azure AD user that created the custom task extension.Supports $filter(eq, ne) and $expand.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -224,3 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowCustomTaskExtensionCreatedBy?view=graph-powershell-v1.0)

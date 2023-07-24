@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sensitivityPolicySettings in informationProtection
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -211,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsMandatory <Boolean?>]`: 
 
 ## RELATED LINKS
+[Update-MgInformationProtectionSensitivityPolicySetting](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionSensitivityPolicySetting?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property documentSetVersions in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemDocumentSetVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -447,3 +450,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[Update-MgUserDriveRootListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootListItemDocumentSetVersion?view=graph-powershell-v1.0)

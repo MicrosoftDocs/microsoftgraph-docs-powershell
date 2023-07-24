@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get lastModifiedByUser from sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteLastModifiedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteLastModifiedByUser?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -188,3 +191,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteLastModifiedByUser](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteLastModifiedByUser?view=graph-powershell-v1.0)

@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 The role definition that is enforced with this role setting.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessRoleSettingRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSettingRoleDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -240,3 +243,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgPrivilegedAccessRoleSettingRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSettingRoleDefinition?view=graph-powershell-v1.0)

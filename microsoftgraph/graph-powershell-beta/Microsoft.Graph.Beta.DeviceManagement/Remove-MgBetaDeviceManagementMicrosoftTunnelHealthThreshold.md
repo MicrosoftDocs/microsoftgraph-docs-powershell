@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property microsoftTunnelHealthThresholds for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -295,5 +298,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMicrosoftTunnelHealthThreshold?view=graph-powershell-v1.0)

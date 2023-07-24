@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Exports the mobile configuration
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Export (Default)
@@ -140,3 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
+[Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Export-MgDeviceManagementDepOnboardingSettingEnrollmentProfileMobileConfig?view=graph-powershell-v1.0)

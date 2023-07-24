@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new ediscoveryHoldPolicy object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9923,5 +9926,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseLegalHold](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseLegalHold?view=graph-powershell-v1.0)

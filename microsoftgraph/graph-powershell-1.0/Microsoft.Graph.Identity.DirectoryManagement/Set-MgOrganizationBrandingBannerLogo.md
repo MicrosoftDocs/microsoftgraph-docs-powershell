@@ -12,6 +12,9 @@ A banner version of your company logo that appears on the sign-in page.
 The allowed types are PNG or JPEG no larger than 36 × 245 pixels.
 We recommend using a transparent image with no padding around the logo.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Set-MgBetaOrganizationBrandingBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingBannerLogo?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -216,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Set-MgBetaOrganizationBrandingBannerLogo](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Set-MgBetaOrganizationBrandingBannerLogo?view=graph-powershell-beta)

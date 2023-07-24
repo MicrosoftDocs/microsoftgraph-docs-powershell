@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getWebPartsByPosition
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSitePageWebPartByPosition](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSitePageWebPartByPosition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -313,3 +316,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupSitePageWebPartByPosition](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupSitePageWebPartByPosition?view=graph-powershell-v1.0)

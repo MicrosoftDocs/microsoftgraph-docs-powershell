@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to macOSSoftwareUpdateAccountSummaries for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -363,3 +366,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The user ID.
 
 ## RELATED LINKS
+[New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementMacOSSoftwareUpdateAccountSummary?view=graph-powershell-v1.0)

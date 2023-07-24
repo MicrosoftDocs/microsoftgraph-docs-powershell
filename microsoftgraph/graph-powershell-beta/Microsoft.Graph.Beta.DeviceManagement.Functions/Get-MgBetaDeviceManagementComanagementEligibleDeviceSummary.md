@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getComanagementEligibleDevicesSummary
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagementEligibleDeviceSummary](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagementEligibleDeviceSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -50,3 +53,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementComanagementEligibleDeviceSummary](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementComanagementEligibleDeviceSummary?view=graph-powershell-v1.0)

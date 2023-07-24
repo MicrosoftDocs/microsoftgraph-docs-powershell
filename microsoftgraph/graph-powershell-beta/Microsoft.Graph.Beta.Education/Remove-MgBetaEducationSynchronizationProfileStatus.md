@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property profileStatus for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSynchronizationProfileStatus](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSynchronizationProfileStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -171,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationSynchronizationProfileStatus](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSynchronizationProfileStatus?view=graph-powershell-v1.0)

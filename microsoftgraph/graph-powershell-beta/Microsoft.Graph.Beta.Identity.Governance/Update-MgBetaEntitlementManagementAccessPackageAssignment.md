@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action reprocess
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Reprocess (Default)
@@ -25267,5 +25270,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The resource type of the subject.
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignment?view=graph-powershell-v1.0)

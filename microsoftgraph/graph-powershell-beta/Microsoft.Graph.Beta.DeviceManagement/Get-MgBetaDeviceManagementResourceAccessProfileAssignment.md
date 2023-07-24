@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of assignments for the device configuration profile.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementResourceAccessProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementResourceAccessProfileAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -409,5 +412,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementResourceAccessProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementResourceAccessProfileAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementResourceAccessProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementResourceAccessProfileAssignment?view=graph-powershell-v1.0)

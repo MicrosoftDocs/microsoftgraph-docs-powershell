@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action hasPayloadLinks
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### LinkExpanded (Default)
@@ -142,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PayloadIds <String[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Invoke-MgHasDeviceAppManagementTargetedManagedAppConfigurationPayloadLink?view=graph-powershell-v1.0)

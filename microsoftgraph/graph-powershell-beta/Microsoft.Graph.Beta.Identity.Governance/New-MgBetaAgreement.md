@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to agreements
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -408,5 +411,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The DateTime when the agreement is set to expire for all users. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
+[New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgAgreement](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgAgreement?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action searchExistingIdentities
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SearchExpanded (Default)
@@ -168,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Platform <Platform?>]`: platform
 
 ## RELATED LINKS
+[Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Search-MgDeviceManagementImportedDeviceIdentityExistingIdentity?view=graph-powershell-v1.0)

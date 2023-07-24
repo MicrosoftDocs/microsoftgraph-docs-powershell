@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to settings for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementIntentSetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntentSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -362,5 +365,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[New-MgDeviceManagementIntentSetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntentSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementIntentSetting](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntentSetting?view=graph-powershell-v1.0)

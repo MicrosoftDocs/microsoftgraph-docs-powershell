@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property settings for privilegedRoleAssignmentRequests
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivilegedRoleAssignmentRequestRoleInfoSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedRoleAssignmentRequestRoleInfoSetting?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -254,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgPrivilegedRoleAssignmentRequestRoleInfoSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgPrivilegedRoleAssignmentRequestRoleInfoSetting?view=graph-powershell-v1.0)

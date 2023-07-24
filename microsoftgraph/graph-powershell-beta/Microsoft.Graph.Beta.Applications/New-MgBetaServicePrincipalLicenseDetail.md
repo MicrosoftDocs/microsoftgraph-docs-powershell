@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to licenseDetails for servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalLicenseDetail](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalLicenseDetail?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -286,3 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+[New-MgServicePrincipalLicenseDetail](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalLicenseDetail?view=graph-powershell-v1.0)

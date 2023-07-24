@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property informationProtection in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -333,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
+[Update-MgUserSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtection?view=graph-powershell-v1.0)

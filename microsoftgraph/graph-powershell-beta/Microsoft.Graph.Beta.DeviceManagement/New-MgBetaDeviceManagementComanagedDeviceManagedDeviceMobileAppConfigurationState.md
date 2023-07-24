@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to managedDeviceMobileAppConfigurationStates for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -501,5 +504,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: UserPrincipalName.
 
 ## RELATED LINKS
+[New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementComanagedDeviceManagedDeviceMobileAppConfigurationState?view=graph-powershell-v1.0)

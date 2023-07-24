@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 A summary of user states and counts of users that belong to corresponding state for all users that the intent is applied to
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementIntentUserStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentUserStateSummary?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -264,5 +267,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentUserStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentUserStateSummary?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementIntentUserStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentUserStateSummary?view=graph-powershell-v1.0)

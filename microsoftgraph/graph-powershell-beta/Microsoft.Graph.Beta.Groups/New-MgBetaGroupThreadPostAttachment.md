@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to attachments for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostAttachment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -350,3 +353,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[New-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostAttachment?view=graph-powershell-v1.0)

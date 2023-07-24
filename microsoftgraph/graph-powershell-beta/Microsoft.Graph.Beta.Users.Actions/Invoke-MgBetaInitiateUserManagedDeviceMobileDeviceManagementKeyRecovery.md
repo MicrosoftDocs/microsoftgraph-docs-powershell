@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Perform MDM key recovery and TPM attestation
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Initiate (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInitiateUserManagedDeviceMobileDeviceManagementKeyRecovery?view=graph-powershell-v1.0)

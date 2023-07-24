@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a school data synchronization profile in the tenant based on the identifier.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -163,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)

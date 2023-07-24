@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a group object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroup](/powershell/module/Microsoft.Graph.Groups/Update-MgGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -26186,5 +26189,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OnPremisesGroupType <String>]`: Indicates the target on-premise group type the cloud object will be written back as. Nullable. The possible values are: universalDistributionGroup, universalSecurityGroup, universalMailEnabledSecurityGroup.If the cloud group is a unified (Microsoft 365) group, this property can be one of the following: universalDistributionGroup, universalSecurityGroup, universalMailEnabledSecurityGroup. Azure AD security groups can be written back as universalSecurityGroup. If isEnabled or the NewUnifiedGroupWritebackDefault group setting is true but this property is not explicitly configured: Microsoft 365 groups will be written back as universalDistributionGroup by defaultSecurity groups will be written back as universalSecurityGroup by default
 
 ## RELATED LINKS
+[Update-MgGroup](/powershell/module/Microsoft.Graph.Groups/Update-MgGroup?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroup](/powershell/module/Microsoft.Graph.Groups/Update-MgGroup?view=graph-powershell-v1.0)

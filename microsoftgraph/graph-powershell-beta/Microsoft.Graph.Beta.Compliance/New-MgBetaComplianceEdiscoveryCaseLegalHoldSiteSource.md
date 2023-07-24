@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Adds a siteSource to a legalHold object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -9709,5 +9712,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Sets <IMicrosoftGraphTermStoreSet[]>]`: Collection of all sets available in the term store.
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseLegalHoldSiteSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHoldSiteSource?view=graph-powershell-v1.0)

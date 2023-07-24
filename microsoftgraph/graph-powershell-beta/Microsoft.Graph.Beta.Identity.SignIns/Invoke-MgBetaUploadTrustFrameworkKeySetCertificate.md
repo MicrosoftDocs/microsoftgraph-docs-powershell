@@ -12,6 +12,9 @@ Upload a certificate to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the certificate contents.
 This method returns trustFrameworkKey.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadTrustFrameworkKeySetCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetCertificate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UploadExpanded (Default)
@@ -266,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Invoke-MgUploadTrustFrameworkKeySetCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetCertificate?view=graph-powershell-v1.0)

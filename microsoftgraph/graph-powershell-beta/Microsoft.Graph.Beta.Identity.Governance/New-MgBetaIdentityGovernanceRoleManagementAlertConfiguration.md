@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to alertConfigurations for identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -257,3 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD roles.
 
 ## RELATED LINKS
+[New-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)

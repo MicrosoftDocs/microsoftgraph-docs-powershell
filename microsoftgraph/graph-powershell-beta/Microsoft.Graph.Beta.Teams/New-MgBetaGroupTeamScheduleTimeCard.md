@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a timeCard instance in a schedule.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeCard?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -498,5 +501,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ClockOutEvent <IMicrosoftGraphTimeCardEvent>]`: timeCardEvent
 
 ## RELATED LINKS
+[New-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeCard?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeCard?view=graph-powershell-v1.0)

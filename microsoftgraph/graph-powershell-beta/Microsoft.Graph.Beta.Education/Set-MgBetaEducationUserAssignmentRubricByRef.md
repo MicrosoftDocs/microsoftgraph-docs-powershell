@@ -11,6 +11,9 @@ schema: 2.0.0
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Set-MgEducationUserAssignmentRubricByRef?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -255,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Set-MgEducationUserAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Set-MgEducationUserAssignmentRubricByRef?view=graph-powershell-v1.0)

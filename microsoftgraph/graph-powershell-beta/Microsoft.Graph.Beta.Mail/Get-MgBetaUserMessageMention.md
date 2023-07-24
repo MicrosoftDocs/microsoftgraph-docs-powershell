@@ -11,6 +11,9 @@ schema: 2.0.0
 A collection of mentions in the message, ordered by the createdDateTime from the newest to the oldest.
 By default, a GET /messages does not return this property unless you apply $expand on the property.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMessageMention](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageMention?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -282,3 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserMessageMention](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMessageMention?view=graph-powershell-v1.0)

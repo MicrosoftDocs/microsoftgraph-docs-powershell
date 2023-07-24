@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsDeviceTimelineEvent for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -243,3 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EventSource <String>]`: The source of the event. Examples include: Intune, Sccm.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)

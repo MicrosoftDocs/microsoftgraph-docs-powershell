@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property groupPolicyMigrationReports in deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -560,5 +563,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingScope <GroupPolicySettingScope?>]`: Scope of the group policy setting.
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgDeviceManagementGroupPolicyMigrationReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyMigrationReport?view=graph-powershell-v1.0)

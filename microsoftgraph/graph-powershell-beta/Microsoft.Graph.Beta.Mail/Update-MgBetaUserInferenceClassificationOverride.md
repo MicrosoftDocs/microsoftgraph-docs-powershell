@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property inferenceClassification in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -236,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
+[Update-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Update-MgUserInferenceClassificationOverride?view=graph-powershell-v1.0)

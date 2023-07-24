@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new sourceCollection object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -784,5 +787,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[HoldStatus <String>]`: dataSourceHoldStatus
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgComplianceEdiscoveryCaseSourceCollection](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseSourceCollection?view=graph-powershell-v1.0)

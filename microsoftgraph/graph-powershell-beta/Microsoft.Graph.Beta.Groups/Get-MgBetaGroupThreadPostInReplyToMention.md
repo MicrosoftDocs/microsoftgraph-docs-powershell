@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get mentions from groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupThreadPostInReplyToMention](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToMention?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgGroupThreadPostInReplyToMention](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToMention?view=graph-powershell-v1.0)

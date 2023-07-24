@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new acronym object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -276,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphSearchIdentity>]`: identity
 
 ## RELATED LINKS
+[New-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/New-MgSearchAcronym?view=graph-powershell-v1.0)

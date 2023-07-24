@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieves the list of devices with failed or pending apps
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPendingUserApp](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgPendingUserApp?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Pending (Default)
@@ -209,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgPendingUserApp](/powershell/module/Microsoft.Graph.Users.Functions/Invoke-MgPendingUserApp?view=graph-powershell-v1.0)

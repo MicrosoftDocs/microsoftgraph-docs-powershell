@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Send-MgUserPendingAccessReviewInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserPendingAccessReviewInstanceReminder?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Send (Default)
@@ -198,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Send-MgUserPendingAccessReviewInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserPendingAccessReviewInstanceReminder?view=graph-powershell-v1.0)

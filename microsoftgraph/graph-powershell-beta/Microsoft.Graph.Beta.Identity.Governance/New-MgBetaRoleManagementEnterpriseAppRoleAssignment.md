@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new unifiedRoleAssignment object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEnterpriseAppRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignment?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -545,5 +548,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Indicates version of the unifiedRoleDefinition. Read-only when isBuiltIn is true.
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgRoleManagementEnterpriseAppRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignment?view=graph-powershell-v1.0)

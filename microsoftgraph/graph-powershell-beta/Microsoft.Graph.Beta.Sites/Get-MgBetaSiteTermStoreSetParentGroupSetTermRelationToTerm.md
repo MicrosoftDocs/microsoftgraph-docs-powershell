@@ -11,6 +11,9 @@ schema: 2.0.0
 The to [term] of the relation.
 The term to which the relationship is defined.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetParentGroupSetTermRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetTermRelationToTerm?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -236,3 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Get-MgSiteTermStoreSetParentGroupSetTermRelationToTerm](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetParentGroupSetTermRelationToTerm?view=graph-powershell-v1.0)

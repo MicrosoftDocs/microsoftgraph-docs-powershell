@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsAnomalyDevice for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -327,3 +330,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OSVersion <String>]`: The OS version installed on the device.
 
 ## RELATED LINKS
+[New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticAnomalyDevice?view=graph-powershell-v1.0)

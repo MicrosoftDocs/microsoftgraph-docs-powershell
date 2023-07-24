@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userFlows in identity
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityUserFlow?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -299,3 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Update-MgIdentityUserFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityUserFlow?view=graph-powershell-v1.0)

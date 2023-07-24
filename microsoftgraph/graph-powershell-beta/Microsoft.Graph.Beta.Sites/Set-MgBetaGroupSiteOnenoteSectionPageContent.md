@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 The page's HTML content.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgGroupSiteOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteSectionPageContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -253,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
+[Set-MgGroupSiteOnenoteSectionPageContent](/powershell/module/Microsoft.Graph.Sites/Set-MgGroupSiteOnenoteSectionPageContent?view=graph-powershell-v1.0)

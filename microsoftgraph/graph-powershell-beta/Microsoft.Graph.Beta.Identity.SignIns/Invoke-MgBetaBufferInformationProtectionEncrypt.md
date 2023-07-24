@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action encryptBuffer
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgBufferInformationProtectionEncrypt](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgBufferInformationProtectionEncrypt?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### BufferExpanded (Default)
@@ -162,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: 
 
 ## RELATED LINKS
+[Invoke-MgBufferInformationProtectionEncrypt](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgBufferInformationProtectionEncrypt?view=graph-powershell-v1.0)

@@ -13,6 +13,9 @@ You cannot delete built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementDeviceManagementRoleDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -185,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
+[Remove-MgRoleManagementDeviceManagementRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementDeviceManagementRoleDefinition?view=graph-powershell-v1.0)

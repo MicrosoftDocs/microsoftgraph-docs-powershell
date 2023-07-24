@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action signDigest
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgSignInformationProtectionDigest](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgSignInformationProtectionDigest?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### SignExpanded (Default)
@@ -146,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Digest <Byte[]>]`: 
 
 ## RELATED LINKS
+[Invoke-MgSignInformationProtectionDigest](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgSignInformationProtectionDigest?view=graph-powershell-v1.0)

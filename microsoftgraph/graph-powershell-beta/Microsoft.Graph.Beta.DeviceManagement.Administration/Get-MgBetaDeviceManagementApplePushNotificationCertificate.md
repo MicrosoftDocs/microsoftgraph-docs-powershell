@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Apple push notification certificate.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -81,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementApplePushNotificationCertificate?view=graph-powershell-v1.0)

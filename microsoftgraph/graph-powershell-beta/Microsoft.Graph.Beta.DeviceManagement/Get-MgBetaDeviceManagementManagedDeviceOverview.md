@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Device overview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceOverview?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -81,3 +84,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgDeviceManagementManagedDeviceOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceOverview?view=graph-powershell-v1.0)

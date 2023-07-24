@@ -11,6 +11,9 @@ schema: 2.0.0
 Read-only.
 The resource that the request aims to.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessResourceRoleAssignmentRequestResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentRequestResource?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -256,3 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Get-MgPrivilegedAccessResourceRoleAssignmentRequestResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResourceRoleAssignmentRequestResource?view=graph-powershell-v1.0)

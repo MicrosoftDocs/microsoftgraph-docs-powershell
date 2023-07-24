@@ -11,6 +11,9 @@ schema: 2.0.0
 List of related Setting Definitions.
 This property is read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementCompliancePolicySettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicySettingDefinition?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -426,5 +429,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
+[Get-MgDeviceManagementCompliancePolicySettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicySettingDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Get-MgDeviceManagementCompliancePolicySettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicySettingDefinition?view=graph-powershell-v1.0)
