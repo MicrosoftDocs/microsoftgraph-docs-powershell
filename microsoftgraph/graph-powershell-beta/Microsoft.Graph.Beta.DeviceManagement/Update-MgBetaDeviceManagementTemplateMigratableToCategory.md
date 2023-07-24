@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementtemplatemigratabletocategory
 schema: 2.0.0
@@ -18,7 +18,7 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTempl
  -DeviceManagementTemplateId1 <String> -DeviceManagementTemplateSettingCategoryId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Confirm] [-WhatIf]
+ [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -26,14 +26,7 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTempl
 ```
 Update-MgBetaDeviceManagementTemplateMigratableToCategory -DeviceManagementTemplateId <String>
  -DeviceManagementTemplateId1 <String> -DeviceManagementTemplateSettingCategoryId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-Confirm] [-WhatIf]
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -42,7 +35,14 @@ Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceM
 Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-HasRequiredSetting] [-Id <String>]
  [-RecommendedSettings <IMicrosoftGraphDeviceManagementSettingInstance[]>]
- [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-Confirm] [-WhatIf]
+ [-SettingDefinitions <IMicrosoftGraphDeviceManagementSettingDefinition[]>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementTemplateMigratableToCategory -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementTemplateSettingCategory> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -51,14 +51,14 @@ Update the navigation property categories in deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -71,7 +71,7 @@ Update the navigation property categories in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +87,7 @@ Entity representing a template setting category
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
+Type: IMicrosoftGraphDeviceManagementTemplateSettingCategory
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -102,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementTemplate
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -117,8 +117,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementTemplate
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -132,8 +132,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementTemplateSettingCategory
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -147,7 +147,7 @@ Accept wildcard characters: False
 The category name
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,7 +162,7 @@ Accept wildcard characters: False
 The category contains top level required setting
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -178,7 +178,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -194,8 +194,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -210,7 +210,7 @@ The settings this category contains
 To construct, see NOTES section for RECOMMENDEDSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingInstance[]
+Type: IMicrosoftGraphDeviceManagementSettingInstance[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +226,7 @@ The setting definitions this category contains
 To construct, see NOTES section for SETTINGDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementSettingDefinition[]
+Type: IMicrosoftGraphDeviceManagementSettingDefinition[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -241,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -257,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -274,13 +274,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTemplateSettingCategory
-
 ## NOTES
 
 ALIASES
@@ -477,3 +474,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Teams-help.xml
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/set-mgbetateamrscconfiguration
 schema: 2.0.0
@@ -13,8 +13,8 @@ Update Team RSC configuration for tenant.
 ## SYNTAX
 
 ```
-Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState>
- [-AdditionalProperties <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-AdditionalProperties <Hashtable>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -22,19 +22,15 @@ Update Team RSC configuration for tenant.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -42,7 +38,7 @@ Update Team RSC configuration for tenant.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: (All)
 Aliases:
 
@@ -57,9 +53,10 @@ Accept wildcard characters: False
 Rsc Configuration State.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.MicrosoftGraphRscConfigurationState
+Type: MicrosoftGraphRscConfigurationState
 Parameter Sets: (All)
 Aliases:
+Accepted values: DisabledForAllApps, EnabledForPreApprovedAppsOnly, EnabledForAllApps
 
 Required: True
 Position: Named
@@ -72,7 +69,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -88,7 +85,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -107,10 +104,8 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-

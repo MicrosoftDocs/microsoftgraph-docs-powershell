@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mginformationprotection
 schema: 2.0.0
@@ -15,13 +15,13 @@ Update informationProtection
 ### UpdateExpanded (Default)
 ```
 Update-MgInformationProtection [-AdditionalProperties <Hashtable>] [-Bitlocker <IMicrosoftGraphBitlocker>]
- [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-Confirm] [-WhatIf]
+ [-ThreatAssessmentRequests <IMicrosoftGraphThreatAssessmentRequest[]>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-Confirm] [-WhatIf]
+Update-MgInformationProtection -BodyParameter <IMicrosoftGraphInformationProtection> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,14 +30,14 @@ Update informationProtection
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Update informationProtection
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ bitlocker
 To construct, see NOTES section for BITLOCKER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphBitlocker
+Type: IMicrosoftGraphBitlocker
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ informationProtection
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
+Type: IMicrosoftGraphInformationProtection
 Parameter Sets: Update
 Aliases:
 
@@ -98,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for THREATASSESSMENTREQUESTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphThreatAssessmentRequest[]
+Type: IMicrosoftGraphThreatAssessmentRequest[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -113,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -129,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -146,11 +146,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphInformationProtection
-
 ## NOTES
 
 ALIASES
@@ -226,4 +224,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: threatAssessmentStatus
 
 ## RELATED LINKS
-

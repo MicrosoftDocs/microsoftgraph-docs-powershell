@@ -1,49 +1,72 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessagerule
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermailfoldermessageextension
 schema: 2.0.0
 ---
 
-# Remove-MgUserMailFolderMessageRule
+# Remove-MgUserMailFolderMessageExtension
 
 ## SYNOPSIS
-Delete the specified messageRule object.
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
- [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgUserMailFolderMessageExtension -ExtensionId <String> -MailFolderId <String> -MessageId <String>
+ -UserId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserMailFolderMessageRule -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Remove-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete the specified messageRule object.
+Delete an open extension (openTypeExtension object) from the specified instance of a resource.
+See the table in the Permissions section for the list of resources that support open extensions.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Mail
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Remove-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
+
+### -ExtensionId
+The unique identifier of extension
+
+```yaml
+Type: String
+Parameter Sets: Delete
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -IfMatch
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -59,7 +82,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
+Type: IMailIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -74,7 +97,7 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -85,11 +108,11 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MessageRuleId
-The unique identifier of messageRule
+### -MessageId
+The unique identifier of message
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -104,7 +127,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -119,7 +142,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -134,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -150,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -167,11 +190,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -192,4 +213,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,51 +1,55 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Mail-help.xml
 Module Name: Microsoft.Graph.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageextension
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.mail/remove-mgusermessageattachment
 schema: 2.0.0
 ---
 
-# Remove-MgUserMessageExtension
+# Remove-MgUserMessageAttachment
 
 ## SYNOPSIS
-Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-See the table in the Permissions section for the list of resources that support open extensions.
+Delete navigation property attachments for users
 
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgUserMessageExtension -ExtensionId <String> -MessageId <String> -UserId <String> [-IfMatch <String>]
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Remove-MgUserMessageAttachment -AttachmentId <String> -MessageId <String> -UserId <String> [-IfMatch <String>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgUserMessageExtension -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Remove-MgUserMessageAttachment -InputObject <IMailIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Delete an open extension (openTypeExtension object) from the specified instance of a resource.
-See the table in the Permissions section for the list of resources that support open extensions.
+Delete navigation property attachments for users
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Mail
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Remove-MgUserMessageExtension -UserId $userId -MessageId $messageId -ExtensionId $extensionId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
-### -ExtensionId
-The unique identifier of extension
+### -AttachmentId
+The unique identifier of attachment
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -60,7 +64,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -76,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMailIdentity
+Type: IMailIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -91,7 +95,7 @@ Accept wildcard characters: False
 The unique identifier of message
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -106,7 +110,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -121,7 +125,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Delete
 Aliases:
 
@@ -136,7 +140,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -152,7 +156,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -169,11 +173,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMailIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -194,4 +196,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

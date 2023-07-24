@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/test-mgbetasecurityinformationprotectionsensitivitylabelapplication
 schema: 2.0.0
@@ -18,14 +18,14 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 ```
 Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication [-AdditionalProperties <Hashtable>]
  [-ContentInfo <IMicrosoftGraphSecurityContentInfo>]
- [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-LabelingOptions <IMicrosoftGraphSecurityLabelingOptions>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaSecurityInformationProtectionSensitivityLabelApplication
  -BodyParameter <IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,14 +35,14 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -55,7 +55,7 @@ Given contentInfo, which includes existing content metadata key-value pairs, and
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -71,7 +71,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate
 Aliases:
 
@@ -87,7 +87,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityContentInfo
+Type: IMicrosoftGraphSecurityContentInfo
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -103,7 +103,7 @@ labelingOptions
 To construct, see NOTES section for LABELINGOPTIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelingOptions
+Type: IMicrosoftGraphSecurityLabelingOptions
 Parameter Sets: EvaluateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -134,7 +134,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -151,11 +151,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1CurldqSecurityInformationprotectionSensitivitylabelsMicrosoftGraphSecurityEvaluateapplicationPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionAction
-
 ## NOTES
 
 ALIASES
@@ -207,4 +205,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[LabelId <String>]`: The GUID of the label that should be applied to the information.
 
 ## RELATED LINKS
-

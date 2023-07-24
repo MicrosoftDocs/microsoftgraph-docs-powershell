@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementroleassignment
 schema: 2.0.0
@@ -17,13 +17,13 @@ Create new navigation property to roleAssignments for deviceManagement
 New-MgBetaDeviceManagementRoleAssignment [-AdditionalProperties <Hashtable>] [-Description <String>]
  [-DisplayName <String>] [-Id <String>] [-Members <String[]>] [-ResourceScopes <String[]>]
  [-RoleDefinition <IMicrosoftGraphRoleDefinition>] [-RoleScopeTags <IMicrosoftGraphRoleScopeTag[]>]
- [-ScopeMembers <String[]>] [-ScopeType <RoleAssignmentScopeType>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-ScopeMembers <String[]>] [-ScopeType <RoleAssignmentScopeType>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementRoleAssignment -BodyParameter <IMicrosoftGraphDeviceAndAppManagementRoleAssignment>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,14 +31,14 @@ Create new navigation property to roleAssignments for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -51,7 +51,7 @@ Create new navigation property to roleAssignments for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ This applies to custom and built-in roles.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
+Type: IMicrosoftGraphDeviceAndAppManagementRoleAssignment
 Parameter Sets: Create
 Aliases:
 
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 Description of the Role Assignment.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 The display or friendly name of the role Assignment.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +116,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +132,7 @@ The list of ids of role member security groups.
 These are IDs from Azure Active Directory.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -148,7 +148,7 @@ List of ids of role scope member security groups.
 These are IDs from Azure Active Directory.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -170,7 +170,7 @@ Create custom roles if you want to define a role that allows any of the availabl
 To construct, see NOTES section for ROLEDEFINITION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleDefinition
+Type: IMicrosoftGraphRoleDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -186,7 +186,7 @@ The set of Role Scope Tags defined on the Role Assignment.
 To construct, see NOTES section for ROLESCOPETAGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTag[]
+Type: IMicrosoftGraphRoleScopeTag[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -202,7 +202,7 @@ List of ids of role scope member security groups.
 These are IDs from Azure Active Directory.
 
 ```yaml
-Type: System.String[]
+Type: String[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 Specifies the type of scope for a Role Assignment.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Support.RoleAssignmentScopeType
+Type: RoleAssignmentScopeType
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -248,7 +248,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -265,11 +265,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment
-
 ## NOTES
 
 ALIASES
@@ -356,4 +354,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
 
 ## RELATED LINKS
-

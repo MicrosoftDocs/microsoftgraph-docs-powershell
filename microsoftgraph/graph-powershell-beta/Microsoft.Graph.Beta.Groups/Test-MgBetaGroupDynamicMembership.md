@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/test-mgbetagroupdynamicmembership
 schema: 2.0.0
@@ -17,27 +17,27 @@ You can complete this operation in the following ways:
 ### EvaluateExpanded (Default)
 ```
 Test-MgBetaGroupDynamicMembership -GroupId <String> [-AdditionalProperties <Hashtable>] [-MemberId <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Evaluate
 ```
 Test-MgBetaGroupDynamicMembership -GroupId <String>
  -BodyParameter <IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### EvaluateViaIdentityExpanded
+```
+Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-MemberId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### EvaluateViaIdentity
 ```
 Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### EvaluateViaIdentityExpanded
-```
-Test-MgBetaGroupDynamicMembership -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-MemberId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -47,7 +47,7 @@ You can complete this operation in the following ways:
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -56,15 +56,13 @@ $params = @{
 Test-MgBetaGroupDynamicMembership -GroupId $groupId -BodyParameter $params
 ```
 
-
-
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -80,7 +78,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
+Type: IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Evaluate, EvaluateViaIdentity
 Aliases:
 
@@ -95,8 +93,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Evaluate, EvaluateExpanded
+Type: String
+Parameter Sets: EvaluateExpanded, Evaluate
 Aliases:
 
 Required: True
@@ -111,8 +109,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-Parameter Sets: EvaluateViaIdentity, EvaluateViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: EvaluateViaIdentityExpanded, EvaluateViaIdentity
 Aliases:
 
 Required: True
@@ -126,7 +124,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: EvaluateExpanded, EvaluateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +139,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +155,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,13 +172,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths815SnbGroupsGroupIdMicrosoftGraphEvaluatedynamicmembershipPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEvaluateDynamicMembershipResult
-
 ## NOTES
 
 ALIASES
@@ -241,4 +236,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebPartId <String>]`: The unique identifier of webPart
 
 ## RELATED LINKS
-

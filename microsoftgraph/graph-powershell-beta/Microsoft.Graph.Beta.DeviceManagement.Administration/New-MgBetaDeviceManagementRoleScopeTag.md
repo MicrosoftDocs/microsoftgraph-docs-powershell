@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementrolescopetag
 schema: 2.0.0
@@ -16,12 +16,12 @@ Create new navigation property to roleScopeTags for deviceManagement
 ```
 New-MgBetaDeviceManagementRoleScopeTag [-AdditionalProperties <Hashtable>]
  [-Assignments <IMicrosoftGraphRoleScopeTagAutoAssignment[]>] [-Description <String>] [-DisplayName <String>]
- [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> [-Confirm] [-WhatIf]
+New-MgBetaDeviceManagementRoleScopeTag -BodyParameter <IMicrosoftGraphRoleScopeTag> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,14 +30,14 @@ Create new navigation property to roleScopeTags for deviceManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -50,7 +50,7 @@ Create new navigation property to roleScopeTags for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +66,7 @@ The list of assignments for this Role Scope Tag.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTagAutoAssignment[]
+Type: IMicrosoftGraphRoleScopeTagAutoAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -82,7 +82,7 @@ Role Scope Tag
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTag
+Type: IMicrosoftGraphRoleScopeTag
 Parameter Sets: Create
 Aliases:
 
@@ -97,7 +97,7 @@ Accept wildcard characters: False
 Description of the Role Scope Tag.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +112,7 @@ Accept wildcard characters: False
 The display or friendly name of the Role Scope Tag.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -128,7 +128,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +143,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -159,7 +159,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -176,11 +176,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRoleScopeTag
-
 ## NOTES
 
 ALIASES
@@ -210,4 +208,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display or friendly name of the Role Scope Tag.
 
 ## RELATED LINKS
-

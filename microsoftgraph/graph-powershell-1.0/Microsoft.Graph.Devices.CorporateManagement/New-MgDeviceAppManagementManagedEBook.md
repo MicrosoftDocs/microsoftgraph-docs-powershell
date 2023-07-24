@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Devices.CorporateManagement-help.xml
 Module Name: Microsoft.Graph.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devices.corporatemanagement/new-mgdeviceappmanagementmanagedebook
 schema: 2.0.0
@@ -15,17 +15,17 @@ Create new navigation property to managedEBooks for deviceAppManagement
 ### CreateExpanded (Default)
 ```
 New-MgDeviceAppManagementManagedEBook [-AdditionalProperties <Hashtable>]
- [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-CreatedDateTime <DateTime>]
- [-Description <String>] [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>]
- [-Id <String>] [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphEBookInstallSummary>]
+ [-Assignments <IMicrosoftGraphManagedEBookAssignment[]>] [-CreatedDateTime <DateTime>] [-Description <String>]
+ [-DeviceStates <IMicrosoftGraphDeviceInstallState[]>] [-DisplayName <String>] [-Id <String>]
+ [-InformationUrl <String>] [-InstallSummary <IMicrosoftGraphEBookInstallSummary>]
  [-LargeCover <IMicrosoftGraphMimeContent>] [-LastModifiedDateTime <DateTime>]
  [-PrivacyInformationUrl <String>] [-PublishedDateTime <DateTime>] [-Publisher <String>]
- [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-UserStateSummary <IMicrosoftGraphUserInstallStateSummary[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBook> [-Confirm] [-WhatIf]
+New-MgDeviceAppManagementManagedEBook -BodyParameter <IMicrosoftGraphManagedEBook> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,19 +34,15 @@ Create new navigation property to managedEBooks for deviceAppManagement
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -54,7 +50,7 @@ Create new navigation property to managedEBooks for deviceAppManagement
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -70,7 +66,7 @@ The list of assignments for this eBook.
 To construct, see NOTES section for ASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBookAssignment[]
+Type: IMicrosoftGraphManagedEBookAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -86,7 +82,7 @@ An abstract class containing the base properties for Managed eBook.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
+Type: IMicrosoftGraphManagedEBook
 Parameter Sets: Create
 Aliases:
 
@@ -101,7 +97,7 @@ Accept wildcard characters: False
 The date and time when the eBook file was created.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +112,7 @@ Accept wildcard characters: False
 Description.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -132,7 +128,7 @@ The list of installation states for this eBook.
 To construct, see NOTES section for DEVICESTATES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceInstallState[]
+Type: IMicrosoftGraphDeviceInstallState[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -147,7 +143,7 @@ Accept wildcard characters: False
 Name of the eBook.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -163,7 +159,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -178,7 +174,7 @@ Accept wildcard characters: False
 The more information Url.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -194,7 +190,7 @@ Contains properties for the installation summary of a book for a device.
 To construct, see NOTES section for INSTALLSUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphEBookInstallSummary
+Type: IMicrosoftGraphEBookInstallSummary
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -210,7 +206,7 @@ Contains properties for a generic mime content.
 To construct, see NOTES section for LARGECOVER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMimeContent
+Type: IMicrosoftGraphMimeContent
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -225,7 +221,7 @@ Accept wildcard characters: False
 The date and time when the eBook was last modified.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -240,7 +236,7 @@ Accept wildcard characters: False
 The privacy statement Url.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -255,7 +251,7 @@ Accept wildcard characters: False
 The date and time when the eBook was published.
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -270,7 +266,7 @@ Accept wildcard characters: False
 Publisher.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -286,7 +282,7 @@ The list of installation states for this eBook.
 To construct, see NOTES section for USERSTATESUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserInstallStateSummary[]
+Type: IMicrosoftGraphUserInstallStateSummary[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -301,7 +297,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -317,7 +313,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -334,11 +330,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedEBook
-
 ## NOTES
 
 ALIASES
@@ -447,4 +441,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: User name.
 
 ## RELATED LINKS
-

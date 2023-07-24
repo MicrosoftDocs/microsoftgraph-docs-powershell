@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetabatchidentitygovernanceaccessreviewdecisioninstancerecorddecision
 schema: 2.0.0
@@ -16,7 +16,7 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 ```
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
  -AccessReviewInstanceDecisionItemId <String> [-AdditionalProperties <Hashtable>] [-Decision <String>]
- [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf]
+ [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -25,7 +25,15 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
  -AccessReviewInstanceDecisionItemId <String>
  -BodyParameter <IPaths1Qw0RdiIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### BatchViaIdentityExpanded
+```
+Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
+ -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Decision <String>]
+ [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### BatchViaIdentity
@@ -33,15 +41,7 @@ Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
 Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
  -InputObject <IIdentityGovernanceIdentity>
  -BodyParameter <IPaths1Qw0RdiIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### BatchViaIdentityExpanded
-```
-Invoke-MgBetaBatchIdentityGovernanceAccessReviewDecisionInstanceRecordDecision
- -InputObject <IIdentityGovernanceIdentity> [-AdditionalProperties <Hashtable>] [-Decision <String>]
- [-Justification <String>] [-PrincipalId <String>] [-ResourceId <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,14 +49,14 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -69,8 +69,8 @@ Enables reviewers to review all accessReviewInstanceDecisionItem objects in batc
 The unique identifier of accessReviewInstanceDecisionItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Batch, BatchExpanded
+Type: String
+Parameter Sets: BatchExpanded, Batch
 Aliases:
 
 Required: True
@@ -84,7 +84,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -100,7 +100,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Qw0RdiIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Qw0RdiIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Batch, BatchViaIdentity
 Aliases:
 
@@ -115,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -131,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-Parameter Sets: BatchViaIdentity, BatchViaIdentityExpanded
+Type: IIdentityGovernanceIdentity
+Parameter Sets: BatchViaIdentityExpanded, BatchViaIdentity
 Aliases:
 
 Required: True
@@ -146,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -161,7 +161,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -176,7 +176,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: BatchExpanded, BatchViaIdentityExpanded
 Aliases:
 
@@ -206,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -222,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -239,13 +239,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Qw0RdiIdentitygovernanceAccessreviewsDecisionsAccessreviewinstancedecisionitemIdInstanceMicrosoftGraphBatchrecorddecisionsPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -361,4 +358,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-

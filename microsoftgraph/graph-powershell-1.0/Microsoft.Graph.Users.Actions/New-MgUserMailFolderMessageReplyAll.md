@@ -1,68 +1,63 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mgusermailfoldermessagereplyall
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/new-mguserdriverootuploadsession
 schema: 2.0.0
 ---
 
-# New-MgUserMailFolderMessageReplyAll
+# New-MgUserDriveRootUploadSession
 
 ## SYNOPSIS
-Create a draft to reply to the sender and all recipients of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.
-\n- You can update the draft later to add reply content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, reply-all to a message in a single action.
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### CreateExpanded (Default)
 ```
-New-MgUserMailFolderMessageReplyAll -MailFolderId <String> -MessageId <String> -UserId <String>
- [-AdditionalProperties <Hashtable>] [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
-```
-
-### Create1
-```
-New-MgUserMailFolderMessageReplyAll -MailFolderId <String> -MessageId <String> -UserId <String>
- -BodyParameter <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserDriveRootUploadSession -DriveId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentity1
+### Create
 ```
-New-MgUserMailFolderMessageReplyAll -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserDriveRootUploadSession -DriveId <String> -UserId <String>
+ -BodyParameter <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### CreateViaIdentityExpanded1
+### CreateViaIdentityExpanded
 ```
-New-MgUserMailFolderMessageReplyAll -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Comment <String>] [-Message <IMicrosoftGraphMessage>] [-Confirm] [-WhatIf] [<CommonParameters>]
+New-MgUserDriveRootUploadSession -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Item <IMicrosoftGraphDriveItemUploadableProperties>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgUserDriveRootUploadSession -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a draft to reply to the sender and all recipients of a message in either JSON or MIME format.
-When using JSON format:\n- Specify either a comment or the **body** property of the `message` parameter.
-Specifying both will return an HTTP 400 Bad Request error.\n- If the original message specifies a recipient in the **replyTo** property, per Internet Message Format (RFC 2822), you should send the reply to the recipients in the **replyTo** and **toRecipients** properties, and not the recipients in the **from** and **toRecipients** properties.
-\n- You can update the draft later to add reply content to the **body** or change other message properties.
-When using MIME format:\n- Provide the applicable Internet message headers and the MIME content, all encoded in **base64** format in the request body.\n- Add any attachments and S/MIME properties to the MIME content.
-Send the draft message in a subsequent operation.
-Alternatively, reply-all to a message in a single action.
+Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
+To upload a file using an upload session, there are two steps:
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Users.Actions
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-New-MgUserMessageReplyAll -UserId $userId -MessageId $messageId
+{{ Add output here }}
+
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -70,8 +65,8 @@ New-MgUserMessageReplyAll -UserId $userId -MessageId $messageId
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: Hashtable
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -86,8 +81,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create1, CreateViaIdentity1
+Type: IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -97,15 +92,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Comment
-.
+### -DriveId
+The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -117,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: CreateViaIdentity1, CreateViaIdentityExpanded1
+Type: IUsersActionsIdentity
+Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
 Aliases:
 
 Required: True
@@ -128,46 +123,16 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -MailFolderId
-The unique identifier of mailFolder
+### -Item
+driveItemUploadableProperties
+To construct, see NOTES section for ITEM properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Message
-message
-To construct, see NOTES section for MESSAGE properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
-Parameter Sets: CreateExpanded1, CreateViaIdentityExpanded1
+Type: IMicrosoftGraphDriveItemUploadableProperties
+Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -MessageId
-The unique identifier of message
-
-```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -178,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Create1, CreateExpanded1
+Type: String
+Parameter Sets: CreateExpanded, Create
 Aliases:
 
 Required: True
@@ -193,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -209,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -225,14 +190,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.PowerShell.Models.IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.PowerShell.Models.IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMessage
-
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUploadSession
 ## NOTES
 
 ALIASES
@@ -242,74 +204,18 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths3M6QbmUsersUserIdMailfoldersMailfolderIdMessagesMessageIdMicrosoftGraphCreatereplyallPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsYe7D9IUsersUserIdDrivesDriveIdRootMicrosoftGraphCreateuploadsessionPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Comment <String>]`: 
-  - `[Message <IMicrosoftGraphMessage>]`: message
+  - `[Item <IMicrosoftGraphDriveItemUploadableProperties>]`: driveItemUploadableProperties
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Categories <String[]>]`: The categories associated with the item
-    - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-    - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[ContentType <String>]`: The MIME type.
-      - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-      - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-      - `[Name <String>]`: The attachment's file name.
-      - `[Size <Int32?>]`: The length of the attachment in bytes.
-    - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
-      - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Address <String>]`: The email address of the person or entity.
-        - `[Name <String>]`: The display name of the person or entity.
-    - `[Body <IMicrosoftGraphItemBody>]`: itemBody
+    - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
+    - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
+    - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[BodyPreview <String>]`: The first 255 characters of the message body. It is in text format.
-    - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the message.
-    - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
-    - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
-    - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-        - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-      - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[FlagStatus <String>]`: followupFlagStatus
-      - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[From <IMicrosoftGraphRecipient>]`: recipient
-    - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
-    - `[Importance <String>]`: importance
-    - `[InferenceClassification <String>]`: inferenceClassificationType
-    - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
-      - `[Name <String>]`: Represents the key in a key-value pair.
-      - `[Value <String>]`: The value in a key-value pair.
-    - `[InternetMessageId <String>]`: 
-    - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-    - `[IsDraft <Boolean?>]`: 
-    - `[IsRead <Boolean?>]`: 
-    - `[IsReadReceiptRequested <Boolean?>]`: 
-    - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Value <String[]>]`: A collection of property values.
-    - `[ParentFolderId <String>]`: 
-    - `[ReceivedDateTime <DateTime?>]`: 
-    - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
-    - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-    - `[SentDateTime <DateTime?>]`: 
-    - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-      - `[Value <String>]`: A property value.
-    - `[Subject <String>]`: 
-    - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
-    - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-    - `[WebLink <String>]`: 
+      - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
+      - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed. Available for the recent file list only.
+      - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+    - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 `INPUTOBJECT <IUsersActionsIdentity>`: Identity Parameter
   - `[AuthenticationMethodId <String>]`: The unique identifier of authenticationMethod
@@ -342,71 +248,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[TodoTaskListId <String>]`: The unique identifier of todoTaskList
   - `[UserId <String>]`: The unique identifier of user
 
-`MESSAGE <IMicrosoftGraphMessage>`: message
+`ITEM <IMicrosoftGraphDriveItemUploadableProperties>`: driveItemUploadableProperties
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Categories <String[]>]`: The categories associated with the item
-  - `[ChangeKey <String>]`: Identifies the version of the item. Every time the item is changed, changeKey changes as well. This allows Exchange to apply changes to the correct version of the object. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-  - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Attachments <IMicrosoftGraphAttachment[]>]`: The fileAttachment and itemAttachment attachments for the message.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[ContentType <String>]`: The MIME type.
-    - `[IsInline <Boolean?>]`: true if the attachment is an inline attachment; otherwise, false.
-    - `[LastModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
-    - `[Name <String>]`: The attachment's file name.
-    - `[Size <Int32?>]`: The length of the attachment in bytes.
-  - `[BccRecipients <IMicrosoftGraphRecipient[]>]`: The Bcc: recipients for the message.
-    - `[EmailAddress <IMicrosoftGraphEmailAddress>]`: emailAddress
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Address <String>]`: The email address of the person or entity.
-      - `[Name <String>]`: The display name of the person or entity.
-  - `[Body <IMicrosoftGraphItemBody>]`: itemBody
+  - `[Description <String>]`: Provides a user-visible description of the item. Read-write. Only on OneDrive Personal.
+  - `[FileSize <Int64?>]`: Provides an expected file size to perform a quota check prior to upload. Only on OneDrive Personal.
+  - `[FileSystemInfo <IMicrosoftGraphFileSystemInfo>]`: fileSystemInfo
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[BodyPreview <String>]`: The first 255 characters of the message body. It is in text format.
-  - `[CcRecipients <IMicrosoftGraphRecipient[]>]`: The Cc: recipients for the message.
-  - `[ConversationId <String>]`: The ID of the conversation the email belongs to.
-  - `[ConversationIndex <Byte[]>]`: Indicates the position of the message within the conversation.
-  - `[Extensions <IMicrosoftGraphExtension[]>]`: The collection of open extensions defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-  - `[Flag <IMicrosoftGraphFollowupFlag>]`: followupFlag
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[CompletedDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}; for example, 2017-08-29T04:00:00.0000000).
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for more possible values.
-    - `[DueDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[FlagStatus <String>]`: followupFlagStatus
-    - `[StartDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-  - `[From <IMicrosoftGraphRecipient>]`: recipient
-  - `[HasAttachments <Boolean?>]`: Indicates whether the message has attachments. This property doesn't include inline attachments, so if a message contains only inline attachments, this property is false. To verify the existence of inline attachments, parse the body property to look for a src attribute, such as <IMG src='cid:image001.jpg@01D26CD8.6C05F070'>.
-  - `[Importance <String>]`: importance
-  - `[InferenceClassification <String>]`: inferenceClassificationType
-  - `[InternetMessageHeaders <IMicrosoftGraphInternetMessageHeader[]>]`: 
-    - `[Name <String>]`: Represents the key in a key-value pair.
-    - `[Value <String>]`: The value in a key-value pair.
-  - `[InternetMessageId <String>]`: 
-  - `[IsDeliveryReceiptRequested <Boolean?>]`: 
-  - `[IsDraft <Boolean?>]`: 
-  - `[IsRead <Boolean?>]`: 
-  - `[IsReadReceiptRequested <Boolean?>]`: 
-  - `[MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]`: The collection of multi-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Value <String[]>]`: A collection of property values.
-  - `[ParentFolderId <String>]`: 
-  - `[ReceivedDateTime <DateTime?>]`: 
-  - `[ReplyTo <IMicrosoftGraphRecipient[]>]`: 
-  - `[Sender <IMicrosoftGraphRecipient>]`: recipient
-  - `[SentDateTime <DateTime?>]`: 
-  - `[SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]`: The collection of single-value extended properties defined for the message. Nullable.
-    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
-    - `[Value <String>]`: A property value.
-  - `[Subject <String>]`: 
-  - `[ToRecipients <IMicrosoftGraphRecipient[]>]`: 
-  - `[UniqueBody <IMicrosoftGraphItemBody>]`: itemBody
-  - `[WebLink <String>]`: 
+    - `[CreatedDateTime <DateTime?>]`: The UTC date and time the file was created on a client.
+    - `[LastAccessedDateTime <DateTime?>]`: The UTC date and time the file was last accessed. Available for the recent file list only.
+    - `[LastModifiedDateTime <DateTime?>]`: The UTC date and time the file was last modified on a client.
+  - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
-

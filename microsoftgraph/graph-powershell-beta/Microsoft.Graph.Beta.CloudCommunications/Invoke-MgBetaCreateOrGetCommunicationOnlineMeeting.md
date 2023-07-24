@@ -1,74 +1,122 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetacreateorgetcommunicationonlinemeeting
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaanswercommunicationcall
 schema: 2.0.0
 ---
 
-# Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting
+# Invoke-MgBetaAnswerCommunicationCall
 
 ## SYNOPSIS
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject or redirect the call before the call times out.
+The current timeout value is 15 seconds.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## SYNTAX
 
-### CreateExpanded1 (Default)
+### AnswerExpanded (Default)
 ```
-Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting [-AdditionalProperties <Hashtable>]
- [-ChatInfo <IMicrosoftGraphChatInfo>] [-EndDateTime <DateTime>] [-ExternalId <String>]
- [-Participants <IMicrosoftGraphMeetingParticipants>] [-StartDateTime <DateTime>] [-Subject <String>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaAnswerCommunicationCall -CallId <String> [-AcceptedModalities <String[]>]
+ [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>] [-CallbackUri <String>]
+ [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
-### Create1
+### Answer
 ```
-Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting
- -BodyParameter <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaAnswerCommunicationCall -CallId <String>
+ -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AnswerViaIdentityExpanded
+```
+Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ [-AcceptedModalities <String[]>] [-AdditionalProperties <Hashtable>] [-CallOptions <Hashtable>]
+ [-CallbackUri <String>] [-MediaConfig <IMicrosoftGraphMediaConfig>] [-ParticipantCapacity <Int32>] [-PassThru]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### AnswerViaIdentity
+```
+Invoke-MgBetaAnswerCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject or redirect the call before the call times out.
+The current timeout value is 15 seconds.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
-```
-
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
-	StartDateTime = [System.DateTime]::Parse("2020-02-06T01:49:21.3524945+00:00")
-	EndDateTime = [System.DateTime]::Parse("2020-02-06T02:19:21.3524945+00:00")
-	Subject = "Create a meeting with customId provided"
-	ExternalId = "7eb8263f-d0e0-4149-bb1c-1f0476083c56"
-	Participants = @{
-		Attendees = @(
-			@{
-				Identity = @{
-					User = @{
-						Id = "1f35f2e6-9cab-44ad-8d5a-b74c14720000"
-					}
-				}
-				Upn = "test1@contoso.com"
-			}
-		)
+	CallbackUri = "https://bot.contoso.com/api/calls"
+	AcceptedModalities = @(
+		"audio"
+	)
+	MediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		Blob = "<Media Session Configuration Blob>"
 	}
 }
+Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
+```
 
-# A UPN can also be used as -UserId.
-Invoke-MgBetaCreateOrGetUserOnlineMeeting -UserId $userId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+$params = @{
+	CallbackUri = "callbackUri-value"
+	MediaConfig = @{
+		"@odata.type" = "#microsoft.graph.appHostedMediaConfig"
+		Blob = "<Media Session Configuration Blob>"
+	}
+	AcceptedModalities = @(
+		"audio"
+	)
+	CallOptions = @{
+		"@odata.type" = "#microsoft.graph.incomingCallOptions"
+		IsContentSharingNotificationEnabled = $true
+	}
+	ParticipantCapacity = 200
+}
+Invoke-MgBetaAnswerCommunicationCall -CallId $callId -BodyParameter $params
+```
 
 ## PARAMETERS
+
+### -AcceptedModalities
+.
+
+```yaml
+Type: String[]
+Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: CreateExpanded1
+Type: Hashtable
+Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -83,8 +131,8 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Create1
+Type: IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Answer, AnswerViaIdentity
 Aliases:
 
 Required: True
@@ -94,28 +142,12 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -ChatInfo
-chatInfo
-To construct, see NOTES section for CHATINFO properties and create a hash table.
-
-```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphChatInfo
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -EndDateTime
+### -CallbackUri
 .
 
 ```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1
+Type: String
+Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -125,12 +157,74 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -ExternalId
+### -CallId
+The unique identifier of call
+
+```yaml
+Type: String
+Parameter Sets: AnswerExpanded, Answer
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CallOptions
+incomingCallOptions
+
+```yaml
+Type: Hashtable
+Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InputObject
+Identity Parameter
+To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
+
+```yaml
+Type: ICloudCommunicationsIdentity
+Parameter Sets: AnswerViaIdentityExpanded, AnswerViaIdentity
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -MediaConfig
+mediaConfig
+To construct, see NOTES section for MEDIACONFIG properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphMediaConfig
+Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ParticipantCapacity
 .
 
 ```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: Int32
+Parameter Sets: AnswerExpanded, AnswerViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -140,43 +234,12 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Participants
-meetingParticipants
-To construct, see NOTES section for PARTICIPANTS properties and create a hash table.
+### -PassThru
+Returns true when the command succeeds
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingParticipants
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -StartDateTime
-.
-
-```yaml
-Type: System.DateTime
-Parameter Sets: CreateExpanded1
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Subject
-.
-
-```yaml
-Type: System.String
-Parameter Sets: CreateExpanded1
+Type: SwitchParameter
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -190,7 +253,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -206,7 +269,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -222,12 +285,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+### Microsoft.Graph.Beta.PowerShell.Models.IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnlineMeeting
-
+### System.Boolean
 ## NOTES
 
 ALIASES
@@ -237,56 +299,41 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths1Pc6SxrCommunicationsOnlinemeetingsMicrosoftGraphCreateorgetPostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPathsQvpqn4CommunicationsCallsCallIdMicrosoftGraphAnswerPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ChatInfo <IMicrosoftGraphChatInfo>]`: chatInfo
+  - `[AcceptedModalities <String[]>]`: 
+  - `[CallOptions <IMicrosoftGraphIncomingCallOptions>]`: incomingCallOptions
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-    - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-    - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
-  - `[EndDateTime <DateTime?>]`: 
-  - `[ExternalId <String>]`: 
-  - `[Participants <IMicrosoftGraphMeetingParticipants>]`: meetingParticipants
+    - `[HideBotAfterEscalation <Boolean?>]`: Indicates whether to hide the app after the call is escalated.
+    - `[IsContentSharingNotificationEnabled <Boolean?>]`: Indicates whether content sharing notifications should be enabled for the call.
+  - `[CallbackUri <String>]`: 
+  - `[MediaConfig <IMicrosoftGraphMediaConfig>]`: mediaConfig
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-      - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[Application <IMicrosoftGraphIdentity>]`: identity
-          - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-          - `[Id <String>]`: Unique identifier for the identity.
-        - `[Device <IMicrosoftGraphIdentity>]`: identity
-        - `[User <IMicrosoftGraphIdentity>]`: identity
-      - `[Role <String>]`: onlineMeetingRole
-      - `[Upn <String>]`: User principal name of the participant.
-    - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-    - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-    - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-  - `[StartDateTime <DateTime?>]`: 
-  - `[Subject <String>]`: 
+    - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
+  - `[ParticipantCapacity <Int32?>]`: 
 
-`CHATINFO <IMicrosoftGraphChatInfo>`: chatInfo
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[MessageId <String>]`: The unique identifier for a message in a Microsoft Teams channel.
-  - `[ReplyChainMessageId <String>]`: The ID of the reply message.
-  - `[ThreadId <String>]`: The unique identifier for a thread in Microsoft Teams.
+`INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
+  - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
+  - `[AudioRoutingGroupId <String>]`: The unique identifier of audioRoutingGroup
+  - `[CallId <String>]`: The unique identifier of call
+  - `[CallRecordId <String>]`: The unique identifier of callRecord
+  - `[CallRecordingId <String>]`: The unique identifier of callRecording
+  - `[CallTranscriptId <String>]`: The unique identifier of callTranscript
+  - `[CommsOperationId <String>]`: The unique identifier of commsOperation
+  - `[ContentSharingSessionId <String>]`: The unique identifier of contentSharingSession
+  - `[FromDateTime <DateTime?>]`: Usage: fromDateTime={fromDateTime}
+  - `[MeetingAttendanceReportId <String>]`: The unique identifier of meetingAttendanceReport
+  - `[MeetingRegistrantBaseId <String>]`: The unique identifier of meetingRegistrantBase
+  - `[MeetingRegistrationQuestionId <String>]`: The unique identifier of meetingRegistrationQuestion
+  - `[OnlineMeetingId <String>]`: The unique identifier of onlineMeeting
+  - `[ParticipantId <String>]`: The unique identifier of participant
+  - `[PresenceId <String>]`: The unique identifier of presence
+  - `[SessionId <String>]`: The unique identifier of session
+  - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
+  - `[UserId <String>]`: The unique identifier of user
 
-`PARTICIPANTS <IMicrosoftGraphMeetingParticipants>`: meetingParticipants
+`MEDIACONFIG <IMicrosoftGraphMediaConfig>`: mediaConfig
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[Attendees <IMicrosoftGraphMeetingParticipantInfo[]>]`: Information of the meeting attendees.
-    - `[Identity <IMicrosoftGraphIdentitySet>]`: identitySet
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Application <IMicrosoftGraphIdentity>]`: identity
-        - `[(Any) <Object>]`: This indicates any property can be added to this object.
-        - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-        - `[Id <String>]`: Unique identifier for the identity.
-      - `[Device <IMicrosoftGraphIdentity>]`: identity
-      - `[User <IMicrosoftGraphIdentity>]`: identity
-    - `[Role <String>]`: onlineMeetingRole
-    - `[Upn <String>]`: User principal name of the participant.
-  - `[Contributors <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
-  - `[Organizer <IMicrosoftGraphMeetingParticipantInfo>]`: meetingParticipantInfo
-  - `[Producers <IMicrosoftGraphMeetingParticipantInfo[]>]`: 
+  - `[RemoveFromDefaultAudioGroup <Boolean?>]`: 
 
 ## RELATED LINKS
-
