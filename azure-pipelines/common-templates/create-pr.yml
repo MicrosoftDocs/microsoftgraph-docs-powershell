@@ -15,6 +15,7 @@ parameters:
     type: string
     default: ""
 
+steps:
   - task: PowerShell@2
     displayName: Create Pull Request for generated build
     env:
