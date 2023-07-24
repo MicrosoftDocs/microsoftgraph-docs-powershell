@@ -38,13 +38,17 @@ Get-MgBetaDirectoryCustomSecurityAttributeDefinition -InputObject <IIdentityDire
 Read the properties and relationships of a customSecurityAttributeDefinition object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDirectoryCustomSecurityAttributeDefinition -CustomSecurityAttributeDefinitionId $customSecurityAttributeDefinitionId
+```
+This example shows how to use the Get-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

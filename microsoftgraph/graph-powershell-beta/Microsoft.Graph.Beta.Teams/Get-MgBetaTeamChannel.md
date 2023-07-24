@@ -57,36 +57,41 @@ Get-MgBetaTeamChannel -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
 List of channels either hosted in or shared with the team (incoming channels).
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
 ```
-
-### EXAMPLE 2
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannel -TeamId $teamId
 ```
-
-### EXAMPLE 3
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'"
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'shared'" 
 ```
-
-### EXAMPLE 4
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Get-MgBetaTeamChannel -TeamId $teamId
 ```
-
-### EXAMPLE 5
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 5: Using the Get-MgBetaTeamChannel Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'"
+Get-MgBetaTeamChannel -TeamId $teamId -Filter "membershipType eq 'private'" 
 ```
+This example shows how to use the Get-MgBetaTeamChannel Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

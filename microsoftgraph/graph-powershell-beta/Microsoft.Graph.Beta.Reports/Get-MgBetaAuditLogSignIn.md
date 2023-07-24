@@ -40,13 +40,17 @@ Get a signIn object that contains a specific user sign-in event for your tenant.
 This includes sign-ins where a user is asked to enter a username or password, and session tokens.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaAuditLogSignIn -SignInId $signInId
+```
+This example shows how to use the Get-MgBetaAuditLogSignIn Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

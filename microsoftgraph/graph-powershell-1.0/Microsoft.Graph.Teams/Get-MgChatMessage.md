@@ -44,13 +44,17 @@ Get-MgChatMessage -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-P
 Retrieve a single message or a message reply in a channel or a chat.
 
 ## EXAMPLES
+### Example 1: Get a message in a chat
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 Get-MgChatMessage -ChatId $chatId -ChatMessageId $chatMessageId
+```
+This example shows how to use the Get-MgChatMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

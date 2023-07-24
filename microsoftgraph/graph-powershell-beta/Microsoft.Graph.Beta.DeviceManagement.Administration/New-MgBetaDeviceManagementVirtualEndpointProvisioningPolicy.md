@@ -39,8 +39,7 @@ New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy
 Create a new cloudPcProvisioningPolicy object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DeviceManagement.Administration
 $params = @{
@@ -62,6 +61,8 @@ $params = @{
 }
 New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -31,11 +31,10 @@ New-MgEntitlementManagementCatalog -BodyParameter <IMicrosoftGraphAccessPackageC
 Create a new accessPackageCatalog object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "sales"
@@ -45,6 +44,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementCatalog -BodyParameter $params
+```
+This example shows how to use the New-MgEntitlementManagementCatalog Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -39,20 +39,28 @@ Get the properties and relationships of a device object.
 Since the **device** resource supports extensions, you can also use the `GET` operation to get custom properties and extension data in a **device** instance.
 
 ## EXAMPLES
+### Example 1: Get a device
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDevice -DeviceId $deviceId
+```
+This example shows how to use the Get-MgBetaDevice Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get a device and return only its id and extensionAttributes properties
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-```
 
 Get-MgBetaDevice -DeviceId $deviceId -Property "id,extensionAttributes"
+```
+This example shows how to use the Get-MgBetaDevice Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

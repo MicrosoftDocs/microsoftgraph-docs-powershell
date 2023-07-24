@@ -49,8 +49,7 @@ Invite participants to the active call.
 For more information about how to handle operations, see commsOperation.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -72,8 +71,9 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -95,8 +95,9 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
-### EXAMPLE 3
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -118,8 +119,9 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
-### EXAMPLE 4
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 4: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -139,8 +141,9 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
-### EXAMPLE 5
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 5: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -162,8 +165,9 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
-### EXAMPLE 6
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 6: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -186,8 +190,9 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
-
-### EXAMPLE 7
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 7: Using the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -221,6 +226,8 @@ $params = @{
 }
 Invoke-MgBetaInviteCommunicationCallParticipant -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaInviteCommunicationCallParticipant Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -39,8 +39,7 @@ New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter <IMicrosoftGraphSec
 Create a new emailThreatSubmission object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -51,6 +50,8 @@ $params = @{
 }
 New-MgBetaSecurityThreatSubmissionEmailThreat -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaSecurityThreatSubmissionEmailThreat Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

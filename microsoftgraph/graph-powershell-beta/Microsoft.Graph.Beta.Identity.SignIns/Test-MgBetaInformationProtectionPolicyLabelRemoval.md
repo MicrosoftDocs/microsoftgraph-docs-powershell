@@ -35,8 +35,7 @@ Indicate to the consuming application what actions it should take to remove the 
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -93,6 +92,8 @@ $params = @{
 }
 Test-MgBetaInformationProtectionPolicyLabelRemoval -BodyParameter $params
 ```
+This example shows how to use the Test-MgBetaInformationProtectionPolicyLabelRemoval Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -44,20 +44,28 @@ Read-only.
 Nullable.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
+```
+This example shows how to use the Get-MgDriveItemChild Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveItemChild -DriveId $driveId -DriveItemId $driveItemId
+```
+This example shows how to use the Get-MgDriveItemChild Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -53,8 +53,7 @@ Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <I
 Update the navigation property emailThreatSubmissionPolicies in security
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -62,6 +61,8 @@ $params = @{
 }
 Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -EmailThreatSubmissionPolicyId $emailThreatSubmissionPolicyId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

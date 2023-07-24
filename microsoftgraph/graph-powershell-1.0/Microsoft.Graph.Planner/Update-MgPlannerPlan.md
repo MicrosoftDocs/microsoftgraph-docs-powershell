@@ -49,17 +49,21 @@ Update-MgPlannerPlan -InputObject <IPlannerIdentity> -BodyParameter <IMicrosoftG
 Update the properties of a **plannerPlan** object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	title = "title-value"
 }
 
 Update-MgPlannerPlan -PlannerPlanId $plannerPlanId -BodyParameter $params
+```
+This example shows how to use the Update-MgPlannerPlan Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

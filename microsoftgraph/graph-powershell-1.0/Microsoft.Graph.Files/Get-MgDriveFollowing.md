@@ -40,13 +40,17 @@ The list of items the user is following.
 Only in OneDrive for Business.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgDriveFollowing -DriveId $driveId
+```
+This example shows how to use the Get-MgDriveFollowing Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

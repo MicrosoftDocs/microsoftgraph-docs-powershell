@@ -51,8 +51,7 @@ The method allows users to pull content types directly from the content type hub
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaSiteListContentTypeCopyFromContentTypeHub Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -60,8 +59,9 @@ $params = @{
 }
 Add-MgBetaSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the Add-MgBetaSiteListContentTypeCopyFromContentTypeHub Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Add-MgBetaSiteListContentTypeCopyFromContentTypeHub Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -69,8 +69,9 @@ $params = @{
 }
 Add-MgBetaSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
-
-### EXAMPLE 3
+This example shows how to use the Add-MgBetaSiteListContentTypeCopyFromContentTypeHub Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the Add-MgBetaSiteListContentTypeCopyFromContentTypeHub Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
 $params = @{
@@ -78,6 +79,8 @@ $params = @{
 }
 Add-MgBetaSiteListContentTypeCopyFromContentTypeHub -SiteId $siteId -ListId $listId -BodyParameter $params
 ```
+This example shows how to use the Add-MgBetaSiteListContentTypeCopyFromContentTypeHub Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

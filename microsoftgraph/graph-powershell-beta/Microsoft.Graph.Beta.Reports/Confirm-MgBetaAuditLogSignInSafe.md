@@ -36,8 +36,7 @@ Admins can either mark the events flagged as risky by Azure AD Identity Protecti
 For details about investigating Identity Protection risks, see How to investigate risk.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaAuditLogSignInSafe Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 $params = @{
@@ -49,6 +48,8 @@ $params = @{
 }
 Confirm-MgBetaAuditLogSignInSafe -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgBetaAuditLogSignInSafe Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -47,8 +47,7 @@ Update-MgBetaPolicyMobileDeviceManagementPolicy -InputObject <IIdentitySignInsId
 Update the properties of a mobilityManagementPolicy object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -59,6 +58,8 @@ $params = @{
 }
 Update-MgBetaPolicyMobileDeviceManagementPolicy -MobilityManagementPolicyId $mobilityManagementPolicyId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaPolicyMobileDeviceManagementPolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

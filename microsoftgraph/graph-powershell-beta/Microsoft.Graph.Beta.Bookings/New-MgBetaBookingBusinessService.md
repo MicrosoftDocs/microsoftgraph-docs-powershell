@@ -57,8 +57,7 @@ New-MgBetaBookingBusinessService -InputObject <IBookingsIdentity>
 Create a new bookingService for the specified bookingBusiness.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaBookingBusinessService Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Bookings
 $params = @{
@@ -126,6 +125,8 @@ $params = @{
 }
 New-MgBetaBookingBusinessService -BookingBusinessId $bookingBusinessId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaBookingBusinessService Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -33,8 +33,7 @@ New-MgBetaDirectoryCustomSecurityAttributeDefinition
 Create a new customSecurityAttributeDefinition object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -63,8 +62,9 @@ $params = @{
 }
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
-
-### EXAMPLE 2
+This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -79,8 +79,9 @@ $params = @{
 }
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
-
-### EXAMPLE 3
+This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 3: Using the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 $params = @{
@@ -95,6 +96,8 @@ $params = @{
 }
 New-MgBetaDirectoryCustomSecurityAttributeDefinition -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaDirectoryCustomSecurityAttributeDefinition Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

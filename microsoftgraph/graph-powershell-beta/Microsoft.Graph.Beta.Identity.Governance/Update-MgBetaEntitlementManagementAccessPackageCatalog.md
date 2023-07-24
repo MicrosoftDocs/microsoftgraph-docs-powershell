@@ -59,8 +59,7 @@ Update-MgBetaEntitlementManagementAccessPackageCatalog -InputObject <IIdentityGo
 Update an existing accessPackageCatalog object to change one or more of its properties, such as the display name or description.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -68,6 +67,8 @@ $params = @{
 }
 Update-MgBetaEntitlementManagementAccessPackageCatalog -AccessPackageCatalogId $accessPackageCatalogId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaEntitlementManagementAccessPackageCatalog Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

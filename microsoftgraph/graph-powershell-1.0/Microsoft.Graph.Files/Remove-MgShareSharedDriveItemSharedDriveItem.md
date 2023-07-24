@@ -31,27 +31,39 @@ Remove-MgShareSharedDriveItemSharedDriveItem -InputObject <IFilesIdentity> [-IfM
 Delete entity from shares
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgShareSharedDriveItemSharedDriveItem -SharedDriveItemId $sharedDriveItemId
+```
+This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId
+```
+This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
 
-### EXAMPLE 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Files
-```
 
 Get-MgShareDriveItem -SharedDriveItemId $sharedDriveItemId -ExpandProperty "children"
+```
+This example shows how to use the Remove-MgShareSharedDriveItemSharedDriveItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

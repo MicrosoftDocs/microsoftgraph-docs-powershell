@@ -45,20 +45,23 @@ Copy-MgGroupDriveRoot -InputObject <IGroupsIdentity>
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Users.Actions
+
+$params = @{
+	Id = "id-value"
+	GroupId = "groupId-value"
+}
+
+# A UPN can also be used as -UserId.
+Copy-MgUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
 ```
+This example shows how to use the Copy-MgGroupOnenotePageToSection Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

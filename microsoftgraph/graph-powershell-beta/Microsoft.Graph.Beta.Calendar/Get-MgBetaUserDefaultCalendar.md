@@ -37,13 +37,18 @@ Navigation property.
 Read-only.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Calendar
+
 # A UPN can also be used as -UserId.
-Get-MgBetaUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
+Get-MgBetaUserDefaultCalendar -UserId $userId
 ```
+This example shows how to use the Get-MgBetaUserDefaultCalendar Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

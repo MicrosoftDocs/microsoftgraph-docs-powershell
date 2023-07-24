@@ -35,11 +35,10 @@ New-MgEducationSchool -BodyParameter <IMicrosoftGraphEducationSchool> [-WhatIf] 
 Create a new educationSchool object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.educationSchool"
@@ -65,6 +64,11 @@ $params = @{
 }
 
 New-MgEducationSchool -BodyParameter $params
+```
+This example shows how to use the New-MgEducationSchool Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

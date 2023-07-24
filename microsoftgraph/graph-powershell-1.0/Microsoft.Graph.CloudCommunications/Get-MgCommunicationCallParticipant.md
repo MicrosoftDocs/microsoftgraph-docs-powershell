@@ -38,13 +38,17 @@ Get-MgCommunicationCallParticipant -InputObject <ICloudCommunicationsIdentity> [
 Retrieve the properties and relationships of a **participant** object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallParticipant -CallId $callId -ParticipantId $participantId
+```
+This example shows how to use the Get-MgCommunicationCallParticipant Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

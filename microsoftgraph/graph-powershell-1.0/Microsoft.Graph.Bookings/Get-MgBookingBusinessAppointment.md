@@ -40,13 +40,17 @@ Get the properties and relationships of a bookingAppointment object in the speci
 The **startDateTime** and **endDateTime** properties are always returned in UTC.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Bookings
-```
 
 Get-MgBookingBusinessAppointment -BookingBusinessId $bookingBusinessId -BookingAppointmentId $bookingAppointmentId
+```
+This example shows how to use the Get-MgBookingBusinessAppointment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

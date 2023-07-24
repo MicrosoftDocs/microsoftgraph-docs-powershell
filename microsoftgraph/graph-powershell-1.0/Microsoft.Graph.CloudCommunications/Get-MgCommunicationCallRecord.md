@@ -33,20 +33,28 @@ Retrieve the properties and relationships of a callRecord object.
 There are two ways to get the **id** of a **callRecord**:
 
 ## EXAMPLES
+### Example 1: Get basic details
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId
+```
+This example shows how to use the Get-MgCommunicationCallRecord Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get full details
+
 ```powershell
 Import-Module Microsoft.Graph.CloudCommunications
-```
 
 Get-MgCommunicationCallRecord -CallRecordId $callRecordId -ExpandProperty "sessions(`$expand=segments)"
+```
+This example shows how to use the Get-MgCommunicationCallRecord Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
