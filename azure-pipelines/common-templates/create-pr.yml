@@ -25,7 +25,7 @@ steps:
         git config --global user.name "Timothy Wamalwa"
         cd microsoftgraph-docs-powershell
         $date = Get-Date -Format "dd-MM-yyyy"
-        $proposedBranch = "weekly_v2_docs_update_1"
+        $proposedBranch = "weekly_v2_docs_update_$date"
         $Head = "MicrosoftDocs:$proposedBranch"
         $Title = "${{ parameters.Title }}"
         $Body = "${{ parameters.Body }}"
