@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/test-mgbetaidentitycustomauthenticationextensionauthenticationconfiguration
 schema: 2.0.0
@@ -10,39 +10,52 @@ schema: 2.0.0
 ## SYNOPSIS
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
 ```
-Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration [-AdditionalProperties <Hashtable>]
- [-AuthenticationConfiguration <Hashtable>] [-EndpointConfiguration <Hashtable>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
+ [-AdditionalProperties <Hashtable>] [-AuthenticationConfiguration <Hashtable>]
+ [-EndpointConfiguration <Hashtable>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate
 ```
 Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
- -CustomAuthenticationExtensionId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ValidateViaIdentity
-```
-Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
- -InputObject <IIdentitySignInsIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -CustomAuthenticationExtensionId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Validate1
 ```
 Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
  -BodyParameter <IPaths1Pa4Ae0IdentityCustomauthenticationextensionsMicrosoftGraphValidateauthenticationconfigurationPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ValidateViaIdentity
+```
+Test-MgBetaIdentityCustomAuthenticationExtensionAuthenticationConfiguration
+ -InputObject <IIdentitySignInsIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 An API to check validity of the endpoint and and authentication configuration for a customAuthenticationExtension.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -50,7 +63,7 @@ An API to check validity of the endpoint and and authentication configuration fo
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -65,7 +78,7 @@ Accept wildcard characters: False
 customExtensionAuthenticationConfiguration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -81,7 +94,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Pa4Ae0IdentityCustomauthenticationextensionsMicrosoftGraphValidateauthenticationconfigurationPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pa4Ae0IdentityCustomauthenticationextensionsMicrosoftGraphValidateauthenticationconfigurationPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate1
 Aliases:
 
@@ -96,7 +109,7 @@ Accept wildcard characters: False
 The unique identifier of customAuthenticationExtension
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Validate
 Aliases:
 
@@ -111,7 +124,7 @@ Accept wildcard characters: False
 customExtensionEndpointConfiguration
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -127,7 +140,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: ValidateViaIdentity
 Aliases:
 
@@ -142,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,10 +188,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pa4Ae0IdentityCustomauthenticationextensionsMicrosoftGraphValidateauthenticationconfigurationPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationConfigurationValidation
+
 ## NOTES
 
 ALIASES
@@ -272,5 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Test-MgIdentityCustomAuthenticationExtensionAuthenticationConfiguration?view=graph-powershell-v1.0)
 

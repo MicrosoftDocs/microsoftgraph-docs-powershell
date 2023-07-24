@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetatrustframework
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Update trustFramework
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTrustFramework](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFramework?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaTrustFramework [-AdditionalProperties <Hashtable>]
  [-KeySets <IMicrosoftGraphTrustFrameworkKeySet[]>] [-Policies <IMicrosoftGraphTrustFrameworkPolicy[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-WhatIf] [-Confirm]
+Update-MgBetaTrustFramework -BodyParameter <IMicrosoftGraphTrustFramework> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update trustFramework
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Update trustFramework
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ trustFramework
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFramework
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFramework
 Parameter Sets: Update
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for KEYSETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkKeySet[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkKeySet[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTrustFrameworkPolicy[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFrameworkPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFramework
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTrustFramework
+
 ## NOTES
 
 ALIASES
@@ -193,5 +208,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 ## RELATED LINKS
-[Update-MgTrustFramework](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgTrustFramework?view=graph-powershell-v1.0)
 

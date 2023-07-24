@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports/update-mgbetareportslaazureadauthentication
 schema: 2.0.0
@@ -10,26 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property azureADAuthentication in reports
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Update-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaReportSlaAzureAdAuthentication [-AdditionalProperties <Hashtable>]
- [-Attainments <IMicrosoftGraphServiceLevelAgreementAttainment[]>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-Attainments <IMicrosoftGraphServiceLevelAgreementAttainment[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzureAdAuthentication> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaReportSlaAzureAdAuthentication -BodyParameter <IMicrosoftGraphAzureAdAuthentication> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property azureADAuthentication in reports
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Update the navigation property azureADAuthentication in reports
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ A list of monthly serviceLevelAgreementAttainment objects.
 To construct, see NOTES section for ATTAINMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServiceLevelAgreementAttainment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServiceLevelAgreementAttainment[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -69,7 +82,7 @@ azureADAuthentication
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAzureAdAuthentication
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication
 Parameter Sets: Update
 Aliases:
 
@@ -85,7 +98,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -116,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -133,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAzureAdAuthentication
+
 ## NOTES
 
 ALIASES
@@ -159,5 +174,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[StartDate <DateTime?>]`: The start date for the calendar month for which SLA attainment is measured.
 
 ## RELATED LINKS
-[Update-MgReportSlaAzureAdAuthentication](/powershell/module/Microsoft.Graph.Reports/Update-MgReportSlaAzureAdAuthentication?view=graph-powershell-v1.0)
 

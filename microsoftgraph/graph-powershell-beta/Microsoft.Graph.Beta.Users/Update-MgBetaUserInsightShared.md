@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauserinsightshared
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property shared in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsightShared?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -21,32 +18,48 @@ Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String> [-Addi
  [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
  [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
  [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
- [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserInsightShared -SharedInsightId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphSharedInsight> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
- [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
- [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
- [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSharedInsight> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphSharedInsight>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserInsightShared -InputObject <IUsersIdentity> [-AdditionalProperties <Hashtable>]
+ [-Id <String>] [-LastShared <IMicrosoftGraphSharingDetail>] [-LastSharedMethod <IMicrosoftGraphEntity>]
+ [-Resource <IMicrosoftGraphEntity>] [-ResourceReference <IMicrosoftGraphResourceReference>]
+ [-ResourceVisualization <IMicrosoftGraphResourceVisualization>]
+ [-SharingHistory <IMicrosoftGraphSharingDetail[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property shared in users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Update the navigation property shared in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ sharedInsight
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharedInsight
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +99,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -118,7 +131,7 @@ sharingDetail
 To construct, see NOTES section for LASTSHARED properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingDetail
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingDetail
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +147,7 @@ entity
 To construct, see NOTES section for LASTSHAREDMETHOD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +163,7 @@ entity
 To construct, see NOTES section for RESOURCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEntity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEntity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,7 +179,7 @@ resourceReference
 To construct, see NOTES section for RESOURCEREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceReference
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -182,7 +195,7 @@ resourceVisualization
 To construct, see NOTES section for RESOURCEVISUALIZATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphResourceVisualization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceVisualization
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -197,8 +210,8 @@ Accept wildcard characters: False
 The unique identifier of sharedInsight
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -213,7 +226,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SHARINGHISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSharingDetail[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharingDetail[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -228,8 +241,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -243,7 +256,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -259,7 +272,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -276,10 +289,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSharedInsight
+
 ## NOTES
 
 ALIASES
@@ -405,5 +421,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SharingType <String>]`: Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
 
 ## RELATED LINKS
-[Update-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsightShared?view=graph-powershell-v1.0)
 

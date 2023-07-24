@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/set-mgbetadeviceappmanagementwdacsupplementalpolicy
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action assign
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### AssignExpanded (Default)
@@ -20,7 +17,7 @@ Invoke action assign
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
  -WindowsDefenderApplicationControlSupplementalPolicyId <String> [-AdditionalProperties <Hashtable>]
  [-WdacPolicyAssignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Assign
@@ -28,7 +25,14 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
  -WindowsDefenderApplicationControlSupplementalPolicyId <String>
  -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### AssignViaIdentity
+```
+Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AssignViaIdentityExpanded
@@ -36,18 +40,27 @@ Set-MgBetaDeviceAppManagementWdacSupplementalPolicy
 Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>]
  [-WdacPolicyAssignments <IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### AssignViaIdentity
-```
-Set-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action assign
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +68,7 @@ Invoke action assign
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Assign, AssignViaIdentity
 Aliases:
 
@@ -87,8 +100,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: AssignViaIdentityExpanded, AssignViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: AssignViaIdentity, AssignViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -102,7 +115,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for WDACPOLICYASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphWindowsDefenderApplicationControlSupplementalPolicyAssignment[]
 Parameter Sets: AssignExpanded, AssignViaIdentityExpanded
 Aliases:
 
@@ -133,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of windowsDefenderApplicationControlSupplementalPolicy
 
 ```yaml
-Type: String
-Parameter Sets: AssignExpanded, Assign
+Type: System.String
+Parameter Sets: Assign, AssignExpanded
 Aliases:
 
 Required: True
@@ -148,7 +161,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -164,7 +177,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -181,15 +194,18 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Pgdjs1DeviceappmanagementWdacsupplementalpoliciesWindowsdefenderapplicationcontrolsupplementalpolicyIdMicrosoftGraphAssignPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
 
-Set-BetaDeviceAppMgtWdacSupplementalPolicy
+Set-MgBetaDeviceAppMgtWdacSupplementalPolicy
 
 COMPLEX PARAMETER PROPERTIES
 
@@ -279,5 +295,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-[Set-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Set-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
 

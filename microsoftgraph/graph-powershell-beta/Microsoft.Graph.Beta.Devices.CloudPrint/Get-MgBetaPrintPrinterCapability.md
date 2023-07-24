@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CloudPrint-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CloudPrint
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.cloudprint/get-mgbetaprintprintercapability
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function getCapabilities
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterCapability](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterCapability?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -29,13 +26,14 @@ Get-MgBetaPrintPrinterCapability -InputObject <IDevicesCloudPrintIdentity> [<Com
 Invoke function getCapabilities
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPrintPrinterCapability Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 Get-MgBetaPrintPrinterCapability -PrinterId $printerId
 ```
-This example shows how to use the Get-MgBetaPrintPrinterCapability Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -44,7 +42,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCloudPrintIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -59,7 +57,7 @@ Accept wildcard characters: False
 The unique identifier of printer
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -76,9 +74,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCloudPrintIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrinterCapabilities
+
 ## NOTES
 
 ALIASES
@@ -104,5 +104,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintPrinterCapability](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterCapability?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/set-mgbetavirtualeventsessiontranscriptcontent
 schema: 2.0.0
@@ -11,26 +11,39 @@ schema: 2.0.0
 A field that represents the content of the transcript.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgVirtualEventSessionTranscriptContent](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventSessionTranscriptContent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Set (Default)
 ```
 Set-MgBetaVirtualEventSessionTranscriptContent -CallTranscriptId <String> -VirtualEventId <String>
- -VirtualEventSessionId <String> [-Data <Stream>] -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -VirtualEventSessionId <String> -InFile <String> [-Data <Stream>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### SetViaIdentity
 ```
-Set-MgBetaVirtualEventSessionTranscriptContent -InputObject <IBookingsIdentity> [-Data <Stream>]
- -InFile <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Set-MgBetaVirtualEventSessionTranscriptContent -InputObject <IBookingsIdentity> -InFile <String>
+ [-Data <Stream>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 A field that represents the content of the transcript.
 Read-only.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Read-only.
 The unique identifier of callTranscript
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -53,7 +66,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Stream
+Type: System.IO.Stream
 Parameter Sets: (All)
 Aliases:
 
@@ -70,7 +83,7 @@ This should include a path and file name.
 If you omit the path, the current location will be used.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -86,7 +99,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
 Parameter Sets: SetViaIdentity
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 The unique identifier of virtualEvent
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 The unique identifier of virtualEventSession
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Set
 Aliases:
 
@@ -131,7 +144,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -147,7 +160,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -164,10 +177,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### System.IO.Stream
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscript
+
 ## NOTES
 
 ALIASES
@@ -200,5 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Set-MgVirtualEventSessionTranscriptContent](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventSessionTranscriptContent?view=graph-powershell-v1.0)
 
