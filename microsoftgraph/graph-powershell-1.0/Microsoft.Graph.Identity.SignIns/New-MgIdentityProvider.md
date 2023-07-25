@@ -65,8 +65,16 @@ $params = @{
 	developerId = "UBF8T346G9"
 	serviceId = "com.microsoft.rts.b2c.test.client"
 	keyId = "99P6D879C4"
-	certificateData = "### Example 2: Retrieves Apple identity provider (only for Azure AD B2C)
-	```
+	certificateData = "******"
+}
+
+New-MgIdentityProvider -BodyParameter $params
+```
+This example shows how to use the New-MgIdentityProvider Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
