@@ -141,7 +141,11 @@ function Construct-Path {
         $V1FilePath = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" "Microsoft.Graph.$Module" "$Command.md"
 
         if (Test-Path $BetaFilePath) {
-            Add-Link -File $BetaFilePath -Module $Module -GraphProfile "beta" -Command $Command
+            $V1Command = $Command.Replace("-MgBeta", "-Mg")
+            $ConfirmV1Path = Join-Path $WorkLoadDocsPath "graph-powershell-v1.0" "Microsoft.Graph.$Module" "$V1Command.md"
+            if(Test-Path $ConfirmV1Path){
+                Add-Link -File $BetaFilePath -Module $Module -GraphProfile "beta" -Command $Command
+            }
         }
 
         if (Test-Path $V1FilePath) {
