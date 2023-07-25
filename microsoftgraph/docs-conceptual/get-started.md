@@ -119,7 +119,11 @@ Now use the user's Id as a parameter to the `Get-MgUserJoinedTeam` command.
 Get-MgUserJoinedTeam -UserId $user.Id
 ```
 
-Just like the `Get-MgUser` command, this command gives a list of teams. Select one of the user's joined teams and copy its `Id`.
+Just like the `Get-MgUser` command, this command gives a list of teams. Select one of the user's joined teams and copy its `Id`, to use in the next command.
+
+```powershell
+$team = Get-MgTeam -TeamId ID_FROM_PREVIOUS_STEP
+```
 
 ### List team channels
 
