@@ -66,6 +66,7 @@ $params = @{
 	serviceId = "com.microsoft.rts.b2c.test.client"
 	keyId = "99P6D879C4"
 	certificateData = "### Example 2: Retrieves Apple identity provider (only for Azure AD B2C)
+	```
 ## PARAMETERS
 
 ### -AdditionalProperties
