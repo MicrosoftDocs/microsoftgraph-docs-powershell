@@ -34,18 +34,6 @@ Carries out the appropriate procedures to remove a managed tenant from the multi
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
 The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -173,3 +161,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgTenantRelationshipManagedTenantOffboard](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgTenantRelationshipManagedTenantOffboard?view=graph-powershell-v1.0)
+

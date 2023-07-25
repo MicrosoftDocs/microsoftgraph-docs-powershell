@@ -40,22 +40,6 @@ Get-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfig
 ## DESCRIPTION
 Read the properties and relationships of an authenticationCombinationConfiguration object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -351,3 +335,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityConditionalAccessAuthenticationStrengthPolicyCombinationConfiguration?view=graph-powershell-v1.0)
+

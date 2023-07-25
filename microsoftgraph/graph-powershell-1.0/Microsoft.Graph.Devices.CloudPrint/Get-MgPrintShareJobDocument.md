@@ -37,18 +37,6 @@ Get-MgPrintShareJobDocument -InputObject <IDevicesCloudPrintIdentity> [-ExpandPr
 ## DESCRIPTION
 Get documents from print
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPrintShareJobDocument](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareJobDocument?view=graph-powershell-beta)
+

@@ -40,22 +40,6 @@ Get-MgBetaIdentityGovernanceAccessReviewDecisionInstanceStageDecision
 ## DESCRIPTION
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
@@ -388,3 +372,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDecisionInstanceStageDecision?view=graph-powershell-v1.0)
+

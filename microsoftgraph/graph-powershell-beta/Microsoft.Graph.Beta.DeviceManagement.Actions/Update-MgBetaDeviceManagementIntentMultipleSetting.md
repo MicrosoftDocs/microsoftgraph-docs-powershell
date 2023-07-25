@@ -46,22 +46,6 @@ Update-MgBetaDeviceManagementIntentMultipleSetting -InputObject <IDeviceManageme
 ## DESCRIPTION
 Invoke action updateSettings
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -274,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementIntentMultipleSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementIntentMultipleSetting?view=graph-powershell-v1.0)
+

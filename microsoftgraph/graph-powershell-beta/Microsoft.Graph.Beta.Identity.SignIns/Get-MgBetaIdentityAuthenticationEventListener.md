@@ -37,22 +37,6 @@ Get-MgBetaIdentityAuthenticationEventListener -InputObject <IIdentitySignInsIden
 ## DESCRIPTION
 Get authenticationEventListeners from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -333,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventListener?view=graph-powershell-v1.0)
+

@@ -23,18 +23,6 @@ Remove-MgBetaDeviceManagementMonitoring [-IfMatch <String>] [-PassThru] [-WhatIf
 ## DESCRIPTION
 Delete navigation property monitoring for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
+

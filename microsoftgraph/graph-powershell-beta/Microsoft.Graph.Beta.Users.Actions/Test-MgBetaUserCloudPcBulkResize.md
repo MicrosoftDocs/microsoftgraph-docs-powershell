@@ -44,18 +44,6 @@ Test-MgBetaUserCloudPcBulkResize -InputObject <IUsersActionsIdentity>
 ## DESCRIPTION
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -249,3 +237,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgUserCloudPcBulkResize](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserCloudPcBulkResize?view=graph-powershell-v1.0)
+

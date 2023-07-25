@@ -50,22 +50,6 @@ Update-MgBetaIdentityConditionalAccessAuthenticationStrengthPolicy -InputObject 
 ## DESCRIPTION
 Update the navigation property policies in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,3 +398,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityConditionalAccessAuthenticationStrengthPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessAuthenticationStrengthPolicy?view=graph-powershell-v1.0)
+

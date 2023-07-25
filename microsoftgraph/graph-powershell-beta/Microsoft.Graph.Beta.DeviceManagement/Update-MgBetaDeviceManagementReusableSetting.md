@@ -60,22 +60,6 @@ Update-MgBetaDeviceManagementReusableSetting -InputObject <IDeviceManagementIden
 ## DESCRIPTION
 Update the navigation property reusableSettings in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessTypes
@@ -669,3 +653,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementReusableSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementReusableSetting?view=graph-powershell-v1.0)
+

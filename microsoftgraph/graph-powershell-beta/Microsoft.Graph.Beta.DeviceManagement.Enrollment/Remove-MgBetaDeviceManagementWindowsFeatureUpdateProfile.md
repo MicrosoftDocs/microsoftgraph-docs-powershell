@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementWindowsFeatureUpdateProfile -InputObject <IDeviceMa
 ## DESCRIPTION
 Delete navigation property windowsFeatureUpdateProfiles for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -183,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementWindowsFeatureUpdateProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementWindowsFeatureUpdateProfile?view=graph-powershell-v1.0)
+

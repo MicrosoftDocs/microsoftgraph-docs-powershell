@@ -35,18 +35,6 @@ Update-MgBetaPolicyDeviceRegistrationPolicy -BodyParameter <IMicrosoftGraphDevic
 Update the properties of a deviceRegistrationPolicy object.
 Represents deviceRegistrationPolicy quota restrictions, additional authentication, and authorization policies to register device identities to your organization.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -302,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-v1.0)
+

@@ -30,18 +30,6 @@ Get-MgBetaAllGroupSite -InputObject <IGroupsIdentity> [-Count] [-Filter <String>
 ## DESCRIPTION
 Invoke function getAllSites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -246,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAllGroupSite](/powershell/module/Microsoft.Graph.Groups/Get-MgAllGroupSite?view=graph-powershell-v1.0)
+

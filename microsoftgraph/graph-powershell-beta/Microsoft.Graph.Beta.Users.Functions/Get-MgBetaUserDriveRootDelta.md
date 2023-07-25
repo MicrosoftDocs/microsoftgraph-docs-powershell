@@ -44,22 +44,6 @@ Get-MgBetaUserDriveRootDelta -InputObject <IUsersFunctionsIdentity> [-Filter <St
 ## DESCRIPTION
 Invoke function delta
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -333,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveRootDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDriveRootDelta?view=graph-powershell-v1.0)
+

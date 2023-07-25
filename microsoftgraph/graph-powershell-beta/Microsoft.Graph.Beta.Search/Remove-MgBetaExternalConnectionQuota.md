@@ -30,22 +30,6 @@ Remove-MgBetaExternalConnectionQuota -InputObject <ISearchIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete navigation property quota for external
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExternalConnectionId
@@ -180,3 +164,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgExternalConnectionQuota](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalConnectionQuota?view=graph-powershell-v1.0)
+

@@ -30,18 +30,6 @@ Remove-MgBetaSecurityLabelCitation -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a citationTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CitationTemplateId
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityLabelCitation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelCitation?view=graph-powershell-v1.0)
+

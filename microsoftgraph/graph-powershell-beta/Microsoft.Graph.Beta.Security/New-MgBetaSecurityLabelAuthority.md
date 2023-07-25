@@ -29,18 +29,6 @@ New-MgBetaSecurityLabelAuthority -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
 ## DESCRIPTION
 Create a new authorityTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -195,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityLabelAuthority](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelAuthority?view=graph-powershell-v1.0)
+

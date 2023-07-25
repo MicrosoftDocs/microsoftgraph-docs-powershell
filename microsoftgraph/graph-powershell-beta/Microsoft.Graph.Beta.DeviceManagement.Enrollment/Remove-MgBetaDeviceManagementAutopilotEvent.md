@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrol
 ## DESCRIPTION
 Delete navigation property autopilotEvents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementAutopilotEventId
@@ -183,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementAutopilotEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0)
+

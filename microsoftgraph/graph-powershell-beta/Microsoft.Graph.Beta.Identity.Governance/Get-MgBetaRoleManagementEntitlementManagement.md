@@ -23,18 +23,6 @@ Get-MgBetaRoleManagementEntitlementManagement [-ExpandProperty <String[]>] [-Pro
 ## DESCRIPTION
 The RbacApplication for Entitlement Management
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-v1.0)
+

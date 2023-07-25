@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementAutopilotEvent -InputObject <IDeviceManagementEnrollme
 ## DESCRIPTION
 The list of autopilot events for the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementAutopilotEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0)
+

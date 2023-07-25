@@ -54,22 +54,6 @@ Update-MgBetaUserMobileAppTroubleshootingEvent -InputObject <IDevicesCorporateMa
 ## DESCRIPTION
 Update the navigation property mobileAppTroubleshootingEvents in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalInformation
@@ -533,3 +517,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
+

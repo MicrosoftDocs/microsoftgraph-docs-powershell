@@ -48,18 +48,6 @@ New-MgBetaUserInsightShared -InputObject <IUsersIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Create new navigation property to shared for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -403,3 +391,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserInsightShared](/powershell/module/Microsoft.Graph.Users/New-MgUserInsightShared?view=graph-powershell-v1.0)
+

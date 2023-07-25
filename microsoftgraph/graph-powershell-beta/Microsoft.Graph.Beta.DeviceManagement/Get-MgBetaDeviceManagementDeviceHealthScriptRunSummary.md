@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementDeviceHealthScriptRunSummary -InputObject <IDeviceMana
 ## DESCRIPTION
 High level run summary for device health script.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceHealthScriptId
@@ -271,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceHealthScriptRunSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceHealthScriptRunSummary?view=graph-powershell-v1.0)
+

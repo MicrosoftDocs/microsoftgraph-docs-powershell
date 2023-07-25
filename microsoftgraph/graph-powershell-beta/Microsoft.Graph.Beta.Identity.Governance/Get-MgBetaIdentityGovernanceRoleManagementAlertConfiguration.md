@@ -52,18 +52,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertConfiguration -InputObject <IIden
 The various configurations of an alert for Azure AD roles.
 The configurations are pre-defined and cannot be created or deleted, but some of the configurations can be modified.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -381,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceRoleManagementAlertConfiguration](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertConfiguration?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Get-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSummary -InputObject <IIdentity
 ## DESCRIPTION
 Get summary from privilegedRoleAssignmentRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedRoleAssignmentRequestRoleInfoSummary](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedRoleAssignmentRequestRoleInfoSummary?view=graph-powershell-v1.0)
+

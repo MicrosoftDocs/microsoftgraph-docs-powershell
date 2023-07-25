@@ -37,18 +37,6 @@ Get-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Get an attack simulation operation to track a long-running operation request for a tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -325,3 +313,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationOperation?view=graph-powershell-v1.0)
+

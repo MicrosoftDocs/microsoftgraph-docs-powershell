@@ -30,22 +30,6 @@ Restart-MgUserManagedDeviceNow -InputObject <IUsersActionsIdentity> [-PassThru] 
 ## DESCRIPTION
 Reboot device
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -191,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restart-MgBetaUserManagedDeviceNow](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restart-MgBetaUserManagedDeviceNow?view=graph-powershell-beta)
+

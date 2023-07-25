@@ -32,18 +32,6 @@ Get-MgBetaOrganizationBrandingLocalizationCustomCss -InputObject <IIdentityDirec
 CSS styling that appears on the sign-in page.
 The allowed format is .css format only and not larger than 25 KB.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -185,3 +173,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationBrandingLocalizationCustomCss](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationBrandingLocalizationCustomCss?view=graph-powershell-v1.0)
+

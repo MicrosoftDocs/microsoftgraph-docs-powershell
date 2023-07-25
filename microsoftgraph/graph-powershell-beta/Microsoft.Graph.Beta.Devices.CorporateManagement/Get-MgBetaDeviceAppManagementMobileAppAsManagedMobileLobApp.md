@@ -37,18 +37,6 @@ Get-MgBetaDeviceAppManagementMobileAppAsManagedMobileLobApp -InputObject <IDevic
 ## DESCRIPTION
 Get the item of type microsoft.graph.mobileApp as microsoft.graph.managedMobileLobApp
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -321,3 +309,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppAsManagedMobileLobApp?view=graph-powershell-v1.0)
+

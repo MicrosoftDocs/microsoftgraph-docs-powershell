@@ -24,18 +24,6 @@ Invoke-MgBetaScheduleRoleManagementDirectory [-AppScopeId <String>] [-Count] [-D
 ## DESCRIPTION
 Invoke function roleScheduleInstances
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppScopeId
@@ -217,3 +205,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgScheduleRoleManagementDirectory](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgScheduleRoleManagementDirectory?view=graph-powershell-v1.0)
+

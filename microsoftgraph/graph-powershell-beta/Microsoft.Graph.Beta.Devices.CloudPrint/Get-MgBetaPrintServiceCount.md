@@ -22,18 +22,6 @@ Get-MgBetaPrintServiceCount [-Filter <String>] [-Search <String>] [<CommonParame
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPrintServiceCount](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintServiceCount?view=graph-powershell-v1.0)
+

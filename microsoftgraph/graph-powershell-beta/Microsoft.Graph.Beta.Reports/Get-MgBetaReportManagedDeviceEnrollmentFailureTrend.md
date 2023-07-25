@@ -22,22 +22,6 @@ Get-MgBetaReportManagedDeviceEnrollmentFailureTrend -OutFile <String> [-PassThru
 ## DESCRIPTION
 Metadata for the enrollment failure trends report
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -OutFile
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportManagedDeviceEnrollmentFailureTrend](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentFailureTrend?view=graph-powershell-v1.0)
+

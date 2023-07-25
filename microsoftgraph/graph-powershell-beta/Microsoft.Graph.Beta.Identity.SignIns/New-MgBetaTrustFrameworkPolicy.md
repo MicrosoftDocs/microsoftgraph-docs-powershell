@@ -29,22 +29,6 @@ New-MgBetaTrustFrameworkPolicy -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [
 ## DESCRIPTION
 Create new navigation property to policies for trustFramework
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -139,3 +123,4 @@ ALIASES
 
 ## RELATED LINKS
 [New-MgTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgTrustFrameworkPolicy?view=graph-powershell-v1.0)
+

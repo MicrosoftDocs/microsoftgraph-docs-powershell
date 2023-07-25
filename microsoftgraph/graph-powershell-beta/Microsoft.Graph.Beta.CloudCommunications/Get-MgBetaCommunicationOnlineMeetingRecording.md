@@ -51,22 +51,6 @@ Get-MgBetaCommunicationOnlineMeetingRecording -InputObject <ICloudCommunications
 The content stream of the recording of a Teams live event.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -337,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationOnlineMeetingRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingRecording?view=graph-powershell-v1.0)
+

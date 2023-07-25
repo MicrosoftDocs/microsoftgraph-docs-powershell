@@ -30,18 +30,6 @@ Remove-MgBetaUserInsightTrending -InputObject <IUsersIdentity> [-IfMatch <String
 ## DESCRIPTION
 Delete navigation property trending for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -195,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserInsightTrending](/powershell/module/Microsoft.Graph.Users/Remove-MgUserInsightTrending?view=graph-powershell-v1.0)
+

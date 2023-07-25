@@ -30,18 +30,6 @@ Get-MgBetaGroupDriveCreatedByUser -InputObject <IFilesIdentity> [-ExpandProperty
 ## DESCRIPTION
 Get createdByUser from groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -166,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDriveCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveCreatedByUser?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Get-MgBetaReportManagedDeviceEnrollmentAbandonmentDetail -InputObject <IReportsI
 ## DESCRIPTION
 Metadata for Enrollment abandonment details report
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Filter
@@ -204,3 +188,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportManagedDeviceEnrollmentAbandonmentDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportManagedDeviceEnrollmentAbandonmentDetail?view=graph-powershell-v1.0)
+

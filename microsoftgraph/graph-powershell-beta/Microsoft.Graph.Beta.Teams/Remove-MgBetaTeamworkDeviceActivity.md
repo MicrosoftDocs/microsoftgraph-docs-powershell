@@ -30,22 +30,6 @@ Remove-MgBetaTeamworkDeviceActivity -InputObject <ITeamsIdentity> [-IfMatch <Str
 ## DESCRIPTION
 Delete navigation property activity for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamworkDeviceActivity](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeviceActivity?view=graph-powershell-v1.0)
+

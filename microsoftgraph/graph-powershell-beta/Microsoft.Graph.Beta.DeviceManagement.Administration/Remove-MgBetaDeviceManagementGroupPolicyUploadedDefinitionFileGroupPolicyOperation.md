@@ -32,22 +32,6 @@ Remove-MgBetaDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperati
 ## DESCRIPTION
 Delete navigation property groupPolicyOperations for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupPolicyOperationId
@@ -235,3 +219,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementGroupPolicyUploadedDefinitionFileGroupPolicyOperation?view=graph-powershell-v1.0)
+

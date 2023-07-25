@@ -30,18 +30,6 @@ Remove-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-IfMatch <String>] [
 ## DESCRIPTION
 Delete navigation property used for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -195,3 +183,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserInsightUsed](/powershell/module/Microsoft.Graph.Users/Remove-MgUserInsightUsed?view=graph-powershell-v1.0)
+

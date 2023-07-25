@@ -30,22 +30,6 @@ Remove-MgBetaEntitlementManagementSubject -InputObject <IIdentityGovernanceIdent
 ## DESCRIPTION
 Delete navigation property subjects for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageSubjectId
@@ -258,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementSubject](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementSubject?view=graph-powershell-v1.0)
+

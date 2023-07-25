@@ -30,18 +30,6 @@ Get-MgBetaComplianceEdiscoveryCaseCustodianLastIndexOperation -InputObject <ICom
 ## DESCRIPTION
 Get lastIndexOperation from compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CaseId
@@ -159,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseCustodianLastIndexOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseCustodianLastIndexOperation?view=graph-powershell-v1.0)
+

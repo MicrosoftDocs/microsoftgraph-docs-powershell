@@ -49,18 +49,6 @@ Update-MgBetaUserSecurityInformationProtectionSensitivityLabelParent -InputObjec
 ## DESCRIPTION
 Update the navigation property parent in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -461,3 +449,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserSecurityInformationProtectionSensitivityLabelParent](/powershell/module/Microsoft.Graph.Security/Update-MgUserSecurityInformationProtectionSensitivityLabelParent?view=graph-powershell-v1.0)
+

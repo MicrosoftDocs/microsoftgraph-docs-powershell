@@ -23,22 +23,6 @@ Remove-MgBetaPolicyExternalIdentityPolicy [-IfMatch <String>] [-PassThru] [-What
 ## DESCRIPTION
 Delete navigation property externalIdentitiesPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyExternalIdentityPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyExternalIdentityPolicy?view=graph-powershell-v1.0)
+

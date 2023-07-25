@@ -46,18 +46,6 @@ Update-MgBetaGroupDriveRootRetentionLabel -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Update the navigation property retentionLabel in groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -349,3 +337,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootRetentionLabel?view=graph-powershell-v1.0)
+

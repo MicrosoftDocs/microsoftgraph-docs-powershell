@@ -42,22 +42,6 @@ Get-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <ITea
 ## DESCRIPTION
 Retrieve the hosted content in an app's icon.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,3 +211,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent?view=graph-powershell-v1.0)
+

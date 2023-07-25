@@ -40,18 +40,6 @@ Get-MgBetaReportFormUserActivityUserDetail -InputObject <IReportsIdentity> -OutF
 ## DESCRIPTION
 Invoke function getFormsUserActivityUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Date
@@ -180,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportFormUserActivityUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportFormUserActivityUserDetail?view=graph-powershell-v1.0)
+

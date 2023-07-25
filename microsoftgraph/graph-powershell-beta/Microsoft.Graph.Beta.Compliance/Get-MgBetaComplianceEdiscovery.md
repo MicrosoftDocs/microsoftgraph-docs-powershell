@@ -22,22 +22,6 @@ Get-MgBetaComplianceEdiscovery [-ExpandProperty <String[]>] [-Property <String[]
 ## DESCRIPTION
 Get ediscovery from compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscovery?view=graph-powershell-v1.0)
+

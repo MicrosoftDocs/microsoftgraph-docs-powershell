@@ -46,18 +46,6 @@ Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicy -InputObject <IDevic
 ## DESCRIPTION
 Invoke action apply
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -261,3 +249,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgDeviceManagementVirtualEndpointProvisioningPolicy](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Add-MgDeviceManagementVirtualEndpointProvisioningPolicy?view=graph-powershell-v1.0)
+

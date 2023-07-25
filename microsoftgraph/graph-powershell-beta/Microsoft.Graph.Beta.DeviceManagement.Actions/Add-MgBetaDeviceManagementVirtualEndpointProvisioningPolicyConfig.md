@@ -31,18 +31,6 @@ Add-MgBetaDeviceManagementVirtualEndpointProvisioningPolicyConfig
 ## DESCRIPTION
 Invoke action applyConfig
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -177,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgDeviceManagementVirtualEndpointProvisioningPolicyConfig](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Add-MgDeviceManagementVirtualEndpointProvisioningPolicyConfig?view=graph-powershell-v1.0)
+

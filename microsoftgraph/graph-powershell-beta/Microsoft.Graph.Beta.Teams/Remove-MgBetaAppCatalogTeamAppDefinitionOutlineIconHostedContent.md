@@ -30,22 +30,6 @@ Remove-MgBetaAppCatalogTeamAppDefinitionOutlineIconHostedContent -InputObject <I
 ## DESCRIPTION
 Delete navigation property hostedContent for appCatalogs
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent](/powershell/module/Microsoft.Graph.Teams/Remove-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent?view=graph-powershell-v1.0)
+

@@ -22,18 +22,6 @@ Get-MgBetaAccessReviewCount [-Filter <String>] [-Search <String>] [<CommonParame
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAccessReviewCount](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAccessReviewCount?view=graph-powershell-v1.0)
+

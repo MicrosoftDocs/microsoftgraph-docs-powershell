@@ -30,18 +30,6 @@ Stop-MgBetaFinancialCompanySalesInvoice -InputObject <IFinancialsIdentity> [-Pas
 ## DESCRIPTION
 Invoke action cancel
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CompanyId
@@ -194,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgFinancialCompanySalesInvoice](/powershell/module/Microsoft.Graph.Financials/Stop-MgFinancialCompanySalesInvoice?view=graph-powershell-v1.0)
+

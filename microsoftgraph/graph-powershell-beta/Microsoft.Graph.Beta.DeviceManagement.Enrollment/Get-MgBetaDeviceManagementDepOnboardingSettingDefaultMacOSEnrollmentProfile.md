@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile
 ## DESCRIPTION
 Default MacOs Enrollment Profile
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -153,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementDepOnboardingSettingDefaultMacOSEnrollmentProfile?view=graph-powershell-v1.0)
+

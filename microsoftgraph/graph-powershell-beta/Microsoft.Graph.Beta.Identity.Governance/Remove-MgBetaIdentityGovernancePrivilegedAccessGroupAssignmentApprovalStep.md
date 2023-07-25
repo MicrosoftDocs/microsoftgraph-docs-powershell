@@ -31,18 +31,6 @@ Remove-MgBetaIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep
 ## DESCRIPTION
 Delete navigation property steps for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ApprovalId
@@ -270,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernancePrivilegedAccessGroupAssignmentApprovalStep?view=graph-powershell-v1.0)
+

@@ -52,22 +52,6 @@ Update-MgBetaSecurityDomainSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property domainSecurityProfiles in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivityGroupNames
@@ -535,3 +519,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityDomainSecurityProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityDomainSecurityProfile?view=graph-powershell-v1.0)
+

@@ -37,18 +37,6 @@ Get-MgBetaAdminEdgeInternetExplorerModeSiteList -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Get a browserSiteList that contains browserSite and browserSharedCookie resources.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -395,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAdminEdgeInternetExplorerModeSiteList](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerModeSiteList?view=graph-powershell-v1.0)
+

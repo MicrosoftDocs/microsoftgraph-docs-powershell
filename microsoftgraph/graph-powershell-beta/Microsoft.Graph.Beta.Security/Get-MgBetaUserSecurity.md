@@ -30,18 +30,6 @@ Get-MgBetaUserSecurity -InputObject <ISecurityIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Get security from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSecurity](/powershell/module/Microsoft.Graph.Security/Get-MgUserSecurity?view=graph-powershell-v1.0)
+

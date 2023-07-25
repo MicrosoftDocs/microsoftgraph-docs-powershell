@@ -30,18 +30,6 @@ Remove-MgBetaSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property loginPages for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationLoginPage?view=graph-powershell-v1.0)
+

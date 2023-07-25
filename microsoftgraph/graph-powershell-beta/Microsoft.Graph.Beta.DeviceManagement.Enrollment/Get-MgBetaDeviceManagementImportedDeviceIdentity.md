@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementImportedDeviceIdentity -InputObject <IDeviceManagement
 ## DESCRIPTION
 The imported device identities.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementImportedDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementImportedDeviceIdentity?view=graph-powershell-v1.0)
+

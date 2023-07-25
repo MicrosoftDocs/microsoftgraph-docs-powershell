@@ -42,18 +42,6 @@ Read-only collection with details of the app specific scopes when the assignment
 Containment entity.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -300,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementCloudPcRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPcRoleAssignmentAppScope?view=graph-powershell-v1.0)
+

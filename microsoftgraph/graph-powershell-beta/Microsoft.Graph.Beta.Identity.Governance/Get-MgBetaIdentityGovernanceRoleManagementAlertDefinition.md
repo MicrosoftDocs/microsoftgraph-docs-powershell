@@ -49,18 +49,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertDefinition -InputObject <IIdentit
 ## DESCRIPTION
 Defines an alert, its impact, and measures to mitigate or prevent it.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -378,3 +366,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceRoleManagementAlertDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertDefinition?view=graph-powershell-v1.0)
+

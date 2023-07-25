@@ -30,22 +30,6 @@ Remove-MgBetaGroupTeamInstalledApp -InputObject <ITeamsIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Uninstalls an app from the specified team.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamInstalledApp](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamInstalledApp?view=graph-powershell-v1.0)
+

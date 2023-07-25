@@ -22,22 +22,6 @@ Remove-MgBetaPolicyAccessReviewPolicy [-IfMatch <String>] [-PassThru] [-WhatIf] 
 ## DESCRIPTION
 Delete navigation property accessReviewPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAccessReviewPolicy?view=graph-powershell-v1.0)
+

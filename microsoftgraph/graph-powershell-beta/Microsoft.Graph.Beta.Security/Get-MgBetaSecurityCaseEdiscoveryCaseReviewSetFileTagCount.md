@@ -30,18 +30,6 @@ Get-MgBetaSecurityCaseEdiscoveryCaseReviewSetFileTagCount -InputObject <ISecurit
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EdiscoveryCaseId
@@ -227,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityCaseEdiscoveryCaseReviewSetFileTagCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseReviewSetFileTagCount?view=graph-powershell-v1.0)
+

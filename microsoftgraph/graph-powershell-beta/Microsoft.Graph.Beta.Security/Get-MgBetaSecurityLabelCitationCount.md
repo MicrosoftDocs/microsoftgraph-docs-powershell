@@ -22,18 +22,6 @@ Get-MgBetaSecurityLabelCitationCount [-Filter <String>] [-Search <String>] [<Com
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecurityLabelCitationCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCitationCount?view=graph-powershell-v1.0)
+

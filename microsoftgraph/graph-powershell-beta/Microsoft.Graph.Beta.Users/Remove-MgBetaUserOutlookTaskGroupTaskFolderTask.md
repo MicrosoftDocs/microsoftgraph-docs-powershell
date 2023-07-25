@@ -31,22 +31,6 @@ Remove-MgBetaUserOutlookTaskGroupTaskFolderTask -InputObject <IUsersIdentity> [-
 ## DESCRIPTION
 Delete navigation property tasks for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -230,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOutlookTaskGroupTaskFolderTask](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTaskGroupTaskFolderTask?view=graph-powershell-v1.0)
+

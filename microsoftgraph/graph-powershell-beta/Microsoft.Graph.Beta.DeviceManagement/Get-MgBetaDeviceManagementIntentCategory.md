@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementIntentCategory -InputObject <IDeviceManagementIdentity
 ## DESCRIPTION
 Collection of setting categories within the intent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -415,3 +399,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
+

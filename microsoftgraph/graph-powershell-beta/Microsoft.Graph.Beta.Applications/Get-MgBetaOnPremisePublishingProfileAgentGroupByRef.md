@@ -37,22 +37,6 @@ List of onPremisesAgentGroups that an onPremisesAgent is assigned to.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -235,3 +219,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfileAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileAgentGroupByRef?view=graph-powershell-v1.0)
+

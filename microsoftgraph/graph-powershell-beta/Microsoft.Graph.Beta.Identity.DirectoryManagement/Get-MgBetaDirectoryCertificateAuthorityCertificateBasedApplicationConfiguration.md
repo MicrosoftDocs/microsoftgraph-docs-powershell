@@ -39,18 +39,6 @@ Get-MgBetaDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration
 ## DESCRIPTION
 Get certificateBasedApplicationConfigurations from directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryCertificateAuthorityCertificateBasedApplicationConfiguration?view=graph-powershell-v1.0)
+

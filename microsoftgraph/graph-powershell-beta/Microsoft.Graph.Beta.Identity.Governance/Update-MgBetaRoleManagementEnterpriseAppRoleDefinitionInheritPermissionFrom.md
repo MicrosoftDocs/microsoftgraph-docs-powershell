@@ -52,18 +52,6 @@ Update-MgBetaRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom
 ## DESCRIPTION
 Update the navigation property inheritsPermissionsFrom in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -553,3 +541,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+

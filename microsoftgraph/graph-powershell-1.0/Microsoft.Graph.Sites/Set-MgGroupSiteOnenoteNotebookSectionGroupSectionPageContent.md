@@ -31,18 +31,6 @@ Set-MgGroupSiteOnenoteNotebookSectionGroupSectionPageContent -InputObject <ISite
 ## DESCRIPTION
 The page's HTML content.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Data
@@ -275,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent](/powershell/module/Microsoft.Graph.Beta.Sites/Set-MgBetaGroupSiteOnenoteNotebookSectionGroupSectionPageContent?view=graph-powershell-beta)
+

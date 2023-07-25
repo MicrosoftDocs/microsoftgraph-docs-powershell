@@ -30,18 +30,6 @@ Remove-MgBetaDeviceManagementDepOnboardingSetting -InputObject <IDeviceManagemen
 ## DESCRIPTION
 Delete navigation property depOnboardingSettings for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepOnboardingSettingId
@@ -183,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementDepOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgDeviceManagementDepOnboardingSetting?view=graph-powershell-v1.0)
+

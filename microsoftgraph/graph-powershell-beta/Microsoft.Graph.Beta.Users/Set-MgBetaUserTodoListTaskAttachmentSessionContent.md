@@ -31,22 +31,6 @@ Set-MgBetaUserTodoListTaskAttachmentSessionContent -InputObject <IUsersIdentity>
 ## DESCRIPTION
 The content streams that are uploaded.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AttachmentSessionId
@@ -233,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserTodoListTaskAttachmentSessionContent](/powershell/module/Microsoft.Graph.Users/Set-MgUserTodoListTaskAttachmentSessionContent?view=graph-powershell-v1.0)
+

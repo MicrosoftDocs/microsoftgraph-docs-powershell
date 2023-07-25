@@ -33,22 +33,6 @@ Get-MgBetaDeviceManagementReportComplianceSettingReport -OutFile <String>
 ## DESCRIPTION
 Invoke action getComplianceSettingsReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementReportComplianceSettingReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportComplianceSettingReport?view=graph-powershell-v1.0)
+

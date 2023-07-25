@@ -70,18 +70,6 @@ New-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity>
 ## DESCRIPTION
 Create a new businessScenarioTask object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActiveChecklistItemCount
@@ -929,3 +917,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBusinessScenarioPlannerTask](/powershell/module/Microsoft.Graph.Bookings/New-MgBusinessScenarioPlannerTask?view=graph-powershell-v1.0)
+

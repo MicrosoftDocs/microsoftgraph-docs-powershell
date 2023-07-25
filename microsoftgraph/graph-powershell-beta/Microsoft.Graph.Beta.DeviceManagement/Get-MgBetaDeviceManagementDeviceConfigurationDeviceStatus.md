@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatus -InputObject <IDeviceM
 ## DESCRIPTION
 Device configuration installation status by device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -410,3 +398,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceConfigurationDeviceStatus](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStatus?view=graph-powershell-v1.0)
+

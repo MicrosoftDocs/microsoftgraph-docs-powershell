@@ -32,18 +32,6 @@ Get-MgBetaRoleManagementEnterpriseAppRoleAssignmentScheduleInstancePrincipal
 ## DESCRIPTION
 The principal that's getting a role assignment or role eligibility through the request.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -240,3 +228,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstancePrincipal](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstancePrincipal?view=graph-powershell-v1.0)
+

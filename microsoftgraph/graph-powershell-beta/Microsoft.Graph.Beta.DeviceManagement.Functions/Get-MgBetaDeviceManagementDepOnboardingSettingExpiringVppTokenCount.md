@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementDepOnboardingSettingExpiringVppTokenCount
 ## DESCRIPTION
 Invoke function getExpiringVppTokenCount
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpiringBeforeDateTime
@@ -129,3 +113,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementDepOnboardingSettingExpiringVppTokenCount?view=graph-powershell-v1.0)
+

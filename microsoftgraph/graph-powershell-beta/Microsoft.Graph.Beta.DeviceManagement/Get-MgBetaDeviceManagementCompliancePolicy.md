@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementCompliancePolicy -InputObject <IDeviceManagementIdenti
 ## DESCRIPTION
 List of all compliance policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -399,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementCompliancePolicy](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementCompliancePolicy?view=graph-powershell-v1.0)
+

@@ -40,18 +40,6 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileAssignment
 ## DESCRIPTION
 The list of group assignments for the profile.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -298,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeploymentProfileAssignment?view=graph-powershell-v1.0)
+

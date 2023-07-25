@@ -30,22 +30,6 @@ Remove-MgBetaEntitlementManagementAccessPackageResourceRequest -InputObject <IId
 ## DESCRIPTION
 Delete navigation property accessPackageResourceRequests for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResourceRequestId
@@ -258,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEntitlementManagementAccessPackageResourceRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackageResourceRequest?view=graph-powershell-v1.0)
+

@@ -54,22 +54,6 @@ This API is useful when a label should be set automatically based on classificat
 To evaluate based on classification results, provide the contentInfo, which includes existing content metadata key-value pairs, and classification results.
 The API returns an informationProtectionAction that contains one of more of the following:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -289,3 +273,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgUserSecurityInformationProtectionSensitivityLabelClassificationResult](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserSecurityInformationProtectionSensitivityLabelClassificationResult?view=graph-powershell-v1.0)
+

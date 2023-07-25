@@ -30,18 +30,6 @@ Get-MgBetaUserScopedRoleMemberOfCount -InputObject <IIdentityDirectoryManagement
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -168,3 +156,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserScopedRoleMemberOfCount](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgUserScopedRoleMemberOfCount?view=graph-powershell-v1.0)
+

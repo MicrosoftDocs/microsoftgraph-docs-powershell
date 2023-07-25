@@ -30,22 +30,6 @@ Remove-MgBetaUserInformationProtectionSensitivityLabel -InputObject <IIdentitySi
 ## DESCRIPTION
 Delete navigation property sensitivityLabels for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -251,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserInformationProtectionSensitivityLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserInformationProtectionSensitivityLabel?view=graph-powershell-v1.0)
+

@@ -40,18 +40,6 @@ Get-MgBetaIdentityGovernanceRoleManagementAlertIncident -InputObject <IIdentityG
 Read the properties and relationships of an alert incident.
 The alert incident can be one of the following types that are derived from the unifiedRoleManagementAlertIncident object:
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -370,3 +358,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceRoleManagementAlertIncident](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceRoleManagementAlertIncident?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Remove-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <I
 ## DESCRIPTION
 Delete navigation property emailThreatSubmissionPolicies for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EmailThreatSubmissionPolicyId
@@ -232,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy?view=graph-powershell-v1.0)
+

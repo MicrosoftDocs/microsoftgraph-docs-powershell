@@ -30,22 +30,6 @@ Remove-MgBetaComplianceEdiscoveryCaseCustodian -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property custodians for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -194,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+

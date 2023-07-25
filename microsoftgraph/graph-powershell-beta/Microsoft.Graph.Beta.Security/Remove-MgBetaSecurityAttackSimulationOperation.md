@@ -30,18 +30,6 @@ Remove-MgBetaSecurityAttackSimulationOperation -InputObject <ISecurityIdentity> 
 ## DESCRIPTION
 Delete navigation property operations for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttackSimulationOperationId
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityAttackSimulationOperation](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAttackSimulationOperation?view=graph-powershell-v1.0)
+

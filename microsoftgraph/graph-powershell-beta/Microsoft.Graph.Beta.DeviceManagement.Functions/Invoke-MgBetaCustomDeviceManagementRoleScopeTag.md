@@ -22,22 +22,6 @@ Invoke-MgBetaCustomDeviceManagementRoleScopeTag [<CommonParameters>]
 ## DESCRIPTION
 Invoke function hasCustomRoleScopeTag
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### CommonParameters
@@ -54,3 +38,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgCustomDeviceManagementRoleScopeTag](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgCustomDeviceManagementRoleScopeTag?view=graph-powershell-v1.0)
+

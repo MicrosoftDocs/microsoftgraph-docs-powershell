@@ -39,18 +39,6 @@ Get-MgBetaDeviceManagementWindowsInformationProtectionAppLearningSummary
 ## DESCRIPTION
 The windows information protection app learning summaries.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -397,3 +385,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementWindowsInformationProtectionAppLearningSummary?view=graph-powershell-v1.0)
+

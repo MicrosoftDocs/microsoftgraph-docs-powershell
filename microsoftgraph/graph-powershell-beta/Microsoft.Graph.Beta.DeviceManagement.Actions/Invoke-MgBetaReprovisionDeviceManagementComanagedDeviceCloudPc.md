@@ -30,22 +30,6 @@ Invoke-MgBetaReprovisionDeviceManagementComanagedDeviceCloudPc -InputObject <IDe
 ## DESCRIPTION
 Reprovision a Cloud PC with an Intune managed device ID.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
+

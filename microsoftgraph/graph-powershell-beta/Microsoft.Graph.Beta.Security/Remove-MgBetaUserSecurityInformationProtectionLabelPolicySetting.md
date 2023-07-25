@@ -30,18 +30,6 @@ Remove-MgBetaUserSecurityInformationProtectionLabelPolicySetting -InputObject <I
 ## DESCRIPTION
 Delete navigation property labelPolicySettings for users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Remove-MgUserSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
+

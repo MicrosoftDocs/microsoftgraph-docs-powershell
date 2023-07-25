@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementEmbeddedSimActivationCodePool -InputObject <IDeviceMan
 ## DESCRIPTION
 The embedded SIM activation code pools created by this account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -399,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)
+

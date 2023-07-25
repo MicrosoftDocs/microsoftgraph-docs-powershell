@@ -22,18 +22,6 @@ Get-MgBetaEducationMeTaughtClassCount [-Filter <String>] [-Search <String>] [<Co
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationMeTaughtClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeTaughtClassCount?view=graph-powershell-v1.0)
+

@@ -51,22 +51,6 @@ Get-MgBetaTeamworkDeletedTeamChannelSharedWithTeam -InputObject <ITeamsIdentity>
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -342,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+

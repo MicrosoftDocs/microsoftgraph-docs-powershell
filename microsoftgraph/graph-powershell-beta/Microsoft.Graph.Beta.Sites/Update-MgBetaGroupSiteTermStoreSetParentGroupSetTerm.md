@@ -52,18 +52,6 @@ Update-MgBetaGroupSiteTermStoreSetParentGroupSetTerm -InputObject <ISitesIdentit
 ## DESCRIPTION
 Update the properties of a term object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -626,3 +614,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupSiteTermStoreSetParentGroupSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteTermStoreSetParentGroupSetTerm?view=graph-powershell-v1.0)
+

@@ -31,18 +31,6 @@ Remove-MgBetaVirtualEventSessionMeetingAttendanceReportAttendanceRecord -InputOb
 ## DESCRIPTION
 Delete navigation property attendanceRecords for solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AttendanceRecordId
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgVirtualEventSessionMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventSessionMeetingAttendanceReportAttendanceRecord?view=graph-powershell-v1.0)
+

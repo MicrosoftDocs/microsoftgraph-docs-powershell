@@ -30,18 +30,6 @@ Remove-MgBetaOrganizationSettingPronoun -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Delete navigation property pronouns for organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -199,3 +187,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOrganizationSettingPronoun](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgOrganizationSettingPronoun?view=graph-powershell-v1.0)
+

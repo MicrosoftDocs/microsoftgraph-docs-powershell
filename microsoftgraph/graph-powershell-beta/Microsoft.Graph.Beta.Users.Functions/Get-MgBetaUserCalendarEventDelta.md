@@ -60,22 +60,6 @@ The initial call is a full synchronization, and every subsequent **delta** call 
 This allows you to maintain and synchronize a local store of events in the specified calendar, without having to fetch all the events of that calendar from the server every time.
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -366,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCalendarEventDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserCalendarEventDelta?view=graph-powershell-v1.0)
+

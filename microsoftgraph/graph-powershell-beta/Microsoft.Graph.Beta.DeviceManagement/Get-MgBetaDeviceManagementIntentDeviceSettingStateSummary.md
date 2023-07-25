@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementIntentDeviceSettingStateSummary -InputObject <IDeviceM
 ## DESCRIPTION
 Collection of settings and their states and counts of devices that belong to corresponding state for all settings within the intent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -415,3 +399,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementIntentDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementIntentDeviceSettingStateSummary?view=graph-powershell-v1.0)
+

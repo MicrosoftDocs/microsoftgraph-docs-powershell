@@ -41,18 +41,6 @@ Get-MgBetaDeviceManagementTemplateMigratableToCategorySettingDefinition
 ## DESCRIPTION
 The setting definitions this category contains
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -444,3 +432,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementTemplateMigratableToCategorySettingDefinition](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateMigratableToCategorySettingDefinition?view=graph-powershell-v1.0)
+

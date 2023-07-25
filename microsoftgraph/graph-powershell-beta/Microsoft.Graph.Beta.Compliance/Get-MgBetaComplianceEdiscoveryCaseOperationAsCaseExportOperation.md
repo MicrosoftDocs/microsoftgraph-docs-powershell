@@ -37,18 +37,6 @@ Get-MgBetaComplianceEdiscoveryCaseOperationAsCaseExportOperation -InputObject <I
 ## DESCRIPTION
 Get the item of type microsoft.graph.ediscovery.caseOperation as microsoft.graph.ediscovery.caseExportOperation
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -287,3 +275,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCaseOperationAsCaseExportOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseOperationAsCaseExportOperation?view=graph-powershell-v1.0)
+

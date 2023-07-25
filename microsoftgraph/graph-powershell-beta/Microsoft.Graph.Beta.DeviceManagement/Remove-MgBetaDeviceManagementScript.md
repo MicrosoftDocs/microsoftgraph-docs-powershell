@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementScript -InputObject <IDeviceManagementIdentity> [-I
 ## DESCRIPTION
 Delete navigation property deviceManagementScripts for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceManagementScriptId
@@ -302,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementScript](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementScript?view=graph-powershell-v1.0)
+

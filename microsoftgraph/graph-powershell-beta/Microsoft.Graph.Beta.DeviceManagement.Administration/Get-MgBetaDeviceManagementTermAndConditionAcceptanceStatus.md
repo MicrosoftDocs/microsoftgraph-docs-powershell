@@ -38,18 +38,6 @@ Get-MgBetaDeviceManagementTermAndConditionAcceptanceStatus
 ## DESCRIPTION
 The list of acceptance statuses for this T&C policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -327,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
+

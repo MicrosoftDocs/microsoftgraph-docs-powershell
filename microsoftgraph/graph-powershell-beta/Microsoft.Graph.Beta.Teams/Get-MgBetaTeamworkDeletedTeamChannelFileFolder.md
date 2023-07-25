@@ -30,22 +30,6 @@ Get-MgBetaTeamworkDeletedTeamChannelFileFolder -InputObject <ITeamsIdentity> [-E
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -184,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamworkDeletedTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelFileFolder?view=graph-powershell-v1.0)
+

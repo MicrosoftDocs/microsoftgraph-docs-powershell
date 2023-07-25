@@ -30,18 +30,6 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorDepartmentTemplate -InputObject <
 ## DESCRIPTION
 Specifies the  department or business unit of an organization to which a label belongs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelRetentionLabelDescriptorDepartmentTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorDepartmentTemplate?view=graph-powershell-v1.0)
+

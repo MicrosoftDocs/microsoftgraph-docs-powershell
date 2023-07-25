@@ -30,18 +30,6 @@ Get-MgBetaUserInsightSharedLastSharedMethod -InputObject <IUsersIdentity> [-Expa
 ## DESCRIPTION
 Get lastSharedMethod from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -164,3 +152,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserInsightSharedLastSharedMethod](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightSharedLastSharedMethod?view=graph-powershell-v1.0)
+

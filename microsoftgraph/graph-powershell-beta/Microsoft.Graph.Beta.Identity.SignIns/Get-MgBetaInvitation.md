@@ -37,18 +37,6 @@ Get-MgBetaInvitation -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get entity from invitations by key
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -329,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgInvitation?view=graph-powershell-v1.0)
+

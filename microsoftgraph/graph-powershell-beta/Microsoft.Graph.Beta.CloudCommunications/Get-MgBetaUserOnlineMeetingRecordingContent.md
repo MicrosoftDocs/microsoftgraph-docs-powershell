@@ -30,18 +30,6 @@ Get-MgBetaUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Get content for the navigation property recordings from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -175,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRecordingContent?view=graph-powershell-v1.0)
+

@@ -22,22 +22,6 @@ Invoke-MgBetaUnbindDeviceManagementAndroidForWorkSetting [-PassThru] [-WhatIf] [
 ## DESCRIPTION
 Invoke action unbind
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -PassThru
@@ -100,3 +84,4 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgUnbindDeviceManagementAndroidForWorkSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnbindDeviceManagementAndroidForWorkSetting?view=graph-powershell-v1.0)
+

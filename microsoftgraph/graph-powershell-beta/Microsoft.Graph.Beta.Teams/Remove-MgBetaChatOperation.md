@@ -30,22 +30,6 @@ Remove-MgBetaChatOperation -InputObject <ITeamsIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property operations for chats
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgChatOperation](/powershell/module/Microsoft.Graph.Teams/Remove-MgChatOperation?view=graph-powershell-v1.0)
+

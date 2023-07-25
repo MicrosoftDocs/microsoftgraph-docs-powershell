@@ -23,18 +23,6 @@ Remove-MgBetaRoleManagementDeviceManagement [-IfMatch <String>] [-PassThru] [-Wh
 ## DESCRIPTION
 Delete navigation property deviceManagement for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -112,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgRoleManagementDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Remove-MgRoleManagementDeviceManagement?view=graph-powershell-v1.0)
+

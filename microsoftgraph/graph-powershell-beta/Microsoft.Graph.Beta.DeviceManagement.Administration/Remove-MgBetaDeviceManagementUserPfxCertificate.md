@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementUserPfxCertificate -InputObject <IDeviceManagementA
 ## DESCRIPTION
 Delete navigation property userPfxCertificates for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -218,3 +202,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementUserPfxCertificate](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementUserPfxCertificate?view=graph-powershell-v1.0)
+

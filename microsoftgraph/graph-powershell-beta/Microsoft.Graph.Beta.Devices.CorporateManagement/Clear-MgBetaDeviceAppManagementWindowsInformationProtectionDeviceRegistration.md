@@ -31,18 +31,6 @@ Clear-MgBetaDeviceAppManagementWindowsInformationProtectionDeviceRegistration
 ## DESCRIPTION
 Invoke action wipe
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -210,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Clear-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Clear-MgDeviceAppManagementWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)
+

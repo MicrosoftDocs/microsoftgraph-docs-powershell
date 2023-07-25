@@ -30,18 +30,6 @@ Remove-MgBetaSecurityLabelDepartment -InputObject <ISecurityIdentity> [-IfMatch 
 ## DESCRIPTION
 Delete a departmentTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DepartmentTemplateId
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityLabelDepartment](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityLabelDepartment?view=graph-powershell-v1.0)
+

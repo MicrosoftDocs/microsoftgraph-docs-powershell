@@ -30,22 +30,6 @@ Remove-MgBetaGroupTeamTag -InputObject <ITeamsIdentity> [-IfMatch <String>] [-Pa
 ## DESCRIPTION
 Delete a tag object permanently.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -GroupId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamTag](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTag?view=graph-powershell-v1.0)
+

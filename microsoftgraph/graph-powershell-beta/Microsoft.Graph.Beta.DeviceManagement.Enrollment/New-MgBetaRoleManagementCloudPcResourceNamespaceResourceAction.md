@@ -51,18 +51,6 @@ New-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
 ## DESCRIPTION
 Create new navigation property to resourceActions for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionVerb
@@ -402,3 +390,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRoleManagementCloudPcResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementCloudPcResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+

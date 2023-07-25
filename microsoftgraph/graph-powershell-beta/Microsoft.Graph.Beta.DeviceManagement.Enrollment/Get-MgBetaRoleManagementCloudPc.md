@@ -22,18 +22,6 @@ Get-MgBetaRoleManagementCloudPc [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 Get cloudPC from roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
+

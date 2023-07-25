@@ -70,22 +70,6 @@ Update-MgBetaUserDevice -InputObject <ICrossDeviceExperiencesIdentity> -BodyPara
 ## DESCRIPTION
 Update the navigation property devices in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccountEnabled
@@ -1156,3 +1140,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDevice](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserDevice?view=graph-powershell-v1.0)
+

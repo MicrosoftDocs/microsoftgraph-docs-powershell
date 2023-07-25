@@ -30,18 +30,6 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorCitationTemplate -InputObject <IS
 ## DESCRIPTION
 The specific rule or regulation created by a jurisdiction used to determine whether certain labels and content should be retained or deleted.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorCitationTemplate?view=graph-powershell-v1.0)
+

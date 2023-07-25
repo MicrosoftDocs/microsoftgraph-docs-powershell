@@ -53,18 +53,6 @@ Update-MgBetaRoleManagementDeviceManagementResourceNamespaceResourceAction
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActionVerb
@@ -419,3 +407,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-v1.0)
+

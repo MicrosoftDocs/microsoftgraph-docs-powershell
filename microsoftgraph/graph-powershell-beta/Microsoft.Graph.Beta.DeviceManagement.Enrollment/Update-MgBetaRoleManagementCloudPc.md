@@ -32,18 +32,6 @@ Update-MgBetaRoleManagementCloudPc -BodyParameter <IMicrosoftGraphRbacApplicatio
 ## DESCRIPTION
 Update the navigation property cloudPC in roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -335,3 +323,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgRoleManagementCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgRoleManagementCloudPc?view=graph-powershell-v1.0)
+

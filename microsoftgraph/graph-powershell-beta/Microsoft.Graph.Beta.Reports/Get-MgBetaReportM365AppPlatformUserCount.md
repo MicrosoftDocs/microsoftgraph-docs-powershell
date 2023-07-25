@@ -29,22 +29,6 @@ Get-MgBetaReportM365AppPlatformUserCount -InputObject <IReportsIdentity> -OutFil
 ## DESCRIPTION
 Invoke function getM365AppPlatformUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -158,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportM365AppPlatformUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportM365AppPlatformUserCount?view=graph-powershell-v1.0)
+

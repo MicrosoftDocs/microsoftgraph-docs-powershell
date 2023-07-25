@@ -32,22 +32,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHis
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -304,3 +288,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
+

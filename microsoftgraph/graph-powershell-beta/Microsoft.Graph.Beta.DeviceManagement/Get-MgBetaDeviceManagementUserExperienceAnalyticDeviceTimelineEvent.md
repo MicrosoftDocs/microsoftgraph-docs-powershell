@@ -38,18 +38,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticDeviceTimelineEvent -InputObject
 ## DESCRIPTION
 The user experience analytics device events entity contains NRT device timeline event details.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -396,3 +384,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticDeviceTimelineEvent?view=graph-powershell-v1.0)
+

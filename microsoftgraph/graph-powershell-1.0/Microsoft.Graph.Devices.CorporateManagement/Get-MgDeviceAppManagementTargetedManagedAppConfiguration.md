@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementTargetedManagedAppConfiguration -InputObject <IDevicesC
 ## DESCRIPTION
 Targeted managed app configurations.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -289,3 +277,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementTargetedManagedAppConfiguration?view=graph-powershell-beta)
+

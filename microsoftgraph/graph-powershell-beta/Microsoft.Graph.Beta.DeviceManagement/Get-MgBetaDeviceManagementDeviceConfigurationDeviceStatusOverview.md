@@ -30,22 +30,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationDeviceStatusOverview -InputObject <
 ## DESCRIPTION
 Device Configuration devices status overview
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DeviceConfigurationId
@@ -271,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceStatusOverview?view=graph-powershell-v1.0)
+

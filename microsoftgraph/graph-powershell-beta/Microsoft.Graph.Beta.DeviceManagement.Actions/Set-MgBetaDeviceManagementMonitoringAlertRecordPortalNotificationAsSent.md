@@ -30,22 +30,6 @@ Set-MgBetaDeviceManagementMonitoringAlertRecordPortalNotificationAsSent
 ## DESCRIPTION
 Set the status of the notification associated with the specified alertRecord on the Microsoft EndPoint Manager admin center as sent, by setting the **isPortalNotificationSent** property of the portal notification to `true`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AlertRecordId
@@ -198,3 +182,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent?view=graph-powershell-v1.0)
+

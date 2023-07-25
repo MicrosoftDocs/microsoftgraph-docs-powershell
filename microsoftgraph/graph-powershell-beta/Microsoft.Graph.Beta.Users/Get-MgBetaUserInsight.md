@@ -29,18 +29,6 @@ Get-MgBetaUserInsight -InputObject <IUsersIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 Get insights from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsight?view=graph-powershell-v1.0)
+

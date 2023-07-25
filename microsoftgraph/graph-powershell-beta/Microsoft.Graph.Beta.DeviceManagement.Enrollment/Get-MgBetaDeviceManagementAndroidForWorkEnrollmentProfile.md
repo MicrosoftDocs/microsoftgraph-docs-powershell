@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementAndroidForWorkEnrollmentProfile -InputObject <IDeviceM
 ## DESCRIPTION
 Android for Work enrollment profile entities.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementAndroidForWorkEnrollmentProfile](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementAndroidForWorkEnrollmentProfile?view=graph-powershell-v1.0)
+

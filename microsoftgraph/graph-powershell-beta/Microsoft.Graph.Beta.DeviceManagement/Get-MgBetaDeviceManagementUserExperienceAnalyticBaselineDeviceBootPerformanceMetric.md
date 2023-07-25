@@ -32,22 +32,6 @@ Get-MgBetaDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMet
 ## DESCRIPTION
 The scores and insights for the device boot performance metrics.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -273,3 +257,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBaselineDeviceBootPerformanceMetric?view=graph-powershell-v1.0)
+

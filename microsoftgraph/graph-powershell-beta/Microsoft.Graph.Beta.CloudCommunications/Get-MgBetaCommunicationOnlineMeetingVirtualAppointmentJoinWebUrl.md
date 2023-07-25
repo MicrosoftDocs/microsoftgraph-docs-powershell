@@ -29,18 +29,6 @@ Get-MgBetaCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl -InputObject <I
 ## DESCRIPTION
 Invoke function getVirtualAppointmentJoinWebUrl
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -114,3 +102,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgCommunicationOnlineMeetingVirtualAppointmentJoinWebUrl?view=graph-powershell-v1.0)
+

@@ -48,18 +48,6 @@ Copy-MgSiteOnenoteNotebookSectionGroupSectionToSectionGroup -InputObject <ISites
 ## DESCRIPTION
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -356,3 +344,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionToSectionGroup?view=graph-powershell-beta)
+

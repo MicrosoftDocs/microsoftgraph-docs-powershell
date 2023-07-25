@@ -37,22 +37,6 @@ Get-MgBetaEntitlementManagementAccessPackageResource -InputObject <IIdentityGove
 ## DESCRIPTION
 A reference to a resource associated with an access package catalog.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessPackageResourceId
@@ -355,3 +339,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageResource?view=graph-powershell-v1.0)
+

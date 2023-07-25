@@ -30,18 +30,6 @@ Set-MgBetaUserOnlineMeetingRecordingContent -InputObject <ICloudCommunicationsId
 ## DESCRIPTION
 Update content for the navigation property recordings in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -209,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserOnlineMeetingRecordingContent](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingRecordingContent?view=graph-powershell-v1.0)
+

@@ -29,22 +29,6 @@ Get-MgBetaDeviceManagementManagedDeviceFileVaultKey -InputObject <IDeviceManagem
 ## DESCRIPTION
 Invoke function getFileVaultKey
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -128,3 +112,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementManagedDeviceFileVaultKey](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementManagedDeviceFileVaultKey?view=graph-powershell-v1.0)
+

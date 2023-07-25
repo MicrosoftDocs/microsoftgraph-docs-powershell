@@ -30,18 +30,6 @@ Undo-MgBetaTeamworkDeletedChatDelete -InputObject <ITeamsIdentity> [-PassThru] [
 ## DESCRIPTION
 Invoke action undoDelete
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeletedChatId
@@ -181,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Undo-MgTeamworkDeletedChatDelete](/powershell/module/Microsoft.Graph.Teams/Undo-MgTeamworkDeletedChatDelete?view=graph-powershell-v1.0)
+

@@ -44,18 +44,6 @@ New-MgBetaCommunicationOnlineMeetingRegistrationRegistrant -InputObject <ICloudC
 ## DESCRIPTION
 Create new navigation property to registrants for communications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -229,3 +217,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgCommunicationOnlineMeetingRegistrationRegistrant](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationOnlineMeetingRegistrationRegistrant?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Remove-MgBetaComplianceEdiscoveryCaseReviewSet -InputObject <IComplianceIdentity
 ## DESCRIPTION
 Delete navigation property reviewSets for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -CaseId
@@ -194,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
+

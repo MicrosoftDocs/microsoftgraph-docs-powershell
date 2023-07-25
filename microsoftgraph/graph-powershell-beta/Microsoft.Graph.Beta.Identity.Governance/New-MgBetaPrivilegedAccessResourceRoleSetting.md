@@ -52,22 +52,6 @@ New-MgBetaPrivilegedAccessResourceRoleSetting -InputObject <IIdentityGovernanceI
 ## DESCRIPTION
 Create new navigation property to roleSettings for privilegedAccess
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -762,3 +746,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleSetting?view=graph-powershell-v1.0)
+

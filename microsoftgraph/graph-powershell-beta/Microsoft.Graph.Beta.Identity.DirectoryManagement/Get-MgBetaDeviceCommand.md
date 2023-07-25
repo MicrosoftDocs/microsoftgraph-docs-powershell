@@ -37,22 +37,6 @@ Get-MgBetaDeviceCommand -InputObject <IIdentityDirectoryManagementIdentity> [-Ex
 ## DESCRIPTION
 Set of commands sent to this device.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceCommand](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceCommand?view=graph-powershell-v1.0)
+

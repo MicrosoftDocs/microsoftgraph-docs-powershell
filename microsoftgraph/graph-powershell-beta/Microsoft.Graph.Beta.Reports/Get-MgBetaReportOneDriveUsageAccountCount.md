@@ -29,22 +29,6 @@ Get-MgBetaReportOneDriveUsageAccountCount -InputObject <IReportsIdentity> -OutFi
 ## DESCRIPTION
 Invoke function getOneDriveUsageAccountCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -158,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportOneDriveUsageAccountCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOneDriveUsageAccountCount?view=graph-powershell-v1.0)
+

@@ -22,18 +22,6 @@ Get-MgBetaSecurityLabelDepartmentCount [-Filter <String>] [-Search <String>] [<C
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgSecurityLabelDepartmentCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelDepartmentCount?view=graph-powershell-v1.0)
+

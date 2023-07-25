@@ -49,18 +49,6 @@ Get-MgBetaSecurityAttackSimulationLoginPage -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Get loginPages from security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -352,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLoginPage?view=graph-powershell-v1.0)
+

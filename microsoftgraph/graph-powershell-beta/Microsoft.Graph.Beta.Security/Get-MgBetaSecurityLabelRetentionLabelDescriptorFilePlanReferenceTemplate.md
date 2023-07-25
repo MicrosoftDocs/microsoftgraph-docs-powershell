@@ -30,18 +30,6 @@ Get-MgBetaSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate -InputO
 ## DESCRIPTION
 Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -197,3 +185,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabelDescriptorFilePlanReferenceTemplate?view=graph-powershell-v1.0)
+

@@ -42,18 +42,6 @@ New-MgBetaDeviceManagementAutopilotEvent -BodyParameter <IMicrosoftGraphDeviceMa
 ## DESCRIPTION
 Create new navigation property to autopilotEvents for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AccountSetupDuration
@@ -607,3 +595,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementAutopilotEvent](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgDeviceManagementAutopilotEvent?view=graph-powershell-v1.0)
+

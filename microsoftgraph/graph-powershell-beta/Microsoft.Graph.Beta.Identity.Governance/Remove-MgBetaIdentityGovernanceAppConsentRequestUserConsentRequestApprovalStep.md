@@ -32,22 +32,6 @@ Remove-MgBetaIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep
 ## DESCRIPTION
 Delete navigation property steps for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AppConsentRequestId
@@ -290,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgIdentityGovernanceAppConsentRequestUserConsentRequestApprovalStep?view=graph-powershell-v1.0)
+

@@ -39,18 +39,6 @@ Get-MgBetaIdentityAuthenticationEventFlow -InputObject <IIdentitySignInsIdentity
 Retrieve the properties and relationships of a specific authenticationEventsFlow object by ID.
 Only externalUsersSelfServiceSignupEventsFlow object types are available.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -331,3 +319,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityAuthenticationEventFlow](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityAuthenticationEventFlow?view=graph-powershell-v1.0)
+

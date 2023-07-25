@@ -30,22 +30,6 @@ Remove-MgBetaBusinessFlowTemplate -InputObject <IIdentityGovernanceIdentity> [-I
 ## DESCRIPTION
 Delete entity from businessFlowTemplates
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -BusinessFlowTemplateId
@@ -258,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBusinessFlowTemplate](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgBusinessFlowTemplate?view=graph-powershell-v1.0)
+

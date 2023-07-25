@@ -38,18 +38,6 @@ Get-MgBetaDeviceAppManagementWdacSupplementalPolicy -InputObject <IDevicesCorpor
 ## DESCRIPTION
 The collection of Windows Defender Application Control Supplemental Policies.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
+

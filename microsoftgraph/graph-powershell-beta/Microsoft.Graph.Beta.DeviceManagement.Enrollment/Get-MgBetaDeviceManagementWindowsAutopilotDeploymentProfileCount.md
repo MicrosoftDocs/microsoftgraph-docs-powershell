@@ -23,18 +23,6 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeploymentProfileCount [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsAutopilotDeploymentProfileCount](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeploymentProfileCount?view=graph-powershell-v1.0)
+

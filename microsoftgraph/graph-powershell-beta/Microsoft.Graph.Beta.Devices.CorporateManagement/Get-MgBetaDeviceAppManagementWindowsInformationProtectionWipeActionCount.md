@@ -23,18 +23,6 @@ Get-MgBetaDeviceAppManagementWindowsInformationProtectionWipeActionCount [-Filte
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -83,3 +71,4 @@ Get-MgBetaDeviceAppMgtWindowInformationProtectionWipeActionCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWindowsInformationProtectionWipeActionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionWipeActionCount?view=graph-powershell-v1.0)
+

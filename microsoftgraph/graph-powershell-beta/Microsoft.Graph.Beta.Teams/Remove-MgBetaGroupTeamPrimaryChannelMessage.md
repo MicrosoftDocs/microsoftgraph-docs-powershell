@@ -30,22 +30,6 @@ Remove-MgBetaGroupTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property messages for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChatMessageId
@@ -215,3 +199,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMessage?view=graph-powershell-v1.0)
+

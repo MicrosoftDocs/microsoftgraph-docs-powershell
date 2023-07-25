@@ -39,22 +39,6 @@ Get-MgBetaDeviceManagementTemplateMigratableToSetting -InputObject <IDeviceManag
 ## DESCRIPTION
 Collection of all settings this template has
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -431,3 +415,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementTemplateMigratableToSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementTemplateMigratableToSetting?view=graph-powershell-v1.0)
+

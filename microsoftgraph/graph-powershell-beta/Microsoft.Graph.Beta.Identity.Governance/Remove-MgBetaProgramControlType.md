@@ -30,22 +30,6 @@ Remove-MgBetaProgramControlType -InputObject <IIdentityGovernanceIdentity> [-IfM
 ## DESCRIPTION
 Delete entity from programControlTypes
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -258,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgProgramControlType](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgramControlType?view=graph-powershell-v1.0)
+

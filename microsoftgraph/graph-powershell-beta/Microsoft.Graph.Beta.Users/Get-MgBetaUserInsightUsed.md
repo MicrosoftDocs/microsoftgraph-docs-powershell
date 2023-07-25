@@ -37,18 +37,6 @@ Get-MgBetaUserInsightUsed -InputObject <IUsersIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Access this property from the derived type itemInsights.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -292,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserInsightUsed](/powershell/module/Microsoft.Graph.Users/Get-MgUserInsightUsed?view=graph-powershell-v1.0)
+

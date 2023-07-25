@@ -38,22 +38,6 @@ Get-MgBetaDeviceManagementScriptUserRunState -InputObject <IDeviceManagementIden
 ## DESCRIPTION
 List of run states for this script across all users.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -415,3 +399,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementScriptUserRunState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementScriptUserRunState?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Remove-MgBetaDeviceManagementRemoteActionAudit -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Delete navigation property remoteActionAudits for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -302,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementRemoteActionAudit](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementRemoteActionAudit?view=graph-powershell-v1.0)
+

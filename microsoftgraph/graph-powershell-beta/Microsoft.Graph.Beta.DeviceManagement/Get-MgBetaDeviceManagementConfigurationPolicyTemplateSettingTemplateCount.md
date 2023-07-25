@@ -31,18 +31,6 @@ Get-MgBetaDeviceManagementConfigurationPolicyTemplateSettingTemplateCount
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementConfigurationPolicyTemplateId
@@ -268,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementConfigurationPolicyTemplateSettingTemplateCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementConfigurationPolicyTemplateSettingTemplateCount?view=graph-powershell-v1.0)
+

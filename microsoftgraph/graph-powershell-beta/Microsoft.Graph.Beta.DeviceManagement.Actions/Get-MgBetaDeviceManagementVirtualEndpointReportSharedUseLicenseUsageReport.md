@@ -33,18 +33,6 @@ Get-MgBetaDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport -OutF
 ## DESCRIPTION
 Get a usage report on shared-use licenses, such as **servicePlanId**, **licenseCount**, and **claimedLicenseCount**, for real-time, 7 days, or 28 days trend.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementVirtualEndpointReportSharedUseLicenseUsageReport?view=graph-powershell-v1.0)
+

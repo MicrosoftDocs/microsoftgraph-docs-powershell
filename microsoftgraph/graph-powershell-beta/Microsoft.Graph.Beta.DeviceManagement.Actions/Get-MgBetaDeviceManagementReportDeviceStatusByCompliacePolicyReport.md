@@ -33,18 +33,6 @@ Get-MgBetaDeviceManagementReportDeviceStatusByCompliacePolicyReport -OutFile <St
 ## DESCRIPTION
 Invoke action getDeviceStatusByCompliacePolicyReport
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -290,3 +278,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementReportDeviceStatusByCompliacePolicyReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceStatusByCompliacePolicyReport?view=graph-powershell-v1.0)
+

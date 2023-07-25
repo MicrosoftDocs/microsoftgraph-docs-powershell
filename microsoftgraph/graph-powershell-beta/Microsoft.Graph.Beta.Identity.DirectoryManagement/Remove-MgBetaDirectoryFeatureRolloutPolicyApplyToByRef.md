@@ -31,22 +31,6 @@ Remove-MgBetaDirectoryFeatureRolloutPolicyApplyToByRef -InputObject <IIdentityDi
 ## DESCRIPTION
 Remove an appliesTo on a featureRolloutPolicy object to remove the directoryObject from feature rollout.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DirectoryObjectId
@@ -234,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryFeatureRolloutPolicyApplyToByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryFeatureRolloutPolicyApplyToByRef?view=graph-powershell-v1.0)
+

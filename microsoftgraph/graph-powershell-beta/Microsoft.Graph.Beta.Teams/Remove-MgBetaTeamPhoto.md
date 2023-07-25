@@ -30,22 +30,6 @@ Remove-MgBetaTeamPhoto -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassT
 ## DESCRIPTION
 Delete navigation property photo for teams
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -200,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamPhoto](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPhoto?view=graph-powershell-v1.0)
+

@@ -30,22 +30,6 @@ Update-MgBetaDeviceManagementVirtualEndpointReport -BodyParameter <IMicrosoftGra
 ## DESCRIPTION
 Update the navigation property reports in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -187,3 +171,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementVirtualEndpointReport](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointReport?view=graph-powershell-v1.0)
+

@@ -33,22 +33,6 @@ New-MgBetaDeviceManagementEmbeddedSimActivationCodePool
 ## DESCRIPTION
 Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActivationCodeCount
@@ -311,3 +295,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)
+

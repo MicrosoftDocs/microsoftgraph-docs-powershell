@@ -29,18 +29,6 @@ New-MgBetaTeamworkDeletedChat -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<
 ## DESCRIPTION
 Create new navigation property to deletedChats for teamwork
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -135,3 +123,4 @@ ALIASES
 
 ## RELATED LINKS
 [New-MgTeamworkDeletedChat](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedChat?view=graph-powershell-v1.0)
+

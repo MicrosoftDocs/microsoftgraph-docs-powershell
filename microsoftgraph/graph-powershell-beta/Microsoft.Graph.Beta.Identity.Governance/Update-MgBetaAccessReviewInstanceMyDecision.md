@@ -51,22 +51,6 @@ Update-MgBetaAccessReviewInstanceMyDecision -InputObject <IIdentityGovernanceIde
 ## DESCRIPTION
 Update the navigation property myDecisions in accessReviews
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AccessRecommendation
@@ -511,3 +495,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgAccessReviewInstanceMyDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgAccessReviewInstanceMyDecision?view=graph-powershell-v1.0)
+

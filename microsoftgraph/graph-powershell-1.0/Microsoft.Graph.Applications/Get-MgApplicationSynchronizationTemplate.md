@@ -37,18 +37,6 @@ Get-MgApplicationSynchronizationTemplate -InputObject <IApplicationsIdentity> [-
 ## DESCRIPTION
 Pre-configured synchronization settings for a particular application.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -291,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplate?view=graph-powershell-beta)
+

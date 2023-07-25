@@ -22,22 +22,6 @@ Remove-MgBetaComplianceEdiscovery [-IfMatch <String>] [-PassThru] [-WhatIf] [-Co
 ## DESCRIPTION
 Delete navigation property ediscovery for compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgComplianceEdiscovery](/powershell/module/Microsoft.Graph.Compliance/Remove-MgComplianceEdiscovery?view=graph-powershell-v1.0)
+

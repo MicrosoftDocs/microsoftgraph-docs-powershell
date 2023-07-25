@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementManagedDeviceEncryptionState -InputObject <IDeviceMana
 ## DESCRIPTION
 Encryption report for devices in this account
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -399,3 +383,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementManagedDeviceEncryptionState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementManagedDeviceEncryptionState?view=graph-powershell-v1.0)
+

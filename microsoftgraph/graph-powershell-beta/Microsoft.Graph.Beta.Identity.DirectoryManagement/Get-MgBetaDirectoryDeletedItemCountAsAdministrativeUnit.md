@@ -23,18 +23,6 @@ Get-MgBetaDirectoryDeletedItemCountAsAdministrativeUnit [-Filter <String>] [-Sea
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDirectoryDeletedItemCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItemCountAsAdministrativeUnit?view=graph-powershell-v1.0)
+

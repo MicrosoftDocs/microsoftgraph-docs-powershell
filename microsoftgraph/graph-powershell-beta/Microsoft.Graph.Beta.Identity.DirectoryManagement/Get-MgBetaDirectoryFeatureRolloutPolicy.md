@@ -37,22 +37,6 @@ Get-MgBetaDirectoryFeatureRolloutPolicy -InputObject <IIdentityDirectoryManageme
 ## DESCRIPTION
 Get featureRolloutPolicies from directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -300,3 +284,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryFeatureRolloutPolicy?view=graph-powershell-v1.0)
+

@@ -37,22 +37,6 @@ Get-MgGroupSiteListColumn -InputObject <ISitesIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 The collection of field definitions for this list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -342,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteListColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteListColumn?view=graph-powershell-beta)
+

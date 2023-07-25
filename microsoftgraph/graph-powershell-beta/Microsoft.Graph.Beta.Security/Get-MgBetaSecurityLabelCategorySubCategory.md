@@ -37,18 +37,6 @@ Get-MgBetaSecurityLabelCategorySubCategory -InputObject <ISecurityIdentity> [-Ex
 ## DESCRIPTION
 Read the properties and relationships of a subCategoryTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -340,3 +328,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelCategorySubCategory](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelCategorySubCategory?view=graph-powershell-v1.0)
+

@@ -48,22 +48,6 @@ Update-MgBetaApplicationSynchronizationJob -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the navigation property jobs in applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -616,3 +600,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
+

@@ -39,18 +39,6 @@ Get-MgBetaDeviceAppManagementTargetedManagedAppConfigurationSetting
 ## DESCRIPTION
 List of settings contained in this App Configuration policy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -338,3 +326,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
+
