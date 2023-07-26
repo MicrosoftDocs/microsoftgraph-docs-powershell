@@ -277,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Get-MgSearchBookmark?view=graph-powershell-v1.0)
-

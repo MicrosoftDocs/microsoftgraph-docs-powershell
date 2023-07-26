@@ -326,5 +326,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomation?view=graph-powershell-v1.0)
-
-

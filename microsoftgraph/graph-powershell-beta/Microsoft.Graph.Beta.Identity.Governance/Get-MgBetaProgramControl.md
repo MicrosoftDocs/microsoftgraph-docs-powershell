@@ -416,4 +416,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgProgramControl](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgProgramControl?view=graph-powershell-v1.0)
-

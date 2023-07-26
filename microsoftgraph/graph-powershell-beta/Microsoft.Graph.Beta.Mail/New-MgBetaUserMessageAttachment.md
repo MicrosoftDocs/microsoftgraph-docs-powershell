@@ -48,9 +48,27 @@ New-MgBetaUserMailFolderMessageMention -InputObject <IMailIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to mentions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Mail
 
+$params = @{
+	"@odata.type" = "#Microsoft.OutlookServices.FileAttachment"
+	name = "name-value"
+	contentType = "contentType-value"
+	isInline = $false
+	contentLocation = "contentLocation-value"
+	contentBytes = "contentBytes-value"
+}
 
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -384,4 +402,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMessageAttachment](/powershell/module/Microsoft.Graph.Mail/New-MgUserMessageAttachment?view=graph-powershell-v1.0)
-

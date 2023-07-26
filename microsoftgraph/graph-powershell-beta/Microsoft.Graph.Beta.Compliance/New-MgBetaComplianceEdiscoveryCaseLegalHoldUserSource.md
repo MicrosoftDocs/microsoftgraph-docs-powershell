@@ -360,4 +360,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgComplianceEdiscoveryCaseLegalHoldUserSource](/powershell/module/Microsoft.Graph.Compliance/New-MgComplianceEdiscoveryCaseLegalHoldUserSource?view=graph-powershell-v1.0)
-

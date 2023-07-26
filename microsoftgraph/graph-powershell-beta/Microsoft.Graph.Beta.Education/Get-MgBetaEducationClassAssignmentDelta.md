@@ -274,4 +274,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentDelta?view=graph-powershell-v1.0)
-

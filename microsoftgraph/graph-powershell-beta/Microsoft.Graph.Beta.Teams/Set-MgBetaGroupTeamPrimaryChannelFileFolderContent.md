@@ -200,5 +200,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgGroupTeamPrimaryChannelFileFolderContent](/powershell/module/Microsoft.Graph.Teams/Set-MgGroupTeamPrimaryChannelFileFolderContent?view=graph-powershell-v1.0)
-
-

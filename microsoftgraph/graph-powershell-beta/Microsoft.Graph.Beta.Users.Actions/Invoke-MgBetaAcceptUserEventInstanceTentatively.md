@@ -296,4 +296,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventInstanceTentatively?view=graph-powershell-v1.0)
-

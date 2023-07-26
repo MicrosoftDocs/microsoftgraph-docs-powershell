@@ -43,7 +43,6 @@ This command deletes the specified exclude configuration from the specific permi
 
 ## PARAMETERS
 
-
 ### -IfMatch
 ETag
 
@@ -228,5 +227,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
-
-

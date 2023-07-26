@@ -8,7 +8,7 @@ schema: 2.0.0
 # Find-MgApplicationSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Find-MgBetaApplicationSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Find-MgBetaApplicationSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Find-MgApplicationSynchronizationJobSchemaDirectory -InputObject <IApplicationsI
 ```
 
 ## DESCRIPTION
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ## PARAMETERS
 
@@ -143,6 +143,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

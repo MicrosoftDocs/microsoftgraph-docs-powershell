@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportMonthlyPrintUsageByPrinter
 
 ## SYNOPSIS
-Get monthlyPrintUsageByPrinter from reports
+Retrieve a list of monthly print usage summaries, grouped by printer.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgReportMonthlyPrintUsageByPrinter -InputObject <IReportsIdentity> [-ExpandP
 ```
 
 ## DESCRIPTION
-Get monthlyPrintUsageByPrinter from reports
+Retrieve a list of monthly print usage summaries, grouped by printer.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -276,5 +276,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportMonthlyPrintUsageByPrinter](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportMonthlyPrintUsageByPrinter?view=graph-powershell-beta)
-
-

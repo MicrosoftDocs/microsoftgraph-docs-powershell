@@ -199,4 +199,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamChannelMigration?view=graph-powershell-v1.0)
-

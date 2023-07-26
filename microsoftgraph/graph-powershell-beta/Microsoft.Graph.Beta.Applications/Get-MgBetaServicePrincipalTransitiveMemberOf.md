@@ -311,4 +311,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-v1.0)
-

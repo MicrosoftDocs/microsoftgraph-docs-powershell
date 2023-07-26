@@ -253,4 +253,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgApplicationConnectorGroupByRef](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationConnectorGroupByRef?view=graph-powershell-v1.0)
-

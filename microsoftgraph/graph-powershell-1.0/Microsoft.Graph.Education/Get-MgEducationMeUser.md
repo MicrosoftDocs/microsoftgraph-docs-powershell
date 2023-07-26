@@ -81,5 +81,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeUser?view=graph-powershell-beta)
-
-

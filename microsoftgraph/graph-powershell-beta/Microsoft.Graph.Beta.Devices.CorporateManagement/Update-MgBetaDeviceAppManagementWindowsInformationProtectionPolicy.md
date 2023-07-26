@@ -918,7 +918,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-BetaDeviceAppMgtWindowInformationProtectionPolicy
+Update-MgBetaDeviceAppMgtWindowInformationProtectionPolicy
 
 COMPLEX PARAMETER PROPERTIES
 

@@ -22,9 +22,18 @@ Get-MgBetaTrustFrameworkPolicyCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserAuthenticationEmailMethod -UserId $userId -EmailAuthenticationMethodId $emailAuthenticationMethodId
+```
+This example shows how to use the Get-MgBetaUserAuthenticationEmailMethod Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -73,4 +82,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationEmailMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationEmailMethod?view=graph-powershell-v1.0)
-

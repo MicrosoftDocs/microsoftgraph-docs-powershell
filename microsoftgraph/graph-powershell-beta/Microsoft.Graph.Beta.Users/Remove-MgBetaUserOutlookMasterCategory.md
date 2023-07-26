@@ -30,9 +30,18 @@ Remove-MgBetaUserNotification -InputObject <IUsersIdentity> [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property notifications for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
+```
+This example shows how to use the Remove-MgBetaUserOutlookMasterCategory Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -188,4 +197,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookMasterCategory?view=graph-powershell-v1.0)
-

@@ -51,7 +51,6 @@ This example gets the members of a directory role.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -248,5 +247,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleMember](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMember?view=graph-powershell-beta)
-
-

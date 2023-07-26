@@ -239,4 +239,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceRegisteredOwner](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceRegisteredOwner?view=graph-powershell-beta)
-

@@ -530,4 +530,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/New-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
-

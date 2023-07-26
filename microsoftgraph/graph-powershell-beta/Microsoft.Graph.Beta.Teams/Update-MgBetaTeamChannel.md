@@ -60,7 +60,18 @@ Update the properties of the specified channel.
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
-Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId
+$params = @{
+	displayName = "UpdateChannelModeration"
+	description = "Update channel moderation."
+	moderationSettings = @{
+		userNewMessageRestriction = "moderators"
+		replyRestriction = "everyone"
+		allowNewMessageFromBots = $true
+		allowNewMessageFromConnectors = $true
+	}
+}
+
+Update-MgBetaTeamChannel -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 ```
 This example shows how to use the Update-MgBetaTeamChannel Cmdlet.
 
@@ -14757,5 +14768,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamChannel?view=graph-powershell-v1.0)
-
-

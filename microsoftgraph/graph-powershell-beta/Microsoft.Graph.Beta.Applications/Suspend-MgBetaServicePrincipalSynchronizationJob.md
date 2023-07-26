@@ -185,4 +185,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Suspend-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Suspend-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
-

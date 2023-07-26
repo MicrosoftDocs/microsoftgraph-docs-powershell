@@ -37,6 +37,7 @@ Get-MgBetaUserChatMessageReply -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve a single message or a message reply in a channel or a chat.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -327,4 +328,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatMessageReply?view=graph-powershell-v1.0)
-

@@ -253,4 +253,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgUserDriveListContentTypeCopy](/powershell/module/Microsoft.Graph.Users.Actions/Add-MgUserDriveListContentTypeCopy?view=graph-powershell-v1.0)
-

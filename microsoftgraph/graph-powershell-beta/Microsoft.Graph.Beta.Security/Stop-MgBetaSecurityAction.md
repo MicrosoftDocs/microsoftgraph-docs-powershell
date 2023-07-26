@@ -209,4 +209,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgSecurityAction](/powershell/module/Microsoft.Graph.Security/Stop-MgSecurityAction?view=graph-powershell-v1.0)
-

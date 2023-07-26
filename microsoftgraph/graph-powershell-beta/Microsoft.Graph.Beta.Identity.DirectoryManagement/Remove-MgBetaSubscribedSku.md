@@ -200,5 +200,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgSubscribedSku?view=graph-powershell-v1.0)
-
-

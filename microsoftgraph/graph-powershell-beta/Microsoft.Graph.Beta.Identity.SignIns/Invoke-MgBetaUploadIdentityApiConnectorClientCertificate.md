@@ -290,4 +290,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUploadIdentityApiConnectorClientCertificate](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadIdentityApiConnectorClientCertificate?view=graph-powershell-v1.0)
-

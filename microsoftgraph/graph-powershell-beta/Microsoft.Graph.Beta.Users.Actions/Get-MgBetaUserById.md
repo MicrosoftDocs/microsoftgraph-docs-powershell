@@ -179,4 +179,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserById](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserById?view=graph-powershell-v1.0)
-

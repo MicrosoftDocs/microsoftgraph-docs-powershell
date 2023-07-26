@@ -46,7 +46,6 @@ The commands gets the manager of the specified user.
 
 ## PARAMETERS
 
-
 ### -ExpandProperty
 Expand related entities
 
@@ -152,5 +151,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserManager](/powershell/module/Microsoft.Graph.Users/Get-MgUserManager?view=graph-powershell-v1.0)
-
-

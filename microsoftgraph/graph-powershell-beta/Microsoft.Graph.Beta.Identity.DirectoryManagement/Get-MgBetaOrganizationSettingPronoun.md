@@ -8,8 +8,7 @@ schema: 2.0.0
 # Get-MgBetaOrganizationSettingPronoun
 
 ## SYNOPSIS
-Get the properties of the pronounsSettings resource for an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Get pronouns from organization
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgOrganizationSettingPronoun](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingPronoun?view=graph-powershell-v1.0)
@@ -29,8 +28,7 @@ Get-MgBetaOrganizationSettingPronoun -InputObject <IIdentityDirectoryManagementI
 ```
 
 ## DESCRIPTION
-Get the properties of the pronounsSettings resource for an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Get pronouns from organization
 
 ## PARAMETERS
 

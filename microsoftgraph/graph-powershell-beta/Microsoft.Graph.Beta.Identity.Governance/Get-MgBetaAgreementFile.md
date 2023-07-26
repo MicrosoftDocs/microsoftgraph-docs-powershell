@@ -39,6 +39,7 @@ Get-MgBetaAgreementFile -InputObject <IIdentityGovernanceIdentity> [-ExpandPrope
 Retrieve the details of the default file for an agreement, including the language and version information.
 The file information is specified through the agreementFile object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -343,4 +344,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFile?view=graph-powershell-v1.0)
-

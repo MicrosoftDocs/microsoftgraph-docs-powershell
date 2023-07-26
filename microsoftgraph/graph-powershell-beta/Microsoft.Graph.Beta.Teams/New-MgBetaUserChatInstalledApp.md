@@ -46,6 +46,7 @@ New-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Install a teamsApp to the specified chat.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -429,4 +430,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatInstalledApp?view=graph-powershell-v1.0)
-

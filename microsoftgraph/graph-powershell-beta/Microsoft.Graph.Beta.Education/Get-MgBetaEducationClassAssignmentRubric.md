@@ -158,5 +158,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentRubric?view=graph-powershell-v1.0)
-
-

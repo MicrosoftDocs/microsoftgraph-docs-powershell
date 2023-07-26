@@ -227,5 +227,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaSiteListItem](/powershell/module/Microsoft.Graph.Beta.Sites/Remove-MgBetaSiteListItem?view=graph-powershell-beta)
-
-

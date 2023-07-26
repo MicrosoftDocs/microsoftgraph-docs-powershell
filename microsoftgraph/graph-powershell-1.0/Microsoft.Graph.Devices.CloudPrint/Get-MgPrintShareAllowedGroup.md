@@ -215,4 +215,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPrintShareAllowedGroup](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Get-MgBetaPrintShareAllowedGroup?view=graph-powershell-beta)
-

@@ -30,9 +30,18 @@ The calendar can be one for a user, or the default calendar of a Microsoft 365 g
 The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or \nget the instances of an event.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Calendar
 
+# A UPN can also be used as -UserId.
+Get-MgUserEventAttachment -UserId $userId -EventId $eventId
+```
+This example shows how to use the Get-MgUserEventAttachment Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -202,4 +211,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserEventAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserEventAttachment?view=graph-powershell-beta)
-

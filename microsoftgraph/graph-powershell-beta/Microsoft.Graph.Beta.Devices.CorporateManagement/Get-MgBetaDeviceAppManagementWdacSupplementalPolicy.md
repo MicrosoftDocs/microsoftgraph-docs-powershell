@@ -235,7 +235,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtWdacSupplementalPolicy
+Get-MgBetaDeviceAppMgtWdacSupplementalPolicy
 
 COMPLEX PARAMETER PROPERTIES
 

@@ -277,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSearchAcronym](/powershell/module/Microsoft.Graph.Search/Get-MgSearchAcronym?view=graph-powershell-v1.0)
-

@@ -236,4 +236,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroupByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfilePublishedResourceAgentGroupByRef?view=graph-powershell-v1.0)
-

@@ -30,9 +30,18 @@ Get-MgUserOnlineMeetingAttendanceReportCount -InputObject <ICloudCommunicationsI
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Fetch attendee report of a Teams live event
 
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
 
+# A UPN can also be used as -UserId.
+Get-MgUserOnlineMeetingAttendeeReport -UserId $userId -OnlineMeetingId $onlineMeetingId
+```
+This example shows how to use the Get-MgUserOnlineMeetingAttendeeReport Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -147,4 +156,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserOnlineMeetingAttendeeReport](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Get-MgBetaUserOnlineMeetingAttendeeReport?view=graph-powershell-beta)
-

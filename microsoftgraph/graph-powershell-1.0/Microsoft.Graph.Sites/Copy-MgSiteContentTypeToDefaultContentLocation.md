@@ -324,4 +324,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteContentTypeToDefaultContentLocation?view=graph-powershell-beta)
-

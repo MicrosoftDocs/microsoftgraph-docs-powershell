@@ -184,4 +184,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleDelta](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleDelta?view=graph-powershell-beta)
-

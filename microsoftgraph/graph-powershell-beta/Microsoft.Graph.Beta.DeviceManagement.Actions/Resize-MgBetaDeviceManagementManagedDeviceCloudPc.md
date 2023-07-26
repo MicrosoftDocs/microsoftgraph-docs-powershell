@@ -260,4 +260,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Resize-MgDeviceManagementManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Resize-MgDeviceManagementManagedDeviceCloudPc?view=graph-powershell-v1.0)
-

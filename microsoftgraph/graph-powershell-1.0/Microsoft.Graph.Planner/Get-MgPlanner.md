@@ -77,4 +77,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPlanner](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlanner?view=graph-powershell-beta)
-

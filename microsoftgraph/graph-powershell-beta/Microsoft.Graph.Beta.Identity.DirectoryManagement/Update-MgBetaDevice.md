@@ -94,6 +94,9 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
+	extensionAttributes = @{
+		extensionAttribute1 = "BYOD-Device"
+	}
 }
 
 Update-MgBetaDevice -DeviceId $deviceId -BodyParameter $params
@@ -1191,5 +1194,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDevice](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDevice?view=graph-powershell-v1.0)
-
-

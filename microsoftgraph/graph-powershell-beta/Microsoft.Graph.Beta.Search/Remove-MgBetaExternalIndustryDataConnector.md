@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Delete an industryDataConnector object.
+Delete an azureDataLakeConnector object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete an industryDataConnector object.
+Delete an azureDataLakeConnector object.
 
 ## PARAMETERS
 

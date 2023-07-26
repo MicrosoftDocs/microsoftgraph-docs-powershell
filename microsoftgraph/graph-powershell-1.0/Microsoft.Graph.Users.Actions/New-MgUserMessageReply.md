@@ -395,4 +395,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMessageReply](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageReply?view=graph-powershell-beta)
-

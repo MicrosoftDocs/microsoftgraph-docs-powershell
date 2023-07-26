@@ -162,7 +162,6 @@ This example updates the specified user's display name.
 
 ## PARAMETERS
 
-
 ### -AboutMe
 A freeform text entry field for the user to describe themselves.
 Returned only on $select.
@@ -27486,5 +27485,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Update-MgBetaUser?view=graph-powershell-beta)
-
-

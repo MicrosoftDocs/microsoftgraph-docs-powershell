@@ -166,4 +166,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTrustFrameworkKeySetActiveKey](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySetActiveKey?view=graph-powershell-v1.0)
-

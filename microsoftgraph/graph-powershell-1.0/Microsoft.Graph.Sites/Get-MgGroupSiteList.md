@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgGroupSiteList
 
 ## SYNOPSIS
-Returns the metadata for a [list][].
+Get a list of rich long-running operations associated with a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaGroupSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteList?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgGroupSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [
 ```
 
 ## DESCRIPTION
-Returns the metadata for a [list][].
+Get a list of rich long-running operations associated with a list.
 
 ## PARAMETERS
 

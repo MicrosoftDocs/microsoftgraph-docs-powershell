@@ -324,4 +324,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Grant-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveItemPermission?view=graph-powershell-v1.0)
-

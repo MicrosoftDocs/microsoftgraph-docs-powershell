@@ -215,4 +215,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenLifetimePolicy?view=graph-powershell-v1.0)
-

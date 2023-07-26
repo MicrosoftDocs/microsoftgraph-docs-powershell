@@ -42,9 +42,25 @@ New-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> -BodyParameter <Ha
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+$params = @{
+	"@odata.type" = "#microsoft.graph.taskFileAttachment"
+	name = "smile"
+	contentBytes = "a0b1c76de9f7="
+	contentType = "image/gif"
+}
 
+# A UPN can also be used as -UserId.
+New-MgBetaUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserTodoListTaskAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -217,4 +233,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Users/New-MgUserTodoListTaskAttachment?view=graph-powershell-v1.0)
-

@@ -241,4 +241,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgGroupDynamicMembership](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupDynamicMembership?view=graph-powershell-v1.0)
-

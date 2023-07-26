@@ -244,5 +244,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemField?view=graph-powershell-v1.0)
-
-

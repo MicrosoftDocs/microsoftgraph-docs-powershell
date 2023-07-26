@@ -186,4 +186,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupRejectedSender](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupRejectedSender?view=graph-powershell-beta)
-

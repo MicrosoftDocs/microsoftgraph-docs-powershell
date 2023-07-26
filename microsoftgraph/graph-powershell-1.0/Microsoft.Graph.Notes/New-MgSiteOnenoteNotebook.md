@@ -50,6 +50,7 @@ New-MgSiteOnenoteNotebook -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create a new OneNote notebook.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -681,4 +682,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
-

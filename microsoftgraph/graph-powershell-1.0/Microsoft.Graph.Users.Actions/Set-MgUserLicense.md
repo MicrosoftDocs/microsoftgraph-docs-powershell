@@ -171,8 +171,8 @@ Id                                   DisplayName   Mail UserPrincipalName       
 ```
 
 This example removes the **EMSPREMIUM** license assignment from the user.
-## PARAMETERS
 
+## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
@@ -361,5 +361,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgBetaUserLicense](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Set-MgBetaUserLicense?view=graph-powershell-beta)
-
-

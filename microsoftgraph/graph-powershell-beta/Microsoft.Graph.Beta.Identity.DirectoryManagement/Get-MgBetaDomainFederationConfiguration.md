@@ -64,7 +64,6 @@ This examples retrieves the federation settings for the specified domain.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -325,5 +324,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDomainFederationConfiguration?view=graph-powershell-v1.0)
-
-

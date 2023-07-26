@@ -262,4 +262,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Rename-MgDeviceManagementVirtualEndpointCloudPcUserAccountType?view=graph-powershell-v1.0)
-

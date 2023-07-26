@@ -261,5 +261,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPlannerPlan](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlan?view=graph-powershell-beta)
-
-

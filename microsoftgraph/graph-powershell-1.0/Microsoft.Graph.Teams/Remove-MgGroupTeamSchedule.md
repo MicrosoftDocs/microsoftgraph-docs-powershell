@@ -190,5 +190,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupTeamSchedule](/powershell/module/Microsoft.Graph.Beta.Teams/Remove-MgBetaGroupTeamSchedule?view=graph-powershell-beta)
-
-

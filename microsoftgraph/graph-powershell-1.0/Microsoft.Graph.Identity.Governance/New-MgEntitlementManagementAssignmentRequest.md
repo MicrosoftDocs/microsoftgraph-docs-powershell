@@ -11,9 +11,6 @@ schema: 2.0.0
 In Azure AD Entitlement Management, create a new accessPackageAssignmentRequest object.
 This operation is used to assign a user to an access package, update the assignment, or to remove an access package assignment.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -484,6 +481,43 @@ To create the parameters described below, construct a hash table containing the 
       - `[DisplayName <String>]`: The display name of the access package catalog.
       - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
       - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+      - `[ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+        - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+        - `[Description <String>]`: 
+        - `[DisplayName <String>]`: 
+        - `[OriginId <String>]`: 
+        - `[OriginSystem <String>]`: 
+        - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+          - `[(Any) <Object>]`: This indicates any property can be added to this object.
+          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[CreatedDateTime <DateTime?>]`: 
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[CreatedDateTime <DateTime?>]`: 
+            - `[Description <String>]`: 
+            - `[DisplayName <String>]`: 
+            - `[IsDefaultEnvironment <Boolean?>]`: 
+            - `[ModifiedDateTime <DateTime?>]`: 
+            - `[OriginId <String>]`: 
+            - `[OriginSystem <String>]`: 
+            - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
+          - `[ModifiedDateTime <DateTime?>]`: 
+          - `[OriginId <String>]`: 
+          - `[OriginSystem <String>]`: 
+          - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+          - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[Description <String>]`: 
+            - `[DisplayName <String>]`: 
+            - `[IsRootScope <Boolean?>]`: 
+            - `[OriginId <String>]`: 
+            - `[OriginSystem <String>]`: 
+            - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+      - `[ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+      - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
       - `[State <String>]`: accessPackageCatalogState
     - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
     - `[CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>]`: 
@@ -961,9 +995,9 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+              - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
                 - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-                - `[PermissionValue <String>]`: 
+                - `[PermissionValue <String>]`: The name of the resource-specific permission.
             - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3398,6 +3432,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
   - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
   - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+  - `[ResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]`: 
+    - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+    - `[CreatedDateTime <DateTime?>]`: 
+    - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
+    - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
 
 `ANSWERS <IMicrosoftGraphAccessPackageAnswer[]>`: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
   - `[AnsweredQuestion <IMicrosoftGraphAccessPackageQuestion>]`: accessPackageQuestion
@@ -3449,6 +3488,43 @@ To create the parameters described below, construct a hash table containing the 
         - `[DisplayName <String>]`: The display name of the access package catalog.
         - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
         - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[OriginId <String>]`: 
+          - `[OriginSystem <String>]`: 
+          - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[CreatedDateTime <DateTime?>]`: 
+            - `[Description <String>]`: 
+            - `[DisplayName <String>]`: 
+            - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[Description <String>]`: 
+              - `[DisplayName <String>]`: 
+              - `[IsDefaultEnvironment <Boolean?>]`: 
+              - `[ModifiedDateTime <DateTime?>]`: 
+              - `[OriginId <String>]`: 
+              - `[OriginSystem <String>]`: 
+              - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
+            - `[ModifiedDateTime <DateTime?>]`: 
+            - `[OriginId <String>]`: 
+            - `[OriginSystem <String>]`: 
+            - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+            - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Description <String>]`: 
+              - `[DisplayName <String>]`: 
+              - `[IsRootScope <Boolean?>]`: 
+              - `[OriginId <String>]`: 
+              - `[OriginSystem <String>]`: 
+              - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+        - `[ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+        - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
         - `[State <String>]`: accessPackageCatalogState
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>]`: 
@@ -3926,9 +4002,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+                - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
                   - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-                  - `[PermissionValue <String>]`: 
+                  - `[PermissionValue <String>]`: The name of the resource-specific permission.
               - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6363,6 +6439,11 @@ To create the parameters described below, construct a hash table containing the 
       - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
     - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
     - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[ResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
+      - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
   - `[AssignmentPolicy <IMicrosoftGraphAccessPackageAssignmentPolicy>]`: accessPackageAssignmentPolicy
   - `[CustomExtensionCalloutInstances <IMicrosoftGraphCustomExtensionCalloutInstance[]>]`: 
     - `[CustomExtensionId <String>]`: 
@@ -6432,6 +6513,43 @@ To create the parameters described below, construct a hash table containing the 
         - `[DisplayName <String>]`: The display name of the access package catalog.
         - `[IsExternallyVisible <Boolean?>]`: Whether the access packages in this catalog can be requested by users outside of the tenant.
         - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+        - `[ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+          - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+          - `[Description <String>]`: 
+          - `[DisplayName <String>]`: 
+          - `[OriginId <String>]`: 
+          - `[OriginSystem <String>]`: 
+          - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+            - `[(Any) <Object>]`: This indicates any property can be added to this object.
+            - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+            - `[CreatedDateTime <DateTime?>]`: 
+            - `[Description <String>]`: 
+            - `[DisplayName <String>]`: 
+            - `[Environment <IMicrosoftGraphAccessPackageResourceEnvironment>]`: accessPackageResourceEnvironment
+              - `[(Any) <Object>]`: This indicates any property can be added to this object.
+              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[CreatedDateTime <DateTime?>]`: 
+              - `[Description <String>]`: 
+              - `[DisplayName <String>]`: 
+              - `[IsDefaultEnvironment <Boolean?>]`: 
+              - `[ModifiedDateTime <DateTime?>]`: 
+              - `[OriginId <String>]`: 
+              - `[OriginSystem <String>]`: 
+              - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
+            - `[ModifiedDateTime <DateTime?>]`: 
+            - `[OriginId <String>]`: 
+            - `[OriginSystem <String>]`: 
+            - `[Roles <IMicrosoftGraphAccessPackageResourceRole[]>]`: 
+            - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+              - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+              - `[Description <String>]`: 
+              - `[DisplayName <String>]`: 
+              - `[IsRootScope <Boolean?>]`: 
+              - `[OriginId <String>]`: 
+              - `[OriginSystem <String>]`: 
+              - `[Resource <IMicrosoftGraphAccessPackageResource>]`: accessPackageResource
+        - `[ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
+        - `[Resources <IMicrosoftGraphAccessPackageResource[]>]`: 
         - `[State <String>]`: accessPackageCatalogState
       - `[CreatedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
       - `[CustomExtensionStageSettings <IMicrosoftGraphCustomExtensionStageSetting[]>]`: 
@@ -6909,9 +7027,9 @@ To create the parameters described below, construct a hash table containing the 
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+                - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
                   - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-                  - `[PermissionValue <String>]`: 
+                  - `[PermissionValue <String>]`: The name of the resource-specific permission.
               - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
                 - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -9346,6 +9464,11 @@ To create the parameters described below, construct a hash table containing the 
       - `[Visibility <String>]`: Specifies the group join policy and group content visibility for groups. Possible values are: Private, Public, or HiddenMembership. HiddenMembership can be set only for Microsoft 365 groups, when the groups are created. It can't be updated later. Other values of visibility can be updated after group creation. If visibility value is not specified during group creation on Microsoft Graph, a security group is created as Private by default and Microsoft 365 group is Public. Groups assignable to roles are always Private. See group visibility options to learn more. Returned by default. Nullable.
     - `[IsHidden <Boolean?>]`: Whether the access package is hidden from the requestor.
     - `[ModifiedDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z. Read-only.
+    - `[ResourceRoleScopes <IMicrosoftGraphAccessPackageResourceRoleScope[]>]`: 
+      - `[Id <String>]`: The unique idenfier for an entity. Read-only.
+      - `[CreatedDateTime <DateTime?>]`: 
+      - `[Role <IMicrosoftGraphAccessPackageResourceRole>]`: accessPackageResourceRole
+      - `[Scope <IMicrosoftGraphAccessPackageResourceScope>]`: accessPackageResourceScope
   - `[Answers <IMicrosoftGraphAccessPackageAnswer[]>]`: Answers provided by the requestor to accessPackageQuestions asked of them at the time of request.
     - `[AnsweredQuestion <IMicrosoftGraphAccessPackageQuestion>]`: accessPackageQuestion
     - `[DisplayValue <String>]`: The localized display value shown to the requestor and approvers.
@@ -9451,9 +9574,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[StartDateTime <DateTime?>]`: The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
 
 ## RELATED LINKS
-[New-MgBetaEntitlementManagementAssignmentRequest](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaEntitlementManagementAssignmentRequest?view=graph-powershell-beta)
-
-

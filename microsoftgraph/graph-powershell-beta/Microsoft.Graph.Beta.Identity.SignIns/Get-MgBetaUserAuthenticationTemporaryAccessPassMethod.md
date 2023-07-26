@@ -345,5 +345,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationTemporaryAccessPassMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationTemporaryAccessPassMethod?view=graph-powershell-v1.0)
-
-

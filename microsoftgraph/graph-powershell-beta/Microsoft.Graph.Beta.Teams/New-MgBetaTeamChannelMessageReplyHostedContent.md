@@ -328,5 +328,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
-
-

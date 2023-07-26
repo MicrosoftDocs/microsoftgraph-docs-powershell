@@ -123,4 +123,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportSecurityAttackSimulationRepeatOffender](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationRepeatOffender?view=graph-powershell-v1.0)
-

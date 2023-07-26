@@ -167,4 +167,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationSettingPersonInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingPersonInsight?view=graph-powershell-v1.0)
-

@@ -264,4 +264,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaChatInstalledApp](/powershell/module/Microsoft.Graph.Beta.Teams/Update-MgBetaChatInstalledApp?view=graph-powershell-beta)
-

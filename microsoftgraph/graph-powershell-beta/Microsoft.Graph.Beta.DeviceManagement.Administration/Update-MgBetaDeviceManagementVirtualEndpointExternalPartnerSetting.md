@@ -338,4 +338,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDeviceManagementVirtualEndpointExternalPartnerSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementVirtualEndpointExternalPartnerSetting?view=graph-powershell-v1.0)
-

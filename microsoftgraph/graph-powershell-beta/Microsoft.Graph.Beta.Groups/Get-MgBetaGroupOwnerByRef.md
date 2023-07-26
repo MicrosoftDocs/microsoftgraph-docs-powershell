@@ -213,5 +213,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwnerByRef?view=graph-powershell-v1.0)
-
-

@@ -293,5 +293,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleTimeOffReason](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleTimeOffReason?view=graph-powershell-v1.0)
-
-

@@ -696,5 +696,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignment?view=graph-powershell-v1.0)
-
-

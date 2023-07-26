@@ -69,7 +69,7 @@ Update-MgBetaOrganizationBrandingLocalization -InputObject <IIdentityDirectoryMa
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -85,7 +85,7 @@ This example shows how to use the Update-MgBetaOrganizationBrandingLocalization 
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Code snippet
+### Example 2: Override a default branding value with a blank string
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
@@ -754,8 +754,8 @@ To create the parameters described below, construct a hash table containing the 
 `CONTENTCUSTOMIZATION <IMicrosoftGraphContentCustomization>`: contentCustomization
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[AttributeCollection <IMicrosoftGraphKeyValue[]>]`: Represents the content options of External Identities to be customized throughout the authentication flow for a tenant.
-    - `[Key <String>]`: Key.
-    - `[Value <String>]`: Value.
+    - `[Key <String>]`: Contains the name of the field that a value is associated with.
+    - `[Value <String>]`: Contains the corresponding value for the specified key.
   - `[AttributeCollectionRelativeUrl <String>]`: A relative URL for the content options of External Identities to be customized throughout the authentication flow for a tenant.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
@@ -818,5 +818,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationBrandingLocalization?view=graph-powershell-v1.0)
-
-

@@ -332,5 +332,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
-
-

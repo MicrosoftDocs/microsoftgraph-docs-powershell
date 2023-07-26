@@ -28,9 +28,18 @@ Get-MgBetaUserCalendarCount -InputObject <ICalendarIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Calendar
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserCalendarGroup -UserId $userId -CalendarGroupId $calendarGroupId
+```
+This example shows how to use the Get-MgBetaUserCalendarGroup Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -114,4 +123,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCalendarGroup](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarGroup?view=graph-powershell-v1.0)
-

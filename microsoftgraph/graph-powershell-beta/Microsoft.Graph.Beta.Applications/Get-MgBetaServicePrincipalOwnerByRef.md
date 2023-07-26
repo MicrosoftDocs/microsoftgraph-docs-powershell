@@ -213,5 +213,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalOwnerByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerByRef?view=graph-powershell-v1.0)
-
-

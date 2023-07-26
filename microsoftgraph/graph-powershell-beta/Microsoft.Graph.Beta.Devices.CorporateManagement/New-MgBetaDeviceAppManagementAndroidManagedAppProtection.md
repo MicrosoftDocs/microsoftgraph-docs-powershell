@@ -1675,7 +1675,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-BetaDeviceAppMgtAndroidManagedAppProtection
+New-MgBetaDeviceAppMgtAndroidManagedAppProtection
 
 COMPLEX PARAMETER PROPERTIES
 

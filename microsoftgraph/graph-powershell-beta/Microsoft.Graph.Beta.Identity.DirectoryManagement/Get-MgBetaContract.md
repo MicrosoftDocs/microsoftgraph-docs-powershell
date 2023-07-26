@@ -297,5 +297,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContract?view=graph-powershell-v1.0)
-
-

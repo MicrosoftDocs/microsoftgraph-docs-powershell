@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaWindowsUpdatesUpdatableAsset
 
 ## SYNOPSIS
-Read the properties and relationships of an updatableAsset object.
+Read the properties and relationships of an updatableAssetGroup object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaWindowsUpdatesUpdatableAsset -InputObject <IWindowsUpdatesIdentity> [-
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an updatableAsset object.
+Read the properties and relationships of an updatableAssetGroup object.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaWindowsUpdatesUpdatableAsset Cmdlet
@@ -303,4 +303,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
-

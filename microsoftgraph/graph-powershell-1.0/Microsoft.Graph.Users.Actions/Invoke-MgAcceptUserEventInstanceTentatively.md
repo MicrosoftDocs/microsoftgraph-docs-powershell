@@ -285,4 +285,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaAcceptUserEventInstanceTentatively](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaAcceptUserEventInstanceTentatively?view=graph-powershell-beta)
-

@@ -51,7 +51,6 @@ This example gets the owner of the specified group.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -248,5 +247,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupOwner](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwner?view=graph-powershell-beta)
-
-

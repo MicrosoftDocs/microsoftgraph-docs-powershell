@@ -171,5 +171,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamPrimaryChannelEmail](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelEmail?view=graph-powershell-v1.0)
-
-

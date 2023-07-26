@@ -62,6 +62,7 @@ New-MgBetaUserChatMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMi
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -941,4 +942,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserChatMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatMessageReply?view=graph-powershell-v1.0)
-

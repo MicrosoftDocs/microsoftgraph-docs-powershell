@@ -52,7 +52,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
 		"owner"
@@ -72,7 +72,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 	roles = @(
 		"owner"
 	)
@@ -91,7 +91,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/8b081ef6-4792-4def-b2c9-c363a1bf41d5"
 	visibleHistoryStartDateTime = [System.DateTime]::Parse("0001-01-01T00:00:00Z")
 	roles = @(
 		"owner"
@@ -111,7 +111,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/jacob@contoso.com"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/jacob@contoso.com"
 	visibleHistoryStartDateTime = [System.DateTime]::Parse("2019-04-18T23:51:43.255Z")
 	roles = @(
 		"owner"
@@ -131,7 +131,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/8ba98gf6-7fc2-4eb2-c7f2-aef9f21fd98g"
 	roles = @(
 		"guest"
 	)
@@ -150,7 +150,7 @@ Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/82af01c5-f7cc-4a2e-a728-3a5df21afd9d"
 	roles = @(
 		"owner"
 	)
@@ -393,5 +393,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgChatMember](/powershell/module/Microsoft.Graph.Teams/New-MgChatMember?view=graph-powershell-v1.0)
-
-

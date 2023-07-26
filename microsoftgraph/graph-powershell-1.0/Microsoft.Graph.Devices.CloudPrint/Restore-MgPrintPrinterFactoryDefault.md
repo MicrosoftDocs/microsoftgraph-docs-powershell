@@ -152,4 +152,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgBetaPrintPrinterFactoryDefault](/powershell/module/Microsoft.Graph.Beta.Devices.CloudPrint/Restore-MgBetaPrintPrinterFactoryDefault?view=graph-powershell-beta)
-

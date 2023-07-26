@@ -487,4 +487,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileAddress](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileAddress?view=graph-powershell-v1.0)
-

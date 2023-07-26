@@ -218,5 +218,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-v1.0)
-
-

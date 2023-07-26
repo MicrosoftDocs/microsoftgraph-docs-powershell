@@ -175,4 +175,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Submit-MgBetaEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Beta.Education/Submit-MgBetaEducationClassAssignmentSubmission?view=graph-powershell-beta)
-

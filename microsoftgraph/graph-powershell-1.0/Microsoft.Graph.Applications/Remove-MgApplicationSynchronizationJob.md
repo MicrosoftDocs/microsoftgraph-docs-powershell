@@ -8,7 +8,8 @@ schema: 2.0.0
 # Remove-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
-Delete navigation property jobs for applications
+Stop the synchronization job, and permanently delete all the state associated with it.
+Synchronized accounts are left as-is.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
@@ -28,7 +29,8 @@ Remove-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-If
 ```
 
 ## DESCRIPTION
-Delete navigation property jobs for applications
+Stop the synchronization job, and permanently delete all the state associated with it.
+Synchronized accounts are left as-is.
 
 ## PARAMETERS
 
@@ -158,6 +160,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

@@ -149,7 +149,6 @@ To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -405,5 +404,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroup?view=graph-powershell-beta)
-
-

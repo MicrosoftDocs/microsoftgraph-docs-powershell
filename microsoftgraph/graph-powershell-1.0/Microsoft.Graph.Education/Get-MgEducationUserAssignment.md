@@ -292,5 +292,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignment?view=graph-powershell-beta)
-
-

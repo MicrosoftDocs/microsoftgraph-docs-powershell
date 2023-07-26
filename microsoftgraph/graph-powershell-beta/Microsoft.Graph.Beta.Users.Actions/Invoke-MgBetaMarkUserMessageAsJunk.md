@@ -8,7 +8,8 @@ schema: 2.0.0
 # Invoke-MgBetaMarkUserMessageAsJunk
 
 ## SYNOPSIS
-Invoke action markAsJunk
+Mark a message as junk.
+This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Invoke-MgMarkUserMessageAsJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMessageAsJunk?view=graph-powershell-v1.0)
@@ -42,7 +43,8 @@ Invoke-MgBetaMarkUserMessageAsJunk -InputObject <IUsersActionsIdentity>
 ```
 
 ## DESCRIPTION
-Invoke action markAsJunk
+Mark a message as junk.
+This API adds the sender to the list of blocked senders and moves the message to the **Junk Email** folder, when **moveToJunk** is `true`.
 
 ## PARAMETERS
 

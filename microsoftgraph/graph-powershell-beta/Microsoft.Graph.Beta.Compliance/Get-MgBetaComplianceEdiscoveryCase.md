@@ -276,4 +276,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
-

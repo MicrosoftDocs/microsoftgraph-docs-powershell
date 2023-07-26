@@ -28,9 +28,18 @@ Get-MgUserMessageCount -InputObject <IMailIdentity> [-Filter <String>] [-Search 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+# A UPN can also be used as -UserId.
+Get-MgUserMessageExtension -UserId $userId -MessageId $messageId -ExtensionId $extensionId
+```
+This example shows how to use the Get-MgUserMessageExtension Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -126,4 +135,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMessageExtension](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMessageExtension?view=graph-powershell-beta)
-

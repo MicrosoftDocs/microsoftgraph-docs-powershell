@@ -245,4 +245,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityB2CUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
-

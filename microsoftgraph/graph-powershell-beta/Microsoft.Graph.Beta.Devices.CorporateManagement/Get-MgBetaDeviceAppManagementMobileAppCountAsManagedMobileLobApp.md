@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtMobileAppCountAsManagedMobileLobApp
+Get-MgBetaDeviceAppMgtMobileAppCountAsManagedMobileLobApp
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMobileAppCountAsManagedMobileLobApp?view=graph-powershell-v1.0)

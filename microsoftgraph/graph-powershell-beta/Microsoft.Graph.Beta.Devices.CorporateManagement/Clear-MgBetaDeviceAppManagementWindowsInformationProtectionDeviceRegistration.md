@@ -123,7 +123,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Clear-BetaDeviceAppMgtWindowsInformationProtectionDeviceRegistration
+Clear-MgBetaDeviceAppMgtWindowsInformationProtectionDeviceRegistration
 
 COMPLEX PARAMETER PROPERTIES
 

@@ -216,4 +216,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerPlan?view=graph-powershell-v1.0)
-

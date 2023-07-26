@@ -189,5 +189,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-v1.0)
-
-

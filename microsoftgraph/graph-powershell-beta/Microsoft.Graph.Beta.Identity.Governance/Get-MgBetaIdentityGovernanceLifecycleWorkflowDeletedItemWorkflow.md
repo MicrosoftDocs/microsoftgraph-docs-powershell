@@ -38,20 +38,17 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -InputObject <I
 Retrieve a deleted workflow object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet
+### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId
+
+Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow -WorkflowId $workflowId -Property "id,category,displayName,description,version,executionConditions"
 ```
 This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet.
+
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow
-```
-This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -355,4 +352,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflow?view=graph-powershell-v1.0)
-

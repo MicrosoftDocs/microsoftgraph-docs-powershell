@@ -191,4 +191,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)
-

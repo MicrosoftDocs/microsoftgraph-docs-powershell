@@ -168,4 +168,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
-

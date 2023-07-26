@@ -521,4 +521,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfilePatent](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePatent?view=graph-powershell-v1.0)
-

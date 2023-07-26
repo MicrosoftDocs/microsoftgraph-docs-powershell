@@ -351,4 +351,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgGroupSiteContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupSiteContentTypeToDefaultContentLocation?view=graph-powershell-v1.0)
-

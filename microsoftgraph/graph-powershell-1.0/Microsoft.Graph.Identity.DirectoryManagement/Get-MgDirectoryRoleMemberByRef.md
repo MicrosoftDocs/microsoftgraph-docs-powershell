@@ -213,5 +213,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleMemberByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleMemberByRef?view=graph-powershell-beta)
-
-

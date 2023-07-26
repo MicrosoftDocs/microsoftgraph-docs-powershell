@@ -310,4 +310,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgAcceptGroupCalendarEventTentatively](/powershell/module/Microsoft.Graph.Groups/Invoke-MgAcceptGroupCalendarEventTentatively?view=graph-powershell-v1.0)
-

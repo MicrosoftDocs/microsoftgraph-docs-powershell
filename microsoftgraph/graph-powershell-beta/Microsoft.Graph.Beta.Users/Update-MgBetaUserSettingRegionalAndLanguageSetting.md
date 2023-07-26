@@ -412,4 +412,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)
-

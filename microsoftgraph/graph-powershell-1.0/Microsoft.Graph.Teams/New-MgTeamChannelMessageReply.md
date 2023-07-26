@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgTeamChannelMessageReply
 
 ## SYNOPSIS
-Create a new reply to a chatMessage in a specified channel.
+Send a new reply to a chatMessage in a specified channel.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
@@ -58,7 +58,7 @@ New-MgTeamChannelMessageReply -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ```
 
 ## DESCRIPTION
-Create a new reply to a chatMessage in a specified channel.
+Send a new reply to a chatMessage in a specified channel.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -910,5 +910,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMessageReply?view=graph-powershell-beta)
-
-

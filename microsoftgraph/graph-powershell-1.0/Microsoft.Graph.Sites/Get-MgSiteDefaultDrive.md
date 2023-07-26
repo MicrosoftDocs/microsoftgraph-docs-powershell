@@ -162,4 +162,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteDefaultDrive](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteDefaultDrive?view=graph-powershell-beta)
-

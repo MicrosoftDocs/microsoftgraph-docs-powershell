@@ -81,5 +81,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyAuthenticationMethodPolicy?view=graph-powershell-beta)
-
-

@@ -111,7 +111,6 @@ Use `$secret.StartDateTime.ToLocalTime()` to convert the returned dates from UTC
 
 ## PARAMETERS
 
-
 ### -AdditionalProperties
 Additional Parameters
 
@@ -294,5 +293,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Add-MgApplicationPassword?view=graph-powershell-v1.0)
-
-

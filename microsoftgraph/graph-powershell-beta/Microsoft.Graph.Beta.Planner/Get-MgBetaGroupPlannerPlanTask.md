@@ -234,5 +234,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlanTask](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanTask?view=graph-powershell-v1.0)
-
-

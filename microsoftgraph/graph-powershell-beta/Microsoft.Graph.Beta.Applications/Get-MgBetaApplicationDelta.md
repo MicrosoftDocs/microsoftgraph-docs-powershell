@@ -184,4 +184,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgApplicationDelta](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationDelta?view=graph-powershell-v1.0)
-

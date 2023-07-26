@@ -1,100 +1,53 @@
 ---
 external help file: Microsoft.Graph.People-help.xml
 Module Name: Microsoft.Graph.People
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendinginsight
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.people/get-mgusertrendingcountinsight
 schema: 2.0.0
 ---
 
-# Get-MgUserTrendingInsight
+# Get-MgUserTrendingCountInsight
 
 ## SYNOPSIS
-Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
-Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserTrendingInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserTrendingInsight?view=graph-powershell-beta)
+Get the number of the resource
 
 ## SYNTAX
 
-### List (Default)
+### Get (Default)
 ```
-Get-MgUserTrendingInsight -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get
-```
-Get-MgUserTrendingInsight -TrendingId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgUserTrendingCountInsight -UserId <String> [-Filter <String>] [-Search <String>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserTrendingInsight -InputObject <IPeopleIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+Get-MgUserTrendingCountInsight -InputObject <IPeopleIdentity> [-Filter <String>] [-Search <String>]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Calculated relationship identifying documents trending around a user.
-Trending documents are calculated based on activity of the user's closest network of people and include files stored in OneDrive for Business and SharePoint.
-Trending insights help the user to discover potentially useful content that the user has access to, but has never viewed before.
+Get the number of the resource
+
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.People
+
+# A UPN can also be used as -UserId.
+Get-MgUserTrendingInsight -UserId $userId
+```
+This example shows how to use the Get-MgUserTrendingInsight Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
-
-### -All
-List all pages.
-
-```yaml
-Type: SwitchParameter
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -CountVariable
-Specifies a count of the total number of items in a collection.
-By default, this variable will be set in the global scope.
-
-```yaml
-Type: String
-Parameter Sets: List
-Aliases: CV
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ExpandProperty
-Expand related entities
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Expand
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -120,90 +73,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -PageSize
-Sets the page size of results.
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Property
-Select properties to be returned
-
-```yaml
-Type: String[]
-Parameter Sets: (All)
-Aliases: Select
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
 ### -Search
 Search items by search phrases
 
 ```yaml
 Type: String
-Parameter Sets: List
+Parameter Sets: (All)
 Aliases:
 
 Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Sort
-Order items by property values
-
-```yaml
-Type: String[]
-Parameter Sets: List
-Aliases: OrderBy
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Top
-Show only the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -TrendingId
-The unique identifier of trending
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -215,25 +93,10 @@ The unique identifier of user
 
 ```yaml
 Type: String
-Parameter Sets: List, Get
+Parameter Sets: Get
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -248,7 +111,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ### Microsoft.Graph.PowerShell.Models.IPeopleIdentity
 ## OUTPUTS
 
-### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTrending
+### System.Int32
 ## NOTES
 
 ALIASES
@@ -266,5 +129,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserTrendingInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserTrendingInsight?view=graph-powershell-beta)
-

@@ -184,4 +184,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationClassDelta](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassDelta?view=graph-powershell-v1.0)
-

@@ -330,5 +330,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRiskyServicePrincipal](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyServicePrincipal?view=graph-powershell-v1.0)
-
-

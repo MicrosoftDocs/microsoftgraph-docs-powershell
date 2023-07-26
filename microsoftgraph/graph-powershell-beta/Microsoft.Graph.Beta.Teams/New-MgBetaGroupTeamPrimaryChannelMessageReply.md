@@ -62,6 +62,7 @@ New-MgBetaGroupTeamPrimaryChannelMessageReply -InputObject <ITeamsIdentity>
 ## DESCRIPTION
 Send a new reply to a chatMessage in a specified channel.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -914,4 +915,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupTeamPrimaryChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamPrimaryChannelMessageReply?view=graph-powershell-v1.0)
-

@@ -54,9 +54,18 @@ To create a page in a different section in the default notebook, you can use the
 Example: `../onenote/pages?sectionName=My%20section` The `POST /onenote/pages` operation is used only to create pages in the current user's default notebook.
 If you're targeting other notebooks, you can create pages in a specified section.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Notes
 
+# A UPN can also be used as -UserId.
+Get-MgUserOnenoteSection -UserId $userId
+```
+This example shows how to use the New-MgUserOnenoteSection Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -651,4 +660,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserOnenoteSection](/powershell/module/Microsoft.Graph.Beta.Notes/New-MgBetaUserOnenoteSection?view=graph-powershell-beta)
-

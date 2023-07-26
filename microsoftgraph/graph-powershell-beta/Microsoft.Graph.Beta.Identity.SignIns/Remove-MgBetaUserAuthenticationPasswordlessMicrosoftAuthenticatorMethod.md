@@ -245,4 +245,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod?view=graph-powershell-v1.0)
-

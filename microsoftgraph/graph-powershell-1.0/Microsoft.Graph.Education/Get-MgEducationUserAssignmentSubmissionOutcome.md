@@ -39,6 +39,7 @@ Get-MgEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
 ## DESCRIPTION
 Get outcomes from education
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -301,4 +302,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionOutcome?view=graph-powershell-beta)
-

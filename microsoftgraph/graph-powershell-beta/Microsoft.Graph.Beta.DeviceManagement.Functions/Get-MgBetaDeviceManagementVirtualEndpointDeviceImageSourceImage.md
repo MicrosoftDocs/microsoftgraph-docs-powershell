@@ -123,4 +123,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointDeviceImageSourceImage?view=graph-powershell-v1.0)
-

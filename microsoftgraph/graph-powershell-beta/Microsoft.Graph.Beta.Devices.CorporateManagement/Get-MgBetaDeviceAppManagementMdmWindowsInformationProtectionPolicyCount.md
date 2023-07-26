@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtMdmWindowInformationProtectionPolicyCount
+Get-MgBetaDeviceAppMgtMdmWindowInformationProtectionPolicyCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementMdmWindowsInformationProtectionPolicyCount?view=graph-powershell-v1.0)

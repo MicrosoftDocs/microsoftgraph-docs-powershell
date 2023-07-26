@@ -197,5 +197,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkWorkforceIntegration?view=graph-powershell-v1.0)
-
-

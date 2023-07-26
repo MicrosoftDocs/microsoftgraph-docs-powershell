@@ -42,9 +42,25 @@ Update-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+$params = @{
+	displayName = "Important from partner"
+	actions = @{
+		markImportance = "high"
+	}
+}
 
+# A UPN can also be used as -UserId.
+Update-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserMailFolderMessageRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -233,4 +249,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
-

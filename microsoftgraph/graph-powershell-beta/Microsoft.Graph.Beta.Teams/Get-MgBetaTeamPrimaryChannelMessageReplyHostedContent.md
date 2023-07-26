@@ -52,6 +52,7 @@ Get-MgBetaTeamPrimaryChannelMessageReplyHostedContent -InputObject <ITeamsIdenti
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -373,4 +374,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPrimaryChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
-

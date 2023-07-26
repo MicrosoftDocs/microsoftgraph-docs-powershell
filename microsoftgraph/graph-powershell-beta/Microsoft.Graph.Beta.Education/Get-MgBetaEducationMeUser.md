@@ -81,5 +81,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationMeUser](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeUser?view=graph-powershell-v1.0)
-
-

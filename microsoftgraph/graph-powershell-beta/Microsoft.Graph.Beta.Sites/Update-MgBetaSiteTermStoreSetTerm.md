@@ -605,5 +605,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteTermStoreSetTerm](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSetTerm?view=graph-powershell-v1.0)
-
-

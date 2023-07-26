@@ -69,7 +69,6 @@ This example updates the details of an existing named location. Supply the value
 
 ## PARAMETERS
 
-
 ### -AdditionalProperties
 Additional Parameters
 
@@ -332,5 +331,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityConditionalAccessNamedLocation?view=graph-powershell-v1.0)
-
-

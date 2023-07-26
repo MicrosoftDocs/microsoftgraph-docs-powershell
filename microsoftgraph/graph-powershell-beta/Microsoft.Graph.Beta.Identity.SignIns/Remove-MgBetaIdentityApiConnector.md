@@ -233,5 +233,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityApiConnector?view=graph-powershell-v1.0)
-
-

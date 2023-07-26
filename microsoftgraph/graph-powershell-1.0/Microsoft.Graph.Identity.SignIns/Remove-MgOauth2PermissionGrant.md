@@ -218,5 +218,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaOauth2PermissionGrant?view=graph-powershell-beta)
-
-

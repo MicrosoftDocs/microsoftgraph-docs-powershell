@@ -262,4 +262,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgWindowsUpdatesCatalogEntry](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesCatalogEntry?view=graph-powershell-v1.0)
-

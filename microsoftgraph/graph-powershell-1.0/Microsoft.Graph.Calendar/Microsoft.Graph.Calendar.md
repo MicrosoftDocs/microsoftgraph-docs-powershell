@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Calendar
-Module Guid: a2ce3d24-4415-4ab2-a8f6-cb34efe474f2
+Module Guid: 6f8929da-d9a1-4e79-b958-140d229cf122
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.calendar
 Help Version: 1.0.0.0
 Locale: en-US
@@ -99,6 +99,9 @@ Get the item of type microsoft.graph.place as microsoft.graph.roomList
 Get the number of the resource
 
 ### [Get-MgPlaceCountAsRoom](Get-MgPlaceCountAsRoom.md)
+Get the number of the resource
+
+### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)
 Get the number of the resource
 
 ### [Get-MgPlaceCountAsRoomList](Get-MgPlaceCountAsRoomList.md)

@@ -278,4 +278,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-v1.0)
-

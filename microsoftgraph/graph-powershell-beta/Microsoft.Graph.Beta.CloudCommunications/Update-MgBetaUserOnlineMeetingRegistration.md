@@ -437,4 +437,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)
-

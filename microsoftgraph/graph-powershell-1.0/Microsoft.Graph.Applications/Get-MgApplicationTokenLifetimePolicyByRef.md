@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 List the tokenLifetimePolicy objects that are assigned to an application.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
@@ -23,6 +24,7 @@ Get-MgApplicationTokenLifetimePolicyByRef -ApplicationId <String> [-Filter <Stri
 
 ## DESCRIPTION
 List the tokenLifetimePolicy objects that are assigned to an application.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -189,5 +191,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenLifetimePolicyByRef?view=graph-powershell-beta)
-
-

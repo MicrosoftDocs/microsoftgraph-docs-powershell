@@ -53,7 +53,7 @@ Only one policy object can be assigned to an application or service principal.
 Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/appManagementPolicies/{id}"
+	"@odata.id" = "https://graph.microsoft.com/beta/policies/appManagementPolicies/{id}"
 }
 
 New-MgBetaApplicationAppManagementPolicyByRef -ApplicationId $applicationId -BodyParameter $params
@@ -244,5 +244,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationAppManagementPolicyByRef?view=graph-powershell-v1.0)
-
-

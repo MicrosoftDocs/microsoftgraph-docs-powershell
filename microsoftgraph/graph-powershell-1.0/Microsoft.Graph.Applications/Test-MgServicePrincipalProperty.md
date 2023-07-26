@@ -236,4 +236,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgBetaServicePrincipalProperty](/powershell/module/Microsoft.Graph.Beta.Applications/Test-MgBetaServicePrincipalProperty?view=graph-powershell-beta)
-

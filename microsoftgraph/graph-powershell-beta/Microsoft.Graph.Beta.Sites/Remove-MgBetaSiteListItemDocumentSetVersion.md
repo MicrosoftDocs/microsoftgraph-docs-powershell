@@ -255,5 +255,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
-
-

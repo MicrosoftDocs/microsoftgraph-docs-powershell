@@ -29,6 +29,8 @@ Get-MgBetaDriveBundleContent -InputObject <IFilesIdentity> -OutFile <String> [-P
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
@@ -153,4 +155,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveBundleContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveBundleContent?view=graph-powershell-v1.0)
-

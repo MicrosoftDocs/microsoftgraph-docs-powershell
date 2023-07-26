@@ -231,4 +231,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgBetaDirectoryObjectProperty](/powershell/module/Microsoft.Graph.Beta.DirectoryObjects/Test-MgBetaDirectoryObjectProperty?view=graph-powershell-beta)
-

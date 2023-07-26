@@ -276,4 +276,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Hide-MgChatForUser](/powershell/module/Microsoft.Graph.Teams/Hide-MgChatForUser?view=graph-powershell-v1.0)
-

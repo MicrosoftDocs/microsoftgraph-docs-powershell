@@ -227,4 +227,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Initialize-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Initialize-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
-

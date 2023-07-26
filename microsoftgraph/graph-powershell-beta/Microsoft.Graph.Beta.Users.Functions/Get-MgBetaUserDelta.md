@@ -184,4 +184,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserDelta?view=graph-powershell-v1.0)
-

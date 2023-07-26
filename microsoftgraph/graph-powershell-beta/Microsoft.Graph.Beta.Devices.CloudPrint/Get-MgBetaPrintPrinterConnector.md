@@ -280,4 +280,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterConnector](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterConnector?view=graph-powershell-v1.0)
-

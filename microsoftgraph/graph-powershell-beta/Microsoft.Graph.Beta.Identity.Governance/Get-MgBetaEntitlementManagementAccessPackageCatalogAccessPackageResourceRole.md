@@ -238,4 +238,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageCatalogAccessPackageResourceRole?view=graph-powershell-v1.0)
-

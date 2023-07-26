@@ -319,4 +319,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgUserOnenoteSectionToNotebook](/powershell/module/Microsoft.Graph.Users.Actions/Copy-MgUserOnenoteSectionToNotebook?view=graph-powershell-v1.0)
-

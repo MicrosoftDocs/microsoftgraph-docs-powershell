@@ -55,6 +55,7 @@ Import-Module Microsoft.Graph.Beta.Applications
 $params = @{
 	name = "jobGroup"
 	dataType = "String"
+	isMultiValued = $true
 	targetObjects = @(
 		"User"
 	)
@@ -358,5 +359,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationExtensionProperty](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationExtensionProperty?view=graph-powershell-v1.0)
-
-

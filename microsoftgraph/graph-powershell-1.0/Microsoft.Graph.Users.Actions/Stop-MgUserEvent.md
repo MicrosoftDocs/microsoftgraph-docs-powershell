@@ -261,4 +261,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgBetaUserEvent](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Stop-MgBetaUserEvent?view=graph-powershell-beta)
-

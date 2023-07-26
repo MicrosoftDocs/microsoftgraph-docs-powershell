@@ -481,5 +481,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelTab?view=graph-powershell-v1.0)
-
-

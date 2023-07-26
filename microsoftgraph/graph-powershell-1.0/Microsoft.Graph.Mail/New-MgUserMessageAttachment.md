@@ -48,9 +48,27 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+$params = @{
+	"@odata.type" = "microsoft.graph.fileAttachment"
+	name = "name-value"
+	contentType = "contentType-value"
+	isInline = $false
+	contentLocation = "contentLocation-value"
+	contentBytes = "base64-contentBytes-value"
+}
 
+# A UPN can also be used as -UserId.
+New-MgUserMessageAttachment -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgUserMessageAttachment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -224,4 +242,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMessageAttachment?view=graph-powershell-beta)
-

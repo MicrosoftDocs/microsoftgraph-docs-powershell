@@ -203,4 +203,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgBetaUserDriveListContentType](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Publish-MgBetaUserDriveListContentType?view=graph-powershell-beta)
-

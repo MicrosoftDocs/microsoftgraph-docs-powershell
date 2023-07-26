@@ -479,5 +479,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
-
-

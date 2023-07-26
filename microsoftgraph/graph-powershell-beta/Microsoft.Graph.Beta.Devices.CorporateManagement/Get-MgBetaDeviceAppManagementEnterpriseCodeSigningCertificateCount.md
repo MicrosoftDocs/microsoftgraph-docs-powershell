@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtEnterpriseCodeSigningCertificateCount
+Get-MgBetaDeviceAppMgtEnterpriseCodeSigningCertificateCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementEnterpriseCodeSigningCertificateCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementEnterpriseCodeSigningCertificateCount?view=graph-powershell-v1.0)

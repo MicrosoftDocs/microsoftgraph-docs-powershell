@@ -330,5 +330,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaRiskyUser](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaRiskyUser?view=graph-powershell-beta)
-
-

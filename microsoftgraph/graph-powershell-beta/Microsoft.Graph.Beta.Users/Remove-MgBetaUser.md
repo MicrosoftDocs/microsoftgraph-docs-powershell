@@ -54,7 +54,6 @@ This examples removes a user after the user is prompted for a confirmation.
 
 ## PARAMETERS
 
-
 ### -IfMatch
 ETag
 
@@ -191,5 +190,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUser](/powershell/module/Microsoft.Graph.Users/Remove-MgUser?view=graph-powershell-v1.0)
-
-

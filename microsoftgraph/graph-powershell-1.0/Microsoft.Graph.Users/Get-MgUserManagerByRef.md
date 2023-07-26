@@ -30,6 +30,8 @@ Get-MgUserManagerByRef -InputObject <IUsersIdentity> [<CommonParameters>]
 Returns the user or organizational contact assigned as the user's manager.
 Optionally, you can expand the manager's chain up to the root node.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -98,4 +100,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManagerByRef?view=graph-powershell-beta)
-

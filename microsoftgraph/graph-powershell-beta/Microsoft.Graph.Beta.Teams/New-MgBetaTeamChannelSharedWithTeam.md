@@ -9723,5 +9723,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
-
-

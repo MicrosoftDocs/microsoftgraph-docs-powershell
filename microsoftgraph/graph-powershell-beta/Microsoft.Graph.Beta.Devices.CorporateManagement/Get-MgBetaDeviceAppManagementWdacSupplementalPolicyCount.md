@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtWdacSupplementalPolicyCount
+Get-MgBetaDeviceAppMgtWdacSupplementalPolicyCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWdacSupplementalPolicyCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWdacSupplementalPolicyCount?view=graph-powershell-v1.0)

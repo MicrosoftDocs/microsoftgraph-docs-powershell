@@ -163,4 +163,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Publish-MgBetaEducationClassAssignment](/powershell/module/Microsoft.Graph.Beta.Education/Publish-MgBetaEducationClassAssignment?view=graph-powershell-beta)
-

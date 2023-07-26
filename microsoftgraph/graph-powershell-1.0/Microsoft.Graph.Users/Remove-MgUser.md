@@ -54,7 +54,6 @@ This examples removes a user after the user is prompted for a confirmation.
 
 ## PARAMETERS
 
-
 ### -IfMatch
 ETag
 
@@ -182,5 +181,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUser?view=graph-powershell-beta)
-
-

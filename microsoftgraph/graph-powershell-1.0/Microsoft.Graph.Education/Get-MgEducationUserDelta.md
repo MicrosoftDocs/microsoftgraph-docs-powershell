@@ -184,4 +184,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserDelta](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserDelta?view=graph-powershell-beta)
-

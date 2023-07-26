@@ -171,5 +171,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPlannerTaskProgressTaskBoardFormat](/powershell/module/Microsoft.Graph.Planner/Remove-MgPlannerTaskProgressTaskBoardFormat?view=graph-powershell-v1.0)
-
-

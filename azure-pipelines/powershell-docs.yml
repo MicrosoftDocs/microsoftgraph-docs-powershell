@@ -16,6 +16,9 @@ parameters:
   displayName: PipelineTimeout
   type: number
   default: 1200
+- name: CreatePullRequest
+  type: boolean
+  default: true
 
 resources:
  repositories:     
@@ -92,6 +95,14 @@ jobs:
       targetType: 'filePath'
       pwsh: true
       filePath: microsoftgraph-docs-powershell\scripts\RepairExamplesDescriptionsAndTitle.ps1
+
+  - task: PowerShell@2
+    displayName: 'Remove boiler plate code'
+    continueOnError: false
+    inputs:
+      targetType: 'filePath'
+      pwsh: true
+      filePath: microsoftgraph-docs-powershell\scripts\RemoveBoilerPlateCode.ps1
       
   - task: PowerShell@2
     displayName: Pushing to github
@@ -110,4 +121,9 @@ jobs:
         git commit -m "Updating help files $date"
         git push --set-upstream "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git" $proposedBranch
         git status
-         
+      
+  - template: common-templates/create-pr.yml
+    parameters:
+      BaseBranch: main
+      Title: "Weekly PowerShell Microsoft Graph Reference Docs Refresh"
+      Body: "This pull request was automatically created by Azure Pipelines. **Important** Check for unexpected deletions or changes in this PR."

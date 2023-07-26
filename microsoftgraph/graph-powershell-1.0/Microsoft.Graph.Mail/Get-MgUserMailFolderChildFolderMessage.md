@@ -37,6 +37,8 @@ Get-MgUserMailFolderChildFolderMessage -InputObject <IMailIdentity> [-ExpandProp
 ## DESCRIPTION
 The collection of messages in the mailFolder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -296,4 +298,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessage?view=graph-powershell-beta)
-

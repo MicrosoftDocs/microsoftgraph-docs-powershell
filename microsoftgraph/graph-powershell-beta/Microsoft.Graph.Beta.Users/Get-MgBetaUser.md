@@ -171,7 +171,6 @@ To consent to any of these permissions run `Connect-MgGraph -Scopes Permission`.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -399,5 +398,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUser](/powershell/module/Microsoft.Graph.Users/Get-MgUser?view=graph-powershell-v1.0)
-
-

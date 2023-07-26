@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportAuthenticationMethod
 
 ## SYNOPSIS
-Get authenticationMethods from reports
+Container for navigation properties for Azure AD authentication methods resources.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportAuthenticationMethod?view=graph-powershell-beta)
@@ -20,7 +20,7 @@ Get-MgReportAuthenticationMethod [-ExpandProperty <String[]>] [-Property <String
 ```
 
 ## DESCRIPTION
-Get authenticationMethods from reports
+Container for navigation properties for Azure AD authentication methods resources.
 
 ## PARAMETERS
 

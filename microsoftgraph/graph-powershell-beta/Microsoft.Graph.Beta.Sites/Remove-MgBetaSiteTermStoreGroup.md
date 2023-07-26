@@ -224,5 +224,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteTermStoreGroup](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteTermStoreGroup?view=graph-powershell-v1.0)
-
-

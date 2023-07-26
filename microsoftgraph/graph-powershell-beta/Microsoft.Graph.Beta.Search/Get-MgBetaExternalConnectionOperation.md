@@ -289,5 +289,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-v1.0)
-
-

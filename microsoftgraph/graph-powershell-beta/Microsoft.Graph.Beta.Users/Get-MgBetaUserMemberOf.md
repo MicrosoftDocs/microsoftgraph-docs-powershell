@@ -311,4 +311,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserMemberOf?view=graph-powershell-v1.0)
-

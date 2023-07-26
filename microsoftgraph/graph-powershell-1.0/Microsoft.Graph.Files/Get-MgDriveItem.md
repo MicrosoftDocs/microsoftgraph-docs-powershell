@@ -295,5 +295,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveItem?view=graph-powershell-beta)
-
-

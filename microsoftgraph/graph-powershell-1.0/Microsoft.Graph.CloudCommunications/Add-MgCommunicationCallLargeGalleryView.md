@@ -207,4 +207,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaCommunicationCallLargeGalleryView](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Add-MgBetaCommunicationCallLargeGalleryView?view=graph-powershell-beta)
-

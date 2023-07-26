@@ -50,6 +50,7 @@ Update-MgBetaEducationClassAssignmentRubric -InputObject <IEducationIdentity>
 Attach an existing educationRubric object to an educationAssignment.
 Only teachers can perform this operation.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -399,4 +400,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignmentRubric?view=graph-powershell-v1.0)
-

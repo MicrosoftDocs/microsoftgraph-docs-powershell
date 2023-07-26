@@ -235,4 +235,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserOnenoteOperation](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteOperation?view=graph-powershell-beta)
-

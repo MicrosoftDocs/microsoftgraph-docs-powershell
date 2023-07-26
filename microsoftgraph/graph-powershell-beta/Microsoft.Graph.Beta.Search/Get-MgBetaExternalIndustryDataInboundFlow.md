@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaExternalIndustryDataInboundFlow
 
 ## SYNOPSIS
-Read the properties and relationships of an inboundFileFlow object.
+Read the properties and relationships of an inboundFlow object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaExternalIndustryDataInboundFlow -InputObject <ISearchIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of an inboundFileFlow object.
+Read the properties and relationships of an inboundFlow object.
 
 ## PARAMETERS
 

@@ -42,9 +42,18 @@ Get-MgBetaGroupOnenoteSectionGroupCount -InputObject <INotesIdentity> [-Filter <
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Notes
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteSectionGroupSection -UserId $userId -SectionGroupId $sectionGroupId
+```
+This example shows how to use the Get-MgBetaGroupOnenoteSectionGroupSection Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -156,4 +165,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionGroupSection?view=graph-powershell-v1.0)
-

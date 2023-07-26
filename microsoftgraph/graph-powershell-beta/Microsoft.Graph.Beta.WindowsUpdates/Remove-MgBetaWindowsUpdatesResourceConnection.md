@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaWindowsUpdatesResourceConnection
 
 ## SYNOPSIS
-Delete a resourceConnection object.
+Delete an operationalInsightsConnection object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Remove-MgWindowsUpdatesResourceConnection](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0)
@@ -28,7 +28,7 @@ Remove-MgBetaWindowsUpdatesResourceConnection -InputObject <IWindowsUpdatesIdent
 ```
 
 ## DESCRIPTION
-Delete a resourceConnection object.
+Delete an operationalInsightsConnection object.
 
 ## EXAMPLES
 ### Example 1: Using the Remove-MgBetaWindowsUpdatesResourceConnection Cmdlet
@@ -170,4 +170,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgWindowsUpdatesResourceConnection](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesResourceConnection?view=graph-powershell-v1.0)
-

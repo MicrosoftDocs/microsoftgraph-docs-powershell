@@ -44,6 +44,7 @@ Get-MgGroupOnenoteSectionGroup -InputObject <INotesIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Retrieve the properties and relationships of a sectionGroup object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -275,4 +276,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupOnenoteSectionGroup](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaGroupOnenoteSectionGroup?view=graph-powershell-beta)
-

@@ -295,5 +295,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItem?view=graph-powershell-v1.0)
-
-

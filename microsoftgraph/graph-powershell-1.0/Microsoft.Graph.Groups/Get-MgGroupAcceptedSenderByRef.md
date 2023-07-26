@@ -173,5 +173,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupAcceptedSenderByRef?view=graph-powershell-beta)
-
-

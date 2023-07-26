@@ -30,9 +30,18 @@ Get-MgBetaUserOauth2PermissionGrantCount -InputObject <IUsersIdentity> [-Filter 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId
+```
+This example shows how to use the Get-MgBetaUserOutlookMasterCategory Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -142,4 +151,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookMasterCategory?view=graph-powershell-v1.0)
-

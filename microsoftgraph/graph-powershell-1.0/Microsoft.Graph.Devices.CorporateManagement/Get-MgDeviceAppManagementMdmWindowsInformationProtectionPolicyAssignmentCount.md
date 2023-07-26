@@ -106,7 +106,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-DeviceAppMgtMdmWindowInformationProtectionPolicyAssignmentCount
+Get-MgDeviceAppMgtMdmWindowInformationProtectionPolicyAssignmentCount
 
 COMPLEX PARAMETER PROPERTIES
 

@@ -437,4 +437,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgWindowsUpdatesDeployment](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesDeployment?view=graph-powershell-v1.0)
-

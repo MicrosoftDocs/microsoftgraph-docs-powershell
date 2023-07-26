@@ -47,7 +47,6 @@ This example gets the owner of the specified group.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -244,5 +243,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupOwner](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupOwner?view=graph-powershell-v1.0)
-
-

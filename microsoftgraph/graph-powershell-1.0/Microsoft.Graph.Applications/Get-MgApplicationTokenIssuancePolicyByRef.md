@@ -189,5 +189,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaApplicationTokenIssuancePolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationTokenIssuancePolicyByRef?view=graph-powershell-beta)
-
-

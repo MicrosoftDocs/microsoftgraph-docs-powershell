@@ -329,4 +329,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityLabelRetentionLabel](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityLabelRetentionLabel?view=graph-powershell-v1.0)
-

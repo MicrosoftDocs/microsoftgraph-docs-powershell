@@ -362,5 +362,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyRoleManagementPolicy?view=graph-powershell-v1.0)
-
-

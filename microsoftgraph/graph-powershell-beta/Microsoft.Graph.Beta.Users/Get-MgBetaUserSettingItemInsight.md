@@ -147,4 +147,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSettingItemInsight](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingItemInsight?view=graph-powershell-v1.0)
-

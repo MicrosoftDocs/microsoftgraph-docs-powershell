@@ -294,4 +294,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBookingBusinessCustomer](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCustomer?view=graph-powershell-v1.0)
-

@@ -208,4 +208,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
-

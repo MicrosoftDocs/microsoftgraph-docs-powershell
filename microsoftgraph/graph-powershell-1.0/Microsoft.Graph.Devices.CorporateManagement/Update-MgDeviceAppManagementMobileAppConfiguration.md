@@ -353,7 +353,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-DeviceAppMgtMobileAppConfiguration
+Update-MgDeviceAppMgtMobileAppConfiguration
 
 COMPLEX PARAMETER PROPERTIES
 

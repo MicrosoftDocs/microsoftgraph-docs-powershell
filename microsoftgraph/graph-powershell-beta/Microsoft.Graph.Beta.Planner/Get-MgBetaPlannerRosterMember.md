@@ -282,4 +282,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPlannerRosterMember](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerRosterMember?view=graph-powershell-v1.0)
-

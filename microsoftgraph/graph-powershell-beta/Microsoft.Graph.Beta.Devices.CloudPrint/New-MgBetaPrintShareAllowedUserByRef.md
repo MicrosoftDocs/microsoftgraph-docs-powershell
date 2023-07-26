@@ -49,7 +49,7 @@ Grant the specified user access to submit print jobs to the associated printerSh
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/users/{userId}"
+	"@odata.id" = "https://graph.microsoft.com/beta/users/{id}"
 }
 
 New-MgBetaPrintShareAllowedUserByRef -PrinterShareId $printerShareId -BodyParameter $params
@@ -225,5 +225,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShareAllowedUserByRef?view=graph-powershell-v1.0)
-
-

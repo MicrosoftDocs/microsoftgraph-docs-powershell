@@ -30,9 +30,18 @@ Remove-MgBetaUserTodoListExtension -InputObject <IUsersIdentity> [-IfMatch <Stri
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserTodoListTaskAttachment -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -AttachmentBaseId $attachmentBaseId
+```
+This example shows how to use the Remove-MgBetaUserTodoListTaskAttachment Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -203,4 +212,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserTodoListTaskAttachment](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachment?view=graph-powershell-v1.0)
-

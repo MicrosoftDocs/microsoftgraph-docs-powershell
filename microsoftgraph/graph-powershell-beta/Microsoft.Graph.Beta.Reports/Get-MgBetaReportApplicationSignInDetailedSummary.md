@@ -287,4 +287,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportApplicationSignInDetailedSummary](/powershell/module/Microsoft.Graph.Reports/Get-MgReportApplicationSignInDetailedSummary?view=graph-powershell-v1.0)
-

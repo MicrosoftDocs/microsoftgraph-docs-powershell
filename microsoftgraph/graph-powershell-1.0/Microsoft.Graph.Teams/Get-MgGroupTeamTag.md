@@ -37,6 +37,7 @@ Get-MgGroupTeamTag -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>] [-
 ## DESCRIPTION
 Read the properties and relationships of a tag object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -290,4 +291,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamTag](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamTag?view=graph-powershell-beta)
-

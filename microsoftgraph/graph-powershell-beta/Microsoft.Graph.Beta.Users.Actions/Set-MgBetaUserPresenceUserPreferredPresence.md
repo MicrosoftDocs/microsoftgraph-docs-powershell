@@ -294,4 +294,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserPresenceUserPreferredPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresenceUserPreferredPresence?view=graph-powershell-v1.0)
-

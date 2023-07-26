@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaGroupConversation
 
 ## SYNOPSIS
-Get a conversation object.
+Retrieve the properties and relationships of conversation object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-v1.0)
@@ -34,7 +34,7 @@ Get-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-Property <String[]>
 ```
 
 ## DESCRIPTION
-Get a conversation object.
+Retrieve the properties and relationships of conversation object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -299,5 +299,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversation?view=graph-powershell-v1.0)
-
-

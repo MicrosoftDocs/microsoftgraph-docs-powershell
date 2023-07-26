@@ -41,7 +41,6 @@ This example removes the federation settings of the specified federated domain.
 
 ## PARAMETERS
 
-
 ### -DomainId
 The unique identifier of domain
 
@@ -212,5 +211,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDomainFederationConfiguration?view=graph-powershell-v1.0)
-
-

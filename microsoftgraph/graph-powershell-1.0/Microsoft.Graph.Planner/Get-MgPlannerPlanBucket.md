@@ -215,4 +215,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPlannerPlanBucket](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerPlanBucket?view=graph-powershell-beta)
-

@@ -31,9 +31,18 @@ Remove-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity> [-I
 ## DESCRIPTION
 Delete navigation property attachmentSessions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId
+```
+This example shows how to use the Remove-MgBetaUserTodoListTaskChecklistItem Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -219,4 +228,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskChecklistItem?view=graph-powershell-v1.0)
-

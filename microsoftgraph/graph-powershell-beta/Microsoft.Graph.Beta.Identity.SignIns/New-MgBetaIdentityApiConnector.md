@@ -41,8 +41,8 @@ $params = @{
 	targetUrl = "https://someapi.com/api"
 	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.basicAuthentication"
-		username = "MyUsername"
-		password = "MyPassword"
+		username = "&lt;USERNAME&gt;"
+		password = "&lt;PASSWORD&gt;"
 	}
 }
 
@@ -63,7 +63,7 @@ $params = @{
 	authenticationConfiguration = @{
 		"@odata.type" = "#microsoft.graph.pkcs12Certificate"
 		pkcs12Value = "eyJhbGciOiJSU0EtT0FFUCIsImVuYyI6IkEyNTZHQ00ifQ...kDJ04sJShkkgjL9Bm49plA"
-		password = "CertificatePassword"
+		password = "&lt;password&gt;"
 	}
 }
 
@@ -227,5 +227,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityApiConnector](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityApiConnector?view=graph-powershell-v1.0)
-
-

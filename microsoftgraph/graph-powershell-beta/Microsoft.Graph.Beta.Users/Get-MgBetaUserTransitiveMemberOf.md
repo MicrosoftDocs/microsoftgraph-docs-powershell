@@ -307,4 +307,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-v1.0)
-

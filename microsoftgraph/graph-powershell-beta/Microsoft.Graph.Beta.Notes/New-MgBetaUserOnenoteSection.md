@@ -48,9 +48,18 @@ New-MgBetaUserOnenotePage -InputObject <INotesIdentity> -BodyParameter <IMicroso
 ## DESCRIPTION
 Create new navigation property to pages for users
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Notes
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteSection -UserId $userId
+```
 This example shows how to use the New-MgBetaBetaUserOnenoteSection Cmdlet.
 
-
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -641,4 +650,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOnenoteSection](/powershell/module/Microsoft.Graph.Notes/New-MgUserOnenoteSection?view=graph-powershell-v1.0)
-

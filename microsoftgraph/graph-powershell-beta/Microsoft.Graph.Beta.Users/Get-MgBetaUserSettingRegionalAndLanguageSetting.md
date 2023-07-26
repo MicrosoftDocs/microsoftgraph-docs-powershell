@@ -147,4 +147,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserSettingRegionalAndLanguageSetting](/powershell/module/Microsoft.Graph.Users/Get-MgUserSettingRegionalAndLanguageSetting?view=graph-powershell-v1.0)
-

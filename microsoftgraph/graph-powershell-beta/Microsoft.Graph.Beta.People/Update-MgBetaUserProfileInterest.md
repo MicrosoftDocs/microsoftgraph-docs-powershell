@@ -510,4 +510,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileInterest](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileInterest?view=graph-powershell-v1.0)
-

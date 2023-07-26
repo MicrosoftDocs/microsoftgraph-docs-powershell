@@ -182,5 +182,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnsubmitEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgUnsubmitEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
-
-

@@ -310,7 +310,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-New-BetaDeviceAppMgtManagedEBookUserStateSummaryDeviceState
+New-MgBetaDeviceAppMgtManagedEBookUserStateSummaryDeviceState
 
 COMPLEX PARAMETER PROPERTIES
 

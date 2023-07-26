@@ -188,4 +188,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupAcceptedSender](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupAcceptedSender?view=graph-powershell-v1.0)
-

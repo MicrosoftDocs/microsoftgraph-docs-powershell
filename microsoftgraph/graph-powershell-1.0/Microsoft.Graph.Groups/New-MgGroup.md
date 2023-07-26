@@ -75,7 +75,6 @@ This example creates a new group.
 
 ## PARAMETERS
 
-
 ### -AcceptedSenders
 The list of users or groups that are allowed to create post's or calendar events in this group.
 If this list is non-empty then only users or groups listed here are allowed to post.
@@ -1784,9 +1783,9 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+            - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
               - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-              - `[PermissionValue <String>]`: 
+              - `[PermissionValue <String>]`: The name of the resource-specific permission.
           - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -4949,9 +4948,9 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
             - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-            - `[PermissionValue <String>]`: 
+            - `[PermissionValue <String>]`: The name of the resource-specific permission.
         - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -7796,9 +7795,9 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
             - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-            - `[PermissionValue <String>]`: 
+            - `[PermissionValue <String>]`: The name of the resource-specific permission.
         - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -11072,9 +11071,9 @@ To create the parameters described below, construct a hash table containing the 
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+          - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
             - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-            - `[PermissionValue <String>]`: 
+            - `[PermissionValue <String>]`: The name of the resource-specific permission.
         - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -13930,9 +13929,9 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+              - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
                 - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-                - `[PermissionValue <String>]`: 
+                - `[PermissionValue <String>]`: The name of the resource-specific permission.
             - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -16473,5 +16472,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroup?view=graph-powershell-beta)
-
-

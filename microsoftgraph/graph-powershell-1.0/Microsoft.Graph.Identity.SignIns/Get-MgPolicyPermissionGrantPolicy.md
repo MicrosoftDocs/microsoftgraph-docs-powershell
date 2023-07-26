@@ -88,7 +88,6 @@ This command retrieves a specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -348,5 +347,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
-
-

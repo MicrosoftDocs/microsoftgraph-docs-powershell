@@ -210,4 +210,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgExtractInformationProtectionPolicyLabel](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgExtractInformationProtectionPolicyLabel?view=graph-powershell-v1.0)
-

@@ -219,5 +219,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationAppManagementPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationAppManagementPolicyByRef?view=graph-powershell-v1.0)
-
-

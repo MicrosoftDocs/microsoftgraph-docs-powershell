@@ -416,4 +416,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgIdentityB2CUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
-

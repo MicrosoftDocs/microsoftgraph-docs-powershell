@@ -226,5 +226,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-v1.0)
-
-

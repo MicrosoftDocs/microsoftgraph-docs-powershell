@@ -30,9 +30,18 @@ Remove-MgBetaCommunicationPresence -InputObject <ICloudCommunicationsIdentity> [
 ## DESCRIPTION
 Delete navigation property presences for communications
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserOnlineMeeting -UserId $userId -OnlineMeetingId $onlineMeetingId
+```
+This example shows how to use the Remove-MgBetaUserOnlineMeeting Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -169,4 +178,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOnlineMeeting](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgUserOnlineMeeting?view=graph-powershell-v1.0)
-

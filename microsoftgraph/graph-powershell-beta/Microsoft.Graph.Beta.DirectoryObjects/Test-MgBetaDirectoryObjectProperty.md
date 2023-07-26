@@ -229,4 +229,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgDirectoryObjectProperty](/powershell/module/Microsoft.Graph.DirectoryObjects/Test-MgDirectoryObjectProperty?view=graph-powershell-v1.0)
-

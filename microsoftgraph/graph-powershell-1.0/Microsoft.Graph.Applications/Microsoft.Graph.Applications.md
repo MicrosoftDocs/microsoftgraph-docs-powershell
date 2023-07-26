@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Applications
-Module Guid: 7f985d6e-0cbd-46ef-aead-89aed0d1fb4b
+Module Guid: eaf7b893-421d-4da9-b7f0-fac7fc2b134d
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -59,16 +59,16 @@ Invoke action checkMemberObjects
 Invoke action checkMemberObjects
 
 ### [Find-MgApplicationSynchronizationJobSchemaDirectory](Find-MgApplicationSynchronizationJobSchemaDirectory.md)
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ### [Find-MgApplicationSynchronizationTemplateSchemaDirectory](Find-MgApplicationSynchronizationTemplateSchemaDirectory.md)
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ### [Find-MgServicePrincipalSynchronizationJobSchemaDirectory](Find-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ### [Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Find-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Invoke action discover
+Discover the latest schema definition for provisioning to an application.
 
 ### [Get-MgApplication](Get-MgApplication.md)
 Get the properties and relationships of an application object.
@@ -170,22 +170,22 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgApplicationSynchronization](Get-MgApplicationSynchronization.md)
-Get synchronization from applications
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
 ### [Get-MgApplicationSynchronizationAccessToken](Get-MgApplicationSynchronizationAccessToken.md)
-Invoke action acquireAccessToken
+Acquire an OAuth access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ### [Get-MgApplicationSynchronizationJob](Get-MgApplicationSynchronizationJob.md)
-Get jobs from applications
+Retrieve the existing synchronization job and its properties.
 
 ### [Get-MgApplicationSynchronizationJobCount](Get-MgApplicationSynchronizationJobCount.md)
 Get the number of the resource
 
 ### [Get-MgApplicationSynchronizationJobSchema](Get-MgApplicationSynchronizationJobSchema.md)
-Get schema from applications
+Retrieve the schema for a given synchronization job or template.
 
 ### [Get-MgApplicationSynchronizationJobSchemaDirectory](Get-MgApplicationSynchronizationJobSchemaDirectory.md)
-Get directories from applications
+Contains the collection of directories and all of their objects.
 
 ### [Get-MgApplicationSynchronizationJobSchemaDirectoryCount](Get-MgApplicationSynchronizationJobSchemaDirectoryCount.md)
 Get the number of the resource
@@ -194,16 +194,16 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgApplicationSynchronizationTemplate](Get-MgApplicationSynchronizationTemplate.md)
-Get templates from applications
+Pre-configured synchronization settings for a particular application.
 
 ### [Get-MgApplicationSynchronizationTemplateCount](Get-MgApplicationSynchronizationTemplateCount.md)
 Get the number of the resource
 
 ### [Get-MgApplicationSynchronizationTemplateSchema](Get-MgApplicationSynchronizationTemplateSchema.md)
-Get schema from applications
+Default synchronization schema for the jobs based on this template.
 
 ### [Get-MgApplicationSynchronizationTemplateSchemaDirectory](Get-MgApplicationSynchronizationTemplateSchemaDirectory.md)
-Get directories from applications
+Contains the collection of directories and all of their objects.
 
 ### [Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount](Get-MgApplicationSynchronizationTemplateSchemaDirectoryCount.md)
 Get the number of the resource
@@ -225,9 +225,11 @@ Get the number of the resource
 
 ### [Get-MgApplicationTokenLifetimePolicy](Get-MgApplicationTokenLifetimePolicy.md)
 List the tokenLifetimePolicy objects that are assigned to an application.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ### [Get-MgApplicationTokenLifetimePolicyByRef](Get-MgApplicationTokenLifetimePolicyByRef.md)
 List the tokenLifetimePolicy objects that are assigned to an application.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ### [Get-MgApplicationTokenLifetimePolicyCount](Get-MgApplicationTokenLifetimePolicyCount.md)
 Get the number of the resource
@@ -443,22 +445,22 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgServicePrincipalSynchronization](Get-MgServicePrincipalSynchronization.md)
-Get synchronization from servicePrincipals
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
 ### [Get-MgServicePrincipalSynchronizationAccessToken](Get-MgServicePrincipalSynchronizationAccessToken.md)
-Invoke action acquireAccessToken
+Acquire an OAuth access token to authorize the Azure AD provisioning service to provision users into an application.
 
 ### [Get-MgServicePrincipalSynchronizationJob](Get-MgServicePrincipalSynchronizationJob.md)
-Get jobs from servicePrincipals
+Retrieve the existing synchronization job and its properties.
 
 ### [Get-MgServicePrincipalSynchronizationJobCount](Get-MgServicePrincipalSynchronizationJobCount.md)
 Get the number of the resource
 
 ### [Get-MgServicePrincipalSynchronizationJobSchema](Get-MgServicePrincipalSynchronizationJobSchema.md)
-Get schema from servicePrincipals
+Retrieve the schema for a given synchronization job or template.
 
 ### [Get-MgServicePrincipalSynchronizationJobSchemaDirectory](Get-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
-Get directories from servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ### [Get-MgServicePrincipalSynchronizationJobSchemaDirectoryCount](Get-MgServicePrincipalSynchronizationJobSchemaDirectoryCount.md)
 Get the number of the resource
@@ -467,16 +469,16 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgServicePrincipalSynchronizationTemplate](Get-MgServicePrincipalSynchronizationTemplate.md)
-Get templates from servicePrincipals
+Pre-configured synchronization settings for a particular application.
 
 ### [Get-MgServicePrincipalSynchronizationTemplateCount](Get-MgServicePrincipalSynchronizationTemplateCount.md)
 Get the number of the resource
 
 ### [Get-MgServicePrincipalSynchronizationTemplateSchema](Get-MgServicePrincipalSynchronizationTemplateSchema.md)
-Get schema from servicePrincipals
+Default synchronization schema for the jobs based on this template.
 
 ### [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory](Get-MgServicePrincipalSynchronizationTemplateSchemaDirectory.md)
-Get directories from servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ### [Get-MgServicePrincipalSynchronizationTemplateSchemaDirectoryCount](Get-MgServicePrincipalSynchronizationTemplateSchemaDirectoryCount.md)
 Get the number of the resource
@@ -554,16 +556,20 @@ You can also use this API to instantiate non-gallery apps.
 Use the following ID for the **applicationTemplate** object: `8adf8e6e-67b2-4cf2-a259-e3dc5476c621`.
 
 ### [Invoke-MgParseApplicationSynchronizationJobSchemaExpression](Invoke-MgParseApplicationSynchronizationJobSchemaExpression.md)
-Invoke action parseExpression
+Parse a given string expression into an attributeMappingSource object.
+For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
 ### [Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression](Invoke-MgParseApplicationSynchronizationTemplateSchemaExpression.md)
-Invoke action parseExpression
+Parse a given string expression into an attributeMappingSource object.
+For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
 ### [Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression](Invoke-MgParseServicePrincipalSynchronizationJobSchemaExpression.md)
-Invoke action parseExpression
+Parse a given string expression into an attributeMappingSource object.
+For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
 ### [Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression](Invoke-MgParseServicePrincipalSynchronizationTemplateSchemaExpression.md)
-Invoke action parseExpression
+Parse a given string expression into an attributeMappingSource object.
+For more information about expressions, see Writing Expressions for Attribute Mappings in Azure Active Directory.
 
 ### [New-MgApplication](New-MgApplication.md)
 Create a new application object.
@@ -585,10 +591,13 @@ Maximum of 20 objects can be added to an application.
 Add an owner to an application by posting to the owners collection.
 
 ### [New-MgApplicationSynchronizationJob](New-MgApplicationSynchronizationJob.md)
-Create new navigation property to jobs for applications
+Create new synchronization job with a default synchronization schema.
+The job is created in a disabled state.
+Call Start job to start synchronization.
 
 ### [New-MgApplicationSynchronizationJobOnDemand](New-MgApplicationSynchronizationJobOnDemand.md)
-Invoke action provisionOnDemand
+Select a user and provision the account on-demand.
+The rate limit for this API is 5 requests per 10 seconds.
 
 ### [New-MgApplicationSynchronizationJobSchemaDirectory](New-MgApplicationSynchronizationJobSchemaDirectory.md)
 Create new navigation property to directories for applications
@@ -604,6 +613,7 @@ Assign a tokenIssuancePolicy to an application.
 
 ### [New-MgApplicationTokenLifetimePolicyByRef](New-MgApplicationTokenLifetimePolicyByRef.md)
 Assign a tokenLifetimePolicy to an application.
+You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
 ### [New-MgGroupAppRoleAssignment](New-MgGroupAppRoleAssignment.md)
 Use this API to assign an app role to a security group.
@@ -642,15 +652,21 @@ Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)
+
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
 
 ### [New-MgServicePrincipalSynchronizationJob](New-MgServicePrincipalSynchronizationJob.md)
-Create new navigation property to jobs for servicePrincipals
+Create new synchronization job with a default synchronization schema.
+The job is created in a disabled state.
+Call Start job to start synchronization.
 
 ### [New-MgServicePrincipalSynchronizationJobOnDemand](New-MgServicePrincipalSynchronizationJobOnDemand.md)
-Invoke action provisionOnDemand
+Select a user and provision the account on-demand.
+The rate limit for this API is 5 requests per 10 seconds.
 
 ### [New-MgServicePrincipalSynchronizationJobSchemaDirectory](New-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
 Create new navigation property to directories for servicePrincipals
@@ -677,6 +693,9 @@ When you remove the appManagementPolicy, the application or service principal ad
 ### [Remove-MgApplication](Remove-MgApplication.md)
 Delete entity from applications
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
+
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete a directory extension definition represented by an extensionProperty object.
 You can delete only directory extensions that aren't synced from on-premises active directory (AD).
@@ -700,7 +719,8 @@ Remove a password from an application.
 Delete navigation property synchronization for applications
 
 ### [Remove-MgApplicationSynchronizationJob](Remove-MgApplicationSynchronizationJob.md)
-Delete navigation property jobs for applications
+Stop the synchronization job, and permanently delete all the state associated with it.
+Synchronized accounts are left as-is.
 
 ### [Remove-MgApplicationSynchronizationJobSchema](Remove-MgApplicationSynchronizationJobSchema.md)
 Delete navigation property schema for applications
@@ -769,7 +789,8 @@ Remove a password from a servicePrincipal object.
 Delete navigation property synchronization for servicePrincipals
 
 ### [Remove-MgServicePrincipalSynchronizationJob](Remove-MgServicePrincipalSynchronizationJob.md)
-Delete navigation property jobs for servicePrincipals
+Stop the synchronization job, and permanently delete all the state associated with it.
+Synchronized accounts are left as-is.
 
 ### [Remove-MgServicePrincipalSynchronizationJobSchema](Remove-MgServicePrincipalSynchronizationJobSchema.md)
 Delete navigation property schema for servicePrincipals
@@ -790,10 +811,12 @@ Delete navigation property directories for servicePrincipals
 Delete an appRoleAssignment that has been granted to a user.
 
 ### [Restart-MgApplicationSynchronizationJob](Restart-MgApplicationSynchronizationJob.md)
-Invoke action restart
+Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Optionally clears existing the synchronization state and previous errors.
 
 ### [Restart-MgServicePrincipalSynchronizationJob](Restart-MgServicePrincipalSynchronizationJob.md)
-Invoke action restart
+Restart a stopped synchronization job, forcing it to reprocess all the objects in the directory.
+Optionally clears existing the synchronization state and previous errors.
 
 ### [Set-MgApplicationLogo](Set-MgApplicationLogo.md)
 The main logo for the application.
@@ -816,16 +839,26 @@ Update the navigation property synchronization in servicePrincipals
 Update property secrets value.
 
 ### [Start-MgApplicationSynchronizationJob](Start-MgApplicationSynchronizationJob.md)
-Invoke action start
+Start an existing synchronization job.
+If the job is in a paused state, it will continue processing changes from the point where it was paused.
+If the job is in quarantine, the quarantine status will be cleared.
+Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
+Use the start job only when the job is currently paused or in quarantine.
 
 ### [Start-MgServicePrincipalSynchronizationJob](Start-MgServicePrincipalSynchronizationJob.md)
-Invoke action start
+Start an existing synchronization job.
+If the job is in a paused state, it will continue processing changes from the point where it was paused.
+If the job is in quarantine, the quarantine status will be cleared.
+Do not create scripts to call the start job continuously while it's running because that can cause the service to stop running.
+Use the start job only when the job is currently paused or in quarantine.
 
 ### [Suspend-MgApplicationSynchronizationJob](Suspend-MgApplicationSynchronizationJob.md)
-Invoke action pause
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ### [Suspend-MgServicePrincipalSynchronizationJob](Suspend-MgServicePrincipalSynchronizationJob.md)
-Invoke action pause
+Temporarily stop a running synchronization job.
+All the progress, including job state, is persisted, and the job will continue from where it left off when a start call is made.
 
 ### [Test-MgApplicationProperty](Test-MgApplicationProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -840,7 +873,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgApplicationSynchronizationJobCredential](Test-MgApplicationSynchronizationJobCredential.md)
-Invoke action validateCredentials
+Validate that the credentials are valid in the tenant.
 
 ### [Test-MgServicePrincipalProperty](Test-MgServicePrincipalProperty.md)
 Validate that a Microsoft 365 group's display name or mail nickname complies with naming policies.
@@ -855,7 +888,7 @@ However, you can validate both the mail nickname and the display name and receiv
 To learn more about configuring naming policies, see Configure naming policy.
 
 ### [Test-MgServicePrincipalSynchronizationJobCredential](Test-MgServicePrincipalSynchronizationJobCredential.md)
-Invoke action validateCredentials
+Validate that the credentials are valid in the tenant.
 
 ### [Update-MgApplication](Update-MgApplication.md)
 Update the properties of an application object.
@@ -870,13 +903,16 @@ Update the properties of a federatedIdentityCredential object.
 Update the navigation property jobs in applications
 
 ### [Update-MgApplicationSynchronizationJobSchema](Update-MgApplicationSynchronizationJobSchema.md)
-Update the navigation property schema in applications
+Update the synchronization schema for a given job or template.
+This method fully replaces the current schema with the one provided in the request.
+To update the schema of a template, make the call on the application object.
+You must be the owner of the application.
 
 ### [Update-MgApplicationSynchronizationJobSchemaDirectory](Update-MgApplicationSynchronizationJobSchemaDirectory.md)
 Update the navigation property directories in applications
 
 ### [Update-MgApplicationSynchronizationTemplate](Update-MgApplicationSynchronizationTemplate.md)
-Update the navigation property templates in applications
+Update (override) the synchronization template associated with a given application.
 
 ### [Update-MgApplicationSynchronizationTemplateSchema](Update-MgApplicationSynchronizationTemplateSchema.md)
 Update the navigation property schema in applications
@@ -906,13 +942,16 @@ Update the navigation property endpoints in servicePrincipals
 Update the navigation property jobs in servicePrincipals
 
 ### [Update-MgServicePrincipalSynchronizationJobSchema](Update-MgServicePrincipalSynchronizationJobSchema.md)
-Update the navigation property schema in servicePrincipals
+Update the synchronization schema for a given job or template.
+This method fully replaces the current schema with the one provided in the request.
+To update the schema of a template, make the call on the application object.
+You must be the owner of the application.
 
 ### [Update-MgServicePrincipalSynchronizationJobSchemaDirectory](Update-MgServicePrincipalSynchronizationJobSchemaDirectory.md)
 Update the navigation property directories in servicePrincipals
 
 ### [Update-MgServicePrincipalSynchronizationTemplate](Update-MgServicePrincipalSynchronizationTemplate.md)
-Update the navigation property templates in servicePrincipals
+Update (override) the synchronization template associated with a given application.
 
 ### [Update-MgServicePrincipalSynchronizationTemplateSchema](Update-MgServicePrincipalSynchronizationTemplateSchema.md)
 Update the navigation property schema in servicePrincipals

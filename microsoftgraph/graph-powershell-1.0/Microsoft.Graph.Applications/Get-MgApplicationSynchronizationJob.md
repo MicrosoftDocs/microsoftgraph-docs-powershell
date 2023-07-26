@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationJob
 
 ## SYNOPSIS
-Get jobs from applications
+Retrieve the existing synchronization job and its properties.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationJob?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgApplicationSynchronizationJob -InputObject <IApplicationsIdentity> [-Expan
 ```
 
 ## DESCRIPTION
-Get jobs from applications
+Retrieve the existing synchronization job and its properties.
 
 ## PARAMETERS
 
@@ -255,6 +255,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

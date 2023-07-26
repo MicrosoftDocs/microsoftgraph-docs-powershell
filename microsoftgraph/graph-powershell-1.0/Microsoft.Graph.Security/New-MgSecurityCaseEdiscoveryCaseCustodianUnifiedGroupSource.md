@@ -48,25 +48,7 @@ New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -InputObject <ISecur
 Create a new unifiedGroupSource object associated with an eDiscovery custodian.
 
 ## EXAMPLES
-### Example 1: Create unifiedGroupSource with group SMTP address
-
-```powershell
-Import-Module Microsoft.Graph.Security
-
-$params = @{
-	group = @{
-		mail = "SOCTeam@M365x809305.onmicrosoft.com"
-	}
-	includedSources = "mailbox, site"
-}
-
-New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryCustodianId $ediscoveryCustodianId -BodyParameter $params
-```
-This example shows how to use the New-MgSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Create unifiedGroupSource with group@odata.bind
+### Example 1: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Security
@@ -740,9 +722,9 @@ To create the parameters described below, construct a hash table containing the 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+              - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
                 - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-                - `[PermissionValue <String>]`: 
+                - `[PermissionValue <String>]`: The name of the resource-specific permission.
             - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3598,9 +3580,9 @@ To create the parameters described below, construct a hash table containing the 
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
           - `[ConsentedPermissionSet <IMicrosoftGraphTeamsAppPermissionSet>]`: teamsAppPermissionSet
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: 
+            - `[ResourceSpecificPermissions <IMicrosoftGraphTeamsAppResourceSpecificPermission[]>]`: A collection of resource-specific permissions.
               - `[PermissionType <String>]`: teamsAppResourceSpecificPermissionType
-              - `[PermissionValue <String>]`: 
+              - `[PermissionValue <String>]`: The name of the resource-specific permission.
           - `[TeamsApp <IMicrosoftGraphTeamsApp>]`: teamsApp
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6074,5 +6056,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityCaseEdiscoveryCaseCustodianUnifiedGroupSource?view=graph-powershell-beta)
-
-

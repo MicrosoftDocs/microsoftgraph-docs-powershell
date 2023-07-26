@@ -279,4 +279,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlan?view=graph-powershell-v1.0)
-

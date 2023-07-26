@@ -427,5 +427,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSubscribedSku](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgSubscribedSku?view=graph-powershell-v1.0)
-
-

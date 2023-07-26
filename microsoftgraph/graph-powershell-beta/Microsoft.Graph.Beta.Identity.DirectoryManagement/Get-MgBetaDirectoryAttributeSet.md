@@ -38,34 +38,17 @@ Get-MgBetaDirectoryAttributeSet -InputObject <IIdentityDirectoryManagementIdenti
 Read the properties and relationships of an attributeSet object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaDirectoryAttributeSet Cmdlet
+### Example 1: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+
 Get-MgBetaDirectoryAttributeSet -AttributeSetId $attributeSetId
 ```
 This example shows how to use the Get-MgBetaDirectoryAttributeSet Cmdlet.
+
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Get-MgBetaDirectoryAttributeSet Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaDirectoryAttributeSet
-```
-This example shows how to use the Get-MgBetaDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 3: Using the Get-MgBetaDirectoryAttributeSet Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaDirectoryAttributeSet -Sort "id" 
-```
-This example shows how to use the Get-MgBetaDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 4: Using the Get-MgBetaDirectoryAttributeSet Cmdlet
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
-Get-MgBetaDirectoryAttributeSet -Top 10 
-```
-This example shows how to use the Get-MgBetaDirectoryAttributeSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -314,4 +297,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryAttributeSet](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryAttributeSet?view=graph-powershell-v1.0)
-

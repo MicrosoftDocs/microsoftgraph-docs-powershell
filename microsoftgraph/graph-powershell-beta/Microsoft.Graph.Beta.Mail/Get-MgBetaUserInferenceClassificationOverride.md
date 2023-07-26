@@ -28,9 +28,22 @@ Get-MgBetaUserInferenceClassification -InputObject <IMailIdentity> [-Property <S
 ## DESCRIPTION
 Relevance classification of the user's messages based on explicit designations which override inferred relevance or importance.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Mail
+
+$params = @{
+	classifyAs = "focused"
+}
+
+# A UPN can also be used as -UserId.
+Update-MgBetaUserInferenceClassificationOverride -UserId $userId -InferenceClassificationOverrideId $inferenceClassificationOverrideId -BodyParameter $params
+```
 This example shows how to use the Get-MgBetaBetaUserInferenceClassificationOverride Cmdlet.
 
-
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -113,4 +126,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserInferenceClassificationOverride](/powershell/module/Microsoft.Graph.Mail/Get-MgUserInferenceClassificationOverride?view=graph-powershell-v1.0)
-

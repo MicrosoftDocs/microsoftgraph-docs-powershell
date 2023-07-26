@@ -209,5 +209,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroupConversation](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroupConversation?view=graph-powershell-beta)
-
-

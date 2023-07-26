@@ -301,4 +301,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaAcceptGroupEventTentatively](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaAcceptGroupEventTentatively?view=graph-powershell-beta)
-

@@ -448,4 +448,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaForwardUserMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaForwardUserMessage?view=graph-powershell-beta)
-

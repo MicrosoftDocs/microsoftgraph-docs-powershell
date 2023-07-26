@@ -340,5 +340,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Beta.Sites/Copy-MgBetaSiteOnenoteNotebook?view=graph-powershell-beta)
-
-

@@ -8,8 +8,7 @@ schema: 2.0.0
 # New-MgChatMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Send a new chatMessage in the specified channel or a chat.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
@@ -59,8 +58,7 @@ New-MgChatMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphC
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified chat.
-This API can't create a new chat; you must use the list chats method to retrieve the ID of an existing chat before you can create a chat message.
+Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -893,5 +891,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatMessage](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessage?view=graph-powershell-beta)
-
-

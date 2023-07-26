@@ -202,4 +202,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMessage?view=graph-powershell-v1.0)
-

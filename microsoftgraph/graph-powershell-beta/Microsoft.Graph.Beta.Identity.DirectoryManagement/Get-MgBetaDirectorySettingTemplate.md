@@ -302,4 +302,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectorySettingTemplate](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectorySettingTemplate?view=graph-powershell-v1.0)
-

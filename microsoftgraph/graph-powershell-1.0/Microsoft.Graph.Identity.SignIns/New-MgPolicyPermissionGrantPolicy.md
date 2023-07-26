@@ -57,7 +57,6 @@ This command creates a new permission grant policy in Azure AD.  Specific includ
 
 ## PARAMETERS
 
-
 ### -AdditionalProperties
 Additional Parameters
 
@@ -278,5 +277,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
-
-

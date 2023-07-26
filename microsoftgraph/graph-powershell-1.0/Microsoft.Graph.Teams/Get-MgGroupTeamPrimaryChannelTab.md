@@ -37,6 +37,7 @@ Get-MgGroupTeamPrimaryChannelTab -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Retrieve the properties and relationships of the specified tab in a channel within a team.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -290,4 +291,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaGroupTeamPrimaryChannelTab?view=graph-powershell-beta)
-

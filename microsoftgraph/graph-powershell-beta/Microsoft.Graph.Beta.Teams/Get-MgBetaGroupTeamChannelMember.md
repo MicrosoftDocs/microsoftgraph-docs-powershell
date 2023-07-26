@@ -37,6 +37,8 @@ Get-MgBetaGroupTeamChannelMember -InputObject <ITeamsIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Get a conversationMember from a channel.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -311,4 +313,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelMember?view=graph-powershell-v1.0)
-

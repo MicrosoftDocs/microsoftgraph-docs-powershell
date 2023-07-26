@@ -12,9 +12,6 @@ Remove a key credential from a servicePrincipal.
 This method along with addKey can be used by a servicePrincipal to automate rolling its expiring keys.
 As part of the request validation for this method, a proof of possession of an existing key is verified before the action can be performed.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalKey?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -226,6 +223,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Proof <String>]`: 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -248,5 +246,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalKey](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalKey?view=graph-powershell-beta)
-

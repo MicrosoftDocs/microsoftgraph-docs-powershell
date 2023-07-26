@@ -235,5 +235,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupMemberByRef](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupMemberByRef?view=graph-powershell-v1.0)
-
-

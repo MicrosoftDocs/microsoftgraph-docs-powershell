@@ -200,7 +200,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Update-BetaDeviceAppMgtTaskStatus
+Update-MgBetaDeviceAppMgtTaskStatus
 
 COMPLEX PARAMETER PROPERTIES
 

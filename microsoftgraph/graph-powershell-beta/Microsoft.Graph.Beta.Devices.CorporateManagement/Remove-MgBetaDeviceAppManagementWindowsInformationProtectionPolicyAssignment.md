@@ -154,7 +154,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Remove-BetaDeviceAppMgtWindowInformationProtectionPolicyAssignment
+Remove-MgBetaDeviceAppMgtWindowInformationProtectionPolicyAssignment
 
 COMPLEX PARAMETER PROPERTIES
 

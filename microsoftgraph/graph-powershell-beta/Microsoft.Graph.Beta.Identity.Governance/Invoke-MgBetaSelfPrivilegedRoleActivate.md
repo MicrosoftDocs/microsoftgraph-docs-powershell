@@ -342,4 +342,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSelfPrivilegedRoleActivate](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgSelfPrivilegedRoleActivate?view=graph-powershell-v1.0)
-

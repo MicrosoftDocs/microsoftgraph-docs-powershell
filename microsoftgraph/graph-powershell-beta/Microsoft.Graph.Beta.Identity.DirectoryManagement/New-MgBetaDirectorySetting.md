@@ -227,4 +227,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDirectorySetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySetting?view=graph-powershell-v1.0)
-

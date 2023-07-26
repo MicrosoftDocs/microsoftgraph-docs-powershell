@@ -317,4 +317,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationSettingProfileCardProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingProfileCardProperty?view=graph-powershell-v1.0)
-

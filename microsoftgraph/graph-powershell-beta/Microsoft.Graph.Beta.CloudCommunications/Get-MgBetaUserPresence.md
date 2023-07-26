@@ -30,9 +30,29 @@ Get-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunications
 ## DESCRIPTION
 Read the properties and relationships of a virtualAppointment object.
 
+## EXAMPLES
+### Example 1: Get your own presence information
 
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserPresence -UserId $userId
+```
+This example shows how to use the Get-MgBetaUserPresence Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaUserPresence -UserId $userId
+```
+This example shows how to use the Get-MgBetaUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -153,4 +173,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserPresence?view=graph-powershell-v1.0)
-

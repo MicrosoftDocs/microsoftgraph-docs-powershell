@@ -322,5 +322,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelTab?view=graph-powershell-v1.0)
-
-

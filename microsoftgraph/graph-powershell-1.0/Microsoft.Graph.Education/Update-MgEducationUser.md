@@ -16063,5 +16063,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaEducationUser](/powershell/module/Microsoft.Graph.Beta.Education/Update-MgBetaEducationUser?view=graph-powershell-beta)
-
-

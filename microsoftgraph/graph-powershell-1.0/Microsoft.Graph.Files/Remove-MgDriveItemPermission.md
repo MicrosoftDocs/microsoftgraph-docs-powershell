@@ -215,5 +215,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDriveItemPermission](/powershell/module/Microsoft.Graph.Beta.Files/Remove-MgBetaDriveItemPermission?view=graph-powershell-beta)
-
-

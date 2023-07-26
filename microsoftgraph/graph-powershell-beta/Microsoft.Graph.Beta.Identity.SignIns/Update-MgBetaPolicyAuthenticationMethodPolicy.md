@@ -58,6 +58,14 @@ $params = @{
 			)
 		}
 	}
+	reportSuspiciousActivitySettings = @{
+		state = "enabled"
+		includeTarget = @{
+			targetType = "group"
+			id = "all_users"
+		}
+		voiceReportingCode = 0
+	}
 }
 
 Update-MgBetaPolicyAuthenticationMethodPolicy -BodyParameter $params
@@ -402,5 +410,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
-
-

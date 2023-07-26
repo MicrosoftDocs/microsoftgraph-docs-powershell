@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.DirectoryManagement
-Module Guid: 9b80e8cb-70ee-4294-bd4e-e51868760423
+Module Guid: e9a53a89-5498-4fe0-8dae-c331fc625381
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -113,6 +113,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactMemberOfByRef?view=graph-powershell-beta)
+
 ### [Get-MgContactMemberOfCount](Get-MgContactMemberOfCount.md)
 Get the number of the resource
 
@@ -135,6 +138,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgContactMemberObject](Get-MgContactMemberObject.md)
 Invoke action getMemberObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaContactTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaContactTransitiveMemberOfByRef?view=graph-powershell-beta)
 
 ### [Get-MgContactTransitiveMemberOfCount](Get-MgContactTransitiveMemberOfCount.md)
 Get the number of the resource
@@ -209,6 +215,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
 ### [Get-MgDeviceMemberObject](Get-MgDeviceMemberObject.md)
 Invoke action getMemberObjects
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
 
 ### [Get-MgDeviceMemberOfCount](Get-MgDeviceMemberOfCount.md)
 Get the number of the resource
@@ -751,6 +760,9 @@ Create new navigation property to extensions for devices
 The collection of open extensions defined for the device.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDeviceMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/New-MgBetaDeviceMemberOfByRef?view=graph-powershell-beta)
 
 ### [New-MgDeviceRegisteredOwnerByRef](New-MgDeviceRegisteredOwnerByRef.md)
 Add a user as a registered owner of the device.

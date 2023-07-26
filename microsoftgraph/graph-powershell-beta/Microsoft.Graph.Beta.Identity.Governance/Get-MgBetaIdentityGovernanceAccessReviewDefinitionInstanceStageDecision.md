@@ -42,35 +42,14 @@ Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision
 Read the properties and relationships of an accessReviewInstanceDecisionItem object.
 
 ## EXAMPLES
-### Example 1: Update a decision on an accessReviewInstance
+### Example 1: Retrieve a decision from a stage of a multi-stage access review
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
-$params = @{
-	decision = "Approve"
-	justification = "This person is still on my team"
-}
-
-Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
+Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId
 ```
-This example shows how to use the Get-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Update a decision on an stage in a multi-stage access review
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Identity.Governance
-
-$params = @{
-	decision = "Approve"
-	justification = "This person is still on my team"
-}
-
-Update-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision -AccessReviewScheduleDefinitionId $accessReviewScheduleDefinitionId -AccessReviewInstanceId $accessReviewInstanceId -AccessReviewStageId $accessReviewStageId -AccessReviewInstanceDecisionItemId $accessReviewInstanceDecisionItemId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
+This example shows how to use the Get-MgBetaIdentityGovernanceAccessReviewDefinitionInstanceStageDecision Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
@@ -422,5 +401,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceAccessReviewDefinitionInstanceStageDecision?view=graph-powershell-v1.0)
-
-

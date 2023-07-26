@@ -292,5 +292,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupPhoto](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupPhoto?view=graph-powershell-v1.0)
-
-

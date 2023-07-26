@@ -179,4 +179,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryRoleById](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleById?view=graph-powershell-v1.0)
-

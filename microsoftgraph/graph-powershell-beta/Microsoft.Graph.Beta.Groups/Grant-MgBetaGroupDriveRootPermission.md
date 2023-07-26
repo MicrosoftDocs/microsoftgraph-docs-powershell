@@ -308,4 +308,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Grant-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Groups/Grant-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
-

@@ -327,4 +327,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTrustFrameworkPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkPolicy?view=graph-powershell-v1.0)
-

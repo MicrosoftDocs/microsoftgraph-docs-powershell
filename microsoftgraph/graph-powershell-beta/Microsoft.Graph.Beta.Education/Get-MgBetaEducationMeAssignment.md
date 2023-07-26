@@ -267,4 +267,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationMeAssignment](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignment?view=graph-powershell-v1.0)
-

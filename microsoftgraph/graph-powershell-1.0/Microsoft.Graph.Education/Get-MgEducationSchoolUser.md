@@ -215,4 +215,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationSchoolUser](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationSchoolUser?view=graph-powershell-beta)
-

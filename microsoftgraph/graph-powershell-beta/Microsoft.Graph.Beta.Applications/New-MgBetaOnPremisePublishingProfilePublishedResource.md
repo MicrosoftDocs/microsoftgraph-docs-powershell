@@ -323,4 +323,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOnPremisePublishingProfilePublishedResource](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfilePublishedResource?view=graph-powershell-v1.0)
-

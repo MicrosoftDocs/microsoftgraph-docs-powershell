@@ -123,4 +123,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointAuditEventAuditActivityType?view=graph-powershell-v1.0)
-

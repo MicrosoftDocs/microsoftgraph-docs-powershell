@@ -668,5 +668,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationMeAssignment](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignment?view=graph-powershell-beta)
-
-

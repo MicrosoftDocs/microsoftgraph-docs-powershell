@@ -219,4 +219,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgDeclineGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupCalendarEvent?view=graph-powershell-v1.0)
-

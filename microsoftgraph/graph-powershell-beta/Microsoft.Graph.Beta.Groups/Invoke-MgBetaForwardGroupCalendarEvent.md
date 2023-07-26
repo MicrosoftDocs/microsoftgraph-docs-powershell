@@ -28,9 +28,30 @@ Invoke-MgBetaFollowGroupDriveRoot -InputObject <IGroupsIdentity> [-WhatIf] [-Con
 ## DESCRIPTION
 Follow a driveItem.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "danas@contoso.onmicrosoft.com"
+				Name = "Dana Swope"
+			}
+		}
+	)
+	Comment = "Dana, hope you can make this meeting."
+}
 
+# A UPN can also be used as -UserId.
+Invoke-MgBetaForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaForwardGroupCalendarEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -178,4 +199,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgForwardGroupCalendarEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupCalendarEvent?view=graph-powershell-v1.0)
-

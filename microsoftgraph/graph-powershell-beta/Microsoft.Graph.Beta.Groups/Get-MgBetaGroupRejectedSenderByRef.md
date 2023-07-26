@@ -177,5 +177,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupRejectedSenderByRef](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupRejectedSenderByRef?view=graph-powershell-v1.0)
-
-

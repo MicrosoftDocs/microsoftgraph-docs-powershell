@@ -234,4 +234,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgDirectoryRoleProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgDirectoryRoleProperty?view=graph-powershell-v1.0)
-

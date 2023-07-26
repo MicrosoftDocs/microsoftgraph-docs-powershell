@@ -333,4 +333,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Copy-MgBetaTeam?view=graph-powershell-beta)
-

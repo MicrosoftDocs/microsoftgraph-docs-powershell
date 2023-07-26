@@ -172,5 +172,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrintPrinter](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinter?view=graph-powershell-v1.0)
-
-

@@ -286,5 +286,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserClass?view=graph-powershell-v1.0)
-
-

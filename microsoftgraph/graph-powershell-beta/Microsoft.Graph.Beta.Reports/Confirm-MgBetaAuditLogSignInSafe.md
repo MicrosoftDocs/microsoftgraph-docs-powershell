@@ -169,4 +169,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Confirm-MgAuditLogSignInSafe](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInSafe?view=graph-powershell-v1.0)
-

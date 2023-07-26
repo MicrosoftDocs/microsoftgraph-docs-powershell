@@ -239,4 +239,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgContactMemberObject](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgContactMemberObject?view=graph-powershell-v1.0)
-

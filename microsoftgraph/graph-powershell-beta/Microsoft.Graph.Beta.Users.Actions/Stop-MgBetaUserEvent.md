@@ -272,4 +272,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Stop-MgUserEvent](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserEvent?view=graph-powershell-v1.0)
-

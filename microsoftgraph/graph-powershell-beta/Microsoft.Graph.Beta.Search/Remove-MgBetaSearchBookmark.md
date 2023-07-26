@@ -173,4 +173,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSearchBookmark](/powershell/module/Microsoft.Graph.Search/Remove-MgSearchBookmark?view=graph-powershell-v1.0)
-

@@ -153,4 +153,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Reset-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
-

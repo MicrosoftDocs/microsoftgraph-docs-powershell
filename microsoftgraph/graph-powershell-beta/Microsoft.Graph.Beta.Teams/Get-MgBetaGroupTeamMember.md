@@ -37,6 +37,7 @@ Get-MgBetaGroupTeamMember -InputObject <ITeamsIdentity> [-ExpandProperty <String
 ## DESCRIPTION
 Get a conversationMember from a team.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -297,4 +298,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamMember?view=graph-powershell-v1.0)
-

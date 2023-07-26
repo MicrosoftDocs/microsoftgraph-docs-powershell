@@ -28,9 +28,23 @@ Get-MgUserMessageExtensionCount -InputObject <IMailIdentity> [-Filter <String>] 
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+$params = @{
+	displayName = "Clutter"
+	isHidden = $true
+}
 
+# A UPN can also be used as -UserId.
+New-MgUserMailFolder -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgUserMailFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -126,4 +140,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMailFolder](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolder?view=graph-powershell-beta)
-

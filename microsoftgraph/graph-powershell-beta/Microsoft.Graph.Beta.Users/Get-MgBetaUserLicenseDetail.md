@@ -54,7 +54,6 @@ This example retrieves the license details for the specified user.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -296,5 +295,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserLicenseDetail](/powershell/module/Microsoft.Graph.Users/Get-MgUserLicenseDetail?view=graph-powershell-v1.0)
-
-

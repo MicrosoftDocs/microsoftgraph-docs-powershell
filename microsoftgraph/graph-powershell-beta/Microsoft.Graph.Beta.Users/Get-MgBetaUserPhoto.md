@@ -61,7 +61,6 @@ This example retrieves the profile photo properties for the specified user.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -273,5 +272,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPhoto](/powershell/module/Microsoft.Graph.Users/Get-MgUserPhoto?view=graph-powershell-v1.0)
-
-

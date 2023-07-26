@@ -33,9 +33,18 @@ A container for Microsoft Teams features available for the user.
 Read-only.
 Nullable.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Teams
 
+# A UPN can also be used as -UserId.
+Get-MgUserTeamworkAssociatedTeam -UserId $userId
+```
+This example shows how to use the Get-MgUserTeamworkAssociatedTeam Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -154,4 +163,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserTeamworkAssociatedTeam?view=graph-powershell-beta)
-

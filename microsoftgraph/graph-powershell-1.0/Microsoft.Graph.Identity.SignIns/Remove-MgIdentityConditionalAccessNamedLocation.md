@@ -8,7 +8,7 @@ schema: 2.0.0
 # Remove-MgIdentityConditionalAccessNamedLocation
 
 ## SYNOPSIS
-Delete an ipNamedLocation object.
+Delete a countryNamedLocation object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Remove-MgIdentityConditionalAccessNamedLocation -InputObject <IIdentitySignInsId
 ```
 
 ## DESCRIPTION
-Delete an ipNamedLocation object.
+Delete a countryNamedLocation object.
 
 ## EXAMPLES
 ### Example 1: Remove a named location
@@ -42,7 +42,6 @@ Remove-MgIdentityConditionalAccessNamedLocation -NamedLocationId $namedLocationI
 This example removes the named location specified by `$namedLocationId`.
 
 ## PARAMETERS
-
 
 ### -IfMatch
 ETag
@@ -213,5 +212,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaIdentityConditionalAccessNamedLocation](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaIdentityConditionalAccessNamedLocation?view=graph-powershell-beta)
-
-

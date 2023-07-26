@@ -440,4 +440,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
-

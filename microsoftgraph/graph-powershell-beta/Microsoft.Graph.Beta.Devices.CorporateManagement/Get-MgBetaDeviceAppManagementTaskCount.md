@@ -66,7 +66,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtTaskCount
+Get-MgBetaDeviceAppMgtTaskCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementTaskCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTaskCount?view=graph-powershell-v1.0)

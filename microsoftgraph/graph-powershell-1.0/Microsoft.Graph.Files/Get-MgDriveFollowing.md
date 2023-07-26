@@ -297,5 +297,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveFollowing](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveFollowing?view=graph-powershell-beta)
-
-

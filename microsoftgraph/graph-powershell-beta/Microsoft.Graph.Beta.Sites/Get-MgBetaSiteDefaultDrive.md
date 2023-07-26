@@ -174,4 +174,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteDefaultDrive](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteDefaultDrive?view=graph-powershell-v1.0)
-

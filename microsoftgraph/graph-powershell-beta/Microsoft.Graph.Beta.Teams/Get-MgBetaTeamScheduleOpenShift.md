@@ -309,5 +309,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamScheduleOpenShift](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamScheduleOpenShift?view=graph-powershell-v1.0)
-
-

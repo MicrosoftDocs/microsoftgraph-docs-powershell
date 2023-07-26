@@ -302,4 +302,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOnlineMeetingRegistrationCustomQuestion](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistrationCustomQuestion?view=graph-powershell-v1.0)
-

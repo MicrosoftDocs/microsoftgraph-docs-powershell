@@ -234,5 +234,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgGroupPlannerPlanBucket?view=graph-powershell-v1.0)
-
-

@@ -297,5 +297,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgChatMessageHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgChatMessageHostedContent?view=graph-powershell-v1.0)
-
-

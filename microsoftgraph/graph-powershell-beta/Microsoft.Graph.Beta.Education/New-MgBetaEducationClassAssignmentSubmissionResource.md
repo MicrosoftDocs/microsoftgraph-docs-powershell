@@ -54,7 +54,7 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
 ## EXAMPLES
-### Example 1: Create an educationWordResource
+### Example 1: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -63,7 +63,7 @@ $params = @{
 	resource = @{
 		"@odata.type" = "microsoft.graph.educationWordResource"
 		displayName = "Report.docx"
-		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
+		fileUrl = "https://graph.microsoft.com/beta/drives/b!DPA6q59Tw0mtgmyXRUmrQRqBZTesG-lMkl1cBmvvMeUEWrOk89nKRpUEr4ZhNYBc/items/016XPCQEELISJB7NVNVBAK7V4UIF6Q27U2"
 	}
 }
 
@@ -73,7 +73,7 @@ This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionRe
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Create an educationLinkResource
+### Example 2: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -92,7 +92,7 @@ This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionRe
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 3: Create an educationFileResource
+### Example 3: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -100,7 +100,7 @@ Import-Module Microsoft.Graph.Beta.Education
 $params = @{
 	resource = @{
 		displayName = "_FTP_EDC-61424749-250820211136.pdf"
-		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3"
+		fileUrl = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RL45XVPGDBRW5FLDR62Z5TCMGG3"
 		"@odata.type" = "#microsoft.graph.educationFileResource"
 	}
 }
@@ -111,7 +111,7 @@ This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionRe
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 4: Create an educationExcelResource
+### Example 4: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -120,7 +120,7 @@ $params = @{
 	resource = @{
 		"@odata.type" = "#microsoft.graph.educationExcelResource"
 		displayName = "userAgeGroup QueryParameter Test.xlsx"
-		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE"
+		fileUrl = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RONPUDM2CZKNRF3TGHYUM7Z64WE"
 	}
 }
 
@@ -130,7 +130,7 @@ This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionRe
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 5: Create an educationPowerPointResource
+### Example 5: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
@@ -139,26 +139,7 @@ $params = @{
 	resource = @{
 		"@odata.type" = "#microsoft.graph.educationPowerPointResource"
 		displayName = "state diagram.pptx"
-		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2"
-	}
-}
-
-New-MgBetaEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaEducationClassAssignmentSubmissionResource Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 6: Create an educationMediaResource
-
-```powershell
-Import-Module Microsoft.Graph.Beta.Education
-
-$params = @{
-	resource = @{
-		displayName = "category.jpg"
-		fileUrl = "https://graph.microsoft.com/v1.0/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RK2WLKUUBAA4ZBKXNBL6QFC2TKG"
-		"@odata.type" = "#microsoft.graph.educationMediaResource"
+		fileUrl = "https://graph.microsoft.com/beta/drives/b!OPmUsPgnBUiMIXMxWcj3neC1xck6I5NIsnFxfrLdmXodJYOAkI7rTLhw7ME_e42J/items/01QTY63RN3MHWWM7BNXJD2UD5OMRFEDKN2"
 	}
 }
 
@@ -408,5 +389,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassAssignmentSubmissionResource?view=graph-powershell-v1.0)
-
-

@@ -157,4 +157,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgSiteContentTypePublished](/powershell/module/Microsoft.Graph.Sites/Test-MgSiteContentTypePublished?view=graph-powershell-v1.0)
-

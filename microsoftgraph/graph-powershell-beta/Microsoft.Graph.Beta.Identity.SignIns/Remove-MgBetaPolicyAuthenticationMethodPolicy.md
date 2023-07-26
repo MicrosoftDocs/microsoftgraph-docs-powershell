@@ -131,5 +131,3 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
-
-

@@ -211,4 +211,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Find-MgUserRoomList](/powershell/module/Microsoft.Graph.Users.Functions/Find-MgUserRoomList?view=graph-powershell-v1.0)
-

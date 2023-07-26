@@ -190,4 +190,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users.Actions/Complete-MgUserOutlookTask?view=graph-powershell-v1.0)
-

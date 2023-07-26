@@ -53,7 +53,7 @@ The external sponsors are a set of users who can approve requests on behalf of o
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/users/{id}"
+	"@odata.id" = "https://graph.microsoft.com/beta/users/{id}"
 }
 
 New-MgBetaEntitlementManagementConnectedOrganizationExternalSponsorByRef -ConnectedOrganizationId $connectedOrganizationId -BodyParameter $params
@@ -312,5 +312,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-v1.0)
-
-

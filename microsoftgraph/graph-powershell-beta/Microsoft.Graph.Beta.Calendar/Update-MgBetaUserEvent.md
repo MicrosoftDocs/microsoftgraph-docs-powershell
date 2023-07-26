@@ -83,9 +83,10 @@ $params = @{
 	originalEndTimeZone = "originalEndTimeZone-value"
 	responseStatus = @{
 		response = ""
-		time = [System.DateTime]::Parse("datetime-value")
+		time = [System.DateTime]::Parse("2016-10-19T10:37:00Z")
 	}
 	recurrence = $null
+	uid = "iCalUId-value"
 	reminderMinutesBeforeStart = 99
 	isOnlineMeeting = $true
 	onlineMeetingProvider = "teamsForBusiness"
@@ -375,5 +376,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserEvent](/powershell/module/Microsoft.Graph.Calendar/Update-MgUserEvent?view=graph-powershell-v1.0)
-
-

@@ -123,4 +123,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgReportSecurityAttackSimulationTrainingUserCoverage](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSecurityAttackSimulationTrainingUserCoverage?view=graph-powershell-v1.0)
-

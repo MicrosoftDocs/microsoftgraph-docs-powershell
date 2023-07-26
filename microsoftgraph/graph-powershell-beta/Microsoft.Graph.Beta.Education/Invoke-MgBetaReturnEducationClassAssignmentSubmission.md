@@ -172,4 +172,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReturnEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReturnEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
-

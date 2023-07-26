@@ -50,6 +50,7 @@ Get-MgUserChatMessageHostedContent -InputObject <ITeamsIdentity> [-ExpandPropert
 ## DESCRIPTION
 Retrieve the properties and relationships of chatMessageHostedContent object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -364,4 +365,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserChatMessageHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserChatMessageHostedContent?view=graph-powershell-beta)
-

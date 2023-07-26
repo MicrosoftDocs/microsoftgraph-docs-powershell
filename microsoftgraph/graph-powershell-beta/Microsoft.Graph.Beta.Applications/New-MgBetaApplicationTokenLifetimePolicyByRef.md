@@ -49,7 +49,7 @@ Assign a tokenLifetimePolicy to an application or servicePrincipal.
 Import-Module Microsoft.Graph.Beta.Applications
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
+	"@odata.id" = "https://graph.microsoft.com/beta/policies/tokenLifetimePolicies/4d2f137b-e8a9-46da-a5c3-cc85b2b840a4"
 }
 
 New-MgBetaApplicationTokenLifetimePolicyByRef -ApplicationId $applicationId -BodyParameter $params
@@ -240,5 +240,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-v1.0)
-
-

@@ -75,7 +75,6 @@ This command creates a new permission grant policy exclude configuration for the
 
 ## PARAMETERS
 
-
 ### -AdditionalProperties
 Additional Parameters
 
@@ -407,5 +406,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/New-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
-
-

@@ -368,4 +368,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgUserAgreementAcceptance?view=graph-powershell-v1.0)
-

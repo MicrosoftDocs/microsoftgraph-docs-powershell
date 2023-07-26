@@ -42,9 +42,18 @@ New-MgBetaUserContactFolderContactExtension -InputObject <IPersonalContactsIdent
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.PersonalContacts
 
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserContact -UserId $userId -ContactId $contactId
+```
+This example shows how to use the Remove-MgBetaUserContact Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -215,4 +224,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserContact](/powershell/module/Microsoft.Graph.PersonalContacts/Remove-MgUserContact?view=graph-powershell-v1.0)
-

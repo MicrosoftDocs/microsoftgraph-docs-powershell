@@ -294,5 +294,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaExternalConnectionGroupMember](/powershell/module/Microsoft.Graph.Beta.Search/Get-MgBetaExternalConnectionGroupMember?view=graph-powershell-beta)
-
-

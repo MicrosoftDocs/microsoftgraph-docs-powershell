@@ -284,4 +284,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgSiteListContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Sites/Add-MgSiteListContentTypeCopyFromContentTypeHub?view=graph-powershell-v1.0)
-

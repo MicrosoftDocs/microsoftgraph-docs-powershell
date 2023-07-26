@@ -32,6 +32,7 @@ Remove-MgEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-IfMat
 Remove an educationRubric from an educationAssignment.
 This method does not delete the rubric itself and can only be performed by teachers.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -174,4 +175,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Beta.Education/Remove-MgBetaEducationUserAssignmentRubric?view=graph-powershell-beta)
-

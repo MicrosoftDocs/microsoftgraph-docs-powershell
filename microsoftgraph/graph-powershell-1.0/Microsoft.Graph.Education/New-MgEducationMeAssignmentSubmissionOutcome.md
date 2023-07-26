@@ -50,6 +50,7 @@ Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or isn't in that folder, the `POST` request will fail.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -265,4 +266,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationMeAssignmentSubmissionOutcome?view=graph-powershell-beta)
-

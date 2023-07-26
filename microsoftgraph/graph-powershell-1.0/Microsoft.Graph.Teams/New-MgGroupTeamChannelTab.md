@@ -399,5 +399,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupTeamChannelTab](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaGroupTeamChannelTab?view=graph-powershell-beta)
-
-

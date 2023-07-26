@@ -37,6 +37,7 @@ Get-MgEducationMeTaughtClass -InputObject <IEducationIdentity> [-ExpandProperty 
 ## DESCRIPTION
 Classes for which the user is a teacher.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -254,4 +255,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeTaughtClass](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeTaughtClass?view=graph-powershell-beta)
-

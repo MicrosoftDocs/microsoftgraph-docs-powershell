@@ -87,11 +87,11 @@ $params = @{
 		content = "Does late morning work for you?"
 	}
 	start = @{
-		dateTime = "2019-06-16T12:00:00"
+		dateTime = "2019-06-15T12:00:00"
 		timeZone = "Pacific Standard Time"
 	}
 	end = @{
-		dateTime = "2019-06-16T14:00:00"
+		dateTime = "2019-06-15T14:00:00"
 		timeZone = "Pacific Standard Time"
 	}
 	location = @{
@@ -1826,5 +1826,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEvent?view=graph-powershell-v1.0)
-
-

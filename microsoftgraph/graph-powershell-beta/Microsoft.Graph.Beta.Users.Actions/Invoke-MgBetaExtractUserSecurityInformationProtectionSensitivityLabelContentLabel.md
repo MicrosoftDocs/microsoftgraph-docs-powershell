@@ -289,4 +289,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgExtractUserSecurityInformationProtectionSensitivityLabelContentLabel?view=graph-powershell-v1.0)
-

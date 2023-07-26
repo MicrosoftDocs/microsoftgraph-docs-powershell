@@ -46,7 +46,6 @@ To learn about permissions for this resource, see the [permissions reference](/g
 
 ## PARAMETERS
 
-
 ### -IfMatch
 ETag
 
@@ -174,5 +173,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserOutlookMasterCategory](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserOutlookMasterCategory?view=graph-powershell-beta)
-
-

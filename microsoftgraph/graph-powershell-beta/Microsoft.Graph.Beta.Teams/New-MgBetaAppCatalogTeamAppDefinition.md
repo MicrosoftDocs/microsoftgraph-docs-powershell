@@ -56,6 +56,22 @@ Update an app previously published to the Microsoft Teams app catalog.
 To update an app, the **distributionMethod** property for the app must be set to `organization`.
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = [Zip file containing a Teams app package]
+
+
+New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -Requiresreview true  -BodyParameter $params
+```
+This example shows how to use the New-MgBetaAppCatalogTeamAppDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -532,4 +548,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgAppCatalogTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/New-MgAppCatalogTeamAppDefinition?view=graph-powershell-v1.0)
-

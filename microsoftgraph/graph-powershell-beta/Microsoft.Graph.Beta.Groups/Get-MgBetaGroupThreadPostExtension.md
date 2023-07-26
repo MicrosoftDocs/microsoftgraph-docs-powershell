@@ -335,5 +335,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThreadPostExtension](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostExtension?view=graph-powershell-v1.0)
-
-

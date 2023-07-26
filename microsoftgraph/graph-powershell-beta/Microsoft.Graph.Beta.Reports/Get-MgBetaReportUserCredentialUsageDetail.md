@@ -280,4 +280,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportUserCredentialUsageDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportUserCredentialUsageDetail?view=graph-powershell-v1.0)
-

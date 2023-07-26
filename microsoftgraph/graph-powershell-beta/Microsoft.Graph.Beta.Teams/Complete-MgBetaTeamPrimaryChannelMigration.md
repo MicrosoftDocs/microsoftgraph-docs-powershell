@@ -188,5 +188,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgTeamPrimaryChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamPrimaryChannelMigration?view=graph-powershell-v1.0)
-
-

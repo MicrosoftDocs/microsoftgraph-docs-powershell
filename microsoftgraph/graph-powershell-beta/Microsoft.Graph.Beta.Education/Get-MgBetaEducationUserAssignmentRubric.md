@@ -32,6 +32,7 @@ Get-MgBetaEducationUserAssignmentRubric -InputObject <IEducationIdentity> [-Expa
 Get the educationRubric object attached to an educationAssignment, if one exists.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -146,4 +147,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentRubric?view=graph-powershell-v1.0)
-

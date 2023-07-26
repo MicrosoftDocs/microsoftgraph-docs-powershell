@@ -298,5 +298,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintTaskDefinition](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintTaskDefinition?view=graph-powershell-v1.0)
-
-

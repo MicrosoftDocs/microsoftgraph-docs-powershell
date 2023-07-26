@@ -422,4 +422,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMessageForward](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserMessageForward?view=graph-powershell-beta)
-

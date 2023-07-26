@@ -48,7 +48,6 @@ This example deletes the specified group.
 
 ## PARAMETERS
 
-
 ### -GroupId
 The unique identifier of group
 
@@ -207,5 +206,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-v1.0)
-
-
