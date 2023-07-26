@@ -44,9 +44,25 @@ Invoke-MgScanUserManagedDeviceWindowsDefender -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Invoke action windowsDefenderScan
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
 
+$params = @{
+	NewReminderTime = @{
+		DateTime = "dateTime-value"
+		TimeZone = "timeZone-value"
+	}
+}
 
+# A UPN can also be used as -UserId.
+Invoke-MgSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgSnoozeUserEventInstanceReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -245,4 +261,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaSnoozeUserEventInstanceReminder?view=graph-powershell-beta)
-

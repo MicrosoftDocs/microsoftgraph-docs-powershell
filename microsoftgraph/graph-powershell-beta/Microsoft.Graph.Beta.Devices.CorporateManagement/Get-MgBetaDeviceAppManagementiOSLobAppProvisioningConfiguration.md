@@ -235,7 +235,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtIoLobAppProvisioningConfiguration
+Get-MgBetaDeviceAppMgtiOSLobAppProvisioningConfiguration
 
 COMPLEX PARAMETER PROPERTIES
 

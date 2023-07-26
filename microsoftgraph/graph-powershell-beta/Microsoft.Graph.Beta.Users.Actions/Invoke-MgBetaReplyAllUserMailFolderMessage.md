@@ -30,9 +30,22 @@ Invoke-MgBetaReenableUserManagedDevice -InputObject <IUsersActionsIdentity> [-Pa
 ## DESCRIPTION
 Invoke action reenable
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	Comment = "comment-value"
+}
 
+# A UPN can also be used as -UserId.
+Invoke-MgBetaReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaReplyAllUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -191,4 +204,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMailFolderMessage?view=graph-powershell-v1.0)
-

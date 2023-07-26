@@ -48,6 +48,7 @@ Create an assignment resource.
 Only teachers can perform this operation.
 You can create the following types of assignment resources: Every resource has an **@odata.type** property to indicate which type of resource is being created.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -258,4 +259,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentResource?view=graph-powershell-v1.0)
-

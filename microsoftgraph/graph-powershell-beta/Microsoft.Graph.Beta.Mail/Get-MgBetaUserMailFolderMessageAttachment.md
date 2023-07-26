@@ -39,6 +39,7 @@ Get-MgBetaUserMailFolderMessageAttachment -InputObject <IMailIdentity> [-ExpandP
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -256,4 +257,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMailFolderMessageAttachment](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageAttachment?view=graph-powershell-v1.0)
-

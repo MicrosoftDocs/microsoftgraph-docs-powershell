@@ -157,4 +157,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgComplianceEdiscoveryCaseSettingToDefault](/powershell/module/Microsoft.Graph.Compliance/Reset-MgComplianceEdiscoveryCaseSettingToDefault?view=graph-powershell-v1.0)
-

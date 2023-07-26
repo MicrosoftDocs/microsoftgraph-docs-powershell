@@ -30,6 +30,7 @@ Get-MgBetaTeamPrimaryChannelFileFolder -InputObject <ITeamsIdentity> [-ExpandPro
 ## DESCRIPTION
 Get the metadata for the location where the files of a channel are stored.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -154,4 +155,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPrimaryChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelFileFolder?view=graph-powershell-v1.0)
-

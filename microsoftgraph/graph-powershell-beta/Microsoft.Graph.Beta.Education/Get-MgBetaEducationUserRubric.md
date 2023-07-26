@@ -39,6 +39,7 @@ Get-MgBetaEducationUserRubric -InputObject <IEducationIdentity> [-ExpandProperty
 Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -274,4 +275,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserRubric?view=graph-powershell-v1.0)
-

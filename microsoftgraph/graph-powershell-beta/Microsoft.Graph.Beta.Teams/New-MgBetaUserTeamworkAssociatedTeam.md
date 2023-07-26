@@ -48,9 +48,18 @@ New-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
+```
 This example shows how to use the New-MgBetaBetaUserTeamworkAssociatedTeam Cmdlet.
 
-
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -464,4 +473,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/New-MgUserTeamworkAssociatedTeam?view=graph-powershell-v1.0)
-

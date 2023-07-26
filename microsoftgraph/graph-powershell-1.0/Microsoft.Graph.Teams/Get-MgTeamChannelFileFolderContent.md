@@ -30,6 +30,7 @@ Get-MgTeamChannelFileFolderContent -InputObject <ITeamsIdentity> -OutFile <Strin
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -162,4 +163,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaTeamChannelFileFolderContent](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaTeamChannelFileFolderContent?view=graph-powershell-beta)
-

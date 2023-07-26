@@ -30,6 +30,7 @@ Get-MgBetaServiceAnnouncementMessageAttachmentContent -InputObject <IDevicesServ
 ## DESCRIPTION
 The attachment content.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -135,4 +136,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServiceAnnouncementMessageAttachmentContent](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementMessageAttachmentContent?view=graph-powershell-v1.0)
-

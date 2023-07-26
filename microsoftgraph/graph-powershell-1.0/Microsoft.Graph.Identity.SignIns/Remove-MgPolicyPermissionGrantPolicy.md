@@ -42,7 +42,6 @@ This command deletes the specified permission grant policy in Azure AD.
 
 ## PARAMETERS
 
-
 ### -IfMatch
 ETag
 
@@ -212,5 +211,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaPolicyPermissionGrantPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaPolicyPermissionGrantPolicy?view=graph-powershell-beta)
-
-

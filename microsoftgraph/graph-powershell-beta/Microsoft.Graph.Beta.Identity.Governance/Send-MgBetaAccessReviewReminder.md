@@ -237,4 +237,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Send-MgAccessReviewReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgAccessReviewReminder?view=graph-powershell-v1.0)
-

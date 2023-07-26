@@ -358,5 +358,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaSiteListItemVersion](/powershell/module/Microsoft.Graph.Beta.Sites/New-MgBetaSiteListItemVersion?view=graph-powershell-beta)
-
-

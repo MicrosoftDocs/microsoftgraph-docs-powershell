@@ -193,4 +193,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/Remove-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
-

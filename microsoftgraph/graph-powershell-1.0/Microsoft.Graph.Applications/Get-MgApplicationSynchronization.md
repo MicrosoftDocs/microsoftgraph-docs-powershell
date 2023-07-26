@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronization
 
 ## SYNOPSIS
-Get synchronization from applications
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronization](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronization?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Get-MgApplicationSynchronization -InputObject <IApplicationsIdentity> [-ExpandPr
 ```
 
 ## DESCRIPTION
-Get synchronization from applications
+Represents the capability for Azure Active Directory (Azure AD) identity synchronization through the Microsoft Graph API.
 
 ## PARAMETERS
 
@@ -112,6 +112,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

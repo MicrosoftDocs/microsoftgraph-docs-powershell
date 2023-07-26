@@ -203,4 +203,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgCheckoutGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Invoke-MgCheckoutGroupDriveRoot?view=graph-powershell-v1.0)
-

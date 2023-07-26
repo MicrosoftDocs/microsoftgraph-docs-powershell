@@ -49,7 +49,7 @@ Add a user as a registered owner of the device.
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/directoryObjects/{id}"
+	"@odata.id" = "https://graph.microsoft.com/beta/directoryObjects/{id}"
 }
 
 New-MgBetaDeviceRegisteredOwnerByRef -DeviceId $deviceId -BodyParameter $params
@@ -253,5 +253,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)
-
-

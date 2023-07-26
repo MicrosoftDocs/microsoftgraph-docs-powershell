@@ -57,7 +57,7 @@ $params = @{
 	roles = @(
 		"owner"
 	)
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
@@ -71,7 +71,15 @@ To learn about permissions for this resource, see the [permissions reference](/g
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
-New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId
+$params = @{
+	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
+	roles = @(
+		"owner"
+	)
+	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('8b081ef6-4792-4def-b2c9-c363a1bf41d5')"
+}
+
+New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
 ```
 This example shows how to use the New-MgBetaTeamChannelMember Cmdlet.
 
@@ -87,7 +95,7 @@ $params = @{
 	roles = @(
 		"owner"
 	)
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
@@ -105,7 +113,7 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	roles = @(
 	)
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/24b3819b-4e1d-4f3e-86bd-e42b54d0b2b4"
 }
 
 New-MgBetaTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
@@ -123,7 +131,7 @@ $params = @{
 	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
 	roles = @(
 	)
-	"user@odata.bind" = "https://graph.microsoft.com/v1.0/users/bc3598dd-cce4-4742-ae15-173429951408"
+	"user@odata.bind" = "https://graph.microsoft.com/beta/users/bc3598dd-cce4-4742-ae15-173429951408"
 	tenantId = "a18103d1-a6ef-4f66-ac64-e4ef42ea8681"
 }
 
@@ -396,5 +404,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannelMember?view=graph-powershell-v1.0)
-
-

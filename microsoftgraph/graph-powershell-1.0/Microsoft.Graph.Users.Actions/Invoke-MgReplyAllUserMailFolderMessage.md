@@ -30,9 +30,22 @@ Invoke-MgReauthorizeUserDriveRootSubscription -InputObject <IUsersActionsIdentit
 ## DESCRIPTION
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
 
+$params = @{
+	Comment = "comment-value"
+}
 
+# A UPN can also be used as -UserId.
+Invoke-MgReplyAllUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgReplyAllUserMailFolderMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -195,4 +208,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaReplyAllUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Invoke-MgBetaReplyAllUserMailFolderMessage?view=graph-powershell-beta)
-

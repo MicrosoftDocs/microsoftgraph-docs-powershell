@@ -227,4 +227,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics](/powershell/module/Microsoft.Graph.Security/Invoke-MgEstimateSecurityCaseEdiscoveryCaseSearchStatistics?view=graph-powershell-v1.0)
-

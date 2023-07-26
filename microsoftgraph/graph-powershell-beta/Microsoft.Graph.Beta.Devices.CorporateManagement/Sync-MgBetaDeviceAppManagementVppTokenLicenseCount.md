@@ -82,7 +82,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Sync-BetaDeviceAppMgtVppTokenLicenseCount
+Sync-MgBetaDeviceAppMgtVppTokenLicenseCount
 
 ## RELATED LINKS
 [Sync-MgDeviceAppManagementVppTokenLicenseCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0)

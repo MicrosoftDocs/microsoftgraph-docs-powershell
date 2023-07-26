@@ -325,5 +325,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamPrimaryChannelSharedWithTeamAllowedMember?view=graph-powershell-v1.0)
-
-

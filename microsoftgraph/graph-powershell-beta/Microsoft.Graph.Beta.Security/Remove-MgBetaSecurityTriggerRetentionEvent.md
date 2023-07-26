@@ -229,5 +229,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityTriggerRetentionEvent](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTriggerRetentionEvent?view=graph-powershell-v1.0)
-
-

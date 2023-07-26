@@ -323,4 +323,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Get-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
-

@@ -82,5 +82,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyAuthenticationMethodPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicy?view=graph-powershell-v1.0)
-
-

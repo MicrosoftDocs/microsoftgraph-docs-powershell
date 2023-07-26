@@ -191,5 +191,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassTeacherByRef?view=graph-powershell-v1.0)
-
-

@@ -56,6 +56,7 @@ Get-MgSiteTermStoreGroupSetRelation -InputObject <ISitesIdentity> [-ExpandProper
 ## DESCRIPTION
 Indicates which terms have been pinned or reused directly under the set.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -361,4 +362,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteTermStoreGroupSetRelation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteTermStoreGroupSetRelation?view=graph-powershell-beta)
-

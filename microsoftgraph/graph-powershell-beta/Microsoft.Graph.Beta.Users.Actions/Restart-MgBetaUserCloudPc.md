@@ -196,4 +196,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restart-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserCloudPc?view=graph-powershell-v1.0)
-

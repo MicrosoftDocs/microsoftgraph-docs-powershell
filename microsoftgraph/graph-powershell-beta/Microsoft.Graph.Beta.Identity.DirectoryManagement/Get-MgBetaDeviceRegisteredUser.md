@@ -239,4 +239,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceRegisteredUser](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredUser?view=graph-powershell-v1.0)
-

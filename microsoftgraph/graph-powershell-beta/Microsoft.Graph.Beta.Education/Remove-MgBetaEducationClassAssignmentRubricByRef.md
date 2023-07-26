@@ -189,5 +189,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationClassAssignmentRubricByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentRubricByRef?view=graph-powershell-v1.0)
-
-

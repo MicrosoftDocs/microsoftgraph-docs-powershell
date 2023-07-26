@@ -553,4 +553,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileEducationalActivity](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileEducationalActivity?view=graph-powershell-v1.0)
-

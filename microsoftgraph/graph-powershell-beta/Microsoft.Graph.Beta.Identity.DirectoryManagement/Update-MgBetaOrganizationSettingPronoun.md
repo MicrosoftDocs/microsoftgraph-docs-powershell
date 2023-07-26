@@ -8,8 +8,7 @@ schema: 2.0.0
 # Update-MgBetaOrganizationSettingPronoun
 
 ## SYNOPSIS
-Update the properties of a pronounsSettings in an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Update the navigation property pronouns in organization
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSettingPronoun](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingPronoun?view=graph-powershell-v1.0)
@@ -42,8 +41,7 @@ Update-MgBetaOrganizationSettingPronoun -InputObject <IIdentityDirectoryManageme
 ```
 
 ## DESCRIPTION
-Update the properties of a pronounsSettings in an organization.
-For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
+Update the navigation property pronouns in organization
 
 ## PARAMETERS
 

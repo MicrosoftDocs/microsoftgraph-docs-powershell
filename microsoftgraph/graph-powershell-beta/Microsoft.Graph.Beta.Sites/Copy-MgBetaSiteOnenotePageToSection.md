@@ -49,9 +49,23 @@ Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup -InputObject <ISitesIdentity
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	Id = "id-value"
+	GroupId = "groupId-value"
+}
 
+# A UPN can also be used as -UserId.
+Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
+```
+This example shows how to use the Copy-MgBetaSiteOnenotePageToSection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -347,4 +361,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenotePageToSection?view=graph-powershell-v1.0)
-

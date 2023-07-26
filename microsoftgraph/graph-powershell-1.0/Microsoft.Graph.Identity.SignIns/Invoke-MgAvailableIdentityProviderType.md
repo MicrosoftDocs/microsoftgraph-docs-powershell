@@ -137,4 +137,3 @@ ALIASES
 
 ## RELATED LINKS
 [Invoke-MgBetaAvailableIdentityProviderType](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Invoke-MgBetaAvailableIdentityProviderType?view=graph-powershell-beta)
-

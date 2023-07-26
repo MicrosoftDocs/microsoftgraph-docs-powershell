@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgServicePrincipalSynchronizationJobSchemaDirectory
 
 ## SYNOPSIS
-Get directories from servicePrincipals
+Contains the collection of directories and all of their objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalSynchronizationJobSchemaDirectory?view=graph-powershell-beta)
@@ -37,7 +37,7 @@ Get-MgServicePrincipalSynchronizationJobSchemaDirectory -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Get directories from servicePrincipals
+Contains the collection of directories and all of their objects.
 
 ## PARAMETERS
 
@@ -272,6 +272,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

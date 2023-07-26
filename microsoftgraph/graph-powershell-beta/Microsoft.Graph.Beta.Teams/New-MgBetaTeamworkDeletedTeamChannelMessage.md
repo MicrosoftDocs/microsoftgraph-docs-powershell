@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamworkDeletedTeamChannelMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessage?view=graph-powershell-v1.0)
@@ -60,7 +60,7 @@ New-MgBetaTeamworkDeletedTeamChannelMessage -InputObject <ITeamsIdentity>
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 ## PARAMETERS
 

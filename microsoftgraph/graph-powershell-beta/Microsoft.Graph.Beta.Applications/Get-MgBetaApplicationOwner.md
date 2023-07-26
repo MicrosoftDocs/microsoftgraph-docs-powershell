@@ -237,4 +237,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgApplicationOwner](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationOwner?view=graph-powershell-v1.0)
-

@@ -353,4 +353,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgUserSecurityInformationProtectionSensitivityLabelApplication](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserSecurityInformationProtectionSensitivityLabelApplication?view=graph-powershell-v1.0)
-

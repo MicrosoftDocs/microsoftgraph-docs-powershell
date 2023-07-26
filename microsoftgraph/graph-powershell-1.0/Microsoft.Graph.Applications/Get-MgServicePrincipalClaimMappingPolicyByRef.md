@@ -189,5 +189,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalClaimMappingPolicyByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalClaimMappingPolicyByRef?view=graph-powershell-beta)
-
-

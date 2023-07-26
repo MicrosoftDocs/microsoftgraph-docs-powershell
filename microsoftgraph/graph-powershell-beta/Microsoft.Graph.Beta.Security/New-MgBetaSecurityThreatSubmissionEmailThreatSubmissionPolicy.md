@@ -385,4 +385,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy](/powershell/module/Microsoft.Graph.Security/New-MgSecurityThreatSubmissionEmailThreatSubmissionPolicy?view=graph-powershell-v1.0)
-

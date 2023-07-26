@@ -224,5 +224,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Remove-MgSitePermission?view=graph-powershell-v1.0)
-
-

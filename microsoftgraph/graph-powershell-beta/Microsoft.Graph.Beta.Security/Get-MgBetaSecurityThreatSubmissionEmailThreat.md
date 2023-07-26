@@ -329,4 +329,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSecurityThreatSubmissionEmailThreat](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatSubmissionEmailThreat?view=graph-powershell-v1.0)
-

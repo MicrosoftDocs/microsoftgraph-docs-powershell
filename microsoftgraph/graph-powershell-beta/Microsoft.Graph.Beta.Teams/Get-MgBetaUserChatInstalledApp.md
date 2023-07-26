@@ -37,6 +37,7 @@ Get-MgBetaUserChatInstalledApp -InputObject <ITeamsIdentity> [-ExpandProperty <S
 ## DESCRIPTION
 Get an app installed in a chat.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -312,4 +313,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserChatInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChatInstalledApp?view=graph-powershell-v1.0)
-

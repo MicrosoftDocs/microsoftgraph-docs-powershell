@@ -25314,5 +25314,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationUser](/powershell/module/Microsoft.Graph.Education/New-MgEducationUser?view=graph-powershell-v1.0)
-
-

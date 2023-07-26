@@ -68,7 +68,7 @@ Update-MgOrganizationBrandingLocalization -InputObject <IIdentityDirectoryManage
 Update the properties of an organizationalBrandingLocalization object for a specific localization.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update the backgroundColor and signInPageText for the fr-FR localization using PATCH
 
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
@@ -84,7 +84,7 @@ This example shows how to use the Update-MgOrganizationBrandingLocalization Cmdl
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 2: Code snippet
+### Example 2: Override a default branding value with a blank string
 
 ```powershell
 Import-Module Microsoft.Graph.Identity.DirectoryManagement
@@ -732,6 +732,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrgContactId <String>]`: The unique identifier of orgContact
   - `[OrganizationId <String>]`: The unique identifier of organization
   - `[OrganizationalBrandingLocalizationId <String>]`: The unique identifier of organizationalBrandingLocalization
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SubscribedSkuId <String>]`: The unique identifier of subscribedSku
   - `[UserId <String>]`: The unique identifier of user
@@ -753,5 +754,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaOrganizationBrandingLocalization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganizationBrandingLocalization?view=graph-powershell-beta)
-
-

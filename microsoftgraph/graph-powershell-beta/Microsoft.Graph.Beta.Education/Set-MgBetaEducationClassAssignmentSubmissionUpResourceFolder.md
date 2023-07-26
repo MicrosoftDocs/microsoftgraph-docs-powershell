@@ -194,4 +194,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgEducationClassAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationClassAssignmentSubmissionUpResourceFolder?view=graph-powershell-v1.0)
-

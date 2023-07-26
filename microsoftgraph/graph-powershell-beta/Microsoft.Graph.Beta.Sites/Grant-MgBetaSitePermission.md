@@ -298,4 +298,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Grant-MgSitePermission](/powershell/module/Microsoft.Graph.Sites/Grant-MgSitePermission?view=graph-powershell-v1.0)
-

@@ -231,4 +231,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Beta.Notes/Get-MgBetaUserOnenoteSectionGroupSection?view=graph-powershell-beta)
-

@@ -200,5 +200,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDirectoryRole](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryRole?view=graph-powershell-v1.0)
-
-

@@ -336,5 +336,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupThreadPostInReplyToAttachment?view=graph-powershell-v1.0)
-
-

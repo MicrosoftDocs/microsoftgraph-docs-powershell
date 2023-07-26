@@ -295,4 +295,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplate?view=graph-powershell-v1.0)
-

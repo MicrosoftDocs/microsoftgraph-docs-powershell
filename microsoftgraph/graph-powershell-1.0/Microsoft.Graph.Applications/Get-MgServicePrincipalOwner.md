@@ -47,7 +47,6 @@ This command lists the owners of the specified service principal.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -244,5 +243,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaServicePrincipalOwner](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaServicePrincipalOwner?view=graph-powershell-beta)
-
-

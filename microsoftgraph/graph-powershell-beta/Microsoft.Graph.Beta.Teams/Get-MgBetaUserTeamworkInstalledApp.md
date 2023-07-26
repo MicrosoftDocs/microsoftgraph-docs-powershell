@@ -38,12 +38,23 @@ Get-MgBetaUserTeamworkInstalledApp -InputObject <ITeamsIdentity> [-ExpandPropert
 Retrieve the app installed in the personal scope of the specified user.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Get an app installed for the specified user
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 Get-MgBetaUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId
+```
+This example shows how to use the Get-MgBetaUserTeamworkInstalledApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Get the names and other details of the app installed for the user
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+
+Get-MgBetaUserTeamworkInstalledApp -UserId $userId -UserScopeTeamsAppInstallationId $userScopeTeamsAppInstallationId -ExpandProperty "teamsAppDefinition"
 ```
 This example shows how to use the Get-MgBetaUserTeamworkInstalledApp Cmdlet.
 
@@ -309,5 +320,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTeamworkInstalledApp](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledApp?view=graph-powershell-v1.0)
-
-

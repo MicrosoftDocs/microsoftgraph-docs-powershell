@@ -67,7 +67,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtWindowInformationProtectionWipeActionCount
+Get-MgBetaDeviceAppMgtWindowInformationProtectionWipeActionCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementWindowsInformationProtectionWipeActionCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionWipeActionCount?view=graph-powershell-v1.0)

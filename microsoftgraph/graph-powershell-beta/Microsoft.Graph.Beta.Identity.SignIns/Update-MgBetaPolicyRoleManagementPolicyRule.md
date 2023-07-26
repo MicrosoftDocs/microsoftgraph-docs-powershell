@@ -59,7 +59,6 @@ $params = @{
 	isExpirationRequired = $true
 	maximumDuration = "PT1H45M"
 	target = @{
-		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
 		caller = "EndUser"
 		operations = @(
 			"All"
@@ -346,5 +345,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPolicyRoleManagementPolicyRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyRoleManagementPolicyRule?view=graph-powershell-v1.0)
-
-

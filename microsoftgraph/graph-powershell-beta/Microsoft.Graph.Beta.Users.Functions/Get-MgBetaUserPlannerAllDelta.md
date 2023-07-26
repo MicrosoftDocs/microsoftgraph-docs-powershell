@@ -284,4 +284,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPlannerAllDelta](/powershell/module/Microsoft.Graph.Users.Functions/Get-MgUserPlannerAllDelta?view=graph-powershell-v1.0)
-

@@ -212,4 +212,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReopenSecurityCaseEdiscoveryCase](/powershell/module/Microsoft.Graph.Security/Invoke-MgReopenSecurityCaseEdiscoveryCase?view=graph-powershell-v1.0)
-

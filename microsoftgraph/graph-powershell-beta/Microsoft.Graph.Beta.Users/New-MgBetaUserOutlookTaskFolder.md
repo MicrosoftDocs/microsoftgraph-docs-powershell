@@ -469,4 +469,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserOutlookTaskFolder](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolder?view=graph-powershell-v1.0)
-

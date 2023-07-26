@@ -321,5 +321,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamPrimaryChannelMember?view=graph-powershell-v1.0)
-
-

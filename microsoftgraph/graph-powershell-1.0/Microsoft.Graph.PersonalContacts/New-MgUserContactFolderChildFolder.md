@@ -42,9 +42,22 @@ New-MgUserContactExtension -InputObject <IPersonalContactsIdentity> -BodyParamet
 ## DESCRIPTION
 Create new navigation property to extensions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.PersonalContacts
 
+$params = @{
+	displayName = "Family"
+}
 
+# A UPN can also be used as -UserId.
+New-MgUserContactFolderChildFolder -UserId $userId -ContactFolderId $contactFolderId -BodyParameter $params
+```
+This example shows how to use the New-MgUserContactFolderChildFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -200,4 +213,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/New-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
-

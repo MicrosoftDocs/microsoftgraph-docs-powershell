@@ -210,4 +210,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaDeclineGroupEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaDeclineGroupEvent?view=graph-powershell-beta)
-

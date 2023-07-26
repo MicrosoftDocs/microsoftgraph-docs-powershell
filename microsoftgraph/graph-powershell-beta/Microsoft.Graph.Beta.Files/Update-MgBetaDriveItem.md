@@ -91,7 +91,10 @@ Items cannot be moved between Drives using this request.
 Import-Module Microsoft.Graph.Beta.Files
 
 $params = @{
-	name = "new-file-name.docx"
+	parentReference = @{
+		id = "new-parent-folder-id"
+	}
+	name = "new-item-name.txt"
 }
 
 Update-MgBetaDriveItem -DriveId $driveId -DriveItemId $driveItemId -BodyParameter $params
@@ -34554,5 +34557,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDriveItem](/powershell/module/Microsoft.Graph.Files/Update-MgDriveItem?view=graph-powershell-v1.0)
-
-

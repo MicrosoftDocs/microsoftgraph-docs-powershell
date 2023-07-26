@@ -213,5 +213,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceRegisteredOwnerByRef](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDeviceRegisteredOwnerByRef?view=graph-powershell-v1.0)
-
-

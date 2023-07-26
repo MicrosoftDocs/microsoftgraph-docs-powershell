@@ -1264,4 +1264,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTiIndicator?view=graph-powershell-v1.0)
-

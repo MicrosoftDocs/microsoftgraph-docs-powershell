@@ -1181,5 +1181,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSiteContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteContentTypeColumn?view=graph-powershell-v1.0)
-
-

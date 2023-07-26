@@ -93,6 +93,17 @@ This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
+### Example 7: List applications with a given ID and return only the resource specific permissions required by the app
+
+```powershell
+Import-Module Microsoft.Graph.Teams
+
+Get-MgAppCatalogTeamApp -Filter "id eq 'a5228c26-a9ae-4702-90e0-79a5246d2f7d'" -ExpandProperty "appDefinitions(`$select=id,authorization)"
+```
+This example shows how to use the Get-MgAppCatalogTeamApp Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
@@ -331,5 +342,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaAppCatalogTeamApp](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaAppCatalogTeamApp?view=graph-powershell-beta)
-
-

@@ -175,4 +175,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgInvalidateUserRefreshToken](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgInvalidateUserRefreshToken?view=graph-powershell-v1.0)
-

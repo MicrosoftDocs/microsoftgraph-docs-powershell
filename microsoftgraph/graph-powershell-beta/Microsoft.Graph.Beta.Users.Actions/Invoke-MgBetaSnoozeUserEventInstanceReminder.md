@@ -44,9 +44,25 @@ Invoke-MgBetaSignUserInformationProtectionDigest -InputObject <IUsersActionsIden
 ## DESCRIPTION
 Invoke action signDigest
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	NewReminderTime = @{
+		DateTime = "dateTime-value"
+		TimeZone = "timeZone-value"
+	}
+}
 
+# A UPN can also be used as -UserId.
+Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgBetaSnoozeUserEventInstanceReminder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -246,4 +262,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSnoozeUserEventInstanceReminder](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgSnoozeUserEventInstanceReminder?view=graph-powershell-v1.0)
-

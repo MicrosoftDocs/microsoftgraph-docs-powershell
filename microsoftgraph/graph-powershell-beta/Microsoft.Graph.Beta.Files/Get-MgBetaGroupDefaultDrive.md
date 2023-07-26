@@ -150,4 +150,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupDefaultDrive](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDefaultDrive?view=graph-powershell-v1.0)
-

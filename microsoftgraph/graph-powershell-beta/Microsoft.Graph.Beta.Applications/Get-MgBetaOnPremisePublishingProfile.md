@@ -280,4 +280,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOnPremisePublishingProfile](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfile?view=graph-powershell-v1.0)
-

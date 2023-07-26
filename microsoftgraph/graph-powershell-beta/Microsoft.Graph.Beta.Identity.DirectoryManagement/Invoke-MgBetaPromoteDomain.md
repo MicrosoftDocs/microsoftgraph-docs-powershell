@@ -167,4 +167,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgPromoteDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgPromoteDomain?view=graph-powershell-v1.0)
-

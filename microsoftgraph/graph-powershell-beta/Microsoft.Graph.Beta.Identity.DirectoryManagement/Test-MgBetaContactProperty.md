@@ -233,4 +233,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgContactProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgContactProperty?view=graph-powershell-v1.0)
-

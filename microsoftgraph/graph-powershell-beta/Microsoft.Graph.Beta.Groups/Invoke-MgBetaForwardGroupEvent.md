@@ -344,5 +344,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgForwardGroupEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgForwardGroupEvent?view=graph-powershell-v1.0)
-
-

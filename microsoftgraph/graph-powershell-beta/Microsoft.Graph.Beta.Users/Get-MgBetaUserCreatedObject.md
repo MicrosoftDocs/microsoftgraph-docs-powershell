@@ -58,7 +58,6 @@ This command gets a list of all directory objects that have been created by the 
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -300,5 +299,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserCreatedObject](/powershell/module/Microsoft.Graph.Users/Get-MgUserCreatedObject?view=graph-powershell-v1.0)
-
-

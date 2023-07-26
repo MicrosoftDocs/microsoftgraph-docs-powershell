@@ -45,7 +45,6 @@ This command returns the details of the specified directory object. The Director
 
 ## PARAMETERS
 
-
 ### -DirectoryObjectId
 The unique identifier of directoryObject
 
@@ -170,5 +169,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDirectoryDeletedItem](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryDeletedItem?view=graph-powershell-v1.0)
-
-

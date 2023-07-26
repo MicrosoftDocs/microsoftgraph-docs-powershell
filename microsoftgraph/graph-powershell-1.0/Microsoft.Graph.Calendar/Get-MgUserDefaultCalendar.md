@@ -249,4 +249,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserDefaultCalendar](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaUserDefaultCalendar?view=graph-powershell-beta)
-

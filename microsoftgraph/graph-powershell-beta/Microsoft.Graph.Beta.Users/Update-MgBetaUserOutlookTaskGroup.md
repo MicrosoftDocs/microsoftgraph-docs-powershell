@@ -449,4 +449,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/Update-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
-

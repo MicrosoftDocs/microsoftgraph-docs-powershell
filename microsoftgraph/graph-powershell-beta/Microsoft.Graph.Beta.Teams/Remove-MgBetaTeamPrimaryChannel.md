@@ -197,5 +197,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgTeamPrimaryChannel](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamPrimaryChannel?view=graph-powershell-v1.0)
-
-

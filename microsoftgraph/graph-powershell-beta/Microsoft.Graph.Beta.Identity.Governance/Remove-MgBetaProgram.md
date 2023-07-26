@@ -255,4 +255,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgProgram](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgProgram?view=graph-powershell-v1.0)
-

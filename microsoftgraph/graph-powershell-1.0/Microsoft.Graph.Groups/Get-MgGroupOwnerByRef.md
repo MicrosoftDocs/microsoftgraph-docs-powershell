@@ -217,5 +217,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupOwnerByRef](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupOwnerByRef?view=graph-powershell-beta)
-
-

@@ -220,4 +220,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Rename-MgBetaCommunicationCallScreenSharingRole](/powershell/module/Microsoft.Graph.Beta.CloudCommunications/Rename-MgBetaCommunicationCallScreenSharingRole?view=graph-powershell-beta)
-

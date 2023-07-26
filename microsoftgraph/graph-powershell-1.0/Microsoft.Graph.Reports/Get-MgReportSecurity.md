@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgReportSecurity
 
 ## SYNOPSIS
-Get security from reports
+Represents an abstract type that contains resources for attack simulation and training reports.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaReportSecurity](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSecurity?view=graph-powershell-beta)
@@ -20,7 +20,7 @@ Get-MgReportSecurity [-ExpandProperty <String[]>] [-Property <String[]>] [<Commo
 ```
 
 ## DESCRIPTION
-Get security from reports
+Represents an abstract type that contains resources for attack simulation and training reports.
 
 ## PARAMETERS
 

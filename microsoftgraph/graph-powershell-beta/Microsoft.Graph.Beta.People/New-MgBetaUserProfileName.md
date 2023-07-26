@@ -593,4 +593,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserProfileName](/powershell/module/Microsoft.Graph.People/New-MgUserProfileName?view=graph-powershell-v1.0)
-

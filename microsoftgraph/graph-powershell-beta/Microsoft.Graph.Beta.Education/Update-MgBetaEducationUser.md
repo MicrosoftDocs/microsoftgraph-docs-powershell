@@ -8,7 +8,7 @@ schema: 2.0.0
 # Update-MgBetaEducationUser
 
 ## SYNOPSIS
-Update the relatedContact collection of an educationUser object.
+Update the properties of an **educationuser** object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-v1.0)
@@ -69,7 +69,7 @@ Update-MgBetaEducationUser -InputObject <IEducationIdentity> -BodyParameter <IMi
 ```
 
 ## DESCRIPTION
-Update the relatedContact collection of an educationUser object.
+Update the properties of an **educationuser** object.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -25333,5 +25333,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationUser](/powershell/module/Microsoft.Graph.Education/Update-MgEducationUser?view=graph-powershell-v1.0)
-
-

@@ -249,4 +249,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Move-MgUserMailFolder](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolder?view=graph-powershell-v1.0)
-

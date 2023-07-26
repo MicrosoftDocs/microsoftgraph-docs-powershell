@@ -303,5 +303,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveSpecial](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveSpecial?view=graph-powershell-beta)
-
-

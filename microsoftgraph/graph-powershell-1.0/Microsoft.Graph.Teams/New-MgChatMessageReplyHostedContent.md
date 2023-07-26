@@ -306,5 +306,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaChatMessageReplyHostedContent?view=graph-powershell-beta)
-
-

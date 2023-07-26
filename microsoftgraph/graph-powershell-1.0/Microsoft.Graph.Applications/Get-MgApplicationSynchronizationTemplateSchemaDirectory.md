@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgApplicationSynchronizationTemplateSchemaDirectory
 
 ## SYNOPSIS
-Get directories from applications
+Contains the collection of directories and all of their objects.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Beta.Applications/Get-MgBetaApplicationSynchronizationTemplateSchemaDirectory?view=graph-powershell-beta)
@@ -36,7 +36,7 @@ Get-MgApplicationSynchronizationTemplateSchemaDirectory -InputObject <IApplicati
 ```
 
 ## DESCRIPTION
-Get directories from applications
+Contains the collection of directories and all of their objects.
 
 ## PARAMETERS
 
@@ -271,6 +271,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

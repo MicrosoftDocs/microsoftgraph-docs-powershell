@@ -29,9 +29,18 @@ Get-MgBetaSiteOnenoteNotebookCount -InputObject <INotesIdentity> [-Filter <Strin
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Notes
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteNotebookSectionGroup -UserId $userId -NotebookId $notebookId
+```
+This example shows how to use the Get-MgBetaSiteOnenoteNotebookSectionGroup Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -128,4 +137,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteOnenoteNotebookSectionGroup](/powershell/module/Microsoft.Graph.Notes/Get-MgSiteOnenoteNotebookSectionGroup?view=graph-powershell-v1.0)
-

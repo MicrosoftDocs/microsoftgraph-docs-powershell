@@ -49,7 +49,7 @@ Add an educationUser member to an educationClass.
 Import-Module Microsoft.Graph.Beta.Education
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/education/users/13015"
+	"@odata.id" = "https://graph.microsoft.com/beta/education/users/13015"
 }
 
 New-MgBetaEducationClassMemberByRef -EducationClassId $educationClassId -BodyParameter $params
@@ -225,5 +225,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
-
-

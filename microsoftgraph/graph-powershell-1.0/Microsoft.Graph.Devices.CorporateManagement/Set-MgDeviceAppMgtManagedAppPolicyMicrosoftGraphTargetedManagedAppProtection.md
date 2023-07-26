@@ -242,4 +242,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
   - `[WindowsInformationProtectionWipeActionId <String>]`: key: id of windowsInformationProtectionWipeAction
 
 ## RELATED LINKS
+
 [Set-MgBetaDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppMgtManagedAppPolicyMicrosoftGraphTargetedManagedAppProtection?view=graph-powershell-beta)

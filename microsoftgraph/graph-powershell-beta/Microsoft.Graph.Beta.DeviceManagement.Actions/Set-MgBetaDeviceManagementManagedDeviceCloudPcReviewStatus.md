@@ -292,4 +292,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementManagedDeviceCloudPcReviewStatus?view=graph-powershell-v1.0)
-

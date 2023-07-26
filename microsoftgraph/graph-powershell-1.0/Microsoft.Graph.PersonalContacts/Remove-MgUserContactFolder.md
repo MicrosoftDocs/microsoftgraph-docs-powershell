@@ -30,9 +30,18 @@ Remove-MgUserContactExtension -InputObject <IPersonalContactsIdentity> [-IfMatch
 ## DESCRIPTION
 Delete navigation property extensions for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.PersonalContacts
 
+# A UPN can also be used as -UserId.
+Remove-MgUserContactFolder -UserId $userId -ContactFolderId $contactFolderId
+```
+This example shows how to use the Remove-MgUserContactFolder Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -186,4 +195,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserContactFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Remove-MgBetaUserContactFolder?view=graph-powershell-beta)
-

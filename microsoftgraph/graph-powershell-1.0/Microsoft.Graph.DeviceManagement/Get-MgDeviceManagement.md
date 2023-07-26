@@ -22,6 +22,19 @@ Get-MgDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [<Com
 ## DESCRIPTION
 Read properties and relationships of the deviceManagement object.
 
+## EXAMPLES
+### Example 1: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.DeviceManagement
+
+Get-MgDeviceManagement
+```
+This example shows how to use the Get-MgDeviceManagement Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -68,4 +81,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagement](/powershell/module/Microsoft.Graph.Beta.DeviceManagement/Get-MgBetaDeviceManagement?view=graph-powershell-beta)
-

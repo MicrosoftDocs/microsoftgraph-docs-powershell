@@ -41,7 +41,6 @@ This command removes the manager of the specified user.
 
 ## PARAMETERS
 
-
 ### -IfMatch
 ETag
 
@@ -169,5 +168,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserManagerByRef](/powershell/module/Microsoft.Graph.Beta.Users/Remove-MgBetaUserManagerByRef?view=graph-powershell-beta)
-
-

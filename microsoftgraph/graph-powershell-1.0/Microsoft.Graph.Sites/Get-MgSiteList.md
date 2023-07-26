@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgSiteList
 
 ## SYNOPSIS
-Returns the metadata for a [list][].
+Get a list of rich long-running operations associated with a list.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
@@ -35,7 +35,7 @@ Get-MgSiteList -InputObject <ISitesIdentity> [-ExpandProperty <String[]>] [-Prop
 ```
 
 ## DESCRIPTION
-Returns the metadata for a [list][].
+Get a list of rich long-running operations associated with a list.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -44,6 +44,28 @@ Returns the metadata for a [list][].
 Import-Module Microsoft.Graph.Sites
 
 Get-MgSiteList -SiteId $siteId -ListId $listId
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteList -SiteId $siteId -ListId $listId
+```
+This example shows how to use the Get-MgSiteList Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Sites
+
+Get-MgSiteList -SiteId $siteId -ListId $listId -Property "id,name,lastModifiedDateTime" -ExpandProperty "columns(select=name,description),items)"
 ```
 This example shows how to use the Get-MgSiteList Cmdlet.
 
@@ -309,5 +331,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteList?view=graph-powershell-beta)
-
-

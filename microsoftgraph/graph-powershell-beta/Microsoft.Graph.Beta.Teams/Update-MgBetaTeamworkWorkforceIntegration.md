@@ -63,7 +63,7 @@ $params = @{
 	}
 	isActive = $true
 	url = "url-value"
-	supportedEntities = "supportedEntities-value"
+	supports = "supports-value"
 }
 
 Update-MgBetaTeamworkWorkforceIntegration -WorkforceIntegrationId $workforceIntegrationId -BodyParameter $params
@@ -446,5 +446,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgTeamworkWorkforceIntegration](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamworkWorkforceIntegration?view=graph-powershell-v1.0)
-
-

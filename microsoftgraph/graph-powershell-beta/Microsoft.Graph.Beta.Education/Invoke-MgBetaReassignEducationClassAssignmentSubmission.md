@@ -185,4 +185,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReassignEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
-

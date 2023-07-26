@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: 521f3081-748a-4366-824a-eb6195b361dd
+Module Guid: a12a4472-b9a4-4fa0-8a1c-ae41c0bf72f5
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -101,6 +101,9 @@ The user or contact that is this user's manager.
 Read-only.
 (HTTP Methods: GET, PUT, DELETE.).
 Supports $expand.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
 
 ### [Get-MgUserMemberOfCount](Get-MgUserMemberOfCount.md)
 Get the number of the resource
@@ -310,15 +313,24 @@ The collection of open extensions defined for the user.
 Read-only.
 Nullable.
 
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
 Read-only.
 Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
+
+### [New-MgUserExtension](New-MgUserExtension.md)
+The collection of open extensions defined for the user.
+Read-only.
+Nullable.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
 
 ### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
 Create new navigation property to extensions for users
@@ -340,6 +352,9 @@ Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
+
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTransitiveMemberOfByRef?view=graph-powershell-beta)
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Delete user.

@@ -93,7 +93,6 @@ This command retrieves the conditional access by Id.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -353,5 +352,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccessPolicy?view=graph-powershell-beta)
-
-

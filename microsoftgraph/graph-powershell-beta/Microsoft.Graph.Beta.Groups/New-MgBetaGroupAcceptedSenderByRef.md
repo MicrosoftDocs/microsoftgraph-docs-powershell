@@ -55,7 +55,7 @@ Make sure you do not specify the same user or group in the accepted senders and 
 Import-Module Microsoft.Graph.Beta.Groups
 
 $params = @{
-	"@odata.id" = "https://graph.microsoft.com/v1.0/users/alexd@contoso.com"
+	"@odata.id" = "https://graph.microsoft.com/beta/users/alexd@contoso.com"
 }
 
 New-MgBetaGroupAcceptedSenderByRef -GroupId $groupId -BodyParameter $params
@@ -262,5 +262,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupAcceptedSenderByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupAcceptedSenderByRef?view=graph-powershell-v1.0)
-
-

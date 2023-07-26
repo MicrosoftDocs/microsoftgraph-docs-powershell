@@ -44,6 +44,8 @@ $params = @{
 	consentType = "AllPrincipals"
 	resourceId = "943603e4-e787-4fe9-93d1-e30f749aae39"
 	scope = "DelegatedPermissionGrant.ReadWrite.All"
+	startTime = [System.DateTime]::Parse("2022-03-17T00:00:00Z")
+	expiryTime = [System.DateTime]::Parse("2023-03-17T00:00:00Z")
 }
 
 New-MgBetaOauth2PermissionGrant -BodyParameter $params
@@ -287,5 +289,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgOauth2PermissionGrant](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgOauth2PermissionGrant?view=graph-powershell-v1.0)
-
-

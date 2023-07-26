@@ -75,7 +75,6 @@ This command retrieves a specified permission grant policy exclude configuration
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -350,5 +349,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyPermissionGrantPolicyExclude?view=graph-powershell-beta)
-
-

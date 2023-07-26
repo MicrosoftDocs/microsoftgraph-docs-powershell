@@ -1,0 +1,33 @@
+# Copyright (c) Microsoft Corporation. All rights reserved.
+# Licensed under the MIT License.
+
+parameters:
+  - name: BaseBranch
+    type: string
+    default: main
+  - name: Title
+    type: string
+    default: ""
+  - name: Body
+    type: string
+    default: ""
+
+steps:
+  - task: PowerShell@2
+    displayName: Create Pull Request for generated build
+    env:
+      GITHUB_TOKEN: $(GITHUB_TOKEN)
+    inputs:
+      pwsh: true
+      targetType: inline
+      script: |
+        git config --global user.email "timwamalwa@gmail.com"
+        git config --global user.name "Timothy Wamalwa"
+        cd microsoftgraph-docs-powershell
+        $date = Get-Date -Format "dd-MM-yyyy"
+        $proposedBranch = "weekly_v2_docs_update_$date"
+        $Head = "MicrosoftDocs:$proposedBranch"
+        $Title = "${{ parameters.Title }}"
+        $Body = "${{ parameters.Body }}"
+        git push "https://$(GITHUB_TOKEN)@github.com/MicrosoftDocs/microsoftgraph-docs-powershell.git"
+        gh pr create -t $Title -b $Body -B main -H $proposedBranch

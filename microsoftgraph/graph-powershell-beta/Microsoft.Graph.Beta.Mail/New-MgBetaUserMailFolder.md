@@ -28,9 +28,23 @@ Get-MgBetaUserMessageMentionCount -InputObject <IMailIdentity> [-Filter <String>
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Mail
 
+$params = @{
+	displayName = "Clutter"
+	isHidden = $true
+}
 
+# A UPN can also be used as -UserId.
+New-MgBetaUserMailFolder -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserMailFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -128,4 +142,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserMailFolder](/powershell/module/Microsoft.Graph.Mail/New-MgUserMailFolder?view=graph-powershell-v1.0)
-

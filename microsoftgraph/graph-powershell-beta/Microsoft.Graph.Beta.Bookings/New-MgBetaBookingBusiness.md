@@ -821,4 +821,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBookingBusiness](/powershell/module/Microsoft.Graph.Bookings/New-MgBookingBusiness?view=graph-powershell-v1.0)
-

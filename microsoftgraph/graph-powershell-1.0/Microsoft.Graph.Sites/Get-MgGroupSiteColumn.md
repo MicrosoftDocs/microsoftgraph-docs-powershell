@@ -37,6 +37,8 @@ Get-MgGroupSiteColumn -InputObject <ISitesIdentity> [-ExpandProperty <String[]>]
 ## DESCRIPTION
 The collection of column definitions reusable across lists under this site.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -311,4 +313,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteColumn](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteColumn?view=graph-powershell-beta)
-

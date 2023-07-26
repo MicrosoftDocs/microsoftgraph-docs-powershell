@@ -48,6 +48,7 @@ New-MgBetaUserChatTab -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGr
 Add (pin) a tab to the specified chat.
 \nThe corresponding app must already be installed in the chat.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -460,4 +461,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserChatTab](/powershell/module/Microsoft.Graph.Teams/New-MgUserChatTab?view=graph-powershell-v1.0)
-

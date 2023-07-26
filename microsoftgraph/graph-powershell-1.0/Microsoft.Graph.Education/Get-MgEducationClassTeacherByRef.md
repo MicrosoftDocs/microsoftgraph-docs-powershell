@@ -191,5 +191,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaEducationClassTeacherByRef](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationClassTeacherByRef?view=graph-powershell-beta)
-
-

@@ -28,9 +28,18 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Notes
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteNotebook -UserId $userId -NotebookId $notebookId
+```
+This example shows how to use the Get-MgBetaUserOnenoteNotebook Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -230,4 +239,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserOnenoteNotebook](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteNotebook?view=graph-powershell-v1.0)
-

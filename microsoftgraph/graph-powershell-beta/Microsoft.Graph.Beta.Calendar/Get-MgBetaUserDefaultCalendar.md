@@ -249,4 +249,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserDefaultCalendar](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserDefaultCalendar?view=graph-powershell-v1.0)
-

@@ -28,9 +28,30 @@ Invoke-MgFollowGroupDriveRoot -InputObject <IGroupsIdentity> [-WhatIf] [-Confirm
 ## DESCRIPTION
 Follow a driveItem.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Users.Actions
 
+$params = @{
+	ToRecipients = @(
+		@{
+			EmailAddress = @{
+				Address = "danas@contoso.onmicrosoft.com"
+				Name = "Dana Swope"
+			}
+		}
+	)
+	Comment = "Dana, hope you can make this meeting."
+}
 
+# A UPN can also be used as -UserId.
+Invoke-MgForwardUserEvent -UserId $userId -EventId $eventId -BodyParameter $params
+```
+This example shows how to use the Invoke-MgForwardGroupCalendarEvent Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -169,4 +190,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaForwardGroupCalendarEvent](/powershell/module/Microsoft.Graph.Beta.Groups/Invoke-MgBetaForwardGroupCalendarEvent?view=graph-powershell-beta)
-

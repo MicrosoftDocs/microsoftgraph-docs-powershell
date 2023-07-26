@@ -57,6 +57,7 @@ Students will not see the grade or feedback until the **assignment** has been re
 Provide the header `Prefer: include-unknown-enum-members` to properly list **submissions** with the `reassigned` status.
 For details, see the examples section.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -307,4 +308,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
-

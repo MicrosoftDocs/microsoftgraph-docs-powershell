@@ -65,9 +65,9 @@ For example, if a physical printer device breaks, an administrator can register 
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 $params = @{
-	displayName = "PrinterShare Name"
-	"printer@odata.bind" = "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
-	allowAllUsers = $false
+	displayName = "ShareName"
+	allowAllUsers = $true
+	"printer@odata.bind" = "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 
 Update-MgBetaPrintShare -PrinterShareId $printerShareId -BodyParameter $params
@@ -19473,5 +19473,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintShare?view=graph-powershell-v1.0)
-
-

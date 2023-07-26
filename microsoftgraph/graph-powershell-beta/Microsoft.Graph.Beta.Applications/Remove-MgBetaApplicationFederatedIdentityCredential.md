@@ -203,5 +203,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationFederatedIdentityCredential](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationFederatedIdentityCredential?view=graph-powershell-v1.0)
-
-

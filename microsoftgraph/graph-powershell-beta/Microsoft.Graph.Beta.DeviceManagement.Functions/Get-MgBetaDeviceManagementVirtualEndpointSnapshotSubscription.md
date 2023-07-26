@@ -123,4 +123,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagementVirtualEndpointSnapshotSubscription](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointSnapshotSubscription?view=graph-powershell-v1.0)
-

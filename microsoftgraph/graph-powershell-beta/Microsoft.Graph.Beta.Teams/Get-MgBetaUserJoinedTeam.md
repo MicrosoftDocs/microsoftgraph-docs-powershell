@@ -216,4 +216,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserJoinedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserJoinedTeam?view=graph-powershell-v1.0)
-

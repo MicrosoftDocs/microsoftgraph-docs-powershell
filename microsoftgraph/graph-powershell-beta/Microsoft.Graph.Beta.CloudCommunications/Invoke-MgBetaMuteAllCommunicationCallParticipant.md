@@ -231,4 +231,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgMuteAllCommunicationCallParticipant](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteAllCommunicationCallParticipant?view=graph-powershell-v1.0)
-

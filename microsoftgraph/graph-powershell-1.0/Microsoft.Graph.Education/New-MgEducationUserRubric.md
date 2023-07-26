@@ -48,6 +48,7 @@ New-MgEducationUserRubric -InputObject <IEducationIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Create a new educationRubric object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -379,4 +380,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaEducationUserRubric](/powershell/module/Microsoft.Graph.Beta.Education/New-MgBetaEducationUserRubric?view=graph-powershell-beta)
-

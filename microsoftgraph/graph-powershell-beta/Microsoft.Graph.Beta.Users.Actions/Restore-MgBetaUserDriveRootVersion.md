@@ -216,4 +216,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restore-MgUserDriveRootVersion](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserDriveRootVersion?view=graph-powershell-v1.0)
-

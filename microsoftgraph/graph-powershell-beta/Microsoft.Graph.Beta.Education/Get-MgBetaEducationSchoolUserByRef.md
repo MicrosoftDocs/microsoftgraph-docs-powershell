@@ -189,5 +189,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationSchoolUserByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolUserByRef?view=graph-powershell-v1.0)
-
-

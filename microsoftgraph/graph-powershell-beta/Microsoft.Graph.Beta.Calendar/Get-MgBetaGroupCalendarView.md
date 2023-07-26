@@ -28,9 +28,18 @@ Get-MgBetaGroupCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Calendar
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserCalendarView -UserId $userId -Startdatetime "2017-01-01T19:00:00-08:00" -Enddatetime "2017-01-07T19:00:00-08:00"
+```
+This example shows how to use the Get-MgBetaGroupCalendarView Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -114,4 +123,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupCalendarView](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupCalendarView?view=graph-powershell-v1.0)
-

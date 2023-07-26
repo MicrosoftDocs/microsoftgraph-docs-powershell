@@ -215,4 +215,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPrintShareAllowedUser](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintShareAllowedUser?view=graph-powershell-v1.0)
-

@@ -370,5 +370,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListItemVersion?view=graph-powershell-v1.0)
-
-

@@ -260,4 +260,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyMobileDeviceManagementPolicyIncludedGroupByRef?view=graph-powershell-v1.0)
-

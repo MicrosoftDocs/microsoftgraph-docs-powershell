@@ -317,4 +317,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalMemberOf?view=graph-powershell-v1.0)
-

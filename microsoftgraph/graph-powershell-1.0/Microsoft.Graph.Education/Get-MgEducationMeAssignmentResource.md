@@ -39,6 +39,7 @@ Get-MgEducationMeAssignmentResource -InputObject <IEducationIdentity> [-ExpandPr
 Get the properties of an education assignment resource associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -271,4 +272,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationMeAssignmentResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationMeAssignmentResource?view=graph-powershell-beta)
-

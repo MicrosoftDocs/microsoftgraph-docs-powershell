@@ -133,24 +133,6 @@ This example shows how to use the New-MgTeamChannelMember Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 6: Add a user who is part of the same or a different tenant as a member to a shared channel using user principal name
-
-```powershell
-Import-Module Microsoft.Graph.Teams
-
-$params = @{
-	"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-	roles = @(
-	)
-	"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
-}
-
-New-MgTeamChannelMember -TeamId $teamId -ChannelId $channelId -BodyParameter $params
-```
-This example shows how to use the New-MgTeamChannelMember Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -389,5 +371,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaTeamChannelMember](/powershell/module/Microsoft.Graph.Beta.Teams/New-MgBetaTeamChannelMember?view=graph-powershell-beta)
-
-

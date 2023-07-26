@@ -29,9 +29,30 @@ Get-MgUserInferenceClassificationOverrideCount -InputObject <IMailIdentity> [-Fi
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: List mail folders
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId
+```
+This example shows how to use the Get-MgUserMailFolderChildFolder Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Include hidden child folders under a specified mail folder
+
+```powershell
+Import-Module Microsoft.Graph.Mail
+
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolderChildFolder -UserId $userId -MailFolderId $mailFolderId -Includehiddenfolders true
+```
+This example shows how to use the Get-MgUserMailFolderChildFolder Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -112,4 +133,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolder?view=graph-powershell-beta)
-

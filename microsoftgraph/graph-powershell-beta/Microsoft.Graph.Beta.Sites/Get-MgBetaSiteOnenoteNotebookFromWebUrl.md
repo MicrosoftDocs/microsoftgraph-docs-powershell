@@ -30,9 +30,22 @@ Get-MgBetaSiteListSubscriptionCount -InputObject <ISitesIdentity> [-Filter <Stri
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	WebUrl = "webUrl value"
+}
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserOnenoteNotebookFromWebUrl -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Get-MgBetaSiteOnenoteNotebookFromWebUrl Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -185,4 +198,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgSiteOnenoteNotebookFromWebUrl](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteOnenoteNotebookFromWebUrl?view=graph-powershell-v1.0)
-

@@ -165,4 +165,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgOrganizationSettingMicrosoftApplicationDataAccess](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationSettingMicrosoftApplicationDataAccess?view=graph-powershell-v1.0)
-

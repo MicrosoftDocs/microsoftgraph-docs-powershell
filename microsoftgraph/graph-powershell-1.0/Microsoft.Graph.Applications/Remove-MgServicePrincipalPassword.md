@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a password from a servicePrincipal object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaServicePrincipalPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalPassword?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -205,6 +202,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[KeyId <String>]`: 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -227,5 +225,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgBetaServicePrincipalPassword](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaServicePrincipalPassword?view=graph-powershell-beta)
-

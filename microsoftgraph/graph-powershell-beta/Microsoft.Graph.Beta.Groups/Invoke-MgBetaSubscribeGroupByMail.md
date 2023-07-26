@@ -185,4 +185,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgSubscribeGroupByMail](/powershell/module/Microsoft.Graph.Groups/Invoke-MgSubscribeGroupByMail?view=graph-powershell-v1.0)
-

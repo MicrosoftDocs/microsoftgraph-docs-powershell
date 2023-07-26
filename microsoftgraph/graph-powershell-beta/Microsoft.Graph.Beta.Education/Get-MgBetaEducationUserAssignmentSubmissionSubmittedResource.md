@@ -316,5 +316,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-v1.0)
-
-

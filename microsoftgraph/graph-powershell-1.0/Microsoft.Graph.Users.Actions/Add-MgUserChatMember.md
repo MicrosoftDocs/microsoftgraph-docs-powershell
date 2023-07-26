@@ -327,4 +327,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Add-MgBetaUserChatMember](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Add-MgBetaUserChatMember?view=graph-powershell-beta)
-

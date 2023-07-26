@@ -315,5 +315,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrintPrinterShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShare?view=graph-powershell-v1.0)
-
-

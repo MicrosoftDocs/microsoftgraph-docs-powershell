@@ -30,9 +30,18 @@ Remove-MgUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity> [-I
 ## DESCRIPTION
 Delete navigation property operations for users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Identity.SignIns
 
+# A UPN can also be used as -UserId.
+Remove-MgUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
+```
+This example shows how to use the Remove-MgUserAuthenticationPhoneMethod Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -221,4 +230,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Remove-MgBetaUserAuthenticationPhoneMethod?view=graph-powershell-beta)
-

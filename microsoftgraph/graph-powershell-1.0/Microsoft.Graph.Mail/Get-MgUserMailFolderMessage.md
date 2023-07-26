@@ -28,9 +28,18 @@ Get-MgUserMailFolderCount -InputObject <IMailIdentity> [-Filter <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+# A UPN can also be used as -UserId.
+Get-MgUserMailFolderMessage -UserId $userId -MailFolderId $mailFolderId
+```
+This example shows how to use the Get-MgUserMailFolderMessage Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -111,4 +120,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMailFolderMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderMessage?view=graph-powershell-beta)
-

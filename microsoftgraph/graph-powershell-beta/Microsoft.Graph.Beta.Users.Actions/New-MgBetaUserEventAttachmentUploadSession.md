@@ -48,9 +48,48 @@ Create an upload session to allow your app to upload files up to the maximum fil
 An upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 To upload a file using an upload session:
 
+## EXAMPLES
+### Example 1: Create an upload session to add a large attachment to a draft message
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	AttachmentItem = @{
+		AttachmentType = "file"
+		Name = "flower"
+		Size = 3483322
+	}
+}
 
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachmentUploadSession Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an upload session to add a large in-line attachment to a draft message
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	AttachmentItem = @{
+		AttachmentType = "file"
+		Name = "scenary"
+		Size = 7208534
+		IsInline = $true
+		ContentId = "my_inline_picture"
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserEventAttachmentUploadSession Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -266,4 +305,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserEventAttachmentUploadSession](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserEventAttachmentUploadSession?view=graph-powershell-v1.0)
-

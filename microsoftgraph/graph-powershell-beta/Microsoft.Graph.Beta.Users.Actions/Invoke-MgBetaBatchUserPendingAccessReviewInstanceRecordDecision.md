@@ -317,4 +317,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgBatchUserPendingAccessReviewInstanceRecordDecision?view=graph-powershell-v1.0)
-

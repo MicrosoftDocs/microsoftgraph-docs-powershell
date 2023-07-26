@@ -370,5 +370,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgDataPolicyOperation?view=graph-powershell-v1.0)
-
-

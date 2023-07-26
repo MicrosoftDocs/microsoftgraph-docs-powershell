@@ -48,7 +48,6 @@ This example deletes the specified group.
 
 ## PARAMETERS
 
-
 ### -GroupId
 The unique identifier of group
 
@@ -198,5 +197,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Remove-MgBetaGroup?view=graph-powershell-beta)
-
-

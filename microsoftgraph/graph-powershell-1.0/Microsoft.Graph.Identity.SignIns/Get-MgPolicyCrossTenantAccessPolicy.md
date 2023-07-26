@@ -81,5 +81,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaPolicyCrossTenantAccessPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyCrossTenantAccessPolicy?view=graph-powershell-beta)
-
-

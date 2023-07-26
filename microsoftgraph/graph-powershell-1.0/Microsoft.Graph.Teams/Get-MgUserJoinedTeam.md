@@ -216,4 +216,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaUserJoinedTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Get-MgBetaUserJoinedTeam?view=graph-powershell-beta)
-

@@ -51,6 +51,7 @@ Get-MgBetaTeamPrimaryChannelSharedWithTeam -InputObject <ITeamsIdentity> [-Expan
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -312,4 +313,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamPrimaryChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamPrimaryChannelSharedWithTeam?view=graph-powershell-v1.0)
-

@@ -66,7 +66,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-BetaDeviceAppMgtVppTokenCount
+Get-MgBetaDeviceAppMgtVppTokenCount
 
 ## RELATED LINKS
 [Get-MgDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenCount?view=graph-powershell-v1.0)

@@ -37,6 +37,7 @@ Get-MgBetaGroupTeamScheduleTimeOffRequest -InputObject <ITeamsIdentity> [-Proper
 ## DESCRIPTION
 Retrieve the properties and relationships of a timeoffrequest object.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -282,4 +283,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupTeamScheduleTimeOffRequest](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamScheduleTimeOffRequest?view=graph-powershell-v1.0)
-

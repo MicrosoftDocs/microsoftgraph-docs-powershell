@@ -180,4 +180,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Start-MgTeamworkDeviceDiagnostic](/powershell/module/Microsoft.Graph.Teams/Start-MgTeamworkDeviceDiagnostic?view=graph-powershell-v1.0)
-

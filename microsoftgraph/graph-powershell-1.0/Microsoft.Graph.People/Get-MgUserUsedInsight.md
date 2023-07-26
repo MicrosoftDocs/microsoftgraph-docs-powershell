@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserUsedInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserUsedInsight?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -29,9 +26,30 @@ Get-MgUserUsedCountInsight -InputObject <IPeopleIdentity> [-Filter <String>] [-S
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Return documents that user has modified
 
+```powershell
+Import-Module Microsoft.Graph.People
 
+# A UPN can also be used as -UserId.
+Get-MgUserUsedInsight -UserId $userId
+```
+This example shows how to use the Get-MgUserUsedInsight Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Return the most recently viewed documents that the signed-in user might or might not have modified
+
+```powershell
+Import-Module Microsoft.Graph.People
+
+# A UPN can also be used as -UserId.
+Get-MgUserUsedInsight -UserId $userId -Sort "LastUsed/LastAccessedDateTime desc"
+```
+This example shows how to use the Get-MgUserUsedInsight Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -123,5 +141,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserUsedInsight](/powershell/module/Microsoft.Graph.Beta.People/Get-MgBetaUserUsedInsight?view=graph-powershell-beta)
-

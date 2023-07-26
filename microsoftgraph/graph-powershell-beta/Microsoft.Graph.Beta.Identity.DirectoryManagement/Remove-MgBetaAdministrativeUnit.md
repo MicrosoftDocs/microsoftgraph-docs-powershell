@@ -41,7 +41,6 @@ This example removes the specified administrative unit.
 
 ## PARAMETERS
 
-
 ### -AdministrativeUnitId
 The unique identifier of administrativeUnit
 
@@ -197,5 +196,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgAdministrativeUnit](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgAdministrativeUnit?view=graph-powershell-v1.0)
-
-

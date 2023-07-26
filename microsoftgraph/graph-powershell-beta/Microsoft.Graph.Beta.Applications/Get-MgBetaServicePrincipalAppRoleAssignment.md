@@ -76,7 +76,6 @@ This example gets the application role assignments that have been granted to the
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -340,5 +339,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalAppRoleAssignment?view=graph-powershell-v1.0)
-
-

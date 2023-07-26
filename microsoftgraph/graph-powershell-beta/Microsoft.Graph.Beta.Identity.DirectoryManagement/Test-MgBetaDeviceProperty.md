@@ -233,4 +233,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Test-MgDeviceProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgDeviceProperty?view=graph-powershell-v1.0)
-

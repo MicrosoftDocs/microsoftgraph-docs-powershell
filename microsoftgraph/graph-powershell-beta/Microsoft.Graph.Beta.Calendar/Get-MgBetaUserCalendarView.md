@@ -245,4 +245,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserCalendarView](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserCalendarView?view=graph-powershell-v1.0)
-

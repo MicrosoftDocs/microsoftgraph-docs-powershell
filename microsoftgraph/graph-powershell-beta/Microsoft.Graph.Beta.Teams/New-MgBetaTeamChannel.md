@@ -84,14 +84,14 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	"@odata.type" = "#Microsoft.Graph.Beta.channel"
+	"@odata.type" = "#Microsoft.Graph.channel"
 	membershipType = "private"
 	displayName = "My First Private Channel"
 	description = "This is my first private channels"
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('62855810-484b-4823-9e01-60667f8b12ae')"
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('62855810-484b-4823-9e01-60667f8b12ae')"
 			roles = @(
 				"owner"
 			)
@@ -123,20 +123,43 @@ This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 4: Create private channel on behalf of user using user principal name
+### Example 4: Create standard channel with moderation settings
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 
 $params = @{
-	"@odata.type" = "#Microsoft.Graph.Beta.channel"
+	displayName = "TestChannelModeration"
+	description = "Test channel moderation."
+	membershipType = "standard"
+	moderationSettings = @{
+		userNewMessageRestriction = "everyoneExceptGuests"
+		replyRestriction = "everyone"
+		allowNewMessageFromBots = $true
+		allowNewMessageFromConnectors = $true
+	}
+}
+
+New-MgBetaTeamChannel -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaTeamChannel Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Create private channel on behalf of user using user principal name
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Teams
+
+$params = @{
+	"@odata.type" = "#Microsoft.Graph.channel"
 	membershipType = "private"
 	displayName = "My First Private Channel"
 	description = "This is my first private channels"
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('jacob@contoso.com')"
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('jacob@contoso.com')"
 			roles = @(
 				"owner"
 			)
@@ -150,7 +173,7 @@ This example shows how to use the New-MgBetaTeamChannel Cmdlet.
 
 To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### Example 5: Create a shared channel on behalf of a user
+### Example 6: Create a shared channel on behalf of a user
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
@@ -162,7 +185,7 @@ $params = @{
 	members = @(
 		@{
 			"@odata.type" = "#microsoft.graph.aadUserConversationMember"
-			"user@odata.bind" = "https://graph.microsoft.com/v1.0/users('7640023f-fe43-573f-9ff4-84a9efe4acd6')"
+			"user@odata.bind" = "https://graph.microsoft.com/beta/users('7640023f-fe43-gv3f-9gg4-84a9efe4acd6')"
 			roles = @(
 				"owner"
 			)
@@ -14852,5 +14875,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamChannel](/powershell/module/Microsoft.Graph.Teams/New-MgTeamChannel?view=graph-powershell-v1.0)
-
-

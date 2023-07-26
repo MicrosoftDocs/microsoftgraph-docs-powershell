@@ -98,7 +98,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Remove-BetaDeviceAppMgtSymantecCodeSigningCertificate
+Remove-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)

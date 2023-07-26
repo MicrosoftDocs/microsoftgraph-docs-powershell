@@ -277,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users/Get-MgUserOutlookTask?view=graph-powershell-v1.0)
-

@@ -342,4 +342,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation](/powershell/module/Microsoft.Graph.Beta.Groups/Copy-MgBetaGroupDriveListContentTypeToDefaultContentLocation?view=graph-powershell-beta)
-

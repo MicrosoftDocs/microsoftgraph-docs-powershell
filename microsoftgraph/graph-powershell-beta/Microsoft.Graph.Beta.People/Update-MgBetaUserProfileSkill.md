@@ -509,4 +509,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfileSkill](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileSkill?view=graph-powershell-v1.0)
-

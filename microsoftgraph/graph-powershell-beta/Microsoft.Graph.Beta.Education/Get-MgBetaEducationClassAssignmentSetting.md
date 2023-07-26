@@ -147,5 +147,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationClassAssignmentSetting](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassAssignmentSetting?view=graph-powershell-v1.0)
-
-

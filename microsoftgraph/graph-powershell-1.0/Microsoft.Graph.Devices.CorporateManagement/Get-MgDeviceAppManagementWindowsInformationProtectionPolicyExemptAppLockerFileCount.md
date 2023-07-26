@@ -106,7 +106,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ALIASES
 
-Get-DeviceAppMgtWindowInformationProtectionPolicyExemptAppLockerFileCount
+Get-MgDeviceAppMgtWindowInformationProtectionPolicyExemptAppLockerFileCount
 
 COMPLEX PARAMETER PROPERTIES
 

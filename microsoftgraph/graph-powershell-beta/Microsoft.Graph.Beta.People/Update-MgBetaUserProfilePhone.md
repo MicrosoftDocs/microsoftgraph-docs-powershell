@@ -454,4 +454,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Update-MgUserProfilePhone?view=graph-powershell-v1.0)
-

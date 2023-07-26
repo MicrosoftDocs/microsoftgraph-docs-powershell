@@ -56,7 +56,6 @@ This example retrieves the license details of the specified user.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -289,5 +288,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserLicenseDetail](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserLicenseDetail?view=graph-powershell-beta)
-
-

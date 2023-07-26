@@ -46,7 +46,6 @@ The commands gets the manager of the specified user.
 
 ## PARAMETERS
 
-
 ### -ExpandProperty
 Expand related entities
 
@@ -143,5 +142,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserManager](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserManager?view=graph-powershell-beta)
-
-

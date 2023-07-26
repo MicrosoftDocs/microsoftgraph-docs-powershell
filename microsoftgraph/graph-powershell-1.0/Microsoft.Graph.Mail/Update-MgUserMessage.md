@@ -42,9 +42,27 @@ Update-MgUserMailFolderMessageExtension -InputObject <IMailIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+$params = @{
+	subject = "subject-value"
+	body = @{
+		contentType = ""
+		content = "content-value"
+	}
+	inferenceClassification = "other"
+}
 
+# A UPN can also be used as -UserId.
+Update-MgUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the Update-MgUserMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -233,4 +251,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserMessage](/powershell/module/Microsoft.Graph.Beta.Mail/Update-MgBetaUserMessage?view=graph-powershell-beta)
-

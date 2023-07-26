@@ -286,5 +286,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupEventExtension](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventExtension?view=graph-powershell-beta)
-
-

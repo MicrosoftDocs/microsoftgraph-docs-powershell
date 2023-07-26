@@ -338,4 +338,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgComplianceEdiscoveryCaseSetting](/powershell/module/Microsoft.Graph.Compliance/Update-MgComplianceEdiscoveryCaseSetting?view=graph-powershell-v1.0)
-

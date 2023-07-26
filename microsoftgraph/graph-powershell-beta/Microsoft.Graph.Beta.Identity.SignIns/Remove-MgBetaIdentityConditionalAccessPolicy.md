@@ -43,7 +43,6 @@ This example deletes the conditional access policy specified by `$conditionalAcc
 
 ## PARAMETERS
 
-
 ### -ConditionalAccessPolicyId
 The unique identifier of conditionalAccessPolicy
 
@@ -232,5 +231,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
-
-

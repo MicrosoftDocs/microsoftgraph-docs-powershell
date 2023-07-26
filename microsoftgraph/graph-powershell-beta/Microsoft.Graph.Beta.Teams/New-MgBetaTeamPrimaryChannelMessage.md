@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgBetaTeamPrimaryChannelMessage
 
 ## SYNOPSIS
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMessage?view=graph-powershell-v1.0)
@@ -60,8 +60,9 @@ New-MgBetaTeamPrimaryChannelMessage -InputObject <ITeamsIdentity> -BodyParameter
 ```
 
 ## DESCRIPTION
-Send a new chatMessage in the specified channel.
+Send a new chatMessage in the specified channel or a chat.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -899,4 +900,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgTeamPrimaryChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelMessage?view=graph-powershell-v1.0)
-

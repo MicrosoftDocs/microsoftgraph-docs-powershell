@@ -50,7 +50,6 @@ This examples gets the members of the specified group.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -247,5 +246,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupMember?view=graph-powershell-beta)
-
-

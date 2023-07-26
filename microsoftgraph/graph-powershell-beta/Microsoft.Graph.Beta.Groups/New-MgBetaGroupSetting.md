@@ -51,7 +51,7 @@ Group settings apply to only Microsoft 365 groups.
 The template named `Group.Unified` can be used to configure tenant-wide Microsoft 365 group settings, while the template named `Group.Unified.Guest` can be used to configure group-specific settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Create a setting to block guests for a specific Microsoft 365 group
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
@@ -312,5 +312,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/New-MgGroupSetting?view=graph-powershell-v1.0)
-
-

@@ -45,7 +45,6 @@ This example deletes the specified application.
 
 ## PARAMETERS
 
-
 ### -ApplicationId
 The unique identifier of application
 
@@ -188,5 +187,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplication](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplication?view=graph-powershell-v1.0)
-
-

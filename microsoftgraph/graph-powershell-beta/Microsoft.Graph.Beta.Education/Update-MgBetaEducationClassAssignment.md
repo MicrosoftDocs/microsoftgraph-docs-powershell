@@ -78,6 +78,7 @@ $params = @{
 	}
 	dueDateTime = [System.DateTime]::Parse("2021-09-10T00:00:00Z")
 	addedStudentAction = "none"
+	addToCalendarAction = "studentsAndPublisher"
 }
 
 Update-MgBetaEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -BodyParameter $params
@@ -772,5 +773,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationClassAssignment](/powershell/module/Microsoft.Graph.Education/Update-MgEducationClassAssignment?view=graph-powershell-v1.0)
-
-

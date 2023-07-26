@@ -235,4 +235,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserOnenoteOperation](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteOperation?view=graph-powershell-v1.0)
-

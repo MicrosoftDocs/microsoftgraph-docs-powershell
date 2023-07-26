@@ -179,4 +179,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Restart-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Restart-MgTeamworkDevice?view=graph-powershell-v1.0)
-

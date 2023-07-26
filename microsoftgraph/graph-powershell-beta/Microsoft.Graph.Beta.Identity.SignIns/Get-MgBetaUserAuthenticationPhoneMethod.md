@@ -30,9 +30,18 @@ Get-MgBetaUserAuthenticationPasswordMethodCount -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Get the number of the resource
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
 
+# A UPN can also be used as -UserId.
+Get-MgBetaUserAuthenticationPhoneMethod -UserId $userId -PhoneAuthenticationMethodId $phoneAuthenticationMethodId
+```
+This example shows how to use the Get-MgBetaUserAuthenticationPhoneMethod Cmdlet.
 
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -194,4 +203,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationPhoneMethod?view=graph-powershell-v1.0)
-

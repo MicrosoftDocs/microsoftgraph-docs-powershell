@@ -22,6 +22,8 @@ Get-MgBetaDeviceManagement [-ExpandProperty <String[]>] [-Property <String[]>] [
 ## DESCRIPTION
 Get deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -68,4 +70,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagement?view=graph-powershell-v1.0)
-

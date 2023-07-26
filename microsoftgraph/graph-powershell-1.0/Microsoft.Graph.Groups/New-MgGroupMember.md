@@ -51,7 +51,6 @@ This example adds a member specified by the DirectoryObjectId to the specified g
 
 ## PARAMETERS
 
-
 ### -BodyParameter
 Entity reference body
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
@@ -206,5 +205,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaGroupMember](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupMember?view=graph-powershell-beta)
-
-

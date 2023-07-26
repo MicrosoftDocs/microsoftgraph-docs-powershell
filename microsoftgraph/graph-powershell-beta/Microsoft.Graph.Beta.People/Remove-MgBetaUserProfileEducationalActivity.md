@@ -193,4 +193,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgUserProfileEducationalActivity](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileEducationalActivity?view=graph-powershell-v1.0)
-

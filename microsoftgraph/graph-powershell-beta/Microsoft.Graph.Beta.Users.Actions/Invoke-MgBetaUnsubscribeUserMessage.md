@@ -212,4 +212,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgUnsubscribeUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgUnsubscribeUserMessage?view=graph-powershell-v1.0)
-

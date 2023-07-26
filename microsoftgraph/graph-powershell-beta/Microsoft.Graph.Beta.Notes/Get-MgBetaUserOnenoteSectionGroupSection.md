@@ -231,4 +231,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgUserOnenoteSectionGroupSection](/powershell/module/Microsoft.Graph.Notes/Get-MgUserOnenoteSectionGroupSection?view=graph-powershell-v1.0)
-

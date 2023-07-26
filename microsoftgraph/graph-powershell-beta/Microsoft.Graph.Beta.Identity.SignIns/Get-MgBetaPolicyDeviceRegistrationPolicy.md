@@ -80,4 +80,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgPolicyDeviceRegistrationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDeviceRegistrationPolicy?view=graph-powershell-v1.0)
-

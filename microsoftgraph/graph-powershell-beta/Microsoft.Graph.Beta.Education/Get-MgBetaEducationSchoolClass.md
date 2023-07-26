@@ -215,4 +215,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationSchoolClass](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSchoolClass?view=graph-powershell-v1.0)
-

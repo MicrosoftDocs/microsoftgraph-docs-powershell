@@ -305,4 +305,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgChatPermissionGrant](/powershell/module/Microsoft.Graph.Teams/Get-MgChatPermissionGrant?view=graph-powershell-v1.0)
-

@@ -46,9 +46,22 @@ Update-MgBetaUserTodoListTaskAttachmentSession -InputObject <IUsersIdentity>
 ## DESCRIPTION
 Update the navigation property attachmentSessions in users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+$params = @{
+	displayName = "buy cake"
+}
 
+# A UPN can also be used as -UserId.
+Update-MgBetaUserTodoListTaskChecklistItem -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -ChecklistItemId $checklistItemId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserTodoListTaskChecklistItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -305,4 +318,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserTodoListTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskChecklistItem?view=graph-powershell-v1.0)
-

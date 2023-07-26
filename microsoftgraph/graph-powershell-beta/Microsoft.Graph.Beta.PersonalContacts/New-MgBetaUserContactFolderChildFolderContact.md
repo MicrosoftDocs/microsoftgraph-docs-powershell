@@ -69,6 +69,8 @@ New-MgBetaUserContactFolderChildFolderContact -InputObject <IPersonalContactsIde
 ## DESCRIPTION
 Add a contact to the root Contacts folder or to the `contacts` endpoint of another contact folder.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1003,4 +1005,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgUserContactFolderChildFolderContact](/powershell/module/Microsoft.Graph.PersonalContacts/New-MgUserContactFolderChildFolderContact?view=graph-powershell-v1.0)
-

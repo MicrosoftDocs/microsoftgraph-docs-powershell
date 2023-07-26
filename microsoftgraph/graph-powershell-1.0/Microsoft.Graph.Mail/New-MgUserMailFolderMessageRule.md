@@ -48,9 +48,40 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Mail
 
+$params = @{
+	displayName = "From partner"
+	sequence = 2
+	isEnabled = $true
+	conditions = @{
+		senderContains = @(
+			"adele"
+		)
+	}
+	actions = @{
+		forwardTo = @(
+			@{
+				emailAddress = @{
+					name = "Alex Wilbur"
+					address = "AlexW@contoso.onmicrosoft.com"
+				}
+			}
+		)
+		stopProcessingRules = $true
+	}
+}
 
+# A UPN can also be used as -UserId.
+New-MgUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -BodyParameter $params
+```
+This example shows how to use the New-MgUserMailFolderMessageRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -224,4 +255,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgBetaUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Beta.Mail/New-MgBetaUserMailFolderMessageRule?view=graph-powershell-beta)
-

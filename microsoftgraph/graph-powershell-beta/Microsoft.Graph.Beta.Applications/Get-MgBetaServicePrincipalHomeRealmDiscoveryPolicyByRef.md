@@ -189,5 +189,3 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalHomeRealmDiscoveryPolicyByRef?view=graph-powershell-v1.0)
-
-

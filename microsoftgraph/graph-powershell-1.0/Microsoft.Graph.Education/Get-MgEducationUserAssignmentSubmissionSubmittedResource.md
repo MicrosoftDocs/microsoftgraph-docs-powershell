@@ -45,6 +45,7 @@ Only teachers, students, and applications with application permissions can perfo
 Resources are available to a teacher or an application with application permissions after a student submits it, and are available to the student after the teacher returns the submission.
 Note that teachers can leave notes in some resources.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -307,4 +308,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Beta.Education/Get-MgBetaEducationUserAssignmentSubmissionSubmittedResource?view=graph-powershell-beta)
-

@@ -369,4 +369,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedOperationEvent](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedOperationEvent?view=graph-powershell-v1.0)
-

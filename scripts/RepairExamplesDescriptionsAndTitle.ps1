@@ -108,12 +108,10 @@ function Import-Descriptions {
     if(Test-Path $File){
     $TitleCount = 1
     $DestinationContent = Get-Content -Encoding UTF8 -Raw $File
-    $DestinationContentNonRaw = Get-Content $File
     $RetainedContent = $null
     foreach ($Ex in $RetainedExamples) {
-            $ContentBody = $Ex.Split("****")[0]
-            $ContentTitle = $Ex.Split("****")[1]
-            $ContentDescription = $Ex.Split("****")[2]
+            $ContentBody = $Ex.Split("**##@**")[0]
+            $ContentDescription = $Ex.Split("**##@**")[2]
             $RetainedContent += "$ContentBody$ContentDescription"  
             $TitleCount++ 
                         
@@ -198,7 +196,7 @@ function Get-ExistingDescriptions {
         $DescVal = $Content[$j]
         $RetainedDescription += "$DescVal`n"
     }
-    $RetainedExamples.Add("$ContentBlock****$Title****$RetainedDescription")
+    $RetainedExamples.Add("$ContentBlock**##@**$Title**##@**$RetainedDescription")
     if ($NoOfExamples -gt 1) {
         $NoOfExamples--
         for ($k = $Start; $k -lt $End; $k++) {
@@ -213,8 +211,8 @@ function Get-ExistingDescriptions {
    
 }
 Set-Location microsoftgraph-docs-powershell
+$date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_v2_docs_update_$date"
-$proposedBranch = "File_copy_test1"
 $exists = git branch -l $proposedBranch
 if ([string]::IsNullOrEmpty($exists)) {
     git checkout -b $proposedBranch

@@ -14,9 +14,6 @@ This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupSettingTemplate?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Restore (Default)
@@ -156,5 +153,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-[Restore-MgBetaGroupSettingTemplate](/powershell/module/Microsoft.Graph.Beta.Groups/Restore-MgBetaGroupSettingTemplate?view=graph-powershell-beta)
 

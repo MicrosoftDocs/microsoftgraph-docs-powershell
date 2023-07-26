@@ -280,4 +280,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserPlannerRecentPlan](/powershell/module/Microsoft.Graph.Planner/Get-MgUserPlannerRecentPlan?view=graph-powershell-v1.0)
-

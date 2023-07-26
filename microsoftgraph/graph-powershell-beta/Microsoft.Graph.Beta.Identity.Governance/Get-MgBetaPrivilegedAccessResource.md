@@ -363,4 +363,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgPrivilegedAccessResource](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessResource?view=graph-powershell-v1.0)
-

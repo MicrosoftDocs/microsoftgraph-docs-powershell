@@ -358,5 +358,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
-
-

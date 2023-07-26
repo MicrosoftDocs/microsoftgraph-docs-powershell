@@ -41,6 +41,7 @@ Read-only.
 Nullable.
 Supports $expand.
 
+## EXAMPLES
 
 ## PARAMETERS
 
@@ -313,4 +314,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Beta.Groups/Get-MgBetaGroupThreadPostInReplyToAttachment?view=graph-powershell-beta)
-

@@ -62,7 +62,6 @@ This example gets the direct reports for the specified user.
 
 ## PARAMETERS
 
-
 ### -All
 List all pages.
 
@@ -311,5 +310,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserDirectReport](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserDirectReport?view=graph-powershell-beta)
-
-

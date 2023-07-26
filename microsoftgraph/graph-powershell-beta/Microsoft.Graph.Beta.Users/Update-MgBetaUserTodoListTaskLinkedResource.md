@@ -42,9 +42,25 @@ Update-MgBetaUserTodoListTaskExtension -InputObject <IUsersIdentity> -BodyParame
 ## DESCRIPTION
 Update the navigation property extensions in users
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users
 
+$params = @{
+	"@odata.type" = "#microsoft.graph.linkedResource"
+	webUrl = "http://microsoft.com"
+	applicationName = "Microsoft"
+	displayName = "Microsoft"
+}
 
+# A UPN can also be used as -UserId.
+Update-MgBetaUserTodoListTaskLinkedResource -UserId $userId -TodoTaskListId $todoTaskListId -TodoTaskId $todoTaskId -LinkedResourceId $linkedResourceId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaUserTodoListTaskLinkedResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -247,4 +263,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserTodoListTaskLinkedResource](/powershell/module/Microsoft.Graph.Users/Update-MgUserTodoListTaskLinkedResource?view=graph-powershell-v1.0)
-

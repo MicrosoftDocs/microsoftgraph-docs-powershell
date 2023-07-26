@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaWindowsUpdatesPolicyComplianceChange
 
 ## SYNOPSIS
-Read the properties and relationships of a complianceChange object.
+Read the properties and relationships of a contentApproval object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaWindowsUpdatesPolicyComplianceChange -InputObject <IWindowsUpdatesIden
 ```
 
 ## DESCRIPTION
-Read the properties and relationships of a complianceChange object.
+Read the properties and relationships of a contentApproval object.
 
 ## PARAMETERS
 

@@ -44,9 +44,23 @@ Copy-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity>
 ## DESCRIPTION
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
+## EXAMPLES
+### Example 1: Code snippet
 
+```powershell
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
+$params = @{
+	Id = "id-value"
+	GroupId = "groupId-value"
+}
 
+# A UPN can also be used as -UserId.
+Copy-MgBetaUserOnenotePageToSection -UserId $userId -OnenotePageId $onenotePageId -BodyParameter $params
+```
+This example shows how to use the Copy-MgBetaGroupOnenotePageToSection Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 
 ## PARAMETERS
@@ -298,4 +312,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Copy-MgGroupOnenotePageToSection](/powershell/module/Microsoft.Graph.Groups/Copy-MgGroupOnenotePageToSection?view=graph-powershell-v1.0)
-

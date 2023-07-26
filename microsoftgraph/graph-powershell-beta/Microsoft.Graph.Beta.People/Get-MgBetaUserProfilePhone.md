@@ -298,4 +298,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserProfilePhone](/powershell/module/Microsoft.Graph.People/Get-MgUserProfilePhone?view=graph-powershell-v1.0)
-

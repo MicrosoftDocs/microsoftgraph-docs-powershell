@@ -239,4 +239,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Reset-MgAccessReviewDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Reset-MgAccessReviewDecision?view=graph-powershell-v1.0)
-

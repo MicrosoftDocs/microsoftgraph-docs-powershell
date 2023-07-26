@@ -38,18 +38,7 @@ Get-MgPolicyRoleManagementPolicy -InputObject <IIdentitySignInsIdentity> [-Expan
 Retrieve the details of a role management policy.
 
 ## EXAMPLES
-### Example 1: Retrieve the details of a role management policy
-
-```powershell
-Import-Module Microsoft.Graph.Identity.SignIns
-
-Get-MgPolicyRoleManagementPolicy -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId
-```
-This example shows how to use the Get-MgPolicyRoleManagementPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Retrieve the details of a role management policy and expand the relationships
+### Example 1: Code snippet
 
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
@@ -322,5 +311,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaPolicyRoleManagementPolicy](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaPolicyRoleManagementPolicy?view=graph-powershell-beta)
-
-

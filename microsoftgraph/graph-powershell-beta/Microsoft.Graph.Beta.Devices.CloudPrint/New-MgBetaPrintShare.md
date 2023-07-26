@@ -42,9 +42,8 @@ Create a new **printerShare** for the specified printer.
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
 
 $params = @{
-	displayName = "ShareName"
-	allowAllUsers = $false
-	"printer@odata.bind" = "https://graph.microsoft.com/v1.0/print/printers/{printerId}"
+	name = "name-value"
+	"printer@odata.bind" = "https://graph.microsoft.com/beta/print/printers/{id}"
 }
 
 New-MgBetaPrintShare -BodyParameter $params
@@ -19403,5 +19402,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgPrintShare](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintShare?view=graph-powershell-v1.0)
-
-
