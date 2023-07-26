@@ -93,6 +93,7 @@
     "externalReference": [],
     "globalMetadata": {
       "uhfHeaderId": "MSDocsHeader-MSGraph",
+      "zone_pivot_group_filename": "microsoftgraph/zone-pivots-groups.json",
       "apiPlatform": "powershell",
       "breadcrumb_path": "/powershell/microsoftgraph/breadcrumb/toc.json",
 	    "ms.prod": "non-product-specific",
