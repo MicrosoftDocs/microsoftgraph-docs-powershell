@@ -26,6 +26,7 @@
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/powershell/samples/breadcrumb/toc.json",
+      "zone_pivot_group_filename": "microsoftgraph/zone-pivots-groups.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-MSGraph",
       "feedback_system": "Standard",
