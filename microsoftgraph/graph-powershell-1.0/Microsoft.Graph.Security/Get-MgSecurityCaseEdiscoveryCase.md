@@ -38,13 +38,17 @@ Get-MgSecurityCaseEdiscoveryCase -InputObject <ISecurityIdentity> [-ExpandProper
 Read the properties and relationships of an ediscoveryCase object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecurityCaseEdiscoveryCase -EdiscoveryCaseId $ediscoveryCaseId
+```
+This example shows how to use the Get-MgSecurityCaseEdiscoveryCase Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

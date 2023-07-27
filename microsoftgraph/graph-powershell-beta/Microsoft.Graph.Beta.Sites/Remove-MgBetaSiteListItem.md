@@ -31,13 +31,17 @@ Remove-MgBetaSiteListItem -InputObject <ISitesIdentity> [-IfMatch <String>] [-Pa
 Removes an item from a [list][].
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
-```
 
 Remove-MgBetaSiteListItem -SiteId $siteId -ListId $listId -ListItemId $listItemId
+```
+This example shows how to use the Remove-MgBetaSiteListItem Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -48,8 +48,7 @@ Update the application's recording status associated with a call.
 This requires the use of the Teams policy-based recording solution.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaCommunicationCallRecordingStatus Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -58,6 +57,8 @@ $params = @{
 }
 Update-MgBetaCommunicationCallRecordingStatus -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaCommunicationCallRecordingStatus Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -35,13 +35,17 @@ This action cannot be undone.
 If the printer is shared again in the future, any Windows users who had previously installed the printer will need to discover and reinstall it.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 Remove-MgBetaPrintShare -PrinterShareId $printerShareId
+```
+This example shows how to use the Remove-MgBetaPrintShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

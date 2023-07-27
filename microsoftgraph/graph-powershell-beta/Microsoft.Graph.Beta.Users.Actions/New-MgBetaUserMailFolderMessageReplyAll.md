@@ -49,20 +49,18 @@ An upload session allows your app to upload ranges of the file in sequential API
 To upload a file using an upload session:
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageReplyAll -UserId $userId -MessageId $messageId
 ```
+This example shows how to use the New-MgBetaUserMailFolderMessageReplyAll Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

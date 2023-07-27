@@ -34,8 +34,7 @@ Confirm one or more riskyServicePrincipal objects as compromised.
 This action sets the targeted service principal account's risk level to `high`.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Confirm-MgBetaRiskyServicePrincipalCompromised Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -45,6 +44,8 @@ $params = @{
 }
 Confirm-MgBetaRiskyServicePrincipalCompromised -BodyParameter $params
 ```
+This example shows how to use the Confirm-MgBetaRiskyServicePrincipalCompromised Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -45,8 +45,7 @@ Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -InputObject <IU
 Enables reviewers to review all accessReviewInstanceDecisionItem objects in batches by using **principalId**, **resourceId**, or neither.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -57,6 +56,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaBatchUserPendingAccessReviewInstanceRecordDecision Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

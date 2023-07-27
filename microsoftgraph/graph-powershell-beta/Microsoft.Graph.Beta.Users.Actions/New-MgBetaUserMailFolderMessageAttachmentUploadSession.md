@@ -49,20 +49,48 @@ An upload session allows your app to upload ranges of the file in sequential API
 To upload a file using an upload session:
 
 ## EXAMPLES
+### Example 1: Create an upload session to add a large attachment to a draft message
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	AttachmentItem = @{
+		AttachmentType = "file"
+		Name = "flower"
+		Size = 3483322
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserMailFolderMessageAttachmentUploadSession Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
+### Example 2: Create an upload session to add a large in-line attachment to a draft message
+
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.Users.Actions
 
-{{ Add output here }}
+$params = @{
+	AttachmentItem = @{
+		AttachmentType = "file"
+		Name = "scenary"
+		Size = 7208534
+		IsInline = $true
+		ContentId = "my_inline_picture"
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserMessageAttachmentUploadSession -UserId $userId -MessageId $messageId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserMailFolderMessageAttachmentUploadSession Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

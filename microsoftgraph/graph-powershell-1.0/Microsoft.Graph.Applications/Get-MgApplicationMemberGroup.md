@@ -31,20 +31,37 @@ The main logo for the application.
 Not nullable.
 
 ## EXAMPLES
+### Example 1: Check group memberships for a directory object
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.DirectoryObjects
+
+$params = @{
+	SecurityEnabledOnly = $false
+}
+
+Get-MgDirectoryObjectMemberGroup -DirectoryObjectId $directoryObjectId -BodyParameter $params
 ```
+This example shows how to use the Get-MgApplicationMemberGroup Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
+### Example 2: Check group memberships for the signed-in user
+
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Users.Actions
 
-{{ Add output here }}
+$params = @{
+	SecurityEnabledOnly = $true
+}
+
+# A UPN can also be used as -UserId.
+Get-MgUserMemberGroup -UserId $userId -BodyParameter $params
+```
+This example shows how to use the Get-MgApplicationMemberGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

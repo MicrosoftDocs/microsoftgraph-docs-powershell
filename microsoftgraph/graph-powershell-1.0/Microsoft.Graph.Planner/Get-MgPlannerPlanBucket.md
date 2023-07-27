@@ -25,12 +25,13 @@ Get-MgPlannerPlanBucket -PlannerPlanId <String> [-ExpandProperty <String[]>] [-F
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgPlannerPlanBucket Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Planner
 Get-MgPlannerPlanBucket -PlannerPlanId $plannerPlanId
 ```
+This example shows how to use the Get-MgPlannerPlanBucket Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

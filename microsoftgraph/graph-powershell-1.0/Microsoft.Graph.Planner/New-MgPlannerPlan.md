@@ -32,11 +32,10 @@ New-MgPlannerPlan -BodyParameter <IMicrosoftGraphPlannerPlan> [-WhatIf] [-Confir
 Use this API to create a new **plannerPlan**.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Planner
-```
 
 $params = @{
 	container = @{
@@ -46,6 +45,11 @@ $params = @{
 }
 
 New-MgPlannerPlan -BodyParameter $params
+```
+This example shows how to use the New-MgPlannerPlan Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

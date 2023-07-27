@@ -27,12 +27,13 @@ List the tokenLifetimePolicy objects that are assigned to an application or serv
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaApplicationTokenLifetimePolicy Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Applications
 Get-MgBetaApplicationTokenLifetimePolicy -ApplicationId $applicationId
 ```
+This example shows how to use the Get-MgBetaApplicationTokenLifetimePolicy Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

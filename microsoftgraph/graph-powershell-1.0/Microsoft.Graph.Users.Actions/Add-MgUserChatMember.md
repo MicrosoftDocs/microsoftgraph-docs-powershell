@@ -47,11 +47,10 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 ## EXAMPLES
+### Example 1: Add members in bulk to a team
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -72,11 +71,15 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserChatMember Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Add members in bulk and encounter partial failure
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -97,11 +100,15 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserChatMember Cmdlet.
 
-### EXAMPLE 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Add members in bulk to a team using user principal name
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	Values = @(
@@ -122,6 +129,11 @@ $params = @{
 }
 
 Add-MgTeamMember -TeamId $teamId -BodyParameter $params
+```
+This example shows how to use the Add-MgUserChatMember Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

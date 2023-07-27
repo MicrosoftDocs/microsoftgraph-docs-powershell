@@ -49,20 +49,40 @@ Update-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 Create a new virtualAppointment object.
 
 ## EXAMPLES
+### Example 1: Get your own presence information
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserPresence -UserId $userId
 ```
+This example shows how to use the Update-MgBetaBetaUserPresence Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
+### Example 2: Get the presence information of another user
+
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-{{ Add output here }}
+Get-MgBetaUserPresence -UserId $userId
+```
+This example shows how to use the Update-MgBetaBetaUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+Get-MgBetaCommunicationPresence -PresenceId $presenceId
+```
+This example shows how to use the Update-MgBetaBetaUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

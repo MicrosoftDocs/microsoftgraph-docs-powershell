@@ -37,13 +37,17 @@ Retrieve the properties and relationships of a subscription.
 See the table in the Permissions section for the list of resources that support subscribing to change notifications.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.ChangeNotifications
-```
 
 Get-MgSubscription -SubscriptionId $subscriptionId
+```
+This example shows how to use the Get-MgSubscription Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

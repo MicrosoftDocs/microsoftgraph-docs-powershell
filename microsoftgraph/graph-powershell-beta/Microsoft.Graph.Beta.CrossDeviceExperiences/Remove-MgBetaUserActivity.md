@@ -45,20 +45,18 @@ New-MgBetaUserDeviceUsageRights -InputObject <ICrossDeviceExperiencesIdentity>
 Create new navigation property to usageRights for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.CrossDeviceExperiences
+
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserActivity -UserId $userId -UserActivityId $userActivityId
 ```
+This example shows how to use the Remove-MgBetaUserActivity Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

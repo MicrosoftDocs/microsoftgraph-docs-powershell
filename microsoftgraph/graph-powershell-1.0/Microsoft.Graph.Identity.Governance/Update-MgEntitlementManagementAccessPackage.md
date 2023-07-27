@@ -53,17 +53,21 @@ Update-MgEntitlementManagementAccessPackage -InputObject <IIdentityGovernanceIde
 Update an existing accessPackage object to change one or more of its properties, such as the display name or description.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 $params = @{
 	displayName = "Access Package New Name"
 }
 
 Update-MgEntitlementManagementAccessPackage -AccessPackageId $accessPackageId -BodyParameter $params
+```
+This example shows how to use the Update-MgEntitlementManagementAccessPackage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

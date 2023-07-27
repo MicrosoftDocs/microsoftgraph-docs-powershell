@@ -30,17 +30,21 @@ Remove-MgBetaChat -InputObject <ITeamsIdentity> [-IfMatch <String>] [-PassThru] 
 Delete entity from chats
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = @{
 	topic = "Group chat title update"
 }
 
 Update-MgBetaChat -ChatId $chatId -BodyParameter $params
+```
+This example shows how to use the Remove-MgBetaBetaChat Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

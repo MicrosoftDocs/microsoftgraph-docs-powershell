@@ -38,13 +38,17 @@ Get-MgBetaReportDailyPrintUsageByUser -InputObject <IReportsIdentity> [-ExpandPr
 Retrieve a list of daily print usage summaries, grouped by user.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
-```
 
 Get-MgBetaReportDailyPrintUsageByUser -PrintUsageByUserId $printUsageByUserId
+```
+This example shows how to use the Get-MgBetaReportDailyPrintUsageByUser Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

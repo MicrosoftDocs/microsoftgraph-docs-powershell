@@ -43,13 +43,17 @@ The state of the assignment goes back to `draft` if there is any backend failure
 To update the properties of a published **assignment**, see update an assignment.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 Publish-MgEducationClassAssignment -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId
+```
+This example shows how to use the Publish-MgEducationMeAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

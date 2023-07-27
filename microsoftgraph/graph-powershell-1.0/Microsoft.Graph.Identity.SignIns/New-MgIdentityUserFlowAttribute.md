@@ -32,11 +32,10 @@ New-MgIdentityUserFlowAttribute -BodyParameter <IMicrosoftGraphIdentityUserFlowA
 Create a new identityUserFlowAttribute object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.SignIns
-```
 
 $params = @{
 	displayName = "Hobby"
@@ -45,6 +44,11 @@ $params = @{
 }
 
 New-MgIdentityUserFlowAttribute -BodyParameter $params
+```
+This example shows how to use the New-MgIdentityUserFlowAttribute Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

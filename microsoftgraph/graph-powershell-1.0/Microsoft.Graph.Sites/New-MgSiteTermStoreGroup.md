@@ -74,17 +74,21 @@ New-MgSiteTermStoreGroup -InputObject <ISitesIdentity> -BodyParameter <IMicrosof
 Create a new group object in a term store.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Sites
-```
 
 $params = @{
 	displayName = "myGroup"
 }
 
 New-MgSiteTermStoreGroup -SiteId $siteId -BodyParameter $params
+```
+This example shows how to use the New-MgSiteTermStoreGroup Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

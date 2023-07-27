@@ -37,12 +37,13 @@ Data source entity for a the legal hold.
 This is the container for a mailbox and OneDrive for Business site.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Compliance
 Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource -CaseId $caseId -LegalHoldId $legalHoldId
 ```
+This example shows how to use the Get-MgBetaComplianceEdiscoveryCaseLegalHoldUserSource Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

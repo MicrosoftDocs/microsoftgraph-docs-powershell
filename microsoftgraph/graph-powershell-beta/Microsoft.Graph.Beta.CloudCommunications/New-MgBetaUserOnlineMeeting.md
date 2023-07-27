@@ -32,20 +32,66 @@ New-MgBetaCommunicationPresence -BodyParameter <IMicrosoftGraphPresence> [-WhatI
 Create new navigation property to presences for communications
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+$params = @{
+	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	subject = "User Token Meeting"
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the New-MgBetaUserOnlineMeeting Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
+### Example 2: Code snippet
+
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.Beta.CloudCommunications
 
-{{ Add output here }}
+$params = @{
+	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	subject = "User meeting"
+	joinMeetingIdSettings = @{
+		isPasscodeRequired = $true
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
+```powershell
+Import-Module Microsoft.Graph.Beta.CloudCommunications
+
+$params = @{
+	startDateTime = [System.DateTime]::Parse("2019-07-12T14:30:34.2444915-07:00")
+	endDateTime = [System.DateTime]::Parse("2019-07-12T15:00:34.2464912-07:00")
+	subject = "User meeting in Microsoft Teams channel."
+	joinMeetingIdSettings = @{
+		isPasscodeRequired = $false
+	}
+}
+
+# A UPN can also be used as -UserId.
+New-MgBetaUserOnlineMeeting -UserId $userId -BodyParameter $params
+```
+This example shows how to use the New-MgBetaUserOnlineMeeting Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

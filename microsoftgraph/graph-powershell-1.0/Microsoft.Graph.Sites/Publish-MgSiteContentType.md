@@ -30,12 +30,13 @@ Publish-MgSiteContentType -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-
 Publishes a [contentType][] present in the content type hub site.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Publish-MgSiteContentType Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Sites
 Publish-MgSiteContentType -SiteId $siteId -ContentTypeId $contentTypeId
 ```
+This example shows how to use the Publish-MgSiteContentType Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

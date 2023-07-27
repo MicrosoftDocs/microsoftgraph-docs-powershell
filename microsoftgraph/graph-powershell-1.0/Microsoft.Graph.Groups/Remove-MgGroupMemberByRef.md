@@ -33,13 +33,17 @@ Remove a member from a group via the **members** navigation property.
 You can't remove a member from groups with dynamic memberships.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Groups
-```
 
 Remove-MgGroupMemberByRef -GroupId $groupId -DirectoryObjectId $directoryObjectId
+```
+This example shows how to use the Remove-MgGroupMemberByRef Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

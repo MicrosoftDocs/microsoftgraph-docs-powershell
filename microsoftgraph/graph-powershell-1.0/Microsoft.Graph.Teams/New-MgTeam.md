@@ -39,11 +39,10 @@ New-MgTeam -BodyParameter <IMicrosoftGraphTeam> [-WhatIf] [-Confirm] [<CommonPar
 Create a new team.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -52,11 +51,15 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -74,11 +77,15 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -89,8 +96,7 @@ $params = @{
 		@{
 			displayName = "Announcements ????"
 			isFavoriteByDefault = $true
-			description = "This is a sample announcements channel that is favorited by default.
-Use this channel to make important team, product, and service announcements."
+			description = "This is a sample announcements channel that is favorited by default. Use this channel to make important team, product, and service announcements."
 		}
 		@{
 			displayName = "Training ???????"
@@ -159,11 +165,15 @@ Use this channel to make important team, product, and service announcements."
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 4
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -171,11 +181,15 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 5
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -208,11 +222,15 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 6
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 6: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
@@ -221,11 +239,15 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 7
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 7: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('educationClass')"
@@ -259,11 +281,15 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
 
-### EXAMPLE 8
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 8: Code snippet
+
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	"template@odata.bind" = "https://graph.microsoft.com/v1.0/teamsTemplates('standard')"
@@ -281,6 +307,11 @@ $params = @{
 }
 
 New-MgTeam -BodyParameter $params
+```
+This example shows how to use the New-MgTeam Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

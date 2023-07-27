@@ -47,13 +47,17 @@ Get-MgEntitlementManagementAssignment [-ExpandProperty <String[]>] [-Property <S
 In Azure AD entitlement management, retrieve the properties and relationships of an accessPackageAssignment object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgEntitlementManagementAssignment -AccessPackageAssignmentId $accessPackageAssignmentId
+```
+This example shows how to use the Get-MgEntitlementManagementAssignment Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

@@ -50,8 +50,7 @@ Update-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIde
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistration Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -72,6 +71,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeetingRegistration -UserId $userId -OnlineMeetingId $onlineMeetingId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserOnlineMeetingRegistration Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

@@ -36,11 +36,10 @@ New-MgBetaPrintShare -BodyParameter <IMicrosoftGraphPrinterShare> [-WhatIf] [-Co
 Create a new **printerShare** for the specified printer.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Devices.CloudPrint
-```
 
 $params = @{
 	name = "name-value"
@@ -48,6 +47,11 @@ $params = @{
 }
 
 New-MgBetaPrintShare -BodyParameter $params
+```
+This example shows how to use the New-MgBetaPrintShare Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

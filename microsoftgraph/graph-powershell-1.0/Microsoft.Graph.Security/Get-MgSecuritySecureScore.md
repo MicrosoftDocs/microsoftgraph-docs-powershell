@@ -38,13 +38,17 @@ Get-MgSecuritySecureScore -InputObject <ISecurityIdentity> [-ExpandProperty <Str
 Retrieve the properties and relationships of a secureScore object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Security
-```
 
 Get-MgSecuritySecureScore -SecureScoreId $secureScoreId
+```
+This example shows how to use the Get-MgSecuritySecureScore Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
