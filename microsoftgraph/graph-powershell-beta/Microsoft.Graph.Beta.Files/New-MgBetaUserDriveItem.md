@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to items for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -34206,5 +34209,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Worksheets <IMicrosoftGraphWorkbookWorksheet[]>]`: Represents a collection of worksheets associated with the workbook. Read-only.
 
 ## RELATED LINKS
+[New-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItem?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserDriveItem](/powershell/module/Microsoft.Graph.Files/New-MgUserDriveItem?view=graph-powershell-v1.0)

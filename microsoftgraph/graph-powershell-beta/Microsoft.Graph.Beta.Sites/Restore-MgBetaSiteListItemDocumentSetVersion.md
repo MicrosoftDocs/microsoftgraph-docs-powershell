@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a document set version.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Restore-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Restore (Default)
@@ -227,3 +230,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Restore-MgSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/Restore-MgSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)

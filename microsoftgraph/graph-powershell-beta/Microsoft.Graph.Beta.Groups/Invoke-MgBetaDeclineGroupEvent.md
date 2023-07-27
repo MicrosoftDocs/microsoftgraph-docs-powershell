@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Check out a **driveItem** resource to prevent others from editing the document, and prevent your changes from being visible until the documented is checked in.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgDeclineGroupEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupEvent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Checkout (Default)
@@ -191,3 +194,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgDeclineGroupEvent](/powershell/module/Microsoft.Graph.Groups/Invoke-MgDeclineGroupEvent?view=graph-powershell-v1.0)

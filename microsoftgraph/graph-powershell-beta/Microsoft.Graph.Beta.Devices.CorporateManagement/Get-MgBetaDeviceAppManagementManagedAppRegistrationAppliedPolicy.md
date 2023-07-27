@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Zero or more policys already applied on the registered app when it last synchronized with managment service.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -333,3 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
+[Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementManagedAppRegistrationAppliedPolicy?view=graph-powershell-v1.0)

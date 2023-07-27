@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgServicePrincipalMemberGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -222,3 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Confirm-MgServicePrincipalMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgServicePrincipalMemberGroup?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove a [column][columndefinition] from a [site][], [list][] or [content type][contentType].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListContentTypeColumn?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -250,3 +253,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListContentTypeColumn?view=graph-powershell-v1.0)

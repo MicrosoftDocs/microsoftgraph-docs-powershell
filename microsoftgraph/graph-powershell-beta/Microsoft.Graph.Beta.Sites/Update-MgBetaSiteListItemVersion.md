@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property versions in sites
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemVersion?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -381,3 +384,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
+[Update-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteListItemVersion?view=graph-powershell-v1.0)

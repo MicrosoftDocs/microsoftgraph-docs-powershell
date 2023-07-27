@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action preview
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgPreviewGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgPreviewGroupDriveItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### PreviewExpanded (Default)
@@ -329,3 +332,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgPreviewGroupDriveItem](/powershell/module/Microsoft.Graph.Groups/Invoke-MgPreviewGroupDriveItem?view=graph-powershell-v1.0)

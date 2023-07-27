@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Follow a driveItem.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveRoot?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Follow (Default)
@@ -181,3 +184,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgFollowUserDriveRoot](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgFollowUserDriveRoot?view=graph-powershell-v1.0)

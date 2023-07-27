@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property permission in shares
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -560,5 +563,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
+[Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaSharePermission](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaSharePermission?view=graph-powershell-beta)

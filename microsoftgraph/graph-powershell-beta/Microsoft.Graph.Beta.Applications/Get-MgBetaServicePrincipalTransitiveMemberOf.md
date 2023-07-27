@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get transitiveMemberOf from servicePrincipals
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -307,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgServicePrincipalTransitiveMemberOf](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalTransitiveMemberOf?view=graph-powershell-v1.0)

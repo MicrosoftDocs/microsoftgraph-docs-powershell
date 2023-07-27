@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property custodians in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -14490,5 +14493,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteWebUrl <String>]`: The URL of the user's OneDrive for Business site. Read-only.
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property operations for print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -171,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Remove-MgPrintOperation](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintOperation?view=graph-powershell-v1.0)

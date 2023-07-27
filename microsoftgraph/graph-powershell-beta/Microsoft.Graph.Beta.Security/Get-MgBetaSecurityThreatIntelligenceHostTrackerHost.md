@@ -11,6 +11,9 @@ schema: 2.0.0
 The host related to this hostTracker.
 When navigating to a hostTracker from a host, this should be assumed to be a return reference.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHostTrackerHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTrackerHost?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -195,3 +198,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityThreatIntelligenceHostTrackerHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHostTrackerHost?view=graph-powershell-v1.0)

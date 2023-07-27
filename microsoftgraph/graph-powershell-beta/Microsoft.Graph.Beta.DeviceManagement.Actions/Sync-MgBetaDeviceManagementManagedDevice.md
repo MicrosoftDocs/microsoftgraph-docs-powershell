@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action syncDevice
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementManagedDevice?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Sync (Default)
@@ -194,3 +197,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
+[Sync-MgDeviceManagementManagedDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Sync-MgDeviceManagementManagedDevice?view=graph-powershell-v1.0)

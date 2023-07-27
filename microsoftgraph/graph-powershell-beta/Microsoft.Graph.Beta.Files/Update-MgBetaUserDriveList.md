@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property list in users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveList](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveList?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -28897,5 +28900,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/beta/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[Update-MgUserDriveList](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveList?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgUserDriveList](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveList?view=graph-powershell-v1.0)

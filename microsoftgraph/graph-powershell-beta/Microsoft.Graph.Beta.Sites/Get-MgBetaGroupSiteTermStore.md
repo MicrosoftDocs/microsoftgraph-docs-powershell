@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a store object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStore?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -189,3 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteTermStore](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStore?view=graph-powershell-v1.0)

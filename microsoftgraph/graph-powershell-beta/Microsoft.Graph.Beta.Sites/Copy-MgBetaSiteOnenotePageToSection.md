@@ -11,6 +11,9 @@ schema: 2.0.0
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenotePageToSection?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CopyExpanded (Default)
@@ -347,3 +350,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Copy-MgSiteOnenotePageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenotePageToSection?view=graph-powershell-v1.0)

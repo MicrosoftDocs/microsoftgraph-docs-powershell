@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property entitlementManagement in roleManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1139,5 +1142,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[RoleDefinitionId <String>]`: Identifier of the unifiedRoleDefinition the assignment is for. Read-only. Supports $filter (eq operator only).
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEntitlementManagement?view=graph-powershell-v1.0)

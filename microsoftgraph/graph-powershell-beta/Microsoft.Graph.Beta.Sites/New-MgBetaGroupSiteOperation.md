@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOperation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -439,3 +442,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteOperation?view=graph-powershell-v1.0)

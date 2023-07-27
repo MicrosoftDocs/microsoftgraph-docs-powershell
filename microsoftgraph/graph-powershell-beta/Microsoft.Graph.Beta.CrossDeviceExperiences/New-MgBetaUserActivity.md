@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to activities for users
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -530,5 +533,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayText <String>]`: Required. Short text description of the user's unique activity (for example, document name in cases where an activity refers to document creation)
 
 ## RELATED LINKS
+[New-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgUserActivity](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/New-MgUserActivity?view=graph-powershell-v1.0)

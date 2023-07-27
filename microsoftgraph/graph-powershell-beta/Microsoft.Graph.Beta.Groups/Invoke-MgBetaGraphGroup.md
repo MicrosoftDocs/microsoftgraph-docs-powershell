@@ -11,6 +11,9 @@ schema: 2.0.0
 Calling this method will disable the current user to receive email notifications for this group about new posts, events, and files in that group.
 Supported for Microsoft 365 groups only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphGroup](/powershell/module/Microsoft.Graph.Groups/Invoke-MgGraphGroup?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Graph (Default)
@@ -175,3 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgGraphGroup](/powershell/module/Microsoft.Graph.Groups/Invoke-MgGraphGroup?view=graph-powershell-v1.0)

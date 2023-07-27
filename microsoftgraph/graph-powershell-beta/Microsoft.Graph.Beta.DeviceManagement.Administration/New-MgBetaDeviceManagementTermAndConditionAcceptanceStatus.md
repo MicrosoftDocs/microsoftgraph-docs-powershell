@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to acceptanceStatuses for deviceManagement
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -388,5 +391,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <Int32?>]`: Integer indicating the current version of the terms. Incremented when an administrator makes a change to the terms and wishes to require users to re-accept the modified T&C policy.
 
 ## RELATED LINKS
+[New-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgDeviceManagementTermAndConditionAcceptanceStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTermAndConditionAcceptanceStatus?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteContentTypeColumnLinkCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentTypeColumnLinkCount?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -200,3 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupSiteContentTypeColumnLinkCount](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteContentTypeColumnLinkCount?view=graph-powershell-v1.0)

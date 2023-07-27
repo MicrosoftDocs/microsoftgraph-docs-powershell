@@ -11,6 +11,9 @@ schema: 2.0.0
 The collection of open extensions defined for the organization resource.
 Nullable.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationExtension?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -315,3 +318,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgOrganizationExtension](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgOrganizationExtension?view=graph-powershell-v1.0)

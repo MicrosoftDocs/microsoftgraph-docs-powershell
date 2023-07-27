@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to relations for groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChildRelation?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -581,5 +584,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
+[New-MgGroupSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChildRelation?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[New-MgGroupSiteTermStoreGroupSetChildRelation](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteTermStoreGroupSetChildRelation?view=graph-powershell-v1.0)

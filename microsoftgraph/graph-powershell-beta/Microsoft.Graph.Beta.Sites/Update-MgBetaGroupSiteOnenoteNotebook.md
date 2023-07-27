@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property notebooks in groups
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebook?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -747,5 +750,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ParentSectionGroup <IMicrosoftGraphSectionGroup>]`: sectionGroup
 
 ## RELATED LINKS
+[Update-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebook?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgGroupSiteOnenoteNotebook](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteOnenoteNotebook?view=graph-powershell-v1.0)

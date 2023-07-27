@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property hostedContents in teamwork
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -271,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)

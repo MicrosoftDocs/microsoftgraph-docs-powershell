@@ -13,6 +13,9 @@ This API is provided for diagnostic purposes only.
 It is not intended to be used for any other purpose.
 Repeated requests to this API might result in `429` HTTP errors.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -287,3 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
+[Get-MgExternalConnectionItem](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionItem?view=graph-powershell-v1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property accessPackageAssignmentApprovals in identityGovernance
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -331,5 +334,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <String>]`: The step status. Possible values: InProgress, Initializing, Completed, Expired. Read-only.
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
+[Update-MgEntitlementManagementAccessPackageAssignmentApproval](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgEntitlementManagementAccessPackageAssignmentApproval?view=graph-powershell-v1.0)

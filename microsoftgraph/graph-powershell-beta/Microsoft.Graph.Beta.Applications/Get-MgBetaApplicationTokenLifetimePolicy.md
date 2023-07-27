@@ -11,6 +11,9 @@ schema: 2.0.0
 List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
 Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenLifetimePolicy?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ```
@@ -212,3 +215,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenLifetimePolicy?view=graph-powershell-v1.0)

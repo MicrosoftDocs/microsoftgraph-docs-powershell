@@ -12,6 +12,9 @@ The user (or application) that created the group.
 Note: This is not set if the user is an administrator.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCreatedOnBehalfOf?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -171,3 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgGroupCreatedOnBehalfOf](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupCreatedOnBehalfOf?view=graph-powershell-v1.0)

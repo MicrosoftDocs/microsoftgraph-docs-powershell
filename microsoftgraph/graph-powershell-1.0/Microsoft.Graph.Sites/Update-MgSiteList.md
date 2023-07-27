@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property lists in sites
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteList?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -15247,5 +15250,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resource <String>]`: Required. Specifies the resource that will be monitored for changes. Do not include the base URL (https://graph.microsoft.com/v1.0/). See the possible resource path values for each supported resource.
 
 ## RELATED LINKS
+[Update-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteList?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[Update-MgBetaSiteList](/powershell/module/Microsoft.Graph.Beta.Sites/Update-MgBetaSiteList?view=graph-powershell-beta)

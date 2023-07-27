@@ -11,6 +11,9 @@ schema: 2.0.0
 Get a team that has been shared with a specified channel.
 This operation is allowed only for channels with a **membershipType** value of `shared`.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -331,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
