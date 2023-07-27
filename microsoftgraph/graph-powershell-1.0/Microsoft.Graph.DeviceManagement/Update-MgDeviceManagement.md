@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.DeviceManagement-help.xml
 Module Name: Microsoft.Graph.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement/update-mgdevicemanagement
 schema: 2.0.0
@@ -38,8 +38,7 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-MobileThreatDefenseConnectors <IMicrosoftGraphMobileThreatDefenseConnector[]>]
  [-NotificationMessageTemplates <IMicrosoftGraphNotificationMessageTemplate[]>]
  [-RemoteAssistancePartners <IMicrosoftGraphRemoteAssistancePartner[]>]
- [-Reports <IMicrosoftGraphDeviceManagementReports>]
- [-ResourceOperations <IMicrosoftGraphResourceOperation[]>]
+ [-Reports <IMicrosoftGraphDeviceManagementReports>] [-ResourceOperations <IMicrosoftGraphResourceOperation[]>]
  [-RoleAssignments <IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]>]
  [-RoleDefinitions <IMicrosoftGraphRoleDefinition[]>] [-Settings <IMicrosoftGraphDeviceManagementSettings>]
  [-SoftwareUpdateStatusSummary <IMicrosoftGraphSoftwareUpdateStatusSummary>]
@@ -74,12 +73,12 @@ Update-MgDeviceManagement [-AdditionalProperties <Hashtable>]
  [-WindowsInformationProtectionAppLearningSummaries <IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]>]
  [-WindowsInformationProtectionNetworkLearningSummaries <IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]>]
  [-WindowsMalwareInformation <IMicrosoftGraphWindowsMalwareInformation[]>]
- [-WindowsMalwareOverview <IMicrosoftGraphWindowsMalwareOverview>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WindowsMalwareOverview <IMicrosoftGraphWindowsMalwareOverview>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [-Confirm] [-WhatIf]
+Update-MgDeviceManagement -BodyParameter <IMicrosoftGraphDeviceManagement> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -88,7 +87,7 @@ Update the properties of a deviceManagement object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.DeviceManagement
 ```
@@ -105,7 +104,7 @@ Update-MgDeviceManagement -BodyParameter $params
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -121,7 +120,7 @@ Apple push notification certificate.
 To construct, see NOTES section for APPLEPUSHNOTIFICATIONCERTIFICATE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphApplePushNotificationCertificate
+Type: IMicrosoftGraphApplePushNotificationCertificate
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -137,7 +136,7 @@ The Audit Events
 To construct, see NOTES section for AUDITEVENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAuditEvent[]
+Type: IMicrosoftGraphAuditEvent[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -153,7 +152,7 @@ Singleton entity that acts as a container for all device management functionalit
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement
+Type: IMicrosoftGraphDeviceManagement
 Parameter Sets: Update
 Aliases:
 
@@ -169,7 +168,7 @@ The list of Compliance Management Partners configured by the tenant.
 To construct, see NOTES section for COMPLIANCEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner[]
+Type: IMicrosoftGraphComplianceManagementPartner[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -185,7 +184,7 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 To construct, see NOTES section for CONDITIONALACCESSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
+Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -201,7 +200,7 @@ The list of detected apps associated with a device.
 To construct, see NOTES section for DETECTEDAPPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDetectedApp[]
+Type: IMicrosoftGraphDetectedApp[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -217,7 +216,7 @@ The list of device categories with the tenant.
 To construct, see NOTES section for DEVICECATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCategory[]
+Type: IMicrosoftGraphDeviceCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -233,7 +232,7 @@ The device compliance policies.
 To construct, see NOTES section for DEVICECOMPLIANCEPOLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicy[]
+Type: IMicrosoftGraphDeviceCompliancePolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -249,7 +248,7 @@ deviceCompliancePolicyDeviceStateSummary
 To construct, see NOTES section for DEVICECOMPLIANCEPOLICYDEVICESTATESUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
+Type: IMicrosoftGraphDeviceCompliancePolicyDeviceStateSummary
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -265,7 +264,7 @@ The summary states of compliance policy settings for this account.
 To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSETTINGSTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]
+Type: IMicrosoftGraphDeviceCompliancePolicySettingStateSummary[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -281,7 +280,7 @@ deviceConfigurationDeviceStateSummary
 To construct, see NOTES section for DEVICECONFIGURATIONDEVICESTATESUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfigurationDeviceStateSummary
+Type: IMicrosoftGraphDeviceConfigurationDeviceStateSummary
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -297,7 +296,7 @@ The device configurations.
 To construct, see NOTES section for DEVICECONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceConfiguration[]
+Type: IMicrosoftGraphDeviceConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -313,7 +312,7 @@ The list of device enrollment configurations
 To construct, see NOTES section for DEVICEENROLLMENTCONFIGURATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceEnrollmentConfiguration[]
+Type: IMicrosoftGraphDeviceEnrollmentConfiguration[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -329,7 +328,7 @@ The list of Device Management Partners configured by the tenant.
 To construct, see NOTES section for DEVICEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementPartner[]
+Type: IMicrosoftGraphDeviceManagementPartner[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -345,7 +344,7 @@ Hardware information of a given device.
 To construct, see NOTES section for DEVICEPROTECTIONOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceProtectionOverview
+Type: IMicrosoftGraphDeviceProtectionOverview
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -361,7 +360,7 @@ The list of Exchange Connectors configured by the tenant.
 To construct, see NOTES section for EXCHANGECONNECTORS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementExchangeConnector[]
+Type: IMicrosoftGraphDeviceManagementExchangeConnector[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -377,7 +376,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -393,7 +392,7 @@ Collection of imported Windows autopilot devices.
 To construct, see NOTES section for IMPORTEDWINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]
+Type: IMicrosoftGraphImportedWindowsAutopilotDeviceIdentity[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -408,7 +407,7 @@ Accept wildcard characters: False
 Intune Account Id for given tenant
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -424,7 +423,7 @@ intuneBrand contains data which is used in customizing the appearance of the Com
 To construct, see NOTES section for INTUNEBRAND properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIntuneBrand
+Type: IMicrosoftGraphIntuneBrand
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -440,7 +439,7 @@ The IOS software update installation statuses for this account.
 To construct, see NOTES section for IOSUPDATESTATUSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphIosUpdateDeviceStatus[]
+Type: IMicrosoftGraphIosUpdateDeviceStatus[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -456,7 +455,7 @@ Summary data for managed devices
 To construct, see NOTES section for MANAGEDDEVICEOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDeviceOverview
+Type: IMicrosoftGraphManagedDeviceOverview
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -472,7 +471,7 @@ The list of managed devices.
 To construct, see NOTES section for MANAGEDDEVICES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphManagedDevice[]
+Type: IMicrosoftGraphManagedDevice[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -488,7 +487,7 @@ The collection property of MobileAppTroubleshootingEvent.
 To construct, see NOTES section for MOBILEAPPTROUBLESHOOTINGEVENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent[]
+Type: IMicrosoftGraphMobileAppTroubleshootingEvent[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -504,7 +503,7 @@ The list of Mobile threat Defense connectors configured by the tenant.
 To construct, see NOTES section for MOBILETHREATDEFENSECONNECTORS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMobileThreatDefenseConnector[]
+Type: IMicrosoftGraphMobileThreatDefenseConnector[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -520,7 +519,7 @@ The Notification Message Templates.
 To construct, see NOTES section for NOTIFICATIONMESSAGETEMPLATES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphNotificationMessageTemplate[]
+Type: IMicrosoftGraphNotificationMessageTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -536,7 +535,7 @@ The remote assist partners.
 To construct, see NOTES section for REMOTEASSISTANCEPARTNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRemoteAssistancePartner[]
+Type: IMicrosoftGraphRemoteAssistancePartner[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -552,7 +551,7 @@ Singleton entity that acts as a container for all reports functionality.
 To construct, see NOTES section for REPORTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementReports
+Type: IMicrosoftGraphDeviceManagementReports
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -568,7 +567,7 @@ The Resource Operations.
 To construct, see NOTES section for RESOURCEOPERATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphResourceOperation[]
+Type: IMicrosoftGraphResourceOperation[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -584,7 +583,7 @@ The Role Assignments.
 To construct, see NOTES section for ROLEASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]
+Type: IMicrosoftGraphDeviceAndAppManagementRoleAssignment[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -600,7 +599,7 @@ The Role Definitions.
 To construct, see NOTES section for ROLEDEFINITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphRoleDefinition[]
+Type: IMicrosoftGraphRoleDefinition[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -616,7 +615,7 @@ deviceManagementSettings
 To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementSettings
+Type: IMicrosoftGraphDeviceManagementSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -632,7 +631,7 @@ softwareUpdateStatusSummary
 To construct, see NOTES section for SOFTWAREUPDATESTATUSSUMMARY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSoftwareUpdateStatusSummary
+Type: IMicrosoftGraphSoftwareUpdateStatusSummary
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -647,7 +646,7 @@ Accept wildcard characters: False
 Tenant mobile device management subscription state.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Support.DeviceManagementSubscriptionState
+Type: DeviceManagementSubscriptionState
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -663,7 +662,7 @@ The telecom expense management partners.
 To construct, see NOTES section for TELECOMEXPENSEMANAGEMENTPARTNERS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTelecomExpenseManagementPartner[]
+Type: IMicrosoftGraphTelecomExpenseManagementPartner[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -679,7 +678,7 @@ The terms and conditions associated with device management of the company.
 To construct, see NOTES section for TERMSANDCONDITIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphTermsAndConditions[]
+Type: IMicrosoftGraphTermsAndConditions[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -695,7 +694,7 @@ The list of troubleshooting events for the tenant.
 To construct, see NOTES section for TROUBLESHOOTINGEVENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
+Type: IMicrosoftGraphDeviceManagementTroubleshootingEvent[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -711,7 +710,7 @@ User experience analytics appHealth Application Performance
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthApplicationPerformance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -727,7 +726,7 @@ User experience analytics appHealth Application Performance by App Version detai
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYAPPVERSIONDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDetails[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -743,7 +742,7 @@ User experience analytics appHealth Application Performance by App Version Devic
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYAPPVERSIONDEVICEID properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByAppVersionDeviceId[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -759,7 +758,7 @@ User experience analytics appHealth Application Performance by OS Version
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHAPPLICATIONPERFORMANCEBYOSVERSION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthAppPerformanceByOSVersion[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -775,7 +774,7 @@ User experience analytics appHealth Model Performance
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHDEVICEMODELPERFORMANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDeviceModelPerformance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -791,7 +790,7 @@ User experience analytics appHealth Device Performance
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHDEVICEPERFORMANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -807,7 +806,7 @@ User experience analytics device performance details
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHDEVICEPERFORMANCEDETAILS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthDevicePerformanceDetails[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -823,7 +822,7 @@ User experience analytics appHealth OS version Performance
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHOSVERSIONPERFORMANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance[]
+Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -839,7 +838,7 @@ The user experience analytics category entity contains the scores and insights f
 To construct, see NOTES section for USEREXPERIENCEANALYTICSAPPHEALTHOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -855,7 +854,7 @@ User experience analytics baselines
 To construct, see NOTES section for USEREXPERIENCEANALYTICSBASELINES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsBaseline[]
+Type: IMicrosoftGraphUserExperienceAnalyticsBaseline[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -871,7 +870,7 @@ User experience analytics categories
 To construct, see NOTES section for USEREXPERIENCEANALYTICSCATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsCategory[]
+Type: IMicrosoftGraphUserExperienceAnalyticsCategory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -887,7 +886,7 @@ User experience analytics device performance
 To construct, see NOTES section for USEREXPERIENCEANALYTICSDEVICEPERFORMANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDevicePerformance[]
+Type: IMicrosoftGraphUserExperienceAnalyticsDevicePerformance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -903,7 +902,7 @@ User experience analytics device scores
 To construct, see NOTES section for USEREXPERIENCEANALYTICSDEVICESCORES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceScores[]
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceScores[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -919,7 +918,7 @@ User experience analytics device Startup History
 To construct, see NOTES section for USEREXPERIENCEANALYTICSDEVICESTARTUPHISTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory[]
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupHistory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -935,7 +934,7 @@ User experience analytics device Startup Processes
 To construct, see NOTES section for USEREXPERIENCEANALYTICSDEVICESTARTUPPROCESSES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess[]
+Type: IMicrosoftGraphUserExperienceAnalyticsDeviceStartupProcess[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -951,7 +950,7 @@ User experience analytics metric history
 To construct, see NOTES section for USEREXPERIENCEANALYTICSMETRICHISTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsMetricHistory[]
+Type: IMicrosoftGraphUserExperienceAnalyticsMetricHistory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -967,7 +966,7 @@ User experience analytics model scores
 To construct, see NOTES section for USEREXPERIENCEANALYTICSMODELSCORES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsModelScores[]
+Type: IMicrosoftGraphUserExperienceAnalyticsModelScores[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -983,7 +982,7 @@ The user experience analytics overview entity contains the overall score and the
 To construct, see NOTES section for USEREXPERIENCEANALYTICSOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsOverview
+Type: IMicrosoftGraphUserExperienceAnalyticsOverview
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -999,7 +998,7 @@ User experience analytics device Startup Score History
 To construct, see NOTES section for USEREXPERIENCEANALYTICSSCOREHISTORY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsScoreHistory[]
+Type: IMicrosoftGraphUserExperienceAnalyticsScoreHistory[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1015,7 +1014,7 @@ The user experience analytics insight is the recomendation to improve the user e
 To construct, see NOTES section for USEREXPERIENCEANALYTICSSETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsSettings
+Type: IMicrosoftGraphUserExperienceAnalyticsSettings
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1031,7 +1030,7 @@ The user experience analytics hardware readiness entity contains account level i
 To construct, see NOTES section for USEREXPERIENCEANALYTICSWORKFROMANYWHEREHARDWAREREADINESSMETRIC properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
+Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereHardwareReadinessMetric
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1047,7 +1046,7 @@ User experience analytics work from anywhere metrics.
 To construct, see NOTES section for USEREXPERIENCEANALYTICSWORKFROMANYWHEREMETRICS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric[]
+Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereMetric[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1063,7 +1062,7 @@ The user experience analytics work from anywhere model performance
 To construct, see NOTES section for USEREXPERIENCEANALYTICSWORKFROMANYWHEREMODELPERFORMANCE properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance[]
+Type: IMicrosoftGraphUserExperienceAnalyticsWorkFromAnywhereModelPerformance[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1079,7 +1078,7 @@ The Windows autopilot device identities contained collection.
 To construct, see NOTES section for WINDOWSAUTOPILOTDEVICEIDENTITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
+Type: IMicrosoftGraphWindowsAutopilotDeviceIdentity[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1095,7 +1094,7 @@ The windows information protection app learning summaries.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONAPPLEARNINGSUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]
+Type: IMicrosoftGraphWindowsInformationProtectionAppLearningSummary[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1111,7 +1110,7 @@ The windows information protection network learning summaries.
 To construct, see NOTES section for WINDOWSINFORMATIONPROTECTIONNETWORKLEARNINGSUMMARIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]
+Type: IMicrosoftGraphWindowsInformationProtectionNetworkLearningSummary[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1127,7 +1126,7 @@ The list of affected malware in the tenant.
 To construct, see NOTES section for WINDOWSMALWAREINFORMATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsMalwareInformation[]
+Type: IMicrosoftGraphWindowsMalwareInformation[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1143,7 +1142,7 @@ Windows device malware overview.
 To construct, see NOTES section for WINDOWSMALWAREOVERVIEW properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphWindowsMalwareOverview
+Type: IMicrosoftGraphWindowsMalwareOverview
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -1158,7 +1157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -1174,7 +1173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -1191,11 +1190,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDeviceManagement
-
 ## NOTES
 
 ALIASES
@@ -1323,7 +1320,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
         - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
         - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+      - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
         - `[Description <String>]`: Optional description for the device category.
@@ -1434,7 +1431,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -1459,7 +1456,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -3022,7 +3019,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3778,7 +3775,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
         - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3802,7 +3799,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -4397,9 +4394,9 @@ To create the parameters described below, construct a hash table containing the 
       - `[Value <Byte[]>]`: The byte array that contains the actual content.
     - `[DisplayName <String>]`: Company/organization name that is displayed to end users.
     - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-    - `[OnlineSupportSiteName <String>]`: Display name of the company/organization’s IT helpdesk site.
-    - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization’s IT helpdesk site.
-    - `[PrivacyUrl <String>]`: URL to the company/organization’s privacy policy.
+    - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site.
+    - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site.
+    - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy.
     - `[ShowDisplayNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
     - `[ShowLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied logo images are shown or not shown.
     - `[ShowNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
@@ -4575,7 +4572,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
       - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-      - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+      - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
       - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
       - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
     - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
@@ -4955,7 +4952,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
       - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
       - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-    - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+    - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
       - `[Description <String>]`: Optional description for the device category.
@@ -5066,7 +5063,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
         - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
         - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+        - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
         - `[ContentInfo <IMicrosoftGraphJson>]`: Json
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -5091,7 +5088,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
-            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+            - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
             - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
             - `[AlternativeText <String>]`: 
             - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -6654,7 +6651,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
           - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
       - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-      - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+      - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
       - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
       - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -7410,7 +7407,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
         - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+        - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
       - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
       - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
         - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -7434,7 +7431,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
           - `[Address <String>]`: The email address.
           - `[ItemId <String>]`: 
-          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
+          - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
           - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
         - `[Surname <String>]`: The person's surname.
         - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -8057,9 +8054,9 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Byte[]>]`: The byte array that contains the actual content.
   - `[DisplayName <String>]`: Company/organization name that is displayed to end users.
   - `[LightBackgroundLogo <IMicrosoftGraphMimeContent>]`: Contains properties for a generic mime content.
-  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization’s IT helpdesk site.
-  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization’s IT helpdesk site.
-  - `[PrivacyUrl <String>]`: URL to the company/organization’s privacy policy.
+  - `[OnlineSupportSiteName <String>]`: Display name of the company/organization's IT helpdesk site.
+  - `[OnlineSupportSiteUrl <String>]`: URL to the company/organization's IT helpdesk site.
+  - `[PrivacyUrl <String>]`: URL to the company/organization's privacy policy.
   - `[ShowDisplayNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
   - `[ShowLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied logo images are shown or not shown.
   - `[ShowNameNextToLogo <Boolean?>]`: Boolean that represents whether the administrator-supplied display name will be shown next to the logo image.
@@ -8122,7 +8119,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
     - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
     - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+  - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[Description <String>]`: Optional description for the device category.
@@ -8233,7 +8230,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
       - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
       - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
+      - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
       - `[ContentInfo <IMicrosoftGraphJson>]`: Json
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -8258,7 +8255,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[(Any) <Object>]`: This indicates any property can be added to this object.
         - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
-          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
+          - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
           - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
           - `[AlternativeText <String>]`: 
           - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -9821,7 +9818,7 @@ To create the parameters described below, construct a hash table containing the 
         - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
         - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
     - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-    - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
+    - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
     - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
     - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -10577,7 +10574,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
       - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
       - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
+      - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
     - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
     - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
       - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -10601,7 +10598,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
         - `[Address <String>]`: The email address.
         - `[ItemId <String>]`: 
-        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
+        - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
         - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
       - `[Surname <String>]`: The person's surname.
       - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -11108,7 +11105,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
     - `[AcceptedDateTime <DateTime?>]`: DateTime when the terms were last accepted by the user.
     - `[AcceptedVersion <Int32?>]`: Most recent version number of the T&C accepted by the user.
-    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies’ contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
+    - `[TermsAndConditions <IMicrosoftGraphTermsAndConditions>]`: A termsAndConditions entity represents the metadata and contents of a given Terms and Conditions (T&C) policy. T&C policies' contents are presented to users upon their first attempt to enroll into Intune and subsequently upon edits where an administrator has required re-acceptance. They enable administrators to communicate the provisions to which a user must agree in order to have devices enrolled into Intune.
     - `[UserDisplayName <String>]`: Display name of the user whose acceptance the entity represents.
     - `[UserPrincipalName <String>]`: The userPrincipalName of the User that accepted the term.
   - `[Assignments <IMicrosoftGraphTermsAndConditionsAssignment[]>]`: The list of assignments for this T&C policy.
@@ -11511,3 +11508,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

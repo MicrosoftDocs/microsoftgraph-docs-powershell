@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.Reports
 Module Guid: cd91a884-4f14-41d0-be81-f5b5db59d032
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.reports
@@ -413,7 +413,7 @@ A placeholder to allow for the desired URL path for SLA.
 ### [Get-MgBetaReportSlaAzureAdAuthentication](Get-MgBetaReportSlaAzureAdAuthentication.md)
 Read the properties and relationships of an azureADAuthentication object to find the level of Azure AD authentication availability for your tenant.
 The Azure AD Service Level Agreement (SLA) commits to at least 99.99% authentication availability, as described in Azure Active Directory SLA performance.
-This object provides you with your tenant’s actual performance against this commitment.
+This object provides you with your tenant's actual performance against this commitment.
 
 ### [Get-MgBetaReportTeamActivityCount](Get-MgBetaReportTeamActivityCount.md)
 Invoke function getTeamsTeamActivityCounts

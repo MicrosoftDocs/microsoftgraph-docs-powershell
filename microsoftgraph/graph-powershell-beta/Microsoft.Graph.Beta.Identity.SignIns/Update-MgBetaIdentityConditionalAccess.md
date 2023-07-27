@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/update-mgbetaidentityconditionalaccess
 schema: 2.0.0
@@ -19,13 +19,13 @@ Update-MgBetaIdentityConditionalAccess [-AdditionalProperties <Hashtable>]
  [-AuthenticationStrength <IMicrosoftGraphAuthenticationStrengthRoot>]
  [-AuthenticationStrengths <IMicrosoftGraphAuthenticationStrengthRoot>] [-Id <String>]
  [-NamedLocations <IMicrosoftGraphNamedLocation[]>] [-Policies <IMicrosoftGraphConditionalAccessPolicy[]>]
- [-Templates <IMicrosoftGraphConditionalAccessTemplate[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Templates <IMicrosoftGraphConditionalAccessTemplate[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAccessRoot> [-Confirm]
- [-WhatIf] [<CommonParameters>]
+Update-MgBetaIdentityConditionalAccess -BodyParameter <IMicrosoftGraphConditionalAccessRoot> [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -33,19 +33,15 @@ Update the navigation property conditionalAccess in identity
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +49,7 @@ Update the navigation property conditionalAccess in identity
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -71,7 +67,7 @@ Returns a collection of the specified authentication context class references.
 To construct, see NOTES section for AUTHENTICATIONCONTEXTCLASSREFERENCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference[]
+Type: IMicrosoftGraphAuthenticationContextClassReference[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -87,7 +83,7 @@ authenticationStrengthRoot
 To construct, see NOTES section for AUTHENTICATIONSTRENGTH properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
+Type: IMicrosoftGraphAuthenticationStrengthRoot
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -103,7 +99,7 @@ authenticationStrengthRoot
 To construct, see NOTES section for AUTHENTICATIONSTRENGTHS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationStrengthRoot
+Type: IMicrosoftGraphAuthenticationStrengthRoot
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -119,7 +115,7 @@ conditionalAccessRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
+Type: IMicrosoftGraphConditionalAccessRoot
 Parameter Sets: Update
 Aliases:
 
@@ -135,7 +131,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -153,7 +149,7 @@ Returns a collection of the specified named locations.
 To construct, see NOTES section for NAMEDLOCATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphNamedLocation[]
+Type: IMicrosoftGraphNamedLocation[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -171,7 +167,7 @@ Returns a collection of the specified Conditional Access policies.
 To construct, see NOTES section for POLICIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessPolicy[]
+Type: IMicrosoftGraphConditionalAccessPolicy[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -189,7 +185,7 @@ Returns a collection of the specified Conditional Access templates.
 To construct, see NOTES section for TEMPLATES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessTemplate[]
+Type: IMicrosoftGraphConditionalAccessTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -204,7 +200,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -220,7 +216,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -237,11 +233,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConditionalAccessRoot
-
 ## NOTES
 
 ALIASES
@@ -669,3 +663,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS
