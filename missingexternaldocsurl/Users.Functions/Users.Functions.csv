@@ -107,3 +107,5 @@ v1.0, Get-MgUserOnenoteRecentNotebook, /users/{user-id}/onenote/notebooks/getRec
 v1.0, Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles, /users/{user-id}/calendar/allowedCalendarSharingRoles(User='{User}')
 v1.0, Get-MgUserOnenoteRecentNotebook, /users/{user-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
 v1.0, Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles, /users/{user-id}/calendar/allowedCalendarSharingRoles(User='{User}')
+v1.0, Get-MgUserOnenoteRecentNotebook, /users/{user-id}/onenote/notebooks/getRecentNotebooks(includePersonalNotebooks={includePersonalNotebooks})
+v1.0, Invoke-MgCalendarUserCalendarAllowedCalendarSharingRoles, /users/{user-id}/calendar/allowedCalendarSharingRoles(User='{User}')
