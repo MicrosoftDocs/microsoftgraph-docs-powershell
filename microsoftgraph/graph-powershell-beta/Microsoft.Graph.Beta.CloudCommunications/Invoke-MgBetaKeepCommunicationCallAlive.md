@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetakeepcommunicationcallalive
 schema: 2.0.0
@@ -16,20 +16,17 @@ Make sure that these requests are successful to prevent the call from timing out
 Attempting to send a request to a call that has already ended will result in a `404 Not-Found` error.
 The resources related to the call should be cleaned up on the application side.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Keep (Default)
 ```
-Invoke-MgBetaKeepCommunicationCallAlive -CallId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaKeepCommunicationCallAlive -CallId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### KeepViaIdentity
 ```
-Invoke-MgBetaKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaKeepCommunicationCallAlive -InputObject <ICloudCommunicationsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -42,13 +39,14 @@ Attempting to send a request to a call that has already ended will result in a `
 The resources related to the call should be cleaned up on the application side.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 Invoke-MgBetaKeepCommunicationCallAlive -CallId $callId
 ```
-This example shows how to use the Invoke-MgBetaKeepCommunicationCallAlive Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -56,7 +54,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of call
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Keep
 Aliases:
 
@@ -72,7 +70,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
 Parameter Sets: KeepViaIdentity
 Aliases:
 
@@ -87,7 +85,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -102,7 +100,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -118,7 +116,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -135,9 +133,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -168,4 +168,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgKeepCommunicationCallAlive](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgKeepCommunicationCallAlive?view=graph-powershell-v1.0)
+

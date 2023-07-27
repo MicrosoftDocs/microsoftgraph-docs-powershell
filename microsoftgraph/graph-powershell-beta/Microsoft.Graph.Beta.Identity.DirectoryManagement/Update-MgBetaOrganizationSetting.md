@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetaorganizationsetting
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property settings in organization
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -23,13 +20,19 @@ Update-MgBetaOrganizationSetting -OrganizationId <String> [-AdditionalProperties
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaOrganizationSetting -OrganizationId <String> -BodyParameter <IMicrosoftGraphOrganizationSettings>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphOrganizationSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -40,17 +43,27 @@ Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdent
  [-MicrosoftApplicationDataAccess <IMicrosoftGraphMicrosoftApplicationDataAccessSettings>]
  [-PeopleInsights <IMicrosoftGraphInsightsSettings>]
  [-ProfileCardProperties <IMicrosoftGraphProfileCardProperty[]>] [-Pronouns <IMicrosoftGraphPronounsSettings>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaOrganizationSetting -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphOrganizationSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property settings in organization
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -58,7 +71,7 @@ Update the navigation property settings in organization
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -74,7 +87,7 @@ organizationSettings
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOrganizationSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationSettings
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -90,7 +103,7 @@ insightsSettings
 To construct, see NOTES section for CONTACTINSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInsightsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -122,8 +135,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -138,7 +151,7 @@ insightsSettings
 To construct, see NOTES section for ITEMINSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInsightsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -154,7 +167,7 @@ microsoftApplicationDataAccessSettings
 To construct, see NOTES section for MICROSOFTAPPLICATIONDATAACCESS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMicrosoftApplicationDataAccessSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -169,8 +182,8 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -185,7 +198,7 @@ insightsSettings
 To construct, see NOTES section for PEOPLEINSIGHTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInsightsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInsightsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -202,7 +215,7 @@ Get organization settings returns the properties configured for profile cards fo
 To construct, see NOTES section for PROFILECARDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphProfileCardProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphProfileCardProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -218,7 +231,7 @@ pronounsSettings
 To construct, see NOTES section for PRONOUNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPronounsSettings
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPronounsSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -233,7 +246,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -249,7 +262,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -266,10 +279,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOrganizationSettings
+
 ## NOTES
 
 ALIASES
@@ -346,6 +362,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -389,8 +406,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization, false otherwise. The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
-[Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgOrganizationSetting](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSetting?view=graph-powershell-v1.0)
 

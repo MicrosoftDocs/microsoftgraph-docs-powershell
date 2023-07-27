@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetariskyuser
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Users that are flagged as at-risk by Azure AD Identity Protection.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaRiskyUser [-ExpandProperty <String[]>] [-Property <String[]>] [-Filter <String>] [-Search <String>]
- [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>]
+Get-MgBetaRiskyUser [-ExpandProperty <String[]>] [-Filter <String>] [-Property <String[]>] [-Search <String>]
+ [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>] [-PageSize <Int32>]
  [<CommonParameters>]
 ```
 
@@ -30,43 +27,39 @@ Get-MgBetaRiskyUser -RiskyUserId <String> [-ExpandProperty <String[]>] [-Propert
 
 ### GetViaIdentity
 ```
-Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
- [<CommonParameters>]
+Get-MgBetaRiskyUser -InputObject <IIdentitySignInsIdentity> [-ExpandProperty <String[]>]
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Users that are flagged as at-risk by Azure AD Identity Protection.
 
 ## EXAMPLES
-### Example 1: List all risky users
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUser | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                        RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                        --------- -----------------------
 Alex Su         adminConfirmedUserCompromised     high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised     high      5/30/2022 12:44:25 AM
 Jason Mayer     userPerformedSecuredPasswordReset none      7/4/2022 4:36:44 AM
-```
 
-This command returns all risky users
-
-### Example 2: List all risky users by RiskLevel
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Connect-MgBetaGraph -Scopes "IdentityRiskyUser.Read.All"
 Select-MgBetaProfile beta
 Get-MgBetaRiskyUser -Filter "RiskLevel ne 'none'" | Format-Table UserDisplayName, RiskDetail, RiskLevel, RiskLastUpdatedDateTime
+```
 
 UserDisplayName RiskDetail                    RiskLevel RiskLastUpdatedDateTime
 --------------- ----------                    --------- -----------------------
 Alex Su         adminConfirmedUserCompromised high      5/30/2022 12:54:16 AM
 tracys          adminConfirmedUserCompromised high      5/30/2022 12:44:25 AM
-```
-
-This command retruns all risky users whose risk level is not none
-
 
 ## PARAMETERS
 
@@ -74,7 +67,7 @@ This command retruns all risky users whose risk level is not none
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -90,7 +83,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -105,7 +98,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -120,7 +113,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -136,7 +129,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -151,7 +144,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -166,7 +159,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -181,7 +174,7 @@ Accept wildcard characters: False
 The unique identifier of riskyUser
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -196,7 +189,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -211,7 +219,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -226,24 +234,9 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
 
 Required: False
 Position: Named
@@ -258,9 +251,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphRiskyUser
+
 ## NOTES
 
 ALIASES
@@ -347,4 +342,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgRiskyUser](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskyUser?view=graph-powershell-v1.0)
+

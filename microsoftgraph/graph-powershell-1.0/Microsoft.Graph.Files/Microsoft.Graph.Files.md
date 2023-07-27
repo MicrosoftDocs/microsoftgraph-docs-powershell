@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Files
-Module Guid: 4b9fd292-725f-4feb-9a66-215b9cb34778
+Module Guid: 8bf2a973-3565-4dca-abda-5415f9229f28
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.files
 Help Version: 1.0.0.0
 Locale: en-US
@@ -18,7 +18,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgShareListContentTypeCopy](Add-MgShareListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -27,7 +27,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see contentType: getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Copy-MgDriveItem](Copy-MgDriveItem.md)
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
@@ -1171,11 +1171,13 @@ To use a sharing URL with this API, your app needs to transform the URL into a s
 ### [Get-MgShareSite](Get-MgShareSite.md)
 Used to access the underlying site
 
-### [Get-MgShareSite](Get-MgShareSite.md)
-Used to access the underlying site
+### [Get-MgUserDefaultDrive](Get-MgUserDefaultDrive.md)
+Retrieve the properties and relationships of a Drive resource.
+A Drive is the top-level container for a file system, such as OneDrive or SharePoint document libraries.
 
-### [Get-MgShareSite](Get-MgShareSite.md)
-Used to access the underlying site
+### [Get-MgUserDrive](Get-MgUserDrive.md)
+A collection of drives available for this user.
+Read-only.
 
 ### [Get-MgUserDriveBundle](Get-MgUserDriveBundle.md)
 Retrieve the metadata for a [bundle][] based on the unique ID of the bundle.
@@ -1808,8 +1810,8 @@ To upload a file using an upload session, there are two steps:
 ### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
 Create new navigation property to versions for drives
 
-### [New-MgDriveRootVersion](New-MgDriveRootVersion.md)
-Create new navigation property to versions for drives
+### [New-MgGroupDrive](New-MgGroupDrive.md)
+Create new navigation property to drives for groups
 
 ### [New-MgGroupDriveBundle](New-MgGroupDriveBundle.md)
 Create new navigation property to bundles for groups
@@ -1922,8 +1924,8 @@ Create new navigation property to subscriptions for shares
 ### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
 Add new entity to shares
 
-### [New-MgShareSharedDriveItemSharedDriveItem](New-MgShareSharedDriveItemSharedDriveItem.md)
-Add new entity to shares
+### [New-MgUserDrive](New-MgUserDrive.md)
+Create new navigation property to drives for users
 
 ### [New-MgUserDriveBundle](New-MgUserDriveBundle.md)
 Create new navigation property to bundles for users
@@ -2012,8 +2014,8 @@ Publishes a [contentType][] present in the content type hub site.
 ### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
 Publishes a [contentType][] present in the content type hub site.
 
-### [Publish-MgShareListContentType](Publish-MgShareListContentType.md)
-Publishes a [contentType][] present in the content type hub site.
+### [Remove-MgDrive](Remove-MgDrive.md)
+Delete entity from drives
 
 ### [Remove-MgDriveItem](Remove-MgDriveItem.md)
 Delete a DriveItem by using its ID or path.\nNote that deleting items using this method will move the items to the recycle bin instead of permanently deleting the item.
@@ -2044,6 +2046,9 @@ Delete navigation property versions for drives
 
 ### [Remove-MgDriveItemListItemVersionField](Remove-MgDriveItemListItemVersionField.md)
 Delete navigation property fields for drives
+
+### [Remove-MgDriveItemPermanent](Remove-MgDriveItemPermanent.md)
+Invoke action permanentDelete
 
 ### [Remove-MgDriveItemPermission](Remove-MgDriveItemPermission.md)
 Remove access to a DriveItem.
@@ -2126,6 +2131,9 @@ Delete navigation property versions for drives
 
 ### [Remove-MgDriveRootListItemVersionField](Remove-MgDriveRootListItemVersionField.md)
 Delete navigation property fields for drives
+
+### [Remove-MgDriveRootPermanent](Remove-MgDriveRootPermanent.md)
+Invoke action permanentDelete
 
 ### [Remove-MgDriveRootPermission](Remove-MgDriveRootPermission.md)
 Remove access to a DriveItem.
@@ -2638,15 +2646,16 @@ Unpublish a [contentType][] from a content type hub site.
 ### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
 Unpublish a [contentType][] from a content type hub site.
 
-### [Unpublish-MgShareListContentType](Unpublish-MgShareListContentType.md)
-Unpublish a [contentType][] from a content type hub site.
+### [Update-MgDrive](Update-MgDrive.md)
+Update entity in drives
 
 ### [Update-MgDriveCreatedByUserMailboxSetting](Update-MgDriveCreatedByUserMailboxSetting.md)
 Update property mailboxSettings value.
 
 ### [Update-MgDriveItem](Update-MgDriveItem.md)
-Update the metadata for a driveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's **parentReference** property.
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgDriveItemAnalytic](Update-MgDriveItemAnalytic.md)
 Update the navigation property analytics in drives
@@ -2810,8 +2819,9 @@ Update the navigation property drives in groups
 Update property mailboxSettings value.
 
 ### [Update-MgGroupDriveItem](Update-MgGroupDriveItem.md)
-Update the metadata for a driveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's **parentReference** property.
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgGroupDriveItemAnalytic](Update-MgGroupDriveItemAnalytic.md)
 Update the navigation property analytics in groups
@@ -3038,8 +3048,9 @@ Update the navigation property drives in users
 Update property mailboxSettings value.
 
 ### [Update-MgUserDriveItem](Update-MgUserDriveItem.md)
-Update the metadata for a driveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's **parentReference** property.
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.\nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ### [Update-MgUserDriveItemAnalytic](Update-MgUserDriveItemAnalytic.md)
 Update the navigation property analytics in users

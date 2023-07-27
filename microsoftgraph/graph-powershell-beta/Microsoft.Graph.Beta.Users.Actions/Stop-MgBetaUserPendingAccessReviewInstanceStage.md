@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/stop-mgbetauserpendingaccessreviewinstancestage
 schema: 2.0.0
@@ -13,21 +13,18 @@ After the access review stage stops, the stage **status** will be `Completed` an
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgUserPendingAccessReviewInstanceStage](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserPendingAccessReviewInstanceStage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Stop (Default)
 ```
 Stop-MgBetaUserPendingAccessReviewInstanceStage -AccessReviewInstanceId <String> -AccessReviewStageId <String>
- -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### StopViaIdentity
 ```
-Stop-MgBetaUserPendingAccessReviewInstanceStage -InputObject <IUsersActionsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Stop-MgBetaUserPendingAccessReviewInstanceStage -InputObject <IUsersActionsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,13 +33,29 @@ After the access review stage stops, the stage **status** will be `Completed` an
 If there are subsequent stages that depend on the completed stage, the next stage will be created.
 The accessReviewInstanceDecisionItem objects will always reflect the last decisions recorded across all stages at that given time, regardless of the status of the stages.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceId
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -57,7 +70,7 @@ Accept wildcard characters: False
 The unique identifier of accessReviewStage
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -73,7 +86,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: StopViaIdentity
 Aliases:
 
@@ -88,7 +101,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -103,7 +116,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Stop
 Aliases:
 
@@ -118,7 +131,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -134,7 +147,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -151,9 +164,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -206,5 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgUserPendingAccessReviewInstanceStage](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserPendingAccessReviewInstanceStage?view=graph-powershell-v1.0)
 

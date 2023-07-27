@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/restore-mgbetauserpermissiongrant
 schema: 2.0.0
@@ -14,20 +14,17 @@ This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgUserPermissionGrant](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserPermissionGrant?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Restore (Default)
 ```
-Restore-MgBetaUserPermissionGrant -ResourceSpecificPermissionGrantId <String> -UserId <String> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Restore-MgBetaUserPermissionGrant -ResourceSpecificPermissionGrantId <String> -UserId <String> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
-Restore-MgBetaUserPermissionGrant -InputObject <IUsersActionsIdentity> [-WhatIf] [-Confirm]
+Restore-MgBetaUserPermissionGrant -InputObject <IUsersActionsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,6 +35,22 @@ This is not applicable to security groups, which are deleted permanently.
 A recently deleted item will remain available for up to 30 days.
 After 30 days, the item is permanently deleted.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -45,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: RestoreViaIdentity
 Aliases:
 
@@ -60,7 +73,7 @@ Accept wildcard characters: False
 The unique identifier of resourceSpecificPermissionGrant
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Restore
 Aliases:
 
@@ -75,7 +88,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Restore
 Aliases:
 
@@ -90,7 +103,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -106,7 +119,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -123,9 +136,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -178,5 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgUserPermissionGrant](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserPermissionGrant?view=graph-powershell-v1.0)
 

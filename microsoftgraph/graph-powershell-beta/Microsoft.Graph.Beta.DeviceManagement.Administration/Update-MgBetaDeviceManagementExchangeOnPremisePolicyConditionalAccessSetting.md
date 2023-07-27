@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementexchangeonpremisepolicyconditionalaccesssetting
 schema: 2.0.0
@@ -10,56 +10,69 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property conditionalAccessSettings in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
  [-AdditionalProperties <Hashtable>] [-Enabled] [-ExcludedGroups <String[]>] [-Id <String>]
- [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateExpanded
-```
-Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
- -DeviceManagementExchangeOnPremisesPolicyId <String> [-AdditionalProperties <Hashtable>] [-Enabled]
- [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
  -DeviceManagementExchangeOnPremisesPolicyId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### Update1
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
- -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Enabled]
- [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateExpanded
+```
+Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
+ -DeviceManagementExchangeOnPremisesPolicyId <String> [-AdditionalProperties <Hashtable>] [-Enabled]
+ [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
  -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update1
+### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting
- -BodyParameter <IMicrosoftGraphOnPremisesConditionalAccessSettings> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>] [-Enabled]
+ [-ExcludedGroups <String[]>] [-Id <String>] [-IncludedGroups <String[]>] [-OverrideDefaultRule] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property conditionalAccessSettings in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -67,8 +80,8 @@ Update the navigation property conditionalAccessSettings in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -83,8 +96,8 @@ Singleton entity which represents the Exchange OnPremises Conditional Access Set
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOnPremisesConditionalAccessSettings
-Parameter Sets: Update, UpdateViaIdentity, Update1
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
+Parameter Sets: Update, Update1, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -98,8 +111,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementExchangeOnPremisesPolicy
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -113,8 +126,8 @@ Accept wildcard characters: False
 Indicates if on premises conditional access is enabled for this organization
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -129,8 +142,8 @@ User groups that will be exempt by on premises conditional access.
 All users in these groups will be exempt from the conditional access policy.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -145,8 +158,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -161,8 +174,8 @@ User groups that will be targeted by on premises conditional access.
 All users in these groups will be required to have mobile device managed and compliant for mail access.
 
 ```yaml
-Type: String[]
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded
+Type: System.String[]
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -177,8 +190,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -192,8 +205,8 @@ Accept wildcard characters: False
 Override the default access rule when allowing a device to ensure access is granted.
 
 ```yaml
-Type: SwitchParameter
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -207,7 +220,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +236,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,10 +253,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesConditionalAccessSettings
+
 ## NOTES
 
 ALIASES
@@ -320,5 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Update-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementExchangeOnPremisePolicyConditionalAccessSetting?view=graph-powershell-v1.0)
 

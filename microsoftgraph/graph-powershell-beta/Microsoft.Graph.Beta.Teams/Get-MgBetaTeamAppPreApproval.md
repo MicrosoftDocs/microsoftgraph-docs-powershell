@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetateamapppreapproval
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get Preapproval policy associated with a Teams App.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamAppPreApproval?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -22,13 +19,29 @@ Get-MgBetaTeamAppPreApproval -TeamsAppId <String> [<CommonParameters>]
 ## DESCRIPTION
 Get Preapproval policy associated with a Teams App.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -TeamsAppId
 key: id of Teams App
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -47,10 +60,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamsAppPreApproval
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgTeamAppPreApproval](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamAppPreApproval?view=graph-powershell-v1.0)
 

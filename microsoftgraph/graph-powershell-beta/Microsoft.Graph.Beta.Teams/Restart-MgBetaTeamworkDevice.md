@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/restart-mgbetateamworkdevice
 schema: 2.0.0
@@ -11,19 +11,16 @@ schema: 2.0.0
 Restart the specified Microsoft Teams-enabled device asynchronously.
 A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restart-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Restart-MgTeamworkDevice?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Restart (Default)
 ```
-Restart-MgBetaTeamworkDevice -TeamworkDeviceId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Restart-MgBetaTeamworkDevice -TeamworkDeviceId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RestartViaIdentity
 ```
-Restart-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Restart-MgBetaTeamworkDevice -InputObject <ITeamsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -32,13 +29,14 @@ Restart the specified Microsoft Teams-enabled device asynchronously.
 A device is restarted after the async operation completes successfully, which might occur subsequent to a response from this API.
 
 ## EXAMPLES
-### Example 1: Using the Restart-MgBetaTeamworkDevice Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Restart-MgBetaTeamworkDevice -TeamworkDeviceId $teamworkDeviceId
 ```
-This example shows how to use the Restart-MgBetaTeamworkDevice Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -47,7 +45,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: RestartViaIdentity
 Aliases:
 
@@ -62,7 +60,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -77,7 +75,7 @@ Accept wildcard characters: False
 The unique identifier of teamworkDevice
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Restart
 Aliases:
 
@@ -92,7 +90,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -108,7 +106,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -125,9 +123,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -178,4 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Restart-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Restart-MgTeamworkDevice?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/test-mgbetadevicemanagementdevicecompliancepolicycompliancescript
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validateComplianceScript
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
 ```
 Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript [-AdditionalProperties <Hashtable>]
- [-DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>] [-WhatIf] [-Confirm]
+ [-DeviceCompliancePolicyScript <IMicrosoftGraphDeviceCompliancePolicyScript>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -26,11 +23,27 @@ Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript [-AdditionalPr
 ```
 Test-MgBetaDeviceManagementDeviceCompliancePolicyComplianceScript
  -BodyParameter <IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action validateComplianceScript
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Invoke action validateComplianceScript
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Validate
 Aliases:
 
@@ -70,7 +83,7 @@ deviceCompliancePolicyScript
 To construct, see NOTES section for DEVICECOMPLIANCEPOLICYSCRIPT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyScript
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyScript
 Parameter Sets: ValidateExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -101,7 +114,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -118,9 +131,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsV2Sh76DevicemanagementDevicecompliancepoliciesMicrosoftGraphValidatecompliancescriptPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceComplianceScriptValidationResult
+
 ## NOTES
 
 ALIASES
@@ -143,5 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RulesContent <Byte[]>]`: Json of the rules.
 
 ## RELATED LINKS
-[Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementDeviceCompliancePolicyComplianceScript?view=graph-powershell-v1.0)
 

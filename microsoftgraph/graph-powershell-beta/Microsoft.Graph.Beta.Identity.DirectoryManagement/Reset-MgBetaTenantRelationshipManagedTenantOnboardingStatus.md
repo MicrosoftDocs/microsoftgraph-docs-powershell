@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/reset-mgbetatenantrelationshipmanagedtenantonboardingstatus
 schema: 2.0.0
@@ -11,26 +11,39 @@ schema: 2.0.0
 Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action.
 By invoking this action the platform will attempt to onboard the managed tenant for management.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Reset-MgTenantRelationshipManagedTenantOnboardingStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Reset-MgTenantRelationshipManagedTenantOnboardingStatus?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reset (Default)
 ```
-Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -TenantId <String> [-WhatIf] [-Confirm]
+Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -TenantId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### ResetViaIdentity
 ```
-Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus -InputObject <IIdentityDirectoryManagementIdentity>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Reset-MgBetaTenantRelationshipManagedTenantOnboardingStatus
+ -InputObject <IIdentityDirectoryManagementIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Carries out the appropriate procedures to reset the onboarding status for the managed tenant that was removed from the multi-tenant management platform using the offboardTenant action.
 By invoking this action the platform will attempt to onboard the managed tenant for management.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -39,7 +52,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: ResetViaIdentity
 Aliases:
 
@@ -54,7 +67,7 @@ Accept wildcard characters: False
 The unique identifier of tenant
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reset
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -85,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -102,9 +115,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphManagedTenantsTenant
+
 ## NOTES
 
 ALIASES
@@ -147,6 +162,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -158,5 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Reset-MgTenantRelationshipManagedTenantOnboardingStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Reset-MgTenantRelationshipManagedTenantOnboardingStatus?view=graph-powershell-v1.0)
 

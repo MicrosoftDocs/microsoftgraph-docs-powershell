@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: 4e239402-3ab0-41d8-86ea-0e6aaa552fad
+Module Guid: eb83f9bc-f525-40cb-a752-5441df9ed321
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -196,7 +196,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocation](Get-MgBetaIdentityConditionalAccessNamedLocation.md)
-Retrieve the properties and relationships of an ipNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocationCount](Get-MgBetaIdentityConditionalAccessNamedLocationCount.md)
 Get the number of the resource
@@ -217,7 +217,8 @@ Get the number of the resource
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtension](Get-MgBetaIdentityCustomAuthenticationExtension.md)
-Read the properties and relationships of a customAuthenticationExtension object.
+Read the properties and relationships of an authenticationEventListener object.
+The **@odata.type** property in the response object indicates the type of the authenticationEventListener object.
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtensionCount](Get-MgBetaIdentityCustomAuthenticationExtensionCount.md)
 Get the number of the resource
@@ -308,6 +309,13 @@ Settings for the primary mailbox of the signed-in user.
 You can get or update settings for sending automatic replies to incoming messages, locale, and time zone.
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
+
+### [Get-MgBetaInvitationInvitedUserSponsor](Get-MgBetaInvitationInvitedUserSponsor.md)
+The users or groups who are sponsors of the invited user.
+Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
+
+### [Get-MgBetaInvitationInvitedUserSponsorCount](Get-MgBetaInvitationInvitedUserSponsorCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaOauth2PermissionGrant](Get-MgBetaOauth2PermissionGrant.md)
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
@@ -609,7 +617,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaRiskDetection](Get-MgBetaRiskDetection.md)
-Retrieve the properties of a collection of **riskDetection** objects.
+Retrieve the properties of a **riskDetection** object.
 
 ### [Get-MgBetaRiskDetectionCount](Get-MgBetaRiskDetectionCount.md)
 Get the number of the resource
@@ -665,20 +673,20 @@ Get media content for the navigation property policies from trustFramework
 ### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
 Get the number of the resource
 
-### [Get-MgBetaTrustFrameworkPolicyCount](Get-MgBetaTrustFrameworkPolicyCount.md)
-Get the number of the resource
+### [Get-MgBetaUserAuthenticationEmailMethod](Get-MgBetaUserAuthenticationEmailMethod.md)
+Retrieve a user's single email Authentication Method object.
 
 ### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationEmailMethodCount](Get-MgBetaUserAuthenticationEmailMethodCount.md)
-Get the number of the resource
+### [Get-MgBetaUserAuthenticationFido2Method](Get-MgBetaUserAuthenticationFido2Method.md)
+Retrieve a user's single FIDO2 Security Key Authentication Method object.
 
 ### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationFido2MethodCount](Get-MgBetaUserAuthenticationFido2MethodCount.md)
-Get the number of the resource
+### [Get-MgBetaUserAuthenticationMethod](Get-MgBetaUserAuthenticationMethod.md)
+Retrieve the properties and relationships of an authenticationMethod object.
 
 ### [Get-MgBetaUserAuthenticationMethodCount](Get-MgBetaUserAuthenticationMethodCount.md)
 Get the number of the resource
@@ -711,20 +719,21 @@ Get the number of the resource
 ### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
 Get device from users
 
-### [Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice](Get-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethodDevice.md)
-Get device from users
+### [Get-MgBetaUserAuthenticationPasswordMethod](Get-MgBetaUserAuthenticationPasswordMethod.md)
+Retrieve the properties and relationships of a password authentication method object.
 
 ### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationPasswordMethodCount](Get-MgBetaUserAuthenticationPasswordMethodCount.md)
-Get the number of the resource
+### [Get-MgBetaUserAuthenticationPhoneMethod](Get-MgBetaUserAuthenticationPhoneMethod.md)
+Retrieve a single phoneAuthenticationMethod object.
+This method is available only for standard Azure AD and B2B users, but not B2C users.
 
 ### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserAuthenticationPhoneMethodCount](Get-MgBetaUserAuthenticationPhoneMethodCount.md)
-Get the number of the resource
+### [Get-MgBetaUserAuthenticationSoftwareOathMethod](Get-MgBetaUserAuthenticationSoftwareOathMethod.md)
+Retrieve a user's single Software OATH token authentication method object and its properties.
 
 ### [Get-MgBetaUserAuthenticationSoftwareOathMethodCount](Get-MgBetaUserAuthenticationSoftwareOathMethodCount.md)
 Get the number of the resource
@@ -1103,8 +1112,13 @@ Create new navigation property to methods for users
 ### [New-MgBetaUserAuthenticationOperation](New-MgBetaUserAuthenticationOperation.md)
 Create new navigation property to operations for users
 
-### [New-MgBetaUserAuthenticationOperation](New-MgBetaUserAuthenticationOperation.md)
-Create new navigation property to operations for users
+### [New-MgBetaUserAuthenticationPhoneMethod](New-MgBetaUserAuthenticationPhoneMethod.md)
+Add a new phone authentication method.
+A user may only have one phone of each type, captured in the **phoneType** property.
+This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
+Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
 ### [New-MgBetaUserAuthenticationTemporaryAccessPassMethod](New-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
@@ -1204,7 +1218,7 @@ Delete navigation property policies for identity
 Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
 
 ### [Remove-MgBetaIdentityConditionalAccessNamedLocation](Remove-MgBetaIdentityConditionalAccessNamedLocation.md)
-Delete a namedLocation object.
+Delete an ipNamedLocation object.
 
 ### [Remove-MgBetaIdentityConditionalAccessPolicy](Remove-MgBetaIdentityConditionalAccessPolicy.md)
 Delete a conditionalAccessPolicy object.
@@ -1419,8 +1433,12 @@ Delete navigation property operations for users
 ### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
 Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
 
-### [Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod](Remove-MgBetaUserAuthenticationPasswordlessMicrosoftAuthenticatorMethod.md)
-Deletes a user's Microsoft Authenticator Passwordless Phone Sign-in method object.
+### [Remove-MgBetaUserAuthenticationPhoneMethod](Remove-MgBetaUserAuthenticationPhoneMethod.md)
+Delete a user's phone authentication method.
+Remember that a user cannot have an `alternateMobile` number without a `mobile` number.
+If you want to remove a `mobile` number from a user that also has an `alternateMobile` number, first update the `mobile` number to the new number, then delete the `alternateMobile` number.
+If the phone number is the user's default Azure multi-factor authentication (MFA) authentication method, it cannot be deleted.
+Have the user change their default authentication method, and then delete the number.
 
 ### [Remove-MgBetaUserAuthenticationSoftwareOathMethod](Remove-MgBetaUserAuthenticationSoftwareOathMethod.md)
 Delete a user's Software OATH token authentication method object.
@@ -1695,7 +1713,7 @@ Update the default configuration of a cross-tenant access policy.
 Update the properties of a partner-specific configuration.
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Create a cross-tenant user synchronization policy for a partner-specific configuration.
+Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.
@@ -1803,8 +1821,11 @@ Update the navigation property methods in users
 ### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
 Update the navigation property operations in users
 
-### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
-Update the navigation property operations in users
+### [Update-MgBetaUserAuthenticationPhoneMethod](Update-MgBetaUserAuthenticationPhoneMethod.md)
+Update the phone number associated with a phone authentication method.
+You can't change a phone's type.
+To change a phone's type, add a new number of the desired type and then delete the object with the original type.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
 
 ### [Update-MgBetaUserInformationProtection](Update-MgBetaUserInformationProtection.md)
 Update the navigation property informationProtection in users

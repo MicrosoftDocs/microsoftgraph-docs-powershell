@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventsessionregistrationregistrant
 schema: 2.0.0
@@ -10,40 +10,53 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property registrants in solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventSessionRegistrationRegistrant](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionRegistrationRegistrant?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaVirtualEventSessionRegistrationRegistrant -MeetingRegistrantBaseId <String>
  -VirtualEventId <String> -VirtualEventSessionId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-JoinWebUrl <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-JoinWebUrl <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventSessionRegistrationRegistrant -MeetingRegistrantBaseId <String>
- -VirtualEventId <String> -VirtualEventSessionId <String> -BodyParameter <IMicrosoftGraphMeetingRegistrantBase>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaVirtualEventSessionRegistrationRegistrant -InputObject <IBookingsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-JoinWebUrl <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -VirtualEventId <String> -VirtualEventSessionId <String>
+ -BodyParameter <IMicrosoftGraphMeetingRegistrantBase> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaVirtualEventSessionRegistrationRegistrant -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingRegistrantBase> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistrantBase> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaVirtualEventSessionRegistrationRegistrant -InputObject <IBookingsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-JoinWebUrl <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property registrants in solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +64,7 @@ Update the navigation property registrants in solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +80,7 @@ meetingRegistrantBase
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingRegistrantBase
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrantBase
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +96,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -115,7 +128,7 @@ A unique web URL for the registrant to join the meeting.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of meetingRegistrantBase
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -145,8 +158,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEvent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -160,8 +173,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventSession
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -175,7 +188,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -191,7 +204,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -208,10 +221,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrantBase
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrantBase
+
 ## NOTES
 
 ALIASES
@@ -249,5 +265,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Update-MgVirtualEventSessionRegistrationRegistrant](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionRegistrationRegistrant?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/start-mgbetaeducationsynchronizationprofile
 schema: 2.0.0
@@ -14,20 +14,17 @@ Otherwise, the response will contain errors and warnings.
 If the response contains errors, the synchronization will not start.
 If the response contains only warnings, synchronization will start.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Start (Default)
 ```
-Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String> [-WhatIf] [-Confirm]
+Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### StartViaIdentity
 ```
-Start-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-WhatIf] [-Confirm]
+Start-MgBetaEducationSynchronizationProfile -InputObject <IEducationIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -39,13 +36,14 @@ If the response contains errors, the synchronization will not start.
 If the response contains only warnings, synchronization will start.
 
 ## EXAMPLES
-### Example 1: Using the Start-MgBetaEducationSynchronizationProfile Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Start-MgBetaEducationSynchronizationProfile -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-This example shows how to use the Start-MgBetaEducationSynchronizationProfile Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -53,7 +51,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Start
 Aliases:
 
@@ -69,7 +67,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: StartViaIdentity
 Aliases:
 
@@ -84,7 +82,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -100,7 +98,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -117,9 +115,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationFileSynchronizationVerificationMessage
+
 ## NOTES
 
 ALIASES
@@ -145,4 +145,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
+

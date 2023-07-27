@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetadirectorysubscription
 schema: 2.0.0
@@ -10,43 +10,58 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property subscriptions in directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySubscription?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDirectorySubscription -CompanySubscriptionId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>]
- [-OcpSubscriptionId <String>] [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>]
- [-SkuPartNumber <String>] [-Status <String>] [-TotalLicenses <Int32>] [-WhatIf] [-Confirm]
+ [-CommerceSubscriptionId <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial]
+ [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>] [-OwnerId <String>]
+ [-OwnerTenantId <String>] [-OwnerType <String>] [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]
+ [-SkuId <String>] [-SkuPartNumber <String>] [-Status <String>] [-TotalLicenses <Int32>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDirectorySubscription -CompanySubscriptionId <String>
- -BodyParameter <IMicrosoftGraphCompanySubscription> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial]
- [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>]
- [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
- [-Status <String>] [-TotalLicenses <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCompanySubscription> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphCompanySubscription> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCompanySubscription> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-CommerceSubscriptionId <String>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>]
+ [-OwnerId <String>] [-OwnerTenantId <String>] [-OwnerType <String>]
+ [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
+ [-Status <String>] [-TotalLicenses <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -54,7 +69,7 @@ Update the navigation property subscriptions in directory
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +85,7 @@ companySubscription
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCompanySubscription
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanySubscription
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,12 +96,28 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -CommerceSubscriptionId
+The ID of this subscription in the commerce system.
+Alternate key.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -CompanySubscriptionId
 The unique identifier of companySubscription
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -97,10 +128,12 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time when this subscription was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,7 +149,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -132,8 +165,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -144,10 +177,10 @@ Accept wildcard characters: False
 ```
 
 ### -IsTrial
-.
+Whether the subscription is a free trial or purchased.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,10 +192,12 @@ Accept wildcard characters: False
 ```
 
 ### -NextLifecycleDateTime
-.
+The date and time when the subscription will move to the next state (as defined by the status property) if not renewed by the tenant.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +212,52 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerId
+The object ID of the account admin.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerTenantId
+The unique identifier for the Microsoft partner tenant that created the subscription on a customer tenant.
+
+```yaml
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerType
+Indicates the entity that ownerId belongs to, for example, 'User'.
+
+```yaml
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -189,11 +269,11 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceStatus
-.
+The provisioning status of each service that's included in this subscription.
 To construct, see NOTES section for SERVICESTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphServicePlanInfo[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphServicePlanInfo[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,10 +285,10 @@ Accept wildcard characters: False
 ```
 
 ### -SkuId
-.
+The object ID of the SKU associated with this subscription.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,10 +300,10 @@ Accept wildcard characters: False
 ```
 
 ### -SkuPartNumber
-.
+The SKU associated with this subscription.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,10 +315,11 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-.
+The status of this subscription.
+Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,10 +331,10 @@ Accept wildcard characters: False
 ```
 
 ### -TotalLicenses
-.
+The number of seats included in this subscription.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -268,7 +349,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +365,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,10 +382,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanySubscription
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCompanySubscription
+
 ## NOTES
 
 ALIASES
@@ -317,19 +401,23 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphCompanySubscription>`: companySubscription
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[IsTrial <Boolean?>]`: 
-  - `[NextLifecycleDateTime <DateTime?>]`: 
+  - `[CommerceSubscriptionId <String>]`: The ID of this subscription in the commerce system. Alternate key.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when this subscription was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[IsTrial <Boolean?>]`: Whether the subscription is a free trial or purchased.
+  - `[NextLifecycleDateTime <DateTime?>]`: The date and time when the subscription will move to the next state (as defined by the status property) if not renewed by the tenant. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[OcpSubscriptionId <String>]`: 
-  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]`: 
+  - `[OwnerId <String>]`: The object ID of the account admin.
+  - `[OwnerTenantId <String>]`: The unique identifier for the Microsoft partner tenant that created the subscription on a customer tenant.
+  - `[OwnerType <String>]`: Indicates the entity that ownerId belongs to, for example, 'User'.
+  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]`: The provisioning status of each service that's included in this subscription.
     - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
     - `[ServicePlanId <String>]`: The unique identifier of the service plan.
     - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: 
-  - `[SkuPartNumber <String>]`: 
-  - `[Status <String>]`: 
-  - `[TotalLicenses <Int32?>]`: 
+  - `[SkuId <String>]`: The object ID of the SKU associated with this subscription.
+  - `[SkuPartNumber <String>]`: The SKU associated with this subscription.
+  - `[Status <String>]`: The status of this subscription. Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
+  - `[TotalLicenses <Int32?>]`: The number of seats included in this subscription.
 
 `INPUTOBJECT <IIdentityDirectoryManagementIdentity>`: Identity Parameter
   - `[AdministrativeUnitId <String>]`: The unique identifier of administrativeUnit
@@ -364,6 +452,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -374,12 +463,11 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsageRightId <String>]`: The unique identifier of usageRight
   - `[UserId <String>]`: The unique identifier of user
 
-`SERVICESTATUS <IMicrosoftGraphServicePlanInfo[]>`: .
+`SERVICESTATUS <IMicrosoftGraphServicePlanInfo[]>`: The provisioning status of each service that's included in this subscription.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
   - `[ServicePlanId <String>]`: The unique identifier of the service plan.
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
-[Update-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectorySubscription?view=graph-powershell-v1.0)
 

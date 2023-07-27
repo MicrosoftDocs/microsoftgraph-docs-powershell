@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Search-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Search
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.search/new-mgbetaexternalindustrydataconnector
 schema: 2.0.0
@@ -8,28 +8,41 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create a new industryDataConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
+Create a new azureDataLakeConnector object.
 
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaExternalIndustryDataConnector [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
- [-Id <String>] [-SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>] [-WhatIf] [-Confirm]
+ [-Id <String>] [-SourceSystem <IMicrosoftGraphIndustryDataSourceSystemDefinition>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryDataConnector> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryDataConnector> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -37,7 +50,7 @@ Create a new industryDataConnector object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -53,7 +66,7 @@ industryDataConnector
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataConnector
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataConnector
 Parameter Sets: Create
 Aliases:
 
@@ -69,7 +82,7 @@ The name of the data connector.
 Maximum supported length is 100 characters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -85,7 +98,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ sourceSystemDefinition
 To construct, see NOTES section for SOURCESYSTEM properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIndustryDataSourceSystemDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataSourceSystemDefinition
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -116,7 +129,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -132,7 +145,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -149,9 +162,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataConnector
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIndustryDataConnector
+
 ## NOTES
 
 ALIASES
@@ -224,5 +239,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
 ## RELATED LINKS
-[New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
 

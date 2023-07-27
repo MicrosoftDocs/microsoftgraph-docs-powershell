@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: a12a4472-b9a4-4fa0-8a1c-ae41c0bf72f5
+Module Guid: 4e0064d5-79c0-4275-9ec1-031a560f74a8
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,7 +12,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
-Retrieve the properties and relationships of user object.
+Read properties and relationships of the user object.
 
 ### [Get-MgUserCount](Get-MgUserCount.md)
 Get the number of the resource
@@ -96,15 +96,6 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.director
 ### [Get-MgUserMemberOfAsGroup](Get-MgUserMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
-### [Get-MgUserManagerByRef](Get-MgUserManagerByRef.md)
-The user or contact that is this user's manager.
-Read-only.
-(HTTP Methods: GET, PUT, DELETE.).
-Supports $expand.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
 ### [Get-MgUserMemberOfCount](Get-MgUserMemberOfCount.md)
 Get the number of the resource
 
@@ -123,14 +114,17 @@ Get oauth2PermissionGrants from users
 ### [Get-MgUserOauth2PermissionGrantCount](Get-MgUserOauth2PermissionGrantCount.md)
 Get the number of the resource
 
-### [Get-MgUserOauth2PermissionGrantCount](Get-MgUserOauth2PermissionGrantCount.md)
-Get the number of the resource
+### [Get-MgUserOutlookMasterCategory](Get-MgUserOutlookMasterCategory.md)
+Get the properties and relationships of the specified outlookCategory object.
 
 ### [Get-MgUserOutlookMasterCategoryCount](Get-MgUserOutlookMasterCategoryCount.md)
 Get the number of the resource
 
-### [Get-MgUserOutlookMasterCategoryCount](Get-MgUserOutlookMasterCategoryCount.md)
-Get the number of the resource
+### [Get-MgUserOwnedDevice](Get-MgUserOwnedDevice.md)
+Devices that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand and $filter (/$count eq 0, /$count ne 0, /$count eq 1, /$count ne 1).
 
 ### [Get-MgUserOwnedDeviceAsAppRoleAssignment](Get-MgUserOwnedDeviceAsAppRoleAssignment.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
@@ -153,8 +147,11 @@ Get the number of the resource
 ### [Get-MgUserOwnedDeviceCountAsEndpoint](Get-MgUserOwnedDeviceCountAsEndpoint.md)
 Get the number of the resource
 
-### [Get-MgUserOwnedDeviceCountAsEndpoint](Get-MgUserOwnedDeviceCountAsEndpoint.md)
-Get the number of the resource
+### [Get-MgUserOwnedObject](Get-MgUserOwnedObject.md)
+Directory objects that are owned by the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserOwnedObjectAsApplication](Get-MgUserOwnedObjectAsApplication.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.application
@@ -189,8 +186,11 @@ Get media content for the navigation property photo from users
 ### [Get-MgUserPhotoCount](Get-MgUserPhotoCount.md)
 Get the number of the resource
 
-### [Get-MgUserPhotoCount](Get-MgUserPhotoCount.md)
-Get the number of the resource
+### [Get-MgUserRegisteredDevice](Get-MgUserRegisteredDevice.md)
+Devices that are registered for the user.
+Read-only.
+Nullable.
+Supports $expand.
 
 ### [Get-MgUserRegisteredDeviceAsAppRoleAssignment](Get-MgUserRegisteredDeviceAsAppRoleAssignment.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.appRoleAssignment
@@ -219,8 +219,8 @@ Read the user and organization userSettings object.\nTo learn how to update the 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 Retrieve the properties and relationships of a shiftPreferences object by ID.
 
-### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
-Retrieve the properties and relationships of a shiftPreferences object by ID.
+### [Get-MgUserTodoList](Get-MgUserTodoList.md)
+Read the properties and relationships of a todoTaskList object.
 
 ### [Get-MgUserTodoListCount](Get-MgUserTodoListCount.md)
 Get the number of the resource
@@ -301,66 +301,41 @@ Get the number of the resource
 Get the number of the resource
 
 ### [New-MgUser](New-MgUser.md)
-Create a new user.\nThe request body contains the user to create.
-At a minimum, you must specify the required properties for the user.
-You can optionally specify any other writable properties.
+Create a new user object.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
+### [New-MgUserOutlookMasterCategory](New-MgUserOutlookMasterCategory.md)
+Create an outlookCategory object in the user's master list of categories.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
-### [New-MgUserExtension](New-MgUserExtension.md)
-The collection of open extensions defined for the user.
-Read-only.
-Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
+### [New-MgUserTodoList](New-MgUserTodoList.md)
+Create a new lists object.
 
 ### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
 Create new navigation property to extensions for users
 
-### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
-Create new navigation property to extensions for users
+### [New-MgUserTodoListTask](New-MgUserTodoListTask.md)
+Create a new task object in a specified todoTaskList.
 
-### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
-Create new navigation property to extensions for users
+### [New-MgUserTodoListTaskAttachment](New-MgUserTodoListTaskAttachment.md)
+Add a new taskFileAttachment object to a todoTask.
+This operation limits the size of the attachment you can add to under 3 MB.
+If the size of the file attachments is more than 3 MB, create an upload session to upload the attachments.
 
-### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
-Create new navigation property to extensions for users
-
-### [New-MgUserTodoListTaskExtension](New-MgUserTodoListTaskExtension.md)
-Create new navigation property to extensions for users
+### [New-MgUserTodoListTaskChecklistItem](New-MgUserTodoListTaskChecklistItem.md)
+Create a new checklistItem object.
 
 ### [New-MgUserTodoListTaskExtension](New-MgUserTodoListTaskExtension.md)
 Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
-A collection of resources linked to the task.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTransitiveMemberOfByRef?view=graph-powershell-beta)
+Create a linkedResource object to associate a specified task with an item in a partner application.
+For example, you can associate a task with an email item in Outlook that spurred the task, and you can create a **linkedResource** object to track its association.
+You can also create a **linkedResource** object while creating a task.
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 Delete navigation property extensions for users
@@ -374,8 +349,8 @@ Remove a user's manager.
 ### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
 Remove a user's manager.
 
-### [Remove-MgUserManagerByRef](Remove-MgUserManagerByRef.md)
-Remove a user's manager.
+### [Remove-MgUserOutlookMasterCategory](Remove-MgUserOutlookMasterCategory.md)
+Delete the specified outlookCategory object.
 
 ### [Remove-MgUserPhoto](Remove-MgUserPhoto.md)
 Delete navigation property photo for users
@@ -386,29 +361,29 @@ Delete navigation property settings for users
 ### [Remove-MgUserSettingShiftPreference](Remove-MgUserSettingShiftPreference.md)
 Delete navigation property shiftPreferences for users
 
-### [Remove-MgUserSettingShiftPreference](Remove-MgUserSettingShiftPreference.md)
-Delete navigation property shiftPreferences for users
+### [Remove-MgUserTodoList](Remove-MgUserTodoList.md)
+Deletes a todoTaskList object.
 
 ### [Remove-MgUserTodoListExtension](Remove-MgUserTodoListExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgUserTodoListExtension](Remove-MgUserTodoListExtension.md)
-Delete navigation property extensions for users
+### [Remove-MgUserTodoListTask](Remove-MgUserTodoListTask.md)
+Deletes a todoTask object.
 
-### [Remove-MgUserTodoListExtension](Remove-MgUserTodoListExtension.md)
-Delete navigation property extensions for users
+### [Remove-MgUserTodoListTaskAttachment](Remove-MgUserTodoListTaskAttachment.md)
+Delete a taskFileAttachment object from a todoTask resource.
 
 ### [Remove-MgUserTodoListTaskAttachmentSession](Remove-MgUserTodoListTaskAttachmentSession.md)
 Delete navigation property attachmentSessions for users
 
-### [Remove-MgUserTodoListTaskAttachmentSession](Remove-MgUserTodoListTaskAttachmentSession.md)
-Delete navigation property attachmentSessions for users
+### [Remove-MgUserTodoListTaskChecklistItem](Remove-MgUserTodoListTaskChecklistItem.md)
+Delete a checklistItem object.
 
 ### [Remove-MgUserTodoListTaskExtension](Remove-MgUserTodoListTaskExtension.md)
 Delete navigation property extensions for users
 
-### [Remove-MgUserTodoListTaskExtension](Remove-MgUserTodoListTaskExtension.md)
-Delete navigation property extensions for users
+### [Remove-MgUserTodoListTaskLinkedResource](Remove-MgUserTodoListTaskLinkedResource.md)
+Deletes a linkedResource object.
 
 ### [Set-MgUserManagerByRef](Set-MgUserManagerByRef.md)
 Assign a user's manager.
@@ -424,8 +399,6 @@ The content streams that are uploaded.
 
 ### [Update-MgUser](Update-MgUser.md)
 Update the properties of a user object.
-Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
-Compare member and guest default permissions to see properties they can manage.
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 Update the navigation property extensions in users
@@ -436,8 +409,9 @@ Update the navigation property licenseDetails in users
 ### [Update-MgUserMailboxSetting](Update-MgUserMailboxSetting.md)
 Update property mailboxSettings value.
 
-### [Update-MgUserMailboxSetting](Update-MgUserMailboxSetting.md)
-Update property mailboxSettings value.
+### [Update-MgUserOutlookMasterCategory](Update-MgUserOutlookMasterCategory.md)
+Update the writable property, **color**, of the specified outlookCategory object.
+You cannot modify the **displayName** property \nonce you have created the category.
 
 ### [Update-MgUserPhoto](Update-MgUserPhoto.md)
 Update the navigation property photo in users
@@ -450,24 +424,24 @@ Update the properties of the userSettings object.
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 Update the properties and relationships of a shiftPreferences object.
 
-### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
-Update the properties and relationships of a shiftPreferences object.
+### [Update-MgUserTodoList](Update-MgUserTodoList.md)
+Update the properties of a todoTaskList object.
 
 ### [Update-MgUserTodoListExtension](Update-MgUserTodoListExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgUserTodoListExtension](Update-MgUserTodoListExtension.md)
-Update the navigation property extensions in users
+### [Update-MgUserTodoListTask](Update-MgUserTodoListTask.md)
+Update the properties of a todoTask object.
 
 ### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
 Update the navigation property attachmentSessions in users
 
-### [Update-MgUserTodoListTaskAttachmentSession](Update-MgUserTodoListTaskAttachmentSession.md)
-Update the navigation property attachmentSessions in users
+### [Update-MgUserTodoListTaskChecklistItem](Update-MgUserTodoListTaskChecklistItem.md)
+Update the properties of a checklistItem object.
 
 ### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
 Update the navigation property extensions in users
 
-### [Update-MgUserTodoListTaskExtension](Update-MgUserTodoListTaskExtension.md)
-Update the navigation property extensions in users
+### [Update-MgUserTodoListTaskLinkedResource](Update-MgUserTodoListTaskLinkedResource.md)
+Update the properties of a linkedResource object.
 

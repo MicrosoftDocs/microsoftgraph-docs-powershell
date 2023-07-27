@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgidentitygovernanceaccessreviewhistorydefinitioninstancedownloaduri
 schema: 2.0.0
@@ -12,22 +12,19 @@ Generates a URI for an accessReviewHistoryInstance object the **status** for whi
 Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Generate (Default)
 ```
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
- -AccessReviewHistoryDefinitionId <String> -AccessReviewHistoryInstanceId <String> [-WhatIf] [-Confirm]
+ -AccessReviewHistoryDefinitionId <String> -AccessReviewHistoryInstanceId <String> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### GenerateViaIdentity
 ```
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri
- -InputObject <IIdentityGovernanceIdentity> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -36,13 +33,14 @@ Each URI can be used to retrieve the instance's review history data.
 Each URI is valid for 24 hours and can be retrieved by fetching the **downloadUri** property from the accessReviewHistoryInstance object.
 
 ## EXAMPLES
-### Example 1: Using the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
 New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId -AccessReviewHistoryInstanceId $accessReviewHistoryInstanceId
 ```
-This example shows how to use the New-MgIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -50,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of accessReviewHistoryDefinition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Generate
 Aliases:
 
@@ -65,7 +63,7 @@ Accept wildcard characters: False
 The unique identifier of accessReviewHistoryInstance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Generate
 Aliases:
 
@@ -81,7 +79,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: GenerateViaIdentity
 Aliases:
 
@@ -96,7 +94,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +110,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessReviewHistoryInstance
+
 ## NOTES
 
 ALIASES
@@ -206,4 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/New-MgBetaIdentityGovernanceAccessReviewHistoryDefinitionInstanceDownloadUri?view=graph-powershell-beta)
+

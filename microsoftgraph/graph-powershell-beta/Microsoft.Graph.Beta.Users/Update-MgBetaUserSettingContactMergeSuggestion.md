@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetausersettingcontactmergesuggestion
 schema: 2.0.0
@@ -10,40 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a contactMergeSuggestions object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSettingContactMergeSuggestion](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingContactMergeSuggestion?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaUserSettingContactMergeSuggestion -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Id <String>] [-IsEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-IsEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserSettingContactMergeSuggestion -UserId <String>
- -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabled] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
- -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContactMergeSuggestions> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaUserSettingContactMergeSuggestion -InputObject <IUsersIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-IsEnabled] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a contactMergeSuggestions object.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -52,8 +50,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserSettingContactMergeSuggestion -UserId $userId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserSettingContactMergeSuggestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -61,7 +59,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +75,7 @@ contactMergeSuggestions
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactMergeSuggestions
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactMergeSuggestions
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -93,7 +91,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -109,8 +107,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -125,7 +123,7 @@ true if the duplicate contact merge suggestions feature is enabled for the user;
 Default value is true.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +138,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -155,7 +153,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -171,7 +169,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -188,10 +186,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactMergeSuggestions
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContactMergeSuggestions
+
 ## NOTES
 
 ALIASES
@@ -231,4 +232,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserSettingContactMergeSuggestion](/powershell/module/Microsoft.Graph.Users/Update-MgUserSettingContactMergeSuggestion?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementcompliancesetting
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Update the navigation property complianceSettings in deviceManagement
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementComplianceSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComplianceSetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -26,20 +23,27 @@ Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSet
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementComplianceSetting -DeviceManagementConfigurationSettingDefinitionId <String>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity> [-AccessTypes <String>]
- [-AdditionalProperties <Hashtable>]
+Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
+ [-AccessTypes <String>] [-AdditionalProperties <Hashtable>]
  [-Applicability <IMicrosoftGraphDeviceManagementConfigurationSettingApplicability>] [-BaseUri <String>]
  [-CategoryId <String>] [-Description <String>] [-DisplayName <String>] [-HelpText <String>] [-Id <String>]
  [-InfoUrls <String[]>] [-Keywords <String[]>] [-Name <String>]
@@ -47,18 +51,27 @@ Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementId
  [-ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]
  [-RootDefinitionId <String>] [-SettingUsage <DeviceManagementConfigurationSettingUsage>]
  [-UxBehavior <DeviceManagementConfigurationControlType>] [-Version <String>]
- [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementComplianceSetting -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceManagementConfigurationSettingDefinition> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-Visibility <DeviceManagementConfigurationSettingVisibility>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property complianceSettings in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -66,7 +79,7 @@ Update the navigation property complianceSettings in deviceManagement
 deviceManagementConfigurationSettingAccessTypes
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +94,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +110,7 @@ deviceManagementConfigurationSettingApplicability
 To construct, see NOTES section for APPLICABILITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingApplicability
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingApplicability
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +125,7 @@ Accept wildcard characters: False
 Base CSP Path
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,7 +141,7 @@ deviceManagementConfigurationSettingDefinition
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -140,10 +153,11 @@ Accept wildcard characters: False
 ```
 
 ### -CategoryId
-Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
+Specify category in which the setting is under.
+Support $filters.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -155,10 +169,10 @@ Accept wildcard characters: False
 ```
 
 ### -Description
-Description of the item
+Description of the setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +187,8 @@ Accept wildcard characters: False
 The unique identifier of deviceManagementConfigurationSettingDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -185,10 +199,11 @@ Accept wildcard characters: False
 ```
 
 ### -DisplayName
-Display name of the item
+Name of the setting.
+For example: Allow Toast.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,10 +215,11 @@ Accept wildcard characters: False
 ```
 
 ### -HelpText
-Help text of the item
+Help text of the setting.
+Give more details of the setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -219,7 +235,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,10 +247,10 @@ Accept wildcard characters: False
 ```
 
 ### -InfoUrls
-List of links more info for the setting can be found at
+List of links more info for the setting can be found at.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,8 +266,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -265,7 +281,7 @@ Accept wildcard characters: False
 Tokens which to search settings on
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -280,7 +296,7 @@ Accept wildcard characters: False
 Name of the item
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -296,7 +312,7 @@ deviceManagementConfigurationSettingOccurrence
 To construct, see NOTES section for OCCURRENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -311,7 +327,7 @@ Accept wildcard characters: False
 Offset CSP Path from Base
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -327,7 +343,7 @@ List of referred setting information.
 To construct, see NOTES section for REFERREDSETTINGINFORMATIONLIST properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -339,10 +355,10 @@ Accept wildcard characters: False
 ```
 
 ### -RootDefinitionId
-Root setting definition if the setting is a child setting.
+Root setting definition id if the setting is a child setting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -357,7 +373,7 @@ Accept wildcard characters: False
 Supported setting types
 
 ```yaml
-Type: DeviceManagementConfigurationSettingUsage
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationSettingUsage
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -372,7 +388,7 @@ Accept wildcard characters: False
 Setting control type representation in the UX
 
 ```yaml
-Type: DeviceManagementConfigurationControlType
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationControlType
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -387,7 +403,7 @@ Accept wildcard characters: False
 Item Version
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -402,7 +418,7 @@ Accept wildcard characters: False
 Supported setting types
 
 ```yaml
-Type: DeviceManagementConfigurationSettingVisibility
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementConfigurationSettingVisibility
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -417,7 +433,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -433,7 +449,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -450,10 +466,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementConfigurationSettingDefinition
+
 ## NOTES
 
 ALIASES
@@ -481,11 +500,11 @@ To create the parameters described below, construct a hash table containing the 
     - `[Platform <DeviceManagementConfigurationPlatforms?>]`: Supported platform types.
     - `[Technologies <DeviceManagementConfigurationTechnologies?>]`: Describes which technology this setting can be deployed with
   - `[BaseUri <String>]`: Base CSP Path
-  - `[CategoryId <String>]`: Specifies the area group under which the setting is configured in a specified configuration service provider (CSP)
-  - `[Description <String>]`: Description of the item
-  - `[DisplayName <String>]`: Display name of the item
-  - `[HelpText <String>]`: Help text of the item
-  - `[InfoUrls <String[]>]`: List of links more info for the setting can be found at
+  - `[CategoryId <String>]`: Specify category in which the setting is under. Support $filters.
+  - `[Description <String>]`: Description of the setting.
+  - `[DisplayName <String>]`: Name of the setting. For example: Allow Toast.
+  - `[HelpText <String>]`: Help text of the setting. Give more details of the setting.
+  - `[InfoUrls <String[]>]`: List of links more info for the setting can be found at.
   - `[Keywords <String[]>]`: Tokens which to search settings on
   - `[Name <String>]`: Name of the item
   - `[Occurrence <IMicrosoftGraphDeviceManagementConfigurationSettingOccurrence>]`: deviceManagementConfigurationSettingOccurrence
@@ -495,7 +514,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OffsetUri <String>]`: Offset CSP Path from Base
   - `[ReferredSettingInformationList <IMicrosoftGraphDeviceManagementConfigurationReferredSettingInformation[]>]`: List of referred setting information.
     - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
-  - `[RootDefinitionId <String>]`: Root setting definition if the setting is a child setting.
+  - `[RootDefinitionId <String>]`: Root setting definition id if the setting is a child setting.
   - `[SettingUsage <DeviceManagementConfigurationSettingUsage?>]`: Supported setting types
   - `[UxBehavior <DeviceManagementConfigurationControlType?>]`: Setting control type representation in the UX
   - `[Version <String>]`: Item Version
@@ -649,8 +668,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SettingDefinitionId <String>]`: Setting definition id that is being referred to a setting. Applicable for reusable setting
 
 ## RELATED LINKS
-[Update-MgDeviceManagementComplianceSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComplianceSetting?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementComplianceSetting](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComplianceSetting?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmonitoring
 schema: 2.0.0
@@ -10,27 +10,40 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property monitoring in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMonitoring [-AdditionalProperties <Hashtable>]
  [-AlertRecords <IMicrosoftGraphDeviceManagementAlertRecord[]>]
- [-AlertRules <IMicrosoftGraphDeviceManagementAlertRule[]>] [-Id <String>] [-WhatIf] [-Confirm]
+ [-AlertRules <IMicrosoftGraphDeviceManagementAlertRule[]>] [-Id <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceManagementMonitoring> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Update-MgBetaDeviceManagementMonitoring -BodyParameter <IMicrosoftGraphDeviceManagementMonitoring> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property monitoring in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -38,7 +51,7 @@ Update the navigation property monitoring in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -54,7 +67,7 @@ The collection of records of alert events.
 To construct, see NOTES section for ALERTRECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementAlertRecord[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRecord[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ The collection of alert rules.
 To construct, see NOTES section for ALERTRULES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementAlertRule[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementAlertRule[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +99,7 @@ monitoring
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementMonitoring
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
 Parameter Sets: Update
 Aliases:
 
@@ -102,7 +115,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -117,7 +130,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -133,7 +146,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -150,9 +163,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementMonitoring
+
 ## NOTES
 
 ALIASES
@@ -235,5 +250,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[Target <Int32?>]`: The target threshold value.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementMonitoring](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMonitoring?view=graph-powershell-v1.0)
 

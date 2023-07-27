@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaprivilegedroleassignmentrequest
 schema: 2.0.0
@@ -10,31 +10,29 @@ schema: 2.0.0
 ## SYNOPSIS
 Add new entity to privilegedRoleAssignmentRequests
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaPrivilegedRoleAssignmentRequest [-AdditionalProperties <Hashtable>] [-AssignmentState <String>]
  [-Duration <String>] [-Id <String>] [-Reason <String>] [-RequestedDateTime <DateTime>] [-RoleId <String>]
- [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-Schedule <IMicrosoftGraphGovernanceSchedule>] [-Status <String>]
- [-TicketNumber <String>] [-TicketSystem <String>] [-Type <String>] [-UserId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-RoleInfo <IMicrosoftGraphPrivilegedRole>] [-Schedule <IMicrosoftGraphGovernanceSchedule>]
+ [-Status <String>] [-TicketNumber <String>] [-TicketSystem <String>] [-Type <String>] [-UserId <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter <IMicrosoftGraphPrivilegedRoleAssignmentRequest>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Add new entity to privilegedRoleAssignmentRequests
 
 ## EXAMPLES
-### Example 1: Using the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
 $params = @{
@@ -51,8 +49,8 @@ $params = @{
 }
 New-MgBetaPrivilegedRoleAssignmentRequest -BodyParameter $params
 ```
-This example shows how to use the New-MgBetaPrivilegedRoleAssignmentRequest Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -60,7 +58,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -75,7 +73,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -91,7 +89,7 @@ privilegedRoleAssignmentRequest
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRoleAssignmentRequest
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest
 Parameter Sets: Create
 Aliases:
 
@@ -106,7 +104,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -122,7 +120,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -137,7 +135,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -152,7 +150,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -167,7 +165,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -183,7 +181,7 @@ privilegedRole
 To construct, see NOTES section for ROLEINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPrivilegedRole
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRole
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -199,7 +197,7 @@ governanceSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGovernanceSchedule
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGovernanceSchedule
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -214,7 +212,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -229,7 +227,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -244,7 +242,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -259,7 +257,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -274,7 +272,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -289,7 +287,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -305,7 +303,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -322,9 +320,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrivilegedRoleAssignmentRequest
+
 ## NOTES
 
 ALIASES
@@ -429,4 +429,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: The role assignment schedule type. Only Once is supported for now.
 
 ## RELATED LINKS
-[New-MgPrivilegedRoleAssignmentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedRoleAssignmentRequest?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetaacceptuserpendingaccessreviewinstancerecommendation
 schema: 2.0.0
@@ -12,21 +12,18 @@ Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem
 Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Accept (Default)
 ```
 Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation -AccessReviewInstanceId <String>
- -UserId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -UserId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation -InputObject <IUsersActionsIdentity>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -35,14 +32,15 @@ Recommendations are generated if **recommendationsEnabled** is `true` on the acc
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 # A UPN can also be used as -UserId.
 Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation -UserId $userId -AccessReviewInstanceId $accessReviewInstanceId
 ```
-This example shows how to use the Invoke-MgBetaAcceptUserPendingAccessReviewInstanceRecommendation Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -50,7 +48,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of accessReviewInstance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Accept
 Aliases:
 
@@ -66,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
 Parameter Sets: AcceptViaIdentity
 Aliases:
 
@@ -81,7 +79,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -96,7 +94,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Accept
 Aliases:
 
@@ -111,7 +109,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -127,7 +125,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -144,9 +142,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -199,4 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserPendingAccessReviewInstanceRecommendation?view=graph-powershell-v1.0)
+

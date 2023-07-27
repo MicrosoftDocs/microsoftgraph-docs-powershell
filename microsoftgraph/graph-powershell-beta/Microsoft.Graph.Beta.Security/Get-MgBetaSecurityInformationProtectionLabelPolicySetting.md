@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/get-mgbetasecurityinformationprotectionlabelpolicysetting
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of an informationProtectionPolicySetting object.
 The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -25,13 +22,29 @@ Get-MgBetaSecurityInformationProtectionLabelPolicySetting [-ExpandProperty <Stri
 Read the properties and relationships of an informationProtectionPolicySetting object.
 The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -ExpandProperty
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -46,7 +59,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -65,10 +78,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityInformationProtectionPolicySetting
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
-[Get-MgSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
 

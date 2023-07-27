@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/revoke-mgbetadeviceappmanagementvpptokenlicense
 schema: 2.0.0
@@ -10,40 +10,53 @@ schema: 2.0.0
 ## SYNOPSIS
 Revoke licenses associated with a specific appleVolumePurchaseProgramToken
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Revoke-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Revoke-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RevokeExpanded (Default)
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String> [-AdditionalProperties <Hashtable>]
- [-NotifyManagedDevices] [-RevokeUntrackedLicenses] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-NotifyManagedDevices] [-RevokeUntrackedLicenses] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Revoke
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -VppTokenId <String>
  -BodyParameter <IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RevokeViaIdentityExpanded
-```
-Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices] [-RevokeUntrackedLicenses] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RevokeViaIdentity
 ```
 Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
  -BodyParameter <IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RevokeViaIdentityExpanded
+```
+Revoke-MgBetaDeviceAppManagementVppTokenLicense -InputObject <IDevicesCorporateManagementIdentity>
+ [-AdditionalProperties <Hashtable>] [-NotifyManagedDevices] [-RevokeUntrackedLicenses] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Revoke licenses associated with a specific appleVolumePurchaseProgramToken
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +64,7 @@ Revoke licenses associated with a specific appleVolumePurchaseProgramToken
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Revoke, RevokeViaIdentity
 Aliases:
 
@@ -83,8 +96,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: RevokeViaIdentityExpanded, RevokeViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: RevokeViaIdentity, RevokeViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -98,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -113,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -128,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: RevokeExpanded, RevokeViaIdentityExpanded
 Aliases:
 
@@ -143,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of vppToken
 
 ```yaml
-Type: String
-Parameter Sets: RevokeExpanded, Revoke
+Type: System.String
+Parameter Sets: Revoke, RevokeExpanded
 Aliases:
 
 Required: True
@@ -158,7 +171,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -174,7 +187,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -191,10 +204,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1C1UpkDeviceappmanagementVpptokensVpptokenIdMicrosoftGraphRevokelicensesPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -278,5 +294,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Revoke-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Revoke-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
 
