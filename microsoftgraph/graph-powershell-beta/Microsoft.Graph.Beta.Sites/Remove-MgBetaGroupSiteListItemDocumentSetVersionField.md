@@ -31,18 +31,6 @@ Remove-MgBetaGroupSiteListItemDocumentSetVersionField -InputObject <ISitesIdenti
 ## DESCRIPTION
 Delete navigation property fields for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DocumentSetVersionId
@@ -266,3 +254,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSiteListItemDocumentSetVersionField](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteListItemDocumentSetVersionField?view=graph-powershell-v1.0)
+

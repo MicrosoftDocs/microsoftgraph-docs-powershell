@@ -88,22 +88,6 @@ Update-MgBetaFinancialCompanySaleQuoteLine -InputObject <IFinancialsIdentity>
 ## DESCRIPTION
 Update the navigation property salesQuoteLines in financials
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Account
@@ -739,3 +723,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnitPrice <Decimal?>]`: 
 
 ## RELATED LINKS
+

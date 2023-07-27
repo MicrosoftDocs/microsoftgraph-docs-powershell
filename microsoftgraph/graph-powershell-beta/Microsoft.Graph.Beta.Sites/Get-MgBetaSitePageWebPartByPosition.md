@@ -43,18 +43,6 @@ Get-MgBetaSitePageWebPartByPosition -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Invoke action getWebPartsByPosition
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -303,4 +291,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagewebpartbyposition](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitepagewebpartbyposition)
+
 

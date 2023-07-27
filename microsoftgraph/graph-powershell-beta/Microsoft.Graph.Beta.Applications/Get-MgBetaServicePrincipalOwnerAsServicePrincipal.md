@@ -37,18 +37,6 @@ Get-MgBetaServicePrincipalOwnerAsServicePrincipal -InputObject <IApplicationsIde
 ## DESCRIPTION
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.servicePrincipal
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -315,3 +303,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgServicePrincipalOwnerAsServicePrincipal](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalOwnerAsServicePrincipal?view=graph-powershell-v1.0)
+

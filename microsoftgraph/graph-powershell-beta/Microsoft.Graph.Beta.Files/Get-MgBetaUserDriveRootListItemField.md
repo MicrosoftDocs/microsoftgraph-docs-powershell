@@ -30,22 +30,6 @@ Get-MgBetaUserDriveRootListItemField -InputObject <IFilesIdentity> [-ExpandPrope
 ## DESCRIPTION
 The values of the columns set on this list item.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -170,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Get-MgUserDriveRootListItemField?view=graph-powershell-v1.0)
+

@@ -34,22 +34,6 @@ Get-MgBetaDeviceManagementTemplateMigratableTo -InputObject <IDeviceManagementId
 ## DESCRIPTION
 Collection of templates this template can migrate to
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -409,3 +393,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

@@ -37,18 +37,6 @@ New-MgBetaRoleManagementDirectoryRoleAssignmentScheduleInstance
 ## DESCRIPTION
 Create new navigation property to roleAssignmentScheduleInstances for roleManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActivatedUsing
@@ -523,3 +511,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleAssignmentScheduleInstance?view=graph-powershell-v1.0)
+

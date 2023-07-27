@@ -49,18 +49,6 @@ Update-MgBetaUserMailboxSetting -InputObject <IUsersIdentity> -BodyParameter <IM
 ## DESCRIPTION
 Update property mailboxSettings value.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -414,3 +402,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserMailboxSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserMailboxSetting?view=graph-powershell-v1.0)
+

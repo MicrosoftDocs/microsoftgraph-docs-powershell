@@ -31,18 +31,6 @@ Set-MgBetaUserChatMessageReplyHostedContent -InputObject <ITeamsIdentity> [-Data
 ## DESCRIPTION
 Update media content for the navigation property hostedContents in users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChatId
@@ -275,3 +263,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgUserChatMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/Set-MgUserChatMessageReplyHostedContent?view=graph-powershell-v1.0)
+

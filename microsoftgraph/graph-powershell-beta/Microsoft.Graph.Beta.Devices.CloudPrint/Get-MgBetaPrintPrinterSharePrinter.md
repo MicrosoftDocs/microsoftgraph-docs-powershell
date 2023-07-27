@@ -27,22 +27,6 @@ Get-MgBetaPrintPrinterSharePrinter -InputObject <IDevicesCloudPrintIdentity> [-E
 ## DESCRIPTION
 The printer that this printer share is related to.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -140,3 +124,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

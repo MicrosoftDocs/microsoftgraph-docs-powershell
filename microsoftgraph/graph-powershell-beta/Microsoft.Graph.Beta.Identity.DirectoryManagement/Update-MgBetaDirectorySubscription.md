@@ -45,18 +45,6 @@ Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIde
 ## DESCRIPTION
 Update the navigation property subscriptions in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -400,3 +388,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
+

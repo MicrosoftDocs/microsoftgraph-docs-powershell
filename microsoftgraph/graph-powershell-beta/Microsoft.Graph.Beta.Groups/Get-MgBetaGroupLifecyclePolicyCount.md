@@ -22,18 +22,6 @@ Get-MgBetaGroupLifecyclePolicyCount [-Filter <String>] [-Search <String>] [<Comm
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupLifecyclePolicyCount](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupLifecyclePolicyCount?view=graph-powershell-v1.0)
+

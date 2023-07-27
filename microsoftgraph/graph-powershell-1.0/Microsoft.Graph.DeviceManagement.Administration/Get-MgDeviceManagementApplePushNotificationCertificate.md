@@ -23,22 +23,6 @@ Get-MgDeviceManagementApplePushNotificationCertificate [-ExpandProperty <String[
 ## DESCRIPTION
 Apple push notification certificate.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -85,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementApplePushNotificationCertificate](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementApplePushNotificationCertificate?view=graph-powershell-beta)
+

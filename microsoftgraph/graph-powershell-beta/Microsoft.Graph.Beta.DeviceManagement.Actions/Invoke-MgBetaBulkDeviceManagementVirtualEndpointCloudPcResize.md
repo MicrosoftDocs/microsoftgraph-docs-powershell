@@ -32,18 +32,6 @@ Perform a bulk resize action to resize a group of cloudPCs that have successfull
 If any devices cannot be resized, those devices will indicate 'resize failed'.
 The remaining devices will be `provisioned` for the resize process.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -162,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetServicePlanId <String>]`: 
 
 ## RELATED LINKS
+

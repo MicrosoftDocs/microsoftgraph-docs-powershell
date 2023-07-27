@@ -30,22 +30,6 @@ Remove-MgBetaApplicationSynchronizationTemplate -InputObject <IApplicationsIdent
 ## DESCRIPTION
 Delete navigation property templates for applications
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -206,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgApplicationSynchronizationTemplate](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationSynchronizationTemplate?view=graph-powershell-v1.0)
+

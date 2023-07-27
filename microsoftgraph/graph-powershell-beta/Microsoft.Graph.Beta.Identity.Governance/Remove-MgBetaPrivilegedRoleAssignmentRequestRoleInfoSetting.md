@@ -27,22 +27,6 @@ Remove-MgBetaPrivilegedRoleAssignmentRequestRoleInfoSetting -InputObject <IIdent
 ## DESCRIPTION
 Delete navigation property settings for privilegedRoleAssignmentRequests
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -254,3 +238,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+

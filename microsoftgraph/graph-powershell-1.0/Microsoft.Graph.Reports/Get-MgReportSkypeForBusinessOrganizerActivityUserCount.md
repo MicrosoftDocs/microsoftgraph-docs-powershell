@@ -30,22 +30,6 @@ Get-MgReportSkypeForBusinessOrganizerActivityUserCount -InputObject <IReportsIde
 ## DESCRIPTION
 Invoke function getSkypeForBusinessOrganizerActivityUserCounts
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -151,3 +135,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaReportSkypeForBusinessOrganizerActivityUserCount](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportSkypeForBusinessOrganizerActivityUserCount?view=graph-powershell-beta)
+

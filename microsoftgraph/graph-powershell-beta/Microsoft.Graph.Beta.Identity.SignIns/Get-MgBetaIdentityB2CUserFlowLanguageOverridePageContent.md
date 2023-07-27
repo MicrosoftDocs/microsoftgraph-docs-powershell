@@ -28,22 +28,6 @@ Get-MgBetaIdentityB2CUserFlowLanguageOverridePageContent -InputObject <IIdentity
 ## DESCRIPTION
 Get media content for the navigation property overridesPages from identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -B2CIdentityUserFlowId
@@ -232,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+

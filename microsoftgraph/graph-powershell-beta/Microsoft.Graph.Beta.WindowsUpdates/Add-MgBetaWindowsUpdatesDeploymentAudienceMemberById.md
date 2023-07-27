@@ -45,22 +45,6 @@ Add-MgBetaWindowsUpdatesDeploymentAudienceMemberById -InputObject <IWindowsUpdat
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -251,3 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

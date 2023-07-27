@@ -29,18 +29,6 @@ Update-MgBetaAdminEdge -BodyParameter <IMicrosoftGraphEdge> [-WhatIf] [-Confirm]
 ## DESCRIPTION
 Update the navigation property edge in admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -291,3 +279,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgAdminEdge](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgAdminEdge?view=graph-powershell-v1.0)
+

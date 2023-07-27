@@ -63,22 +63,6 @@ New-MgBetaDriveListContentTypeColumn -InputObject <IFilesIdentity>
 ## DESCRIPTION
 Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -1143,3 +1127,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDriveListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/New-MgDriveListContentTypeColumn?view=graph-powershell-v1.0)
+

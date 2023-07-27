@@ -31,22 +31,6 @@ New-MgBetaDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ActiveDevices
@@ -272,3 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model's maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
+

@@ -41,18 +41,6 @@ New-MgBetaSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity>
 ## DESCRIPTION
 Create a horizontalSection object in a given sitePage.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -324,4 +312,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/new-mgbetasitepagecanvalayouthorizontalsection)
+
 

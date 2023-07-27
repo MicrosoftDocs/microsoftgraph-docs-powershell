@@ -29,18 +29,6 @@ Update-MgBetaDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapp
 ## DESCRIPTION
 Update the navigation property crossCloudGovernmentOrganizationMapping in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -161,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OrganizationIdsInUsGovCloud <String[]>]`: The tenant ID in the Azure Government cloud corresponding to the GCC tenant in the public cloud. Currently, 1:1 mappings are supported, so this collection can only contain one tenant ID.
 
 ## RELATED LINKS
+

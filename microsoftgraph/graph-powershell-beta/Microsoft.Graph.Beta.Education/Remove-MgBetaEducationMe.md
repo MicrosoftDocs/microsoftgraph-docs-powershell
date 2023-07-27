@@ -22,22 +22,6 @@ Remove-MgBetaEducationMe [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm] [<
 ## DESCRIPTION
 Delete navigation property me for education
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -115,3 +99,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgEducationMe](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMe?view=graph-powershell-v1.0)
+

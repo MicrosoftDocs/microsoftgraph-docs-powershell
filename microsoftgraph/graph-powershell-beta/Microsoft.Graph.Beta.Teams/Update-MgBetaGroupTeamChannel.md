@@ -54,22 +54,6 @@ Update-MgBetaGroupTeamChannel -InputObject <ITeamsIdentity> -BodyParameter <IMic
 ## DESCRIPTION
 Update the properties of the specified channel.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -14616,3 +14600,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupTeamChannel](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannel?view=graph-powershell-v1.0)
+

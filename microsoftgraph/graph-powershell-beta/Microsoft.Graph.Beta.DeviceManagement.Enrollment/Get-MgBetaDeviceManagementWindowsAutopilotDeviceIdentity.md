@@ -37,18 +37,6 @@ Get-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMa
 ## DESCRIPTION
 The Windows autopilot device identities contained collection.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -280,3 +268,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-v1.0)
+

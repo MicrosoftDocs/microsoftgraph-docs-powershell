@@ -43,18 +43,6 @@ Get-MgBetaBusinessScenarioPlannerPlan -InputObject <IBookingsIdentity>
 Get information about the plannerPlan mapped to a given target.
 If a **plannerPlan** doesn't exist for the specified target at the time of the request, a new plan will be created for the businessScenario.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -218,3 +206,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TaskTargetKind <String>]`: plannerTaskTargetKind
 
 ## RELATED LINKS
+

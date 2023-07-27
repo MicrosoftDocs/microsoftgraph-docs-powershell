@@ -28,22 +28,6 @@ The collection of pages in the section.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -241,3 +225,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgGroupOnenoteSectionPage](/powershell/module/Microsoft.Graph.Notes/Get-MgGroupOnenoteSectionPage?view=graph-powershell-v1.0)
+

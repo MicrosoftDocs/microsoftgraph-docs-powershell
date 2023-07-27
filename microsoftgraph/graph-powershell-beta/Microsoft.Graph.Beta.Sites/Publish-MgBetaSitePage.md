@@ -26,22 +26,6 @@ Publish-MgBetaSitePage -InputObject <ISitesIdentity> [-PassThru] [-WhatIf] [-Con
 ## DESCRIPTION
 Invoke action publish
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -206,4 +190,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitepage](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/publish-mgbetasitepage)
+
 

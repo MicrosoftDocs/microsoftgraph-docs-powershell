@@ -19,22 +19,6 @@ Disconnect-MgBetaDeviceManagementZebraFotaConnector [-WhatIf] [-Confirm] [<Commo
 ## DESCRIPTION
 Invoke action disconnect
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Confirm
@@ -81,3 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

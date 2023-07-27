@@ -30,18 +30,6 @@ Get-MgBetaGroupSiteTermStoreSetTermRelationSet -InputObject <ISitesIdentity> [-E
 ## DESCRIPTION
 The [set] in which the relation is relevant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -234,3 +222,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteTermStoreSetTermRelationSet](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetTermRelationSet?view=graph-powershell-v1.0)
+

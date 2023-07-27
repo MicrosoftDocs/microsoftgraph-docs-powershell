@@ -34,18 +34,6 @@ Get-MgBetaBusinessScenarioPlannerTask -InputObject <IBookingsIdentity> [-ExpandP
 ## DESCRIPTION
 Read the properties and relationships of a businessScenarioTask object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -286,3 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

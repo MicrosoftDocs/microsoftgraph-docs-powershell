@@ -27,18 +27,6 @@ Get-MgBetaUserSecurityInformationProtection -InputObject <ISecurityIdentity> [-E
 ## DESCRIPTION
 Get informationProtection from users
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -193,3 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

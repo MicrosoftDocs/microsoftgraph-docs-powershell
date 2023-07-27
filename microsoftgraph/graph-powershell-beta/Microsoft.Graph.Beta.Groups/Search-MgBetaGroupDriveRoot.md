@@ -31,22 +31,6 @@ Search-MgBetaGroupDriveRoot -InputObject <IGroupsIdentity> [-Count] [-Filter <St
 ## DESCRIPTION
 Invoke function search
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -277,3 +261,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Search-MgGroupDriveRoot](/powershell/module/Microsoft.Graph.Groups/Search-MgGroupDriveRoot?view=graph-powershell-v1.0)
+

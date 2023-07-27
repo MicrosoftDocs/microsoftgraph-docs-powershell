@@ -23,22 +23,6 @@ Remove-MgBetaDeviceManagementUserExperienceAnalyticOverview [-IfMatch <String>] 
 ## DESCRIPTION
 Delete navigation property userExperienceAnalyticsOverview for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -116,3 +100,4 @@ ALIASES
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementUserExperienceAnalyticOverview](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticOverview?view=graph-powershell-v1.0)
+

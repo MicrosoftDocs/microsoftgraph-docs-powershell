@@ -29,22 +29,6 @@ Update-MgBetaCompliance -BodyParameter <IMicrosoftGraphCompliance> [-WhatIf] [-C
 ## DESCRIPTION
 Update compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9822,3 +9806,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-v1.0)
+

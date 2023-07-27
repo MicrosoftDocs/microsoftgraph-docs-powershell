@@ -27,18 +27,6 @@ Remove-MgBetaSitePageCanvaLayoutHorizontalSection -InputObject <ISitesIdentity> 
 ## DESCRIPTION
 Delete navigation property horizontalSections for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -HorizontalSectionId
@@ -233,4 +221,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepagecanvalayouthorizontalsection](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitepagecanvalayouthorizontalsection)
+
 

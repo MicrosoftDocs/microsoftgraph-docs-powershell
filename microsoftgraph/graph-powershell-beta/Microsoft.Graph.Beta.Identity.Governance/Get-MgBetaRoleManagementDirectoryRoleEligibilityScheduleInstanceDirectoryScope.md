@@ -34,18 +34,6 @@ Get-MgBetaRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -227,3 +215,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleEligibilityScheduleInstanceDirectoryScope?view=graph-powershell-v1.0)
+

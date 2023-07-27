@@ -30,22 +30,6 @@ Remove-MgBetaGroupSetting -InputObject <IGroupsIdentity> [-IfMatch <String>] [-P
 ## DESCRIPTION
 Delete navigation property settings for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DirectorySettingId
@@ -217,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgGroupSetting](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroupSetting?view=graph-powershell-v1.0)
+

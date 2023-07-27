@@ -28,22 +28,6 @@ Update-MgCompliance -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonPara
 ## DESCRIPTION
 Update compliance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -122,3 +106,4 @@ ALIASES
 
 ## RELATED LINKS
 [Update-MgBetaCompliance](/powershell/module/Microsoft.Graph.Beta.Compliance/Update-MgBetaCompliance?view=graph-powershell-beta)
+

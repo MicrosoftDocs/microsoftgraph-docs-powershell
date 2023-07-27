@@ -44,22 +44,6 @@ Get-MgBetaReportOffice365ActiveUserDetail -InputObject <IReportsIdentity> [-Coun
 ## DESCRIPTION
 Invoke function getOffice365ActiveUserDetail
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -263,3 +247,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgReportOffice365ActiveUserDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportOffice365ActiveUserDetail?view=graph-powershell-v1.0)
+

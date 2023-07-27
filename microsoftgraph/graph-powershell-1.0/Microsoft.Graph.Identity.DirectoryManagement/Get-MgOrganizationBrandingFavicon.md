@@ -29,18 +29,6 @@ Get-MgOrganizationBrandingFavicon -InputObject <IIdentityDirectoryManagementIden
 ## DESCRIPTION
 Get favicon for the navigation property branding from organization
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -InputObject
@@ -148,3 +136,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaOrganizationBrandingFavicon](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaOrganizationBrandingFavicon?view=graph-powershell-beta)
+

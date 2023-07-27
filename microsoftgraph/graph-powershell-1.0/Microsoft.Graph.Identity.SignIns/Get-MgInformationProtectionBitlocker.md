@@ -22,22 +22,6 @@ Get-MgInformationProtectionBitlocker [-ExpandProperty <String[]>] [-Property <St
 ## DESCRIPTION
 Get bitlocker from informationProtection
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaInformationProtectionBitlocker](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionBitlocker?view=graph-powershell-beta)
+

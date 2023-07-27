@@ -36,18 +36,6 @@ Get-MgBetaGroupSitePageCanvaLayoutHorizontalSectionColumn -InputObject <ISitesId
 ## DESCRIPTION
 Read the properties and relationships of a horizontalSectionColumn object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -362,4 +350,5 @@ INPUTOBJECT \<ISitesIdentity\>: Identity Parameter
 ## RELATED LINKS
 
 [https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagecanvalayouthorizontalsectioncolumn](https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetagroupsitepagecanvalayouthorizontalsectioncolumn)
+
 

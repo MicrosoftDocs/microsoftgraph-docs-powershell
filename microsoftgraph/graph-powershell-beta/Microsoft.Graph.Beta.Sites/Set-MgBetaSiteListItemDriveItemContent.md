@@ -30,22 +30,6 @@ Set-MgBetaSiteListItemDriveItemContent -InputObject <ISitesIdentity> [-Data <Str
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Data
@@ -242,3 +226,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Set-MgSiteListItemDriveItemContent](/powershell/module/Microsoft.Graph.Sites/Set-MgSiteListItemDriveItemContent?view=graph-powershell-v1.0)
+

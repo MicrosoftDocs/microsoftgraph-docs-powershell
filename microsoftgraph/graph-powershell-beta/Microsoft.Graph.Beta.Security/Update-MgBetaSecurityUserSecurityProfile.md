@@ -45,22 +45,6 @@ Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
 ## DESCRIPTION
 Update the navigation property userSecurityProfiles in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Accounts
@@ -456,3 +440,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
+

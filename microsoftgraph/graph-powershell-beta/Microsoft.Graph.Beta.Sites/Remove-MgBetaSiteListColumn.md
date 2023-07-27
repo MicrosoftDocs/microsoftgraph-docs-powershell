@@ -30,22 +30,6 @@ Remove-MgBetaSiteListColumn -InputObject <ISitesIdentity> [-IfMatch <String>] [-
 ## DESCRIPTION
 Delete navigation property columns for sites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnDefinitionId
@@ -239,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSiteListColumn](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteListColumn?view=graph-powershell-v1.0)
+
