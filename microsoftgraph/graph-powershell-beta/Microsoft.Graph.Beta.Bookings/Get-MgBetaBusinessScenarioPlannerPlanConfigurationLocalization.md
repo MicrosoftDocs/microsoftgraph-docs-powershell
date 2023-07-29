@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a plannerPlanConfigurationLocalization object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgBusinessScenarioPlannerPlanConfigurationLocalization](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlannerPlanConfigurationLocalization?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -278,5 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgBusinessScenarioPlannerPlanConfigurationLocalization](/powershell/module/Microsoft.Graph.Bookings/Get-MgBusinessScenarioPlannerPlanConfigurationLocalization?view=graph-powershell-v1.0)
 

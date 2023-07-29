@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property directoryRoleAccessReviewPolicy in policies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -214,8 +211,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReminderNotificationsEnabled <Boolean?>]`: Indicates whether reminders are enabled or disabled. Default value is false.
 
 ## RELATED LINKS
-[Update-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
 

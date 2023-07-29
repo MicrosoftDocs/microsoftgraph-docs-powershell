@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property customers in financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanyCustomer](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomer?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -706,5 +703,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: 
 
 ## RELATED LINKS
-[Update-MgFinancialCompanyCustomer](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomer?view=graph-powershell-v1.0)
 

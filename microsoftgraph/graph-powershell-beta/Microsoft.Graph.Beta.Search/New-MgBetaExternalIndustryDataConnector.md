@@ -8,10 +8,7 @@ schema: 2.0.0
 # New-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Create a new industryDataConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
+Create a new azureDataLakeConnector object.
 
 ## SYNTAX
 
@@ -29,7 +26,7 @@ New-MgBetaExternalIndustryDataConnector -BodyParameter <IMicrosoftGraphIndustryD
 ```
 
 ## DESCRIPTION
-Create a new industryDataConnector object.
+Create a new azureDataLakeConnector object.
 
 ## PARAMETERS
 
@@ -224,5 +221,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: The name of the vendor who supplies the source system. Maximum supported length is 100 characters.
 
 ## RELATED LINKS
-[New-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
 

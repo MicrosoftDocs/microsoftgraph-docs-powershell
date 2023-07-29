@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function export
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Export-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Export (Default)
@@ -270,5 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Export-MgPrivilegedAccessResourceRoleAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Export-MgPrivilegedAccessResourceRoleAssignment?view=graph-powershell-v1.0)
 

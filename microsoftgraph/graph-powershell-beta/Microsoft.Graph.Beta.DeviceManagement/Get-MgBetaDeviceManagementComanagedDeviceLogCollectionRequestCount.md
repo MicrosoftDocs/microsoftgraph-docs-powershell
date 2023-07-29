@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDeviceLogCollectionRequestCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceLogCollectionRequestCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -251,8 +248,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComanagedDeviceLogCollectionRequestCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceLogCollectionRequestCount?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComanagedDeviceLogCollectionRequestCount](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceLogCollectionRequestCount?view=graph-powershell-v1.0)
 

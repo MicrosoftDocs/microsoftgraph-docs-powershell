@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Cloud PC supported regions.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointSupportedRegion](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointSupportedRegion?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -307,4 +304,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementVirtualEndpointSupportedRegion](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointSupportedRegion?view=graph-powershell-v1.0)

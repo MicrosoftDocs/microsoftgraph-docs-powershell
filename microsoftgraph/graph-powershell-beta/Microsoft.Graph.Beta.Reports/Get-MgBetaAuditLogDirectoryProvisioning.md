@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get directoryProvisioning from auditLogs
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAuditLogDirectoryProvisioning](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryProvisioning?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -270,5 +267,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgAuditLogDirectoryProvisioning](/powershell/module/Microsoft.Graph.Reports/Get-MgAuditLogDirectoryProvisioning?view=graph-powershell-v1.0)
 

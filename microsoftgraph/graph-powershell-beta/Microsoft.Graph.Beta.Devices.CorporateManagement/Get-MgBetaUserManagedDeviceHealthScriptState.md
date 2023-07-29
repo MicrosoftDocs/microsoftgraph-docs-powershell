@@ -12,9 +12,6 @@ Results of device health scripts that ran for this device.
 Default is empty list.
 This property is read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceHealthScriptState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceHealthScriptState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -370,5 +367,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgUserManagedDeviceHealthScriptState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceHealthScriptState?view=graph-powershell-v1.0)
 

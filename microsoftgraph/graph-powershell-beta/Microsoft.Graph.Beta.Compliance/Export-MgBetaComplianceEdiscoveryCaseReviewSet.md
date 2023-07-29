@@ -11,9 +11,6 @@ schema: 2.0.0
 Initiate an export from a **reviewSet**.
 For details, see Export documents from a review set in Advanced eDiscovery.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Export-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ExportExpanded (Default)
@@ -328,4 +325,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Export-MgComplianceEdiscoveryCaseReviewSet](/powershell/module/Microsoft.Graph.Compliance/Export-MgComplianceEdiscoveryCaseReviewSet?view=graph-powershell-v1.0)

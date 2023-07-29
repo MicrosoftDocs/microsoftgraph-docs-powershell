@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the item of type microsoft.graph.ediscovery.caseOperation as microsoft.graph.ediscovery.caseExportOperation
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseOperationAsCaseExportOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseOperationAsCaseExportOperation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -274,5 +271,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseOperationAsCaseExportOperation](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseOperationAsCaseExportOperation?view=graph-powershell-v1.0)
 

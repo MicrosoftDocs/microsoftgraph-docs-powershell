@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to outboundSharedUserProfiles for directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -155,5 +152,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
 
 ## RELATED LINKS
-[New-MgDirectoryOutboundSharedUserProfile](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryOutboundSharedUserProfile?view=graph-powershell-v1.0)
 

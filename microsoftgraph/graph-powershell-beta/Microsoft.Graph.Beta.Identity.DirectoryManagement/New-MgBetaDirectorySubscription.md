@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to subscriptions for directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySubscription?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -66,7 +63,9 @@ Accept wildcard characters: False
 ```
 
 ### -CreatedDateTime
-.
+The date and time when this subscription was created.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -97,7 +96,7 @@ Accept wildcard characters: False
 ```
 
 ### -IsTrial
-.
+Whether the subscription is a free trial or purchased.
 
 ```yaml
 Type: SwitchParameter
@@ -112,7 +111,9 @@ Accept wildcard characters: False
 ```
 
 ### -NextLifecycleDateTime
-.
+The date and time when the subscription will move to the next state (as defined by the status property) if not renewed by the tenant.
+The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time.
+For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
 Type: DateTime
@@ -142,7 +143,7 @@ Accept wildcard characters: False
 ```
 
 ### -ServiceStatus
-.
+The provisioning status of each service that's included in this subscription.
 To construct, see NOTES section for SERVICESTATUS properties and create a hash table.
 
 ```yaml
@@ -158,7 +159,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuId
-.
+The object ID of the SKU associated with this subscription.
 
 ```yaml
 Type: String
@@ -173,7 +174,7 @@ Accept wildcard characters: False
 ```
 
 ### -SkuPartNumber
-.
+The SKU associated with this subscription.
 
 ```yaml
 Type: String
@@ -188,7 +189,8 @@ Accept wildcard characters: False
 ```
 
 ### -Status
-.
+The status of this subscription.
+Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
 
 ```yaml
 Type: String
@@ -203,7 +205,7 @@ Accept wildcard characters: False
 ```
 
 ### -TotalLicenses
-.
+The number of seats included in this subscription.
 
 ```yaml
 Type: Int32
@@ -269,26 +271,29 @@ To create the parameters described below, construct a hash table containing the 
 `BODYPARAMETER <IMicrosoftGraphCompanySubscription>`: companySubscription
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: 
-  - `[IsTrial <Boolean?>]`: 
-  - `[NextLifecycleDateTime <DateTime?>]`: 
+  - `[CommerceSubscriptionId <String>]`: The ID of this subscription in the commerce system. Alternate key.
+  - `[CreatedDateTime <DateTime?>]`: The date and time when this subscription was created. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
+  - `[IsTrial <Boolean?>]`: Whether the subscription is a free trial or purchased.
+  - `[NextLifecycleDateTime <DateTime?>]`: The date and time when the subscription will move to the next state (as defined by the status property) if not renewed by the tenant. The DateTimeOffset type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
   - `[OcpSubscriptionId <String>]`: 
-  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]`: 
+  - `[OwnerId <String>]`: The object ID of the account admin.
+  - `[OwnerTenantId <String>]`: The unique identifier for the Microsoft partner tenant that created the subscription on a customer tenant.
+  - `[OwnerType <String>]`: Indicates the entity that ownerId belongs to, for example, 'User'.
+  - `[ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]`: The provisioning status of each service that's included in this subscription.
     - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
     - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
     - `[ServicePlanId <String>]`: The unique identifier of the service plan.
     - `[ServicePlanName <String>]`: The name of the service plan.
-  - `[SkuId <String>]`: 
-  - `[SkuPartNumber <String>]`: 
-  - `[Status <String>]`: 
-  - `[TotalLicenses <Int32?>]`: 
+  - `[SkuId <String>]`: The object ID of the SKU associated with this subscription.
+  - `[SkuPartNumber <String>]`: The SKU associated with this subscription.
+  - `[Status <String>]`: The status of this subscription. Possible values are: Enabled, Expired, Suspended, Warning, LockedOut.
+  - `[TotalLicenses <Int32?>]`: The number of seats included in this subscription.
 
-`SERVICESTATUS <IMicrosoftGraphServicePlanInfo[]>`: .
+`SERVICESTATUS <IMicrosoftGraphServicePlanInfo[]>`: The provisioning status of each service that's included in this subscription.
   - `[AppliesTo <String>]`: The object the service plan can be assigned to. The possible values are:User - service plan can be assigned to individual users.Company - service plan can be assigned to the entire tenant.
   - `[ProvisioningStatus <String>]`: The provisioning status of the service plan. The possible values are:Success - Service is fully provisioned.Disabled - Service has been disabled.ErrorStatus - The service plan has not been provisioned and is in an error state.PendingInput - Service is not yet provisioned; awaiting service confirmation.PendingActivation - Service is provisioned but requires explicit activation by administrator (for example, Intune_O365 service plan)PendingProvisioning - Microsoft has added a new service to the product SKU and it has not been activated in the tenant, yet.
   - `[ServicePlanId <String>]`: The unique identifier of the service plan.
   - `[ServicePlanName <String>]`: The name of the service plan.
 
 ## RELATED LINKS
-[New-MgDirectorySubscription](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectorySubscription?view=graph-powershell-v1.0)
 

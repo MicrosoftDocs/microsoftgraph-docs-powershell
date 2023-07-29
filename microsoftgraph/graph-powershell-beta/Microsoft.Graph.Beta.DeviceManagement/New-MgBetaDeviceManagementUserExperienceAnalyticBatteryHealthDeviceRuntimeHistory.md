@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -185,5 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[RuntimeDateTime <String>]`: The datetime for the instance of runtime history.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
 

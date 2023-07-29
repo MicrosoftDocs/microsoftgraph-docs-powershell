@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unenrollAssetsById
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgGraphWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### GraphExpanded (Default)
@@ -200,4 +197,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdateCategory <String>]`: updateCategory
 
 ## RELATED LINKS
-[Invoke-MgGraphWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgGraphWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)

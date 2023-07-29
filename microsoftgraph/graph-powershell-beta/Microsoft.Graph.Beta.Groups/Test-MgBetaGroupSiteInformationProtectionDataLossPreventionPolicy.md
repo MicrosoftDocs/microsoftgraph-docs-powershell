@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action evaluate
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
@@ -275,8 +272,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExtensionId <String>]`: The unique identifier of extension
   - `[GroupId <String>]`: The unique identifier of group
   - `[GroupLifecyclePolicyId <String>]`: The unique identifier of groupLifecyclePolicy
-  - `[HorizontalSectionColumnId <String>]`: The unique identifier of horizontalSectionColumn
-  - `[HorizontalSectionId <String>]`: The unique identifier of horizontalSection
   - `[IncludePersonalNotebooks <Boolean?>]`: Usage: includePersonalNotebooks={includePersonalNotebooks}
   - `[Interval <String>]`: Usage: interval='{interval}'
   - `[ListId <String>]`: The unique identifier of list
@@ -296,18 +291,15 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceSpecificPermissionGrantId <String>]`: The unique identifier of resourceSpecificPermissionGrant
   - `[SensitivityLabelId <String>]`: The unique identifier of sensitivityLabel
   - `[SiteId <String>]`: The unique identifier of site
-  - `[SitePageId <String>]`: The unique identifier of sitePage
   - `[StartDateTime <String>]`: Usage: startDateTime='{startDateTime}'
   - `[SubscriptionId <String>]`: The unique identifier of subscription
   - `[Token <String>]`: Usage: token='{token}'
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
-  - `[WebPartId <String>]`: The unique identifier of webPart
 
 `NOTIFICATIONINFO <IMicrosoftGraphDlpNotification>`: dlpNotification
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Author <String>]`: 
 
 ## RELATED LINKS
-[Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy](/powershell/module/Microsoft.Graph.Groups/Test-MgGroupSiteInformationProtectionDataLossPreventionPolicy?view=graph-powershell-v1.0)
 

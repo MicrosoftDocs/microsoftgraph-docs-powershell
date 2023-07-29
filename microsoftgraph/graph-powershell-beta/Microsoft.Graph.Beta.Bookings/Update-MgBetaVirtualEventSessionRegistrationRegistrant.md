@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property registrants in solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventSessionRegistrationRegistrant](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionRegistrationRegistrant?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -249,5 +246,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Update-MgVirtualEventSessionRegistrationRegistrant](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventSessionRegistrationRegistrant?view=graph-powershell-v1.0)
 

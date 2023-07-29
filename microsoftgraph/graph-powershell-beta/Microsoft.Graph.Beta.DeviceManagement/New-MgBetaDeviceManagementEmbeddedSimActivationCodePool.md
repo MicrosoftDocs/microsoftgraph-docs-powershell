@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to embeddedSIMActivationCodePools for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -294,5 +291,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserName <String>]`: Username which the subscription was provisioned to e.g. joe@contoso.com
 
 ## RELATED LINKS
-[New-MgDeviceManagementEmbeddedSimActivationCodePool](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementEmbeddedSimActivationCodePool?view=graph-powershell-v1.0)
 

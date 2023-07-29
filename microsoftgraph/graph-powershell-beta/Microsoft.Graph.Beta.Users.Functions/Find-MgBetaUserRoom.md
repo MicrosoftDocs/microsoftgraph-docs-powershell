@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function findRooms
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Find-MgUserRoom](/powershell/module/Microsoft.Graph.Users.Functions/Find-MgUserRoom?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Find (Default)
@@ -233,4 +230,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Find-MgUserRoom](/powershell/module/Microsoft.Graph.Users.Functions/Find-MgUserRoom?view=graph-powershell-v1.0)

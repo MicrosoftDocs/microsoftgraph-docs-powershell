@@ -8,9 +8,7 @@ schema: 2.0.0
 # New-MgUser
 
 ## SYNOPSIS
-Create a new user.nThe request body contains the user to create.
-At a minimum, you must specify the required properties for the user.
-You can optionally specify any other writable properties.
+Create a new user object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUser](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUser?view=graph-powershell-beta)
@@ -82,9 +80,7 @@ New-MgUser -BodyParameter <IMicrosoftGraphUser> [-WhatIf] [-Confirm] [<CommonPar
 ```
 
 ## DESCRIPTION
-Create a new user.nThe request body contains the user to create.
-At a minimum, you must specify the required properties for the user.
-You can optionally specify any other writable properties.
+Create a new user object.
 
 ## EXAMPLES
 ### Example 1: Create a new user

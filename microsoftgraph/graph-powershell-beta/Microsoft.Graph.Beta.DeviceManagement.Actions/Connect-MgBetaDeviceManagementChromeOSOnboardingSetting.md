@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action connect
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Connect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ConnectExpanded (Default)
@@ -149,5 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OwnerUserPrincipalName <String>]`: 
 
 ## RELATED LINKS
-[Connect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Connect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)
 

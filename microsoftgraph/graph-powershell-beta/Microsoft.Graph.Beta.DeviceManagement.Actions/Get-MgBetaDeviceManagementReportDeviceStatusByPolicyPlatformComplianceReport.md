@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getDevicesStatusByPolicyPlatformComplianceReport
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportDeviceStatusByPolicyPlatformComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceStatusByPolicyPlatformComplianceReport?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -277,5 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-[Get-MgDeviceManagementReportDeviceStatusByPolicyPlatformComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportDeviceStatusByPolicyPlatformComplianceReport?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to agents for onPremisesPublishingProfiles
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgOnPremisePublishingProfileAgent](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -296,6 +293,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedPublishingTypes <String[]>]`: 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -326,5 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgOnPremisePublishingProfileAgent](/powershell/module/Microsoft.Graph.Applications/New-MgOnPremisePublishingProfileAgent?view=graph-powershell-v1.0)
 

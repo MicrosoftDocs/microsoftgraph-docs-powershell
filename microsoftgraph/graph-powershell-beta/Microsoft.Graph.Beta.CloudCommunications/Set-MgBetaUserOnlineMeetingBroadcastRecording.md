@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update broadcastRecording for the navigation property onlineMeetings in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserOnlineMeetingBroadcastRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingBroadcastRecording?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -196,5 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserOnlineMeetingBroadcastRecording](/powershell/module/Microsoft.Graph.CloudCommunications/Set-MgUserOnlineMeetingBroadcastRecording?view=graph-powershell-v1.0)
 

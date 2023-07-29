@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaSecurityThreatIntelligenceProfileIndicator
 
 ## SYNOPSIS
-Get intelligenceProfileIndicators from security
+Read the properties and relationships of a intelligenceProfileIndicator object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceProfileIndicator](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceProfileIndicator?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaSecurityThreatIntelligenceProfileIndicator -InputObject <ISecurityIden
 ```
 
 ## DESCRIPTION
-Get intelligenceProfileIndicators from security
+Read the properties and relationships of a intelligenceProfileIndicator object.
 
 ## PARAMETERS
 

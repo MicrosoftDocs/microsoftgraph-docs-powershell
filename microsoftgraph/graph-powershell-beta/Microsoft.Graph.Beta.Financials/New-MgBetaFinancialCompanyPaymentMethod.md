@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to paymentMethods for financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyPaymentMethod](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyPaymentMethod?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -264,5 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[New-MgFinancialCompanyPaymentMethod](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyPaymentMethod?view=graph-powershell-v1.0)
 

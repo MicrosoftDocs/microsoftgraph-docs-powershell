@@ -12,9 +12,6 @@ Upload a PKCS12 format key (PFX) to a trustFrameworkKeyset.
 The input is a base-64 encoded value of the Pfx certificate contents.
 This method returns trustFrameworkKey.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUploadTrustFrameworkKeySetPkcs12](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetPkcs12?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UploadExpanded (Default)
@@ -289,4 +286,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Invoke-MgUploadTrustFrameworkKeySetPkcs12](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgUploadTrustFrameworkKeySetPkcs12?view=graph-powershell-v1.0)

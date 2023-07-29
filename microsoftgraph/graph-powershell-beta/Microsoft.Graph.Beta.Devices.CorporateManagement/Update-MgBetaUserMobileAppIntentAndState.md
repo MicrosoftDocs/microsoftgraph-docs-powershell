@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property mobileAppIntentAndStates in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserMobileAppIntentAndState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppIntentAndState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -342,8 +339,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Type <DeviceType?>]`: Device type.
 
 ## RELATED LINKS
-[Update-MgUserMobileAppIntentAndState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppIntentAndState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgUserMobileAppIntentAndState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgUserMobileAppIntentAndState?view=graph-powershell-v1.0)
 

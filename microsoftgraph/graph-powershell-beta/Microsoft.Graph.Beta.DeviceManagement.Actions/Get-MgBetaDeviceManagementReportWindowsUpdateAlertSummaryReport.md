@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action getWindowsUpdateAlertSummaryReport
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportWindowsUpdateAlertSummaryReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportWindowsUpdateAlertSummaryReport?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### GetExpanded (Default)
@@ -293,5 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-[Get-MgDeviceManagementReportWindowsUpdateAlertSummaryReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportWindowsUpdateAlertSummaryReport?view=graph-powershell-v1.0)
 

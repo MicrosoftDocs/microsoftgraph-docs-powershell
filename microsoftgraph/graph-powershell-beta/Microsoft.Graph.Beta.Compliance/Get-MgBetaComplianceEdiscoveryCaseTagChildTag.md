@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the tags that are a child of a tag.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagChildTag?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -298,4 +295,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTagChildTag?view=graph-powershell-v1.0)

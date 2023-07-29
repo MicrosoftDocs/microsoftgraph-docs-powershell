@@ -12,9 +12,6 @@ The directory object that is the scope of the role eligibility.
 Read-only.
 Supports $expand.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -231,5 +228,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequestDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleEligibilityScheduleRequestDirectoryScope?view=graph-powershell-v1.0)
 

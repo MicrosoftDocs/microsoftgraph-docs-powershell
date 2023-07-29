@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleDefinition in privilegedAccess
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrivilegedAccessRoleSettingRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedAccessRoleSettingRoleDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -637,8 +634,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserMemberSettings <IMicrosoftGraphGovernanceRuleSetting[]>]`: The rule settings that are evaluated when a user tries to activate his role assignment.
 
 ## RELATED LINKS
-[Update-MgPrivilegedAccessRoleSettingRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedAccessRoleSettingRoleDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgPrivilegedAccessRoleSettingRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgPrivilegedAccessRoleSettingRoleDefinition?view=graph-powershell-v1.0)
 

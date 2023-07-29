@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileAgentGroupCount](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileAgentGroupCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -167,6 +164,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -197,5 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgOnPremisePublishingProfileAgentGroupCount](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileAgentGroupCount?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get loginPages from security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLoginPage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -339,5 +336,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationLoginPage](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLoginPage?view=graph-powershell-v1.0)
 

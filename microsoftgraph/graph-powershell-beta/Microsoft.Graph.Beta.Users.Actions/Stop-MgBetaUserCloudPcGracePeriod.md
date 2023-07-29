@@ -13,9 +13,6 @@ The grace period is triggered when the Cloud PC license is removed or the provis
 It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgUserCloudPcGracePeriod](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserCloudPcGracePeriod?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### End (Default)
@@ -191,5 +188,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgUserCloudPcGracePeriod](/powershell/module/Microsoft.Graph.Users.Actions/Stop-MgUserCloudPcGracePeriod?view=graph-powershell-v1.0)
 

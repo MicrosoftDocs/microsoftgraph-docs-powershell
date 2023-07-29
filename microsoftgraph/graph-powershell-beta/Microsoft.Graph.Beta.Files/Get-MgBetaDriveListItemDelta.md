@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveListItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDelta?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delta (Default)
@@ -288,5 +285,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveListItemDelta](/powershell/module/Microsoft.Graph.Files/Get-MgDriveListItemDelta?view=graph-powershell-v1.0)
 

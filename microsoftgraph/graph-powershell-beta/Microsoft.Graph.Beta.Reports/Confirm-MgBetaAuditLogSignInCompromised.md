@@ -13,9 +13,6 @@ Events marked as risky by an admin are immediately flagged as high risk in Azure
 Admins can confirm that events flagged as risky by Azure AD Identity Protection are in fact risky.
 For details about investigating Identity Protection risks, see How to investigate risk.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInCompromised?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
@@ -170,4 +167,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[RequestIds <String[]>]`: 
 
 ## RELATED LINKS
-[Confirm-MgAuditLogSignInCompromised](/powershell/module/Microsoft.Graph.Reports/Confirm-MgAuditLogSignInCompromised?view=graph-powershell-v1.0)

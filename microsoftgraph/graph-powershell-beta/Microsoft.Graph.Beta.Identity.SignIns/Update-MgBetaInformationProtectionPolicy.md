@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property policy in informationProtection
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -186,5 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Tooltip <String>]`: The tooltip that should be displayed for the label in a UI.
 
 ## RELATED LINKS
-[Update-MgInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInformationProtectionPolicy?view=graph-powershell-v1.0)
 

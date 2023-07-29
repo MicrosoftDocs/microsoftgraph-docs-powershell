@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The data connector in the context of which this flow pulls in data from a source system.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataInboundFlowDataConnector](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowDataConnector?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -132,5 +129,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalIndustryDataInboundFlowDataConnector](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowDataConnector?view=graph-powershell-v1.0)
 

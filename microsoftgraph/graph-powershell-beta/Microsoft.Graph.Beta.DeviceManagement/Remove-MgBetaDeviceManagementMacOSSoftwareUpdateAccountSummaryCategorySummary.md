@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property categorySummaries for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -299,8 +296,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummary?view=graph-powershell-v1.0)
 

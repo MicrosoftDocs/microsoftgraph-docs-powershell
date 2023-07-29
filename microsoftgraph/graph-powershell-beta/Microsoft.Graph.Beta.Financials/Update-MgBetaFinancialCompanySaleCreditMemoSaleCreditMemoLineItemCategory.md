@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property itemCategory in financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemCategory](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemCategory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -296,5 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemCategory](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleCreditMemoSaleCreditMemoLineItemCategory?view=graph-powershell-v1.0)
 

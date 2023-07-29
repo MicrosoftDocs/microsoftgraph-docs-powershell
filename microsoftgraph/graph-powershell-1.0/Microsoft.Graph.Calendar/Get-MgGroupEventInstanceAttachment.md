@@ -43,6 +43,8 @@ Navigation property.
 Read-only.
 Nullable.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -289,4 +291,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupEventInstanceAttachment](/powershell/module/Microsoft.Graph.Beta.Calendar/Get-MgBetaGroupEventInstanceAttachment?view=graph-powershell-beta)
-

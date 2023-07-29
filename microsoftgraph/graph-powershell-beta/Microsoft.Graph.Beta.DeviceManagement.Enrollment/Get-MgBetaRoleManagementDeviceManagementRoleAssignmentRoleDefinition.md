@@ -12,9 +12,6 @@ Specifies the roleDefinition that the assignment is for.
 Provided so that callers can get the role definition using $expand at the same time as getting the role assignment.
 Supports $filter (eq operator on id, isBuiltIn, and displayName, and startsWith operator on displayName)  and $expand.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -144,5 +141,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-[Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgRoleManagementDeviceManagementRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
 

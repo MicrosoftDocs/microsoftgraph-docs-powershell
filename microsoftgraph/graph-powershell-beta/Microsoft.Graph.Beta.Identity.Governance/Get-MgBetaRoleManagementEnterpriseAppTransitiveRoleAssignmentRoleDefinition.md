@@ -13,9 +13,6 @@ Provided so that callers can get the role definition using $expand at the same t
 roleDefinition.id will be auto expanded.
 Supports $expand.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -232,5 +229,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppTransitiveRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property symantecCodeSigningCertificate in deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -281,5 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UploadDateTime <DateTime?>]`: The Type of the CodeSigning Cert as Symantec Cert.
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)
 

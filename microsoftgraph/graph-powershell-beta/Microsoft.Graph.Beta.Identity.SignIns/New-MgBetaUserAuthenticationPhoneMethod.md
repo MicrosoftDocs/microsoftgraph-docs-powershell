@@ -1,14 +1,19 @@
 ---
 external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationoperation
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/new-mgbetauserauthenticationphonemethod
 schema: 2.0.0
 ---
 
-# New-MgBetaUserAuthenticationOperation
+# New-MgBetaUserAuthenticationPhoneMethod
 
 ## SYNOPSIS
-Create new navigation property to operations for users
+Add a new phone authentication method.
+A user may only have one phone of each type, captured in the **phoneType** property.
+This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
+Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgUserAuthenticationPhoneMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgUserAuthenticationPhoneMethod?view=graph-powershell-v1.0)
@@ -17,33 +22,37 @@ Create new navigation property to operations for users
 
 ### CreateExpanded (Default)
 ```
-New-MgBetaUserAuthenticationOperation -UserId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-LastActionDateTime <DateTime>] [-ResourceLocation <String>]
- [-Status <String>] [-StatusDetail <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserAuthenticationPhoneMethod -UserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
+ [-PhoneNumber <String>] [-PhoneType <String>] [-SmsSignInState <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaUserAuthenticationOperation -UserId <String> -BodyParameter <IMicrosoftGraphLongRunningOperation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserAuthenticationPhoneMethod -UserId <String>
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
-New-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-LastActionDateTime <DateTime>] [-ResourceLocation <String>] [-Status <String>] [-StatusDetail <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Id <String>] [-PhoneNumber <String>] [-PhoneType <String>]
+ [-SmsSignInState <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgBetaUserAuthenticationOperation -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphLongRunningOperation> [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgBetaUserAuthenticationPhoneMethod -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphPhoneAuthenticationMethod> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Create new navigation property to operations for users
+Add a new phone authentication method.
+A user may only have one phone of each type, captured in the **phoneType** property.
+This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
+Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -56,7 +65,6 @@ $params = @{
 	phoneType = "mobile"
 }
 
-# A UPN can also be used as -UserId.
 New-MgBetaUserAuthenticationPhoneMethod -UserId $userId -BodyParameter $params
 ```
 This example shows how to use the New-MgBetaUserAuthenticationPhoneMethod Cmdlet.
@@ -82,11 +90,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-longRunningOperation
+phoneAuthenticationMethod
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphLongRunningOperation
+Type: IMicrosoftGraphPhoneAuthenticationMethod
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -94,23 +102,6 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
-Accept wildcard characters: False
-```
-
-### -CreatedDateTime
-The start time of the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -146,25 +137,11 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -LastActionDateTime
-The time of the last action in the operation.
-The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time.
-For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-
-```yaml
-Type: DateTime
-Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -ResourceLocation
-URI of the resource that the operation is performed on.
+### -PhoneNumber
+The phone number to text or call for authentication.
+Phone numbers use the format '+\<country code\> \<number\>x\<extension\>', with extension optional.
+For example, +1 5555551234 or +1 5555551234x123 are valid.
+Numbers are rejected when creating/updating if they do not match the required format.
 
 ```yaml
 Type: String
@@ -178,8 +155,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Status
-longRunningOperationStatus
+### -PhoneType
+authenticationPhoneType
 
 ```yaml
 Type: String
@@ -193,8 +170,8 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -StatusDetail
-Details about the status of the operation.
+### -SmsSignInState
+authenticationMethodSignInState
 
 ```yaml
 Type: String
@@ -260,10 +237,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphLongRunningOperation
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPhoneAuthenticationMethod
 ## NOTES
 
 ALIASES
@@ -273,14 +250,12 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphLongRunningOperation>`: longRunningOperation
+`BODYPARAMETER <IMicrosoftGraphPhoneAuthenticationMethod>`: phoneAuthenticationMethod
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[CreatedDateTime <DateTime?>]`: The start time of the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[LastActionDateTime <DateTime?>]`: The time of the last action in the operation. The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
-  - `[ResourceLocation <String>]`: URI of the resource that the operation is performed on.
-  - `[Status <String>]`: longRunningOperationStatus
-  - `[StatusDetail <String>]`: Details about the status of the operation.
+  - `[PhoneNumber <String>]`: The phone number to text or call for authentication. Phone numbers use the format '+`<country code>` `<number>`x`<extension>`', with extension optional. For example, +1 5555551234 or +1 5555551234x123 are valid. Numbers are rejected when creating/updating if they do not match the required format.
+  - `[PhoneType <String>]`: authenticationPhoneType
+  - `[SmsSignInState <String>]`: authenticationMethodSignInState
 
 `INPUTOBJECT <IIdentitySignInsIdentity>`: Identity Parameter
   - `[ActivityBasedTimeoutPolicyId <String>]`: The unique identifier of activityBasedTimeoutPolicy

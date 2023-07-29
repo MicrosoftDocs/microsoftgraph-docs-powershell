@@ -11,9 +11,6 @@ schema: 2.0.0
 Create a new inboundFlow object.
 The following prerequisite resources are required when you create an **inboundFlow**:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -346,5 +343,4 @@ To create the parameters described below, construct a hash table containing the 
       - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
-[New-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/New-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
 

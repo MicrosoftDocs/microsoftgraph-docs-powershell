@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to categories for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -426,8 +423,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ValueJson <String>]`: JSON representation of the value
 
 ## RELATED LINKS
-[New-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[New-MgDeviceManagementIntentCategory](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementIntentCategory?view=graph-powershell-v1.0)
 

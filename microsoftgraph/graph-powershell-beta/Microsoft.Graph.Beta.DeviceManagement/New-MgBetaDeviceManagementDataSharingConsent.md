@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to dataSharingConsents for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -230,5 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TermsUrl <String>]`: The TermsUrl for the data sharing consent
 
 ## RELATED LINKS
-[New-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
 

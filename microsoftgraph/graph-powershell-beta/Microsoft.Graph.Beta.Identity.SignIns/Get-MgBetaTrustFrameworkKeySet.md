@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and associations for a Trustframeworkkeyset.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -332,4 +329,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)

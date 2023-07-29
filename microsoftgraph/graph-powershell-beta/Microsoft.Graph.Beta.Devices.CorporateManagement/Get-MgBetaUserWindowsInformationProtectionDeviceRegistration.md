@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Zero or more WIP device registrations that belong to the user.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -322,5 +319,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgUserWindowsInformationProtectionDeviceRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserWindowsInformationProtectionDeviceRegistration?view=graph-powershell-v1.0)
 

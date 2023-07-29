@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get informationProtection from security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtection?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -68,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgSecurityInformationProtection](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityInformationProtection?view=graph-powershell-v1.0)
 

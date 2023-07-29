@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to shipmentMethods for financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyShipmentMethod](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyShipmentMethod?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -264,5 +261,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[New-MgFinancialCompanyShipmentMethod](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyShipmentMethod?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Device category
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceCategory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -251,8 +248,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComanagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceCategory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComanagedDeviceCategory](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceCategory?view=graph-powershell-v1.0)
 

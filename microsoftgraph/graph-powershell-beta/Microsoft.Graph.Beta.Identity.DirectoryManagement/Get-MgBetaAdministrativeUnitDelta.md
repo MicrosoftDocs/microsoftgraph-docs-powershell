@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function delta
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdministrativeUnitDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitDelta?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -183,4 +180,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgAdministrativeUnitDelta](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgAdministrativeUnitDelta?view=graph-powershell-v1.0)

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Bulk reprovision a set of Cloud PC devices with Intune managed device IDs.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BulkExpanded (Default)
@@ -133,5 +130,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ManagedDeviceIds <String[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkReprovisionDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 User Experience Analytics Battery Health Capacity Details
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -68,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 List the recent activities that took place on an item or under a hierarchy.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupDriveActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveActivity?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -220,5 +217,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgGroupDriveActivity](/powershell/module/Microsoft.Graph.Files/Get-MgGroupDriveActivity?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to errors for education
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationSynchronizationProfileError](/powershell/module/Microsoft.Graph.Education/New-MgEducationSynchronizationProfileError?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -292,5 +289,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationSynchronizationProfileError](/powershell/module/Microsoft.Graph.Education/New-MgEducationSynchronizationProfileError?view=graph-powershell-v1.0)
 

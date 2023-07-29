@@ -11,9 +11,6 @@ schema: 2.0.0
 Update the properties of an authenticationEventListener object.
 You must specify the **@odata.type** property and the value of the authenticationEventListener object type to update.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventListener?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -323,5 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Update-MgIdentityAuthenticationEventListener](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityAuthenticationEventListener?view=graph-powershell-v1.0)
 

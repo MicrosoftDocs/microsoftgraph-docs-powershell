@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reboot a specific Cloud PC.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restart-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reboot (Default)
@@ -195,4 +192,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restart-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restart-MgUserCloudPc?view=graph-powershell-v1.0)

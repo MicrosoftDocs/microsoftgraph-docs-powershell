@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Device compliance policy states for this device.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementComanagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -394,8 +391,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComanagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementComanagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementComanagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
 

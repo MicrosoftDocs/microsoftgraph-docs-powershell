@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The assignment of an access package to a subject for a period of time.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEntitlementManagementAccessPackageAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ListAll (Default)
@@ -388,4 +385,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgEntitlementManagementAccessPackageAssignment](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgEntitlementManagementAccessPackageAssignment?view=graph-powershell-v1.0)

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action verifySignature
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgInformationProtectionSignature](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgInformationProtectionSignature?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### VerifyExpanded (Default)
@@ -165,5 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SigningKeyId <String>]`: 
 
 ## RELATED LINKS
-[Confirm-MgInformationProtectionSignature](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgInformationProtectionSignature?view=graph-powershell-v1.0)
 

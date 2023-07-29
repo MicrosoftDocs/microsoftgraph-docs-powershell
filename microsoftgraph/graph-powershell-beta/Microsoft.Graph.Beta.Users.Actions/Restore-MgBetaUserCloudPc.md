@@ -11,9 +11,6 @@ schema: 2.0.0
 Restore a specific Cloud PC.
 Use this API to trigger a remote action that restores a Cloud PC device to a previous state.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -252,5 +249,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgUserCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserCloudPc?view=graph-powershell-v1.0)
 

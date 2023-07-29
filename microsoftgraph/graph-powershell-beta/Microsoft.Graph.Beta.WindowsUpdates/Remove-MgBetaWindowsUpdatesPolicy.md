@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an updatePolicy object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -153,5 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-[Remove-MgWindowsUpdatesPolicy](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesPolicy?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update tenant-level settings for Microsoft 365 reports.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Update-MgAdminReportSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -152,5 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayConcealedNames <Boolean?>]`: If set to true, all reports will conceal user information such as usernames, groups, and sites. If false, all reports will show identifiable information. This property represents a setting in the Microsoft 365 admin center. Required.
 
 ## RELATED LINKS
-[Update-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Update-MgAdminReportSetting?view=graph-powershell-v1.0)
 

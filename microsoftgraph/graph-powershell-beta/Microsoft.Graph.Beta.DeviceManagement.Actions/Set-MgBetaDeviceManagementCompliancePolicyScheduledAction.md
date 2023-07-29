@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action setScheduledActions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementCompliancePolicyScheduledAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementCompliancePolicyScheduledAction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### SetExpanded (Default)
@@ -254,5 +251,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[NotificationTemplateId <String>]`: What notification Message template to use
 
 ## RELATED LINKS
-[Set-MgDeviceManagementCompliancePolicyScheduledAction](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementCompliancePolicyScheduledAction?view=graph-powershell-v1.0)
 

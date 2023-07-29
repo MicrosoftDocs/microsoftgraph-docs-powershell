@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property employees for financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgFinancialCompanyEmployee](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyEmployee?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -196,5 +193,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Remove-MgFinancialCompanyEmployee](/powershell/module/Microsoft.Graph.Financials/Remove-MgFinancialCompanyEmployee?view=graph-powershell-v1.0)
 

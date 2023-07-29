@@ -13,9 +13,6 @@ As part of the response, this action returns an upload URL that can be used in s
 Request headers for each `PUT` operation can be used to specify the exact range of bytes to be uploaded.
 This allows transfer to be resumed, in case the network connection is dropped during upload.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintPrinterShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterShareJobDocumentUploadSession?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -243,5 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Size <Int64?>]`: The document's size in bytes.
 
 ## RELATED LINKS
-[New-MgPrintPrinterShareJobDocumentUploadSession](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintPrinterShareJobDocumentUploadSession?view=graph-powershell-v1.0)
 

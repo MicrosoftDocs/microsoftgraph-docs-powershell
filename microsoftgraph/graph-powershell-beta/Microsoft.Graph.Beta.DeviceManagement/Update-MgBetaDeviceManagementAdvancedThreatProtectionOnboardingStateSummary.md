@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property advancedThreatProtectionOnboardingStateSummary in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -310,5 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownDeviceCount <Int32?>]`: Number of unknown devices
 
 ## RELATED LINKS
-[Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementAdvancedThreatProtectionOnboardingStateSummary?view=graph-powershell-v1.0)
 

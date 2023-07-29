@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Use this API to create a new languageProficiency object in a user's profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/New-MgUserProfileLanguage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -509,4 +506,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/New-MgUserProfileLanguage?view=graph-powershell-v1.0)

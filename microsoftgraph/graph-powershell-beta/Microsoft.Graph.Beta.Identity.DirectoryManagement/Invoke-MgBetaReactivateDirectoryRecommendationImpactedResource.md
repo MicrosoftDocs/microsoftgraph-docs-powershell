@@ -12,9 +12,6 @@ Reactivate an accidentally dismissed, completed, or postponed **impactedResource
 This action updates the **status** of the resource to `active`.
 This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReactivateDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgReactivateDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reactivate (Default)
@@ -164,6 +161,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -175,5 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgReactivateDirectoryRecommendationImpactedResource](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgReactivateDirectoryRecommendationImpactedResource?view=graph-powershell-v1.0)
 

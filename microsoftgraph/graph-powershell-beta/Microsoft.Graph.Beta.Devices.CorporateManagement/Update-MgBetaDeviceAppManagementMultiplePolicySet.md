@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action update
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMultiplePolicySet](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultiplePolicySet?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
@@ -363,8 +360,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Status <PolicySetStatus?>]`: The enum to specify the status of PolicySet.
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementMultiplePolicySet](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultiplePolicySet?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementMultiplePolicySet](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMultiplePolicySet?view=graph-powershell-v1.0)
 

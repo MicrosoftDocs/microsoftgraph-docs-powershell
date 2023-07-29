@@ -11,9 +11,6 @@ schema: 2.0.0
 Create an Outlook task in the specified task folder.
 The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time nto be always midnight in the specified time zone.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -721,7 +718,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
-[New-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[New-MgUserOutlookTaskFolderTask](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskFolderTask?view=graph-powershell-v1.0)

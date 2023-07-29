@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action enrollAssets
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgEnrollWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EnrollExpanded (Default)
@@ -190,4 +187,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdateCategory <String>]`: updateCategory
 
 ## RELATED LINKS
-[Invoke-MgEnrollWindowsUpdatesUpdatableAsset](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesUpdatableAsset?view=graph-powershell-v1.0)

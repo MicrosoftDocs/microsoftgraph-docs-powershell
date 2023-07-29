@@ -11,9 +11,6 @@ schema: 2.0.0
 Read the properties and relationships of an informationProtectionPolicySetting object.
 The settings exposed by this API should be used in applications to populate the **moreInfoUrl** property for Microsoft Purview Information Protection help, and indicate whether labeling is mandatory for the user and whether justification must be provided on downgrade.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Get-MgUserSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -186,5 +183,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgUserSecurityInformationProtectionLabelPolicySetting](/powershell/module/Microsoft.Graph.Security/Get-MgUserSecurityInformationProtectionLabelPolicySetting?view=graph-powershell-v1.0)
 

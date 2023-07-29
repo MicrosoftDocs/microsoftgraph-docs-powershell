@@ -8,10 +8,7 @@ schema: 2.0.0
 # Update-MgBetaUserOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
-Update the properties of a virtualAppointment object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOnlineMeetingVirtualAppointment](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingVirtualAppointment?view=graph-powershell-v1.0)
+Create a new virtualAppointment object.
 
 ## SYNTAX
 
@@ -46,7 +43,7 @@ Update-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicati
 ```
 
 ## DESCRIPTION
-Update the properties of a virtualAppointment object.
+Create a new virtualAppointment object.
 
 ## PARAMETERS
 
@@ -318,5 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 ## RELATED LINKS
-[Update-MgUserOnlineMeetingVirtualAppointment](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingVirtualAppointment?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Information about the Microsoft Teams team that was created for the request.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecuritySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestTeam?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -184,5 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecuritySubjectRightsRequestTeam](/powershell/module/Microsoft.Graph.Security/Get-MgSecuritySubjectRightsRequestTeam?view=graph-powershell-v1.0)
 

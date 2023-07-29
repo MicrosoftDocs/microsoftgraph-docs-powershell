@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to hostSecurityProfiles for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -469,5 +466,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
-[New-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)
 

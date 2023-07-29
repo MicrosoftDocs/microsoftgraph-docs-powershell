@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reprovision a Cloud PC with an Intune managed device ID.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Cloud (Default)
@@ -181,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReprovisionDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
 

@@ -11,9 +11,6 @@ schema: 2.0.0
 Deletes a userFlowLanguageConfiguration object from a Azure AD B2C user flow.
 **Note:** You cannot delete languages from an Azure Active Directory user flow.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2CUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowLanguage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -246,4 +243,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityB2CUserFlowLanguage](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowLanguage?view=graph-powershell-v1.0)

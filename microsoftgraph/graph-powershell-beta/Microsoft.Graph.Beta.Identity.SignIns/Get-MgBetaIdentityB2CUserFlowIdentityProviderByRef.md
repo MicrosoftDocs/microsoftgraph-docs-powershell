@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the identity providers in a b2cIdentityUserFlow object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -175,5 +172,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a governanceRoleSetting.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -362,4 +359,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgPrivilegedAccessRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgPrivilegedAccessRoleSetting?view=graph-powershell-v1.0)

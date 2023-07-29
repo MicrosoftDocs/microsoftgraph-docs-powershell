@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Unblocks the managed app user from app check-in.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unblock-MgUserManagedApp](/powershell/module/Microsoft.Graph.Users.Actions/Unblock-MgUserManagedApp?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Unblock (Default)
@@ -169,5 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Unblock-MgUserManagedApp](/powershell/module/Microsoft.Graph.Users.Actions/Unblock-MgUserManagedApp?view=graph-powershell-v1.0)
 

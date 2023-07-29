@@ -8,9 +8,7 @@ schema: 2.0.0
 # Update-MgOrganization
 
 ## SYNOPSIS
-Update the properties of the currently authenticated organization.
-In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.
-The **ID** is also known as the **tenantId** of the organization.
+Update the properties of a organization object.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaOrganization](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Update-MgBetaOrganization?view=graph-powershell-beta)
@@ -64,9 +62,7 @@ Update-MgOrganization -InputObject <IIdentityDirectoryManagementIdentity>
 ```
 
 ## DESCRIPTION
-Update the properties of the currently authenticated organization.
-In this case, `organization` is defined as a collection of exactly one record, and so its **ID** must be specified in the request.
-The **ID** is also known as the **tenantId** of the organization.
+Update the properties of a organization object.
 
 ## EXAMPLES
 ### Example 1: Code snippet

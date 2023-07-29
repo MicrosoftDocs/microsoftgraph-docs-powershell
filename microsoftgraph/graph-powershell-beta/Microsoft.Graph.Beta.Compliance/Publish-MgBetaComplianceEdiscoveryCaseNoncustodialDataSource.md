@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Releases the non-custodial data source from the case.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Compliance/Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Release (Default)
@@ -171,4 +168,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource](/powershell/module/Microsoft.Graph.Compliance/Publish-MgComplianceEdiscoveryCaseNoncustodialDataSource?view=graph-powershell-v1.0)

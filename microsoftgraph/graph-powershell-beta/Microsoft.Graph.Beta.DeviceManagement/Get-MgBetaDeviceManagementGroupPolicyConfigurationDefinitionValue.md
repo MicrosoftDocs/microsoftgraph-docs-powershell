@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of enabled or disabled group policy definition values for the configuration.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -395,8 +392,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfigurationDefinitionValue?view=graph-powershell-v1.0)
 

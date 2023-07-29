@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function Ping
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Ping-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgApplicationSynchronization?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Ping (Default)
@@ -80,6 +77,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -110,5 +108,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Ping-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Ping-MgApplicationSynchronization?view=graph-powershell-v1.0)
 

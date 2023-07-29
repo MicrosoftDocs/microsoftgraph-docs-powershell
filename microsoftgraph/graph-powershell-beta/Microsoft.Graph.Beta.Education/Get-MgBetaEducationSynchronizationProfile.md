@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a school data synchronization profile in the tenant based on the identifier.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -271,4 +268,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Get-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)

@@ -12,9 +12,6 @@ Update the privacy settings to display or return the specified type of insights 
 The type of settings can be contact insights, item insights, or people insights.
 To learn more about customizing insights privacy for your organization, see:\n-  Customize item insights privacy \n-  Customize people insights privacy
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgOrganizationSettingContactInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingContactInsight?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -264,6 +261,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -275,4 +273,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgOrganizationSettingContactInsight](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgOrganizationSettingContactInsight?view=graph-powershell-v1.0)

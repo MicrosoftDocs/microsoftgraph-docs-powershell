@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action createEnrollmentNotificationConfiguration
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -277,5 +274,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserDeviceEnrollmentConfigurationEnrollmentNotificationConfiguration?view=graph-powershell-v1.0)
 

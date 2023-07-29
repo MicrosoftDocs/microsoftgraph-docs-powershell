@@ -11,9 +11,6 @@ schema: 2.0.0
 Remove members from an updatableAssetGroup.
 You can also use the method removeMembersById to remove members.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgWindowsUpdatesUpdatableAssetMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAssetMember?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RemoveExpanded (Default)
@@ -229,4 +226,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-[Remove-MgWindowsUpdatesUpdatableAssetMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Remove-MgWindowsUpdatesUpdatableAssetMember?view=graph-powershell-v1.0)

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function compare
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Compare-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Compare-MgDeviceManagementIntent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Compare (Default)
@@ -202,5 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Compare-MgDeviceManagementIntent](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Compare-MgDeviceManagementIntent?view=graph-powershell-v1.0)
 

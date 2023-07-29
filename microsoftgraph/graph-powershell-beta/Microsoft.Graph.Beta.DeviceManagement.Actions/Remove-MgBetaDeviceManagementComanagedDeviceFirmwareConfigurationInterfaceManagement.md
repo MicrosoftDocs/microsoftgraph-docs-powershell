@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Remove device from Device Firmware Configuration Interface management
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Remove-MgDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Remove (Default)
@@ -181,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Remove-MgDeviceManagementComanagedDeviceFirmwareConfigurationInterfaceManagement?view=graph-powershell-v1.0)
 

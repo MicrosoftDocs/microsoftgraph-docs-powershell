@@ -13,9 +13,6 @@ The grace period is triggered when the Cloud PC license is removed or the provis
 It allows users to access Cloud PCs for up to seven days before de-provisioning occurs.
 Ending the grace period immediately deprovisions the Cloud PC without waiting the seven days.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### End (Default)
@@ -196,4 +193,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Stop-MgDeviceManagementVirtualEndpointCloudPcGracePeriod?view=graph-powershell-v1.0)

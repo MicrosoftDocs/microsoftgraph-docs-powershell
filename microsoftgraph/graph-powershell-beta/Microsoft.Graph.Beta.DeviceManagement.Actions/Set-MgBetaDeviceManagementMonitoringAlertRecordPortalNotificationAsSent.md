@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Set the status of the notification associated with the specified alertRecord on the Microsoft EndPoint Manager admin center as sent, by setting the **isPortalNotificationSent** property of the portal notification to `true`.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -181,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementMonitoringAlertRecordPortalNotificationAsSent?view=graph-powershell-v1.0)
 

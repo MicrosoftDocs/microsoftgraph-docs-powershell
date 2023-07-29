@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create an Outlook task group in the user's mailbox.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -429,7 +426,5 @@ To create the parameters described below, construct a hash table containing the 
     - `[Subject <String>]`: 
 
 ## RELATED LINKS
-[New-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[New-MgUserOutlookTaskGroup](/powershell/module/Microsoft.Graph.Users/New-MgUserOutlookTaskGroup?view=graph-powershell-v1.0)

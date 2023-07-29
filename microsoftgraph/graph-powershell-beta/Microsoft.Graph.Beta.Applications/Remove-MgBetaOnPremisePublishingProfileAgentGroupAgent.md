@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property agents for onPremisesPublishingProfiles
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgOnPremisePublishingProfileAgentGroupAgent](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroupAgent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -174,6 +171,7 @@ To create the parameters described below, construct a hash table containing the 
 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -204,5 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgOnPremisePublishingProfileAgentGroupAgent](/powershell/module/Microsoft.Graph.Applications/Remove-MgOnPremisePublishingProfileAgentGroupAgent?view=graph-powershell-v1.0)
 

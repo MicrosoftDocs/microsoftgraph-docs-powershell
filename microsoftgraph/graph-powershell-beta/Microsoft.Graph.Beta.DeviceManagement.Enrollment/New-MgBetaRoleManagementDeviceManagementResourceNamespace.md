@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to resourceNamespaces for roleManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -212,5 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceScopeId <String>]`: Not implemented.
 
 ## RELATED LINKS
-[New-MgRoleManagementDeviceManagementResourceNamespace](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementResourceNamespace?view=graph-powershell-v1.0)
 

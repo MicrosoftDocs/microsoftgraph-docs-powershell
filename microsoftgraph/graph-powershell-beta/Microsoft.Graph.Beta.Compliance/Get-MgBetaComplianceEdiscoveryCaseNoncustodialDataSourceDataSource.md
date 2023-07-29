@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 User source or SharePoint site data source as non-custodial data source.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceDataSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceDataSource?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get1 (Default)
@@ -146,5 +143,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceDataSource](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseNoncustodialDataSourceDataSource?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to vendors for financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgFinancialCompanyVendor](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyVendor?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -611,5 +608,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: 
 
 ## RELATED LINKS
-[New-MgFinancialCompanyVendor](/powershell/module/Microsoft.Graph.Financials/New-MgFinancialCompanyVendor?view=graph-powershell-v1.0)
 

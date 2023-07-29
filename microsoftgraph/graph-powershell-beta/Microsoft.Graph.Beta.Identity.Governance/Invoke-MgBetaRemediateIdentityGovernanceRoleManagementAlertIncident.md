@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action remediate
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRemediateIdentityGovernanceRoleManagementAlertIncident](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgRemediateIdentityGovernanceRoleManagementAlertIncident?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Remediate (Default)
@@ -241,5 +238,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgRemediateIdentityGovernanceRoleManagementAlertIncident](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgRemediateIdentityGovernanceRoleManagementAlertIncident?view=graph-powershell-v1.0)
 

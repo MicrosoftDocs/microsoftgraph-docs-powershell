@@ -11,9 +11,6 @@ schema: 2.0.0
 Get the properties of a Microsoft Teams-enabled device.
 For example, you can use this method to get the device type, hardware detail, activity state, and health status information for a device that's enabled for Teams.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDevice?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -298,4 +295,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamworkDevice](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDevice?view=graph-powershell-v1.0)

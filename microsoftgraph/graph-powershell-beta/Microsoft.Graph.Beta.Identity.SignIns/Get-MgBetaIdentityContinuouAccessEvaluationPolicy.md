@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityContinuouAccessEvaluationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityContinuouAccessEvaluationPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -77,4 +74,3 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgIdentityContinuouAccessEvaluationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityContinuouAccessEvaluationPolicy?view=graph-powershell-v1.0)

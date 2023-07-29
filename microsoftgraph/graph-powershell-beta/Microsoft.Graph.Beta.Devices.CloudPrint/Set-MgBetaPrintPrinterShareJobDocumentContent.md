@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update media content for the navigation property documents in print
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgPrintPrinterShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Set-MgPrintPrinterShareJobDocumentContent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -207,5 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgPrintPrinterShareJobDocumentContent](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Set-MgPrintPrinterShareJobDocumentContent?view=graph-powershell-v1.0)
 

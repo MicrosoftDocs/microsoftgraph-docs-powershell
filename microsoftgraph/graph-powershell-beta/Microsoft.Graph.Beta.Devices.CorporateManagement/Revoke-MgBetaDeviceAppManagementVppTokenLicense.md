@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Revoke licenses associated with a specific appleVolumePurchaseProgramToken
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Revoke-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Revoke-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RevokeExpanded (Default)
@@ -278,5 +275,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Revoke-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Revoke-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
 

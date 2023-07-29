@@ -11,9 +11,6 @@ schema: 2.0.0
 In Azure AD entitlement management, this action moves the accessPackage to a specified target accessPackageCatalog.
 The resources in the access package must be present in the target catalog.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgEntitlementManagementAccessPackageToCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Move-MgEntitlementManagementAccessPackageToCatalog?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### MoveExpanded (Default)
@@ -295,5 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Move-MgEntitlementManagementAccessPackageToCatalog](/powershell/module/Microsoft.Graph.Identity.Governance/Move-MgEntitlementManagementAccessPackageToCatalog?view=graph-powershell-v1.0)
 

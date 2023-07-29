@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property symantecCodeSigningCertificate for deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -101,5 +98,4 @@ ALIASES
 Remove-MgBetaDeviceAppMgtSymantecCodeSigningCertificate
 
 ## RELATED LINKS
-[Remove-MgDeviceAppManagementSymantecCodeSigningCertificate](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementSymantecCodeSigningCertificate?view=graph-powershell-v1.0)
 

@@ -15,9 +15,6 @@ The time portion of **completedDateTime** is set to midnight UTC by default.
 By default, this operation (and the POST, GET, and PATCH task operations) returns date-related properties in UTC.
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Complete-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users.Actions/Complete-MgUserOutlookTask?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Complete (Default)
@@ -189,4 +186,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Complete-MgUserOutlookTask](/powershell/module/Microsoft.Graph.Users.Actions/Complete-MgUserOutlookTask?view=graph-powershell-v1.0)

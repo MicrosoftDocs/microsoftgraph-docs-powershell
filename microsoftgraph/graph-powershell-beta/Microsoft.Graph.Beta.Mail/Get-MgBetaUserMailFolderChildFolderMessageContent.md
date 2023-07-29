@@ -30,6 +30,8 @@ Get-MgBetaUserMailFolderChildFolderMessageContent -InputObject <IMailIdentity> -
 ## DESCRIPTION
 Get media content for the navigation property messages from users
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -InputObject
@@ -170,4 +172,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserMailFolderChildFolderMessageContent](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolderMessageContent?view=graph-powershell-v1.0)
-

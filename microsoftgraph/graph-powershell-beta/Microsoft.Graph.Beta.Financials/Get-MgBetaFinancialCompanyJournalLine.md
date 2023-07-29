@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get journalLines from financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanyJournalLine](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyJournalLine?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -327,5 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Get-MgFinancialCompanyJournalLine](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanyJournalLine?view=graph-powershell-v1.0)
 

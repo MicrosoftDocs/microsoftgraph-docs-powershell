@@ -30,7 +30,7 @@ List the claimsMappingPolicy objects that are assigned to a servicePrincipal.
 ```powershell
 Import-Module Microsoft.Graph.Applications
 
-Get-MgServicePrincipalClaimMappingPolicyByRef -ServicePrincipalId $servicePrincipalId
+Get-MgServicePrincipalClaimMappingPolicy -ServicePrincipalId $servicePrincipalId
 ```
 This example shows how to use the Get-MgServicePrincipalClaimMappingPolicyByRef Cmdlet.
 

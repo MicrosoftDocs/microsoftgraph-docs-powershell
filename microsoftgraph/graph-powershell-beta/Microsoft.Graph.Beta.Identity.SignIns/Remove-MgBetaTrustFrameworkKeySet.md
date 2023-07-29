@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a trustFrameworkKeySet.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -228,4 +225,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgTrustFrameworkKeySet](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgTrustFrameworkKeySet?view=graph-powershell-v1.0)

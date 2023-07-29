@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a personAward object from a user's profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserProfileAward](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileAward?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -297,4 +294,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Get-MgUserProfileAward](/powershell/module/Microsoft.Graph.People/Get-MgUserProfileAward?view=graph-powershell-v1.0)

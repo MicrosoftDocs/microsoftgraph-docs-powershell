@@ -11,9 +11,6 @@ schema: 2.0.0
 The printTaskTrigger that triggered this task's execution.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterShareJobTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareJobTaskTrigger?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -159,5 +156,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgPrintPrinterShareJobTaskTrigger](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareJobTaskTrigger?view=graph-powershell-v1.0)
 

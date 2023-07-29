@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new tiIndicator object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTiIndicator?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -1134,4 +1131,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAgent <String>]`: 
 
 ## RELATED LINKS
-[New-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/New-MgSecurityTiIndicator?view=graph-powershell-v1.0)

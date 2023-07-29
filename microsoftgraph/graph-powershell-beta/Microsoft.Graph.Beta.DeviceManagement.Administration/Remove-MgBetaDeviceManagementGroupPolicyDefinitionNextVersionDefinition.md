@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property nextVersionDefinition for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -202,5 +199,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementGroupPolicyDefinitionNextVersionDefinition?view=graph-powershell-v1.0)
 

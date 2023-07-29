@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Teams
-Module Guid: 0c9acac9-b24e-456e-8577-bb007fc174a4
+Module Guid: e09c96ea-12cd-4423-8f58-d2a81e42b79b
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams
 Help Version: 1.0.0.0
 Locale: en-US
@@ -1621,9 +1621,6 @@ Delete navigation property operations for groups
 ### [Remove-MgBetaGroupTeamPermissionGrant](Remove-MgBetaGroupTeamPermissionGrant.md)
 Delete navigation property permissionGrants for groups
 
-### [Remove-MgBetaGroupTeamPhoto](Remove-MgBetaGroupTeamPhoto.md)
-Delete navigation property photo for groups
-
 ### [Remove-MgBetaGroupTeamPrimaryChannel](Remove-MgBetaGroupTeamPrimaryChannel.md)
 Delete navigation property primaryChannel for groups
 
@@ -1734,9 +1731,6 @@ Delete navigation property operations for teams
 
 ### [Remove-MgBetaTeamPermissionGrant](Remove-MgBetaTeamPermissionGrant.md)
 Delete navigation property permissionGrants for teams
-
-### [Remove-MgBetaTeamPhoto](Remove-MgBetaTeamPhoto.md)
-Delete navigation property photo for teams
 
 ### [Remove-MgBetaTeamPrimaryChannel](Remove-MgBetaTeamPrimaryChannel.md)
 Delete navigation property primaryChannel for teams
@@ -2154,7 +2148,8 @@ Update the properties of the specified tab in a chat.
 Update the properties of the specified channel.
 
 ### [Update-MgBetaGroupTeamChannelMember](Update-MgBetaGroupTeamChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [Update-MgBetaGroupTeamChannelMessage](Update-MgBetaGroupTeamChannelMessage.md)
 Update a chatMessage object.
@@ -2199,7 +2194,8 @@ Update the navigation property photo in groups
 Update the navigation property primaryChannel in groups
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMember](Update-MgBetaGroupTeamPrimaryChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [Update-MgBetaGroupTeamPrimaryChannelMessage](Update-MgBetaGroupTeamPrimaryChannelMessage.md)
 Update a chatMessage object.
@@ -2276,7 +2272,8 @@ Update Preapproval policy associated with a Teams App.
 Update the properties of the specified channel.
 
 ### [Update-MgBetaTeamChannelMember](Update-MgBetaTeamChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [Update-MgBetaTeamChannelMessage](Update-MgBetaTeamChannelMessage.md)
 Update a chatMessage object.
@@ -2321,7 +2318,8 @@ Update the navigation property photo in teams
 Update the navigation property primaryChannel in teams
 
 ### [Update-MgBetaTeamPrimaryChannelMember](Update-MgBetaTeamPrimaryChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [Update-MgBetaTeamPrimaryChannelMessage](Update-MgBetaTeamPrimaryChannelMessage.md)
 Update a chatMessage object.
@@ -2398,7 +2396,8 @@ Update the navigation property deletedTeams in teamwork
 Update the navigation property channels in teamwork
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMember](Update-MgBetaTeamworkDeletedTeamChannelMember.md)
-Update the role of a conversationMember in a \nteam.\nor channel.
+Update the role of a conversationMember in a channel.
+This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 ### [Update-MgBetaTeamworkDeletedTeamChannelMessage](Update-MgBetaTeamworkDeletedTeamChannelMessage.md)
 Update a chatMessage object.

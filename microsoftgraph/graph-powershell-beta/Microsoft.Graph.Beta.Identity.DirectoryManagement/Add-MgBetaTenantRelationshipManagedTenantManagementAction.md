@@ -12,9 +12,6 @@ Applies a management action against a specific managed tenant.
 By performing this operation the appropriate configurations will be made and policies created.
 As example when applying the require multi-factor authentication for admins management action will create an Azure Active Directory conditional access policy that requires multi-factor authentication for all users that have been assigned an administrative directory role.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgTenantRelationshipManagedTenantManagementAction](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Add-MgTenantRelationshipManagedTenantManagementAction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ApplyExpanded (Default)
@@ -298,6 +295,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -309,5 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgTenantRelationshipManagedTenantManagementAction](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Add-MgTenantRelationshipManagedTenantManagementAction?view=graph-powershell-v1.0)
 

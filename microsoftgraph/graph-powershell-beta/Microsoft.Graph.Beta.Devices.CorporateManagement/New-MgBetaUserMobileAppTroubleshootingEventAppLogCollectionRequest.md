@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to appLogCollectionRequests for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -328,5 +325,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgUserMobileAppTroubleshootingEventAppLogCollectionRequest?view=graph-powershell-v1.0)
 

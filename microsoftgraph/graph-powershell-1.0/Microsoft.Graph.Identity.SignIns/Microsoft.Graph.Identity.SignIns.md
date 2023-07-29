@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Identity.SignIns
-Module Guid: 2e719787-f1ea-4ac7-b7fc-00f9f271c04e
+Module Guid: 360fbe3c-0e56-478e-882c-2d1ac3b2f232
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -679,8 +679,13 @@ Create new navigation property to methods for users
 ### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
 Create new navigation property to operations for users
 
-### [New-MgUserAuthenticationOperation](New-MgUserAuthenticationOperation.md)
-Create new navigation property to operations for users
+### [New-MgUserAuthenticationPhoneMethod](New-MgUserAuthenticationPhoneMethod.md)
+Add a new phone authentication method for a user.
+A user may only have one phone of each type, captured in the **phoneType** property.
+This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
+Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
 ### [New-MgUserAuthenticationTemporaryAccessPassMethod](New-MgUserAuthenticationTemporaryAccessPassMethod.md)
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
@@ -1083,6 +1088,9 @@ Update the navigation property methods in users
 ### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
 Update the navigation property operations in users
 
-### [Update-MgUserAuthenticationOperation](Update-MgUserAuthenticationOperation.md)
-Update the navigation property operations in users
+### [Update-MgUserAuthenticationPhoneMethod](Update-MgUserAuthenticationPhoneMethod.md)
+Update a user's phone number associated with a phone authentication method object.
+You can't change a phone's type.
+To change a phone's type, add a new number of the desired type and then delete the object with the original type.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
 

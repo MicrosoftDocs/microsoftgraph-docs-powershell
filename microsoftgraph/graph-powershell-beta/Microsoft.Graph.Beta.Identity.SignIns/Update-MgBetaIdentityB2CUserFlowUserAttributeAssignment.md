@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a identityUserFlowAttributeAssignment object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityB2CUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -412,7 +409,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: The value that is set when this item is selected.
 
 ## RELATED LINKS
-[Update-MgIdentityB2CUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgIdentityB2CUserFlowUserAttributeAssignment](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgIdentityB2CUserFlowUserAttributeAssignment?view=graph-powershell-v1.0)

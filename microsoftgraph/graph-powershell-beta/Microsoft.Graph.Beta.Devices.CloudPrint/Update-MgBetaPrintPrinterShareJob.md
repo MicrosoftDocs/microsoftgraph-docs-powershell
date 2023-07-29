@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property jobs in print
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPrintPrinterShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterShareJob?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -634,8 +631,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
-[Update-MgPrintPrinterShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterShareJob?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgPrintPrinterShareJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrintPrinterShareJob?view=graph-powershell-v1.0)
 

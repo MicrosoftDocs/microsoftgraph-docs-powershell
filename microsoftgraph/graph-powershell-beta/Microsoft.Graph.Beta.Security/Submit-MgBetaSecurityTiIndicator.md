@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Upload multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### SubmitExpanded (Default)
@@ -307,7 +304,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAgent <String>]`: 
 
 ## RELATED LINKS
-[Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Submit-MgSecurityTiIndicator](/powershell/module/Microsoft.Graph.Security/Submit-MgSecurityTiIndicator?view=graph-powershell-v1.0)

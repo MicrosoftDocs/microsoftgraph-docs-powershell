@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new webAccount object in a user's profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserProfileWebAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileWebAccount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -517,4 +514,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgUserProfileWebAccount](/powershell/module/Microsoft.Graph.People/New-MgUserProfileWebAccount?view=graph-powershell-v1.0)

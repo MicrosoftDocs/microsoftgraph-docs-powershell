@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get shipmentMethod from financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgFinancialCompanySaleQuoteCustomerShipmentMethod](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleQuoteCustomerShipmentMethod?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -165,5 +162,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Get-MgFinancialCompanySaleQuoteCustomerShipmentMethod](/powershell/module/Microsoft.Graph.Financials/Get-MgFinancialCompanySaleQuoteCustomerShipmentMethod?view=graph-powershell-v1.0)
 

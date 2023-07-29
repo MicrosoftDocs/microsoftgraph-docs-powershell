@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property activityStatistics in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserActivityStatistics](/powershell/module/Microsoft.Graph.People/Update-MgUserActivityStatistics?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -302,5 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Update-MgUserActivityStatistics](/powershell/module/Microsoft.Graph.People/Update-MgUserActivityStatistics?view=graph-powershell-v1.0)
 

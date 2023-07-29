@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to wdacSupplementalPolicies for deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -389,5 +386,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User Principal Name.
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementWdacSupplementalPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWdacSupplementalPolicy?view=graph-powershell-v1.0)
 

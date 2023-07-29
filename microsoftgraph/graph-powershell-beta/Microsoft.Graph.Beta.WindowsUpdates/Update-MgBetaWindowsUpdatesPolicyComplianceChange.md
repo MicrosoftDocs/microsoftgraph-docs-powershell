@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a contentApproval object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -381,8 +378,6 @@ To create the parameters described below, construct a hash table containing the 
       - `[DaysUntilForcedReboot <Int32?>]`: Specifies the number of days after an update is installed, during which the user of the device can control when the device restarts.
 
 ## RELATED LINKS
-[Update-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgWindowsUpdatesPolicyComplianceChange](/powershell/module/Microsoft.Graph.WindowsUpdates/Update-MgWindowsUpdatesPolicyComplianceChange?view=graph-powershell-v1.0)
 

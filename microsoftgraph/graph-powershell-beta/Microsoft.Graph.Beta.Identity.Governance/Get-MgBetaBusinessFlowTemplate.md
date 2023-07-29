@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get entity from businessFlowTemplates by key
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgBusinessFlowTemplate](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgBusinessFlowTemplate?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -347,4 +344,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgBusinessFlowTemplate](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgBusinessFlowTemplate?view=graph-powershell-v1.0)

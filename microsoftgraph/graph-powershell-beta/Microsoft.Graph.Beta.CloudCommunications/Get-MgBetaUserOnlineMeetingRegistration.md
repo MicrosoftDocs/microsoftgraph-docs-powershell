@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaUserOnlineMeetingRegistration
 
 ## SYNOPSIS
-Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaUserOnlineMeetingRegistration -InputObject <ICloudCommunicationsIdenti
 ```
 
 ## DESCRIPTION
-Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaUserOnlineMeetingRegistration Cmdlet
@@ -165,4 +162,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)

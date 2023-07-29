@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Collection of Derived credential settings associated with account.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -379,8 +376,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementDerivedCredential](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDerivedCredential?view=graph-powershell-v1.0)
 

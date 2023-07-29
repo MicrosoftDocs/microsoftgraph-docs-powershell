@@ -40,6 +40,8 @@ Get-MgUserMailFolderChildFolderMessageAttachment -InputObject <IMailIdentity> [-
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -269,4 +271,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaUserMailFolderChildFolderMessageAttachment](/powershell/module/Microsoft.Graph.Beta.Mail/Get-MgBetaUserMailFolderChildFolderMessageAttachment?view=graph-powershell-beta)
-

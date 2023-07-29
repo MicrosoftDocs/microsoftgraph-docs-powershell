@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of an eDiscovery reviewSetQuery object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -305,4 +302,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)

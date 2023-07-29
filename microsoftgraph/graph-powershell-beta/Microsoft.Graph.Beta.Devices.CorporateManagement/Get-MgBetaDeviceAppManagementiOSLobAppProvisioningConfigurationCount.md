@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -70,5 +67,4 @@ ALIASES
 Get-MgBetaDeviceAppMgtiOSLobAppProvisioningConfigurationCount
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementiOSLobAppProvisioningConfigurationCount?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Validate that a set of cloudPC devices meet the requirements to be bulk resized.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -149,5 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetServicePlanId <String>]`: 
 
 ## RELATED LINKS
-[Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementVirtualEndpointCloudPcBulkResize?view=graph-powershell-v1.0)
 

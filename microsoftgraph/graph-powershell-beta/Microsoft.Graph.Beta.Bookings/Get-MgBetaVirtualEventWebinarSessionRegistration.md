@@ -8,10 +8,7 @@ schema: 2.0.0
 # Get-MgBetaVirtualEventWebinarSessionRegistration
 
 ## SYNOPSIS
-Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventWebinarSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionRegistration?view=graph-powershell-v1.0)
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Get-MgBetaVirtualEventWebinarSessionRegistration -InputObject <IBookingsIdentity
 ```
 
 ## DESCRIPTION
-Get the meetingRegistration details associated with an onlineMeeting on behalf of the organizer.
+Get the externalMeetingRegistration details associated with an onlineMeeting.
 
 ## PARAMETERS
 
@@ -149,5 +146,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgVirtualEventWebinarSessionRegistration](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventWebinarSessionRegistration?view=graph-powershell-v1.0)
 

@@ -8,8 +8,8 @@ schema: 2.0.0
 # Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile
 
 ## SYNOPSIS
-Retrieve the details of the default file for an agreement, including the language and version information.
-The file information is specified through the agreementFile object.
+Retrieve the details of an agreement file, including the language and version information.
+The default file can have multiple versions, each with its own language, that can be retrieved by specifying the **Accept-Language** header.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgIdentityGovernanceTermsOfUseAgreementFile](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceTermsOfUseAgreementFile?view=graph-powershell-v1.0)
@@ -36,8 +36,8 @@ Get-MgBetaIdentityGovernanceTermsOfUseAgreementFile -InputObject <IIdentityGover
 ```
 
 ## DESCRIPTION
-Retrieve the details of the default file for an agreement, including the language and version information.
-The file information is specified through the agreementFile object.
+Retrieve the details of an agreement file, including the language and version information.
+The default file can have multiple versions, each with its own language, that can be retrieved by specifying the **Accept-Language** header.
 
 ## PARAMETERS
 

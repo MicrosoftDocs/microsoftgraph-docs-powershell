@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the configuration details of a Microsoft Teams-enabled device, including software versions, peripheral device configuration (for example, camera, display, microphone, and speaker), hardware configuration, and Microsoft Teams client configuration.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeviceConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceConfiguration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -161,4 +158,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamworkDeviceConfiguration](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeviceConfiguration?view=graph-powershell-v1.0)

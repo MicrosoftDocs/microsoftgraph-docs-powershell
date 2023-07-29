@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action enrollAssetsById
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAssetById](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAssetById?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EnrollExpanded (Default)
@@ -259,5 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-[Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAssetById](/powershell/module/Microsoft.Graph.WindowsUpdates/Invoke-MgEnrollWindowsUpdatesPolicyAudienceExclusionAssetById?view=graph-powershell-v1.0)
 

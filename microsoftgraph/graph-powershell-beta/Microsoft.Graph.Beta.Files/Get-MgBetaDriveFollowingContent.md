@@ -30,6 +30,8 @@ Get-MgBetaDriveFollowingContent -InputObject <IFilesIdentity> -OutFile <String> 
 ## DESCRIPTION
 The content stream, if the item represents a file.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -DriveId
@@ -154,4 +156,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveFollowingContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveFollowingContent?view=graph-powershell-v1.0)
-
