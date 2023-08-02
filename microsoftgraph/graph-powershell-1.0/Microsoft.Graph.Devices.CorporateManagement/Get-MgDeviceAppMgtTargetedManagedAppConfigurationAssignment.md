@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ## DESCRIPTION
@@ -43,8 +40,9 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationAssignment](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtTargetedManagedAppConfigurationAssignment?view=graph-powershell-beta)
+
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationassignment](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgttargetedmanagedappconfigurationassignment)
+
 
 

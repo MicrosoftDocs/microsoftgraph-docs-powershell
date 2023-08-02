@@ -82,10 +82,7 @@ function Get-Files {
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
                
                 if ($Command -ne $NonAllowedCommand[$NonAllowedCommand.Count - 1]) {
-                    $AvailableCommand = Find-MgGraphCommand -Command $Command
-                    if ($AvailableCommand) {
-                        Construct-Path -Command $Command -Module $Module
-                    }                                       
+                    Construct-Path -Command $Command -Module $Module                                     
                 }
             }
         }
@@ -152,7 +149,7 @@ function Add-Link {
             $CommandRename = $Command.Replace("-MgBeta", "-Mg")
             $FullModuleName = "Microsoft.Graph.$Module/$CommandRename"
             $LinkTitle = "To view the v1.0 release of this cmdlet, view"
-            $View = "?view=graph-powershell-v1.0"
+            $View = "?view=graph-powershell-1.0"
             if ($GraphProfile -eq "v1.0") {
                 $CommandRename = $Command.Replace("-Mg", "-MgBeta")
                 $FullModuleName = "Microsoft.Graph.Beta.$Module/$CommandRename"

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 List of apps to which the policy is deployed.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtDefaultManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtDefaultManagedAppProtectionApp?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ## DESCRIPTION
@@ -43,8 +40,9 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[Get-MgBetaDeviceAppMgtDefaultManagedAppProtectionApp](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtDefaultManagedAppProtectionApp?view=graph-powershell-beta)
+
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtdefaultmanagedappprotectionapp](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtdefaultmanagedappprotectionapp)
+
 
 

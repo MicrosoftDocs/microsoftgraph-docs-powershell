@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceConfigurationStates for users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaDeviceAppMgtManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppMgtManagedAppPolicy?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -398,4 +395,5 @@ SETTINGSTATES <IMicrosoftGraphDeviceConfigurationSettingState\[]>: .
 
 ## RELATED LINKS
 
-[Remove-MgBetaDeviceAppMgtManagedAppPolicy](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Remove-MgBetaDeviceAppMgtManagedAppPolicy?view=graph-powershell-beta)
+
+
