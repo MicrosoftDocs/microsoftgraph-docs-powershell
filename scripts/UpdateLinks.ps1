@@ -2,10 +2,6 @@
 # Licensed under the MIT License.
 Param(
     $ModulesToGenerate = @(),
-    [System.Collections.Generic.HashSet[string]]$V1CommandGetVariantList = @(),
-    [System.Collections.Generic.HashSet[string]]$BetaCommandGetVariantList = @(),
-    [System.Collections.Generic.HashSet[string]]$V1CommandListVariantList = @(),
-    [System.Collections.Generic.HashSet[string]]$BetaCommandListVariantList = @(),
     [string] $ModuleMappingConfigPath = (Join-Path $PSScriptRoot "../microsoftgraph/config/ModulesMapping.jsonc"),
     [string] $SDKDocsPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell/src"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
@@ -86,37 +82,10 @@ function Get-Files {
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
                
                 if ($Command -ne $NonAllowedCommand[$NonAllowedCommand.Count - 1]) {
-                    if ($GraphProfile -eq "v1.0") {
-                        #Search for corresponding command on v1
-                        #Start with Get variant list
-                        $V1CommandFromGetVariant = $V1CommandGetVariantList.Contains($Command)
-                        if ($V1CommandFromGetVariant -ne $null) {
-                            Construct-Path -Command $Command -Module $Module
-                        }
-                        else {
-                            #Search from List variant
-                            $V1CommandFromListVariant = $V1CommandGetVariantList.Contains($Command)
-                            if ($V1CommandFromListVariant -ne $null) {
-                                Construct-Path -Command $Command -Module $Module
-                            }
-                        }
-                    }
-                    else {
-                        #Search for corresponding command on beta
-                        #Start with Get variant list
-                        $BetaCommandFromGetVariant = $BetaCommandGetVariantList.Contains($Command)
-                        if ($BetaCommandFromGetVariant -ne $null) {
-                            Construct-Path -Command $Command -Module $Module
-                        }
-                        else {
-                            #Search from List variant
-                            $BetaCommandFromListVariant = $BetaCommandGetVariantList.Contains($Command)
-                            if ($BetaCommandFromListVariant -ne $null) {
-                                Construct-Path -Command $Command -Module $Module
-                            }
-                        }
-                    }
-                                                    
+                    $AvailableCommand = Find-MgGraphCommand -Command $Command
+                    if ($AvailableCommand) {
+                        Construct-Path -Command $Command -Module $Module
+                    }                                       
                 }
             }
         }
@@ -219,30 +188,6 @@ if ($ModulesToGenerate.Count -eq 0) {
     $ModulesToGenerate = $ModuleMapping.Keys
 }
 
-$MetaDataJsonFile = Join-Path $SDKDocsPath "Authentication" "Authentication" "custom" "common" "MgCommandMetadata.json"
-$JsonContent = Get-Content -Path $MetaDataJsonFile
-$DeserializedContent = $JsonContent | ConvertFrom-Json
-foreach ($Data in $DeserializedContent) {
-    if ($Data.ApiVersion -eq "beta") {
-        
-        if (-not($Data.Variants[0].Contains("List"))) {
-            $Beta = $V1CommandGetVariantList.Add($Data.Command)        
-        }
-        else {
-            $Beta1 = $V1CommandListVariantList.Add($Data.Command) 
-        }   
-    }
-
-    if ($Data.ApiVersion -eq "v1.0") {
-        
-        if (-not($Data.Variants[0].Contains("List"))) {
-            $V1 = $BetaCommandGetVariantList.Add($Data.Command)        
-        }
-        else {
-            $V11 = $BetaCommandListVariantList.Add($Data.Command)
-        }   
-    }
-}
 Set-Location microsoftgraph-docs-powershell
 $date = Get-Date -Format "dd-MM-yyyy"
 $proposedBranch = "weekly_v2_docs_update_$date"
