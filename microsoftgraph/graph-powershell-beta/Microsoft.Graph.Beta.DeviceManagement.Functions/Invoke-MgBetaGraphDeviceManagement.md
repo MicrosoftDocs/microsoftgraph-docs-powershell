@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function scopedForResource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgGraphDeviceManagement?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Graph (Default)
@@ -110,5 +107,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Invoke-MgGraphDeviceManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Invoke-MgGraphDeviceManagement?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property dataSharingConsents in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -416,8 +413,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDataSharingConsent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementDataSharingConsent?view=graph-powershell-v1.0)
 

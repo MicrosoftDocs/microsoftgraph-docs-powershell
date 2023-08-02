@@ -12,9 +12,6 @@ Represents the set of Microsoft 365 groups and security groups in Azure Active D
 Returned only on $expand.
 For an example, see Get cloudPcUserSettingample.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -318,5 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementVirtualEndpointUserSettingAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointUserSettingAssignment?view=graph-powershell-v1.0)
 

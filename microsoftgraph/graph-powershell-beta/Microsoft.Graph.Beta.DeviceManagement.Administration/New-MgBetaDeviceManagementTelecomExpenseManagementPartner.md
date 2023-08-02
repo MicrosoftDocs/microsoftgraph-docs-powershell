@@ -31,6 +31,8 @@ New-MgBetaDeviceManagementTelecomExpenseManagementPartner
 ## DESCRIPTION
 Create new navigation property to telecomExpenseManagementPartners for deviceManagement
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -216,4 +218,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgDeviceManagementTelecomExpenseManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementTelecomExpenseManagementPartner?view=graph-powershell-v1.0)
-

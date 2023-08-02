@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Specifies the assets to include in the audience.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesDeploymentAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceMember?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -275,4 +272,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-[Get-MgWindowsUpdatesDeploymentAudienceMember](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesDeploymentAudienceMember?view=graph-powershell-v1.0)

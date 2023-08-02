@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 List of settings contained in this App Configuration policy
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -325,5 +322,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementTargetedManagedAppConfigurationSetting?view=graph-powershell-v1.0)
 

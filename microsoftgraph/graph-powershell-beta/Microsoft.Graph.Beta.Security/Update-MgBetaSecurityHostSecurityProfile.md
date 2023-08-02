@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property hostSecurityProfiles in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -590,8 +587,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
-[Update-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgSecurityHostSecurityProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityHostSecurityProfile?view=graph-powershell-v1.0)
 

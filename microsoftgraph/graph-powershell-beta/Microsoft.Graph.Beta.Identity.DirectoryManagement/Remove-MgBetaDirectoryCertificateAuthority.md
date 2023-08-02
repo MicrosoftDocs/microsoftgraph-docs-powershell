@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property certificateAuthorities for directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -99,5 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgDirectoryCertificateAuthority](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryCertificateAuthority?view=graph-powershell-v1.0)
 

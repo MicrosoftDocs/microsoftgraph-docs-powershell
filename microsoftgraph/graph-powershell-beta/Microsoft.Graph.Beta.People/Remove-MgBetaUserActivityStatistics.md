@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property activityStatistics for users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserActivityStatistics](/powershell/module/Microsoft.Graph.People/Remove-MgUserActivityStatistics?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -182,5 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Remove-MgUserActivityStatistics](/powershell/module/Microsoft.Graph.People/Remove-MgUserActivityStatistics?view=graph-powershell-v1.0)
 

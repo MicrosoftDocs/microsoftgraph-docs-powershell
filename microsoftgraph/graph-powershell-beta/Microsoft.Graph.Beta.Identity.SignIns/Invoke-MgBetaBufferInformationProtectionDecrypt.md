@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action decryptBuffer
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBufferInformationProtectionDecrypt](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgBufferInformationProtectionDecrypt?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BufferExpanded (Default)
@@ -180,5 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PublishingLicense <Byte[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBufferInformationProtectionDecrypt](/powershell/module/Microsoft.Graph.Identity.SignIns/Invoke-MgBufferInformationProtectionDecrypt?view=graph-powershell-v1.0)
 

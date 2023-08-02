@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to sharedUseServicePlans for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementVirtualEndpointSharedUseServicePlan](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointSharedUseServicePlan?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -182,5 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UsedCount <Int32?>]`: The number of service plans that the account uses.
 
 ## RELATED LINKS
-[New-MgDeviceManagementVirtualEndpointSharedUseServicePlan](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementVirtualEndpointSharedUseServicePlan?view=graph-powershell-v1.0)
 

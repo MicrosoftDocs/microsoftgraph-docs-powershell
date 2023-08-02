@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reupload a cloudPcDeviceImage object that failed to upload.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reupload (Default)
@@ -190,4 +187,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgReuploadDeviceManagementVirtualEndpointDeviceImage?view=graph-powershell-v1.0)

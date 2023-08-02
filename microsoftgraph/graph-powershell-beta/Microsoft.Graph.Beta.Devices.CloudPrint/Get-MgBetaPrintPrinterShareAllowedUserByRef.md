@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve a list of users who have been granted access to submit print jobs to the associated printerShare.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrintPrinterShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareAllowedUserByRef?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -175,5 +172,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPrintPrinterShareAllowedUserByRef](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrintPrinterShareAllowedUserByRef?view=graph-powershell-v1.0)
 

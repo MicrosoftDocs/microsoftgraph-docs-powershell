@@ -38,6 +38,8 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion
 ## DESCRIPTION
 Read the properties and relationships of a workflowVersion object.
 
+## EXAMPLES
+
 ## PARAMETERS
 
 ### -All
@@ -355,4 +357,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowVersion?view=graph-powershell-v1.0)
-

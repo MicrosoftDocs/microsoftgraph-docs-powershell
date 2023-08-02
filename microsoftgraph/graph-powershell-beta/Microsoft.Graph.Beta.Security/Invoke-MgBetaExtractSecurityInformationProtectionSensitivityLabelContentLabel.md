@@ -11,9 +11,6 @@ schema: 2.0.0
 Use the metadata that exists on an already-labeled piece of information to resolve the metadata to a specific sensitivity label.
 The contentInfo input is resolved to informationProtectionContentLabel.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel](/powershell/module/Microsoft.Graph.Security/Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ExtractExpanded (Default)
@@ -153,5 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
-[Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel](/powershell/module/Microsoft.Graph.Security/Invoke-MgExtractSecurityInformationProtectionSensitivityLabelContentLabel?view=graph-powershell-v1.0)
 

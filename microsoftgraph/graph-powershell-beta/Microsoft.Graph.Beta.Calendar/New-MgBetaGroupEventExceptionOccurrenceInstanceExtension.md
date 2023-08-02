@@ -13,9 +13,6 @@ You can create an open extension in a resource instance and store custom data to
 See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupEventExceptionOccurrenceInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventExceptionOccurrenceInstanceExtension?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -237,5 +234,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupEventExceptionOccurrenceInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/New-MgGroupEventExceptionOccurrenceInstanceExtension?view=graph-powershell-v1.0)
 

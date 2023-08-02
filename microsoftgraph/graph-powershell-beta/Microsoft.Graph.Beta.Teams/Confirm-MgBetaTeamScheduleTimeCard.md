@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Confirm a specific timeCard.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Confirm-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Confirm (Default)
@@ -176,4 +173,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Confirm-MgTeamScheduleTimeCard](/powershell/module/Microsoft.Graph.Teams/Confirm-MgTeamScheduleTimeCard?view=graph-powershell-v1.0)

@@ -9,7 +9,7 @@ metadata:
   ms.topic: landing-page # Required
   author: msewaweru #Required; your GitHub user alias, with correct capitalization.
   ms.author: eunicewaweru #Required; microsoft alias of author; optional team alias.
-  ms.date: 07/28/2022 #Required; mm/dd/yyyy format.
+  ms.date: 08/01/2023 #Required; mm/dd/yyyy format.
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -53,6 +53,8 @@ landingContent:
             url: find-mg-graph-command.md
           - text: Discover command permissions using  Find-MgGraphPermission 
             url: find-mg-graph-permission.md
+          - text: Discover Microsoft Graph PowerShell authentication cmdlets
+            url: authentication-commands.md
       - linkListType: tutorial
         links:
           - text: Enable app-only authentication
@@ -60,7 +62,9 @@ landingContent:
           - text: Manage access to resources
             url: tutorial-entitlement-management.md
           - text: Assign Azure AD roles in PIM
-            url: tutorial-pim.md  
+            url: tutorial-pim.md
+          - text: Manage PIM policies  
+            url: how-to-manage-pim-policies.md  
 
   
   # Card
@@ -80,6 +84,8 @@ landingContent:
     linkLists:
       - linkListType: reference
         links:
+          - text: Troubleshoot common errors in Microsoft Graph PowerShell
+            url: troubleshooting.md
           - text: Permissions reference
             url: https://docs.microsoft.com/en-us/graph/permissions-reference
           - text: Advanced query capabilities

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property agents in onPremisesPublishingProfiles
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgOnPremisePublishingProfileAgent](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileAgent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -313,6 +310,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedPublishingTypes <String[]>]`: 
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -343,5 +341,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgOnPremisePublishingProfileAgent](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfileAgent?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get details from security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -327,5 +324,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityAttackSimulationLandingPageDetail](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationLandingPageDetail?view=graph-powershell-v1.0)
 

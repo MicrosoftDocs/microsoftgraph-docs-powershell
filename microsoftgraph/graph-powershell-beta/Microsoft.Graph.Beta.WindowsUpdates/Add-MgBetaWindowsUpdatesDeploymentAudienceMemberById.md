@@ -11,9 +11,6 @@ schema: 2.0.0
 Add members of the same type to an updatableAssetGroup.
 You can also use the method addMembers to add members.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgWindowsUpdatesDeploymentAudienceMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesDeploymentAudienceMemberById?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### AddExpanded (Default)
@@ -238,5 +235,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
-[Add-MgWindowsUpdatesDeploymentAudienceMemberById](/powershell/module/Microsoft.Graph.WindowsUpdates/Add-MgWindowsUpdatesDeploymentAudienceMemberById?view=graph-powershell-v1.0)
 

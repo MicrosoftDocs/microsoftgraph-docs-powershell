@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action send
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgFinancialCompanySalesInvoice](/powershell/module/Microsoft.Graph.Financials/Send-MgFinancialCompanySalesInvoice?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Send (Default)
@@ -181,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Send-MgFinancialCompanySalesInvoice](/powershell/module/Microsoft.Graph.Financials/Send-MgFinancialCompanySalesInvoice?view=graph-powershell-v1.0)
 

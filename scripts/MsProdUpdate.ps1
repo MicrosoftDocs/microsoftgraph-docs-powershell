@@ -7,11 +7,7 @@ Param(
     [string] $SDKOpenApiPath = (Join-Path $PSScriptRoot "../../msgraph-sdk-powershell"),
     [string] $WorkLoadDocsPath = (Join-Path $PSScriptRoot "../microsoftgraph"),
     [string] $GraphDocsPath = (Join-Path $PSScriptRoot "../../microsoft-graph-docs"),
-    [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl"),
-    [hashtable]$V1CommandGetVariantList= @{},
-    [hashtable]$BetaCommandGetVariantList= @{},
-    [hashtable]$V1CommandListVariantList= @{},
-    [hashtable]$BetaCommandListVariantList= @{}
+    [string] $MissingMsProdHeaderPath = (Join-Path $PSScriptRoot "../missingexternaldocsurl")
 )
 function Get-GraphMapping {
     $graphMapping = @{}
@@ -49,7 +45,7 @@ function Get-FilesByProfile {
         [ValidateNotNullOrEmpty()]
         $ModulesToGenerate = @()
     )
-    if($GraphProfile -eq "beta"){
+    if ($GraphProfile -eq "beta") {
         $ModulePrefix = "Microsoft.Graph.Beta"
     }
 
@@ -93,21 +89,15 @@ function Get-Files {
                
                 #Extract command over here
                 $Command = [System.IO.Path]::GetFileNameWithoutExtension($File)
-                    #Extract URI path
-                    $CommandValue = $null
-                    if($GraphProfile -eq "beta"){
-                        $CommandValue = $BetaCommandGetVariantList[$Command]
-                        
-                    }else{
-                        $CommandValue = $V1CommandGetVariantList[$Command]
+                #Extract URI path
+                $CommandDetails = Find-MgGraphCommand -Command $Command
+                if ($CommandDetails) {
+                    foreach ($CommandDetail in $CommandDetails) {
+                        $ApiPath = $CommandDetail.URI
+                        $Method = $CommandDetails.Method
+                        Get-ExternalDocsUrl -GraphProfile $GraphProfile -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module
                     }
-                        
-                    if ($CommandValue) {
-                        $CommandValueParams = $CommandValue.Split(",")
-                         $ApiPath = $CommandValueParams[0]
-                         $Method = $CommandValueParams[1]
-                        Get-ExternalDocsUrl -GraphProfile $GraphProfile -Url -UriPath $ApiPath -Command $Command -OpenApiContent $OpenApiContent -GraphProfilePath $GraphProfilePath -Method $Method.Trim() -Module $Module
-                    }
+                }
 
             }
         }
@@ -139,62 +129,58 @@ function Get-ExternalDocsUrl {
         if ($OpenApiContent.openapi && $OpenApiContent.info.version) {
             foreach ($Path in $OpenApiContent.paths) {
                 $ExternalDocUrl = $null
-                switch($Method){
+                switch ($Method) {
                     "GET" {
                         $ExternalDocUrl = $path[$UriPath].get.externalDocs.url
                         if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                            $GETApiPath = Extract-PathFromListVariant -GraphProfile $GraphProfile -Command $Command
-                            if(-not([string]::IsNullOrEmpty($GETApiPath))){
-                                $ExternalDocUrl = $Path[$GETApiPath].get.externalDocs.url
-                            }      
+                            #Try with microsoft.graph prefix on the last path segment
+                            $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
+                            $ExternalDocUrl = $path[$UriPathWithGraphPrefix].get.externalDocs.url
                         }
                     }
                     "POST" {
-                        $ExternalDocUrl = $Path[$UriPath].post.externalDocs.url
+                        $ExternalDocUrl = $Path[$UriPath].post.externalDocs.url 
                         if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                            $POSTApiPath = Extract-PathFromListVariant -GraphProfile $GraphProfile -Command $Command
-                            if(-not([string]::IsNullOrEmpty($POSTApiPath))){
-                                $ExternalDocUrl = $Path[$POSTApiPath].post.externalDocs.url
-                            }      
-                        }  
+                            #Try with microsoft.graph prefix on the last path segment
+                            $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
+                            $ExternalDocUrl = $path[$UriPathWithGraphPrefix].post.externalDocs.url
+                        }
                     }
                     "PATCH" {
-                        $ExternalDocUrl = $Path[$UriPath].patch.externalDocs.url 
+                        $ExternalDocUrl = $Path[$UriPath].patch.externalDocs.url
                         if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                            $PATCHApiPath = Extract-PathFromListVariant -GraphProfile $GraphProfile -Command $Command
-                            if(-not([string]::IsNullOrEmpty($PATCHApiPath))){
-                                $ExternalDocUrl = $Path[$PATCHApiPath].patch.externalDocs.url
-                            }      
-                        }
+                            #Try with microsoft.graph prefix on the last path segment
+                            $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
+                            $ExternalDocUrl = $path[$UriPathWithGraphPrefix].patch.externalDocs.url
+                        } 
                     }
                     "DELETE" {
                         $ExternalDocUrl = $Path[$UriPath].delete.externalDocs.url
                         if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                            $DELETEApiPath = Extract-PathFromListVariant -GraphProfile $GraphProfile -Command $Command
-                            if(-not([string]::IsNullOrEmpty($DELETEApiPath))){
-                                $ExternalDocUrl = $Path[$DELETEApiPath].delete.externalDocs.url
-                            }      
+                            #Try with microsoft.graph prefix on the last path segment
+                            $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
+                            $ExternalDocUrl = $path[$UriPathWithGraphPrefix].delete.externalDocs.url
                         }
                     }
                     "PUT" {
                         $ExternalDocUrl = $Path[$UriPath].put.externalDocs.url
                         if ([string]::IsNullOrEmpty($ExternalDocUrl)) {
-                            $PUTApiPath = Extract-PathFromListVariant -GraphProfile $GraphProfile -Command $Command
-                            if(-not([string]::IsNullOrEmpty($PUTApiPath))){
-                                $ExternalDocUrl = $Path[$PUTApiPath].put.externalDocs.url
-                            }      
-                        } 
+                            #Try with microsoft.graph prefix on the last path segment
+                            $UriPathWithGraphPrefix = Append-GraphPrefix -UriPath $UriPath
+                            $ExternalDocUrl = $path[$UriPathWithGraphPrefix].put.externalDocs.url
+                        }
                     }
 
                 }
                 if (-not([string]::IsNullOrEmpty($ExternalDocUrl))) {
                     WebScrapping -GraphProfile $GraphProfile -ExternalDocUrl $ExternalDocUrl -Command $Command -File $File
-                }else{
+                }
+                else {
                     #Add report for missing external docs url 
                     #Version UriPath Command #Module
                     $Folder = "$MissingMsProdHeaderPath\$Module"
                     #Create folder if it doesn't exist
-					if (-not (Test-Path $Folder)) {
+                    if (-not (Test-Path $Folder)) {
                         New-Item -ItemType Directory -Force -Path $Folder
                     }
                     #Create file if it doesn't exist
@@ -219,8 +205,16 @@ function Get-ExternalDocsUrl {
         }
     }
 }
-
-function Extract-PathFromListVariant{
+function Append-GraphPrefix {
+    param(
+        [string] $UriPath
+    )
+    $UriPathSegments = $UriPath.Split("/")
+    $LastUriPathSegment = $UriPathSegments[$UriPathSegments.Length - 1]
+    $UriPath = $UriPath.Replace($LastUriPathSegment, "microsoft.graph." + $LastUriPathSegment)
+    return $UriPath
+}
+function Extract-PathFromListVariant {
     param(
         [ValidateSet("beta", "v1.0")]
         [string] $GraphProfile = "v1.0", 
@@ -228,12 +222,13 @@ function Extract-PathFromListVariant{
     )
     $ListApiPath = $null
     $ListCommandValue = $null
-    if($GraphProfile -eq "beta"){
+    if ($GraphProfile -eq "beta") {
         $ListCommandValue = $BetaCommandListVariantList[$Command]
-    }else{
+    }
+    else {
         $ListCommandValue = $V1CommandListVariantList[$Command]
     } 
-    if(-not([string]::IsNullOrEmpty($ListCommandValue))){
+    if (-not([string]::IsNullOrEmpty($ListCommandValue))) {
         $ListCommandValueParams = $ListCommandValue.Split(",")
         $ListApiPath = $ListCommandValueParams[0]
     }
@@ -300,31 +295,7 @@ else {
     Write-Host "Branch already exists"
     git checkout $proposedBranch
 }
-$MetaDataJsonFile = Join-Path $SDKDocsPath "Authentication" "Authentication" "custom" "common" "MgCommandMetadata.json"
-$JsonContent = Get-Content -Path $MetaDataJsonFile
-$DeserializedContent = $JsonContent | ConvertFrom-Json
-foreach($Data in $DeserializedContent)
-{
-    if($Data.ApiVersion -eq "beta")
-    {        
-        if((-not($Data.Variants[0].Contains("List")))){
-            $BetaAPIPathAndMethod = $Data.Uri,$Data.Method -join ","
-            $Beta = $BetaCommandGetVariantList.Add($Data.Command, $BetaAPIPathAndMethod)        
-        }else{
-            $Beta1 = $BetaCommandListVariantList.Add($Data.Command, $BetaAPIPathAndMethod) 
-        }   
-    }
 
-    if($Data.ApiVersion -eq "v1.0")
-    {
-        $V1APIPathAndMethod = $Data.Uri,$Data.Method -join ","
-        if((-not($Data.Variants[0].Contains("List")))){
-            $V1 = $V1CommandGetVariantList.Add($Data.Command, $V1APIPathAndMethod)        
-        }else{
-            $V11 = $V1CommandListVariantList.Add($Data.Command, $V1APIPathAndMethod)
-        }   
-    }
-}
 if (!(Get-Module "powershell-yaml" -ListAvailable -ErrorAction SilentlyContinue)) {
     Install-Module "powershell-yaml" -AcceptLicense -Scope CurrentUser -Force
 }

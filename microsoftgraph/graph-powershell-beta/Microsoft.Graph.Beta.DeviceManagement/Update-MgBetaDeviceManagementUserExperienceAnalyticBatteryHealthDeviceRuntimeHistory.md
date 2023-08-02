@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsBatteryHealthDeviceRuntimeHistory in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -374,8 +371,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticBatteryHealthDeviceRuntimeHistory?view=graph-powershell-v1.0)
 

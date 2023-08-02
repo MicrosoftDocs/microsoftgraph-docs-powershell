@@ -12,9 +12,6 @@ Read-only property with details of the app-specific scope when the assignment is
 Nullable.
 Supports $expand.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestAppScope?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -231,5 +228,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestAppScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequestAppScope?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validateXml
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDeviceAppManagementMobileAppXml](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Test-MgDeviceAppManagementMobileAppXml?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -135,5 +132,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[OfficeConfigurationXml <Byte[]>]`: 
 
 ## RELATED LINKS
-[Test-MgDeviceAppManagementMobileAppXml](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Test-MgDeviceAppManagementMobileAppXml?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userExperienceAnalyticsAnomaly for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementUserExperienceAnalyticAnomaly](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticAnomaly?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -282,8 +279,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementUserExperienceAnalyticAnomaly](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticAnomaly?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementUserExperienceAnalyticAnomaly](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticAnomaly?view=graph-powershell-v1.0)
 

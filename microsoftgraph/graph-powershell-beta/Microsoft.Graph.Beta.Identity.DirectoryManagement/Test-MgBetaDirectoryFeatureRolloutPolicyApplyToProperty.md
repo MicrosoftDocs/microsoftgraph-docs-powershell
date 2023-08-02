@@ -18,9 +18,6 @@ Validate the mail nickname is unique This API returns with the first failure enc
 If one or more properties fail multiple validations, only the property with the first validation failure is returned.
 However, you can validate both the mail nickname and the display name and receive a collection of validation errors if you are only validating the prefix and suffix naming policy.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDirectoryFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgDirectoryFeatureRolloutPolicyApplyToProperty?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -291,6 +288,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -302,5 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgDirectoryFeatureRolloutPolicyApplyToProperty](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Test-MgDirectoryFeatureRolloutPolicyApplyToProperty?view=graph-powershell-v1.0)
 

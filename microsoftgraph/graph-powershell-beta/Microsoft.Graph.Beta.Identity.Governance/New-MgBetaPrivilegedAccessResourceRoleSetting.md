@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to roleSettings for privilegedAccess
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -742,8 +739,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Setting <String>]`: The settings of the rule. The value is a JSON string with a list of pairs in the format of Parameter_Name:Parameter_Value. For example, {'permanentAssignment':false,'maximumGrantPeriodInMinutes':129600}
 
 ## RELATED LINKS
-[New-MgPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleSetting?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[New-MgPrivilegedAccessResourceRoleSetting](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgPrivilegedAccessResourceRoleSetting?view=graph-powershell-v1.0)
 

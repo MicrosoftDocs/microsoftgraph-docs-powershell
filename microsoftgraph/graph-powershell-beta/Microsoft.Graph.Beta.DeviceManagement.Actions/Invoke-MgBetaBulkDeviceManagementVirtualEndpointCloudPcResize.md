@@ -12,9 +12,6 @@ Perform a bulk resize action to resize a group of cloudPCs that have successfull
 If any devices cannot be resized, those devices will indicate 'resize failed'.
 The remaining devices will be `provisioned` for the resize process.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BulkExpanded (Default)
@@ -153,5 +150,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetServicePlanId <String>]`: 
 
 ## RELATED LINKS
-[Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkDeviceManagementVirtualEndpointCloudPcResize?view=graph-powershell-v1.0)
 

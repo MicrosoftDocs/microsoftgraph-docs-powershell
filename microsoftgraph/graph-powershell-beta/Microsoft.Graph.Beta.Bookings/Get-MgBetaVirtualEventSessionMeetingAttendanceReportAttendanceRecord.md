@@ -11,9 +11,6 @@ schema: 2.0.0
 List of attendance records of an attendance report.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgVirtualEventSessionMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionMeetingAttendanceReportAttendanceRecord?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -296,5 +293,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Get-MgVirtualEventSessionMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.Bookings/Get-MgVirtualEventSessionMeetingAttendanceReportAttendanceRecord?view=graph-powershell-v1.0)
 

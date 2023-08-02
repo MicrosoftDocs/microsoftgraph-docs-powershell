@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a request to remove the personal data for an inboundSharedUserProfile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDirectoryInboundSharedUserProfilePersonalData](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryInboundSharedUserProfilePersonalData?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Remove (Default)
@@ -160,6 +157,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -171,5 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgDirectoryInboundSharedUserProfilePersonalData](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Remove-MgDirectoryInboundSharedUserProfilePersonalData?view=graph-powershell-v1.0)
 

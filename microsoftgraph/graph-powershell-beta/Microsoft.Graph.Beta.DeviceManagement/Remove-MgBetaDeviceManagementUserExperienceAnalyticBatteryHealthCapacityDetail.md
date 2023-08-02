@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property userExperienceAnalyticsBatteryHealthCapacityDetails for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -99,5 +96,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail](/powershell/module/Microsoft.Graph.DeviceManagement/Remove-MgDeviceManagementUserExperienceAnalyticBatteryHealthCapacityDetail?view=graph-powershell-v1.0)
 

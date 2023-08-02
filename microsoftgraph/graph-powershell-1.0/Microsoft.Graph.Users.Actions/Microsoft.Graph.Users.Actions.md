@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users.Actions
-Module Guid: ae211058-1e50-4d4a-a5bb-805ee184fdbe
+Module Guid: f55fda90-0fea-48c3-9e18-beb80e23bdfd
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions
 Help Version: 1.0.0.0
 Locale: en-US
@@ -322,10 +322,10 @@ Alternatively, create a draft to reply to an existing message and send it later.
 Retire a device
 
 ### [Invoke-MgScanUserManagedDeviceWindowsDefender](Invoke-MgScanUserManagedDeviceWindowsDefender.md)
-Invoke action windowsDefenderScan
+Not yet documented
 
 ### [Invoke-MgScanUserManagedDeviceWindowsDefender](Invoke-MgScanUserManagedDeviceWindowsDefender.md)
-Invoke action windowsDefenderScan
+Not yet documented
 
 ### [Invoke-MgSnoozeUserEventReminder](Invoke-MgSnoozeUserEventReminder.md)
 Postpone a reminder for an event in a user calendar until a new time.
@@ -429,7 +429,7 @@ To upload a file using an upload session, there are two steps:
 Invoke action createDownloadUrl
 
 ### [New-MgUserManagedDeviceWindowsDefenderUpdateSignature](New-MgUserManagedDeviceWindowsDefenderUpdateSignature.md)
-Invoke action windowsDefenderUpdateSignatures
+Not yet documented
 
 ### [New-MgUserMessageAttachmentUploadSession](New-MgUserMessageAttachmentUploadSession.md)
 Create an upload session that allows an app to iteratively upload ranges of a file, so as to attach the file to the specified Outlook item.
@@ -622,7 +622,7 @@ An attendee calling this action gets an error (HTTP 400 Bad Request), with the f
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 ### [Sync-MgUserManagedDevice](Sync-MgUserManagedDevice.md)
-Invoke action syncDevice
+Not yet documented
 
 ### [Test-MgUserDriveItemPermission](Test-MgUserDriveItemPermission.md)
 Invoke action validatePermission
@@ -655,7 +655,7 @@ Unpublish a [contentType][] from a content type hub site.
 Upgrade an app installation within a chat.
 
 ### [Update-MgUserManagedDeviceWindowsDeviceAccount](Update-MgUserManagedDeviceWindowsDeviceAccount.md)
-Invoke action updateWindowsDeviceAccount
+Not yet documented
 
 ### [Update-MgUserOnenotePageContent](Update-MgUserOnenotePageContent.md)
 Invoke action onenotePatchContent

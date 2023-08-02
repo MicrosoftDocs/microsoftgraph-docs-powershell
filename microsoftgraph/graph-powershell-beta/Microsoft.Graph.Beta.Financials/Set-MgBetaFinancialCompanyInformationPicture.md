@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update picture for the navigation property companyInformation in financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgFinancialCompanyInformationPicture](/powershell/module/Microsoft.Graph.Financials/Set-MgFinancialCompanyInformationPicture?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -214,5 +211,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Set-MgFinancialCompanyInformationPicture](/powershell/module/Microsoft.Graph.Financials/Set-MgFinancialCompanyInformationPicture?view=graph-powershell-v1.0)
 

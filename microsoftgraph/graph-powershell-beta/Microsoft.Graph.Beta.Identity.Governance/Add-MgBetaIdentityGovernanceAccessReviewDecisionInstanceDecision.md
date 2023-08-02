@@ -11,9 +11,6 @@ schema: 2.0.0
 Apply review decisions on an accessReviewInstance if the decisions were not applied automatically because the autoApplyDecisionsEnabled property is `false` in the review's accessReviewScheduleSettings.
 The status of the accessReviewInstance must be `Completed` to call this method.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgIdentityGovernanceAccessReviewDecisionInstanceDecision?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Apply (Default)
@@ -228,5 +225,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Add-MgIdentityGovernanceAccessReviewDecisionInstanceDecision](/powershell/module/Microsoft.Graph.Identity.Governance/Add-MgIdentityGovernanceAccessReviewDecisionInstanceDecision?view=graph-powershell-v1.0)
 

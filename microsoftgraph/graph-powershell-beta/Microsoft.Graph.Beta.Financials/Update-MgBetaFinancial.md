@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -1338,8 +1335,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendors <IMicrosoftGraphVendor[]>]`: 
 
 ## RELATED LINKS
-[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgFinancial](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancial?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get userFlowIdentityProviders from identity
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgIdentityB2CUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowIdentityProvider?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -348,4 +345,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgIdentityB2CUserFlowIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityB2CUserFlowIdentityProvider?view=graph-powershell-v1.0)

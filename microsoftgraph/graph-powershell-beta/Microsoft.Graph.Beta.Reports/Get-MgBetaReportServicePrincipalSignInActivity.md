@@ -12,9 +12,6 @@ Get a servicePrincipalSignInActivity object that contains sign-in activity infor
 You can use a service principal as a client or resource.
 A service principal supports delegated or app-only authentication context.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportServicePrincipalSignInActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportServicePrincipalSignInActivity?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -274,5 +271,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportServicePrincipalSignInActivity](/powershell/module/Microsoft.Graph.Reports/Get-MgReportServicePrincipalSignInActivity?view=graph-powershell-v1.0)
 

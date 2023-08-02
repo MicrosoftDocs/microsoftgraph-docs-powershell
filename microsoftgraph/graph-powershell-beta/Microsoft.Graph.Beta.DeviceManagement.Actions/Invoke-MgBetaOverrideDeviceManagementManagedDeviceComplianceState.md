@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action overrideComplianceState
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### OverrideExpanded (Default)
@@ -266,5 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgOverrideDeviceManagementManagedDeviceComplianceState?view=graph-powershell-v1.0)
 

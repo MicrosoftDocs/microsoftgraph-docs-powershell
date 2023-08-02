@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getTeamsUserActivityDistributionTotalUserCounts
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportTeamUserActivityDistributionTotalUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamUserActivityDistributionTotalUserCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -142,5 +139,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportTeamUserActivityDistributionTotalUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportTeamUserActivityDistributionTotalUserCount?view=graph-powershell-v1.0)
 

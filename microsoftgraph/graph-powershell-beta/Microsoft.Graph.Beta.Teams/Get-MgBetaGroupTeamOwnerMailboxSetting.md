@@ -13,9 +13,6 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamOwnerMailboxSetting](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamOwnerMailboxSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -173,5 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamOwnerMailboxSetting](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamOwnerMailboxSetting?view=graph-powershell-v1.0)
 

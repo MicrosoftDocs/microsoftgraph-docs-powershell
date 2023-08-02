@@ -11,9 +11,6 @@ schema: 2.0.0
 Mark a message as not junk.
 This API removes the sender from the list of blocked senders and moves the message to the **Inbox** folder, when **moveToInbox** is `true`.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### MarkExpanded (Default)
@@ -269,5 +266,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgMarkUserMailFolderChildFolderMessageAsNotJunk?view=graph-powershell-v1.0)
 

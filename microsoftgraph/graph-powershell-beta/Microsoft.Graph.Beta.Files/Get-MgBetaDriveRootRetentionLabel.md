@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get retentionLabel from drives
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootRetentionLabel?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -138,5 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootRetentionLabel](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootRetentionLabel?view=graph-powershell-v1.0)
 

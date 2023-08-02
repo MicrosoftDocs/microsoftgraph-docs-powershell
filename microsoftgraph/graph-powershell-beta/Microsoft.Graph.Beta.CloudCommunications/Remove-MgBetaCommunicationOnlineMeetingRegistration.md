@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Disable and delete the meetingRegistration of an onlineMeeting on behalf of the organizer.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgCommunicationOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingRegistration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -163,5 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgCommunicationOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Remove-MgCommunicationOnlineMeetingRegistration?view=graph-powershell-v1.0)
 

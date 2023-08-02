@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property insights in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsight?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -327,5 +324,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Type <String>]`: The item's media type. Can be used for filtering for a specific file based on a specific type. See below for supported types.
 
 ## RELATED LINKS
-[Update-MgUserInsight](/powershell/module/Microsoft.Graph.Users/Update-MgUserInsight?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The group policy configurations created by this account.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfiguration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -379,8 +376,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Get-MgDeviceManagementGroupPolicyConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfiguration?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Get-MgDeviceManagementGroupPolicyConfiguration](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementGroupPolicyConfiguration?view=graph-powershell-v1.0)
 

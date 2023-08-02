@@ -11,9 +11,6 @@ schema: 2.0.0
 Read the properties, relationships, or raw contents of an attachment that is attached to a user event, message, Outlook task, or group post.
 An attachment can be one of the following types: All these types of attachments are derived from the attachment resource.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventExceptionOccurrenceInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -302,5 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupEventExceptionOccurrenceInstanceAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventExceptionOccurrenceInstanceAttachment?view=graph-powershell-v1.0)
 

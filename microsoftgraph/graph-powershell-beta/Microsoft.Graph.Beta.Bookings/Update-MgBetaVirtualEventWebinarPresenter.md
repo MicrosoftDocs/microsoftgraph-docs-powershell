@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property presenters in solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarPresenter?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -243,8 +240,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the presenter.
   - `[Identity <IMicrosoftGraphCommunicationsUserIdentity>]`: communicationsUserIdentity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[TenantId <String>]`: The user's tenant ID.
   - `[PresenterDetails <IMicrosoftGraphVirtualEventPresenterDetails>]`: virtualEventPresenterDetails
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -260,8 +257,8 @@ To create the parameters described below, construct a hash table containing the 
 
 `IDENTITY <IMicrosoftGraphCommunicationsUserIdentity>`: communicationsUserIdentity
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-  - `[Id <String>]`: Unique identifier for the identity.
+  - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+  - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[TenantId <String>]`: The user's tenant ID.
 
 `INPUTOBJECT <IBookingsIdentity>`: Identity Parameter
@@ -299,5 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TwitterProfileWebUrl <String>]`: The presenter's Twitter profile URL.
 
 ## RELATED LINKS
-[Update-MgVirtualEventWebinarPresenter](/powershell/module/Microsoft.Graph.Bookings/Update-MgVirtualEventWebinarPresenter?view=graph-powershell-v1.0)
 

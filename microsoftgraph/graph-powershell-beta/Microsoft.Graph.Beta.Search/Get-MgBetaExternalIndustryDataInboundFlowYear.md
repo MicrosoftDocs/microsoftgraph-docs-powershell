@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The year that the data brought in via this flow applies to.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalIndustryDataInboundFlowYear](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowYear?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -132,5 +129,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalIndustryDataInboundFlowYear](/powershell/module/Microsoft.Graph.Search/Get-MgExternalIndustryDataInboundFlowYear?view=graph-powershell-v1.0)
 

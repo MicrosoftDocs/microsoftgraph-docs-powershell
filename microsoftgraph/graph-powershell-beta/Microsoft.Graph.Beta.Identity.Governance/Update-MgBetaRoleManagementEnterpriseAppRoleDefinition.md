@@ -13,9 +13,6 @@ You cannot update built-in roles.
 This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:n- Cloud PCn- device management (Intune)n- directory (Azure AD)
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgRoleManagementEnterpriseAppRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -527,8 +524,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
-[Update-MgRoleManagementEnterpriseAppRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgRoleManagementEnterpriseAppRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgRoleManagementEnterpriseAppRoleDefinition?view=graph-powershell-v1.0)
 

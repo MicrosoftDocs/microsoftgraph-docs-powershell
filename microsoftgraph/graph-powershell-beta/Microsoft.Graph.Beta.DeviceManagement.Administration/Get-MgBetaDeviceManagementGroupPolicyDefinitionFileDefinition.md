@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The group policy definitions associated with the file.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -314,5 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementGroupPolicyDefinitionFileDefinition?view=graph-powershell-v1.0)
 

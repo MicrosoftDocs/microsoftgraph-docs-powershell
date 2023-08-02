@@ -14,9 +14,6 @@ Otherwise, the response will contain errors and warnings.
 If the response contains errors, the synchronization will not start.
 If the response contains only warnings, synchronization will start.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Start (Default)
@@ -145,4 +142,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Start-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Start-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)

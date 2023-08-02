@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property assignedToTaskBoardFormat for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -180,5 +177,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBusinessScenarioPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBusinessScenarioPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action record
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRecordCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCall?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RecordExpanded (Default)
@@ -331,5 +328,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgRecordCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRecordCommunicationCall?view=graph-powershell-v1.0)
 

@@ -8,10 +8,7 @@ schema: 2.0.0
 # Remove-MgBetaExternalIndustryDataConnector
 
 ## SYNOPSIS
-Delete an azureDataLakeConnector object.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
+Delete an industryDataConnector object.
 
 ## SYNTAX
 
@@ -28,7 +25,7 @@ Remove-MgBetaExternalIndustryDataConnector -InputObject <ISearchIdentity> [-IfMa
 ```
 
 ## DESCRIPTION
-Delete an azureDataLakeConnector object.
+Delete an industryDataConnector object.
 
 ## PARAMETERS
 
@@ -163,5 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Remove-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
 

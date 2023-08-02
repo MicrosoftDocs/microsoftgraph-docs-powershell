@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action verifySignature
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgUserInformationProtectionSignature](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserInformationProtectionSignature?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### VerifyExpanded (Default)
@@ -254,5 +251,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgUserInformationProtectionSignature](/powershell/module/Microsoft.Graph.Users.Actions/Confirm-MgUserInformationProtectionSignature?view=graph-powershell-v1.0)
 

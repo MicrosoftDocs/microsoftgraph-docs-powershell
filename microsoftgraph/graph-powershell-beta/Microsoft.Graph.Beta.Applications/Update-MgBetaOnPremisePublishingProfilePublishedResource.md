@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of publishedresource  publishedResource object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgOnPremisePublishingProfilePublishedResource](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfilePublishedResource?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -295,6 +292,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ResourceName <String>]`: Name of the publishedResource.
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application
@@ -325,5 +323,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgOnPremisePublishingProfilePublishedResource](/powershell/module/Microsoft.Graph.Applications/Update-MgOnPremisePublishingProfilePublishedResource?view=graph-powershell-v1.0)
 

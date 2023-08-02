@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
-Module Guid: 4e239402-3ab0-41d8-86ea-0e6aaa552fad
+Module Guid: eb83f9bc-f525-40cb-a752-5441df9ed321
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins
 Help Version: 1.0.0.0
 Locale: en-US
@@ -196,7 +196,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocation](Get-MgBetaIdentityConditionalAccessNamedLocation.md)
-Retrieve the properties and relationships of an ipNamedLocation object.
+Retrieve the properties and relationships of a namedLocation object.
 
 ### [Get-MgBetaIdentityConditionalAccessNamedLocationCount](Get-MgBetaIdentityConditionalAccessNamedLocationCount.md)
 Get the number of the resource
@@ -217,7 +217,8 @@ Get the number of the resource
 Read the properties and relationships of a continuousAccessEvaluationPolicy object.
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtension](Get-MgBetaIdentityCustomAuthenticationExtension.md)
-Read the properties and relationships of a customAuthenticationExtension object.
+Read the properties and relationships of an authenticationEventListener object.
+The **@odata.type** property in the response object indicates the type of the authenticationEventListener object.
 
 ### [Get-MgBetaIdentityCustomAuthenticationExtensionCount](Get-MgBetaIdentityCustomAuthenticationExtensionCount.md)
 Get the number of the resource
@@ -609,7 +610,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [Get-MgBetaRiskDetection](Get-MgBetaRiskDetection.md)
-Retrieve the properties of a collection of **riskDetection** objects.
+Retrieve the properties of a **riskDetection** object.
 
 ### [Get-MgBetaRiskDetectionCount](Get-MgBetaRiskDetectionCount.md)
 Get the number of the resource
@@ -1103,8 +1104,13 @@ Create new navigation property to methods for users
 ### [New-MgBetaUserAuthenticationOperation](New-MgBetaUserAuthenticationOperation.md)
 Create new navigation property to operations for users
 
-### [New-MgBetaUserAuthenticationOperation](New-MgBetaUserAuthenticationOperation.md)
-Create new navigation property to operations for users
+### [New-MgBetaUserAuthenticationPhoneMethod](New-MgBetaUserAuthenticationPhoneMethod.md)
+Add a new phone authentication method.
+A user may only have one phone of each type, captured in the **phoneType** property.
+This means, for example, adding a `mobile` phone to a user with a preexisting `mobile` phone will fail.
+Additionally, a user must always have a `mobile` phone before adding an `alternateMobile` phone.
+Adding a phone number makes it available for use in both Azure multi-factor authentication (MFA) and self-service password reset (SSPR), if enabled.
+Additionally, if a user is enabled by policy to use SMS sign-in and a `mobile` number is added, the system will attempt to register the number for use in that system.
 
 ### [New-MgBetaUserAuthenticationTemporaryAccessPassMethod](New-MgBetaUserAuthenticationTemporaryAccessPassMethod.md)
 Create a new temporaryAccessPassAuthenticationMethod object on a user.
@@ -1204,7 +1210,7 @@ Delete navigation property policies for identity
 Delete an authenticationCombinationConfiguration  for a custom authenticationStrengthPolicy object.
 
 ### [Remove-MgBetaIdentityConditionalAccessNamedLocation](Remove-MgBetaIdentityConditionalAccessNamedLocation.md)
-Delete a namedLocation object.
+Delete an ipNamedLocation object.
 
 ### [Remove-MgBetaIdentityConditionalAccessPolicy](Remove-MgBetaIdentityConditionalAccessPolicy.md)
 Delete a conditionalAccessPolicy object.
@@ -1695,7 +1701,7 @@ Update the default configuration of a cross-tenant access policy.
 Update the properties of a partner-specific configuration.
 
 ### [Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization](Update-MgBetaPolicyCrossTenantAccessPolicyPartnerIdentitySynchronization.md)
-Create a cross-tenant user synchronization policy for a partner-specific configuration.
+Update the user synchronization policy of a partner-specific configuration.
 
 ### [Update-MgBetaPolicyDefaultAppManagementPolicy](Update-MgBetaPolicyDefaultAppManagementPolicy.md)
 Update the properties of a tenantAppManagementPolicy object.
@@ -1803,8 +1809,11 @@ Update the navigation property methods in users
 ### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
 Update the navigation property operations in users
 
-### [Update-MgBetaUserAuthenticationOperation](Update-MgBetaUserAuthenticationOperation.md)
-Update the navigation property operations in users
+### [Update-MgBetaUserAuthenticationPhoneMethod](Update-MgBetaUserAuthenticationPhoneMethod.md)
+Update the phone number associated with a phone authentication method.
+You can't change a phone's type.
+To change a phone's type, add a new number of the desired type and then delete the object with the original type.
+If a user is enabled by policy to use SMS to sign in and the `mobile` number is changed, the system will attempt to register the number for use in that system.
 
 ### [Update-MgBetaUserInformationProtection](Update-MgBetaUserInformationProtection.md)
 Update the navigation property informationProtection in users

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action syncLicenseCounts
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementVppTokenLicenseCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -85,5 +82,4 @@ ALIASES
 Sync-MgBetaDeviceAppMgtVppTokenLicenseCount
 
 ## RELATED LINKS
-[Sync-MgDeviceAppManagementVppTokenLicenseCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicenseCount?view=graph-powershell-v1.0)
 

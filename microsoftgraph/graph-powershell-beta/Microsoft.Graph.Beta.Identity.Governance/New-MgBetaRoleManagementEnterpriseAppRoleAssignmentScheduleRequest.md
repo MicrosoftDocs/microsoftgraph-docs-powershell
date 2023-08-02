@@ -13,9 +13,6 @@ This operation allows both admins and users to add, remove, extend, or renew ass
 To run this request, the calling user must have multi-factor authentication (MFA) enforced, and running the query in a session in which they were challenged for MFA.
 See Enable per-user Azure AD Multi-Factor Authentication to secure sign-in events.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -637,8 +634,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
       - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-      - `[Id <String>]`: Unique identifier for the identity.
+      - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+      - `[Id <String>]`: The identifier of the identity. This property is read-only.
     - `[Device <IMicrosoftGraphIdentity>]`: identity
     - `[User <IMicrosoftGraphIdentity>]`: identity
   - `[CreatedDateTime <DateTime?>]`: The request creation date time.
@@ -751,8 +748,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Application <IMicrosoftGraphIdentity>]`: identity
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DisplayName <String>]`: The display name of the identity. Note that this might not always be available or up to date. For example, if a user changes their display name, the API might show the new value in a future response, but the items associated with the user won't show up as having changed when using delta.
-    - `[Id <String>]`: Unique identifier for the identity.
+    - `[DisplayName <String>]`: The display name of the identity. This property is read-only.
+    - `[Id <String>]`: The identifier of the identity. This property is read-only.
   - `[Device <IMicrosoftGraphIdentity>]`: identity
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
@@ -999,8 +996,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[TicketSystem <String>]`: The description of the ticket system.
 
 ## RELATED LINKS
-[New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementEnterpriseAppRoleAssignmentScheduleRequest?view=graph-powershell-v1.0)
 

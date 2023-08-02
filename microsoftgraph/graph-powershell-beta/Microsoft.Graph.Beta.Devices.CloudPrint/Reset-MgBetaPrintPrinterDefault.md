@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action resetDefaults
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Reset-MgPrintPrinterDefault](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Reset-MgPrintPrinterDefault?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reset (Default)
@@ -142,5 +139,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Reset-MgPrintPrinterDefault](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Reset-MgPrintPrinterDefault?view=graph-powershell-v1.0)
 

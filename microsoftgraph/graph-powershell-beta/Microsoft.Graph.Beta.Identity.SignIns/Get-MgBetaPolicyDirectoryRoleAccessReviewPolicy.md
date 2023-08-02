@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get directoryRoleAccessReviewPolicy from policies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -68,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPolicyDirectoryRoleAccessReviewPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyDirectoryRoleAccessReviewPolicy?view=graph-powershell-v1.0)
 

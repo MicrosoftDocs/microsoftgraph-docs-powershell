@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for identityGovernance
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceRoleManagementAlertOperation](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertOperation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -218,5 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[StatusDetail <String>]`: Details about the status of the operation.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceRoleManagementAlertOperation](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlertOperation?view=graph-powershell-v1.0)
 

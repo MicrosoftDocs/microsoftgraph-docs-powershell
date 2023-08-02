@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update broadcastRecording for the navigation property sessions in solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgVirtualEventSessionBroadcastRecording](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventSessionBroadcastRecording?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Set (Default)
@@ -198,5 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Set-MgVirtualEventSessionBroadcastRecording](/powershell/module/Microsoft.Graph.Bookings/Set-MgVirtualEventSessionBroadcastRecording?view=graph-powershell-v1.0)
 

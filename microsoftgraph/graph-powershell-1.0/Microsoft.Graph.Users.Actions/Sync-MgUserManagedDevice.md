@@ -8,7 +8,7 @@ schema: 2.0.0
 # Sync-MgUserManagedDevice
 
 ## SYNOPSIS
-Invoke action syncDevice
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Sync-MgBetaUserManagedDevice](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Sync-MgBetaUserManagedDevice?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ Sync-MgUserManagedDevice -InputObject <IUsersActionsIdentity> [-PassThru] [-What
 ```
 
 ## DESCRIPTION
-Invoke action syncDevice
+Not yet documented
 
 ## PARAMETERS
 

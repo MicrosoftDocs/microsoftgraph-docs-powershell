@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Pause the sync of a specific school data synchronization profile in the tenant.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Suspend-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Suspend-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Pause (Default)
@@ -152,4 +149,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Suspend-MgEducationSynchronizationProfile](/powershell/module/Microsoft.Graph.Education/Suspend-MgEducationSynchronizationProfile?view=graph-powershell-v1.0)

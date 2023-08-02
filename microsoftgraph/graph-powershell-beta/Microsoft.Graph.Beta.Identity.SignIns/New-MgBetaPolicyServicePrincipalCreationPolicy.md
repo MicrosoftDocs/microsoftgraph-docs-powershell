@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to servicePrincipalCreationPolicies for policies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPolicyServicePrincipalCreationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyServicePrincipalCreationPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -259,5 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[CertifiedApplicationsOnly <Boolean?>]`: 
 
 ## RELATED LINKS
-[New-MgPolicyServicePrincipalCreationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgPolicyServicePrincipalCreationPolicy?view=graph-powershell-v1.0)
 

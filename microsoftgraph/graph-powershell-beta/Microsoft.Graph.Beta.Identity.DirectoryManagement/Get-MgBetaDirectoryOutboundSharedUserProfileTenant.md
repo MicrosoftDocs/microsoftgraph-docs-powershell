@@ -11,9 +11,6 @@ schema: 2.0.0
 The collection of external Azure AD tenants that the user has shared profile data with.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryOutboundSharedUserProfileTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOutboundSharedUserProfileTenant?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -290,6 +287,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -301,5 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDirectoryOutboundSharedUserProfileTenant](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryOutboundSharedUserProfileTenant?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsRemoteConnection for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -352,5 +349,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualNetwork <String>]`: The user experience analytics virtual network.
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticRemoteConnection](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticRemoteConnection?view=graph-powershell-v1.0)
 

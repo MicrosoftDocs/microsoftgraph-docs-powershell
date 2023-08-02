@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the hosted content in an app's icon.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -210,5 +207,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent](/powershell/module/Microsoft.Graph.Teams/Get-MgAppCatalogTeamAppDefinitionOutlineIconHostedContent?view=graph-powershell-v1.0)
 

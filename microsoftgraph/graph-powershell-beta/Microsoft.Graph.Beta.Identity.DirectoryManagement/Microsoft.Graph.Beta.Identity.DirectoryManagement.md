@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
-Module Guid: 4fc5ed7a-63d1-4fb9-9e79-2820b8e089fb
+Module Guid: 99ab62c6-8907-4885-81b4-6a3ada67cf9c
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement
 Help Version: 1.0.0.0
 Locale: en-US
@@ -860,7 +860,7 @@ Get sharedEmailDomains from directory
 Get the number of the resource
 
 ### [Get-MgBetaDirectorySubscription](Get-MgBetaDirectorySubscription.md)
-Get subscriptions from directory
+Get a specific commercial subscription that an organization has acquired.
 
 ### [Get-MgBetaDirectorySubscriptionCount](Get-MgBetaDirectorySubscriptionCount.md)
 Get the number of the resource

@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Applications
-Module Guid: d83c3680-305f-404b-92ae-8c85503c2b9d
+Module Guid: dfd1c793-2e48-4b76-a9e0-cf6b8bf012dc
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications
 Help Version: 1.0.0.0
 Locale: en-US
@@ -211,10 +211,12 @@ List the tokenIssuancePolicy objects that are assigned to an application.
 Get the number of the resource
 
 ### [Get-MgBetaApplicationTokenLifetimePolicy](Get-MgBetaApplicationTokenLifetimePolicy.md)
-List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal..
+List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ### [Get-MgBetaApplicationTokenLifetimePolicyByRef](Get-MgBetaApplicationTokenLifetimePolicyByRef.md)
-List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal..
+List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ### [Get-MgBetaApplicationTokenLifetimePolicyCount](Get-MgBetaApplicationTokenLifetimePolicyCount.md)
 Get the number of the resource
@@ -703,6 +705,7 @@ Assign a tokenIssuancePolicy to an application.
 
 ### [New-MgBetaApplicationTokenLifetimePolicyByRef](New-MgBetaApplicationTokenLifetimePolicyByRef.md)
 Assign a tokenLifetimePolicy to an application or servicePrincipal.
+You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
 ### [New-MgBetaGroupAppRoleAssignment](New-MgBetaGroupAppRoleAssignment.md)
 Use this API to assign an app role to a security group.

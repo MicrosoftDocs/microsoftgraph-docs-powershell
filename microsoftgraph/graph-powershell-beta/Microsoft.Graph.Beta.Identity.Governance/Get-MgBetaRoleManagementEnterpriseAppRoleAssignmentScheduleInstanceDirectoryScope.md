@@ -11,9 +11,6 @@ schema: 2.0.0
 The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -229,5 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEnterpriseAppRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Split elements of a connectedOrganization
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Split-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Split-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -88,5 +85,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: connectedOrganizationState
 
 ## RELATED LINKS
-[Split-MgEntitlementManagementConnectedOrganization](/powershell/module/Microsoft.Graph.Identity.Governance/Split-MgEntitlementManagementConnectedOrganization?view=graph-powershell-v1.0)
 

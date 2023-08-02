@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of group assignments of the profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementWindowsFeatureUpdateProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsFeatureUpdateProfileAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -284,5 +281,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-[Get-MgDeviceManagementWindowsFeatureUpdateProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Get-MgDeviceManagementWindowsFeatureUpdateProfileAssignment?view=graph-powershell-v1.0)
 

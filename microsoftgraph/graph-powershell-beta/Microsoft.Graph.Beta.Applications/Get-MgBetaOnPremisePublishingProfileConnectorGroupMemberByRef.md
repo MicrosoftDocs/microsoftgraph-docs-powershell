@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get ref of members from onPremisesPublishingProfiles
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -190,5 +187,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef](/powershell/module/Microsoft.Graph.Applications/Get-MgOnPremisePublishingProfileConnectorGroupMemberByRef?view=graph-powershell-v1.0)
 

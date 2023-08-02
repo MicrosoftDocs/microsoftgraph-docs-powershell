@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to managedDeviceEncryptionStates for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementManagedDeviceEncryptionState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceEncryptionState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -320,5 +317,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[PolicyName <String>]`: Policy Name for Encryption Report
 
 ## RELATED LINKS
-[New-MgDeviceManagementManagedDeviceEncryptionState](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementManagedDeviceEncryptionState?view=graph-powershell-v1.0)
 

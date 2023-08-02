@@ -9,6 +9,7 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Assign a tokenLifetimePolicy to an application or servicePrincipal.
+You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [New-MgApplicationTokenLifetimePolicyByRef](/powershell/module/Microsoft.Graph.Applications/New-MgApplicationTokenLifetimePolicyByRef?view=graph-powershell-v1.0)
@@ -41,6 +42,7 @@ New-MgBetaApplicationTokenLifetimePolicyByRef -InputObject <IApplicationsIdentit
 
 ## DESCRIPTION
 Assign a tokenLifetimePolicy to an application or servicePrincipal.
+You can have multiple tokenLifetimePolicy policies in a tenant but can assign only one tokenLifetimePolicy per application.
 
 ## EXAMPLES
 ### Example 1: Code snippet
@@ -209,6 +211,7 @@ To create the parameters described below, construct a hash table containing the 
   - `OdataId <String>`: The entity reference URL of the resource. For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 `INPUTOBJECT <IApplicationsIdentity>`: Identity Parameter
+  - `[AppId <String>]`: Alternate key of application
   - `[AppManagementPolicyId <String>]`: The unique identifier of appManagementPolicy
   - `[AppRoleAssignmentId <String>]`: The unique identifier of appRoleAssignment
   - `[ApplicationId <String>]`: The unique identifier of application

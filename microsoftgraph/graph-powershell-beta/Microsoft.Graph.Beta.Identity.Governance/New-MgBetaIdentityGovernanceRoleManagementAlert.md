@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to alerts for identityGovernance
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceRoleManagementAlert](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlert?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -100,7 +97,7 @@ Accept wildcard characters: False
 ```
 
 ### -AlertIncidents
-Represents the incidents of this alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant.
+Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant.
 Supports $expand.
 To construct, see NOTES section for ALERTINCIDENTS properties and create a hash table.
 
@@ -327,7 +324,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SecurityImpact <String>]`: Security impact of the alert. For example, it could be information leaks or unauthorized access.
   - `[SeverityLevel <String>]`: alertSeverity
 
-`ALERTINCIDENTS <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>`: Represents the incidents of this alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports $expand.
+`ALERTINCIDENTS <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>`: Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports $expand.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
 `BODYPARAMETER <IMicrosoftGraphUnifiedRoleManagementAlert>`: unifiedRoleManagementAlert
@@ -355,7 +352,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD roles.
   - `[AlertDefinition <IMicrosoftGraphUnifiedRoleManagementAlertDefinition>]`: unifiedRoleManagementAlertDefinition
   - `[AlertDefinitionId <String>]`: The identifier of an alert definition. Supports $filter (eq, ne).
-  - `[AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>]`: Represents the incidents of this alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports $expand.
+  - `[AlertIncidents <IMicrosoftGraphUnifiedRoleManagementAlertIncident[]>]`: Represents the incidents of this type of alert that have been triggered in Privileged Identity Management (PIM) for Azure AD roles in the tenant. Supports $expand.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
   - `[IncidentCount <Int32?>]`: The number of incidents triggered in the tenant and relating to the alert. Can only be a positive integer.
   - `[IsActive <Boolean?>]`: false by default. true if the alert is active.
@@ -365,5 +362,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of scope where the alert is created. DirectoryRole is the only currently supported scope type for Azure AD roles.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceRoleManagementAlert](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceRoleManagementAlert?view=graph-powershell-v1.0)
 

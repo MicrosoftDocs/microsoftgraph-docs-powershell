@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Windows information protection wipe actions.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsInformationProtectionWipeAction](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionWipeAction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -310,5 +307,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementWindowsInformationProtectionWipeAction](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsInformationProtectionWipeAction?view=graph-powershell-v1.0)
 

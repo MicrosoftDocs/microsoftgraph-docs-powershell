@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the details of a meetingRegistration object assciated with an onlineMeeting on behalf of the organizer.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -436,4 +433,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Display name of the speaker.
 
 ## RELATED LINKS
-[Update-MgUserOnlineMeetingRegistration](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserOnlineMeetingRegistration?view=graph-powershell-v1.0)

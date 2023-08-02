@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a cloudPcCrossCloudGovernmentOrganizationMapping object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -68,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementVirtualEndpointCrossCloudGovernmentOrganizationMapping?view=graph-powershell-v1.0)
 

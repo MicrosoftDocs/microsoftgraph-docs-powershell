@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property transcripts for solutions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgVirtualEventWebinarSessionTranscript](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionTranscript?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -195,5 +192,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgVirtualEventWebinarSessionTranscript](/powershell/module/Microsoft.Graph.Bookings/Remove-MgVirtualEventWebinarSessionTranscript?view=graph-powershell-v1.0)
 

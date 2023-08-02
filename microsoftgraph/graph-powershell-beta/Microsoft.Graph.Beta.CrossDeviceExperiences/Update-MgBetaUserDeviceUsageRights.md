@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property usageRights in users
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDeviceUsageRights](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserDeviceUsageRights?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -267,5 +264,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgUserDeviceUsageRights](/powershell/module/Microsoft.Graph.CrossDeviceExperiences/Update-MgUserDeviceUsageRights?view=graph-powershell-v1.0)
 

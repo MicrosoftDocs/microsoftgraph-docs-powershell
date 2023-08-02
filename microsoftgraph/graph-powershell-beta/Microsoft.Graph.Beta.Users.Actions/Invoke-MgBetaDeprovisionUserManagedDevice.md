@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action deprovision
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgDeprovisionUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDeprovisionUserManagedDevice?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### DeprovisionExpanded (Default)
@@ -252,5 +249,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgDeprovisionUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgDeprovisionUserManagedDevice?view=graph-powershell-v1.0)
 

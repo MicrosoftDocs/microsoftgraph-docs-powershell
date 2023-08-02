@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the properties of a projectParticipation object in a user's profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -629,7 +626,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: Email address or reference to person within organization.
 
 ## RELATED LINKS
-[Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgUserProfileProject](/powershell/module/Microsoft.Graph.People/Update-MgUserProfileProject?view=graph-powershell-v1.0)

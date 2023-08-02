@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unbind
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgUnbindDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnbindDeviceManagementAndroidManagedStoreAccountEnterpriseSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -84,5 +81,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Invoke-MgUnbindDeviceManagementAndroidManagedStoreAccountEnterpriseSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgUnbindDeviceManagementAndroidManagedStoreAccountEnterpriseSetting?view=graph-powershell-v1.0)
 

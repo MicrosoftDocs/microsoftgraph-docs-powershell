@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property ipSecurityProfiles in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityIPSecurityProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIPSecurityProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -502,5 +499,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Vendor <String>]`: Name of the alert vendor (for example, Microsoft, Dell, FireEye). Required
 
 ## RELATED LINKS
-[Update-MgSecurityIPSecurityProfile](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityIPSecurityProfile?view=graph-powershell-v1.0)
 

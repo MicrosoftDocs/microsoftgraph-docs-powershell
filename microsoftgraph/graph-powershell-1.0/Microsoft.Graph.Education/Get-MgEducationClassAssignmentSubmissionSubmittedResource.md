@@ -51,7 +51,7 @@ Note that teachers can leave notes in some resources.
 ```powershell
 Import-Module Microsoft.Graph.Education
 
-Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId
+Get-MgEducationClassAssignmentSubmissionSubmittedResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -EducationSubmissionResourceId $educationSubmissionResourceId
 ```
 This example shows how to use the Get-MgEducationClassAssignmentSubmissionSubmittedResource Cmdlet.
 

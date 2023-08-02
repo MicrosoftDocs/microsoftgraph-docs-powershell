@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property securityBaselineStates in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -451,8 +448,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementManagedDeviceSecurityBaselineState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementManagedDeviceSecurityBaselineState?view=graph-powershell-v1.0)
 

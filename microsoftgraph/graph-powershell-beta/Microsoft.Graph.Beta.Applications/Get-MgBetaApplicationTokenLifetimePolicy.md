@@ -8,7 +8,8 @@ schema: 2.0.0
 # Get-MgBetaApplicationTokenLifetimePolicy
 
 ## SYNOPSIS
-List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal..
+List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgApplicationTokenLifetimePolicy](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationTokenLifetimePolicy?view=graph-powershell-v1.0)
@@ -22,7 +23,8 @@ Get-MgBetaApplicationTokenLifetimePolicy -ApplicationId <String> [-ExpandPropert
 ```
 
 ## DESCRIPTION
-List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal..
+List the tokenLifetimePolicy objects that are assigned to an application or servicePrincipal.
+Only one object is returned in the collection because only one tokenLifetimePolicy can be assigned to an application.
 
 ## EXAMPLES
 ### Example 1: Using the Get-MgBetaApplicationTokenLifetimePolicy Cmdlet

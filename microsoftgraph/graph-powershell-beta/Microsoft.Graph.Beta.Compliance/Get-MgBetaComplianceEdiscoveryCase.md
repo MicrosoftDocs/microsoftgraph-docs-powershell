@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Retrieve the properties and relationships of a case object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -275,4 +272,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCase](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCase?view=graph-powershell-v1.0)

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property nextVersionDefinition in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -792,8 +789,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[Version <String>]`: Setting definition version
 
 ## RELATED LINKS
-[Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Update-MgDeviceManagementGroupPolicyDefinitionPreviouVersionDefinitionNextVersionDefinition?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action disconnect
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Disconnect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -68,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Disconnect-MgDeviceManagementChromeOSOnboardingSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Disconnect-MgDeviceManagementChromeOSOnboardingSetting?view=graph-powershell-v1.0)
 

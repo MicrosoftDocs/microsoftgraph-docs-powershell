@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Perform validations applicable for the specific instance of the data connector.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Test-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Validate (Default)
@@ -148,5 +145,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Test-MgExternalIndustryDataConnector](/powershell/module/Microsoft.Graph.Search/Test-MgExternalIndustryDataConnector?view=graph-powershell-v1.0)
 

@@ -11,9 +11,6 @@ schema: 2.0.0
 Delete an identity provider from a b2cIdentityUserFlow object.
 For more information about identity providers available for user flows, see the identityProviders API reference.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -261,4 +258,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)

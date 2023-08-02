@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete multiple threat intelligence (TI) indicators in one request instead of multiple requests.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### DeleteExpanded (Default)
@@ -148,4 +145,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String[]>]`: 
 
 ## RELATED LINKS
-[Remove-MgSecurityTiIndicatorMultiple](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityTiIndicatorMultiple?view=graph-powershell-v1.0)

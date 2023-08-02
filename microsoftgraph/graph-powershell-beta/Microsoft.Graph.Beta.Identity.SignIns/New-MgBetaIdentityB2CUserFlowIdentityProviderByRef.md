@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Add identity providers in a b2cIdentityUserFlow object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -280,4 +277,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[New-MgIdentityB2CUserFlowIdentityProviderByRef](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityB2CUserFlowIdentityProviderByRef?view=graph-powershell-v1.0)

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Restore a Cloud PC device to a previous state with an Intune managed device ID.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restore-MgUserManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDeviceCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RestoreExpanded (Default)
@@ -251,5 +248,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restore-MgUserManagedDeviceCloudPc](/powershell/module/Microsoft.Graph.Users.Actions/Restore-MgUserManagedDeviceCloudPc?view=graph-powershell-v1.0)
 

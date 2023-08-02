@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleGroups in external
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -250,5 +247,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[SortIndex <Int32?>]`: The ordering index to present the definitions within a type consistently in user interfaces.
 
 ## RELATED LINKS
-[Update-MgExternalIndustryDataRoleGroup](/powershell/module/Microsoft.Graph.Search/Update-MgExternalIndustryDataRoleGroup?view=graph-powershell-v1.0)
 

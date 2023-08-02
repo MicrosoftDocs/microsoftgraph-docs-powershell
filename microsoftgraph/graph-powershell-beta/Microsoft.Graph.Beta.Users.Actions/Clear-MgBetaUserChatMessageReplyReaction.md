@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action unsetReaction
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserChatMessageReplyReaction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UnsetExpanded (Default)
@@ -283,5 +280,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgUserChatMessageReplyReaction](/powershell/module/Microsoft.Graph.Users.Actions/Clear-MgUserChatMessageReplyReaction?view=graph-powershell-v1.0)
 

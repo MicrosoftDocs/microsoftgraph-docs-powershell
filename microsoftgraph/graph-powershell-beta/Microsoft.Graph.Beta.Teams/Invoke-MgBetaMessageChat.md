@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function allMessages
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMessageChat](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageChat?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -143,5 +140,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Invoke-MgMessageChat](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMessageChat?view=graph-powershell-v1.0)
 

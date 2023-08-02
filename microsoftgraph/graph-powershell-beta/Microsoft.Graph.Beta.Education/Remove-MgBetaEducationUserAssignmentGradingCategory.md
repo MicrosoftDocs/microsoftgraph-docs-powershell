@@ -11,9 +11,6 @@ schema: 2.0.0
 Remove a gradingCategory from an educationAssignment.
 Only teachers can perform this operation.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentGradingCategory?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -175,5 +172,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationUserAssignmentGradingCategory](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentGradingCategory?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get federatedTokenValidationPolicy from policies
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -68,5 +65,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPolicyFederatedTokenValidationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyFederatedTokenValidationPolicy?view=graph-powershell-v1.0)
 

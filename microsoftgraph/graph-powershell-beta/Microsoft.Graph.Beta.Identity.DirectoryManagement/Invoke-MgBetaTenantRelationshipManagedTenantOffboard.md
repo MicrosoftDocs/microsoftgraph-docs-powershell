@@ -12,9 +12,6 @@ Carries out the appropriate procedures to remove a managed tenant from the multi
 No relationships, such as commerce and delegate administrative privileges, will be impacted.
 The only change made by invoking this action is the tenant will be deprovisioned from the multi-tenant management platform.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgTenantRelationshipManagedTenantOffboard](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgTenantRelationshipManagedTenantOffboard?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Tenant (Default)
@@ -149,6 +146,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[OutboundSharedUserProfileUserId <String>]`: The unique identifier of outboundSharedUserProfile
   - `[ProfileCardPropertyId <String>]`: The unique identifier of profileCardProperty
   - `[RecommendationId <String>]`: The unique identifier of recommendation
+  - `[RoleTemplateId <String>]`: Alternate key of directoryRole
   - `[ScopedRoleMembershipId <String>]`: The unique identifier of scopedRoleMembership
   - `[SharedEmailDomainId <String>]`: The unique identifier of sharedEmailDomain
   - `[SharedEmailDomainInvitationId <String>]`: The unique identifier of sharedEmailDomainInvitation
@@ -160,5 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgTenantRelationshipManagedTenantOffboard](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Invoke-MgTenantRelationshipManagedTenantOffboard?view=graph-powershell-v1.0)
 

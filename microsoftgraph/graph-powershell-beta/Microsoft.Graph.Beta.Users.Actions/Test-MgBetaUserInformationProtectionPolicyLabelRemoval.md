@@ -11,9 +11,6 @@ schema: 2.0.0
 Indicate to the consuming application what actions it should take to remove the label information.
 Given contentInfo as an input, which includes existing content metadata key/value pairs, the API returns an informationProtectionAction that contains some combination of one of more of the following:
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgUserInformationProtectionPolicyLabelRemoval](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserInformationProtectionPolicyLabelRemoval?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### EvaluateExpanded (Default)
@@ -266,5 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgUserInformationProtectionPolicyLabelRemoval](/powershell/module/Microsoft.Graph.Users.Actions/Test-MgUserInformationProtectionPolicyLabelRemoval?view=graph-powershell-v1.0)
 

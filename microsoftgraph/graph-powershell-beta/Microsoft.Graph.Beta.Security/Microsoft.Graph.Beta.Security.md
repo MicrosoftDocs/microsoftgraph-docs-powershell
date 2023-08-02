@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Beta.Security
-Module Guid: 6c429512-7e16-4323-aaa4-5fa237d32f67
+Module Guid: 6a873b96-58e9-44b1-9805-d1c5670a4f73
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security
 Help Version: 1.0.0.0
 Locale: en-US
@@ -46,7 +46,7 @@ Initiate an export from a **reviewSet**.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ### [Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery](Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery.md)
-Initiate an export from a **reviewSet** query.
+Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ### [Get-MgBetaSecurityAction](Get-MgBetaSecurityAction.md)
@@ -599,7 +599,7 @@ The parent host related to this passiveDnsRecord entry.
 Generally, this is the value that you can search to discover this passiveDnsRecord value.
 
 ### [Get-MgBetaSecurityThreatIntelligenceProfileIndicator](Get-MgBetaSecurityThreatIntelligenceProfileIndicator.md)
-Get intelligenceProfileIndicators from security
+Read the properties and relationships of a intelligenceProfileIndicator object.
 
 ### [Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact](Get-MgBetaSecurityThreatIntelligenceProfileIndicatorArtifact.md)
 The artifact related to this indicator.

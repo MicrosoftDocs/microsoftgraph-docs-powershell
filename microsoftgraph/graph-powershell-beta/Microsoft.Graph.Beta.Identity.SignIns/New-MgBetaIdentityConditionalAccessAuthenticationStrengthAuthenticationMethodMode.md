@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to authenticationMethodModes for identity
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded1 (Default)
@@ -166,5 +163,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: The display name of this mode
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessAuthenticationStrengthAuthenticationMethodMode?view=graph-powershell-v1.0)
 

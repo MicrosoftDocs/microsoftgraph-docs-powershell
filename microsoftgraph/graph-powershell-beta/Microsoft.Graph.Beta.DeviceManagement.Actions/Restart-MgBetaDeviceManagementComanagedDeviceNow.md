@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Reboot device
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restart-MgDeviceManagementComanagedDeviceNow](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restart-MgDeviceManagementComanagedDeviceNow?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reboot (Default)
@@ -181,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Restart-MgDeviceManagementComanagedDeviceNow](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Restart-MgDeviceManagementComanagedDeviceNow?view=graph-powershell-v1.0)
 

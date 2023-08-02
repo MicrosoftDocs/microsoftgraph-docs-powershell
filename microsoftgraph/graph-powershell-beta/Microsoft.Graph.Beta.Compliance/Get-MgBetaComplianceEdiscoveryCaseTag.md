@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a tag object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
@@ -290,4 +287,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Get-MgComplianceEdiscoveryCaseTag](/powershell/module/Microsoft.Graph.Compliance/Get-MgComplianceEdiscoveryCaseTag?view=graph-powershell-v1.0)

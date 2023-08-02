@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### BulkExpanded (Default)
@@ -173,5 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserAccessLevel <String>]`: cloudPcUserAccessLevel
 
 ## RELATED LINKS
-[Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgBulkDeviceManagementComanagedDeviceSetCloudPcReviewStatus?view=graph-powershell-v1.0)
 

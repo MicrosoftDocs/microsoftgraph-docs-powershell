@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 The Managed eBook.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ## DESCRIPTION
@@ -43,8 +40,9 @@ Please use Get-Help -Online.
 
 ## RELATED LINKS
 
-[Get-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
+
 
 [https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebook](https://docs.microsoft.com/en-us/powershell/module/microsoft.graph.devices.corporatemanagement/get-mgdeviceappmgtmanagedebook)
+
 
 

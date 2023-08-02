@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property deviceStates in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -472,8 +469,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementEmbeddedSimActivationCodePoolDeviceState?view=graph-powershell-v1.0)
 

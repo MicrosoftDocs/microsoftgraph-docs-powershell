@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to featureRolloutPolicies for directory
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDirectoryFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryFeatureRolloutPolicy?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -239,5 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabled <Boolean?>]`: Indicates whether the feature rollout is enabled.
 
 ## RELATED LINKS
-[New-MgDirectoryFeatureRolloutPolicy](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgDirectoryFeatureRolloutPolicy?view=graph-powershell-v1.0)
 

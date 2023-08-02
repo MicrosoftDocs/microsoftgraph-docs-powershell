@@ -8,8 +8,9 @@ schema: 2.0.0
 # Update-MgGroupDriveItem
 
 ## SYNOPSIS
-Update the metadata for a driveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's **parentReference** property.
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [Update-MgBetaGroupDriveItem](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaGroupDriveItem?view=graph-powershell-beta)
@@ -76,8 +77,9 @@ Update-MgGroupDriveItem -InputObject <IFilesIdentity> -BodyParameter <IMicrosoft
 ```
 
 ## DESCRIPTION
-Update the metadata for a driveItem by ID or path.
-You can also use update to move an item to another parent by updating the item's **parentReference** property.
+To move a DriveItem to a new parent item, your app requests to update the **parentReference** of the DriveItem to move.
+This is a special case of the Update method.nYour app can combine moving an item to a new container and updating other properties of the item into a single request.
+Items cannot be moved between Drives using this request.
 
 ## PARAMETERS
 

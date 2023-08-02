@@ -8,7 +8,7 @@ schema: 2.0.0
 # New-MgUserManagedDeviceWindowsDefenderUpdateSignature
 
 ## SYNOPSIS
-Invoke action windowsDefenderUpdateSignatures
+Not yet documented
 
 > [!NOTE]
 > To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
@@ -28,7 +28,7 @@ New-MgUserManagedDeviceWindowsDefenderUpdateSignature -InputObject <IUsersAction
 ```
 
 ## DESCRIPTION
-Invoke action windowsDefenderUpdateSignatures
+Not yet documented
 
 ## PARAMETERS
 

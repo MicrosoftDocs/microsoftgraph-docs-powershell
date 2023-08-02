@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action importResourceActions
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ImportExpanded (Default)
@@ -312,5 +309,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction](/powershell/module/Microsoft.Graph.Identity.Governance/Import-MgRoleManagementDeviceManagementResourceNamespaceResourceAction?view=graph-powershell-v1.0)
 

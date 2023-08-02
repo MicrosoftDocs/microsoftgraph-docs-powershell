@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Upgrade or downgrade an existing Cloud PC to another configuration with a new virtual CPU (vCPU) and storage size.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Resize-MgDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Resize-MgDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ResizeExpanded (Default)
@@ -248,5 +245,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Resize-MgDeviceManagementComanagedDeviceCloudPc](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Resize-MgDeviceManagementComanagedDeviceCloudPc?view=graph-powershell-v1.0)
 

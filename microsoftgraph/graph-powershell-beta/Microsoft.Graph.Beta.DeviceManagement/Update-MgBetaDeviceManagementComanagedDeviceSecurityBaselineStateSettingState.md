@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property settingStates in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -502,8 +499,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[SourceType <String>]`: settingSourceType
 
 ## RELATED LINKS
-[Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementComanagedDeviceSecurityBaselineStateSettingState?view=graph-powershell-v1.0)
 

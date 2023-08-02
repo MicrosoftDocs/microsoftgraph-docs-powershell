@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke function getRealTimeRemoteConnectionStatus
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -142,5 +139,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Userid <String>]`: Usage: userid='{userid}'
 
 ## RELATED LINKS
-[Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus](/powershell/module/Microsoft.Graph.DeviceManagement.Functions/Get-MgDeviceManagementVirtualEndpointReportRealTimeRemoteConnectionStatus?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the tenant-level settings for Microsoft 365 reports.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Get-MgAdminReportSetting?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -67,5 +64,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgAdminReportSetting](/powershell/module/Microsoft.Graph.Reports/Get-MgAdminReportSetting?view=graph-powershell-v1.0)
 

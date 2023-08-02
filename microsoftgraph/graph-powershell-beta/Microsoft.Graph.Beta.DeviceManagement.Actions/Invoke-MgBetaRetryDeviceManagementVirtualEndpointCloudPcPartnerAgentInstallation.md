@@ -11,9 +11,6 @@ schema: 2.0.0
 Retry installation for the partner agents which failed to install on the Cloud PC.
 Service side will check which agent installation failed firstly and retry.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Retry (Default)
@@ -183,5 +180,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgRetryDeviceManagementVirtualEndpointCloudPcPartnerAgentInstallation?view=graph-powershell-v1.0)
 

@@ -8,11 +8,8 @@ schema: 2.0.0
 # Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery
 
 ## SYNOPSIS
-Initiate an export from a **reviewSet** query.
+Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)
 
 ## SYNTAX
 
@@ -48,7 +45,7 @@ Export-MgBetaSecurityCaseEdiscoveryCaseReviewSetQuery -InputObject <ISecurityIde
 ```
 
 ## DESCRIPTION
-Initiate an export from a **reviewSet** query.
+Initiate an export from a ediscoveryReviewSetQuery.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## EXAMPLES
@@ -397,4 +394,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery](/powershell/module/Microsoft.Graph.Security/Export-MgSecurityCaseEdiscoveryCaseReviewSetQuery?view=graph-powershell-v1.0)

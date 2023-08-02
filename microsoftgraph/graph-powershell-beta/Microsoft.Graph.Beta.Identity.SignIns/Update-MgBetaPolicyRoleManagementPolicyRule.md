@@ -48,7 +48,37 @@ Update a rule defined for a role management policy.
 The rule can be one of the following types that are derived from the unifiedRoleManagementPolicyRule object:\n+ unifiedRoleManagementPolicyApprovalRule\n+ unifiedRoleManagementPolicyAuthenticationContextRule\n+ unifiedRoleManagementPolicyEnablementRule\n+ unifiedRoleManagementPolicyExpirationRule\n+ unifiedRoleManagementPolicyNotificationRule For more information about rules for Azure AD roles and examples of updating rules, see the following articles:\n+ Overview of rules for Azure AD roles in PIM APIs in Microsoft Graph\n+ Use PIM APIs in Microsoft Graph to update Azure AD rules
 
 ## EXAMPLES
-### Example 1: Code snippet
+### Example 1: Update a rule defined for a policy in PIM for Azure AD roles
+
+```powershell
+Import-Module Microsoft.Graph.Beta.Identity.SignIns
+
+$params = @{
+	"@odata.type" = "#microsoft.graph.unifiedRoleManagementPolicyExpirationRule"
+	id = "Expiration_EndUser_Assignment"
+	isExpirationRequired = $true
+	maximumDuration = "PT1H45M"
+	target = @{
+		"@odata.type" = "microsoft.graph.unifiedRoleManagementPolicyRuleTarget"
+		caller = "EndUser"
+		operations = @(
+			"All"
+		)
+		level = "Assignment"
+		inheritableSettings = @(
+		)
+		enforcedSettings = @(
+		)
+	}
+}
+
+Update-MgBetaPolicyRoleManagementPolicyRule -UnifiedRoleManagementPolicyId $unifiedRoleManagementPolicyId -UnifiedRoleManagementPolicyRuleId $unifiedRoleManagementPolicyRuleId -BodyParameter $params
+```
+This example shows how to use the Update-MgBetaPolicyRoleManagementPolicyRule Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Update a rule defined for a policy in PIM for groups
 
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns

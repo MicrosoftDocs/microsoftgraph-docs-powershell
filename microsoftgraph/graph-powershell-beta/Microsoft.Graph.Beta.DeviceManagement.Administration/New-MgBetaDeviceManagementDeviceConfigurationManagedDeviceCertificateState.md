@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to deviceConfigurationsAllManagedDeviceCertificateStates for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -330,5 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPrincipalName <String>]`: User principal name
 
 ## RELATED LINKS
-[New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/New-MgDeviceManagementDeviceConfigurationManagedDeviceCertificateState?view=graph-powershell-v1.0)
 

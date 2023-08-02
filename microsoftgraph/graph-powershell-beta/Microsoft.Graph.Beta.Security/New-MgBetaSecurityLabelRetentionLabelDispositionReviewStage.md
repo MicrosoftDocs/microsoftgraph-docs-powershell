@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to dispositionReviewStages for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -299,5 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[New-MgSecurityLabelRetentionLabelDispositionReviewStage](/powershell/module/Microsoft.Graph.Security/New-MgSecurityLabelRetentionLabelDispositionReviewStage?view=graph-powershell-v1.0)
 

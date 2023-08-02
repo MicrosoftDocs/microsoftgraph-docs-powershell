@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get media content for the navigation property policies from trustFramework
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTrustFrameworkPolicyContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkPolicyContent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -188,5 +185,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgTrustFrameworkPolicyContent](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgTrustFrameworkPolicyContent?view=graph-powershell-v1.0)
 

@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Windows management app.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementWindowsManagementApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsManagementApp?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -70,5 +67,4 @@ ALIASES
 Get-MgBetaDeviceAppMgtWindowManagementApp
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementWindowsManagementApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementWindowsManagementApp?view=graph-powershell-v1.0)
 

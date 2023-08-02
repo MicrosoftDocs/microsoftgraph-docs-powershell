@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Device configuration states for this device.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Set-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -243,4 +240,5 @@ INPUTOBJECT `<IDevicesCorporateManagementIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[Set-MgBetaDeviceAppMgtManagedEBook](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Set-MgBetaDeviceAppMgtManagedEBook?view=graph-powershell-beta)
+
+

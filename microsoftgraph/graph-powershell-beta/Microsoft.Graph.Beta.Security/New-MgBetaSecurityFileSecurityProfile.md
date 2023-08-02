@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to fileSecurityProfiles for security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSecurityFileSecurityProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityFileSecurityProfile?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -436,5 +433,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WasRunning <Boolean?>]`: Indicates whether the detected vulnerability (file) was running at the time of detection or was the file detected at rest on the disk.
 
 ## RELATED LINKS
-[New-MgSecurityFileSecurityProfile](/powershell/module/Microsoft.Graph.Security/New-MgSecurityFileSecurityProfile?view=graph-powershell-v1.0)
 

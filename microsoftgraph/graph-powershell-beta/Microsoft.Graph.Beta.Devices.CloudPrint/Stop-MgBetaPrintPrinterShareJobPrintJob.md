@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action cancelPrintJob
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgPrintPrinterShareJobPrintJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Stop-MgPrintPrinterShareJobPrintJob?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Cancel (Default)
@@ -158,5 +155,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgPrintPrinterShareJobPrintJob](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Stop-MgPrintPrinterShareJobPrintJob?view=graph-powershell-v1.0)
 

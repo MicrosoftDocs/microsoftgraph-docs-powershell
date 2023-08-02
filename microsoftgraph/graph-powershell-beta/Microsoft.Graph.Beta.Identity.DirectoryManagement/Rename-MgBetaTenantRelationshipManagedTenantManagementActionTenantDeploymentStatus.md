@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action changeDeploymentStatus
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Rename-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Rename-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ChangeExpanded (Default)
@@ -215,5 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: 
 
 ## RELATED LINKS
-[Rename-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Rename-MgTenantRelationshipManagedTenantManagementActionTenantDeploymentStatus?view=graph-powershell-v1.0)
 

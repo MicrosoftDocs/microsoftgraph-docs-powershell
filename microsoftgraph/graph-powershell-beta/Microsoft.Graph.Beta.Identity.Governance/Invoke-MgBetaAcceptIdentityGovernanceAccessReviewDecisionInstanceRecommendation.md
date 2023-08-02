@@ -12,9 +12,6 @@ Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem
 Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Accept (Default)
@@ -230,5 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation?view=graph-powershell-v1.0)
 

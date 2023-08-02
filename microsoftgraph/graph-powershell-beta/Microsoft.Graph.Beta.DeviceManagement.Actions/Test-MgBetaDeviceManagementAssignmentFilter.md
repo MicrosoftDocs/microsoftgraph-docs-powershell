@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action validateFilter
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgDeviceManagementAssignmentFilter](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementAssignmentFilter?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ValidateExpanded (Default)
@@ -167,5 +164,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Rule <String>]`: Rule definition of the assignment filter.
 
 ## RELATED LINKS
-[Test-MgDeviceManagementAssignmentFilter](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Test-MgDeviceManagementAssignmentFilter?view=graph-powershell-v1.0)
 

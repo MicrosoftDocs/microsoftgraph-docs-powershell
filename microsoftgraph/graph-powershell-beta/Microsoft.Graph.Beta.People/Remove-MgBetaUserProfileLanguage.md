@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete a languageProficiency object from a user's profile.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileLanguage?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -192,4 +189,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Remove-MgUserProfileLanguage](/powershell/module/Microsoft.Graph.People/Remove-MgUserProfileLanguage?view=graph-powershell-v1.0)

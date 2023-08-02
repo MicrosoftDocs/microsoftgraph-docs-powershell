@@ -1,6 +1,6 @@
 ---
 Module Name: Microsoft.Graph.Users
-Module Guid: a12a4472-b9a4-4fa0-8a1c-ae41c0bf72f5
+Module Guid: 4e0064d5-79c0-4275-9ec1-031a560f74a8
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.users
 Help Version: 1.0.0.0
 Locale: en-US
@@ -12,7 +12,7 @@ Microsoft Graph PowerShell Cmdlets
 
 ## Microsoft.Graph.Users Cmdlets
 ### [Get-MgUser](Get-MgUser.md)
-Retrieve the properties and relationships of user object.
+Read properties and relationships of the user object.
 
 ### [Get-MgUserCount](Get-MgUserCount.md)
 Get the number of the resource
@@ -183,8 +183,11 @@ The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 
 Photos can be any dimension if they are stored in Azure Active Directory.
 You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
-### [Get-MgUserPhotoContent](Get-MgUserPhotoContent.md)
-Get media content for the navigation property photo from users
+### [Get-MgUserPhoto](Get-MgUserPhoto.md)
+Get the specified profilePhoto or its metadata (**profilePhoto** properties).
+The supported sizes of HD photos on Microsoft 365 are as follows: 48x48, 64x64, 96x96, 120x120, 240x240,\n360x360, 432x432, 504x504, and 648x648.
+Photos can be any dimension if they are stored in Azure Active Directory.
+You can get the metadata of the largest available photo, or specify a size to get the metadata for that photo size.\nIf the size you request is not available, you can still get a smaller size that the user has uploaded and made available.\nFor example, if the user uploads a photo that is 504x504 pixels, all but the 648x648 size of photo will be available for download.
 
 ### [Get-MgUserPhotoCount](Get-MgUserPhotoCount.md)
 Get the number of the resource
@@ -213,8 +216,8 @@ Get the number of the resource
 ### [Get-MgUserRegisteredDeviceCountAsEndpoint](Get-MgUserRegisteredDeviceCountAsEndpoint.md)
 Get the number of the resource
 
-### [Get-MgUserSetting](Get-MgUserSetting.md)
-Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
+### [Get-MgUserRegisteredDeviceCountAsEndpoint](Get-MgUserRegisteredDeviceCountAsEndpoint.md)
+Get the number of the resource
 
 ### [Get-MgUserSettingShiftPreference](Get-MgUserSettingShiftPreference.md)
 Retrieve the properties and relationships of a shiftPreferences object by ID.
@@ -301,9 +304,7 @@ Get the number of the resource
 Get the number of the resource
 
 ### [New-MgUser](New-MgUser.md)
-Create a new user.\nThe request body contains the user to create.
-At a minimum, you must specify the required properties for the user.
-You can optionally specify any other writable properties.
+Create a new user object.
 
 ### [New-MgUserExtension](New-MgUserExtension.md)
 Create new navigation property to extensions for users
@@ -357,10 +358,7 @@ A collection of resources linked to the task.
 > To view the beta release of this cmdlet, view [New-MgBetaUserTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTransitiveMemberOfByRef?view=graph-powershell-beta)
 
 ### [Remove-MgUser](Remove-MgUser.md)
-Delete user.
- When deleted, user resources are moved to a temporary container and can be restored within 30 days.
-After that time, they are permanently deleted.
-To learn more, see deletedItems.
+Deletes a user.
 
 ### [Remove-MgUserExtension](Remove-MgUserExtension.md)
 Delete navigation property extensions for users
@@ -424,8 +422,6 @@ The content streams that are uploaded.
 
 ### [Update-MgUser](Update-MgUser.md)
 Update the properties of a user object.
-Not all properties can be updated by Member or Guest users with their default permissions without Administrator roles.
-Compare member and guest default permissions to see properties they can manage.
 
 ### [Update-MgUserExtension](Update-MgUserExtension.md)
 Update the navigation property extensions in users
@@ -442,10 +438,8 @@ Update property mailboxSettings value.
 ### [Update-MgUserPhoto](Update-MgUserPhoto.md)
 Update the navigation property photo in users
 
-### [Update-MgUserSetting](Update-MgUserSetting.md)
-Update the properties of the userSettings object.
-\nUsers in the same organization can have different settings based on their preference or on the organization policies.
-\nTo get the user current settings, see current user settings.
+### [Update-MgUserPhoto](Update-MgUserPhoto.md)
+Update the navigation property photo in users
 
 ### [Update-MgUserSettingShiftPreference](Update-MgUserSettingShiftPreference.md)
 Update the properties and relationships of a shiftPreferences object.

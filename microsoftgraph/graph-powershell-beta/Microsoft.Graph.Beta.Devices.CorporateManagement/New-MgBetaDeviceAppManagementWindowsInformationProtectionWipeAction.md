@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to windowsInformationProtectionWipeActions for deviceAppManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementWindowsInformationProtectionWipeAction](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionWipeAction?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -234,5 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetedUserId <String>]`: The UserId being targeted by this wipe action.
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementWindowsInformationProtectionWipeAction](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementWindowsInformationProtectionWipeAction?view=graph-powershell-v1.0)
 

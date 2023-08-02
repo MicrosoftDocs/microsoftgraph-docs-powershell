@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action revokeToken
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Revoke-MgDeviceManagementAndroidForWorkEnrollmentProfileToken](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Revoke-MgDeviceManagementAndroidForWorkEnrollmentProfileToken?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Revoke (Default)
@@ -181,5 +178,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Revoke-MgDeviceManagementAndroidForWorkEnrollmentProfileToken](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Revoke-MgDeviceManagementAndroidForWorkEnrollmentProfileToken?view=graph-powershell-v1.0)
 

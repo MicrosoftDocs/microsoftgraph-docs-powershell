@@ -8,7 +8,7 @@ schema: 2.0.0
 # Get-MgBetaRiskDetection
 
 ## SYNOPSIS
-Retrieve the properties of a collection of **riskDetection** objects.
+Retrieve the properties of a **riskDetection** object.
 
 > [!NOTE]
 > To view the v1.0 release of this cmdlet, view [Get-MgRiskDetection](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgRiskDetection?view=graph-powershell-v1.0)
@@ -35,7 +35,7 @@ Get-MgBetaRiskDetection -InputObject <IIdentitySignInsIdentity> [-ExpandProperty
 ```
 
 ## DESCRIPTION
-Retrieve the properties of a collection of **riskDetection** objects.
+Retrieve the properties of a **riskDetection** object.
 
 ## EXAMPLES
 ### Example 1: Get all riskDetections

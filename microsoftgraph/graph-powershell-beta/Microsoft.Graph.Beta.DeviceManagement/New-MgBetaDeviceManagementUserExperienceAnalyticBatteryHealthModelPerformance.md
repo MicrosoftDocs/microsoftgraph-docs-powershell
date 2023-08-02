@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to userExperienceAnalyticsBatteryHealthModelPerformance for deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -259,5 +256,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ModelBatteryHealthScore <Int32?>]`: A weighted average of a model's maximum capacity score and runtime estimate score. Values range from 0-100. Valid values -2147483648 to 2147483647
 
 ## RELATED LINKS
-[New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementUserExperienceAnalyticBatteryHealthModelPerformance?view=graph-powershell-v1.0)
 

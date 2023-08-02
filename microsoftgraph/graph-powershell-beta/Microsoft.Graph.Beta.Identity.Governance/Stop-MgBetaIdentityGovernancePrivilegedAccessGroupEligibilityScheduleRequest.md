@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Cancel an eligibility assignment request to a group whose membership and ownership are governed by PIM.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Cancel (Default)
@@ -227,5 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernancePrivilegedAccessGroupEligibilityScheduleRequest?view=graph-powershell-v1.0)
 

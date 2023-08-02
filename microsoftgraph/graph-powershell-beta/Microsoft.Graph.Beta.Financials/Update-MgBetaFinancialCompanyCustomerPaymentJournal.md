@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property customerPaymentJournals in financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanyCustomerPaymentJournal](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentJournal?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -527,8 +524,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Update-MgFinancialCompanyCustomerPaymentJournal](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentJournal?view=graph-powershell-v1.0)
 
 ## RELATED LINKS
-[Update-MgFinancialCompanyCustomerPaymentJournal](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanyCustomerPaymentJournal?view=graph-powershell-v1.0)
 

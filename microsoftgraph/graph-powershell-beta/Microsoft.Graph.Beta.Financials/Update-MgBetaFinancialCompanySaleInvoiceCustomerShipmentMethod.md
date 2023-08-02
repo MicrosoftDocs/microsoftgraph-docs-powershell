@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property shipmentMethod in financials
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgFinancialCompanySaleInvoiceCustomerShipmentMethod](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoiceCustomerShipmentMethod?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -279,5 +276,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VendorId <String>]`: The unique identifier of vendor
 
 ## RELATED LINKS
-[Update-MgFinancialCompanySaleInvoiceCustomerShipmentMethod](/powershell/module/Microsoft.Graph.Financials/Update-MgFinancialCompanySaleInvoiceCustomerShipmentMethod?view=graph-powershell-v1.0)
 

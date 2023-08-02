@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action enableLegacyPcManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Enable-MgDeviceManagementLegacyPcManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementLegacyPcManagement?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -83,5 +80,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Enable-MgDeviceManagementLegacyPcManagement](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Enable-MgDeviceManagementLegacyPcManagement?view=graph-powershell-v1.0)
 

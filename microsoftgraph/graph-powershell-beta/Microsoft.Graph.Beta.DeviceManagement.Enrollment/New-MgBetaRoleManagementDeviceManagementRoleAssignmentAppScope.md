@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to appScopes for roleManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDeviceManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementRoleAssignmentAppScope?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -243,5 +240,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsFeatureUpdateProfileId <String>]`: The unique identifier of windowsFeatureUpdateProfile
 
 ## RELATED LINKS
-[New-MgRoleManagementDeviceManagementRoleAssignmentAppScope](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/New-MgRoleManagementDeviceManagementRoleAssignmentAppScope?view=graph-powershell-v1.0)
 

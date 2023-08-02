@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgWindowsUpdatesUpdatableAssetCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesUpdatableAssetCount?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ```
@@ -69,5 +66,4 @@ ALIASES
 Get-MgBetaWuUpdatableAssetCount
 
 ## RELATED LINKS
-[Get-MgWindowsUpdatesUpdatableAssetCount](/powershell/module/Microsoft.Graph.WindowsUpdates/Get-MgWindowsUpdatesUpdatableAssetCount?view=graph-powershell-v1.0)
 

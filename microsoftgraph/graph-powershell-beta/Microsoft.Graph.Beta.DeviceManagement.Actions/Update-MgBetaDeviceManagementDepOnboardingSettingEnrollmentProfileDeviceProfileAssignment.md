@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action updateDeviceProfileAssignment
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -265,5 +262,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Update-MgDeviceManagementDepOnboardingSettingEnrollmentProfileDeviceProfileAssignment?view=graph-powershell-v1.0)
 

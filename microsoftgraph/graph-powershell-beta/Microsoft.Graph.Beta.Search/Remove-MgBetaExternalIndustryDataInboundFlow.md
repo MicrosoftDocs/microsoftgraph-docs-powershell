@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete an inboundFlow object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
@@ -163,5 +160,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Remove-MgExternalIndustryDataInboundFlow](/powershell/module/Microsoft.Graph.Search/Remove-MgExternalIndustryDataInboundFlow?view=graph-powershell-v1.0)
 
