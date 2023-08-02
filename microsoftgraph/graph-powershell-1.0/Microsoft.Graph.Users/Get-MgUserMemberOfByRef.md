@@ -13,9 +13,6 @@ Read-only.
 (HTTP Methods: GET, PUT, DELETE.).
 Supports $expand.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Get (Default)
@@ -106,4 +103,5 @@ INPUTOBJECT `<IUsersIdentity>`: Identity Parameter
 
 ## RELATED LINKS
 
-[Get-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
+
+
