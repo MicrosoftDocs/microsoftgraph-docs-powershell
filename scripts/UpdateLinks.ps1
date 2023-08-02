@@ -143,7 +143,7 @@ function Construct-Path {
         if (Test-Path $BetaFilePath) {
             $V1Command = $Command.Replace("-MgBeta", "-Mg")
             $ConfirmV1Path = Join-Path $WorkLoadDocsPath "graph-powershell-1.0" "Microsoft.Graph.$Module" "$V1Command.md"
-            if(Test-Path $ConfirmV1Path){
+            if (Test-Path $ConfirmV1Path) {
                 Add-Link -File $BetaFilePath -Module $Module -GraphProfile "beta" -Command $Command
             }
         }
@@ -151,7 +151,7 @@ function Construct-Path {
         if (Test-Path $V1FilePath) {
             $BetaCommand = $Command.Replace("-Mg", "-MgBeta")
             $ConfirmBetaPath = Join-Path $WorkLoadDocsPath "graph-powershell-beta" "Microsoft.Graph.Beta.$Module" "$BetaCommand.md"
-            if(Test-Path $ConfirmBetaPath){
+            if (Test-Path $ConfirmBetaPath) {
                 Add-Link -File $V1FilePath -Module $Module -GraphProfile "v1.0" -Command $Command
             }
             
@@ -192,13 +192,14 @@ function Add-Link {
                 
             }
 
-            $Block = $Matches[0]
             $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
             $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
-            $NewBlock = $Block.Replace("## SYNTAX", $Link)
+            $ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
+            if ($ConfirmCommandAvailability) {
                 (Get-Content $File) | 
-            Foreach-Object { $_ -replace '## SYNTAX', $Link -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
-            Out-File $File
+                Foreach-Object { $_ -replace '## SYNTAX', $Link -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
+                Out-File $File
+            }
         }
     }
     catch {
