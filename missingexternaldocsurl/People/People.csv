@@ -196,3 +196,5 @@ v1.0, Get-MgUserPersonCount, /users/{user-id}/people/$count
 v1.0, Get-MgUserSharedCountInsight, /users/{user-id}/insights/shared/$count
 v1.0, Get-MgUserTrendingCountInsight, /users/{user-id}/insights/trending/$count
 v1.0, Get-MgUserUsedCountInsight, /users/{user-id}/insights/used/$count
+beta, Get-MgBetaUserAnalyticActivityStatisticsCount, /users/{user-id}/analytics/activityStatistics/$count
+v1.0, Get-MgUserPerson, /users/{user-id}/people/{person-id}

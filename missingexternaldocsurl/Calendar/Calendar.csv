@@ -443,3 +443,4 @@ v1.0, Get-MgUserEventExtensionCount, /users/{user-id}/events/{event-id}/extensio
 v1.0, Get-MgUserEventInstanceAttachmentCount, /users/{user-id}/events/{event-id}/instances/{event-id1}/attachments/$count
 v1.0, Get-MgUserEventInstanceCount, /users/{user-id}/events/{event-id}/instances/$count
 v1.0, Get-MgUserEventInstanceExtensionCount, /users/{user-id}/events/{event-id}/instances/{event-id1}/extensions/$count
+v1.0, Get-MgGroupCalendarEvent, /groups/{group-id}/calendar/events/{event-id}
