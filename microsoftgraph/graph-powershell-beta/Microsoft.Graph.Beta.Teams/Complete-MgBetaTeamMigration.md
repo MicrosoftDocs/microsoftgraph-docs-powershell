@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/complete-mgbetateammigration
 schema: 2.0.0
@@ -13,19 +13,16 @@ Complete the message migration process by removing `migration mode` from a team.
 After a **completeMigration** request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Complete (Default)
 ```
-Complete-MgBetaTeamMigration -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Complete-MgBetaTeamMigration -TeamId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CompleteViaIdentity
 ```
-Complete-MgBetaTeamMigration -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm]
+Complete-MgBetaTeamMigration -InputObject <ITeamsIdentity> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -36,13 +33,14 @@ After a **completeMigration** request is made, you cannot import additional mess
 You can add members to the team after the request returns a successful response.
 
 ## EXAMPLES
-### Example 1: Using the Complete-MgBetaTeamMigration Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 Complete-MgBetaTeamMigration -TeamId $teamId
 ```
-This example shows how to use the Complete-MgBetaTeamMigration Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -51,7 +49,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
 Parameter Sets: CompleteViaIdentity
 Aliases:
 
@@ -66,7 +64,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -81,7 +79,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Complete
 Aliases:
 
@@ -96,7 +94,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -112,7 +110,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -129,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -182,4 +182,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Complete-MgTeamMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamMigration?view=graph-powershell-v1.0)
+

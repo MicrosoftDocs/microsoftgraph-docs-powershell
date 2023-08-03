@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementcomanageddevicecompliancepolicystate
 schema: 2.0.0
@@ -18,13 +18,19 @@ New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState -ManagedDeviceId 
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState -ManagedDeviceId <String>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,17 +39,27 @@ New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState -InputObject <IDe
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-PlatformType <PolicyPlatformType>] [-SettingCount <Int32>]
  [-SettingStates <IMicrosoftGraphDeviceCompliancePolicySettingState[]>] [-State <String>] [-UserId <String>]
- [-UserPrincipalName <String>] [-Version <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementComanagedDeviceCompliancePolicyState -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphDeviceCompliancePolicyState> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UserPrincipalName <String>] [-Version <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to deviceCompliancePolicyStates for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Create new navigation property to deviceCompliancePolicyStates for deviceManagem
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ Device Compliance Policy State for a given device.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicyState
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -82,7 +98,7 @@ Accept wildcard characters: False
 The name of the policy for this policyBase
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -98,7 +114,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -114,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -129,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -144,7 +160,7 @@ Accept wildcard characters: False
 Supported platform types for policies.
 
 ```yaml
-Type: PolicyPlatformType
+Type: Microsoft.Graph.Beta.PowerShell.Support.PolicyPlatformType
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +175,7 @@ Accept wildcard characters: False
 Count of how many setting a policy holds
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +191,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceCompliancePolicySettingState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicySettingState[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -190,7 +206,7 @@ Accept wildcard characters: False
 complianceStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +221,7 @@ Accept wildcard characters: False
 User unique identifier, must be Guid
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +236,7 @@ Accept wildcard characters: False
 User Principal Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +251,7 @@ Accept wildcard characters: False
 The version of the policy
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -250,7 +266,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +282,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,10 +299,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceCompliancePolicyState
+
 ## NOTES
 
 ALIASES
@@ -480,8 +499,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: UserId
   - `[UserName <String>]`: UserName
   - `[UserPrincipalName <String>]`: UserPrincipalName.
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

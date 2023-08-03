@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/new-mgbetauseronlinemeetingregistrationcustomquestion
 schema: 2.0.0
@@ -16,30 +16,46 @@ Create a custom registration question associated with a meetingRegistration obje
 ```
 New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -OnlineMeetingId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-IsRequired] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -OnlineMeetingId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-IsRequired] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create a custom registration question associated with a meetingRegistration object on behalf of the organizer.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Create a custom registration question associated with a meetingRegistration obje
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -62,7 +78,7 @@ Accept wildcard characters: False
 answerInputType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -77,7 +93,7 @@ Accept wildcard characters: False
 Answer options when answerInputType is radioButton.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -93,7 +109,7 @@ meetingRegistrationQuestion
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingRegistrationQuestion
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -108,7 +124,7 @@ Accept wildcard characters: False
 Display name of the custom registration question.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -124,7 +140,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -140,8 +156,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -156,7 +172,7 @@ Indicates whether the question is required.
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -171,8 +187,8 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -186,8 +202,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -201,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -217,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -234,10 +250,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
+
 ## NOTES
 
 ALIASES

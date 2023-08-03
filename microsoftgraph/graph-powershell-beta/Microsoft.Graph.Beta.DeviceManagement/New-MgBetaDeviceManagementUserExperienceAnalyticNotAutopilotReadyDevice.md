@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementuserexperienceanalyticnotautopilotreadydevice
 schema: 2.0.0
@@ -17,18 +17,34 @@ Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice
 New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice [-AdditionalProperties <Hashtable>]
  [-AutoPilotProfileAssigned] [-AutoPilotRegistered] [-AzureAdJoinType <String>] [-AzureAdRegistered]
  [-DeviceName <String>] [-Id <String>] [-ManagedBy <String>] [-Manufacturer <String>] [-Model <String>]
- [-SerialNumber <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SerialNumber <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementUserExperienceAnalyticNotAutopilotReadyDevice
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +52,7 @@ Create new navigation property to userExperienceAnalyticsNotAutopilotReadyDevice
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -51,7 +67,7 @@ Accept wildcard characters: False
 The intune device's autopilotProfileAssigned.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -66,7 +82,7 @@ Accept wildcard characters: False
 The intune device's autopilotRegistered.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 The intune device's azure Ad joinType.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 The intune device's azureAdRegistered.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ The user experience analytics Device not windows autopilot ready.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
 Parameter Sets: Create
 Aliases:
 
@@ -127,7 +143,7 @@ Accept wildcard characters: False
 The intune device's name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -143,7 +159,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -158,7 +174,7 @@ Accept wildcard characters: False
 The intune device's managed by.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -173,7 +189,7 @@ Accept wildcard characters: False
 The intune device's manufacturer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -188,7 +204,7 @@ Accept wildcard characters: False
 The intune device's model.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +219,7 @@ Accept wildcard characters: False
 The intune device's serial number.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +234,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +250,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,9 +267,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsNotAutopilotReadyDevice
+
 ## NOTES
 
 ALIASES

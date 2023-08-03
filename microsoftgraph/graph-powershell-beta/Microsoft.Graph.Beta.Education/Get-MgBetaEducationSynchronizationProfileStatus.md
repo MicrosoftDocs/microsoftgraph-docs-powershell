@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/get-mgbetaeducationsynchronizationprofilestatus
 schema: 2.0.0
@@ -30,13 +30,14 @@ Get the status of a specific school data synchronization profile in the tenant.
 The response will indicate the status of the sync.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaEducationSynchronizationProfileStatus Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Education
 Get-MgBetaEducationSynchronizationProfileStatus -EducationSynchronizationProfileId $educationSynchronizationProfileId
 ```
-This example shows how to use the Get-MgBetaEducationSynchronizationProfileStatus Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -44,7 +45,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of educationSynchronizationProfile
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -59,7 +60,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -75,7 +76,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -90,7 +91,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -107,9 +108,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationSynchronizationProfileStatus
+
 ## NOTES
 
 ALIASES
@@ -135,3 +138,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

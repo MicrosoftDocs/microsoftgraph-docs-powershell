@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritytriggertype
 schema: 2.0.0
@@ -10,25 +10,39 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property triggerTypes in security
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerType?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityTriggerType [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-RetentionEventTypes <IMicrosoftGraphSecurityRetentionEventType[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-WhatIf] [-Confirm]
+Update-MgBetaSecurityTriggerType -BodyParameter <IMicrosoftGraphSecurityTriggerTypesRoot> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property triggerTypes in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +50,7 @@ Update the navigation property triggerTypes in security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -52,7 +66,7 @@ triggerTypesRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityTriggerTypesRoot
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
 Parameter Sets: Update
 Aliases:
 
@@ -68,7 +82,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -84,7 +98,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for RETENTIONEVENTTYPES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityRetentionEventType[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionEventType[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -99,7 +113,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -115,7 +129,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -132,9 +146,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityTriggerTypesRoot
+
 ## NOTES
 
 ALIASES
@@ -180,5 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedDateTime <DateTime?>]`: The latest date time when the retentionEventType was modified.
 
 ## RELATED LINKS
-[Update-MgSecurityTriggerType](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityTriggerType?view=graph-powershell-v1.0)
 

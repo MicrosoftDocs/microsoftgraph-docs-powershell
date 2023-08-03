@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduletimeoff
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new timeOff instance in a schedule.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOff?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -20,13 +17,19 @@ Create a new timeOff instance in a schedule.
 New-MgBetaGroupTeamScheduleTimeOff -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaGroupTeamScheduleTimeOff -GroupId <String> -BodyParameter <IMicrosoftGraphTimeOff> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+New-MgBetaGroupTeamScheduleTimeOff -GroupId <String> -BodyParameter <IMicrosoftGraphTimeOff> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -34,13 +37,7 @@ New-MgBetaGroupTeamScheduleTimeOff -GroupId <String> -BodyParameter <IMicrosoftG
 New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DraftTimeOff <IMicrosoftGraphTimeOffItem>] [-Id <String>]
  [-IsStagedForDeletion] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaGroupTeamScheduleTimeOff -InputObject <ITeamsIdentity> -BodyParameter <IMicrosoftGraphTimeOff>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SharedTimeOff <IMicrosoftGraphTimeOffItem>] [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,13 +45,27 @@ Create a new timeOff instance in a schedule.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +81,7 @@ timeOff
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOff
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOff
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -86,7 +97,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +113,7 @@ timeOffItem
 To construct, see NOTES section for DRAFTTIMEOFF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffItem
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOffItem
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -117,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -133,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -164,7 +175,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -180,7 +191,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +207,7 @@ timeOffItem
 To construct, see NOTES section for SHAREDTIMEOFF properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTimeOffItem
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOffItem
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +223,7 @@ ID of the user assigned to the timeOff.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +238,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -243,7 +254,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -260,10 +271,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOff
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTimeOff
+
 ## NOTES
 
 ALIASES
@@ -368,4 +382,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleTimeOff?view=graph-powershell-v1.0)
+

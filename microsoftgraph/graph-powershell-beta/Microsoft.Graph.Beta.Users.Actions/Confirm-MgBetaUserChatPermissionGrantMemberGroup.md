@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/confirm-mgbetauserchatpermissiongrantmembergroup
 schema: 2.0.0
@@ -19,7 +19,7 @@ Because Microsoft 365 groups cannot contain other groups, membership in a Micros
 ### CheckExpanded (Default)
 ```
 Confirm-MgBetaUserChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpecificPermissionGrantId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm]
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,20 +28,20 @@ Confirm-MgBetaUserChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpeci
 Confirm-MgBetaUserChatPermissionGrantMemberGroup -ChatId <String> -ResourceSpecificPermissionGrantId <String>
  -UserId <String>
  -BodyParameter <IPaths1U5RikiUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentityExpanded
-```
-Confirm-MgBetaUserChatPermissionGrantMemberGroup -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
 Confirm-MgBetaUserChatPermissionGrantMemberGroup -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths1U5RikiUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgBetaUserChatPermissionGrantMemberGroup -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-GroupIds <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,13 +51,29 @@ You can check up to a maximum of 20 groups per request.
 This function supports all groups provisioned in Azure AD.
 Because Microsoft 365 groups cannot contain other groups, membership in a Microsoft 365 group is always direct.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -73,7 +89,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1U5RikiUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1U5RikiUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
@@ -88,8 +104,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -103,7 +119,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -119,8 +135,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -134,8 +150,8 @@ Accept wildcard characters: False
 The unique identifier of resourceSpecificPermissionGrant
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -149,8 +165,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -164,7 +180,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -180,7 +196,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -197,10 +213,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1U5RikiUsersUserIdChatsChatIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmembergroupsPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES

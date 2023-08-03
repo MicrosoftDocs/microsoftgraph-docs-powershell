@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/add-mgbetasecuritycaseediscoverycasereviewsetquerytag
 schema: 2.0.0
@@ -11,9 +11,6 @@ schema: 2.0.0
 Apply tags to files in an eDiscovery review set.
 For details, see Tag documents in a review set in eDiscovery.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### ApplyExpanded (Default)
@@ -21,7 +18,7 @@ For details, see Tag documents in a review set in eDiscovery.
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId <String>
  -EdiscoveryReviewSetId <String> -EdiscoveryReviewSetQueryId <String> [-AdditionalProperties <Hashtable>]
  [-TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
- [-TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-PassThru] [-WhatIf] [-Confirm]
+ [-TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -30,22 +27,22 @@ Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId <String>
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId <String>
  -EdiscoveryReviewSetId <String> -EdiscoveryReviewSetQueryId <String>
  -BodyParameter <IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ApplyViaIdentityExpanded
-```
-Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentity>
- [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
- [-TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ApplyViaIdentity
 ```
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentity>
  -BodyParameter <IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ApplyViaIdentityExpanded
+```
+Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -InputObject <ISecurityIdentity>
+ [-AdditionalProperties <Hashtable>] [-TagsToAdd <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>]
+ [-TagsToRemove <IMicrosoftGraphSecurityEdiscoveryReviewTag[]>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -53,7 +50,8 @@ Apply tags to files in an eDiscovery review set.
 For details, see Tag documents in a review set in eDiscovery.
 
 ## EXAMPLES
-### Example 1: Using the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -65,8 +63,8 @@ $params = @{
 }
 Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -EdiscoveryReviewSetQueryId $ediscoveryReviewSetQueryId -BodyParameter $params
 ```
-This example shows how to use the Add-MgBetaSecurityCaseEdiscoveryCaseReviewSetQueryTag Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -74,7 +72,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -90,7 +88,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Apply, ApplyViaIdentity
 Aliases:
 
@@ -105,8 +103,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply
+Type: System.String
+Parameter Sets: Apply, ApplyExpanded
 Aliases:
 
 Required: True
@@ -120,8 +118,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryReviewSet
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply
+Type: System.String
+Parameter Sets: Apply, ApplyExpanded
 Aliases:
 
 Required: True
@@ -135,8 +133,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryReviewSetQuery
 
 ```yaml
-Type: String
-Parameter Sets: ApplyExpanded, Apply
+Type: System.String
+Parameter Sets: Apply, ApplyExpanded
 Aliases:
 
 Required: True
@@ -151,8 +149,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: ApplyViaIdentityExpanded, ApplyViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: ApplyViaIdentity, ApplyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -166,7 +164,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -182,7 +180,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TAGSTOADD properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewTag[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -198,7 +196,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TAGSTOREMOVE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityEdiscoveryReviewTag[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityEdiscoveryReviewTag[]
 Parameter Sets: ApplyExpanded, ApplyViaIdentityExpanded
 Aliases:
 
@@ -213,7 +211,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -229,7 +227,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -246,10 +244,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsA2Ja7OSecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdQueriesEdiscoveryreviewsetqueryIdMicrosoftGraphSecurityApplytagsPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -386,4 +387,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Parent <IMicrosoftGraphSecurityEdiscoveryReviewTag>]`: ediscoveryReviewTag
 
 ## RELATED LINKS
-[Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag](/powershell/module/Microsoft.Graph.Security/Add-MgSecurityCaseEdiscoveryCaseReviewSetQueryTag?view=graph-powershell-v1.0)
+

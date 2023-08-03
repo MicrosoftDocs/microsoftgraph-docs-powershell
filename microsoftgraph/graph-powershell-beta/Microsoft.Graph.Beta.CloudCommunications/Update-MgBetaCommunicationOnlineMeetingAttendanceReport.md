@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetacommunicationonlinemeetingattendancereport
 schema: 2.0.0
@@ -10,17 +10,27 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property attendanceReports in communications
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded1 (Default)
 ```
 Update-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String>
  [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### Update
+```
+Update-MgBetaCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
+ -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### Update1
+```
+Update-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String>
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateExpanded
@@ -28,52 +38,55 @@ Update-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String
 Update-MgBetaCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
  -OnlineMeetingId <String> [-AdditionalProperties <Hashtable>]
  [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>] [-MeetingEndDateTime <DateTime>]
- [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### Update
-```
-Update-MgBetaCommunicationOnlineMeetingAttendanceReport -MeetingAttendanceReportId <String>
- -OnlineMeetingId <String> -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgBetaCommunicationOnlineMeetingAttendanceReport -OnlineMeetingId <String>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded1
+### UpdateViaIdentity
 ```
 Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
- [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentity1
+### UpdateViaIdentityExpanded1
 ```
 Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaCommunicationOnlineMeetingAttendanceReport -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingAttendanceReport> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-AttendanceRecords <IMicrosoftGraphAttendanceRecord[]>] [-Id <String>]
+ [-MeetingEndDateTime <DateTime>] [-MeetingStartDateTime <DateTime>] [-TotalParticipantCount <Int32>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property attendanceReports in communications
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -81,8 +94,8 @@ Update the navigation property attendanceReports in communications
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -98,8 +111,8 @@ Read-only.
 To construct, see NOTES section for ATTENDANCERECORDS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttendanceRecord[]
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord[]
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -114,8 +127,8 @@ meetingAttendanceReport
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingAttendanceReport
-Parameter Sets: Update, Update1, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
+Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -130,8 +143,8 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -146,8 +159,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -161,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of meetingAttendanceReport
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -177,8 +190,8 @@ UTC time when the meeting ended.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -193,8 +206,8 @@ UTC time when the meeting started.
 Read-only.
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -208,8 +221,8 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, UpdateExpanded, Update, Update1
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -224,8 +237,8 @@ Total number of participants.
 Read-only.
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded1, UpdateExpanded, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -239,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -255,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -272,10 +285,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingAttendanceReport
+
 ## NOTES
 
 ALIASES
@@ -342,5 +358,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgCommunicationOnlineMeetingAttendanceReport](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgCommunicationOnlineMeetingAttendanceReport?view=graph-powershell-v1.0)
 

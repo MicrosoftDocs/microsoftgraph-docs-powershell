@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupconversation
 schema: 2.0.0
@@ -11,37 +11,34 @@ schema: 2.0.0
 Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupConversation -GroupId <String> [-AdditionalProperties <Hashtable>] [-HasAttachments]
  [-Id <String>] [-LastDeliveredDateTime <DateTime>] [-Preview <String>]
- [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaGroupConversation -GroupId <String> -BodyParameter <IMicrosoftGraphConversation> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgBetaGroupConversation -GroupId <String> -BodyParameter <IMicrosoftGraphConversation> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversation>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupConversation -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
  [-HasAttachments] [-Id <String>] [-LastDeliveredDateTime <DateTime>] [-Preview <String>]
- [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaGroupConversation -InputObject <IGroupsIdentity> -BodyParameter <IMicrosoftGraphConversation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Threads <IMicrosoftGraphConversationThread[]>] [-Topic <String>] [-UniqueSenders <String[]>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,10 +46,11 @@ Create a new conversation by including a thread and a post.
 Use reply thread or reply post to further post to that conversation.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
+```
 
 $params = @{
 	Topic = "Does anyone have a second?"
@@ -84,11 +82,6 @@ $params = @{
 }
 
 New-MgBetaGroupConversation -GroupId $groupId -BodyParameter $params
-```
-This example shows how to use the New-MgBetaGroupConversation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -96,7 +89,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -112,7 +105,7 @@ conversation
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversation
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -127,8 +120,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -143,7 +136,7 @@ Indicates whether any of the posts within this Conversation has at least one att
 Supports $filter (eq, ne) and $search.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +152,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +168,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -192,7 +185,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Supports $filter (eq, ne, le, ge).
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -207,7 +200,7 @@ Accept wildcard characters: False
 A short summary from the body of the latest post in this conversation.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,7 +219,7 @@ Nullable.
 To construct, see NOTES section for THREADS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphConversationThread[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversationThread[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -242,7 +235,7 @@ The topic of the conversation.
 This property can be set when the conversation is created, but it cannot be updated.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +250,7 @@ Accept wildcard characters: False
 All the users that sent a message to this Conversation.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +265,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +281,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,10 +298,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConversation
+
 ## NOTES
 
 ALIASES
@@ -487,7 +483,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UniqueSenders <String[]>]`: All the users that sent a message to this thread. Returned by default.
 
 ## RELATED LINKS
-[New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-v1.0)
 
-## RELATED LINKS
-[New-MgGroupConversation](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversation?view=graph-powershell-v1.0)

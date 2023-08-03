@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/invoke-mgbetaacceptidentitygovernanceaccessreviewdecisioninstancerecommendation
 schema: 2.0.0
@@ -17,13 +17,13 @@ If there is not a recommendation on an accessReviewInstanceDecisionItem object n
 ### Accept (Default)
 ```
 Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation
- -AccessReviewInstanceDecisionItemId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -AccessReviewInstanceDecisionItemId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### AcceptViaIdentity
 ```
 Invoke-MgBetaAcceptIdentityGovernanceAccessReviewDecisionInstanceRecommendation
- -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -InputObject <IIdentityGovernanceIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,13 +31,29 @@ Allows the acceptance of recommendations on all accessReviewInstanceDecisionItem
 Recommendations are generated if **recommendationsEnabled** is `true` on the accessReviewScheduleDefinition object.
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -AccessReviewInstanceDecisionItemId
 The unique identifier of accessReviewInstanceDecisionItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Accept
 Aliases:
 
@@ -53,7 +69,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
 Parameter Sets: AcceptViaIdentity
 Aliases:
 
@@ -68,7 +84,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -99,7 +115,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -116,9 +132,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES

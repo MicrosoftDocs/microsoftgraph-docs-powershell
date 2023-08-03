@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/get-mgbetaorganizationsettingmicrosoftapplicationdataaccess
 schema: 2.0.0
@@ -20,21 +20,23 @@ Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId <Str
 
 ### GetViaIdentity
 ```
-Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -InputObject <IIdentityDirectoryManagementIdentity>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess
+ -InputObject <IIdentityDirectoryManagementIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Get the _settings_ in a microsoftApplicationDataAccessSettings object that specify access from Microsoft applications to Microsoft 365 user data in an organization.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
 Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess -OrganizationId $organizationId
 ```
-This example shows how to use the Get-MgBetaOrganizationSettingMicrosoftApplicationDataAccess Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -42,7 +44,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -58,7 +60,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -73,7 +75,7 @@ Accept wildcard characters: False
 The unique identifier of organization
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -88,7 +90,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -105,9 +107,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMicrosoftApplicationDataAccessSettings
+
 ## NOTES
 
 ALIASES
@@ -162,3 +166,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

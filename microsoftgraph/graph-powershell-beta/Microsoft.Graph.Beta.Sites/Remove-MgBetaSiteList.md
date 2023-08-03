@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/remove-mgbetasitelist
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete navigation property lists for sites
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteList?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaSiteList -ListId <String> -SiteId <String> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaSiteList -ListId <String> -SiteId <String> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
-Remove-MgBetaSiteList -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-WhatIf] [-Confirm]
+Remove-MgBetaSiteList -InputObject <ISitesIdentity> [-IfMatch <String>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete navigation property lists for sites
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Delete navigation property lists for sites
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -52,7 +65,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -67,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -112,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,9 +158,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -207,5 +222,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgSiteList](/powershell/module/Microsoft.Graph.Sites/Remove-MgSiteList?view=graph-powershell-v1.0)
 

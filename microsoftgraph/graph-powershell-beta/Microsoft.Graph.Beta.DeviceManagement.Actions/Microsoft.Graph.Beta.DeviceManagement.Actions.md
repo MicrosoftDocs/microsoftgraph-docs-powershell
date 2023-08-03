@@ -337,8 +337,14 @@ Invoke action getZebraFotaDeploymentReport
 ### [Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById](Get-MgBetaDeviceManagementRoleScopeTagRoleScopeTagById.md)
 Invoke action getRoleScopeTagsById
 
+### [Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport](Get-MgBetaDeviceManagementVirtualEndpointReportConnectionQualityReport.md)
+Invoke action getConnectionQualityReports
+
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport](Get-MgBetaDeviceManagementVirtualEndpointReportDailyAggregatedRemoteConnectionReport.md)
 Get the daily aggregated remote connection reports, such as round trip time, available bandwidth, and so on, in a given period.
+
+### [Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport](Get-MgBetaDeviceManagementVirtualEndpointReportInaccessibleCloudPcReport.md)
+Invoke action getInaccessibleCloudPcReports
 
 ### [Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport](Get-MgBetaDeviceManagementVirtualEndpointReportRemoteConnectionHistoricalReport.md)
 Get the remote connection history records of a Cloud PC during a given period.

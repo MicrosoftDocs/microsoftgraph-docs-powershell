@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.DirectoryManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.DirectoryManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.directorymanagement/update-mgbetacontract
 schema: 2.0.0
@@ -10,52 +10,45 @@ schema: 2.0.0
 ## SYNOPSIS
 Update entity in contracts
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContract?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaContract -ContractId <String> [-AdditionalProperties <Hashtable>] [-ContractType <String>]
  [-CustomerId <String>] [-DefaultDomainName <String>] [-DeletedDateTime <DateTime>] [-DisplayName <String>]
- [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaContract -ContractId <String> -BodyParameter <IMicrosoftGraphContract> [-WhatIf] [-Confirm]
+Update-MgBetaContract -ContractId <String> -BodyParameter <IMicrosoftGraphContract> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity>
+ -BodyParameter <IMicrosoftGraphContract> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity> [-AdditionalProperties <Hashtable>]
  [-ContractType <String>] [-CustomerId <String>] [-DefaultDomainName <String>] [-DeletedDateTime <DateTime>]
- [-DisplayName <String>] [-Id <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaContract -InputObject <IIdentityDirectoryManagementIdentity>
- -BodyParameter <IMicrosoftGraphContract> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update entity in contracts
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.DirectoryManagement
+```
 
 Get-MgBetaContract -ContractId $contractId
-```
-This example shows how to use the Update-MgBetaBetaContract Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -63,7 +56,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +72,7 @@ contract
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContract
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContract
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -94,8 +87,8 @@ Accept wildcard characters: False
 The unique identifier of contract
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -111,7 +104,7 @@ Possible values are: SyndicationPartner, BreadthPartner, ResellerPartner.
 See more in the table below.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -127,7 +120,7 @@ The unique identifier for the customer tenant referenced by this partnership.
 Corresponds to the id property of the customer tenant's organization resource.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -144,7 +137,7 @@ The copy is made when the partnership with the customer is established.
 It is not automatically updated if the customer tenant's default domain name changes.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +153,7 @@ Date and time when this object was deleted.
 Always null when the object hasn't been deleted.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +170,7 @@ The copy is made when the partnership with the customer is established.
 It is not automatically updated if the customer tenant's display name changes.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +186,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -209,8 +202,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityDirectoryManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -224,7 +217,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -240,7 +233,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -257,10 +250,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityDirectoryManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContract
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContract
+
 ## NOTES
 
 ALIASES
@@ -324,4 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgContract](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgContract?view=graph-powershell-v1.0)
+

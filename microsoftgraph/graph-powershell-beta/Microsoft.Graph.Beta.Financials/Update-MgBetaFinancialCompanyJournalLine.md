@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/update-mgbetafinancialcompanyjournalline
 schema: 2.0.0
@@ -18,64 +18,82 @@ Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <Str
  [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
  [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
  [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
- [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-WhatIf] [-Confirm]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateExpanded1
-```
-Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> -JournalId <String>
- [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
- [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
- [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
- [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
-```
-
-### Update1
-```
-Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String> -JournalId <String>
- -BodyParameter <IMicrosoftGraphJournalLine> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalLineId <String>
- -BodyParameter <IMicrosoftGraphJournalLine> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded1
+### Update1
 ```
-Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String> -JournalLineId <String>
+ -BodyParameter <IMicrosoftGraphJournalLine> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
-### UpdateViaIdentityExpanded
+### UpdateExpanded1
 ```
-Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity> [-Account <IMicrosoftGraphAccount>]
- [-AccountId <String>] [-AccountNumber <String>] [-AdditionalProperties <Hashtable>] [-Amount <Decimal>]
- [-Comment <String>] [-Description <String>] [-DocumentNumber <String>] [-ExternalDocumentNumber <String>]
- [-Id <String>] [-JournalDisplayName <String>] [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>]
- [-PostingDate <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity1
-```
-Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphJournalLine> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaFinancialCompanyJournalLine -CompanyId <String> -JournalId <String> -JournalLineId <String>
+ [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
+ [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
+ [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
- -BodyParameter <IMicrosoftGraphJournalLine> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphJournalLine> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity1
+```
+Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
+ -BodyParameter <IMicrosoftGraphJournalLine> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
+ [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
+ [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
+ [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded1
+```
+Update-MgBetaFinancialCompanyJournalLine -InputObject <IFinancialsIdentity>
+ [-Account <IMicrosoftGraphAccount>] [-AccountId <String>] [-AccountNumber <String>]
+ [-AdditionalProperties <Hashtable>] [-Amount <Decimal>] [-Comment <String>] [-Description <String>]
+ [-DocumentNumber <String>] [-ExternalDocumentNumber <String>] [-Id <String>] [-JournalDisplayName <String>]
+ [-LastModifiedDateTime <DateTime>] [-LineNumber <Int32>] [-PostingDate <DateTime>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property journalLines in financials
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -84,8 +102,8 @@ account
 To construct, see NOTES section for ACCOUNT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccount
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccount
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -99,8 +117,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -114,8 +132,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -129,8 +147,8 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -144,8 +162,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Decimal
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Decimal
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -160,8 +178,8 @@ journalLine
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphJournalLine
-Parameter Sets: Update1, Update, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphJournalLine
+Parameter Sets: Update, Update1, UpdateViaIdentity, UpdateViaIdentity1
 Aliases:
 
 Required: True
@@ -175,8 +193,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -190,8 +208,8 @@ Accept wildcard characters: False
 The unique identifier of company
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -205,8 +223,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -220,8 +238,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -235,8 +253,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -250,8 +268,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -266,8 +284,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
-Parameter Sets: UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentity1, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentity1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: True
@@ -281,8 +299,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.String
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -296,8 +314,8 @@ Accept wildcard characters: False
 The unique identifier of journal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded1, Update1
+Type: System.String
+Parameter Sets: Update1, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -311,8 +329,8 @@ Accept wildcard characters: False
 The unique identifier of journalLine
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, UpdateExpanded1, Update1, Update
+Type: System.String
+Parameter Sets: Update, Update1, UpdateExpanded, UpdateExpanded1
 Aliases:
 
 Required: True
@@ -326,8 +344,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -341,8 +359,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.Int32
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -356,8 +374,8 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
-Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded1, UpdateViaIdentityExpanded
+Type: System.DateTime
+Parameter Sets: UpdateExpanded, UpdateExpanded1, UpdateViaIdentityExpanded, UpdateViaIdentityExpanded1
 Aliases:
 
 Required: False
@@ -371,7 +389,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -387,7 +405,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -404,10 +422,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphJournalLine
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphJournalLine
+
 ## NOTES
 
 ALIASES

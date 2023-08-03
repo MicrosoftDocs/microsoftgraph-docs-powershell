@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/invoke-mgbetamarkchatreadforuser
 schema: 2.0.0
@@ -10,43 +10,41 @@ schema: 2.0.0
 ## SYNOPSIS
 Mark a chat as read for a user.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### MarkExpanded (Default)
 ```
 Invoke-MgBetaMarkChatReadForUser -ChatId <String> [-AdditionalProperties <Hashtable>] [-TenantId <String>]
- [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Mark
 ```
 Invoke-MgBetaMarkChatReadForUser -ChatId <String>
  -BodyParameter <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MarkViaIdentityExpanded
-```
-Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MarkViaIdentity
 ```
 Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity>
  -BodyParameter <IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MarkViaIdentityExpanded
+```
+Invoke-MgBetaMarkChatReadForUser -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
+ [-TenantId <String>] [-User <IMicrosoftGraphTeamworkUserIdentity>] [-PassThru] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Mark a chat as read for a user.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaMarkChatReadForUser Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 $params = @{
@@ -57,8 +55,8 @@ $params = @{
 }
 Invoke-MgBetaMarkChatReadForUser -ChatId $chatId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaMarkChatReadForUser Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -66,7 +64,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
@@ -82,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Mark, MarkViaIdentity
 Aliases:
 
@@ -97,8 +95,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: MarkExpanded, Mark
+Type: System.String
+Parameter Sets: Mark, MarkExpanded
 Aliases:
 
 Required: True
@@ -113,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: MarkViaIdentityExpanded, MarkViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: MarkViaIdentity, MarkViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -128,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -143,7 +141,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
@@ -159,7 +157,7 @@ teamworkUserIdentity
 To construct, see NOTES section for USER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphTeamworkUserIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeamworkUserIdentity
 Parameter Sets: MarkExpanded, MarkViaIdentityExpanded
 Aliases:
 
@@ -174,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -190,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -207,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsFbbr3UChatsChatIdMicrosoftGraphMarkchatreadforuserPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -276,4 +277,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIdentityType <String>]`: teamworkUserIdentityType
 
 ## RELATED LINKS
-[Invoke-MgMarkChatReadForUser](/powershell/module/Microsoft.Graph.Teams/Invoke-MgMarkChatReadForUser?view=graph-powershell-v1.0)
+

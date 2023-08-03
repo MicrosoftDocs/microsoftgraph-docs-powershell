@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementmobileapptroubleshootingevent
 schema: 2.0.0
@@ -10,49 +10,62 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId <String>
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
+ [-ApplicationId <String>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
  [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
+ [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent -MobileAppTroubleshootingEventId <String>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagementIdentity>
  [-AdditionalInformation <IMicrosoftGraphKeyValuePair[]>] [-AdditionalProperties <Hashtable>]
- [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>] [-ApplicationId <String>]
+ [-ApplicationId <String>] [-AppLogCollectionRequests <IMicrosoftGraphAppLogCollectionRequest[]>]
  [-CorrelationId <String>] [-DeviceId <String>] [-EventDateTime <DateTime>] [-EventName <String>]
  [-History <IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]>] [-Id <String>]
  [-ManagedDeviceIdentifier <String>]
- [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>] [-UserId <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementMobileAppTroubleshootingEvent -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphMobileAppTroubleshootingEvent> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TroubleshootingErrorDetails <IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails>]
+ [-UserId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property mobileAppTroubleshootingEvents in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +74,7 @@ A set of string key and string value pairs which provides additional information
 To construct, see NOTES section for ADDITIONALINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +89,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -91,7 +104,7 @@ Accept wildcard characters: False
 Intune application identifier.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +120,7 @@ The collection property of AppLogUploadRequest.
 To construct, see NOTES section for APPLOGCOLLECTIONREQUESTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAppLogCollectionRequest[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAppLogCollectionRequest[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +136,7 @@ Event representing a users device application install status.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppTroubleshootingEvent
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -138,7 +151,7 @@ Accept wildcard characters: False
 Id used for tracing the failure in the service.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +166,7 @@ Accept wildcard characters: False
 Device identifier created or collected by Intune.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +181,7 @@ Accept wildcard characters: False
 Time when the event occurred .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -184,7 +197,7 @@ Event Name corresponding to the Troubleshooting Event.
 It is an Optional field
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,7 +213,7 @@ Intune Mobile Application Troubleshooting History Item
 To construct, see NOTES section for HISTORY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingHistoryItem[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -216,7 +229,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -232,8 +245,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -247,7 +260,7 @@ Accept wildcard characters: False
 Device identifier created or collected by Intune.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,8 +275,8 @@ Accept wildcard characters: False
 The unique identifier of mobileAppTroubleshootingEvent
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -278,7 +291,7 @@ Object containing detailed information about the error and its remediation.
 To construct, see NOTES section for TROUBLESHOOTINGERRORDETAILS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementTroubleshootingErrorDetails
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,7 +306,7 @@ Accept wildcard characters: False
 Identifier for the user that tried to enroll the device.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -308,7 +321,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -324,7 +337,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -341,10 +354,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMobileAppTroubleshootingEvent
+
 ## NOTES
 
 ALIASES
@@ -559,8 +575,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Text <String>]`: Not yet documented
 
 ## RELATED LINKS
-[Update-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementMobileAppTroubleshootingEvent](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementMobileAppTroubleshootingEvent?view=graph-powershell-v1.0)
 

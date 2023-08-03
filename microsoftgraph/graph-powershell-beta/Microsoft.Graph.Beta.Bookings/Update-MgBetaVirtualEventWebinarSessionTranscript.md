@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarsessiontranscript
 schema: 2.0.0
@@ -16,32 +16,48 @@ Update the navigation property transcripts in solutions
 ```
 Update-MgBetaVirtualEventWebinarSessionTranscript -CallTranscriptId <String> -VirtualEventSessionId <String>
  -VirtualEventWebinarId <String> [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-MetadataContentInputFile <String>] [-WhatIf] [-Confirm]
+ [-CreatedDateTime <DateTime>] [-Id <String>] [-MetadataContentInputFile <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventWebinarSessionTranscript -CallTranscriptId <String> -VirtualEventSessionId <String>
- -VirtualEventWebinarId <String> -BodyParameter <IMicrosoftGraphCallTranscript> [-WhatIf] [-Confirm]
+ -VirtualEventWebinarId <String> -BodyParameter <IMicrosoftGraphCallTranscript> [-Confirm] [-WhatIf]
  [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaVirtualEventWebinarSessionTranscript -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphCallTranscript> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaVirtualEventWebinarSessionTranscript -InputObject <IBookingsIdentity>
  [-AdditionalProperties <Hashtable>] [-ContentInputFile <String>] [-CreatedDateTime <DateTime>] [-Id <String>]
- [-MetadataContentInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaVirtualEventWebinarSessionTranscript -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphCallTranscript> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-MetadataContentInputFile <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property transcripts in solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Update the navigation property transcripts in solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ callTranscript
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCallTranscript
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscript
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -80,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of callTranscript
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -96,7 +112,7 @@ Input File for Content (A field that represents the content of the transcript.
 Read-only.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -114,7 +130,7 @@ For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 Read-only.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -130,7 +146,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +162,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -162,7 +178,7 @@ Input File for MetadataContent (A field that represents the time-aligned metadat
 Read-only.)
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,8 +193,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventSession
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -192,8 +208,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventWebinar
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -207,7 +223,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -223,7 +239,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -240,10 +256,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscript
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCallTranscript
+
 ## NOTES
 
 ALIASES

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/get-mgbetapolicyaccessreviewpolicy
 schema: 2.0.0
@@ -20,13 +20,14 @@ Get-MgBetaPolicyAccessReviewPolicy [-ExpandProperty <String[]>] [-Property <Stri
 Read the properties and relationships of an accessReviewPolicy object.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaPolicyAccessReviewPolicy Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 Get-MgBetaPolicyAccessReviewPolicy
 ```
-This example shows how to use the Get-MgBetaPolicyAccessReviewPolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -34,7 +35,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -49,7 +50,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -68,8 +69,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessReviewPolicy
+
 ## NOTES
 
 ALIASES
 
 ## RELATED LINKS
+

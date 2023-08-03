@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Applications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaserviceprincipalsynchronizationjob
 schema: 2.0.0
@@ -10,43 +10,58 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property jobs in servicePrincipals
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Status <IMicrosoftGraphSynchronizationStatus>]
- [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-WhatIf] [-Confirm]
+ [-AdditionalProperties <Hashtable>] [-BulkUpload <Hashtable>] [-Id <String>]
+ [-Schedule <IMicrosoftGraphSynchronizationSchedule>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Status <IMicrosoftGraphSynchronizationStatus>]
+ [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaServicePrincipalSynchronizationJob -ServicePrincipalId <String> -SynchronizationJobId <String>
- -BodyParameter <IMicrosoftGraphSynchronizationJob> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-Id <String>] [-Schedule <IMicrosoftGraphSynchronizationSchedule>]
- [-Schema <IMicrosoftGraphSynchronizationSchema>] [-Status <IMicrosoftGraphSynchronizationStatus>]
- [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationJob> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphSynchronizationJob> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphSynchronizationJob> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaServicePrincipalSynchronizationJob -InputObject <IApplicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-BulkUpload <Hashtable>] [-Id <String>]
+ [-Schedule <IMicrosoftGraphSynchronizationSchedule>] [-Schema <IMicrosoftGraphSynchronizationSchema>]
+ [-Status <IMicrosoftGraphSynchronizationStatus>]
+ [-SynchronizationJobSettings <IMicrosoftGraphKeyValuePair[]>] [-TemplateId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property jobs in servicePrincipals
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +69,7 @@ Update the navigation property jobs in servicePrincipals
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +85,7 @@ synchronizationJob
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationJob
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationJob
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,12 +96,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -BulkUpload
+bulkUpload
+
+```yaml
+Type: System.Collections.Hashtable
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,8 +132,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IApplicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -118,7 +148,7 @@ synchronizationSchedule
 To construct, see NOTES section for SCHEDULE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchedule
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchedule
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +164,7 @@ synchronizationSchema
 To construct, see NOTES section for SCHEMA properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationSchema
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -149,8 +179,8 @@ Accept wildcard characters: False
 The unique identifier of servicePrincipal
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -165,7 +195,7 @@ synchronizationStatus
 To construct, see NOTES section for STATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSynchronizationStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationStatus
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -180,8 +210,8 @@ Accept wildcard characters: False
 The unique identifier of synchronizationJob
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -197,7 +227,7 @@ Some settings are inherited from the template.
 To construct, see NOTES section for SYNCHRONIZATIONJOBSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphKeyValuePair[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphKeyValuePair[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -212,7 +242,7 @@ Accept wildcard characters: False
 Identifier of the synchronization template this job is based on.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -227,7 +257,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -243,7 +273,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -260,10 +290,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationJob
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSynchronizationJob
+
 ## NOTES
 
 ALIASES
@@ -597,8 +630,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: Value for this key-value pair
 
 ## RELATED LINKS
-[Update-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgServicePrincipalSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Update-MgServicePrincipalSynchronizationJob?view=graph-powershell-v1.0)
 

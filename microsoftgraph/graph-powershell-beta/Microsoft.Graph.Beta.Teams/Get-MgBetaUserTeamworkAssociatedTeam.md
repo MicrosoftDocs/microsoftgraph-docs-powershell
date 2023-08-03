@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/get-mgbetauserteamworkassociatedteam
 schema: 2.0.0
@@ -10,22 +10,13 @@ schema: 2.0.0
 ## SYNOPSIS
 The list of associatedTeamInfo objects that a user is associated with.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkAssociatedTeam?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### List (Default)
 ```
-Get-MgBetaUserTeamworkAssociatedTeam -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>]
- [-Filter <String>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-PageSize <Int32>]
- [-All] [-CountVariable <String>] [<CommonParameters>]
-```
-
-### Get1
-```
-Get-MgBetaUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaUserTeamworkAssociatedTeam -UserId <String> [-ExpandProperty <String[]>] [-Filter <String>]
+ [-Property <String[]>] [-Search <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All]
+ [-CountVariable <String>] [-PageSize <Int32>] [<CommonParameters>]
 ```
 
 ### Get
@@ -34,13 +25,19 @@ Get-MgBetaUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <Str
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### Get1
+```
+Get-MgBetaUserTeamworkAssociatedTeam -AssociatedTeamInfoId <String> -UserId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+```
+
+### GetViaIdentity
 ```
 Get-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandProperty <String[]>]
  [-Property <String[]>] [<CommonParameters>]
@@ -50,14 +47,15 @@ Get-MgBetaUserTeamworkAssociatedTeam -InputObject <ITeamsIdentity> [-ExpandPrope
 The list of associatedTeamInfo objects that a user is associated with.
 
 ## EXAMPLES
-### Example 1: Using the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
 # A UPN can also be used as -UserId.
 Get-MgBetaUserTeamworkAssociatedTeam -UserId $userId
 ```
-This example shows how to use the Get-MgBetaUserTeamworkAssociatedTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -65,7 +63,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 List all pages.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: List
 Aliases:
 
@@ -80,8 +78,8 @@ Accept wildcard characters: False
 The unique identifier of associatedTeamInfo
 
 ```yaml
-Type: String
-Parameter Sets: Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1
 Aliases:
 
 Required: True
@@ -96,7 +94,7 @@ Specifies a count of the total number of items in a collection.
 By default, this variable will be set in the global scope.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases: CV
 
@@ -111,7 +109,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -126,7 +124,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: List
 Aliases:
 
@@ -142,8 +140,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: GetViaIdentity1, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentity1
 Aliases:
 
 Required: True
@@ -157,7 +155,7 @@ Accept wildcard characters: False
 Sets the page size of results.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -172,7 +170,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -187,7 +185,22 @@ Accept wildcard characters: False
 Search items by search phrases
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
 Parameter Sets: List
 Aliases:
 
@@ -202,7 +215,7 @@ Accept wildcard characters: False
 Order items by property values
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: List
 Aliases: OrderBy
 
@@ -217,7 +230,7 @@ Accept wildcard characters: False
 Show only the first n items
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: List
 Aliases: Limit
 
@@ -232,26 +245,11 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: List, Get1, Get
+Type: System.String
+Parameter Sets: Get, Get1, List
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Skip
-Skip the first n items
-
-```yaml
-Type: Int32
-Parameter Sets: List
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -264,10 +262,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAssociatedTeamInfo
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphTeam
+
 ## NOTES
 
 ALIASES
@@ -318,4 +319,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserTeamworkAssociatedTeam](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkAssociatedTeam?view=graph-powershell-v1.0)
+

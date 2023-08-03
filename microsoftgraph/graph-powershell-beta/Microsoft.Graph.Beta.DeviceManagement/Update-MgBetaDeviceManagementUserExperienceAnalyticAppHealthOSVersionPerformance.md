@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/update-mgbetadevicemanagementuserexperienceanalyticapphealthosversionperformance
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property userExperienceAnalyticsAppHealthOSVersionPerformance in deviceManagement
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,7 +17,7 @@ Update the navigation property userExperienceAnalyticsAppHealthOSVersionPerforma
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
  -UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String> [-ActiveDeviceCount <Int32>]
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>]
- [-OSBuildNumber <String>] [-OSVersion <String>] [-OSVersionAppHealthScore <Double>] [-WhatIf] [-Confirm]
+ [-OSBuildNumber <String>] [-OSVersion <String>] [-OSVersionAppHealthScore <Double>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -28,7 +25,15 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 ```
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
  -UserExperienceAnalyticsAppHealthOSVersionPerformanceId <String>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
+ -InputObject <IDeviceManagementIdentity>
+ -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -37,19 +42,27 @@ Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
 Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
  -InputObject <IDeviceManagementIdentity> [-ActiveDeviceCount <Int32>] [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-MeanTimeToFailureInMinutes <Int32>] [-OSBuildNumber <String>] [-OSVersion <String>]
- [-OSVersionAppHealthScore <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance
- -InputObject <IDeviceManagementIdentity>
- -BodyParameter <IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-OSVersionAppHealthScore <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userExperienceAnalyticsAppHealthOSVersionPerformance in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -61,7 +74,7 @@ Read-only.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +89,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -92,7 +105,7 @@ The user experience analytics device OS version performance entity contains OS v
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -108,7 +121,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -124,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +156,7 @@ Read-only.
 Valid values -2147483648 to 2147483647
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -160,7 +173,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -177,7 +190,7 @@ Supports: $select, $OrderBy.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ Read-only.
 Valid values -1.79769313486232E+308 to 1.79769313486232E+308
 
 ```yaml
-Type: Double
+Type: System.Double
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -211,8 +224,8 @@ Accept wildcard characters: False
 The unique identifier of userExperienceAnalyticsAppHealthOSVersionPerformance
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -226,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -242,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,10 +272,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserExperienceAnalyticsAppHealthOSVersionPerformance
+
 ## NOTES
 
 ALIASES
@@ -421,8 +437,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
 
 ## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance?view=graph-powershell-v1.0)
-
-## RELATED LINKS
-[Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance](/powershell/module/Microsoft.Graph.DeviceManagement/Update-MgDeviceManagementUserExperienceAnalyticAppHealthOSVersionPerformance?view=graph-powershell-v1.0)
 

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement/new-mgbetadevicemanagementmacossoftwareupdateaccountsummarycategorysummaryupdatestatesummary
 schema: 2.0.0
@@ -18,14 +18,21 @@ New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdate
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>] [-LastUpdatedDateTime <DateTime>]
  [-ProductKey <String>] [-State <MacOSSoftwareUpdateState>] [-UpdateCategory <MacOSSoftwareUpdateCategory>]
- [-UpdateVersion <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-UpdateVersion <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -MacOSSoftwareUpdateAccountSummaryId <String> -MacOSSoftwareUpdateCategorySummaryId <String>
- -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
+ -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -33,19 +40,28 @@ New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdate
 New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
  -InputObject <IDeviceManagementIdentity> [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-LastUpdatedDateTime <DateTime>] [-ProductKey <String>] [-State <MacOSSoftwareUpdateState>]
- [-UpdateCategory <MacOSSoftwareUpdateCategory>] [-UpdateVersion <String>] [-WhatIf] [-Confirm]
+ [-UpdateCategory <MacOSSoftwareUpdateCategory>] [-UpdateVersion <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaDeviceManagementMacOSSoftwareUpdateAccountSummaryCategorySummaryUpdateStateSummary
- -InputObject <IDeviceManagementIdentity> -BodyParameter <IMicrosoftGraphMacOSSoftwareUpdateStateSummary>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to updateStateSummaries for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +69,7 @@ Create new navigation property to updateStateSummaries for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -69,7 +85,7 @@ MacOS software update state summary for a device and user
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMacOSSoftwareUpdateStateSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateStateSummary
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,7 +100,7 @@ Accept wildcard characters: False
 Human readable name of the software update
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +116,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -116,8 +132,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -131,7 +147,7 @@ Accept wildcard characters: False
 Last date time the report for this device and product key was updated.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -146,8 +162,8 @@ Accept wildcard characters: False
 The unique identifier of macOSSoftwareUpdateAccountSummary
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -161,8 +177,8 @@ Accept wildcard characters: False
 The unique identifier of macOSSoftwareUpdateCategorySummary
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -176,7 +192,7 @@ Accept wildcard characters: False
 Product key of the software update.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +207,7 @@ Accept wildcard characters: False
 MacOS Software Update State
 
 ```yaml
-Type: MacOSSoftwareUpdateState
+Type: Microsoft.Graph.Beta.PowerShell.Support.MacOSSoftwareUpdateState
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -206,7 +222,7 @@ Accept wildcard characters: False
 MacOS Software Update Category
 
 ```yaml
-Type: MacOSSoftwareUpdateCategory
+Type: Microsoft.Graph.Beta.PowerShell.Support.MacOSSoftwareUpdateCategory
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -221,7 +237,7 @@ Accept wildcard characters: False
 Version of the software update
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,10 +285,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateStateSummary
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMacOSSoftwareUpdateStateSummary
+
 ## NOTES
 
 ALIASES
@@ -430,8 +449,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsInformationProtectionAppLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionAppLearningSummary
   - `[WindowsInformationProtectionNetworkLearningSummaryId <String>]`: The unique identifier of windowsInformationProtectionNetworkLearningSummary
   - `[WindowsMalwareInformationId <String>]`: The unique identifier of windowsMalwareInformation
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

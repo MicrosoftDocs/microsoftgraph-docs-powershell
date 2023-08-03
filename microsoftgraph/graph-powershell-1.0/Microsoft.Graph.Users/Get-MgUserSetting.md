@@ -1,74 +1,50 @@
 ---
-external help file: Microsoft.Graph.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mguserregistereddevicecountasendpoint
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users/get-mgusersetting
 schema: 2.0.0
 ---
 
-# Get-MgUserRegisteredDeviceCountAsEndpoint
+# Get-MgUserSetting
 
 ## SYNOPSIS
-Get the number of the resource
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
+Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
 
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgUserRegisteredDeviceCountAsEndpoint -UserId <String> [-Filter <String>] [-Search <String>]
- -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgUserSetting -UserId <String> [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgUserRegisteredDeviceCountAsEndpoint -InputObject <IUsersIdentity> [-Filter <String>] [-Search <String>]
- -ConsistencyLevel <String> [<CommonParameters>]
+Get-MgUserSetting -InputObject <IUsersIdentity> [-ExpandProperty <String[]>] [-Property <String[]>]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Read the user and organization userSettings object.\nTo learn how to update the properties of the userSettings object, see update user settings.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Users
+```
 
 # A UPN can also be used as -UserId.
 Get-MgUserSetting -UserId $userId
-```
-This example shows how to use the Get-MgUserSetting Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
-### -ConsistencyLevel
-Indicates the requested consistency level.
-Documentation URL: https://docs.microsoft.com/graph/aad-advanced-queries
+### -ExpandProperty
+Expand related entities
 
 ```yaml
-Type: String
+Type: System.String[]
 Parameter Sets: (All)
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -Filter
-Filter items by property values
-
-```yaml
-Type: String
-Parameter Sets: (All)
-Aliases:
+Aliases: Expand
 
 Required: False
 Position: Named
@@ -82,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -93,13 +69,13 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -Search
-Search items by search phrases
+### -Property
+Select properties to be returned
 
 ```yaml
-Type: String
+Type: System.String[]
 Parameter Sets: (All)
-Aliases:
+Aliases: Select
 
 Required: False
 Position: Named
@@ -112,7 +88,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -129,9 +105,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUserSettings
+
 ## NOTES
 
 ALIASES
@@ -157,4 +135,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaUserSetting](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserSetting?view=graph-powershell-beta)
+

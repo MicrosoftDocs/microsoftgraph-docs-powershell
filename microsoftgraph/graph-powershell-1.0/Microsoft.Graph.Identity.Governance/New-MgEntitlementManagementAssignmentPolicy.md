@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementassignmentpolicy
 schema: 2.0.0
@@ -25,13 +25,13 @@ New-MgEntitlementManagementAssignmentPolicy [-AccessPackage <IMicrosoftGraphAcce
  [-RequestApprovalSettings <IMicrosoftGraphAccessPackageAssignmentApprovalSettings>]
  [-RequestorSettings <IMicrosoftGraphAccessPackageAssignmentRequestorSettings>]
  [-ReviewSettings <IMicrosoftGraphAccessPackageAssignmentReviewSettings>]
- [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-SpecificAllowedTargets <IMicrosoftGraphSubjectSet[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter <IMicrosoftGraphAccessPackageAssignmentPolicy>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -39,10 +39,11 @@ In Azure AD entitlement management, create a new accessPackageAssignmentPolicy o
 The request will include a reference to the accessPackage that will contain this policy, which must already exist.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "New Policy"
@@ -78,15 +79,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 2: Code snippet
-
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "policy for external access requests"
@@ -203,15 +200,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 3: Code snippet
-
+### -------------------------- EXAMPLE 3 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "Sales department users"
@@ -235,15 +228,11 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
 
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
-### Example 4: Code snippet
-
+### -------------------------- EXAMPLE 4 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
+```
 
 $params = @{
 	displayName = "A Policy With Questions"
@@ -338,11 +327,6 @@ $params = @{
 }
 
 New-MgEntitlementManagementAssignmentPolicy -BodyParameter $params
-```
-This example shows how to use the New-MgEntitlementManagementAssignmentPolicy Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -351,7 +335,7 @@ accessPackage
 To construct, see NOTES section for ACCESSPACKAGE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackage
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackage
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -366,7 +350,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -381,7 +365,7 @@ Accept wildcard characters: False
 allowedTargetScope
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -397,7 +381,7 @@ accessPackageAutomaticRequestSettings
 To construct, see NOTES section for AUTOMATICREQUESTSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAutomaticRequestSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAutomaticRequestSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -413,7 +397,7 @@ accessPackageAssignmentPolicy
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignmentPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
 Parameter Sets: Create
 Aliases:
 
@@ -429,7 +413,7 @@ accessPackageCatalog
 To construct, see NOTES section for CATALOG properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageCatalog
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageCatalog
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -445,7 +429,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -461,7 +445,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for CUSTOMEXTENSIONSTAGESETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCustomExtensionStageSetting[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphCustomExtensionStageSetting[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -476,7 +460,7 @@ Accept wildcard characters: False
 The description of the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -491,7 +475,7 @@ Accept wildcard characters: False
 The display name of the policy.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -507,7 +491,7 @@ expirationPattern
 To construct, see NOTES section for EXPIRATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphExpirationPattern
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphExpirationPattern
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -523,7 +507,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -539,7 +523,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -555,7 +539,7 @@ Questions that are posed to the requestor.
 To construct, see NOTES section for QUESTIONS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageQuestion[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageQuestion[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -571,7 +555,7 @@ accessPackageAssignmentApprovalSettings
 To construct, see NOTES section for REQUESTAPPROVALSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignmentApprovalSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentApprovalSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -587,7 +571,7 @@ accessPackageAssignmentRequestorSettings
 To construct, see NOTES section for REQUESTORSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignmentRequestorSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentRequestorSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -603,7 +587,7 @@ accessPackageAssignmentReviewSettings
 To construct, see NOTES section for REVIEWSETTINGS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageAssignmentReviewSettings
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentReviewSettings
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -618,7 +602,7 @@ Accept wildcard characters: False
 The principals that can be assigned access from an access package through this policy.
 
 ```yaml
-Type: IMicrosoftGraphSubjectSet[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSubjectSet[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -633,7 +617,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -649,7 +633,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -666,9 +650,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageAssignmentPolicy
+
 ## NOTES
 
 ALIASES
@@ -1057,7 +1043,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
           - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
           - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+          - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
           - `[ContentInfo <IMicrosoftGraphJson>]`: Json
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -1082,7 +1068,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
-              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+              - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
               - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
               - `[AlternativeText <String>]`: 
               - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -1302,7 +1288,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
             - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
             - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+              - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
               - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
               - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -2438,7 +2424,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
             - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
         - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-        - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+        - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
         - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
         - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -2843,7 +2829,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
             - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
             - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+          - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
             - `[Description <String>]`: Optional description for the device category.
@@ -3118,7 +3104,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[(Any) <Object>]`: This indicates any property can be added to this object.
           - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
           - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+          - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
         - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
         - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
           - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -3142,7 +3128,7 @@ To create the parameters described below, construct a hash table containing the 
           - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
             - `[Address <String>]`: The email address.
             - `[ItemId <String>]`: 
-            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+            - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
             - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
           - `[Surname <String>]`: The person's surname.
           - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -3988,7 +3974,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
             - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
             - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
             - `[ContentInfo <IMicrosoftGraphJson>]`: Json
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -4013,7 +3999,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+                - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
                 - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
                 - `[AlternativeText <String>]`: 
                 - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -4233,7 +4219,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -5369,7 +5355,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
               - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
           - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-          - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+          - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
           - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -5774,7 +5760,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
               - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
               - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-            - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+            - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[Description <String>]`: Optional description for the device category.
@@ -6049,7 +6035,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
             - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-            - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+            - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
           - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
           - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -6073,7 +6059,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
               - `[Address <String>]`: The email address.
               - `[ItemId <String>]`: 
-              - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+              - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
               - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
             - `[Surname <String>]`: The person's surname.
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -7001,7 +6987,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ActivationUrl <String>]`: Required. URL used to launch the activity in the best native experience represented by the appId. Might launch a web-based app if no native app exists.
             - `[ActivitySourceHost <String>]`: Required. URL for the domain representing the cross-platform identity mapping for the app. Mapping is stored either as a JSON file hosted on the domain or configurable via Windows Dev Center. The JSON file is named cross-platform-app-identifiers and is hosted at root of your HTTPS domain, either at the top level domain or include a sub domain. For example: https://contoso.com or https://myapp.contoso.com but NOT https://myapp.contoso.com/somepath. You must have a unique file and domain (or sub domain) per cross-platform app identity. For example, a separate file and domain is needed for Word vs. PowerPoint.
             - `[AppActivityId <String>]`: Required. The unique activity ID in the context of the app - supplied by caller and immutable thereafter.
-            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user's local device.
+            - `[AppDisplayName <String>]`: Optional. Short text description of the app used to generate the activity for use in cases when the app is not installed on the user’s local device.
             - `[ContentInfo <IMicrosoftGraphJson>]`: Json
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ContentUrl <String>]`: Optional. Used in the event the content can be rendered outside of a native or web-based app experience (for example, a pointer to an item in an RSS feed).
@@ -7026,7 +7012,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Attribution <IMicrosoftGraphImageInfo>]`: imageInfo
                 - `[(Any) <Object>]`: This indicates any property can be added to this object.
-                - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example - a high contrast image
+                - `[AddImageQuery <Boolean?>]`: Optional; parameter used to indicate the server is able to render image dynamically in response to parameterization. For example – a high contrast image
                 - `[AlternateText <String>]`: Optional; alt-text accessible content for the image
                 - `[AlternativeText <String>]`: 
                 - `[IconUrl <String>]`: Optional; URI that points to an icon which represents the application used to generate the activity
@@ -7246,7 +7232,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[LastModifiedDateTime <DateTime?>]`: Read only. Timestamp when the chat message is created (initial setting) or modified, including when a reaction is added or removed.
               - `[Locale <String>]`: Locale of the chat message set by the client. Always set to en-us.
               - `[Mentions <IMicrosoftGraphChatMessageMention[]>]`: List of entities mentioned in the chat message. Supported entities are: user, bot, team, and channel.
-                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding `<at id='{index}'>` tag in the message body.
+                - `[Id <Int32?>]`: Index of an entity being mentioned in the specified chatMessage. Matches the {index} value in the corresponding <at id='{index}'> tag in the message body.
                 - `[MentionText <String>]`: String used to represent the mention. For example, a user's display name, a team name.
                 - `[Mentioned <IMicrosoftGraphChatMessageMentionedIdentitySet>]`: chatMessageMentionedIdentitySet
                   - `[(Any) <Object>]`: This indicates any property can be added to this object.
@@ -8382,7 +8368,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ResourceReference <IMicrosoftGraphResourceReference>]`: resourceReference
               - `[ResourceVisualization <IMicrosoftGraphResourceVisualization>]`: resourceVisualization
           - `[Interests <String[]>]`: A list for the user to describe their interests. Returned only on $select.
-          - `[IsResourceAccount <Boolean?>]`: Do not use - reserved for future use.
+          - `[IsResourceAccount <Boolean?>]`: Do not use – reserved for future use.
           - `[JobTitle <String>]`: The user's job title. Maximum length is 128 characters. Returned by default. Supports $filter (eq, ne, not , ge, le, in, startsWith, and eq on null values).
           - `[JoinedTeams <IMicrosoftGraphTeam[]>]`: 
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -8787,7 +8773,7 @@ To create the parameters described below, construct a hash table containing the 
               - `[ModernApps <Boolean?>]`: Whether modern application is managed by Intune
               - `[ResourceAccess <Boolean?>]`: Whether resource access is managed by Intune
               - `[WindowsUpdateForBusiness <Boolean?>]`: Whether Windows Update for Business is managed by Intune
-            - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
+            - `[DeviceCategory <IMicrosoftGraphDeviceCategory>]`: Device categories provides a way to organize your devices. Using device categories, company administrators can define their own categories that make sense to their company. These categories can then be applied to a device in the Intune Azure console or selected by a user during device enrollment. You can filter reports and create dynamic Azure Active Directory device groups based on device categories.
               - `[(Any) <Object>]`: This indicates any property can be added to this object.
               - `[Id <String>]`: The unique idenfier for an entity. Read-only.
               - `[Description <String>]`: Optional description for the device category.
@@ -9062,7 +9048,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[(Any) <Object>]`: This indicates any property can be added to this object.
             - `[ForceChangePasswordNextSignIn <Boolean?>]`: true if the user must change her password on the next login; otherwise false.
             - `[ForceChangePasswordNextSignInWithMfa <Boolean?>]`: If true, at next sign-in, the user must perform a multi-factor authentication (MFA) before being forced to change their password. The behavior is identical to forceChangePasswordNextSignIn except that the user is required to first perform a multi-factor authentication before password change. After a password change, this property will be automatically reset to false. If not set, default is false.
-            - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user's passwordPolicies property. By default, a strong password is required.
+            - `[Password <String>]`: The password for the user. This property is required when a user is created. It can be updated, but the user will be required to change the password on the next login. The password must satisfy minimum requirements as specified by the user’s passwordPolicies property. By default, a strong password is required.
           - `[PastProjects <String[]>]`: A list for the user to enumerate their past projects. Returned only on $select.
           - `[People <IMicrosoftGraphPerson[]>]`: People that are relevant to the user. Read-only. Nullable.
             - `[Id <String>]`: The unique idenfier for an entity. Read-only.
@@ -9086,7 +9072,7 @@ To create the parameters described below, construct a hash table containing the 
             - `[ScoredEmailAddresses <IMicrosoftGraphScoredEmailAddress[]>]`: The person's email addresses.
               - `[Address <String>]`: The email address.
               - `[ItemId <String>]`: 
-              - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user's communication and collaboration patterns and business relationships.
+              - `[RelevanceScore <Double?>]`: The relevance score of the email address. A relevance score is used as a sort key, in relation to the other returned results. A higher relevance score value corresponds to a more relevant result. Relevance is determined by the user’s communication and collaboration patterns and business relationships.
               - `[SelectionLikelihood <String>]`: selectionLikelihoodInfo
             - `[Surname <String>]`: The person's surname.
             - `[UserPrincipalName <String>]`: The user principal name (UPN) of the person. The UPN is an Internet-style login name for the person based on the Internet standard RFC 822. By convention, this should map to the person's email name. The general format is alias@domain.
@@ -9754,4 +9740,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

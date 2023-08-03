@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/new-mgbetagroupteamscheduleschedulinggroup
 schema: 2.0.0
@@ -10,35 +10,34 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new schedulingGroup.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupTeamScheduleSchedulingGroup -GroupId <String> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaGroupTeamScheduleSchedulingGroup -GroupId <String> -BodyParameter <IMicrosoftGraphSchedulingGroup>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
+ -BodyParameter <IMicrosoftGraphSchedulingGroup> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
  [-CreatedBy <IMicrosoftGraphIdentitySet>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaGroupTeamScheduleSchedulingGroup -InputObject <ITeamsIdentity>
- -BodyParameter <IMicrosoftGraphSchedulingGroup> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-UserIds <String[]>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -46,13 +45,27 @@ Create a new schedulingGroup.
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +81,7 @@ schedulingGroup
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSchedulingGroup
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedulingGroup
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -84,7 +97,7 @@ identitySet
 To construct, see NOTES section for CREATEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -100,7 +113,7 @@ The display name for the schedulingGroup.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +128,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -131,7 +144,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,8 +160,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -163,7 +176,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -179,7 +192,7 @@ The list of user IDs that are a member of the schedulingGroup.
 Required.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -210,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -227,10 +240,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedulingGroup
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSchedulingGroup
+
 ## NOTES
 
 ALIASES
@@ -314,4 +330,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+

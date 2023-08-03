@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/update-mgbetauseroutlooktask
 schema: 2.0.0
@@ -27,14 +27,20 @@ Update-MgBetaUserOutlookTask -OutlookTaskId <String> -UserId <String> [-Addition
  [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-WhatIf] [-Confirm]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaUserOutlookTask -OutlookTaskId <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphOutlookTask> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOutlookTask> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTask>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -48,14 +54,8 @@ Update-MgBetaUserOutlookTask -InputObject <IUsersIdentity> [-AdditionalPropertie
  [-ParentFolderId <String>] [-Recurrence <IMicrosoftGraphPatternedRecurrence>]
  [-ReminderDateTime <IMicrosoftGraphDateTimeZone>] [-Sensitivity <String>]
  [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>]
- [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-WhatIf] [-Confirm]
+ [-StartDateTime <IMicrosoftGraphDateTimeZone>] [-Status <String>] [-Subject <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicrosoftGraphOutlookTask>
- [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -66,7 +66,8 @@ By default, this operation (and the POST, GET, and complete task operations) ret
 You can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone different than UTC.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserOutlookTask Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users
 $params = @{
@@ -78,8 +79,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOutlookTask -UserId $userId -OutlookTaskId $outlookTaskId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserOutlookTask Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -87,7 +88,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -103,7 +104,7 @@ The name of the person who has been assigned the task in Outlook.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -121,7 +122,7 @@ Nullable.
 To construct, see NOTES section for ATTACHMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttachment[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttachment[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -137,7 +138,7 @@ itemBody
 To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemBody
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemBody
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -153,7 +154,7 @@ outlookTask
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphOutlookTask
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -168,7 +169,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -183,7 +184,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,7 +200,7 @@ dateTimeTimeZone
 To construct, see NOTES section for COMPLETEDDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +216,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +232,7 @@ dateTimeTimeZone
 To construct, see NOTES section for DUEDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +247,7 @@ Accept wildcard characters: False
 Set to true if the task has attachments.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -262,7 +263,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -277,7 +278,7 @@ Accept wildcard characters: False
 importance
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -293,8 +294,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -308,7 +309,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -324,7 +325,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -342,7 +343,7 @@ Nullable.
 To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -357,8 +358,8 @@ Accept wildcard characters: False
 The unique identifier of outlookTask
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -372,7 +373,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -387,7 +388,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -403,7 +404,7 @@ patternedRecurrence
 To construct, see NOTES section for RECURRENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPatternedRecurrence
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPatternedRecurrence
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -419,7 +420,7 @@ dateTimeTimeZone
 To construct, see NOTES section for REMINDERDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -434,7 +435,7 @@ Accept wildcard characters: False
 sensitivity
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -452,7 +453,7 @@ Nullable.
 To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -468,7 +469,7 @@ dateTimeTimeZone
 To construct, see NOTES section for STARTDATETIME properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDateTimeZone
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -483,7 +484,7 @@ Accept wildcard characters: False
 taskStatus
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -498,7 +499,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -513,8 +514,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -528,7 +529,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -544,7 +545,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -561,10 +562,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutlookTask
+
 ## NOTES
 
 ALIASES
@@ -719,4 +723,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

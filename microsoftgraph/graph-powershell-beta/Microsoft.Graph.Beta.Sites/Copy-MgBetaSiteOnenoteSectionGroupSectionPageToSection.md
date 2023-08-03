@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/copy-mgbetasiteonenotesectiongroupsectionpagetosection
 schema: 2.0.0
@@ -11,16 +11,13 @@ schema: 2.0.0
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgSiteOnenoteSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteSectionGroupSectionPageToSection?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CopyExpanded (Default)
 ```
 Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -SiteId <String> [-AdditionalProperties <Hashtable>] [-GroupId <String>]
- [-Id <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-SiteCollectionId <String>] [-SiteId1 <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Copy
@@ -28,26 +25,42 @@ Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -
 Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection -OnenotePageId <String> -OnenoteSectionId <String>
  -SectionGroupId <String> -SiteId <String>
  -BodyParameter <IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CopyViaIdentityExpanded
-```
-Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection [-SiteId <String>] -InputObject <ISitesIdentity>
- [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CopyViaIdentity
 ```
 Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection -InputObject <ISitesIdentity>
  -BodyParameter <IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CopyViaIdentityExpanded
+```
+Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection -InputObject <ISitesIdentity> [-SiteId <String>]
+ [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Id <String>] [-SiteCollectionId <String>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -55,7 +68,7 @@ For copy operations, you follow an asynchronous calling pattern:  First call the
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -71,7 +84,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Copy, CopyViaIdentity
 Aliases:
 
@@ -86,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -101,7 +114,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -117,8 +130,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
-Parameter Sets: CopyViaIdentityExpanded, CopyViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+Parameter Sets: CopyViaIdentity, CopyViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -132,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of onenotePage
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -147,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of onenoteSection
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -162,8 +175,8 @@ Accept wildcard characters: False
 The unique identifier of sectionGroup
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded
 Aliases:
 
 Required: True
@@ -177,7 +190,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
@@ -192,23 +205,11 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
-Parameter Sets: CopyExpanded, Copy
+Type: System.String
+Parameter Sets: Copy, CopyExpanded, CopyViaIdentityExpanded
 Aliases:
 
 Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-```yaml
-Type: String
-Parameter Sets: CopyViaIdentityExpanded
-Aliases:
-
-Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -219,7 +220,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CopyExpanded
 Aliases:
 
@@ -234,7 +235,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -250,7 +251,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -267,10 +268,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths169Srg3SitesSiteIdOnenoteSectiongroupsSectiongroupIdSectionsOnenotesectionIdPagesOnenotepageIdMicrosoftGraphCopytosectionPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnenoteOperation
+
 ## NOTES
 
 ALIASES
@@ -337,5 +341,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Copy-MgSiteOnenoteSectionGroupSectionPageToSection](/powershell/module/Microsoft.Graph.Sites/Copy-MgSiteOnenoteSectionGroupSectionPageToSection?view=graph-powershell-v1.0)
 

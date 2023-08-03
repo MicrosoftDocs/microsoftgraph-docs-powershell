@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.Governance-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.governance/new-mgbetaentitlementmanagementaccesspackageresourcerolescope
 schema: 2.0.0
@@ -20,13 +20,19 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <
  [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
  [-AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-ModifiedBy <String>]
- [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId <String>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
+ -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
@@ -35,13 +41,7 @@ New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIde
  [-AccessPackageResourceRole <IMicrosoftGraphAccessPackageResourceRole>]
  [-AccessPackageResourceScope <IMicrosoftGraphAccessPackageResourceScope>] [-AdditionalProperties <Hashtable>]
  [-CreatedBy <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-ModifiedBy <String>]
- [-ModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -InputObject <IIdentityGovernanceIdentity>
- -BodyParameter <IMicrosoftGraphAccessPackageResourceRoleScope> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -50,8 +50,8 @@ The access package resource, for a group, an app, or a SharePoint Online site, m
 Once you add the resource role scope to the access package, the user will receive this resource role through any current and future access package assignments.
 
 ## EXAMPLES
-### Example 1: Create a new access package resource role scope
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Connect-MgBetaGraph -Scopes 'EntitlementManagement.ReadWrite.All'
 $accessPackageResource = @{
@@ -60,6 +60,7 @@ $accessPackageResource = @{
   "originId"= '8902df17-a973-438f-8321-8b619aa18dc4'
   "originSystem"= 'AadGroup'
   }
+```
 
 $accessPackageResourceRole = @{
   "originId"= 'Member_8902df17-a973-438f-8321-8b619aa18dc4'
@@ -74,25 +75,6 @@ $accessPackageResourceScope = @{
   }
 
 New-MgBetaEntitlementManagementAccessPackageResourceRoleScope -AccessPackageId 'bc041fda-b3ba-41fc-b911-ca95f7aac656' -AccessPackageResourceRole $accessPackageResourceRole -AccessPackageResourceScope $accessPackageResourceScope
-```
-
-```Output
-AccessPackageResourceRole  : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceRole
-AccessPackageResourceScope : Microsoft.Graph.PowerShell.Models.MicrosoftGraphAccessPackageResourceScope
-CreatedBy                  : admin@M365x814237.onmicrosoft.com
-CreatedDateTime            : 11/5/2021 9:06:32 AM
-Id                         : 3c955d0f-f6d5-45f0-b465-e8e6375a3895_5fef70e1-b78f-4d21-a6ad-979d9f54daf1
-ModifiedBy                 : admin@M365x814237.onmicrosoft.com
-ModifiedDateTime           : 11/5/2021 9:06:32 AM
-AdditionalProperties       : {[@odata.context, https://graph.microsoft.com/beta/$metadata#identityGovernance/entitlementManagement/accessPackages('bc041fda-b3ba-41fc-b911-ca95f7aa
-                             c656')/accessPackageResourceRoleScopes/$entity]}
-```
-
-This example, the commands;
-1. Defines a resource variable. **Id** in the $accesspackageresource variable is the identifier of the group catalog resource.
-1. Defines the resource role variable
-1. Defines the resource scope variable
-1. Create a new access package resource role scope.
 
 ## PARAMETERS
 
@@ -100,8 +82,8 @@ This example, the commands;
 The unique identifier of accessPackage
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -116,7 +98,7 @@ accessPackageResourceRole
 To construct, see NOTES section for ACCESSPACKAGERESOURCEROLE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRole
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -132,7 +114,7 @@ accessPackageResourceScope
 To construct, see NOTES section for ACCESSPACKAGERESOURCESCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceScope
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -147,7 +129,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -163,7 +145,7 @@ accessPackageResourceRoleScope
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAccessPackageResourceRoleScope
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -178,7 +160,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -194,7 +176,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -210,7 +192,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -226,8 +208,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentityGovernanceIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -241,7 +223,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -257,7 +239,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014 is 2014-01-01T00:00:00Z
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -272,7 +254,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -288,7 +270,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -305,10 +287,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentityGovernanceIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRoleScope
+
 ## NOTES
 
 ALIASES
@@ -594,4 +579,3 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
-## RELATED LINKS

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Education-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Education
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.education/new-mgbetaeducationuserassignmentsubmissionoutcome
 schema: 2.0.0
@@ -13,16 +13,13 @@ Only a teacher can perform this operation.
 To create a new file-based resource, upload the file to the feedback resources folder associated with the assignment.
 If the file doesn't exist or is not in that folder, the `POST` request will fail.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaEducationUserAssignmentSubmissionOutcome -EducationAssignmentId <String>
  -EducationSubmissionId <String> -EducationUserId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
- [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm]
+ [-LastModifiedBy <IMicrosoftGraphIdentitySet>] [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -30,20 +27,20 @@ New-MgBetaEducationUserAssignmentSubmissionOutcome -EducationAssignmentId <Strin
 ```
 New-MgBetaEducationUserAssignmentSubmissionOutcome -EducationAssignmentId <String>
  -EducationSubmissionId <String> -EducationUserId <String> -BodyParameter <IMicrosoftGraphEducationOutcome>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentity
+```
+New-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
+ -BodyParameter <IMicrosoftGraphEducationOutcome> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentityExpanded
 ```
 New-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-LastModifiedBy <IMicrosoftGraphIdentitySet>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentity
-```
-New-MgBetaEducationUserAssignmentSubmissionOutcome -InputObject <IEducationIdentity>
- -BodyParameter <IMicrosoftGraphEducationOutcome> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -54,13 +51,27 @@ If the file doesn't exist or is not in that folder, the `POST` request will fail
 
 ## EXAMPLES
 
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -76,7 +87,7 @@ educationOutcome
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphEducationOutcome
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationOutcome
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -91,8 +102,8 @@ Accept wildcard characters: False
 The unique identifier of educationAssignment
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -106,8 +117,8 @@ Accept wildcard characters: False
 The unique identifier of educationSubmission
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -121,8 +132,8 @@ Accept wildcard characters: False
 The unique identifier of educationUser
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -137,7 +148,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -153,8 +164,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IEducationIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -169,7 +180,7 @@ identitySet
 To construct, see NOTES section for LASTMODIFIEDBY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentitySet
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentitySet
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -186,7 +197,7 @@ The Timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2021 is 2021-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -201,7 +212,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -217,7 +228,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -234,10 +245,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IEducationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationOutcome
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphEducationOutcome
+
 ## NOTES
 
 ALIASES
@@ -285,4 +299,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/New-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/new-mgbetadevicemanagementdomainjoinconnector
 schema: 2.0.0
@@ -16,17 +16,33 @@ Create new navigation property to domainJoinConnectors for deviceManagement
 ```
 New-MgBetaDeviceManagementDomainJoinConnector [-AdditionalProperties <Hashtable>] [-DisplayName <String>]
  [-Id <String>] [-LastConnectionDateTime <DateTime>] [-State <DeviceManagementDomainJoinConnectorState>]
- [-Version <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Version <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementDomainJoinConnector
- -BodyParameter <IMicrosoftGraphDeviceManagementDomainJoinConnector> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphDeviceManagementDomainJoinConnector> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to domainJoinConnectors for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Create new navigation property to domainJoinConnectors for deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ A Domain Join Connector is a connector that is responsible to allocate (and dele
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphDeviceManagementDomainJoinConnector
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
 Parameter Sets: Create
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 The connector display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,7 +97,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 Last time connector contacted Intune.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 The ODJ request states.
 
 ```yaml
-Type: DeviceManagementDomainJoinConnectorState
+Type: Microsoft.Graph.Beta.PowerShell.Support.DeviceManagementDomainJoinConnectorState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 The version of the connector.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -141,7 +157,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -157,7 +173,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -174,9 +190,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDeviceManagementDomainJoinConnector
+
 ## NOTES
 
 ALIASES

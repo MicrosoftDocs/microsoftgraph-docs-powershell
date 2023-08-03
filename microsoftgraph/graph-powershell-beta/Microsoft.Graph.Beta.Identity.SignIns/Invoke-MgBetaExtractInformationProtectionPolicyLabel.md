@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/invoke-mgbetaextractinformationprotectionpolicylabel
 schema: 2.0.0
@@ -16,14 +16,14 @@ The contentInfo input is resolved to informationProtectionContentLabel.
 ### ExtractExpanded (Default)
 ```
 Invoke-MgBetaExtractInformationProtectionPolicyLabel [-AdditionalProperties <Hashtable>]
- [-ContentInfo <IMicrosoftGraphContentInfo>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ContentInfo <IMicrosoftGraphContentInfo>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Extract
 ```
 Invoke-MgBetaExtractInformationProtectionPolicyLabel
  -BodyParameter <IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,7 +31,8 @@ Using the metadata that exists on an already-labeled piece of information, resol
 The contentInfo input is resolved to informationProtectionContentLabel.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
 $params = @{
@@ -84,8 +85,8 @@ $params = @{
 }
 Invoke-MgBetaExtractInformationProtectionPolicyLabel -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaExtractInformationProtectionPolicyLabel Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -93,7 +94,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExtractExpanded
 Aliases:
 
@@ -109,7 +110,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Extract
 Aliases:
 
@@ -125,7 +126,7 @@ contentInfo
 To construct, see NOTES section for CONTENTINFO properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContentInfo
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphContentInfo
 Parameter Sets: ExtractExpanded
 Aliases:
 
@@ -140,7 +141,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -156,7 +157,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -173,9 +174,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsBj48EsInformationprotectionPolicyLabelsMicrosoftGraphExtractlabelPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInformationProtectionContentLabel
+
 ## NOTES
 
 ALIASES
@@ -206,3 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[State <String>]`: contentState
 
 ## RELATED LINKS
+

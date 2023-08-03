@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.devicemanagement.administration/new-mgdevicemanagementcompliancemanagementpartner
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to complianceManagementPartners for deviceManagement
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,17 +20,33 @@ New-MgDeviceManagementComplianceManagementPartner [-AdditionalProperties <Hashta
  [-IosEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-IosOnboarded]
  [-LastHeartbeatDateTime <DateTime>]
  [-MacOSEnrollmentAssignments <IMicrosoftGraphComplianceManagementPartnerAssignment[]>] [-MacOSOnboarded]
- [-PartnerState <DeviceManagementPartnerTenantState>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PartnerState <DeviceManagementPartnerTenantState>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgDeviceManagementComplianceManagementPartner -BodyParameter <IMicrosoftGraphComplianceManagementPartner>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to complianceManagementPartners for deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -41,7 +54,7 @@ Create new navigation property to complianceManagementPartners for deviceManagem
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +70,7 @@ User groups which enroll Android devices through partner.
 To construct, see NOTES section for ANDROIDENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 Partner onboarded for Android devices.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -88,7 +101,7 @@ Compliance management partner for all platforms
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartner
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
 Parameter Sets: Create
 Aliases:
 
@@ -103,7 +116,7 @@ Accept wildcard characters: False
 Partner display name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -119,7 +132,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -135,7 +148,7 @@ User groups which enroll ios devices through partner.
 To construct, see NOTES section for IOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -150,7 +163,7 @@ Accept wildcard characters: False
 Partner onboarded for ios devices.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -165,7 +178,7 @@ Accept wildcard characters: False
 Timestamp of last heartbeat after admin onboarded to the compliance management partner
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -181,7 +194,7 @@ User groups which enroll Mac devices through partner.
 To construct, see NOTES section for MACOSENROLLMENTASSIGNMENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphComplianceManagementPartnerAssignment[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartnerAssignment[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -196,7 +209,7 @@ Accept wildcard characters: False
 Partner onboarded for Mac devices.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -211,7 +224,7 @@ Accept wildcard characters: False
 Partner state of this tenant.
 
 ```yaml
-Type: DeviceManagementPartnerTenantState
+Type: Microsoft.Graph.PowerShell.Support.DeviceManagementPartnerTenantState
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -226,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -242,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -259,9 +272,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphComplianceManagementPartner
+
 ## NOTES
 
 ALIASES
@@ -299,5 +314,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
 
 ## RELATED LINKS
-[New-MgBetaDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/New-MgBetaDeviceManagementComplianceManagementPartner?view=graph-powershell-beta)
 

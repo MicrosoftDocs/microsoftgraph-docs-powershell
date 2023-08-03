@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/confirm-mgbetagroupgrantedpermissionforapp
 schema: 2.0.0
@@ -10,24 +10,37 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkGrantedPermissionsForApp
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Check (Default)
 ```
-Confirm-MgBetaGroupGrantedPermissionForApp -GroupId <String> [-WhatIf] [-Confirm] [<CommonParameters>]
+Confirm-MgBetaGroupGrantedPermissionForApp -GroupId <String> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
-Confirm-MgBetaGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-WhatIf] [-Confirm]
+Confirm-MgBetaGroupGrantedPermissionForApp -InputObject <IGroupsIdentity> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action checkGrantedPermissionsForApp
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -35,7 +48,7 @@ Invoke action checkGrantedPermissionsForApp
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Check
 Aliases:
 
@@ -51,7 +64,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 Parameter Sets: CheckViaIdentity
 Aliases:
 
@@ -66,7 +79,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -82,7 +95,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -99,9 +112,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphResourceSpecificPermissionGrant
+
 ## NOTES
 
 ALIASES
@@ -154,5 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-v1.0)
 

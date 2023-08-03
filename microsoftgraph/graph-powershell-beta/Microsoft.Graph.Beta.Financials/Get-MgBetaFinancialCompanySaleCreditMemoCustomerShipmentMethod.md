@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Financials-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Financials
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.financials/get-mgbetafinancialcompanysalecreditmemocustomershipmentmethod
 schema: 2.0.0
@@ -27,13 +27,29 @@ Get-MgBetaFinancialCompanySaleCreditMemoCustomerShipmentMethod -InputObject <IFi
 ## DESCRIPTION
 Get shipmentMethod from financials
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
 ## PARAMETERS
 
 ### -CompanyId
 The unique identifier of company
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -48,7 +64,7 @@ Accept wildcard characters: False
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -64,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IFinancialsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -79,7 +95,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -94,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of salesCreditMemo
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -111,9 +127,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IFinancialsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphShipmentMethod
+
 ## NOTES
 
 ALIASES

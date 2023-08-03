@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaplaycommunicationcallprompt
 schema: 2.0.0
@@ -11,15 +11,12 @@ schema: 2.0.0
 Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgPlayCommunicationCallPrompt?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### PlayExpanded (Default)
 ```
 Invoke-MgBetaPlayCommunicationCallPrompt -CallId <String> [-AdditionalProperties <Hashtable>]
- [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>] [-WhatIf] [-Confirm]
+ [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -27,21 +24,21 @@ Invoke-MgBetaPlayCommunicationCallPrompt -CallId <String> [-AdditionalProperties
 ```
 Invoke-MgBetaPlayCommunicationCallPrompt -CallId <String>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### PlayViaIdentityExpanded
-```
-Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
- [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### PlayViaIdentity
 ```
 Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
  -BodyParameter <IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### PlayViaIdentityExpanded
+```
+Invoke-MgBetaPlayCommunicationCallPrompt -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ClientContext <String>] [-Loop] [-Prompts <IMicrosoftGraphPrompt[]>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -49,7 +46,8 @@ Play a prompt in the call.
 For more information about how to handle operations, see commsOperation
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaPlayCommunicationCallPrompt Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -68,8 +66,8 @@ $params = @{
 }
 Invoke-MgBetaPlayCommunicationCallPrompt -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaPlayCommunicationCallPrompt Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -77,7 +75,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -93,7 +91,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Play, PlayViaIdentity
 Aliases:
 
@@ -108,8 +106,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: PlayExpanded, Play
+Type: System.String
+Parameter Sets: Play, PlayExpanded
 Aliases:
 
 Required: True
@@ -123,7 +121,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -139,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: PlayViaIdentityExpanded, PlayViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: PlayViaIdentity, PlayViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -154,7 +152,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -169,7 +167,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: IMicrosoftGraphPrompt[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPrompt[]
 Parameter Sets: PlayExpanded, PlayViaIdentityExpanded
 Aliases:
 
@@ -184,7 +182,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -200,7 +198,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -217,10 +215,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Gzqcv2CommunicationsCallsCallIdMicrosoftGraphPlaypromptPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlayPromptOperation
+
 ## NOTES
 
 ALIASES
@@ -257,4 +258,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgPlayCommunicationCallPrompt](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgPlayCommunicationCallPrompt?view=graph-powershell-v1.0)
+

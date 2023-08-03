@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetareauthorizegroupdrivelistsubscription
 schema: 2.0.0
@@ -10,25 +10,38 @@ schema: 2.0.0
 ## SYNOPSIS
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReauthorizeGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupDriveListSubscription?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Reauthorize (Default)
 ```
-Invoke-MgBetaReauthorizeGroupDriveListSubscription -DriveId <String> -GroupId <String> -SubscriptionId <String>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReauthorizeGroupDriveListSubscription -DriveId <String> -GroupId <String>
+ -SubscriptionId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ReauthorizeViaIdentity
 ```
-Invoke-MgBetaReauthorizeGroupDriveListSubscription -InputObject <IGroupsIdentity> [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaReauthorizeGroupDriveListSubscription -InputObject <IGroupsIdentity> [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -36,7 +49,7 @@ Reauthorize a subscription when you receive a **reauthorizationRequired** challe
 The unique identifier of drive
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reauthorize
 Aliases:
 
@@ -51,7 +64,7 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reauthorize
 Aliases:
 
@@ -67,7 +80,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
 Parameter Sets: ReauthorizeViaIdentity
 Aliases:
 
@@ -82,7 +95,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -97,7 +110,7 @@ Accept wildcard characters: False
 The unique identifier of subscription
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Reauthorize
 Aliases:
 
@@ -112,7 +125,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -128,7 +141,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -145,9 +158,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -200,5 +215,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgReauthorizeGroupDriveListSubscription](/powershell/module/Microsoft.Graph.Groups/Invoke-MgReauthorizeGroupDriveListSubscription?view=graph-powershell-v1.0)
 

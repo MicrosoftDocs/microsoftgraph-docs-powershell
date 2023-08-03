@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/get-mgbetauserchatpermissiongrantbyid
 schema: 2.0.0
@@ -16,32 +16,48 @@ Some common uses for this function are to:
 ### GetExpanded (Default)
 ```
 Get-MgBetaUserChatPermissionGrantById -ChatId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaUserChatPermissionGrantById -ChatId <String> -UserId <String>
  -BodyParameter <IPaths16Qv7TeUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### GetViaIdentityExpanded
-```
-Get-MgBetaUserChatPermissionGrantById -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-Types <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserChatPermissionGrantById -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths16Qv7TeUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### GetViaIdentityExpanded
+```
+Get-MgBetaUserChatPermissionGrantById -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Ids <String[]>] [-Types <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Some common uses for this function are to:
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths16Qv7TeUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths16Qv7TeUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Get, GetViaIdentity
 Aliases:
 
@@ -80,8 +96,8 @@ Accept wildcard characters: False
 The unique identifier of chat
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -95,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -111,8 +127,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: GetViaIdentityExpanded, GetViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: GetViaIdentity, GetViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: GetExpanded, GetViaIdentityExpanded
 Aliases:
 
@@ -141,8 +157,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: GetExpanded, Get
+Type: System.String
+Parameter Sets: Get, GetExpanded
 Aliases:
 
 Required: True
@@ -156,7 +172,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +188,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +205,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths16Qv7TeUsersUserIdChatsChatIdPermissiongrantsMicrosoftGraphGetbyidsPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES

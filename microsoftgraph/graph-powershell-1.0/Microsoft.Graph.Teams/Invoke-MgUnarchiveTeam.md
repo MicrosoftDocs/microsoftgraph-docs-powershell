@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.teams/invoke-mgunarchiveteam
 schema: 2.0.0
@@ -14,19 +14,16 @@ Teams are archived using the archive API.
 Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### Unarchive (Default)
 ```
-Invoke-MgUnarchiveTeam -TeamId <String> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgUnarchiveTeam -TeamId <String> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UnarchiveViaIdentity
 ```
-Invoke-MgUnarchiveTeam -InputObject <ITeamsIdentity> [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+Invoke-MgUnarchiveTeam -InputObject <ITeamsIdentity> [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -37,13 +34,14 @@ Unarchiving is an async operation.
 A team is unarchived once the async operation completes successfully, which may occur subsequent to a response from this API.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgUnarchiveTeam Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Teams
 Invoke-MgUnarchiveTeam -TeamId $teamId
 ```
-This example shows how to use the Invoke-MgUnarchiveTeam Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -52,7 +50,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
+Type: Microsoft.Graph.PowerShell.Models.ITeamsIdentity
 Parameter Sets: UnarchiveViaIdentity
 Aliases:
 
@@ -67,7 +65,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -82,7 +80,7 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Unarchive
 Aliases:
 
@@ -97,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -113,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -130,9 +128,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -176,4 +176,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Invoke-MgBetaUnarchiveTeam](/powershell/module/Microsoft.Graph.Beta.Teams/Invoke-MgBetaUnarchiveTeam?view=graph-powershell-beta)
+

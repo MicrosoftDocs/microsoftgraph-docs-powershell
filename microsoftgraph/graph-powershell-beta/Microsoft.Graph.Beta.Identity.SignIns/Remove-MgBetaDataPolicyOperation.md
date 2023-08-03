@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.identity.signins/remove-mgbetadatapolicyoperation
 schema: 2.0.0
@@ -10,38 +10,31 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete entity from dataPolicyOperations
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgDataPolicyOperation?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Delete (Default)
 ```
-Remove-MgBetaDataPolicyOperation -DataPolicyOperationId <String> [-IfMatch <String>] [-PassThru] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Remove-MgBetaDataPolicyOperation -DataPolicyOperationId <String> [-IfMatch <String>] [-PassThru] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### DeleteViaIdentity
 ```
 Remove-MgBetaDataPolicyOperation -InputObject <IIdentitySignInsIdentity> [-IfMatch <String>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Delete entity from dataPolicyOperations
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.SignIns
+```
 
 Get-MgBetaDataPolicyOperation -DataPolicyOperationId $dataPolicyOperationId
-```
-This example shows how to use the Remove-MgBetaBetaDataPolicyOperation Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -49,7 +42,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 The unique identifier of dataPolicyOperation
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Delete
 Aliases:
 
@@ -64,7 +57,7 @@ Accept wildcard characters: False
 ETag
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -80,7 +73,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
 Parameter Sets: DeleteViaIdentity
 Aliases:
 
@@ -95,7 +88,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -110,7 +103,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -126,7 +119,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -143,9 +136,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IIdentitySignInsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -232,4 +227,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgDataPolicyOperation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgDataPolicyOperation?view=graph-powershell-v1.0)
+

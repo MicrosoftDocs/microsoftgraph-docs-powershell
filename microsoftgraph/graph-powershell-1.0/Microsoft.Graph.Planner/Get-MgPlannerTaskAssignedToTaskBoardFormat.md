@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Planner-help.xml
+external help file:
 Module Name: Microsoft.Graph.Planner
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.planner/get-mgplannertaskassignedtotaskboardformat
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Retrieve the properties and relationships of a **plannerAssignedToTaskBoardTaskFormat** object.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -31,17 +28,13 @@ Get-MgPlannerTaskAssignedToTaskBoardFormat -InputObject <IPlannerIdentity> [-Exp
 Retrieve the properties and relationships of a **plannerAssignedToTaskBoardTaskFormat** object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Planner
+```
 
 Get-MgPlannerTaskAssignedToTaskBoardFormat -PlannerTaskId $plannerTaskId
-```
-This example shows how to use the Get-MgPlannerTaskAssignedToTaskBoardFormat Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -49,7 +42,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -65,7 +58,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPlannerIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPlannerIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -80,7 +73,7 @@ Accept wildcard characters: False
 The unique identifier of plannerTask
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -95,7 +88,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -112,9 +105,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPlannerIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphPlannerAssignedToTaskBoardTaskFormat
+
 ## NOTES
 
 ALIASES
@@ -132,4 +127,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgBetaPlannerTaskAssignedToTaskBoardFormat](/powershell/module/Microsoft.Graph.Beta.Planner/Get-MgBetaPlannerTaskAssignedToTaskBoardFormat?view=graph-powershell-beta)
+

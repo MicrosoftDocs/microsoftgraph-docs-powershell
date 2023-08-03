@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.actions/new-mgbetadevicemanagementgrouppolicymigrationreport
 schema: 2.0.0
@@ -15,18 +15,34 @@ Invoke action createMigrationReport
 ### CreateExpanded (Default)
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReport [-AdditionalProperties <Hashtable>]
- [-GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-GroupPolicyObjectFile <IMicrosoftGraphGroupPolicyObjectFile>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
 New-MgBetaDeviceManagementGroupPolicyMigrationReport
  -BodyParameter <IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action createMigrationReport
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -34,7 +50,7 @@ Invoke action createMigrationReport
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -50,7 +66,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Create
 Aliases:
 
@@ -66,7 +82,7 @@ The Group Policy Object file uploaded by admin.
 To construct, see NOTES section for GROUPPOLICYOBJECTFILE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyObjectFile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyObjectFile
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -81,7 +97,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -97,7 +113,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -114,9 +130,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsDjtigpDevicemanagementGrouppolicymigrationreportsMicrosoftGraphCreatemigrationreportPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES

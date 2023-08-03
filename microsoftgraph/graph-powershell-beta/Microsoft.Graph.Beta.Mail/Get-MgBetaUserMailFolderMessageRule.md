@@ -1,57 +1,87 @@
 ---
-external help file: Microsoft.Graph.Beta.Mail-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Mail
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagementioncount
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.mail/get-mgbetausermailfoldermessagerule
 schema: 2.0.0
 ---
 
-# Get-MgBetaUserMailFolderMessageMentionCount
+# Get-MgBetaUserMailFolderMessageRule
 
 ## SYNOPSIS
-Get the number of the resource
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageRule?view=graph-powershell-v1.0)
+Get the properties and relationships of a messageRule object.
 
 ## SYNTAX
 
-### Get (Default)
+### List (Default)
 ```
-Get-MgBetaUserMailFolderMessageMentionCount -MailFolderId <String> -MessageId <String> -UserId <String>
- [-Filter <String>] [<CommonParameters>]
+Get-MgBetaUserMailFolderMessageRule -MailFolderId <String> -UserId <String> [-Filter <String>]
+ [-Property <String[]>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>] [-All] [-CountVariable <String>]
+ [-PageSize <Int32>] [<CommonParameters>]
+```
+
+### Get
+```
+Get-MgBetaUserMailFolderMessageRule -MailFolderId <String> -MessageRuleId <String> -UserId <String>
+ [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
-Get-MgBetaUserMailFolderMessageMentionCount -InputObject <IMailIdentity> [-Filter <String>]
- [<CommonParameters>]
+Get-MgBetaUserMailFolderMessageRule -InputObject <IMailIdentity> [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Get the number of the resource
+Get the properties and relationships of a messageRule object.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Mail
+```
 
 # A UPN can also be used as -UserId.
 Get-MgBetaUserMailFolderMessageRule -UserId $userId -MailFolderId $mailFolderId -MessageRuleId $messageRuleId
-```
-This example shows how to use the Get-MgBetaUserMailFolderMessageRule Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
+
+### -All
+List all pages.
+
+```yaml
+Type: System.Management.Automation.SwitchParameter
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -CountVariable
+Specifies a count of the total number of items in a collection.
+By default, this variable will be set in the global scope.
+
+```yaml
+Type: System.String
+Parameter Sets: List
+Aliases: CV
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -Filter
 Filter items by property values
 
 ```yaml
-Type: String
-Parameter Sets: (All)
+Type: System.String
+Parameter Sets: List
 Aliases:
 
 Required: False
@@ -66,7 +96,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IMailIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -81,7 +111,22 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
+Type: System.String
+Parameter Sets: Get, List
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MessageRuleId
+The unique identifier of messageRule
+
+```yaml
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -92,15 +137,75 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -MessageId
-The unique identifier of message
+### -PageSize
+Sets the page size of results.
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.Int32
+Parameter Sets: List
 Aliases:
 
-Required: True
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Property
+Select properties to be returned
+
+```yaml
+Type: System.String[]
+Parameter Sets: (All)
+Aliases: Select
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Skip
+Skip the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Sort
+Order items by property values
+
+```yaml
+Type: System.String[]
+Parameter Sets: List
+Aliases: OrderBy
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Top
+Show only the first n items
+
+```yaml
+Type: System.Int32
+Parameter Sets: List
+Aliases: Limit
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -111,8 +216,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: Get
+Type: System.String
+Parameter Sets: Get, List
 Aliases:
 
 Required: True
@@ -128,9 +233,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMailIdentity
+
 ## OUTPUTS
 
-### System.Int32
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessageRule
+
 ## NOTES
 
 ALIASES
@@ -153,4 +260,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderMessageRule](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderMessageRule?view=graph-powershell-v1.0)
+

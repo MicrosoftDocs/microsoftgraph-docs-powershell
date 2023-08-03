@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/new-mgbetagroupownerbyref
 schema: 2.0.0
@@ -11,33 +11,30 @@ schema: 2.0.0
 Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwnerByRef?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### CreateExpanded (Default)
 ```
 New-MgBetaGroupOwnerByRef -GroupId <String> -OdataId <String> [-AdditionalProperties <Hashtable>] [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgBetaGroupOwnerByRef -GroupId <String> -BodyParameter <IReferenceCreate> [-PassThru] [-WhatIf] [-Confirm]
+New-MgBetaGroupOwnerByRef -GroupId <String> -BodyParameter <IReferenceCreate> [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
 New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -BodyParameter <IReferenceCreate> [-PassThru]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgBetaGroupOwnerByRef -InputObject <IGroupsIdentity> -OdataId <String> [-AdditionalProperties <Hashtable>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,17 +42,15 @@ Add a user or service principal to a Microsoft 365 or security group's owners.
 The owners are a set of users or service principals who are allowed to modify the group object.
 
 ## EXAMPLES
-### Example 1: Add an owner to a group
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 $newGroupOwner =@{
   "@odata.id"= "https://graph.microsoft.com/v1.0/users/{4de19c17-6a28-4a91-86d1-f717c3c8c229}"
   }
-
-New-MgBetaGroupOwnerByRef -GroupId '1cb7317c-9c49-4dc8-a358-67ad8e95217c' -BodyParameter $newGroupOwner
 ```
 
-In this example, the first command defines the value of the $newGroupOwner variable. The second command creates the value is an owner of the specified group.
+New-MgBetaGroupOwnerByRef -GroupId '1cb7317c-9c49-4dc8-a358-67ad8e95217c' -BodyParameter $newGroupOwner
 
 ## PARAMETERS
 
@@ -63,7 +58,7 @@ In this example, the first command defines the value of the $newGroupOwner varia
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -79,7 +74,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IReferenceCreate
+Type: Microsoft.Graph.Beta.PowerShell.Models.IReferenceCreate
 Parameter Sets: Create, CreateViaIdentity
 Aliases:
 
@@ -94,8 +89,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create
+Type: System.String
+Parameter Sets: Create, CreateExpanded
 Aliases:
 
 Required: True
@@ -110,8 +105,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -126,7 +121,7 @@ The entity reference URL of the resource.
 For example, https://graph.microsoft.com/v1.0/directoryObjects/{id}.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +136,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -156,7 +151,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +167,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,10 +184,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IReferenceCreate
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -249,4 +247,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgGroupOwnerByRef](/powershell/module/Microsoft.Graph.Groups/New-MgGroupOwnerByRef?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Sites-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Sites
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.sites/get-mgbetasitelistitemfield
 schema: 2.0.0
@@ -10,15 +10,12 @@ schema: 2.0.0
 ## SYNOPSIS
 The values of the columns set on this list item.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### Get (Default)
 ```
-Get-MgBetaSiteListItemField -ListId <String> -ListItemId <String> -SiteId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+Get-MgBetaSiteListItemField -ListId <String> -ListItemId <String> -SiteId <String>
+ [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
@@ -31,10 +28,11 @@ Get-MgBetaSiteListItemField -InputObject <ISitesIdentity> [-ExpandProperty <Stri
 The values of the columns set on this list item.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Sites
+```
 
 $params = @{
 	Color = "Fuchsia"
@@ -42,11 +40,6 @@ $params = @{
 }
 
 Update-MgBetaSiteListItemField -SiteId $siteId -ListId $listId -ListItemId $listItemId -BodyParameter $params
-```
-This example shows how to use the Get-MgBetaBetaSiteListItemField Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -54,7 +47,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Expand related entities
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Expand
 
@@ -70,7 +63,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISitesIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
 Parameter Sets: GetViaIdentity
 Aliases:
 
@@ -85,7 +78,7 @@ Accept wildcard characters: False
 The unique identifier of list
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -100,7 +93,7 @@ Accept wildcard characters: False
 The unique identifier of listItem
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -115,7 +108,7 @@ Accept wildcard characters: False
 Select properties to be returned
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: (All)
 Aliases: Select
 
@@ -130,7 +123,7 @@ Accept wildcard characters: False
 The unique identifier of site
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Get
 Aliases:
 
@@ -147,9 +140,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ISitesIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES
@@ -209,4 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteListItemField](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemField?view=graph-powershell-v1.0)
+

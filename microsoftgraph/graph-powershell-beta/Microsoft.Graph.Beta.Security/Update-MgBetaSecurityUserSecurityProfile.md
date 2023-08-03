@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecurityusersecurityprofile
 schema: 2.0.0
@@ -15,35 +15,53 @@ Update the navigation property userSecurityProfiles in security
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaSecurityUserSecurityProfile -UserSecurityProfileId <String>
- [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>]
+ [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RiskScore <String>]
+ [-Tags <String[]>] [-UserPrincipalName <String>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaSecurityUserSecurityProfile -UserSecurityProfileId <String>
- -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
- [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>] [-AzureSubscriptionId <String>]
- [-AzureTenantId <String>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>]
- [-LastModifiedDateTime <DateTime>] [-RiskScore <String>] [-Tags <String[]>] [-UserPrincipalName <String>]
- [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
 Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
- -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphUserSecurityProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaSecurityUserSecurityProfile -InputObject <ISecurityIdentity>
+ [-Accounts <IMicrosoftGraphUserAccount[]>] [-AdditionalProperties <Hashtable>]
+ [-AzureSubscriptionId <String>] [-AzureTenantId <String>] [-CreatedDateTime <DateTime>]
+ [-DisplayName <String>] [-Id <String>] [-LastModifiedDateTime <DateTime>] [-RiskScore <String>]
+ [-Tags <String[]>] [-UserPrincipalName <String>]
+ [-VendorInformation <IMicrosoftGraphSecurityVendorInformation>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property userSecurityProfiles in security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +70,7 @@ Update the navigation property userSecurityProfiles in security
 To construct, see NOTES section for ACCOUNTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserAccount[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserAccount[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +85,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,7 +100,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -97,7 +115,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -113,7 +131,7 @@ userSecurityProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUserSecurityProfile
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -128,7 +146,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -143,7 +161,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +177,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,8 +193,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -190,7 +208,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -205,7 +223,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +238,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -235,7 +253,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -250,8 +268,8 @@ Accept wildcard characters: False
 The unique identifier of userSecurityProfile
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -266,7 +284,7 @@ securityVendorInformation
 To construct, see NOTES section for VENDORINFORMATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityVendorInformation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityVendorInformation
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -281,7 +299,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -297,7 +315,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -314,10 +332,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityProfile
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUserSecurityProfile
+
 ## NOTES
 
 ALIASES

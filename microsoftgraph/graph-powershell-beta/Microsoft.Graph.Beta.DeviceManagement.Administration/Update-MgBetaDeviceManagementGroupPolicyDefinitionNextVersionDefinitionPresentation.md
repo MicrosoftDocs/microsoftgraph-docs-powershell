@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementgrouppolicydefinitionnextversiondefinitionpresentation
 schema: 2.0.0
@@ -17,14 +17,21 @@ Update the navigation property presentations in deviceManagement
 Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation
  -GroupPolicyDefinitionId <String> -GroupPolicyPresentationId <String> [-AdditionalProperties <Hashtable>]
  [-Definition <IMicrosoftGraphGroupPolicyDefinition>] [-Id <String>] [-Label <String>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation
  -GroupPolicyDefinitionId <String> -GroupPolicyPresentationId <String>
- -BodyParameter <IMicrosoftGraphGroupPolicyPresentation> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphGroupPolicyPresentation> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation
+ -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphGroupPolicyPresentation> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -32,18 +39,27 @@ Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentat
 Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation
  -InputObject <IDeviceManagementAdministrationIdentity> [-AdditionalProperties <Hashtable>]
  [-Definition <IMicrosoftGraphGroupPolicyDefinition>] [-Id <String>] [-Label <String>]
- [-LastModifiedDateTime <DateTime>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementGroupPolicyDefinitionNextVersionDefinitionPresentation
- -InputObject <IDeviceManagementAdministrationIdentity> -BodyParameter <IMicrosoftGraphGroupPolicyPresentation>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LastModifiedDateTime <DateTime>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property presentations in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -51,7 +67,7 @@ Update the navigation property presentations in deviceManagement
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +83,7 @@ The base entity for the display presentation of any of the additional options in
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyPresentation
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +99,7 @@ The entity describes all of the information about a single group policy.
 To construct, see NOTES section for DEFINITION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphGroupPolicyDefinition
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyDefinition
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -98,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyDefinition
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -113,8 +129,8 @@ Accept wildcard characters: False
 The unique identifier of groupPolicyPresentation
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -129,7 +145,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,8 +161,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -161,7 +177,7 @@ Localized text label for any presentation entity.
 The default value is empty.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +192,7 @@ Accept wildcard characters: False
 The date and time the entity was last modified.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +207,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -207,7 +223,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -224,10 +240,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphGroupPolicyPresentation
+
 ## NOTES
 
 ALIASES
@@ -389,8 +408,6 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnsupportedGroupPolicyExtensionId <String>]`: The unique identifier of unsupportedGroupPolicyExtension
   - `[UserId <String>]`: The unique identifier of user
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

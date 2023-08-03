@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Reports-help.xml
+external help file:
 Module Name: Microsoft.Graph.Reports
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.reports/get-mgreportmanageddeviceenrollmenttopfailure
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Invoke function managedDeviceEnrollmentTopFailures
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -35,6 +32,22 @@ Get-MgReportManagedDeviceEnrollmentTopFailure -InputObject <IReportsIdentity> -O
 ## DESCRIPTION
 Invoke function managedDeviceEnrollmentTopFailures
 
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
 ## PARAMETERS
 
 ### -InputObject
@@ -42,7 +55,7 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IReportsIdentity
+Type: Microsoft.Graph.PowerShell.Models.IReportsIdentity
 Parameter Sets: TopViaIdentity
 Aliases:
 
@@ -57,7 +70,7 @@ Accept wildcard characters: False
 Path to write output file to
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: (All)
 Aliases:
 
@@ -72,7 +85,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -87,7 +100,7 @@ Accept wildcard characters: False
 Usage: period='{period}'
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: Top1
 Aliases:
 
@@ -104,9 +117,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IReportsIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -139,5 +154,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgBetaReportManagedDeviceEnrollmentTopFailure](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaReportManagedDeviceEnrollmentTopFailure?view=graph-powershell-beta)
 

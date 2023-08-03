@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/invoke-mgbetabulkusermanageddevicesetcloudpcreviewstatus
 schema: 2.0.0
@@ -15,7 +15,7 @@ Set the review status of multiple Cloud PC devices with a single request that in
 ### BulkExpanded (Default)
 ```
 Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -UserId <String> [-AdditionalProperties <Hashtable>]
- [-ManagedDeviceIds <String[]>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-WhatIf] [-Confirm]
+ [-ManagedDeviceIds <String[]>] [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -23,25 +23,41 @@ Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -UserId <String> [-Addi
 ```
 Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -UserId <String>
  -BodyParameter <IPathsG30KncUsersUserIdManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### BulkViaIdentityExpanded
-```
-Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>]
- [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### BulkViaIdentity
 ```
 Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPathsG30KncUsersUserIdManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### BulkViaIdentityExpanded
+```
+Invoke-MgBetaBulkUserManagedDeviceSetCloudPcReviewStatus -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-ManagedDeviceIds <String[]>]
+ [-ReviewStatus <IMicrosoftGraphCloudPcReviewStatus>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Set the review status of multiple Cloud PC devices with a single request that includes the IDs of Intune managed devices.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -49,7 +65,7 @@ Set the review status of multiple Cloud PC devices with a single request that in
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsG30KncUsersUserIdManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsG30KncUsersUserIdManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Bulk, BulkViaIdentity
 Aliases:
 
@@ -81,8 +97,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: BulkViaIdentityExpanded, BulkViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: BulkViaIdentity, BulkViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -96,7 +112,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -112,7 +128,7 @@ cloudPcReviewStatus
 To construct, see NOTES section for REVIEWSTATUS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcReviewStatus
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcReviewStatus
 Parameter Sets: BulkExpanded, BulkViaIdentityExpanded
 Aliases:
 
@@ -127,8 +143,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: BulkExpanded, Bulk
+Type: System.String
+Parameter Sets: Bulk, BulkExpanded
 Aliases:
 
 Required: True
@@ -142,7 +158,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -158,7 +174,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -175,10 +191,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsG30KncUsersUserIdManageddevicesMicrosoftGraphBulksetcloudpcreviewstatusPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkRemoteActionResult
+
 ## NOTES
 
 ALIASES

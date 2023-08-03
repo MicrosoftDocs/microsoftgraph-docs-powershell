@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Enrollment-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Enrollment
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.enrollment/update-mgbetarolemanagementcloudpcresourcenamespaceresourceaction
 schema: 2.0.0
@@ -19,14 +19,21 @@ Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction -UnifiedRbacRe
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
- [-ResourceScopeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceScopeId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction -UnifiedRbacResourceActionId <String>
- -UnifiedRbacResourceNamespaceId <String> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ -UnifiedRbacResourceNamespaceId <String> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction> [-Confirm]
+ [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
+ -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,18 +43,27 @@ Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
  [-AuthenticationContext <IMicrosoftGraphAuthenticationContextClassReference>]
  [-AuthenticationContextId <String>] [-Description <String>] [-Id <String>] [-IsAuthenticationContextSettable]
  [-IsPrivileged] [-Name <String>] [-ResourceScope <IMicrosoftGraphUnifiedRbacResourceScope>]
- [-ResourceScopeId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaRoleManagementCloudPcResourceNamespaceResourceAction
- -InputObject <IDeviceManagementEnrollmentIdentity> -BodyParameter <IMicrosoftGraphUnifiedRbacResourceAction>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ResourceScopeId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property resourceActions in roleManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -56,7 +72,7 @@ HTTP method for the action, such as DELETE, GET, PATCH, POST, PUT, or null.
 Supports $filter (eq) but not for null values.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -71,7 +87,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -87,7 +103,7 @@ authenticationContextClassReference
 To construct, see NOTES section for AUTHENTICATIONCONTEXT properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAuthenticationContextClassReference
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAuthenticationContextClassReference
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,7 +118,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -118,7 +134,7 @@ unifiedRbacResourceAction
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacResourceAction
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -134,7 +150,7 @@ Description for the action.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -150,7 +166,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -166,8 +182,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementEnrollmentIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -181,7 +197,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -196,7 +212,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -215,7 +231,7 @@ Required.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -231,7 +247,7 @@ unifiedRbacResourceScope
 To construct, see NOTES section for RESOURCESCOPE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRbacResourceScope
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceScope
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -246,7 +262,7 @@ Accept wildcard characters: False
 Not implemented.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -261,8 +277,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRbacResourceAction
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -276,8 +292,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRbacResourceNamespace
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -291,7 +307,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -307,7 +323,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -324,10 +340,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementEnrollmentIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphUnifiedRbacResourceAction
+
 ## NOTES
 
 ALIASES

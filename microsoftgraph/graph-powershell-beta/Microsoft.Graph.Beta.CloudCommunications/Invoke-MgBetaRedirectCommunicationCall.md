@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/invoke-mgbetaredirectcommunicationcall
 schema: 2.0.0
@@ -13,16 +13,13 @@ The terms 'redirecting' and 'forwarding' a call are used interchangeably.
 The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
 
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgRedirectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRedirectCommunicationCall?view=graph-powershell-v1.0)
-
 ## SYNTAX
 
 ### RedirectExpanded (Default)
 ```
 Invoke-MgBetaRedirectCommunicationCall -CallId <String> [-AdditionalProperties <Hashtable>]
  [-CallbackUri <String>] [-MaskCallee] [-MaskCaller] [-TargetDisposition <String>]
- [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>] [-PassThru] [-WhatIf] [-Confirm]
+ [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>] [-PassThru] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -30,7 +27,14 @@ Invoke-MgBetaRedirectCommunicationCall -CallId <String> [-AdditionalProperties <
 ```
 Invoke-MgBetaRedirectCommunicationCall -CallId <String>
  -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RedirectViaIdentity
+```
+Invoke-MgBetaRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RedirectViaIdentityExpanded
@@ -38,14 +42,7 @@ Invoke-MgBetaRedirectCommunicationCall -CallId <String>
 Invoke-MgBetaRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-CallbackUri <String>] [-MaskCallee] [-MaskCaller]
  [-TargetDisposition <String>] [-Targets <IMicrosoftGraphInvitationParticipantInfo[]>] [-Timeout <Int32>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RedirectViaIdentity
-```
-Invoke-MgBetaRedirectCommunicationCall -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -55,7 +52,8 @@ The bot is expected to redirect the call before the call times out.
 The current timeout value is 15 seconds.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRedirectCommunicationCall Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -76,9 +74,10 @@ $params = @{
 }
 Invoke-MgBetaRedirectCommunicationCall -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaRedirectCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-### Example 2: Using the Invoke-MgBetaRedirectCommunicationCall Cmdlet
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -98,8 +97,8 @@ $params = @{
 }
 Invoke-MgBetaRedirectCommunicationCall -CallId $callId -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaRedirectCommunicationCall Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -107,7 +106,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -123,7 +122,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Redirect, RedirectViaIdentity
 Aliases:
 
@@ -138,7 +137,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -153,8 +152,8 @@ Accept wildcard characters: False
 The unique identifier of call
 
 ```yaml
-Type: String
-Parameter Sets: RedirectExpanded, Redirect
+Type: System.String
+Parameter Sets: Redirect, RedirectExpanded
 Aliases:
 
 Required: True
@@ -169,8 +168,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: RedirectViaIdentityExpanded, RedirectViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: RedirectViaIdentity, RedirectViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -184,7 +183,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -199,7 +198,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -214,7 +213,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -229,7 +228,7 @@ Accept wildcard characters: False
 callDisposition
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -245,7 +244,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for TARGETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphInvitationParticipantInfo[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphInvitationParticipantInfo[]
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -260,7 +259,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: RedirectExpanded, RedirectViaIdentityExpanded
 Aliases:
 
@@ -275,7 +274,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -291,7 +290,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -308,10 +307,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths183Gi8UCommunicationsCallsCallIdMicrosoftGraphRedirectPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -379,4 +381,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ReplacesCallId <String>]`: Optional. The call which the target identity is currently a part of. For peer-to-peer case, the call will be dropped once the participant is added successfully.
 
 ## RELATED LINKS
-[Invoke-MgRedirectCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgRedirectCommunicationCall?view=graph-powershell-v1.0)
+

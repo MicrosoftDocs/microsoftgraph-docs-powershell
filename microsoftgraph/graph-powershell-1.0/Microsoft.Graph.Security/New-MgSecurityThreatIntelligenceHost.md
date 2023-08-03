@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.security/new-mgsecuritythreatintelligencehost
 schema: 2.0.0
@@ -9,9 +9,6 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create new navigation property to hosts for security
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 
 ## SYNTAX
 
@@ -23,17 +20,33 @@ New-MgSecurityThreatIntelligenceHost [-AdditionalProperties <Hashtable>]
  [-PassiveDns <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-PassiveDnsReverse <IMicrosoftGraphSecurityPassiveDnsRecord[]>]
  [-Reputation <IMicrosoftGraphSecurityHostReputation>] [-Trackers <IMicrosoftGraphSecurityHostTracker[]>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost> [-WhatIf] [-Confirm]
+New-MgSecurityThreatIntelligenceHost -BodyParameter <IMicrosoftGraphSecurityHost> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Create new navigation property to hosts for security
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -41,7 +54,7 @@ Create new navigation property to hosts for security
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -57,7 +70,7 @@ host
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHost
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
 Parameter Sets: Create
 Aliases:
 
@@ -73,7 +86,7 @@ The hostComponents that are associated with this host.
 To construct, see NOTES section for COMPONENTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostComponent[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostComponent[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -89,7 +102,7 @@ The hostCookies that are associated with this host.
 To construct, see NOTES section for COOKIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostCookie[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostCookie[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -106,7 +119,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -122,7 +135,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -139,7 +152,7 @@ The timestamp type represents date and time information using ISO 8601 format an
 For example, midnight UTC on Jan 1, 2014, is 2014-01-01T00:00:00Z.
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -155,7 +168,7 @@ Passive DNS retrieval about this host.
 To construct, see NOTES section for PASSIVEDNS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -171,7 +184,7 @@ Reverse passive DNS retrieval about this host.
 To construct, see NOTES section for PASSIVEDNSREVERSE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityPassiveDnsRecord[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityPassiveDnsRecord[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -187,7 +200,7 @@ hostReputation
 To construct, see NOTES section for REPUTATION properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostReputation
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostReputation
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -203,7 +216,7 @@ The hostTrackers that are associated with this host.
 To construct, see NOTES section for TRACKERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityHostTracker[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHostTracker[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -218,7 +231,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -234,7 +247,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -251,9 +264,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSecurityHost
+
 ## NOTES
 
 ALIASES
@@ -569,8 +584,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: The identification value for the hostTracker.
 
 ## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
-
-## RELATED LINKS
-[New-MgBetaSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Beta.Security/New-MgBetaSecurityThreatIntelligenceHost?view=graph-powershell-beta)
 

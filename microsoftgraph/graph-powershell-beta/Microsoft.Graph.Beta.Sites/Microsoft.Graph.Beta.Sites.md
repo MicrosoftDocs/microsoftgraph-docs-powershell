@@ -21,7 +21,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Add-MgBetaSiteListContentTypeCopy](Add-MgBetaSiteListContentTypeCopy.md)
 Add a copy of a [content type][contentType] from a [site][site] to a [list][list].
@@ -30,7 +30,7 @@ Add a copy of a [content type][contentType] from a [site][site] to a [list][list
 Add or sync a copy of a published content type from the content type hub to a target site or a list.
 This method is part of the content type publishing changes to optimize the syncing of published content types to sites and lists, effectively switching from a 'push everywhere' to 'pull as needed' approach.
 The method allows users to pull content types directly from the content type hub to a site or list.
-For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
+For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates – August 2021.
 
 ### [Confirm-MgBetaSiteInformationProtectionSignature](Confirm-MgBetaSiteInformationProtectionSignature.md)
 Invoke action verifySignature
@@ -43,9 +43,10 @@ The file can then be added as a default file or template via a POST operation.
 Copy a file to a default content location in a [content type][contentType].
 The file can then be added as a default file or template via a POST operation.
 
-### [Copy-MgBetaSiteListContentTypeToDefaultContentLocation](Copy-MgBetaSiteListContentTypeToDefaultContentLocation.md)
-Copy a file to a default content location in a [content type][contentType].
-The file can then be added as a default file or template via a POST operation.
+### [Copy-MgBetaSiteOnenoteNotebook](Copy-MgBetaSiteOnenoteNotebook.md)
+Copies a notebook to the Notebooks folder in the destination Documents library.
+The folder is created if it doesn't exist.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteNotebookSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -71,9 +72,9 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copies a section to a specific section group.
 For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup](Copy-MgBetaSiteOnenoteNotebookSectionToSectionGroup.md)
-Copies a section to a specific section group.
-For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenotePageToSection](Copy-MgBetaSiteOnenotePageToSection.md)
+Copy a page to a specific section.
+For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection](Copy-MgBetaSiteOnenoteSectionGroupSectionPageToSection.md)
 Copy a page to a specific section.
@@ -91,19 +92,22 @@ For Copy operations, you follow an asynchronous calling pattern:  First call the
 Copy a page to a specific section.
 For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToNotebook](Copy-MgBetaSiteOnenoteSectionToNotebook.md)
+Copies a section to a specific notebook.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
-### [Copy-MgBetaSiteOnenoteSectionPageToSection](Copy-MgBetaSiteOnenoteSectionPageToSection.md)
-Copy a page to a specific section.
-For copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
+### [Copy-MgBetaSiteOnenoteSectionToSectionGroup](Copy-MgBetaSiteOnenoteSectionToSectionGroup.md)
+Copies a section to a specific section group.
+For Copy operations, you follow an asynchronous calling pattern:  First call the Copy action, and then poll the operation endpoint for the result.
 
 ### [Get-MgBetaAdminSharepoint](Get-MgBetaAdminSharepoint.md)
 Get sharepoint from admin
 
 ### [Get-MgBetaAdminSharepointSetting](Get-MgBetaAdminSharepointSetting.md)
 Get the tenant-level settings for SharePoint and OneDrive.
+
+### [Get-MgBetaAllSite](Get-MgBetaAllSite.md)
+Invoke function getAllSites
 
 ### [Get-MgBetaGroupSite](Get-MgBetaGroupSite.md)
 The list of SharePoint sites in this group.
@@ -1273,8 +1277,9 @@ The set of subscriptions on the list.
 ### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
 Get the number of the resource
 
-### [Get-MgBetaSiteListSubscriptionCount](Get-MgBetaSiteListSubscriptionCount.md)
-Get the number of the resource
+### [Get-MgBetaSiteOnenoteNotebookFromWebUrl](Get-MgBetaSiteOnenoteNotebookFromWebUrl.md)
+Retrieve the properties and relationships of a notebook object by using its URL path.
+The location can be user notebooks on Microsoft 365, group notebooks, or SharePoint site-hosted team notebooks on Microsoft 365.
 
 ### [Get-MgBetaSiteOperation](Get-MgBetaSiteOperation.md)
 Read the properties of a richLongRunningOperation object.

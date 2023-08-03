@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetarenewgrouplifecyclepolicy
 schema: 2.0.0
@@ -15,15 +15,15 @@ When a group is renewed, the group expiration is extended by the number of days 
 
 ### RenewExpanded (Default)
 ```
-Invoke-MgBetaRenewGroupLifecyclePolicy [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+Invoke-MgBetaRenewGroupLifecyclePolicy [-AdditionalProperties <Hashtable>] [-GroupId <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Renew
 ```
 Invoke-MgBetaRenewGroupLifecyclePolicy
  -BodyParameter <IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -31,7 +31,8 @@ Renew a group's expiration.
 When a group is renewed, the group expiration is extended by the number of days defined in the policy.
 
 ## EXAMPLES
-### Example 1: Using the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 $params = @{
@@ -39,8 +40,8 @@ $params = @{
 }
 Invoke-MgBetaRenewGroupLifecyclePolicy -BodyParameter $params
 ```
-This example shows how to use the Invoke-MgBetaRenewGroupLifecyclePolicy Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -48,7 +49,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RenewExpanded
 Aliases:
 
@@ -64,7 +65,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Renew
 Aliases:
 
@@ -79,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RenewExpanded
 Aliases:
 
@@ -94,7 +95,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -110,7 +111,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -127,9 +128,11 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths8F8L4QGrouplifecyclepoliciesMicrosoftGraphRenewgroupPostRequestbodyContentApplicationJsonSchema
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -144,3 +147,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[GroupId <String>]`: 
 
 ## RELATED LINKS
+

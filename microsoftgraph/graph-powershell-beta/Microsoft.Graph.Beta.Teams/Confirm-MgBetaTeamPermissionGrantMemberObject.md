@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Teams-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Teams
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.teams/confirm-mgbetateampermissiongrantmemberobject
 schema: 2.0.0
@@ -15,31 +15,47 @@ Invoke action checkMemberObjects
 ### CheckExpanded (Default)
 ```
 Confirm-MgBetaTeamPermissionGrantMemberObject -ResourceSpecificPermissionGrantId <String> -TeamId <String>
- [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Check
 ```
 Confirm-MgBetaTeamPermissionGrantMemberObject -ResourceSpecificPermissionGrantId <String> -TeamId <String>
  -BodyParameter <IPaths1LauqepTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CheckViaIdentityExpanded
-```
-Confirm-MgBetaTeamPermissionGrantMemberObject -InputObject <ITeamsIdentity> [-AdditionalProperties <Hashtable>]
- [-Ids <String[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CheckViaIdentity
 ```
 Confirm-MgBetaTeamPermissionGrantMemberObject -InputObject <ITeamsIdentity>
  -BodyParameter <IPaths1LauqepTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### CheckViaIdentityExpanded
+```
+Confirm-MgBetaTeamPermissionGrantMemberObject -InputObject <ITeamsIdentity>
+ [-AdditionalProperties <Hashtable>] [-Ids <String[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Invoke action checkMemberObjects
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -47,7 +63,7 @@ Invoke action checkMemberObjects
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -63,7 +79,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1LauqepTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1LauqepTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Check, CheckViaIdentity
 Aliases:
 
@@ -78,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: CheckExpanded, CheckViaIdentityExpanded
 Aliases:
 
@@ -94,8 +110,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ITeamsIdentity
-Parameter Sets: CheckViaIdentityExpanded, CheckViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+Parameter Sets: CheckViaIdentity, CheckViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -109,8 +125,8 @@ Accept wildcard characters: False
 The unique identifier of resourceSpecificPermissionGrant
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -124,8 +140,8 @@ Accept wildcard characters: False
 The unique identifier of team
 
 ```yaml
-Type: String
-Parameter Sets: CheckExpanded, Check
+Type: System.String
+Parameter Sets: Check, CheckExpanded
 Aliases:
 
 Required: True
@@ -139,7 +155,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -155,7 +171,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -172,10 +188,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1LauqepTeamsTeamIdPermissiongrantsResourcespecificpermissiongrantIdMicrosoftGraphCheckmemberobjectsPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ITeamsIdentity
+
 ## OUTPUTS
 
 ### System.String
+
 ## NOTES
 
 ALIASES

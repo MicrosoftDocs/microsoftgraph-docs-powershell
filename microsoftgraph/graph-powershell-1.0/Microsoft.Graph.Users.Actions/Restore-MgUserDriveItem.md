@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.users.actions/restore-mguserdriveitem
 schema: 2.0.0
@@ -11,41 +11,54 @@ schema: 2.0.0
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 **NOTE**: This functionality is currently only available for OneDrive Personal.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Restore-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItem?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### RestoreExpanded (Default)
 ```
 Restore-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Restore
 ```
 Restore-MgUserDriveItem -DriveId <String> -DriveItemId <String> -UserId <String>
  -BodyParameter <IPaths14Ul7QfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### RestoreViaIdentityExpanded
-```
-Restore-MgUserDriveItem -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### RestoreViaIdentity
 ```
 Restore-MgUserDriveItem -InputObject <IUsersActionsIdentity>
  -BodyParameter <IPaths14Ul7QfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### RestoreViaIdentityExpanded
+```
+Restore-MgUserDriveItem -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
+ [-Name <String>] [-ParentReference <IMicrosoftGraphItemReference>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Restore a driveItem that has been deleted and is currently in the recycle bin.
 **NOTE**: This functionality is currently only available for OneDrive Personal.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -53,7 +66,7 @@ Restore a driveItem that has been deleted and is currently in the recycle bin.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -69,7 +82,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths14Ul7QfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.PowerShell.Models.IPaths14Ul7QfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Restore, RestoreViaIdentity
 Aliases:
 
@@ -84,8 +97,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded, Restore
+Type: System.String
+Parameter Sets: Restore, RestoreExpanded
 Aliases:
 
 Required: True
@@ -99,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded, Restore
+Type: System.String
+Parameter Sets: Restore, RestoreExpanded
 Aliases:
 
 Required: True
@@ -115,8 +128,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: RestoreViaIdentityExpanded, RestoreViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: RestoreViaIdentity, RestoreViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,7 +143,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -146,7 +159,7 @@ itemReference
 To construct, see NOTES section for PARENTREFERENCE properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphItemReference
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphItemReference
 Parameter Sets: RestoreExpanded, RestoreViaIdentityExpanded
 Aliases:
 
@@ -161,8 +174,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: RestoreExpanded, Restore
+Type: System.String
+Parameter Sets: Restore, RestoreExpanded
 Aliases:
 
 Required: True
@@ -176,7 +189,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -192,7 +205,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -209,10 +222,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IPaths14Ul7QfUsersUserIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphRestorePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDriveItem
+
 ## NOTES
 
 ALIASES
@@ -295,5 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Restore-MgBetaUserDriveItem](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Restore-MgBetaUserDriveItem?view=graph-powershell-beta)
 

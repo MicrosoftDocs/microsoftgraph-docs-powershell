@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetabusinessscenarioplannerplanconfigurationlocalization
 schema: 2.0.0
@@ -17,31 +17,49 @@ Update the properties of a plannerPlanConfigurationLocalization object.
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  -PlannerPlanConfigurationLocalizationId <String> [-AdditionalProperties <Hashtable>]
  [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>] [-Id <String>]
- [-LanguageTag <String>] [-PlanTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-LanguageTag <String>] [-PlanTitle <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -BusinessScenarioId <String>
  -PlannerPlanConfigurationLocalizationId <String>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
+ -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
  [-AdditionalProperties <Hashtable>] [-Buckets <IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]>]
- [-Id <String>] [-LanguageTag <String>] [-PlanTitle <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaBusinessScenarioPlannerPlanConfigurationLocalization -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphPlannerPlanConfigurationLocalization> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Id <String>] [-LanguageTag <String>] [-PlanTitle <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the properties of a plannerPlanConfigurationLocalization object.
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -49,7 +67,7 @@ Update the properties of a plannerPlanConfigurationLocalization object.
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +83,7 @@ plannerPlanConfigurationLocalization
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanConfigurationLocalization
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -81,7 +99,7 @@ Localized names for configured buckets in the plan configuration.
 To construct, see NOTES section for BUCKETS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationBucketLocalization[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -96,8 +114,8 @@ Accept wildcard characters: False
 The unique identifier of businessScenario
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -112,7 +130,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -128,8 +146,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -143,7 +161,7 @@ Accept wildcard characters: False
 The language code associated with the localized names in this object.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -158,8 +176,8 @@ Accept wildcard characters: False
 The unique identifier of plannerPlanConfigurationLocalization
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -173,7 +191,7 @@ Accept wildcard characters: False
 Localized title of the plan.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -188,7 +206,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +222,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,10 +239,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPlannerPlanConfigurationLocalization
+
 ## NOTES
 
 ALIASES

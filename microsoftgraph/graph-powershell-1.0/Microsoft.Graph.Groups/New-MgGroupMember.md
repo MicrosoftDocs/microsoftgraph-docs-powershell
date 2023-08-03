@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Groups-help.xml
+external help file:
 Module Name: Microsoft.Graph.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.groups/new-mggroupmember
 schema: 2.0.0
@@ -14,23 +14,23 @@ Add a member to an Office 365 group or security group through the members naviga
 
 ### CreateExpanded (Default)
 ```
-New-MgGroupMember -GroupId <String> [-DirectoryObjectId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+New-MgGroupMember -GroupId <String> [-DirectoryObjectId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Create1
 ```
-New-MgGroupMember -GroupId <String> -BodyParameter <Hashtable> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### CreateViaIdentityExpanded
-```
-New-MgGroupMember -InputObject <IGroupsIdentity> [-DirectoryObjectId <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+New-MgGroupMember -GroupId <String> -BodyParameter <Hashtable> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### CreateViaIdentity
 ```
-New-MgGroupMember -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-WhatIf] [-Confirm]
+New-MgGroupMember -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### CreateViaIdentityExpanded
+```
+New-MgGroupMember -InputObject <IGroupsIdentity> [-DirectoryObjectId <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -38,13 +38,13 @@ New-MgGroupMember -InputObject <IGroupsIdentity> -BodyParameter <Hashtable> [-Wh
 Add a member to an Office 365 group or security group through the members navigation property.
 
 ## EXAMPLES
-### Example 1: Add a member to a group.
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 New-MgGroupMember -GroupId '872648e7-b23a-4328-bd46-f1bd431c2354' -DirectoryObjectId '8a7c50d3-fcbd-4727-a889-8ab232dfea01'
 ```
 
-This example adds a member specified by the DirectoryObjectId to the specified group.
+
 
 ## PARAMETERS
 
@@ -53,7 +53,7 @@ Entity reference body
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: Create1, CreateViaIdentity
 Aliases:
 
@@ -68,7 +68,7 @@ Accept wildcard characters: False
 HELP MESSAGE MISSING
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: CreateExpanded, CreateViaIdentityExpanded
 Aliases:
 
@@ -83,8 +83,8 @@ Accept wildcard characters: False
 key: group-id of group
 
 ```yaml
-Type: String
-Parameter Sets: CreateExpanded, Create1
+Type: System.String
+Parameter Sets: Create1, CreateExpanded
 Aliases:
 
 Required: True
@@ -99,8 +99,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IGroupsIdentity
-Parameter Sets: CreateViaIdentityExpanded, CreateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+Parameter Sets: CreateViaIdentity, CreateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -114,7 +114,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -130,7 +130,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -147,10 +147,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IGroupsIdentity
+
 ### System.Collections.Hashtable
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphDirectoryObject
+
 ## NOTES
 
 ALIASES
@@ -201,5 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
-
 

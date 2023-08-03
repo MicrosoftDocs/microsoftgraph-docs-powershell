@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Bookings-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Bookings
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.bookings/update-mgbetavirtualeventwebinarsessionmeetingattendancereportattendancerecord
 schema: 2.0.0
@@ -18,32 +18,50 @@ Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord -
  -VirtualEventSessionId <String> -VirtualEventWebinarId <String> [-AdditionalProperties <Hashtable>]
  [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
  [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-Role <String>]
- [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-TotalAttendanceInSeconds <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord -AttendanceRecordId <String>
  -VirtualEventSessionId <String> -VirtualEventWebinarId <String>
- -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentityExpanded
-```
-Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord -InputObject <IBookingsIdentity>
- [-AdditionalProperties <Hashtable>] [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>]
- [-EmailAddress <String>] [-Id <String>] [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>]
- [-Role <String>] [-TotalAttendanceInSeconds <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphAttendanceRecord> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
 ```
-Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord -InputObject <IBookingsIdentity>
- -BodyParameter <IMicrosoftGraphAttendanceRecord> [-WhatIf] [-Confirm] [<CommonParameters>]
+Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord
+ -InputObject <IBookingsIdentity> -BodyParameter <IMicrosoftGraphAttendanceRecord> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentityExpanded
+```
+Update-MgBetaVirtualEventWebinarSessionMeetingAttendanceReportAttendanceRecord
+ -InputObject <IBookingsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AttendanceIntervals <IMicrosoftGraphAttendanceInterval[]>] [-EmailAddress <String>] [-Id <String>]
+ [-Identity <IMicrosoftGraphIdentity>] [-RegistrantId <String>] [-Role <String>]
+ [-TotalAttendanceInSeconds <Int32>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property attendanceRecords in solutions
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -51,7 +69,7 @@ Update the navigation property attendanceRecords in solutions
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -67,7 +85,7 @@ List of time periods between joining and leaving a meeting.
 To construct, see NOTES section for ATTENDANCEINTERVALS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttendanceInterval[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceInterval[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -82,8 +100,8 @@ Accept wildcard characters: False
 The unique identifier of attendanceRecord
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -98,7 +116,7 @@ attendanceRecord
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphAttendanceRecord
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -113,7 +131,7 @@ Accept wildcard characters: False
 Email address of the user associated with this attendance record.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -129,7 +147,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -145,7 +163,7 @@ identity
 To construct, see NOTES section for IDENTITY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphIdentity
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -161,8 +179,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IBookingsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -177,7 +195,7 @@ Unique identifier of a meetingRegistrant.
 Presents when the participant has registered for the meeting.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,7 +211,7 @@ Role of the attendee.
 Possible values are: None, Attendee, Presenter, and Organizer.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -208,7 +226,7 @@ Accept wildcard characters: False
 Total duration of the attendances in seconds.
 
 ```yaml
-Type: Int32
+Type: System.Int32
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -223,8 +241,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventSession
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -238,8 +256,8 @@ Accept wildcard characters: False
 The unique identifier of virtualEventWebinar
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -253,7 +271,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -269,7 +287,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -286,10 +304,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IBookingsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphAttendanceRecord
+
 ## NOTES
 
 ALIASES

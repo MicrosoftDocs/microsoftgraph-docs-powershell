@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.DeviceManagement.Administration-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.DeviceManagement.Administration
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devicemanagement.administration/update-mgbetadevicemanagementvirtualendpointbulkaction
 schema: 2.0.0
@@ -16,32 +16,48 @@ Update the navigation property bulkActions in deviceManagement
 ```
 Update-MgBetaDeviceManagementVirtualEndpointBulkAction -CloudPcBulkActionId <String>
  [-ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>] [-AdditionalProperties <Hashtable>]
- [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaDeviceManagementVirtualEndpointBulkAction -CloudPcBulkActionId <String>
- -BodyParameter <IMicrosoftGraphCloudPcBulkAction> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphCloudPcBulkAction> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagementAdministrationIdentity>
+ -BodyParameter <IMicrosoftGraphCloudPcBulkAction> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagementAdministrationIdentity>
  [-ActionSummary <IMicrosoftGraphCloudPcBulkActionSummary>] [-AdditionalProperties <Hashtable>]
- [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaDeviceManagementVirtualEndpointBulkAction -InputObject <IDeviceManagementAdministrationIdentity>
- -BodyParameter <IMicrosoftGraphCloudPcBulkAction> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-CloudPcIds <String[]>] [-CreatedDateTime <DateTime>] [-DisplayName <String>] [-Id <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property bulkActions in deviceManagement
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+
 
 ## PARAMETERS
 
@@ -50,7 +66,7 @@ cloudPcBulkActionSummary
 To construct, see NOTES section for ACTIONSUMMARY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcBulkActionSummary
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkActionSummary
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -65,7 +81,7 @@ Accept wildcard characters: False
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -81,7 +97,7 @@ cloudPcBulkAction
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphCloudPcBulkAction
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkAction
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -96,8 +112,8 @@ Accept wildcard characters: False
 The unique identifier of cloudPcBulkAction
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -111,7 +127,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -126,7 +142,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: DateTime
+Type: System.DateTime
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -141,7 +157,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -157,7 +173,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -173,8 +189,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDeviceManagementAdministrationIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -188,7 +204,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -204,7 +220,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -221,10 +237,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDeviceManagementAdministrationIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkAction
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphCloudPcBulkAction
+
 ## NOTES
 
 ALIASES

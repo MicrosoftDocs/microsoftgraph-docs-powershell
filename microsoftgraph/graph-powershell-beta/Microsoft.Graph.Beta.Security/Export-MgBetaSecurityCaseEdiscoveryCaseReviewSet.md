@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Security-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/export-mgbetasecuritycaseediscoverycasereviewset
 schema: 2.0.0
@@ -18,14 +18,21 @@ For details, see Export documents from a review set in eDiscovery (Premium).
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Export
 ```
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -EdiscoveryReviewSetId <String>
  -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### ExportViaIdentity
+```
+Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
+ -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### ExportViaIdentityExpanded
@@ -33,14 +40,7 @@ Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId <String> -Edi
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
  [-AdditionalProperties <Hashtable>] [-AzureBlobContainer <String>] [-AzureBlobToken <String>]
  [-Description <String>] [-ExportOptions <String>] [-ExportStructure <String>] [-OutputName <String>]
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### ExportViaIdentity
-```
-Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -InputObject <ISecurityIdentity>
- -BodyParameter <IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -48,7 +48,8 @@ Initiate an export from a **reviewSet**.
 For details, see Export documents from a review set in eDiscovery (Premium).
 
 ## EXAMPLES
-### Example 1: Using the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Security
 $params = @{
@@ -59,8 +60,8 @@ $params = @{
 }
 Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet -EdiscoveryCaseId $ediscoveryCaseId -EdiscoveryReviewSetId $ediscoveryReviewSetId -BodyParameter $params
 ```
-This example shows how to use the Export-MgBetaSecurityCaseEdiscoveryCaseReviewSet Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -68,7 +69,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -83,7 +84,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -98,7 +99,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -114,7 +115,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Export, ExportViaIdentity
 Aliases:
 
@@ -129,7 +130,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -144,8 +145,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryCase
 
 ```yaml
-Type: String
-Parameter Sets: ExportExpanded, Export
+Type: System.String
+Parameter Sets: Export, ExportExpanded
 Aliases:
 
 Required: True
@@ -159,8 +160,8 @@ Accept wildcard characters: False
 The unique identifier of ediscoveryReviewSet
 
 ```yaml
-Type: String
-Parameter Sets: ExportExpanded, Export
+Type: System.String
+Parameter Sets: Export, ExportExpanded
 Aliases:
 
 Required: True
@@ -174,7 +175,7 @@ Accept wildcard characters: False
 exportOptions
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -189,7 +190,7 @@ Accept wildcard characters: False
 exportFileStructure
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -205,8 +206,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ISecurityIdentity
-Parameter Sets: ExportViaIdentityExpanded, ExportViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+Parameter Sets: ExportViaIdentity, ExportViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -220,7 +221,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: ExportExpanded, ExportViaIdentityExpanded
 Aliases:
 
@@ -235,7 +236,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -250,7 +251,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -266,7 +267,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -283,10 +284,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IPathsZvgmw9SecurityCasesEdiscoverycasesEdiscoverycaseIdReviewsetsEdiscoveryreviewsetIdMicrosoftGraphSecurityExportPostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.ISecurityIdentity
+
 ## OUTPUTS
 
 ### System.Boolean
+
 ## NOTES
 
 ALIASES
@@ -378,3 +382,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

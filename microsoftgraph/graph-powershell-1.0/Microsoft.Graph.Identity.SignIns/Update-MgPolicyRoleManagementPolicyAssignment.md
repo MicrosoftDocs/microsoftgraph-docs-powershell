@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Identity.SignIns-help.xml
+external help file:
 Module Name: Microsoft.Graph.Identity.SignIns
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.signins/update-mgpolicyrolemanagementpolicyassignment
 schema: 2.0.0
@@ -10,23 +10,27 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property roleManagementPolicyAssignments in policies
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
 Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId <String>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Policy <IMicrosoftGraphUnifiedRoleManagementPolicy>]
- [-PolicyId <String>] [-RoleDefinitionId <String>] [-ScopeId <String>] [-ScopeType <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-PolicyId <String>] [-RoleDefinitionId <String>] [-ScopeId <String>] [-ScopeType <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssignmentId <String>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-WhatIf] [-Confirm]
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-Confirm] [-WhatIf]
+ [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentity>
+ -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -34,19 +38,28 @@ Update-MgPolicyRoleManagementPolicyAssignment -UnifiedRoleManagementPolicyAssign
 ```
 Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentity>
  [-AdditionalProperties <Hashtable>] [-Id <String>] [-Policy <IMicrosoftGraphUnifiedRoleManagementPolicy>]
- [-PolicyId <String>] [-RoleDefinitionId <String>] [-ScopeId <String>] [-ScopeType <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgPolicyRoleManagementPolicyAssignment -InputObject <IIdentitySignInsIdentity>
- -BodyParameter <IMicrosoftGraphUnifiedRoleManagementPolicyAssignment> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+ [-PolicyId <String>] [-RoleDefinitionId <String>] [-ScopeId <String>] [-ScopeType <String>] [-Confirm]
+ [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property roleManagementPolicyAssignments in policies
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -54,7 +67,7 @@ Update the navigation property roleManagementPolicyAssignments in policies
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -70,7 +83,7 @@ unifiedRoleManagementPolicyAssignment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleManagementPolicyAssignment
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyAssignment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -86,7 +99,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -102,8 +115,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IIdentitySignInsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -118,7 +131,7 @@ unifiedRoleManagementPolicy
 To construct, see NOTES section for POLICY properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphUnifiedRoleManagementPolicy
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicy
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -134,7 +147,7 @@ The id of the policy.
 Inherited from entity.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -151,7 +164,7 @@ If not specified, the policy applies to all roles.
 Supports $filter (eq).
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -168,7 +181,7 @@ Can be / for the tenant or a group ID.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -185,7 +198,7 @@ One of Directory, DirectoryRole.
 Required.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -200,8 +213,8 @@ Accept wildcard characters: False
 The unique identifier of unifiedRoleManagementPolicyAssignment
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -215,7 +228,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -231,7 +244,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -248,10 +261,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IIdentitySignInsIdentity
+
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyAssignment
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphUnifiedRoleManagementPolicyAssignment
+
 ## NOTES
 
 ALIASES
@@ -380,8 +396,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ScopeType <String>]`: The type of the scope where the policy is created. One of Directory, DirectoryRole. Required.
 
 ## RELATED LINKS
-[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaPolicyRoleManagementPolicyAssignment](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaPolicyRoleManagementPolicyAssignment?view=graph-powershell-beta)
 

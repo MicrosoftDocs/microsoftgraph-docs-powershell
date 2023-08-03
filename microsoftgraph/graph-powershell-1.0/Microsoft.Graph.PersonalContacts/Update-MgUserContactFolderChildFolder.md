@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.PersonalContacts-help.xml
+external help file:
 Module Name: Microsoft.Graph.PersonalContacts
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.personalcontacts/update-mgusercontactfolderchildfolder
 schema: 2.0.0
@@ -10,9 +10,6 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property childFolders in users
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Update-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
-
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -20,15 +17,22 @@ Update the navigation property childFolders in users
 Update-MgUserContactFolderChildFolder -ContactFolderId <String> -ContactFolderId1 <String> -UserId <String>
  [-AdditionalProperties <Hashtable>] [-ChildFolders <IMicrosoftGraphContactFolder[]>]
  [-Contacts <IMicrosoftGraphContact[]>] [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-WhatIf] [-Confirm]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgUserContactFolderChildFolder -ContactFolderId <String> -ContactFolderId1 <String> -UserId <String>
- -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphContactFolder> [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
+ -BodyParameter <IMicrosoftGraphContactFolder> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -36,19 +40,30 @@ Update-MgUserContactFolderChildFolder -ContactFolderId <String> -ContactFolderId
 Update-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
  [-AdditionalProperties <Hashtable>] [-ChildFolders <IMicrosoftGraphContactFolder[]>]
  [-Contacts <IMicrosoftGraphContact[]>] [-DisplayName <String>] [-Id <String>]
- [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>] [-ParentFolderId <String>]
- [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-WhatIf] [-Confirm]
+ [-MultiValueExtendedProperties <IMicrosoftGraphMultiValueLegacyExtendedProperty[]>]
+ [-ParentFolderId <String>]
+ [-SingleValueExtendedProperties <IMicrosoftGraphSingleValueLegacyExtendedProperty[]>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgUserContactFolderChildFolder -InputObject <IPersonalContactsIdentity>
- -BodyParameter <IMicrosoftGraphContactFolder> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property childFolders in users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -56,7 +71,7 @@ Update the navigation property childFolders in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -72,7 +87,7 @@ contactFolder
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -91,7 +106,7 @@ Nullable.
 To construct, see NOTES section for CHILDFOLDERS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContactFolder[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -106,8 +121,8 @@ Accept wildcard characters: False
 The unique identifier of contactFolder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -121,8 +136,8 @@ Accept wildcard characters: False
 The unique identifier of contactFolder
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -140,7 +155,7 @@ Nullable.
 To construct, see NOTES section for CONTACTS properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphContact[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContact[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -155,7 +170,7 @@ Accept wildcard characters: False
 The folder's display name.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -171,7 +186,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -187,8 +202,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IPersonalContactsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -205,7 +220,7 @@ Nullable.
 To construct, see NOTES section for MULTIVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMultiValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphMultiValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -220,7 +235,7 @@ Accept wildcard characters: False
 The ID of the folder's parent folder.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -238,7 +253,7 @@ Nullable.
 To construct, see NOTES section for SINGLEVALUEEXTENDEDPROPERTIES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSingleValueLegacyExtendedProperty[]
+Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphSingleValueLegacyExtendedProperty[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -253,8 +268,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -268,7 +283,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -284,7 +299,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -301,10 +316,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
+
 ### Microsoft.Graph.PowerShell.Models.IPersonalContactsIdentity
+
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphContactFolder
+
 ## NOTES
 
 ALIASES
@@ -528,8 +546,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Value <String>]`: A property value.
 
 ## RELATED LINKS
-[Update-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
-
-## RELATED LINKS
-[Update-MgBetaUserContactFolderChildFolder](/powershell/module/Microsoft.Graph.Beta.PersonalContacts/Update-MgBetaUserContactFolderChildFolder?view=graph-powershell-beta)
 

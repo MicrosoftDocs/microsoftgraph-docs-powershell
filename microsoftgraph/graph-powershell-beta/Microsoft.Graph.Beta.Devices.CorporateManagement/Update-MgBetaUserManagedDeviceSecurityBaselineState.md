@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.Devices.CorporateManagement-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Devices.CorporateManagement
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.devices.corporatemanagement/update-mgbetausermanageddevicesecuritybaselinestate
 schema: 2.0.0
@@ -14,18 +14,24 @@ Update the navigation property securityBaselineStates in users
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String> -SecurityBaselineStateId <String>
- -UserId <String> [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
- [-SecurityBaselineTemplateId <String>] [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]
- [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String>
+ -SecurityBaselineStateId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
+ [-DisplayName <String>] [-Id <String>] [-SecurityBaselineTemplateId <String>]
+ [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>] [-State <SecurityBaselineComplianceState>]
+ [-UserPrincipalName <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String> -SecurityBaselineStateId <String>
- -UserId <String> -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-WhatIf] [-Confirm]
- [<CommonParameters>]
+Update-MgBetaUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String>
+ -SecurityBaselineStateId <String> -UserId <String> -BodyParameter <IMicrosoftGraphSecurityBaselineState>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateManagementIdentity>
+ -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -33,18 +39,28 @@ Update-MgBetaUserManagedDeviceSecurityBaselineState -ManagedDeviceId <String> -S
 Update-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateManagementIdentity>
  [-AdditionalProperties <Hashtable>] [-DisplayName <String>] [-Id <String>]
  [-SecurityBaselineTemplateId <String>] [-SettingStates <IMicrosoftGraphSecurityBaselineSettingState[]>]
- [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-WhatIf] [-Confirm]
+ [-State <SecurityBaselineComplianceState>] [-UserPrincipalName <String>] [-Confirm] [-WhatIf]
  [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserManagedDeviceSecurityBaselineState -InputObject <IDevicesCorporateManagementIdentity>
- -BodyParameter <IMicrosoftGraphSecurityBaselineState> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update the navigation property securityBaselineStates in users
+
+## EXAMPLES
+
+### -------------------------- EXAMPLE 1 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
+
+### -------------------------- EXAMPLE 2 --------------------------
+```powershell
+{{ Add code here }}
+```
+
+{{ Add output here }}
 
 ## PARAMETERS
 
@@ -52,7 +68,7 @@ Update the navigation property securityBaselineStates in users
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -68,7 +84,7 @@ Security baseline state for a device.
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityBaselineState
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -83,7 +99,7 @@ Accept wildcard characters: False
 The display name of the security baseline
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +115,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,8 +131,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IDevicesCorporateManagementIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,8 +146,8 @@ Accept wildcard characters: False
 The unique identifier of managedDevice
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -145,8 +161,8 @@ Accept wildcard characters: False
 The unique identifier of securityBaselineState
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -160,7 +176,7 @@ Accept wildcard characters: False
 The security baseline template id
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -176,7 +192,7 @@ The security baseline state for different settings for a device
 To construct, see NOTES section for SETTINGSTATES properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphSecurityBaselineSettingState[]
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineSettingState[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +207,7 @@ Accept wildcard characters: False
 Security Baseline Compliance State
 
 ```yaml
-Type: SecurityBaselineComplianceState
+Type: Microsoft.Graph.Beta.PowerShell.Support.SecurityBaselineComplianceState
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -206,8 +222,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -221,7 +237,7 @@ Accept wildcard characters: False
 User Principal Name
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -236,7 +252,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -252,7 +268,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -269,10 +285,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IDevicesCorporateManagementIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityBaselineState
+
 ## NOTES
 
 ALIASES
@@ -388,8 +407,6 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: Not yet documented
     - `[SourceType <String>]`: settingSourceType
   - `[State <SecurityBaselineComplianceState?>]`: Security Baseline Compliance State
-
-## RELATED LINKS
 
 ## RELATED LINKS
 

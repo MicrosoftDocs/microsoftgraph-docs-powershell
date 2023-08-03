@@ -1,54 +1,56 @@
 ---
-external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.Users.Actions
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/move-mgbetausermailfolderchildfoldermessage
 schema: 2.0.0
 ---
 
-# Move-MgBetaUserMailFolder
+# Move-MgBetaUserMailFolderChildFolderMessage
 
 ## SYNOPSIS
-Move a mailfolder and its contents to another mailfolder.
-
-> [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+Move a message to another folder within the specified user's mailbox.
+This creates a new copy of the message in the destination folder and removes the original message.
 
 ## SYNTAX
 
 ### MoveExpanded (Default)
 ```
-Move-MgBetaUserMailFolder -MailFolderId <String> -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String> -MessageId <String>
+ -UserId <String> [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-Confirm] [-WhatIf]
+ [<CommonParameters>]
 ```
 
 ### Move
 ```
-Move-MgBetaUserMailFolder -MailFolderId <String> -UserId <String>
- -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### MoveViaIdentityExpanded
-```
-Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity> [-AdditionalProperties <Hashtable>]
- [-DestinationId <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaUserMailFolderChildFolderMessage -MailFolderId <String> -MailFolderId1 <String> -MessageId <String>
+ -UserId <String>
+ -BodyParameter <IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### MoveViaIdentity
 ```
-Move-MgBetaUserMailFolder -InputObject <IUsersActionsIdentity>
- -BodyParameter <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+Move-MgBetaUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
+ -BodyParameter <IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### MoveViaIdentityExpanded
+```
+Move-MgBetaUserMailFolderChildFolderMessage -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DestinationId <String>] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Move a mailfolder and its contents to another mailfolder.
+Move a message to another folder within the specified user's mailbox.
+This creates a new copy of the message in the destination folder and removes the original message.
 
 ## EXAMPLES
-### Example 1: Code snippet
 
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
+```
 
 $params = @{
 	DestinationId = "deleteditems"
@@ -56,11 +58,6 @@ $params = @{
 
 # A UPN can also be used as -UserId.
 Move-MgBetaUserMessage -UserId $userId -MessageId $messageId -BodyParameter $params
-```
-This example shows how to use the Move-MgBetaUserMailFolderChildFolderMessage Cmdlet.
-
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
-
 
 ## PARAMETERS
 
@@ -68,7 +65,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -84,7 +81,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Move, MoveViaIdentity
 Aliases:
 
@@ -99,7 +96,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: MoveExpanded, MoveViaIdentityExpanded
 Aliases:
 
@@ -115,8 +112,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: IUsersActionsIdentity
-Parameter Sets: MoveViaIdentityExpanded, MoveViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+Parameter Sets: MoveViaIdentity, MoveViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -130,8 +127,38 @@ Accept wildcard characters: False
 The unique identifier of mailFolder
 
 ```yaml
-Type: String
-Parameter Sets: MoveExpanded, Move
+Type: System.String
+Parameter Sets: Move, MoveExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MailFolderId1
+The unique identifier of mailFolder
+
+```yaml
+Type: System.String
+Parameter Sets: Move, MoveExpanded
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -MessageId
+The unique identifier of message
+
+```yaml
+Type: System.String
+Parameter Sets: Move, MoveExpanded
 Aliases:
 
 Required: True
@@ -145,8 +172,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: MoveExpanded, Move
+Type: System.String
+Parameter Sets: Move, MoveExpanded
 Aliases:
 
 Required: True
@@ -160,7 +187,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -176,7 +203,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -192,11 +219,14 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## INPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
+
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMailFolder
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMessage
+
 ## NOTES
 
 ALIASES
@@ -206,7 +236,7 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths1Adv2SrUsersUserIdMailfoldersMailfolderIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
+`BODYPARAMETER <IPaths15E6PbnUsersUserIdMailfoldersMailfolderIdChildfoldersMailfolderId1MessagesMessageIdMicrosoftGraphMovePostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[DestinationId <String>]`: 
 
@@ -253,4 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Move-MgUserMailFolderChildFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Move-MgUserMailFolderChildFolderMessage?view=graph-powershell-v1.0)
+

@@ -1,5 +1,5 @@
 ---
-external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
+external help file:
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingregistrationcustomquestion
 schema: 2.0.0
@@ -16,7 +16,7 @@ Update a custom registration question associated with a meetingRegistration obje
 ```
 Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -MeetingRegistrationQuestionId <String>
  -OnlineMeetingId <String> -UserId <String> [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>]
- [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-IsRequired] [-WhatIf] [-Confirm]
+ [-AnswerOptions <String[]>] [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Confirm] [-WhatIf]
  [<CommonParameters>]
 ```
 
@@ -24,27 +24,28 @@ Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -MeetingRegistrationQue
 ```
 Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -MeetingRegistrationQuestionId <String>
  -OnlineMeetingId <String> -UserId <String> -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion>
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-Confirm] [-WhatIf] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
  [-AdditionalProperties <Hashtable>] [-AnswerInputType <String>] [-AnswerOptions <String[]>]
- [-DisplayName <String>] [-Id <String>] [-IsRequired] [-WhatIf] [-Confirm] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -InputObject <ICloudCommunicationsIdentity>
- -BodyParameter <IMicrosoftGraphMeetingRegistrationQuestion> [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-IsRequired] [-Confirm] [-WhatIf] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
 Update a custom registration question associated with a meetingRegistration object on behalf of the organizer.
 
 ## EXAMPLES
-### Example 1: Using the Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet
+
+### -------------------------- EXAMPLE 1 --------------------------
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -60,8 +61,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion -UserId $userId -OnlineMeetingId $onlineMeetingId -MeetingRegistrationQuestionId $meetingRegistrationQuestionId -BodyParameter $params
 ```
-This example shows how to use the Update-MgBetaUserOnlineMeetingRegistrationCustomQuestion Cmdlet.
-To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+
 
 ## PARAMETERS
 
@@ -69,7 +70,7 @@ To learn about permissions for this resource, see the [permissions reference](/g
 Additional Parameters
 
 ```yaml
-Type: Hashtable
+Type: System.Collections.Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -84,7 +85,7 @@ Accept wildcard characters: False
 answerInputType
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,7 +100,7 @@ Accept wildcard characters: False
 Answer options when answerInputType is radioButton.
 
 ```yaml
-Type: String[]
+Type: System.String[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -115,7 +116,7 @@ meetingRegistrationQuestion
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: IMicrosoftGraphMeetingRegistrationQuestion
+Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -130,7 +131,7 @@ Accept wildcard characters: False
 Display name of the custom registration question.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -146,7 +147,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: String
+Type: System.String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -162,8 +163,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
+Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
 Aliases:
 
 Required: True
@@ -178,7 +179,7 @@ Indicates whether the question is required.
 Default value is false.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -193,8 +194,8 @@ Accept wildcard characters: False
 The unique identifier of meetingRegistrationQuestion
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -208,8 +209,8 @@ Accept wildcard characters: False
 The unique identifier of onlineMeeting
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -223,8 +224,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: String
-Parameter Sets: UpdateExpanded, Update
+Type: System.String
+Parameter Sets: Update, UpdateExpanded
 Aliases:
 
 Required: True
@@ -238,7 +239,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +255,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: SwitchParameter
+Type: System.Management.Automation.SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -271,10 +272,13 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
+
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
+
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphMeetingRegistrationQuestion
+
 ## NOTES
 
 ALIASES
@@ -313,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+
