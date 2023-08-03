@@ -1,4 +1,4 @@
-﻿---
+---
 external help file: Microsoft.Graph.Beta.Users-help.xml
 Module Name: Microsoft.Graph.Beta.Users
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users/new-mgbetauseroutlooktask
@@ -9,9 +9,9 @@ schema: 2.0.0
 
 ## SYNOPSIS
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
-The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time \nto be always midnight in the specified time zone.
+The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time nto be always midnight in the specified time zone.
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-\nYou can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone \ndifferent than UTC.
+nYou can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone ndifferent than UTC.
 
 ## SYNTAX
 
@@ -59,9 +59,9 @@ New-MgBetaUserOutlookTask -InputObject <IUsersIdentity> -BodyParameter <IMicroso
 
 ## DESCRIPTION
 Create an Outlook task in the default task group (`My Tasks`) and default task folder (`Tasks`) in the user's mailbox.
-The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time \nto be always midnight in the specified time zone.
+The POST method always ignores the time portion of **startDateTime** and **dueDateTime** in the request body, and assumes the time nto be always midnight in the specified time zone.
 By default, this operation (and the GET, PATCH, and complete task operations) returns date-related properties in UTC.
-\nYou can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone \ndifferent than UTC.
+nYou can use the `Prefer: outlook.timezone` header to have all the date-related properties in the response represented in a time zone ndifferent than UTC.
 
 ## EXAMPLES
 
