@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Security-help.xml
 Module Name: Microsoft.Graph.Beta.Security
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.security/update-mgbetasecuritylabel
 schema: 2.0.0
@@ -20,12 +20,12 @@ Update-MgBetaSecurityLabel [-AdditionalProperties <Hashtable>]
  [-Citations <IMicrosoftGraphSecurityCitationTemplate[]>]
  [-Departments <IMicrosoftGraphSecurityDepartmentTemplate[]>]
  [-FilePlanReferences <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>] [-Id <String>]
- [-RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-RetentionLabels <IMicrosoftGraphSecurityRetentionLabel[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-Confirm] [-WhatIf]
+Update-MgBetaSecurityLabel -BodyParameter <IMicrosoftGraphSecurityLabelsRoot> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -34,14 +34,14 @@ Update the navigation property labels in security
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -54,7 +54,7 @@ Update the navigation property labels in security
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -70,7 +70,7 @@ Specifies the underlying authority that describes the type of content to be reta
 To construct, see NOTES section for AUTHORITIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityAuthorityTemplate[]
+Type: IMicrosoftGraphSecurityAuthorityTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -86,7 +86,7 @@ labelsRoot
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
+Type: IMicrosoftGraphSecurityLabelsRoot
 Parameter Sets: Update
 Aliases:
 
@@ -102,7 +102,7 @@ Specifies a group of similar types of content in a particular department.
 To construct, see NOTES section for CATEGORIES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCategoryTemplate[]
+Type: IMicrosoftGraphSecurityCategoryTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -118,7 +118,7 @@ The specific rule or regulation created by a jurisdiction used to determine whet
 To construct, see NOTES section for CITATIONS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityCitationTemplate[]
+Type: IMicrosoftGraphSecurityCitationTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -134,7 +134,7 @@ Specifies the department or business unit of an organization to which a label be
 To construct, see NOTES section for DEPARTMENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityDepartmentTemplate[]
+Type: IMicrosoftGraphSecurityDepartmentTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -146,11 +146,11 @@ Accept wildcard characters: False
 ```
 
 ### -FilePlanReferences
-Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
+Specifies a unique alpha-numeric identifier for an organization's retention schedule.
 To construct, see NOTES section for FILEPLANREFERENCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityFilePlanReferenceTemplate[]
+Type: IMicrosoftGraphSecurityFilePlanReferenceTemplate[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -166,7 +166,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -182,7 +182,7 @@ Represents how customers can manage their data, whether and for how long to reta
 To construct, see NOTES section for RETENTIONLABELS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityRetentionLabel[]
+Type: IMicrosoftGraphSecurityRetentionLabel[]
 Parameter Sets: UpdateExpanded
 Aliases:
 
@@ -197,7 +197,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -213,7 +213,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -230,11 +230,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSecurityLabelsRoot
-
 ## NOTES
 
 ALIASES
@@ -294,7 +292,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
     - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[FilePlanReferences <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>]`: Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
+  - `[FilePlanReferences <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>]`: Specifies a unique alpha-numeric identifier for an organization's retention schedule.
     - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[CreatedDateTime <DateTime?>]`: Represents the date and time in which the filePlanDescriptorTemplate is created.
     - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
@@ -405,7 +403,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DisplayName <String>]`: Unique string that defines a filePlanDescriptorTemplate name.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
 
-`FILEPLANREFERENCES <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>`: Specifies a unique alpha-numeric identifier for an organization’s retention schedule.
+`FILEPLANREFERENCES <IMicrosoftGraphSecurityFilePlanReferenceTemplate[]>`: Specifies a unique alpha-numeric identifier for an organization's retention schedule.
   - `[CreatedBy <IMicrosoftGraphIdentitySet>]`: identitySet
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
     - `[Application <IMicrosoftGraphIdentity>]`: identity
@@ -519,3 +517,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

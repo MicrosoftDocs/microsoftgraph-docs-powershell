@@ -1,62 +1,57 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasnoozegroupeventreminder
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetasigngroupsiteinformationprotectiondigest
 schema: 2.0.0
 ---
 
-# Invoke-MgBetaSnoozeGroupEventReminder
+# Invoke-MgBetaSignGroupSiteInformationProtectionDigest
 
 ## SYNOPSIS
-Postpone a reminder for an event in a user calendar until a new time.
+Invoke action signDigest
 
 ## SYNTAX
 
-### SnoozeExpanded (Default)
+### SignExpanded (Default)
 ```
-Invoke-MgBetaSnoozeGroupEventReminder -EventId <String> -GroupId <String> [-AdditionalProperties <Hashtable>]
- [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### Snooze
-```
-Invoke-MgBetaSnoozeGroupEventReminder -EventId <String> -GroupId <String>
- -BodyParameter <IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentity
+### Sign
 ```
-Invoke-MgBetaSnoozeGroupEventReminder -InputObject <IGroupsIdentity>
- -BodyParameter <IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -GroupId <String> -SiteId <String>
+ -Body <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
-### SnoozeViaIdentityExpanded
+### SignViaIdentityExpanded
 ```
-Invoke-MgBetaSnoozeGroupEventReminder -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-NewReminderTime <IMicrosoftGraphDateTimeZone>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DigestInputFile <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### SignViaIdentity
+```
+Invoke-MgBetaSignGroupSiteInformationProtectionDigest -InputObject <IGroupsIdentity>
+ -BodyParameter <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Postpone a reminder for an event in a user calendar until a new time.
+Invoke action signDigest
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.Users.Actions
+{{ Add code here }}
 ```
 
-$params = @{
-	NewReminderTime = @{
-		DateTime = "dateTime-value"
-		TimeZone = "timeZone-value"
-	}
-}
-
-# A UPN can also be used as -UserId.
-Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyParameter $params
+### EXAMPLE 2
+```powershell
+{{ Add code here }}
+```
 
 ## PARAMETERS
 
@@ -64,8 +59,8 @@ Invoke-MgBetaSnoozeUserEventReminder -UserId $userId -EventId $eventId -BodyPara
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Type: Hashtable
+Parameter Sets: SignExpanded, SignViaIdentityExpanded
 Aliases:
 
 Required: False
@@ -75,13 +70,13 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -BodyParameter
+### -Body
 .
-To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
+To construct, see NOTES section for BODY properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-Parameter Sets: Snooze, SnoozeViaIdentity
+Type: IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: Sign
 Aliases:
 
 Required: True
@@ -91,15 +86,31 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -EventId
-The unique identifier of event
+### -BodyParameter
+.
+To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: System.String
-Parameter Sets: Snooze, SnoozeExpanded
+Type: IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
+Parameter Sets: SignViaIdentity
 Aliases:
 
 Required: True
+Position: Named
+Default value: None
+Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -DigestInputFile
+Input File for Digest (.)
+
+```yaml
+Type: String
+Parameter Sets: SignExpanded, SignViaIdentityExpanded
+Aliases:
+
+Required: False
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -110,8 +121,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Snooze, SnoozeExpanded
+Type: String
+Parameter Sets: SignExpanded, Sign
 Aliases:
 
 Required: True
@@ -126,8 +137,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-Parameter Sets: SnoozeViaIdentity, SnoozeViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: SignViaIdentityExpanded, SignViaIdentity
 Aliases:
 
 Required: True
@@ -137,31 +148,15 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -NewReminderTime
-dateTimeTimeZone
-To construct, see NOTES section for NEWREMINDERTIME properties and create a hash table.
+### -SiteId
+The unique identifier of site
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphDateTimeZone
-Parameter Sets: SnoozeExpanded, SnoozeViaIdentityExpanded
+Type: String
+Parameter Sets: SignExpanded, Sign
 Aliases:
 
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -PassThru
-Returns true when the command succeeds
-
-```yaml
-Type: System.Management.Automation.SwitchParameter
-Parameter Sets: (All)
-Aliases:
-
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
@@ -172,7 +167,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -188,7 +183,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -205,13 +200,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-
-### Microsoft.Graph.Beta.PowerShell.Models.IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema
-
+### Microsoft.Graph.Beta.PowerShell.Models.IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema
 ## OUTPUTS
 
-### System.Boolean
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphSigningResult
 ## NOTES
 
 ALIASES
@@ -221,12 +213,13 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IPaths608Nu3GroupsGroupIdEventsEventIdMicrosoftGraphSnoozereminderPostRequestbodyContentApplicationJsonSchema>`: .
+`BODY <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[NewReminderTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
+  - `[Digest <Byte[]>]`: 
+
+`BODYPARAMETER <IPaths1VaajyuGroupsGroupIdSitesSiteIdInformationprotectionMicrosoftGraphSigndigestPostRequestbodyContentApplicationJsonSchema>`: .
+  - `[(Any) <Object>]`: This indicates any property can be added to this object.
+  - `[Digest <Byte[]>]`: 
 
 `INPUTOBJECT <IGroupsIdentity>`: Identity Parameter
   - `[AttachmentId <String>]`: The unique identifier of attachment
@@ -270,10 +263,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
   - `[UserId <String>]`: The unique identifier of user
 
-`NEWREMINDERTIME <IMicrosoftGraphDateTimeZone>`: dateTimeTimeZone
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-  - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-
 ## RELATED LINKS
-

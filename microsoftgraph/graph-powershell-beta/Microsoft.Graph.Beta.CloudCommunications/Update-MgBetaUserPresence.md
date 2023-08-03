@@ -1,94 +1,73 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.CloudCommunications-help.xml
 Module Name: Microsoft.Graph.Beta.CloudCommunications
-online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauserpresence
+online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications/update-mgbetauseronlinemeetingvirtualappointment
 schema: 2.0.0
 ---
 
-# Update-MgBetaUserPresence
+# Update-MgBetaUserOnlineMeetingVirtualAppointment
 
 ## SYNOPSIS
-Update the navigation property presence in users
+Create a new virtualAppointment object.
 
 ## SYNTAX
 
 ### UpdateExpanded (Default)
 ```
-Update-MgBetaUserPresence -UserId <String> [-Activity <String>] [-AdditionalProperties <Hashtable>]
- [-Availability <String>] [-Id <String>] [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
- [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserOnlineMeetingVirtualAppointment -OnlineMeetingId <String> -UserId <String>
+ [-AdditionalProperties <Hashtable>] [-AppointmentClientJoinWebUrl <String>]
+ [-AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>] [-ExternalAppointmentId <String>]
+ [-ExternalAppointmentUrl <String>] [-Id <String>] [-Settings <IMicrosoftGraphVirtualAppointmentSettings>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
-Update-MgBetaUserPresence -UserId <String> -BodyParameter <IMicrosoftGraphPresence> [-Confirm] [-WhatIf]
- [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> -BodyParameter <IMicrosoftGraphPresence>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserOnlineMeetingVirtualAppointment -OnlineMeetingId <String> -UserId <String>
+ -BodyParameter <IMicrosoftGraphVirtualAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
 ```
-Update-MgBetaUserPresence -InputObject <ICloudCommunicationsIdentity> [-Activity <String>]
- [-AdditionalProperties <Hashtable>] [-Availability <String>] [-Id <String>]
- [-OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]
- [-StatusMessage <IMicrosoftGraphPresenceStatusMessage>] [-Confirm] [-WhatIf] [<CommonParameters>]
+Update-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
+ [-AdditionalProperties <Hashtable>] [-AppointmentClientJoinWebUrl <String>]
+ [-AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>] [-ExternalAppointmentId <String>]
+ [-ExternalAppointmentUrl <String>] [-Id <String>] [-Settings <IMicrosoftGraphVirtualAppointmentSettings>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaUserOnlineMeetingVirtualAppointment -InputObject <ICloudCommunicationsIdentity>
+ -BodyParameter <IMicrosoftGraphVirtualAppointment> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
-Update the navigation property presence in users
+Create a new virtualAppointment object.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
+{{ Add code here }}
 ```
 
-# A UPN can also be used as -UserId.
-Get-MgBetaUserPresence -UserId $userId
+{{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
+{{ Add code here }}
 ```
 
-Get-MgBetaUserPresence -UserId $userId
-
-### -------------------------- EXAMPLE 3 --------------------------
-```powershell
-Import-Module Microsoft.Graph.Beta.CloudCommunications
-```
-
-Get-MgBetaCommunicationPresence -PresenceId $presenceId
+{{ Add output here }}
 
 ## PARAMETERS
-
-### -Activity
-The supplemental information to a user's availability.
-Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
-
-```yaml
-Type: System.String
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
-Aliases:
-
-Required: False
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
 
 ### -AdditionalProperties
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -99,12 +78,29 @@ Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -Availability
-The base presence information for a user.
-Possible values are Available, AvailableIdle, Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
+### -AppointmentClientJoinWebUrl
+The join web URL of the virtual appointment for clients with waiting room and browser join.
+Optional.
 
 ```yaml
-Type: System.String
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -AppointmentClients
+The client information for the virtual appointment, including name, email, and SMS phone number.
+Optional.
+To construct, see NOTES section for APPOINTMENTCLIENTS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphVirtualAppointmentUser[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -116,11 +112,11 @@ Accept wildcard characters: False
 ```
 
 ### -BodyParameter
-presence
+virtualAppointment
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresence
+Type: IMicrosoftGraphVirtualAppointment
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -131,12 +127,44 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
+### -ExternalAppointmentId
+The identifier of the appointment from the scheduling system, associated with the current virtual appointment.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ExternalAppointmentUrl
+The URL of the appointment resource from the scheduling system, associated with the current virtual appointment.
+Optional.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
 ### -Id
 The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -152,8 +180,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: ICloudCommunicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -163,28 +191,27 @@ Accept pipeline input: True (ByValue)
 Accept wildcard characters: False
 ```
 
-### -OutOfOfficeSettings
-outOfOfficeSettings
-To construct, see NOTES section for OUTOFOFFICESETTINGS properties and create a hash table.
+### -OnlineMeetingId
+The unique identifier of onlineMeeting
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOutOfOfficeSettings
-Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
-Required: False
+Required: True
 Position: Named
 Default value: None
 Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
-### -StatusMessage
-presenceStatusMessage
-To construct, see NOTES section for STATUSMESSAGE properties and create a hash table.
+### -Settings
+virtualAppointmentSettings
+To construct, see NOTES section for SETTINGS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresenceStatusMessage
+Type: IMicrosoftGraphVirtualAppointmentSettings
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -199,8 +226,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -214,7 +241,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -230,7 +257,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -247,13 +274,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICloudCommunicationsIdentity
-
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresence
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
 ## OUTPUTS
 
-### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPresence
-
+### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphVirtualAppointment
 ## NOTES
 
 ALIASES
@@ -263,26 +287,24 @@ COMPLEX PARAMETER PROPERTIES
 To create the parameters described below, construct a hash table containing the appropriate properties. For information on hash tables, run Get-Help about_Hash_Tables.
 
 
-`BODYPARAMETER <IMicrosoftGraphPresence>`: presence
+`APPOINTMENTCLIENTS <IMicrosoftGraphVirtualAppointmentUser[]>`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
+  - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
+  - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
+  - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
+
+`BODYPARAMETER <IMicrosoftGraphVirtualAppointment>`: virtualAppointment
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
   - `[Id <String>]`: The unique identifier for an entity. Read-only.
-  - `[Activity <String>]`: The supplemental information to a user's availability. Possible values are Available, Away, BeRightBack, Busy, DoNotDisturb, InACall, InAConferenceCall, Inactive,InAMeeting, Offline, OffWork,OutOfOffice, PresenceUnknown,Presenting, UrgentInterruptionsOnly.
-  - `[Availability <String>]`: The base presence information for a user. Possible values are Available, AvailableIdle,  Away, BeRightBack, Busy, BusyIdle, DoNotDisturb, Offline, PresenceUnknown
-  - `[OutOfOfficeSettings <IMicrosoftGraphOutOfOfficeSettings>]`: outOfOfficeSettings
+  - `[AppointmentClientJoinWebUrl <String>]`: The join web URL of the virtual appointment for clients with waiting room and browser join. Optional.
+  - `[AppointmentClients <IMicrosoftGraphVirtualAppointmentUser[]>]`: The client information for the virtual appointment, including name, email, and SMS phone number. Optional.
+    - `[DisplayName <String>]`: The display name of the user who participates in a virtual appointment. Optional.
+    - `[EmailAddress <String>]`: The email address of the user who participates in a virtual appointment. Optional.
+    - `[SmsCapablePhoneNumber <String>]`: The phone number for sending SMS texts for the user who participates in a virtual appointment. Optional.
+  - `[ExternalAppointmentId <String>]`: The identifier of the appointment from the scheduling system, associated with the current virtual appointment. Optional.
+  - `[ExternalAppointmentUrl <String>]`: The URL of the appointment resource from the scheduling system, associated with the current virtual appointment. Optional.
+  - `[Settings <IMicrosoftGraphVirtualAppointmentSettings>]`: virtualAppointmentSettings
     - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[IsOutOfOffice <Boolean?>]`: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
-    - `[Message <String>]`: The out of office message that the user configured on Outlook client (Automatic Replies (Out of Office)) or the Teams client (Schedule out of office).
-  - `[StatusMessage <IMicrosoftGraphPresenceStatusMessage>]`: presenceStatusMessage
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-      - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-    - `[Message <IMicrosoftGraphItemBody>]`: itemBody
-      - `[(Any) <Object>]`: This indicates any property can be added to this object.
-      - `[Content <String>]`: The content of the item.
-      - `[ContentType <String>]`: bodyType
-    - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
+    - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 `INPUTOBJECT <ICloudCommunicationsIdentity>`: Identity Parameter
   - `[AttendanceRecordId <String>]`: The unique identifier of attendanceRecord
@@ -304,22 +326,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ToDateTime <DateTime?>]`: Usage: toDateTime={toDateTime}
   - `[UserId <String>]`: The unique identifier of user
 
-`OUTOFOFFICESETTINGS <IMicrosoftGraphOutOfOfficeSettings>`: outOfOfficeSettings
+`SETTINGS <IMicrosoftGraphVirtualAppointmentSettings>`: virtualAppointmentSettings
   - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[IsOutOfOffice <Boolean?>]`: True if either:It is currently in the out of office time window configured on the Outlook or Teams client.There is currently an event on the user's calendar that's marked as Show as Out of OfficeOtherwise, false.
-  - `[Message <String>]`: The out of office message that the user configured on Outlook client (Automatic Replies (Out of Office)) or the Teams client (Schedule out of office).
-
-`STATUSMESSAGE <IMicrosoftGraphPresenceStatusMessage>`: presenceStatusMessage
-  - `[(Any) <Object>]`: This indicates any property can be added to this object.
-  - `[ExpiryDateTime <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[DateTime <String>]`: A single point of time in a combined date and time representation ({date}T{time}). For example, '2019-04-16T09:00:00'.
-    - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
-  - `[Message <IMicrosoftGraphItemBody>]`: itemBody
-    - `[(Any) <Object>]`: This indicates any property can be added to this object.
-    - `[Content <String>]`: The content of the item.
-    - `[ContentType <String>]`: bodyType
-  - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
+  - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 ## RELATED LINKS
-

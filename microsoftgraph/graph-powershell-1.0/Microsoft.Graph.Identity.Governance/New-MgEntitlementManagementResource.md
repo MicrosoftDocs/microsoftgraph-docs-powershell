@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Identity.Governance-help.xml
 Module Name: Microsoft.Graph.Identity.Governance
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.identity.governance/new-mgentitlementmanagementresource
 schema: 2.0.0
@@ -16,15 +16,14 @@ Create new navigation property to resources for identityGovernance
 ```
 New-MgEntitlementManagementResource [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>]
  [-Description <String>] [-DisplayName <String>]
- [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>]
- [-ModifiedDateTime <DateTime>] [-OriginId <String>] [-OriginSystem <String>]
- [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>] [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Environment <IMicrosoftGraphAccessPackageResourceEnvironment>] [-Id <String>] [-ModifiedDateTime <DateTime>]
+ [-OriginId <String>] [-OriginSystem <String>] [-Roles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-Scopes <IMicrosoftGraphAccessPackageResourceScope[]>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
 ```
-New-MgEntitlementManagementResource -BodyParameter <IMicrosoftGraphAccessPackageResource> [-Confirm] [-WhatIf]
+New-MgEntitlementManagementResource -BodyParameter <IMicrosoftGraphAccessPackageResource> [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -33,19 +32,15 @@ Create new navigation property to resources for identityGovernance
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -53,7 +48,7 @@ Create new navigation property to resources for identityGovernance
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -69,7 +64,7 @@ accessPackageResource
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
+Type: IMicrosoftGraphAccessPackageResource
 Parameter Sets: Create
 Aliases:
 
@@ -84,7 +79,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -99,7 +94,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -114,7 +109,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -130,7 +125,7 @@ accessPackageResourceEnvironment
 To construct, see NOTES section for ENVIRONMENT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceEnvironment
+Type: IMicrosoftGraphAccessPackageResourceEnvironment
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -146,7 +141,7 @@ The unique idenfier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -161,7 +156,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.DateTime
+Type: DateTime
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -176,7 +171,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -191,7 +186,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -207,7 +202,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for ROLES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceRole[]
+Type: IMicrosoftGraphAccessPackageResourceRole[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -223,7 +218,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for SCOPES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResourceScope[]
+Type: IMicrosoftGraphAccessPackageResourceScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -238,7 +233,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -254,7 +249,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -271,11 +266,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
-
 ## OUTPUTS
 
 ### Microsoft.Graph.PowerShell.Models.IMicrosoftGraphAccessPackageResource
-
 ## NOTES
 
 ALIASES
@@ -429,4 +422,3 @@ To create the parameters described below, construct a hash table containing the 
     - `[Scopes <IMicrosoftGraphAccessPackageResourceScope[]>]`: 
 
 ## RELATED LINKS
-

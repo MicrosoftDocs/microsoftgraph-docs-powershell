@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Users.Actions-help.xml
 Module Name: Microsoft.Graph.Beta.Users.Actions
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.users.actions/clear-mgbetausermanagedappregistrationbydevicetag
 schema: 2.0.0
@@ -15,28 +15,28 @@ Issues a wipe operation on an app registration with specified device tag.
 ### WipeExpanded1 (Default)
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -UserId <String> [-AdditionalProperties <Hashtable>]
- [-DeviceTag <String>] [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-DeviceTag <String>] [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Wipe1
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -UserId <String>
  -BodyParameter <IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### WipeViaIdentityExpanded1
+```
+Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
+ [-AdditionalProperties <Hashtable>] [-DeviceTag <String>] [-PassThru] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### WipeViaIdentity1
 ```
 Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
  -BodyParameter <IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema>
- [-PassThru] [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### WipeViaIdentityExpanded1
-```
-Clear-MgBetaUserManagedAppRegistrationByDeviceTag -InputObject <IUsersActionsIdentity>
- [-AdditionalProperties <Hashtable>] [-DeviceTag <String>] [-PassThru] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-PassThru] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -44,14 +44,14 @@ Issues a wipe operation on an app registration with specified device tag.
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -64,7 +64,7 @@ Issues a wipe operation on an app registration with specified device tag.
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: WipeExpanded1, WipeViaIdentityExpanded1
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema
+Type: IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema
 Parameter Sets: Wipe1, WipeViaIdentity1
 Aliases:
 
@@ -95,7 +95,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: WipeExpanded1, WipeViaIdentityExpanded1
 Aliases:
 
@@ -111,8 +111,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-Parameter Sets: WipeViaIdentity1, WipeViaIdentityExpanded1
+Type: IUsersActionsIdentity
+Parameter Sets: WipeViaIdentityExpanded1, WipeViaIdentity1
 Aliases:
 
 Required: True
@@ -126,7 +126,7 @@ Accept wildcard characters: False
 Returns true when the command succeeds
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases:
 
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
-Parameter Sets: Wipe1, WipeExpanded1
+Type: String
+Parameter Sets: WipeExpanded1, Wipe1
 Aliases:
 
 Required: True
@@ -156,7 +156,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -172,7 +172,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -189,13 +189,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IComponentsCn44WaRequestbodiesWipemanagedappregistrationsbydevicetagrequestbodyContentApplicationJsonSchema
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IUsersActionsIdentity
-
 ## OUTPUTS
 
 ### System.Boolean
-
 ## NOTES
 
 ALIASES
@@ -252,4 +249,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

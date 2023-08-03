@@ -1,4 +1,4 @@
----
+﻿---
 Module Name: Microsoft.Graph.Beta.CloudCommunications
 Module Guid: 631fbafd-f3f4-4887-b6c1-99e9a7259812
 Download Help Link: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.cloudcommunications
@@ -168,16 +168,16 @@ Get the presence information for multiple users.
 ### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnlineMeeting](Get-MgBetaUserOnlineMeeting.md)
-Information about a meeting, including the URL used to join a meeting, the attendees' list, and the description.
+### [Get-MgBetaCommunicationPresenceCount](Get-MgBetaCommunicationPresenceCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
 The content stream of the alternative recording of a Microsoft Teams live event.
 Read-only.
 
-### [Get-MgBetaUserOnlineMeetingAttendanceReport](Get-MgBetaUserOnlineMeetingAttendanceReport.md)
-Get the meetingAttendanceReport for an onlineMeeting.
-Each time an online meeting ends, an attendance report will be generated for that session.
+### [Get-MgBetaUserOnlineMeetingAlternativeRecording](Get-MgBetaUserOnlineMeetingAlternativeRecording.md)
+The content stream of the alternative recording of a Microsoft Teams live event.
+Read-only.
 
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord](Get-MgBetaUserOnlineMeetingAttendanceReportAttendanceRecord.md)
 List of attendance records of an attendance report.
@@ -189,9 +189,8 @@ Get the number of the resource
 ### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
 Get the number of the resource
 
-### [Get-MgBetaUserOnlineMeetingAttendeeReport](Get-MgBetaUserOnlineMeetingAttendeeReport.md)
-The content stream of the attendee report of a Teams live event.
-Read-only.
+### [Get-MgBetaUserOnlineMeetingAttendanceReportCount](Get-MgBetaUserOnlineMeetingAttendanceReportCount.md)
+Get the number of the resource
 
 ### [Get-MgBetaUserOnlineMeetingBroadcastRecording](Get-MgBetaUserOnlineMeetingBroadcastRecording.md)
 Get broadcastRecording for the navigation property onlineMeetings from users
@@ -243,9 +242,8 @@ Read-only.
 ### [Get-MgBetaUserOnlineMeetingVirtualAppointment](Get-MgBetaUserOnlineMeetingVirtualAppointment.md)
 Read the properties and relationships of a virtualAppointment object.
 
-### [Get-MgBetaUserPresence](Get-MgBetaUserPresence.md)
-Set a presence status message for a user.
-An optional expiration date and time can be supplied.
+### [Get-MgBetaUserOnlineMeetingVirtualAppointment](Get-MgBetaUserOnlineMeetingVirtualAppointment.md)
+Read the properties and relationships of a virtualAppointment object.
 
 ### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
 Enable a bot to answer an incoming call.
@@ -255,9 +253,13 @@ The bot is expected to answer, reject or redirect the call before the call times
 The current timeout value is 15 seconds.
 The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
-### [Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting](Invoke-MgBetaCreateOrGetCommunicationOnlineMeeting.md)
-Create an onlineMeeting object with a custom specified external ID.
-If the external ID already exists, this API will return the onlineMeeting object with that external ID.
+### [Invoke-MgBetaAnswerCommunicationCall](Invoke-MgBetaAnswerCommunicationCall.md)
+Enable a bot to answer an incoming call.
+The incoming call request can be an invite from a participant in a group call or a peer-to-peer call.
+If an invite to a group call is received, the notification will contain the chatInfo and meetingInfo parameters.
+The bot is expected to answer, reject or redirect the call before the call times out.
+The current timeout value is 15 seconds.
+The current timeout value is 15 seconds for regular scenarios, and 5 seconds for policy-based recording scenarios.
 
 ### [Invoke-MgBetaInviteCommunicationCallParticipant](Invoke-MgBetaInviteCommunicationCallParticipant.md)
 Delete a specific participant in a call.
@@ -360,8 +362,8 @@ Create new navigation property to participants for communications
 ### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
 Create new navigation property to sessions for communications
 
-### [New-MgBetaCommunicationOnlineMeeting](New-MgBetaCommunicationOnlineMeeting.md)
-Create new navigation property to onlineMeetings for communications
+### [New-MgBetaCommunicationCallRecordSession](New-MgBetaCommunicationCallRecordSession.md)
+Create new navigation property to sessions for communications
 
 ### [New-MgBetaCommunicationOnlineMeetingAttendanceReport](New-MgBetaCommunicationOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for communications
@@ -384,8 +386,8 @@ Create new navigation property to transcripts for communications
 ### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
 Create new navigation property to presences for communications
 
-### [New-MgBetaUserOnlineMeeting](New-MgBetaUserOnlineMeeting.md)
-Create an online meeting on behalf of a user.
+### [New-MgBetaCommunicationPresence](New-MgBetaCommunicationPresence.md)
+Create new navigation property to presences for communications
 
 ### [New-MgBetaUserOnlineMeetingAttendanceReport](New-MgBetaUserOnlineMeetingAttendanceReport.md)
 Create new navigation property to attendanceReports for users
@@ -458,8 +460,8 @@ Delete a virtualAppointment object.
 ### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
 Delete navigation property presences for communications
 
-### [Remove-MgBetaUserOnlineMeeting](Remove-MgBetaUserOnlineMeeting.md)
-Delete an onlineMeeting object.
+### [Remove-MgBetaCommunicationPresence](Remove-MgBetaCommunicationPresence.md)
+Delete navigation property presences for communications
 
 ### [Remove-MgBetaUserOnlineMeetingAttendanceReport](Remove-MgBetaUserOnlineMeetingAttendanceReport.md)
 Delete navigation property attendanceReports for users
@@ -485,8 +487,8 @@ Delete navigation property transcripts for users
 ### [Remove-MgBetaUserOnlineMeetingVirtualAppointment](Remove-MgBetaUserOnlineMeetingVirtualAppointment.md)
 Delete a virtualAppointment object.
 
-### [Remove-MgBetaUserPresence](Remove-MgBetaUserPresence.md)
-Delete navigation property presence for users
+### [Remove-MgBetaUserOnlineMeetingVirtualAppointment](Remove-MgBetaUserOnlineMeetingVirtualAppointment.md)
+Delete a virtualAppointment object.
 
 ### [Rename-MgBetaCommunicationCallScreenSharingRole](Rename-MgBetaCommunicationCallScreenSharingRole.md)
 Allow applications to share screen content with the participants of a group call.
@@ -620,9 +622,8 @@ Create a new virtualAppointment object.
 ### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
 Update the navigation property presences in communications
 
-### [Update-MgBetaUserOnlineMeeting](Update-MgBetaUserOnlineMeeting.md)
-Update the properties of the specified onlineMeeting object.
-Please see Request body section for the list of properties that support updating.
+### [Update-MgBetaCommunicationPresence](Update-MgBetaCommunicationPresence.md)
+Update the navigation property presences in communications
 
 ### [Update-MgBetaUserOnlineMeetingAttendanceReport](Update-MgBetaUserOnlineMeetingAttendanceReport.md)
 Update the navigation property attendanceReports in users
@@ -648,6 +649,6 @@ Update the navigation property transcripts in users
 ### [Update-MgBetaUserOnlineMeetingVirtualAppointment](Update-MgBetaUserOnlineMeetingVirtualAppointment.md)
 Create a new virtualAppointment object.
 
-### [Update-MgBetaUserPresence](Update-MgBetaUserPresence.md)
-Update the navigation property presence in users
+### [Update-MgBetaUserOnlineMeetingVirtualAppointment](Update-MgBetaUserOnlineMeetingVirtualAppointment.md)
+Create a new virtualAppointment object.
 

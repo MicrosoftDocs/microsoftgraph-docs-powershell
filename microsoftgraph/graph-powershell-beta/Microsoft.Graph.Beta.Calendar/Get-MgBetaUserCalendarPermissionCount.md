@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Calendar-help.xml
 Module Name: Microsoft.Graph.Beta.Calendar
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.calendar/get-mgbetausercalendarpermissioncount
 schema: 2.0.0
@@ -19,16 +19,16 @@ Get-MgBetaUserCalendarPermissionCount -UserId <String> [-Filter <String>] [<Comm
 
 ### Get1
 ```
-Get-MgBetaUserCalendarPermissionCount -CalendarId <String> -UserId <String> [-Filter <String>]
+Get-MgBetaUserCalendarPermissionCount -UserId <String> -CalendarId <String> [-Filter <String>]
  [<CommonParameters>]
 ```
 
-### GetViaIdentity
+### GetViaIdentity1
 ```
 Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [<CommonParameters>]
 ```
 
-### GetViaIdentity1
+### GetViaIdentity
 ```
 Get-MgBetaUserCalendarPermissionCount -InputObject <ICalendarIdentity> [-Filter <String>] [<CommonParameters>]
 ```
@@ -38,19 +38,15 @@ Get the number of the resource
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
-
-
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
-
-
 
 ## PARAMETERS
 
@@ -58,7 +54,7 @@ Get the number of the resource
 The unique identifier of calendar
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get1
 Aliases:
 
@@ -73,7 +69,7 @@ Accept wildcard characters: False
 Filter items by property values
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: (All)
 Aliases:
 
@@ -89,8 +85,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
-Parameter Sets: GetViaIdentity, GetViaIdentity1
+Type: ICalendarIdentity
+Parameter Sets: GetViaIdentity1, GetViaIdentity
 Aliases:
 
 Required: True
@@ -104,7 +100,7 @@ Accept wildcard characters: False
 The unique identifier of user
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: Get, Get1
 Aliases:
 
@@ -121,11 +117,9 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.ICalendarIdentity
-
 ## OUTPUTS
 
 ### System.Int32
-
 ## NOTES
 
 ALIASES
@@ -149,4 +143,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-

@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Applications-help.xml
 Module Name: Microsoft.Graph.Beta.Applications
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.applications/update-mgbetaonpremisepublishingprofile
 schema: 2.0.0
@@ -19,20 +19,14 @@ Update-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId <String>
  [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>]
  [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <String>]
- [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
 ```
 Update-MgBetaOnPremisePublishingProfile -OnPremisesPublishingProfileId <String>
- -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### UpdateViaIdentity
-```
-Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
- -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-Confirm] [-WhatIf] [<CommonParameters>]
+ -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentityExpanded
@@ -42,8 +36,14 @@ Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
  [-Agents <IMicrosoftGraphOnPremisesAgent[]>] [-ConnectorGroups <IMicrosoftGraphConnectorGroup[]>]
  [-Connectors <IMicrosoftGraphConnector[]>]
  [-HybridAgentUpdaterConfiguration <IMicrosoftGraphHybridAgentUpdaterConfiguration>] [-Id <String>]
- [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-Confirm]
- [-WhatIf] [<CommonParameters>]
+ [-IsDefaultAccessEnabled] [-IsEnabled] [-PublishedResources <IMicrosoftGraphPublishedResource[]>] [-WhatIf]
+ [-Confirm] [<CommonParameters>]
+```
+
+### UpdateViaIdentity
+```
+Update-MgBetaOnPremisePublishingProfile -InputObject <IApplicationsIdentity>
+ -BodyParameter <IMicrosoftGraphOnPremisesPublishingProfile> [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -51,14 +51,14 @@ Update entity in onPremisesPublishingProfiles
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -71,7 +71,7 @@ Update entity in onPremisesPublishingProfiles
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -89,7 +89,7 @@ Nullable.
 To construct, see NOTES section for AGENTGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgentGroup[]
+Type: IMicrosoftGraphOnPremisesAgentGroup[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -107,7 +107,7 @@ Nullable.
 To construct, see NOTES section for AGENTS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesAgent[]
+Type: IMicrosoftGraphOnPremisesAgent[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -123,7 +123,7 @@ onPremisesPublishingProfile
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesPublishingProfile
+Type: IMicrosoftGraphOnPremisesPublishingProfile
 Parameter Sets: Update, UpdateViaIdentity
 Aliases:
 
@@ -141,7 +141,7 @@ Nullable.
 To construct, see NOTES section for CONNECTORGROUPS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnectorGroup[]
+Type: IMicrosoftGraphConnectorGroup[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -159,7 +159,7 @@ Nullable.
 To construct, see NOTES section for CONNECTORS properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphConnector[]
+Type: IMicrosoftGraphConnector[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -175,7 +175,7 @@ hybridAgentUpdaterConfiguration
 To construct, see NOTES section for HYBRIDAGENTUPDATERCONFIGURATION properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphHybridAgentUpdaterConfiguration
+Type: IMicrosoftGraphHybridAgentUpdaterConfiguration
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -191,7 +191,7 @@ The unique identifier for an entity.
 Read-only.
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -207,8 +207,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-Parameter Sets: UpdateViaIdentity, UpdateViaIdentityExpanded
+Type: IApplicationsIdentity
+Parameter Sets: UpdateViaIdentityExpanded, UpdateViaIdentity
 Aliases:
 
 Required: True
@@ -222,7 +222,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -237,7 +237,7 @@ Accept wildcard characters: False
 Represents if Azure AD Application Proxy is enabled for the tenant.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -252,8 +252,8 @@ Accept wildcard characters: False
 The unique identifier of onPremisesPublishingProfile
 
 ```yaml
-Type: System.String
-Parameter Sets: Update, UpdateExpanded
+Type: String
+Parameter Sets: UpdateExpanded, Update
 Aliases:
 
 Required: True
@@ -270,7 +270,7 @@ Nullable.
 To construct, see NOTES section for PUBLISHEDRESOURCES properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphPublishedResource[]
+Type: IMicrosoftGraphPublishedResource[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -285,7 +285,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -301,7 +301,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -318,13 +318,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IApplicationsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesPublishingProfile
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphOnPremisesPublishingProfile
-
 ## NOTES
 
 ALIASES
@@ -1742,3 +1739,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 
+## RELATED LINKS

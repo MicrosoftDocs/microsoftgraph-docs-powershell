@@ -1,5 +1,5 @@
----
-external help file:
+﻿---
+external help file: Microsoft.Graph.Beta.Groups-help.xml
 Module Name: Microsoft.Graph.Beta.Groups
 online version: https://learn.microsoft.com/powershell/module/microsoft.graph.beta.groups/invoke-mgbetapreviewgroupdriveitem
 schema: 2.0.0
@@ -16,28 +16,28 @@ Invoke action preview
 ```
 Invoke-MgBetaPreviewGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  [-AdditionalProperties <Hashtable>] [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>]
- [-Zoom <Double>] [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-Zoom <Double>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Preview
 ```
 Invoke-MgBetaPreviewGroupDriveItem -DriveId <String> -DriveItemId <String> -GroupId <String>
  -BodyParameter <IPaths1Rxt39KGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
+```
+
+### PreviewViaIdentityExpanded
+```
+Invoke-MgBetaPreviewGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
+ [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### PreviewViaIdentity
 ```
 Invoke-MgBetaPreviewGroupDriveItem -InputObject <IGroupsIdentity>
  -BodyParameter <IPaths1Rxt39KGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema>
- [-Confirm] [-WhatIf] [<CommonParameters>]
-```
-
-### PreviewViaIdentityExpanded
-```
-Invoke-MgBetaPreviewGroupDriveItem -InputObject <IGroupsIdentity> [-AdditionalProperties <Hashtable>]
- [-AllowEdit] [-Chromeless] [-Page <String>] [-Viewer <String>] [-Zoom <Double>] [-Confirm] [-WhatIf]
- [<CommonParameters>]
+ [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -45,14 +45,14 @@ Invoke action preview
 
 ## EXAMPLES
 
-### -------------------------- EXAMPLE 1 --------------------------
+### EXAMPLE 1
 ```powershell
 {{ Add code here }}
 ```
 
 {{ Add output here }}
 
-### -------------------------- EXAMPLE 2 --------------------------
+### EXAMPLE 2
 ```powershell
 {{ Add code here }}
 ```
@@ -65,7 +65,7 @@ Invoke action preview
 Additional Parameters
 
 ```yaml
-Type: System.Collections.Hashtable
+Type: Hashtable
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -80,7 +80,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -96,7 +96,7 @@ Accept wildcard characters: False
 To construct, see NOTES section for BODYPARAMETER properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IPaths1Rxt39KGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
+Type: IPaths1Rxt39KGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
 Parameter Sets: Preview, PreviewViaIdentity
 Aliases:
 
@@ -111,7 +111,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -126,8 +126,8 @@ Accept wildcard characters: False
 The unique identifier of drive
 
 ```yaml
-Type: System.String
-Parameter Sets: Preview, PreviewExpanded
+Type: String
+Parameter Sets: PreviewExpanded, Preview
 Aliases:
 
 Required: True
@@ -141,8 +141,8 @@ Accept wildcard characters: False
 The unique identifier of driveItem
 
 ```yaml
-Type: System.String
-Parameter Sets: Preview, PreviewExpanded
+Type: String
+Parameter Sets: PreviewExpanded, Preview
 Aliases:
 
 Required: True
@@ -156,8 +156,8 @@ Accept wildcard characters: False
 The unique identifier of group
 
 ```yaml
-Type: System.String
-Parameter Sets: Preview, PreviewExpanded
+Type: String
+Parameter Sets: PreviewExpanded, Preview
 Aliases:
 
 Required: True
@@ -172,8 +172,8 @@ Identity Parameter
 To construct, see NOTES section for INPUTOBJECT properties and create a hash table.
 
 ```yaml
-Type: Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-Parameter Sets: PreviewViaIdentity, PreviewViaIdentityExpanded
+Type: IGroupsIdentity
+Parameter Sets: PreviewViaIdentityExpanded, PreviewViaIdentity
 Aliases:
 
 Required: True
@@ -187,7 +187,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -202,7 +202,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.String
+Type: String
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -217,7 +217,7 @@ Accept wildcard characters: False
 .
 
 ```yaml
-Type: System.Double
+Type: Double
 Parameter Sets: PreviewExpanded, PreviewViaIdentityExpanded
 Aliases:
 
@@ -232,7 +232,7 @@ Accept wildcard characters: False
 Prompts you for confirmation before running the cmdlet.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: cf
 
@@ -248,7 +248,7 @@ Shows what would happen if the cmdlet runs.
 The cmdlet is not run.
 
 ```yaml
-Type: System.Management.Automation.SwitchParameter
+Type: SwitchParameter
 Parameter Sets: (All)
 Aliases: wi
 
@@ -265,13 +265,10 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ## INPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IGroupsIdentity
-
 ### Microsoft.Graph.Beta.PowerShell.Models.IPaths1Rxt39KGroupsGroupIdDrivesDriveIdItemsDriveitemIdMicrosoftGraphPreviewPostRequestbodyContentApplicationJsonSchema
-
 ## OUTPUTS
 
 ### Microsoft.Graph.Beta.PowerShell.Models.IMicrosoftGraphItemPreviewInfo
-
 ## NOTES
 
 ALIASES
@@ -332,4 +329,3 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-
