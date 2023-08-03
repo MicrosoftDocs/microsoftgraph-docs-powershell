@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of an internalDomainFederation object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -484,4 +484,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastRunDateTime <DateTime?>]`: Date and time in ISO 8601 format and in UTC time when the certificate was last updated. Read-only.
 
 ## RELATED LINKS
-[Update-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-v1.0)
+[Update-MgDomainFederationConfiguration](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomainFederationConfiguration?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Add a column to a [content type][contentType] in a site or list by specifying a [columnDefinition][columnDefinition].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListContentTypeColumn?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1161,8 +1161,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[New-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListContentTypeColumn?view=graph-powershell-v1.0)
+[New-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListContentTypeColumn?view=graph-powershell-v1.0)
+[New-MgSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/New-MgSiteListContentTypeColumn?view=graph-powershell-1.0)
 

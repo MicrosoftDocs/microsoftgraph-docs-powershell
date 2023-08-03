@@ -11,7 +11,7 @@ schema: 2.0.0
 Publishes a [contentType][] present in a content type hub site.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -201,4 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-v1.0)
+[Publish-MgSiteContentType](/powershell/module/Microsoft.Graph.Sites/Publish-MgSiteContentType?view=graph-powershell-1.0)

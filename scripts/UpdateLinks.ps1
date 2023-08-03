@@ -148,11 +148,13 @@ function Add-Link {
             $BaseUrl = "/powershell/module"
             $CommandRename = $Command.Replace("-MgBeta", "-Mg")
             $FullModuleName = "Microsoft.Graph.$Module/$CommandRename"
+            $ModuleName = "Microsoft.Graph.$Module"
             $LinkTitle = "To view the v1.0 release of this cmdlet, view"
             $View = "?view=graph-powershell-1.0"
             if ($GraphProfile -eq "v1.0") {
                 $CommandRename = $Command.Replace("-Mg", "-MgBeta")
                 $FullModuleName = "Microsoft.Graph.Beta.$Module/$CommandRename"
+                $ModuleName = "Microsoft.Graph.Beta.$Module"
                 $LinkTitle = "To view the beta release of this cmdlet, view"
                 $View = "?view=graph-powershell-beta"
                 
@@ -160,8 +162,10 @@ function Add-Link {
 
             $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
             $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
+            $Folder = $View.Split("=")[1]
+            $ConfirmFile = Join-Path $WorkLoadDocsPath "$Folder" "$ModuleName" "$CommandRename.md"
             $ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
-            if ($ConfirmCommandAvailability) {
+            if ($ConfirmCommandAvailability -and (Test-Path $ConfirmFile)) {
                 (Get-Content $File) | 
                 Foreach-Object { $_ -replace '## SYNTAX', $Link -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
                 Out-File $File

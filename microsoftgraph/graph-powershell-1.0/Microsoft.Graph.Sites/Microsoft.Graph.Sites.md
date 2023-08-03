@@ -95,6 +95,9 @@ Get sharepoint from admin
 ### [Get-MgAdminSharepointSetting](Get-MgAdminSharepointSetting.md)
 Get the tenant-level settings for SharePoint and OneDrive.
 
+### [Get-MgAllSite](Get-MgAllSite.md)
+Invoke function getAllSites
+
 ### [Get-MgGroupSite](Get-MgGroupSite.md)
 The list of SharePoint sites in this group.
 Access the default site with /sites/root.

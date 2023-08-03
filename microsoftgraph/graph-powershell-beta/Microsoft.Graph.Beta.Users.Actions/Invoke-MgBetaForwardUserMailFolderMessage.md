@@ -13,7 +13,7 @@ If the meeting event is forwarded from an attendee's Microsoft 365 mailbox to an
 This convenience is not available when forwarding from an Outlook.com account.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgForwardUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -309,4 +309,4 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[Invoke-MgForwardUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderMessage?view=graph-powershell-v1.0)
+[Invoke-MgForwardUserMailFolderMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgForwardUserMailFolderMessage?view=graph-powershell-1.0)

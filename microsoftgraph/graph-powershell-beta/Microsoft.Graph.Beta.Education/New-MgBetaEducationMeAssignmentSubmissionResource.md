@@ -15,7 +15,7 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -278,4 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[LastModifiedBy <IMicrosoftGraphIdentitySet>]`: identitySet
 
 ## RELATED LINKS
-[New-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-v1.0)
+[New-MgEducationMeAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/New-MgEducationMeAssignmentSubmissionResource?view=graph-powershell-1.0)

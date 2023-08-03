@@ -11,7 +11,7 @@ schema: 2.0.0
 The terms and conditions associated with device management of the company.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndCondition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -298,5 +298,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndCondition?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementTermAndCondition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementTermAndCondition?view=graph-powershell-1.0)
 

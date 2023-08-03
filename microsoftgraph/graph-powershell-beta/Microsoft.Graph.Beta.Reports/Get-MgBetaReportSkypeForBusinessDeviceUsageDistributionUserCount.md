@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getSkypeForBusinessDeviceUsageDistributionUserCounts
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -142,5 +142,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-v1.0)
+[Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportSkypeForBusinessDeviceUsageDistributionUserCount?view=graph-powershell-1.0)
 

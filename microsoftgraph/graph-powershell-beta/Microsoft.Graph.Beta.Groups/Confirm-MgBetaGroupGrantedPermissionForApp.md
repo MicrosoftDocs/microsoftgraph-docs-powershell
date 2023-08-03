@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action checkGrantedPermissionsForApp
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -154,5 +154,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-v1.0)
+[Confirm-MgGroupGrantedPermissionForApp](/powershell/module/Microsoft.Graph.Groups/Confirm-MgGroupGrantedPermissionForApp?view=graph-powershell-1.0)
 

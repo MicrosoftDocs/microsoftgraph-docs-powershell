@@ -13,7 +13,7 @@ If the event allows proposals for new times, on responding tentative to the even
 For more information on how to propose a time, and how to receive and accept a new time proposal, see Propose new meeting times.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -327,4 +327,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-[Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-v1.0)
+[Invoke-MgAcceptUserEventTentatively](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgAcceptUserEventTentatively?view=graph-powershell-1.0)

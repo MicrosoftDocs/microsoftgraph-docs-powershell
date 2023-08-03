@@ -12,7 +12,7 @@ Update the properties of a bookingService object in the specified bookingBusines
 The following are some examples you can customize for a service:n- Pricen- Typical length of an appointmentn- Remindersn- Any time buffer to set up before or finish up after the servicen- Scheduling policy parameters such as minimum notice to book or cancel, and whether customers can select specific staff members for an appointment.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -649,7 +649,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeSlotInterval <TimeSpan?>]`: Duration of each time slot, denoted in ISO 8601 format.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-v1.0)
+[Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-v1.0)
+[Update-MgBookingBusinessService](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessService?view=graph-powershell-1.0)

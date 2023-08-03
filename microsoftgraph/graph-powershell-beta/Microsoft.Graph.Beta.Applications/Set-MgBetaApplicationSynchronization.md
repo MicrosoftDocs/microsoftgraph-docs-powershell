@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property synchronization in applications
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -668,8 +668,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[Version <String>]`: The version of the schema, updated automatically with every schema change.
 
 ## RELATED LINKS
-[Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-v1.0)
+[Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-v1.0)
+[Set-MgApplicationSynchronization](/powershell/module/Microsoft.Graph.Applications/Set-MgApplicationSynchronization?view=graph-powershell-1.0)
 

@@ -21,7 +21,7 @@ Provide the header `Prefer: include-unknown-enum-members` to properly list **sub
 For details, see the examples section.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -292,4 +292,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-v1.0)
+[Get-MgEducationMeAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmission?view=graph-powershell-1.0)

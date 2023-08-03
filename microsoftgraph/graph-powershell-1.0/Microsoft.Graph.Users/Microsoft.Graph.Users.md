@@ -102,9 +102,6 @@ Read-only.
 (HTTP Methods: GET, PUT, DELETE.).
 Supports $expand.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Get-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/Get-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
 ### [Get-MgUserMemberOfCount](Get-MgUserMemberOfCount.md)
 Get the number of the resource
 
@@ -314,24 +311,15 @@ The collection of open extensions defined for the user.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
 Read-only.
 Nullable.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
-
 ### [New-MgUserExtension](New-MgUserExtension.md)
 The collection of open extensions defined for the user.
 Read-only.
 Nullable.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserMemberOfByRef?view=graph-powershell-beta)
 
 ### [New-MgUserTodoListExtension](New-MgUserTodoListExtension.md)
 Create new navigation property to extensions for users
@@ -353,9 +341,6 @@ Create new navigation property to extensions for users
 
 ### [New-MgUserTodoListTaskLinkedResource](New-MgUserTodoListTaskLinkedResource.md)
 A collection of resources linked to the task.
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaUserTransitiveMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Users/New-MgBetaUserTransitiveMemberOfByRef?view=graph-powershell-beta)
 
 ### [Remove-MgUser](Remove-MgUser.md)
 Deletes a user.

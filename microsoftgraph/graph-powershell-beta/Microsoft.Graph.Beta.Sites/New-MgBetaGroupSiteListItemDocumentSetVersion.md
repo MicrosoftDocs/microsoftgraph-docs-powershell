@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new version of a document set item in a list.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -472,5 +472,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[New-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-v1.0)
+[New-MgGroupSiteListItemDocumentSetVersion](/powershell/module/Microsoft.Graph.Sites/New-MgGroupSiteListItemDocumentSetVersion?view=graph-powershell-1.0)
 

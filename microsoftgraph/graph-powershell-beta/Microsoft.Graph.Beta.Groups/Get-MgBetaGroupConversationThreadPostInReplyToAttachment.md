@@ -14,7 +14,7 @@ Nullable.
 Supports $expand.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -348,4 +348,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-v1.0)
+[Get-MgGroupConversationThreadPostInReplyToAttachment](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupConversationThreadPostInReplyToAttachment?view=graph-powershell-1.0)

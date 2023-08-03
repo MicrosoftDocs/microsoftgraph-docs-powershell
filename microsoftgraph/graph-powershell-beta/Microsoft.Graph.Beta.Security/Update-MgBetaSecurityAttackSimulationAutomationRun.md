@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property runs in security
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -332,5 +332,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Update-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-v1.0)
+[Update-MgSecurityAttackSimulationAutomationRun](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityAttackSimulationAutomationRun?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property documents for print
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterJobDocument?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -188,5 +188,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterJobDocument?view=graph-powershell-v1.0)
+[Remove-MgPrintPrinterJobDocument](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Remove-MgPrintPrinterJobDocument?view=graph-powershell-1.0)
 

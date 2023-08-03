@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property attachmentSessions for users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -213,5 +213,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-v1.0)
+[Remove-MgUserTodoListTaskAttachmentSession](/powershell/module/Microsoft.Graph.Users/Remove-MgUserTodoListTaskAttachmentSession?view=graph-powershell-1.0)
 

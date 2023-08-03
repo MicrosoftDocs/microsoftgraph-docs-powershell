@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a set object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSet?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -222,5 +222,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSet?view=graph-powershell-v1.0)
+[Remove-MgGroupSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Remove-MgGroupSiteTermStoreSet?view=graph-powershell-1.0)
 

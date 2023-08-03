@@ -12,7 +12,7 @@ Release a custodian from a case.
 For details, see Release a custodian from a case.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -226,4 +226,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-v1.0)
+[Publish-MgSecurityCaseEdiscoveryCaseCustodian](/powershell/module/Microsoft.Graph.Security/Publish-MgSecurityCaseEdiscoveryCaseCustodian?view=graph-powershell-1.0)

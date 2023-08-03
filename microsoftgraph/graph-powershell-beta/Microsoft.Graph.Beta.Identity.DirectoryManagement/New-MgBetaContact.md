@@ -11,7 +11,7 @@ schema: 2.0.0
 Add new entity to contacts
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContact?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContact?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -610,4 +610,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContact?view=graph-powershell-v1.0)
+[New-MgContact](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/New-MgContact?view=graph-powershell-1.0)

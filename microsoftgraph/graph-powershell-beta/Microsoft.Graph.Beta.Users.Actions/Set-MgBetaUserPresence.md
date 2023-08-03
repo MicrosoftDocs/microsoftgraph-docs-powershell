@@ -11,7 +11,7 @@ schema: 2.0.0
 Set the availability and activity status in a presence session of an application for a user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -300,4 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-v1.0)
+[Set-MgUserPresence](/powershell/module/Microsoft.Graph.Users.Actions/Set-MgUserPresence?view=graph-powershell-1.0)

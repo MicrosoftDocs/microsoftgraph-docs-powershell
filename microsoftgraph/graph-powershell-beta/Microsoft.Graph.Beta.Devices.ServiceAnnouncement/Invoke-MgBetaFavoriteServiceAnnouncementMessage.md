@@ -11,7 +11,7 @@ schema: 2.0.0
 Change the status of a list of serviceUpdateMessages to favorite for the signed in user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -148,4 +148,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[MessageIds <String[]>]`: 
 
 ## RELATED LINKS
-[Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-v1.0)
+[Invoke-MgFavoriteServiceAnnouncementMessage](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Invoke-MgFavoriteServiceAnnouncementMessage?view=graph-powershell-1.0)

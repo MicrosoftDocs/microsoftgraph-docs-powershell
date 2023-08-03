@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property mobileAppConfigurations in deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -552,8 +552,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[SuccessCount <Int32?>]`: Number of succeeded Users
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-v1.0)
+[Update-MgDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-v1.0)
+[Update-MgDeviceAppManagementMobileAppConfiguration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementMobileAppConfiguration?view=graph-powershell-1.0)
 

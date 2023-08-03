@@ -12,7 +12,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -181,4 +181,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Types <String[]>]`: 
 
 ## RELATED LINKS
-[Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-v1.0)
+[Get-MgUserCalendarSchedule](/powershell/module/Microsoft.Graph.Users.Actions/Get-MgUserCalendarSchedule?view=graph-powershell-1.0)

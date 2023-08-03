@@ -2045,6 +2045,9 @@ Delete navigation property versions for drives
 ### [Remove-MgDriveItemListItemVersionField](Remove-MgDriveItemListItemVersionField.md)
 Delete navigation property fields for drives
 
+### [Remove-MgDriveItemPermanent](Remove-MgDriveItemPermanent.md)
+Invoke action permanentDelete
+
 ### [Remove-MgDriveItemPermission](Remove-MgDriveItemPermission.md)
 Remove access to a DriveItem.
 Only sharing permissions that are **not** inherited can be deleted.\nThe **inheritedFrom** property must be `null`.
@@ -2126,6 +2129,9 @@ Delete navigation property versions for drives
 
 ### [Remove-MgDriveRootListItemVersionField](Remove-MgDriveRootListItemVersionField.md)
 Delete navigation property fields for drives
+
+### [Remove-MgDriveRootPermanent](Remove-MgDriveRootPermanent.md)
+Invoke action permanentDelete
 
 ### [Remove-MgDriveRootPermission](Remove-MgDriveRootPermission.md)
 Remove access to a DriveItem.

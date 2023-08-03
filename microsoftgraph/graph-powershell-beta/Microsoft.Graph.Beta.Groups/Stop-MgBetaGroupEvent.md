@@ -15,7 +15,7 @@ An attendee calling this action gets an error (HTTP 400 Bad Request), with the f
 You need to be an organizer to cancel a meeting.' This action differs from Delete in that **Cancel** is available to only the organizer, and lets\nthe organizer send a custom message to the attendees about the cancellation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgGroupEvent](/powershell/module/Microsoft.Graph.Groups/Stop-MgGroupEvent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Stop-MgGroupEvent](/powershell/module/Microsoft.Graph.Groups/Stop-MgGroupEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -258,5 +258,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Stop-MgGroupEvent](/powershell/module/Microsoft.Graph.Groups/Stop-MgGroupEvent?view=graph-powershell-v1.0)
+[Stop-MgGroupEvent](/powershell/module/Microsoft.Graph.Groups/Stop-MgGroupEvent?view=graph-powershell-1.0)
 

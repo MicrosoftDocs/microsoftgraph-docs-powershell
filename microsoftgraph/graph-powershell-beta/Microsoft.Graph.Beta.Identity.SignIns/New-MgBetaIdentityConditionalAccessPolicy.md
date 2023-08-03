@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new conditionalAccessPolicy.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -725,7 +725,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Value <Int32?>]`: The number of days or hours.
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-v1.0)
+[New-MgIdentityConditionalAccessPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityConditionalAccessPolicy?view=graph-powershell-1.0)

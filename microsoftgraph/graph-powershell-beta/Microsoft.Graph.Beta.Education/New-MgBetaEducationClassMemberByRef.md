@@ -11,7 +11,7 @@ schema: 2.0.0
 Add an educationUser member to an educationClass.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -224,4 +224,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
+[New-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/New-MgEducationClassMemberByRef?view=graph-powershell-1.0)

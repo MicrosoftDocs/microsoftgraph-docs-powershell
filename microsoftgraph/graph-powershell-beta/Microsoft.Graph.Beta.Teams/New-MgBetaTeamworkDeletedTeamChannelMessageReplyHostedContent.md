@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to hostedContents for teamwork
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -293,5 +293,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-v1.0)
+[New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelMessageReplyHostedContent?view=graph-powershell-1.0)
 

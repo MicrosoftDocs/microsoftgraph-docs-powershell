@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property scopedMembers in directoryRoles
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleScopedMember?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleScopedMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -295,5 +295,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Id <String>]`: The identifier of the identity. This property is read-only.
 
 ## RELATED LINKS
-[Update-MgDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleScopedMember?view=graph-powershell-v1.0)
+[Update-MgDirectoryRoleScopedMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDirectoryRoleScopedMember?view=graph-powershell-1.0)
 

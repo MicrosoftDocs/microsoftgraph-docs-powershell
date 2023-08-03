@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property fields for groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootListItemField?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootListItemField?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -184,5 +184,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootListItemField?view=graph-powershell-v1.0)
+[Remove-MgGroupDriveRootListItemField](/powershell/module/Microsoft.Graph.Files/Remove-MgGroupDriveRootListItemField?view=graph-powershell-1.0)
 

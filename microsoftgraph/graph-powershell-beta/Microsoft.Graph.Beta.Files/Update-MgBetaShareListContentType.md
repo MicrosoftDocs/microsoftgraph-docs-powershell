@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property contentTypes in shares
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1538,8 +1538,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Position <Int32?>]`: Specifies the position in which the content type appears in the selection UI.
 
 ## RELATED LINKS
-[Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-v1.0)
+[Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-v1.0)
+[Update-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Update-MgShareListContentType?view=graph-powershell-1.0)
 

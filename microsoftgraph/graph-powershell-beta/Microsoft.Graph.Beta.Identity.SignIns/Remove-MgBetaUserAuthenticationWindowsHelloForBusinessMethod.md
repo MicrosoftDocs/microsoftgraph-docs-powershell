@@ -11,7 +11,7 @@ schema: 2.0.0
 Deletes a windowsHelloForBusinessAuthenticationMethod object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -235,5 +235,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-v1.0)
+[Remove-MgUserAuthenticationWindowsHelloForBusinessMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgUserAuthenticationWindowsHelloForBusinessMethod?view=graph-powershell-1.0)
 

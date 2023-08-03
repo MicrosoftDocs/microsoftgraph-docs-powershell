@@ -11,7 +11,7 @@ schema: 2.0.0
 Unpublish a [contentType][] from a content type hub site.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Unpublish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgShareListContentType?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Unpublish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgShareListContentType?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -169,5 +169,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Unpublish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgShareListContentType?view=graph-powershell-v1.0)
+[Unpublish-MgShareListContentType](/powershell/module/Microsoft.Graph.Files/Unpublish-MgShareListContentType?view=graph-powershell-1.0)
 

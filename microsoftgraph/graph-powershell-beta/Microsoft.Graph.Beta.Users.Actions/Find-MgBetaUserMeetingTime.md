@@ -15,7 +15,7 @@ The algorithm used to suggest meeting times and locations undergoes fine-tuning 
 In scenarios like test environments where the input parameters and calendar data remain static, expect that the suggested results may differ over time.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -485,7 +485,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Start <IMicrosoftGraphDateTimeZone>]`: dateTimeTimeZone
 
 ## RELATED LINKS
-[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-v1.0)
+[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-v1.0)
+[Find-MgUserMeetingTime](/powershell/module/Microsoft.Graph.Users.Actions/Find-MgUserMeetingTime?view=graph-powershell-1.0)

@@ -18,7 +18,10 @@ Update-MgEntitlementManagementCatalog -AccessPackageCatalogId <String>
  [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>] [-CatalogType <String>]
  [-CreatedDateTime <DateTime>] [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible]
- [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
+ [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Update
@@ -33,7 +36,10 @@ Update-MgEntitlementManagementCatalog -InputObject <IIdentityGovernanceIdentity>
  [-AccessPackages <IMicrosoftGraphAccessPackage[]>] [-AdditionalProperties <Hashtable>] [-CatalogType <String>]
  [-CreatedDateTime <DateTime>] [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>]
  [-Description <String>] [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible]
- [-ModifiedDateTime <DateTime>] [-State <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-ModifiedDateTime <DateTime>] [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
+ [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -260,6 +266,54 @@ Read-only.
 
 ```yaml
 Type: DateTime
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceRoles
+.
+To construct, see NOTES section for RESOURCEROLES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResourceRole[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Resources
+.
+To construct, see NOTES section for RESOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResource[]
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceScopes
+.
+To construct, see NOTES section for RESOURCESCOPES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResourceScope[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 

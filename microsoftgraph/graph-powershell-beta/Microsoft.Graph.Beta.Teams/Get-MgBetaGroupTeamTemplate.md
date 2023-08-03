@@ -12,7 +12,7 @@ The template this team was created from.
 See available templates.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplate?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplate?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -154,5 +154,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplate?view=graph-powershell-v1.0)
+[Get-MgGroupTeamTemplate](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamTemplate?view=graph-powershell-1.0)
 

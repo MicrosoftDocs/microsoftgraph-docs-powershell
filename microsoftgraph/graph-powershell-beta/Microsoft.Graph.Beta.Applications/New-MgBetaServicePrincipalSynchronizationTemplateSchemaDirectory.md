@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to directories for servicePrincipals
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -379,5 +379,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SupportedApis <String[]>]`: The API that the provisioning service queries to retrieve data for synchronization.
 
 ## RELATED LINKS
-[New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-v1.0)
+[New-MgServicePrincipalSynchronizationTemplateSchemaDirectory](/powershell/module/Microsoft.Graph.Applications/New-MgServicePrincipalSynchronizationTemplateSchemaDirectory?view=graph-powershell-1.0)
 

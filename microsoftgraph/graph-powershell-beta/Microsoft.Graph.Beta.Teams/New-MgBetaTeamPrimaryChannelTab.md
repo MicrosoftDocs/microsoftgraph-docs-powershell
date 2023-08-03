@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to tabs for teams
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -462,7 +462,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExternalId <String>]`: The ID of the catalog provided by the app developer in the Microsoft Teams zip app package.
 
 ## RELATED LINKS
-[New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+[New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-v1.0)
+[New-MgTeamPrimaryChannelTab](/powershell/module/Microsoft.Graph.Teams/New-MgTeamPrimaryChannelTab?view=graph-powershell-1.0)

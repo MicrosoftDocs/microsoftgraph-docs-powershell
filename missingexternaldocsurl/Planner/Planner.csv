@@ -173,3 +173,4 @@ v1.0, Get-MgGroupPlannerPlanCount, /groups/{group-id}/planner/plans/$count
 v1.0, Get-MgPlannerBucketCount, /planner/buckets/$count
 v1.0, Get-MgPlannerPlanCount, /planner/plans/$count
 v1.0, Get-MgPlannerTaskCount, /planner/tasks/$count
+v1.0, Get-MgGroupPlannerPlan, /groups/{group-id}/planner/plans/{plannerPlan-id}

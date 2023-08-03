@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action getPolicyNonComplianceReport
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -293,5 +293,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Top <Int32?>]`: 
 
 ## RELATED LINKS
-[Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementReportPolicyNonComplianceReport](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Get-MgDeviceManagementReportPolicyNonComplianceReport?view=graph-powershell-1.0)
 

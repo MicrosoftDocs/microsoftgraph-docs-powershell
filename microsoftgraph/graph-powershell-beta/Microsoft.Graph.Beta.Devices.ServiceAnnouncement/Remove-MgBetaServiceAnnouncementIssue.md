@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property issues for admin
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementIssue?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementIssue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -149,5 +149,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Remove-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementIssue?view=graph-powershell-v1.0)
+[Remove-MgServiceAnnouncementIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Remove-MgServiceAnnouncementIssue?view=graph-powershell-1.0)
 

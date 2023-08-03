@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new virtualAppointment object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserPresence?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -354,4 +354,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[AllowClientToJoinUsingBrowser <Boolean?>]`: Indicates whether the client can use the browser to join a virtual appointment. If set to false, the client can only use Microsoft Teams to join. Optional.
 
 ## RELATED LINKS
-[Update-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserPresence?view=graph-powershell-v1.0)
+[Update-MgUserPresence](/powershell/module/Microsoft.Graph.CloudCommunications/Update-MgUserPresence?view=graph-powershell-1.0)

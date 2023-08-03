@@ -82,6 +82,9 @@ The appManagementPolicy applied to this application.
 ### [Get-MgApplicationAppManagementPolicyCount](Get-MgApplicationAppManagementPolicyCount.md)
 Get the number of the resource
 
+### [Get-MgApplicationByAppId](Get-MgApplicationByAppId.md)
+Get the properties and relationships of an application object.
+
 ### [Get-MgApplicationById](Get-MgApplicationById.md)
 Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
@@ -263,6 +266,9 @@ Supports $expand.
 
 ### [Get-MgServicePrincipalAppRoleAssignmentCount](Get-MgServicePrincipalAppRoleAssignmentCount.md)
 Get the number of the resource
+
+### [Get-MgServicePrincipalByAppId](Get-MgServicePrincipalByAppId.md)
+Retrieve the properties and relationships of a servicePrincipal object.
 
 ### [Get-MgServicePrincipalById](Get-MgServicePrincipalById.md)
 Return the directory objects specified in a list of IDs.
@@ -652,9 +658,6 @@ Assign a homeRealmDiscoveryPolicy to a servicePrincipal.
 The homeRealmDiscoveryPolicies assigned to this service principal.
 Supports $expand.
 
-> [!NOTE]
-> To view the beta release of this cmdlet, view [New-MgBetaServicePrincipalMemberOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/New-MgBetaServicePrincipalMemberOfByRef?view=graph-powershell-beta)
-
 ### [New-MgServicePrincipalOwnerByRef](New-MgServicePrincipalOwnerByRef.md)
 Use this API to add an owner for the servicePrincipal.
 Service principal owners can be users, the service principal itself, or other service principals.
@@ -690,11 +693,13 @@ After that time, they are permanently deleted.
 Remove an appManagementPolicy policy object from an application or service principal object.
 When you remove the appManagementPolicy, the application or service principal adopts the tenant-wide tenantAppManagementPolicy setting.
 
+### [Remove-MgApplicationByAppId](Remove-MgApplicationByAppId.md)
+Delete an application object.
+When deleted, apps are moved to a temporary container and can be restored within 30 days.
+After that time, they are permanently deleted.
+
 ### [Remove-MgApplication](Remove-MgApplication.md)
 Delete entity from applications
-
-> [!NOTE]
-> To view the beta release of this cmdlet, view [Remove-MgBetaApplicationCreatedOnBehalfOfByRef](/powershell/module/Microsoft.Graph.Beta.Applications/Remove-MgBetaApplicationCreatedOnBehalfOfByRef?view=graph-powershell-beta)
 
 ### [Remove-MgApplicationExtensionProperty](Remove-MgApplicationExtensionProperty.md)
 Delete a directory extension definition represented by an extensionProperty object.
@@ -760,6 +765,9 @@ Deletes an appRoleAssignment that a user, group, or client service principal has
 Deletes an appRoleAssignment that a service principal has been granted.
 App roles which are assigned to service principals are also known as application permissions.
 Deleting an app role assignment for a service principal is equivalent to revoking the app-only permission grant.
+
+### [Remove-MgServicePrincipalByAppId](Remove-MgServicePrincipalByAppId.md)
+Delete a servicePrincipal object.
 
 ### [Remove-MgServicePrincipalClaimMappingPolicyByRef](Remove-MgServicePrincipalClaimMappingPolicyByRef.md)
 Remove a claimsMappingPolicy from a servicePrincipal.
@@ -893,6 +901,9 @@ Validate that the credentials are valid in the tenant.
 ### [Update-MgApplication](Update-MgApplication.md)
 Update the properties of an application object.
 
+### [Update-MgApplicationByAppId](Update-MgApplicationByAppId.md)
+Update the properties of an application object.
+
 ### [Update-MgApplicationExtensionProperty](Update-MgApplicationExtensionProperty.md)
 Update the navigation property extensionProperties in applications
 
@@ -931,6 +942,9 @@ Update the navigation property appRoleAssignedTo in servicePrincipals
 
 ### [Update-MgServicePrincipalAppRoleAssignment](Update-MgServicePrincipalAppRoleAssignment.md)
 Update the navigation property appRoleAssignments in servicePrincipals
+
+### [Update-MgServicePrincipalByAppId](Update-MgServicePrincipalByAppId.md)
+Update entity in servicePrincipals by appId
 
 ### [Update-MgServicePrincipalDelegatedPermissionClassification](Update-MgServicePrincipalDelegatedPermissionClassification.md)
 Update the navigation property delegatedPermissionClassifications in servicePrincipals

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new identityUserFlowAttribute object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -217,4 +217,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserFlowAttributeType <String>]`: identityUserFlowAttributeType
 
 ## RELATED LINKS
-[New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-v1.0)
+[New-MgIdentityUserFlowAttribute](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgIdentityUserFlowAttribute?view=graph-powershell-1.0)

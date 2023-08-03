@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to inheritsPermissionsFrom for roleManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -505,8 +505,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[ExcludedResourceActions <String[]>]`: 
 
 ## RELATED LINKS
-[New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+[New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-v1.0)
+[New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgRoleManagementDirectoryRoleDefinitionInheritPermissionFrom?view=graph-powershell-1.0)
 

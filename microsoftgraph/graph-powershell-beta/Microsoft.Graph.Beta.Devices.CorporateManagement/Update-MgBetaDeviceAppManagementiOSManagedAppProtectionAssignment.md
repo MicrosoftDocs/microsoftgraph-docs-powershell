@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property assignments in deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -323,5 +323,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeviceAndAppManagementAssignmentFilterType <DeviceAndAppManagementAssignmentFilterType?>]`: Represents type of the assignment filter.
 
 ## RELATED LINKS
-[Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-v1.0)
+[Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Update-MgDeviceAppManagementiOSManagedAppProtectionAssignment?view=graph-powershell-1.0)
 

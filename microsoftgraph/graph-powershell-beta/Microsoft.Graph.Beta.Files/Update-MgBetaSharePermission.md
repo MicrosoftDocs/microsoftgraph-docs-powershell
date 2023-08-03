@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property permission in shares
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Update-MgSharePermission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Update-MgSharePermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -549,8 +549,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Update-MgSharePermission?view=graph-powershell-v1.0)
+[Update-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Update-MgSharePermission?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Update-MgSharePermission?view=graph-powershell-v1.0)
+[Update-MgSharePermission](/powershell/module/Microsoft.Graph.Files/Update-MgSharePermission?view=graph-powershell-1.0)
 

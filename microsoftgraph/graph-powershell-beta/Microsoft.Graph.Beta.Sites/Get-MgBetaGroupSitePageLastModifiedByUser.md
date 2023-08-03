@@ -14,7 +14,7 @@ Get lastModifiedByUser from groups
 
 ### Get (Default)
 ```
-Get-MgBetaGroupSitePageLastModifiedByUser -GroupId <String> -SiteId <String> -SitePageId <String>
+Get-MgBetaGroupSitePageLastModifiedByUser -BaseSitePageId <String> -GroupId <String> -SiteId <String>
  [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
 ```
 
@@ -28,6 +28,21 @@ Get-MgBetaGroupSitePageLastModifiedByUser -InputObject <ISitesIdentity> [-Expand
 Get lastModifiedByUser from groups
 
 ## PARAMETERS
+
+### -BaseSitePageId
+The unique identifier of baseSitePage
+
+```yaml
+Type: String
+Parameter Sets: Get
+Aliases:
+
+Required: True
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
 
 ### -ExpandProperty
 Expand related entities
@@ -92,21 +107,6 @@ Accept wildcard characters: False
 
 ### -SiteId
 The unique identifier of site
-
-```yaml
-Type: String
-Parameter Sets: Get
-Aliases:
-
-Required: True
-Position: Named
-Default value: None
-Accept pipeline input: False
-Accept wildcard characters: False
-```
-
-### -SitePageId
-The unique identifier of sitePage
 
 ```yaml
 Type: String

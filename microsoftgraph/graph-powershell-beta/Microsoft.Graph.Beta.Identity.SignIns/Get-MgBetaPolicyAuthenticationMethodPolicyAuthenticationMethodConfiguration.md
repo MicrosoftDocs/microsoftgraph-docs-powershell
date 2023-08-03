@@ -12,7 +12,7 @@ Represents the settings for each authentication method.
 Automatically expanded on GET /policies/authenticationMethodsPolicy.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -371,4 +371,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-v1.0)
+[Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyAuthenticationMethodPolicyAuthenticationMethodConfiguration?view=graph-powershell-1.0)

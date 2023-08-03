@@ -13,7 +13,7 @@ Invitation adds an external user to the organization.
 When creating a new invitation you have several options available:
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -22,8 +22,8 @@ When creating a new invitation you have several options available:
 New-MgBetaInvitation [-AdditionalProperties <Hashtable>] [-Id <String>] [-InviteRedeemUrl <String>]
  [-InviteRedirectUrl <String>] [-InvitedUser <IMicrosoftGraphUser>] [-InvitedUserDisplayName <String>]
  [-InvitedUserEmailAddress <String>] [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>]
- [-InvitedUserType <String>] [-ResetRedemption] [-SendInvitationMessage] [-Status <String>] [-WhatIf]
- [-Confirm] [<CommonParameters>]
+ [-InvitedUserSponsors <IMicrosoftGraphDirectoryObject[]>] [-InvitedUserType <String>] [-ResetRedemption]
+ [-SendInvitationMessage] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Create
@@ -157,6 +157,23 @@ To construct, see NOTES section for INVITEDUSERMESSAGEINFO properties and create
 
 ```yaml
 Type: IMicrosoftGraphInvitedUserMessageInfo
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InvitedUserSponsors
+The users or groups who are sponsors of the invited user.
+Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
+To construct, see NOTES section for INVITEDUSERSPONSORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: CreateExpanded
 Aliases:
 
@@ -9643,7 +9660,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-v1.0)
+[New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-v1.0)
+[New-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/New-MgInvitation?view=graph-powershell-1.0)

@@ -12,7 +12,7 @@ The collection of open extensions defined for the contact.
 Nullable.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactExtension?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -280,5 +280,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactExtension?view=graph-powershell-v1.0)
+[Get-MgUserContactFolderContactExtension](/powershell/module/Microsoft.Graph.PersonalContacts/Get-MgUserContactFolderContactExtension?view=graph-powershell-1.0)
 

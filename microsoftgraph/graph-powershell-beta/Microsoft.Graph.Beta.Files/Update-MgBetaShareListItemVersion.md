@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property versions in shares
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemVersion?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -358,5 +358,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VersionId <String>]`: The unique identifier for the version that is visible to the current caller. Read-only.
 
 ## RELATED LINKS
-[Update-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemVersion?view=graph-powershell-v1.0)
+[Update-MgShareListItemVersion](/powershell/module/Microsoft.Graph.Files/Update-MgShareListItemVersion?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the metadata for the location where the files of a channel are stored.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -169,4 +169,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-v1.0)
+[Get-MgGroupTeamChannelFileFolder](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamChannelFileFolder?view=graph-powershell-1.0)

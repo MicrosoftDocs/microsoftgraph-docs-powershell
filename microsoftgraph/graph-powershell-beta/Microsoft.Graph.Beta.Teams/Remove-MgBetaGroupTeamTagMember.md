@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete a member from a standard tag in a team.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTagMember?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTagMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -213,5 +213,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTagMember?view=graph-powershell-v1.0)
+[Remove-MgGroupTeamTagMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamTagMember?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgEducationClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassCount?view=graph-powershell-v1.0)
+[Get-MgEducationClassCount](/powershell/module/Microsoft.Graph.Education/Get-MgEducationClassCount?view=graph-powershell-1.0)
 

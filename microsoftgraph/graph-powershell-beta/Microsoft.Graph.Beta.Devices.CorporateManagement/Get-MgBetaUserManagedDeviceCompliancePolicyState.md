@@ -11,7 +11,7 @@ schema: 2.0.0
 Device compliance policy states for this device.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -337,5 +337,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-v1.0)
+[Get-MgUserManagedDeviceCompliancePolicyState](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDeviceCompliancePolicyState?view=graph-powershell-1.0)
 

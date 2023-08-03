@@ -11,7 +11,7 @@ schema: 2.0.0
 The managed devices associated with the user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDevice?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -321,5 +321,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Get-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDevice?view=graph-powershell-v1.0)
+[Get-MgUserManagedDevice](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgUserManagedDevice?view=graph-powershell-1.0)
 

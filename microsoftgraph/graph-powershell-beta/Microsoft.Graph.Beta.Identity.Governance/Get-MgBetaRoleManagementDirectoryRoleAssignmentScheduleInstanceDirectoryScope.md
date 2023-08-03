@@ -12,7 +12,7 @@ The directory object that is the scope of the assignment or role eligibility.
 Read-only.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -214,5 +214,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-v1.0)
+[Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementDirectoryRoleAssignmentScheduleInstanceDirectoryScope?view=graph-powershell-1.0)
 

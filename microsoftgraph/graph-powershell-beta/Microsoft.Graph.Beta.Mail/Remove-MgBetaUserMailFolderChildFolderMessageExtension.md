@@ -12,7 +12,7 @@ Delete an open extension (openTypeExtension object) from the specified instance 
 See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -218,5 +218,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-v1.0)
+[Remove-MgUserMailFolderChildFolderMessageExtension](/powershell/module/Microsoft.Graph.Mail/Remove-MgUserMailFolderChildFolderMessageExtension?view=graph-powershell-1.0)
 

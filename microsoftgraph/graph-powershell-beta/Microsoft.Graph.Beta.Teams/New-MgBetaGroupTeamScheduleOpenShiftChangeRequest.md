@@ -11,7 +11,7 @@ schema: 2.0.0
 Create instance of an openShiftChangeRequest object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -360,5 +360,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-v1.0)
+[New-MgGroupTeamScheduleOpenShiftChangeRequest](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleOpenShiftChangeRequest?view=graph-powershell-1.0)
 

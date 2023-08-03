@@ -12,7 +12,7 @@ Used to address any item contained in this site.
 This collection cannot be enumerated.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -321,5 +321,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-v1.0)
+[Get-MgGroupSiteItem](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteItem?view=graph-powershell-1.0)
 

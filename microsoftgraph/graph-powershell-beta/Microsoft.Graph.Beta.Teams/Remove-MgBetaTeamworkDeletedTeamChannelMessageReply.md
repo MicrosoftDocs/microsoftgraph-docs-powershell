@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property replies for teamwork
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -229,5 +229,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-v1.0)
+[Remove-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Remove-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 

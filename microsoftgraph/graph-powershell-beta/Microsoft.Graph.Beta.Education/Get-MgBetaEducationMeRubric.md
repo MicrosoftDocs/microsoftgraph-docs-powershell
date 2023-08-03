@@ -12,7 +12,7 @@ Retrieve the properties and relationships of an educationRubric object.
 Only teachers and students can perform this operation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -270,4 +270,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-v1.0)
+[Get-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeRubric?view=graph-powershell-1.0)

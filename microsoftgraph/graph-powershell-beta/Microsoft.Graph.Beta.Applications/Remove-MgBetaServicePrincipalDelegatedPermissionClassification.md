@@ -11,7 +11,7 @@ schema: 2.0.0
 Deletes a delegatedPermissionClassification which had previously been set for a delegated permission.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -202,4 +202,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-v1.0)
+[Remove-MgServicePrincipalDelegatedPermissionClassification](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalDelegatedPermissionClassification?view=graph-powershell-1.0)

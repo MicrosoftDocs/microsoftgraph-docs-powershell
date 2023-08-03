@@ -12,7 +12,7 @@ Delete a conversationMember from a channel.
 This operation is allowed only for channels with a **membershipType** value of `private` or `shared`.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -200,5 +200,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Remove-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-v1.0)
+[Remove-MgGroupTeamPrimaryChannelMember](/powershell/module/Microsoft.Graph.Teams/Remove-MgGroupTeamPrimaryChannelMember?view=graph-powershell-1.0)
 

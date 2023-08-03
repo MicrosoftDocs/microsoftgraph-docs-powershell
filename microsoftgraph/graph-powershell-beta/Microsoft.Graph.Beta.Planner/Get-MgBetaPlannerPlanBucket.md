@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a list of plannerBucket objects contained by a plannerPlan object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -214,4 +214,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-v1.0)
+[Get-MgPlannerPlanBucket](/powershell/module/Microsoft.Graph.Planner/Get-MgPlannerPlanBucket?view=graph-powershell-1.0)

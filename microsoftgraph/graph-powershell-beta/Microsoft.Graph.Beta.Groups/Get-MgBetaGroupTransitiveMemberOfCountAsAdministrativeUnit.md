@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -170,5 +170,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-v1.0)
+[Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit](/powershell/module/Microsoft.Graph.Groups/Get-MgGroupTransitiveMemberOfCountAsAdministrativeUnit?view=graph-powershell-1.0)
 

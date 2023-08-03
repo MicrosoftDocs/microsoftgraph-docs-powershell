@@ -11,7 +11,7 @@ schema: 2.0.0
 The list of previous versions of the list item.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -347,4 +347,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-v1.0)
+[Get-MgSiteListItemVersion](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteListItemVersion?view=graph-powershell-1.0)

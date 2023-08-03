@@ -12,7 +12,7 @@ The policy that's associated with a policy assignment.
 Supports $expand and a nested $expand of the rules and effectiveRules relationships for the policy.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -190,5 +190,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-v1.0)
+[Get-MgPolicyRoleManagementPolicyAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyAssignmentPolicy?view=graph-powershell-1.0)
 

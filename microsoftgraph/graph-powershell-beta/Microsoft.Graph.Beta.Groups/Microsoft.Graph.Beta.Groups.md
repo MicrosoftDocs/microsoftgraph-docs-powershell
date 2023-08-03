@@ -1090,6 +1090,12 @@ Delete navigation property mentions for groups
 ### [Remove-MgBetaGroupConversationThreadPostMention](Remove-MgBetaGroupConversationThreadPostMention.md)
 Delete navigation property mentions for groups
 
+### [Remove-MgBetaGroupDriveItemPermanent](Remove-MgBetaGroupDriveItemPermanent.md)
+Invoke action permanentDelete
+
+### [Remove-MgBetaGroupDriveRootPermanent](Remove-MgBetaGroupDriveRootPermanent.md)
+Invoke action permanentDelete
+
 ### [Remove-MgBetaGroupEndpoint](Remove-MgBetaGroupEndpoint.md)
 Delete navigation property endpoints for groups
 

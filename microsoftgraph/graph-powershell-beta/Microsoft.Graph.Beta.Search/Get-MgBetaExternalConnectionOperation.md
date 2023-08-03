@@ -11,7 +11,7 @@ schema: 2.0.0
 Get operations from external
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -288,4 +288,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[YearTimePeriodDefinitionId <String>]`: The unique identifier of yearTimePeriodDefinition
 
 ## RELATED LINKS
-[Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-v1.0)
+[Get-MgExternalConnectionOperation](/powershell/module/Microsoft.Graph.Search/Get-MgExternalConnectionOperation?view=graph-powershell-1.0)

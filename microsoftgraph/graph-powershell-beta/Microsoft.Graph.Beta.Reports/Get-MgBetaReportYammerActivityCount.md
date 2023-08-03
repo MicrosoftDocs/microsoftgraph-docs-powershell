@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function getYammerActivityCounts
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerActivityCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportYammerActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerActivityCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -141,5 +141,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportYammerActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerActivityCount?view=graph-powershell-v1.0)
+[Get-MgReportYammerActivityCount](/powershell/module/Microsoft.Graph.Reports/Get-MgReportYammerActivityCount?view=graph-powershell-1.0)
 

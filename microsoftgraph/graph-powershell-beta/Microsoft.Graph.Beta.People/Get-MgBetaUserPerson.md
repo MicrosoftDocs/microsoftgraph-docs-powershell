@@ -14,7 +14,7 @@ The collection is ordered by their relevance to the user, which is determined by
 A person is an aggregation of information from across mail, contacts and social networks.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -278,4 +278,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkPositionId <String>]`: The unique identifier of workPosition
 
 ## RELATED LINKS
-[Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-v1.0)
+[Get-MgUserPerson](/powershell/module/Microsoft.Graph.People/Get-MgUserPerson?view=graph-powershell-1.0)

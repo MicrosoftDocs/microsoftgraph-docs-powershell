@@ -11,7 +11,7 @@ schema: 2.0.0
 Get the number of the resource
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenCount?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenCount?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -69,5 +69,5 @@ ALIASES
 Get-MgBetaDeviceAppMgtVppTokenCount
 
 ## RELATED LINKS
-[Get-MgDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenCount?view=graph-powershell-v1.0)
+[Get-MgDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Get-MgDeviceAppManagementVppTokenCount?view=graph-powershell-1.0)
 

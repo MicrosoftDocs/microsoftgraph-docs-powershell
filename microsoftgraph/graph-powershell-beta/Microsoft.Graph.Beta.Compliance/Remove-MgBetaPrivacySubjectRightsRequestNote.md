@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property notes for privacy
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -177,5 +177,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserSourceId <String>]`: The unique identifier of userSource
 
 ## RELATED LINKS
-[Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-v1.0)
+[Remove-MgPrivacySubjectRightsRequestNote](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequestNote?view=graph-powershell-1.0)
 

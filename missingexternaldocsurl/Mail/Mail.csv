@@ -320,3 +320,4 @@ v1.0, Get-MgUserMessageExtensionCount, /users/{user-id}/messages/{message-id}/ex
 v1.0, Set-MgUserMailFolderChildFolderMessageContent, /users/{user-id}/mailFolders/{mailFolder-id}/childFolders/{mailFolder-id1}/messages/{message-id}/$value
 v1.0, Set-MgUserMailFolderMessageContent, /users/{user-id}/mailFolders/{mailFolder-id}/messages/{message-id}/$value
 v1.0, Set-MgUserMessageContent, /users/{user-id}/messages/{message-id}/$value
+v1.0, Get-MgUserInferenceClassificationOverride, /users/{user-id}/inferenceClassification/overrides/{inferenceClassificationOverride-id}

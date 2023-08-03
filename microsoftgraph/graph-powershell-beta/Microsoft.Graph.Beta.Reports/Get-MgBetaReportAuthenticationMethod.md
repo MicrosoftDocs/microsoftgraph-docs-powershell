@@ -11,7 +11,7 @@ schema: 2.0.0
 Container for navigation properties for Azure AD authentication methods resources.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-v1.0)
+[Get-MgReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethod?view=graph-powershell-1.0)
 

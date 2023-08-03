@@ -11,7 +11,7 @@ schema: 2.0.0
 Undo soft deletion of a single chatMessage or a chat message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -209,4 +209,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-v1.0)
+[Undo-MgUserChatMessageSoftDelete](/powershell/module/Microsoft.Graph.Users.Actions/Undo-MgUserChatMessageSoftDelete?view=graph-powershell-1.0)

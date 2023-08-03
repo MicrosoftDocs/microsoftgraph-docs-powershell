@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove an educationUser from an educationClass.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -188,5 +188,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-v1.0)
+[Remove-MgEducationClassMemberByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassMemberByRef?view=graph-powershell-1.0)
 

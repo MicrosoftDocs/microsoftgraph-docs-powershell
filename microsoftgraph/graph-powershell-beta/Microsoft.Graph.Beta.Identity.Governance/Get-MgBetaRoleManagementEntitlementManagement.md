@@ -11,7 +11,7 @@ schema: 2.0.0
 The RbacApplication for Entitlement Management
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -68,5 +68,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-v1.0)
+[Get-MgRoleManagementEntitlementManagement](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgRoleManagementEntitlementManagement?view=graph-powershell-1.0)
 

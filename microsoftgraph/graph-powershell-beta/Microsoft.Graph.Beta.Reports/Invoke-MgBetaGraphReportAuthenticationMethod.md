@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function usersRegisteredByFeature
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Invoke-MgGraphReportAuthenticationMethod?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Invoke-MgGraphReportAuthenticationMethod?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -143,5 +143,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Invoke-MgGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Invoke-MgGraphReportAuthenticationMethod?view=graph-powershell-v1.0)
+[Invoke-MgGraphReportAuthenticationMethod](/powershell/module/Microsoft.Graph.Reports/Invoke-MgGraphReportAuthenticationMethod?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Default synchronization schema for the jobs based on this template.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -158,5 +158,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-v1.0)
+[Get-MgServicePrincipalSynchronizationTemplateSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgServicePrincipalSynchronizationTemplateSchema?view=graph-powershell-1.0)
 

@@ -12,7 +12,7 @@ Replace an existing timeOff.
 If the specified timeOff doesn't exist, this method returns `404 Not found`.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -383,5 +383,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeOffReasonId <String>]`: ID of the timeOffReason for this timeOffItem. Required.
 
 ## RELATED LINKS
-[Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-v1.0)
+[Update-MgTeamScheduleTimeOff](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleTimeOff?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 The localized version of the terms of use agreement files attached to the agreement.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -353,5 +353,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-v1.0)
+[Get-MgAgreementFileLocalization](/powershell/module/Microsoft.Graph.Identity.Governance/Get-MgAgreementFileLocalization?view=graph-powershell-1.0)
 

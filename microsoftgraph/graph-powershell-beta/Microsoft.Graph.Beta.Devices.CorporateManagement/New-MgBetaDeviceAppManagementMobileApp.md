@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to mobileApps for deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileApp?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -553,5 +553,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[TargetType <MobileAppRelationshipType?>]`: Indicates whether the target of a relationship is the parent or the child in the relationship.
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileApp?view=graph-powershell-v1.0)
+[New-MgDeviceAppManagementMobileApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMobileApp?view=graph-powershell-1.0)
 

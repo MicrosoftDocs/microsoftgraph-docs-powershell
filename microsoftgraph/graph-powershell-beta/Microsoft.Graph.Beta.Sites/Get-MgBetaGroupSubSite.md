@@ -11,7 +11,7 @@ schema: 2.0.0
 The collection of the sub-sites under this site.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSubSite?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSubSite?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -319,5 +319,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSubSite?view=graph-powershell-v1.0)
+[Get-MgGroupSubSite](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSubSite?view=graph-powershell-1.0)
 

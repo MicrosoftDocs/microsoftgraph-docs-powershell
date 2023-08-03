@@ -13,7 +13,7 @@ Recommendations are generated if **recommendationsEnabled** is `true` on the acc
 If there is not a recommendation on an accessReviewInstanceDecisionItem object no decision will be recorded.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -259,4 +259,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-v1.0)
+[Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgAcceptIdentityGovernanceAccessReviewDefinitionInstanceRecommendation?view=graph-powershell-1.0)

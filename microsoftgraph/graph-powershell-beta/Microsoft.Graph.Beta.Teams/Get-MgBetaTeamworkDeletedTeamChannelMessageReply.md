@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve a single message or a message reply in a channel or a chat.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -327,5 +327,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-v1.0)
+[Get-MgTeamworkDeletedTeamChannelMessageReply](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamworkDeletedTeamChannelMessageReply?view=graph-powershell-1.0)
 

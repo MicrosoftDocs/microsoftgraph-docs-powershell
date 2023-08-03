@@ -147,3 +147,8 @@ beta, Get-MgBetaUserDeviceTransitiveMemberOfCountAsGroup, /users/{user-id}/devic
 beta, Get-MgBetaUserDeviceUsageRightsCount, /users/{user-id}/devices/{device-id}/usageRights/$count
 v1.0, Get-MgUserActivityCount, /users/{user-id}/activities/$count
 v1.0, Get-MgUserActivityHistoryItemCount, /users/{user-id}/activities/{userActivity-id}/historyItems/$count
+beta, Get-MgBetaUserActivityCount, /users/{user-id}/activities/$count
+beta, Get-MgBetaUserActivityHistoryItemCount, /users/{user-id}/activities/{userActivity-id}/historyItems/$count
+beta, Get-MgBetaUserDeviceCommandCount, /users/{user-id}/devices/{device-id}/commands/$count
+beta, Get-MgBetaUserDeviceCount, /users/{user-id}/devices/$count
+beta, Get-MgBetaUserDeviceExtensionCount, /users/{user-id}/devices/{device-id}/extensions/$count

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property agreementAcceptances in identityGovernance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -558,8 +558,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-v1.0)
+[Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-v1.0)
+[Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance](/powershell/module/Microsoft.Graph.Identity.Governance/Update-MgIdentityGovernanceTermsOfUseAgreementAcceptance?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Children of current term.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -334,5 +334,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-v1.0)
+[Get-MgSiteTermStoreSetTermChild](/powershell/module/Microsoft.Graph.Sites/Get-MgSiteTermStoreSetTermChild?view=graph-powershell-1.0)
 

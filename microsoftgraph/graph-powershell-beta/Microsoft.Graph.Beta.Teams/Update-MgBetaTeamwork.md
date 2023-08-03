@@ -11,7 +11,7 @@ schema: 2.0.0
 Update teamwork
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -14642,8 +14642,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Url <String>]`: Workforce Integration URL for callbacks from the Shifts service.
 
 ## RELATED LINKS
-[Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-v1.0)
+[Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-v1.0)
+[Update-MgTeamwork](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamwork?view=graph-powershell-1.0)
 

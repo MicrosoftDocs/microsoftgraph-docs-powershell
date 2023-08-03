@@ -14,7 +14,7 @@ See known limitations of open extensions for more information.
 The table in the Permissions section lists the resources that support open extensions.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -306,4 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-v1.0)
+[New-MgUserCalendarEvent](/powershell/module/Microsoft.Graph.Calendar/New-MgUserCalendarEvent?view=graph-powershell-1.0)

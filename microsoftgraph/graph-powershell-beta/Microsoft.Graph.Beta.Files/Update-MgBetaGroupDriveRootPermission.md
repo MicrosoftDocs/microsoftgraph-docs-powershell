@@ -12,7 +12,7 @@ Update the properties of a sharing permission by patching the permission resourc
 Only the **roles** property can be modified this way.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -581,8 +581,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A URL that opens the item in the browser on the OneDrive website.
 
 ## RELATED LINKS
-[Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
+[Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-v1.0)
+[Update-MgGroupDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveRootPermission?view=graph-powershell-1.0)
 

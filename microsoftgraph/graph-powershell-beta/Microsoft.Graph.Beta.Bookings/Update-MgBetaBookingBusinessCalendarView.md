@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property calendarView in bookingBusinesses
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -902,8 +902,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[TimeZone <String>]`: Represents a time zone, for example, 'Pacific Standard Time'. See below for possible values.
 
 ## RELATED LINKS
-[Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+[Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+[Update-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Update-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 

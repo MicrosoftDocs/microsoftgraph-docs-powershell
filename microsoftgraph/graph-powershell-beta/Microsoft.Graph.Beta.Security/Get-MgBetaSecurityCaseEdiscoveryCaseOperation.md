@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a caseOperation object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -340,4 +340,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-v1.0)
+[Get-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)

@@ -12,7 +12,7 @@ Add a user or a group to the connected organization's external sponsors.
 The external sponsors are a set of users who can approve requests on behalf of other users from that connected organization.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -311,4 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-v1.0)
+[New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementConnectedOrganizationExternalSponsorByRef?view=graph-powershell-1.0)

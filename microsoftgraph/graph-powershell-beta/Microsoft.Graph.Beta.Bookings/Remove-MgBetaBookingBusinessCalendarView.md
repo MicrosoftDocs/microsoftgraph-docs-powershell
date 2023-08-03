@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property calendarView for bookingBusinesses
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -180,5 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Remove-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+[Remove-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Remove-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 

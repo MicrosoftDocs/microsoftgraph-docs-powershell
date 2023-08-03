@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to appConsentRequests for identityGovernance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -288,5 +288,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Reason <String>]`: The user's justification for requiring access to the app. Supports $filter (eq only) and $orderby.
 
 ## RELATED LINKS
-[New-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-v1.0)
+[New-MgIdentityGovernanceAppConsentRequest](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceAppConsentRequest?view=graph-powershell-1.0)
 

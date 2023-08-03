@@ -11,7 +11,7 @@ schema: 2.0.0
 Assigns user to Autopilot devices.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -266,5 +266,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-v1.0)
+[Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Set-MgDeviceManagementWindowsAutopilotDeviceIdentityUserToDevice?view=graph-powershell-1.0)
 

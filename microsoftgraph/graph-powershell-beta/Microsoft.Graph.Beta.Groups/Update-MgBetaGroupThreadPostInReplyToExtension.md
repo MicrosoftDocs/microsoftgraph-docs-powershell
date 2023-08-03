@@ -12,7 +12,7 @@ Update an open extension (openTypeExtension object) with the properties in the r
 See the table in the Permissions section for the list of resources that support open extensions.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostInReplyToExtension?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostInReplyToExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -262,5 +262,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Update-MgGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostInReplyToExtension?view=graph-powershell-v1.0)
+[Update-MgGroupThreadPostInReplyToExtension](/powershell/module/Microsoft.Graph.Groups/Update-MgGroupThreadPostInReplyToExtension?view=graph-powershell-1.0)
 

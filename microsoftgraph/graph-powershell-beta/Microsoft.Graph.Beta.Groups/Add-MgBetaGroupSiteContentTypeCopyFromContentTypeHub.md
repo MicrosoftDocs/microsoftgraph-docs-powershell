@@ -14,7 +14,7 @@ The method allows users to pull content types directly from the content type hub
 For more information, see getCompatibleHubContentTypes and the blog post Syntex Product Updates - August 2021.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -273,4 +273,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-v1.0)
+[Add-MgGroupSiteContentTypeCopyFromContentTypeHub](/powershell/module/Microsoft.Graph.Groups/Add-MgGroupSiteContentTypeCopyFromContentTypeHub?view=graph-powershell-1.0)

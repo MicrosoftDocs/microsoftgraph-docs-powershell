@@ -12,7 +12,7 @@ Get the properties of an education assignment resource associated with an assign
 Only teachers, students, and applications with application permissions can perform this operation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResource?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResource?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -290,4 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Get-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResource?view=graph-powershell-v1.0)
+[Get-MgEducationUserAssignmentResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentResource?view=graph-powershell-1.0)

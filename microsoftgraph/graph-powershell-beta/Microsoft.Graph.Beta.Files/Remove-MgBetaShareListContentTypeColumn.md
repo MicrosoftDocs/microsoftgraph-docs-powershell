@@ -11,7 +11,7 @@ schema: 2.0.0
 Remove a [column][columndefinition] from a [site][], [list][] or [content type][contentType].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -199,5 +199,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-v1.0)
+[Remove-MgShareListContentTypeColumn](/powershell/module/Microsoft.Graph.Files/Remove-MgShareListContentTypeColumn?view=graph-powershell-1.0)
 

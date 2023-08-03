@@ -16,7 +16,7 @@ This method saves the message in the **Sent Items** folder.
 Alternatively, create a draft to reply-all to a message, and send it later.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -459,7 +459,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-v1.0)
+[Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-v1.0)
+[Invoke-MgReplyAllUserMessage](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgReplyAllUserMessage?view=graph-powershell-1.0)

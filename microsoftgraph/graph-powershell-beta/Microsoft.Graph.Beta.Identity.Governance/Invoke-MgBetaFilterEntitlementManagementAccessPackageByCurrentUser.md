@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function filterByCurrentUser
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -287,5 +287,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-v1.0)
+[Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser](/powershell/module/Microsoft.Graph.Identity.Governance/Invoke-MgFilterEntitlementManagementAccessPackageByCurrentUser?view=graph-powershell-1.0)
 

@@ -16,7 +16,7 @@ Send the draft message in a subsequent operation.
 Alternatively, reply to a message in a single operation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -451,7 +451,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebLink <String>]`: 
 
 ## RELATED LINKS
-[New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-v1.0)
+[New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-v1.0)
+[New-MgUserMessageReply](/powershell/module/Microsoft.Graph.Users.Actions/New-MgUserMessageReply?view=graph-powershell-1.0)

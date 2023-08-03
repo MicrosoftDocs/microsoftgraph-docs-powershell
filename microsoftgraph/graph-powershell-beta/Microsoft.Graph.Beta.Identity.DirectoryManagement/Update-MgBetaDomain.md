@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of domain object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -629,7 +629,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Ttl <Int32?>]`: Value to use when configuring the time-to-live (ttl) property of the DNS record at the DNS host. Not nullable.
 
 ## RELATED LINKS
-[Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-v1.0)
+[Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-v1.0)
+[Update-MgDomain](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Update-MgDomain?view=graph-powershell-1.0)

@@ -136,6 +136,9 @@ Supports $expand.
 ### [Get-MgBetaUserMemberOfAsAdministrativeUnit](Get-MgBetaUserMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgBetaUserMemberOfAsDirectoryRole](Get-MgBetaUserMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgBetaUserMemberOfAsGroup](Get-MgBetaUserMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
@@ -143,6 +146,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 Get the number of the resource
 
 ### [Get-MgBetaUserMemberOfCountAsAdministrativeUnit](Get-MgBetaUserMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaUserMemberOfCountAsDirectoryRole](Get-MgBetaUserMemberOfCountAsDirectoryRole.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserMemberOfCountAsGroup](Get-MgBetaUserMemberOfCountAsGroup.md)
@@ -397,6 +403,9 @@ Nullable.
 ### [Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit](Get-MgBetaUserTransitiveMemberOfAsAdministrativeUnit.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.administrativeUnit
 
+### [Get-MgBetaUserTransitiveMemberOfAsDirectoryRole](Get-MgBetaUserTransitiveMemberOfAsDirectoryRole.md)
+Get the item of type microsoft.graph.directoryObject as microsoft.graph.directoryRole
+
 ### [Get-MgBetaUserTransitiveMemberOfAsGroup](Get-MgBetaUserTransitiveMemberOfAsGroup.md)
 Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 
@@ -404,6 +413,9 @@ Get the item of type microsoft.graph.directoryObject as microsoft.graph.group
 Get the number of the resource
 
 ### [Get-MgBetaUserTransitiveMemberOfCountAsAdministrativeUnit](Get-MgBetaUserTransitiveMemberOfCountAsAdministrativeUnit.md)
+Get the number of the resource
+
+### [Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole](Get-MgBetaUserTransitiveMemberOfCountAsDirectoryRole.md)
 Get the number of the resource
 
 ### [Get-MgBetaUserTransitiveMemberOfCountAsGroup](Get-MgBetaUserTransitiveMemberOfCountAsGroup.md)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property activities in external
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -290,5 +290,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Type <String>]`: identityType
 
 ## RELATED LINKS
-[Update-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionItemActivity?view=graph-powershell-v1.0)
+[Update-MgExternalConnectionItemActivity](/powershell/module/Microsoft.Graph.Search/Update-MgExternalConnectionItemActivity?view=graph-powershell-1.0)
 

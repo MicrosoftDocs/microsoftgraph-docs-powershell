@@ -12,7 +12,7 @@ Send an activity feed notification to a user.
 For more details about sending notifications and the requirements for doing so, see sending Teams activity notifications.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -405,4 +405,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: The link the user clicks when they select the notification. Optional when source is entityUrl; required when source is text.
 
 ## RELATED LINKS
-[Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-v1.0)
+[Send-MgUserTeamworkActivityNotification](/powershell/module/Microsoft.Graph.Users.Actions/Send-MgUserTeamworkActivityNotification?view=graph-powershell-1.0)

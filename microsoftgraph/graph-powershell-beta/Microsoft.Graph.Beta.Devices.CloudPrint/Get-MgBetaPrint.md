@@ -11,7 +11,7 @@ schema: 2.0.0
 Get print
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrint?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrint?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -67,5 +67,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrint?view=graph-powershell-v1.0)
+[Get-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Get-MgPrint?view=graph-powershell-1.0)
 

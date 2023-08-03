@@ -12,7 +12,7 @@ Delete an educationRubric object.
 Only teachers can perform this operation.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeRubric?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeRubric?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -173,4 +173,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeRubric?view=graph-powershell-v1.0)
+[Remove-MgEducationMeRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationMeRubric?view=graph-powershell-1.0)

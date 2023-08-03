@@ -11,7 +11,7 @@ schema: 2.0.0
 Analytics about the view activities that took place in this site.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalytic?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalytic?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -176,5 +176,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalytic?view=graph-powershell-v1.0)
+[Get-MgGroupSiteAnalytic](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteAnalytic?view=graph-powershell-1.0)
 

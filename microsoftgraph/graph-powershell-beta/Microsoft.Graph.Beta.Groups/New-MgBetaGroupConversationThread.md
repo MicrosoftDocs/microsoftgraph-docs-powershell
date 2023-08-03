@@ -15,7 +15,7 @@ Or, if you get the post ID, you can also reply to that post in that thread.
 Note: You can also start a new conversation by first creating a thread.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -539,7 +539,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Name <String>]`: The display name of an entity instance.
 
 ## RELATED LINKS
-[New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)
+[New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-v1.0)
+[New-MgGroupConversationThread](/powershell/module/Microsoft.Graph.Groups/New-MgGroupConversationThread?view=graph-powershell-1.0)

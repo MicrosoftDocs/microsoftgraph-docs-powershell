@@ -11,27 +11,27 @@ schema: 2.0.0
 The collection of child folders in the mailFolder.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
 ### List (Default)
 ```
 Get-MgBetaUserMailFolderChildFolder -MailFolderId <String> -UserId <String> [-ExpandProperty <String[]>]
- [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>] [-Top <Int32>]
- [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
+ [-IncludeHiddenFolders <String>] [-Property <String[]>] [-Filter <String>] [-Skip <Int32>] [-Sort <String[]>]
+ [-Top <Int32>] [-PageSize <Int32>] [-All] [-CountVariable <String>] [<CommonParameters>]
 ```
 
 ### Get
 ```
 Get-MgBetaUserMailFolderChildFolder -MailFolderId <String> -MailFolderId1 <String> -UserId <String>
- [-ExpandProperty <String[]>] [-Property <String[]>] [<CommonParameters>]
+ [-ExpandProperty <String[]>] [-IncludeHiddenFolders <String>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ### GetViaIdentity
 ```
 Get-MgBetaUserMailFolderChildFolder -InputObject <IMailIdentity> [-ExpandProperty <String[]>]
- [-Property <String[]>] [<CommonParameters>]
+ [-IncludeHiddenFolders <String>] [-Property <String[]>] [<CommonParameters>]
 ```
 
 ## DESCRIPTION
@@ -109,6 +109,21 @@ Filter items by property values
 ```yaml
 Type: String
 Parameter Sets: List
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -IncludeHiddenFolders
+Include Hidden Folders
+
+```yaml
+Type: String
+Parameter Sets: (All)
 Aliases:
 
 Required: False
@@ -285,4 +300,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-v1.0)
+[Get-MgUserMailFolderChildFolder](/powershell/module/Microsoft.Graph.Mail/Get-MgUserMailFolderChildFolder?view=graph-powershell-1.0)

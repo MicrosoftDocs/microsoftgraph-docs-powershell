@@ -14,7 +14,7 @@ This feature requires an Azure AD Premium P1 or P2 license.
 The following RBAC providers are currently supported:\n- Cloud PC\n- device management (Intune)\n- directory (Azure AD)
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -247,5 +247,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-v1.0)
+[Remove-MgRoleManagementDirectoryRoleDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgRoleManagementDirectoryRoleDefinition?view=graph-powershell-1.0)
 

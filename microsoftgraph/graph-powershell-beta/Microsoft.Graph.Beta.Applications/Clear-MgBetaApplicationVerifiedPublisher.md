@@ -12,7 +12,7 @@ Unset the the verifiedPublisher previously set on an application, removing all v
 For more information, see Publisher verification.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -170,4 +170,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-v1.0)
+[Clear-MgApplicationVerifiedPublisher](/powershell/module/Microsoft.Graph.Applications/Clear-MgApplicationVerifiedPublisher?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Bypass activation lock
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Skip-MgDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Skip-MgDeviceManagementManagedDeviceActivationLock?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Skip-MgDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Skip-MgDeviceManagementManagedDeviceActivationLock?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -181,5 +181,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Skip-MgDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Skip-MgDeviceManagementManagedDeviceActivationLock?view=graph-powershell-v1.0)
+[Skip-MgDeviceManagementManagedDeviceActivationLock](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Skip-MgDeviceManagementManagedDeviceActivationLock?view=graph-powershell-1.0)
 

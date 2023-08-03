@@ -13,7 +13,7 @@ The table in the Permissions section lists the resources that support open exten
 The following table lists the three scenarios where you can get an open extension from a supported resource instance.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -290,4 +290,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-v1.0)
+[Get-MgGroupEventInstanceExtension](/powershell/module/Microsoft.Graph.Calendar/Get-MgGroupEventInstanceExtension?view=graph-powershell-1.0)

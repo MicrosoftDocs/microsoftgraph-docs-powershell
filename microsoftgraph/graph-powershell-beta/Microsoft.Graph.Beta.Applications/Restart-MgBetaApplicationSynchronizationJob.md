@@ -12,7 +12,7 @@ Restart a stopped synchronization job, forcing it to reprocess all the objects i
 Optionally clears existing the synchronization state and previous errors.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Restart-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Restart-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -250,5 +250,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Restart-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-v1.0)
+[Restart-MgApplicationSynchronizationJob](/powershell/module/Microsoft.Graph.Applications/Restart-MgApplicationSynchronizationJob?view=graph-powershell-1.0)
 

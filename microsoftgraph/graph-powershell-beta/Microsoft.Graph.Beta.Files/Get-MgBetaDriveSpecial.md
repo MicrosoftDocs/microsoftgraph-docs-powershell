@@ -15,7 +15,7 @@ Special folders are automatically created the first time an application attempts
 If a user deletes one, it is recreated when written to again.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -302,4 +302,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-v1.0)
+[Get-MgDriveSpecial](/powershell/module/Microsoft.Graph.Files/Get-MgDriveSpecial?view=graph-powershell-1.0)

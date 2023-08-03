@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property settings in users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -450,8 +450,8 @@ To create the parameters described below, construct a hash table containing the 
     - `[TimeZone <String>]`: Specifies the time zone for the indicated time.
 
 ## RELATED LINKS
-[Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-v1.0)
+[Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-v1.0)
+[Update-MgUserSetting](/powershell/module/Microsoft.Graph.Users/Update-MgUserSetting?view=graph-powershell-1.0)
 

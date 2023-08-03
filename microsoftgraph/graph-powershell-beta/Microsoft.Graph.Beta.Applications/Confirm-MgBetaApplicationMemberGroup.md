@@ -12,7 +12,7 @@ Unset the the verifiedPublisher previously set on an application, removing all v
 For more information, see Publisher verification.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -203,4 +203,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-v1.0)
+[Confirm-MgApplicationMemberGroup](/powershell/module/Microsoft.Graph.Applications/Confirm-MgApplicationMemberGroup?view=graph-powershell-1.0)

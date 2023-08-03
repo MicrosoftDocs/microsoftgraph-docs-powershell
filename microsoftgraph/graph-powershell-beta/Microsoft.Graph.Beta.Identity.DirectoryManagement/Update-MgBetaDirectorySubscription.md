@@ -15,9 +15,10 @@ Update the navigation property subscriptions in directory
 ### UpdateExpanded (Default)
 ```
 Update-MgBetaDirectorySubscription -CompanySubscriptionId <String> [-AdditionalProperties <Hashtable>]
- [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>]
- [-OcpSubscriptionId <String>] [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>]
- [-SkuPartNumber <String>] [-Status <String>] [-TotalLicenses <Int32>] [-WhatIf] [-Confirm]
+ [-CommerceSubscriptionId <String>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial]
+ [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>] [-OwnerId <String>]
+ [-OwnerTenantId <String>] [-OwnerType <String>] [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>]
+ [-SkuId <String>] [-SkuPartNumber <String>] [-Status <String>] [-TotalLicenses <Int32>] [-WhatIf] [-Confirm]
  [<CommonParameters>]
 ```
 
@@ -30,8 +31,9 @@ Update-MgBetaDirectorySubscription -CompanySubscriptionId <String>
 ### UpdateViaIdentityExpanded
 ```
 Update-MgBetaDirectorySubscription -InputObject <IIdentityDirectoryManagementIdentity>
- [-AdditionalProperties <Hashtable>] [-CreatedDateTime <DateTime>] [-Id <String>] [-IsTrial]
- [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>]
+ [-AdditionalProperties <Hashtable>] [-CommerceSubscriptionId <String>] [-CreatedDateTime <DateTime>]
+ [-Id <String>] [-IsTrial] [-NextLifecycleDateTime <DateTime>] [-OcpSubscriptionId <String>]
+ [-OwnerId <String>] [-OwnerTenantId <String>] [-OwnerType <String>]
  [-ServiceStatus <IMicrosoftGraphServicePlanInfo[]>] [-SkuId <String>] [-SkuPartNumber <String>]
  [-Status <String>] [-TotalLicenses <Int32>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
@@ -75,6 +77,22 @@ Required: True
 Position: Named
 Default value: None
 Accept pipeline input: True (ByValue)
+Accept wildcard characters: False
+```
+
+### -CommerceSubscriptionId
+The ID of this subscription in the commerce system.
+Alternate key.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
 Accept wildcard characters: False
 ```
 
@@ -176,6 +194,51 @@ Accept wildcard characters: False
 
 ### -OcpSubscriptionId
 .
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerId
+The object ID of the account admin.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerTenantId
+The unique identifier for the Microsoft partner tenant that created the subscription on a customer tenant.
+
+```yaml
+Type: String
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -OwnerType
+Indicates the entity that ownerId belongs to, for example, 'User'.
 
 ```yaml
 Type: String

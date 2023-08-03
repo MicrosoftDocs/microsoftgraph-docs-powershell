@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke function isPublished
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgShareListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgShareListContentTypePublished?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Test-MgShareListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgShareListContentTypePublished?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -122,5 +122,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgShareListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgShareListContentTypePublished?view=graph-powershell-v1.0)
+[Test-MgShareListContentTypePublished](/powershell/module/Microsoft.Graph.Files/Test-MgShareListContentTypePublished?view=graph-powershell-1.0)
 

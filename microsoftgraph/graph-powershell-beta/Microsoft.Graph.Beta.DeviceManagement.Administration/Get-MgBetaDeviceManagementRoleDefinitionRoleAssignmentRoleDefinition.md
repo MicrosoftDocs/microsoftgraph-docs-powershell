@@ -11,7 +11,7 @@ schema: 2.0.0
 Role definition this assignment is part of.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -186,5 +186,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
-[Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition?view=graph-powershell-v1.0)
+[Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementRoleDefinitionRoleAssignmentRoleDefinition?view=graph-powershell-1.0)
 

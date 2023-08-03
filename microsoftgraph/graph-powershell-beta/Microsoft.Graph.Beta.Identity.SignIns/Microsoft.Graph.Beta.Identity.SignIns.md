@@ -310,6 +310,13 @@ You can get or update settings for sending automatic replies to incoming message
 For more information, see User preferences for languages and regional formats.
 Returned only on $select.
 
+### [Get-MgBetaInvitationInvitedUserSponsor](Get-MgBetaInvitationInvitedUserSponsor.md)
+The users or groups who are sponsors of the invited user.
+Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
+
+### [Get-MgBetaInvitationInvitedUserSponsorCount](Get-MgBetaInvitationInvitedUserSponsorCount.md)
+Get the number of the resource
+
 ### [Get-MgBetaOauth2PermissionGrant](Get-MgBetaOauth2PermissionGrant.md)
 Retrieve the properties of a single delegated permission grant represented by an oAuth2PermissionGrant object.
 An **oAuth2PermissionGrant** represents delegated permissions which have been granted for a client application to access an API on behalf of a signed-in user.

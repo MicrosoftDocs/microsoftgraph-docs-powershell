@@ -11,7 +11,7 @@ schema: 2.0.0
 Update entity in invitations
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -20,8 +20,9 @@ Update entity in invitations
 Update-MgBetaInvitation -InvitationId <String> [-AdditionalProperties <Hashtable>] [-Id <String>]
  [-InviteRedeemUrl <String>] [-InviteRedirectUrl <String>] [-InvitedUser <IMicrosoftGraphUser>]
  [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
- [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>] [-InvitedUserType <String>]
- [-ResetRedemption] [-SendInvitationMessage] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>]
+ [-InvitedUserSponsors <IMicrosoftGraphDirectoryObject[]>] [-InvitedUserType <String>] [-ResetRedemption]
+ [-SendInvitationMessage] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### Update
@@ -35,8 +36,9 @@ Update-MgBetaInvitation -InvitationId <String> -BodyParameter <IMicrosoftGraphIn
 Update-MgBetaInvitation -InputObject <IIdentitySignInsIdentity> [-AdditionalProperties <Hashtable>]
  [-Id <String>] [-InviteRedeemUrl <String>] [-InviteRedirectUrl <String>] [-InvitedUser <IMicrosoftGraphUser>]
  [-InvitedUserDisplayName <String>] [-InvitedUserEmailAddress <String>]
- [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>] [-InvitedUserType <String>]
- [-ResetRedemption] [-SendInvitationMessage] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-InvitedUserMessageInfo <IMicrosoftGraphInvitedUserMessageInfo>]
+ [-InvitedUserSponsors <IMicrosoftGraphDirectoryObject[]>] [-InvitedUserType <String>] [-ResetRedemption]
+ [-SendInvitationMessage] [-Status <String>] [-WhatIf] [-Confirm] [<CommonParameters>]
 ```
 
 ### UpdateViaIdentity
@@ -182,6 +184,23 @@ To construct, see NOTES section for INVITEDUSERMESSAGEINFO properties and create
 
 ```yaml
 Type: IMicrosoftGraphInvitedUserMessageInfo
+Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -InvitedUserSponsors
+The users or groups who are sponsors of the invited user.
+Sponsors are users and groups that are responsible for guest users' privileges in the tenant and for keeping the guest users' information and access up to date.
+To construct, see NOTES section for INVITEDUSERSPONSORS properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphDirectoryObject[]
 Parameter Sets: UpdateExpanded, UpdateViaIdentityExpanded
 Aliases:
 
@@ -9745,8 +9764,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[DeletedDateTime <DateTime?>]`: Date and time when this object was deleted. Always null when the object hasn't been deleted.
 
 ## RELATED LINKS
-[Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-v1.0)
+[Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-v1.0)
+[Update-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Update-MgInvitation?view=graph-powershell-1.0)
 

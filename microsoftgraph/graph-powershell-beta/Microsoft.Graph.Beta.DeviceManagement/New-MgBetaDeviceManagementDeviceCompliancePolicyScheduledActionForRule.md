@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to scheduledActionsForRule for deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -369,8 +369,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[NotificationTemplateId <String>]`: What notification Message template to use
 
 ## RELATED LINKS
-[New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-v1.0)
+[New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-v1.0)
+[New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule](/powershell/module/Microsoft.Graph.DeviceManagement/New-MgDeviceManagementDeviceCompliancePolicyScheduledActionForRule?view=graph-powershell-1.0)
 

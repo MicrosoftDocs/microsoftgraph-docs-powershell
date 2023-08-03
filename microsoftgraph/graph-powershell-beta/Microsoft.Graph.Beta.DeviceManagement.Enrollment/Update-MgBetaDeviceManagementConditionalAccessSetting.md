@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property conditionalAccessSettings in deviceManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -200,5 +200,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[OverrideDefaultRule <Boolean?>]`: Override the default access rule when allowing a device to ensure access is granted.
 
 ## RELATED LINKS
-[Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-v1.0)
+[Update-MgDeviceManagementConditionalAccessSetting](/powershell/module/Microsoft.Graph.DeviceManagement.Enrollment/Update-MgDeviceManagementConditionalAccessSetting?view=graph-powershell-1.0)
 

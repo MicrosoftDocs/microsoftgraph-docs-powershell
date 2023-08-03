@@ -12,7 +12,7 @@ Replace an existing schedulingGroup.
 If the specified schedulingGroup doesn't exist, this method returns `404 Not found`.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -330,5 +330,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <IMicrosoftGraphIdentity>]`: identity
 
 ## RELATED LINKS
-[Update-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleSchedulingGroup?view=graph-powershell-v1.0)
+[Update-MgTeamScheduleSchedulingGroup](/powershell/module/Microsoft.Graph.Teams/Update-MgTeamScheduleSchedulingGroup?view=graph-powershell-1.0)
 

@@ -13,7 +13,7 @@ For example, if there is a tenant-wide policy to enforce enabling an approval ru
 Supports $expand.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -345,4 +345,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-v1.0)
+[Get-MgPolicyRoleManagementPolicyEffectiveRule](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyRoleManagementPolicyEffectiveRule?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties of a richLongRunningOperation object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -319,5 +319,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-v1.0)
+[Get-MgGroupSiteOperation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteOperation?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property threatIntelligence for security
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligence?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -99,5 +99,5 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Remove-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligence?view=graph-powershell-v1.0)
+[Remove-MgSecurityThreatIntelligence](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityThreatIntelligence?view=graph-powershell-1.0)
 

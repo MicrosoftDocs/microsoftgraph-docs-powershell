@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the properties of a set object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -612,7 +612,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+[Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-v1.0)
+[Update-MgSiteTermStoreSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreSet?view=graph-powershell-1.0)

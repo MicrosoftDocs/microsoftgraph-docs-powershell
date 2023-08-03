@@ -11,7 +11,7 @@ schema: 2.0.0
 Send a new chatMessage in the specified channel or a chat.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -911,7 +911,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: Read-only. Link to the message in Microsoft Teams.
 
 ## RELATED LINKS
-[New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-v1.0)
+[New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-v1.0)
+[New-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamChannelMessage?view=graph-powershell-1.0)

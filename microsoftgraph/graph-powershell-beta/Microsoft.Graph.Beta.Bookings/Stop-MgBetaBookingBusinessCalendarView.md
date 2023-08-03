@@ -11,7 +11,7 @@ schema: 2.0.0
 Cancel the specified bookingAppointment in the specified bookingBusiness, and send a message to the involved customer and staff members.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -231,5 +231,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
-[Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-v1.0)
+[Stop-MgBookingBusinessCalendarView](/powershell/module/Microsoft.Graph.Bookings/Stop-MgBookingBusinessCalendarView?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to presences for communications
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationPresence?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationPresence?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -232,5 +232,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[PublishedDateTime <DateTime?>]`: Time in which the status message was published.Read-only.publishedDateTime is not available when requesting presence of another user.
 
 ## RELATED LINKS
-[New-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationPresence?view=graph-powershell-v1.0)
+[New-MgCommunicationPresence](/powershell/module/Microsoft.Graph.CloudCommunications/New-MgCommunicationPresence?view=graph-powershell-1.0)
 

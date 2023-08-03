@@ -13,7 +13,7 @@ This is a server mute, meaning that the server will drop all audio packets for t
 For more details about how to handle mute operations, see muteParticipantOperation
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -214,4 +214,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-v1.0)
+[Invoke-MgMuteCommunicationCall](/powershell/module/Microsoft.Graph.CloudCommunications/Invoke-MgMuteCommunicationCall?view=graph-powershell-1.0)

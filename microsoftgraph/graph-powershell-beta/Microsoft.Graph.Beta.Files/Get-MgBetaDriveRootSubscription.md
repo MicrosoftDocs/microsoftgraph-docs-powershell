@@ -12,7 +12,7 @@ The set of subscriptions on the item.
 Only supported on the root of a drive.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootSubscription?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootSubscription?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -283,5 +283,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootSubscription?view=graph-powershell-v1.0)
+[Get-MgDriveRootSubscription](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootSubscription?view=graph-powershell-1.0)
 

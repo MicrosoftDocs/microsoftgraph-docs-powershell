@@ -11,7 +11,7 @@ schema: 2.0.0
 Get createdByUser from shares
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgShareListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUser?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgShareListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -138,5 +138,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgShareListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUser?view=graph-powershell-v1.0)
+[Get-MgShareListCreatedByUser](/powershell/module/Microsoft.Graph.Files/Get-MgShareListCreatedByUser?view=graph-powershell-1.0)
 

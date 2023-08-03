@@ -14,7 +14,7 @@ The list of events contains single instance meetings and series masters.
 To get expanded event instances, you can get the calendar view, or\nget the instances of an event.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -210,4 +210,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-v1.0)
+[Get-MgUserEventAttachment](/powershell/module/Microsoft.Graph.Calendar/Get-MgUserEventAttachment?view=graph-powershell-1.0)

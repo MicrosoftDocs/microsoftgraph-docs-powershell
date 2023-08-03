@@ -11,7 +11,7 @@ schema: 2.0.0
 In Azure AD entitlement management, create a new accessPackageAssignmentPolicy object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -15054,7 +15054,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Issuers <String[]>]`: List of the accepted issuers authority as identified by the Microsoft Entra Verified ID service, for example, did:ion:EiAlrenrtD3Lsw0GlbzS1O2YFdy3Xtu8yo35W/<SNIP/>....
 
 ## RELATED LINKS
-[New-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+[New-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-v1.0)
+[New-MgEntitlementManagementAccessPackageAssignmentPolicy](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgEntitlementManagementAccessPackageAssignmentPolicy?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Read the properties and relationships of a userRegistrationDetails object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -283,4 +283,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserRegistrationDetailsId <String>]`: The unique identifier of userRegistrationDetails
 
 ## RELATED LINKS
-[Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-v1.0)
+[Get-MgReportAuthenticationMethodUserRegistrationDetail](/powershell/module/Microsoft.Graph.Reports/Get-MgReportAuthenticationMethodUserRegistrationDetail?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Logout shared Apple device active user
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -181,5 +181,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ZebraFotaDeploymentId <String>]`: The unique identifier of zebraFotaDeployment
 
 ## RELATED LINKS
-[Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-v1.0)
+[Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser](/powershell/module/Microsoft.Graph.DeviceManagement.Actions/Invoke-MgLogoutDeviceManagementManagedDeviceSharedAppleDeviceActiveUser?view=graph-powershell-1.0)
 

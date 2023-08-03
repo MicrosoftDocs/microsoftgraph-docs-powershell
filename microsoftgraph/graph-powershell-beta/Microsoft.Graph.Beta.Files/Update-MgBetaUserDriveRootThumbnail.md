@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property thumbnails in users
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootThumbnail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootThumbnail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -343,5 +343,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[Update-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootThumbnail?view=graph-powershell-v1.0)
+[Update-MgUserDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveRootThumbnail?view=graph-powershell-1.0)
 

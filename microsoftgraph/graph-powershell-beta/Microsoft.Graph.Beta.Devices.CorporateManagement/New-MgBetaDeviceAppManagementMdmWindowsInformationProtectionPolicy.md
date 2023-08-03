@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to mdmWindowsInformationProtectionPolicies for deviceAppManagement
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -726,5 +726,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Resources <String[]>]`: Collection of resources
 
 ## RELATED LINKS
-[New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-v1.0)
+[New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/New-MgDeviceAppManagementMdmWindowsInformationProtectionPolicy?view=graph-powershell-1.0)
 

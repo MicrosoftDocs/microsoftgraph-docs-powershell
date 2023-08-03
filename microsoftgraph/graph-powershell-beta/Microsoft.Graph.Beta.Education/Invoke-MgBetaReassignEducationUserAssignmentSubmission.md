@@ -16,7 +16,7 @@ If the header `Prefer: include-unknown-enum-members` is provided, a reassigned s
 For details, see the examples section.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Invoke-MgReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Invoke-MgReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationUserAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -168,5 +168,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Invoke-MgReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationUserAssignmentSubmission?view=graph-powershell-v1.0)
+[Invoke-MgReassignEducationUserAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Invoke-MgReassignEducationUserAssignmentSubmission?view=graph-powershell-1.0)
 

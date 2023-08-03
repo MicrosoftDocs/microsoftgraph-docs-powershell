@@ -11,7 +11,7 @@ schema: 2.0.0
 Retrieve the properties and relationships of a directoryObject object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -272,4 +272,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[DirectoryObjectId <String>]`: The unique identifier of directoryObject
 
 ## RELATED LINKS
-[Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-v1.0)
+[Get-MgDirectoryObject](/powershell/module/Microsoft.Graph.DirectoryObjects/Get-MgDirectoryObject?view=graph-powershell-1.0)

@@ -11,7 +11,7 @@ schema: 2.0.0
 Update compliance
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -9802,8 +9802,8 @@ To create the parameters described below, construct a hash table containing the 
       - `[Parent <IMicrosoftGraphEdiscoveryTag>]`: tag
 
 ## RELATED LINKS
-[Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-v1.0)
+[Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-v1.0)
+[Update-MgCompliance](/powershell/module/Microsoft.Graph.Compliance/Update-MgCompliance?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action runHuntingQuery
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -133,5 +133,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Query <String>]`: 
 
 ## RELATED LINKS
-[Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-v1.0)
+[Start-MgSecurityHuntingQuery](/powershell/module/Microsoft.Graph.Security/Start-MgSecurityHuntingQuery?view=graph-powershell-1.0)
 

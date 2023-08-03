@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete navigation property submissions for education
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -188,5 +188,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmission?view=graph-powershell-v1.0)
+[Remove-MgEducationClassAssignmentSubmission](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentSubmission?view=graph-powershell-1.0)
 

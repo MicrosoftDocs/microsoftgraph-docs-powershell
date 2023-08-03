@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to thumbnails for groups
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootThumbnail?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootThumbnail?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -328,5 +328,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[Width <Int32?>]`: The width of the thumbnail, in pixels.
 
 ## RELATED LINKS
-[New-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootThumbnail?view=graph-powershell-v1.0)
+[New-MgGroupDriveRootThumbnail](/powershell/module/Microsoft.Graph.Files/New-MgGroupDriveRootThumbnail?view=graph-powershell-1.0)
 

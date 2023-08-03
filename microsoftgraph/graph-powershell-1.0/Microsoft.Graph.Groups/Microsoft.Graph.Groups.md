@@ -1000,6 +1000,12 @@ Delete navigation property attachments for groups
 ### [Remove-MgGroupConversationThreadPostInReplyToExtension](Remove-MgGroupConversationThreadPostInReplyToExtension.md)
 Delete navigation property extensions for groups
 
+### [Remove-MgGroupDriveItemPermanent](Remove-MgGroupDriveItemPermanent.md)
+Invoke action permanentDelete
+
+### [Remove-MgGroupDriveRootPermanent](Remove-MgGroupDriveRootPermanent.md)
+Invoke action permanentDelete
+
 ### [Remove-MgGroupExtension](Remove-MgGroupExtension.md)
 Delete navigation property extensions for groups
 

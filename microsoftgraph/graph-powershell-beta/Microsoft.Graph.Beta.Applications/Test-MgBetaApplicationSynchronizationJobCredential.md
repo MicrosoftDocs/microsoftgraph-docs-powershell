@@ -11,7 +11,7 @@ schema: 2.0.0
 Validate that the credentials are valid in the tenant.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -298,5 +298,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-v1.0)
+[Test-MgApplicationSynchronizationJobCredential](/powershell/module/Microsoft.Graph.Applications/Test-MgApplicationSynchronizationJobCredential?view=graph-powershell-1.0)
 

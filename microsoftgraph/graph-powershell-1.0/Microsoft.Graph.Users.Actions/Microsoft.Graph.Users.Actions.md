@@ -480,6 +480,12 @@ Publishes a [contentType][] present in the content type hub site.
 ### [Remove-MgUserDeviceFromManagement](Remove-MgUserDeviceFromManagement.md)
 Retire all devices from management for this user
 
+### [Remove-MgUserDriveItemPermanent](Remove-MgUserDriveItemPermanent.md)
+Invoke action permanentDelete
+
+### [Remove-MgUserDriveRootPermanent](Remove-MgUserDriveRootPermanent.md)
+Invoke action permanentDelete
+
 ### [Remove-MgUserManagedDeviceUserFromSharedAppleDevice](Remove-MgUserManagedDeviceUserFromSharedAppleDevice.md)
 Delete user from shared Apple device
 

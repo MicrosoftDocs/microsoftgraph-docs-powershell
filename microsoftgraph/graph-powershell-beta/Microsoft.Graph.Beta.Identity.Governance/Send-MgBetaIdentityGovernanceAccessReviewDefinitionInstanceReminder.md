@@ -11,7 +11,7 @@ schema: 2.0.0
 Send a reminder to the reviewers of a currently active accessReviewInstance.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -250,4 +250,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-v1.0)
+[Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder](/powershell/module/Microsoft.Graph.Identity.Governance/Send-MgIdentityGovernanceAccessReviewDefinitionInstanceReminder?view=graph-powershell-1.0)

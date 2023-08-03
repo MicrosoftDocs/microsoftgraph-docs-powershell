@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete an appRoleAssignment that has been granted to a user.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -200,4 +200,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-v1.0)
+[Remove-MgUserAppRoleAssignment](/powershell/module/Microsoft.Graph.Applications/Remove-MgUserAppRoleAssignment?view=graph-powershell-1.0)

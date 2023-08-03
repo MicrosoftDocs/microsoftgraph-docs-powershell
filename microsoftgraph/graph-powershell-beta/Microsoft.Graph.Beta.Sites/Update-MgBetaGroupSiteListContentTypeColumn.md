@@ -11,7 +11,7 @@ schema: 2.0.0
 Update a [site][], [list][] or [content type][contentType] [column][columnDefinition].
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -1192,8 +1192,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Formula <String>]`: The formula to validate column value. For examples, see Examples of common formulas in lists
 
 ## RELATED LINKS
-[Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-v1.0)
+[Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-v1.0)
+[Update-MgGroupSiteListContentTypeColumn](/powershell/module/Microsoft.Graph.Sites/Update-MgGroupSiteListContentTypeColumn?view=graph-powershell-1.0)
 

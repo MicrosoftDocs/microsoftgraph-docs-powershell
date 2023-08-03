@@ -15,7 +15,7 @@ Nullable.
 Supports $expand.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -246,4 +246,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
-[Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-v1.0)
+[Get-MgDirectoryRoleMember](/powershell/module/Microsoft.Graph.Identity.DirectoryManagement/Get-MgDirectoryRoleMember?view=graph-powershell-1.0)

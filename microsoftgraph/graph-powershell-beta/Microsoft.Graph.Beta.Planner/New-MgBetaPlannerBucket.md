@@ -11,7 +11,7 @@ schema: 2.0.0
 Create a new plannerBucket object.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -437,7 +437,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-v1.0)
+[New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-v1.0)
+[New-MgPlannerBucket](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerBucket?view=graph-powershell-1.0)

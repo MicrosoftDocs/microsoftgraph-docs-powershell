@@ -12,7 +12,7 @@ The groups, including nested groups, and directory roles that a user is a member
 Nullable.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -306,4 +306,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-v1.0)
+[Get-MgUserTransitiveMemberOf](/powershell/module/Microsoft.Graph.Users/Get-MgUserTransitiveMemberOf?view=graph-powershell-1.0)

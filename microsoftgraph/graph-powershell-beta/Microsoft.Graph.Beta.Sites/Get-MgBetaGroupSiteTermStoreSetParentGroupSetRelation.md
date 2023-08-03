@@ -11,7 +11,7 @@ schema: 2.0.0
 Indicates which terms have been pinned or reused directly under the set.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -350,5 +350,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Get-MgGroupSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-v1.0)
+[Get-MgGroupSiteTermStoreSetParentGroupSetRelation](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetParentGroupSetRelation?view=graph-powershell-1.0)
 

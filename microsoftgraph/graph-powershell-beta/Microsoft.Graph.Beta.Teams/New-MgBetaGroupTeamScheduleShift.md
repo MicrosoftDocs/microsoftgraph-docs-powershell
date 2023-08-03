@@ -12,7 +12,7 @@ Create a new shift instance in a schedule.
 The duration of a shift cannot be less than 1 minute or longer than 24 hours.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -409,4 +409,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Notes <String>]`: The shift notes for the shiftItem.
 
 ## RELATED LINKS
-[New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-v1.0)
+[New-MgGroupTeamScheduleShift](/powershell/module/Microsoft.Graph.Teams/New-MgGroupTeamScheduleShift?view=graph-powershell-1.0)

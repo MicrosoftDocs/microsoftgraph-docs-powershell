@@ -11,7 +11,7 @@ schema: 2.0.0
 Delete entity from invitations
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInvitation?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInvitation?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -219,5 +219,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
-[Remove-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInvitation?view=graph-powershell-v1.0)
+[Remove-MgInvitation](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgInvitation?view=graph-powershell-1.0)
 

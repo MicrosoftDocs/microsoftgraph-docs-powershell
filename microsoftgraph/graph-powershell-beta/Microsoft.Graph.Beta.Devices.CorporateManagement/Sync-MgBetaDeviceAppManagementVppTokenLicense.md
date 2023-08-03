@@ -11,7 +11,7 @@ schema: 2.0.0
 Syncs licenses associated with a specific appleVolumePurchaseProgramToken
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -180,5 +180,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsManagedAppProtectionId <String>]`: The unique identifier of windowsManagedAppProtection
 
 ## RELATED LINKS
-[Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-v1.0)
+[Sync-MgDeviceAppManagementVppTokenLicense](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementVppTokenLicense?view=graph-powershell-1.0)
 

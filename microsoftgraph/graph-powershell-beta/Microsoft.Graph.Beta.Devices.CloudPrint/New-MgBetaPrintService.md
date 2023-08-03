@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to services for print
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintService?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintService?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -174,4 +174,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Uri <String>]`: The URI that can be used to access the service.
 
 ## RELATED LINKS
-[New-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintService?view=graph-powershell-v1.0)
+[New-MgPrintService](/powershell/module/Microsoft.Graph.Devices.CloudPrint/New-MgPrintService?view=graph-powershell-1.0)

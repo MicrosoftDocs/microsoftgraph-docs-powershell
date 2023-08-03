@@ -15,7 +15,7 @@ This isn't applicable to Security groups and Distribution groups which are perma
 To learn more, see deletedItems.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -201,4 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-v1.0)
+[Remove-MgGroup](/powershell/module/Microsoft.Graph.Groups/Remove-MgGroup?view=graph-powershell-1.0)

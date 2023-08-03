@@ -12,7 +12,7 @@ Add multiple members in a single request to a team.
 The response provides details about which memberships could and couldn't be created.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -247,5 +247,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VisibleHistoryStartDateTime <DateTime?>]`: The timestamp denoting how far back a conversation's history is shared with the conversation member. This property is settable only for members of a chat.
 
 ## RELATED LINKS
-[Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-v1.0)
+[Add-MgTeamworkDeletedTeamChannelMember](/powershell/module/Microsoft.Graph.Teams/Add-MgTeamworkDeletedTeamChannelMember?view=graph-powershell-1.0)
 

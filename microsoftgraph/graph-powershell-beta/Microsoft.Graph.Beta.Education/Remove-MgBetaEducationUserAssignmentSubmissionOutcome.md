@@ -12,7 +12,7 @@ Delete a feedback resource from a submission.
 This can only be done by a teacher.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -206,5 +206,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
-[Remove-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-v1.0)
+[Remove-MgEducationUserAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserAssignmentSubmissionOutcome?view=graph-powershell-1.0)
 

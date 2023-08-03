@@ -13,7 +13,7 @@ The host resource is the abstract base type that returns an implementation.
 A host can be of one of the following types:
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -316,5 +316,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
-[Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-v1.0)
+[Get-MgSecurityThreatIntelligenceHost](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityThreatIntelligenceHost?view=graph-powershell-1.0)
 

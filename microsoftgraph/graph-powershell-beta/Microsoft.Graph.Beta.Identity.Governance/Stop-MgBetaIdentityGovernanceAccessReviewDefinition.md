@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action stop
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Stop-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -226,5 +226,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
-[Stop-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-v1.0)
+[Stop-MgIdentityGovernanceAccessReviewDefinition](/powershell/module/Microsoft.Graph.Identity.Governance/Stop-MgIdentityGovernanceAccessReviewDefinition?view=graph-powershell-1.0)
 

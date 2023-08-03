@@ -17,8 +17,11 @@ Create a new accessPackageCatalog object.
 New-MgEntitlementManagementCatalog [-AccessPackages <IMicrosoftGraphAccessPackage[]>]
  [-AdditionalProperties <Hashtable>] [-CatalogType <String>] [-CreatedDateTime <DateTime>]
  [-CustomWorkflowExtensions <IMicrosoftGraphCustomCalloutExtension[]>] [-Description <String>]
- [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedDateTime <DateTime>] [-State <String>]
- [-WhatIf] [-Confirm] [<CommonParameters>]
+ [-DisplayName <String>] [-Id <String>] [-IsExternallyVisible] [-ModifiedDateTime <DateTime>]
+ [-ResourceRoles <IMicrosoftGraphAccessPackageResourceRole[]>]
+ [-ResourceScopes <IMicrosoftGraphAccessPackageResourceScope[]>]
+ [-Resources <IMicrosoftGraphAccessPackageResource[]>] [-State <String>] [-WhatIf] [-Confirm]
+ [<CommonParameters>]
 ```
 
 ### Create
@@ -217,6 +220,54 @@ Read-only.
 
 ```yaml
 Type: DateTime
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceRoles
+.
+To construct, see NOTES section for RESOURCEROLES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResourceRole[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -Resources
+.
+To construct, see NOTES section for RESOURCES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResource[]
+Parameter Sets: CreateExpanded
+Aliases:
+
+Required: False
+Position: Named
+Default value: None
+Accept pipeline input: False
+Accept wildcard characters: False
+```
+
+### -ResourceScopes
+.
+To construct, see NOTES section for RESOURCESCOPES properties and create a hash table.
+
+```yaml
+Type: IMicrosoftGraphAccessPackageResourceScope[]
 Parameter Sets: CreateExpanded
 Aliases:
 

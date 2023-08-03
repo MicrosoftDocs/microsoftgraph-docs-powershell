@@ -11,7 +11,7 @@ schema: 2.0.0
 Update planner
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -911,8 +911,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Title <String>]`: Title of the task.
 
 ## RELATED LINKS
-[Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-v1.0)
+[Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-v1.0)
+[Update-MgPlanner](/powershell/module/Microsoft.Graph.Planner/Update-MgPlanner?view=graph-powershell-1.0)
 

@@ -11,7 +11,7 @@ schema: 2.0.0
 Asynchronously creates a copy of an [driveItem][item-resource] (including any children), under a new parent item or with a new name.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -257,5 +257,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[SiteId <String>]`: For OneDrive for Business and SharePoint, this property represents the ID of the site that contains the parent document library of the driveItem resource or the parent list of the listItem resource. The value is the same as the id property of that [site][] resource. It is an opaque string that consists of three identifiers of the site. For OneDrive, this property is not populated.
 
 ## RELATED LINKS
-[Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-v1.0)
+[Copy-MgDriveRoot](/powershell/module/Microsoft.Graph.Files/Copy-MgDriveRoot?view=graph-powershell-1.0)
 

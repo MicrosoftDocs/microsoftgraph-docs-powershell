@@ -11,7 +11,7 @@ schema: 2.0.0
 A collection of issues that happened on the service, with detailed information for each issue.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -261,5 +261,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[ServiceUpdateMessageId <String>]`: The unique identifier of serviceUpdateMessage
 
 ## RELATED LINKS
-[Get-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-v1.0)
+[Get-MgServiceAnnouncementHealthOverviewIssue](/powershell/module/Microsoft.Graph.Devices.ServiceAnnouncement/Get-MgServiceAnnouncementHealthOverviewIssue?view=graph-powershell-1.0)
 

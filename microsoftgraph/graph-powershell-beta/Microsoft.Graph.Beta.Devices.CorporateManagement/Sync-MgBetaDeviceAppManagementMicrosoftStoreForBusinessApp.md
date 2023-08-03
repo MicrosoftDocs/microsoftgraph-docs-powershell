@@ -11,7 +11,7 @@ schema: 2.0.0
 Syncs Intune account with Microsoft Store For Business
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -86,5 +86,5 @@ ALIASES
 Sync-MgBetaDeviceAppMgtMicrosoftStoreGraphFPreBusinessApp
 
 ## RELATED LINKS
-[Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-v1.0)
+[Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Sync-MgDeviceAppManagementMicrosoftStoreForBusinessApp?view=graph-powershell-1.0)
 

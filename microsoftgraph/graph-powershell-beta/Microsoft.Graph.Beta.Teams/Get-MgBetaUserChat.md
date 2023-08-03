@@ -13,7 +13,7 @@ This method supports federation.
 To access a chat, at least one chat member must belong to the tenant the request initiated from.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -312,4 +312,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
-[Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-v1.0)
+[Get-MgUserChat](/powershell/module/Microsoft.Graph.Teams/Get-MgUserChat?view=graph-powershell-1.0)

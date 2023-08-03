@@ -11,7 +11,7 @@ schema: 2.0.0
 Update the navigation property sets in sites
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -610,8 +610,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[Set <IMicrosoftGraphTermStoreSet>]`: set
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+[Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-v1.0)
+[Update-MgSiteTermStoreGroupSet](/powershell/module/Microsoft.Graph.Sites/Update-MgSiteTermStoreGroupSet?view=graph-powershell-1.0)
 

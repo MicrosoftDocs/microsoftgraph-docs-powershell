@@ -11,7 +11,7 @@ schema: 2.0.0
 Create new navigation property to sharedWithTeams for teamwork
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -9612,8 +9612,8 @@ To create the parameters described below, construct a hash table containing the 
   - `[WebUrl <String>]`: A hyperlink that will go to the team in the Microsoft Teams client. This is the URL that you get when you right-click a team in the Microsoft Teams client and select Get link to team. This URL should be treated as an opaque blob, and not parsed.
 
 ## RELATED LINKS
-[New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+[New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 
 ## RELATED LINKS
-[New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-v1.0)
+[New-MgTeamworkDeletedTeamChannelSharedWithTeam](/powershell/module/Microsoft.Graph.Teams/New-MgTeamworkDeletedTeamChannelSharedWithTeam?view=graph-powershell-1.0)
 

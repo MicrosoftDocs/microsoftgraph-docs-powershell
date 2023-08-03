@@ -11,7 +11,7 @@ schema: 2.0.0
 Removes a password from an application.
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -236,4 +236,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-v1.0)
+[Remove-MgApplicationPassword](/powershell/module/Microsoft.Graph.Applications/Remove-MgApplicationPassword?view=graph-powershell-1.0)

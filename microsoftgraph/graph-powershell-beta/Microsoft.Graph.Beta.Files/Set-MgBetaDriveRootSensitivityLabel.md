@@ -11,7 +11,7 @@ schema: 2.0.0
 Invoke action assignSensitivityLabel
 
 > [!NOTE]
-> To view the v1.0 release of this cmdlet, view [Set-MgDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootSensitivityLabel?view=graph-powershell-v1.0)
+> To view the v1.0 release of this cmdlet, view [Set-MgDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
 ## SYNTAX
 
@@ -253,5 +253,5 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
-[Set-MgDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootSensitivityLabel?view=graph-powershell-v1.0)
+[Set-MgDriveRootSensitivityLabel](/powershell/module/Microsoft.Graph.Files/Set-MgDriveRootSensitivityLabel?view=graph-powershell-1.0)
 
