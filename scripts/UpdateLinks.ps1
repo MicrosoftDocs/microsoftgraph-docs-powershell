@@ -160,8 +160,10 @@ function Add-Link {
 
             $Link = "> [!NOTE]`n> $LinkTitle [$CommandRename]($BaseUrl/$FullModuleName$View)`r`n`n## SYNTAX"
             $LinkOnEndOfDoc = "## RELATED LINKS`r`n[$CommandRename]($BaseUrl/$FullModuleName$View)"
+            $Folder = $View.Split("=")[1]
+            $ConfirmFile = Join-Path $WorkLoadDocsPath "$Folder" "$FullModuleName" "$BetaCommand.md"
             $ConfirmCommandAvailability = Find-MgGraphCommand -Command $CommandRename
-            if ($ConfirmCommandAvailability) {
+            if ($ConfirmCommandAvailability -and (Test-Path $ConfirmFile)) {
                 (Get-Content $File) | 
                 Foreach-Object { $_ -replace '## SYNTAX', $Link -replace '## RELATED LINKS', $LinkOnEndOfDoc }  | 
                 Out-File $File
