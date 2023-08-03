@@ -42,13 +42,17 @@ All the properties of the access review history definition object are returned.
 If the definition is 30 days or older, a `404 Not Found` error is returned.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Identity.Governance
-```
 
 Get-MgIdentityGovernanceAccessReviewHistoryDefinition -AccessReviewHistoryDefinitionId $accessReviewHistoryDefinitionId
+```
+This example shows how to use the Get-MgIdentityGovernanceAccessReviewHistoryDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

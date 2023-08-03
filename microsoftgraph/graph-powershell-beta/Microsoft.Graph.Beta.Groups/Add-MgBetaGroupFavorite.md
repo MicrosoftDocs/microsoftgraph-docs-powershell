@@ -31,12 +31,13 @@ Add the group to the list of the current user's favorite groups.
 Supported for Microsoft 365 groups only.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Add-MgBetaGroupFavorite Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Groups
 Add-MgBetaGroupFavorite -GroupId $groupId
 ```
+This example shows how to use the Add-MgBetaGroupFavorite Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

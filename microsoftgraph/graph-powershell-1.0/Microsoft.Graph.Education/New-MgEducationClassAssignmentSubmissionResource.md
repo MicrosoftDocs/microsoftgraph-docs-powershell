@@ -54,11 +54,10 @@ To create a new file-based resource, upload the file to the resources folder ass
 If the file doesn't exist or is not in that folder, the POST request will fail.
 
 ## EXAMPLES
+### Example 1: Create an educationWordResource
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -69,11 +68,15 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionResource Cmdlet.
 
-### EXAMPLE 2
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 2: Create an educationLinkResource
+
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -84,11 +87,15 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionResource Cmdlet.
 
-### EXAMPLE 3
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Create an educationFileResource
+
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -99,11 +106,15 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionResource Cmdlet.
 
-### EXAMPLE 4
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 4: Create an educationExcelResource
+
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -114,11 +125,15 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionResource Cmdlet.
 
-### EXAMPLE 5
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 5: Create an educationPowerPointResource
+
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -129,11 +144,15 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionResource Cmdlet.
 
-### EXAMPLE 6
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 6: Create an educationMediaResource
+
 ```powershell
 Import-Module Microsoft.Graph.Education
-```
 
 $params = @{
 	resource = @{
@@ -144,6 +163,11 @@ $params = @{
 }
 
 New-MgEducationClassAssignmentSubmissionResource -EducationClassId $educationClassId -EducationAssignmentId $educationAssignmentId -EducationSubmissionId $educationSubmissionId -BodyParameter $params
+```
+This example shows how to use the New-MgEducationClassAssignmentSubmissionResource Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

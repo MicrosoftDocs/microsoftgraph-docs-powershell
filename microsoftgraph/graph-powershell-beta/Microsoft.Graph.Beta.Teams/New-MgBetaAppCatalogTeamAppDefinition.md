@@ -57,16 +57,20 @@ To update an app, the **distributionMethod** property for the app must be set to
 This API specifically updates an app published to your organization's app catalog (the tenant app catalog).
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Teams
-```
 
 $params = [Zip file containing a Teams app package]
 
 
 New-MgBetaAppCatalogTeamAppDefinition -TeamsAppId $teamsAppId -Requiresreview true  -BodyParameter $params
+```
+This example shows how to use the New-MgBetaAppCatalogTeamAppDefinition Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

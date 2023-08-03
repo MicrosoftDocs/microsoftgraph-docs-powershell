@@ -47,20 +47,34 @@ This allows you to maintain and synchronize a local store of events in the speci
 The following table lists the differences between the **delta** function on events and the **delta** function on a **calendarView** in a calendar.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users.Actions
+
+$params = @{
+	Schedules = @(
+		"adelev@contoso.onmicrosoft.com"
+		"meganb@contoso.onmicrosoft.com"
+	)
+	StartTime = @{
+		DateTime = "2019-03-15T09:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	EndTime = @{
+		DateTime = "2019-03-15T18:00:00"
+		TimeZone = "Pacific Standard Time"
+	}
+	AvailabilityViewInterval = 60
+}
+
+# A UPN can also be used as -UserId.
+Get-MgBetaUserDefaultCalendarSchedule -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaGroupCalendarSchedule Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

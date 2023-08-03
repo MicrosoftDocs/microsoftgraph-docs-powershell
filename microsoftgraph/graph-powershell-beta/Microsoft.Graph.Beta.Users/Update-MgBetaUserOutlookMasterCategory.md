@@ -47,20 +47,22 @@ Update-MgBetaUserNotification -InputObject <IUsersIdentity> -BodyParameter <IMic
 Update the navigation property notifications in users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users
+
+$params = @{
+	color = "preset15"
+}
+
+# A UPN can also be used as -UserId.
+Update-MgBetaUserOutlookMasterCategory -UserId $userId -OutlookCategoryId $outlookCategoryId -BodyParameter $params
 ```
+This example shows how to use the Update-MgBetaUserOutlookMasterCategory Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

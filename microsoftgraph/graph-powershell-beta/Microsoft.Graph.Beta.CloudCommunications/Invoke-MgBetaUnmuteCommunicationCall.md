@@ -49,8 +49,7 @@ This is a server unmute, meaning that the server will start sending audio packet
 For more information about how to handle unmute operations, see unmuteParticipantOperation.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaUnmuteCommunicationCall Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -58,6 +57,8 @@ $params = @{
 }
 Invoke-MgBetaUnmuteCommunicationCall -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaUnmuteCommunicationCall Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

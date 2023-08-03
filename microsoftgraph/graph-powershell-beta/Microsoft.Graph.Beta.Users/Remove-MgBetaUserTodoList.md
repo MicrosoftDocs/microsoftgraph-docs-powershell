@@ -31,20 +31,18 @@ Remove-MgBetaUserSettingShiftPreference -InputObject <IUsersIdentity> [-IfMatch 
 Delete navigation property shiftPreferences for users
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.Beta.Users
+
+# A UPN can also be used as -UserId.
+Remove-MgBetaUserTodoList -UserId $userId -TodoTaskListId $todoTaskListId
 ```
+This example shows how to use the Remove-MgBetaUserTodoList Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
 
 ## PARAMETERS
 

@@ -35,20 +35,22 @@ Get-MgBetaUserProfileCertification -InputObject <IPeopleIdentity> [-ExpandProper
 Read the properties and relationships of a personCertification object in a user's profile.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaUserProfileCertification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileCertification -UserId $userId
 ```
-
-### EXAMPLE 2
+This example shows how to use the Get-MgBetaUserProfileCertification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaUserProfileCertification Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.People
 # A UPN can also be used as -UserId.
 Get-MgBetaUserProfileCertification -UserId $userId -PersonCertificationId $personCertificationId
 ```
+This example shows how to use the Get-MgBetaUserProfileCertification Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

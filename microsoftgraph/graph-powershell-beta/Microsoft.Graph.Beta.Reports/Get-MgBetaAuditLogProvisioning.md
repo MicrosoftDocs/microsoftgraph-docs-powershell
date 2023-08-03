@@ -38,18 +38,20 @@ Get-MgBetaAuditLogProvisioning -InputObject <IReportsIdentity> [-ExpandProperty 
 Get provisioning from auditLogs
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaAuditLogProvisioning Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaAuditLogProvisioning
 ```
-
-### EXAMPLE 2
+This example shows how to use the Get-MgBetaAuditLogProvisioning Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+### Example 2: Using the Get-MgBetaAuditLogProvisioning Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Reports
 Get-MgBetaAuditLogProvisioning
 ```
+This example shows how to use the Get-MgBetaAuditLogProvisioning Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

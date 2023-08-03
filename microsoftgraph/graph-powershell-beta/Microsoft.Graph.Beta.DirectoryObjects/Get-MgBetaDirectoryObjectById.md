@@ -34,8 +34,7 @@ Return the directory objects specified in a list of IDs.
 Some common uses for this function are to:
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Get-MgBetaDirectoryObjectById Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.DirectoryObjects
 $params = @{
@@ -53,6 +52,8 @@ $params = @{
 }
 Get-MgBetaDirectoryObjectById -BodyParameter $params
 ```
+This example shows how to use the Get-MgBetaDirectoryObjectById Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

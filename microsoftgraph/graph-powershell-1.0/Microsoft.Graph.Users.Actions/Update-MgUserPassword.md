@@ -47,8 +47,7 @@ Enable the user to update their password.
 Any user can update their password without belonging to any administrator role.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Update-MgUserPassword Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Users.Actions
 $params = @{
@@ -58,6 +57,8 @@ $params = @{
 # A UPN can also be used as -UserId.
 Update-MgUserPassword -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Update-MgUserPassword Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

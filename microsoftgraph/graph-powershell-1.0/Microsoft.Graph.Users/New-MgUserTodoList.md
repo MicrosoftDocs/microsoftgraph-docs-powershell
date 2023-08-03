@@ -45,8 +45,6 @@ The collection of open extensions defined for the user.
 Read-only.
 Nullable.
 
-## EXAMPLES
-
 ## PARAMETERS
 
 ### -AdditionalProperties

@@ -38,13 +38,17 @@ Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -InputObject <I
 Read the properties and relationships of a customTaskExtension object.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Beta.Identity.Governance
-```
 
 Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension -CustomTaskExtensionId $customTaskExtensionId
+```
+This example shows how to use the Get-MgBetaIdentityGovernanceLifecycleWorkflowCustomTaskExtension Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

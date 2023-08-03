@@ -61,8 +61,7 @@ The recording is not saved permanently by the by the Cloud Communications Platfo
 The bot must download the recording promptly after the recording operation finishes by using the recordingLocation value that's given in the completed notification.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.CloudCommunications
 $params = @{
@@ -85,6 +84,8 @@ $params = @{
 }
 Invoke-MgBetaRecordCommunicationCallResponse -CallId $callId -BodyParameter $params
 ```
+This example shows how to use the Invoke-MgBetaRecordCommunicationCallResponse Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

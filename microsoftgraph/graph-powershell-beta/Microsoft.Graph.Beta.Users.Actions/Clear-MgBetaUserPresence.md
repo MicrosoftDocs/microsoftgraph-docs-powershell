@@ -49,8 +49,7 @@ If it is the user's only presence session, a successful **clearPresence** change
 Read more about presence sessions and their time-out and expiration.
 
 ## EXAMPLES
-
-### EXAMPLE 1
+### Example 1: Using the Clear-MgBetaUserPresence Cmdlet
 ```powershell
 Import-Module Microsoft.Graph.Beta.Users.Actions
 $params = @{
@@ -58,6 +57,8 @@ $params = @{
 }
 Clear-MgBetaUserPresence -UserId $userId -BodyParameter $params
 ```
+This example shows how to use the Clear-MgBetaUserPresence Cmdlet.
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
 ## PARAMETERS
 

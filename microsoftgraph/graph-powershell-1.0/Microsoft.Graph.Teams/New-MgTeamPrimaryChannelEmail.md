@@ -35,13 +35,17 @@ To have Teams provision an email address, you can call **provisionEmail**, or th
 To remove the email address of a **channel**, use the removeEmail method.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 New-MgTeamChannelEmail -TeamId $teamId -ChannelId $channelId
+```
+This example shows how to use the New-MgTeamPrimaryChannelEmail Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

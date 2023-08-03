@@ -32,20 +32,40 @@ Remove-MgUserOnlineMeetingAttendanceReportAttendanceRecord -InputObject <ICloudC
 Delete navigation property attendanceRecords for users
 
 ## EXAMPLES
+### Example 1: Get your own presence information
 
-### EXAMPLE 1
 ```powershell
-{{ Add code here }}
+Import-Module Microsoft.Graph.CloudCommunications
+
+# A UPN can also be used as -UserId.
+Get-MgUserPresence -UserId $userId
 ```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
 
-{{ Add output here }}
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
 
-### EXAMPLE 2
+### Example 2: Get the presence information of another user
+
 ```powershell
-{{ Add code here }}
-```
+Import-Module Microsoft.Graph.CloudCommunications
 
-{{ Add output here }}
+Get-MgUserPresence -UserId $userId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
+### Example 3: Get the presence information of another user
+
+```powershell
+Import-Module Microsoft.Graph.CloudCommunications
+
+Get-MgCommunicationPresence -PresenceId $presenceId
+```
+This example shows how to use the Remove-MgUserPresence Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 

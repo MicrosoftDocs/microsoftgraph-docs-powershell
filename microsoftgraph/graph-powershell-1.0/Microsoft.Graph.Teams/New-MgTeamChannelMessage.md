@@ -61,11 +61,10 @@ New-MgTeamChannelMessage -InputObject <ITeamsIdentity> -BodyParameter <IMicrosof
 Send a new chatMessage in the specified channel or a chat.
 
 ## EXAMPLES
+### Example 1: Code snippet
 
-### EXAMPLE 1
 ```powershell
 Import-Module Microsoft.Graph.Teams
-```
 
 $params = @{
 	body = @{
@@ -74,6 +73,11 @@ $params = @{
 }
 
 New-MgTeamChannelMessage -TeamId $teamId -ChannelId $channelId -BodyParameter $params
+```
+This example shows how to use the New-MgTeamChannelMessage Cmdlet.
+
+To learn about permissions for this resource, see the [permissions reference](/graph/permissions-reference).
+
 
 ## PARAMETERS
 
