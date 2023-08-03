@@ -41,22 +41,6 @@ Return the effective sharing permission for a particular permission resource.
 Effective permissions of an item can come from two sources: permissions set directly on the item itself or permissions that are inherited from the item's ancestors.
 Callers can differentiate if the permission is inherited or not by checking the `inheritedFrom` property.\nThis property is an ItemReference resource referencing the ancestor that the permission is inherited from.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -302,3 +286,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveRootPermission](/powershell/module/Microsoft.Graph.Files/Get-MgDriveRootPermission?view=graph-powershell-1.0)
+

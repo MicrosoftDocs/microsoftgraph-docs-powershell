@@ -20,18 +20,6 @@ Set-MgBetaTeamRscConfiguration -State <MicrosoftGraphRscConfigurationState> [-Ad
 ## DESCRIPTION
 Update Team RSC configuration for tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -109,3 +97,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

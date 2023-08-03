@@ -31,22 +31,6 @@ Reactivate an accidentally dismissed, completed, or postponed **impactedResource
 This action updates the **status** of the resource to `active`.
 This method is relevant only if the status of the **impactedResource** object is `dismissed`, `postponed`, or `completedByUser`.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ImpactedResourceId
@@ -174,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+

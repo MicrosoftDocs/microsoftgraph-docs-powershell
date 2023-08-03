@@ -41,22 +41,6 @@ A collection of threat assessment results.
 Read-only.
 By default, a GET /threatAssessmentRequests/{id} does not return this property unless you apply $expand on it.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -333,3 +317,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaInformationProtectionThreatAssessmentRequestResult](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaInformationProtectionThreatAssessmentRequestResult?view=graph-powershell-beta)
+

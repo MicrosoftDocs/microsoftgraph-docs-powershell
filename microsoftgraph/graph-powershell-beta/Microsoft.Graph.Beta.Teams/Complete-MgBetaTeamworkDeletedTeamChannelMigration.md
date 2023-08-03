@@ -36,22 +36,6 @@ Complete the message migration process by removing `migration mode` from a chann
 After a **completeMigration** request is made, you cannot import additional messages into the team.
 You can add members to the team after the request returns a successful response.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -206,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Complete-MgTeamworkDeletedTeamChannelMigration](/powershell/module/Microsoft.Graph.Teams/Complete-MgTeamworkDeletedTeamChannelMigration?view=graph-powershell-1.0)
+

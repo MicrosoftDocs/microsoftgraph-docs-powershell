@@ -30,18 +30,6 @@ Remove-MgBetaServicePrincipalByAppId -InputObject <IApplicationsIdentity> [-IfMa
 ## DESCRIPTION
 Delete a servicePrincipal object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AppId
@@ -187,3 +175,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgServicePrincipalByAppId](/powershell/module/Microsoft.Graph.Applications/Remove-MgServicePrincipalByAppId?view=graph-powershell-1.0)
+

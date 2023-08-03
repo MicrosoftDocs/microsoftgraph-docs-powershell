@@ -38,18 +38,6 @@ Get-MgDeviceAppManagementMobileAppConfigurationUserStatus -InputObject <IDevices
 ## DESCRIPTION
 List of ManagedDeviceMobileAppConfigurationUserStatus.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -305,3 +293,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementMobileAppConfigurationUserStatus?view=graph-powershell-beta)
+

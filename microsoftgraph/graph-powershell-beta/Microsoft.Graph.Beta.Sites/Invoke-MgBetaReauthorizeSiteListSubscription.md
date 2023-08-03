@@ -30,22 +30,6 @@ Invoke-MgBetaReauthorizeSiteListSubscription -InputObject <ISitesIdentity> [-Pas
 ## DESCRIPTION
 Reauthorize a subscription when you receive a **reauthorizationRequired** challenge.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -224,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgReauthorizeSiteListSubscription](/powershell/module/Microsoft.Graph.Sites/Invoke-MgReauthorizeSiteListSubscription?view=graph-powershell-1.0)
+

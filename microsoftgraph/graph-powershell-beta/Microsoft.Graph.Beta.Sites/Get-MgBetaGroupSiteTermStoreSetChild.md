@@ -56,22 +56,6 @@ Get-MgBetaGroupSiteTermStoreSetChild -InputObject <ISitesIdentity> [-ExpandPrope
 ## DESCRIPTION
 Children terms of set in term [store].
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -385,3 +369,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgGroupSiteTermStoreSetChild](/powershell/module/Microsoft.Graph.Sites/Get-MgGroupSiteTermStoreSetChild?view=graph-powershell-1.0)
+

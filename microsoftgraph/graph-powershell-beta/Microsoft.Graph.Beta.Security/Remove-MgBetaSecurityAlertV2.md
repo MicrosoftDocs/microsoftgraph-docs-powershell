@@ -30,18 +30,6 @@ Remove-MgBetaSecurityAlertV2 -InputObject <ISecurityIdentity> [-IfMatch <String>
 ## DESCRIPTION
 Delete navigation property alerts_v2 for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertId
@@ -228,3 +216,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgSecurityAlertV2](/powershell/module/Microsoft.Graph.Security/Remove-MgSecurityAlertV2?view=graph-powershell-1.0)
+

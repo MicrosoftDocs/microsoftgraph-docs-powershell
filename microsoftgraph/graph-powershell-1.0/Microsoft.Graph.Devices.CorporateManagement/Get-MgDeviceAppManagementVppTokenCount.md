@@ -22,18 +22,6 @@ Get-MgDeviceAppManagementVppTokenCount [-Filter <String>] [-Search <String>] [<C
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -82,3 +70,4 @@ Get-MgDeviceAppMgtVppTokenCount
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementVppTokenCount](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementVppTokenCount?view=graph-powershell-beta)
+

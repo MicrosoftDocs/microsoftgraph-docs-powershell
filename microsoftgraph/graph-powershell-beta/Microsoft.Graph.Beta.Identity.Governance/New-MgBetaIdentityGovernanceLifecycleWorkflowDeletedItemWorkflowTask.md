@@ -50,18 +50,6 @@ New-MgBetaIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask -InputObjec
 ## DESCRIPTION
 Create new navigation property to tasks for identityGovernance
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -9778,3 +9766,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask](/powershell/module/Microsoft.Graph.Identity.Governance/New-MgIdentityGovernanceLifecycleWorkflowDeletedItemWorkflowTask?view=graph-powershell-1.0)
+

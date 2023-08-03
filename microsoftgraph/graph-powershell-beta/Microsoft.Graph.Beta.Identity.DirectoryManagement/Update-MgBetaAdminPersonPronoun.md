@@ -29,18 +29,6 @@ Update-MgBetaAdminPersonPronoun -BodyParameter <IMicrosoftGraphPronounsSettings>
 Update the properties of a pronounsSettings in an organization.
 For more information on settings to manage pronouns support, see Manage pronouns settings for an organization using the Microsoft Graph API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -161,3 +149,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsEnabledInOrganization <Boolean?>]`: true to enable pronouns in the organization, false otherwise. The default is false, and pronouns are disabled.
 
 ## RELATED LINKS
+

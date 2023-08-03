@@ -39,18 +39,6 @@ New-MgBetaWindowsUpdatesPolicyAudienceExclusion -InputObject <IWindowsUpdatesIde
 ## DESCRIPTION
 Create new navigation property to exclusions for admin
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -191,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UpdatePolicyId <String>]`: The unique identifier of updatePolicy
 
 ## RELATED LINKS
+

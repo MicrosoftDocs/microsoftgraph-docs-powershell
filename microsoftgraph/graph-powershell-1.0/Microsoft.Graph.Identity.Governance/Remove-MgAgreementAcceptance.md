@@ -30,22 +30,6 @@ Remove-MgAgreementAcceptance -InputObject <IIdentityGovernanceIdentity> [-IfMatc
 ## DESCRIPTION
 Delete navigation property acceptances for agreements
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AgreementAcceptanceId
@@ -239,3 +223,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaAgreementAcceptance](/powershell/module/Microsoft.Graph.Beta.Identity.Governance/Remove-MgBetaAgreementAcceptance?view=graph-powershell-beta)
+

@@ -27,18 +27,6 @@ Remove-MgBetaSecurityLabelCategory -InputObject <ISecurityIdentity> [-IfMatch <S
 ## DESCRIPTION
 Delete a categoryTemplate object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CategoryTemplateId
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

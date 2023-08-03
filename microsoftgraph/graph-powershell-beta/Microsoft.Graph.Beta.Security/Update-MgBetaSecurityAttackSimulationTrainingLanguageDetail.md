@@ -46,18 +46,6 @@ Update-MgBetaSecurityAttackSimulationTrainingLanguageDetail -InputObject <ISecur
 ## DESCRIPTION
 Update the navigation property languageDetails in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -442,3 +430,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Email <String>]`: Email address of the user.
 
 ## RELATED LINKS
+

@@ -49,22 +49,6 @@ Get-MgBetaShareListItem -InputObject <IFilesIdentity> [-ExpandProperty <String[]
 ## DESCRIPTION
 Used to access the underlying listItem
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -310,3 +294,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgShareListItem](/powershell/module/Microsoft.Graph.Files/Get-MgShareListItem?view=graph-powershell-1.0)
+

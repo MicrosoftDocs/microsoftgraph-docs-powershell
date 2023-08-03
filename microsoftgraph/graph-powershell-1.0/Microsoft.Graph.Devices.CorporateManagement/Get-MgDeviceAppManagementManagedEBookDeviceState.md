@@ -37,18 +37,6 @@ Get-MgDeviceAppManagementManagedEBookDeviceState -InputObject <IDevicesCorporate
 ## DESCRIPTION
 The list of installation states for this eBook.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -304,3 +292,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceAppManagementManagedEBookDeviceState](/powershell/module/Microsoft.Graph.Beta.Devices.CorporateManagement/Get-MgBetaDeviceAppManagementManagedEBookDeviceState?view=graph-powershell-beta)
+

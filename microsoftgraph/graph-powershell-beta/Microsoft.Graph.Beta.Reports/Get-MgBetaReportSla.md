@@ -19,18 +19,6 @@ Get-MgBetaReportSla [-ExpandProperty <String[]>] [-Property <String[]>] [<Common
 ## DESCRIPTION
 A placeholder to allow for the desired URL path for SLA.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -76,3 +64,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

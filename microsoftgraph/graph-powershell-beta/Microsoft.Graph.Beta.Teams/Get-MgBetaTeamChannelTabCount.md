@@ -30,18 +30,6 @@ Get-MgBetaTeamChannelTabCount -InputObject <ITeamsIdentity> [-Filter <String>] [
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ChannelId
@@ -180,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgTeamChannelTabCount](/powershell/module/Microsoft.Graph.Teams/Get-MgTeamChannelTabCount?view=graph-powershell-1.0)
+

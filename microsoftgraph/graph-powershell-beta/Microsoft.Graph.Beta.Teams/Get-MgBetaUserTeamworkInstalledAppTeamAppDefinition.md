@@ -30,18 +30,6 @@ Get-MgBetaUserTeamworkInstalledAppTeamAppDefinition -InputObject <ITeamsIdentity
 ## DESCRIPTION
 The details of this version of the app.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -180,3 +168,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTeamworkInstalledAppTeamAppDefinition](/powershell/module/Microsoft.Graph.Teams/Get-MgUserTeamworkInstalledAppTeamAppDefinition?view=graph-powershell-1.0)
+

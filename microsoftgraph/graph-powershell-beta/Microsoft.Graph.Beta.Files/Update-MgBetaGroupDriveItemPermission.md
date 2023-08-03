@@ -56,22 +56,6 @@ Update-MgBetaGroupDriveItemPermission -InputObject <IFilesIdentity> -BodyParamet
 Update the properties of a sharing permission by patching the permission resource.
 Only the **roles** property can be modified this way.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -616,3 +600,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupDriveItemPermission](/powershell/module/Microsoft.Graph.Files/Update-MgGroupDriveItemPermission?view=graph-powershell-1.0)
+

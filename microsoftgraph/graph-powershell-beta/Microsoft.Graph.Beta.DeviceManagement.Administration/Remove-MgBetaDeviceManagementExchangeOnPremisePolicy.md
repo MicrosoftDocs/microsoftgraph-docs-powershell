@@ -33,18 +33,6 @@ Remove-MgBetaDeviceManagementExchangeOnPremisePolicy -InputObject <IDeviceManage
 ## DESCRIPTION
 Delete navigation property exchangeOnPremisesPolicies for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DeviceManagementExchangeOnPremisesPolicyId
@@ -216,3 +204,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserPfxCertificateId <String>]`: The unique identifier of userPFXCertificate
 
 ## RELATED LINKS
+

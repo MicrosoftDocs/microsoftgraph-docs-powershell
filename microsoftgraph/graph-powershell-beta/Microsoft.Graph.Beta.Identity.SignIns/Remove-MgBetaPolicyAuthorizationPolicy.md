@@ -30,22 +30,6 @@ Remove-MgBetaPolicyAuthorizationPolicy -InputObject <IIdentitySignInsIdentity> [
 ## DESCRIPTION
 Delete navigation property authorizationPolicy for policies
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AuthorizationPolicyId
@@ -236,3 +220,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPolicyAuthorizationPolicy](/powershell/module/Microsoft.Graph.Identity.SignIns/Remove-MgPolicyAuthorizationPolicy?view=graph-powershell-1.0)
+

@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementComplianceManagementPartner -InputObject <IDeviceManag
 ## DESCRIPTION
 The list of Compliance Management Partners configured by the tenant.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -315,3 +299,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementComplianceManagementPartner](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Get-MgDeviceManagementComplianceManagementPartner?view=graph-powershell-1.0)
+

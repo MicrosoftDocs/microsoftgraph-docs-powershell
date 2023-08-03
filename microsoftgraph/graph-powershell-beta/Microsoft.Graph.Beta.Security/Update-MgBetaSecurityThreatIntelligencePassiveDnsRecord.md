@@ -46,18 +46,6 @@ Update-MgBetaSecurityThreatIntelligencePassiveDnsRecord -InputObject <ISecurityI
 ## DESCRIPTION
 Update the navigation property passiveDnsRecords in security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -469,3 +457,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgSecurityThreatIntelligencePassiveDnsRecord](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityThreatIntelligencePassiveDnsRecord?view=graph-powershell-1.0)
+

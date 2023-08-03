@@ -41,22 +41,6 @@ Update-MgBetaDirectoryOutboundSharedUserProfile -InputObject <IIdentityDirectory
 ## DESCRIPTION
 Update the navigation property outboundSharedUserProfiles in directory
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -258,3 +242,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantId <String>]`: The identifier of the Azure AD tenant. Read-only. Key.
 
 ## RELATED LINKS
+

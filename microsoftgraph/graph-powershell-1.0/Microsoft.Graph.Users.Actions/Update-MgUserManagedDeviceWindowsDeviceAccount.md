@@ -48,18 +48,6 @@ Update-MgUserManagedDeviceWindowsDeviceAccount -InputObject <IUsersActionsIdenti
 ## DESCRIPTION
 Not yet documented
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -277,3 +265,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaUserManagedDeviceWindowsDeviceAccount](/powershell/module/Microsoft.Graph.Beta.Users.Actions/Update-MgBetaUserManagedDeviceWindowsDeviceAccount?view=graph-powershell-beta)
+

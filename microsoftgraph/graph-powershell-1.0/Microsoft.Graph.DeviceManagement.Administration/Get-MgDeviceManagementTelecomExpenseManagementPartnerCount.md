@@ -23,18 +23,6 @@ Get-MgDeviceManagementTelecomExpenseManagementPartnerCount [-Filter <String>] [-
 ## DESCRIPTION
 Get the number of the resource
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Filter
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementTelecomExpenseManagementPartnerCount?view=graph-powershell-beta)
+

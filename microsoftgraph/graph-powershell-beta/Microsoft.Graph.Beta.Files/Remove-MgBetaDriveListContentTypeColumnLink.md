@@ -30,22 +30,6 @@ Remove-MgBetaDriveListContentTypeColumnLink -InputObject <IFilesIdentity> [-IfMa
 ## DESCRIPTION
 Delete navigation property columnLinks for drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ColumnLinkId
@@ -216,3 +200,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDriveListContentTypeColumnLink](/powershell/module/Microsoft.Graph.Files/Remove-MgDriveListContentTypeColumnLink?view=graph-powershell-1.0)
+

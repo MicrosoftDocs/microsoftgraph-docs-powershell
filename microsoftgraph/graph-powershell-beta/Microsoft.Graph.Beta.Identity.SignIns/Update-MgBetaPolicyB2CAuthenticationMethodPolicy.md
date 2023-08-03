@@ -28,22 +28,6 @@ Update-MgBetaPolicyB2CAuthenticationMethodPolicy -BodyParameter <IMicrosoftGraph
 ## DESCRIPTION
 Update the properties of a b2cAuthenticationMethodsPolicy object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -195,3 +179,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[IsUserNameAuthenticationEnabled <Boolean?>]`: The tenant admin can configure local accounts using username if the username and password authentication method is enabled.
 
 ## RELATED LINKS
+

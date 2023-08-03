@@ -30,22 +30,6 @@ Get-MgBetaApplicationSynchronizationJobSchema -InputObject <IApplicationsIdentit
 ## DESCRIPTION
 Retrieve the schema for a given synchronization job or template.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ApplicationId
@@ -175,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgApplicationSynchronizationJobSchema](/powershell/module/Microsoft.Graph.Applications/Get-MgApplicationSynchronizationJobSchema?view=graph-powershell-1.0)
+

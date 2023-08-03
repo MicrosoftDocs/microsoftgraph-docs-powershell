@@ -37,18 +37,6 @@ Get-MgDeviceManagementIoUpdateStatus -InputObject <IDeviceManagementAdministrati
 ## DESCRIPTION
 The IOS software update installation statuses for this account.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -270,3 +258,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementIoUpdateStatus](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Administration/Get-MgBetaDeviceManagementIoUpdateStatus?view=graph-powershell-beta)
+

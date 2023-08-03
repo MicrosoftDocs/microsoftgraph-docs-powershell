@@ -27,22 +27,6 @@ Remove-MgBetaSecurityThreatSubmissionEmailThreatSubmissionPolicy -InputObject <I
 ## DESCRIPTION
 Delete navigation property emailThreatSubmissionPolicies for security
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EmailThreatSubmissionPolicyId
@@ -228,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+

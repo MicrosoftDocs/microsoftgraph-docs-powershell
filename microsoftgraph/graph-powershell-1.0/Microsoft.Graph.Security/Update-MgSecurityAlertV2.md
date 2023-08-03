@@ -58,18 +58,6 @@ Update-MgSecurityAlertV2 -InputObject <ISecurityIdentity> -BodyParameter <IMicro
 ## DESCRIPTION
 Update the properties of an alert object in an organization based on the specified alert **id** property.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ActorDisplayName
@@ -716,3 +704,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaSecurityAlertV2](/powershell/module/Microsoft.Graph.Beta.Security/Update-MgBetaSecurityAlertV2?view=graph-powershell-beta)
+

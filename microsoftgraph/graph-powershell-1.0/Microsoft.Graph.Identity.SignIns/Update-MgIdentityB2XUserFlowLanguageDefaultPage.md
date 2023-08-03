@@ -44,22 +44,6 @@ Update-MgIdentityB2XUserFlowLanguageDefaultPage -InputObject <IIdentitySignInsId
 ## DESCRIPTION
 Update the navigation property defaultPages in identity
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -278,3 +262,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgBetaIdentityB2XUserFlowLanguageDefaultPage](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Update-MgBetaIdentityB2XUserFlowLanguageDefaultPage?view=graph-powershell-beta)
+

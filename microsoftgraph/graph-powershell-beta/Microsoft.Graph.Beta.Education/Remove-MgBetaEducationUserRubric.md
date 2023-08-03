@@ -32,22 +32,6 @@ Remove-MgBetaEducationUserRubric -InputObject <IEducationIdentity> [-IfMatch <St
 Delete an educationRubric object.
 Only teachers can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -EducationRubricId
@@ -192,3 +176,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgEducationUserRubric](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationUserRubric?view=graph-powershell-1.0)
+

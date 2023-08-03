@@ -32,18 +32,6 @@ Get-MgDriveRootLastModifiedByUser -InputObject <IFilesIdentity> [-ExpandProperty
 Identity of the user who last modified the item.
 Read-only.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -DriveId
@@ -153,3 +141,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDriveRootLastModifiedByUser](/powershell/module/Microsoft.Graph.Beta.Files/Get-MgBetaDriveRootLastModifiedByUser?view=graph-powershell-beta)
+

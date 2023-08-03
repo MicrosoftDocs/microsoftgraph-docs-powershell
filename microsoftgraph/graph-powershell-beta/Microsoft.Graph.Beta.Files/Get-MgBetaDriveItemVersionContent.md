@@ -30,22 +30,6 @@ Get-MgBetaDriveItemVersionContent -InputObject <IFilesIdentity> -OutFile <String
 ## DESCRIPTION
 Get content for the navigation property versions from drives
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -DriveId
@@ -185,3 +169,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDriveItemVersionContent](/powershell/module/Microsoft.Graph.Files/Get-MgDriveItemVersionContent?view=graph-powershell-1.0)
+

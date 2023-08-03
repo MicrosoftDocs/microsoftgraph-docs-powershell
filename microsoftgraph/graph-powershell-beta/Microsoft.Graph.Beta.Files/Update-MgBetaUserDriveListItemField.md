@@ -42,22 +42,6 @@ Update-MgBetaUserDriveListItemField -InputObject <IFilesIdentity> -BodyParameter
 ## DESCRIPTION
 Update the properties on a **[listItem][]**.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -245,3 +229,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgUserDriveListItemField](/powershell/module/Microsoft.Graph.Files/Update-MgUserDriveListItemField?view=graph-powershell-1.0)
+

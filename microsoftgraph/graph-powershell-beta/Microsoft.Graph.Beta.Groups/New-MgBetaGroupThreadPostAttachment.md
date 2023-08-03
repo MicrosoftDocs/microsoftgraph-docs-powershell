@@ -44,22 +44,6 @@ New-MgBetaGroupThreadPostAttachment -InputObject <IGroupsIdentity> -BodyParamete
 ## DESCRIPTION
 Create new navigation property to attachments for groups
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -350,3 +334,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [New-MgGroupThreadPostAttachment](/powershell/module/Microsoft.Graph.Groups/New-MgGroupThreadPostAttachment?view=graph-powershell-1.0)
+

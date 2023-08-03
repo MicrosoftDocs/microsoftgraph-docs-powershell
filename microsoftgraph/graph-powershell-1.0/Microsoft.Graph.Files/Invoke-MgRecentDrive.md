@@ -30,22 +30,6 @@ Invoke-MgRecentDrive -InputObject <IFilesIdentity> [-Count] [-Filter <String>] [
 ## DESCRIPTION
 Invoke function recent
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -Count
@@ -230,3 +214,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaRecentDrive](/powershell/module/Microsoft.Graph.Beta.Files/Invoke-MgBetaRecentDrive?view=graph-powershell-beta)
+

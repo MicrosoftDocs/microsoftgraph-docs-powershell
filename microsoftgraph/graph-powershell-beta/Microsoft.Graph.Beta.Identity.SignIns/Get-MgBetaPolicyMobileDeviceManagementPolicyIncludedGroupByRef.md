@@ -21,22 +21,6 @@ Get-MgBetaPolicyMobileDeviceManagementPolicyIncludedGroupByRef -MobilityManageme
 ## DESCRIPTION
 Get the list of groups that are included in a mobile app management policy.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -188,3 +172,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+

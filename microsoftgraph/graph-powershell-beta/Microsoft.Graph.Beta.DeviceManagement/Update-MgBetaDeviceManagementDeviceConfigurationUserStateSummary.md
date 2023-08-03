@@ -29,22 +29,6 @@ Update-MgBetaDeviceManagementDeviceConfigurationUserStateSummary
 ## DESCRIPTION
 Update the navigation property deviceConfigurationUserStateSummaries in deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -260,3 +244,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UnknownUserCount <Int32?>]`: Number of unknown users
 
 ## RELATED LINKS
+

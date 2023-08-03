@@ -31,22 +31,6 @@ Remove-MgBetaDeviceManagementRoleDefinitionRoleAssignment
 ## DESCRIPTION
 Delete navigation property roleAssignments for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -234,3 +218,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceManagementRoleDefinitionRoleAssignment](/powershell/module/Microsoft.Graph.DeviceManagement.Administration/Remove-MgDeviceManagementRoleDefinitionRoleAssignment?view=graph-powershell-1.0)
+

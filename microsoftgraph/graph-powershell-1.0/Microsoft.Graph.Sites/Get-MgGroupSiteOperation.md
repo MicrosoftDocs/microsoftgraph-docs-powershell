@@ -37,22 +37,6 @@ Get-MgGroupSiteOperation -InputObject <ISitesIdentity> [-ExpandProperty <String[
 ## DESCRIPTION
 Get the status of a rich long-running operation on a site or a list.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -327,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaGroupSiteOperation](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaGroupSiteOperation?view=graph-powershell-beta)
+

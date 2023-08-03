@@ -22,22 +22,6 @@ Get-MgDeviceManagementReport [-ExpandProperty <String[]>] [-Property <String[]>]
 ## DESCRIPTION
 Reports singleton
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -84,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaDeviceManagementReport](/powershell/module/Microsoft.Graph.Beta.Reports/Get-MgBetaDeviceManagementReport?view=graph-powershell-beta)
+

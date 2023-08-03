@@ -37,22 +37,6 @@ Get-MgBetaDeviceManagementDeviceConfigurationDeviceSettingStateSummary -InputObj
 ## DESCRIPTION
 Device Configuration Setting State Device Summary
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -414,3 +398,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgDeviceManagementDeviceConfigurationDeviceSettingStateSummary?view=graph-powershell-1.0)
+

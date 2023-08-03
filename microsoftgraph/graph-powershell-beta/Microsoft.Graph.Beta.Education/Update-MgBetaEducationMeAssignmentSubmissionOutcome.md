@@ -48,22 +48,6 @@ Update-MgBetaEducationMeAssignmentSubmissionOutcome -InputObject <IEducationIden
 Update the properties of an educationOutcome object.
 Only teachers can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -296,3 +280,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgEducationMeAssignmentSubmissionOutcome](/powershell/module/Microsoft.Graph.Education/Update-MgEducationMeAssignmentSubmissionOutcome?view=graph-powershell-1.0)
+

@@ -30,18 +30,6 @@ Remove-MgDeviceManagementWindowsAutopilotDeviceIdentity -InputObject <IDeviceMan
 ## DESCRIPTION
 Delete navigation property windowsAutopilotDeviceIdentities for deviceManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -162,3 +150,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Enrollment/Remove-MgBetaDeviceManagementWindowsAutopilotDeviceIdentity?view=graph-powershell-beta)
+

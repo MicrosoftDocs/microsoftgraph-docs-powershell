@@ -23,18 +23,6 @@ Get-MgBetaAllSite [-Count] [-Filter <String>] [-Property <String[]>] [-Search <S
 ## DESCRIPTION
 Invoke function getAllSites
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -Count
@@ -156,3 +144,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAllSite](/powershell/module/Microsoft.Graph.Sites/Get-MgAllSite?view=graph-powershell-1.0)
+

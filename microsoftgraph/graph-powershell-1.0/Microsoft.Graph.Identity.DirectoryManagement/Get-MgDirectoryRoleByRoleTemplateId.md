@@ -38,18 +38,6 @@ You can use both the object ID and template ID of the **directoryRole** with thi
 The template ID of a built-in role is immutable and can be seen in the role description on the Azure portal.
 For details, see Role template IDs.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -157,3 +145,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaDirectoryRoleByRoleTemplateId](/powershell/module/Microsoft.Graph.Beta.Identity.DirectoryManagement/Get-MgBetaDirectoryRoleByRoleTemplateId?view=graph-powershell-beta)
+

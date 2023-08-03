@@ -94,18 +94,6 @@ Update-MgBetaApplicationByAppId -InputObject <IApplicationsIdentity>
 ## DESCRIPTION
 Update the properties of an application object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -2393,3 +2381,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgApplicationByAppId](/powershell/module/Microsoft.Graph.Applications/Update-MgApplicationByAppId?view=graph-powershell-1.0)
+

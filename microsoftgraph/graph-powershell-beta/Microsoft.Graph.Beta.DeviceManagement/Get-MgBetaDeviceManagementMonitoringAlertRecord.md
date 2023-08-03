@@ -34,18 +34,6 @@ Get-MgBetaDeviceManagementMonitoringAlertRecord -InputObject <IDeviceManagementI
 ## DESCRIPTION
 Read the properties and relationships of an alertRecord object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AlertRecordId
@@ -390,3 +378,4 @@ To create the parameters described below, construct a hash table containing the 
 ## RELATED LINKS
 
 ## RELATED LINKS
+

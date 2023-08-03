@@ -30,18 +30,6 @@ Get-MgSiteAnalyticTime -InputObject <ISitesIdentity> [-ExpandProperty <String[]>
 ## DESCRIPTION
 Get [itemAnalytics][] about the views that took place under this resource.\nThe **itemAnalytics** resource is a convenient way to get activity stats for `allTime` and the `lastSevenDays`.\nFor a custom time range or interval, use the [getActivitiesByInterval][] API.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -165,3 +153,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgBetaSiteAnalyticTime](/powershell/module/Microsoft.Graph.Beta.Sites/Get-MgBetaSiteAnalyticTime?view=graph-powershell-beta)
+

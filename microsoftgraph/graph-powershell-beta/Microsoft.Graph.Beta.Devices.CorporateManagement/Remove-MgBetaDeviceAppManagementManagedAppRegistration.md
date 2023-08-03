@@ -30,18 +30,6 @@ Remove-MgBetaDeviceAppManagementManagedAppRegistration -InputObject <IDevicesCor
 ## DESCRIPTION
 Delete navigation property managedAppRegistrations for deviceAppManagement
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -224,3 +212,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgDeviceAppManagementManagedAppRegistration](/powershell/module/Microsoft.Graph.Devices.CorporateManagement/Remove-MgDeviceAppManagementManagedAppRegistration?view=graph-powershell-1.0)
+

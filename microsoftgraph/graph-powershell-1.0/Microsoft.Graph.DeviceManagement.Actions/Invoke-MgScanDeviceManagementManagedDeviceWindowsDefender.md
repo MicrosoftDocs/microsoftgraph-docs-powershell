@@ -44,18 +44,6 @@ Invoke-MgScanDeviceManagementManagedDeviceWindowsDefender -InputObject <IDeviceM
 ## DESCRIPTION
 Invoke action windowsDefenderScan
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -220,3 +208,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Invoke-MgBetaScanDeviceManagementManagedDeviceWindowsDefender?view=graph-powershell-beta)
+

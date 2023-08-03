@@ -74,22 +74,6 @@ If one of the members is using Skype, the operation fails.
 This method does not support federation.
 Only the user in the tenant who sent the message can perform data loss prevention (DLP) updates on the specified chat message.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -AdditionalProperties
@@ -956,3 +940,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Update-MgGroupTeamChannelMessage](/powershell/module/Microsoft.Graph.Teams/Update-MgGroupTeamChannelMessage?view=graph-powershell-1.0)
+

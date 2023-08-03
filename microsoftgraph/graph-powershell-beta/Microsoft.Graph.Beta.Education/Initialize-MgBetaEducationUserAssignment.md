@@ -29,18 +29,6 @@ Initialize-MgBetaEducationUserAssignment -InputObject <IEducationIdentity> [-Wha
 Activate an `inactive` educationAssignment to signal that the assignment has further action items for teachers and students.
 This action can only be performed by a teacher on currently inactive assignments.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -EducationAssignmentId
@@ -154,3 +142,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+

@@ -27,18 +27,6 @@ Set-MgBetaVirtualEventSessionRecordingContent -InputObject <IBookingsIdentity> [
 ## DESCRIPTION
 Update content for the navigation property recordings in solutions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -CallRecordingId
@@ -207,3 +195,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VirtualEventWebinarId <String>]`: The unique identifier of virtualEventWebinar
 
 ## RELATED LINKS
+

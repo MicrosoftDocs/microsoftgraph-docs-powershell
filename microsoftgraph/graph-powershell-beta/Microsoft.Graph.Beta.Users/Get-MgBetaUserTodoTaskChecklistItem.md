@@ -37,18 +37,6 @@ Get-MgBetaUserTodoTaskChecklistItem -InputObject <IUsersIdentity> [-ExpandProper
 ## DESCRIPTION
 Read the properties and relationships of a checklistItem object.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -All
@@ -322,3 +310,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Get-MgUserTodoTaskChecklistItem](/powershell/module/Microsoft.Graph.Users/Get-MgUserTodoTaskChecklistItem?view=graph-powershell-1.0)
+

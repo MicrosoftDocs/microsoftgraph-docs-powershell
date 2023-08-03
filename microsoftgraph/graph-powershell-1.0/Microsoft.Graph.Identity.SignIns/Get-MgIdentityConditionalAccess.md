@@ -22,18 +22,6 @@ Get-MgIdentityConditionalAccess [-ExpandProperty <String[]>] [-Property <String[
 ## DESCRIPTION
 the entry point for the Conditional Access (CA) object model.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -80,3 +68,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgBetaIdentityConditionalAccess](/powershell/module/Microsoft.Graph.Beta.Identity.SignIns/Get-MgBetaIdentityConditionalAccess?view=graph-powershell-beta)
+

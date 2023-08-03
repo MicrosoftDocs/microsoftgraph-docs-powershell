@@ -30,18 +30,6 @@ Remove-MgBetaPrivacySubjectRightsRequest -InputObject <IComplianceIdentity> [-If
 ## DESCRIPTION
 Delete navigation property subjectRightsRequests for privacy
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -IfMatch
@@ -175,3 +163,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Remove-MgPrivacySubjectRightsRequest](/powershell/module/Microsoft.Graph.Compliance/Remove-MgPrivacySubjectRightsRequest?view=graph-powershell-1.0)
+

@@ -23,18 +23,6 @@ Get-MgBetaAdminEdgeInternetExplorerMode [-ExpandProperty <String[]>] [-Property 
 ## DESCRIPTION
 A container for Internet Explorer mode resources.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
 ## PARAMETERS
 
 ### -ExpandProperty
@@ -81,3 +69,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgAdminEdgeInternetExplorerMode](/powershell/module/Microsoft.Graph.DeviceManagement/Get-MgAdminEdgeInternetExplorerMode?view=graph-powershell-1.0)
+

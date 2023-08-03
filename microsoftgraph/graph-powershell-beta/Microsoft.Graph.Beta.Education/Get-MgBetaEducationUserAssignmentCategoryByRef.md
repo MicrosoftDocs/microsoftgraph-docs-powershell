@@ -26,22 +26,6 @@ Get-MgBetaEducationUserAssignmentCategoryByRef -EducationAssignmentId <String> -
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -All
@@ -209,3 +193,4 @@ ALIASES
 
 ## RELATED LINKS
 [Get-MgEducationUserAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategoryByRef?view=graph-powershell-1.0)
+

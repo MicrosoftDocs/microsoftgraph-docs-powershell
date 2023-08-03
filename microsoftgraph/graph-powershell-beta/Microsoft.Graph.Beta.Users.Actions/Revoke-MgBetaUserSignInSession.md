@@ -28,22 +28,6 @@ Revoke-MgBetaUserSignInSession -InputObject <IUsersActionsIdentity> [-WhatIf] [-
 ## DESCRIPTION
 Invoke action revokeSignInSessions
 
-## EXAMPLES
-
-### EXAMPLE 1
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
-### EXAMPLE 2
-```powershell
-{{ Add code here }}
-```
-
-{{ Add output here }}
-
 ## PARAMETERS
 
 ### -InputObject
@@ -170,3 +154,4 @@ To create the parameters described below, construct a hash table containing the 
 
 ## RELATED LINKS
 [Revoke-MgUserSignInSession](/powershell/module/Microsoft.Graph.Users.Actions/Revoke-MgUserSignInSession?view=graph-powershell-1.0)
+
