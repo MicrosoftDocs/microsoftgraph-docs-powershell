@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update print
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -19131,5 +19134,7 @@ To create the parameters described below, construct a hash table containing the 
       - `[Event <String>]`: printEvent
 
 ## RELATED LINKS
+[Update-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrint?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Update-MgPrint](/powershell/module/Microsoft.Graph.Devices.CloudPrint/Update-MgPrint?view=graph-powershell-1.0)

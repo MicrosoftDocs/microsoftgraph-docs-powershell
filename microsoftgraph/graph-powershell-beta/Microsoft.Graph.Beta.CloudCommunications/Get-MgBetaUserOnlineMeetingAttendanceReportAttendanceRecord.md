@@ -11,6 +11,9 @@ schema: 2.0.0
 List of attendance records of an attendance report.
 Read-only.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List1 (Default)
@@ -335,3 +338,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord](/powershell/module/Microsoft.Graph.CloudCommunications/Get-MgUserOnlineMeetingAttendanceReportAttendanceRecord?view=graph-powershell-1.0)

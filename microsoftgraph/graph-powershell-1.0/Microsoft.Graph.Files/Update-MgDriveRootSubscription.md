@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property subscriptions in drives
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Update-MgBetaDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootSubscription?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -508,3 +511,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Update-MgBetaDriveRootSubscription](/powershell/module/Microsoft.Graph.Beta.Files/Update-MgBetaDriveRootSubscription?view=graph-powershell-beta)

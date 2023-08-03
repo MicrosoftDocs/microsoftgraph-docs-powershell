@@ -11,6 +11,9 @@ schema: 2.0.0
 Condition sets which are excluded in this permission grant policy.
 Automatically expanded on GET.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -362,3 +365,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgPolicyPermissionGrantPolicyExclude](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgPolicyPermissionGrantPolicyExclude?view=graph-powershell-1.0)

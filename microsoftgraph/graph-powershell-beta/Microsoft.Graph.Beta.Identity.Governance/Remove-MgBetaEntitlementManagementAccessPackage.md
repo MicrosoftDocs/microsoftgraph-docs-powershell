@@ -13,6 +13,9 @@ You cannot delete an access package if it has any **accessPackageAssignment**.
 To delete the access package, first query if there are any assignments with a filter to indicate the specific access package, such as: `$filter=accessPackage/id eq 'a914b616-e04e-476b-aa37-91038f0b165b'`.
 For more information on how to remove assignments that are still in the delivered state, see Remove an assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -252,3 +255,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkflowVersionNumber <Int32?>]`: The unique identifier of workflowVersion
 
 ## RELATED LINKS
+[Remove-MgEntitlementManagementAccessPackage](/powershell/module/Microsoft.Graph.Identity.Governance/Remove-MgEntitlementManagementAccessPackage?view=graph-powershell-1.0)

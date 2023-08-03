@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property sharepoint in admin
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepoint?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -231,3 +234,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[TenantDefaultTimezone <String>]`: The default timezone of a tenant for newly created sites. For a list of possible values, see SPRegionalSettings.TimeZones property.
 
 ## RELATED LINKS
+[Update-MgAdminSharepoint](/powershell/module/Microsoft.Graph.Sites/Update-MgAdminSharepoint?view=graph-powershell-1.0)

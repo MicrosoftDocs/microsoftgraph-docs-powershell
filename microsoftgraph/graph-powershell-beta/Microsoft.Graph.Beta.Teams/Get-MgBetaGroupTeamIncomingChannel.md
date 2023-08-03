@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 List of channels shared with the team.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamIncomingChannel?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -308,3 +311,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WorkforceIntegrationId <String>]`: The unique identifier of workforceIntegration
 
 ## RELATED LINKS
+[Get-MgGroupTeamIncomingChannel](/powershell/module/Microsoft.Graph.Teams/Get-MgGroupTeamIncomingChannel?view=graph-powershell-1.0)

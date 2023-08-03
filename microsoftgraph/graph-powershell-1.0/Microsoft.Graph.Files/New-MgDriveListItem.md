@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new [listItem][] in a [list][].
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItem?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -14851,5 +14854,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[Id <String>]`: The unique idenfier for an entity. Read-only.
 
 ## RELATED LINKS
+[New-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItem?view=graph-powershell-beta)
 
 ## RELATED LINKS
+[New-MgBetaDriveListItem](/powershell/module/Microsoft.Graph.Beta.Files/New-MgBetaDriveListItem?view=graph-powershell-beta)

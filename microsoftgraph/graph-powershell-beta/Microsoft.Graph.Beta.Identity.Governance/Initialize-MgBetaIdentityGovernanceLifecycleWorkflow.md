@@ -13,6 +13,9 @@ You can run any workflow on-demand, including scheduled workflows.
 Workflows created from the 'Real-time employee termination' template are run on-demand only.
 When you run a workflow on demand, the tasks are executed regardless of whether the user state matches the scope and trigger execution conditions.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Initialize-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ActivateExpanded (Default)
@@ -9606,5 +9609,7 @@ To create the parameters described below, construct a hash table containing the 
     - `[UserId <String>]`: UserId associated with this device registration record.
 
 ## RELATED LINKS
+[Initialize-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[Initialize-MgIdentityGovernanceLifecycleWorkflow](/powershell/module/Microsoft.Graph.Identity.Governance/Initialize-MgIdentityGovernanceLifecycleWorkflow?view=graph-powershell-1.0)

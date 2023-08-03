@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get the number of the resource
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomationRunCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRunCount?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Get (Default)
@@ -193,3 +196,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationAutomationRunCount](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomationRunCount?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Update the navigation property operations in security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Update-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### UpdateExpanded (Default)
@@ -422,3 +425,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
+[Update-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/Update-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)

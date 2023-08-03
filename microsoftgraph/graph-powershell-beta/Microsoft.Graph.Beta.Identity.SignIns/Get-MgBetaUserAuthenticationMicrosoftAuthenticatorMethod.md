@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Read the properties and relationships of a microsoftAuthenticatorAuthenticationMethod object.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -337,3 +340,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgUserAuthenticationMicrosoftAuthenticatorMethod](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgUserAuthenticationMicrosoftAuthenticatorMethod?view=graph-powershell-1.0)

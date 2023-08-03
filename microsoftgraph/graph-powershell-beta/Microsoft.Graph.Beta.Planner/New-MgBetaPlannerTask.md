@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create a new **plannerTask**.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -794,5 +797,7 @@ To create the parameters described below, construct a hash table containing the 
   - `[SeriesId <String>]`: The recurrence series this task belongs to. A GUID-based value that serves as the unique identifier for a series.
 
 ## RELATED LINKS
+[New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)
 
 ## RELATED LINKS
+[New-MgPlannerTask](/powershell/module/Microsoft.Graph.Planner/New-MgPlannerTask?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Returns the tags that are a child of a tag.
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### List (Default)
@@ -318,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag](/powershell/module/Microsoft.Graph.Beta.Security/Get-MgBetaSecurityCaseEdiscoveryCaseTagChildTag?view=graph-powershell-beta)

@@ -11,6 +11,9 @@ schema: 2.0.0
 List all the categories associated with an assignment.
 Only teachers, students, and applications with application permissions can perform this operation.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategory?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ```
@@ -235,3 +238,4 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 ALIASES
 
 ## RELATED LINKS
+[Get-MgEducationUserAssignmentCategory](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentCategory?view=graph-powershell-1.0)

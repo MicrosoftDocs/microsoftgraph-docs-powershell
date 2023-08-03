@@ -12,6 +12,9 @@ Get the properties and relationships of the specified identity provider configur
 Among the types of providers derived from identityProviderBase, you can currently get a socialIdentityProvider or a builtinIdentityProvider resource in Azure AD.
 In Azure AD B2C, this operation can currently get a socialIdentityProvider, openIdConnectIdentityProvider, or an appleManagedIdentityProvider resource.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -340,3 +343,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsHelloForBusinessAuthenticationMethodId <String>]`: The unique identifier of windowsHelloForBusinessAuthenticationMethod
 
 ## RELATED LINKS
+[Get-MgIdentityProvider](/powershell/module/Microsoft.Graph.Identity.SignIns/Get-MgIdentityProvider?view=graph-powershell-1.0)

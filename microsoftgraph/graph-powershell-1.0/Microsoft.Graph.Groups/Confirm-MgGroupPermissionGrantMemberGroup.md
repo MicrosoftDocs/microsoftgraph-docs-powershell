@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Invoke action checkMemberObjects
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Confirm-MgBetaGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupPermissionGrantMemberGroup?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CheckExpanded (Default)
@@ -228,3 +231,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[User <String>]`: Usage: User='{User}'
 
 ## RELATED LINKS
+[Confirm-MgBetaGroupPermissionGrantMemberGroup](/powershell/module/Microsoft.Graph.Beta.Groups/Confirm-MgBetaGroupPermissionGrantMemberGroup?view=graph-powershell-beta)

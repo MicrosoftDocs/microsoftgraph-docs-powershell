@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Not yet documented
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Update (Default)
@@ -187,3 +190,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature](/powershell/module/Microsoft.Graph.Beta.Users.Actions/New-MgBetaUserManagedDeviceWindowsDefenderUpdateSignature?view=graph-powershell-beta)

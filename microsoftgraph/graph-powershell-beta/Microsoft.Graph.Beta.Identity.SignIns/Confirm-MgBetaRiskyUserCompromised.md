@@ -11,6 +11,9 @@ schema: 2.0.0
 Confirm one or more riskyUser objects as compromised.
 This action sets the targeted user's risk level to high.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### ConfirmExpanded (Default)
@@ -156,3 +159,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserIds <String[]>]`: 
 
 ## RELATED LINKS
+[Confirm-MgRiskyUserCompromised](/powershell/module/Microsoft.Graph.Identity.SignIns/Confirm-MgRiskyUserCompromised?view=graph-powershell-1.0)

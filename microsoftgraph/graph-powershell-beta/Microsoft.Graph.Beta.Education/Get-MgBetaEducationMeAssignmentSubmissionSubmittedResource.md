@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get submittedResources from education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -293,3 +296,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationMeAssignmentSubmissionSubmittedResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationMeAssignmentSubmissionSubmittedResource?view=graph-powershell-1.0)

@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Delete ref of navigation property categories for education
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Remove-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Delete (Default)
@@ -210,3 +213,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Remove-MgEducationClassAssignmentCategoryByRef](/powershell/module/Microsoft.Graph.Education/Remove-MgEducationClassAssignmentCategoryByRef?view=graph-powershell-1.0)

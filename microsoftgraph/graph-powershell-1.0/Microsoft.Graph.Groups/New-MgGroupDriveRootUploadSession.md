@@ -11,6 +11,9 @@ schema: 2.0.0
 Create an upload session to allow your app to upload files up to the maximum file size.\nAn upload session allows your app to upload ranges of the file in sequential API requests, which allows the transfer to be resumed if a connection is dropped while the upload is in progress.
 To upload a file using an upload session, there are two steps:
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [New-MgBetaGroupDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveRootUploadSession?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -266,3 +269,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Name <String>]`: The name of the item (filename and extension). Read-write.
 
 ## RELATED LINKS
+[New-MgBetaGroupDriveRootUploadSession](/powershell/module/Microsoft.Graph.Beta.Groups/New-MgBetaGroupDriveRootUploadSession?view=graph-powershell-beta)

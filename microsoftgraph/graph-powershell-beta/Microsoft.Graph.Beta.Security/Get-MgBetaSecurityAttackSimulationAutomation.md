@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Get an attack simulation automation for a tenant.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -318,3 +321,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[VulnerabilityId <String>]`: The unique identifier of vulnerability
 
 ## RELATED LINKS
+[Get-MgSecurityAttackSimulationAutomation](/powershell/module/Microsoft.Graph.Security/Get-MgSecurityAttackSimulationAutomation?view=graph-powershell-1.0)

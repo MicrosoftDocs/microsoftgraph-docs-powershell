@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Retire a device
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Invoke-MgRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetireUserManagedDevice?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Retire (Default)
@@ -198,3 +201,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[UserId <String>]`: The unique identifier of user
 
 ## RELATED LINKS
+[Invoke-MgRetireUserManagedDevice](/powershell/module/Microsoft.Graph.Users.Actions/Invoke-MgRetireUserManagedDevice?view=graph-powershell-1.0)

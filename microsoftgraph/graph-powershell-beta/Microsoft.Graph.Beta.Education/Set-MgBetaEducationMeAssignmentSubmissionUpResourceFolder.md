@@ -13,6 +13,9 @@ Only teachers and students can perform this operation.
 Note that files must be located in this folder in order to be added as resources.
 Only a student in the class can determine what files to upload in a given submission-level resource folder.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Set-MgEducationMeAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentSubmissionUpResourceFolder?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### Set (Default)
@@ -162,3 +165,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Set-MgEducationMeAssignmentSubmissionUpResourceFolder](/powershell/module/Microsoft.Graph.Education/Set-MgEducationMeAssignmentSubmissionUpResourceFolder?view=graph-powershell-1.0)

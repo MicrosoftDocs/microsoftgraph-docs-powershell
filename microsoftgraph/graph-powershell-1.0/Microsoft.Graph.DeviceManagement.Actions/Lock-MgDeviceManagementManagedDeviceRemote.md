@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Remote lock
 
+> [!NOTE]
+> To view the beta release of this cmdlet, view [Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)
+
 ## SYNTAX
 
 ### Lock (Default)
@@ -155,3 +158,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[WindowsAutopilotDeviceIdentityId <String>]`: The unique identifier of windowsAutopilotDeviceIdentity
 
 ## RELATED LINKS
+[Lock-MgBetaDeviceManagementManagedDeviceRemote](/powershell/module/Microsoft.Graph.Beta.DeviceManagement.Actions/Lock-MgBetaDeviceManagementManagedDeviceRemote?view=graph-powershell-beta)

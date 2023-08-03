@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Create new navigation property to operations for security
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [New-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### CreateExpanded (Default)
@@ -406,3 +409,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[Subcode <Int32?>]`: The result sub-code.
 
 ## RELATED LINKS
+[New-MgSecurityCaseEdiscoveryCaseOperation](/powershell/module/Microsoft.Graph.Security/New-MgSecurityCaseEdiscoveryCaseOperation?view=graph-powershell-1.0)

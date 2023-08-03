@@ -13,6 +13,9 @@ Only teachers, students, and applications with application permissions can perfo
 This resource is in the 'working' resource list and should be considered work in process by a student.
 This resource is wrapped with a possible pointer back to the assignment resource if it was copied from the assignment.
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Get-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### List (Default)
@@ -317,3 +320,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[EducationUserId <String>]`: The unique identifier of educationUser
 
 ## RELATED LINKS
+[Get-MgEducationUserAssignmentSubmissionResource](/powershell/module/Microsoft.Graph.Education/Get-MgEducationUserAssignmentSubmissionResource?view=graph-powershell-1.0)

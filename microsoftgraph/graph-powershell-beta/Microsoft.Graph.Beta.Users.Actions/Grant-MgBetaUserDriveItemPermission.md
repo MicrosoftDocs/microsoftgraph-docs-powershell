@@ -10,6 +10,9 @@ schema: 2.0.0
 ## SYNOPSIS
 Grant users access to a link represented by a [permission][].
 
+> [!NOTE]
+> To view the v1.0 release of this cmdlet, view [Grant-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveItemPermission?view=graph-powershell-1.0)
+
 ## SYNTAX
 
 ### GrantExpanded (Default)
@@ -312,3 +315,4 @@ To create the parameters described below, construct a hash table containing the 
   - `[ObjectId <String>]`: The unique identifier for the recipient in the directory.
 
 ## RELATED LINKS
+[Grant-MgUserDriveItemPermission](/powershell/module/Microsoft.Graph.Users.Actions/Grant-MgUserDriveItemPermission?view=graph-powershell-1.0)
